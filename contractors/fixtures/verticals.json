@@ -1,0 +1,38 @@
+[
+    {
+        "model": "contractors.vertical",
+        "pk": 1,
+        "fields": {
+            "name": "Pool Enclosures",
+            "slug": "pool-enclosures",
+            "description": "Pool screen enclosures",
+            "search_terms": ["pool enclosure contractor", "pool screen installer", "pool cage builder"],
+            "avg_job_value": 15000,
+            "is_active": true
+        }
+    },
+    {
+        "model": "contractors.vertical",
+        "pk": 2,
+        "fields": {
+            "name": "Patio Covers",
+            "slug": "patio-covers",
+            "description": "Patio covers and pergolas",
+            "search_terms": ["patio cover contractor", "pergola builder", "patio roof installer"],
+            "avg_job_value": 12000,
+            "is_active": true
+        }
+    },
+    {
+        "model": "contractors.vertical",
+        "pk": 3,
+        "fields": {
+            "name": "Motorized Shades",
+            "slug": "motorized-shades",
+            "description": "Motorized exterior shades",
+            "search_terms": ["motorized shade installer", "exterior shade contractor"],
+            "avg_job_value": 8000,
+            "is_active": true
+        }
+    }
+]
