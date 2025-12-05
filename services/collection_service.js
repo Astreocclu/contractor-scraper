@@ -578,7 +578,14 @@ class CollectionService {
     }
 
     // TDLR (Texas only, form submission)
-    if (contractor.state?.toUpperCase() === 'TX') {
+    // Skip for trades that don't require TDLR licensing (pools, patios, fences, enclosures)
+    const unlicensedTrades = ['pool', 'patio', 'fence', 'enclosure', 'pergola', 'deck', 'screen', 'sunroom', 'outdoor living'];
+    const isUnlicensedTrade = unlicensedTrades.some(trade =>
+      contractor.name?.toLowerCase().includes(trade) ||
+      contractor.verticals?.some(v => v.toLowerCase().includes(trade))
+    );
+
+    if (contractor.state?.toUpperCase() === 'TX' && !isUnlicensedTrade) {
       log('\n  Searching TDLR licenses...');
       try {
         const tdlrResult = await searchTDLR(this.browser, contractor.name);

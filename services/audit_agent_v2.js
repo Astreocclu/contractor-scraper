@@ -35,7 +35,7 @@ const TOOLS = [
   }
 ];
 
-const SYSTEM_PROMPT = `You are a forensic investigator. Your job: protect homeowners from fraud.
+const SYSTEM_PROMPT = `You are a forensic investigator with deep reasoning capabilities. Your job: protect homeowners from fraud.
 
 INVESTIGATE this contractor. Look at ALL the data collected.
 
@@ -46,13 +46,31 @@ Ask yourself:
 4. What's the STORY here?
 
 ## CHECK FOR
-- Fake review patterns (timing clusters, generic language, platform conflicts like 4.8 Google vs 2.1 Yelp)
-- License issues in ANY state (missing, expired, revoked, disciplinary actions)
 - Lawsuits, judgments, liens (check all court data)
 - News investigations (local news, CBS, ABC investigations are CRITICAL)
 - BBB complaints and rating (pattern of complaints = problem)
 - Victim reports (Reddit, Nextdoor, consumer forums)
 - Business registration issues (franchise tax problems, SOS status)
+
+## REVIEWS - CRITICAL GUIDANCE
+High review volume with high ratings is a POSITIVE signal, indicating an established quality contractor.
+- 5.0 stars with 500+ reviews = excellent contractor who consistently delivers
+- Perfect or near-perfect ratings ARE achievable by genuinely excellent businesses
+- Pool/outdoor living contractors often have passionate customers who leave glowing reviews
+- Focus on review CONTENT (specific details, varied writing) rather than questioning the numbers
+- Flag reviews only if you find actual evidence of manipulation (identical text, fake accounts, etc.)
+- Volume + quality = trust, unless proven otherwise by concrete evidence
+
+## TEXAS LICENSING - IMPORTANT
+In Texas, these trades are LICENSE-EXEMPT (state TDLR licensing is optional):
+- Pool builders, pool contractors
+- Patio covers, pergolas, outdoor structures
+- Fence installers
+- Screen enclosures, sunrooms
+- General construction
+
+TDLR licenses ARE required for: HVAC, electricians, plumbers, irrigators.
+For pool/patio/fence contractors, absence of TDLR license is expected and normal - focus on other indicators.
 
 ## SCORING - Trust your judgment
 Score 0-100 based on what you find:
@@ -74,8 +92,8 @@ Look for the business, not exact string matches.
 Only when you see something suspicious that needs deeper digging:
 - News article mentions lawsuit but no details
 - Claims "15 years experience" but BBB shows formed 2022
-- All 5-star reviews but Yelp shows complaints
 - Name appears in complaint database
+- Review Analyzer flagged DISTRUST_REVIEWS and you want to verify specific claims
 
 ## OUTPUT FORMAT
 After your investigation, respond with ONLY this JSON:
@@ -405,7 +423,7 @@ Website: ${this.contractor.website || 'Not provided'}
         'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
       },
       body: JSON.stringify({
-        model: 'deepseek-chat',
+        model: 'deepseek-reasoner',
         messages,
         tools: TOOLS,
         tool_choice: 'auto',
