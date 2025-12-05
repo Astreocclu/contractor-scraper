@@ -7,6 +7,12 @@ from dataclasses import dataclass
 
 logger = logging.getLogger(__name__)
 
+# Rate limiting settings
+SEARCH_DELAY = 2.0        # Seconds between text searches
+DETAIL_DELAY = 0.3        # Seconds between place detail calls
+MAX_RETRIES = 3           # Max retry attempts on failure
+BACKOFF_MULTIPLIER = 2    # Exponential backoff multiplier
+
 
 @dataclass
 class ScrapedContractor:
@@ -23,10 +29,24 @@ class ScrapedContractor:
 
 
 class GoogleScraper:
+    # Full DFW Metroplex coverage - 40+ cities
     TARGET_CITIES = [
-        'Fort Worth', 'Dallas', 'Southlake', 'Colleyville',
-        'Keller', 'Grapevine', 'North Richland Hills',
-        'Arlington', 'Plano', 'Frisco',
+        # Core cities
+        'Fort Worth', 'Dallas', 'Arlington', 'Irving', 'Grand Prairie',
+        # North/Northeast
+        'Plano', 'Frisco', 'McKinney', 'Allen', 'Richardson',
+        'Garland', 'Mesquite', 'Rowlett', 'Rockwall', 'Wylie',
+        'Murphy', 'Sachse', 'Lucas', 'Prosper', 'Celina',
+        # Northwest
+        'Denton', 'Lewisville', 'Flower Mound', 'Carrollton', 'The Colony',
+        'Little Elm', 'Corinth', 'Highland Village', 'Coppell', 'Addison',
+        # West/Southwest Fort Worth area
+        'Southlake', 'Colleyville', 'Keller', 'Grapevine', 'North Richland Hills',
+        'Hurst', 'Euless', 'Bedford', 'Haltom City', 'Watauga',
+        'Saginaw', 'Lake Worth', 'White Settlement', 'Benbrook', 'Crowley',
+        # South
+        'Mansfield', 'Burleson', 'Cleburne', 'Midlothian', 'Waxahachie',
+        'Cedar Hill', 'DeSoto', 'Duncanville', 'Lancaster', 'Red Oak',
     ]
 
     def __init__(self):
@@ -55,8 +75,34 @@ class GoogleScraper:
             'key': self.google_key,
         }
 
-        resp = requests.get(url, params=params, timeout=30)
-        data = resp.json()
+        # Retry with exponential backoff
+        for attempt in range(MAX_RETRIES):
+            try:
+                resp = requests.get(url, params=params, timeout=30)
+                data = resp.json()
+
+                # Check for API errors
+                status = data.get('status', '')
+                if status == 'OVER_QUERY_LIMIT':
+                    wait_time = SEARCH_DELAY * (BACKOFF_MULTIPLIER ** attempt)
+                    logger.warning(f"Rate limited, waiting {wait_time}s...")
+                    time.sleep(wait_time)
+                    continue
+                elif status not in ('OK', 'ZERO_RESULTS'):
+                    logger.warning(f"API error: {status}")
+                    return []
+
+                break  # Success
+            except requests.exceptions.Timeout:
+                wait_time = SEARCH_DELAY * (BACKOFF_MULTIPLIER ** attempt)
+                logger.warning(f"Timeout on attempt {attempt + 1}, waiting {wait_time}s...")
+                time.sleep(wait_time)
+            except Exception as e:
+                logger.error(f"Search failed: {e}")
+                return []
+        else:
+            logger.error(f"Max retries exceeded for {query} in {city}")
+            return []
 
         contractors = []
         for r in data.get('results', [])[:max_results]:
@@ -70,7 +116,7 @@ class GoogleScraper:
             )
             c = self._get_details(c)
             contractors.append(c)
-            time.sleep(0.1)
+            time.sleep(DETAIL_DELAY)
 
         return contractors
 
@@ -163,23 +209,34 @@ class GoogleScraper:
 
         return reviews
 
-    def scrape_all(self, search_terms: List[str], cities: List[str] = None, max_per_city: int = 20, delay: float = 1.5) -> List[ScrapedContractor]:
+    def scrape_all(self, search_terms: List[str], cities: List[str] = None, max_per_city: int = 20, delay: float = None) -> List[ScrapedContractor]:
         cities = cities or self.TARGET_CITIES
+        delay = delay or SEARCH_DELAY
         all_contractors = []
         seen = set()
 
+        total_searches = len(search_terms) * len(cities)
+        search_num = 0
+
         for term in search_terms:
             for city in cities:
-                logger.info(f"Searching: {term} in {city}")
+                search_num += 1
+                print(f"[{search_num}/{total_searches}] {term} in {city}", flush=True)
                 try:
                     results = self.search(term, city, max_per_city)
+                    new_count = 0
                     for c in results:
                         key = (c.business_name.lower(), c.city.lower())
                         if key not in seen:
                             seen.add(key)
                             all_contractors.append(c)
+                            new_count += 1
+                    if new_count > 0:
+                        print(f"    Found {len(results)} results, {new_count} new", flush=True)
                     time.sleep(delay)
                 except Exception as e:
                     logger.error(f"Failed: {e}")
+                    print(f"    ERROR: {e}", flush=True)
+                    time.sleep(delay * 2)  # Extra delay on error
 
         return all_contractors

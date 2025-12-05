@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Vertical, Contractor, ContractorAudit
+from .models import Vertical, Contractor, ContractorAudit, RedFlag, AuditTimeline
 
 
 @admin.register(Vertical)
@@ -57,8 +57,72 @@ class ContractorAdmin(admin.ModelAdmin):
     )
 
 
+class RedFlagInline(admin.TabularInline):
+    model = RedFlag
+    extra = 0
+    fields = ['severity', 'category', 'description', 'source']
+
+
+class AuditTimelineInline(admin.TabularInline):
+    model = AuditTimeline
+    extra = 0
+    fields = ['date', 'event', 'significance', 'source']
+
+
 @admin.register(ContractorAudit)
 class ContractorAuditAdmin(admin.ModelAdmin):
-    list_display = ['contractor', 'audit_date', 'total_score']
-    list_filter = ['audit_date']
+    list_display = ['contractor', 'audit_date', 'trust_score', 'risk_level', 'recommendation', 'data_confidence']
+    list_filter = ['risk_level', 'recommendation', 'data_confidence', 'audit_date']
     search_fields = ['contractor__business_name']
+    readonly_fields = ['audit_date']
+    inlines = [RedFlagInline, AuditTimelineInline]
+
+    fieldsets = (
+        ('Overview', {
+            'fields': ('contractor', 'audit_date', 'trust_score', 'risk_level', 'recommendation')
+        }),
+        ('Component Scores', {
+            'fields': ('verification_score', 'reputation_score', 'credibility_score', 'financial_score', 'red_flag_score')
+        }),
+        ('Calculation Metadata', {
+            'fields': ('base_score', 'normalized_score', 'multiplier_applied', 'multiplier_reason'),
+            'classes': ('collapse',)
+        }),
+        ('Narrative', {
+            'fields': ('narrative_summary', 'homeowner_guidance')
+        }),
+        ('Data Quality', {
+            'fields': ('data_confidence', 'sources_used', 'data_gaps'),
+            'classes': ('collapse',)
+        }),
+        ('Raw Data', {
+            'fields': ('perplexity_data', 'synthesis_data'),
+            'classes': ('collapse',)
+        }),
+        ('Legacy Fields', {
+            'fields': ('total_score', 'sentiment_score', 'ai_summary', 'score_breakdown'),
+            'classes': ('collapse',)
+        }),
+    )
+
+
+@admin.register(RedFlag)
+class RedFlagAdmin(admin.ModelAdmin):
+    list_display = ['audit', 'severity', 'category', 'description_short']
+    list_filter = ['severity', 'category']
+    search_fields = ['description', 'evidence', 'audit__contractor__business_name']
+
+    def description_short(self, obj):
+        return obj.description[:60] + '...' if len(obj.description) > 60 else obj.description
+    description_short.short_description = 'Description'
+
+
+@admin.register(AuditTimeline)
+class AuditTimelineAdmin(admin.ModelAdmin):
+    list_display = ['audit', 'date', 'event_short', 'source']
+    list_filter = ['date']
+    search_fields = ['event', 'audit__contractor__business_name']
+
+    def event_short(self, obj):
+        return obj.event[:60] + '...' if len(obj.event) > 60 else obj.event
+    event_short.short_description = 'Event'

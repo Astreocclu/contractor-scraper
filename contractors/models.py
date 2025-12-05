@@ -3,7 +3,16 @@ from django.contrib.auth import get_user_model
 from django.utils.text import slugify
 
 User = get_user_model()
-PASS_THRESHOLD = 80
+PASS_THRESHOLD = 50  # Bronze tier threshold
+
+# Tier choices for contractor ranking
+TIER_CHOICES = [
+    ('gold', 'Gold'),      # 80+
+    ('silver', 'Silver'),  # 65-79
+    ('bronze', 'Bronze'),  # 50-64
+    ('new', 'New Business'),
+    ('unranked', 'Unranked'),  # <50
+]
 
 
 class Vertical(models.Model):
@@ -45,6 +54,7 @@ class Contractor(models.Model):
 
     # Yelp
     yelp_id = models.CharField(max_length=255, blank=True, null=True)
+    yelp_url = models.URLField(blank=True, null=True)
     yelp_rating = models.DecimalField(max_digits=2, decimal_places=1, null=True, blank=True)
     yelp_review_count = models.PositiveIntegerField(default=0)
 
@@ -63,6 +73,7 @@ class Contractor(models.Model):
     # Scores (OVERWRITTEN each audit)
     trust_score = models.PositiveIntegerField(default=0)
     passes_threshold = models.BooleanField(default=False)
+    tier = models.CharField(max_length=20, choices=TIER_CHOICES, default='unranked')
     verification_score = models.PositiveIntegerField(default=0)
     reputation_score = models.PositiveIntegerField(default=0)
     credibility_score = models.PositiveIntegerField(default=0)
@@ -114,9 +125,72 @@ class Contractor(models.Model):
         return "Passes" if self.passes_threshold else "Does Not Pass"
 
 
+# Risk level choices for forensic audits
+RISK_LEVEL_CHOICES = [
+    ('CRITICAL', 'Critical'),
+    ('SEVERE', 'Severe'),
+    ('MODERATE', 'Moderate'),
+    ('LOW', 'Low'),
+    ('TRUSTED', 'Trusted'),
+]
+
+RECOMMENDATION_CHOICES = [
+    ('AVOID', 'Avoid'),
+    ('CAUTION', 'Caution'),
+    ('VERIFY', 'Verify'),
+    ('RECOMMENDED', 'Recommended'),
+]
+
+CONFIDENCE_CHOICES = [
+    ('HIGH', 'High'),
+    ('MEDIUM', 'Medium'),
+    ('LOW', 'Low'),
+]
+
+SEVERITY_CHOICES = [
+    ('CRITICAL', 'Critical'),
+    ('SEVERE', 'Severe'),
+    ('MODERATE', 'Moderate'),
+    ('MINOR', 'Minor'),
+]
+
+
 class ContractorAudit(models.Model):
     contractor = models.ForeignKey(Contractor, on_delete=models.CASCADE, related_name='audits')
     audit_date = models.DateTimeField(auto_now_add=True)
+
+    # Overall results
+    trust_score = models.IntegerField(default=0)  # 0-100
+    risk_level = models.CharField(max_length=20, choices=RISK_LEVEL_CHOICES, default='MODERATE')
+    recommendation = models.CharField(max_length=20, choices=RECOMMENDATION_CHOICES, default='VERIFY')
+
+    # Component scores
+    verification_score = models.IntegerField(default=0)  # max 15
+    reputation_score = models.FloatField(default=0)  # max 15
+    credibility_score = models.IntegerField(default=0)  # max 10
+    financial_score = models.IntegerField(default=0)  # max 10
+    red_flag_score = models.IntegerField(default=0)  # max 10
+
+    # Calculation metadata
+    base_score = models.FloatField(default=0)
+    normalized_score = models.FloatField(default=0)
+    multiplier_applied = models.FloatField(default=1.0)
+    multiplier_reason = models.TextField(blank=True)
+
+    # Raw data (JSON)
+    perplexity_data = models.JSONField(default=dict, blank=True)  # raw Perplexity responses
+    synthesis_data = models.JSONField(default=dict, blank=True)  # full DeepSeek output
+
+    # Narrative
+    narrative_summary = models.TextField(blank=True)
+    homeowner_guidance = models.JSONField(default=dict, blank=True)
+
+    # Metadata
+    data_confidence = models.CharField(max_length=10, choices=CONFIDENCE_CHOICES, default='MEDIUM')
+    sources_used = models.JSONField(default=list, blank=True)
+    data_gaps = models.JSONField(default=list, blank=True)
+
+    # Legacy fields (for backward compatibility)
     total_score = models.PositiveIntegerField(default=0)
     sentiment_score = models.PositiveIntegerField(default=50)
     ai_summary = models.TextField(blank=True)
@@ -126,4 +200,34 @@ class ContractorAudit(models.Model):
         ordering = ['-audit_date']
 
     def __str__(self):
-        return f"Audit: {self.contractor.business_name} - {self.audit_date.date()}"
+        return f"Audit: {self.contractor.business_name} - {self.risk_level} ({self.trust_score}) - {self.audit_date.date()}"
+
+
+class RedFlag(models.Model):
+    audit = models.ForeignKey(ContractorAudit, on_delete=models.CASCADE, related_name='red_flags')
+    severity = models.CharField(max_length=20, choices=SEVERITY_CHOICES, default='MODERATE')
+    category = models.CharField(max_length=50)
+    description = models.TextField()
+    evidence = models.TextField(blank=True)
+    source = models.TextField(blank=True)
+    source_url = models.URLField(blank=True)
+
+    class Meta:
+        ordering = ['severity', 'category']
+
+    def __str__(self):
+        return f"[{self.severity}] {self.category}: {self.description[:50]}"
+
+
+class AuditTimeline(models.Model):
+    audit = models.ForeignKey(ContractorAudit, on_delete=models.CASCADE, related_name='timeline_events')
+    date = models.CharField(max_length=50)  # Can be "2015", "2023-11", "Ongoing"
+    event = models.TextField()
+    significance = models.TextField(blank=True)
+    source = models.TextField(blank=True)
+
+    class Meta:
+        ordering = ['date']
+
+    def __str__(self):
+        return f"{self.date}: {self.event[:50]}"

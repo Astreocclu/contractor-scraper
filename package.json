@@ -1,0 +1,22 @@
+{
+  "name": "contractor-scraper-tools",
+  "version": "1.0.0",
+  "description": "Contractor data scraping and enrichment tools",
+  "main": "scrape_emails_deepseek.js",
+  "scripts": {
+    "scrape": "node scrape_emails_deepseek.js",
+    "scrape:limit": "node scrape_emails_deepseek.js --limit 10",
+    "scrape:dry": "node scrape_emails_deepseek.js --dry-run",
+    "scrape:sos": "node scrape_tx_sos.js",
+    "scrape:sos:limit": "node scrape_tx_sos.js --limit 10",
+    "scrape:sos:dry": "node scrape_tx_sos.js --dry-run",
+    "scrape:sos:test": "node scrape_tx_sos.js --name 'Orange Elephant Roofing' --dry-run --verbose",
+    "audit": "node forensic_audit_puppeteer.js",
+    "audit:dry": "node forensic_audit_puppeteer.js --dry-run",
+    "audit:test": "node forensic_audit_puppeteer.js --name 'Orange Elephant Roofing' --city 'Dallas' --state 'TX' --dry-run"
+  },
+  "dependencies": {
+    "sql.js": "^1.10.3",
+    "puppeteer": "^21.7.0"
+  }
+}

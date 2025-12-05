@@ -77,3 +77,10 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 20,
 }
+
+# API Keys (loaded from .env)
+DEEPSEEK_API_KEY = os.environ.get('DEEPSEEK_API_KEY')
+YELP_API_KEY = os.environ.get('YELP_API_KEY')
+SERPAPI_KEY = os.environ.get('SERPAPI_KEY')  # For future use
+GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')  # For Gemini (legacy)
+GOOGLE_PLACES_API_KEY = os.environ.get('GOOGLE_PLACES_API_KEY')
