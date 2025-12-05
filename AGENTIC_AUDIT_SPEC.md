@@ -161,6 +161,7 @@ Refactor existing scraping into modular service:
 // services/collection_service.js
 
 const puppeteer = require('puppeteer');
+const Database = require('better-sqlite3');
 const { searchTDLR } = require('../lib/tdlr_scraper');
 const { searchCourtRecords } = require('../lib/court_scraper');
 const { fetchAPISources } = require('../lib/api_sources');
@@ -274,19 +275,21 @@ class CollectionService {
   }
 
   /**
-   * Store raw data to DB
+   * Store raw data to DB (synchronous - better-sqlite3)
    */
-  async storeRawData(contractorId, source, data) {
+  storeRawData(contractorId, source, data) {
     const now = new Date().toISOString();
     const ttl = SOURCES[source]?.ttl || 86400;
     const expires = new Date(Date.now() + ttl * 1000).toISOString();
-    
-    this.db.run(`
-      INSERT OR REPLACE INTO contractor_raw_data 
-      (contractor_id, source_name, source_url, raw_text, structured_data, 
+
+    const stmt = this.db.prepare(`
+      INSERT OR REPLACE INTO contractor_raw_data
+      (contractor_id, source_name, source_url, raw_text, structured_data,
        fetch_status, fetched_at, expires_at)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-    `, [
+    `);
+
+    stmt.run(
       contractorId,
       source,
       data.url,
@@ -295,7 +298,7 @@ class CollectionService {
       data.status,
       now,
       expires
-    ]);
+    );
   }
 
   // ... buildUrls, fetchPage, etc. (extract from existing code)
@@ -562,27 +565,28 @@ class AuditAgent {
   }
 
   toolGetStoredData() {
-    const rows = this.db.exec(`
+    const stmt = this.db.prepare(`
       SELECT source_name, raw_text, structured_data, fetch_status
       FROM contractor_raw_data
       WHERE contractor_id = ?
       ORDER BY source_name
-    `, [this.contractorId]);
+    `);
+    const rows = stmt.all(this.contractorId);
 
-    if (!rows.length || !rows[0].values.length) {
+    if (!rows.length) {
       return { data: {}, message: 'No data collected yet' };
     }
 
     const data = {};
-    for (const row of rows[0].values) {
-      data[row[0]] = {
-        text: row[1]?.substring(0, 5000), // Truncate for context
-        structured: row[2] ? JSON.parse(row[2]) : null,
-        status: row[3]
+    for (const row of rows) {
+      data[row.source_name] = {
+        text: row.raw_text?.substring(0, 5000), // Truncate for context
+        structured: row.structured_data ? JSON.parse(row.structured_data) : null,
+        status: row.fetch_status
       };
     }
 
-    return { 
+    return {
       data,
       sources_collected: Object.keys(data).length,
       contractor: this.contractor
@@ -626,15 +630,17 @@ class AuditAgent {
 
   toolFinalizeScore(args) {
     const now = new Date().toISOString();
-    
-    // Save to audit_records
-    this.db.run(`
+
+    // Save to audit_records (synchronous - better-sqlite3)
+    const insertStmt = this.db.prepare(`
       INSERT INTO audit_records (
         contractor_id, trust_score, risk_level, recommendation,
         reasoning_trace, red_flags, positive_signals, gaps_identified,
         collection_rounds, total_cost, created_at, finalized_at
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    `, [
+    `);
+
+    insertStmt.run(
       this.contractorId,
       args.trust_score,
       args.risk_level,
@@ -647,14 +653,15 @@ class AuditAgent {
       this.totalCost,
       now,
       now
-    ]);
+    );
 
-    // Update contractor trust_score
-    this.db.run(`
-      UPDATE contractors_contractor 
+    // Update contractor trust_score (synchronous)
+    const updateStmt = this.db.prepare(`
+      UPDATE contractors_contractor
       SET trust_score = ?, last_audit_at = ?
       WHERE id = ?
-    `, [args.trust_score, now, this.contractorId]);
+    `);
+    updateStmt.run(args.trust_score, now, this.contractorId);
 
     return {
       finalized: true,
@@ -696,8 +703,7 @@ module.exports = { AuditAgent };
 ```javascript
 // services/orchestrator.js
 
-const initSqlJs = require('sql.js');
-const fs = require('fs');
+const Database = require('better-sqlite3');
 const path = require('path');
 const { CollectionService } = require('./collection_service');
 const { AuditAgent } = require('./audit_agent');
@@ -706,96 +712,95 @@ const DB_PATH = path.join(__dirname, '..', 'db.sqlite3');
 
 async function runForensicAudit(contractorInput) {
   console.log('\n🔍 AGENTIC FORENSIC AUDIT\n');
-  
-  // Open database
-  const SQL = await initSqlJs();
-  const dbBuffer = fs.readFileSync(DB_PATH);
-  const db = new SQL.Database(dbBuffer);
-  
+
+  // Open database (synchronous - better-sqlite3)
+  const db = new Database(DB_PATH);
+
   // Find contractor
   let contractor;
   if (contractorInput.id) {
-    const result = db.exec(`
+    const row = db.prepare(`
       SELECT id, business_name, city, state, website, zip_code
       FROM contractors_contractor WHERE id = ?
-    `, [contractorInput.id]);
-    
-    if (!result.length) throw new Error(`Contractor ID ${contractorInput.id} not found`);
-    const row = result[0].values[0];
+    `).get(contractorInput.id);
+
+    if (!row) throw new Error(`Contractor ID ${contractorInput.id} not found`);
     contractor = {
-      id: row[0], name: row[1], city: row[2], 
-      state: row[3], website: row[4], zip: row[5]
+      id: row.id,
+      name: row.business_name,
+      city: row.city,
+      state: row.state,
+      website: row.website,
+      zip: row.zip_code
     };
   } else {
-    contractor = { 
-      id: null, 
-      name: contractorInput.name, 
+    contractor = {
+      id: null,
+      name: contractorInput.name,
       city: contractorInput.city,
-      state: contractorInput.state 
+      state: contractorInput.state
     };
   }
-  
+
   console.log(`📋 Contractor: ${contractor.name}`);
   console.log(`📍 Location: ${contractor.city}, ${contractor.state}`);
-  
+
   // Initialize collection service
   const collectionService = new CollectionService(db);
   await collectionService.init();
-  
+
   try {
-    // Check for recent data
-    const recentData = db.exec(`
-      SELECT COUNT(*) FROM contractor_raw_data 
-      WHERE contractor_id = ? 
+    // Check for recent data (synchronous query)
+    const cacheCheck = db.prepare(`
+      SELECT COUNT(*) as count FROM contractor_raw_data
+      WHERE contractor_id = ?
         AND datetime(expires_at) > datetime('now')
-    `, [contractor.id]);
-    
-    const cachedSources = recentData[0]?.values[0][0] || 0;
-    
+    `).get(contractor.id);
+
+    const cachedSources = cacheCheck?.count || 0;
+
     if (cachedSources === 0) {
       console.log('\n📥 Running initial collection...');
       await collectionService.runInitialCollection(contractor.id, contractor);
     } else {
       console.log(`\n📦 Using ${cachedSources} cached sources`);
     }
-    
+
     // Run agentic audit
     console.log('\n🤖 Starting audit agent...');
     const agent = new AuditAgent(db, contractor.id, contractor);
     const result = await agent.run(collectionService);
-    
+
     // Output
     console.log('\n' + '═'.repeat(60));
     console.log(`  TRUST SCORE: ${result.trust_score}/100`);
     console.log(`  RISK LEVEL:  ${result.risk_level}`);
     console.log(`  RECOMMEND:   ${result.recommendation}`);
     console.log('═'.repeat(60));
-    
+
     console.log('\n📝 REASONING:');
     console.log(result.reasoning);
-    
+
     if (result.red_flags?.length) {
       console.log('\n🚩 RED FLAGS:');
-      result.red_flags.forEach(f => 
+      result.red_flags.forEach(f =>
         console.log(`  [${f.severity}] ${f.category}: ${f.description}`)
       );
     }
-    
+
     if (result.gaps_remaining?.length) {
       console.log('\n⚠️  GAPS (manual verification needed):');
       result.gaps_remaining.forEach(g => console.log(`  - ${g}`));
     }
-    
+
     console.log(`\n💰 Total cost: $${result.total_cost.toFixed(4)}`);
     console.log(`🔄 Collection rounds: ${result.collection_rounds}`);
-    
-    // Save DB
-    const data = db.export();
-    fs.writeFileSync(DB_PATH, Buffer.from(data));
+
+    // No manual save needed - better-sqlite3 writes automatically
     console.log('\n✅ Audit saved to database');
-    
+
     return result;
-    
+
   } finally {
     await collectionService.close();
     db.close();
@@ -845,6 +850,54 @@ async function main() {
 }
 
 main();
+```
+
+---
+
+## Setup: Migrate to better-sqlite3
+
+### Update package.json
+
+```bash
+# Remove sql.js, add better-sqlite3
+npm uninstall sql.js
+npm install better-sqlite3
+```
+
+Updated dependencies:
+```json
+{
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "puppeteer": "^21.7.0"
+  }
+}
+```
+
+### Key API Differences
+
+| sql.js (async) | better-sqlite3 (sync) |
+|----------------|----------------------|
+| `const SQL = await initSqlJs()` | `const Database = require('better-sqlite3')` |
+| `const db = new SQL.Database(buffer)` | `const db = new Database('./db.sqlite3')` |
+| `db.exec('SELECT...', [params])` | `db.prepare('SELECT...').all(params)` |
+| `db.run('INSERT...', [params])` | `db.prepare('INSERT...').run(params)` |
+| `db.exec('SELECT...')[0].values[0]` | `db.prepare('SELECT...').get(params)` |
+| `fs.writeFileSync(path, db.export())` | *(automatic, no save needed)* |
+
+### Apply Schema
+
+```bash
+# Test schema creation
+node -e "
+const Database = require('better-sqlite3');
+const fs = require('fs');
+const db = new Database('./db.sqlite3');
+const schema = fs.readFileSync('./db/schema.sql', 'utf8');
+db.exec(schema);
+console.log('Schema applied successfully');
+db.close();
+"
 ```
 
 ---

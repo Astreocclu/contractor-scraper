@@ -16,7 +16,8 @@
     "audit:test": "node forensic_audit_puppeteer.js --name 'Orange Elephant Roofing' --city 'Dallas' --state 'TX' --dry-run"
   },
   "dependencies": {
-    "sql.js": "^1.10.3",
-    "puppeteer": "^21.7.0"
+    "better-sqlite3": "^12.5.0",
+    "puppeteer": "^21.7.0",
+    "sql.js": "^1.10.3"
   }
 }
