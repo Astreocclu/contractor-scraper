@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
- * Texas Secretary of State / Comptroller Entity Scraper
+ * Texas Secretary of State Entity Scraper
  *
- * Uses Puppeteer to search the TX Comptroller's entity database
- * and extracts: legal name, formation date, status, registered agent, officers.
+ * Uses the TX Comptroller API to search for business entities
+ * and extract: legal name, formation date, status, registered agent, officers.
  *
- * Target: https://mycpa.cpa.state.tx.us/coa/
+ * API: https://comptroller.texas.gov/data-search/franchise-tax
  *
  * Usage:
  *   node scrape_tx_sos.js [options]
@@ -15,18 +15,17 @@
  *   --dry-run         Don't save to database
  *   --name "Name"     Test single contractor by name
  *   --id N            Process single contractor by database ID
- *   --delay N         Seconds between requests (default: 2)
+ *   --delay N         Seconds between requests (default: 1.5)
  *   --verbose         Show debug output
  */
 
 const initSqlJs = require('sql.js');
 const fs = require('fs');
 const path = require('path');
-const puppeteer = require('puppeteer');
 
 // Config
 const DB_PATH = path.join(__dirname, 'db.sqlite3');
-const SEARCH_URL = 'https://mycpa.cpa.state.tx.us/coa/';
+const SEARCH_API = 'https://comptroller.texas.gov/data-search/franchise-tax';
 
 // Parse CLI args
 const args = process.argv.slice(2);
@@ -42,7 +41,7 @@ const DRY_RUN = getArg('dry-run') || false;
 const SINGLE_NAME = getArg('name');
 const SINGLE_ID = getArg('id') ? parseInt(getArg('id')) : null;
 const VERBOSE = getArg('verbose') || false;
-const DELAY = getArg('delay') ? parseFloat(getArg('delay')) : 2;
+const DELAY = getArg('delay') ? parseFloat(getArg('delay')) : 1.5;
 
 // Logging helpers
 const log = (msg) => console.log(msg);
@@ -56,308 +55,147 @@ function sleep(ms) {
 }
 
 /**
- * Search for entity using Puppeteer
- * @param {Object} browser - Puppeteer browser instance
- * @param {string} name - Business name to search
- * @returns {Object|null} - Entity data or null if not found
+ * Search for entity by name using the Comptroller API
  */
-async function searchEntity(browser, name) {
-  const page = await browser.newPage();
+async function searchEntity(name) {
+  const url = `${SEARCH_API}?name=${encodeURIComponent(name)}`;
+  debug(`  Search: ${url}`);
 
-  try {
-    // Set viewport and user agent
-    await page.setViewport({ width: 1280, height: 900 });
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
-
-    debug(`  Navigating to ${SEARCH_URL}`);
-    await page.goto(SEARCH_URL, { waitUntil: 'networkidle2', timeout: 30000 });
-
-    // Wait for the search form to load
-    await page.waitForSelector('input[name="taxpayerName"], input[name="taxPayerName"], input#taxpayerName, form input[type="text"]', { timeout: 10000 });
-
-    // Find and fill the search input (try multiple possible selectors)
-    const searchSelectors = [
-      'input[name="taxpayerName"]',
-      'input[name="taxPayerName"]',
-      'input#taxpayerName',
-      'input#taxPayerName',
-      'input[name="searchName"]',
-      'form input[type="text"]:first-of-type'
-    ];
-
-    let inputFound = false;
-    for (const selector of searchSelectors) {
-      try {
-        const input = await page.$(selector);
-        if (input) {
-          await input.click({ clickCount: 3 }); // Select all existing text
-          await input.type(name, { delay: 50 });
-          debug(`  Filled search input using selector: ${selector}`);
-          inputFound = true;
-          break;
-        }
-      } catch (e) {
-        continue;
-      }
-    }
-
-    if (!inputFound) {
-      throw new Error('Could not find search input field');
-    }
-
-    // Find and click the search button
-    const buttonSelectors = [
-      'input[type="submit"]',
-      'button[type="submit"]',
-      'input[value="Search"]',
-      'input[value="Submit"]',
-      'button:contains("Search")',
-      'form button'
-    ];
-
-    let buttonClicked = false;
-    for (const selector of buttonSelectors) {
-      try {
-        const button = await page.$(selector);
-        if (button) {
-          await Promise.all([
-            page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 30000 }),
-            button.click()
-          ]);
-          debug(`  Clicked submit using selector: ${selector}`);
-          buttonClicked = true;
-          break;
-        }
-      } catch (e) {
-        continue;
-      }
-    }
-
-    if (!buttonClicked) {
-      // Try pressing Enter as fallback
-      await page.keyboard.press('Enter');
-      await page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 30000 }).catch(() => {});
-      debug('  Submitted form via Enter key');
-    }
-
-    // Wait a moment for results to render
-    await sleep(1000);
-
-    // Check for "no results" message
-    const pageContent = await page.content();
-    const noResultsPatterns = [
-      /no\s*(records?|results?|matches?)\s*(found|returned)/i,
-      /0\s*results?/i,
-      /did not find any/i,
-      /no\s*taxpayer/i
-    ];
-
-    for (const pattern of noResultsPatterns) {
-      if (pattern.test(pageContent)) {
-        debug('  No results found (matched no-results pattern)');
-        return null;
-      }
-    }
-
-    // Try to extract entity data from results
-    const entityData = await extractEntityData(page, name);
-    return entityData;
-
-  } catch (err) {
-    debug(`  Search error: ${err.message}`);
-    throw err;
-  } finally {
-    await page.close();
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Search API error: ${response.status}`);
   }
+
+  const data = await response.json();
+  if (!data.success) {
+    throw new Error('Search API returned success: false');
+  }
+
+  return data.data || [];
 }
 
 /**
- * Extract entity data from results page
- * @param {Object} page - Puppeteer page
- * @param {string} searchName - Original search name for matching
- * @returns {Object|null} - Extracted entity data
+ * Get detailed entity info by taxpayer ID
  */
-async function extractEntityData(page, searchName) {
-  // Try to find result rows or detail sections
-  const data = await page.evaluate((searchName) => {
-    const result = {
-      legal_name: null,
-      formation_date: null,
-      entity_status: null,
-      sos_status: null,
-      registered_agent: null,
-      registered_office: null,
-      officers: [],
-      taxpayer_number: null,
-      sos_file_number: null,
-      state_of_formation: null
-    };
+async function getEntityDetails(taxpayerId) {
+  const url = `${SEARCH_API}/${encodeURIComponent(taxpayerId)}`;
+  debug(`  Details: ${url}`);
 
-    // Helper to get text content by label
-    const getValueByLabel = (labelText) => {
-      const labels = Array.from(document.querySelectorAll('td, th, dt, label, span, div'));
-      for (const el of labels) {
-        if (el.textContent.toLowerCase().includes(labelText.toLowerCase())) {
-          // Check next sibling or adjacent cell
-          const next = el.nextElementSibling;
-          if (next) return next.textContent.trim();
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Detail API error: ${response.status}`);
+  }
 
-          // Check parent's next sibling
-          const parentNext = el.parentElement?.nextElementSibling;
-          if (parentNext) return parentNext.textContent.trim();
-        }
-      }
-      return null;
-    };
+  const result = await response.json();
+  if (!result.success || !result.data) {
+    throw new Error('Detail API returned no data');
+  }
 
-    // Try to find data from table or detail view
-    const tables = document.querySelectorAll('table');
-
-    // Look for specific fields by common labels
-    result.legal_name = getValueByLabel('Taxpayer Name') ||
-                        getValueByLabel('Business Name') ||
-                        getValueByLabel('Entity Name') ||
-                        getValueByLabel('Legal Name');
-
-    result.formation_date = getValueByLabel('SOS Registration Date') ||
-                            getValueByLabel('Formation Date') ||
-                            getValueByLabel('Date Formed') ||
-                            getValueByLabel('Effective Date');
-
-    result.entity_status = getValueByLabel('Right to Transact') ||
-                           getValueByLabel('Status') ||
-                           getValueByLabel('Entity Status');
-
-    result.sos_status = getValueByLabel('SOS Status') ||
-                        getValueByLabel('SOS Registration Status');
-
-    result.registered_agent = getValueByLabel('Registered Agent') ||
-                              getValueByLabel('Agent Name');
-
-    result.registered_office = getValueByLabel('Registered Office') ||
-                               getValueByLabel('Office Address');
-
-    result.taxpayer_number = getValueByLabel('Taxpayer Number') ||
-                             getValueByLabel('Taxpayer ID') ||
-                             getValueByLabel('TX Taxpayer');
-
-    result.sos_file_number = getValueByLabel('SOS File Number') ||
-                             getValueByLabel('File Number');
-
-    result.state_of_formation = getValueByLabel('State of Formation') ||
-                                getValueByLabel('State Formed');
-
-    // Try to extract officers from tables
-    for (const table of tables) {
-      const headers = Array.from(table.querySelectorAll('th')).map(th => th.textContent.toLowerCase());
-      const hasOfficerInfo = headers.some(h =>
-        h.includes('officer') || h.includes('director') || h.includes('title')
-      );
-
-      if (hasOfficerInfo) {
-        const rows = table.querySelectorAll('tbody tr, tr:not(:first-child)');
-        for (const row of rows) {
-          const cells = Array.from(row.querySelectorAll('td'));
-          if (cells.length >= 2) {
-            const officer = {
-              name: cells[0]?.textContent.trim() || null,
-              title: cells[1]?.textContent.trim() || null
-            };
-            if (officer.name && officer.name !== '') {
-              result.officers.push(officer);
-            }
-          }
-        }
-      }
-    }
-
-    // If we found a legal name, consider it a match
-    if (result.legal_name) {
-      return result;
-    }
-
-    // Try to find first result in a list and extract basic info
-    const resultLinks = document.querySelectorAll('a[href*="taxpayer"], a[href*="detail"], table a');
-    if (resultLinks.length > 0) {
-      // Get the first result's text as legal name
-      result.legal_name = resultLinks[0].textContent.trim();
-      return result;
-    }
-
-    // Last resort: look for any prominent text that might be the business name
-    const heading = document.querySelector('h1, h2, h3, .result-name, .business-name');
-    if (heading) {
-      result.legal_name = heading.textContent.trim();
-      return result;
-    }
-
-    return null;
-  }, searchName);
-
-  return data;
+  return result.data;
 }
 
 /**
- * Fuzzy match names for verification
- * @param {string} searchName - Name we searched for
- * @param {string} foundName - Name we found
- * @returns {boolean} - Whether names are a reasonable match
+ * Fuzzy match contractor name against search results
  */
-function namesMatch(searchName, foundName) {
-  if (!searchName || !foundName) return false;
+function findBestMatch(searchName, results) {
+  if (!results || results.length === 0) return null;
 
   const normalize = (s) => s.toLowerCase()
     .replace(/[^a-z0-9\s]/g, '')
     .replace(/\s+/g, ' ')
     .trim();
 
-  const a = normalize(searchName);
-  const b = normalize(foundName);
+  const searchNorm = normalize(searchName);
+  const searchWords = searchNorm.split(' ').filter(w => w.length > 2);
 
-  // Exact match
-  if (a === b) return true;
+  let bestMatch = null;
+  let bestScore = 0;
 
-  // Contains match
-  if (a.includes(b) || b.includes(a)) return true;
+  for (const result of results) {
+    const resultNorm = normalize(result.name);
 
-  // Word overlap
-  const aWords = a.split(' ').filter(w => w.length > 2);
-  const bWords = b.split(' ').filter(w => w.length > 2);
-  const matched = aWords.filter(w => bWords.some(bw => bw.includes(w) || w.includes(bw)));
+    // Exact match
+    if (resultNorm === searchNorm) {
+      return result;
+    }
 
-  return matched.length >= Math.min(aWords.length, bWords.length) * 0.5;
+    // Contains match
+    if (resultNorm.includes(searchNorm) || searchNorm.includes(resultNorm)) {
+      const score = 0.9;
+      if (score > bestScore) {
+        bestScore = score;
+        bestMatch = result;
+      }
+      continue;
+    }
+
+    // Word overlap score
+    const resultWords = resultNorm.split(' ').filter(w => w.length > 2);
+    const matchedWords = searchWords.filter(w => resultWords.some(rw => rw.includes(w) || w.includes(rw)));
+    const score = matchedWords.length / Math.max(searchWords.length, 1);
+
+    if (score > bestScore && score >= 0.5) {
+      bestScore = score;
+      bestMatch = result;
+    }
+  }
+
+  return bestMatch;
+}
+
+/**
+ * Transform API response to standard format
+ */
+function transformEntityData(apiData) {
+  const officers = (apiData.officerInfo || []).map(o => ({
+    name: o.AGNT_NM || null,
+    title: o.AGNT_TITL_TX || null,
+    year: o.AGNT_ACTV_YR || null,
+    address: [o.AD_STR_POB_TX, o.CITY_NM, o.ST_CD, o.AD_ZP].filter(Boolean).join(', ') || null,
+    source: o.SOURCE || null
+  }));
+
+  return {
+    legal_name: apiData.name || null,
+    dba_name: apiData.dbaName || null,
+    taxpayer_number: apiData.taxpayerId || null,
+    fei_number: apiData.feiNumber || null,
+    sos_file_number: apiData.sosFileNumber || null,
+    formation_date: apiData.effectiveSosRegistrationDate || null,
+    state_of_formation: (apiData.stateOfFormation || '').trim() || null,
+    entity_status: apiData.rightToTransactTX || null,
+    sos_status: apiData.sosRegistrationStatus || null,
+    registered_agent: apiData.registeredAgentName || null,
+    registered_office: [
+      apiData.registeredOfficeAddressStreet,
+      apiData.registeredOfficeAddressCity,
+      apiData.registeredOfficeAddressState,
+      apiData.registeredOfficeAddressZip
+    ].filter(Boolean).join(', ') || null,
+    mailing_address: [
+      apiData.mailingAddressStreet,
+      apiData.mailingAddressCity,
+      apiData.mailingAddressState,
+      apiData.mailingAddressZip
+    ].filter(Boolean).join(', ') || null,
+    officers: officers,
+    report_year: apiData.reportYear || null,
+    last_updated: apiData.lastUpdated || null
+  };
 }
 
 /**
  * Calculate years since formation
- * @param {string} formationDate - Date string (various formats)
- * @returns {number|null} - Years since formation or null
  */
 function calculateYearsInBusiness(formationDate) {
   if (!formationDate) return null;
 
-  // Try MM/DD/YYYY format
-  let match = formationDate.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-  if (match) {
-    const year = parseInt(match[3]);
-    if (year > 1900 && year <= new Date().getFullYear()) {
-      return new Date().getFullYear() - year;
-    }
-  }
+  // Parse MM/DD/YYYY format
+  const match = formationDate.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+  if (!match) return null;
 
-  // Try YYYY-MM-DD format
-  match = formationDate.match(/(\d{4})-(\d{2})-(\d{2})/);
-  if (match) {
-    const year = parseInt(match[1]);
-    if (year > 1900 && year <= new Date().getFullYear()) {
-      return new Date().getFullYear() - year;
-    }
-  }
-
-  // Try to extract just the year
-  match = formationDate.match(/\b(19|20)\d{2}\b/);
-  if (match) {
-    const year = parseInt(match[0]);
+  const year = parseInt(match[3]);
+  if (year && year > 1900 && year <= new Date().getFullYear()) {
     return new Date().getFullYear() - year;
   }
 
@@ -366,15 +204,11 @@ function calculateYearsInBusiness(formationDate) {
 
 /**
  * Check for years in business mismatch
- * @param {Object} contractor - Contractor record from DB
- * @param {Object} sosData - Scraped SOS data
- * @returns {Object|null} - Mismatch flag or null
  */
 function checkYearsMismatch(contractor, sosData) {
   const sosYears = calculateYearsInBusiness(sosData.formation_date);
   if (!sosYears) return null;
 
-  // Check against BBB years in business if available
   const claimedYears = contractor.bbb_years_in_business;
   if (!claimedYears) return null;
 
@@ -395,14 +229,12 @@ function checkYearsMismatch(contractor, sosData) {
 
 /**
  * Check entity status for red flags
- * @param {Object} sosData - SOS data
- * @returns {Object|null} - Status flag or null
  */
 function checkEntityStatus(sosData) {
   const status = (sosData.entity_status || '').toUpperCase();
   const sosStatus = (sosData.sos_status || '').toUpperCase();
 
-  if (status.includes('FORFEITED') || status.includes('INVOLUNTARILY') || status.includes('TERMINATED')) {
+  if (status.includes('FORFEITED') || status.includes('INVOLUNTARILY ENDED')) {
     return {
       severity: 'high',
       category: 'entity_status',
@@ -412,11 +244,11 @@ function checkEntityStatus(sosData) {
     };
   }
 
-  if (sosStatus === 'INACTIVE' || status.includes('INACTIVE')) {
+  if (sosStatus === 'INACTIVE') {
     return {
       severity: 'medium',
       category: 'entity_status',
-      description: `Entity status: INACTIVE`,
+      description: `SOS registration status: INACTIVE`,
       entity_status: sosData.entity_status,
       sos_status: sosData.sos_status
     };
@@ -427,11 +259,8 @@ function checkEntityStatus(sosData) {
 
 /**
  * Process a single contractor
- * @param {Object} browser - Puppeteer browser
- * @param {Object} contractor - Contractor record
- * @returns {Object} - Result with SOS data and any flags
  */
-async function processContractor(browser, contractor) {
+async function processContractor(contractor) {
   const result = {
     contractor_id: contractor.id,
     business_name: contractor.business_name,
@@ -443,24 +272,33 @@ async function processContractor(browser, contractor) {
   };
 
   try {
-    log(`  Searching TX SOS...`);
-    const sosData = await searchEntity(browser, contractor.business_name);
+    log(`  Searching TX Comptroller API...`);
+    const searchResults = await searchEntity(contractor.business_name);
+    debug(`  Found ${searchResults.length} results`);
 
-    if (!sosData) {
+    if (searchResults.length === 0) {
       result.error = 'no_results';
       return result;
     }
 
     result.search_success = true;
 
-    // Verify the match
-    if (!sosData.legal_name || !namesMatch(contractor.business_name, sosData.legal_name)) {
+    // Find best match
+    const match = findBestMatch(contractor.business_name, searchResults);
+    if (!match) {
       result.error = 'no_match';
-      debug(`  Name mismatch: searched "${contractor.business_name}", found "${sosData.legal_name}"`);
+      debug(`  No good match found in: ${searchResults.map(r => r.name).join(', ')}`);
       return result;
     }
 
     result.match_found = true;
+    log(`  Matched: ${match.name}`);
+    debug(`  Taxpayer ID: ${match.taxpayerId}`);
+
+    // Get detailed info
+    log(`  Fetching entity details...`);
+    const apiData = await getEntityDetails(match.taxpayerId);
+    const sosData = transformEntityData(apiData);
     result.data = sosData;
 
     // Check for red flags
@@ -486,15 +324,9 @@ async function processContractor(browser, contractor) {
 
 /**
  * Save results to database
- * @param {Object} db - sql.js database
- * @param {number} contractorId - Contractor ID
- * @param {Object} sosData - SOS data to save
- * @param {Array} flags - Any flags detected
  */
 function saveToDatabase(db, contractorId, sosData, flags) {
-  const now = new Date().toISOString();
-
-  // Use existing license_* fields to store SOS data
+  // Update contractor with SOS data
   db.run(`
     UPDATE contractors_contractor SET
       license_number = ?,
@@ -520,22 +352,21 @@ function saveToDatabase(db, contractorId, sosData, flags) {
       }
     }
 
-    // Add new flags with source tag
     const taggedFlags = flags.map(f => ({ ...f, source: 'tx_sos_scraper' }));
     allFlags.push(...taggedFlags);
 
     db.run(`UPDATE contractors_contractor SET ai_red_flags = ? WHERE id = ?`, [JSON.stringify(allFlags), contractorId]);
   }
 
-  debug(`  Saved: license_number=${sosData.sos_file_number || sosData.taxpayer_number}, status=${sosData.entity_status}`);
+  debug(`  Saved: license_number=${sosData.sos_file_number}, status=${sosData.entity_status}`);
 }
 
 /**
  * Main function
  */
 async function main() {
-  log('=== TEXAS SOS ENTITY SCRAPER (Puppeteer) ===\n');
-  log(`Target: ${SEARCH_URL}\n`);
+  log('=== TEXAS SOS ENTITY SCRAPER ===\n');
+  log(`API: ${SEARCH_API}\n`);
 
   if (DRY_RUN) {
     warn('DRY RUN MODE - not saving to database\n');
@@ -562,7 +393,6 @@ async function main() {
     }];
     log(`Testing single contractor: ${SINGLE_NAME}\n`);
   } else if (SINGLE_ID) {
-    // Single contractor by ID
     const result = db.exec(`
       SELECT id, business_name, city, bbb_years_in_business
       FROM contractors_contractor
@@ -584,7 +414,6 @@ async function main() {
     }];
     log(`Processing contractor ID ${SINGLE_ID}: ${contractors[0].business_name}\n`);
   } else {
-    // Batch mode - get contractors needing SOS lookup
     let query = `
       SELECT id, business_name, city, bbb_years_in_business
       FROM contractors_contractor
@@ -617,93 +446,82 @@ async function main() {
     return;
   }
 
-  // Launch browser
-  log('Launching browser...\n');
-  const browser = await puppeteer.launch({
-    headless: 'new',
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
-  });
-
   let processed = 0;
   let found = 0;
   let notFound = 0;
   let errors = 0;
   let flagged = 0;
 
-  try {
-    for (let i = 0; i < contractors.length; i++) {
-      const c = contractors[i];
-      const num = i + 1;
+  for (let i = 0; i < contractors.length; i++) {
+    const c = contractors[i];
+    const num = i + 1;
 
-      log(`[${num}/${contractors.length}] ${c.business_name}`);
+    log(`[${num}/${contractors.length}] ${c.business_name}`);
 
-      const result = await processContractor(browser, c);
-      processed++;
+    const result = await processContractor(c);
+    processed++;
 
-      if (result.error) {
-        if (result.error === 'no_results' || result.error === 'no_match') {
-          warn(`  No entity found`);
-          notFound++;
-        } else {
-          error(`  Error: ${result.error}`);
-          errors++;
-        }
-      } else if (result.data) {
-        success(`  Found: ${result.data.legal_name}`);
+    if (result.error) {
+      if (result.error === 'no_results' || result.error === 'no_match') {
+        warn(`  No entity found`);
+        notFound++;
+      } else {
+        error(`  Error: ${result.error}`);
+        errors++;
+      }
+    } else if (result.data) {
+      success(`  Found: ${result.data.legal_name}`);
 
-        if (result.data.formation_date) {
-          const years = calculateYearsInBusiness(result.data.formation_date);
-          log(`    Formation: ${result.data.formation_date}${years ? ` (${years} years ago)` : ''}`);
-        }
-        if (result.data.entity_status) {
-          const statusColor = (result.data.entity_status || '').toUpperCase().includes('ACTIVE') ? log : warn;
-          statusColor(`    Status: ${result.data.entity_status}`);
-        }
-        if (result.data.sos_status) {
-          log(`    SOS Status: ${result.data.sos_status}`);
-        }
-        if (result.data.registered_agent) {
-          log(`    Agent: ${result.data.registered_agent}`);
-        }
-        if (result.data.officers && result.data.officers.length > 0) {
-          log(`    Officers: ${result.data.officers.map(o => `${o.title || 'Officer'}: ${o.name}`).join(', ')}`);
-        }
-
-        found++;
-
-        if (result.flags.length > 0) {
-          flagged++;
-        }
-
-        // Save to database
-        if (!DRY_RUN && c.id && db) {
-          try {
-            saveToDatabase(db, c.id, result.data, result.flags);
-          } catch (saveErr) {
-            error(`  Save error: ${saveErr.message}`);
-          }
-        }
+      if (result.data.formation_date) {
+        const years = calculateYearsInBusiness(result.data.formation_date);
+        log(`    Formation: ${result.data.formation_date}${years ? ` (${years} years ago)` : ''}`);
+      }
+      if (result.data.entity_status) {
+        const statusColor = result.data.entity_status.toUpperCase().includes('ACTIVE') ? log : warn;
+        statusColor(`    Status: ${result.data.entity_status}`);
+      }
+      if (result.data.sos_status) {
+        log(`    SOS Status: ${result.data.sos_status}`);
+      }
+      if (result.data.registered_agent) {
+        log(`    Agent: ${result.data.registered_agent}`);
+      }
+      if (result.data.officers.length > 0) {
+        log(`    Officers: ${result.data.officers.map(o => `${o.title}: ${o.name}`).join(', ')}`);
       }
 
-      // Delay between contractors
-      if (i < contractors.length - 1) {
-        await sleep(DELAY * 1000);
+      found++;
+
+      if (result.flags.length > 0) {
+        flagged++;
+      }
+
+      // Save to database
+      if (!DRY_RUN && c.id && db) {
+        try {
+          saveToDatabase(db, c.id, result.data, result.flags);
+        } catch (saveErr) {
+          error(`  Save error: ${saveErr.message}`);
+        }
       }
     }
-  } finally {
-    await browser.close();
 
-    // Save database
-    if (!DRY_RUN && found > 0 && db) {
-      log('\nSaving database...');
-      const data = db.export();
-      const buffer = Buffer.from(data);
-      fs.writeFileSync(DB_PATH, buffer);
-      success('Database saved.');
+    // Delay between contractors
+    if (i < contractors.length - 1) {
+      await sleep(DELAY * 1000);
     }
-
-    if (db) db.close();
   }
+
+  // Save database
+  if (!DRY_RUN && found > 0 && db) {
+    log('\nSaving database...');
+    const data = db.export();
+    const buffer = Buffer.from(data);
+    fs.writeFileSync(DB_PATH, buffer);
+    success('Database saved.');
+  }
+
+  if (db) db.close();
 
   // Summary
   log('\n' + '='.repeat(50));
