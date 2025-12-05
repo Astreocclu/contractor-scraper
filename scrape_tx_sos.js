@@ -32,7 +32,7 @@ const args = process.argv.slice(2);
 const getArg = (name) => {
   const idx = args.indexOf(`--${name}`);
   if (idx === -1) return null;
-  if (['dry-run', 'verbose'].includes(name)) return true;
+  if (['dry-run', 'verbose', 'with-email'].includes(name)) return true;
   return args[idx + 1];
 };
 
@@ -42,6 +42,7 @@ const SINGLE_NAME = getArg('name');
 const SINGLE_ID = getArg('id') ? parseInt(getArg('id')) : null;
 const VERBOSE = getArg('verbose') || false;
 const DELAY = getArg('delay') ? parseFloat(getArg('delay')) : 1.5;
+const WITH_EMAIL = getArg('with-email') || false;
 
 // Logging helpers
 const log = (msg) => console.log(msg);
@@ -420,8 +421,13 @@ async function main() {
       WHERE is_active = 1
         AND state = 'TX'
         AND (license_type IS NULL OR license_type != 'TX_SOS')
-      ORDER BY trust_score DESC
     `;
+
+    if (WITH_EMAIL) {
+      query += ` AND email IS NOT NULL AND email != ''`;
+    }
+
+    query += ` ORDER BY trust_score DESC`;
 
     if (LIMIT) {
       query += ` LIMIT ${LIMIT}`;

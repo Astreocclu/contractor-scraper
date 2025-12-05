@@ -1,0 +1,1248 @@
+================================================================================
+                    CONTRACTOR SCRAPER - COMPLETE SYSTEM BREAKDOWN
+================================================================================
+
+Project: DFW Contractor Discovery & Trust Scoring System
+Location: /home/reid/testhome/contractors
+Port: 8002
+Tech Stack: Django REST Framework + PostgreSQL/SQLite + DeepSeek AI
+Current Records: 1,523 contractors across 3 business verticals
+
+================================================================================
+                              TABLE OF CONTENTS
+================================================================================
+
+1. EXECUTIVE SUMMARY
+2. SCRAPERS (Python)
+   2.1 Google Places Scraper
+   2.2 Email Scraper (Python)
+3. DATA SOURCES
+   3.1 Google Places API
+   3.2 Yelp Fusion API
+   3.3 BBB Web Scraping
+   3.4 DeepSeek AI API
+4. ALGORITHMS
+   4.1 Trust Score Calculation (52-Point System)
+   4.2 AI Review Analysis
+   4.3 Duplicate Detection & Merging
+   4.4 Name Matching & Similarity
+5. DATA MODELS
+6. API ENDPOINTS
+7. MANAGEMENT COMMANDS
+8. CONFIGURATION
+9. CURRENT STATUS & KNOWN ISSUES
+10. PUPPETEER + DEEPSEEK TOOLS (Node.js)
+    10.1 Forensic Audit Puppeteer (11-source scraper)
+    10.2 BBB Test Scraper
+    10.3 DeepSeek Email Scraper
+    10.4 DeepSeek Auditor Test Log
+11. NODE.JS DEPENDENCIES
+
+================================================================================
+                           1. EXECUTIVE SUMMARY
+================================================================================
+
+The Contractor Scraper is an autonomous contractor discovery, validation, and
+trust scoring system for the Dallas-Fort Worth (DFW) metroplex. It:
+
+  - Scrapes contractor data from Google Places (40+ cities)
+  - Enriches records with Yelp and BBB information
+  - Analyzes reviews using AI (DeepSeek LLM)
+  - Calculates normalized trust scores (0-100) using a 52-point weighted system
+  - Serves data via REST API for frontend consumption
+
+DATA FLOW PIPELINE:
+-------------------
+Phase 1: SCRAPING (Google Places)
+   google_scraper.py -> 40+ DFW cities -> 1,523 Contractor records
+
+Phase 2: ENRICHMENT (BBB + Yelp)
+   enrichment.py + yelp_service.py -> BBB/Yelp data fields
+
+Phase 3: AI AUDIT & SCORING
+   ai_auditor.py + scoring.py -> Trust scores + sentiment analysis
+
+Phase 4: API SERVING
+   views.py (Django REST Framework) -> JSON endpoints
+
+================================================================================
+                               2. SCRAPERS
+================================================================================
+
+--------------------------------------------------------------------------------
+2.1 GOOGLE PLACES SCRAPER
+--------------------------------------------------------------------------------
+
+FILE: /contractors/services/google_scraper.py
+
+PURPOSE: Primary data source for contractor discovery
+
+COVERAGE: 40+ DFW cities searched against 3 business verticals
+
+TARGET CITIES (40):
+  Core: Fort Worth, Dallas, Arlington, Irving, Grand Prairie
+  North: Plano, Frisco, McKinney, Allen, Richardson, Garland, Mesquite,
+         Rowlett, Rockwall, Wylie, Murphy, Sachse, Lucas, Prosper, Celina
+  Northwest: Denton, Lewisville, Flower Mound, Carrollton, The Colony,
+             Little Elm, Corinth, Highland Village, Coppell, Addison
+  West/SW: Southlake, Colleyville, Keller, Grapevine, North Richland Hills,
+           Hurst, Euless, Bedford, Haltom City, Watauga, Saginaw, Lake Worth,
+           White Settlement, Benbrook, Crowley
+  South: Mansfield, Burleson, Cleburne, Midlothian, Waxahachie, Cedar Hill,
+         DeSoto, Duncanville, Lancaster, Red Oak
+
+KEY CLASSES:
+
+  ScrapedContractor (dataclass)
+  --------------------------------
+  Fields:
+    - business_name: str
+    - address: str
+    - city: str
+    - state: str
+    - zip_code: str
+    - phone: str
+    - website: str
+    - google_place_id: str
+    - google_rating: float
+    - google_review_count: int
+
+  GoogleScraper (main class)
+  --------------------------------
+  Constructor requires: GOOGLE_PLACES_API_KEY or SERPAPI_KEY
+  Rate limiting: 2.0 sec between searches, 0.3 sec between detail calls
+  Max retries: 3 with exponential backoff (2x multiplier)
+
+KEY METHODS:
+
+  Method              | Purpose                    | Rate Limit
+  --------------------|----------------------------|------------
+  search()            | Unified search dispatcher  | 2.0 sec
+  _google_search()    | Google Places text search  | N/A
+  _get_details()      | Fetch phone/website        | 0.3 sec
+  _serpapi_search()   | SerpAPI fallback           | N/A
+  fetch_reviews()     | Get up to 50 reviews       | Fallback
+  scrape_all()        | Batch scrape all cities    | Delay param
+
+API ENDPOINTS USED:
+  - Google Places Text Search: maps.googleapis.com/maps/api/place/textsearch/json
+  - Google Places Details: maps.googleapis.com/maps/api/place/details/json
+  - SerpAPI Google Maps: serpapi.com/search?engine=google_maps
+  - SerpAPI Reviews: serpapi.com/search?engine=google_maps_reviews
+
+ERROR HANDLING:
+  - Catches OVER_QUERY_LIMIT and retries with exponential backoff
+  - Logs rate limit warnings
+  - Timeout handling (30 sec per request)
+  - Generic exception catch-and-log
+
+--------------------------------------------------------------------------------
+2.2 EMAIL SCRAPER
+--------------------------------------------------------------------------------
+
+FILE: /contractors/management/commands/scrape_emails.py
+
+PURPOSE: Extract contact emails from contractor websites
+
+METHOD: HTTP fetching + BeautifulSoup HTML parsing + Regex extraction
+
+ALGORITHM:
+  1. Fetch homepage HTML
+  2. Extract emails using two methods:
+     a) Parse mailto: links (highest accuracy)
+     b) Regex search on visible text
+  3. Filter/validate emails:
+     - Exclude generic addresses (example@example.com, etc)
+     - Exclude known non-business domains (sentry.io, wixpress.com)
+     - Ignore too-long emails (>60 chars)
+     - Reject emails with too many dots (>4)
+     - Reject emails with numeric sequences in domain
+     - Skip emails with suspicious substrings
+  4. Rank emails (prefer info@, contact@, then shortest)
+  5. Optional deep mode: Also scrape /contact, /about pages
+
+CONFIGURATION:
+  - User-Agent spoofing: Chromium on Windows 10
+  - Request timeout: 10 seconds per URL
+  - Contact pages checked: contact, contact-us, about, about-us
+  - Delay between requests: 1.5 seconds (default)
+
+VALIDATION RULES (is_valid_email()):
+  1. Must contain @
+  2. Not in IGNORED_EMAILS set (33 entries)
+  3. Domain not in IGNORED_DOMAINS set (8 entries)
+  4. Length <= 60 characters
+  5. Max 4 dots
+  6. No 3+ digit sequences in domain
+  7. Must not start with %
+  8. No suspicious substrings: 'request', 'follow', 'pmemailhello'
+
+IGNORED EMAILS (33 total):
+  example@example.com, your@email.com, youremail@domain.com,
+  email@example.com, name@email.com, yourname@gmail.com,
+  contact@company.com, support@company.com, info@company.com,
+  hello@email.com, info@yourdomain.com, hello@domain.com,
+  email@domain.com, you@example.com, user@domain.com,
+  name@company.com, test@test.com, admin@admin.com,
+  info@example.com, contact@example.com, sales@example.com,
+  noreply@*, no-reply@*, donotreply@*, sentry@*, wix@*,
+  wordpress@*, cloudflare@*, recaptcha@*, googlemail@*,
+  noreply@google.com, noreply@facebook.com, noreply@twitter.com
+
+IGNORED DOMAINS (8 total):
+  example.com, domain.com, sentry.io, wixpress.com,
+  wp.pl, wordpress.com, cloudflare.com, recaptcha.net
+
+================================================================================
+                             3. DATA SOURCES
+================================================================================
+
+--------------------------------------------------------------------------------
+3.1 GOOGLE PLACES API
+--------------------------------------------------------------------------------
+
+FILE: /contractors/services/google_scraper.py
+
+STATUS: Functional (API credits may be exhausted)
+
+ENDPOINTS:
+  Text Search:  https://maps.googleapis.com/maps/api/place/textsearch/json
+  Details:      https://maps.googleapis.com/maps/api/place/details/json
+
+DATA RETRIEVED:
+  - business_name
+  - address, city, state, zip_code
+  - phone number
+  - website URL
+  - google_place_id (unique identifier)
+  - google_rating (1.0 - 5.0)
+  - google_review_count
+  - Up to 50 reviews per business
+
+RATE LIMITS:
+  - 2.0 seconds between search calls
+  - 0.3 seconds between detail calls
+  - Max retries: 3 with exponential backoff
+
+CURRENT COVERAGE:
+  - Google Place ID: 100% populated
+  - Google Rating: 97.4% populated
+  - Phone: 99.3% populated
+  - Website: 91.7% populated
+
+--------------------------------------------------------------------------------
+3.2 YELP FUSION API
+--------------------------------------------------------------------------------
+
+FILE: /contractors/services/yelp_service.py
+
+STATUS: Not configured (requires YELP_API_KEY)
+
+BASE URL: https://api.yelp.com/v3
+
+ENDPOINTS:
+  Search:   /businesses/search
+  Reviews:  /businesses/{yelp_id}/reviews
+  Details:  /businesses/{yelp_id}
+
+DATA RETRIEVED:
+  - yelp_id
+  - yelp_url
+  - yelp_rating (1.0 - 5.0)
+  - yelp_review_count
+  - price level ($, $$, $$$)
+  - Up to 3 reviews (API limitation)
+
+NAME MATCHING:
+  Uses 60% similarity threshold with normalization:
+  - Lowercase conversion
+  - Remove: 'llc', 'inc', 'corp', ',', '.'
+  - Strip whitespace
+  - Uses SequenceMatcher for ratio comparison
+
+RATE LIMIT: 0.5 seconds between calls
+
+--------------------------------------------------------------------------------
+3.3 BBB WEB SCRAPING
+--------------------------------------------------------------------------------
+
+FILE: /contractors/services/enrichment.py
+
+STATUS: Blocked by Cloudflare (returns 0 records)
+
+TARGET URL: https://www.bbb.org/search
+
+DATA TARGETED:
+  - bbb_rating (A+, A, B, etc)
+  - bbb_accredited (boolean)
+  - bbb_complaint_count
+  - bbb_years_in_business
+  - bbb_url
+
+PARSING METHOD:
+  - BeautifulSoup HTML parsing
+  - Looks for 'dtm-rating' span for rating
+  - Regex extraction for years in business
+  - Regex extraction for closed complaints
+
+CURRENT STATUS: Returns empty BBBData due to Cloudflare blocking
+
+--------------------------------------------------------------------------------
+3.4 DEEPSEEK AI API
+--------------------------------------------------------------------------------
+
+FILE: /contractors/services/ai_auditor.py
+
+STATUS: Functional (5M free tokens/month)
+
+PROVIDER: DeepSeek API (api.deepseek.com)
+MODEL: deepseek-chat
+AUTHENTICATION: Bearer token via DEEPSEEK_API_KEY
+
+CONFIGURATION:
+  - Temperature: 0.2 (low for consistent analysis)
+  - Max tokens: 1500 per request
+  - Response format: JSON object
+
+DATA ANALYZED:
+  - Reviews from Google and Yelp
+  - Separated by source for comparison
+
+OUTPUT (AuditResult):
+  - sentiment_score: 0-100 customer satisfaction
+  - fake_review_count: Estimated fake/inauthentic reviews
+  - fake_review_indicators: List of patterns identified
+  - common_complaints: Recurring issues
+  - common_praises: Recurring positives
+  - red_flags: Serious concerns
+  - summary: 2-3 sentence summary
+  - confidence: high|medium|low
+  - yelp_vs_google_conflict: boolean
+  - recommended_weight_adjustment: 0.5-1.5
+
+FAKE REVIEW INDICATORS DETECTED:
+  1. Generic praise without specifics
+  2. Timing clusters (many 5-stars same week)
+  3. Reviewer profiles with no other reviews
+  4. Overly perfect language or marketing-speak
+  5. Reviews that read like ads
+  6. Suspiciously similar phrasing
+
+RED FLAGS DETECTED:
+  1. Safety concerns mentioned
+  2. Contractor disappeared mid-project
+  3. Threats or intimidation
+  4. Bait-and-switch pricing
+  5. Unlicensed work on licensed trades
+  6. Property damage
+  7. Repeated same complaint across reviews
+
+CONFIDENCE SCORING:
+  - High: 20+ reviews from multiple sources
+  - Medium: 10-19 reviews OR single source only
+  - Low: <10 reviews
+
+================================================================================
+                              4. ALGORITHMS
+================================================================================
+
+--------------------------------------------------------------------------------
+4.1 TRUST SCORE CALCULATION (52-POINT SYSTEM)
+--------------------------------------------------------------------------------
+
+FILE: /contractors/services/scoring.py
+
+OVERVIEW:
+  Raw points: 0-52
+  Normalized: 0-100
+  Formula: (raw_score / 52) * 100
+
+SCORING BREAKDOWN:
+
+VERIFICATION (max 12 points):
+  +3 pts: Has physical address
+  +2 pts: Has working phone
+  +2 pts: Has professional website
+  +1 pt:  Website is HTTPS
+  +4 pts: BBB accredited
+
+REPUTATION (max 20 points):
+  Google Rating (max 5 pts):
+    >= 4.8 stars: 5 pts
+    >= 4.5 stars: 4 pts
+    >= 4.0 stars: 3 pts
+    >= 3.5 stars: 2 pts
+    >= 3.0 stars: 1 pt
+
+  Google Review Volume (max 3 pts):
+    >= 100 reviews: 3 pts
+    >= 50 reviews:  2 pts
+    >= 20 reviews:  1 pt
+
+  Yelp Rating (max 6 pts - weighted higher):
+    >= 4.5 stars: 6 pts
+    >= 4.0 stars: 5 pts
+    >= 3.5 stars: 3 pts
+    >= 3.0 stars: 1 pt
+
+  Yelp Review Volume (max 2 pts):
+    >= 30 reviews: 2 pts
+    >= 10 reviews: 1 pt
+
+  AI Sentiment Bonus (max 4 pts):
+    >= 85 sentiment: +4 pts
+    >= 70 sentiment: +2 pts
+    <  40 sentiment: -2 pts (penalty)
+
+CREDIBILITY (max 12 points):
+  Years in Business (max 4 pts):
+    >= 10 years: 4 pts
+    >= 5 years:  3 pts
+    >= 2 years:  2 pts
+    >= 1 year:   1 pt
+
+  Permit History (max 5 pts - BuildZoom placeholder):
+    >= 20 permits: 5 pts
+    >= 10 permits: 4 pts
+    >= 5 permits:  3 pts
+    >= 1 permit:   2 pts
+
+  Owner Identifiable: 3 pts
+
+RED FLAGS (max 8 points, starts at 8, subtract for issues):
+  BBB Complaints (2 pts at risk):
+    0 complaints:   +2 pts
+    1-2 complaints: -1 pt
+    3+ complaints:  -2 pts
+
+  AI-Detected Fake Reviews (3 pts at risk):
+    0 fake:   +3 pts
+    1-2 fake: -1 pt
+    3+ fake:  -3 pts
+
+  AI Red Flags (3 pts at risk):
+    0 flags:   +3 pts
+    1-2 flags: -1 pt
+    3+ flags:  -3 pts
+
+TIER DETERMINATION:
+  Gold:     80+ score
+  Silver:   65-79 score
+  Bronze:   50-64 score (passing)
+  Unranked: <50 score
+
+MODIFIERS:
+  - Google vs Yelp conflict: Adds warning flag
+  - Low confidence: Adds warning flag
+  - Weight adjustment (from AI): Multiplies raw score (0.5-1.5x)
+
+--------------------------------------------------------------------------------
+4.2 AI REVIEW ANALYSIS
+--------------------------------------------------------------------------------
+
+FILE: /contractors/services/ai_auditor.py
+
+METHOD:
+  1. Separate reviews by source (Google vs Yelp)
+  2. Format as JSON string for API
+  3. Send to DeepSeek with system prompt
+  4. Parse JSON response into AuditResult
+
+SYSTEM PROMPT INCLUDES:
+  - Instructions for sentiment analysis
+  - Fake review detection criteria
+  - Red flag identification guidelines
+  - Output JSON schema
+
+WEIGHT ADJUSTMENT LOGIC:
+  1.5x: Reviews are exceptionally detailed and consistent
+  1.0x: Normal reviews
+  0.7x: Many fake indicators found
+  0.5x: Severe red flags or very few reviews
+
+--------------------------------------------------------------------------------
+4.3 DUPLICATE DETECTION & MERGING
+--------------------------------------------------------------------------------
+
+FILE: /contractors/services/deduplication.py
+
+DETECTION ALGORITHM:
+  For each contractor pair, calculate confidence score:
+
+  Signal                          | Confidence Added
+  --------------------------------|------------------
+  Same phone number               | +50
+  Same address (>90% match)       | +40
+  Similar address (>70% match)    | +20
+  Very similar name (>90% match)  | +35
+  Similar name (>70% match)       | +20
+  Same owner name (>90% match)    | +60
+  Same website domain             | +45
+  Same Google Place ID            | +100 (definite)
+  Same Yelp ID                    | +100 (definite)
+
+  Threshold: 50+ confidence = potential duplicate
+
+MERGE STRATEGY:
+  1. Keep oldest record (lowest ID) as primary
+  2. Copy empty fields from secondary to primary
+  3. Merge reviews (dedupe by text content)
+  4. Take higher scores
+  5. Redirect audits to primary
+  6. Delete secondary record
+
+FIELDS MERGED:
+  phone, email, website, address, zip_code,
+  google_place_id, google_rating, google_review_count,
+  yelp_id, yelp_rating, yelp_review_count,
+  bbb_rating, bbb_accredited, bbb_complaint_count,
+  bbb_years_in_business, bbb_url
+
+--------------------------------------------------------------------------------
+4.4 NAME MATCHING & SIMILARITY
+--------------------------------------------------------------------------------
+
+FILES: /contractors/services/deduplication.py, yelp_service.py
+
+NAME NORMALIZATION:
+  1. Convert to lowercase
+  2. Remove common suffixes: llc, inc, corp, co, company, services,
+     contracting, construction, builders, building
+  3. Remove punctuation
+  4. Normalize whitespace
+
+SIMILARITY CALCULATION:
+  Uses Python's difflib.SequenceMatcher
+  Returns ratio from 0.0 to 1.0
+
+PHONE NORMALIZATION:
+  Extract last 10 digits only
+  Example: "(214) 555-1234" -> "2145551234"
+
+DOMAIN COMPARISON:
+  Extract domain from URL
+  Compare domains case-insensitively
+
+================================================================================
+                             5. DATA MODELS
+================================================================================
+
+--------------------------------------------------------------------------------
+VERTICAL (Business Categories)
+--------------------------------------------------------------------------------
+
+FILE: /contractors/models.py
+
+Fields:
+  - id: BigAutoField, primary key
+  - name: CharField, max 100
+  - slug: SlugField, unique
+  - description: TextField, blank
+  - search_terms: JSONField, list of search terms
+  - avg_job_value: PositiveIntegerField, default 10000
+  - is_active: BooleanField, default True
+
+Fixtures (3 verticals):
+  1. Pool Enclosures (avg: $15k)
+     Terms: ["pool enclosure", "sun room", "pool screen"]
+  2. Patio Covers (avg: $12k)
+     Terms: ["patio cover", "pergola", "outdoor living"]
+  3. Motorized Shades (avg: $8k)
+     Terms: ["motorized shades", "outdoor shades", "retractable awning"]
+
+--------------------------------------------------------------------------------
+CONTRACTOR (Main Records)
+--------------------------------------------------------------------------------
+
+FILE: /contractors/models.py
+
+BASIC INFO:
+  - id: BigAutoField, primary key
+  - business_name: CharField, max 255
+  - slug: SlugField, max 280, unique
+  - address: TextField, blank
+  - city: CharField, max 100
+  - state: CharField, max 2, default 'TX'
+  - zip_code: CharField, max 10, blank
+  - phone: CharField, max 20, blank
+  - email: EmailField, blank, null
+  - website: URLField, blank, null
+
+GOOGLE DATA:
+  - google_place_id: CharField, max 255, unique, null
+  - google_rating: DecimalField, 2 digits, 1 decimal
+  - google_review_count: PositiveIntegerField, default 0
+  - google_reviews_json: JSONField, default list
+
+YELP DATA:
+  - yelp_id: CharField, max 255, blank, null
+  - yelp_url: URLField, blank, null
+  - yelp_rating: DecimalField, 2 digits, 1 decimal
+  - yelp_review_count: PositiveIntegerField, default 0
+
+BBB DATA:
+  - bbb_rating: CharField, max 2, blank, null (e.g., "A+", "B")
+  - bbb_accredited: BooleanField, default False
+  - bbb_complaint_count: PositiveIntegerField, default 0
+  - bbb_years_in_business: PositiveIntegerField, null, blank
+  - bbb_url: URLField, blank, null
+
+LICENSE DATA:
+  - license_number: CharField, max 100, blank, null
+  - license_status: CharField, max 50, blank, null
+  - license_type: CharField, max 100, blank, null
+
+TRUST SCORES:
+  - trust_score: PositiveIntegerField, default 0 (0-100)
+  - passes_threshold: BooleanField, default False (>= 50)
+  - tier: CharField, choices: gold/silver/bronze/new/unranked
+  - verification_score: PositiveIntegerField, default 0 (0-12)
+  - reputation_score: PositiveIntegerField, default 0 (0-20)
+  - credibility_score: PositiveIntegerField, default 0 (0-12)
+  - red_flag_score: PositiveIntegerField, default 0 (0-8)
+  - bonus_score: PositiveIntegerField, default 0
+
+ADMIN OVERRIDE:
+  - admin_score_override: PositiveIntegerField, null, blank
+  - admin_override_reason: TextField, blank
+
+AI ANALYSIS:
+  - ai_summary: TextField, blank
+  - ai_sentiment_score: PositiveIntegerField, default 50
+  - ai_red_flags: JSONField, default list
+
+STATUS:
+  - is_claimed: BooleanField, default False
+  - claimed_by: ForeignKey to User, null, blank
+  - is_active: BooleanField, default True
+
+TIMESTAMPS:
+  - first_scraped_at: DateTimeField, auto_now_add
+  - last_enriched_at: DateTimeField, null, blank
+  - last_audited_at: DateTimeField, null, blank
+
+RELATIONSHIPS:
+  - verticals: ManyToMany to Vertical
+
+UNIQUE CONSTRAINT: (business_name, city)
+
+--------------------------------------------------------------------------------
+CONTRACTORAUDIT (Audit History)
+--------------------------------------------------------------------------------
+
+FILE: /contractors/models.py
+
+OVERVIEW:
+  - id: BigAutoField, primary key
+  - contractor: ForeignKey to Contractor, cascade delete
+  - audit_date: DateTimeField, auto_now_add
+
+OVERALL RESULTS:
+  - trust_score: IntegerField, 0-100
+  - risk_level: CharField, choices: CRITICAL/SEVERE/MODERATE/LOW/TRUSTED
+  - recommendation: CharField, choices: AVOID/CAUTION/VERIFY/RECOMMENDED
+
+COMPONENT SCORES:
+  - verification_score: IntegerField, default 0, max 15
+  - reputation_score: FloatField, default 0, max 15
+  - credibility_score: IntegerField, default 0, max 10
+  - financial_score: IntegerField, default 0, max 10
+  - red_flag_score: IntegerField, default 0, max 10
+
+CALCULATION METADATA:
+  - base_score: FloatField, default 0
+  - normalized_score: FloatField, default 0
+  - multiplier_applied: FloatField, default 1.0
+  - multiplier_reason: TextField, blank
+
+RAW DATA:
+  - perplexity_data: JSONField, default dict
+  - synthesis_data: JSONField, default dict
+
+NARRATIVE:
+  - narrative_summary: TextField, blank
+  - homeowner_guidance: JSONField, default dict
+
+DATA QUALITY:
+  - data_confidence: CharField, choices: HIGH/MEDIUM/LOW
+  - sources_used: JSONField, default list
+  - data_gaps: JSONField, default list
+
+--------------------------------------------------------------------------------
+REDFLAG (Issues Found)
+--------------------------------------------------------------------------------
+
+FILE: /contractors/models.py
+
+Fields:
+  - id: BigAutoField, primary key
+  - audit: ForeignKey to ContractorAudit, cascade delete
+  - severity: CharField, choices: CRITICAL/SEVERE/MODERATE/MINOR
+  - category: CharField, max 50
+  - description: TextField
+  - evidence: TextField, blank
+  - source: TextField, blank
+  - source_url: URLField, blank
+
+--------------------------------------------------------------------------------
+AUDITTIMELINE (Historical Events)
+--------------------------------------------------------------------------------
+
+FILE: /contractors/models.py
+
+Fields:
+  - id: BigAutoField, primary key
+  - audit: ForeignKey to ContractorAudit, cascade delete
+  - date: CharField, max 50 (e.g., "2015", "2023-11", "Ongoing")
+  - event: TextField
+  - significance: TextField, blank
+  - source: TextField, blank
+
+================================================================================
+                            6. API ENDPOINTS
+================================================================================
+
+BASE URL: http://localhost:8002/api/
+
+--------------------------------------------------------------------------------
+GET /api/verticals/
+--------------------------------------------------------------------------------
+Returns list of business categories
+
+Response:
+{
+  "count": 3,
+  "results": [
+    {
+      "id": 1,
+      "name": "Pool Enclosures",
+      "slug": "pool-enclosures",
+      "description": "Pool screen enclosures",
+      "avg_job_value": 15000
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+GET /api/contractors/
+--------------------------------------------------------------------------------
+Query Parameters:
+  - all=true: Include non-passing contractors (default: passing only)
+  - vertical=SLUG: Filter by vertical
+  - city=NAME: Filter by city (case-insensitive)
+  - page=N: Pagination (20 per page)
+
+Response:
+{
+  "count": 1523,
+  "next": "...?page=2",
+  "results": [
+    {
+      "id": 123,
+      "slug": "company-name-dallas",
+      "business_name": "Company Name",
+      "city": "Dallas",
+      "trust_score": 42,
+      "passes_threshold": false,
+      "google_rating": 4.5,
+      "google_review_count": 15
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+GET /api/contractors/{slug}/
+--------------------------------------------------------------------------------
+Returns full contractor details including all data fields
+
+--------------------------------------------------------------------------------
+GET /api/contractors/stats/
+--------------------------------------------------------------------------------
+Response:
+{
+  "total": 1523,
+  "passing": 0,
+  "pass_threshold": 50,
+  "avg_score": 12.3
+}
+
+--------------------------------------------------------------------------------
+GET /api/contractors/top/
+--------------------------------------------------------------------------------
+Returns top 10 passing contractors (if any)
+
+================================================================================
+                         7. MANAGEMENT COMMANDS
+================================================================================
+
+--------------------------------------------------------------------------------
+python manage.py scrape_contractors
+--------------------------------------------------------------------------------
+Purpose: Primary data acquisition from Google Places
+
+Options:
+  --vertical SLUG    Filter by specific vertical
+  --city CITY        Scrape only one city
+  --limit N          Limit results per search
+  --dry-run          Show what would be scraped
+  --with-reviews     Fetch reviews for each contractor
+
+Example:
+  python manage.py scrape_contractors --vertical pool-enclosures --limit 100
+
+--------------------------------------------------------------------------------
+python manage.py enrich_contractors
+--------------------------------------------------------------------------------
+Purpose: Add BBB and Yelp data
+
+Options:
+  --limit N          Limit number of contractors
+  --yelp-only        Only fetch Yelp data
+  --bbb-only         Only fetch BBB data
+  --force            Re-enrich even if already enriched
+
+Example:
+  python manage.py enrich_contractors --limit 100 --force
+
+--------------------------------------------------------------------------------
+python manage.py audit_contractors
+--------------------------------------------------------------------------------
+Purpose: Run AI analysis and calculate trust scores
+
+Options:
+  --limit N          Limit number of contractors
+  --skip-ai          Calculate scores without AI analysis
+
+Example:
+  python manage.py audit_contractors --limit 100
+
+--------------------------------------------------------------------------------
+python manage.py dedupe_contractors
+--------------------------------------------------------------------------------
+Purpose: Merge duplicate contractor records
+
+Options:
+  --dry-run          Show what would be merged
+
+Example:
+  python manage.py dedupe_contractors --dry-run
+
+--------------------------------------------------------------------------------
+python manage.py scrape_emails
+--------------------------------------------------------------------------------
+Purpose: Extract contact emails from contractor websites
+
+Options:
+  --limit N          Limit number of contractors
+  --force            Re-scrape even if email exists
+  --delay SECS       Delay between requests (default: 1.5)
+  --deep             Also scrape /contact and /about pages
+  --dry-run          Show what would be scraped
+
+Example:
+  python manage.py scrape_emails --limit 500 --deep
+
+================================================================================
+                           8. CONFIGURATION
+================================================================================
+
+--------------------------------------------------------------------------------
+ENVIRONMENT VARIABLES (.env)
+--------------------------------------------------------------------------------
+
+# Database
+DATABASE_URL=sqlite:///db.sqlite3
+
+# API Keys
+DEEPSEEK_API_KEY=sk-xxxxx          # Working: 5M tokens/month free
+YELP_API_KEY=                       # EMPTY - needs setup
+SERPAPI_KEY=                        # EMPTY - optional fallback
+GOOGLE_PLACES_API_KEY=              # EMPTY - out of credits
+
+# Django
+SECRET_KEY=dev-secret-key-change-in-production
+DEBUG=True
+
+--------------------------------------------------------------------------------
+DJANGO SETTINGS (config/settings.py)
+--------------------------------------------------------------------------------
+
+Key Settings:
+  - DEBUG=True (from env)
+  - ALLOWED_HOSTS=['localhost', '127.0.0.1']
+  - TIME_ZONE: America/Chicago
+
+REST Framework:
+  - DEFAULT_PERMISSION_CLASSES: AllowAny
+  - DEFAULT_PAGINATION_CLASS: PageNumberPagination
+  - PAGE_SIZE: 20
+
+================================================================================
+                      9. CURRENT STATUS & KNOWN ISSUES
+================================================================================
+
+--------------------------------------------------------------------------------
+DATABASE STATUS (as of 2025-12-04)
+--------------------------------------------------------------------------------
+
+Metric                | Value
+----------------------|-------------
+Total Contractors     | 1,523
+Passing (score 50+)   | 0 (0%)
+Average Score         | 12.3
+Top Score             | 48
+
+Data Coverage:
+  Google Place ID:  100%
+  Google Rating:    97.4%
+  Phone:            99.3%
+  Website:          91.7%
+  Email:            ~30%
+  Yelp Data:        0%
+  BBB Data:         0%
+
+Geographic Distribution (Top 5):
+  1. Dallas:     77 (5.1%)
+  2. Fort Worth: 71 (4.7%)
+  3. Arlington:  57 (3.7%)
+  4. Plano:      54 (3.5%)
+  5. Frisco:     50 (3.3%)
+
+Vertical Distribution:
+  1. Patio Covers:      856 (56.2%)
+  2. Pool Enclosures:   519 (34.1%)
+  3. Motorized Shades:  390 (25.6%)
+
+--------------------------------------------------------------------------------
+KNOWN ISSUES
+--------------------------------------------------------------------------------
+
+1. BBB ENRICHMENT BLOCKED
+   - Cloudflare protection prevents HTML scraping
+   - Solution: Use SerpAPI or implement proxy rotation
+
+2. YELP NOT CONFIGURED
+   - Requires YELP_API_KEY environment variable
+   - Would add 3-6 points to most contractor scores
+
+3. LOW TRUST SCORES
+   - Average: 12.3 (target: 50+)
+   - Root cause: Missing enrichment data (Yelp/BBB)
+   - Fix: Configure Yelp API and re-audit
+
+4. NO PASSING CONTRACTORS (0/1523)
+   - Need to complete enrichment pipeline
+   - Expected improvement with Yelp + BBB data
+
+5. LIMITED REVIEW DATA
+   - Google Places API returns max 5 reviews per detail call
+   - Would need SerpAPI to fetch all reviews
+
+6. NO LICENSE VERIFICATION
+   - Texas doesn't require licenses for pool/patio/shade contractors
+   - License fields present but not populated
+
+--------------------------------------------------------------------------------
+TO IMPROVE SCORES
+--------------------------------------------------------------------------------
+
+1. Add YELP_API_KEY to .env
+2. Run: python manage.py enrich_contractors
+3. Run: python manage.py audit_contractors
+
+================================================================================
+                          FILE STRUCTURE SUMMARY
+================================================================================
+
+/home/reid/testhome/contractors/
+├── manage.py                    # Django CLI
+├── db.sqlite3                   # SQLite database
+├── .env                         # Environment variables
+├── package.json                 # Node.js dependencies
+│
+├── forensic_audit_puppeteer.js  # 11-source Puppeteer scraper + DeepSeek
+├── test_bbb.js                  # BBB test with Puppeteer + DeepSeek
+├── scrape_emails_deepseek.js    # AI-powered email extraction
+│
+├── logs/
+│   └── deepseek_auditor_test_*.log  # Test output logs
+│
+├── config/                      # Django project settings
+│   ├── settings.py              # Main configuration
+│   ├── urls.py                  # Root URL routing
+│   ├── wsgi.py                  # Production WSGI
+│   └── asgi.py                  # Async ASGI
+│
+├── contractors/                 # Main Django app
+│   ├── models.py                # Data models
+│   ├── views.py                 # REST API viewsets
+│   ├── serializers.py           # DRF serializers
+│   ├── urls.py                  # API routes
+│   ├── admin.py                 # Django admin config
+│   │
+│   ├── management/commands/
+│   │   ├── scrape_contractors.py    # Google scraper CLI
+│   │   ├── enrich_contractors.py    # BBB/Yelp enrichment CLI
+│   │   ├── audit_contractors.py     # AI audit & scoring CLI
+│   │   ├── scrape_emails.py         # Email extraction CLI
+│   │   └── dedupe_contractors.py    # Deduplication CLI
+│   │
+│   ├── services/
+│   │   ├── google_scraper.py        # Google Places integration
+│   │   ├── enrichment.py            # BBB scraping service
+│   │   ├── yelp_service.py          # Yelp Fusion API
+│   │   ├── ai_auditor.py            # DeepSeek AI analysis
+│   │   ├── scoring.py               # Trust score calculation
+│   │   └── deduplication.py         # Duplicate detection/merge
+│   │
+│   └── fixtures/
+│       └── verticals.json           # Seeded business categories
+│
+└── venv/                        # Python virtual environment
+
+================================================================================
+                    10. PUPPETEER + DEEPSEEK TOOLS (NODE.JS)
+================================================================================
+
+These are standalone Node.js scripts that use Puppeteer for browser automation
+and DeepSeek AI for intelligent data extraction. They bypass Cloudflare and
+handle JavaScript-rendered content.
+
+--------------------------------------------------------------------------------
+10.1 FORENSIC AUDIT PUPPETEER
+--------------------------------------------------------------------------------
+
+FILE: /forensic_audit_puppeteer.js
+
+PURPOSE: Comprehensive multi-source forensic audit using Puppeteer + DeepSeek
+
+USAGE:
+  node forensic_audit_puppeteer.js --name "Company Name" --city "City" --state "TX"
+  node forensic_audit_puppeteer.js --id 123
+  node forensic_audit_puppeteer.js --id 123 --dry-run --verbose
+
+OPTIONS:
+  --name NAME       Company name to audit
+  --city CITY       City location
+  --state STATE     State (default: TX)
+  --id N            Lookup contractor by database ID
+  --dry-run         Don't save results to database
+  --verbose         Show debug output
+
+DATA SOURCES SCRAPED (11 total):
+  1. BBB              - bbb.org search
+  2. Yelp             - yelp.com search
+  3. Google Maps      - google.com/maps search
+  4. Google News      - News search for lawsuits/complaints
+  5. Angi             - angi.com (formerly Angie's List)
+  6. Houzz            - houzz.com professional profiles
+  7. Thumbtack        - thumbtack.com service providers
+  8. Indeed           - indeed.com employee reviews
+  9. Glassdoor        - glassdoor.com company reviews
+  10. Facebook        - facebook.com business pages
+  11. Website         - Contractor's own website
+
+EXTRACTION PROCESS:
+  1. Launch headless Chromium browser via Puppeteer
+  2. Set viewport (1280x800) and realistic User-Agent
+  3. Navigate to each source URL with networkidle2 wait
+  4. Extract and clean text content from HTML
+  5. Concatenate all sources (max 60KB)
+  6. Send to DeepSeek API for AI analysis
+  7. Parse JSON response
+  8. Save audit results to database
+
+DEEPSEEK EXTRACTION PROMPT STRUCTURE:
+  - Extracts structured data from each source
+  - Identifies red flags with severity levels
+  - Detects rating conflicts across platforms
+  - Calculates trust assessment (0-100)
+  - Provides recommendation (recommended/caution/avoid)
+
+RED FLAG DETECTION RULES:
+  1. Houzz deposits + abandoned work = HIGH severity
+  2. Indeed/Glassdoor high turnover = MEDIUM severity
+  3. Rating conflicts >1 star across platforms = MEDIUM severity
+  4. No presence on ANY review platform = MEDIUM severity
+  5. BBB grade F/D with high ratings elsewhere = HIGH severity
+  6. Multiple deposit/abandonment complaints = HIGH severity
+
+OUTPUT STRUCTURE:
+{
+  "contractor_name": "...",
+  "location": "City, State",
+  "bbb": { found, grade, accredited, years_in_business, complaints... },
+  "yelp": { found, rating, review_count, complaint_themes... },
+  "google": { found, rating, review_count, themes... },
+  "angi": { found, rating, review_count, badges, verified... },
+  "houzz": { found, rating, portfolio, complaint_narratives... },
+  "thumbtack": { found, rating, hire_rate, response_time... },
+  "indeed_reviews": { found, rating, turnover_signals... },
+  "glassdoor": { found, rating, ceo_approval... },
+  "facebook": { found, rating, page_likes... },
+  "news": { lawsuits, investigations, complaints... },
+  "website": { found, years_claimed, portfolio, certifications... },
+  "red_flags": [ { severity, category, description, evidence }... ],
+  "trust_assessment": { overall_score, confidence, recommendation, summary }
+}
+
+DATABASE INTEGRATION:
+  - Opens db.sqlite3 using sql.js
+  - Creates ContractorAudit record
+  - Creates RedFlag records for each identified flag
+  - Updates Contractor with AI summary and enriched data
+  - Saves database back to disk
+
+--------------------------------------------------------------------------------
+10.2 BBB TEST SCRAPER
+--------------------------------------------------------------------------------
+
+FILE: /test_bbb.js
+
+PURPOSE: Simple BBB scraping test using Puppeteer + DeepSeek
+
+USAGE:
+  node test_bbb.js
+
+HOW IT WORKS:
+  1. Launch headless Puppeteer browser
+  2. Navigate to BBB search: bbb.org/search?find_text={company}
+  3. Wait for page to fully render (networkidle2)
+  4. Get full HTML content
+  5. Send first 35KB to DeepSeek for extraction
+  6. Parse and return structured BBB data
+
+EXTRACTION OUTPUT:
+{
+  "found": true/false,
+  "company_name": "exact name from BBB",
+  "bbb_rating": "A+, A, B, etc or null",
+  "accredited": true/false,
+  "location": "city, state",
+  "category": "business type"
+}
+
+TEST COMPANIES (hardcoded):
+  - "SPF Screens and Awnings"
+  - "Orange Elephant Roofing"
+
+WHY THIS EXISTS:
+  - Python requests/BeautifulSoup blocked by Cloudflare
+  - Puppeteer renders JavaScript, bypasses some protections
+  - DeepSeek extracts structured data from messy HTML
+  - Proof of concept for BBB enrichment
+
+--------------------------------------------------------------------------------
+10.3 DEEPSEEK EMAIL SCRAPER
+--------------------------------------------------------------------------------
+
+FILE: /scrape_emails_deepseek.js
+
+PURPOSE: AI-powered email extraction from contractor websites
+
+USAGE:
+  node scrape_emails_deepseek.js [options]
+
+OPTIONS:
+  --limit N      Process only N contractors
+  --dry-run      Don't save to database
+  --delay N      Seconds between requests (default: 1.5)
+
+PAGES CHECKED PER CONTRACTOR:
+  - Homepage
+  - /contact
+  - /contact-us
+  - /about
+  - /about-us
+  - /team
+
+EXTRACTION PROCESS:
+  1. Query database for contractors with website but no email
+  2. Launch Puppeteer browser
+  3. For each contractor:
+     a. Fetch homepage + all contact pages
+     b. Concatenate HTML (max 60KB)
+     c. Send to DeepSeek with extraction prompt
+     d. Parse response and validate emails
+     e. Pick best email (prefer info@, contact@)
+     f. Save to database
+  4. Print summary with hit rate
+
+DEEPSEEK EXTRACTION CAPABILITIES:
+  - Direct email addresses (mailto: links)
+  - Obfuscated patterns: "info [at] domain [dot] com"
+  - Inferred emails: Owner name + domain pattern
+  - "Email us at" text patterns
+  - Contact form hidden field analysis
+
+EMAIL VALIDATION:
+  - Must match email regex pattern
+  - Ignore placeholder domains (example.com, domain.com)
+  - Ignore tracking/service emails (sentry.io, wixpress.com)
+  - Prefer: info@ > contact@ > sales@ > shortest
+
+OUTPUT FORMAT:
+{
+  "emails": ["email1@example.com", "email2@example.com"],
+  "confidence": "high/medium/low",
+  "source": "found/inferred"
+}
+
+PERFORMANCE:
+  - 1.5 second delay between contractors (configurable)
+  - 300ms delay between subpages
+  - Typical hit rate: 60-80%
+
+--------------------------------------------------------------------------------
+10.4 DEEPSEEK AUDITOR TEST LOG
+--------------------------------------------------------------------------------
+
+FILE: /logs/deepseek_auditor_test_2025-12-03.log
+
+PURPOSE: Complete I/O trace of DeepSeek review analysis
+
+CONTENTS:
+  - Full system prompt (with all detection rules)
+  - Sample review input (6 reviews, mixed sources)
+  - Raw API response from DeepSeek
+  - Parsed output showing analysis results
+
+SAMPLE ANALYSIS RESULT:
+  sentiment_score: 55
+  fake_review_count: 2
+  fake_review_indicators:
+    - "Generic praise without specifics"
+    - "Timing clusters (multiple 5-star on same day)"
+  red_flags:
+    - "Bait-and-switch pricing tactics"
+    - "Legal threats mentioned by customer"
+  yelp_vs_google_conflict: true
+  source_analysis:
+    google_avg_rating: 4.25
+    yelp_avg_rating: 2.5
+    google_fake_percentage: 50%
+    yelp_fake_percentage: 0%
+  recommended_weight_adjustment: 0.5
+
+API USAGE (for this test):
+  - Prompt tokens: 981
+  - Completion tokens: 307
+  - Total tokens: 1288
+
+================================================================================
+                    11. NODE.JS DEPENDENCIES (package.json)
+================================================================================
+
+PUPPETEER TOOLS REQUIRE:
+  - puppeteer: Headless Chrome automation
+  - sql.js: SQLite in JavaScript (for Node.js DB access)
+
+INSTALLATION:
+  npm install puppeteer sql.js
+
+ENVIRONMENT VARIABLE:
+  export DEEPSEEK_API_KEY=your_key_here
+
+================================================================================
+                              END OF DOCUMENT
+================================================================================

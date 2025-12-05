@@ -16,12 +16,18 @@ const fs = require('fs');
 const puppeteer = require('puppeteer');
 const path = require('path');
 
+// Import lib modules
+const { searchTDLR, requiresTDLRLicense } = require('./lib/tdlr_scraper');
+const { searchCourtRecords } = require('./lib/court_scraper');
+const { fetchAPISources } = require('./lib/api_sources');
+
 // Config
 const DB_PATH = path.join(__dirname, 'db.sqlite3');
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
 const DEEPSEEK_MODEL = 'deepseek-chat';
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
-const MAX_HTML_CHARS = 60000;
+const COURTLISTENER_API_KEY = process.env.COURTLISTENER_API_KEY;
+const MAX_HTML_CHARS = 80000; // Increased for more sources
 
 // Parse CLI args
 const args = process.argv.slice(2);
@@ -74,21 +80,50 @@ function buildUrls(name, city, state, website, zip) {
   const stateLower = state.toLowerCase();
 
   const urls = {
-    // Original sources
+    // === TIER 1: Primary Review Sites ===
     bbb: `https://www.bbb.org/search?find_text=${encodedName}&find_loc=${location}`,
     yelp: `https://www.yelp.com/search?find_desc=${encodedName}&find_loc=${encodedCity},%20${encodedState}`,
     google_maps: `https://www.google.com/maps/search/${encodedName}+${encodedCity}+${encodedState}`,
-    google_news: `https://www.google.com/search?q=${encodedName}+${encodedCity}+lawsuit+OR+complaint&tbm=nws`,
-
-    // New sources
     angi: `https://www.angi.com/search?query=${encodedName}&location=${encodedCity},%20${encodedState}`,
     houzz: `https://www.houzz.com/search/professionals/query/${encodedName}/location/${citySlug}--${stateLower}`,
     thumbtack: zip
       ? `https://www.thumbtack.com/search?query=${encodedName}&zip=${zip}`
       : `https://www.thumbtack.com/search?query=${encodedName}&location=${encodedCity},%20${encodedState}`,
+    facebook: `https://www.facebook.com/search/pages?q=${encodedName}%20${encodedCity}`,
+
+    // === TIER 2: News & Legal ===
+    google_news: `https://www.google.com/search?q=${encodedName}+${encodedCity}+lawsuit+OR+complaint&tbm=nws`,
+    local_news: `https://www.google.com/search?q=${encodedName}+${encodedCity}+site:dallasnews.com+OR+site:star-telegram.com+OR+site:wfaa.com+OR+site:nbcdfw.com+OR+site:fox4news.com`,
+
+    // === TIER 3: Community & Social ===
+    reddit: `https://www.reddit.com/search/?q=${encodedName}%20${encodedCity}&type=link&sort=relevance`,
+    youtube: `https://www.youtube.com/results?search_query=${encodedName}+${encodedCity}+review+OR+complaint`,
+    nextdoor_search: `https://www.google.com/search?q=site:nextdoor.com+${encodedName}+${encodedCity}`,
+
+    // === TIER 4: Employee Reviews ===
     indeed: `https://www.indeed.com/cmp/${nameSlug}/reviews`,
     glassdoor: `https://www.glassdoor.com/Search/results.htm?keyword=${encodedName}`,
-    facebook: `https://www.facebook.com/search/pages?q=${encodedName}%20${encodedCity}`
+
+    // === TIER 5: Government/Regulatory ===
+    osha: `https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=${encodedName}&State=${encodedState}`,
+    epa_echo: `https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=${encodedName}&State=${encodedState}`,
+
+    // === TIER 6: TX-Specific (if Texas) ===
+    ...(state.toUpperCase() === 'TX' ? {
+      tx_ag_complaints: `https://www.google.com/search?q=site:texasattorneygeneral.gov+${encodedName}`,
+      tx_sos_search: `https://mycpa.cpa.state.tx.us/coa/coaSearchBtn`,
+    } : {}),
+
+    // === TIER 7: Court Records (DFW Focus) ===
+    tarrant_court: `https://www.google.com/search?q=site:apps.tarrantcounty.com+${encodedName}`,
+    dallas_court: `https://www.google.com/search?q=site:dallascounty.org+${encodedName}+civil`,
+    collin_court: `https://www.google.com/search?q=site:collincountytx.gov+${encodedName}`,
+    denton_court: `https://www.google.com/search?q=site:dentoncounty.gov+${encodedName}`,
+
+    // === TIER 8: Industry-Specific ===
+    porch: `https://porch.com/search/contractors?query=${encodedName}&near=${encodedCity}%2C%20${encodedState}`,
+    buildzoom: `https://www.buildzoom.com/search?search=${encodedName}&location=${encodedCity}%2C+${encodedState}`,
+    homeadvisor: `https://www.homeadvisor.com/rated.${nameSlug}.${citySlug}.${stateLower}.html`,
   };
 
   if (website) {
@@ -201,13 +236,134 @@ async function fetchAllSources(browser, name, city, state, website, zip) {
   const results = [];
 
   log('\nFetching data sources...');
-  log(`Sources to check: ${Object.keys(urls).length}`);
+  log(`URL-based sources to check: ${Object.keys(urls).length}`);
 
-  // Fetch each source sequentially to be polite
-  for (const [source, url] of Object.entries(urls)) {
-    const result = await fetchPage(browser, url, source);
-    results.push(result);
-    await sleep(1000); // Delay between requests
+  // Fetch URLs in parallel batches for speed (5 concurrent)
+  const urlEntries = Object.entries(urls);
+  const BATCH_SIZE = 5;
+  for (let i = 0; i < urlEntries.length; i += BATCH_SIZE) {
+    const batch = urlEntries.slice(i, i + BATCH_SIZE);
+    const batchResults = await Promise.all(
+      batch.map(([source, url]) => fetchPage(browser, url, source))
+    );
+    results.push(...batchResults);
+    if (i + BATCH_SIZE < urlEntries.length) {
+      await sleep(500); // Brief delay between batches
+    }
+  }
+
+  // === TDLR License Search (Texas only, form submission) ===
+  if (state.toUpperCase() === 'TX') {
+    log('\n  Searching TDLR licenses...');
+    try {
+      const tdlrResult = await searchTDLR(browser, name);
+      if (tdlrResult.found) {
+        success(`    TDLR: Found ${tdlrResult.licenses?.length || 0} license(s)`);
+        results.push({
+          source: 'tdlr_license',
+          url: 'https://www.tdlr.texas.gov/LicenseSearch/',
+          status: 'success',
+          html: `TDLR LICENSE SEARCH RESULTS:\n${JSON.stringify(tdlrResult, null, 2)}\n\n${tdlrResult.html || ''}`
+        });
+      } else {
+        warn(`    TDLR: No licenses found`);
+        results.push({
+          source: 'tdlr_license',
+          url: 'https://www.tdlr.texas.gov/LicenseSearch/',
+          status: tdlrResult.error ? 'error' : 'not_found',
+          error: tdlrResult.error || 'No licenses found',
+          html: null
+        });
+      }
+    } catch (err) {
+      warn(`    TDLR: Error - ${err.message}`);
+      results.push({
+        source: 'tdlr_license',
+        url: 'https://www.tdlr.texas.gov/LicenseSearch/',
+        status: 'error',
+        error: err.message,
+        html: null
+      });
+    }
+    await sleep(1500);
+  }
+
+  // === County Court Records (DFW Focus) ===
+  log('\n  Searching county court records...');
+  try {
+    const courtResults = await searchCourtRecords(browser, name, ['tarrant', 'dallas', 'collin', 'denton']);
+    if (courtResults.total_cases_found > 0) {
+      warn(`    Courts: Found ${courtResults.total_cases_found} case(s) across ${courtResults.courts_checked.length} counties`);
+      results.push({
+        source: 'court_records',
+        url: 'DFW County Courts',
+        status: 'success',
+        html: `COUNTY COURT SEARCH RESULTS:\n${JSON.stringify(courtResults, null, 2)}`
+      });
+    } else {
+      success(`    Courts: No cases found in ${courtResults.courts_checked.length} counties`);
+      results.push({
+        source: 'court_records',
+        url: 'DFW County Courts',
+        status: 'not_found',
+        html: null
+      });
+    }
+  } catch (err) {
+    warn(`    Courts: Error - ${err.message}`);
+    results.push({
+      source: 'court_records',
+      url: 'DFW County Courts',
+      status: 'error',
+      error: err.message,
+      html: null
+    });
+  }
+
+  // === API-Based Sources (no Puppeteer needed) ===
+  log('\n  Fetching API sources...');
+  try {
+    const apiResults = await fetchAPISources(name, state, {
+      courtListenerApiKey: COURTLISTENER_API_KEY
+    });
+
+    // CourtListener (federal courts)
+    if (apiResults.court_listener?.found) {
+      warn(`    CourtListener: Found ${apiResults.court_listener.total} federal case(s)`);
+      results.push({
+        source: 'court_listener_federal',
+        url: 'https://www.courtlistener.com',
+        status: 'success',
+        html: `FEDERAL COURT RECORDS (CourtListener):\n${JSON.stringify(apiResults.court_listener, null, 2)}`
+      });
+    }
+
+    // OpenCorporates
+    if (apiResults.open_corporates?.found) {
+      success(`    OpenCorporates: Found ${apiResults.open_corporates.companies.length} company record(s)`);
+      results.push({
+        source: 'open_corporates',
+        url: 'https://opencorporates.com',
+        status: 'success',
+        html: `OPENCORPORATES COMPANY DATA:\n${JSON.stringify(apiResults.open_corporates, null, 2)}`
+      });
+    }
+
+    // TX Franchise Tax
+    if (apiResults.tx_franchise?.found) {
+      const status = apiResults.tx_franchise.status;
+      const statusColor = status?.toLowerCase().includes('active') ? success : warn;
+      statusColor(`    TX Franchise: ${status || 'Found'}`);
+      results.push({
+        source: 'tx_franchise_tax',
+        url: 'https://comptroller.texas.gov',
+        status: 'success',
+        html: `TX FRANCHISE TAX STATUS:\n${JSON.stringify(apiResults.tx_franchise, null, 2)}`
+      });
+    }
+
+  } catch (err) {
+    warn(`    API Sources: Error - ${err.message}`);
   }
 
   return results;
@@ -288,7 +444,8 @@ Extract ALL available information and return ONLY valid JSON (no markdown, no ex
     "lawsuits": ["brief description1"],
     "investigations": ["brief description1"],
     "complaints": ["brief description1"],
-    "positive_coverage": ["brief description1"]
+    "positive_coverage": ["brief description1"],
+    "local_news_mentions": ["brief description1"]
   },
 
   "website": {
@@ -356,12 +513,98 @@ Extract ALL available information and return ONLY valid JSON (no markdown, no ex
     "source_url": "url or null"
   },
 
+  "reddit": {
+    "found": true/false,
+    "threads": ["title or description of relevant threads"],
+    "sentiment": "positive/negative/mixed/neutral",
+    "complaint_mentions": ["specific complaints mentioned"],
+    "recommendation_mentions": ["positive recommendations"]
+  },
+
+  "youtube": {
+    "found": true/false,
+    "videos": ["video title or description"],
+    "complaint_videos": ["complaint/negative video titles"],
+    "review_videos": ["review video titles"],
+    "total_results": number or null
+  },
+
+  "osha": {
+    "found": true/false,
+    "violations": ["violation description"],
+    "inspection_count": number or 0,
+    "serious_violations": number or 0,
+    "willful_violations": number or 0,
+    "penalties_total": number or 0,
+    "last_inspection_date": "date or null"
+  },
+
+  "epa": {
+    "found": true/false,
+    "violations": ["violation description"],
+    "facility_id": "id or null",
+    "compliance_status": "in compliance/violations/unknown",
+    "significant_violations": true/false
+  },
+
+  "tdlr": {
+    "found": true/false,
+    "license_number": "number or null",
+    "license_type": "type or null",
+    "status": "active/expired/revoked/suspended/null",
+    "expiration_date": "date or null",
+    "disciplinary_actions": ["action description"]
+  },
+
+  "court_records": {
+    "found": true/false,
+    "civil_cases": ["case description"],
+    "judgments_against": ["judgment description"],
+    "judgments_for": ["judgment description"],
+    "bankruptcy": "chapter/date or null",
+    "liens": ["lien description"]
+  },
+
+  "porch": {
+    "found": true/false,
+    "rating": number (1-5) or null,
+    "review_count": number or null,
+    "verified": true/false/null
+  },
+
+  "buildzoom": {
+    "found": true/false,
+    "score": number or null,
+    "license_info": "license details or null",
+    "complaints": number or null
+  },
+
+  "homeadvisor": {
+    "found": true/false,
+    "rating": number (1-5) or null,
+    "review_count": number or null,
+    "screened": true/false/null
+  },
+
+  "nextdoor": {
+    "found": true/false,
+    "mentions": ["mention description"],
+    "sentiment": "positive/negative/mixed/neutral"
+  },
+
+  "tx_attorney_general": {
+    "found": true/false,
+    "complaints": ["complaint description"],
+    "actions": ["action description"]
+  },
+
   "red_flags": [
     {
-      "severity": "high/medium/low",
-      "category": "rating_conflict/name_mismatch/complaint_pattern/legal/review_fraud/employee_turnover/deposit_abandonment/no_presence/other",
+      "severity": "critical/high/medium/low",
+      "category": "license_issue/rating_conflict/name_mismatch/complaint_pattern/legal/review_fraud/employee_turnover/deposit_abandonment/no_presence/osha_violation/epa_violation/bankruptcy/court_judgment/fraud_investigation/other",
       "description": "Clear description of the issue",
-      "evidence": "What data supports this flag"
+      "evidence": "What data supports this flag",
+      "source": "which source(s) this came from"
     }
   ],
 
@@ -372,27 +615,53 @@ Extract ALL available information and return ONLY valid JSON (no markdown, no ex
     "summary": "2-3 sentence assessment"
   },
 
-  "sources_checked": ["bbb", "yelp", "google_maps", "google_news", "website", "angi", "houzz", "thumbtack", "indeed", "glassdoor", "facebook"],
+  "sources_checked": ["list all sources checked"],
   "sources_found": ["list of sources where data was found"],
   "data_quality": "high/medium/low"
 }
 
-RED FLAG DETECTION RULES (apply these):
-1. Houzz complaints mentioning deposits taken then work abandoned = SEVERITY: HIGH, CATEGORY: deposit_abandonment
-2. Indeed/Glassdoor reviews mentioning high turnover or commission-only pay = SEVERITY: MEDIUM, CATEGORY: employee_turnover
-3. Rating conflicts: If Angi vs Yelp vs Google ratings differ by >1 star = SEVERITY: MEDIUM, CATEGORY: rating_conflict (potential manipulation)
-4. No presence on ANY review platform for an established business = SEVERITY: MEDIUM, CATEGORY: no_presence (suspicious)
-5. BBB grade F or D with high ratings elsewhere = SEVERITY: HIGH, CATEGORY: rating_conflict
-6. Multiple platforms showing deposit/abandonment complaints = SEVERITY: HIGH, CATEGORY: deposit_abandonment
+RED FLAG DETECTION RULES (apply these strictly):
 
-IMPORTANT:
-- Look for rating conflicts across ALL platforms (BBB, Yelp, Google, Angi, Houzz, Thumbtack, Facebook)
-- Check for name mismatches across sources
-- Identify complaint patterns especially around deposits and project abandonment
-- Note any lawsuits, investigations, or news coverage
-- Flag fake review indicators (unusual patterns, generic text, suspiciously perfect scores)
-- Employee review sites (Indeed, Glassdoor) can reveal internal problems
-- If BBB shows complaints or bad rating, this is significant
+=== CRITICAL (automatic fail, score 0-20) ===
+- TDLR/license revoked or suspended
+- Active fraud investigation in news
+- Bankruptcy filed within 24 months
+- OSHA willful violations
+- EPA significant violations
+- Court judgments for fraud/theft
+
+=== HIGH SEVERITY (major concern, score cap 40) ===
+- TDLR license expired > 90 days
+- 3+ civil judgments against the company
+- Multiple OSHA serious violations
+- News investigations (non-fraud but serious)
+- BBB grade F with pattern of unresolved complaints
+- Multiple platforms showing deposit/abandonment complaints
+
+=== MEDIUM SEVERITY (notable concern) ===
+- No TDLR license found (for licensed trades like HVAC, electrical, plumbing)
+- Reddit complaint patterns (3+ negative threads)
+- YouTube complaint videos exist with details
+- Single civil judgment
+- Rating conflicts: If Angi vs Yelp vs Google ratings differ by >1 star
+- Indeed/Glassdoor showing high turnover or commission-only structure
+- OSHA violations (non-serious)
+
+=== LOW SEVERITY (minor flags) ===
+- TDLR license expiring within 60 days
+- No presence on a specific platform
+- Minor BBB complaints (resolved)
+- Glassdoor rating below 3.0
+
+IMPORTANT ANALYSIS NOTES:
+- Cross-reference ratings across ALL platforms for manipulation detection
+- Reddit/YouTube complaints often reveal issues not on official review sites
+- OSHA/EPA violations are serious - any willful or significant = critical
+- Court records showing pattern of lawsuits = major red flag
+- Check if business name matches across all sources (DBA vs legal name)
+- Employee reviews (Indeed, Glassdoor) reveal internal culture issues
+- Local news coverage of problems is highly significant
+- No online presence for "established" business is suspicious
 
 HTML DATA:
 `;
@@ -514,7 +783,7 @@ async function saveAuditResults(db, contractorId, auditData) {
     '',
     auditData.trust_assessment?.summary || '',
     trustScore,
-    null,
+    JSON.stringify({}),
     recommendation,
     auditData.red_flags?.length || 0,
     (auditData.google?.rating || 0) * 20,
@@ -717,13 +986,134 @@ function printAuditSummary(auditData) {
     if (auditData.news.positive_coverage?.length) {
       success(`  Positive Coverage: ${auditData.news.positive_coverage.join('; ')}`);
     }
+    if (auditData.news.local_news_mentions?.length) {
+      log(`  Local News: ${auditData.news.local_news_mentions.join('; ')}`);
+    }
+  }
+
+  // === NEW SOURCES ===
+
+  if (auditData.reddit?.found) {
+    log('\n--- REDDIT ---');
+    log(`  Sentiment: ${auditData.reddit.sentiment || 'unknown'}`);
+    if (auditData.reddit.threads?.length) {
+      log(`  Threads: ${auditData.reddit.threads.slice(0, 3).join('; ')}`);
+    }
+    if (auditData.reddit.complaint_mentions?.length) {
+      warn(`  Complaints: ${auditData.reddit.complaint_mentions.join('; ')}`);
+    }
+  }
+
+  if (auditData.youtube?.found) {
+    log('\n--- YOUTUBE ---');
+    log(`  Total Results: ${auditData.youtube.total_results || 0}`);
+    if (auditData.youtube.complaint_videos?.length) {
+      warn(`  Complaint Videos: ${auditData.youtube.complaint_videos.join('; ')}`);
+    }
+    if (auditData.youtube.review_videos?.length) {
+      log(`  Review Videos: ${auditData.youtube.review_videos.join('; ')}`);
+    }
+  }
+
+  if (auditData.osha?.found) {
+    log('\n--- OSHA ---');
+    log(`  Inspections: ${auditData.osha.inspection_count || 0}`);
+    if (auditData.osha.willful_violations > 0) {
+      error(`  WILLFUL VIOLATIONS: ${auditData.osha.willful_violations}`);
+    }
+    if (auditData.osha.serious_violations > 0) {
+      warn(`  Serious Violations: ${auditData.osha.serious_violations}`);
+    }
+    if (auditData.osha.penalties_total > 0) {
+      warn(`  Total Penalties: $${auditData.osha.penalties_total.toLocaleString()}`);
+    }
+    if (auditData.osha.violations?.length) {
+      log(`  Violations: ${auditData.osha.violations.join('; ')}`);
+    }
+  }
+
+  if (auditData.epa?.found) {
+    log('\n--- EPA ---');
+    log(`  Compliance: ${auditData.epa.compliance_status || 'unknown'}`);
+    if (auditData.epa.significant_violations) {
+      error(`  SIGNIFICANT VIOLATIONS: Yes`);
+    }
+    if (auditData.epa.violations?.length) {
+      warn(`  Violations: ${auditData.epa.violations.join('; ')}`);
+    }
+  }
+
+  if (auditData.tdlr?.found) {
+    log('\n--- TDLR LICENSE ---');
+    log(`  License #: ${auditData.tdlr.license_number || 'N/A'}`);
+    log(`  Type: ${auditData.tdlr.license_type || 'N/A'}`);
+    const statusColor = auditData.tdlr.status?.toLowerCase() === 'active' ? success :
+                       ['revoked', 'suspended'].includes(auditData.tdlr.status?.toLowerCase()) ? error : warn;
+    statusColor(`  Status: ${auditData.tdlr.status || 'unknown'}`);
+    if (auditData.tdlr.expiration_date) {
+      log(`  Expires: ${auditData.tdlr.expiration_date}`);
+    }
+    if (auditData.tdlr.disciplinary_actions?.length) {
+      error(`  Disciplinary: ${auditData.tdlr.disciplinary_actions.join('; ')}`);
+    }
+  }
+
+  if (auditData.court_records?.found) {
+    log('\n--- COURT RECORDS ---');
+    if (auditData.court_records.civil_cases?.length) {
+      warn(`  Civil Cases: ${auditData.court_records.civil_cases.length}`);
+      auditData.court_records.civil_cases.slice(0, 3).forEach(c => log(`    - ${c}`));
+    }
+    if (auditData.court_records.judgments_against?.length) {
+      error(`  Judgments Against: ${auditData.court_records.judgments_against.join('; ')}`);
+    }
+    if (auditData.court_records.bankruptcy) {
+      error(`  Bankruptcy: ${auditData.court_records.bankruptcy}`);
+    }
+    if (auditData.court_records.liens?.length) {
+      warn(`  Liens: ${auditData.court_records.liens.join('; ')}`);
+    }
+  }
+
+  if (auditData.porch?.found) {
+    log('\n--- PORCH ---');
+    log(`  Rating: ${auditData.porch.rating || 'N/A'}/5`);
+    log(`  Reviews: ${auditData.porch.review_count || 0}`);
+  }
+
+  if (auditData.buildzoom?.found) {
+    log('\n--- BUILDZOOM ---');
+    log(`  Score: ${auditData.buildzoom.score || 'N/A'}`);
+    if (auditData.buildzoom.license_info) {
+      log(`  License: ${auditData.buildzoom.license_info}`);
+    }
+  }
+
+  if (auditData.homeadvisor?.found) {
+    log('\n--- HOMEADVISOR ---');
+    log(`  Rating: ${auditData.homeadvisor.rating || 'N/A'}/5`);
+    log(`  Reviews: ${auditData.homeadvisor.review_count || 0}`);
+    if (auditData.homeadvisor.screened) {
+      success(`  Screened: Yes`);
+    }
+  }
+
+  if (auditData.tx_attorney_general?.found) {
+    log('\n--- TX ATTORNEY GENERAL ---');
+    if (auditData.tx_attorney_general.complaints?.length) {
+      error(`  Complaints: ${auditData.tx_attorney_general.complaints.join('; ')}`);
+    }
+    if (auditData.tx_attorney_general.actions?.length) {
+      error(`  Actions: ${auditData.tx_attorney_general.actions.join('; ')}`);
+    }
   }
 
   if (auditData.red_flags?.length) {
     log('\n--- RED FLAGS ---');
     for (const flag of auditData.red_flags) {
-      const color = flag.severity === 'high' ? error : warn;
-      color(`  [${flag.severity.toUpperCase()}] ${flag.category}: ${flag.description}`);
+      const sev = (flag.severity || 'medium').toLowerCase();
+      const color = ['critical', 'high'].includes(sev) ? error : (sev === 'medium' ? warn : log);
+      color(`  [${flag.severity?.toUpperCase() || 'MEDIUM'}] ${flag.category}: ${flag.description}`);
       if (flag.evidence) {
         log(`    Evidence: ${flag.evidence}`);
       }
