@@ -52,14 +52,18 @@ Ask yourself:
 - Victim reports (Reddit, Nextdoor, consumer forums)
 - Business registration issues (franchise tax problems, SOS status)
 
-## REVIEWS - CRITICAL GUIDANCE
-High review volume with high ratings is a POSITIVE signal, indicating an established quality contractor.
-- 5.0 stars with 500+ reviews = excellent contractor who consistently delivers
-- Perfect or near-perfect ratings ARE achievable by genuinely excellent businesses
-- Pool/outdoor living contractors often have passionate customers who leave glowing reviews
-- Focus on review CONTENT (specific details, varied writing) rather than questioning the numbers
-- Flag reviews only if you find actual evidence of manipulation (identical text, fake accounts, etc.)
-- Volume + quality = trust, unless proven otherwise by concrete evidence
+## REVIEWS - CRITICAL GUIDANCE (READ CAREFULLY)
+The Review Analyzer has already evaluated reviews for authenticity. TRUST ITS VERDICT.
+- If Review Analysis says "TRUST_REVIEWS" → the reviews are legitimate, DO NOT question them
+- If Review Analysis says "DISTRUST_REVIEWS" → flag as concern
+- If Review Analysis says "VERIFY_REVIEWS" → note as data gap, not red flag
+
+IMPORTANT: High review volume with high ratings is a POSITIVE signal.
+- 5.0 stars with 500+ reviews = excellent contractor who consistently delivers quality work
+- This is ACHIEVABLE - many contractors maintain perfect ratings through genuine excellence
+- Screen/awning/pool contractors often have passionate customers who leave detailed glowing reviews
+- DO NOT flag "statistically rare" or "statistically improbable" as a red flag for review volume
+- Only flag reviews if Review Analyzer found ACTUAL manipulation evidence (fake accounts, identical text)
 
 ## TEXAS LICENSING - IMPORTANT
 In Texas, these trades are LICENSE-EXEMPT (state TDLR licensing is optional):

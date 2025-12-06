@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { Toaster, toast } from 'sonner'
-import { LayoutDashboard, Users, Settings, Menu, X, AlertTriangle } from 'lucide-react'
+import { LayoutDashboard, Users, Home, Menu, X } from 'lucide-react'
 import { Dashboard } from '@/views/Dashboard'
 import { LeadTable } from '@/views/LeadTable'
+import { PropertyLeads } from '@/views/PropertyLeads'
 import { ContractorDetailModal } from '@/views/ContractorDetail'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -26,7 +27,8 @@ const queryClient = new QueryClient({
 // Navigation items
 const navItems = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { id: 'leads', label: 'Lead Grid', icon: Users },
+  { id: 'contractors', label: 'Contractors', icon: Users },
+  { id: 'property-clients', label: 'Property Clients', icon: Home },
 ]
 
 function AppContent() {
@@ -106,8 +108,11 @@ function AppContent() {
       {/* Main Content */}
       <main className="container py-6">
         {activeView === 'dashboard' && <Dashboard />}
-        {activeView === 'leads' && (
+        {activeView === 'contractors' && (
           <LeadTable onSelectContractor={handleSelectContractor} />
+        )}
+        {activeView === 'property-clients' && (
+          <PropertyLeads onSelectLead={(lead) => console.log('Selected client:', lead)} />
         )}
       </main>
 

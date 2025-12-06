@@ -1,5 +1,5 @@
 """
-Shared DeepSeek AI client for both contractors and leads apps.
+Shared DeepSeek AI client for both contractors and clients apps.
 
 Usage:
     from shared.deepseek import DeepSeekClient
@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 class DeepSeekClient:
     """
     Client for DeepSeek API.
-    Used by both contractors (review analysis) and leads (permit categorization).
+    Used by both contractors (review analysis) and clients (permit categorization).
     """
 
     BASE_URL = "https://api.deepseek.com/v1"
@@ -116,7 +116,7 @@ class DeepSeekClient:
     def categorize_permit(self, description: str) -> Dict[str, Any]:
         """
         Categorize a permit based on its description.
-        Used by leads app for permit categorization.
+        Used by clients app for permit categorization.
 
         Returns:
             {

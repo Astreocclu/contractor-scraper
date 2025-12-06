@@ -11,7 +11,7 @@ import logging
 from django.core.management.base import BaseCommand
 
 # Import all scrapers
-from leads.services.scrapers.fort_worth import FortWorthScraper
+from clients.services.scrapers.fort_worth import FortWorthScraper
 
 # Registry of available scrapers
 SCRAPERS = {

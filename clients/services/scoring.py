@@ -11,7 +11,7 @@ from decimal import Decimal
 
 from django.utils import timezone
 
-from leads.models import Permit, Property, Lead
+from clients.models import Permit, Property, Lead
 
 logger = logging.getLogger(__name__)
 

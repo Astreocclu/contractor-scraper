@@ -20,7 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'contractors',
-    'leads',
+    'clients',
 ]
 
 MIDDLEWARE = [
@@ -83,5 +83,3 @@ REST_FRAMEWORK = {
 DEEPSEEK_API_KEY = os.environ.get('DEEPSEEK_API_KEY')
 YELP_API_KEY = os.environ.get('YELP_API_KEY')
 SERPAPI_KEY = os.environ.get('SERPAPI_KEY')  # For future use
-GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')  # For Gemini (legacy)
-GOOGLE_PLACES_API_KEY = os.environ.get('GOOGLE_PLACES_API_KEY')

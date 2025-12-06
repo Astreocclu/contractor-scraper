@@ -15,7 +15,7 @@ from dataclasses import dataclass, field, asdict
 from django.conf import settings
 from django.utils import timezone
 
-from leads.models import Permit, ScraperRun
+from clients.models import Permit, ScraperRun
 
 
 # Rate limiting settings

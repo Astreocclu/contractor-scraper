@@ -1,6 +1,7 @@
-import { Users, UserCheck, TrendingUp, AlertTriangle, RefreshCw } from "lucide-react"
+import { Users, UserCheck, TrendingUp, AlertTriangle, RefreshCw, Home, Flame } from "lucide-react"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from "recharts"
 import { useStats, useContractors } from "@/hooks/useContractors"
+import { useLeadStats } from "@/hooks/useLeads"
 import { MetricCard } from "@/components/MetricCard"
 import { CommandPanel } from "@/components/CommandPanel"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
@@ -10,6 +11,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 export function Dashboard() {
   const { data: stats, isLoading: statsLoading, error: statsError } = useStats()
   const { data: contractors, isLoading: contractorsLoading } = useContractors({ all: true })
+  const { data: leadStats, isLoading: leadStatsLoading } = useLeadStats()
 
   // Extract results array from paginated response
   const contractorList = contractors?.results || []
@@ -61,37 +63,72 @@ export function Dashboard() {
         </div>
       </div>
 
-      {/* Metrics Row */}
+      {/* Contractors Metrics Row */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <MetricCard
-          title="Total Leads"
+          title="Contractors"
           value={stats?.total ?? 0}
-          subtitle="Contractors in database"
+          subtitle="In database"
           icon={Users}
           loading={statsLoading}
         />
         <MetricCard
-          title="Qualified Leads"
+          title="Qualified"
           value={stats?.passing ?? 0}
-          subtitle={`Passing threshold (${stats?.pass_threshold ?? 50}+)`}
+          subtitle={`Passing (${stats?.pass_threshold ?? 50}+)`}
           icon={UserCheck}
           loading={statsLoading}
           valueClassName="text-green-500"
         />
         <MetricCard
-          title="Average Score"
+          title="Avg Score"
           value={stats?.avg_score?.toFixed(1) ?? "0"}
-          subtitle="Trust score average"
+          subtitle="Trust score"
           icon={TrendingUp}
           loading={statsLoading}
         />
         <MetricCard
           title="Red Flags"
           value={redFlagsCount}
-          subtitle="Issues in loaded data"
+          subtitle="Issues found"
           icon={AlertTriangle}
           loading={contractorsLoading}
           valueClassName={redFlagsCount > 0 ? "text-red-500" : ""}
+        />
+      </div>
+
+      {/* Property Leads Metrics Row */}
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <MetricCard
+          title="Property Leads"
+          value={leadStats?.total_leads ?? 0}
+          subtitle="From permit scraping"
+          icon={Home}
+          loading={leadStatsLoading}
+        />
+        <MetricCard
+          title="Tier A Leads"
+          value={leadStats?.tier_a ?? 0}
+          subtitle="High value properties"
+          icon={TrendingUp}
+          loading={leadStatsLoading}
+          valueClassName="text-yellow-500"
+        />
+        <MetricCard
+          title="Hot Leads"
+          value={leadStats?.hot_leads ?? 0}
+          subtitle="Last 14 days"
+          icon={Flame}
+          loading={leadStatsLoading}
+          valueClassName="text-red-500"
+        />
+        <MetricCard
+          title="Absentee Owners"
+          value={leadStats?.absentee ?? 0}
+          subtitle="Investment properties"
+          icon={UserCheck}
+          loading={leadStatsLoading}
+          valueClassName="text-purple-500"
         />
       </div>
 

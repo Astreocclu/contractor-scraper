@@ -82,8 +82,11 @@ async function analyzeReviews(contractorName, reviewData) {
 
   // Add platform ratings summary
   context += `## PLATFORM RATINGS\n`;
-  if (reviewData.google_maps?.rating) {
-    context += `- Google Maps: ${reviewData.google_maps.rating}★ (${reviewData.google_maps.review_count} reviews)\n`;
+  if (reviewData.google_maps_local?.rating) {
+    context += `- Google Maps (Local/DFW): ${reviewData.google_maps_local.rating}★ (${reviewData.google_maps_local.review_count} reviews)\n`;
+  }
+  if (reviewData.google_maps_hq?.rating) {
+    context += `- Google Maps (HQ): ${reviewData.google_maps_hq.rating}★ (${reviewData.google_maps_hq.review_count} reviews)\n`;
   }
   if (reviewData.bbb?.rating) {
     context += `- BBB: ${reviewData.bbb.rating} rating, Accredited: ${reviewData.bbb.accredited}\n`;
@@ -151,23 +154,32 @@ async function analyzeReviews(contractorName, reviewData) {
     const reasoningContent = message.reasoning_content || '';
 
     // Try to find JSON in content first, then in reasoning_content
-    const textToSearch = content || reasoningContent;
+    let jsonMatch = content.match(/\{[\s\S]*\}/);
+    if (!jsonMatch && reasoningContent) {
+      jsonMatch = reasoningContent.match(/\{[\s\S]*\}/);
+    }
 
-    // Parse JSON from response
-    const jsonMatch = textToSearch.match(/\{[\s\S]*\}/);
     if (jsonMatch) {
-      const analysis = JSON.parse(jsonMatch[0]);
-      analysis.analyzed_at = new Date().toISOString();
-      analysis.cost = estimateCost(result);
-      // Include reasoning if available (from deepseek-reasoner)
-      if (reasoningContent && !content) {
-        analysis.reasoning_trace = reasoningContent.substring(0, 2000);
+      try {
+        const analysis = JSON.parse(jsonMatch[0]);
+        analysis.analyzed_at = new Date().toISOString();
+        analysis.cost = estimateCost(result);
+        // Include reasoning if available (from deepseek-reasoner)
+        if (reasoningContent) {
+          analysis.reasoning_trace = reasoningContent.substring(0, 2000);
+        }
+        return analysis;
+      } catch (parseErr) {
+        // JSON found but failed to parse
+        return {
+          error: `JSON parse error: ${parseErr.message}`,
+          raw_response: jsonMatch[0].substring(0, 500)
+        };
       }
-      return analysis;
     }
 
     return {
-      error: 'Failed to parse AI response',
+      error: 'Failed to parse AI response - no JSON found',
       raw_response: (content || reasoningContent).substring(0, 500)
     };
 
@@ -182,11 +194,12 @@ async function analyzeReviews(contractorName, reviewData) {
 function extractRatings(reviewData) {
   // Defensive check for missing data
   if (!reviewData || typeof reviewData !== 'object') {
-    return { google: null, bbb: null, glassdoor: null, yelp: null };
+    return { google_local: null, google_hq: null, bbb: null, glassdoor: null, yelp: null };
   }
 
   return {
-    google: reviewData.google_maps?.rating || null,
+    google_local: reviewData.google_maps_local?.rating || null,
+    google_hq: reviewData.google_maps_hq?.rating || null,
     bbb: reviewData.bbb?.rating || null,
     glassdoor: reviewData.glassdoor?.rating || null,
     yelp: reviewData.yelp?.rating || null
@@ -209,7 +222,18 @@ function quickDiscrepancyCheck(reviewData) {
 
   const ratings = [];
 
-  if (reviewData.google_maps?.rating) ratings.push({ source: 'google', rating: reviewData.google_maps.rating });
+  // Use the Google Maps source with more reviews, or both if significantly different
+  const gLocal = reviewData.google_maps_local;
+  const gHQ = reviewData.google_maps_hq;
+  if (gLocal?.rating && gHQ?.rating) {
+    // If both exist, use the one with more reviews as primary
+    const primary = (gLocal.review_count || 0) >= (gHQ.review_count || 0) ? gLocal : gHQ;
+    ratings.push({ source: 'google', rating: primary.rating, review_count: primary.review_count });
+  } else if (gLocal?.rating) {
+    ratings.push({ source: 'google_local', rating: gLocal.rating, review_count: gLocal.review_count });
+  } else if (gHQ?.rating) {
+    ratings.push({ source: 'google_hq', rating: gHQ.rating, review_count: gHQ.review_count });
+  }
   if (reviewData.glassdoor?.rating) ratings.push({ source: 'glassdoor', rating: reviewData.glassdoor.rating });
   if (reviewData.bbb?.rating) {
     // Convert BBB letter to number
@@ -234,14 +258,20 @@ function quickDiscrepancyCheck(reviewData) {
   };
 
   // Specific flags
-  if (reviewData.bbb?.rating === 'F' && reviewData.google_maps?.rating >= 4.5) {
+  // Use best Google rating for comparisons
+  const bestGoogleRating = Math.max(
+    reviewData.google_maps_local?.rating || 0,
+    reviewData.google_maps_hq?.rating || 0
+  );
+
+  if (reviewData.bbb?.rating === 'F' && bestGoogleRating >= 4.5) {
     result.flags.push('CRITICAL: BBB F rating vs high Google rating - likely fake reviews or complaint suppression');
   }
 
-  if (reviewData.glassdoor?.rating && reviewData.google_maps?.rating) {
-    const diff = reviewData.google_maps.rating - reviewData.glassdoor.rating;
+  if (reviewData.glassdoor?.rating && bestGoogleRating > 0) {
+    const diff = bestGoogleRating - reviewData.glassdoor.rating;
     if (diff > 1.5) {
-      result.flags.push(`Employee rating (${reviewData.glassdoor.rating}) much lower than customer rating (${reviewData.google_maps.rating}) - potential internal issues`);
+      result.flags.push(`Employee rating (${reviewData.glassdoor.rating}) much lower than customer rating (${bestGoogleRating}) - potential internal issues`);
     }
   }
 

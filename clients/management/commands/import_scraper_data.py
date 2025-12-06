@@ -14,7 +14,7 @@ from decimal import Decimal
 from django.core.management.base import BaseCommand
 from django.utils import timezone
 
-from leads.models import Permit, Property, Lead, ScraperRun, NeighborhoodMedian
+from clients.models import Permit, Property, Lead, ScraperRun, NeighborhoodMedian
 
 
 class Command(BaseCommand):

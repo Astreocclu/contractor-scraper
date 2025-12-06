@@ -1,40 +1,109 @@
-# Contractor Scraper
+# Contractor Intelligence System
 
 ## What This Is
-Standalone contractor database. Scrapes from Google, enriches with BBB/Yelp, calculates trust scores.
+Forensic contractor auditing. Puppeteer scrapes → DeepSeek analyzes → Trust Score.
 
-## STANDALONE PROJECT
-- Database: contractor_db (SQLite fallback: db.sqlite3)
-- Port: 8002
-- Venv: ./venv
-- NO imports from Boss or Pools
+## Isolation
+- Port: 8002 | Database: db.sqlite3 | Venv: `./venv`
+- Always keep completely separate from Boss (8000) and Pools (8001)
+
+---
+
+## LLM Startup Checklist
+
+**Read these files IN ORDER before doing any work:**
+
+1. `TODO.md` — Current priorities (what to work on)
+2. `STATUS.md` — System state (what's working/broken)
+3. `ERRORS.md` — Known issues (avoid repeating mistakes)
+4. `docs/AGENTIC_QUICKREF.md` — Audit system overview (how it works)
+5. Run `git status` — Confirm branch and uncommitted changes
+
+---
+
+## Documentation Index
+
+All documentation is in `docs/` except the top-level status files.
+
+| Need | File |
+|------|------|
+| Current priorities | `TODO.md` |
+| System state | `STATUS.md` |
+| Known bugs | `ERRORS.md` |
+| **Audit quick reference** | `docs/AGENTIC_QUICKREF.md` |
+| Audit full spec | `docs/AGENTIC_AUDIT_SPEC.md` |
+| Codebase overview | `docs/CODEBASE_DOCUMENTATION.md` |
+| Permit portals | `docs/dfw-contractor-audit.md` |
+| Database stats | `docs/DATABASE_ANALYSIS.md` |
+| Archived session logs | `docs/_archive/` |
+
+---
+
+## File Map
+
+| Need | File |
+|------|------|
+| CLI entry | `run_audit.js` |
+| Scraping | `services/collection_service.js` |
+| DeepSeek agent | `services/audit_agent.js` |
+| Score enforcement | `services/audit_agent_v2.js` |
+| Review analysis | `services/review_analyzer.js` |
+
+---
 
 ## Commands
+
 ```bash
-source venv/bin/activate
+source venv/bin/activate && set -a && . ./.env && set +a
+
+node run_audit.js --id 123
+node run_audit.js --name "Company" --city "Dallas" --state "TX"
+node batch_collect.js --id 123 --force
 python manage.py runserver 8002
-python manage.py scrape_contractors
-python manage.py enrich_contractors
-python manage.py audit_contractors
 ```
 
-## Trust Score
-- 80+ = Passes
-- <80 = Does Not Pass
+---
 
-## Related Projects (NO CODE SHARING)
-- Boss Visualizer: /home/reid/testhome/boss-security-visualizer/ (port 8000)
-- Pool Visualizer: /home/reid/testhome/pool-visualizer/ (port 8001)
+## Always Do These
 
-These projects are completely separate. Do NOT import code between them.
+### Terminology
+- Always say `contractors` (the term `homescreen` is contaminated)
+- Always say `pool` or `swimming pool` (the term `pool enclosure` means Florida screen rooms)
+- Always say `clients` for homeowner leads from permits (formerly `leads` app)
+- Always use DeepSeek + Puppeteer (Perplexity API is banned)
+- Always use Puppeteer scraping (Google Places API caused $300 overcharge)
 
-## Working Style
-- When I share a problem, analyze it first and wait for my reply before making changes
-- Break large tasks into 3-5 subtasks and confirm the plan before starting
-- Ask clarifying questions if requirements are ambiguous
-- One feature at a time, fully complete before moving on
+### Prompts
+- Always use positive framing: "Remove ONLY these items: X, Y, Z"
+- Always specify what to preserve: "Preserve all structural elements exactly"
 
-## Git Workflow
-- Run `git status` and show me the output before any git operations
-- Suggest commits but wait for my approval before running them
-- Tell me when to commit, don't do it automatically
+### Scoring
+- Always enforce score caps in code via `enforceScoreMultipliers()`
+- Always parse structured data before sending to LLM
+
+### Task Breakdown
+- Always break work into phases (2-4 per project)
+- Always break phases into tasks (3-5 per phase)
+- Always break tasks into subtasks (2-3 per task)
+- Each subtask should complete in one focused session
+
+### Workflow
+- Always read relevant docs before starting (see index above)
+- Always analyze problems first, wait for confirmation before changes
+- Always show `git status` before any git operations
+- Always suggest commits, wait for approval before running
+
+---
+
+## Score Caps (Enforced in Code)
+
+```
+CRITICAL flag → max 15
+SEVERE/HIGH  → max 35
+MODERATE     → max 60
+```
+
+---
+
+## Test Contractor
+Orange Elephant Roofing (ID: 1524) - Known fraud, expect score ~15, CRITICAL

@@ -17,8 +17,9 @@ class ContractorListSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'slug', 'business_name', 'city', 'state',
             'phone', 'website', 'verticals',
-            'trust_score', 'passes_threshold', 'pass_status',
+            'trust_score', 'passes_threshold', 'pass_status', 'tier',
             'google_rating', 'google_review_count',
+            'ai_red_flags',
         ]
 
 

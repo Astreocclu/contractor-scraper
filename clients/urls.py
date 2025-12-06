@@ -6,7 +6,7 @@ from .views import PermitViewSet, PropertyViewSet, LeadViewSet, ScraperRunViewSe
 router = DefaultRouter()
 router.register(r'permits', PermitViewSet)
 router.register(r'properties', PropertyViewSet)
-router.register(r'leads', LeadViewSet)
+router.register(r'', LeadViewSet, basename='client')  # /api/clients/ for client list
 router.register(r'scraper-runs', ScraperRunViewSet)
 
 urlpatterns = [

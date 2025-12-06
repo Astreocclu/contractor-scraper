@@ -16,7 +16,8 @@ const SOURCES = {
   // Tier 1: Reviews (cache 24h)
   bbb:       { ttl: 86400, tier: 1, type: 'url' },
   yelp:      { ttl: 86400, tier: 1, type: 'url' },
-  google_maps: { ttl: 86400, tier: 1, type: 'url' },
+  google_maps_local: { ttl: 86400, tier: 1, type: 'url' },  // Search in target market (DFW)
+  google_maps_hq:    { ttl: 86400, tier: 1, type: 'url' },  // Search in contractor's HQ location
   angi:      { ttl: 86400, tier: 1, type: 'url' },
   houzz:     { ttl: 86400, tier: 1, type: 'url' },
   thumbtack: { ttl: 86400, tier: 1, type: 'url' },
@@ -180,7 +181,7 @@ function ratingToScore(rating) {
 }
 
 /**
- * Parse Google Maps search results
+ * Parse Google Maps search results - finds best matching listing
  */
 function parseGoogleMapsResults(text, contractorName) {
   const result = {
@@ -194,33 +195,57 @@ function parseGoogleMapsResults(text, contractorName) {
   if (!text) return result;
 
   const nameLower = contractorName.toLowerCase();
-  const textLower = text.toLowerCase();
 
-  // Check if contractor name appears
-  const commonWords = ['roofing', 'construction', 'llc', 'inc', 'corp', 'company', 'services'];
-  const nameWords = nameLower.split(/\s+/).filter(w => w.length > 2 && !commonWords.includes(w));
-  const nameFound = nameWords.every(w => textLower.includes(w));
+  // Extract key words from contractor name (ignore common suffixes)
+  const commonWords = ['roofing', 'construction', 'llc', 'inc', 'corp', 'company', 'services', 'the', 'and', 'of'];
+  const nameWords = nameLower.split(/[\s\(\)]+/).filter(w => w.length > 2 && !commonWords.includes(w));
 
-  if (!nameFound) return result;
+  // Find ALL listings with ratings in the text
+  // Pattern: "Business Name X.X (NN)" where X.X is rating and NN is review count
+  const listingPattern = /([A-Za-z][A-Za-z0-9\s&',.-]+?)\s+(\d\.\d)\s*\((\d+)\)/g;
+  const listings = [];
+  let match;
+
+  while ((match = listingPattern.exec(text)) !== null) {
+    const businessName = match[1].trim();
+    const rating = parseFloat(match[2]);
+    const reviewCount = parseInt(match[3]);
+
+    // Score this listing based on name match
+    const businessLower = businessName.toLowerCase();
+    const matchedWords = nameWords.filter(w => businessLower.includes(w));
+    const score = matchedWords.length / nameWords.length;
+
+    listings.push({ businessName, rating, reviewCount, score, matchedWords });
+  }
+
+  if (listings.length === 0) return result;
+
+  // Sort by match score (highest first), then by review count as tiebreaker
+  listings.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    return b.reviewCount - a.reviewCount;
+  });
+
+  const best = listings[0];
+
+  // Require at least 40% word match
+  if (best.score < 0.4) return result;
 
   result.found = true;
+  result.business_name = best.businessName;
+  result.rating = best.rating;
+  result.review_count = best.reviewCount;
 
-  // Look for rating pattern: "4.8 (35)" or "4.8(35)"
-  const ratingMatch = text.match(/(\d\.\d)\s*\((\d+)\)/);
-  if (ratingMatch) {
-    result.rating = parseFloat(ratingMatch[1]);
-    result.review_count = parseInt(ratingMatch[2]);
-  }
-
-  // Check for "No reviews"
-  if (textLower.includes('no reviews')) {
-    result.status = 'no_reviews';
-  }
-
-  // Extract business status (Open/Closed)
-  const statusMatch = text.match(/(Open|Closed)\s*·\s*(Closes|Opens)\s+(\d+\s*[AP]M)/i);
-  if (statusMatch) {
-    result.status = statusMatch[1].toLowerCase();
+  // Extract business status near the matched listing
+  const textLower = text.toLowerCase();
+  const businessIndex = textLower.indexOf(best.businessName.toLowerCase());
+  if (businessIndex !== -1) {
+    const nearbyText = text.substring(businessIndex, businessIndex + 200);
+    const statusMatch = nearbyText.match(/(Open|Closed)\s*·/i);
+    if (statusMatch) {
+      result.status = statusMatch[1].toLowerCase();
+    }
   }
 
   return result;
@@ -340,10 +365,21 @@ class CollectionService {
     const citySlug = toSlug(city);
     const stateLower = state.toLowerCase();
 
+    // For Google Maps, use website domain if available (much better results)
+    const websiteDomain = website ? website.replace(/^https?:\/\//, '').replace(/\/$/, '') : null;
+
+    // Target market for local search (DFW)
+    const targetMarket = { city: 'Dallas', state: 'TX' };
+    const localQuery = websiteDomain
+      ? `${websiteDomain}+${targetMarket.city}+${targetMarket.state}`
+      : `${encodedName}+${targetMarket.city}+${targetMarket.state}`;
+    const hqQuery = websiteDomain || `${encodedName}+${encodedCity}+${encodedState}`;
+
     const urls = {
       bbb: `https://www.bbb.org/search?find_text=${encodedName}&find_loc=${location}`,
       yelp: `https://www.yelp.com/search?find_desc=${encodedName}&find_loc=${encodedCity},%20${encodedState}`,
-      google_maps: `https://www.google.com/maps/search/${encodedName}+${encodedCity}+${encodedState}`,
+      google_maps_local: `https://www.google.com/maps/search/${localQuery}`,
+      google_maps_hq: `https://www.google.com/maps/search/${hqQuery}`,
       angi: `https://www.angi.com/search?query=${encodedName}&location=${encodedCity},%20${encodedState}`,
       houzz: `https://www.houzz.com/search/professionals/query/${encodedName}/location/${citySlug}--${stateLower}`,
       thumbtack: zip
@@ -553,11 +589,12 @@ class CollectionService {
             if (parsed.found) {
               log(`    📋 BBB: Rating=${parsed.rating}, Accredited=${parsed.accredited}, Locations=${parsed.locations_count}`);
             }
-          } else if (result.source === 'google_maps') {
+          } else if (result.source === 'google_maps_local' || result.source === 'google_maps_hq') {
             const parsed = parseGoogleMapsResults(result.text, contractor.name);
             result.structured = parsed;
             if (parsed.found && parsed.rating) {
-              log(`    📋 Google Maps: ${parsed.rating}★ (${parsed.review_count} reviews)`);
+              const label = result.source === 'google_maps_local' ? 'Google Maps (DFW)' : 'Google Maps (HQ)';
+              log(`    📋 ${label}: ${parsed.rating}★ (${parsed.review_count} reviews)`);
             }
           } else if (result.source === 'glassdoor') {
             const parsed = parseGlassdoorResults(result.text, contractor.name);
@@ -705,7 +742,7 @@ class CollectionService {
       // Gather review data from collected sources
       const reviewData = {};
       for (const r of results) {
-        if (['bbb', 'google_maps', 'glassdoor', 'yelp', 'angi', 'houzz', 'porch'].includes(r.source)) {
+        if (['bbb', 'google_maps_local', 'google_maps_hq', 'glassdoor', 'yelp', 'angi', 'houzz', 'porch'].includes(r.source)) {
           reviewData[r.source] = {
             ...r.structured,
             raw_text: r.text

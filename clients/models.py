@@ -26,6 +26,7 @@ class Permit(models.Model):
     categorization_confidence = models.FloatField(blank=True, null=True)
 
     class Meta:
+        db_table = 'leads_permit'  # Keep old table name for data continuity
         unique_together = ['city', 'permit_id']
         indexes = [
             models.Index(fields=['property_address_normalized']),
@@ -77,6 +78,9 @@ class Property(models.Model):
     ]
     enrichment_status = models.CharField(max_length=20, choices=ENRICHMENT_STATUS_CHOICES, default='pending')
     enriched_at = models.DateTimeField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'leads_property'  # Keep old table name for data continuity
 
     def __str__(self):
         return self.property_address
@@ -136,6 +140,7 @@ class Lead(models.Model):
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='new', db_index=True)
 
     class Meta:
+        db_table = 'leads_lead'  # Keep old table name for data continuity
         ordering = ['-score']
 
     def __str__(self):
@@ -160,6 +165,7 @@ class ScraperRun(models.Model):
     log_file = models.CharField(max_length=500, blank=True, null=True)
 
     class Meta:
+        db_table = 'leads_scraperrun'  # Keep old table name for data continuity
         ordering = ['-started_at']
 
     def __str__(self):
@@ -174,6 +180,9 @@ class NeighborhoodMedian(models.Model):
     median_value = models.DecimalField(max_digits=14, decimal_places=2, blank=True, null=True)
     property_count = models.IntegerField(blank=True, null=True)
     calculated_at = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        db_table = 'leads_neighborhoodmedian'  # Keep old table name for data continuity
 
     def __str__(self):
         return f"{self.neighborhood_code} - ${self.median_value:,.0f}"

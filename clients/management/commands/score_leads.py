@@ -9,7 +9,7 @@ Usage:
 import logging
 from django.core.management.base import BaseCommand
 
-from leads.services.scoring import score_all_permits
+from clients.services.scoring import score_all_permits
 
 
 class Command(BaseCommand):
