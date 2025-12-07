@@ -1,7 +1,7 @@
 /**
- * Cold Email Draft Factory
+ * Cold Email Draft Factory - PATIOS
  *
- * Creates Gmail drafts for Texas construction leads.
+ * Creates Gmail drafts for patio/outdoor living contractors in Fort Worth area.
  * Uses OAuth2 for authentication and users.drafts.create endpoint.
  *
  * CRITICAL: This script ONLY creates drafts. It does NOT send emails.
@@ -12,52 +12,43 @@ const path = require('path');
 const { google } = require('googleapis');
 const readline = require('readline');
 
-// OAuth2 scopes - only requesting draft creation permission
 const SCOPES = ['https://www.googleapis.com/auth/gmail.compose'];
 const TOKEN_PATH = path.join(__dirname, 'token.json');
 const CREDENTIALS_PATH = path.join(__dirname, 'credentials.json');
 const LEADS_PATH = path.join(__dirname, 'leads.json');
 
-// Sender info
 const SENDER_NAME = 'Mike';
-const SENDER_EMAIL = 'me'; // Gmail API uses 'me' to reference authenticated user
+const SENDER_EMAIL = 'me';
 
-// DeepSeek API configuration
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
 
-// Personalities to randomly select from - all Reid with different vibes
 const PERSONALITIES = [
-  { name: 'Reid', style: 'direct Texas guy, gets straight to the point, no BS, talks about data and deals' },
-  { name: 'Reid', style: 'casual and friendly, talks like texting a buddy, uses informal language' },
-  { name: 'Reid', style: 'data-driven professional, mentions specific numbers and ROI, analytical but personable' },
-  { name: 'Reid', style: 'hustler energy, knows the grind, talks about beating the competition and winning jobs' },
-  { name: 'Reid', style: 'laid-back advisor vibe, gives helpful tips, sounds like a friend who happens to have good leads' }
+  { name: 'Mike', style: 'blunt Texas guy, gets straight to the point, no BS' },
+  { name: 'Sarah', style: 'friendly but busy, talks like texting a friend' },
+  { name: 'Jake', style: 'laid-back surfer vibe, casual and chill' },
+  { name: 'Marcus', style: 'former contractor himself, knows the hustle, speaks their language' },
+  { name: 'Danny', style: 'fast-talking New Yorker energy, impatient but helpful' }
 ];
 
-/**
- * Generates email subject and body using DeepSeek.
- * Randomly selects personality for variety.
- */
 async function generateEmailBody(lead) {
   const { permit_type, address, city, count, contractor_email } = lead;
-  const businessName = address;
+  const businessName = lead.business_name || address;
 
-  // Pick a random personality
   const persona = PERSONALITIES[Math.floor(Math.random() * PERSONALITIES.length)];
 
   const prompt = `You are ${persona.name}. Your personality: ${persona.style}
 
-You have 43 verified POOL PERMIT leads in DFW from the last 60 days. These are homeowners who just pulled permits to build pools - they need pool builders NOW.
+You have 111 verified OUTDOOR STRUCTURE permit leads in Fort Worth area from the last 60 days. These are homeowners who just pulled permits for patios, pergolas, outdoor kitchens, covered porches - they need contractors NOW.
 
 The data:
-- 26 are HOT (permits filed in last 30 days)
-- 63% are absentee owners (investors = repeat buyers)
-- Average property value: $547k
+- 20 are HOT (permits filed in last 30 days)
+- 37 are WARM (30-60 days old)
+- Mostly Fort Worth, Grapevine, Keller area
 - Each lead includes: address, owner name, property value, permit date
 
-Pricing: $50/hot lead, $20/older leads, or $1,400 for all 43
+Pricing: $40/hot lead, $20/warm lead, or $2,500 for all 111
 
-Write a quick cold email to ${businessName} in ${city}. They build pools.
+Write a quick cold email to ${businessName} in ${city}. They build patios and outdoor structures.
 
 The vibe:
 - You're not a slick salesman, you're just trying to move some leads
@@ -79,11 +70,9 @@ Return JSON only:
         'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
       },
       body: JSON.stringify({
-        model: 'deepseek-chat',  // Using chat model for reliable JSON output
-        messages: [
-          { role: 'user', content: prompt }
-        ],
-        temperature: 0.9,  // Higher temp for more variation
+        model: 'deepseek-chat',
+        messages: [{ role: 'user', content: prompt }],
+        temperature: 0.9,
         max_tokens: 500
       })
     });
@@ -97,47 +86,26 @@ Return JSON only:
     const data = JSON.parse(responseText);
     const content = data.choices?.[0]?.message?.content || '';
 
-    if (!content) {
-      throw new Error('Empty response from DeepSeek');
-    }
+    if (!content) throw new Error('Empty response from DeepSeek');
 
-    // Extract JSON from response (handle markdown code blocks)
     let jsonStr = content;
     const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)```/);
-    if (jsonMatch) {
-      jsonStr = jsonMatch[1].trim();
-    }
+    if (jsonMatch) jsonStr = jsonMatch[1].trim();
 
-    // Try to find JSON object in the response
     const objectMatch = jsonStr.match(/\{[\s\S]*\}/);
-    if (objectMatch) {
-      jsonStr = objectMatch[0];
-    }
+    if (objectMatch) jsonStr = objectMatch[0];
 
     const result = JSON.parse(jsonStr);
-
-    // Log reasoning if present
-    if (data.choices?.[0]?.message?.reasoning_content) {
-      console.log(`  [DeepSeek reasoning]: ${data.choices[0].message.reasoning_content.substring(0, 100)}...`);
-    }
-
-    return {
-      subject: result.subject,
-      body: result.body
-    };
+    return { subject: result.subject, body: result.body };
   } catch (err) {
     console.error(`  [DeepSeek fallback]: ${err.message}`);
-    // Fallback to simple template
     return {
-      subject: `Leads in ${city}`,
-      body: `Found some fresh permits in ${city} this week. I'm selling the list to one contractor. Want it?`
+      subject: `Fort Worth patio permits - samples?`,
+      body: `Got 111 fresh outdoor structure permits in Fort Worth area. Homeowners building patios, pergolas, outdoor kitchens - they need contractors now. Want 2-3 free samples?`
     };
   }
 }
 
-/**
- * Creates an RFC 822 formatted email message.
- */
 function createRFC822Message(to, subject, body) {
   const messageParts = [
     `To: ${to}`,
@@ -147,10 +115,7 @@ function createRFC822Message(to, subject, body) {
     '',
     body
   ];
-
   const message = messageParts.join('\r\n');
-
-  // Base64url encode the message
   return Buffer.from(message)
     .toString('base64')
     .replace(/\+/g, '-')
@@ -158,38 +123,23 @@ function createRFC822Message(to, subject, body) {
     .replace(/=+$/, '');
 }
 
-/**
- * Creates a draft in Gmail.
- * Uses users.drafts.create - does NOT send.
- */
 async function createDraft(auth, lead) {
   const gmail = google.gmail({ version: 'v1', auth });
-
   const { subject, body } = await generateEmailBody(lead);
   const rawMessage = createRFC822Message(lead.contractor_email, subject, body);
 
   const response = await gmail.users.drafts.create({
     userId: 'me',
-    requestBody: {
-      message: {
-        raw: rawMessage
-      }
-    }
+    requestBody: { message: { raw: rawMessage } }
   });
 
   return { subject, draftId: response.data.id };
 }
 
-/**
- * Delays execution for specified milliseconds.
- */
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-/**
- * Loads saved credentials if they exist.
- */
 async function loadSavedCredentials() {
   try {
     const content = await fs.readFile(TOKEN_PATH);
@@ -200,51 +150,31 @@ async function loadSavedCredentials() {
   }
 }
 
-/**
- * Saves credentials to file for future use.
- */
 async function saveCredentials(client) {
   const content = await fs.readFile(CREDENTIALS_PATH);
   const keys = JSON.parse(content);
   const key = keys.installed || keys.web;
-
   const payload = JSON.stringify({
     type: 'authorized_user',
     client_id: key.client_id,
     client_secret: key.client_secret,
     refresh_token: client.credentials.refresh_token,
   });
-
   await fs.writeFile(TOKEN_PATH, payload);
 }
 
-/**
- * Prompts user for authorization code.
- */
 function askQuestion(query) {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-
-  return new Promise(resolve => rl.question(query, ans => {
-    rl.close();
-    resolve(ans);
-  }));
+  const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+  return new Promise(resolve => rl.question(query, ans => { rl.close(); resolve(ans); }));
 }
 
-/**
- * Authorizes with Google using OAuth2.
- */
 async function authorize() {
-  // Try to load existing credentials
   let client = await loadSavedCredentials();
   if (client) {
     console.log('Using saved credentials...');
     return client;
   }
 
-  // Load client secrets
   const content = await fs.readFile(CREDENTIALS_PATH);
   const keys = JSON.parse(content);
   const key = keys.installed || keys.web;
@@ -255,11 +185,7 @@ async function authorize() {
     key.redirect_uris?.[0] || 'urn:ietf:wg:oauth:2.0:oob'
   );
 
-  // Generate auth URL
-  const authUrl = oAuth2Client.generateAuthUrl({
-    access_type: 'offline',
-    scope: SCOPES,
-  });
+  const authUrl = oAuth2Client.generateAuthUrl({ access_type: 'offline', scope: SCOPES });
 
   console.log('\n===========================================');
   console.log('AUTHORIZATION REQUIRED');
@@ -269,48 +195,36 @@ async function authorize() {
   console.log('\n===========================================\n');
 
   const code = await askQuestion('Enter the authorization code: ');
-
   const { tokens } = await oAuth2Client.getToken(code);
   oAuth2Client.setCredentials(tokens);
-
-  // Save credentials for next run
   await saveCredentials(oAuth2Client);
   console.log('Credentials saved to token.json\n');
 
   return oAuth2Client;
 }
 
-/**
- * Main execution function.
- */
 async function main() {
   console.log('\n========================================');
-  console.log('  COLD EMAIL DRAFT FACTORY');
-  console.log('  Texas Construction Leads');
+  console.log('  PATIO CONTRACTOR EMAIL DRAFTS');
+  console.log('  Fort Worth Area - 111 Leads');
   console.log('========================================\n');
 
-  // Check for credentials file
   try {
     await fs.access(CREDENTIALS_PATH);
   } catch {
     console.error('ERROR: credentials.json not found!');
-    console.error('Please download it from Google Cloud Console.');
-    console.error('See README.md for instructions.\n');
     process.exit(1);
   }
 
-  // Authenticate
   console.log('Authenticating with Google...');
   const auth = await authorize();
   console.log('Authentication successful!\n');
 
-  // Load leads
   console.log('Loading leads from leads.json...');
   const leadsContent = await fs.readFile(LEADS_PATH, 'utf8');
   const leads = JSON.parse(leadsContent);
-  console.log(`Found ${leads.length} leads to process.\n`);
+  console.log(`Found ${leads.length} contractors to process.\n`);
 
-  // Process each lead
   console.log('Creating drafts...');
   console.log('----------------------------------------');
 
@@ -319,7 +233,6 @@ async function main() {
 
   for (let i = 0; i < leads.length; i++) {
     const lead = leads[i];
-
     try {
       const { subject, draftId } = await createDraft(auth, lead);
       console.log(`Draft created for ${lead.contractor_email} - "${subject}"`);
@@ -328,20 +241,14 @@ async function main() {
       console.error(`ERROR creating draft for ${lead.contractor_email}: ${err.message}`);
       errorCount++;
     }
-
-    // Rate limiting - 1 second delay between requests
-    if (i < leads.length - 1) {
-      await delay(1000);
-    }
+    if (i < leads.length - 1) await delay(1000);
   }
 
-  // Summary
   console.log('----------------------------------------');
   console.log(`\nComplete! ${successCount} drafts created, ${errorCount} errors.`);
   console.log('Check your Gmail Drafts folder to review and send.\n');
 }
 
-// Run the script
 main().catch(err => {
   console.error('Fatal error:', err.message);
   process.exit(1);

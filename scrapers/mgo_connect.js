@@ -142,11 +142,12 @@ async function login(page) {
   return true;
 }
 
-async function scrape(cityName, targetCount = 50) {
+async function scrape(cityName, targetCount = 50, skipDesignation = false) {
   console.log('='.repeat(50));
   console.log(`MGO CONNECT SCRAPER - ${cityName.toUpperCase()}`);
   console.log('='.repeat(50));
   console.log(`Target: ${targetCount} permits`);
+  console.log(`Mode: ${skipDesignation ? 'ALL PERMITS (no designation filter)' : 'Residential only'}`);
   console.log(`Time: ${new Date().toISOString()}\n`);
 
   // Validate inputs
@@ -445,40 +446,44 @@ ${html.substring(0, 80000)}`;
     const endDateStr = formatDate(today);
     console.log(`    Date range: ${startDateStr} to ${endDateStr} (${weeksBack} weeks)`);
 
-    // 5a: Select "Residential" from Designation dropdown (required for search to work)
-    console.log('    Selecting Designation: Residential...');
-    const designationSelected = await page.evaluate(async () => {
-      const dropdowns = document.querySelectorAll('.p-dropdown');
-      for (const dd of dropdowns) {
-        const label = dd.querySelector('.p-dropdown-label');
-        if (label && (label.textContent?.includes('Select Designation') || label.getAttribute('aria-label')?.includes('Designation'))) {
-          dd.click();
-          return { opened: true };
-        }
-      }
-      return { opened: false, error: 'Designation dropdown not found' };
-    });
-
-    if (designationSelected.opened) {
-      await page.waitForTimeout(1000);
-      await page.keyboard.type('Residential', { delay: 50 });
-      await page.waitForTimeout(500);
-
-      const selected = await page.evaluate(() => {
-        const items = document.querySelectorAll('.p-dropdown-item, li[role="option"]');
-        for (const item of items) {
-          if (item.textContent?.toLowerCase().includes('residential')) {
-            item.click();
-            return { selected: true, text: item.textContent?.trim() };
+    // 5a: Select "Residential" from Designation dropdown (skip if --no-filter flag)
+    if (!skipDesignation) {
+      console.log('    Selecting Designation: Residential...');
+      const designationSelected = await page.evaluate(async () => {
+        const dropdowns = document.querySelectorAll('.p-dropdown');
+        for (const dd of dropdowns) {
+          const label = dd.querySelector('.p-dropdown-label');
+          if (label && (label.textContent?.includes('Select Designation') || label.getAttribute('aria-label')?.includes('Designation'))) {
+            dd.click();
+            return { opened: true };
           }
         }
-        return { selected: false };
+        return { opened: false, error: 'Designation dropdown not found' };
       });
-      console.log(`    Designation: ${selected.selected ? selected.text : 'NOT SELECTED'}`);
+
+      if (designationSelected.opened) {
+        await page.waitForTimeout(1000);
+        await page.keyboard.type('Residential', { delay: 50 });
+        await page.waitForTimeout(500);
+
+        const selected = await page.evaluate(() => {
+          const items = document.querySelectorAll('.p-dropdown-item, li[role="option"]');
+          for (const item of items) {
+            if (item.textContent?.toLowerCase().includes('residential')) {
+              item.click();
+              return { selected: true, text: item.textContent?.trim() };
+            }
+          }
+          return { selected: false };
+        });
+        console.log(`    Designation: ${selected.selected ? selected.text : 'NOT SELECTED'}`);
+      } else {
+        console.log(`    WARNING: ${designationSelected.error}`);
+      }
+      await page.waitForTimeout(1000);
     } else {
-      console.log(`    WARNING: ${designationSelected.error}`);
+      console.log('    SKIPPING designation filter (--no-filter mode)');
     }
-    await page.waitForTimeout(1000);
 
     // 5b: Fill date fields using keyboard input (PrimeNG calendars need actual typing)
     console.log('    Setting date filters...');
@@ -794,5 +799,6 @@ ${resultsHtml.substring(0, 100000)}`;
 // Parse command line args
 const cityArg = process.argv[2] || 'Irving';
 const countArg = parseInt(process.argv[3]) || 50;
+const skipDesignation = process.argv.includes('--no-filter') || process.argv.includes('--all');
 
-scrape(cityArg, countArg).catch(console.error);
+scrape(cityArg, countArg, skipDesignation).catch(console.error);

@@ -21,20 +21,35 @@ import httpx
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeout
 
 # City configurations
+# URLs verified from docs/dfw-contractor-audit-v3-corrected.md
+# Using direct search page URLs instead of welcome pages
 ACCELA_CITIES = {
     'fort_worth': {
         'name': 'Fort Worth',
         'base_url': 'https://aca-prod.accela.com/CFW',
-        'module': 'Building',
+        # Development module search page (most residential/building permits)
+        'search_path': '/Cap/CapHome.aspx?module=Development&TabName=Development',
+        'module': 'Development',
     },
     'dallas': {
         'name': 'Dallas',
         'base_url': 'https://aca-prod.accela.com/DALLASTX',
+        # DallasNow Building search (May 2025 migration)
+        'search_path': '/Cap/CapHome.aspx?module=Building&TabName=Home',
+        'module': 'Building',
+    },
+    'grand_prairie': {
+        'name': 'Grand Prairie',
+        'base_url': 'https://aca-prod.accela.com/GPTX',
+        # Building permits search
+        'search_path': '/Cap/CapHome.aspx?module=Building&TabName=Building',
         'module': 'Building',
     },
     'richardson': {
         'name': 'Richardson',
         'base_url': 'https://aca-prod.accela.com/RICHARDSON',
+        # Building permits search
+        'search_path': '/Cap/CapHome.aspx?module=Building&TabName=Building',
         'module': 'Building',
     },
 }
@@ -100,6 +115,7 @@ async def scrape(city_key: str, target_count: int = 50):
     city_config = ACCELA_CITIES[city_key]
     city_name = city_config['name']
     base_url = city_config['base_url']
+    search_path = city_config.get('search_path', '/Default.aspx')
     module = city_config['module']
 
     print('=' * 50)
@@ -121,14 +137,14 @@ async def scrape(city_key: str, target_count: int = 50):
         page = await context.new_page()
 
         try:
-            # Step 1: Load search page
+            # Step 1: Load Accela portal
             print('[1] Loading Accela portal...')
-            search_url = f'{base_url}/Cap/CapHome.aspx?module={module}&TabName={module}'
+            search_url = f'{base_url}{search_path}'
             await page.goto(search_url, wait_until='networkidle', timeout=60000)
             await asyncio.sleep(3)
 
             Path('debug_html').mkdir(exist_ok=True)
-            await page.screenshot(path=f'debug_html/{city_key}_p1.png')
+            await page.screenshot(path=f'debug_html/{city_key}_step1.png')
             print(f'    OK - Page loaded: {page.url}')
 
             # Check if page loaded correctly
@@ -137,13 +153,49 @@ async def scrape(city_key: str, target_count: int = 50):
                 errors.append({'step': 'load', 'error': 'Page 404'})
                 raise Exception('Page 404')
 
-            # Step 2: Click search button
-            print('[2] Submitting search...')
+            # Step 1b: If on Default.aspx/welcome page, navigate to search
+            # Look for "Search Applications and Permits" or similar links
+            if '/Default.aspx' in page.url or '/default.aspx' in page.url.lower():
+                print('[1b] Navigating to permit search...')
+                search_nav_clicked = await page.evaluate('''() => {
+                    // Look for links containing "search" and "permit" or "application"
+                    const links = document.querySelectorAll('a');
+                    for (const link of links) {
+                        const text = (link.textContent || '').toLowerCase();
+                        if (text.includes('search') && (text.includes('permit') || text.includes('application'))) {
+                            link.click();
+                            return link.href || 'clicked';
+                        }
+                    }
+                    // Look for Building/Development module links
+                    for (const link of links) {
+                        const text = (link.textContent || '').toLowerCase();
+                        const href = (link.href || '').toLowerCase();
+                        if (href.includes('caphome') || href.includes('module=building') || href.includes('module=development')) {
+                            link.click();
+                            return link.href || 'clicked';
+                        }
+                    }
+                    return null;
+                }''')
+
+                if search_nav_clicked:
+                    print(f'    Clicked link to search: {search_nav_clicked[:60]}...')
+                    await asyncio.sleep(4)
+                    await page.screenshot(path=f'debug_html/{city_key}_step1b.png')
+                else:
+                    print('    WARN - No navigation link found, staying on current page')
+
+            # Step 2: Click search button (with empty criteria to get all recent permits)
+            print('[2] Submitting search with default criteria...')
             search_selectors = [
                 '#ctl00_PlaceHolderMain_btnNewSearch',
+                '#ctl00_PlaceHolderMain_generalSearchForm_btnSearch',
+                'input[id*="btnNewSearch"]',
+                'input[id*="btnSearch"]',
                 'input[value*="Search"]',
                 'button:has-text("Search")',
-                '#ctl00_PlaceHolderMain_generalSearchForm_btnSearch',
+                'a:has-text("Search")',
             ]
 
             clicked = False
@@ -158,17 +210,21 @@ async def scrape(city_key: str, target_count: int = 50):
 
             if not clicked:
                 # Try clicking any button with "Search" text
-                await page.evaluate('''() => {
-                    const inputs = document.querySelectorAll('input[type="submit"], input[type="button"], button');
-                    for (const inp of inputs) {
-                        if ((inp.value || inp.textContent || '').toLowerCase().includes('search')) {
-                            inp.click();
+                clicked_js = await page.evaluate('''() => {
+                    const elements = document.querySelectorAll('input[type="submit"], input[type="button"], button, a.ACA_LgButton');
+                    for (const el of elements) {
+                        const text = (el.value || el.textContent || '').toLowerCase();
+                        if (text.includes('search') && !text.includes('clear') && !text.includes('new')) {
+                            el.click();
                             return true;
                         }
                     }
                     return false;
                 }''')
-                print('    Clicked search via JS')
+                if clicked_js:
+                    print('    Clicked search via JS')
+                else:
+                    print('    WARN - No search button found')
 
             await asyncio.sleep(5)
             await page.screenshot(path=f'debug_html/{city_key}_results.png')

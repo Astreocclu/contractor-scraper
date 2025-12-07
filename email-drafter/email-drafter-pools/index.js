@@ -1,7 +1,7 @@
 /**
- * Cold Email Draft Factory
+ * Cold Email Draft Factory - POOLS
  *
- * Creates Gmail drafts for Texas construction leads.
+ * Creates Gmail drafts for pool contractors in Fort Worth area.
  * Uses OAuth2 for authentication and users.drafts.create endpoint.
  *
  * CRITICAL: This script ONLY creates drafts. It does NOT send emails.
@@ -25,13 +25,13 @@ const SENDER_EMAIL = 'me'; // Gmail API uses 'me' to reference authenticated use
 // DeepSeek API configuration
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
 
-// Personalities to randomly select from - all Reid with different vibes
+// Personalities to randomly select from
 const PERSONALITIES = [
-  { name: 'Reid', style: 'direct Texas guy, gets straight to the point, no BS, talks about data and deals' },
-  { name: 'Reid', style: 'casual and friendly, talks like texting a buddy, uses informal language' },
-  { name: 'Reid', style: 'data-driven professional, mentions specific numbers and ROI, analytical but personable' },
-  { name: 'Reid', style: 'hustler energy, knows the grind, talks about beating the competition and winning jobs' },
-  { name: 'Reid', style: 'laid-back advisor vibe, gives helpful tips, sounds like a friend who happens to have good leads' }
+  { name: 'Mike', style: 'blunt Texas guy, gets straight to the point, no BS' },
+  { name: 'Sarah', style: 'friendly but busy, talks like texting a friend' },
+  { name: 'Jake', style: 'laid-back surfer vibe, casual and chill' },
+  { name: 'Marcus', style: 'former contractor himself, knows the hustle, speaks their language' },
+  { name: 'Danny', style: 'fast-talking New Yorker energy, impatient but helpful' }
 ];
 
 /**
@@ -40,22 +40,23 @@ const PERSONALITIES = [
  */
 async function generateEmailBody(lead) {
   const { permit_type, address, city, count, contractor_email } = lead;
-  const businessName = address;
+  const businessName = lead.business_name || address;
 
   // Pick a random personality
   const persona = PERSONALITIES[Math.floor(Math.random() * PERSONALITIES.length)];
 
   const prompt = `You are ${persona.name}. Your personality: ${persona.style}
 
-You have 43 verified POOL PERMIT leads in DFW from the last 60 days. These are homeowners who just pulled permits to build pools - they need pool builders NOW.
+You have 510 verified HOMEOWNER LEADS in Fort Worth area from the last 60 days. These are people actively doing major construction - new homes, additions, remodels, and yes, 43 are specifically pool permits.
 
 The data:
-- 26 are HOT (permits filed in last 30 days)
-- 63% are absentee owners (investors = repeat buyers)
-- Average property value: $547k
+- 347 are HOT (permits filed in last 30 days)
+- 78 are WARM (30-60 days old)
+- 43 are pool permits specifically, rest are new construction/remodels (prime pool prospects)
+- Fort Worth, Grapevine, Keller, Westlake area
 - Each lead includes: address, owner name, property value, permit date
 
-Pricing: $50/hot lead, $20/older leads, or $1,400 for all 43
+Pricing: $50/hot lead, $20/warm lead, or bulk deal for all 510
 
 Write a quick cold email to ${businessName} in ${city}. They build pools.
 
@@ -79,11 +80,11 @@ Return JSON only:
         'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
       },
       body: JSON.stringify({
-        model: 'deepseek-chat',  // Using chat model for reliable JSON output
+        model: 'deepseek-chat',
         messages: [
           { role: 'user', content: prompt }
         ],
-        temperature: 0.9,  // Higher temp for more variation
+        temperature: 0.9,
         max_tokens: 500
       })
     });
@@ -116,21 +117,15 @@ Return JSON only:
 
     const result = JSON.parse(jsonStr);
 
-    // Log reasoning if present
-    if (data.choices?.[0]?.message?.reasoning_content) {
-      console.log(`  [DeepSeek reasoning]: ${data.choices[0].message.reasoning_content.substring(0, 100)}...`);
-    }
-
     return {
       subject: result.subject,
       body: result.body
     };
   } catch (err) {
     console.error(`  [DeepSeek fallback]: ${err.message}`);
-    // Fallback to simple template
     return {
-      subject: `Leads in ${city}`,
-      body: `Found some fresh permits in ${city} this week. I'm selling the list to one contractor. Want it?`
+      subject: `510 Fort Worth homeowner leads - samples?`,
+      body: `Got 510 homeowners in Fort Worth area doing major construction right now - new builds, remodels, additions. 43 are pool permits specifically. Want 2-3 free samples to check quality?`
     };
   }
 }
@@ -150,7 +145,6 @@ function createRFC822Message(to, subject, body) {
 
   const message = messageParts.join('\r\n');
 
-  // Base64url encode the message
   return Buffer.from(message)
     .toString('base64')
     .replace(/\+/g, '-')
@@ -160,7 +154,6 @@ function createRFC822Message(to, subject, body) {
 
 /**
  * Creates a draft in Gmail.
- * Uses users.drafts.create - does NOT send.
  */
 async function createDraft(auth, lead) {
   const gmail = google.gmail({ version: 'v1', auth });
@@ -180,16 +173,10 @@ async function createDraft(auth, lead) {
   return { subject, draftId: response.data.id };
 }
 
-/**
- * Delays execution for specified milliseconds.
- */
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-/**
- * Loads saved credentials if they exist.
- */
 async function loadSavedCredentials() {
   try {
     const content = await fs.readFile(TOKEN_PATH);
@@ -200,9 +187,6 @@ async function loadSavedCredentials() {
   }
 }
 
-/**
- * Saves credentials to file for future use.
- */
 async function saveCredentials(client) {
   const content = await fs.readFile(CREDENTIALS_PATH);
   const keys = JSON.parse(content);
@@ -218,9 +202,6 @@ async function saveCredentials(client) {
   await fs.writeFile(TOKEN_PATH, payload);
 }
 
-/**
- * Prompts user for authorization code.
- */
 function askQuestion(query) {
   const rl = readline.createInterface({
     input: process.stdin,
@@ -233,18 +214,13 @@ function askQuestion(query) {
   }));
 }
 
-/**
- * Authorizes with Google using OAuth2.
- */
 async function authorize() {
-  // Try to load existing credentials
   let client = await loadSavedCredentials();
   if (client) {
     console.log('Using saved credentials...');
     return client;
   }
 
-  // Load client secrets
   const content = await fs.readFile(CREDENTIALS_PATH);
   const keys = JSON.parse(content);
   const key = keys.installed || keys.web;
@@ -255,7 +231,6 @@ async function authorize() {
     key.redirect_uris?.[0] || 'urn:ietf:wg:oauth:2.0:oob'
   );
 
-  // Generate auth URL
   const authUrl = oAuth2Client.generateAuthUrl({
     access_type: 'offline',
     scope: SCOPES,
@@ -273,44 +248,34 @@ async function authorize() {
   const { tokens } = await oAuth2Client.getToken(code);
   oAuth2Client.setCredentials(tokens);
 
-  // Save credentials for next run
   await saveCredentials(oAuth2Client);
   console.log('Credentials saved to token.json\n');
 
   return oAuth2Client;
 }
 
-/**
- * Main execution function.
- */
 async function main() {
   console.log('\n========================================');
-  console.log('  COLD EMAIL DRAFT FACTORY');
-  console.log('  Texas Construction Leads');
+  console.log('  POOL CONTRACTOR EMAIL DRAFTS');
+  console.log('  Fort Worth Area - 510 AB Leads');
   console.log('========================================\n');
 
-  // Check for credentials file
   try {
     await fs.access(CREDENTIALS_PATH);
   } catch {
     console.error('ERROR: credentials.json not found!');
-    console.error('Please download it from Google Cloud Console.');
-    console.error('See README.md for instructions.\n');
     process.exit(1);
   }
 
-  // Authenticate
   console.log('Authenticating with Google...');
   const auth = await authorize();
   console.log('Authentication successful!\n');
 
-  // Load leads
   console.log('Loading leads from leads.json...');
   const leadsContent = await fs.readFile(LEADS_PATH, 'utf8');
   const leads = JSON.parse(leadsContent);
-  console.log(`Found ${leads.length} leads to process.\n`);
+  console.log(`Found ${leads.length} contractors to process.\n`);
 
-  // Process each lead
   console.log('Creating drafts...');
   console.log('----------------------------------------');
 
@@ -329,19 +294,16 @@ async function main() {
       errorCount++;
     }
 
-    // Rate limiting - 1 second delay between requests
     if (i < leads.length - 1) {
       await delay(1000);
     }
   }
 
-  // Summary
   console.log('----------------------------------------');
   console.log(`\nComplete! ${successCount} drafts created, ${errorCount} errors.`);
   console.log('Check your Gmail Drafts folder to review and send.\n');
 }
 
-// Run the script
 main().catch(err => {
   console.error('Fatal error:', err.message);
   process.exit(1);
