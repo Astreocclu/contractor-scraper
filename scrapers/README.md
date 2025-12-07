@@ -1,40 +1,44 @@
 # Permit Scrapers
 
-## Last Updated: Dec 6, 2025
+## Last Updated: Dec 7, 2025
 
-## Quick Start
+## Quick Start (Python - Preferred)
 ```bash
-set -a && source .env && set +a
-node scrapers/southlake.js 50
+source venv/bin/activate && set -a && source .env && set +a
+
+# MGO Connect (Irving, Lewisville, etc.)
+python scrapers/mgo_connect.py Irving 50
+
+# EnerGov (Southlake, Grand Prairie)
+python scrapers/energov.py southlake 50
+
+# Accela (Fort Worth, Dallas)
+python scrapers/accela.py fort_worth 50
+
+# Socrata/ArcGIS (Arlington - API-based, no browser)
+python scrapers/dfw_big4_socrata.py --months 1
 ```
 
-## Working Scrapers
+## Python Scrapers (Playwright) - PREFERRED
+| Scraper | Portal | Cities | Status |
+|---------|--------|--------|--------|
+| `mgo_connect.py` | MGO Connect | Irving, Lewisville, Denton, Cedar Hill | Working |
+| `energov.py` | EnerGov | Southlake, Grand Prairie, Princeton | Working |
+| `accela.py` | Accela | Fort Worth, Dallas, Richardson | Ready to test |
+| `dfw_big4_socrata.py` | Socrata/ArcGIS | Arlington (18k permits) | Working |
+
+## Legacy Node.js Scrapers (Puppeteer) - DEPRECATED
 | Scraper | Portal | Status |
 |---------|--------|--------|
-| `southlake.js` | EnerGov | Working |
-| `fort_worth.js` | Accela | Working |
+| `southlake.js` | EnerGov | Replaced by energov.py |
+| `fort_worth.js` | Accela | Replaced by accela.py |
+| `mgo_connect.js` | MGO Connect | Replaced by mgo_connect.py |
+| `grand_prairie.js` | EnerGov | Replaced by energov.py |
 
-## New Scrapers (Untested)
-| Scraper | Portal | Status |
-|---------|--------|--------|
-| `dallas.js` | Accela | Ready to test |
-| `grand_prairie.js` | Accela | Ready to test |
-| `richardson.js` | Accela | Ready to test |
-| `mgo_connect.js` | MGO Connect | Login works, extraction TBD |
-
-## MGO Connect
-Covers: Irving, Lewisville, Denton, Cedar Hill
-
-**Credentials in .env:**
-- `MGO_EMAIL=resultsandgoaloriented@gmail.com`
-- `MGO_PASSWORD=SleepyPanda123!`
-
-**Usage:** `node scrapers/mgo_connect.js Irving 10`
-
-**Status:** Login works. Extraction needs debugging - check `debug_html/mgo_irving_results.png`
-
-## Multi-City Test
-`multi_city_test.js` - Tests 12 cities, URLs corrected Dec 6.
+## MGO Connect Credentials
+Stored in `.env`:
+- `MGO_EMAIL`
+- `MGO_PASSWORD`
 
 ## Portal Reference
 See `docs/dfw-contractor-audit-v3-corrected.md` for correct URLs.
