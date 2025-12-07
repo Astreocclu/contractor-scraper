@@ -114,3 +114,45 @@ MODERATE     → max 60
 
 ## Test Contractor
 Orange Elephant Roofing (ID: 1524) - Known fraud, expect score ~15, CRITICAL
+
+---
+
+## GEMINI CLI DELEGATION
+
+**Pattern:** Claude asks Gemini for advice/commands → Gemini returns text → Claude executes with its own tools.
+
+Gemini is a **consultant**, not an executor. It has 5x context but limited tool access.
+
+### USE GEMINI FOR (text-in, text-out):
+- "What files should I look at for X?"
+- "What command would do Y?"
+- "Analyze this code structure and suggest approach"
+- "Critique my plan - what breaks?"
+- Reading/analyzing 3+ files at once
+
+### CLAUDE ALWAYS EXECUTES:
+- **Web research** - Claude's WebSearch/WebFetch (Gemini can't do web)
+- **Playwright/browser tasks** - Claude runs the actual scraping
+- **File operations** - Claude reads/writes/edits
+- **Shell commands** - Claude executes what Gemini suggests
+- **Code writing** - Claude does the implementation
+
+### EXAMPLE FLOW:
+```
+Claude: "gemini -p 'What files handle the audit scoring in this project?'"
+Gemini: "Check services/audit_agent_v2.js, contractors/services/scoring.py"
+Claude: [Uses Read tool on those files, then implements changes]
+```
+
+---
+
+## ITERATIVE BRAINSTORMING
+
+For architecture decisions or complex problem-solving:
+
+1. Claude drafts initial approach
+2. Claude pipes to Gemini: `echo "[draft]" | gemini -p "Critique this. What breaks?"`
+3. Claude reads critique, revises
+4. Repeat until solid
+
+This is NOT for code writing. This is for THINKING through hard problems with a second brain that has 5x context.
