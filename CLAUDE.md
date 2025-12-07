@@ -33,7 +33,8 @@ All documentation is in `docs/` except the top-level status files.
 | **Audit quick reference** | `docs/AGENTIC_QUICKREF.md` |
 | Audit full spec | `docs/AGENTIC_AUDIT_SPEC.md` |
 | Codebase overview | `docs/CODEBASE_DOCUMENTATION.md` |
-| Permit portals | `docs/dfw-contractor-audit.md` |
+| Permit portals (CORRECTED) | `docs/dfw-contractor-audit-v3-corrected.md` |
+| **MGO Scraper Status** | `docs/MGO_SCRAPER_STATUS.md` |
 | Database stats | `docs/DATABASE_ANALYSIS.md` |
 | Archived session logs | `docs/_archive/` |
 
@@ -48,6 +49,12 @@ All documentation is in `docs/` except the top-level status files.
 | DeepSeek agent | `services/audit_agent.js` |
 | Score enforcement | `services/audit_agent_v2.js` |
 | Review analysis | `services/review_analyzer.js` |
+
+---
+
+## Permit Scrapers
+
+**Major updates Dec 6, 2025** - See `scrapers/README.md` and `docs/MGO_SCRAPER_STATUS.md`
 
 ---
 
