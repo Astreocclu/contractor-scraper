@@ -656,31 +656,43 @@ async def scrape(city_name: str, target_count: int = 50):
                     await page.mouse.click(box['x'], box['y'])
                     return 'mouse_click'
 
-                # Method 3: JS click with proper MouseEvent dispatch (helps Angular)
+                # Method 3: Full pointer event sequence (PrimeNG uses PointerEvents)
                 result = await page.evaluate('''() => {
                     const buttons = Array.from(document.querySelectorAll('button'));
                     const searchBtn = buttons.find(b => {
                         const text = (b.textContent || '').toLowerCase();
                         return text.includes('search') && !text.includes('address');
                     });
-                    if (searchBtn) {
-                        // Try native click first
-                        searchBtn.click();
+                    if (!searchBtn) return 'not_found';
 
-                        // Also dispatch a proper MouseEvent (helps with Angular)
-                        const rect = searchBtn.getBoundingClientRect();
-                        const clickEvent = new MouseEvent('click', {
-                            view: window,
-                            bubbles: true,
-                            cancelable: true,
-                            clientX: rect.x + rect.width / 2,
-                            clientY: rect.y + rect.height / 2
-                        });
-                        searchBtn.dispatchEvent(clickEvent);
+                    const rect = searchBtn.getBoundingClientRect();
+                    const x = rect.x + rect.width / 2;
+                    const y = rect.y + rect.height / 2;
 
-                        return 'js_click_with_event';
-                    }
-                    return 'not_found';
+                    // Full event sequence like a real user click
+                    const eventInit = {
+                        view: window,
+                        bubbles: true,
+                        cancelable: true,
+                        clientX: x,
+                        clientY: y,
+                        screenX: x,
+                        screenY: y,
+                        button: 0,
+                        buttons: 1,
+                        pointerId: 1,
+                        pointerType: 'mouse',
+                        isPrimary: true
+                    };
+
+                    // Dispatch full event sequence
+                    searchBtn.dispatchEvent(new PointerEvent('pointerdown', eventInit));
+                    searchBtn.dispatchEvent(new MouseEvent('mousedown', eventInit));
+                    searchBtn.dispatchEvent(new PointerEvent('pointerup', eventInit));
+                    searchBtn.dispatchEvent(new MouseEvent('mouseup', eventInit));
+                    searchBtn.dispatchEvent(new MouseEvent('click', eventInit));
+
+                    return 'full_event_sequence';
                 }''')
                 return result
 
