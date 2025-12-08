@@ -4,6 +4,10 @@ MGO CONNECT PERMIT SCRAPER (Playwright Python)
 Portal: My Government Online (MGO Connect)
 Covers: Irving, Lewisville, Denton, Cedar Hill, and more DFW cities
 
+NOTE: This Python/Playwright version has issues with button clicks not triggering
+API calls. Use the Node.js/Puppeteer version instead:
+  node scrapers/mgo_connect.js Irving 50
+
 Requires login - credentials from .env:
   MGO_EMAIL, MGO_PASSWORD
 
@@ -23,29 +27,85 @@ import httpx
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeout
 
 # City JID mappings (jurisdiction IDs)
+# To find JID: Go to mgoconnect.org, select state/city, check URL parameter
 MGO_CITIES = {
+    # DFW Metro - Verified
     'Irving': 245,
     'Lewisville': 325,
-    'Duncanville': 0,
-    'Celina': 0,
-    'Lucas': 0,
-    'PilotPoint': 0,
-    'Pilot Point': 0,
-    'VanAlstyne': 0,
-    'Van Alstyne': 0,
-    'Georgetown': 0,
+    'Denton': 285,
+    'Cedar Hill': 305,
+    'CedarHill': 305,
+    'Duncanville': 253,
+    # DFW Metro - Need verification
+    'Lancaster': 0,  # TODO: Find JID
+    'Balch Springs': 0,  # TODO: Find JID
+    'BalchSprings': 0,
+    'Sachse': 0,  # TODO: Find JID
+    # Central Texas
+    'Georgetown': 0,  # TODO: Find JID
     'Temple': 0,
     'Killeen': 0,
-    'SanMarcos': 0,
     'San Marcos': 0,
+    'SanMarcos': 0,
+    # North Texas
+    'Celina': 0,
+    'Lucas': 0,
+    'Pilot Point': 0,
+    'PilotPoint': 0,
+    'Van Alstyne': 0,
+    'VanAlstyne': 0,
+    # West Texas
     'Amarillo': 0,
-    'WichitaFalls': 0,
     'Wichita Falls': 0,
+    'WichitaFalls': 0,
 }
 
 DEEPSEEK_API_KEY = os.getenv('DEEPSEEK_API_KEY')
 MGO_EMAIL = os.getenv('MGO_EMAIL')
 MGO_PASSWORD = os.getenv('MGO_PASSWORD')
+
+# Permit types to EXCLUDE (garbage)
+EXCLUDED_PERMIT_TYPES = {
+    'garage sale', 'code enforcement', 'complaint', 'rental', 'license',
+    'pre-development', 'conference', 'sign', 'billboard', 'commercial',
+    'environmental', 'health', 'zoning', 'variance', 'planning', 'subdivision',
+    'right-of-way', 'row', 'encroachment', 'special event', 'food', 'alcohol',
+}
+
+
+def is_valid_permit_type(permit_type: str) -> bool:
+    """Check if permit type is one we want (not garbage)."""
+    if not permit_type:
+        return True
+
+    permit_type_lower = permit_type.lower()
+
+    for excluded in EXCLUDED_PERMIT_TYPES:
+        if excluded in permit_type_lower:
+            return False
+
+    return True
+
+
+def filter_permits(permits: list) -> tuple[list, dict]:
+    """Filter out garbage permit types."""
+    valid = []
+    stats = {'bad_type': 0, 'empty': 0, 'total_rejected': 0}
+
+    for p in permits:
+        permit_type = p.get('type', '')
+        permit_id = p.get('permit_id', '')
+
+        if not permit_id and not p.get('address'):
+            stats['empty'] += 1
+            stats['total_rejected'] += 1
+        elif not is_valid_permit_type(permit_type):
+            stats['bad_type'] += 1
+            stats['total_rejected'] += 1
+        else:
+            valid.append(p)
+
+    return valid, stats
 
 
 async def call_deepseek(prompt: str) -> str:
@@ -308,97 +368,335 @@ async def scrape(city_name: str, target_count: int = 50):
             # Step 4: Fill search criteria
             print('\n[4] Filling search criteria...')
 
-            # Calculate date range - 4 weeks back
+            # First, select jurisdiction on the search page (left sidebar)
+            print('    Selecting jurisdiction on search page...')
+
+            # Select State dropdown on search page - click to open
+            state_opened = await page.evaluate('''() => {
+                const dropdowns = document.querySelectorAll('.p-dropdown');
+                for (const dd of dropdowns) {
+                    const label = dd.textContent || '';
+                    if (label.includes('Select a State') || label.includes('State')) {
+                        dd.click();
+                        return 'state';
+                    }
+                }
+                if (dropdowns.length > 0) {
+                    dropdowns[0].click();
+                    return 'first';
+                }
+                return false;
+            }''')
+            print(f'    State dropdown opened: {state_opened}')
+            await asyncio.sleep(1.5)
+
+            # Click Texas option in dropdown
+            texas_selected = await page.evaluate('''() => {
+                const items = document.querySelectorAll('.p-dropdown-item, li[role="option"], .p-dropdown-items li');
+                for (const item of items) {
+                    if (item.textContent?.includes('Texas')) {
+                        item.click();
+                        return item.textContent.trim();
+                    }
+                }
+                return false;
+            }''')
+            print(f'    Texas selected: {texas_selected}')
+            await asyncio.sleep(3)
+
+            # Select Jurisdiction dropdown - click to open
+            await page.evaluate('''() => {
+                const dropdowns = document.querySelectorAll('.p-dropdown');
+                for (const dd of dropdowns) {
+                    const label = dd.textContent || '';
+                    if (label.includes('Select a Jurisdiction') || label.includes('Jurisdiction')) {
+                        dd.click();
+                        return true;
+                    }
+                }
+                if (dropdowns.length > 1) dropdowns[1].click();
+                return false;
+            }''')
+            await asyncio.sleep(1.5)
+
+            # Type to filter, then click matching option
+            await page.keyboard.type(city_name, delay=50)
+            await asyncio.sleep(1)
+
+            city_selected = await page.evaluate(f'''(cityName) => {{
+                const items = document.querySelectorAll('.p-dropdown-item, li[role="option"], .p-dropdown-items li');
+                for (const item of items) {{
+                    if (item.textContent?.toLowerCase().includes(cityName.toLowerCase())) {{
+                        item.click();
+                        return item.textContent.trim();
+                    }}
+                }}
+                return false;
+            }}''', city_name)
+            print(f'    Jurisdiction selected: {city_selected}')
+            await asyncio.sleep(3)
+
+            # Take screenshot to verify selection
+            await page.screenshot(path=f'debug_html/mgo_{city_name.lower()}_jurisdiction_set.png')
+            print(f'    Jurisdiction set to: Texas -> {city_name}')
+
+            # Calculate date range - 4 weeks back (matching JS version)
             today = datetime.now()
             start_date = today - timedelta(weeks=4)
             start_str = start_date.strftime('%m/%d/%Y')
             end_str = today.strftime('%m/%d/%Y')
             print(f'    Date range: {start_str} to {end_str} (4 weeks)')
 
-            # Select Designation: Residential
+            # Step 5a: Select "Residential" from Designation dropdown
             print('    Selecting Designation: Residential...')
-            await page.evaluate('''() => {
+            designation_opened = await page.evaluate('''() => {
                 const dropdowns = document.querySelectorAll('.p-dropdown');
                 for (const dd of dropdowns) {
                     const label = dd.querySelector('.p-dropdown-label');
                     if (label && (label.textContent?.includes('Select Designation') || label.getAttribute('aria-label')?.includes('Designation'))) {
                         dd.click();
-                        return { opened: true };
-                    }
-                }
-                return { opened: false };
-            }''')
-            await asyncio.sleep(1)
-            await page.keyboard.type('Residential', delay=50)
-            await asyncio.sleep(0.5)
-            await page.evaluate('''() => {
-                const items = document.querySelectorAll('.p-dropdown-item, li[role="option"]');
-                for (const item of items) {
-                    if (item.textContent?.toLowerCase().includes('residential')) {
-                        item.click();
                         return true;
                     }
                 }
                 return false;
             }''')
+
+            if designation_opened:
+                await asyncio.sleep(1)
+                await page.keyboard.type('Residential', delay=50)
+                await asyncio.sleep(0.5)
+                selected = await page.evaluate('''() => {
+                    const items = document.querySelectorAll('.p-dropdown-item, li[role="option"]');
+                    for (const item of items) {
+                        if (item.textContent?.toLowerCase().includes('residential')) {
+                            item.click();
+                            return item.textContent?.trim();
+                        }
+                    }
+                    return null;
+                }''')
+                print(f'    Designation: {selected or "NOT SELECTED"}')
+            else:
+                print('    WARNING: Designation dropdown not found')
             await asyncio.sleep(1)
 
-            # Fill date fields
+            # Step 5b: Fill date fields using keyboard input (PrimeNG calendars need actual typing)
             print('    Setting date filters...')
+
+            # Find and fill Created After input
             after_input = await page.query_selector('input[placeholder="Created After"]')
             if after_input:
                 await after_input.click()
                 await asyncio.sleep(0.3)
                 await after_input.click(click_count=3)  # Select all
                 await page.keyboard.type(start_str, delay=50)
-                await page.keyboard.press('Tab')
+                await page.keyboard.press('Tab')  # Tab out to confirm
+                await asyncio.sleep(0.5)
                 print(f'    Created After ({start_str}): typed')
+            else:
+                print('    Created After: NOT FOUND')
 
+            # Find and fill Created Before input
             before_input = await page.query_selector('input[placeholder="Created Before"]')
             if before_input:
                 await before_input.click()
                 await asyncio.sleep(0.3)
-                await before_input.click(click_count=3)
+                await before_input.click(click_count=3)  # Select all
                 await page.keyboard.type(end_str, delay=50)
                 await page.keyboard.press('Tab')
+                await asyncio.sleep(0.5)
                 print(f'    Created Before ({end_str}): typed')
+            else:
+                print('    Created Before: NOT FOUND')
 
+            # Click body to close any open date pickers
+            await page.click('body')
             await asyncio.sleep(1)
 
-            # Set up API response capture
+            # Take screenshot before clicking search
+            await page.screenshot(path=f'debug_html/mgo_{city_name.lower()}_before_search.png')
+
+            # Set up API response capture BEFORE clicking search
             api_data = []
+            api_calls_seen = []
+            all_requests = []
 
             async def handle_response(response):
-                if '/api/v3/cp/project/search-projects' in response.url and 'chart' not in response.url:
-                    try:
-                        data = await response.json()
-                        if isinstance(data, dict) and 'data' in data:
-                            api_data.extend(data['data'])
-                            print(f'    [API] Captured {len(data["data"])} permits')
-                    except Exception:
-                        pass
+                url = response.url
+                status = response.status
+
+                # Track all requests for debugging
+                if 'mgoconnect' in url and not any(ext in url for ext in ['.js', '.css', '.png', '.svg', '.woff']):
+                    all_requests.append(f'{status} {url[:80]}')
+
+                # Log all API calls for debugging
+                if '/api/' in url:
+                    api_calls_seen.append(url[:100])
+                    if 'search' in url.lower() or 'project' in url.lower():
+                        print(f'    [DEBUG] API: {url[:120]}')
+
+                # Capture permit search results - try multiple patterns
+                if any(pattern in url for pattern in ['/api/v3/cp/project/search', '/project/search', 'search-projects']):
+                    if 'chart' not in url:
+                        try:
+                            data = await response.json()
+                            if isinstance(data, dict):
+                                # Try multiple keys for data array
+                                items = data.get('data', data.get('results', data.get('items', [])))
+                                count = len(items) if isinstance(items, list) else 0
+                                total = data.get('totalRecords', data.get('total', data.get('count', '?')))
+                                print(f'    [API] Captured {count} permits (total: {total}) from {url[:60]}')
+                                if count > 0 and isinstance(items, list):
+                                    api_data.extend(items)
+                            elif isinstance(data, list):
+                                print(f'    [API] Got list of {len(data)} items')
+                                api_data.extend(data)
+                        except Exception as e:
+                            print(f'    [API] Error parsing JSON: {e}')
 
             page.on('response', handle_response)
 
-            # Click search
-            print('    Clicking search...')
-            await page.evaluate('''() => {
-                const buttons = document.querySelectorAll('button, input[type="submit"]');
+            # Capture console errors for debugging
+            console_errors = []
+            page.on('console', lambda msg: console_errors.append(f'{msg.type}: {msg.text}') if msg.type == 'error' else None)
+
+            # Click search button and capture API response
+            print('    Clicking search button and capturing API response...')
+
+            # First scroll to bottom of form where search button is
+            await page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
+            await asyncio.sleep(1)
+
+            # Check button state before clicking
+            btn_info = await page.evaluate('''() => {
+                const buttons = document.querySelectorAll('button');
                 for (const btn of buttons) {
-                    const text = (btn.textContent || btn.value || '').toLowerCase();
-                    if (text.includes('search') || text.includes('find') || text.includes('submit')) {
-                        btn.click();
-                        return;
+                    const text = (btn.textContent || '').toLowerCase();
+                    if (text.includes('search') && !text.includes('address')) {
+                        return {
+                            found: true,
+                            text: btn.textContent?.trim(),
+                            disabled: btn.disabled,
+                            className: btn.className,
+                            visible: btn.offsetParent !== null,
+                            rect: btn.getBoundingClientRect()
+                        };
                     }
                 }
+                return { found: false };
             }''')
+            print(f'    Button info: {btn_info}')
 
-            await asyncio.sleep(5)
+            # Define the click action - try multiple methods
+            async def click_search():
+                # First scroll the button into view using JS
+                await page.evaluate('''() => {
+                    const buttons = document.querySelectorAll('button');
+                    for (const btn of buttons) {
+                        const text = (btn.textContent || '').toLowerCase();
+                        if (text.includes('search') && !text.includes('address')) {
+                            btn.scrollIntoView({ behavior: 'instant', block: 'center' });
+                            return true;
+                        }
+                    }
+                    return false;
+                }''')
+                await asyncio.sleep(0.5)
+
+                # Method 1: Try Playwright locator click with scroll
+                try:
+                    btn = page.locator('button:has-text("Search")').first
+                    await btn.scroll_into_view_if_needed()
+                    await asyncio.sleep(0.3)
+                    await btn.click(timeout=5000)
+                    return 'locator'
+                except Exception as e:
+                    print(f'      Locator click failed: {e}')
+
+                # Method 2: Get button position after scroll and use mouse.click
+                box = await page.evaluate('''() => {
+                    const buttons = document.querySelectorAll('button');
+                    for (const btn of buttons) {
+                        const text = (btn.textContent || '').toLowerCase();
+                        if (text.includes('search') && !text.includes('address')) {
+                            const rect = btn.getBoundingClientRect();
+                            return { x: rect.x + rect.width/2, y: rect.y + rect.height/2 };
+                        }
+                    }
+                    return null;
+                }''')
+                if box and box['y'] > 0:
+                    print(f'      Clicking at ({box["x"]}, {box["y"]})')
+                    await page.mouse.click(box['x'], box['y'])
+                    return 'mouse_click'
+
+                # Method 3: Use JavaScript click as fallback
+                result = await page.evaluate('''() => {
+                    const buttons = document.querySelectorAll('button');
+                    for (const btn of buttons) {
+                        const text = (btn.textContent || '').toLowerCase();
+                        if (text.includes('search') && !text.includes('address')) {
+                            btn.click();
+                            return 'js_click';
+                        }
+                    }
+                    return 'not_found';
+                }''')
+                return result
+
+            # Wait for API response while clicking
+            try:
+                async with page.expect_response(
+                    lambda r: '/api/v3/cp/project/search-projects' in r.url and 'chart' not in r.url and r.status == 200,
+                    timeout=30000
+                ) as response_info:
+                    await click_search()
+                    print('    Search clicked, waiting for API response...')
+
+                response = await response_info.value
+                print(f'    Got API response: {response.url[:80]}')
+
+                # Parse the response
+                try:
+                    data = await response.json()
+                    if isinstance(data, dict):
+                        items = data.get('data', [])
+                        total = data.get('totalRecords', len(items))
+                        print(f'    [API] *** GOT {len(items)} PERMITS *** (total: {total})')
+                        if items:
+                            api_data.extend(items)
+                            # Show sample
+                            sample = items[0]
+                            print(f'    [API] Sample: {sample.get("projectNumber", "?")} | {sample.get("workType", "?")} | {sample.get("projectAddress", "?")}')
+                    elif isinstance(data, list):
+                        print(f'    [API] Got list of {len(data)} items')
+                        api_data.extend(data)
+                except Exception as e:
+                    print(f'    [API] Error parsing response: {e}')
+
+            except PlaywrightTimeout:
+                print('    No API response within 30s timeout')
+                # Check for console errors
+                if console_errors:
+                    print(f'    Console errors: {len(console_errors)}')
+                    for err in console_errors[:5]:
+                        print(f'      {err[:150]}')
+            except Exception as e:
+                print(f'    Error waiting for response: {e}')
+
+            await asyncio.sleep(3)
 
             await page.screenshot(path=f'debug_html/mgo_{city_name.lower()}_results.png', full_page=True)
 
+            # Debug: show all requests seen
+            print(f'    [DEBUG] All requests: {len(all_requests)}')
+            for req in all_requests[-15:]:
+                print(f'      - {req}')
+            print(f'    [DEBUG] API calls: {len(api_calls_seen)}')
+
             # Step 5: Extract permits
             print('\n[5] Extracting permits...')
+            print(f'    API data captured: {len(api_data)}')
 
             # First try table extraction
             table_data = await page.evaluate('''() => {
@@ -424,10 +722,36 @@ async def scrape(city_name: str, target_count: int = 50):
 
             print(f'    Table extraction: {len(table_data)} rows')
 
+            # Try pagination to get more results
+            page_num = 1
+            while len(api_data) < target_count and page_num < 10:
+                # Check if there's a next page button
+                has_next = await page.evaluate('''() => {
+                    const nextBtns = document.querySelectorAll('.p-paginator-next, button[aria-label="Next Page"]');
+                    for (const btn of nextBtns) {
+                        if (!btn.disabled && !btn.classList.contains('p-disabled')) {
+                            btn.click();
+                            return true;
+                        }
+                    }
+                    return false;
+                }''')
+
+                if not has_next:
+                    break
+
+                page_num += 1
+                print(f'    Loading page {page_num}...')
+                await asyncio.sleep(5)  # Wait for next page to load
+
+            if page_num > 1:
+                print(f'    Loaded {page_num} pages, total API data: {len(api_data)}')
+
             # Use API data if available
+            raw_permits = []
             if api_data:
                 print(f'    Using {len(api_data)} permits from API response')
-                for item in api_data[:target_count]:
+                for item in api_data:
                     permit = {
                         'permit_id': item.get('projectNumber') or item.get('projectID', ''),
                         'address': item.get('projectAddress', ''),
@@ -439,11 +763,11 @@ async def scrape(city_name: str, target_count: int = 50):
                         'contractor': item.get('contractorName', '')
                     }
                     if permit['permit_id'] or permit['address']:
-                        permits.append(permit)
+                        raw_permits.append(permit)
             elif table_data:
-                for item in table_data[:target_count]:
+                for item in table_data:
                     if item.get('permit_id'):
-                        permits.append({
+                        raw_permits.append({
                             'permit_id': item['permit_id'],
                             'address': item.get('address', ''),
                             'type': item.get('type', ''),
@@ -452,7 +776,16 @@ async def scrape(city_name: str, target_count: int = 50):
                             'contractor': ''
                         })
 
-            print(f'\n    Total permits extracted: {len(permits)}')
+            # Filter out garbage permit types
+            valid_permits, filter_stats = filter_permits(raw_permits)
+
+            if filter_stats['total_rejected'] > 0:
+                print(f'    Filtered out {filter_stats["total_rejected"]}: '
+                      f'{filter_stats["bad_type"]} bad type, '
+                      f'{filter_stats["empty"]} empty')
+
+            permits = valid_permits[:target_count]
+            print(f'\n    Total permits after filtering: {len(permits)}')
 
         except Exception as e:
             print(f'\nFATAL ERROR: {e}')

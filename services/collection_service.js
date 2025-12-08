@@ -6,20 +6,132 @@
  */
 
 const puppeteer = require('puppeteer');
-const { searchTDLR } = require('../lib/tdlr_scraper');
+const { execSync } = require('child_process');
+const path = require('path');
 const { searchCourtRecords } = require('../lib/court_scraper');
 const { fetchAPISources } = require('../lib/api_sources');
 const { analyzeReviews, quickDiscrepancyCheck } = require('./review_analyzer');
+
+// Path to Python scrapers
+const SCRAPERS_DIR = path.join(__dirname, '..', 'scrapers');
+
+/**
+ * Call a Python scraper and return JSON result
+ */
+function callPythonScraper(script, args = [], timeout = 60000) {
+  const scriptPath = path.join(SCRAPERS_DIR, script);
+  const quotedArgs = args.map(arg => `"${arg.replace(/"/g, '\\"')}"`).join(' ');
+  const cmd = `python "${scriptPath}" ${quotedArgs} --json`;
+
+  try {
+    const output = execSync(cmd, {
+      cwd: SCRAPERS_DIR,
+      timeout,
+      encoding: 'utf-8',
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
+    return JSON.parse(output.trim());
+  } catch (err) {
+    // Try to parse any output even on error
+    if (err.stdout) {
+      try {
+        return JSON.parse(err.stdout.trim());
+      } catch (parseErr) {
+        // ignore
+      }
+    }
+    throw new Error(`Python scraper error: ${err.message}`);
+  }
+}
+
+/**
+ * Search TDLR using Python Playwright scraper
+ */
+async function searchTDLRPython(businessName) {
+  return callPythonScraper('tdlr.py', [businessName]);
+}
+
+/**
+ * Scrape BBB using Python httpx scraper
+ */
+async function scrapeBBBPython(businessName, city = 'Fort Worth', state = 'TX') {
+  return callPythonScraper('bbb.py', [businessName, city, state, '--with-details']);
+}
+
+/**
+ * Scrape Google Maps using Python Playwright scraper (NO API)
+ */
+async function scrapeGoogleMapsPython(businessName, location = 'Fort Worth, TX', maxReviews = 20) {
+  return callPythonScraper('google_maps.py', [businessName, location, '--max-reviews', String(maxReviews)], 90000);
+}
+
+/**
+ * Scrape Yelp rating via Yahoo Search (bypasses DataDome)
+ */
+async function scrapeYelpYahooPython(businessName, location = 'Fort Worth, TX') {
+  // Note: yelp.py doesn't support --json, outputs to stderr, parses result differently
+  const scriptPath = path.join(SCRAPERS_DIR, 'yelp.py');
+  const quotedArgs = [businessName, location].map(arg => `"${arg.replace(/"/g, '\\"')}"`).join(' ');
+  const cmd = `python "${scriptPath}" ${quotedArgs} --yahoo`;
+
+  try {
+    const output = execSync(cmd, {
+      cwd: SCRAPERS_DIR,
+      timeout: 60000,
+      encoding: 'utf-8',
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
+    // Parse output - look for rating pattern
+    const ratingMatch = output.match(/Rating:\s*([\d.]+)/);
+    const reviewsMatch = output.match(/Reviews:\s*(\d+)/);
+    const urlMatch = output.match(/URL:\s*(https?:\/\/[^\s]+)/);
+    const foundMatch = output.match(/Found:\s*(True|False)/i);
+
+    return {
+      found: foundMatch ? foundMatch[1].toLowerCase() === 'true' : false,
+      rating: ratingMatch ? parseFloat(ratingMatch[1]) : null,
+      review_count: reviewsMatch ? parseInt(reviewsMatch[1]) : null,
+      yelp_url: urlMatch ? urlMatch[1] : null,
+      source: 'yahoo_yelp'
+    };
+  } catch (err) {
+    // Try to parse stderr output
+    if (err.stdout) {
+      const output = err.stdout;
+      const ratingMatch = output.match(/Rating:\s*([\d.]+)/);
+      const reviewsMatch = output.match(/Reviews:\s*(\d+)/);
+      if (ratingMatch) {
+        return {
+          found: true,
+          rating: parseFloat(ratingMatch[1]),
+          review_count: reviewsMatch ? parseInt(reviewsMatch[1]) : null,
+          source: 'yahoo_yelp'
+        };
+      }
+    }
+    throw new Error(`Python scraper error: ${err.message}`);
+  }
+}
+
+/**
+ * Scrape rating from SERP for any site (Angi, Trustpilot, Houzz, etc.)
+ * Bypasses anti-bot by reading Yahoo Search snippets
+ */
+async function scrapeSerpRatingPython(businessName, location = 'Fort Worth, TX', site = 'angi.com') {
+  return callPythonScraper('serp_rating.py', [businessName, location, '--site', site, '--json'], 60000);
+}
 
 // Source definitions with cache TTL (in seconds)
 const SOURCES = {
   // Tier 1: Reviews (cache 24h)
   bbb:       { ttl: 86400, tier: 1, type: 'url' },
   yelp:      { ttl: 86400, tier: 1, type: 'url' },
+  yelp_yahoo: { ttl: 86400, tier: 1, type: 'scraper' },  // Yahoo Search fallback for Yelp rating
   google_maps_local: { ttl: 86400, tier: 1, type: 'url' },  // Search in target market (DFW)
   google_maps_hq:    { ttl: 86400, tier: 1, type: 'url' },  // Search in contractor's HQ location
-  angi:      { ttl: 86400, tier: 1, type: 'url' },
-  houzz:     { ttl: 86400, tier: 1, type: 'url' },
+  angi:      { ttl: 86400, tier: 1, type: 'serp' },      // SERP scraper (bypasses anti-bot)
+  houzz:     { ttl: 86400, tier: 1, type: 'serp' },      // SERP scraper (bypasses anti-bot)
+  trustpilot: { ttl: 86400, tier: 1, type: 'serp' },     // SERP scraper (bypasses anti-bot)
   thumbtack: { ttl: 86400, tier: 1, type: 'url' },
   facebook:  { ttl: 86400, tier: 1, type: 'url' },
 
@@ -41,7 +153,7 @@ const SOURCES = {
   epa_echo: { ttl: 604800, tier: 5, type: 'url' },
 
   // Tier 6: TX-Specific (cache 7d)
-  tdlr:            { ttl: 604800, tier: 6, type: 'form' },
+  // tdlr removed - unreliable, Texas-only, many trades don't require it
   tx_ag_complaints: { ttl: 604800, tier: 6, type: 'url' },
   tx_sos_search:   { ttl: 604800, tier: 6, type: 'url' },
   tx_franchise:    { ttl: 604800, tier: 6, type: 'api' },
@@ -382,6 +494,7 @@ class CollectionService {
       google_maps_hq: `https://www.google.com/maps/search/${hqQuery}`,
       angi: `https://www.angi.com/search?query=${encodedName}&location=${encodedCity},%20${encodedState}`,
       houzz: `https://www.houzz.com/search/professionals/query/${encodedName}/location/${citySlug}--${stateLower}`,
+      trustpilot: `https://www.trustpilot.com/search?query=${encodedName}`,
       thumbtack: zip
         ? `https://www.thumbtack.com/search?query=${encodedName}&zip=${zip}`
         : `https://www.thumbtack.com/search?query=${encodedName}&location=${encodedCity},%20${encodedState}`,
@@ -614,47 +727,236 @@ class CollectionService {
       }
     }
 
-    // TDLR (Texas only, form submission)
-    // Skip for trades that don't require TDLR licensing (pools, patios, fences, enclosures)
-    const unlicensedTrades = ['pool', 'patio', 'fence', 'enclosure', 'pergola', 'deck', 'screen', 'sunroom', 'outdoor living'];
-    const isUnlicensedTrade = unlicensedTrades.some(trade =>
-      contractor.name?.toLowerCase().includes(trade) ||
-      contractor.verticals?.some(v => v.toLowerCase().includes(trade))
-    );
+    // BBB - Use Python httpx scraper (more reliable than Puppeteer)
+    log('\n  Fetching BBB (Python scraper)...');
+    try {
+      const bbbResult = await scrapeBBBPython(contractor.name, contractor.city, contractor.state);
+      const bbbData = {
+        source: 'bbb',
+        url: bbbResult.profile_url || 'https://www.bbb.org',
+        status: bbbResult.found ? 'success' : 'not_found',
+        text: JSON.stringify(bbbResult, null, 2),
+        structured: bbbResult
+      };
+      this.storeRawData(contractorId, 'bbb', bbbData);
+      this.logCollectionRequest(contractorId, 'bbb', 'initial', 'Initial collection (Python)');
+      // Replace any existing BBB result from URL batch
+      const existingIdx = results.findIndex(r => r.source === 'bbb');
+      if (existingIdx >= 0) {
+        results[existingIdx] = bbbData;
+      } else {
+        results.push(bbbData);
+      }
 
-    if (contractor.state?.toUpperCase() === 'TX' && !isUnlicensedTrade) {
-      log('\n  Searching TDLR licenses...');
+      if (bbbResult.found) {
+        const ratingInfo = bbbResult.rating ? `Rating=${bbbResult.rating}` : 'No rating';
+        const accredInfo = bbbResult.accredited ? 'Accredited' : 'Not Accredited';
+        log(`    📋 BBB: ${ratingInfo}, ${accredInfo}`);
+        if (bbbResult.is_critical) {
+          error(`    🚨 CRITICAL: BBB rating ${bbbResult.rating} indicates serious issues`);
+        } else if (bbbResult.is_warning) {
+          warn(`    ⚠️ WARNING: BBB rating ${bbbResult.rating} indicates concerns`);
+        }
+      } else {
+        warn(`    BBB: Not found`);
+      }
+    } catch (err) {
+      warn(`    BBB: Error - ${err.message}`);
+    }
+
+    // Google Maps - Use Python Playwright scraper (NO API, avoids $300 overcharge)
+    // Search local market, contractor's listed city, AND true HQ if different
+    const TARGET_MARKET = 'Dallas, TX';  // DFW target market for homeowner leads
+
+    // Determine HQ location - use contractor.hq_location if set, else fall back to city/state
+    const listedLocation = `${contractor.city}, ${contractor.state}`;
+    const hqLocation = contractor.hq_location || contractor.hq_city
+      ? `${contractor.hq_city || contractor.city}, ${contractor.hq_state || contractor.state}`
+      : null;
+
+    // 1. Search in LOCAL market (where homeowners search)
+    log('\n  Fetching Google Maps LOCAL (DFW market)...');
+    try {
+      const gmapsLocalResult = await scrapeGoogleMapsPython(contractor.name, TARGET_MARKET);
+      const gmapsLocalData = {
+        source: 'google_maps_local',
+        url: gmapsLocalResult.maps_url || 'https://www.google.com/maps',
+        status: gmapsLocalResult.found ? 'success' : 'not_found',
+        text: JSON.stringify(gmapsLocalResult, null, 2),
+        structured: gmapsLocalResult
+      };
+      this.storeRawData(contractorId, 'google_maps_local', gmapsLocalData);
+      this.logCollectionRequest(contractorId, 'google_maps_local', 'initial', 'Initial collection - DFW market');
+
+      // Replace any existing from URL batch
+      const existingLocalIdx = results.findIndex(r => r.source === 'google_maps_local');
+      if (existingLocalIdx >= 0) {
+        results[existingLocalIdx] = gmapsLocalData;
+      } else {
+        results.push(gmapsLocalData);
+      }
+
+      if (gmapsLocalResult.found) {
+        const ratingInfo = gmapsLocalResult.rating ? `${gmapsLocalResult.rating}★` : 'No rating';
+        const reviewInfo = gmapsLocalResult.review_count ? `${gmapsLocalResult.review_count} reviews` : 'No reviews';
+        success(`    Google Maps (DFW): ${ratingInfo} (${reviewInfo})`);
+
+        // Flag insufficient reviews (< 20 threshold)
+        const reviewCount = gmapsLocalResult.review_count || 0;
+        if (reviewCount < 20) {
+          gmapsLocalResult.insufficient_reviews = true;
+          gmapsLocalResult.review_flag = 'INSUFFICIENT_REVIEWS';
+          warn(`    ⚠️ INSUFFICIENT_REVIEWS: Only ${reviewCount} reviews (threshold: 20)`);
+        }
+      } else {
+        warn(`    Google Maps (DFW): Not found`);
+      }
+    } catch (err) {
+      warn(`    Google Maps (DFW): Error - ${err.message}`);
+    }
+
+    // 2. Search in listed location (contractor's listed city, e.g. branch office)
+    if (listedLocation.toLowerCase() !== TARGET_MARKET.toLowerCase()) {
+      log(`  Fetching Google Maps LISTED (${listedLocation})...`);
       try {
-        const tdlrResult = await searchTDLR(this.browser, contractor.name);
-        const data = {
-          source: 'tdlr',
-          url: 'https://www.tdlr.texas.gov/LicenseSearch/',
-          status: tdlrResult.found ? 'success' : 'not_found',
-          text: tdlrResult.found
-            ? `TDLR LICENSE FOUND:\n${JSON.stringify(tdlrResult, null, 2)}`
-            : 'No TDLR licenses found',
-          structured: tdlrResult
+        const gmapsListedResult = await scrapeGoogleMapsPython(contractor.name, listedLocation);
+        const gmapsListedData = {
+          source: 'google_maps_listed',
+          url: gmapsListedResult.maps_url || 'https://www.google.com/maps',
+          status: gmapsListedResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(gmapsListedResult, null, 2),
+          structured: gmapsListedResult
         };
-        this.storeRawData(contractorId, 'tdlr', data);
-        this.logCollectionRequest(contractorId, 'tdlr', 'initial', 'Initial collection');
-        results.push(data);
+        this.storeRawData(contractorId, 'google_maps_listed', gmapsListedData);
+        this.logCollectionRequest(contractorId, 'google_maps_listed', 'initial', 'Initial collection - Listed location');
+        results.push(gmapsListedData);
 
-        if (tdlrResult.found) {
-          success(`    TDLR: Found ${tdlrResult.licenses?.length || 0} license(s)`);
+        if (gmapsListedResult.found) {
+          const ratingInfo = gmapsListedResult.rating ? `${gmapsListedResult.rating}★` : 'No rating';
+          const reviewInfo = gmapsListedResult.review_count ? `${gmapsListedResult.review_count} reviews` : 'No reviews';
+          success(`    Google Maps (Listed): ${ratingInfo} (${reviewInfo})`);
+
+          // Flag insufficient reviews
+          const reviewCount = gmapsListedResult.review_count || 0;
+          if (reviewCount < 20) {
+            gmapsListedResult.insufficient_reviews = true;
+            gmapsListedResult.review_flag = 'INSUFFICIENT_REVIEWS';
+          }
         } else {
-          warn(`    TDLR: No licenses found`);
+          warn(`    Google Maps (Listed): Not found`);
         }
       } catch (err) {
-        warn(`    TDLR: Error - ${err.message}`);
-        this.storeRawData(contractorId, 'tdlr', {
-          source: 'tdlr',
-          url: 'https://www.tdlr.texas.gov/LicenseSearch/',
-          status: 'error',
-          error: err.message,
-          text: null
-        });
+        warn(`    Google Maps (Listed): Error - ${err.message}`);
       }
     }
+
+    // 3. Search in TRUE HQ location if different from listed location
+    // HQ can be set via contractor.hq_city/hq_state fields
+    if (hqLocation && hqLocation.toLowerCase() !== listedLocation.toLowerCase() && hqLocation.toLowerCase() !== TARGET_MARKET.toLowerCase()) {
+      log(`  Fetching Google Maps HQ (${hqLocation})...`);
+      try {
+        const gmapsHqResult = await scrapeGoogleMapsPython(contractor.name, hqLocation);
+        const gmapsHqData = {
+          source: 'google_maps_hq',
+          url: gmapsHqResult.maps_url || 'https://www.google.com/maps',
+          status: gmapsHqResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(gmapsHqResult, null, 2),
+          structured: gmapsHqResult
+        };
+        this.storeRawData(contractorId, 'google_maps_hq', gmapsHqData);
+        this.logCollectionRequest(contractorId, 'google_maps_hq', 'initial', 'Initial collection - True HQ');
+        results.push(gmapsHqData);
+
+        if (gmapsHqResult.found) {
+          const ratingInfo = gmapsHqResult.rating ? `${gmapsHqResult.rating}★` : 'No rating';
+          const reviewInfo = gmapsHqResult.review_count ? `${gmapsHqResult.review_count} reviews` : 'No reviews';
+          success(`    Google Maps (HQ): ${ratingInfo} (${reviewInfo})`);
+
+          // Flag insufficient reviews
+          const reviewCount = gmapsHqResult.review_count || 0;
+          if (reviewCount < 20) {
+            gmapsHqResult.insufficient_reviews = true;
+            gmapsHqResult.review_flag = 'INSUFFICIENT_REVIEWS';
+          }
+        } else {
+          warn(`    Google Maps (HQ): Not found`);
+        }
+      } catch (err) {
+        warn(`    Google Maps (HQ): Error - ${err.message}`);
+      }
+    } else if (!hqLocation) {
+      // No separate HQ set, use listed location as HQ
+      const existingListed = results.find(r => r.source === 'google_maps_listed');
+      if (existingListed) {
+        const gmapsHqData = { ...existingListed, source: 'google_maps_hq' };
+        this.storeRawData(contractorId, 'google_maps_hq', gmapsHqData);
+        results.push(gmapsHqData);
+      }
+    }
+
+    // Yelp via Yahoo Search (bypasses DataDome blocking)
+    log('\n  Fetching Yelp rating (via Yahoo Search)...');
+    try {
+      const yelpResult = await scrapeYelpYahooPython(contractor.name, listedLocation);
+      const yelpData = {
+        source: 'yelp_yahoo',
+        url: yelpResult.yelp_url || 'https://www.yelp.com',
+        status: yelpResult.found ? 'success' : 'not_found',
+        text: JSON.stringify(yelpResult, null, 2),
+        structured: yelpResult
+      };
+      this.storeRawData(contractorId, 'yelp_yahoo', yelpData);
+      this.logCollectionRequest(contractorId, 'yelp_yahoo', 'initial', 'Initial collection - Yahoo fallback');
+      results.push(yelpData);
+
+      if (yelpResult.found) {
+        const ratingInfo = yelpResult.rating ? `${yelpResult.rating}★` : 'No rating';
+        const reviewInfo = yelpResult.review_count ? `${yelpResult.review_count} reviews` : 'No review count';
+        success(`    Yelp (Yahoo): ${ratingInfo} (${reviewInfo})`);
+      } else {
+        warn(`    Yelp (Yahoo): Not found`);
+      }
+    } catch (err) {
+      warn(`    Yelp (Yahoo): Error - ${err.message}`);
+    }
+
+    // Angi, Trustpilot, Houzz via SERP scraping (bypasses anti-bot)
+    const serpSites = [
+      { key: 'angi', site: 'angi.com', name: 'Angi' },
+      { key: 'trustpilot', site: 'trustpilot.com', name: 'Trustpilot' },
+      { key: 'houzz', site: 'houzz.com', name: 'Houzz' },
+    ];
+
+    for (const { key, site, name } of serpSites) {
+      log(`  Fetching ${name} rating (via SERP)...`);
+      try {
+        const serpResult = await scrapeSerpRatingPython(contractor.name, listedLocation, site);
+        const serpData = {
+          source: key,
+          url: serpResult.url || `https://www.${site}`,
+          status: serpResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(serpResult, null, 2),
+          structured: serpResult
+        };
+        this.storeRawData(contractorId, key, serpData);
+        this.logCollectionRequest(contractorId, key, 'initial', `Initial collection - SERP ${site}`);
+        results.push(serpData);
+
+        if (serpResult.found && serpResult.rating) {
+          const reviewInfo = serpResult.review_count ? `${serpResult.review_count} reviews` : 'No count';
+          success(`    ${name}: ${serpResult.rating}★ (${reviewInfo})`);
+        } else if (serpResult.found) {
+          warn(`    ${name}: Found but no rating extracted`);
+        } else {
+          warn(`    ${name}: Not found`);
+        }
+      } catch (err) {
+        warn(`    ${name}: Error - ${err.message}`);
+      }
+    }
+
+    // NOTE: TDLR license verification removed - too unreliable and Texas-specific
+    // Many trades don't require TDLR, and missing data was creating false negatives
 
     // Court records
     log('\n  Searching court records...');
@@ -742,11 +1044,18 @@ class CollectionService {
       // Gather review data from collected sources
       const reviewData = {};
       for (const r of results) {
-        if (['bbb', 'google_maps_local', 'google_maps_hq', 'glassdoor', 'yelp', 'angi', 'houzz', 'porch'].includes(r.source)) {
+        if (['bbb', 'google_maps', 'google_maps_local', 'google_maps_hq', 'glassdoor', 'yelp', 'yelp_yahoo', 'angi', 'trustpilot', 'houzz', 'porch'].includes(r.source)) {
           reviewData[r.source] = {
             ...r.structured,
             raw_text: r.text
           };
+          // Also populate google_maps_local from google_maps for review analyzer compatibility
+          if (r.source === 'google_maps' && !reviewData.google_maps_local) {
+            reviewData.google_maps_local = {
+              ...r.structured,
+              raw_text: r.text
+            };
+          }
         }
       }
 
@@ -830,18 +1139,77 @@ class CollectionService {
       } else {
         result = { source: sourceName, status: 'error', error: 'No URL for source' };
       }
-    } else if (sourceConfig.type === 'form' && sourceName === 'tdlr') {
+    } else if (sourceName === 'bbb') {
+      // Use Python httpx scraper for BBB
       try {
-        const tdlrResult = await searchTDLR(this.browser, contractor.name);
+        const bbbResult = await scrapeBBBPython(contractor.name, contractor.city, contractor.state);
         result = {
-          source: 'tdlr',
-          url: 'https://www.tdlr.texas.gov/LicenseSearch/',
-          status: tdlrResult.found ? 'success' : 'not_found',
-          text: JSON.stringify(tdlrResult, null, 2),
-          structured: tdlrResult
+          source: 'bbb',
+          url: bbbResult.profile_url || 'https://www.bbb.org',
+          status: bbbResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(bbbResult, null, 2),
+          structured: bbbResult
         };
+        if (bbbResult.found) {
+          log(`    📋 BBB (Python): Rating=${bbbResult.rating}, Accredited=${bbbResult.accredited}`);
+        }
       } catch (err) {
-        result = { source: 'tdlr', status: 'error', error: err.message };
+        result = { source: 'bbb', status: 'error', error: err.message };
+      }
+    } else if (sourceName === 'yelp_yahoo') {
+      // Use Python Playwright scraper for Yelp via Yahoo
+      try {
+        const location = `${contractor.city}, ${contractor.state}`;
+        const yelpResult = await scrapeYelpYahooPython(contractor.name, location);
+        result = {
+          source: 'yelp_yahoo',
+          url: yelpResult.yelp_url || 'https://www.yelp.com',
+          status: yelpResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(yelpResult, null, 2),
+          structured: yelpResult
+        };
+        if (yelpResult.found) {
+          log(`    📋 Yelp (Yahoo): ${yelpResult.rating}★ (${yelpResult.review_count} reviews)`);
+        }
+      } catch (err) {
+        result = { source: 'yelp_yahoo', status: 'error', error: err.message };
+      }
+    } else if (sourceName === 'angi' || sourceName === 'trustpilot' || sourceName === 'houzz') {
+      // Use SERP scraper for these sites (bypasses anti-bot)
+      const siteMap = { angi: 'angi.com', trustpilot: 'trustpilot.com', houzz: 'houzz.com' };
+      try {
+        const location = `${contractor.city}, ${contractor.state}`;
+        const serpResult = await scrapeSerpRatingPython(contractor.name, location, siteMap[sourceName]);
+        result = {
+          source: sourceName,
+          url: serpResult.url || `https://www.${siteMap[sourceName]}`,
+          status: serpResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(serpResult, null, 2),
+          structured: serpResult
+        };
+        if (serpResult.found) {
+          log(`    📋 ${sourceName}: ${serpResult.rating}★ (${serpResult.review_count} reviews)`);
+        }
+      } catch (err) {
+        result = { source: sourceName, status: 'error', error: err.message };
+      }
+    } else if (sourceName === 'google_maps' || sourceName === 'google_maps_local' || sourceName === 'google_maps_hq') {
+      // Use Python Playwright scraper for Google Maps (NO API)
+      try {
+        const location = `${contractor.city}, ${contractor.state}`;
+        const gmapsResult = await scrapeGoogleMapsPython(contractor.name, location);
+        result = {
+          source: sourceName,
+          url: gmapsResult.maps_url || 'https://www.google.com/maps',
+          status: gmapsResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(gmapsResult, null, 2),
+          structured: gmapsResult
+        };
+        if (gmapsResult.found) {
+          log(`    📋 Google Maps (Python): ${gmapsResult.rating}★ (${gmapsResult.review_count} reviews)`);
+        }
+      } catch (err) {
+        result = { source: sourceName, status: 'error', error: err.message };
       }
     } else if (sourceConfig.type === 'scraper' && sourceName === 'court_records') {
       try {
@@ -913,13 +1281,6 @@ function calculateInsuranceConfidence(collectedData) {
   if (bbb?.structured_data?.accredited === true) {
     score += 3;
     signals.push('BBB accredited (insurance verified by BBB)');
-  }
-
-  // Active TDLR license (+2) - required to file insurance
-  const tdlr = collectedData.find(d => d.source_name === 'tdlr');
-  if (tdlr?.structured_data?.status === 'ACTIVE') {
-    score += 2;
-    signals.push('Active TDLR license (insurance filing required)');
   }
 
   // Recent permits (+2) - cities require insurance for permits

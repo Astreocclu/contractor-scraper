@@ -1,7 +1,7 @@
 """
 Django management command to enrich leads with multi-county CAD data.
 
-Supports: Tarrant, Denton, Dallas counties
+Supports: Tarrant, Denton, Dallas, Collin counties
 
 Usage:
     python manage.py enrich_cad --limit 10  # Test run
@@ -98,6 +98,37 @@ COUNTY_CONFIGS = {
             'account_num': 'PARCELID',
         }
     },
+    'collin': {
+        'name': 'Collin',
+        'url': 'https://gismaps.cityofallen.org/arcgis/rest/services/ReferenceData/Collin_County_Appraisal_District_Parcels/MapServer/1/query',
+        'address_field': 'GIS_DBO_AD_Entity_situs_num',  # Need to combine situs_num + situs_street
+        'fields': [
+            "GIS_DBO_AD_Entity_file_as_name", "GIS_DBO_AD_Entity_situs_num",
+            "GIS_DBO_AD_Entity_situs_street", "GIS_DBO_AD_Entity_situs_display",
+            "GIS_DBO_AD_Entity_addr_line1", "GIS_DBO_AD_Entity_addr_city",
+            "GIS_DBO_AD_Entity_addr_state", "GIS_DBO_AD_Entity_addr_zip",
+            "GIS_DBO_AD_Entity_cert_market", "GIS_DBO_AD_Entity_cert_land_hst",
+            "GIS_DBO_AD_Entity_cert_imprv_hs", "GIS_DBO_AD_Entity_yr_blt",
+            "GIS_DBO_AD_Entity_living_area", "GIS_DBO_AD_Entity_legal_acreage",
+            "GIS_DBO_Parcel_PROP_ID"
+        ],
+        'field_map': {
+            'owner_name': 'GIS_DBO_AD_Entity_file_as_name',
+            'situs_num': 'GIS_DBO_AD_Entity_situs_num',
+            'situs_street': 'GIS_DBO_AD_Entity_situs_street',
+            'situs_addr': 'GIS_DBO_AD_Entity_situs_display',
+            'owner_addr': 'GIS_DBO_AD_Entity_addr_line1',
+            'owner_city': 'GIS_DBO_AD_Entity_addr_city',
+            'owner_zip': 'GIS_DBO_AD_Entity_addr_zip',
+            'market_value': 'GIS_DBO_AD_Entity_cert_market',
+            'land_value': 'GIS_DBO_AD_Entity_cert_land_hst',
+            'improvement_value': 'GIS_DBO_AD_Entity_cert_imprv_hs',
+            'year_built': 'GIS_DBO_AD_Entity_yr_blt',
+            'square_feet': 'GIS_DBO_AD_Entity_living_area',
+            'lot_size': 'GIS_DBO_AD_Entity_legal_acreage',
+            'account_num': 'GIS_DBO_Parcel_PROP_ID',
+        }
+    },
 }
 
 # Zip code to county mapping (DFW area)
@@ -164,6 +195,17 @@ ZIP_TO_COUNTY = {
     '75052': 'dallas', '75053': 'dallas', '75054': 'dallas', '75149': 'dallas',
     '75150': 'dallas', '75180': 'dallas', '75181': 'dallas', '75182': 'dallas',
 
+    # Collin County (Allen, McKinney, Plano, Frisco, etc.)
+    '75002': 'collin', '75009': 'collin', '75013': 'collin', '75023': 'collin',
+    '75024': 'collin', '75025': 'collin', '75026': 'collin', '75030': 'collin',
+    '75034': 'collin', '75035': 'collin', '75048': 'collin', '75069': 'collin',
+    '75070': 'collin', '75071': 'collin', '75072': 'collin', '75074': 'collin',
+    '75075': 'collin', '75078': 'collin', '75080': 'collin', '75081': 'collin',
+    '75082': 'collin', '75086': 'collin', '75087': 'collin', '75093': 'collin',
+    '75094': 'collin', '75097': 'collin', '75098': 'collin', '75121': 'collin',
+    '75164': 'collin', '75166': 'collin', '75173': 'collin', '75407': 'collin',
+    '75409': 'collin', '75424': 'collin', '75442': 'collin', '75454': 'collin',
+
     # Parker County (Aledo, Weatherford) - no API, will be skipped
     '76008': 'parker', '76087': 'parker', '76085': 'parker', '76086': 'parker',
     '76088': 'parker',
@@ -178,9 +220,16 @@ def get_county_from_zip(address):
     """Extract zip code and determine county."""
     if not address:
         return None
-    match = re.search(r'(\d{5})', address)
+    # Look for 5-digit zip at end of address (after state abbreviation)
+    # Handles: "Fort Worth TX 76052" or "Fort Worth, TX 76052-1234"
+    match = re.search(r'\b(TX|TEXAS)\s+(\d{5})(?:-\d{4})?(?:\s|$)', address, re.I)
     if match:
-        zip_code = match.group(1)
+        zip_code = match.group(2)
+        return ZIP_TO_COUNTY.get(zip_code)
+    # Fallback: last 5-digit sequence in address
+    matches = re.findall(r'(\d{5})', address)
+    if matches:
+        zip_code = matches[-1]  # Take the LAST 5-digit number (likely zip)
         return ZIP_TO_COUNTY.get(zip_code)
     return None
 
@@ -209,7 +258,15 @@ def extract_street_address(full_address):
         full_address = full_address.split(',')[0]
 
     # Remove city/state/zip if no comma
-    full_address = re.sub(r'\s+(Fort Worth|FORT WORTH|TX|TEXAS|\d{5}).*$', '', full_address, flags=re.I)
+    # Match common DFW cities followed by TX/state/zip
+    dfw_cities = (
+        r'Fort Worth|Dallas|Arlington|Irving|Plano|Garland|Frisco|McKinney|'
+        r'Denton|Lewisville|Allen|Carrollton|Richardson|Mesquite|Grand Prairie|'
+        r'Keller|Southlake|Grapevine|Flower Mound|Euless|Bedford|Hurst|'
+        r'Colleyville|Coppell|Rowlett|Wylie|Murphy|Sachse|Lucas|Prosper|'
+        r'Celina|Anna|Princeton|Melissa|Fairview|Highland Village|The Colony'
+    )
+    full_address = re.sub(rf'\s+({dfw_cities}|TX|TEXAS|\d{{5}}).*$', '', full_address, flags=re.I)
 
     return full_address.strip()
 
@@ -404,6 +461,9 @@ def query_county_cad(address, county, timeout=30):
         where_clause = f"situs_num = '{house_num}' AND situs_street LIKE '%{street_core}%'"
     elif county == 'dallas':
         where_clause = f"SITEADDRESS LIKE '{house_num} %{street_core}%'"
+    elif county == 'collin':
+        # Collin uses separate situs_num and situs_street fields with long prefixed names
+        where_clause = f"GIS_DBO_AD_Entity_situs_num = '{house_num}' AND GIS_DBO_AD_Entity_situs_street LIKE '%{street_core}%'"
     else:
         return None, None
 
@@ -436,6 +496,13 @@ def query_county_cad(address, county, timeout=30):
             situs_street = raw_data.get(fm.get('situs_street', ''), '') or ''
             situs_suffix = raw_data.get(fm.get('situs_suffix', ''), '') or ''
             situs_addr = f"{situs_num} {situs_street} {situs_suffix}".strip()
+        elif county == 'collin':
+            # Collin has situs_display as full address, but also separate fields
+            situs_addr = raw_data.get(fm.get('situs_addr', ''), '') or ''
+            if not situs_addr:
+                situs_num = raw_data.get(fm.get('situs_num', ''), '') or ''
+                situs_street = raw_data.get(fm.get('situs_street', ''), '') or ''
+                situs_addr = f"{situs_num} {situs_street}".strip()
         else:
             situs_addr = raw_data.get(fm.get('situs_addr', ''), '') or ''
 
@@ -499,7 +566,7 @@ def query_cad_multi_county(address, timeout=30):
     primary_county = get_county_from_zip(address)
 
     # Counties with working APIs
-    supported_counties = ['tarrant', 'denton', 'dallas']
+    supported_counties = ['tarrant', 'denton', 'dallas', 'collin']
 
     # If we know the county and it's supported, try it first
     if primary_county and primary_county in supported_counties:
@@ -629,8 +696,8 @@ class Command(BaseCommand):
         self.stdout.write(self.style.HTTP_INFO('=== MULTI-COUNTY CAD ENRICHMENT ==='))
         self.stdout.write(f'Supported counties: Tarrant, Denton, Dallas\n')
 
-        # Get A/B leads
-        leads = Lead.objects.filter(tier__in=['A', 'B']).select_related('property')
+        # Get all leads (all tiers)
+        leads = Lead.objects.all().select_related('property')
 
         if force:
             pass  # Process all
@@ -735,7 +802,12 @@ class Command(BaseCommand):
                 mailing_address = f"{owner_addr}, {owner_city} {owner_zip}".strip(", ")
 
                 # Detect absentee owner
-                absentee = is_absentee_owner(situs_addr, mailing_address)
+                # Only calculate if we have a street address to compare
+                # (Denton CAD doesn't return mailing street addresses)
+                if owner_addr:
+                    absentee = is_absentee_owner(situs_addr, mailing_address)
+                else:
+                    absentee = None  # Can't determine without mailing street address
 
                 # Update property
                 prop.owner_name = owner_name

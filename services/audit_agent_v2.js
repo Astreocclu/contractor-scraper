@@ -65,22 +65,11 @@ IMPORTANT: High review volume with high ratings is a POSITIVE signal.
 - DO NOT flag "statistically rare" or "statistically improbable" as a red flag for review volume
 - Only flag reviews if Review Analyzer found ACTUAL manipulation evidence (fake accounts, identical text)
 
-## TEXAS LICENSING - IMPORTANT
-In Texas, these trades are LICENSE-EXEMPT (state TDLR licensing is optional):
-- Pool builders, pool contractors
-- Patio covers, pergolas, outdoor structures
-- Fence installers
-- Screen enclosures, sunrooms
-- General construction
-
-TDLR licenses ARE required for: HVAC, electricians, plumbers, irrigators.
-For pool/patio/fence contractors, absence of TDLR license is expected and normal - focus on other indicators.
-
 ## SCORING - Trust your judgment
 Score 0-100 based on what you find:
 
 0-15 (CRITICAL/AVOID): Known fraudster, news investigation, pattern of victims, active lawsuits for fraud
-15-35 (SEVERE/AVOID): Serious red flags, multiple complaints of same issue, license problems
+15-35 (SEVERE/AVOID): Serious red flags, multiple complaints of same issue, BBB F rating
 40-60 (MODERATE/CAUTION): Mixed signals, some concerns, needs verification
 60-75 (LOW/VERIFY): Solid contractor with minor issues, mostly positive
 75-90 (TRUSTED/RECOMMENDED): Good track record, verified, minor gaps

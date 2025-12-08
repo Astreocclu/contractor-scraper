@@ -1,10 +1,15 @@
 /**
- * Cold Email Draft Factory
+ * Cold Email Draft Factory - Dumb Executor
  *
- * Creates Gmail drafts for Texas construction leads.
- * Uses OAuth2 for authentication and users.drafts.create endpoint.
+ * Reads enriched JSON from matcher.py and creates Gmail drafts.
+ * Uses DeepSeek for personalized email generation.
  *
  * CRITICAL: This script ONLY creates drafts. It does NOT send emails.
+ *
+ * Usage:
+ *   1. Run: python tools/matcher.py --trade pool --limit 20
+ *   2. Run: node index.js
+ *   3. Review drafts in Gmail before sending
  */
 
 const fs = require('fs').promises;
@@ -12,64 +17,59 @@ const path = require('path');
 const { google } = require('googleapis');
 const readline = require('readline');
 
-// OAuth2 scopes - only requesting draft creation permission
-const SCOPES = ['https://www.googleapis.com/auth/gmail.compose'];
+// Paths
 const TOKEN_PATH = path.join(__dirname, 'token.json');
 const CREDENTIALS_PATH = path.join(__dirname, 'credentials.json');
-const LEADS_PATH = path.join(__dirname, 'leads.json');
+const LEADS_PATH = path.join(__dirname, 'leads_enriched.json');
+const SENT_HISTORY_PATH = path.join(__dirname, 'sent_history.json');
 
-// Sender info
-const SENDER_NAME = 'Mike';
-const SENDER_EMAIL = 'me'; // Gmail API uses 'me' to reference authenticated user
+// OAuth2 scopes
+const SCOPES = ['https://www.googleapis.com/auth/gmail.compose'];
 
 // DeepSeek API configuration
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
 
-// Personalities to randomly select from - all Reid with different vibes
+// Personalities for variety
 const PERSONALITIES = [
-  { name: 'Reid', style: 'direct Texas guy, gets straight to the point, no BS, talks about data and deals' },
-  { name: 'Reid', style: 'casual and friendly, talks like texting a buddy, uses informal language' },
-  { name: 'Reid', style: 'data-driven professional, mentions specific numbers and ROI, analytical but personable' },
-  { name: 'Reid', style: 'hustler energy, knows the grind, talks about beating the competition and winning jobs' },
-  { name: 'Reid', style: 'laid-back advisor vibe, gives helpful tips, sounds like a friend who happens to have good leads' }
+  { name: 'Reid', style: 'direct Texas guy, gets straight to the point, no BS' },
+  { name: 'Reid', style: 'casual and friendly, talks like texting a buddy' },
+  { name: 'Reid', style: 'data-driven, mentions specific numbers, analytical but personable' },
+  { name: 'Reid', style: 'knows the grind, talks about beating competition and winning jobs' },
+  { name: 'Reid', style: 'laid-back advisor, gives helpful tips, sounds like a friend with good leads' }
 ];
 
 /**
- * Generates email subject and body using DeepSeek.
- * Randomly selects personality for variety.
+ * Formats currency for display
  */
-async function generateEmailBody(lead) {
-  const { permit_type, address, city, count, contractor_email } = lead;
-  const businessName = address;
+function formatMoney(value) {
+  if (!value) return '$0';
+  return '$' + value.toLocaleString();
+}
+
+/**
+ * Generates email using DeepSeek with dynamic stats from enriched JSON
+ */
+async function generateEmailBody(contractor) {
+  const { business_name, city, trade, stats, sample_leads } = contractor;
+
+  // Format sample leads for the prompt
+  const leadHook = sample_leads.map(l =>
+    `- ${l.address} (Value: ${formatMoney(l.value)}, Permit: ${l.permit_date || 'recent'})`
+  ).join('\n');
 
   // Pick a random personality
   const persona = PERSONALITIES[Math.floor(Math.random() * PERSONALITIES.length)];
 
-  const prompt = `You are ${persona.name}. Your personality: ${persona.style}
+  const prompt = `You're Reid, a lead data analyst. Write a short cold email to ${business_name}, a ${trade} contractor in ${city}.
 
-You have 43 verified POOL PERMIT leads in DFW from the last 60 days. These are homeowners who just pulled permits to build pools - they need pool builders NOW.
+You have ${stats.overall_lead_count} homeowner leads in DFW who are starting ${trade} projects. ${stats.overall_hot_count} are from the last 30 days. Average home value: ${formatMoney(stats.avg_value)}.
 
-The data:
-- 26 are HOT (permits filed in last 30 days)
-- 63% are absentee owners (investors = repeat buyers)
-- Average property value: $547k
-- Each lead includes: address, owner name, property value, permit date
+Sample properties you could mention:
+${leadHook}
 
-Pricing: $50/hot lead, $20/older leads, or $1,400 for all 43
+Keep it short and natural. Sign off as "Reid - Lead Data Analyst".
 
-Write a quick cold email to ${businessName} in ${city}. They build pools.
-
-The vibe:
-- You're not a slick salesman, you're just trying to move some leads
-- Keep it SHORT (2-4 sentences)
-- Be natural, let your personality come through
-- Offer 2-3 FREE SAMPLES to prove quality
-- End with something that invites a response
-
-Don't be formal. Don't use corporate speak. Just talk like a human.
-
-Return JSON only:
-{"subject": "short subject line", "body": "the email"}`;
+Return JSON: {"subject": "...", "body": "..."}`;
 
   try {
     const response = await fetch(`${DEEPSEEK_API_BASE}/chat/completions`, {
@@ -79,11 +79,9 @@ Return JSON only:
         'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
       },
       body: JSON.stringify({
-        model: 'deepseek-chat',  // Using chat model for reliable JSON output
-        messages: [
-          { role: 'user', content: prompt }
-        ],
-        temperature: 0.9,  // Higher temp for more variation
+        model: 'deepseek-chat',
+        messages: [{ role: 'user', content: prompt }],
+        temperature: 0.9,
         max_tokens: 500
       })
     });
@@ -93,50 +91,44 @@ Return JSON only:
       throw new Error(`DeepSeek API error ${response.status}: ${errorText}`);
     }
 
-    const responseText = await response.text();
-    const data = JSON.parse(responseText);
+    const data = await response.json();
     const content = data.choices?.[0]?.message?.content || '';
 
     if (!content) {
       throw new Error('Empty response from DeepSeek');
     }
 
-    // Extract JSON from response (handle markdown code blocks)
+    // Extract JSON from response
     let jsonStr = content;
     const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)```/);
     if (jsonMatch) {
       jsonStr = jsonMatch[1].trim();
     }
-
-    // Try to find JSON object in the response
     const objectMatch = jsonStr.match(/\{[\s\S]*\}/);
     if (objectMatch) {
       jsonStr = objectMatch[0];
     }
 
-    const result = JSON.parse(jsonStr);
-
-    // Log reasoning if present
-    if (data.choices?.[0]?.message?.reasoning_content) {
-      console.log(`  [DeepSeek reasoning]: ${data.choices[0].message.reasoning_content.substring(0, 100)}...`);
-    }
-
-    return {
-      subject: result.subject,
-      body: result.body
-    };
+    return JSON.parse(jsonStr);
   } catch (err) {
     console.error(`  [DeepSeek fallback]: ${err.message}`);
     // Fallback to simple template
     return {
-      subject: `Leads in ${city}`,
-      body: `Found some fresh permits in ${city} this week. I'm selling the list to one contractor. Want it?`
+      subject: `${city} ${trade} leads?`,
+      body: `Hey,
+
+I've got a list of ${stats.overall_lead_count} homeowners in DFW actively starting ${trade} projects. Average home value around ${formatMoney(stats.avg_value)}.
+
+Want me to send over a few samples?
+
+Reid
+Lead Data Analyst`
     };
   }
 }
 
 /**
- * Creates an RFC 822 formatted email message.
+ * Creates an RFC 822 formatted email message
  */
 function createRFC822Message(to, subject, body) {
   const messageParts = [
@@ -150,7 +142,6 @@ function createRFC822Message(to, subject, body) {
 
   const message = messageParts.join('\r\n');
 
-  // Base64url encode the message
   return Buffer.from(message)
     .toString('base64')
     .replace(/\+/g, '-')
@@ -159,74 +150,86 @@ function createRFC822Message(to, subject, body) {
 }
 
 /**
- * Creates a draft in Gmail.
- * Uses users.drafts.create - does NOT send.
+ * Creates a draft in Gmail (does NOT send)
  */
-async function createDraft(auth, lead) {
+async function createDraft(auth, contractor) {
   const gmail = google.gmail({ version: 'v1', auth });
 
-  const { subject, body } = await generateEmailBody(lead);
-  const rawMessage = createRFC822Message(lead.contractor_email, subject, body);
+  const { subject, body } = await generateEmailBody(contractor);
+  const rawMessage = createRFC822Message(contractor.contractor_email, subject, body);
 
   const response = await gmail.users.drafts.create({
     userId: 'me',
     requestBody: {
-      message: {
-        raw: rawMessage
-      }
+      message: { raw: rawMessage }
     }
   });
 
-  return { subject, draftId: response.data.id };
+  return { subject, body, draftId: response.data.id };
 }
 
 /**
- * Delays execution for specified milliseconds.
+ * Load sent history
+ */
+async function loadSentHistory() {
+  try {
+    const content = await fs.readFile(SENT_HISTORY_PATH, 'utf8');
+    return JSON.parse(content);
+  } catch {
+    return {};
+  }
+}
+
+/**
+ * Save sent history
+ */
+async function saveSentHistory(history) {
+  await fs.writeFile(SENT_HISTORY_PATH, JSON.stringify(history, null, 2));
+}
+
+/**
+ * Delay helper
  */
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 /**
- * Loads saved credentials if they exist.
+ * Load saved credentials
  */
 async function loadSavedCredentials() {
   try {
     const content = await fs.readFile(TOKEN_PATH);
-    const credentials = JSON.parse(content);
-    return google.auth.fromJSON(credentials);
-  } catch (err) {
+    return google.auth.fromJSON(JSON.parse(content));
+  } catch {
     return null;
   }
 }
 
 /**
- * Saves credentials to file for future use.
+ * Save credentials
  */
 async function saveCredentials(client) {
   const content = await fs.readFile(CREDENTIALS_PATH);
   const keys = JSON.parse(content);
   const key = keys.installed || keys.web;
 
-  const payload = JSON.stringify({
+  await fs.writeFile(TOKEN_PATH, JSON.stringify({
     type: 'authorized_user',
     client_id: key.client_id,
     client_secret: key.client_secret,
     refresh_token: client.credentials.refresh_token,
-  });
-
-  await fs.writeFile(TOKEN_PATH, payload);
+  }));
 }
 
 /**
- * Prompts user for authorization code.
+ * Prompt for auth code
  */
 function askQuestion(query) {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   });
-
   return new Promise(resolve => rl.question(query, ans => {
     rl.close();
     resolve(ans);
@@ -234,17 +237,15 @@ function askQuestion(query) {
 }
 
 /**
- * Authorizes with Google using OAuth2.
+ * Authorize with Google
  */
 async function authorize() {
-  // Try to load existing credentials
   let client = await loadSavedCredentials();
   if (client) {
     console.log('Using saved credentials...');
     return client;
   }
 
-  // Load client secrets
   const content = await fs.readFile(CREDENTIALS_PATH);
   const keys = JSON.parse(content);
   const key = keys.installed || keys.web;
@@ -255,7 +256,6 @@ async function authorize() {
     key.redirect_uris?.[0] || 'urn:ietf:wg:oauth:2.0:oob'
   );
 
-  // Generate auth URL
   const authUrl = oAuth2Client.generateAuthUrl({
     access_type: 'offline',
     scope: SCOPES,
@@ -269,11 +269,9 @@ async function authorize() {
   console.log('\n===========================================\n');
 
   const code = await askQuestion('Enter the authorization code: ');
-
   const { tokens } = await oAuth2Client.getToken(code);
   oAuth2Client.setCredentials(tokens);
 
-  // Save credentials for next run
   await saveCredentials(oAuth2Client);
   console.log('Credentials saved to token.json\n');
 
@@ -281,21 +279,29 @@ async function authorize() {
 }
 
 /**
- * Main execution function.
+ * Main execution
  */
 async function main() {
   console.log('\n========================================');
   console.log('  COLD EMAIL DRAFT FACTORY');
-  console.log('  Texas Construction Leads');
+  console.log('  Dumb Executor Mode');
   console.log('========================================\n');
 
-  // Check for credentials file
+  // Check for credentials
   try {
     await fs.access(CREDENTIALS_PATH);
   } catch {
     console.error('ERROR: credentials.json not found!');
-    console.error('Please download it from Google Cloud Console.');
-    console.error('See README.md for instructions.\n');
+    console.error('See README.md for setup instructions.\n');
+    process.exit(1);
+  }
+
+  // Check for enriched leads
+  try {
+    await fs.access(LEADS_PATH);
+  } catch {
+    console.error('ERROR: leads_enriched.json not found!');
+    console.error('Run: python tools/matcher.py --trade pool --limit 20\n');
     process.exit(1);
   }
 
@@ -304,44 +310,83 @@ async function main() {
   const auth = await authorize();
   console.log('Authentication successful!\n');
 
-  // Load leads
-  console.log('Loading leads from leads.json...');
+  // Load enriched leads
+  console.log('Loading enriched leads...');
   const leadsContent = await fs.readFile(LEADS_PATH, 'utf8');
-  const leads = JSON.parse(leadsContent);
-  console.log(`Found ${leads.length} leads to process.\n`);
+  const contractors = JSON.parse(leadsContent);
+  console.log(`Found ${contractors.length} contractors to process.\n`);
 
-  // Process each lead
+  if (contractors.length === 0) {
+    console.log('No contractors in leads_enriched.json. Nothing to do.');
+    return;
+  }
+
+  // Load sent history
+  const sentHistory = await loadSentHistory();
+
+  // Process contractors
   console.log('Creating drafts...');
   console.log('----------------------------------------');
 
   let successCount = 0;
   let errorCount = 0;
+  let skippedCount = 0;
 
-  for (let i = 0; i < leads.length; i++) {
-    const lead = leads[i];
+  for (let i = 0; i < contractors.length; i++) {
+    const contractor = contractors[i];
+    const email = contractor.contractor_email;
+
+    // Check if already sent
+    if (sentHistory[email]) {
+      console.log(`[${i + 1}/${contractors.length}] SKIP: ${email} (already drafted)`);
+      skippedCount++;
+      continue;
+    }
 
     try {
-      const { subject, draftId } = await createDraft(auth, lead);
-      console.log(`Draft created for ${lead.contractor_email} - "${subject}"`);
+      console.log(`[${i + 1}/${contractors.length}] ${contractor.business_name}`);
+      console.log(`  Email: ${email}`);
+      console.log(`  City: ${contractor.city} (${contractor.cluster})`);
+      console.log(`  Leads: ${contractor.stats.lead_count} matched, ${contractor.stats.overall_lead_count} total`);
+
+      const { subject, draftId } = await createDraft(auth, contractor);
+
+      console.log(`  Subject: "${subject}"`);
+      console.log(`  Draft ID: ${draftId}`);
+      console.log('  Status: DRAFT CREATED\n');
+
+      // Update sent history
+      sentHistory[email] = {
+        drafted_at: new Date().toISOString(),
+        trade: contractor.trade,
+        leads_pitched: contractor.sample_leads.map(l => l.lead_id)
+      };
+
       successCount++;
     } catch (err) {
-      console.error(`ERROR creating draft for ${lead.contractor_email}: ${err.message}`);
+      console.error(`  ERROR: ${err.message}\n`);
       errorCount++;
     }
 
-    // Rate limiting - 1 second delay between requests
-    if (i < leads.length - 1) {
-      await delay(1000);
+    // Rate limiting - 60 second delay between drafts
+    if (i < contractors.length - 1) {
+      console.log('  Waiting 60 seconds before next draft...');
+      await delay(60000);
     }
   }
 
+  // Save sent history
+  await saveSentHistory(sentHistory);
+
   // Summary
   console.log('----------------------------------------');
-  console.log(`\nComplete! ${successCount} drafts created, ${errorCount} errors.`);
-  console.log('Check your Gmail Drafts folder to review and send.\n');
+  console.log(`\nComplete!`);
+  console.log(`  Drafts created: ${successCount}`);
+  console.log(`  Skipped (already drafted): ${skippedCount}`);
+  console.log(`  Errors: ${errorCount}`);
+  console.log(`\nCheck your Gmail Drafts folder to review and send.\n`);
 }
 
-// Run the script
 main().catch(err => {
   console.error('Fatal error:', err.message);
   process.exit(1);

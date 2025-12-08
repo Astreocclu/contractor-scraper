@@ -60,13 +60,15 @@ All documentation is in `docs/` except the top-level status files.
 
 ## Commands
 
+**Note:** Always use `python3` commands over `python` commands.
+
 ```bash
 source venv/bin/activate && set -a && . ./.env && set +a
 
 node run_audit.js --id 123
 node run_audit.js --name "Company" --city "Dallas" --state "TX"
 node batch_collect.js --id 123 --force
-python manage.py runserver 8002
+python3 manage.py runserver 8002
 ```
 
 ---

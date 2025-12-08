@@ -34,17 +34,19 @@ class ContractorViewSet(viewsets.ReadOnlyModelViewSet):
     def get_queryset(self):
         qs = Contractor.objects.filter(is_active=True)
 
-        # Default: only passing
-        if self.request.query_params.get('all', '').lower() != 'true':
-            qs = qs.filter(passes_threshold=True)
+        # For detail view (retrieve), return all active contractors
+        # For list view, filter to passing only (unless ?all=true)
+        if self.action == 'list':
+            if self.request.query_params.get('all', '').lower() != 'true':
+                qs = qs.filter(passes_threshold=True)
 
-        vertical = self.request.query_params.get('vertical')
-        if vertical:
-            qs = qs.filter(verticals__slug=vertical)
+            vertical = self.request.query_params.get('vertical')
+            if vertical:
+                qs = qs.filter(verticals__slug=vertical)
 
-        city = self.request.query_params.get('city')
-        if city:
-            qs = qs.filter(city__iexact=city)
+            city = self.request.query_params.get('city')
+            if city:
+                qs = qs.filter(city__iexact=city)
 
         return qs.order_by('-trust_score')
 

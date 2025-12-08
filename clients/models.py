@@ -67,7 +67,7 @@ class Property(models.Model):
     neighborhood_median = models.DecimalField(max_digits=14, decimal_places=2, blank=True, null=True)
 
     # Flags
-    is_absentee = models.BooleanField(default=False, db_index=True)
+    is_absentee = models.BooleanField(null=True, blank=True, db_index=True)  # NULL = unknown
     homestead_exempt = models.BooleanField(default=False)
 
     # Enrichment status
@@ -122,12 +122,21 @@ class Lead(models.Model):
     # Signals
     is_high_contrast = models.BooleanField(default=False)
     contrast_ratio = models.FloatField(blank=True, null=True)
-    is_absentee = models.BooleanField(default=False)
+    is_absentee = models.BooleanField(null=True, blank=True)  # NULL = unknown
 
-    # Scoring
+    # Traditional Scoring (deterministic/rule-based)
     score = models.FloatField(blank=True, null=True, db_index=True)
     score_breakdown = models.JSONField(blank=True, null=True)
     tier = models.CharField(max_length=1, choices=TIER_CHOICES, blank=True, null=True, db_index=True)
+
+    # AI Scoring (DeepSeek R1 reasoner)
+    ai_score = models.FloatField(blank=True, null=True, db_index=True)
+    ai_tier = models.CharField(max_length=1, choices=TIER_CHOICES, blank=True, null=True)
+    ai_reasoning = models.TextField(blank=True, null=True)
+    ai_chain_of_thought = models.TextField(blank=True, null=True)  # R1's reasoning_content
+    ai_applicant_type = models.CharField(max_length=50, blank=True, null=True)
+    ai_red_flags = models.JSONField(blank=True, null=True)
+    ai_scored_at = models.DateTimeField(blank=True, null=True)
 
     # Freshness
     permit_date = models.DateField(blank=True, null=True)
@@ -186,3 +195,114 @@ class NeighborhoodMedian(models.Model):
 
     def __str__(self):
         return f"{self.neighborhood_code} - ${self.median_value:,.0f}"
+
+
+class ScoredLead(models.Model):
+    """
+    AI-scored leads from the V2 scoring system.
+
+    Every permit gets scored and stored here, organized by trade group and category.
+    This is the source of truth for all scored leads.
+    """
+
+    TIER_CHOICES = [
+        ('A', 'Tier A - Premium'),
+        ('B', 'Tier B - Good'),
+        ('C', 'Tier C - Low Priority'),
+        ('RETRY', 'Pending Retry'),
+    ]
+
+    CONTACT_PRIORITY_CHOICES = [
+        ('call', 'Call Today'),
+        ('email', 'Email'),
+        ('skip', 'Skip'),
+    ]
+
+    SCORING_METHOD_CHOICES = [
+        ('ai', 'AI (DeepSeek Chat)'),
+        ('ai-reasoner', 'AI (DeepSeek Reasoner)'),
+        ('pending_retry', 'Pending Retry'),
+    ]
+
+    STATUS_CHOICES = [
+        ('new', 'New'),
+        ('exported', 'Exported'),
+        ('sold', 'Sold to Contractor'),
+        ('contacted', 'Homeowner Contacted'),
+        ('converted', 'Converted'),
+        ('dead', 'Dead Lead'),
+    ]
+
+    # Link to source permit
+    permit = models.OneToOneField(
+        Permit,
+        on_delete=models.CASCADE,
+        related_name='scored_lead'
+    )
+    cad_property = models.ForeignKey(
+        Property,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='scored_leads'
+    )
+
+    # Categorization
+    category = models.CharField(max_length=50, db_index=True)  # pool, hvac, roof, etc.
+    trade_group = models.CharField(max_length=50, db_index=True)  # luxury_outdoor, home_systems, etc.
+    is_commercial = models.BooleanField(default=False, db_index=True)
+
+    # Scoring
+    score = models.IntegerField(db_index=True)  # 0-100, or -1 for pending retry
+    tier = models.CharField(max_length=5, choices=TIER_CHOICES, db_index=True)
+    reasoning = models.TextField()
+    chain_of_thought = models.TextField(blank=True)  # DeepSeek reasoner's thinking
+
+    # Flags and recommendations
+    flags = models.JSONField(default=list)
+    ideal_contractor = models.CharField(max_length=200, blank=True)
+    contact_priority = models.CharField(
+        max_length=20,
+        choices=CONTACT_PRIORITY_CHOICES,
+        default='email'
+    )
+
+    # Scoring metadata
+    scoring_method = models.CharField(
+        max_length=20,
+        choices=SCORING_METHOD_CHOICES,
+        default='ai'
+    )
+    scored_at = models.DateTimeField(default=timezone.now, db_index=True)
+
+    # Sales tracking
+    status = models.CharField(
+        max_length=20,
+        choices=STATUS_CHOICES,
+        default='new',
+        db_index=True
+    )
+    sold_to = models.CharField(max_length=200, blank=True)  # Contractor who bought the lead
+    sold_at = models.DateTimeField(null=True, blank=True)
+    sold_price = models.DecimalField(max_digits=8, decimal_places=2, null=True, blank=True)
+
+    class Meta:
+        db_table = 'clients_scoredlead'
+        ordering = ['-score', '-scored_at']
+        indexes = [
+            models.Index(fields=['trade_group', 'category', 'tier']),
+            models.Index(fields=['status', 'tier']),
+            models.Index(fields=['category', 'score']),
+        ]
+
+    def __str__(self):
+        return f"[{self.tier}:{self.score}] {self.category} - {self.permit.property_address}"
+
+    @property
+    def is_sellable(self):
+        """Check if lead is sellable (not unsellable category and not already sold)."""
+        return (
+            self.trade_group != 'unsellable' and
+            self.tier != 'RETRY' and
+            self.status in ('new', 'exported')
+        )

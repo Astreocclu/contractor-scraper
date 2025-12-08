@@ -27,7 +27,7 @@ ACCELA_CITIES = {
     'fort_worth': {
         'name': 'Fort Worth',
         'base_url': 'https://aca-prod.accela.com/CFW',
-        # Development module search page (most residential/building permits)
+        # Development module has permits but also complaints - filtering handles it
         'search_path': '/Cap/CapHome.aspx?module=Development&TabName=Development',
         'module': 'Development',
     },
@@ -45,16 +45,95 @@ ACCELA_CITIES = {
         'search_path': '/Cap/CapHome.aspx?module=Building&TabName=Building',
         'module': 'Building',
     },
-    'richardson': {
-        'name': 'Richardson',
-        'base_url': 'https://aca-prod.accela.com/RICHARDSON',
-        # Building permits search
-        'search_path': '/Cap/CapHome.aspx?module=Building&TabName=Building',
-        'module': 'Building',
-    },
+    # Richardson removed - their Accela URL returns 404
+    # Richardson uses custom portal at cor.net (not Accela)
 }
 
 DEEPSEEK_API_KEY = os.getenv('DEEPSEEK_API_KEY')
+
+# Permit types we WANT (residential work)
+VALID_PERMIT_TYPES = {
+    'building', 'residential', 'roof', 'roofing', 'hvac', 'mechanical',
+    'plumbing', 'electrical', 'foundation', 'addition', 'alteration',
+    'renovation', 'remodel', 'new construction', 'solar', 'pv', 'photovoltaic',
+    'fence', 'deck', 'patio', 'pool', 'spa', 'water heater', 'ac', 'air conditioning',
+    'window', 'door', 'siding', 'insulation', 'driveway', 'garage', 'carport',
+}
+
+# Permit types to EXCLUDE (garbage)
+EXCLUDED_PERMIT_TYPES = {
+    'code enforcement', 'complaint', 'rental', 'license', 'garage sale',
+    'pre-development', 'conference', 'sign', 'billboard', 'commercial',
+    'environmental', 'health', 'zoning', 'variance', 'planning', 'subdivision',
+    'right-of-way', 'row', 'encroachment', 'special event', 'food', 'alcohol',
+}
+
+
+def is_valid_permit_type(permit_type: str) -> bool:
+    """Check if permit type is one we want (residential work)."""
+    if not permit_type:
+        return True
+
+    permit_type_lower = permit_type.lower()
+
+    for excluded in EXCLUDED_PERMIT_TYPES:
+        if excluded in permit_type_lower:
+            return False
+
+    for valid in VALID_PERMIT_TYPES:
+        if valid in permit_type_lower:
+            return True
+
+    return True
+
+
+def is_within_date_range(date_str: str, months: int = 2) -> bool:
+    """Check if date is within the last N months."""
+    if not date_str:
+        return True
+
+    from datetime import timedelta
+
+    formats = ['%m/%d/%Y', '%Y-%m-%d', '%m-%d-%Y', '%d/%m/%Y', '%m/%d/%y']
+    parsed_date = None
+
+    for fmt in formats:
+        try:
+            parsed_date = datetime.strptime(date_str.strip(), fmt)
+            break
+        except ValueError:
+            continue
+
+    if not parsed_date:
+        return True
+
+    cutoff = datetime.now() - timedelta(days=months * 30)
+    return parsed_date >= cutoff
+
+
+def filter_permits(permits: list, date_months: int = 2) -> tuple[list, dict]:
+    """Filter permits by type and date."""
+    valid = []
+    stats = {'bad_type': 0, 'old_date': 0, 'empty_addr': 0, 'total_rejected': 0}
+
+    for p in permits:
+        permit_type = p.get('type', '')
+        date_str = p.get('date', '')
+        address = p.get('address', '')
+
+        if not is_valid_permit_type(permit_type):
+            stats['bad_type'] += 1
+            stats['total_rejected'] += 1
+        elif not is_within_date_range(date_str, date_months):
+            stats['old_date'] += 1
+            stats['total_rejected'] += 1
+        elif not address or 'undefined' in address.lower():
+            stats['empty_addr'] += 1
+            stats['total_rejected'] += 1
+        else:
+            valid.append(p)
+
+    return valid, stats
 
 
 async def call_deepseek(prompt: str) -> str:
@@ -186,8 +265,76 @@ async def scrape(city_key: str, target_count: int = 50):
                 else:
                     print('    WARN - No navigation link found, staying on current page')
 
-            # Step 2: Click search button (with empty criteria to get all recent permits)
-            print('[2] Submitting search with default criteria...')
+            # Step 2: Set date filters and search
+            print('[2] Setting date filters and searching...')
+
+            # Calculate date range - last 2 months
+            from datetime import timedelta
+            today = datetime.now()
+            start_date = today - timedelta(days=60)
+            start_str = start_date.strftime('%m/%d/%Y')
+            end_str = today.strftime('%m/%d/%Y')
+
+            # Try to fill date fields (Accela uses various field IDs)
+            date_filled = await page.evaluate(f'''() => {{
+                const startDate = '{start_str}';
+                const endDate = '{end_str}';
+                
+                // Try common Accela date field IDs
+                const startFields = [
+                    'ctl00_PlaceHolderMain_generalSearchForm_txtGSStartDate',
+                    'ctl00_PlaceHolderMain_txtGSStartDate'
+                ];
+                const endFields = [
+                    'ctl00_PlaceHolderMain_generalSearchForm_txtGSEndDate',
+                    'ctl00_PlaceHolderMain_txtGSEndDate'
+                ];
+
+                let filled = false;
+                for (const id of startFields) {{
+                    const el = document.getElementById(id);
+                    if (el) {{
+                        el.value = startDate;
+                        el.dispatchEvent(new Event('change', {{ bubbles: true }}));
+                        filled = true;
+                        break;
+                    }}
+                }}
+                // Also try querySelector for more generic selectors
+                if (!filled) {{
+                    const startInput = document.querySelector('input[id*="StartDate"]');
+                    if (startInput) {{
+                        startInput.value = startDate;
+                        startInput.dispatchEvent(new Event('change', {{ bubbles: true }}));
+                        filled = true;
+                    }}
+                }}
+                
+                for (const id of endFields) {{
+                    const el = document.getElementById(id);
+                    if (el) {{
+                        el.value = endDate;
+                        el.dispatchEvent(new Event('change', {{ bubbles: true }}));
+                        break;
+                    }}
+                }}
+                const endInput = document.querySelector('input[id*="EndDate"]');
+                if (endInput) {{
+                    endInput.value = endDate;
+                    endInput.dispatchEvent(new Event('change', {{ bubbles: true }}));
+                }}
+                
+                return filled;
+            }}''')
+
+            if date_filled:
+                print(f'    Date range set: {start_str} to {end_str}')
+            else:
+                print('    WARN - Could not find date fields, searching without date filter')
+
+            await asyncio.sleep(2)  # Give form time to update
+
+            # Click search button
             search_selectors = [
                 '#ctl00_PlaceHolderMain_btnNewSearch',
                 '#ctl00_PlaceHolderMain_generalSearchForm_btnSearch',
@@ -226,7 +373,7 @@ async def scrape(city_key: str, target_count: int = 50):
                 else:
                     print('    WARN - No search button found')
 
-            await asyncio.sleep(5)
+            await asyncio.sleep(7)  # Wait longer for results
             await page.screenshot(path=f'debug_html/{city_key}_results.png')
 
             # Step 3: Extract permits from search results
@@ -258,7 +405,17 @@ HTML:
                 data = parse_json(response)
 
                 if data and data.get('permits'):
-                    valid_permits = [p for p in data['permits'] if p.get('permit_id')]
+                    raw_permits = [p for p in data['permits'] if p.get('permit_id')]
+
+                    # Filter by type, date, and address
+                    valid_permits, filter_stats = filter_permits(raw_permits, date_months=2)
+
+                    if filter_stats['total_rejected'] > 0:
+                        print(f'    Filtered out {filter_stats["total_rejected"]}: '
+                              f'{filter_stats["bad_type"]} bad type, '
+                              f'{filter_stats["old_date"]} old, '
+                              f'{filter_stats["empty_addr"]} bad address')
+
                     permits.extend(valid_permits)
                     print(f'    OK - Got {len(valid_permits)} valid permits ({len(permits)} cumulative)')
 

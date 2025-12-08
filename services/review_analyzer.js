@@ -49,19 +49,25 @@ Think flexibly like an investigator:
 - Is there evidence of manipulation, or evidence of genuine quality?
 - Let the content guide your conclusions
 
-OUTPUT FORMAT (JSON only):
+OUTPUT FORMAT (JSON only, no markdown code blocks):
 {
-  "fake_review_score": <0-100, higher = more likely fake>,
-  "confidence": "<HIGH|MEDIUM|LOW>",
+  "fake_review_score": 25,
+  "confidence": "HIGH",
   "platform_ratings": {"google": 4.8, "yelp": null, "bbb": "F", "glassdoor": 3.2},
-  "discrepancy_detected": <true|false>,
-  "discrepancy_explanation": "<why ratings don't match, if applicable>",
-  "complaint_patterns": ["<pattern 1>", "<pattern 2>"],
-  "fake_signals": ["<signal 1>", "<signal 2>"],
-  "authentic_signals": ["<evidence of real reviews>"],
-  "summary": "<2-3 sentence summary - what's the real story?>",
-  "recommendation": "<TRUST_REVIEWS|VERIFY_REVIEWS|DISTRUST_REVIEWS>"
-}`;
+  "discrepancy_detected": false,
+  "discrepancy_explanation": "Ratings are consistent across platforms",
+  "complaint_patterns": ["Slow response times", "Pricing concerns"],
+  "fake_signals": ["Multiple reviews posted same day"],
+  "authentic_signals": ["Specific project details mentioned", "Varied writing styles"],
+  "summary": "Reviews appear authentic with minor concerns about response times.",
+  "recommendation": "TRUST_REVIEWS"
+}
+
+IMPORTANT:
+- fake_review_score must be a NUMBER from 0-100 (higher = more likely fake)
+- discrepancy_detected must be true or false (no quotes)
+- Output ONLY valid JSON, no additional text or markdown
+- Replace example values above with your actual analysis`;
 
 async function analyzeReviews(contractorName, reviewData) {
   // Defensive check for missing data
@@ -82,10 +88,13 @@ async function analyzeReviews(contractorName, reviewData) {
 
   // Add platform ratings summary
   context += `## PLATFORM RATINGS\n`;
-  if (reviewData.google_maps_local?.rating) {
+  if (reviewData.google_maps?.rating) {
+    context += `- Google Maps: ${reviewData.google_maps.rating}★ (${reviewData.google_maps.review_count} reviews)\n`;
+  }
+  if (reviewData.google_maps_local?.rating && !reviewData.google_maps) {
     context += `- Google Maps (Local/DFW): ${reviewData.google_maps_local.rating}★ (${reviewData.google_maps_local.review_count} reviews)\n`;
   }
-  if (reviewData.google_maps_hq?.rating) {
+  if (reviewData.google_maps_hq?.rating && !reviewData.google_maps) {
     context += `- Google Maps (HQ): ${reviewData.google_maps_hq.rating}★ (${reviewData.google_maps_hq.review_count} reviews)\n`;
   }
   if (reviewData.bbb?.rating) {
@@ -96,6 +105,18 @@ async function analyzeReviews(contractorName, reviewData) {
   }
   if (reviewData.yelp?.rating) {
     context += `- Yelp: ${reviewData.yelp.rating}★ (${reviewData.yelp.review_count} reviews)\n`;
+  }
+  if (reviewData.yelp_yahoo?.rating) {
+    context += `- Yelp (via Yahoo): ${reviewData.yelp_yahoo.rating}★ (${reviewData.yelp_yahoo.review_count} reviews)\n`;
+  }
+  if (reviewData.trustpilot?.rating) {
+    context += `- Trustpilot: ${reviewData.trustpilot.rating}★ (${reviewData.trustpilot.review_count} reviews)\n`;
+  }
+  if (reviewData.angi?.rating) {
+    context += `- Angi: ${reviewData.angi.rating}★ (${reviewData.angi.review_count} reviews)\n`;
+  }
+  if (reviewData.houzz?.rating) {
+    context += `- Houzz: ${reviewData.houzz.rating}★ (${reviewData.houzz.review_count} reviews)\n`;
   }
 
   // Add raw review text from each source
@@ -161,7 +182,19 @@ async function analyzeReviews(contractorName, reviewData) {
 
     if (jsonMatch) {
       try {
-        const analysis = JSON.parse(jsonMatch[0]);
+        // Clean up common LLM JSON issues before parsing
+        let jsonStr = jsonMatch[0];
+        // Remove markdown code block markers if present
+        jsonStr = jsonStr.replace(/^```json?\s*/i, '').replace(/\s*```$/i, '');
+        // Fix template placeholders that weren't replaced
+        jsonStr = jsonStr.replace(/<0-100[^>]*>/g, '50');
+        jsonStr = jsonStr.replace(/<true\|false>/g, 'false');
+        jsonStr = jsonStr.replace(/<HIGH\|MEDIUM\|LOW>/g, '"MEDIUM"');
+        jsonStr = jsonStr.replace(/<TRUST_REVIEWS\|VERIFY_REVIEWS\|DISTRUST_REVIEWS>/g, '"VERIFY_REVIEWS"');
+        // Fix unquoted template strings
+        jsonStr = jsonStr.replace(/<[^>]+>/g, '""');
+
+        const analysis = JSON.parse(jsonStr);
         analysis.analyzed_at = new Date().toISOString();
         analysis.cost = estimateCost(result);
         // Include reasoning if available (from deepseek-reasoner)
@@ -194,10 +227,11 @@ async function analyzeReviews(contractorName, reviewData) {
 function extractRatings(reviewData) {
   // Defensive check for missing data
   if (!reviewData || typeof reviewData !== 'object') {
-    return { google_local: null, google_hq: null, bbb: null, glassdoor: null, yelp: null };
+    return { google: null, google_local: null, google_hq: null, bbb: null, glassdoor: null, yelp: null };
   }
 
   return {
+    google: reviewData.google_maps?.rating || null,
     google_local: reviewData.google_maps_local?.rating || null,
     google_hq: reviewData.google_maps_hq?.rating || null,
     bbb: reviewData.bbb?.rating || null,
@@ -222,10 +256,15 @@ function quickDiscrepancyCheck(reviewData) {
 
   const ratings = [];
 
-  // Use the Google Maps source with more reviews, or both if significantly different
+  // Use Google Maps data - prefer unified google_maps, fallback to local/hq
+  const gMaps = reviewData.google_maps;
   const gLocal = reviewData.google_maps_local;
   const gHQ = reviewData.google_maps_hq;
-  if (gLocal?.rating && gHQ?.rating) {
+
+  if (gMaps?.rating) {
+    // Use the new unified Google Maps Python scraper data
+    ratings.push({ source: 'google', rating: gMaps.rating, review_count: gMaps.review_count });
+  } else if (gLocal?.rating && gHQ?.rating) {
     // If both exist, use the one with more reviews as primary
     const primary = (gLocal.review_count || 0) >= (gHQ.review_count || 0) ? gLocal : gHQ;
     ratings.push({ source: 'google', rating: primary.rating, review_count: primary.review_count });
@@ -250,16 +289,38 @@ function quickDiscrepancyCheck(reviewData) {
   const values = ratings.map(r => r.rating);
   const maxDiff = Math.max(...values) - Math.min(...values);
 
+  // Calculate total review count across distinct platforms
+  // Use MAX of Google locations (they may be the same listing searched from different areas)
+  const bestGoogleReviews = Math.max(
+    gMaps?.review_count || 0,
+    gLocal?.review_count || 0,
+    gHQ?.review_count || 0
+  );
+  const yelpReviews = reviewData.yelp?.review_count || reviewData.yelp_yahoo?.review_count || 0;
+  const angiReviews = reviewData.angi?.review_count || 0;
+  const trustpilotReviews = reviewData.trustpilot?.review_count || 0;
+  const houzzReviews = reviewData.houzz?.review_count || 0;
+
+  const totalReviews = bestGoogleReviews + yelpReviews + angiReviews + trustpilotReviews + houzzReviews;
+
   const result = {
     discrepancy: maxDiff > 1.5,
     max_difference: maxDiff,
     ratings: ratings,
+    total_reviews: totalReviews,
+    insufficient_reviews: totalReviews < 20,
     flags: []
   };
+
+  // Flag if insufficient reviews for pattern detection
+  if (totalReviews < 20) {
+    result.flags.push(`INSUFFICIENT_REVIEWS: Only ${totalReviews} total reviews found - pattern detection unreliable`);
+  }
 
   // Specific flags
   // Use best Google rating for comparisons
   const bestGoogleRating = Math.max(
+    reviewData.google_maps?.rating || 0,
     reviewData.google_maps_local?.rating || 0,
     reviewData.google_maps_hq?.rating || 0
   );
@@ -272,6 +333,26 @@ function quickDiscrepancyCheck(reviewData) {
     const diff = bestGoogleRating - reviewData.glassdoor.rating;
     if (diff > 1.5) {
       result.flags.push(`Employee rating (${reviewData.glassdoor.rating}) much lower than customer rating (${bestGoogleRating}) - potential internal issues`);
+    }
+  }
+
+  // Check for suspicious review count discrepancy between local and HQ
+  const localReviews = gMaps?.review_count || gLocal?.review_count || 0;
+  const hqReviews = gHQ?.review_count || 0;
+
+  if (localReviews > 10 && hqReviews > 0 && hqReviews < 5) {
+    result.flags.push(`SUSPICIOUS: HQ location has only ${hqReviews} review(s) vs ${localReviews} in local market - possible fake/new listing`);
+  }
+
+  // Check for very high rating with very few reviews (likely fake)
+  if (bestGoogleRating >= 4.8) {
+    const totalGoogleReviews = Math.max(
+      gMaps?.review_count || 0,
+      gLocal?.review_count || 0,
+      gHQ?.review_count || 0
+    );
+    if (totalGoogleReviews < 5) {
+      result.flags.push(`SUSPICIOUS: ${bestGoogleRating}★ rating with only ${totalGoogleReviews} review(s) - likely fake or self-reviews`);
     }
   }
 

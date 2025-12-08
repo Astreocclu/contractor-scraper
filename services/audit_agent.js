@@ -31,7 +31,7 @@ const TOOLS = [
         properties: {
           source: {
             type: 'string',
-            enum: ['tdlr', 'bbb', 'yelp', 'google_maps', 'court_records', 'google_news', 'reddit', 'glassdoor', 'indeed', 'osha', 'epa_echo', 'tx_franchise', 'porch', 'buildzoom', 'homeadvisor'],
+            enum: ['bbb', 'yelp', 'yelp_yahoo', 'google_maps', 'angi', 'trustpilot', 'houzz', 'court_records', 'google_news', 'reddit', 'glassdoor', 'indeed', 'osha', 'epa_echo', 'tx_franchise', 'porch', 'buildzoom', 'homeadvisor'],
             description: 'Which source to collect from'
           },
           reason: {
@@ -132,28 +132,55 @@ WORKFLOW:
 5. When you have enough data OR hit collection limits, call finalize_score()
 
 SCORING METHODOLOGY (base 60 points, normalize to 100):
-- Verification (15 pts): License status, permit history vs claims
-- Reputation (15 pts): Cross-platform ratings, review authenticity, complaint patterns
-- Credibility (10 pts): Years in business, portfolio consistency, professional affiliations
+- Reputation (25 pts): Cross-platform ratings, review authenticity, complaint patterns
+- Credibility (15 pts): Years in business, business registration, professional affiliations
 - Financial (10 pts): Liens, bankruptcy signals, payment complaint patterns
 - Red Flag Absence (10 pts): No critical issues found
 
-MULTIPLIERS:
-- CRITICAL red flag (fraud, active lawsuit, license revoked) → ×0 (auto-fail, score 0-15)
-- SEVERE red flag (BBB F, major complaint pattern) → ×0.3 (score 15-35)
-- MODERATE red flags only (inconsistencies, missing data) → ×0.7 (score 40-60)
-- MINOR red flags only (small issues) → ×0.9 (score 60-75)
-- No red flags → ×1.0 (score 75-100)
+BASELINE SCORING:
+- Start at 70 for any established business with reviews
+- Strong reviews (4.5+ on Google with 20+ reviews) → base 80
+- Excellent reviews (4.8+ with 50+ reviews, consistent across platforms) → base 90
+- Deduct from baseline for red flags, don't penalize for missing data
 
-RED FLAG CATEGORIES:
-- license_issue: Missing, expired, revoked, or misrepresented license
+REVIEW COUNT RULES:
+- AGGREGATE reviews across all locations (Dallas 63 + Fort Myers 16 = 79 total)
+- Multi-location businesses should sum their review counts
+- 50+ total reviews qualifies for "excellent" tier regardless of per-location distribution
+
+GOOGLE MAPS LOCATION PRIORITY:
+- ALWAYS prioritize LOCAL/DFW market scores over HQ or out-of-state scores
+- If you see both "Google Maps DFW" and "Google Maps HQ/Listed", use the DFW score for scoring
+- Local scores represent the actual customer experience in the service area
+- HQ scores may be from a different market with different crews/management
+- Example: If DFW shows 4.5★ (387 reviews) but Listed/HQ shows 3.0★ (48 reviews), use 4.5★
+
+MULTIPLIERS:
+- CRITICAL red flag (fraud, active lawsuit, BBB F rating) → ×0.15 (score 0-15)
+- SEVERE red flag (major complaint pattern, rating manipulation) → ×0.4 (score 15-40)
+- MODERATE red flags only (some inconsistencies) → ×0.7 (score 45-65)
+- MINOR red flags only (small issues) → ×0.85 (score 65-80)
+- No red flags → ×1.0 (score 80-100)
+
+RED FLAGS (only flag these with EVIDENCE):
 - complaint_pattern: Multiple similar complaints indicating systemic issues
-- rating_conflict: Major discrepancy between platforms (e.g., 4.8 Google vs 2.1 Yelp)
-- deposit_abandonment: Pattern of taking deposits and not completing work
+- rating_conflict: Major discrepancy between CUSTOMER review platforms (e.g., 4.8 Google vs 1.5 Trustpilot)
+- deposit_abandonment: Pattern of taking deposits then ghosting or abandoning work
 - lawsuit_history: Active or recent lawsuits
-- fake_reviews: Signs of review manipulation
+- fake_reviews: Signs of review manipulation (suspiciously perfect ratings, generic text)
 - financial_distress: Liens, bankruptcy, collection actions
-- name_mismatch: Business operating under different names
+
+NORMAL PATTERNS (treat as neutral or positive):
+- Glassdoor 3.4 with Google 5.0: Employee reviews are always lower than customer reviews. This is expected.
+- Missing Trustpilot/Yelp/BBB: Absence of a profile means no data, treat as neutral.
+- Business registration unverified: Assume legitimate unless evidence suggests otherwise.
+- One location has fewer reviews: Aggregate total reviews across all locations.
+
+SCORING MINDSET:
+- Reward what you CAN verify: great reviews, clean court records, longevity, responsiveness.
+- Require EVIDENCE to deduct points. Speculation and gaps stay neutral.
+- 79 reviews at 4.9-5.0 with zero complaints = 90+ baseline.
+- Only actual negative signals (BBB F, Trustpilot 1.5, lawsuits) reduce the score.
 
 RULES:
 - Maximum 3 collection rounds (cost control)

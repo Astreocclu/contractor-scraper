@@ -88,12 +88,20 @@ async function runForensicAudit(contractorInput, options = {}) {
       log(`  Found matching contractor in DB: ID ${contractorId}`);
     } else {
       warn(`  Contractor not in database - creating temporary entry`);
-      // Insert temporary contractor
+      // Insert temporary contractor with all required NOT NULL fields
       const slug = contractor.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').trim();
+      const now = new Date().toISOString();
       db.run(`
-        INSERT INTO contractors_contractor (business_name, slug, address, city, state, website, zip_code, trust_score, passes_threshold, is_active)
-        VALUES (?, ?, ?, ?, ?, ?, ?, 0, 0, 1)
-      `, [contractor.name, slug, '', contractor.city, contractor.state, contractor.website || '', contractor.zip || '']);
+        INSERT INTO contractors_contractor (
+          business_name, slug, address, city, state, website, zip_code, phone,
+          google_review_count, google_reviews_json, yelp_review_count,
+          bbb_accredited, bbb_complaint_count,
+          trust_score, passes_threshold, verification_score, reputation_score,
+          credibility_score, red_flag_score, bonus_score,
+          admin_override_reason, ai_summary, ai_sentiment_score, ai_red_flags,
+          is_claimed, is_active, first_scraped_at, tier
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, '[]', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0, '[]', 0, 1, ?, 'UNRATED')
+      `, [contractor.name, slug, '', contractor.city, contractor.state, contractor.website || '', contractor.zip || '', contractor.phone || '', now]);
 
       const idResult = db.exec('SELECT last_insert_rowid()');
       contractorId = idResult[0].values[0][0];
