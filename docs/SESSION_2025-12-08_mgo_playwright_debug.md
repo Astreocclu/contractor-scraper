@@ -1,6 +1,6 @@
 # Session Handoff: MGO Connect Playwright Click Issue
 **Date:** 2025-12-08
-**Status:** Unsolved - Button click doesn't trigger API calls
+**Status:** UNSOLVED - Fundamental Playwright/Angular incompatibility
 
 ## Problem Summary
 
@@ -140,14 +140,38 @@ python3 scrapers/mgo_test.py
 - `scrapers/mgo_connect.js:187-230` - Working Puppeteer click logic
 - `scrapers/mgo_connect.js:529-540` - JS version's search click
 
-## Next Steps for Debugging
+## Session 2025-12-08: Additional Debugging with Claude + Gemini
 
-1. **Run non-headless** to visually see what happens on click
-2. **Compare Puppeteer vs Playwright** - Use browser DevTools to see event differences
-3. **Inspect Angular bindings** - Check if Angular's click handler is being bypassed
-4. **Try pyppeteer** - Python port of Puppeteer might work if it's a Playwright-specific issue
-5. **File Playwright issue** - If confirmed as Playwright bug with Angular/PrimeNG
+### What We Fixed
+- **Initial diagnosis was partially wrong**: y:-7.25 was because button was off-screen ABOVE viewport after scrolling to bottom
+- **Fixed scroll behavior**: Now scrolls to TOP first, then uses `scrollIntoView({block: 'center'})`
+- Button now shows `y=422.8 inViewport=True` - properly visible
+
+### What We Tried (ALL FAILED)
+1. `page.locator().first.click()` - No API call
+2. `page.locator().last.click()` - No API call
+3. `page.mouse.click(x, y)` at correct coordinates - No API call
+4. `btn.click()` via page.evaluate - No API call
+5. `dispatchEvent(new MouseEvent(...))` with proper coords - No API call
+6. Combined click + MouseEvent dispatch - No API call
+
+### Root Cause: Unknown Playwright/Angular Incompatibility
+The click **executes** (no errors), the button is **visible** at correct coordinates, but Angular's event system doesn't receive/process the event. The exact same `btn.click()` works in Puppeteer but not Playwright.
+
+Possible causes:
+- Playwright's CDP protocol handles events differently than Puppeteer
+- Angular Zone.js doesn't detect Playwright's synthetic events
+- PrimeNG p-button has framework-specific event bindings
+
+### Conclusion
+**Use Node.js/Puppeteer version for MGO cities.** This is a deep framework compatibility issue that would require Angular internals expertise to debug further.
+
+```bash
+# Working command for MGO cities
+node scrapers/mgo_connect.js Irving 50
+node scrapers/mgo_connect.js Lewisville 50
+```
 
 ## Contact
 
-Previous engineer noted this might be a fundamental Playwright/Angular interaction issue. The click executes without errors but Angular's event system doesn't respond.
+Confirmed as fundamental Playwright/Angular interaction issue. The Python scraper works for login, navigation, form filling - only the Search button click fails to trigger Angular's event handler.

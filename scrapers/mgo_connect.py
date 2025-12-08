@@ -563,82 +563,122 @@ async def scrape(city_name: str, target_count: int = 50):
             # Click search button and capture API response
             print('    Clicking search button and capturing API response...')
 
-            # First scroll to bottom of form where search button is
-            await page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
-            await asyncio.sleep(1)
+            # First scroll to TOP to reset, then find and scroll to the Search button
+            await page.evaluate('window.scrollTo(0, 0)')
+            await asyncio.sleep(0.5)
 
-            # Check button state before clicking
-            btn_info = await page.evaluate('''() => {
-                const buttons = document.querySelectorAll('button');
-                for (const btn of buttons) {
-                    const text = (btn.textContent || '').toLowerCase();
-                    if (text.includes('search') && !text.includes('address')) {
+            # Check ALL Search buttons BEFORE scrolling
+            all_buttons_before = await page.evaluate('''() => {
+                return Array.from(document.querySelectorAll('button'))
+                    .filter(b => {
+                        const text = (b.textContent || '').toLowerCase();
+                        return text.includes('search') && !text.includes('address');
+                    })
+                    .map(b => {
+                        const r = b.getBoundingClientRect();
                         return {
-                            found: true,
-                            text: btn.textContent?.trim(),
-                            disabled: btn.disabled,
-                            className: btn.className,
-                            visible: btn.offsetParent !== null,
-                            rect: btn.getBoundingClientRect()
+                            text: b.textContent?.trim(),
+                            y: r.y,
+                            height: r.height,
+                            inViewport: r.y > 0 && r.y < window.innerHeight,
+                            className: b.className.substring(0, 50)
                         };
-                    }
+                    });
+            }''')
+            print(f'    Found {len(all_buttons_before)} Search buttons BEFORE scroll:')
+            for i, btn in enumerate(all_buttons_before):
+                print(f'      {i}: "{btn["text"]}" y={btn["y"]:.1f} inViewport={btn["inViewport"]}')
+
+            # Scroll to the Search button using block: center
+            scroll_result = await page.evaluate('''() => {
+                const buttons = Array.from(document.querySelectorAll('button'));
+                const searchBtn = buttons.find(b => {
+                    const text = (b.textContent || '').toLowerCase();
+                    return text.includes('search') && !text.includes('address');
+                });
+                if (searchBtn) {
+                    searchBtn.scrollIntoView({ behavior: 'auto', block: 'center' });
+                    const newRect = searchBtn.getBoundingClientRect();
+                    return { found: true, y: newRect.y, text: searchBtn.textContent?.trim() };
                 }
                 return { found: false };
             }''')
-            print(f'    Button info: {btn_info}')
+            print(f'    Scroll result: {scroll_result}')
+            await asyncio.sleep(1.0)
 
-            # Define the click action - try multiple methods
+            # Check button position AFTER scrolling
+            all_buttons_after = await page.evaluate('''() => {
+                return Array.from(document.querySelectorAll('button'))
+                    .filter(b => {
+                        const text = (b.textContent || '').toLowerCase();
+                        return text.includes('search') && !text.includes('address');
+                    })
+                    .map(b => {
+                        const r = b.getBoundingClientRect();
+                        return {
+                            text: b.textContent?.trim(),
+                            y: r.y,
+                            height: r.height,
+                            inViewport: r.y > 0 && r.y < window.innerHeight
+                        };
+                    });
+            }''')
+            print(f'    Search buttons AFTER scroll:')
+            for i, btn in enumerate(all_buttons_after):
+                print(f'      {i}: "{btn["text"]}" y={btn["y"]:.1f} inViewport={btn["inViewport"]}')
+
+            # Define the click action - button should already be scrolled into view
             async def click_search():
-                # First scroll the button into view using JS
-                await page.evaluate('''() => {
-                    const buttons = document.querySelectorAll('button');
-                    for (const btn of buttons) {
-                        const text = (btn.textContent || '').toLowerCase();
-                        if (text.includes('search') && !text.includes('address')) {
-                            btn.scrollIntoView({ behavior: 'instant', block: 'center' });
-                            return true;
-                        }
-                    }
-                    return false;
-                }''')
-                await asyncio.sleep(0.5)
-
-                # Method 1: Try Playwright locator click with scroll
+                # Method 1: Use Playwright locator (button is already scrolled to center)
                 try:
                     btn = page.locator('button:has-text("Search")').first
-                    await btn.scroll_into_view_if_needed()
-                    await asyncio.sleep(0.3)
-                    await btn.click(timeout=5000)
-                    return 'locator'
+                    if await btn.is_visible():
+                        await btn.click(timeout=5000)
+                        return 'locator_click'
                 except Exception as e:
                     print(f'      Locator click failed: {e}')
 
-                # Method 2: Get button position after scroll and use mouse.click
+                # Method 2: Get button position and mouse.click
                 box = await page.evaluate('''() => {
-                    const buttons = document.querySelectorAll('button');
-                    for (const btn of buttons) {
-                        const text = (btn.textContent || '').toLowerCase();
-                        if (text.includes('search') && !text.includes('address')) {
-                            const rect = btn.getBoundingClientRect();
-                            return { x: rect.x + rect.width/2, y: rect.y + rect.height/2 };
-                        }
+                    const buttons = Array.from(document.querySelectorAll('button'));
+                    const searchBtn = buttons.find(b => {
+                        const text = (b.textContent || '').toLowerCase();
+                        return text.includes('search') && !text.includes('address');
+                    });
+                    if (searchBtn) {
+                        const rect = searchBtn.getBoundingClientRect();
+                        return { x: rect.x + rect.width/2, y: rect.y + rect.height/2 };
                     }
                     return null;
                 }''')
                 if box and box['y'] > 0:
-                    print(f'      Clicking at ({box["x"]}, {box["y"]})')
+                    print(f'      Clicking button at ({box["x"]:.1f}, {box["y"]:.1f})')
                     await page.mouse.click(box['x'], box['y'])
                     return 'mouse_click'
 
-                # Method 3: Use JavaScript click as fallback
+                # Method 3: JS click with proper MouseEvent dispatch (helps Angular)
                 result = await page.evaluate('''() => {
-                    const buttons = document.querySelectorAll('button');
-                    for (const btn of buttons) {
-                        const text = (btn.textContent || '').toLowerCase();
-                        if (text.includes('search') && !text.includes('address')) {
-                            btn.click();
-                            return 'js_click';
-                        }
+                    const buttons = Array.from(document.querySelectorAll('button'));
+                    const searchBtn = buttons.find(b => {
+                        const text = (b.textContent || '').toLowerCase();
+                        return text.includes('search') && !text.includes('address');
+                    });
+                    if (searchBtn) {
+                        // Try native click first
+                        searchBtn.click();
+
+                        // Also dispatch a proper MouseEvent (helps with Angular)
+                        const rect = searchBtn.getBoundingClientRect();
+                        const clickEvent = new MouseEvent('click', {
+                            view: window,
+                            bubbles: true,
+                            cancelable: true,
+                            clientX: rect.x + rect.width / 2,
+                            clientY: rect.y + rect.height / 2
+                        });
+                        searchBtn.dispatchEvent(clickEvent);
+
+                        return 'js_click_with_event';
                     }
                     return 'not_found';
                 }''')
