@@ -1,0 +1,117 @@
+lead_id,score,tier,reasoning,red_flags,ideal_contractor_type,contact_priority,applicant_type,chain_of_thought,scored_at,tokens_used,cost_usd,scoring_method
+674d4d6e,88,A,"Homeowner with a specific roofing permit filed just 3 days ago, indicating high intent and urgency. Property value is solid for the DFW market, supporting a good budget for the project.","Mailing address differs from property, possible absentee owner but property value in middle range minimizes concern.",roof,high,homeowner,"We are scoring a permit lead for a home improvement company in DFW. The lead data is:
+- Owner: VAUGHN, TRINITY & DIANA
+- Property Value: $724,427.0
+- Project Description: roofing
+- Category: roofing
+- Permit Date: 2025-12-04 (3 days ago)
+- City: denton
+- Absentee Owner: None (mailing address differs from property) -> Wait, it says ""Absentee Owner: None (mailing address differs from property)"". That means it is marked as not absentee? Actually it says ""None"" but then in parentheses it says ""mailing address differs from property"". That might indicate that the mailing address is different, but it's not flagged as absentee? The scoring principle says: ""Absentee Owner: None (mailing address differs from property)"". This is confusing. It might mean that the data says ""Absentee Owner: None"" but there is a note that the mailing address differs. In practice, if the mailing address differs, it could still be an absentee owner. But the field says ""None"". We need to interpret. Possibly the system has a field ""Absentee Owner"" that is ""None"" meaning not flagged as absentee, but there is a note that the mailing address is different. According to principles, if mailing address differs, it might still be considered absentee? The principle says: ""Absentee Owner (context-dependent): ..."" and gives adjustments based on property value. But here it says ""None"" so maybe we treat as not absentee? But the note says ""mailing address differs from property"". That suggests the owner might not live there. I'll treat it as absentee if the mailing address differs. However, the principles say: ""Absentee Owner: None"" might indicate that it's not marked as absentee. Let's read carefully: In the lead data, it says ""Absentee Owner: None (mailing address differs from property)"". So the field ""Absentee Owner"" is given as ""None"", but there is an additional note that the mailing address differs. Possibly the data entry has ""Absentee Owner"" field as ""None"" meaning not an absentee owner? But the note contradicts. We need to decide. Since the scoring principles mention ""Absentee Owner"" as a factor, and here it says ""None"", I will assume it is not an absentee owner for scoring purposes. However, if the mailing address differs, it might be a landlord. But the property value is $724,427, which is above $750K? Actually $724,427 is just below $750K. According to property value tiers: >$750K = Nice suburbs, good budget. This property is $724,427, which is slightly below $750K. So it falls in the >$550K tier: ""Typical family, standard budget"" (since >$550K up to $750K? Actually the tier says: >$750K = Nice suburbs, good budget; >$550K = Typical family, standard budget. So $724,427 is in the >$550K tier, but close to $750K. So it's a typical family, standard budget.
+
+But let's score step by step.
+
+1. APPLICANT TYPE: The owner is ""VAUGHN, TRINITY & DIANA"". This appears to be individuals, likely homeowners. There is no LLC or builder mentioned. So it's homeowner. That gives full score potential. So applicant_type = homeowner.
+
+2. PROPERTY VALUE: $724,427. This is in the >$550K tier: ""Typical family, standard budget"". It's not in the premium tiers. So property value is good but not premium.
+
+3. FRESHNESS: Permit date is 2025-12-04, which is 3 days ago. Category is roofing. For roofing, freshness is: Fresh within 14 days, stale after. So this is very fresh, only 3 days old. That's a positive.
+
+4. ABSENTEE OWNER: According to the data, it says ""Absentee Owner: None"". But there is a note that mailing address differs. According to principles, if it is absentee, we adjust based on property value. Here, if we consider it absentee because mailing address differs, then with property value $724,427 (which is >$550K but <$750K), it falls in the middle range. Principles: ""Absentee + middle range = ambiguous, no adjustment"". So if absentee, no adjustment. If not absentee, also no adjustment. So either way, no points added or subtracted. But we need to decide if it's absentee. The field says ""None"", so I'll treat as not absentee. However, the note might be a red flag that it could be a landlord? But property value is high for a rental? Possibly. I'll go with not absentee for scoring, but mention in red flags if concerned.
+
+5. PROJECT CLARITY: Project description is ""roofing"", category is ""roofing"". It is specific. That's good.
+
+6. MISSING DATA: No missing data.
+
+Now, we need to compute a score. The principles are qualitative, so we have to assign points.
+
+We need to come up with a score from 0-100. Let's think about the factors.
+
+Most important is applicant type: homeowner. That means we can go up to 100.
+
+Property value: $724,427 is good but not premium. That might not boost the score too high, but it's solid.
+
+Freshness: very fresh, only 3 days old for roofing. That's excellent.
+
+Absentee: not an issue.
+
+Project clarity: specific.
+
+So overall, this is a strong lead. Likely a homeowner with a good property value, recently applied for a roofing permit. They likely need a roof replacement soon. In DFW, roofing leads are often high-value sales. A new roof can cost $10K-$50K depending on the house size. With property value $724K, the house is likely decent size.
+
+I would score this relatively high. But let's calibrate: 90-100 is ""Call today, high-value homeowner with urgent need"". Is this urgent? Roofing permits are often for repairs or replacements after storm damage, so they might be urgent. But we don't know if it's repair or new construction? Permit could be for a new roof on a new construction? But the owner is homeowner, so likely replacement. Given it's a permit, it means they are planning to do work. Freshness of 3 days means they just applied. So they are likely looking for contractors now. So it's high priority.
+
+But property value is not in the premium tier, so maybe not the highest value. But still good.
+
+I'll score around 85-90. Let's say 88.
+
+Tier: A? According to scoring, A tier might be 90-100? But we have to assign tier A, B, or C. Possibly A for high, B for medium, C for low. But the output says tier: ""<A|B|C>"". We need to define. Since score is high, likely A.
+
+Reasoning: Homeowner with a specific roofing project on a solid property, permit filed just 3 days ago indicating high urgency.
+
+Red flags: Possibly the mailing address differing could indicate absentee owner? But I'll list that if relevant.
+
+Ideal contractor type: roofing (since project is roofing).
+
+Contact priority: high (since fresh and homeowner).
+
+Applicant type: homeowner.
+
+Now, let's compute score more systematically.
+
+I'll assign points:
+
+Applicant type: homeowner -> base score 90 (since it allows full potential, but we adjust with other factors). Actually, we start with a baseline and adjust.
+
+One way: Start with 50 and add/subtract.
+
+But principles: applicant type is most important. If homeowner, we can go high. If LLC, cap at 60. So homeowner sets a high ceiling.
+
+Property value: >$750K gives premium, so maybe +10. But here it's slightly below $750K, so maybe +5 for being in >$550K tier.
+
+Freshness: For roofing, within 14 days is fresh. 3 days is very fresh, so +10.
+
+Absentee: none, so 0.
+
+Project clarity: specific, +5.
+
+No missing data.
+
+So if start at 70 for homeowner? Then add: property value +5, freshness +10, clarity +5 = 90. That seems reasonable.
+
+But if property value was >$1M, we'd add more. Here it's not premium, so maybe only +5.
+
+Alternatively, start at 80 for homeowner with roofing project? Then adjust.
+
+I think 88 is fine.
+
+Tier: Score 88 is between 70-89, which is ""Strong lead, worth prioritizing"". That is not the top tier (90-100). So tier might be B? But the output tier is A|B|C. Typically A is best. Since 88 is strong, but not ""call today"" according to calibration? Actually calibration: 90-100: Call today. 70-89: Strong lead, worth prioritizing. So 88 is in the 70-89 range, so it's not the absolute top. But tier A might correspond to 90-100. So I'll assign tier B for 70-89? But the output doesn't specify mapping. I'll assume:
+A: 90-100
+B: 70-89
+C: 50-69
+D: <50? But only A|B|C, so maybe C is 0-69? That would be too broad. Probably:
+A: 80-100
+B: 60-79
+C: <60
+But not defined. I'll look at the calibration: 
+90-100: Call today (A)
+70-89: Strong lead (B)
+50-69: Decent (C)
+30-49: Low (C or D)
+<30: Flag (D)
+
+But output only has A|B|C. So likely:
+A: 70-100 (high priority)
+B: 50-69 (medium)
+C: <50 (low)
+
+But then 70-89 is strong, 90-100 is call today, both are high. So maybe A is for 70+, B for 50-69, C for below 50.
+
+I'll set tier to ""A"" since score is 88.
+
+Contact priority: ""high"" because it's fresh and homeowner.
+
+Red flags: I'll list if any. The mailing address differs could be a slight concern, but not major. I'll mention it.
+
+So final output.
+
+Let's write JSON.",2025-12-07T12:13:08.468613,"{'prompt': 709, 'completion': 2380, 'reasoning': 2260}",0.00560215,ai-r1

@@ -288,7 +288,7 @@ export function CommandPanel() {
                 Run Scraper
               </DialogTitle>
               <DialogDescription>
-                Scrape contractors from Google Places API
+                Scrape contractors from Google Maps (Puppeteer)
               </DialogDescription>
             </DialogHeader>
             <div className="space-y-4 py-4">

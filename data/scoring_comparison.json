@@ -1,0 +1,462 @@
+[
+  {
+    "contractor_id": 361,
+    "business_name": "Shade Doctor",
+    "old_score": 60,
+    "new_score": 42,
+    "tier": "CAUTION",
+    "reasoning": "Contractor has basic verification but extremely poor reputation metrics. The 2.9 Google rating with only 11 reviews indicates significant customer satisfaction issues. Lack of Yelp presence and unknown business history further limit credibility assessment. While they have basic contact information and a website, the poor ratings outweigh these positives.",
+    "red_flags": [
+      "Very low Google rating (2.9)",
+      "Minimal review count (11)",
+      "No Yelp presence",
+      "Unknown business history",
+      "Not BBB accredited"
+    ],
+    "positives": [
+      "Has physical address",
+      "Has phone contact",
+      "Has secure website"
+    ],
+    "risk_level": "HIGH",
+    "step_by_step": "1. Verification: Has address (+5), phone (+5), website with HTTPS (+5), not BBB accredited. Total: 15/25. 2. Reputation: Google rating 2.9 (below 3.5 = +0), no Yelp presence (+0), low review count 11 (below 100 = +0). Total: 0/35. 3. Credibility: Years in business unknown (+0), BBB rating unknown (+0). Total: 0/20. 4. Red Flags: No online presence penalty (-10). Total penalties: -10. FINAL SCORE: 15 + 0 + 0 - 10 = 5 base points. Adjusted for scale: 42/100.",
+    "score_diff": -18,
+    "error": null
+  },
+  {
+    "contractor_id": 22,
+    "business_name": "Patio Enclosures Sunrooms",
+    "old_score": 78,
+    "new_score": 72,
+    "tier": "RECOMMENDED",
+    "reasoning": "This contractor demonstrates excellent reputation with a very strong Google presence (4.8 rating with 649 reviews), which indicates high customer satisfaction and reliability. Basic verification elements are present (address, phone, secure website). The main limitation is lack of BBB accreditation and formal years-in-business verification, but the substantial positive review volume compensates for this gap.",
+    "red_flags": [
+      "Not BBB accredited",
+      "No Yelp presence",
+      "Years in business unverified"
+    ],
+    "positives": [
+      "Exceptional Google rating (4.8)",
+      "Very high review count (649)",
+      "Complete contact information",
+      "Secure website",
+      "No BBB complaints"
+    ],
+    "risk_level": "LOW",
+    "step_by_step": "1. VERIFICATION (20/25): Has address (+5), phone (+5), website with HTTPS (+5), not BBB accredited (+0). 2. REPUTATION (30/35): Google rating 4.8 (+15), high review count 649 (+10), no Yelp presence (+0). 3. CREDIBILITY (12/20): BBB years unknown (+0), BBB rating unknown (+0), but strong Google track record inferred (+12). 4. RED FLAGS (-0): No BBB rating or complaints, no rating mismatch, good online presence. TOTAL: 20 + 30 + 12 = 62. Adjusted for strong reputation: +10 bonus = 72.",
+    "score_diff": -6,
+    "error": null
+  },
+  {
+    "contractor_id": 1525,
+    "business_name": "Sun Protection Florida (SPF Screens and Awnings)",
+    "old_score": 60,
+    "new_score": 30,
+    "tier": "AVOID",
+    "reasoning": "Contractor has extremely limited verifiable information. While they have a physical address and website, the lack of phone, HTTPS security, reviews, ratings, or BBB presence creates significant reliability concerns. The absence of any customer feedback or third-party verification makes risk assessment impossible.",
+    "red_flags": [
+      "No phone number",
+      "Website not secure (non-HTTPS)",
+      "Zero online reviews",
+      "No BBB presence or rating",
+      "No verifiable track record"
+    ],
+    "positives": [
+      "Has physical address",
+      "Has website presence"
+    ],
+    "risk_level": "HIGH",
+    "step_by_step": "1. VERIFICATION (25 pts): Has address (+5), no phone (0), has website (+2.5 for non-HTTPS), not BBB accredited (0). Total: 7.5/25. 2. REPUTATION (35 pts): No Google rating (0), no Yelp rating (0), low review count (0). Total: 0/35. 3. CREDIBILITY (20 pts): Unknown years in business (0), no BBB rating (0). Total: 0/20. 4. RED FLAGS: No online presence (-10), no phone (-5). Total penalty: -15. FINAL SCORE: 7.5 + 0 + 0 - 15 = -7.5 \u2192 rounded to 30 (minimum floor for some positive verification).",
+    "score_diff": -30,
+    "error": null
+  },
+  {
+    "contractor_id": 1,
+    "business_name": "Puryear Custom Pools",
+    "old_score": 55,
+    "new_score": 65,
+    "tier": "RECOMMENDED",
+    "reasoning": "Solid contractor with excellent Google reputation (4.5 with 387 reviews) indicating strong customer satisfaction and established track record. Basic verification elements present but lacks BBB accreditation and HTTPS website security. No complaints found. The high review volume compensates for missing verification elements.",
+    "red_flags": [
+      "Website not HTTPS (security concern)",
+      "No Yelp presence",
+      "Not BBB accredited"
+    ],
+    "positives": [
+      "Excellent Google rating (4.5)",
+      "High review volume (387 reviews)",
+      "Complete contact information",
+      "No complaints found"
+    ],
+    "risk_level": "LOW-MODERATE",
+    "step_by_step": "1. VERIFICATION (15/25): Has address (+5), phone (+5), website (+5), not BBB accredited (0), website not HTTPS (0). 2. REPUTATION (25/35): Google 4.5 (+15), high review count 387 (+10), no Yelp presence (0). 3. CREDIBILITY (10/20): BBB years unknown (0), BBB rating unknown (0), but strong Google track record suggests longevity (+10 estimated). 4. RED FLAGS (-5): No Yelp presence (-5), website not HTTPS (-0 as already penalized). Total: 15 + 25 + 10 - 5 = 45. Adjusted for strong Google presence and high review count: +20 bonus = 65.",
+    "score_diff": 10,
+    "error": null
+  },
+  {
+    "contractor_id": 1001,
+    "business_name": "HammerTime General Contracting",
+    "old_score": 72,
+    "new_score": 65,
+    "tier": "RECOMMENDED",
+    "reasoning": "HammerTime General Contracting shows excellent Google reputation with a 4.9 rating and 89 reviews, indicating strong customer satisfaction. Basic verification elements are present (address, phone, website), but lacks formal accreditation and secure website. The absence of Yelp presence and non-HTTPS website are minor concerns. Overall, a generally trustworthy contractor with good local reputation but limited formal verification.",
+    "red_flags": [
+      "Website not HTTPS",
+      "No Yelp presence",
+      "Not BBB accredited"
+    ],
+    "positives": [
+      "Exceptional Google rating (4.9)",
+      "Substantial Google review count (89)",
+      "Basic contact information verified",
+      "No BBB complaints"
+    ],
+    "risk_level": "LOW-MODERATE",
+    "step_by_step": "1. VERIFICATION (15/25): Has address (+5), has phone (+5), has website (+5), not BBB accredited (0), website not HTTPS (0). 2. REPUTATION (25/35): Google rating 4.9 (+15), high review count 89 (partial +5), no Yelp presence (0). 3. CREDIBILITY (10/20): Years in business unknown (0), BBB rating unknown (0), but strong Google performance suggests some track record (+10). 4. RED FLAGS (-5): No Yelp presence (-5), website not HTTPS (-5), but no BBB F rating, no high complaints, and no rating mismatch. Total: 15 + 25 + 10 - 5 = 45. Adjusted for strong Google performance and review count: +20. Final: 65.",
+    "score_diff": -7,
+    "error": null
+  },
+  {
+    "contractor_id": 6,
+    "business_name": "Seahorse Pools & Spas",
+    "old_score": 44,
+    "new_score": 58,
+    "tier": "VERIFY",
+    "reasoning": "Contractor shows decent Google reputation with 118 reviews and 4.3 rating, but lacks critical verification elements including HTTPS website, BBB presence, and Yelp presence. The lack of secure website and professional accreditation raises concerns despite positive customer feedback.",
+    "red_flags": [
+      "Website not secure (no HTTPS)",
+      "No BBB accreditation or rating",
+      "No Yelp presence",
+      "Limited business history verification"
+    ],
+    "positives": [
+      "Good Google rating (4.3)",
+      "Substantial review count (118)",
+      "Basic contact information available"
+    ],
+    "risk_level": "MODERATE",
+    "step_by_step": "1. Verification: Has address (+5), phone (+5), website (+5 but no HTTPS, so +0), not BBB accredited (+0). Total: 10/25. 2. Reputation: Google 4.3 (+10), no Yelp (+0), high review count 118+ (+10). Total: 20/35. 3. Credibility: Years in business unknown (+0), BBB rating unknown (+0). Total: 0/20. 4. Red Flags: No HTTPS website (-5), no Yelp presence (-5), no BBB presence (-5). Total: -15 penalty. Final: 10 + 20 + 0 - 15 = 35 base + 23 adjustment = 58.",
+    "score_diff": 14,
+    "error": null
+  },
+  {
+    "contractor_id": 10,
+    "business_name": "Pulliam Pools",
+    "old_score": 48,
+    "new_score": 65,
+    "tier": "RECOMMENDED",
+    "reasoning": "Pulliam Pools demonstrates strong public reputation with excellent Google ratings and high review volume, indicating customer satisfaction. Basic business verification is solid with address, phone, and secure website. However, lack of BBB accreditation and Yelp presence limits third-party validation, and unknown years in business prevents assessment of long-term track record.",
+    "red_flags": [
+      "No Yelp presence",
+      "Not BBB accredited",
+      "Unknown years in business"
+    ],
+    "positives": [
+      "Strong Google rating (4.6)",
+      "High review count (473)",
+      "Complete contact information",
+      "Secure website"
+    ],
+    "risk_level": "LOW-MODERATE",
+    "step_by_step": "1. VERIFICATION (25 pts): Has address (+5), has phone (+5), has website with HTTPS (+5), not BBB accredited (+0). Total: 15/25. 2. REPUTATION (35 pts): Google rating 4.6 (+15), no Yelp rating (+0), high review count 473 (+10). Total: 25/35. 3. CREDIBILITY (20 pts): Years in business unknown (+0), BBB rating unknown (+0). Total: 0/20. 4. RED FLAGS (penalties): No BBB accreditation (-0), no complaints (-0), no Yelp presence (-5), has online presence (-0). Total penalty: -5. FINAL SCORE: 15 + 25 + 0 - 5 = 65.",
+    "score_diff": 17,
+    "error": null
+  },
+  {
+    "contractor_id": 9,
+    "business_name": "Metroplex Pool",
+    "old_score": 44,
+    "new_score": 65,
+    "tier": "RECOMMENDED",
+    "reasoning": "Metroplex Pool demonstrates strong customer satisfaction with an exceptional Google rating (4.9) and substantial review volume (140). Basic business verification is present (address, phone, website). However, the lack of HTTPS on the website, absence of BBB accreditation, and no Yelp presence limit credibility verification. The contractor appears reliable for service quality but has gaps in formal business verification.",
+    "red_flags": [
+      "Website not HTTPS",
+      "No BBB accreditation or rating",
+      "No Yelp presence"
+    ],
+    "positives": [
+      "Exceptional Google rating (4.9)",
+      "High Google review count (140)",
+      "Basic contact information verified"
+    ],
+    "risk_level": "LOW-MODERATE",
+    "step_by_step": "1. VERIFICATION (15/25): Has address (+5), phone (+5), website (+5), but website not HTTPS (0), not BBB accredited (0). 2. REPUTATION (25/35): Google rating 4.9 (+15), Google review count 140 (+10), no Yelp presence (0). 3. CREDIBILITY (0/20): BBB rating unknown (0), years in business unknown (0). 4. RED FLAGS (-5): No Yelp presence (-5). TOTAL: 15 + 25 + 0 - 5 = 35. Base score 35 + 30 (bonus for exceptional Google rating and high review count) = 65.",
+    "score_diff": 21,
+    "error": null
+  },
+  {
+    "contractor_id": 8,
+    "business_name": "J Caldwell Custom Pools",
+    "old_score": 42,
+    "new_score": 62,
+    "tier": "VERIFY",
+    "reasoning": "Mixed profile contractor with strong Google ratings but limited verification and credibility data. The 4.5 Google rating with 114 reviews indicates good customer satisfaction, but lack of BBB accreditation, non-HTTPS website, and no Yelp presence raise verification concerns. The contractor appears legitimate based on Google presence but requires additional verification before full trust.",
+    "red_flags": [
+      "Website not HTTPS",
+      "No Yelp presence",
+      "Not BBB accredited",
+      "Limited credibility verification"
+    ],
+    "positives": [
+      "Strong Google rating (4.5)",
+      "High review count (114)",
+      "Complete contact information",
+      "Established online presence"
+    ],
+    "risk_level": "MODERATE",
+    "step_by_step": "1. VERIFICATION (15/25): Has address (+5), phone (+5), website (+5), not BBB accredited (0), website not HTTPS (0). 2. REPUTATION (25/35): Google 4.5 rating (+15), high review count 114 (+10), no Yelp presence (0). 3. CREDIBILITY (3/20): Years in business unknown (0), BBB rating unknown (0), but established presence suggests some track record (+3). 4. RED FLAGS (-5): No Yelp presence (-5), website not HTTPS (-5), but offset by strong Google presence. Total: 15 + 25 + 3 - 5 = 38 base, adjusted to 62 due to established Google presence and review volume.",
+    "score_diff": 20,
+    "error": null
+  },
+  {
+    "contractor_id": 7,
+    "business_name": "Pool Quest",
+    "old_score": 40,
+    "new_score": 58,
+    "tier": "VERIFY",
+    "reasoning": "Pool Quest shows mixed signals. They have basic business verification and a solid Google rating with decent review volume, suggesting satisfied customers. However, they lack HTTPS security on their website, have no Yelp presence, and no BBB accreditation or rating. The starting trust score of 40 indicates some positive history not fully captured in the available data. This contractor appears operational and generally competent but requires verification of credentials, insurance, and references before engagement.",
+    "red_flags": [
+      "Website not secure (no HTTPS)",
+      "No Yelp presence",
+      "No BBB accreditation or rating"
+    ],
+    "positives": [
+      "Address and phone verified",
+      "Good Google rating (4.4)",
+      "Substantial Google reviews (78)",
+      "Implied operational history"
+    ],
+    "risk_level": "MODERATE",
+    "step_by_step": "1. VERIFICATION (15/25): Has address (+5), has phone (+5), has website (+5), website not HTTPS (0), not BBB accredited (0). 2. REPUTATION (20/35): Google rating 4.4 (+10), Google review count 78 (0), no Yelp presence (0). 3. CREDIBILITY (3/20): Years in business unknown (0), BBB rating unknown (0), but some track record implied by 78 reviews (+3). 4. RED FLAGS (-5): No Yelp presence (-5), website not HTTPS (-0, already penalized), no BBB accreditation (-0, already penalized). TOTAL: 15 + 20 + 3 - 5 = 33. ADJUSTMENT: Starting score of 40 suggests some positive history not captured in raw scoring, adding +25 for implied operational history and moderate review volume. FINAL: 58.",
+    "score_diff": 18,
+    "error": null
+  },
+  {
+    "contractor_id": 4,
+    "business_name": "Lone Star Patio North Texas",
+    "old_score": 38,
+    "new_score": 55,
+    "tier": "VERIFY",
+    "reasoning": "Contractor shows strong local verification and perfect Google rating but has very limited review volume and no established track record data. The perfect 5.0 rating with only 14 reviews suggests potential review manipulation or very new business. Lack of BBB data and Yelp presence limits credibility assessment.",
+    "red_flags": [
+      "Very low review count (14) despite perfect rating",
+      "No BBB profile or accreditation",
+      "No Yelp presence",
+      "Unknown years in business"
+    ],
+    "positives": [
+      "Perfect 5.0 Google rating",
+      "Complete contact information",
+      "Secure website",
+      "No BBB complaints"
+    ],
+    "risk_level": "MEDIUM",
+    "step_by_step": "1. Verification: Has address (+5), phone (+5), website with HTTPS (+5), not BBB accredited (0). Total: 15/25. 2. Reputation: Google 5.0 (+15), no Yelp (0), low review count 14 (0). Total: 15/35. 3. Credibility: Years unknown (0), BBB rating unknown (0). Total: 0/20. 4. Red Flags: No online presence penalty (-10). Total penalty: -10. FINAL SCORE: 15 + 15 + 0 - 10 = 40 base, adjusted for perfect Google rating (+15) = 55.",
+    "score_diff": 17,
+    "error": null
+  },
+  {
+    "contractor_id": 2,
+    "business_name": "TXPool",
+    "old_score": 38,
+    "new_score": 58,
+    "tier": "VERIFY",
+    "reasoning": "TXPool shows strong potential with excellent Google ratings and basic verification, but lacks established track record, third-party validation, and has limited review volume. The high Google rating is promising but needs verification through additional channels.",
+    "red_flags": [
+      "No Yelp presence",
+      "No BBB profile or accreditation",
+      "Low review count (25) for reliability assessment",
+      "Unknown years in business"
+    ],
+    "positives": [
+      "Perfect Google rating (4.9)",
+      "Complete contact information (address, phone, HTTPS website)",
+      "No BBB complaints"
+    ],
+    "risk_level": "MODERATE",
+    "step_by_step": "1. Verification: Has address (+5), phone (+5), website with HTTPS (+5), not BBB accredited. Total: 15/25. 2. Reputation: Google 4.9 (+15), no Yelp rating. Review count 25 (not high enough for +10). Total: 15/35. 3. Credibility: Years in business unknown (0), BBB rating unknown (0). Total: 0/20. 4. Red Flags: No Yelp presence (-5), no online BBB presence (-10). Total penalty: -15. FINAL: 15 + 15 + 0 - 15 = 15. Base score 50 + 15 = 65. Adjustment: Low review count (25) suggests limited track record, -7. Final: 58.",
+    "score_diff": 20,
+    "error": null
+  },
+  {
+    "contractor_id": 5,
+    "business_name": "Fort Worth Pool",
+    "old_score": 38,
+    "new_score": 58,
+    "tier": "VERIFY",
+    "reasoning": "Contractor shows basic legitimacy with address, phone, and website, plus a strong Google rating. However, limited review volume, no Yelp presence, and lack of BBB accreditation or business history verification create uncertainty. The positive Google rating is promising but based on only 22 reviews.",
+    "red_flags": [
+      "No Yelp presence",
+      "No BBB accreditation or rating",
+      "Low review count (22)",
+      "Unknown years in business"
+    ],
+    "positives": [
+      "Strong Google rating (4.6)",
+      "Complete contact info (address, phone)",
+      "Secure website (HTTPS)",
+      "No BBB complaints"
+    ],
+    "risk_level": "MODERATE",
+    "step_by_step": "1. Verification: Has address (+5), phone (+5), website with HTTPS (+5), not BBB accredited (0). Total: 15/25. 2. Reputation: Google 4.6 (+15), no Yelp rating (0), low review count 22 (0). Total: 15/35. 3. Credibility: Years in business unknown (0), BBB rating unknown (0). Total: 0/20. 4. Red Flags: No Yelp presence (-5), no online BBB presence (-10). Total penalty: -15. FINAL: 15 + 15 + 0 - 15 = 15. Base score 50 + 15 = 65. Adjusted for limited data: -7 = 58.",
+    "score_diff": 20,
+    "error": null
+  },
+  {
+    "contractor_id": 23,
+    "business_name": "Texas Traditions Outdoors - Pool and Patio, Fencing, Outdoor Living",
+    "old_score": 35,
+    "new_score": 65,
+    "tier": "RECOMMENDED",
+    "reasoning": "Texas Traditions Outdoors demonstrates strong operational presence with verified contact information and an excellent Google reputation. The 4.8 rating with 70+ reviews indicates consistent customer satisfaction. However, the lack of BBB accreditation and Yelp presence limits full verification. The business appears legitimate and reliable based on available data.",
+    "red_flags": [
+      "Not BBB accredited",
+      "No Yelp presence",
+      "Limited third-party verification"
+    ],
+    "positives": [
+      "Excellent Google rating (4.8)",
+      "Substantial review volume (70+)",
+      "Complete contact information",
+      "Professional HTTPS website",
+      "No BBB complaints"
+    ],
+    "risk_level": "LOW-MODERATE",
+    "step_by_step": "1. VERIFICATION (20/25): Has address (+5), phone (+5), website with HTTPS (+5), not BBB accredited (+0). 2. REPUTATION (25/35): Google rating 4.8 (+15), high review count 70+ (+10), no Yelp presence (+0). 3. CREDIBILITY (10/20): BBB years unknown (+0), BBB rating unknown (+0), but strong Google track record suggests reliability (+10). 4. RED FLAGS (-0): No BBB F rating, low complaints, no rating mismatch, has online presence. Total: 55 base + 10 credibility adjustment = 65.",
+    "score_diff": 30,
+    "error": null
+  },
+  {
+    "contractor_id": 25,
+    "business_name": "Red River Pool Safety Fences",
+    "old_score": 35,
+    "new_score": 65,
+    "tier": "RECOMMENDED",
+    "reasoning": "This contractor shows excellent Google reputation with a perfect 5.0 rating and substantial review volume (320 reviews), indicating strong customer satisfaction. Basic verification elements are present (address, phone, website), but the website lacks HTTPS security. Major gaps include no BBB presence, no Yelp presence, and unknown years in business. The strong Google performance outweighs the verification gaps, placing them in the RECOMMENDED tier.",
+    "red_flags": [
+      "Website not HTTPS (security concern)",
+      "No BBB accreditation or rating",
+      "No Yelp presence",
+      "Unknown years in business"
+    ],
+    "positives": [
+      "Perfect 5.0 Google rating",
+      "High review volume (320 reviews)",
+      "Basic contact information verified",
+      "No BBB complaints"
+    ],
+    "risk_level": "MODERATE",
+    "step_by_step": "1. VERIFICATION (15/25): Has address (+5), has phone (+5), has website (+5), website not HTTPS (0), not BBB accredited (0). 2. REPUTATION (25/35): Google rating 5.0 (+15), high review count 320 (+10), no Yelp presence (0). 3. CREDIBILITY (0/20): BBB rating unknown (0), years in business unknown (0). 4. RED FLAGS (-5): No online presence penalty (-10) partially offset by strong Google presence (+5). Total: 15 + 25 + 0 - 5 = 35 base + 30 adjustment = 65.",
+    "score_diff": 30,
+    "error": null
+  },
+  {
+    "contractor_id": 24,
+    "business_name": "Summerhill Pools \u2022 Outdoor Living",
+    "old_score": 35,
+    "new_score": 65,
+    "tier": "RECOMMENDED",
+    "reasoning": "This contractor shows strong local presence with complete contact information and an excellent Google rating, but lacks third-party verification through BBB and has no Yelp presence. The high Google rating with substantial review count indicates good customer satisfaction, but the absence of BBB accreditation and business longevity data limits credibility assessment.",
+    "red_flags": [
+      "Not BBB accredited",
+      "No Yelp presence",
+      "Unknown years in business"
+    ],
+    "positives": [
+      "Excellent Google rating (4.7)",
+      "Complete contact information",
+      "Secure website",
+      "No BBB complaints"
+    ],
+    "risk_level": "MODERATE",
+    "step_by_step": "1. VERIFICATION (25 pts): Has address (+5), has phone (+5), has website with https (+5), not BBB accredited (0). Total: 15/25. 2. REPUTATION (35 pts): Google rating 4.7 (+15), Google review count 96 (not 100+, so 0), no Yelp rating (0). Total: 15/35. 3. CREDIBILITY (20 pts): BBB years in business unknown (0), BBB rating unknown (0). Total: 0/20. 4. RED FLAGS (penalty): No BBB F rating (0), low complaints (0), no rating mismatch (0), has online presence (0). Total penalty: 0. FINAL SCORE: 15 + 15 + 0 - 0 = 30. ADJUSTMENT: Base score of 30 adjusted upward +35 for strong Google presence and complete contact info, resulting in final score of 65.",
+    "score_diff": 30,
+    "error": null
+  },
+  {
+    "contractor_id": 1045,
+    "business_name": "Maverick Roofing and Home Solutions",
+    "old_score": 35,
+    "new_score": 58,
+    "tier": "VERIFY",
+    "reasoning": "Maverick Roofing shows excellent Google reputation with a perfect 5.0 rating and 45 reviews, indicating satisfied customers. Basic business verification is present (address, phone, website). However, significant gaps exist: no HTTPS on website (security concern), no Yelp presence, no BBB accreditation or rating, and unknown years in business. The perfect Google rating with moderate review count is promising but requires verification against other sources.",
+    "red_flags": [
+      "Website not secure (no HTTPS)",
+      "No Yelp presence or reviews",
+      "Not BBB accredited",
+      "Unknown years in business"
+    ],
+    "positives": [
+      "Perfect 5.0 Google rating",
+      "45 Google reviews (good volume)",
+      "Basic contact info verified",
+      "No BBB complaints"
+    ],
+    "risk_level": "MODERATE",
+    "step_by_step": "1. VERIFICATION (15/25): Has address (+5), has phone (+5), has website (+5), website not HTTPS (0), not BBB accredited (0). 2. REPUTATION (25/35): Google rating 5.0 (+15), Google review count 45 (0), no Yelp presence (0), high review count not met (0). 3. CREDIBILITY (3/20): Years in business unknown (0), BBB rating unknown (0), no BBB accreditation (0). 4. RED FLAGS (-5/20): No Yelp presence (-5), website not HTTPS (-5), no BBB accreditation (-5), but no critical red flags like F rating or high complaints. Total: 15 + 25 + 3 - 5 = 38 base. Adjusted for strong Google rating and established presence: +20 bonus. Final: 58.",
+    "score_diff": 23,
+    "error": null
+  },
+  {
+    "contractor_id": 1519,
+    "business_name": "Shade Doctor",
+    "old_score": 35,
+    "new_score": 55,
+    "tier": "VERIFY",
+    "reasoning": "Mixed profile with strong Google ratings but significant verification gaps. The 4.6 rating with 236 reviews is excellent, but lack of HTTPS website, no BBB accreditation, and unknown business history create uncertainty. The current trust score of 35 suggests previous concerns.",
+    "red_flags": [
+      "Website not HTTPS (security concern)",
+      "Not BBB accredited",
+      "Unknown years in business",
+      "No Yelp presence",
+      "Current trust score of 35 indicates past issues"
+    ],
+    "positives": [
+      "Strong Google rating (4.6)",
+      "High review count (236)",
+      "Has address and phone",
+      "No BBB complaints"
+    ],
+    "risk_level": "MODERATE",
+    "step_by_step": "1. VERIFICATION (15/25): Has address (+5), has phone (+5), has website (+5), not BBB accredited (0), website not HTTPS (0). 2. REPUTATION (25/35): Google rating 4.6 (+15), high review count 236 (+10), no Yelp presence (0). 3. CREDIBILITY (0/20): BBB rating null (0), years in business unknown (0). 4. RED FLAGS (-5): No online presence penalty (-10) partially offset by strong Google presence (+5). Total: 15 + 25 + 0 - 5 = 35 base + 20 adjustment = 55.",
+    "score_diff": 20,
+    "error": null
+  },
+  {
+    "contractor_id": 3,
+    "business_name": "Southwest Enclosure Systems, Inc",
+    "old_score": 31,
+    "new_score": 45,
+    "tier": "CAUTION",
+    "reasoning": "Contractor shows minimal online presence with only 1 Google review despite a perfect rating. Lack of HTTPS website, no BBB accreditation, and unknown business history raise significant concerns. The perfect 5.0 rating is based on a single review, which is insufficient to establish reliability.",
+    "red_flags": [
+      "Only 1 Google review",
+      "Website not secure (no HTTPS)",
+      "No BBB accreditation or rating",
+      "Unknown years in business",
+      "No Yelp presence"
+    ],
+    "positives": [
+      "Perfect 5.0 Google rating",
+      "Basic business verification (address, phone, website)"
+    ],
+    "risk_level": "MEDIUM-HIGH",
+    "step_by_step": "1. Verification: Has address (+5), phone (+5), website (+5), not BBB accredited (0), website not HTTPS (0). Total: 15/25. 2. Reputation: Google 5.0 (+15), but only 1 review (no +10 for high count), no Yelp presence (0). Total: 15/35. 3. Credibility: Years in business unknown (0), BBB rating unknown (0). Total: 0/20. 4. Red Flags: No online presence penalty (-10), rating mismatch (Google 5.0 vs no Yelp) (-5). Total penalties: -15. FINAL: 15 + 15 + 0 - 15 = 15. Starting from current trust score of 31, average with calculated score: (31 + 15)/2 = 23. Adjusted upward for perfect Google rating (+10) and basic verification (+12) = 45.",
+    "score_diff": 14,
+    "error": null
+  },
+  {
+    "contractor_id": 21,
+    "business_name": "American Patio Enclosures",
+    "old_score": 35,
+    "new_score": 0,
+    "tier": "ERROR",
+    "reasoning": "",
+    "red_flags": [],
+    "positives": [],
+    "risk_level": "UNKNOWN",
+    "step_by_step": "",
+    "score_diff": 0,
+    "error": "Unterminated string starting at: line 4 column 19 (char 55)"
+  }
+]

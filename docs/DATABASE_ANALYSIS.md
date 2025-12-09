@@ -17,7 +17,7 @@
 | **Average Trust Score** | 0.3 | Non-audited = 0 |
 | **Top Score** | 48 | Just below threshold |
 
-**Key Finding:** The database has strong raw lead data from Google Places (1,523 contractors), but nearly all are un-enriched and un-audited. Only 10 contractors have been through the enrichment/audit pipeline, and none have reached the passing threshold of 50.
+**Key Finding:** The database has strong raw lead data from Google Maps scraping (1,523 contractors), but nearly all are un-enriched and un-audited. Only 10 contractors have been through the enrichment/audit pipeline, and none have reached the passing threshold of 50.
 
 ---
 

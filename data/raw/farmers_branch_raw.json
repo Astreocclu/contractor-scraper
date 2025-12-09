@@ -1,0 +1,19 @@
+{
+  "source": "farmers_branch",
+  "portal_type": "EnerGov",
+  "scraped_at": "2025-12-07T18:33:22.338625",
+  "target_count": 100,
+  "actual_count": 0,
+  "with_contractor": 0,
+  "errors": [
+    {
+      "step": "sort",
+      "error": "Page.select_option: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"#PermitCriteria_SortBy\")\n"
+    },
+    {
+      "step": "extract_page_1",
+      "error": "No permits in response"
+    }
+  ],
+  "permits": []
+}

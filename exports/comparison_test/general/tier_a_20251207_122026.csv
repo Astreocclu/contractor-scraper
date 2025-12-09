@@ -1,0 +1,432 @@
+lead_id,score,tier,reasoning,red_flags,ideal_contractor_type,contact_priority,applicant_type,chain_of_thought,scored_at,tokens_used,cost_usd,scoring_method
+7ae40681,80,B,"Homeowner with a premium property value over $1M indicates strong budget, and the permit is very fresh (2 days). However, the vague project description ('plumbing') suggests lower clarity of intent, which slightly reduces the score.",Vague project description,general,high,homeowner,"We are scoring a permit lead for a home improvement company in DFW.
+
+Lead data:
+- Owner: ""REDDY DIREESH R &"" – This appears to be an individual's name, likely a homeowner. But note the ""&"" might indicate multiple owners (e.g., couple). We'll treat as homeowner.
+- Property Value: $1,097,500.0 – This is over $1.0M, so premium buyer (Southlake/Colleyville tier).
+- Project Description: ""plumbing"" – Very generic, just says ""plumbing"". That is vague.
+- Category: ""plumbing"" – This is the category.
+- Permit Date: 2025-12-05 (2 days ago) – Very fresh.
+- City: Dallas
+- Absentee Owner: False (mailing address differs from property) – Actually it says False, meaning mailing address does NOT differ? Wait, it says ""Absentee Owner: False (mailing address differs from property)"". There might be a confusion: The text says ""False (mailing address differs from property)"". Typically, absentee owner means mailing address is different from property address. So if it says False, that means mailing address is the same, so not absentee. But the explanation in parentheses says ""differs""? That might be a mistake in the data presentation. Let's read carefully: The field says ""Absentee Owner: False (mailing address differs from property)"". Possibly it means that the field is marked False, but in parentheses they note that the mailing address differs? That would be contradictory. Alternatively, it might be that the data says: Absentee Owner: False, and then separately they note that mailing address differs? But the way it's written, it seems like a note. I think we should take it as: Absentee Owner = False, meaning the owner is not absentee. However, the note in parentheses says ""mailing address differs from property"", which would imply absentee. I suspect the lead data might be: Absentee Owner: False, but then there's a comment that mailing address differs? That would be inconsistent. Perhaps the note is just explaining what Absentee Owner means: if True, then mailing address differs. So since it's False, mailing address does not differ. So we'll assume not absentee.
+
+But let's double-check: The data says ""Absentee Owner: False (mailing address differs from property)"". Maybe it's a typo? Possibly it means: Absentee Owner: False, and the mailing address differs? That would mean it's actually absentee? I think we need to interpret based on the field name. The field is ""Absentee Owner"", and it says False. So we'll treat as not absentee. The note in parentheses might be a generic note about what absentee owner means, but it's poorly placed. We'll go with False.
+
+Scoring principles:
+
+1. Applicant type: The owner is ""REDDY DIREESH R &"". This looks like an individual homeowner, not an LLC, not a builder. So applicant_type = homeowner. That gives full score potential.
+
+2. Property value: $1,097,500 is >$1.0M, so premium buyer. That's a positive.
+
+3. Freshness: Permit date is 2 days ago, very fresh. For plumbing, what is the typical window? The principles mention freshness varies by category, but they only list roof/HVAC, pool, outdoor living/fence. For plumbing, not specified. But generally, plumbing might be urgent or planned. Since it's a permit, it could be for a renovation or repair. Given no specific window, we might assume similar to others? Possibly within 30 days? But it's only 2 days old, so very fresh regardless.
+
+4. Absentee Owner: We have False, so no adjustment needed. But note: if it were absentee and >$750K, it would be +5. But it's not absentee.
+
+5. Project clarity: The description is just ""plumbing"", which is vague/generic. So that is a negative. It suggests lower intent or early stage.
+
+6. Missing data: All data seems present. No missing.
+
+Now, we need to score on 0-100. We'll break down:
+
+Applicant type: homeowner -> we can give a high base score. Let's say base score of 80.
+
+Property value: >$1.0M -> premium buyer, so add maybe 10 points? But we have to consider overall.
+
+Freshness: Very fresh, add maybe 5 points.
+
+Project clarity: Vague description, subtract maybe 10 points.
+
+But also, category is plumbing. Plumbing projects can range from small repairs to full repipes. High-value property might indicate a more extensive plumbing project (maybe luxury bathroom renovation). But the description is vague.
+
+We need to assign a tier and contact priority.
+
+Let's think of the calibration: 70-89 is strong lead, worth prioritizing.
+
+We have a homeowner with a high-value property, fresh permit, but vague description. That might put it in the strong lead but not the highest.
+
+Also, note: The category is plumbing. What is the ideal contractor type? The options are: pool, outdoor_living, roof, fence, general. Plumbing is not listed. Possibly ""general"" if it's a general contractor that does plumbing? Or maybe plumbing is a specialty. But the scoring principles don't mention plumbing specifically. Perhaps for plumbing, it might be a general contractor or a plumbing specialist. But the output field asks for ""ideal_contractor_type"" from a list that doesn't include plumbing. So we might need to choose the closest. Possibly ""general"" for general contractor, or maybe we can put ""plumbing"" but the list is fixed. Looking at the list: <pool|outdoor_living|roof|fence|general>. So ""general"" is the catch-all. We'll put ""general"".
+
+Now, red flags: The vague description is a concern. Also, the owner name has an ""&"" which might indicate multiple owners, but that's not a red flag.
+
+Let's compute a score.
+
+Start with applicant type: homeowner -> full potential, so we can start at maybe 85.
+
+Property value: >$1.0M -> premium, so add 5? But maybe already factored in.
+
+Freshness: 2 days old -> add 5.
+
+Absentee: No adjustment.
+
+Project clarity: vague -> subtract 10.
+
+So: 85 + 5 + 5 - 10 = 85? That seems high.
+
+But we need to consider that plumbing might not be as high-value as other projects? But the property value suggests they have money.
+
+Maybe we should consider that plumbing permits might be for necessary repairs, not necessarily high-value sales. However, in a $1M home, a plumbing project could be significant.
+
+Also, the applicant type is ideal, so that's good.
+
+We'll set score at 80.
+
+Tier: 80 is in 70-89, so B? Actually, calibration: 90-100 is A, 70-89 is B? Wait, the calibration says:
+- 90-100: Call today (A?)
+- 70-89: Strong lead, worth prioritizing (B?)
+- 50-69: Decent lead (C?)
+- 30-49: Low priority (D?)
+- <30: Flag for review (F?)
+
+But the output asks for tier: ""<A|B|C>"". So likely A, B, C correspond to ranges. Probably:
+A: 90-100
+B: 70-89
+C: 50-69
+Below 50 maybe not even given a tier? But the output requires one of A, B, C. So we'll assign B for 70-89.
+
+Our score is 80, so B.
+
+Reasoning: Homeowner with premium property and fresh permit, but project description is vague, indicating potential early-stage planning.
+
+Red flags: [""Vague project description""]
+
+Ideal contractor type: ""general""
+
+Contact priority: Based on score 80, it's strong lead, so ""high"" or ""medium""? The calibration says ""strong lead, worth prioritizing"", so likely ""high"". But maybe not urgent as ""call today"". So we'll say ""high"".
+
+Applicant type: ""homeowner""
+
+Let's put it all together.
+
+But wait, we should double-check absentee owner. The data says ""Absentee Owner: False (mailing address differs from property)"". This is confusing. It might be that the field is False, but the note says mailing address differs. That would mean it's actually absentee. In many systems, absentee owner is true if mailing address is different. So if it says False, but then in parentheses it says mailing address differs, there is a contradiction. Possibly the note is explaining what False means? That is, ""False"" means mailing address does NOT differ. But they wrote ""differs"" by mistake? Or maybe it's a note that the mailing address is different from property, but they still marked False? I think we should trust the field: Absentee Owner: False. So we'll go with not absentee.
+
+If it were actually absentee, with property >$750K, we would add +5. But we are not.
+
+Let's finalize score: 80.
+
+We'll write reasoning accordingly.",2025-12-07T11:59:33.737367,"{'prompt': 707, 'completion': 2068, 'reasoning': 1955}",0.00491777,ai-r1
+0d90f1b9,85,B,"Homeowner with high property value ($973,630) in Dallas, indicating good budget for a plumbing project. Permit is very fresh (2 days old), and absentee owner status adds 5 points for likely vacation home or wealthy individual. Project description is clear but generic, which may slightly lower intent.",Generic project description may indicate early planning stage,general,high,homeowner,"First, I need to score this lead based on the given data and principles. The lead data is:
+
+- Owner: ROSENTHAL MICHAEL A
+
+- Property Value: $973,630.0
+
+- Project Description: plumbing
+
+- Category: plumbing
+
+- Permit Date: 2025-12-05 (2 days ago)
+
+- City: dallas
+
+- Absentee Owner: True (mailing address differs from property)
+
+Now, I'll go through each scoring principle.
+
+**1. APPLICANT TYPE:** The owner is ""ROSENTHAL MICHAEL A"", which sounds like an individual name, not an LLC or builder. So, I'll assume this is a homeowner. According to principles, homeowner is ideal with full score potential. So, no cap here. I'll set applicant_type as ""homeowner"".
+
+**2. PROPERTY VALUE:** $973,630.0. In DFW market context:
+
+- >$1.0M = premium buyer for Southlake/Colleyville
+
+- >$750K = Nice suburbs, good budget
+
+This property is $973,630, which is between $750K and $1.0M. It's above $750K, so it's in the ""Nice suburbs, good budget"" category. But since it's less than $1.0M, it's not in the premium buyer tier for >$1.0M. However, it's still a high property value, indicating a good budget. I'll consider this positively.
+
+**3. FRESHNESS:** Permit date is 2025-12-05, which is 2 days ago from now. Since the current date isn't given, I assume ""2 days ago"" means it's very fresh. The category is plumbing. The principles don't specify a freshness window for plumbing, but it mentions categories like roof/HVAC, pool, outdoor living/fence. For plumbing, I should infer based on urgency. Plumbing issues might be urgent, so freshness is likely important. Since it's only 2 days old, it's very fresh. No staleness here.
+
+**4. ABSENTEE OWNER:** True, with mailing address differing from property. Property value is $973,630, which is above $750K. According to principles: ""Absentee + >$750K property = vacation home, wealthy, +5 points"". So, I should add 5 points.
+
+**5. PROJECT CLARITY:** Project description is ""plumbing"", and category is ""plumbing"". This is specific but also generic; it says ""plumbing"" which could mean various things. However, it's clear that it's a plumbing project. Principles say: ""Specific project description = serious buyer"" – ""plumbing"" might not be very specific, but it's not vague like ""home improvement"". I'll consider it somewhat specific but not highly detailed. Since it's directly stated, I won't penalize it.
+
+**6. MISSING DATA:** All data seems present. No missing information.
+
+Now, I need to calculate a score from 0 to 100. I'll start with a baseline and adjust based on factors.
+
+Since applicant type is homeowner, I can start with a high score. Property value is high, so positive. Freshness is excellent. Absentee owner adds 5 points. But I need to consider the category: plumbing. The scoring principles don't explicitly mention plumbing, but I can infer that plumbing projects might vary in value. However, the lead is for a permit, which implies a significant plumbing project, possibly high-value.
+
+I should also consider the tier and other outputs.
+
+Let me think about the score calibration:
+
+- 90-100: Call today, high-value homeowner with urgent need
+
+This lead has a homeowner with high property value, fresh permit, and absentee owner adding points. But is plumbing urgent? Possibly, if it's a repair, but since it's a permit, it might be a renovation or installation, which could be planned. Still, freshness is good.
+
+I'll assign points based on the factors.
+
+**Applicant Type:** Homeowner – so base score can be high, say 80.
+
+**Property Value:** $973,630 – since it's above $750K, it's good budget, so add 10 points? But I need to be consistent. The principles don't give exact points, so I'll use judgment.
+
+Maybe I can score out of 100 by weighing the factors.
+
+Let me define a scoring system based on the principles:
+
+- Applicant Type: Homeowner = 40 points (since it's most important, I'll give it high weight)
+
+- Property Value: >$750K = 20 points (premium buyer tier for >$1.0M might be 25, but here it's less, so 20)
+
+- Freshness: Very fresh (2 days) = 15 points (since for urgent categories, freshness is key; plumbing might be similar to HVAC in urgency)
+
+- Absentee Owner: +5 points as per principle
+
+- Project Clarity: ""plumbing"" is specific enough = 10 points? Or less if vague.
+
+But to simplify, I'll estimate.
+
+Since the principles don't specify exact points, I'll use the calibration guidelines.
+
+Start with a baseline of 50 for a decent lead.
+
+Adjustments:
+
+- Homeowner: +30 points (because homeowner is ideal, so boost to 80)
+
+- Property value $973,630: above $750K, so add 5 points? But in context, >$1.0M is premium, so $973,630 is close to $1M, so it's still high-value. I'll add 10 points.
+
+- Freshness: 2 days old, so add 10 points for being very fresh.
+
+- Absentee Owner: +5 points as per rule.
+
+- Project Clarity: ""plumbing"" is somewhat vague but clear category; no penalty, so no adjustment.
+
+Total: 50 + 30 + 10 + 10 + 5 = 105, which exceeds 100. So, I need to recalibrate.
+
+I should start from a higher base for homeowner. Let's say homeowner automatically gets 70 points.
+
+Then add property value: $973,630 is in the >$750K range, which is ""good budget"", so add 10 points -> 80.
+
+Freshness: 2 days old, add 10 points -> 90.
+
+Absentee Owner: +5 points -> 95.
+
+But project clarity: ""plumbing"" might not be as specific as ""kitchen plumbing remodel"", so perhaps deduct 5 points for being generic? But principles say ""specific project description = serious buyer"", and ""vague/generic = early stage, lower priority"". Here, ""plumbing"" is generic, so I should deduct some points. Let's say -5 points.
+
+So, 95 - 5 = 90.
+
+That puts it at 90, which is in the 90-100 tier: ""Call today, high-value homeowner with urgent need"".
+
+But is plumbing a high-value sale? Plumbing projects can range from small repairs to large installations. Since it's a permit lead, it might be a significant project, so likely high-value.
+
+Now, for red flags: Absentee owner is true, but for >$750K, it's a positive, so no red flag. However, the project description is generic, which might be a minor concern.
+
+Ideal contractor type: The category is plumbing, so ideal contractor type should be ""general"" or specifically plumbing. The options given are: ""<pool|outdoor_living|roof|fence|general>"". Since plumbing isn't listed, I should use ""general"" as it's not specifically covered.
+
+But in the context of home improvement, plumbing might fall under general contracting or specialized plumbing contractors. Since the options don't include plumbing, ""general"" is appropriate.
+
+Contact priority: Based on score 90, it should be ""high"".
+
+Applicant type: ""homeowner""
+
+Tier: For score 90, tier should be ""A"" since A is likely for high scores.
+
+Reasoning: I need to provide 2-3 sentence explanation.
+
+Red flags: List any concerns. The only concern might be the generic project description, but since it's a permit, it's likely a serious project. Also, absentee owner could be a concern if not managed properly, but according to principles, it's a positive here.
+
+So, red flags might be an empty list or mention generic description.
+
+Let's finalize the score: 90
+
+But let's double-check the freshness for plumbing. The principles don't specify a window for plumbing, but since it's a permit, and only 2 days old, it's very fresh. I think 90 is reasonable.
+
+Now, for the JSON output.
+
+Score: 90
+
+Tier: ""A""
+
+Reasoning: ""Homeowner with high property value indicating good budget, very fresh permit, and absentee owner status suggesting a vacation home or wealthy individual. The project description is clear but generic, still likely a high-value plumbing project.""
+
+Red flags: [""Generic project description""] or []? I'll include it as a minor concern.
+
+Ideal contractor type: ""general"" since plumbing isn't in the list, and general contractors often handle plumbing permits or subcontract.
+
+Contact priority: ""high""
+
+Applicant type: ""homeowner""
+
+In the output format, it says ""ideal_contractor_type"" with options including general, so I'll use ""general"".
+
+So, the JSON object should be:
+
+{
+  ""score"": 90,
+  ""tier"": ""A"",
+  ""reasoning"": ""Homeowner with high property value ($973,630) in Dallas, indicating good budget for plumbing project. Permit is very fresh (2 days old), and absentee owner status adds 5 points for likely vacation home or wealthy owner. Project description is clear but generic, still suggesting serious intent."",
+  ""red_flags"": [""Generic project description may indicate early planning stage""],
+  ""ideal_contractor_type"": ""general"",
+  ""contact_priority"": ""high"",
+  ""applicant_type"": ""homeowner""
+}
+
+I need to ensure the reasoning is 2-3 sentences. The above is three sentences.
+
+For red flags, I listed one. If no red flags, it should be an empty list, but I think generic description is a minor flag.
+
+According to principles, ""Missing project description = assume lower intent"", but here it's not missing, just generic. So, it's not a red flag per se, but for scoring, I deducted points. In red flags, I can mention it.
+
+But in the scoring principles, for project clarity, vague/generic is lower priority, so it's a concern.
+
+I'll keep it.
+
+Now, for the score, I set it to 90. But let's see if any other factors. The property value is less than $1.0M, so not in the premium buyer tier for >$1.0M, but still high. I think 90 is appropriate.
+
+Alternatively, since it's not over $1.0M, I might not give full points for property value. In my calculation, I added 10 points for property value, which might be too high. Let's adjust.
+
+Base for homeowner: 70
+
+Property value: $973,630 is >$750K, so ""good budget"", but not premium. So, add 5 points? -> 75
+
+Freshness: 2 days, add 10 points -> 85
+
+Absentee: +5 -> 90
+
+Project clarity: generic, deduct 5 -> 85
+
+Then score 85, which is still in 70-89: ""Strong lead, worth prioritizing""
+
+But 85 is close to 90, and with absentee bonus, it might be higher.
+
+I need to be consistent with the principles.
+
+In the principles for property value: >$750K = Nice suburbs, good budget. So, it's positive but not as high as >$1.0M.
+
+For freshness, since plumbing isn't specified, I'll assume it's similar to HVAC or other urgent categories, so 14-day window.
+
+So, 2 days is very fresh.
+
+Applicant type is homeowner, so no cap.
+
+Absentee owner adds 5 points.
+
+Project clarity: ""plumbing"" is the category and description, so it's clear but not detailed. I'll consider it moderate.
+
+So, let's say score 85.
+
+But in the first calculation, I had 90. I think 85 is more conservative.
+
+To decide, I'll look at the calibration: 70-89 is strong lead, 90-100 is call today. With a generic description, it might not be urgent, so 85 is better.
+
+Moreover, plumbing projects might not always be high-value; it depends. But with a high property value, it likely is.
+
+I'll go with 85.
+
+Reasoning should reflect that.
+
+So, updated:
+
+Score: 85
+
+Tier: ""B"" since 85 is in 70-89, and tier A might be for 90-100. In the calibration, tiers are probably A for 90-100, B for 70-89, C for 50-69, etc. But in the output, tier is ""<A|B|C>"", so for 85, it should be B.
+
+Yes.
+
+So, final score: 85
+
+Tier: B
+
+Reasoning: As above.
+
+Red flags: [""Project description is generic, which may indicate lower intent or early planning stage""]
+
+Ideal contractor type: general
+
+Contact priority: high (since 85 is still strong lead, worth prioritizing)
+
+Applicant type: homeowner
+
+Now, for the JSON.",2025-12-07T12:10:49.437912,"{'prompt': 707, 'completion': 3002, 'reasoning': 2872}",0.006963230000000001,ai-r1
+a4f0837c,85,B,"Homeowner trust with solid property value and a very fresh permit indicate strong intent, but the project description is vague, which slightly lowers confidence. Absentee owner status is noted but falls in the middle property range, so no adjustment applied.",Vague project description|Mailing address differs from property (potential absentee owner),general,high,homeowner,"We are scoring a permit lead for a home improvement company in DFW.
+
+LEAD DATA:
+- Owner: DEB FAMILY TRUST -> This is a trust, which is often used by homeowners for estate planning. However, in our scoring principles, we have categories: homeowner, LLC/investor, custom builder, production builder. A family trust is likely a homeowner (or family) that owns the property. It's not an LLC or a builder. We should treat this as a homeowner. But note: sometimes trusts can be for investment properties. However, the absence of ""Absentee Owner"" flag (though mailing address differs) might indicate it's still a primary residence? Actually, the data says ""Absentee Owner: None (mailing address differs from property)"". That means the mailing address is different, but the system didn't flag it as absentee? It says ""None"", but then in parentheses it says mailing address differs. That is contradictory. Let's interpret: The field says ""Absentee Owner: None"" but then in parentheses it explains that the mailing address differs from property. So maybe it is an absentee owner? Actually, the format might be: ""Absentee Owner: None"" meaning no absentee flag, but then they added a note that mailing address differs. In the scoring principles, we have an absentee owner adjustment. We need to check if this is considered absentee. The note says: (mailing address differs from property). That is a classic sign of absentee owner. But the field says ""None"". Possibly the system has a flag for absentee owner and it's not set, but we have additional info. Given the note, we should treat it as an absentee owner? However, the scoring principles say: ""Absentee Owner (context-dependent)"". We have to decide: is this an absentee owner? The data says ""Absentee Owner: None"" but then in parentheses it says ""(mailing address differs from property)"". That suggests that the mailing address is different, but maybe the system doesn't flag it as absentee. I think we should consider the note and treat it as an absentee owner for scoring purposes. But careful: the scoring principles say ""Absentee + >$750K property = vacation home, wealthy, +5 points"". The property value is $700,655.0, which is slightly below $750K. But it's close. Actually, it's >$550K and <$750K? It says >$750K is nice suburbs, good budget. This is $700,655, which is above $550K (typical family) but below $750K. So it's in the ""Typical family, standard budget"" range? Actually, the breakdown: >$750K = Nice suburbs, good budget; >$550K = Typical family, standard budget. So $700,655 is above $550K and below $750K, so it falls into ""Typical family, standard budget"" but it's on the higher end. For absentee adjustment: ""Absentee + middle range = ambiguous, no adjustment"". So if we consider it absentee and property value is in middle range (between $400K and $750K? Actually, middle range is not defined, but likely between $400K and $750K), then no adjustment. But if we consider it not absentee, then no adjustment. Given the note, I'll consider it as an absentee owner but in the middle range, so no adjustment.
+
+- Property Value: $700,655.0 -> This is above $550K, so typical family, standard budget. But note: the value is high enough to indicate a decent budget. According to the principles: >$750K is nice suburbs, good budget. This is just below that threshold. So we might give it a slightly lower score on property value.
+
+- Project Description: plumbing -> Category: plumbing. So it's a plumbing project. That is a specific description? ""plumbing"" is a category, but it's also the project description. It's not very specific (like ""repair leak"" or ""install new fixtures""), but it's clear it's plumbing work. The scoring principles say: ""Specific project description = serious buyer; Vague/generic = early stage, lower priority"". ""plumbing"" is somewhat generic. So we might deduct some points for clarity.
+
+- Permit Date: 2025-12-04 (3 days ago) -> Very fresh. But freshness varies by category. For plumbing, what is the typical window? The principles mention: Roof/HVAC: 14 days; Pool: 60-90 days; Outdoor living/fence: 30-45 days; Anything >90 days = stale. Plumbing is not listed. We might assume it's similar to Roof/HVAC? Possibly plumbing is often an urgent repair, so freshness might be important. But the principles don't specify. Since it's a permit, it might be for a planned plumbing project. I'd assume that for plumbing, a fresh permit (within 14 days) is good. It's only 3 days old, so very fresh.
+
+- City: denton -> Denton is a city in DFW. Not the most affluent, but property value is $700K, so likely a nice area in Denton.
+
+- Absentee Owner: None (but mailing address differs) -> As discussed.
+
+Now, scoring:
+
+1. APPLICANT TYPE: DEB FAMILY TRUST. We need to categorize. Is this a homeowner? Likely yes. Trusts are often used by families to hold property. It's not an LLC or a builder. So we'll treat as homeowner. That means full score potential. But wait: sometimes trusts can be for investment properties. However, without more info, we'll assume it's a homeowner. So no cap, we can score up to 100.
+
+2. PROPERTY VALUE: $700,655. This is in the >$550K range (typical family, standard budget). Compared to the higher tiers, it's not premium, but it's solid. We'll assign a score component based on this. But the overall score is not just a sum of components; we need to combine factors. We'll use the principles to adjust.
+
+3. FRESHNESS: 3 days ago, very fresh. For plumbing, we'll consider it a positive.
+
+4. ABSENTEE OWNER: Mailing address differs, so technically absentee. But property value is $700,655, which is >$550K but <$750K. Is that middle range? According to the principles: ""Absentee + middle range = ambiguous, no adjustment"". So no adjustment.
+
+5. PROJECT CLARITY: ""plumbing"" is the description. It's a bit vague. So we might deduct some points.
+
+6. MISSING DATA: None missing.
+
+Now, we need to compute a score from 0-100. We'll start with a baseline based on applicant type and adjust.
+
+Since applicant is homeowner (trust), we can start at a high baseline, say 80.
+
+Then adjust:
+- Property value: $700K is good but not premium. Maybe +5? Actually, the principles don't give direct points, but we can think: >$750K is premium, so $700K is just below, so maybe no bonus, but also no penalty. So maybe keep baseline.
+- Freshness: Very fresh, so +10? But careful: for plumbing, freshness might be very important. Since it's only 3 days, likely the homeowner is actively looking. So add.
+- Project clarity: Vague, so -5.
+- Absentee: No adjustment.
+
+But we also need to consider category: plumbing. The scoring principles are general, but plumbing might be a category that is often urgent or planned. However, we don't have specific guidance.
+
+We also need to assign a tier, reasoning, red flags, ideal contractor type, contact priority, and applicant type.
+
+Ideal contractor type: The project is plumbing, so ideal contractor type is ""general""? Actually, the options: pool, outdoor_living, roof, fence, general. Plumbing would fall under general. So ""general"".
+
+Applicant type: We'll put ""homeowner"" since it's a family trust.
+
+Contact priority: Based on score.
+
+Red flags: Any concerns? The vague description might be a red flag. Also, absentee owner with mailing address different, but that's noted.
+
+Let's compute a score.
+
+We'll calibrate:
+- Applicant type: homeowner -> high potential, so we start at 80.
+- Property value: $700K -> decent, but not top tier. Maybe add 5? Actually, in DFW, $700K is a nice home. But according to the principles, >$750K is ""nice suburbs, good budget"". So $700K is just below, so maybe we don't add extra. But we also don't deduct. So keep 80.
+- Freshness: 3 days -> very fresh. For plumbing, I'd add 10 points. So 90.
+- Project clarity: ""plumbing"" is vague -> deduct 5 points. So 85.
+- Absentee: no adjustment.
+
+So score 85.
+
+But check: Is there any reason to deduct more? The applicant is a trust, which might be slightly less straightforward than an individual homeowner, but still homeowner.
+
+Also, note: the permit date is in the future? 2025-12-04 is in the future? Wait, today is 2023? Actually, the system might have a typo. But we'll assume it's recent. In the data, it says ""Permit Date: 2025-12-04 (3 days ago)"". That's in the future relative to 2024? Possibly a data error, but we'll treat as recent.
+
+So final score: 85.
+
+Tier: 70-89 is B? Actually, calibration: 90-100: Call today (A), 70-89: Strong lead, worth prioritizing (B), 50-69: Decent lead (C), etc. So 85 is in 70-89, so tier B.
+
+Contact priority: ""high"" for 70-89? Actually, the calibration says ""Strong lead, worth prioritizing"". So contact priority could be ""high"" or ""medium""? We'll set ""high"" for scores above 70.
+
+Red flags: [""Vague project description"", ""Mailing address differs from property""] but the absentee adjustment didn't apply. So we can list those.
+
+Ideal contractor type: ""general"" since plumbing is a general trade.
+
+Applicant type: ""homeowner""
+
+Now, output JSON.
+
+Let's write reasoning: ""Homeowner trust with good property value, very fresh permit, but project description is vague. Absentee owner but middle-range property value so no adjustment.""
+
+Red flags: [""Vague project description"", ""Potential absentee owner (mailing address differs)""]
+
+Ideal contractor type: ""general""
+
+Contact priority: ""high""
+
+Applicant type: ""homeowner""
+
+But wait: should we mark applicant type as ""homeowner"" or ""trust""? The principles have homeowner, LLC/investor, custom builder, production builder. A trust is not exactly an individual homeowner, but it's typically considered a homeowner for scoring. So we'll put ""homeowner"".
+
+Now, the JSON.",2025-12-07T12:16:31.024546,"{'prompt': 705, 'completion': 2490, 'reasoning': 2363}",0.005840850000000001,ai-r1

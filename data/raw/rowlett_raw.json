@@ -1,0 +1,22 @@
+{
+  "source": "rowlett",
+  "portal_type": "MyGov",
+  "config": {
+    "base_url": "https://web.mygov.us",
+    "login_url": "https://web.mygov.us/authentication/login/",
+    "search_url": "https://web.mygov.us/permits/search/",
+    "requires_login": false,
+    "state": "TX"
+  },
+  "scraped_at": "2025-12-07T18:35:40.017867",
+  "target_count": 25,
+  "actual_count": 0,
+  "with_contractor": 0,
+  "errors": [
+    {
+      "step": "main",
+      "error": "Page.evaluate: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'a.next, .pagination .next, [rel=\"next\"], button:has-text(\"Next\")' is not a valid selector.\n    at eval (eval at evaluate (:290:30), <anonymous>:2:47)\n    at UtilityScript.evaluate (<anonymous>:297:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    }
+  ],
+  "permits": []
+}

@@ -1,0 +1,1229 @@
+lead_id,score,tier,reasoning,red_flags,ideal_contractor_type,contact_priority,applicant_type,chain_of_thought,scored_at,tokens_used,cost_usd,scoring_method
+b6cc8b45,60,C,"Homeowner with very fresh HVAC permit indicates urgency, but low property value in Denton suggests budget-consciousness, and mailing address difference may imply absentee owner likely to price-shop.",Property value below $400K (price-shopping segment)|Mailing address differs from property (potential absentee owner),general,medium,homeowner,"First, I need to score this lead based on the provided data and principles. Let's break down the lead data:
+
+- Owner: FAIRES, CASEY – This appears to be an individual name, not an LLC or builder, so likely a homeowner.
+- Property Value: $304,509.0 – This is below $400K, which is in the ""Starter home, budget-conscious"" or even ""Price-shopping segment"" since it's less than $400K.
+- Project Description: hvac – This is specific, but it's just ""hvac"", which might be somewhat vague but still indicates a category.
+- Category: hvac – Confirms the project is HVAC.
+- Permit Date: 2025-12-05 (2 days ago) – Today is 2025-12-07? Since it's 2 days ago, so it's very fresh.
+- City: denton – Denton is part of DFW, so that's fine.
+- Absentee Owner: None (mailing address differs from property) – Wait, ""None"" means not absentee? But it says ""mailing address differs from property"", which might indicate absentee. Let's check the scoring principles: ""Absentee Owner: None (mailing address differs from property)"". This is confusing. It says ""None"" but then mentions mailing address differs. I think ""None"" might mean that the absentee owner field is marked as ""None"", but the mailing address differs from the property address. In the context, ""Absentee Owner"" likely means if the owner is absentee, but here it says ""None"", so probably not absentee. However, the note in parentheses says ""mailing address differs from property"", which could imply absentee. I need to interpret this. Looking back at the data: ""Absentee Owner: None (mailing address differs from property)"". I think ""None"" is the value for absentee owner, meaning it's not flagged as absentee, but the mailing address differs. In scoring principles, absentee owner is context-dependent. Since it says ""None"", I'll assume it's not absentee, but the mailing address difference might be a red flag. But the principle says ""Absentee Owner"" specifically, so if it's ""None"", then no adjustment. But the note says mailing address differs, so perhaps it is absentee? I'll use the principle: if absentee, then adjust based on property value. Here, since it says ""None"", I'll treat it as not absentee for scoring. However, in the reasoning, I might note the mailing address difference.
+
+Now, applying the scoring principles:
+
+1. APPLICANT TYPE: Owner is ""FAIRES, CASEY"", which sounds like a homeowner. No indication of LLC, investor, or builder. So, applicant type is homeowner. Homeowner is ideal buyer, so full score potential. I'll set applicant_type as ""homeowner"".
+
+2. PROPERTY VALUE: $304,509.0 is less than $400K, so according to the principles, this is ""<$400K = Price-shopping segment"". This suggests budget-conscious or price-shopping, which is negative for high-value sale.
+
+3. FRESHNESS: Permit date is 2025-12-05, which is 2 days ago. For HVAC, freshness is within 14 days, so this is very fresh. Positive signal.
+
+4. ABSENTEE OWNER: The data says ""None"", so I assume not absentee. But the note says mailing address differs, which might indicate absentee. However, for scoring, I'll follow the principle that if absentee owner is not indicated, no adjustment. But since there's a note, I should consider it. Let's see the principle: ""Absentee Owner (context-dependent):"" and it lists adjustments for absentee owners. Here, it says ""None"", so probably not absentee. But the mailing address differs, so perhaps it is technically absentee. To be safe, I'll treat it as not absentee for scoring, but in red flags, I might mention the mailing address difference.
+
+5. PROJECT CLARITY: Project description is ""hvac"", and category is ""hvac"". It's specific to HVAC, but the description is just ""hvac"", which is somewhat vague. According to principles: ""Specific project description = serious buyer"" but ""hvac"" is generic. It might be considered vague, so lower priority. But since the category matches, it might be okay. I'll consider it somewhat vague.
+
+6. MISSING DATA: No missing data here. All fields are present.
+
+Now, I need to score on a 0-100 scale. I'll start with a base score and adjust based on factors.
+
+Since applicant type is homeowner, I can give a high base score. But property value is low, which might reduce it. Freshness is good for HVAC. Let's quantify.
+
+I don't have a precise formula, but I can estimate based on the principles.
+
+First, applicant type: homeowner is ideal, so I can start with a score around 80 or so, but then adjust.
+
+Property value: <$400K is price-shopping segment, so this should lower the score significantly. Perhaps deduct points.
+
+Freshness: HVAC within 14 days, and this is 2 days old, so add points.
+
+Absentee owner: none, so no adjustment.
+
+Project clarity: ""hvac"" is vague, so deduct points.
+
+But I need to combine these.
+
+Let's think about the calibration:
+
+- 90-100: Call today, high-value homeowner with urgent need. Here, homeowner is good, but property value is low, so not high-value. Urgent need might be there due to freshness, but budget might be limited.
+
+- 70-89: Strong lead, worth prioritizing. This might be possible if other factors are good.
+
+- 50-69: Decent lead, work if capacity allows.
+
+Given the low property value, it might fall into 50-69.
+
+I'll assign points systematically.
+
+Assume base score for homeowner: 80.
+
+Then adjust for property value: Since <$400K, price-shopping, so deduct 20 points? That would bring it to 60.
+
+Freshness: for HVAC within 14 days, add 10 points? But it's very fresh, so maybe add 15. But then score becomes 75.
+
+But property value is a strong signal, so deduction should be significant. In DFW market, $304K is low, so likely budget-conscious.
+
+Project clarity: ""hvac"" is vague, so deduct 5 points.
+
+So, 80 - 20 + 15 - 5 = 70. That puts it at 70, which is in the 70-89 range.
+
+But let's see absentee owner: mailing address differs. If I consider it absentee, then for property value <$400K, it says ""Absentee + <$400K property = landlord, price-shops, -10 points"". So if I treat it as absentee, then deduct 10 points, making it 60.
+
+The data says ""Absentee Owner: None"", but with note. I think ""None"" means not absentee, so no adjustment. However, the note is concerning. I'll go with ""None"" for scoring, but in red flags, I'll mention the mailing address difference.
+
+So, with no absentee adjustment, score is 70.
+
+But let's refine. The applicant type is homeowner, but with mailing address differs, might be investor? But the name is individual, so likely homeowner. Perhaps the mailing address is different for other reasons, like a P.O. box or recent move.
+
+I'll set applicant_type as ""homeowner"" since it's an individual name.
+
+Now, for tier: A for 90-100, B for 70-89, C for below 70? The calibration doesn't specify tiers, but output format requires tier: ""<A|B|C>"". From calibration, 90-100 is high, 70-89 is strong, so probably A for 90-100, B for 70-89, C for 50-69, and below might be C or lower. But output says tier: A|B|C, so I'll map:
+
+- A: 90-100
+
+- B: 70-89
+
+- C: 50-69
+
+And below 50 might be C? But calibration says 30-49 is low priority, and <30 flag for review. So tier C might include 50-69 and below? But output tier is only A, B, or C. I think C is for scores below 70. Let's assume:
+
+- A: 90-100
+
+- B: 70-89
+
+- C: 0-69
+
+But calibration says 50-69 is decent lead, so tier C might be for that. I'll use B for 70-89, and C for below 70.
+
+In my score of 70, it's at the lower end of B. But if I consider absentee adjustment, it might be 60, which is C.
+
+I need to decide on absentee owner. The data explicitly says ""Absentee Owner: None"", so I'll take it as not absentee. Therefore, no adjustment for absentee.
+
+But in red flags, I can list ""mailing address differs from property"" as a potential concern.
+
+Now, ideal contractor type: Project is HVAC, so ideal contractor type is ""hvac"", but in the output, it specifies ""<pool|outdoor_living|roof|fence|general>"". HVAC is not listed? Wait, the options are pool, outdoor_living, roof, fence, general. But this is an HVAC lead, so perhaps ""general"" is the catch-all? Or maybe I should use ""general"" since HVAC isn't in the list. But the scoring principles mention categories like roof/HVAC, pool, outdoor living/fence. So for HVAC, it might be under ""general"". I'll set ideal_contractor_type as ""general"".
+
+Contact priority: Based on score, if score is 70, then ""high"" for 70-89? Calibration says 70-89: Strong lead, worth prioritizing, so contact priority should be ""medium"" or ""high""? The output has contact_priority: ""<high|medium|low>"". For 70-89, it's strong lead, so perhaps ""high"" priority. But let's see: 90-100 is call today, high priority; 70-89 is strong lead, worth prioritizing, so likely ""high"" as well. But for 50-69, it might be ""medium"", and below ""low"". So for score 70, contact priority ""high"".
+
+But if score is 60, then ""medium"".
+
+I'll proceed with score 70 for now.
+
+Reasoning: I need a 2-3 sentence explanation.
+
+Red flags: List any concerns. Here, property value is low, and mailing address differs.
+
+Applicant type: homeowner.
+
+Let's calculate score more carefully.
+
+Start with applicant type: homeowner, so base score 85? I need to set a base. Since homeowner is ideal, let's say base 80.
+
+Property value: $304,509 is <$400K, so price-shopping segment. Deduct 25 points? That seems harsh. According to principles, property value context: <$400K = Price-shopping segment. So this is a negative signal. For a high-value sale, this reduces likelihood. So deduct 30 points? Then base 80 - 30 = 50.
+
+Freshness: HVAC, 2 days old, very fresh. Add 20 points? But freshness varies by category; for HVAC, fresh within 14 days is good. Since it's 2 days, add 15 points. So 50 + 15 = 65.
+
+Project clarity: ""hvac"" is vague, deduct 5 points. 65 - 5 = 60.
+
+Absentee owner: none, so no adjustment. Score 60.
+
+But if I don't deduct as much for property value, say deduct 20, then 80 -20 =60, plus 15 =75, minus 5 =70.
+
+I think 60 is reasonable because property value is low, and for HVAC, it might be a replacement or repair, which could be costly, but with low property value, the homeowner might be budget-conscious.
+
+Also, in Denton, $304K is typical for starter homes, so likely not a premium buyer.
+
+I'll go with score 60.
+
+Then tier: C (since 60 is in 50-69).
+
+Contact priority: ""medium"" for 50-69.
+
+Applicant type: homeowner.
+
+Ideal contractor type: general, since HVAC isn't listed.
+
+Red flags: ""Low property value"", ""Mailing address differs from property"" (potential absentee issue).
+
+Reasoning: Homeowner with fresh HVAC permit, but low property value indicates budget-consciousness. Mailing address difference may suggest non-owner occupancy, but applicant type is individual.
+
+Now, for absentee owner, the data says ""None"", but the note in parentheses. I think I should consider the mailing address difference. In the principles, absentee owner is context-dependent. Here, since mailing address differs, it might be absentee. But the field says ""None"", which might mean the system flagged it as non-absentee, but manually we see address difference. For scoring, I'll use the principle: if absentee, then adjust. Since there's evidence of address difference, I'll treat it as absentee for adjustment.
+
+Property value <$400K and absentee, so -10 points.
+
+So in my scoring, if base is 80, deduct for property value 20, freshness add 15, project clarity deduct 5, absentee deduct 10: 80 -20 +15 -5 -10 =60. Same score.
+
+If I start with different base, it might vary.
+
+To standardize, let's define a scoring method.
+
+First, applicant type: homeowner gives full score potential, so I'll set applicant score to 100? But then adjust down for other factors. Actually, the score is likelihood to convert to high-value sale. Homeowner is good, but other factors matter.
+
+I think I'll set initial score based on applicant type: homeowner = 100, but then reduce based on other signals.
+
+But property value low means less likely high-value sale, so reduce significantly.
+
+Freshness for HVAC: within 14 days, so positive, add points? But score is 0-100, so I need to reduce from 100.
+
+Perhaps start from 50 and add or subtract.
+
+Let's use a additive approach.
+
+Start with score 50.
+
+Applicant type: homeowner, add 30 points -> 80.
+
+Property value: <$400K, subtract 20 points -> 60.
+
+Freshness: HVAC within 14 days and 2 days old, add 10 points -> 70.
+
+Project clarity: vague description ""hvac"", subtract 5 points -> 65.
+
+Absentee owner: if absentee, for <$400K, subtract 10 points -> 55. But if not absentee, no change -> 65.
+
+With absentee from address difference, subtract 10 -> 55.
+
+I have to decide on absentee. The data says ""Absentee Owner: None"", but with note. I think for accuracy, since the note is provided, I should consider it as absentee. In the real world, mailing address differing often indicates absentee owner. So I'll treat it as absentee.
+
+Therefore, score 55.
+
+But let's see the principle: ""Absentee Owner: None (mailing address differs from property)"". This might mean that the absentee owner field is ""None"", but the mailing address differs, so it's contradictory. Perhaps ""None"" means no data, but with note. I'll go with the note and assume absentee.
+
+So score 55.
+
+Then tier: C (50-69).
+
+Contact priority: medium.
+
+Applicant type: homeowner.
+
+Ideal contractor type: general.
+
+Red flags: ""Low property value"", ""Absentee owner with low property value may indicate landlord price-shopping"".
+
+Reasoning: The lead is a homeowner with a fresh HVAC permit, but the low property value suggests budget constraints, and the differing mailing address raises concerns about owner-occupancy.
+
+I think this is reasonable.
+
+Now, for output, I need valid JSON.
+
+Let's finalize:
+
+Score: 55
+
+Tier: C
+
+Reasoning: Homeowner with fresh HVAC permit indicates urgency, but low property value in Denton suggests budget-consciousness, and mailing address difference may imply non-owner occupancy reducing likelihood of high-value sale.
+
+Red flags: [""Low property value (<$400K)"", ""Mailing address differs from property (potential absentee owner)""]
+
+Ideal contractor type: general (since HVAC isn't in the list, but general covers HVAC)
+
+Contact priority: medium
+
+Applicant type: homeowner
+
+I think ""general"" is appropriate for HVAC.
+
+Now, for project clarity, ""hvac"" is specific enough for category, but in principles, it says ""Specific project description = serious buyer"", but ""hvac"" is the category, so it might be considered specific. I said vague, but actually for HVAC, ""hvac"" might be standard. I'll not deduct for project clarity. So if I don't deduct 5 points, then score becomes 60 with absentee, or 70 without.
+
+But I already considered absentee, so score 60 if no project clarity deduction.
+
+Let's reassess: Project description is ""hvac"", which is the same as category. In permit data, this might be sufficient. So I'll consider it specific, no deduction.
+
+Then score: start 50, homeowner +30 =80, property value <400K -20 =60, freshness +10 =70, absentee -10 =60. So score 60.
+
+With no absentee adjustment, 70.
+
+I think with absentee adjustment, 60 is good.
+
+I'll go with score 60.
+
+Tier C.
+
+Reasoning: Homeowner with very fresh HVAC permit, but low property value indicates price-sensitive segment, and absentee mailing address suggests landlord status likely to shop on price.
+
+Red flags: [""Property value in price-shopping segment"", ""Mailing address differs indicating possible absentee owner""]
+
+Ideal contractor type: general
+
+Contact priority: medium
+
+Applicant type: homeowner
+
+Now, for the output, I need to ensure JSON format.
+
+Let's write the JSON.",2025-12-07T11:56:00.125375,"{'prompt': 707, 'completion': 3978, 'reasoning': 3856}",0.00910067,ai-r1
+b41e06ad,65,C,"Homeowner with a moderate-value property in Dallas, indicating budget-consciousness. Permit is very fresh but project description is vague, suggesting early planning stage. Lead is decent but not high-value.",Vague project description,general,medium,homeowner,"We are given lead data and need to score it based on the provided principles.
+
+Lead data:
+- Owner: OSMAN MOHAMED (an individual name, not an LLC or builder)
+- Property Value: $475,650.0
+- Project Description: residential
+- Category: residential
+- Permit Date: 2025-12-05 (2 days ago from today? We assume today is 2025-12-07, so 2 days old)
+- City: dallas
+- Absentee Owner: False (mailing address differs from property) -> actually says False, meaning not absentee? Wait: ""Absentee Owner: False (mailing address differs from property)"" means that the mailing address is different from the property, but the flag is False? Possibly a mistake: The text says ""Absentee Owner: False (mailing address differs from property)"". It might be that the data indicates mailing address differs, but they marked as False? Or perhaps it's saying that the mailing address differs, so it is an absentee owner? Let's parse carefully: The field is ""Absentee Owner: False"" and then in parentheses it says ""(mailing address differs from property)"". That could be an explanation: It says False, meaning not absentee? But then why mention that mailing address differs? Possibly it's a note that the mailing address differs, but the system flagged it as False? Alternatively, maybe it's a contradiction. According to the data, it says ""Absentee Owner: False"" and then the note in parentheses is just additional info. But the note says ""mailing address differs from property"", which typically means absentee owner. However, the field explicitly says False. We need to follow the data as given: Absentee Owner: False. So we treat it as not an absentee owner. But the note might indicate a discrepancy. Since the scoring principles mention absentee owner as a factor, we have to use the flag. We'll assume the flag is correct: not absentee.
+
+But wait: In the output, we need to list red flags. If there is a discrepancy, we might note it. However, the data says ""False"" so we proceed with False.
+
+Now, let's break down the scoring:
+
+1. APPLICANT TYPE: The owner is OSMAN MOHAMED. It's an individual name, not an LLC, not a builder. So likely a homeowner. Therefore, it is ideal buyer, full score potential. So no cap, and we can score up to 100. We'll set applicant_type = ""homeowner"".
+
+2. PROPERTY VALUE: $475,650.0. According to the DFW market context:
+   - >$1.5M = premium
+   - >$1.0M = premium
+   - >$750K = nice suburbs, good budget
+   - >$550K = typical family, standard budget
+   - >$400K = starter home, budget-conscious
+   - <$400K = price-shopping
+
+   $475,650 is above $400K and below $550K. So it's in the ""Starter home, budget-conscious"" range. That might indicate the homeowner is budget-conscious, so not a high-value sale necessarily, but not the lowest. We'll factor this in.
+
+3. FRESHNESS: Permit date is 2025-12-05, which is 2 days ago. That is very fresh. But the category is ""residential"" and project description is ""residential"". That's vague. The freshness principle varies by category, but here category is just ""residential"". We don't have a specific project like roof, pool, etc. So we might need to infer from the description? The project description is ""residential"", which is vague. Possibly it's a general residential permit. The scoring principles mention categories like Roof/HVAC, Pool, Outdoor living/fence. Here it's just ""residential"". So we don't have a specific window. However, the permit date is very recent, so freshness is a positive factor. We'll consider it fresh.
+
+4. ABSENTEE OWNER: Given as False. So no adjustment.
+
+5. PROJECT CLARITY: The project description is ""residential"", which is very vague/generic. This suggests early stage, lower priority. So we deduct points for vagueness.
+
+6. MISSING DATA: We have all data, so no missing data adjustments.
+
+Now, we need to compute a score. We are not given a formula, so we must use judgment based on the principles.
+
+Let's start with a baseline based on applicant type: Since it's a homeowner, we can start high, say 80. But property value is in the budget-conscious range, so maybe not premium. That might bring it down. Freshness is good, but project clarity is poor. So we need to balance.
+
+We also need to consider the DFW market: Dallas city. Property value $475,650 in Dallas might be an average home. So likely a middle-class homeowner.
+
+We'll score step by step:
+
+- Applicant type: homeowner -> base score maybe 80-100 range. But we need to consider other factors.
+- Property value: $475,650 -> starter home, budget-conscious. This might lower the score because they are likely to be price-sensitive. So maybe deduct 10-15 points from a high base.
+- Freshness: 2 days old -> very fresh. That is a positive. For a general residential permit, maybe the window is not specified, but fresh is good. Add 5 points? But careful: The principles say freshness varies by category. Since category is residential, we might assume a standard 30-45 day window? But it's vague. We'll consider it a positive.
+- Absentee owner: False -> no adjustment.
+- Project clarity: ""residential"" is vague -> deduct points. Maybe deduct 10-15 points.
+- No missing data.
+
+Also, consider that the permit is for ""residential"" which could be anything from a minor renovation to a major addition. Without specifics, it's hard to gauge the value.
+
+We need to output a tier, reasoning, red flags, ideal contractor type, contact priority, and applicant type.
+
+Ideal contractor type: Since project description is just ""residential"", we might not know. But perhaps from category ""residential"", it could be a general contractor. So maybe ""general"".
+
+Contact priority: Based on score.
+
+Red flags: Possibly vague project description.
+
+Let's set a score.
+
+I'll start with a base of 75 for a homeowner with a decent property value. Then adjust:
+- Property value $475,650: budget-conscious, so maybe -5.
+- Freshness: +5 because very recent.
+- Project clarity: vague, so -10.
+Net: 75 -5 +5 -10 = 65.
+
+That puts it in the 50-69 range: ""Decent lead, work if capacity allows.""
+
+But we should also consider that the applicant is a homeowner, so potential for a good sale if the project is substantial. However, the vague description might mean they are just starting to think about it.
+
+Maybe we can be more optimistic: Since it's very fresh and homeowner, we could score higher, but the vagueness is a big drawback. Also, property value is not high-end.
+
+Another approach: The scoring principles say for applicant type, homeowner is ideal, so full potential. But property value and project clarity will drag down.
+
+Maybe we can think of it as: The lead is a homeowner in Dallas with a moderate-value home, who just pulled a permit for something residential. They might be planning a renovation, but we don't know what. So it's a moderate-quality lead.
+
+I'll go with a score of 65.
+
+Tier: Based on calibration, 65 is in 50-69, so tier C? Wait, the calibration:
+- 90-100: A? (call today)
+- 70-89: B? (strong lead)
+- 50-69: C? (decent lead)
+- 30-49: D? (low priority)
+- <30: F? (flag for review)
+
+The output tier expects A, B, or C. Probably A for 90-100, B for 70-89, C for 50-69, and maybe D for below? But the output says tier: ""<A|B|C>"", so only A, B, or C. So we need to map: 
+- 90-100: A
+- 70-89: B
+- 50-69: C
+- 30-49: might be C? But it says ""cherry-pick only"", so maybe still C? Actually, the output format only allows A, B, C. So we'll assume:
+  A: 90-100
+  B: 70-89
+  C: 0-69? But that would include low scores. However, the calibration says <30 is flag for review. Possibly tier C is for scores 50-69, and scores below 50 are also C but with low priority? But the output format says tier is A, B, or C, so we have to choose. I think we should follow:
+  A: 90-100
+  B: 70-89
+  C: 0-69 (but with the understanding that very low scores are flagged via red flags and low contact priority)
+
+Given my score of 65, tier is C.
+
+Red flags: [""Vague project description""] maybe also ""Budget-conscious property value""? But that's not a red flag per se. Possibly no red flags other than vagueness.
+
+Ideal contractor type: Since we don't know the project, maybe ""general"". Or we could infer from the category ""residential"" that it might be a general home improvement. But it could be a pool, roof, etc. However, the description is just ""residential"", so it's unknown. I'll put ""general"".
+
+Contact priority: Based on score 65, it's medium? Actually, calibration: 50-69 is ""Decent lead, work if capacity allows."" So that suggests medium priority. But contact_priority in output is high/medium/low. I'd say medium.
+
+Applicant type: homeowner.
+
+Reasoning: Need 2-3 sentences.
+
+Let's craft reasoning: ""Homeowner with a moderate-value property in Dallas, indicating budget-consciousness. Permit is very fresh but project description is vague, suggesting early planning stage. Lead is decent but not high-value.""
+
+Now, output JSON.
+
+But wait: There's also the note about absentee owner: False, but mailing address differs. That might be a discrepancy. Possibly it is actually absentee? I'll check: The data says ""Absentee Owner: False (mailing address differs from property)"". It might be that the system flagged it as not absentee, but the mailing address is different. That could be an error. Possibly it is an absentee owner but mislabeled. We might consider that as a red flag or note. But since the field says False, we'll go with False. However, in red flags, we could mention ""Mailing address differs from property, possible absentee owner misclassification"" if we think it's a concern.
+
+Given the scoring principles, absentee owner adjustment depends on property value. Here property value is $475,650, which is in the middle range. If it were absentee, no adjustment. So it wouldn't affect score much anyway. So we can ignore.
+
+Thus, final score: 65.
+
+I'll adjust slightly: Maybe 68? But let's stick to 65.
+
+Alternatively, maybe the property value is above $400K, so not the worst. And freshness is high. So perhaps 70? But then tier B. I think 65 is safe.
+
+I'll compute systematically:
+
+Start with applicant type: Homeowner, so base 80.
+Property value: $475,650 -> starter home, budget-conscious: deduct 10 -> 70.
+Freshness: 2 days -> add 5 -> 75.
+Project clarity: vague -> deduct 10 -> 65.
+Absentee: false -> no change.
+No missing data.
+
+So 65.
+
+I'll output JSON.",2025-12-07T11:58:31.454396,"{'prompt': 706, 'completion': 2661, 'reasoning': 2557}",0.006215890000000001,ai-r1
+08e697c3,65,B,"Homeowner applicant is a positive signal, but property value below $400K indicates budget-conscious price-shopping behavior. Permit is very fresh (2 days), suggesting urgency, yet the vague project description 'plumbing' lowers intent clarity.",Low property value for DFW market|Vague project description,general,medium,homeowner,"First, I need to score this lead based on the provided data and principles. Let's break down the lead data:
+
+- Owner: RAFFERTY SUSANNA LOUISE CAMP – This appears to be a homeowner's name, not an LLC, investor, or builder. So, applicant type is likely homeowner.
+
+- Property Value: $334,040.0 – According to the property value context, this is below $400K, which falls into the ""Starter home, budget-conscious"" or ""Price-shopping segment"" since it's <$400K.
+
+- Project Description: plumbing – The category is also plumbing. So, it's a specific project, but ""plumbing"" is somewhat vague. It's not highly specific like ""water heater replacement"" but it's clear it's a plumbing project.
+
+- Permit Date: 2025-12-05 (2 days ago) – This is very fresh. For plumbing, I need to consider freshness. The principles don't specify a window for plumbing, but it's similar to HVAC or roof? Plumbing might be urgent, so freshness is good.
+
+- City: dallas – This is in DFW, so relevant.
+
+- Absentee Owner: False – Mailing address differs from property, but it's marked as False. Wait, the data says ""Absentee Owner: False (mailing address differs from property)"". There's a contradiction: it says False, but then in parentheses, it says ""mailing address differs from property"". I need to interpret this. The data field says ""Absentee Owner: False"", but the note indicates mailing address differs. According to the principles, absentee owner is context-dependent. Since it's marked False, I should assume it's not absentee, but the note suggests there's a difference. I'll go with the explicit value: False.
+
+Now, applying the scoring principles:
+
+1. **Applicant Type**: The owner name looks like a homeowner, not an LLC or builder. So, I'll classify as homeowner. Homeowner means full score potential, so no cap. I'll set applicant_type as ""homeowner"".
+
+2. **Property Value**: $334,040.0 is less than $400K, so this is in the ""<$400K = Price-shopping segment"". This is a negative signal because budget-conscious buyers might price-shop.
+
+3. **Freshness**: Permit date is 2 days ago, so very fresh. For plumbing, I need to determine the freshness window. The principles list categories like roof, HVAC, pool, outdoor living, but not plumbing. Plumbing might be similar to HVAC in terms of urgency, but it's not specified. I'll assume that for plumbing, freshness within 14 days is good, similar to roof/HVAC. Since it's 2 days ago, it's fresh, so positive signal.
+
+4. **Absentee Owner**: Marked as False, so no adjustment needed. Even though mailing address differs, it's not considered absentee. So, no points added or deducted.
+
+5. **Project Clarity**: Project description is ""plumbing"", which is specific in category but vague in scope. It's not highly detailed, so it might indicate early stage or lower priority. According to principles: ""Specific project description = serious buyer"", ""Vague/generic = early stage, lower priority"". ""Plumbing"" is somewhat generic, so I'll consider it vague, which might lower the score.
+
+6. **Missing Data**: All data seems present, so no adjustments for missing data.
+
+Now, I need to compute a score from 0 to 100. I'll start with a base score and adjust based on factors.
+
+Since applicant type is homeowner, I can start with a high base score. But property value is low, which is negative. Freshness is positive. Project clarity is somewhat negative.
+
+Let's think about the weight of each factor. Applicant type is the most important signal. For homeowner, I should have a high potential score, but other factors can reduce it.
+
+I need to calibrate based on the tiers: 90-100 is high-value homeowner with urgent need. Here, property value is low, so not high-value. Urgency might be there due to freshness, but budget is low.
+
+Score ranges: 70-89 for strong lead, 50-69 for decent lead, etc.
+
+I'll assign points:
+
+- Applicant Type: Homeowner – let's say base score of 80 (since full potential, but adjusted by other factors).
+
+- Property Value: <$400K indicates price-shopping, so deduct points. Maybe reduce by 20 points? Since it's a significant negative.
+
+- Freshness: Very fresh, within 2 days, so add points. For roof/HVAC, freshness within 14 days is good, so maybe add 10 points.
+
+- Project Clarity: Vague description, so deduct points. Maybe deduct 5 points.
+
+- Absentee Owner: No adjustment.
+
+So, starting from 80, deduct 20 for property value = 60, add 10 for freshness = 70, deduct 5 for vague project = 65. That gives 65, which is in the decent lead range (50-69). But 65 is on the higher end of decent.
+
+I should consider the category. Plumbing might be a necessary repair, so urgency could be high, but budget might limit the sale value. The scoring is for likelihood to convert to a high-value sale. High-value sale might mean large project or premium service. For plumbing, it could be a simple fix or a major replacement. With low property value, it might not be a high-value sale.
+
+The principles don't specify how to score plumbing specifically. I need to use judgment.
+
+Also, for applicant type, since it's homeowner, no cap, but property value might cap the potential.
+
+Looking at the calibration: 90-100 for high-value homeowner with urgent need. Here, homeowner but not high-value due to property value, so not in that tier.
+
+70-89 for strong lead. With a score of 65, it's close but below 70.
+
+I could adjust. Let's consider the absentees owner note. It says mailing address differs, but absentee is false. In some systems, if mailing address differs, it might still be considered absentee for scoring. But the data explicitly says False, so I'll stick with that.
+
+Project description is ""plumbing"", which is the category, so it might be from a permit application, which could be for a specific plumbing work. But it's not detailed.
+
+I think a score around 65 is reasonable.
+
+Now, for tier: A, B, or C. Based on calibration, 65 is in the 50-69 range, which is decent lead, so tier B? But let's define tiers: A might be 70+, B 50-69, C below 50. Since 65 is in 50-69, tier B.
+
+Red flags: Low property value indicating price-shopping, and vague project description.
+
+Ideal contractor type: This is plumbing, so ideal contractor type should be ""general"" or specifically plumbing? The options are pool, outdoor_living, roof, fence, general. Plumbing might fall under general. So, ideal_contractor_type: ""general"".
+
+Contact priority: Based on score 65, which is decent, but not high. Contact priority might be medium. But freshness is high, so perhaps high priority? But overall score is 65, so medium.
+
+Applicant type: homeowner.
+
+Let's formalize the reasoning.
+
+Reasoning: Homeowner applicant is positive, but low property value suggests budget constraints and price-shopping behavior. Permit is very fresh, indicating urgency, but project description is vague, which may lower intent.
+
+Red flags: [""Low property value for DFW market"", ""Vague project description""]
+
+Ideal contractor type: ""general"" since plumbing is a general trade.
+
+Contact priority: ""medium"" based on score.
+
+Score: 65
+
+Tier: ""B""
+
+Now, for JSON output.
+
+I need to ensure the output is valid JSON only.
+
+So, I'll write:
+
+{
+  ""score"": 65,
+  ""tier"": ""B"",
+  ""reasoning"": ""Homeowner applicant is positive, but low property value suggests budget constraints and price-shopping behavior. Permit is very fresh, indicating urgency, but project description is vague, which may lower intent."",
+  ""red_flags"": [""Low property value for DFW market"", ""Vague project description""],
+  ""ideal_contractor_type"": ""general"",
+  ""contact_priority"": ""medium"",
+  ""applicant_type"": ""homeowner""
+}
+
+But let's double-check the applicant type. The owner name is ""RAFFERTY SUSANNA LOUISE CAMP"", which is likely an individual, so homeowner is correct.
+
+Property value is $334,040.0, which is indeed low for DFW, especially in Dallas city.
+
+Freshness: 2 days ago, so very fresh.
+
+I think this is reasonable.",2025-12-07T12:00:33.419917,"{'prompt': 710, 'completion': 1992, 'reasoning': 1870}",0.00475298,ai-r1
+0975e750,75,B,"Homeowner with a property value indicating good budget in Dallas, and the permit is very fresh (2 days ago). However, the project description is vague ('plumbing'), which may indicate lower intent or early-stage planning.",Vague project description,general,high,homeowner,"We are given lead data and need to score it on a 0-100 scale based on likelihood to convert to a high-value sale.
+
+Lead Data:
+- Owner: GRIFFIN TIMOTHY &
+- Property Value: $806,030.0
+- Project Description: plumbing
+- Category: plumbing
+- Permit Date: 2025-12-05 (2 days ago)
+- City: dallas
+- Absentee Owner: False (mailing address differs from property)
+
+Scoring Principles:
+1. APPLICANT TYPE: most important signal.
+   - Homeowner = ideal buyer (full score potential)
+   - LLC/Investor = usually price-shops (cap at 60)
+   - Custom builder = mixed signal (cap at 50)
+   - Production/volume builder = discard (should be filtered already)
+
+   Here, owner is ""GRIFFIN TIMOTHY &"". This looks like an individual's name, not an LLC or builder. So likely a homeowner. However, note the ""&"" might indicate a joint ownership (like husband and wife). We'll assume homeowner.
+
+2. PROPERTY VALUE: DFW market context.
+   - >$1.5M = premium buyer
+   - >$1.0M = premium buyer
+   - >$750K = Nice suburbs, good budget
+   - >$550K = Typical family, standard budget
+   - >$400K = Starter home, budget-conscious
+   - <$400K = Price-shopping segment
+
+   Property value is $806,030.0. This is above $750K and below $1.0M. So it falls in the ""Nice suburbs, good budget"" category. This is positive.
+
+3. FRESHNESS: varies by category.
+   - Roof/HVAC: Fresh within 14 days, stale after
+   - Pool: 60-90 day window is normal
+   - Outdoor living/fence: 30-45 day window
+   - Anything >90 days = stale
+
+   Here, category is plumbing. The scoring principles don't specify a freshness window for plumbing. We need to infer. Plumbing might be a repair or replacement, so possibly urgent. However, the principles only list specific categories. We might assume a general rule: if not specified, maybe a shorter window? But note: ""Anything >90 days = stale"" is a catch-all. Permit date is 2025-12-05, which is 2 days ago. So it's very fresh. That's positive.
+
+4. ABSENTEE OWNER: context-dependent.
+   - Absentee + >$750K property = vacation home, wealthy, +5 points
+   - Absentee + <$400K property = landlord, price-shops, -10 points
+   - Absentee + middle range = ambiguous, no adjustment
+
+   Here, Absentee Owner is False. So no adjustment.
+
+5. PROJECT CLARITY:
+   - Specific project description = serious buyer
+   - Vague/generic = early stage, lower priority
+   - Missing description = assume lower intent
+
+   Project Description: ""plumbing"". That is vague/generic. It doesn't specify what exactly: repair, replacement, installation, etc. So likely early stage, lower priority.
+
+6. MISSING DATA = assume worst case:
+   - Unknown owner = -10
+   - $0 property value = -10
+   - Missing project description = -5
+
+   Here, we have owner, property value, and description. So no missing data penalties.
+
+Now, we need to compute a score. We start by considering applicant type: homeowner, so full score potential. But we have to factor in other aspects.
+
+Let's think of a baseline score. Since homeowner, we can start high. But property value is good but not premium. Project description is vague. Freshness is excellent.
+
+We need to assign points based on these factors. The principles don't give explicit points for each, but we can infer from the calibration.
+
+We should also consider that the category is plumbing. Plumbing projects can vary in value. Some plumbing projects are high-value (like repiping, bathroom remodels) but the description is just ""plumbing"", so unclear.
+
+We'll need to assign a tier and contact priority.
+
+Let's break down:
+
+Applicant Type: homeowner -> high score potential.
+Property Value: $806K -> good budget, so positive.
+Freshness: 2 days old -> very fresh, positive.
+Absentee Owner: false -> neutral.
+Project Clarity: vague -> negative.
+
+Now, how to quantify? We can think of a base score from applicant type and property value, then adjust for freshness and clarity.
+
+Maybe start with a base score from property value:
+- >$1.5M: 90-100?
+- >$1.0M: 80-90?
+- >$750K: 70-80?
+- >$550K: 60-70?
+- >$400K: 50-60?
+- <$400K: <50?
+
+But the principles say applicant type is most important. So if homeowner, we can go high. But if property value is lower, it might cap.
+
+Given that property value is $806K, it's in the >$750K tier, which is ""Nice suburbs, good budget"". That suggests a strong lead.
+
+However, project description is vague, which might lower the score.
+
+Also, note that the category is plumbing. The scoring principles don't mention plumbing specifically, so we treat it as a general project.
+
+Let's think about the ideal contractor type. The principles list: pool, outdoor_living, roof, fence, general. Plumbing might fall under ""general"" if not specialized.
+
+Now, let's compute a score step by step:
+
+We can assign a score from 0-100 based on factors:
+
+1. Applicant Type: Homeowner -> assign 90 as starting point? But then adjust based on other factors. However, the cap for LLC is 60, so homeowner should be higher.
+
+But note: the calibration says 90-100 is ""Call today, high-value homeowner with urgent need"". So we need to see if this lead meets that.
+
+Given the vague description, it might not be urgent.
+
+Maybe we can think:
+- Applicant type: homeowner -> base 80? (since full potential, but not automatically 90+)
+- Property value: >$750K -> add 5? or set a minimum?
+- Freshness: very fresh -> add 10? but depends on category.
+- Project clarity: vague -> subtract 10?
+
+But that seems arbitrary.
+
+Alternatively, we can use the tier system to guide.
+
+Let's see the output: tier A, B, C. Probably:
+A: high priority
+B: medium
+C: low
+
+Given the data, I'd lean towards a B tier because it's a homeowner with good property value, but the project description is vague.
+
+But the permit is very fresh, so maybe medium-high.
+
+We need to assign a score.
+
+Consider the red flags: maybe the vague description is a red flag.
+
+Also, note that the owner name has ""&"" which might indicate it's a couple, so still homeowner.
+
+I'll assume applicant_type is homeowner.
+
+Now, let's assign a score. I'll think of it as:
+
+Base score from applicant type: if homeowner, start at 70? Then adjust.
+
+Property value: $806K is above $750K, so ""good budget"", add 10? That would bring to 80.
+
+Freshness: Plumbing might be urgent, but not specified. Since it's only 2 days old, it's very fresh. Add 5? -> 85.
+
+Project clarity: vague, subtract 10 -> 75.
+
+Absentee: false, no adjustment.
+
+So score 75.
+
+But is plumbing a high-value sale? Plumbing can be, but not as high as pool or outdoor living sometimes. But we don't have specifics.
+
+Maybe we should be conservative.
+
+Another approach: since the description is just ""plumbing"", it might be a simple repair, not a high-value project. So lower score.
+
+The scoring principles are for ""likelihood to convert to a high-value sale"". So we need to assess if this is likely to be high-value.
+
+Property value suggests the homeowner has money, so they might spend on quality plumbing work.
+
+But without specifics, it's uncertain.
+
+I'll go with a score around 70-75.
+
+Let's check the calibration:
+70-89: Strong lead, worth prioritizing.
+
+So that seems appropriate.
+
+Now, tier: B? But 75 might be B or A? Calibration says 70-89 is strong lead, so maybe A tier is for 90-100. So 75 would be B? Actually, the tier might correspond to score: A for 90-100, B for 70-89, C for below. But then there is 50-69 which is decent, and 30-49 low. So maybe:
+A: 90-100
+B: 70-89
+C: 50-69
+D: 30-49
+E: <30
+
+But output only allows A, B, C. So likely:
+A: high priority (90-100)
+B: medium (70-89)
+C: low (below 70)
+
+But wait, 70-89 is strong lead, so that might be B? But then 50-69 is decent, which might be C.
+
+Given that, a score of 75 would be B.
+
+But let's see the ""contact_priority"": high, medium, low. That might align with score.
+
+For a score of 75, contact priority might be medium? Or high? The calibration says ""strong lead, worth prioritizing"", so maybe high priority? But the tier B might indicate medium.
+
+I'll set contact_priority based on score: 
+high for 70+, medium for 50-69, low for below.
+
+So for 75, contact_priority = high.
+
+But the output format asks for contact_priority as high, medium, low.
+
+Now, red flags: we have one: vague project description.
+
+Ideal contractor type: plumbing is not listed in the options: pool, outdoor_living, roof, fence, general. So ""general"" seems appropriate.
+
+Applicant type: homeowner.
+
+Now, reasoning: We need 2-3 sentences.
+
+Let's write: ""Homeowner with good property value in Dallas, permit is very fresh. However, project description is vague ('plumbing'), which may indicate early-stage planning or lower intent. Still a strong lead due to homeowner status and recent permit.""
+
+Score: I'll set 73.
+
+Let's compute more systematically:
+
+Start with applicant: homeowner -> base 80 (since full potential but not automatic 90).
+Property value: $806K -> above $750K, so add 5 -> 85.
+Freshness: 2 days old, plumbing likely urgent? Add 5 -> 90.
+But project clarity: vague, subtract 15 -> 75.
+Then maybe adjust for category: plumbing is not specifically high-value like pool, so subtract 2? -> 73.
+
+That seems plausible.
+
+Alternatively, maybe start with applicant and property value combined: homeowner with >$750K property -> 80.
+Freshness: +5 -> 85.
+Clarity: -10 -> 75.
+No absentee adjustment -> 75.
+
+I'll go with 75.
+
+Now, tier: B (since 75 is in 70-89).
+Contact priority: high (since 70+).
+Red flags: [""Vague project description""]
+Ideal contractor type: general
+Applicant type: homeowner
+
+But wait, the category is plumbing. There might be plumbing-specific contractors. But the options given are limited, so ""general"" is the catch-all.
+
+Now, output JSON.
+
+Let's write it.",2025-12-07T12:01:50.629766,"{'prompt': 706, 'completion': 2583, 'reasoning': 2473}",0.0060450700000000005,ai-r1
+a6178e0a,52,C,"Homeowner lead with very fresh permit, but low property value suggests a price-sensitive customer likely shopping for a low-budget concrete project.",Low property value indicating price-sensitive customer|Vague project description,general,medium,homeowner,"We are given the following lead data:
+- Owner: ZAVALA GENARO (a name, likely an individual)
+- Property Value: $198,650.0
+- Project Description: concrete
+- Category: concrete
+- Permit Date: 2025-12-05 (2 days ago from now? Assuming current date is 2025-12-07)
+- City: dallas
+- Absentee Owner: False (mailing address differs from property) -> Actually says False, so not absentee? Wait: ""Absentee Owner: False"" means mailing address does NOT differ? Actually, the data says ""Absentee Owner: False (mailing address differs from property)"". This is confusing. It says False, but then in parentheses it says ""mailing address differs from property"". That would normally mean it IS absentee. However, the field is explicitly set to False. Possibly the description in parentheses is a note, but the value is False. Let's re-read: ""Absentee Owner: False (mailing address differs from property)"". Typically, if mailing address differs, it is an absentee owner. But here it says False, so maybe the note is misleading? I'll interpret it as: the field ""Absentee Owner"" is False, meaning the owner is not absentee. The note in parentheses might be a generic explanation, but in this case, it's not applicable because it's False. So I'll take it as not absentee.
+
+However, let's be precise: The data says ""Absentee Owner: False (mailing address differs from property)"". This could be a format where the value is False, and the parentheses is a comment that when it is true, it means mailing address differs. So since it's False, mailing address does not differ? Actually, if it says ""False"" and then a note that says ""mailing address differs from property"", that note might be inconsistent. I think the safest is to use the boolean value provided: Absentee Owner = False. So we'll treat as not absentee.
+
+Now, let's score step by step.
+
+1. APPLICANT TYPE: The owner is ""ZAVALA GENARO"". This appears to be an individual's name, not an LLC or builder. So we assume homeowner. Therefore, full score potential. But note: The scoring principles say ""Homeowner = ideal buyer (full score potential)"". So we can assign full potential, but we'll adjust based on other factors. So applicant_type = ""homeowner"".
+
+2. PROPERTY VALUE: $198,650.0. In DFW market context, this is below $400K. According to the principle: ""<$400K = Price-shopping segment"". This is a negative signal. So property value is low, indicating budget-conscious or price-shopping.
+
+3. FRESHNESS: Permit date is 2025-12-05, which is 2 days ago (assuming current date is 2025-12-07). So it's very fresh. However, the category is ""concrete"". The scoring principles give freshness windows for specific categories: Roof/HVAC, Pool, Outdoor living/fence. For ""concrete"", not explicitly mentioned. But note: The project description is ""concrete"" and category is ""concrete"". This might be a concrete project like driveway, patio, etc. Possibly similar to outdoor living? But concrete work can be standalone. Since not explicitly listed, we might consider it as a general project. The principle says ""Anything >90 days = stale"". This lead is only 2 days old, so it's very fresh. So freshness is a positive.
+
+4. ABSENTEE OWNER: We have Absentee Owner = False. So no adjustment needed. According to principles, adjustments only apply if absentee. So no points added or subtracted.
+
+5. PROJECT CLARITY: Project description is ""concrete"". That is somewhat specific but also vague. It says ""concrete"" which could mean a concrete slab, driveway, patio, etc. It's not highly detailed. The principle says ""Specific project description = serious buyer; Vague/generic = early stage, lower priority"". ""concrete"" is somewhat generic. So I'd consider it vague/generic, so lower priority.
+
+6. MISSING DATA: We have all data present. So no deductions.
+
+Now, let's think about scoring. We need to combine these factors into a score 0-100. The most important signal is applicant type. Here it's homeowner, so that's good. But property value is very low, which suggests price-shopping. Project clarity is vague. Freshness is good.
+
+We need to assign a tier and contact priority. Also, ideal contractor type: The project is concrete, so likely a concrete contractor. The options given are: pool, outdoor_living, roof, fence, general. Concrete might fall under outdoor_living or general. Possibly general.
+
+We'll start with a baseline score. Since homeowner, we can start high, but property value is a big negative. Let's quantify:
+
+Based on property value: <$400K = price-shopping segment. That likely lowers the score significantly. Also, project clarity is vague.
+
+Maybe we can score as follows:
+
+Applicant type: homeowner -> no cap, but we consider other factors.
+
+Property value: $198,650 is low. In DFW, this is likely a lower-income area. So the buyer may be very price-sensitive.
+
+Freshness: 2 days old -> positive.
+
+Absentee: none.
+
+Project clarity: vague -> negative.
+
+Overall, I'd say this is a lower-value lead. The property value suggests limited budget. Concrete projects can range from small repairs to larger installations. With such a low property value, the project might be small.
+
+Given the calibration: 90-100 is high-value homeowner with urgent need. This is not high-value. 70-89 is strong lead. This might not be strong due to low property value. 50-69 is decent lead. Possibly in that range? But with price-shopping segment, it might be lower.
+
+Let's try to assign points:
+
+We could assign points per factor, but the instructions don't give a precise formula. We have to use judgment.
+
+Consider: Applicant type: homeowner (good). Property value: <400K (bad). Freshness: very fresh (good). Project clarity: vague (bad). No absentee issue.
+
+I'd say this lead is likely to convert to a sale, but the sale might be low-value and the customer might be price-sensitive. So it's not a high-value sale. The scoring is based on ""likelihood to convert to a high-value sale"". So we need to consider both likelihood and value. Even if they convert, if it's a small concrete job, it might not be high-value.
+
+Thus, score should be moderate to low.
+
+Looking at the tiers: A, B, C. Probably C or B.
+
+I'll score it around 45-55 maybe.
+
+Let's check red flags: Low property value, vague project description.
+
+Ideal contractor type: concrete work, so general contractor or concrete specialist. The options don't include concrete specifically, so perhaps ""general"" or ""outdoor_living"". Concrete often relates to outdoor living (patios, driveways). I'll say ""general"" or ""outdoor_living"". But note: The category is concrete, so maybe outdoor_living if it's a patio, but could be a slab for a shed, etc. I'll put ""general"".
+
+Contact priority: Based on score, if score is around 50, it's ""Decent lead, work if capacity allows"" so priority medium? Actually calibration: 50-69 is decent lead, work if capacity allows. That suggests medium priority? But the contact_priority field has high/medium/low. For 50-69, I'd say medium. For 30-49, low. So if I score 50, then medium.
+
+But let's see: The lead is very fresh, so maybe we should contact soon, but the low property value suggests it might not be high-value. So maybe medium.
+
+I'll set score to 52.
+
+Tier: Based on score 52, tier C? Possibly B? Usually A=90+, B=70-89, C=50-69, D=30-49, F=<30. So 52 would be C.
+
+Reasoning: Briefly explain.
+
+Red flags: [""Low property value indicating price-sensitive customer"", ""Vague project description""]
+
+Ideal contractor type: ""general""
+
+Contact priority: ""medium""
+
+Applicant type: ""homeowner""
+
+Now, let's write the JSON.
+
+Note: The output must be valid JSON only.
+
+So:
+
+{
+  ""score"": 52,
+  ""tier"": ""C"",
+  ""reasoning"": ""Homeowner lead with very fresh permit, but low property value suggests price-sensitive customer and project description is vague."",
+  ""red_flags"": [""Low property value indicating price-sensitive customer"", ""Vague project description""],
+  ""ideal_contractor_type"": ""general"",
+  ""contact_priority"": ""medium"",
+  ""applicant_type"": ""homeowner""
+}
+
+But let's double-check: The property value is $198,650, which is indeed low. Also, note that the city is Dallas. In Dallas, there are areas with lower property values. So that's consistent.
+
+Another thing: The permit date is 2025-12-05, which is in the future relative to now? Actually, the current date is not given, but it says ""2 days ago"" in the description. So I assume it's recent. That's fine.
+
+I think this is reasonable.",2025-12-07T12:07:57.737604,"{'prompt': 705, 'completion': 2112, 'reasoning': 2010}",0.005013030000000001,ai-r1
+b2b70f22,60,C,"Homeowner applicant is ideal and the lead is very fresh, but the low property value indicates a price-sensitive segment likely to shop for budget options. The vague project description ('concrete') also suggests lower initial intent.",Low property value (price-shopping segment)|Vague project description,general,medium,homeowner,"We are given:
+ LEAD DATA:
+ - Owner: DIAZ ANTONIO M & BEVERLY O (appears to be homeowners, not LLC or builder)
+ - Property Value: $309,500.0
+ - Project Description: concrete
+ - Category: concrete
+ - Permit Date: 2025-12-05 (2 days ago) → so very fresh
+ - City: dallas
+ - Absentee Owner: False (mailing address differs from property) → Actually, it says False, meaning the mailing address does NOT differ? Wait: the field says ""Absentee Owner: False (mailing address differs from property)"". The way it's written: ""False (mailing address differs from property)"" might be a note that it is false because the mailing address differs? Actually, let's parse: The field is ""Absentee Owner"", and it says ""False"", and then in parentheses it says ""(mailing address differs from property)"". That is confusing. Possibly the note is that the mailing address differs from property, but the Absentee Owner flag is False? That would be contradictory. Alternatively, maybe the note is part of the field: ""False (mailing address differs from property)"" means that the absentee owner flag is set to False, but then there is a note that the mailing address differs? That would imply they are absentee? Actually, let's read carefully: ""Absentee Owner: False (mailing address differs from property)"". It could be that the data says ""False"" and then in parentheses is an explanation that the mailing address differs, which would normally indicate absentee, but the flag is false. Possibly a data inconsistency. We'll rely on the flag: if Absentee Owner is False, then we treat as not absentee. But the note says mailing address differs, so maybe it is actually absentee? The scoring principles say: ""Absentee Owner (context-dependent): ..."" We have to decide. Since the field explicitly says False, we'll take it as not absentee. However, if the mailing address differs, that might be a red flag for something else? But for scoring, we'll follow the flag.
+
+ Let's break down by scoring principles:
+
+ 1. APPLICANT TYPE: The owner is listed as ""DIAZ ANTONIO M & BEVERLY O"". This appears to be individuals, not an LLC or builder. So we assume homeowner. That is ideal. So full score potential.
+
+ 2. PROPERTY VALUE: $309,500.0. According to the DFW market context:
+    - <$400K = Price-shopping segment. This is below $400K, so we consider this as the price-shopping segment. That is a negative.
+
+ 3. FRESHNESS: The permit date is 2025-12-05, which is 2 days ago. Very fresh. However, we note that the category is ""concrete"". What is the typical window for concrete? The principles mention specific categories: Roof/HVAC, Pool, Outdoor living/fence. Concrete is not explicitly listed. But note that the project description and category are both ""concrete"". We might consider concrete as similar to outdoor living or a specific trade. Since it's not listed, we can assume a general rule: anything >90 days is stale. This is only 2 days old, so very fresh. Freshness is a positive.
+
+ 4. ABSENTEE OWNER: The flag is False. But note the parentheses says ""mailing address differs from property"". That might indicate that the owner does not live at the property. However, the flag is False, so we will treat as not absentee. But if we consider the note, maybe it is actually absentee? The scoring principles say: Absentee + <$400K property = landlord, price-shops, -10 points. But here the property is <$400K and if absentee, that would be a negative. However, since the flag is False, we do not apply the absentee adjustment. But we might note the discrepancy.
+
+ 5. PROJECT CLARITY: The project description is ""concrete"". That is somewhat specific but also could be vague. It's not very detailed (like ""concrete patio"" or ""concrete driveway""). So it might be considered vague/generic. According to principles: ""Vague/generic = early stage, lower priority"". So that is a negative.
+
+ 6. MISSING DATA: We have all data, so no adjustments.
+
+ Now, we need to assign a score from 0-100. We'll start with a baseline and adjust.
+
+ Since the applicant is a homeowner, we can start with a high baseline, but the property value is low (price-shopping segment). Freshness is high, project clarity is low.
+
+ Let's think about the category: concrete. This might be a project like a driveway, patio, sidewalk, etc. It could be a high-value project, but the property value suggests the homeowner might be budget-conscious.
+
+ We need to consider the tier and contact priority.
+
+ Steps to score:
+
+ 1. Applicant Type: Homeowner -> we can set a base score in the high range, but then adjust down for other factors. Let's say base score of 80 (since homeowner is ideal).
+
+ 2. Adjust for property value: <$400K -> price-shopping segment. This should drop the score significantly. How much? Looking at the calibration, a score of 80 would be ""Strong lead"". But a price-shopping segment might drop it to ""Decent lead"" (50-69) or even lower. Let's say we deduct 20 points for price-shopping? That would bring it to 60.
+
+ 3. Freshness: Very fresh, so we might add some points. Since it's only 2 days old and for concrete (which might have a similar window to outdoor living? 30-45 days), we can add 5 points for being very fresh. So 65.
+
+ 4. Absentee Owner: We are not adjusting because flag is False. But if we consider the note, maybe we should treat as absentee? I'll stick with the flag. So no adjustment.
+
+ 5. Project Clarity: The description is ""concrete"" which is vague. According to principles: vague/generic -> lower priority. So we deduct 5 points. So 60.
+
+ 6. No missing data.
+
+ So we are at 60. That is in the 50-69 range: ""Decent lead, work if capacity allows"".
+
+ However, note that the property value is low and the project might be a small concrete job. But we don't know the scope.
+
+ Also, note that the applicant type is homeowner, so we don't cap the score. But the other factors are not great.
+
+ Let's consider the tier:
+   A: 90-100
+   B: 70-89
+   C: 50-69
+   Below 50 would be D or lower, but our tiers are A, B, C. The calibration says:
+     90-100: Call today
+     70-89: Strong lead
+     50-69: Decent lead
+     30-49: Low priority
+     <30: Flag for review
+
+ We have 60, so that is C tier.
+
+ Red flags: 
+   - Low property value (price-shopping segment)
+   - Vague project description
+   - Possibly absentee? But we are ignoring that because the flag says false.
+
+ Ideal contractor type: The category is concrete, so a concrete contractor. But the project is just ""concrete"", so maybe a general concrete contractor.
+
+ Contact priority: Based on score 60, it's in the decent lead range, so medium priority? But note the calibration for 50-69: ""work if capacity allows"". So we can set contact_priority to ""medium"".
+
+ Applicant type: homeowner.
+
+ Let's structure the JSON.
+
+ However, note that the scoring principles say for property value: <$400K = Price-shopping segment. That is a negative. And for absentee owner, if absentee and <$400K, then -10. But here we are not absentee, so no adjustment.
+
+ Also, note that the permit date is in the future? 2025-12-05? That is 2 days ago? But today is 2025-12-07? Actually, wait: the current date is not given. But the permit date is 2025-12-05, and we are told it was 2 days ago. So that is very fresh.
+
+ Let's check: if the permit date is in the future, that might be a data error? But we'll assume it's correct.
+
+ We'll go with the above.
+
+ However, we might also consider that the property value is low and the owner might be a landlord (if absentee). But we are told absentee is false, so not.
+
+ Let's write the JSON.
+
+ Score: 60
+ Tier: C
+ Reasoning: Homeowner with a fresh permit, but the low property value indicates a price-sensitive segment and the project description is vague, suggesting early-stage planning.
+ Red flags: [""Low property value (price-shopping segment)"", ""Vague project description""]
+ Ideal contractor type: general (concrete)
+ Contact priority: medium
+ Applicant type: homeowner
+
+ But note: the category is concrete, so ideal contractor type might be a concrete specialist. We can set to ""general"" or maybe ""concrete""? The options given are: pool, outdoor_living, roof, fence, general. Since concrete is not listed, but it is a general trade, we can set to ""general"".
+
+ Alternatively, if we think concrete is part of outdoor living, we could set to ""outdoor_living"". But the category is concrete, so let's set to ""general"".
+
+ Let's output.",2025-12-07T12:11:55.596367,"{'prompt': 711, 'completion': 2153, 'reasoning': 2034}",0.0051061200000000005,ai-r1
+f7b1a74f,55,B,"Lead is from an investor (absentee owner) with a low-value property, indicating high price sensitivity. However, the permit is very fresh for a plumbing project, which often indicates urgent needs. The vague project description suggests early stage.",Low property value (<$400K)|Absentee owner (likely landlord)|Vague project description,general,medium,investor,"We are given a lead with the following data:
+- Owner: ALFORD, MELISSA E (appears to be a homeowner name, not an LLC or builder)
+- Property Value: $217,814.0
+- Project Description: plumbing (also category: plumbing)
+- Permit Date: 2025-12-04 (3 days ago, so very fresh)
+- City: denton
+- Absentee Owner: None (mailing address differs from property) -> Wait, it says ""Absentee Owner: None"" but then in parentheses it says ""mailing address differs from property"". That is contradictory. Let's interpret: The field says ""Absentee Owner: None"" meaning that it is not marked as an absentee owner? But then the note says ""mailing address differs from property"". That suggests that the owner might be absentee? Actually, reading carefully: ""Absentee Owner: None"" might be the value, and then in parentheses it says ""(mailing address differs from property)"". So the data says that the absentee owner field is ""None"", but we have information that the mailing address differs. That could indicate absentee ownership. However, the scoring principles mention ""Absentee Owner"" as a context-dependent factor. We need to decide whether this is considered absentee or not. The field says ""None"", but the note says mailing address differs. In practice, if the mailing address differs from the property address, it often means the owner does not live there. But the field explicitly says ""None"", so maybe it's not flagged as absentee? I think we should go by the field: ""Absentee Owner: None"". But then the note is additional context. To be safe, we might consider it as absentee? However, the scoring principles say: ""Absentee Owner (context-dependent): ..."" and we have a note that mailing address differs. So we should treat this as an absentee owner situation. But the field says ""None"", so perhaps it's not marked as absentee in the system? This is ambiguous. I'll interpret ""Absentee Owner: None"" as meaning that the data field for absentee owner is empty or says ""None"", but the note indicates the mailing address differs. Therefore, it is an absentee owner. But let's see the scoring: For absentee owner, we have adjustments based on property value. Here property value is $217,814.0, which is less than $400K. So according to principle 4: ""Absentee + <$400K property = landlord, price-shops, -10 points"". So if we consider it absentee, we should subtract 10. But wait, the field says ""None"", so maybe it's not considered absentee? The note says ""mailing address differs from property"". That is a classic sign of absentee ownership. I think we should treat it as absentee. However, the lead data explicitly says ""Absentee Owner: None"", which might be the value of the field. Possibly ""None"" means that it is not an absentee owner? But then why mention the mailing address differs? I suspect the data is: Absentee Owner field is ""None"", but there is an indicator that the mailing address differs. In many lead systems, absentee owner is determined by comparing mailing and property addresses. So if they differ, it is an absentee owner. So I'll assume it is absentee. But to be precise, let's look at the output field: ""Absentee Owner: None"" might mean that the field is blank or ""None"". The note in parentheses is likely an explanation. I'll go with the note: mailing address differs, so treat as absentee.
+
+Now, let's score step by step.
+
+1. APPLICANT TYPE: The owner is ""ALFORD, MELISSA E"". This looks like an individual's name, not an LLC or builder. So likely a homeowner. According to principles: ""Homeowner = ideal buyer (full score potential)"". So we start with a base potential of 100, but other factors will adjust.
+
+2. PROPERTY VALUE: $217,814.0. This is less than $400K. According to principle 2: ""<$400K = Price-shopping segment"". This is a negative signal. We should deduct points? The property value doesn't directly give points, but it sets the context. For a homeowner with property value <$400K, they are likely budget-conscious. But we don't have a specific point adjustment from property value alone; it is used in combination with other factors (like absentee). We'll factor it in the overall score.
+
+3. FRESHNESS: Permit date is 2025-12-04, which is 3 days ago. Very fresh. For plumbing, the category is plumbing. The principles mention freshness varies by category: for roof/HVAC, pool, outdoor living/fence. Plumbing is not specifically mentioned. However, plumbing is often an urgent repair need. Freshness is good. I'd consider it a positive. But no specific window given for plumbing. We can assume that for urgent categories like plumbing, freshness is very important. Since it's only 3 days old, it's very fresh. So we should give a high score for freshness.
+
+4. ABSENTEE OWNER: We determined that mailing address differs, so absentee. Property value is $217,814 (<$400K). So according to principle 4: ""Absentee + <$400K property = landlord, price-shops, -10 points"". So we subtract 10.
+
+5. PROJECT CLARITY: Project description is ""plumbing"". That is specific as a category, but not very detailed. It says ""plumbing"" which is the same as the category. It's somewhat vague because it doesn't specify what plumbing work (e.g., water heater, repipe, etc.). According to principle 5: ""Specific project description = serious buyer; Vague/generic = early stage, lower priority"". ""plumbing"" is generic. So we might deduct some points. But it's not missing, so no -5. We'll consider it vague.
+
+6. MISSING DATA: No missing data. All fields are present.
+
+Now, we need to compute a score from 0 to 100. We start with a base? The principles don't give a formula, but they give guidelines. Since applicant type is homeowner, we can start with a high base, maybe 80? But we need to consider property value: <$400K indicates price-shopping, so that might lower the score. Freshness is good. Absentee with low property value subtracts 10. Project clarity is vague, so maybe subtract some.
+
+Let's think about the scoring principles in terms of importance: Applicant type is most important. So if it's a homeowner, we can go up to 100. But property value might cap or adjust. For example, a homeowner in a >$1.5M property is premium. Here it's a low property value, so not premium. So we need to calibrate.
+
+Maybe we can assign points:
+
+Applicant type: Homeowner => assign 80 as a starting score (since it's ideal, but other factors adjust).
+
+Property value: <$400K => price-shopping segment. That might lower the score. According to calibration, price-shopping segment might be lower priority. I'd deduct 20 points for property value being low? But note: property value is not a direct score adjustment in the principles, it's context. So we'll incorporate it in the overall assessment.
+
+Freshness: Very fresh, only 3 days. For plumbing, which might be urgent, freshness is a big plus. Add 10 points? But freshness is not quantified in the principles. We can think: for urgent categories, fresh leads are hotter. So I'll add 10.
+
+Absentee owner: -10 points as per rule.
+
+Project clarity: Vague description. Deduct 5 points.
+
+So starting from 80, +10 for freshness => 90, -10 for absentee => 80, -5 for vague => 75.
+
+But then property value: We already factored in absentee adjustment for low property value, but property value itself might indicate budget constraints. Maybe we should also deduct for property value being low. The principles say for <$400K: price-shopping segment. That suggests lower conversion likelihood. So maybe an additional deduction? But the absentee adjustment already accounts for -10 for landlord/price-shopping. However, if it's a homeowner (not absentee) but with low property value, they might still be budget-conscious. In this case, we have absentee, so it's likely a landlord. But the applicant type is homeowner? Wait, the owner is an individual, but absentee, so it's likely an investor/landlord. But the applicant type is determined by the owner name? The principles say: ""Applicant Type (most important signal): Homeowner = ideal buyer, LLC/Investor = usually price-shops (cap at 60), Custom builder = mixed signal (cap at 50)"". Here the owner is an individual, but if they are absentee, they might be an investor. So maybe we should reclassify applicant type? The principles don't explicitly say that absentee homeowners are considered investors. But they say ""Applicant Type"" which likely refers to who applied for the permit. The lead data says ""Owner: ALFORD, MELISSA E"". That is the owner. If the owner is an individual but the mailing address differs, they might not be living there. In that case, they could be an investor. But the scoring principles for applicant type probably come from the permit applicant: was it the homeowner, an LLC, a builder? The data we have is ""Owner"". Possibly the permit applicant is the owner. We need to infer applicant type from the owner field. Since it's an individual name, we assume homeowner. But if it's absentee, it might be an investor. However, the principles have a separate adjustment for absentee owners. So I think we keep applicant type as homeowner, but apply the absentee adjustment. That is what I did.
+
+But note: if it's an absentee owner with low property value, they are likely a landlord and price-shop. That might even change the applicant type to investor? The principles for applicant type say ""LLC/Investor = usually price-shops (cap at 60)"". So if we consider this an investor, we should cap at 60. That would significantly lower the score. Which is more appropriate? The owner is an individual, not an LLC. But an individual can be an investor. The principles might categorize individual investors as ""investor"". But they explicitly mention ""LLC/Investor"". So an individual investor might still fall under investor. However, the field is ""Owner"" and it's a person's name. In many systems, if it's an individual, it's considered homeowner. But if the mailing address differs, it's likely an investment property. I think the safe approach is to treat it as homeowner for applicant type because it's an individual, but then apply the absentee adjustment which accounts for the landlord behavior. That seems consistent with the principles: they have a separate factor for absentee owners. So I'll stick with applicant type = homeowner.
+
+But let's check the output: we need to output ""applicant_type"": one of ""<homeowner|investor|custom_builder|unknown>"". Given it's an individual name, I'll put ""homeowner"". However, if we later think it's an investor due to absentee, we might put ""investor"". The principles say for applicant type: ""Homeowner = ideal buyer"". So if we put homeowner, we are saying it's ideal, but then we subtract for absentee. That might be okay.
+
+Alternatively, we could interpret that an absentee individual owner is still a homeowner in the sense that they own the home, but they don't live there. In permit leads, the applicant might be the owner, but if they don't live there, they might be less emotionally invested and more price-sensitive. So I think treating as homeowner but with adjustments is fine.
+
+Given the property value is low, and it's absentee, the score should be on the lower side. Let's see the calibration: 50-69 is decent lead, 30-49 low priority. I think this lead might be around 50-60.
+
+My earlier calculation gave 75, which seems high for a low-value absentee landlord. So maybe my starting point of 80 for homeowner is too high. Maybe we should start lower for a homeowner with low property value. Let's think differently.
+
+We can use the property value tier to set a base score. For example, if property value >$1.5M, start with 95; >$1.0M start with 90; >$750K start with 85; >$550K start with 80; >$400K start with 70; <$400K start with 60. Then adjust from there.
+
+Since this is <$400K, start at 60.
+
+Applicant type: homeowner, so we don't cap it (if we started at 60, that's okay). If it were an investor, we'd cap at 60, but we started at 60 anyway.
+
+Freshness: +10 because very fresh for plumbing? But plumbing might have a short window. I'll add 10.
+
+Absentee: -10 for landlord.
+
+Project clarity: vague, -5.
+
+So 60+10-10-5 = 55.
+
+That seems more reasonable: 55 is in the decent lead range (50-69).
+
+But wait, the permit date is in the future? 2025-12-04? That's in December 2025, which is in the future relative to now (if now is 2024?). Actually, the problem says ""Permit Date: 2025-12-04 (3 days ago)"". That implies that the current date is 2025-12-07? So it's in the future from our perspective? That might be a typo or maybe the system uses future dates? But we'll assume it's correct and it's 3 days ago, so it's fresh.
+
+Now, about the category: plumbing. What is the ideal contractor type? The output asks for ""ideal_contractor_type"": one of ""<pool|outdoor_living|roof|fence|general>"". Plumbing is not listed. Possibly ""general""? But plumbing is a specialty. Maybe ""general"" covers it? Or perhaps there is a plumbing contractor type? The list given is specific: pool, outdoor_living, roof, fence, general. So for plumbing, it might be ""general"". I'll put ""general"".
+
+Contact priority: Based on score 55, which is decent, but not high. According to calibration, 50-69: ""Decent lead, work if capacity allows"". So contact priority might be ""medium"".
+
+Tier: We need to output tier A, B, or C. Probably based on score: A for 70+, B for 40-69, C for <40? Not defined. We can set: 90-100: A, 70-89: B? Actually, calibration: 90-100: call today, high-value; 70-89: strong lead; so maybe A for 90-100, B for 70-89, C for 50-69, and D for below? But the output says tier: ""<A|B|C>"". So likely A, B, C correspond to high, medium, low. I'll define: A: 70+, B: 40-69, C: <40. So with score 55, tier B.
+
+Red flags: Any concerns? Low property value, absentee owner (landlord likely), vague project description.
+
+Reasoning: Summarize.
+
+Now, let's finalize:
+
+Score: 55
+Tier: B
+Reasoning: Homeowner applicant but property value indicates price-sensitive segment. Lead is very fresh, but absentee ownership suggests landlord who may prioritize cost. Project description is vague.
+Red flags: [""Low property value (<$400K)"", ""Absentee owner (mailing address differs, likely landlord)"", ""Vague project description""]
+Ideal contractor type: general (since plumbing is not specifically listed)
+Contact priority: medium (score 55 falls in decent lead range)
+Applicant type: homeowner
+
+But let's double-check absentee: The data says ""Absentee Owner: None"" and then in parentheses it says ""(mailing address differs from property)"". That could mean that the absentee owner field is not flagged, but the mailing address differs. In some systems, absentee owner is determined by comparing addresses. So it might be considered absentee. I'll include it as a red flag.
+
+Also, note that the property value is exactly $217,814, which is well below $400K.
+
+One more thing: The permit date is 2025-12-04, which is in the future if today is 2024. But the problem says ""3 days ago"", so we assume it's recent. We'll treat as fresh.
+
+Maybe we should adjust the score for plumbing category? The principles don't mention plumbing, but plumbing is often an emergency repair, so freshness is critical. Since it's only 3 days old, that's very good. So I think +10 for freshness is appropriate.
+
+Another thought: The applicant type is homeowner, but if it's absentee, maybe we should classify as investor? I'll check the output format: applicant_type is a field. I'll put ""homeowner"" but note that it's absentee. Alternatively, I could put ""investor"" if we interpret that absentee individual owners are investors. Given the property value is low, it's likely an investment property. I'll think about what a lead scoring expert would do. Typically, if the owner name is an individual but the property is not their primary residence, they are considered an investor. And investors are known to price-shop. So maybe we should set applicant_type to ""investor"" and cap the score at 60. That might be more accurate. Let's see the principles: ""LLC/Investor = usually price-shops (cap at 60)"". It says ""Investor"", not just LLC. So an individual who owns rental property is an investor. So I'll change applicant_type to ""investor"". That will affect the score because we cap at 60. But we already started at 60 for property value, so it's okay. But if we cap at 60, then even with positive adjustments, we cannot go above 60. So with investor, maximum possible is 60. Then we apply deductions. So the score would be at most 60. With deductions, it becomes lower. So let's recalc with applicant_type = investor.
+
+Start with base for investor? The principles don't give a base, just a cap. We need a base. I'll set base for investor at 50? But then cap at 60. Actually, the principles say ""cap at 60"", meaning even if other factors are positive, score cannot exceed 60. So we can start lower and add, but not exceed 60. Given low property value, start at 50. Then freshness +10 => 60 (but capped at 60, so 60). Absentee: -10 (but note, if already investor, absentee is already factored? Actually, investor implies they are not owner-occupants. So absentee adjustment might be redundant. But the principles have absentee adjustment separately, so it might still apply. However, if we classify as investor, the fact that they are absentee is already captured. So maybe we don't apply the absentee adjustment again? The principles for absentee owner are context-dependent and might apply regardless of applicant type. But if we already know it's an investor, the absentee adjustment might be less significant. But the rule says ""Absentee + <$400K property = landlord, price-shops, -10 points"". That is exactly what an investor is. So if we already set applicant_type to investor and perhaps started with a lower base to account for price-shopping, we might not need the -10. But to be safe, I'll still apply it. So with investor, start at 50, +10 freshness = 60, then -10 absentee = 50, -5 vague = 45. That gives 45, which is in low priority range (30-49). That seems plausible for a landlord with a low-value property.
+
+Which is more accurate? I think given the low property value and mailing address difference, it's likely an investment property. So applicant_type should be investor. Let's look at the owner name: ""ALFORD, MELISSA E"". It's an individual. But investors can be individuals. So I'll go with investor.
+
+Thus, final score: 45? But wait, if we cap at 60, 45 is below cap, fine.
+
+But we also have property value: <$400K, which is price-shopping. That is consistent.
+
+Now, what about freshness? Plumbing is urgent, so maybe we should give a bigger boost for freshness? But the cap still applies. With investor cap at 60, even with freshness, we can't go above 60. So maximum is 60.
+
+Maybe we can start higher for investor? Some investors might be good leads. But the principles say they usually price-shop, so cap at 60. So I'll start at 50.
+
+Alternatively, we could start at 40 and then add for freshness. But 40 seems too low for a fresh lead. Let's see: if it's an investor with low property value, they might be very price-sensitive. So 45-50 seems reasonable.
+
+I'll go with applicant_type = investor, score = 45.
+
+But let's see the output: we need to output a score between 0-100. I'll compute systematically.
+
+Step-by-step scoring:
+
+1. Applicant type: Based on owner name and absentee indicator, I classify as investor. So cap at 60. I'll set a base score of 50 for investor (midpoint of cap? But we'll adjust).
+
+2. Property value: $217,814 (<$400K). This is price-shopping segment. For an investor, this reinforces price-sensitivity. So I'll deduct 5 from the base? Actually, property value might set the base. Maybe set base for investor with <$400K to 45. Then adjust.
+
+3. Freshness: 3 days old. For plumbing, very fresh. Add 15? But capped at 60. If base is 45, +15 = 60, then other deductions might bring it down.
+
+4. Absentee owner: Already factored into investor classification, so maybe no additional deduction. But the rule says -10 for absentee + <$400K. If we already classified as investor, that rule might have been the reason we classified as investor. So I won't double-deduct.
+
+5. Project clarity: Vague (""plumbing""). Deduct 5.
+
+6. No missing data.
+
+So if base for investor with low property value = 45, then +15 for freshness = 60, then -5 for vague = 55. But capped at 60, so 55 is fine. That gives 55 again. But then we didn't apply absentee deduction because it's already investor. So 55.
+
+Alternatively, if we start at 50 for investor, then property value low might deduct 5? Actually, property value is already considered in the base. I think 55 is a reasonable score for this lead.
+
+But if we treat as homeowner, we got 75, which seems too high. So investor with cap 60 seems more appropriate.
+
+I'll check the principles: ""Applicant TYPE (most important signal): Homeowner = ideal buyer (full score potential)"". That suggests that if it's a homeowner, we can go up to 100. But is this really a homeowner? The mailing address differs, so it's not their primary residence. So they are not a homeowner in the sense of living there. They are an absentee owner. So I think it's more accurate to call them an investor. In many lead systems, absentee owners are flagged as investors. So I'll go with investor.
+
+Thus, applicant_type = investor.
+
+Score: I'll set at 55.
+
+Tier: B (since 55 is between 40-69? I'll define B as 50-69, C as <50, A as 70+). So 55 is B.
+
+Reasoning: Lead is from an investor (absentee owner) with a low-value property, indicating high price sensitivity. However, the permit is very fresh for a plumbing project, which often indicates urgent needs. The vague project description suggests early stage.
+
+Red flags: [""Low property value (<$400K)"", ""Absentee owner (likely landlord)"", ""Vague project description""]
+
+Ideal contractor type: general (plumbing not in list, so general)
+
+Contact priority: medium (score 55 is decent lead)
+
+Applicant_type: investor
+
+I'll output JSON accordingly.",2025-12-07T12:19:12.875226,"{'prompt': 707, 'completion': 5381, 'reasoning': 5250}",0.01217324,ai-r1
+80095f01,55,B,"Homeowner applicant with a very fresh permit, but property value below $400K indicates a price-sensitive segment and the vague 'residential' project description suggests early planning stage with lower intent.",Low property value (<$400K) suggests price-shopping behavior|Vague project description|Mailing address differs from property (possible absentee indicator),general,medium,homeowner,"We are given lead data and need to score it based on the provided principles.
+
+Let's break down the lead:
+
+Owner: TRAILLE, BARRINGTON
+Property Value: $234,804.0
+Project Description: residential
+Category: residential
+Permit Date: 2025-12-04 (3 days ago, so very fresh)
+City: denton
+Absentee Owner: None (mailing address differs from property) -> Actually says ""None"" but then says mailing address differs? The field says: ""Absentee Owner: None (mailing address differs from property)"". This is ambiguous. It says ""None"" but then in parentheses says mailing address differs. Possibly meaning it is not flagged as absentee but the mailing address is different? According to the principles, absentee owner is a flag. But here it says ""None"", so we might treat as not absentee. However, the note in parentheses indicates that the mailing address is different from the property address. That could be a sign of absentee owner? The principle says: ""Absentee Owner: None (mailing address differs from property)"". That might be a note that even though it's marked as ""None"", the mailing address is different. But the scoring principles for absentee owner are context-dependent. Since it says ""None"", we might not deduct or add. But let's see: the principle says: ""Absentee + >$750K property = vacation home, wealthy, +5 points; Absentee + <$400K property = landlord, price-shops, -10 points; Absentee + middle range = ambiguous, no adjustment."" Here, property value is $234,804.0, which is less than $400K. So if it were absentee, we would subtract 10. But is it absentee? The data says ""Absentee Owner: None"", so it might not be considered absentee. However, the note in parentheses says mailing address differs, which could indicate absentee. But the field says ""None"", so perhaps the system didn't flag it as absentee because it's not out-of-state? I'll assume that since it says ""None"", we treat as not absentee for scoring, but note the mailing address difference as a possible flag.
+
+Now, scoring:
+
+1. APPLICANT TYPE: 
+   Owner is ""TRAILLE, BARRINGTON"". It's an individual name, not an LLC or builder. So likely homeowner. We'll set applicant_type to ""homeowner"". This is ideal, so full score potential.
+
+2. PROPERTY VALUE: $234,804.0. This is in DFW. According to the scale:
+   - >$1.5M = premium
+   - >$1.0M = premium
+   - >$750K = good budget
+   - >$550K = standard budget
+   - >$400K = starter home, budget-conscious
+   - <$400K = price-shopping segment
+   This property is less than $400K, so it falls into the price-shopping segment. That is a negative signal. So we should deduct points for this.
+
+3. FRESHNESS: Permit date is 2025-12-04, which is 3 days ago. Very fresh. But category is ""residential"" and project description is ""residential"". That is vague. The freshness principle varies by category, but here the category is just ""residential"". Not specific like roof, pool, etc. So we might need to consider a general window. The principles list specific categories: Roof/HVAC, Pool, Outdoor living/fence. For ""residential"", it might be a general permit. The principle says: ""Anything >90 days = stale."" Since it's only 3 days old, it's very fresh. So that's a positive.
+
+4. ABSENTEE OWNER: As discussed, it says ""None"" but mailing address differs. Since it says ""None"", we might not treat it as absentee. But the property value is low, so if we considered it absentee, it would be -10. However, since it says ""None"", we might not adjust. But we could note as a red flag if mailing address differs. Let's see the note: ""Absentee Owner: None (mailing address differs from property)"". That might mean the system does not flag it as absentee, but the mailing address is different. Possibly the owner lives elsewhere locally? In any case, the property value is low, so if we interpret as absentee, it's negative. But the instructions say ""Absentee Owner: None"" so I'll take it as not absentee. However, in red_flags, we might list the different mailing address as a concern.
+
+5. PROJECT CLARITY: Project description is ""residential"" and category is ""residential"". That is very vague/generic. So according to principle: ""Vague/generic = early stage, lower priority."" So that's a negative.
+
+6. MISSING DATA: We have all data, but project description is vague, not missing. So no penalty for missing data.
+
+Now, we need to compute a score. We don't have a strict formula, but we need to combine these factors.
+
+Start with a baseline? Possibly 50? But we need to adjust based on signals.
+
+Let's think about the most important signal: applicant type. Homeowner is ideal, so that allows for a high score. However, property value is low (price-shopping segment), so that pulls down. Freshness is good. Project clarity is poor. Absentee owner is not flagged, but mailing address differs.
+
+We also need to determine tier, ideal contractor type, contact priority.
+
+Ideal contractor type: The category is ""residential"", and project description is ""residential"". That could be anything. Possibly a general contractor? But we need to pick from: pool, outdoor_living, roof, fence, general. Since it's vague, maybe ""general"".
+
+Contact priority: Based on score.
+
+Tier: A (80-100), B (50-79), C (0-49) maybe? But the calibration: 90-100: Call today; 70-89: Strong lead; 50-69: Decent; 30-49: Low; <30: Flag. So tier A might be 70+, B 50-69, C below 50? Not exactly. I'll define tier based on score: A for high priority (70+), B for medium (50-69), C for low (<50). But the output says tier: A|B|C, so we'll decide.
+
+Now, let's score step by step:
+
+- Applicant type: homeowner => positive, allows score up to 100.
+- Property value: <400K => price-shopping segment => negative, likely significant deduction.
+- Freshness: 3 days => positive, but for residential permit, the window might be longer? Not sure. Since it's fresh, we add some points.
+- Absentee owner: Not flagged, but mailing address differs. Since property value is low, if we consider it absentee-like, it might be negative. But we'll not adjust points because it says ""None"". However, we might list as red flag.
+- Project clarity: ""residential"" is vague => negative.
+
+I think the property value is a strong negative because it indicates budget-conscious or price-shopping. The applicant is homeowner, which is good. So overall, the lead is likely from a homeowner with a lower-value property, possibly looking for a renovation but may be price-sensitive.
+
+Given the low property value and vague project, I'd score on the lower side of decent. But freshness is good.
+
+Maybe score around 50-60.
+
+Let's try to quantify:
+
+Assume starting score 50.
+
+- Applicant type: homeowner => +20? (but it says full score potential, so maybe we don't cap, but we adjust other factors)
+- Property value: <400K => -15 (since it's price-shopping)
+- Freshness: very fresh => +10
+- Project clarity: vague => -10
+- Absentee: none, but mailing address differs => maybe -5? Because it could be a landlord.
+
+Total: 50+20-15+10-10-5 = 50. That gives 50.
+
+But that's just a rough estimate.
+
+Alternatively, we might consider that for a homeowner with a low property value, the likelihood of a high-value sale is lower. So score should be in the 50-69 range? Possibly 55.
+
+The calibration says 50-69: Decent lead, work if capacity allows.
+
+Also, note the permit date is in the future? 2025-12-04? That's 2025, so it's in the future? Wait, current date is 2025-12-07? The permit date is 2025-12-04, which is 3 days ago if today is 2025-12-07. So it's in the future? Actually, 2025-12-04 is December 4, 2025. If today is December 7, 2025, then it's 3 days ago. So it's in the future relative to now? No, 2025 is the year. It's plausible. So it's recent.
+
+Now, red flags: 
+- Low property value (price-shopping segment)
+- Vague project description
+- Mailing address differs from property (possible absentee owner indication)
+
+Ideal contractor type: Since it's a residential permit, it could be for a variety of projects. It might be for a renovation, addition, etc. So ""general"" is appropriate.
+
+Contact priority: Based on score, if score is 50, then contact priority might be ""medium"" or ""low""? The calibration says 50-69: decent, work if capacity allows. So maybe ""medium"".
+
+Applicant type: homeowner.
+
+Let's set score to 55.
+
+Tier: B (since 55 is in 50-69).
+
+Reasoning: Homeowner with a fresh permit, but low property value suggests budget sensitivity and vague project description indicates early planning stage.
+
+Now, output JSON.
+
+We must output only JSON.
+
+So:
+
+{
+  ""score"": 55,
+  ""tier"": ""B"",
+  ""reasoning"": ""Homeowner applicant with fresh permit, but low property value indicates price-sensitive segment and vague 'residential' description suggests early planning stage."",
+  ""red_flags"": [""Low property value (<$400K) suggesting price-shopping"", ""Vague project description"", ""Mailing address differs from property (possible absentee)""],
+  ""ideal_contractor_type"": ""general"",
+  ""contact_priority"": ""medium"",
+  ""applicant_type"": ""homeowner""
+}
+
+But let's check if applicant type is definitely homeowner. The name is an individual, so yes.
+
+Now, should we adjust for freshness? For residential, what is the typical window? Not specified, but >90 days stale. Since it's 3 days, it's very fresh, so that's positive.
+
+Maybe the score could be a bit higher due to freshness. But the low property value is a strong negative for high-value sale. So 55 seems reasonable.
+
+I'll go with that.",2025-12-07T12:20:26.436480,"{'prompt': 706, 'completion': 2481, 'reasoning': 2349}",0.005821690000000001,ai-r1

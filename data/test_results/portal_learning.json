@@ -1,0 +1,125 @@
+{
+  "successfulPatterns": [
+    {
+      "city": "Southlake",
+      "portalType": "EnerGov",
+      "pageType": "search_form",
+      "approach": "This is a public search page for permits, plans, inspections, code cases, requests, licenses, and projects. The page shows a search form with dropdown to select module type (default is Permit). Results are displayed in a list format with each record in a div with id pattern 'entityRecordDivX'. The page shows 140,342 total permit results. Only first few records are visible in HTML snippet. Contractor/applicant names are not displayed in the search results - would need to click into individual permit details. The page includes sorting options (by Permit Number, Project, Address, etc.) and filter options by module type. Advanced search options are available via 'Advanced' button."
+    },
+    {
+      "city": "Southlake",
+      "portalType": "EnerGov",
+      "pageType": "search_form",
+      "approach": "This is a search results page showing 140,342 total permit records. Only first 6 records are visible in HTML. Contractor/applicant names are not displayed in search results - need to click into individual permit detail pages. The page has sorting options (Permit Number, Project, Address, Issued Date, Finalized Date) and filter options by module type. Advanced search available. Each record has a link to detailed permit page with GUID in URL (e.g., #/permit/ECD876F9-CB84-4737-8BA2-E6D83D5DB5DE)."
+    },
+    {
+      "city": "Fort Worth",
+      "portalType": "Accela",
+      "pageType": "results_list",
+      "approach": "Found 10 permit records in a results table with pagination (showing 1-10 of 100+). The page includes both a search form (General Search, Search by Address, etc.) and results. Permit types include: Pre-Development Conference, Complaint, Mechanical Umbrella Permit, Plumbing Umbrella Permit, Electrical Standalone Permit, Electrical Umbrella Permit, Plumbing Standalone Permit, Storm Water Facility Maintenance Agreement. Dates appear to be 'Updated Time' rather than issued/applied dates. Contractor field shows 'Created By' values. Addresses are partially formatted with some 'undefined' values. The search form has many filter options including permit number, permit type, address components, date ranges, license types, and contact information."
+    },
+    {
+      "city": "Mesquite",
+      "portalType": "CSS",
+      "pageType": "search_form",
+      "approach": "This is a combined search form and results page. The 'Permits' tab (tabs-1) is active in the HTML but may be hidden initially (aria-hidden='true'). The table shows 5 sample rows from 35,307 total entries. Data appears incomplete in the table view - missing permit numbers, types, and statuses. These are likely available in detail view when clicking rows. Note: The data shows NV addresses (Nevada) not TX, suggesting this might be a different Mesquite jurisdiction or test data. The portal uses DataTables with pagination, filtering, and export capabilities. Contractor names appear in the 'linked_blicenses' column. To extract complete data, either: 1) Use the CSV export (with CAPTCHA), 2) Click each row to trigger detail popup, or 3) Use the search form to filter and scrape paginated results."
+    }
+  ],
+  "failedPatterns": [
+    {
+      "city": "Dallas",
+      "portalType": "DallasNow",
+      "error": "net::ERR_NAME_NOT_RESOLVED at https://developmentservices.dallascityhall.com/dsweb/Search/Index",
+      "timestamp": "2025-12-06T03:22:43.610Z"
+    },
+    {
+      "city": "Denton",
+      "portalType": "EnerGov",
+      "error": "net::ERR_NAME_NOT_RESOLVED at https://aca.cityofdenton.com/CitizenAccess/Cap/CapHome.aspx?module=Building",
+      "timestamp": "2025-12-06T03:27:43.153Z"
+    },
+    {
+      "city": "Denton",
+      "portalType": "EnerGov",
+      "error": "net::ERR_NAME_NOT_RESOLVED at https://aca.cityofdenton.com/CitizenAccess/Cap/CapHome.aspx?module=Building",
+      "timestamp": "2025-12-06T03:27:43.326Z"
+    },
+    {
+      "city": "Lewisville",
+      "portalType": "EnerGov",
+      "error": "net::ERR_NAME_NOT_RESOLVED at https://selfservice.lewisvilletx.gov/energov_prod/selfservice#/search",
+      "timestamp": "2025-12-06T03:28:17.478Z"
+    },
+    {
+      "city": "Allen",
+      "portalType": "EnerGov",
+      "error": "net::ERR_NAME_NOT_RESOLVED at https://energov.cityofallen.org/EnerGov_Prod/SelfService#/search",
+      "timestamp": "2025-12-06T03:29:03.757Z"
+    },
+    {
+      "city": "Rowlett",
+      "portalType": "EnerGov",
+      "error": "net::ERR_NAME_NOT_RESOLVED at https://energov.rowlett.com/EnerGov_Prod/SelfService#/home",
+      "timestamp": "2025-12-06T03:29:05.958Z"
+    },
+    {
+      "city": "Rowlett",
+      "portalType": "EnerGov",
+      "error": "net::ERR_NAME_NOT_RESOLVED at https://energov.rowlett.com/EnerGov_Prod/SelfService#/search?m=2&ps=10&pn=1&em=true",
+      "timestamp": "2025-12-06T03:29:06.115Z"
+    },
+    {
+      "city": "Duncanville",
+      "portalType": "Unknown",
+      "error": "net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH at https://www.duncanville.com/departments/building_permits.php",
+      "timestamp": "2025-12-06T03:30:07.464Z"
+    },
+    {
+      "city": "Colleyville",
+      "portalType": "EnerGov",
+      "error": "net::ERR_NAME_NOT_RESOLVED at https://energov.colleyville.com/EnerGov_Prod/SelfService#/search",
+      "timestamp": "2025-12-06T03:33:14.289Z"
+    },
+    {
+      "city": "Watauga",
+      "portalType": "Unknown",
+      "error": "net::ERR_CONNECTION_RESET at https://www.wataugatx.org/329/Building-Permits",
+      "timestamp": "2025-12-06T03:33:54.582Z"
+    },
+    {
+      "city": "Keller",
+      "portalType": "EnerGov",
+      "error": "Navigation timeout of 45000 ms exceeded",
+      "timestamp": "2025-12-06T03:34:41.671Z"
+    },
+    {
+      "city": "Princeton",
+      "portalType": "EnerGov",
+      "error": "net::ERR_NAME_NOT_RESOLVED at https://energov.princetontx.gov/EnerGov_Prod/SelfService#/search",
+      "timestamp": "2025-12-06T03:34:59.459Z"
+    },
+    {
+      "city": "North Richland Hills",
+      "portalType": "eTRAKiT",
+      "error": "net::ERR_NAME_NOT_RESOLVED at https://etrakit.nrhtx.com/etrakit3/Search/permit.aspx",
+      "timestamp": "2025-12-06T03:35:01.667Z"
+    },
+    {
+      "city": "Keller",
+      "portalType": "EnerGov",
+      "error": "Navigation timeout of 90000 ms exceeded",
+      "timestamp": "2025-12-06T13:59:00.761Z"
+    }
+  ],
+  "portalTypeStrategies": {
+    "EnerGov": {
+      "successfulApproach": "Page type: search_form. This is a search results page showing 140,342 total permit records. Only first 6 records are visible in HTML. Contractor/applicant names are not displayed in search results - need to click into individual permit detail pages. The page has sorting options (Permit Number, Project, Address, Issued Date, Finalized Date) and filter options by module type. Advanced search available. Each record has a link to detailed permit page with GUID in URL (e.g., #/permit/ECD876F9-CB84-4737-8BA2-E6D83D5DB5DE)."
+    },
+    "Accela": {
+      "successfulApproach": "Page type: results_list. Found 10 permit records in a results table with pagination (showing 1-10 of 100+). The page includes both a search form (General Search, Search by Address, etc.) and results. Permit types include: Pre-Development Conference, Complaint, Mechanical Umbrella Permit, Plumbing Umbrella Permit, Electrical Standalone Permit, Electrical Umbrella Permit, Plumbing Standalone Permit, Storm Water Facility Maintenance Agreement. Dates appear to be 'Updated Time' rather than issued/applied dates. Contractor field shows 'Created By' values. Addresses are partially formatted with some 'undefined' values. The search form has many filter options including permit number, permit type, address components, date ranges, license types, and contact information."
+    },
+    "CSS": {
+      "successfulApproach": "Page type: search_form. This is a combined search form and results page. The 'Permits' tab (tabs-1) is active in the HTML but may be hidden initially (aria-hidden='true'). The table shows 5 sample rows from 35,307 total entries. Data appears incomplete in the table view - missing permit numbers, types, and statuses. These are likely available in detail view when clicking rows. Note: The data shows NV addresses (Nevada) not TX, suggesting this might be a different Mesquite jurisdiction or test data. The portal uses DataTables with pagination, filtering, and export capabilities. Contractor names appear in the 'linked_blicenses' column. To extract complete data, either: 1) Use the CSV export (with CAPTCHA), 2) Click each row to trigger detail popup, or 3) Use the search form to filter and scrape paginated results."
+    }
+  }
+}

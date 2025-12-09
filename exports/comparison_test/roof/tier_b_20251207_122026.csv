@@ -1,0 +1,400 @@
+lead_id,score,tier,reasoning,red_flags,ideal_contractor_type,contact_priority,applicant_type,chain_of_thought,scored_at,tokens_used,cost_usd,scoring_method
+5ac734ab,65,B,"Homeowner with a specific, fresh roofing permit indicates strong intent, but property value in the price-sensitive segment suggests budget constraints may limit conversion to a high-value sale.",Low property value may indicate price sensitivity,roof,medium,homeowner,"We are given:
+- Owner: SCOTT JAMES DAVID &
+- Property Value: $342,990.0
+- Project Description: roofing
+- Category: roofing
+- Permit Date: 2025-12-05 (2 days ago)
+- City: dallas
+- Absentee Owner: False (mailing address differs from property)
+
+Step 1: Determine applicant type.
+Owner: ""SCOTT JAMES DAVID &"" – The ""&"" might indicate a partnership or something? But it looks like individual names. Typically, if it's an individual homeowner, it would be just a name. The ""&"" might indicate multiple people? But likely it's still a homeowner. However, we need to be careful. In permit data, sometimes ""&"" indicates a partnership or joint owners. But it's not an LLC or a builder. It could be two individuals: Scott James and David? Or maybe it's ""Scott James David"" as a full name with an ampersand? Possibly a misformat. Given the scoring principles: homeowner is ideal. We'll assume it's a homeowner (individual(s) owning the property). There's no indication of LLC, custom builder, or production builder. So applicant_type = homeowner.
+
+Step 2: Property value.
+$342,990.0. According to the DFW market context:
+- >$1.5M = premium
+- >$1.0M = premium
+- >$750K = good budget
+- >$550K = standard budget
+- >$400K = starter home, budget-conscious
+- <$400K = price-shopping segment
+
+This is $342,990, which is below $400K. So it falls into ""Price-shopping segment"". That suggests lower budget, likely more price-sensitive.
+
+Step 3: Freshness.
+Permit Date: 2025-12-05, which is 2 days ago. For roofing, freshness: fresh within 14 days, stale after. So this is very fresh (2 days). That's a positive.
+
+Step 4: Absentee Owner.
+Given: False (mailing address differs from property). Wait, the data says ""Absentee Owner: False (mailing address differs from property)"". Usually, absentee owner means the owner does not live at the property. Here it says ""False"" but with a note that mailing address differs from property. That seems contradictory. Typically, if mailing address differs, it might be absentee. But the field explicitly says ""False"". So we take it as not absentee. However, the note in parentheses says ""mailing address differs from property"". That might indicate that the mailing address is different, but the owner might still be living there? Possibly it's a mistake. We'll go with the explicit ""False"". So no adjustment for absentee. But note: the scoring principle says absentee context-dependent. Since it's false, no adjustment.
+
+Step 5: Project Clarity.
+Project Description: ""roofing"". That's specific enough. It's a roofing project. So serious buyer.
+
+Step 6: Missing Data.
+We have all data: owner, property value, project description. No missing data.
+
+Now scoring:
+
+We start with a baseline? Actually, we need to compute based on factors.
+
+According to principles, applicant type is most important signal. Here it's homeowner, so full score potential. That means we don't cap the score at a lower level. So we can go up to 100.
+
+But other factors:
+
+Property value: <$400K => price-shopping segment. That is a negative. How should we quantify? We can think: premium buyers get high scores, budget-conscious get lower. We need to incorporate this into the score.
+
+Freshness: very fresh for roofing (2 days) => positive.
+
+Absentee: false => no adjustment.
+
+Project clarity: specific => positive.
+
+We need to combine these into a score 0-100.
+
+We don't have a precise formula, but we can reason:
+
+- Applicant type: homeowner -> high potential.
+- Property value: low -> indicates price sensitivity, likely lower budget for the project. That might lower conversion likelihood.
+- Freshness: high -> increases likelihood.
+- No red flags from absentee or missing data.
+
+We also need to consider the category: roofing. That is a necessary repair/replacement, so likely a genuine need.
+
+Given the calibration, we need to assign a tier and score.
+
+Let's think: The property value is quite low for Dallas. That might indicate a smaller home or a less affluent area. Roofing projects can vary in cost, but a low property value might mean a smaller roof or cheaper materials. However, it's still a roofing project, which can be expensive. But the homeowner might be more price-sensitive.
+
+Freshness is high, so they are likely actively seeking quotes.
+
+Given applicant is homeowner, they are the decision-maker.
+
+Overall, I'd score in the decent lead range, maybe around 60-70? But let's see:
+
+If property value was higher, it would be stronger. Since it's below $400K, it's in the price-shopping segment. That might cap the score? Not necessarily, but according to principles, it's a negative.
+
+Maybe we can set a base score from property value and adjust.
+
+One approach: Start with a baseline based on applicant type. For homeowner, start at, say, 70? Then adjust for property value: <400K -> subtract 15? Then add for freshness: +10? But that's arbitrary.
+
+Alternatively, use the tiers: For a homeowner with a low property value, but fresh roofing permit, it might be a medium priority.
+
+Consider the ideal contractor type: roofing.
+
+Contact priority: based on score.
+
+Let's decide on applicant_type: homeowner.
+
+Now, red flags: Possibly low property value indicating price sensitivity. But not necessarily a red flag. Maybe list as concern: ""Low property value may indicate budget constraints.""
+
+Tier: Based on score.
+
+Let's compute a score step by step:
+
+1. Applicant type: homeowner -> no cap, so we can score high. But other factors matter.
+
+2. Property value: $342,990 -> below $400K. In DFW, that's on the lower end. This might mean the homeowner is likely to be cost-conscious. This could lower the likelihood of a high-value sale. So we deduct points.
+
+3. Freshness: 2 days old -> very fresh. For roofing, that's good. Add points.
+
+4. Absentee: false -> no change.
+
+5. Project clarity: ""roofing"" is specific -> add points.
+
+I'll assume a starting score of 50 (midpoint). Then:
+
+- Applicant type: homeowner adds +20? But that might be too much. Actually, homeowner is ideal, so maybe start higher? Perhaps start at 70 for homeowner, then adjust.
+
+But let's look at the calibration: 70-89 is strong lead. Is this a strong lead? Possibly not due to low property value. So maybe around 60-69.
+
+Let's set:
+
+Base score for homeowner: 75 (strong lead potential).
+
+Then adjust:
+
+Property value: <400K -> price-shopping segment: -15 points.
+
+Freshness: within 14 days, very fresh: +10 points.
+
+Project clarity: specific: +5 points.
+
+Absentee: no adjustment.
+
+Total: 75 - 15 + 10 + 5 = 75.
+
+That gives 75, which is strong lead. But is a $343K property in Dallas really likely to convert to a high-value sale? Possibly not. Roofing on a lower-value home might be a smaller job. But it could still be a decent sale. However, the scoring is based on likelihood to convert to a high-value sale. High-value might mean high profit margin or large project. A roofing job on a lower-value home might not be as high-value. So we need to adjust for that.
+
+Maybe the property value adjustment should be larger. Alternatively, we can think of the property value as a multiplier? 
+
+Given the principles, property value is a key indicator of budget. For <400K, it says ""price-shopping segment"". That suggests they are likely to compare quotes and go for the cheapest. That lowers conversion likelihood, especially to a high-value sale (which might not be the cheapest). So maybe we should deduct more.
+
+Maybe base score for homeowner: 70.
+
+Deduct for property value: For <400K, deduct 25? So 70-25=45. Then add freshness: +10 -> 55. Then project clarity: +5 -> 60.
+
+That seems more reasonable: 60 is decent lead, work if capacity allows.
+
+But wait, freshness is very important for roofing. Within 2 days, they are likely just starting to look. So that might increase urgency.
+
+Perhaps we can look at it as: For a homeowner with a fresh roofing permit, even with a lower property value, they might still need a roof replacement and might be willing to spend. Roofing is not a discretionary purchase; it's often necessary. So they might still convert.
+
+I'll go with a score around 65.
+
+Let's determine tier: A: 90-100, B: 70-89, C: 50-69, D: 30-49, F: <30. So if score is 65, tier is C? But the output says tier: ""<A|B|C>"". That likely means A, B, or C. Probably A is high, B medium, C low. But in the calibration, they have ranges: 90-100: Call today; 70-89: Strong lead; 50-69: Decent lead; 30-49: Low priority; <30: Flag. So maybe tier A corresponds to 90-100, B to 70-89, C to 50-69, D to 30-49, F to <30. But the output only allows A, B, or C. So perhaps A is 70+, B is 50-69, C is below 50? Or maybe they want A, B, C as categories. Looking at the output format, it says tier: ""<A|B|C>"". So we need to assign A, B, or C. I'll assume:
+A: 70-100
+B: 50-69
+C: 0-49
+
+Given that, if score is 65, tier is B.
+
+But let's see: the calibration says 50-69 is decent lead, so maybe that's B? And 70-89 is strong lead, that's A? And 90-100 is also A? So A might be 70+, B 50-69, C 30-49, and below 30 not listed? But output only has A, B, C. So I'll use:
+A: 70-100 (high priority)
+B: 50-69 (medium priority)
+C: 0-49 (low priority)
+
+Now, red flags: The property value is below $400K, which indicates price sensitivity. Also, the owner name has an ""&"" which might indicate multiple owners or a partnership, but we classified as homeowner. That's not necessarily a red flag.
+
+Ideal contractor type: roofing.
+
+Contact priority: based on score: if score 65, then medium? But calibration says 50-69 is decent lead, work if capacity allows. So contact priority could be medium.
+
+Now, applicant_type: homeowner.
+
+Let's finalize score: I'll go with 65.
+
+Reasoning: Homeowner with a specific, fresh roofing permit, but property value in the price-sensitive range suggests budget constraints may limit conversion to a high-value sale.
+
+Red flags: [""Low property value may indicate price sensitivity""]
+
+Ideal contractor type: ""roof""
+
+Contact priority: ""medium""
+
+Applicant type: ""homeowner""
+
+But wait: The owner string is ""SCOTT JAMES DAVID &"". Could it be a business? Possibly ""SCOTT JAMES DAVID &"" might be a company name? But it doesn't have LLC or Inc. It could be ""Scott James David"" as a person with an ampersand for another person? Typically, permit applicants might be listed as ""Firstname Lastname & Spouse"". So likely it's a homeowner. We'll stick with homeowner.
+
+One more thing: Absentee Owner is False, but note says mailing address differs. That might actually indicate absentee? But the field says False. Possibly it's a data error. But we'll follow the data: False. So no adjustment.
+
+Maybe we should note that as a potential concern? But not necessarily.
+
+Let's output JSON.",2025-12-07T12:06:55.162654,"{'prompt': 705, 'completion': 2749, 'reasoning': 2646}",0.006408060000000001,ai-r1
+409e3a83,55,B,"Lead is for roofing with a very fresh permit (2 days ago), which signals urgency, but the property value is low ($283K) and absentee ownership indicates a landlord likely price-shopping, reducing the likelihood of a high-value sale.","Absentee owner with property value <$400K, suggesting landlord and price-shopping",roof,medium,homeowner,"First, I need to analyze the lead data based on the scoring principles.
+
+Lead Data:
+- Owner: ALMER LANA DUNKEL – This sounds like a person's name, not an LLC or builder. So, likely a homeowner.
+- Property Value: $283,060.0 – In DFW market, this is below $400K, which is categorized as ""Starter home, budget-conscious"" or ""Price-shopping segment"" for <$400K.
+- Project Description: roofing – Specific project, which is good.
+- Category: roofing – Matches description.
+- Permit Date: 2025-12-05 (2 days ago) – Very fresh. For roofing, freshness is within 14 days, so this is ideal.
+- City: dallas – Location is Dallas.
+- Absentee Owner: True – Mailing address differs from property.
+
+Now, applying scoring principles:
+
+1. APPLICANT TYPE: The owner is named like a person, so I'll assume homeowner. Homeowner is ideal, so full score potential. But I need to confirm if there's any indication of LLC or investor. The name doesn't suggest LLC, so applicant_type should be homeowner. However, since it's an absentee owner, it might be a landlord. But based on name, I'll classify as homeowner. The scoring principles say for homeowner, full score potential, but absentee could affect this. I'll set applicant_type as homeowner for now.
+
+2. PROPERTY VALUE: $283,060.0 is less than $400K, so this falls into ""<$400K = Price-shopping segment"". This is a negative signal because budget-conscious buyers might shop for price.
+
+3. FRESHNESS: Permit date is 2 days ago, and for roofing, fresh within 14 days. So, very fresh, which is positive.
+
+4. ABSENTEE OWNER: True. Property value is less than $400K, so according to principles: ""Absentee + <$400K property = landlord, price-shops, -10 points"". So, I need to subtract 10 points.
+
+5. PROJECT CLARITY: Project description is ""roofing"", which is specific. So, serious buyer, positive signal.
+
+6. MISSING DATA: All data seems present, so no adjustments for missing data.
+
+Now, I need to score on a 0-100 scale. I should start with a base score based on applicant type and adjust from there.
+
+Since applicant type is homeowner, I can start with a high score. But property value is low, which might cap the potential. Let's think about the calibration.
+
+I need to consider the overall likelihood to convert to a high-value sale. High-value sale might be less likely with a low property value.
+
+Let's break down the score components.
+
+I'll assign points based on each factor:
+
+- Applicant Type: Homeowner – let's say base score of 80 (since it's ideal, but other factors can adjust).
+
+But the principles say for homeowner, full score potential, so I can start high. However, property value might reduce it.
+
+Perhaps I should use a systematic approach.
+
+Based on the principles, applicant type is most important. For homeowner, score can be high, but property value and absentee owner will modify it.
+
+Let's consider tier A, B, C based on score.
+
+I'll calculate step by step:
+
+Start with applicant type: homeowner, so no cap, but initial score might be around 80-90.
+
+Property value: <$400K, which is price-shopping segment. This should reduce the score significantly. In context, for a high-value sale, low property value means lower budget, so less likely to be high-value. I'll deduct points.
+
+Freshness: Very fresh, within 14 days, so add points or keep high.
+
+Absentee owner: Since property value <$400K, deduct 10 points.
+
+Project clarity: Specific, so positive, but no direct points mentioned.
+
+I need to combine these into a score.
+
+Let's look at the calibration: 90-100 is high-value homeowner with urgent need. Here, property value is low, so not high-value. So, score should be lower.
+
+70-89 is strong lead, but with low property value and absentee, might not be strong.
+
+50-69 is decent lead.
+
+I think this lead might be in the 50-69 range due to low property value and absentee owner.
+
+Reasoning: Homeowner is good, but absentee with low property value suggests landlord, who might be price-sensitive. Roofing is urgent due to permit freshness, but the sale might not be high-value.
+
+I'll set applicant_type as homeowner, but since absentee, it might actually be an investor. The principles say for absentee + <$400K, it's landlord, price-shops. So, I should treat this as an investor for scoring? But applicant type is based on owner name, which is personal, so technically homeowner. However, absentee owner true might indicate it's rented out, so the owner is an investor. I need to decide.
+
+The scoring principles for applicant type: homeowner, LLC/investor, custom builder, etc. Here, since absentee and low property value, it's likely an investor. But the name is personal, so it could be a homeowner who lives elsewhere? But with low property value, more likely landlord.
+
+To be safe, I'll set applicant_type as homeowner, but apply the absentee adjustment.
+
+In the output, I need to specify applicant_type. Based on name, I'll say homeowner, but note the red flag.
+
+Now, for score: Let's assume a base score for homeowner of 80. Then adjust:
+
+- Property value <$400K: deduct 20 points? Since it's price-shopping segment.
+
+- Absentee owner with <$400K: deduct 10 points as per principles.
+
+- Freshness: very fresh, add 5 points? Not specified, but freshness is important, so positive.
+
+- Project clarity: specific, add 5 points? Not specified.
+
+But I need to be consistent with the principles.
+
+The principles don't give exact point values, just guidelines. I need to infer.
+
+Another way: Use the tiers from property value. For <$400K, it's price-shopping, so likely score capped lower. But applicant type is homeowner, so not capped.
+
+Let's think about ideal contractor type: roofing, since project is roofing.
+
+Contact priority: based on score.
+
+I'll set a score based on overall assessment.
+
+Let's list positive and negative signals:
+
+Positive:
+- Applicant likely homeowner (but absentee may contradict)
+- Project specific: roofing
+- Very fresh permit (2 days ago)
+
+Negative:
+- Property value low ($283K) indicating budget-conscious
+- Absentee owner with low property value, suggesting landlord and price-shopping
+
+So, overall, this lead is from a landlord with a low-value property, likely looking for a cheap roofing job. Not high-value sale.
+
+Score should be on the lower end. But since it's fresh and specific, not too low.
+
+I'll aim for around 50.
+
+From calibration, 50-69 is decent lead, work if capacity allows.
+
+But with red flags, might be lower.
+
+Let's calculate systematically.
+
+Start with base score for applicant type: Since homeowner, base 80.
+
+Adjust for property value: <$400K, so reduce by 30 points? Because from principles, <$400K is price-shopping segment, which is negative. If >$1.5M is premium, and $400K is budget-conscious, so for $283K, significant reduction. Say reduce to 50.
+
+Then absentee owner: -10 points, so 40.
+
+Freshness: roofing fresh within 14 days, so add 15 points? Because freshness is key for roofing, so bring it back up. But careful.
+
+In principles, for roofing, fresh within 14 days is good, but if stale after, bad. So, since very fresh, it should boost score.
+
+Project clarity: specific, so add 5 points.
+
+So, 40 + 15 + 5 = 60.
+
+But property value reduction might be too harsh. Let's see.
+
+Perhaps base score should be based on applicant type and property value combined.
+
+I think the score should reflect likelihood to convert to high-value sale. With low property value, high-value sale is unlikely, so score should be low.
+
+But roofing might be necessary, so conversion likely, but not high-value.
+
+I'll set score to 55.
+
+Tier: Based on score 55, tier C? Calibration: 50-69 is decent, so tier B? Tiers: A for high, B for medium, C for low. But from output, tier is A|B|C. So, for 55, probably B.
+
+But let's define tiers: 
+- A: 70-100
+- B: 40-69
+- C: 0-39
+
+Or something like that. From calibration, 70-89 is strong, so A might be 70+, B 50-69, C below 50.
+
+I'll use:
+A: 70-100
+B: 50-69
+C: 30-49
+<30: Flag for review
+
+So for score 55, tier B.
+
+Red flags: Absentee owner with low property value, indicating landlord and price-shopping.
+
+Ideal contractor type: roofing, since project is roofing.
+
+Contact priority: Based on score, for 55, medium? From calibration, 50-69 is decent, so contact priority medium.
+
+Applicant type: I'll set as homeowner, but with red flag that it might be investor.
+
+But from data, owner is personal name, so homeowner. However, absentee true, so it could be investor. In the principles, for applicant type, we have homeowner, investor, etc. I should infer from context. Since absentee and low property value, it's likely an investor. But the name isn't LLC, so I'll say homeowner but note in red flags.
+
+To be accurate, I'll set applicant_type as homeowner, but in reasoning, mention the landlord aspect.
+
+Now, for output format.
+
+Let's draft:
+
+Score: I'll set 50.
+
+Reasoning: Lead is from a homeowner with a low-value property and absentee ownership, indicating a landlord likely price-shopping for roofing. However, permit is very fresh, suggesting urgent need.
+
+Red flags: [""Absentee owner with property value <$400K, suggesting landlord and price-shopping""]
+
+Ideal contractor type: ""roof""
+
+Contact priority: ""medium"" since score around 50.
+
+Applicant type: ""homeowner""
+
+But let's refine score. I think with freshness, it might be slightly higher. Say 55.
+
+I'll use 55.
+
+Tier: B
+
+Now, for reasoning: 2-3 sentences.
+
+""Lead is for roofing with a very fresh permit, but property value is low and owner is absentee, indicating a budget-conscious landlord. This reduces likelihood of a high-value sale, though urgency may drive conversion.""
+
+Red flags: as above.
+
+Ideal contractor type: roof
+
+Contact priority: medium
+
+Applicant type: homeowner
+
+But in applicant type, since absentee, it might be investor. I'll check principles: for absentee + <$400K, it's landlord, price-shops. So, applicant type should be investor? But the owner name is personal. In practice, landlords can be individuals. So, I'll set applicant_type as homeowner, but in red flags, mention landlord.
+
+To align with principles, perhaps applicant_type should be investor for scoring purposes. But the principles say applicant type is based on owner type. Here, owner is individual, so homeowner. However, the absentee signal modifies the interpretation.
+
+I think for accuracy, I'll set applicant_type as homeowner, but apply the absentee adjustment.
+
+In the output, I have to specify applicant_type, so I'll put homeowner.
+
+Now, finalize score.",2025-12-07T12:09:17.758623,"{'prompt': 707, 'completion': 2614, 'reasoning': 2485}",0.006113510000000001,ai-r1

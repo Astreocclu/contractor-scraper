@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experimental Lead Scoring Report</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 20px; background: #1a1a2e; color: #eee; }
+        h1 { color: #00d4ff; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        th { background: #16213e; color: #00d4ff; }
+        tr:nth-child(even) { background: #1f2937; }
+        tr:hover { background: #374151; }
+        .flag { background: #6366f1; color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px; margin-right: 4px; }
+        .summary { display: flex; gap: 20px; margin-top: 20px; }
+        .stat { background: #16213e; padding: 15px 25px; border-radius: 8px; text-align: center; }
+        .stat-value { font-size: 36px; font-weight: bold; color: #00d4ff; }
+        .stat-label { color: #888; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🎯 Experimental Lead Scoring Report</h1>
+    <p>Generated: 2025-12-06 22:18:31</p>
+    
+    <div class="summary">
+        <div class="stat">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Total Leads</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">1</div>
+            <div class="stat-label">Tier A (Whales)</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">0</div>
+            <div class="stat-label">Tier B</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Tier C</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">46</div>
+            <div class="stat-label">Avg Score</div>
+        </div>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Tier</th>
+                <th>Score</th>
+                <th>Project</th>
+                <th>Value</th>
+                <th>Age</th>
+                <th>Ideal Contractor</th>
+                <th>Reasoning</th>
+                <th>Flags</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr>
+            <td>1</td>
+            <td style="background-color: #ef4444; color: white; font-weight: bold;">C</td>
+            <td><strong>35</strong></td>
+            <td>residential new</td>
+            <td>$518,606</td>
+            <td>5 days</td>
+            <td>General Contractor (if new construction)</td>
+            <td>Generic 'residential new' project type provides no specific ...</td>
+            <td><span class="flag">Absentee Owner</span> <span class="flag">Vague Project</span></td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td style="background-color: #ef4444; color: white; font-weight: bold;">C</td>
+            <td><strong>10</strong></td>
+            <td>residential new</td>
+            <td>$530,000</td>
+            <td>5 days</td>
+            <td>None (Not our target)</td>
+            <td>Owner name 'WRH LAKE COUNTRY LLC' indicates corporate/builde...</td>
+            <td><span class="flag">Builder/Corporate</span> <span class="flag">Absentee Owner</span></td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td style="background-color: #22c55e; color: white; font-weight: bold;">A</td>
+            <td><strong>95</strong></td>
+            <td>residential addition</td>
+            <td>$104,205</td>
+            <td>5 days</td>
+            <td>Screen/Patio or General Contractor specializing in additions</td>
+            <td>Platinum-tier 'residential addition' project (Base 90) with ...</td>
+            <td><span class="flag">Luxury</span> <span class="flag">High Intent</span> <span class="flag">Fresh Lead</span></td>
+        </tr>
+        
+        </tbody>
+    </table>
+</body>
+</html>

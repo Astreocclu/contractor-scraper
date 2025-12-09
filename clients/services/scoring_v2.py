@@ -146,6 +146,7 @@ class PermitData:
     city: str
     property_address: str
     owner_name: str = "Unknown"
+    contractor_name: str = ""
     project_description: str = ""
     permit_type: str = ""
     market_value: float = 0.0
@@ -170,6 +171,7 @@ class PermitData:
             city=permit.city,
             property_address=permit.property_address,
             owner_name=permit.applicant_name or "Unknown",
+            contractor_name=permit.contractor_name or "",
             project_description=permit.description or permit.permit_type or "",
             permit_type=permit.permit_type or "",
             issued_date=permit.issued_date,
@@ -213,8 +215,12 @@ def should_discard(permit: PermitData) -> Tuple[bool, str]:
         return True, f"Too old: {permit.days_old} days"
 
     # Zero data - gone (can't contact AND can't assess wealth)
-    if permit.owner_name in ("Unknown", "", None) and permit.market_value == 0:
-        return True, "No owner name AND no market value"
+    # But keep if we have contractor info - we can still identify the work type
+    has_owner = permit.owner_name not in ("Unknown", "", None)
+    has_value = permit.market_value and permit.market_value > 0
+    has_contractor = permit.contractor_name not in ("Unknown", "", None)
+    if not has_owner and not has_value and not has_contractor:
+        return True, "No owner name AND no market value AND no contractor"
 
     return False, ""
 

@@ -21,12 +21,12 @@ The contractor scraper system is **functionally complete** but producing low tru
 | REST API | Working | DRF with pagination |
 | Virtual environment | Working | All dependencies installed |
 
-### 2. Google Places Scraper
+### 2. Google Maps Scraper (Puppeteer)
 | Feature | Status | Notes |
 |---------|--------|-------|
 | Text search | Working | Finds contractors by search terms |
 | Place details | Working | Gets phone, website |
-| Review fetching | Partial | Google API returns max 5 reviews |
+| Review fetching | Partial | Puppeteer scraping returns limited reviews |
 | Rate limiting | Working | 1.5s delay between requests |
 | Deduplication | Working | By business name + city |
 
@@ -93,19 +93,12 @@ The contractor scraper system is **functionally complete** but producing low tru
 - BBB Accredited: 4 pts (verification) + 2 pts (bonus)
 - Years in Business: 3 pts
 
-### 2. Yelp Enrichment
+### 2. Yelp Enrichment - DISABLED
 | Issue | Impact | Root Cause |
 |-------|--------|------------|
-| No Yelp data retrieved | -3 to -6 points per contractor | No YELP_API_KEY configured |
+| Yelp DISABLED | N/A - not factored into scoring | Intentionally disabled until further notice |
 
-**Details:**
-- Yelp API requires authentication
-- Free tier: 5000 calls/day
-- Sign up at: https://www.yelp.com/developers/v3/manage_app
-
-**Missing Points:**
-- Yelp Rating (4.0+): 3 pts
-- Yelp Review Count: contributes to bonus
+**Status:** DISABLED as of 2025-12-08. Yelp data is NOT factored into contractor scoring. Do not penalize contractors for missing Yelp data.
 
 ### 3. License Verification
 | Issue | Impact | Root Cause |
@@ -124,10 +117,10 @@ The contractor scraper system is **functionally complete** but producing low tru
 ### 4. Review Volume
 | Issue | Impact | Root Cause |
 |-------|--------|------------|
-| Low review counts | -2 to -3 points | Google Places API limit |
+| Low review counts | -2 to -3 points | Scraping limitations |
 
 **Details:**
-- Google Places API returns max 5 reviews per business
+- Puppeteer scraping returns limited reviews per business (Google Places API is BANNED - caused $300 overcharge)
 - SerpAPI can get 50+ reviews but requires paid key ($50/mo)
 - Most scraped contractors show 0 reviews in our DB despite having reviews on Google
 
@@ -167,16 +160,7 @@ The contractor scraper system is **functionally complete** but producing low tru
 
 ### Priority 1: Critical (Blocking Pass Threshold)
 
-#### 1.1 Add Yelp API Key
-```bash
-# In .env
-YELP_API_KEY=your_key_here
-```
-- Sign up: https://www.yelp.com/developers/v3/manage_app
-- Free tier: 5000 calls/day
-- Impact: +3 to +6 points per contractor
-
-#### 1.2 Implement TDLR License Verification
+#### 1.1 Implement TDLR License Verification
 - Create `contractors/services/license_checker.py`
 - Scrape or API to Texas TDLR database
 - Match by business name or license number
@@ -255,9 +239,9 @@ sudo -u postgres createdb contractor_db
 
 | Key | Status | Where to Get |
 |-----|--------|--------------|
-| GOOGLE_PLACES_API_KEY | Working | console.cloud.google.com |
+| GOOGLE_PLACES_API_KEY | **BANNED** | DO NOT USE - caused $300 overcharge. Use Puppeteer scraping instead. |
 | DEEPSEEK_API_KEY | **READY** | platform.deepseek.com (free 5M tokens) |
-| YELP_API_KEY | **NEEDS SETUP** | yelp.com/developers (free 5000/day) |
+| YELP_API_KEY | **DISABLED** | Yelp disabled until further notice |
 | SERPAPI_KEY | Optional | serpapi.com ($50/mo) - for more reviews |
 | GOOGLE_API_KEY (Gemini) | Legacy | makersuite.google.com - replaced by DeepSeek |
 
@@ -292,18 +276,18 @@ sudo -u postgres createdb contractor_db
 
 ## Quick Wins
 
-1. **Add Yelp API key** - 10 min setup, +3-6 points
-2. **Lower threshold to 60** - 1 line change, shows more contractors
-3. **Add SerpAPI key** - Better reviews, better BBB data
+1. **Lower threshold to 60** - 1 line change, shows more contractors
+2. **Add SerpAPI key** - Better reviews, better BBB data
 
 ---
 
 ## Conclusion
 
-The system architecture is sound and the pipeline works. The low scores are a **data problem**, not a code problem. Adding Yelp API and implementing license verification would likely push many contractors above the 80 threshold.
+The system architecture is sound and the pipeline works. The low scores are a **data problem**, not a code problem.
 
 **Recommended Next Steps:**
-1. Get Yelp API key (free)
-2. Implement TDLR license checker
-3. Consider SerpAPI for BBB data
-4. Re-run pipeline after fixes
+1. Implement TDLR license checker
+2. Consider SerpAPI for BBB data
+3. Re-run pipeline after fixes
+
+**Note:** Yelp and BBB are currently disabled/blocked - do not factor into scoring.

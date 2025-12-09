@@ -1,0 +1,565 @@
+[
+  {
+    "lead_id": "43355760",
+    "project": "residential new",
+    "owner": "FREEMAN, JAMES",
+    "value": 518606.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 75.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 45,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 35,
+      "tier": "C",
+      "reasoning": "Generic 'residential new' project type provides no specific intent for outdoor living. $518k market value is mid-range but not luxury tier. Absentee owner reduces contact probability. 5 days old is fresh, but without project specificity, cannot justify higher score.",
+      "ideal_contractor": "General Contractor/Builder",
+      "flags": [
+        "Vague Project",
+        "Absentee Owner"
+      ]
+    },
+    "diff": -40.0
+  },
+  {
+    "lead_id": "da130d92",
+    "project": "residential new",
+    "owner": "WRH LAKE COUNTRY LLC",
+    "value": 530000.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 75.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 45,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 10,
+      "tier": "C",
+      "reasoning": "Owner name 'WRH LAKE COUNTRY LLC' indicates corporate/builder ownership (likely a development company). Builder/LLC leads are low-value for our B2C luxury outdoor living sales model. While the data is fresh (5 days old) and market value is decent ($530k), the corporate ownership triggers the 'Builder Trap' rule.",
+      "ideal_contractor": "None (B2B lead)",
+      "flags": [
+        "Builder/Corporate",
+        "Absentee"
+      ]
+    },
+    "diff": -65.0
+  },
+  {
+    "lead_id": "476cdf5a",
+    "project": "residential addition",
+    "owner": "TAPIA, JOE",
+    "value": 104205.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 70.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 35,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15,
+        "multi_permit": 5
+      }
+    },
+    "ai": {
+      "score": 95,
+      "tier": "A",
+      "reasoning": "Platinum-tier residential addition project with perfect timing (5 days old, early in construction phase). High project value ($104k) indicates significant investment. Owner-occupied with personal name suggests direct homeowner decision-maker.",
+      "ideal_contractor": "Screen/Patio/Outdoor Living",
+      "flags": [
+        "Luxury",
+        "High Intent",
+        "Fresh Lead"
+      ]
+    },
+    "diff": 25.0
+  },
+  {
+    "lead_id": "14f9eecd",
+    "project": "residential addition",
+    "owner": "KNOTT, JOHN",
+    "value": 378126.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 65.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 35,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 85,
+      "tier": "A",
+      "reasoning": "Platinum-tier addition project with excellent timing (5 days old, early construction phase). Market value of $378k is below luxury threshold but addition projects typically indicate homeowner investment intent. Absentee owner penalty applied but outweighed by project type and freshness.",
+      "ideal_contractor": "Screen/Patio/Addition Specialist",
+      "flags": [
+        "Early Stage",
+        "Absentee Owner"
+      ]
+    },
+    "diff": 20.0
+  },
+  {
+    "lead_id": "6abe65e1",
+    "project": "pool",
+    "owner": "REILLY, AUSTIN T",
+    "value": 1589846.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 95.0,
+      "tier": "A",
+      "breakdown": {
+        "permit_type": 50,
+        "high_contrast": 15,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 95,
+      "tier": "A",
+      "reasoning": "Platinum-tier pool project in a $1.59M home (wealth multiplier +15). Only 5 days old - perfect timing for early-stage sales during excavation/planning phase. Owner-occupied with clear individual ownership (not corporate/builder).",
+      "ideal_contractor": "Screen/Patio/Pool Enclosure Specialist",
+      "flags": [
+        "Luxury",
+        "Fresh Permit",
+        "High Net Worth"
+      ]
+    },
+    "diff": 0.0
+  },
+  {
+    "lead_id": "d852861c",
+    "project": "residential accessory new",
+    "owner": "MATLOCK, SARAH E",
+    "value": 235676.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 70.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 40,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 35,
+      "tier": "C",
+      "reasoning": "Project type 'residential accessory new' is ambiguous but suggests a small outbuilding or shed (Bronze tier, base 20). Market value of $235,676 is well below the $350k threshold, triggering a -20 penalty for low wealth. Data is fresh (5 days old) but the low base value and wealth penalty make a high-ticket sale unlikely.",
+      "ideal_contractor": "General Contractor (Shed/Outbuilding Specialist)",
+      "flags": [
+        "Low Property Value",
+        "Ambiguous Project Scope"
+      ]
+    },
+    "diff": -35.0
+  },
+  {
+    "lead_id": "b215957f",
+    "project": "residential accessory new",
+    "owner": "VAN EATON, DAVID",
+    "value": 848000.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 90.0,
+      "tier": "A",
+      "breakdown": {
+        "permit_type": 40,
+        "high_contrast": 20,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 85,
+      "tier": "A",
+      "reasoning": "High-value 'residential accessory new' project (likely pool, cabana, or outdoor structure) in an $848k home. Only 5 days old = perfect timing for early-stage sales. Non-absentee owner increases contact probability.",
+      "ideal_contractor": "Screen/Patio/Pool Enclosure",
+      "flags": [
+        "Luxury",
+        "Fresh Lead",
+        "High Intent Project"
+      ]
+    },
+    "diff": -5.0
+  },
+  {
+    "lead_id": "0f73cc75",
+    "project": "residential accessory new",
+    "owner": "VALERIO HOMES LLC",
+    "value": 30000.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 70.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 40,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 10,
+      "tier": "C",
+      "reasoning": "Builder/Corporate owner detected - not a retail homeowner",
+      "ideal_contractor": "Skip",
+      "flags": [
+        "Builder"
+      ]
+    },
+    "diff": -60.0
+  },
+  {
+    "lead_id": "a6b62736",
+    "project": "residential accessory new",
+    "owner": "STEPP, ROBERT LOYD",
+    "value": 909848.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 90.0,
+      "tier": "A",
+      "breakdown": {
+        "permit_type": 40,
+        "high_contrast": 20,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 85,
+      "tier": "A",
+      "reasoning": "High-value 'residential accessory new' project (likely outdoor living structure) in $909k home. Only 5 days old = perfect timing for early-stage sales. Non-absentee owner improves contactability.",
+      "ideal_contractor": "Screen/Patio/Outdoor Living",
+      "flags": [
+        "Luxury",
+        "Fresh Lead"
+      ]
+    },
+    "diff": -5.0
+  },
+  {
+    "lead_id": "8f897b5f",
+    "project": "residential accessory addition",
+    "owner": null,
+    "value": 0.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 50.0,
+      "tier": "C",
+      "breakdown": {
+        "permit_type": 35,
+        "high_contrast": 0,
+        "absentee": 0,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 85,
+      "tier": "A",
+      "reasoning": "Project is a 'Room Addition' (Platinum tier, base 90). Data is very fresh (5 days old), which is ideal for early-stage sales. The market value of $0.0 is a data gap, but the project type indicates significant investment. Absentee flag is false, improving contactability.",
+      "ideal_contractor": "Screen/Patio",
+      "flags": [
+        "High Intent",
+        "Fresh Data"
+      ]
+    },
+    "diff": 35.0
+  },
+  {
+    "lead_id": "ae924077",
+    "project": "residential remodel",
+    "owner": "WALDROUP, WILLIAM",
+    "value": 313888.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 60.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 30,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 25,
+      "tier": "C",
+      "reasoning": "Generic 'residential remodel' is low intent (Bronze tier, base 20). Market value of $313k is below $350k threshold (-20 points), making luxury upgrades difficult to sell. Absentee owner adds contact difficulty (-5 points). Only positive is fresh data (5 days old), but insufficient to overcome fundamental issues.",
+      "ideal_contractor": "General Remodeler",
+      "flags": [
+        "Low Home Value",
+        "Absentee Owner",
+        "Vague Project Scope"
+      ]
+    },
+    "diff": -35.0
+  },
+  {
+    "lead_id": "ebb89d8e",
+    "project": "residential remodel",
+    "owner": "CONTRERAS, KATHLEEN",
+    "value": 231511.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 60.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 30,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 35,
+      "tier": "C",
+      "reasoning": "Generic 'residential remodel' is ambiguous but likely lower-end work given the $231k market value (-20 points). While data is fresh (5 days old), the project type lacks clear alignment with high-ticket outdoor living or pool projects. No builder flags, but low property value suggests limited budget for luxury upgrades.",
+      "ideal_contractor": "General Remodeler",
+      "flags": [
+        "Low Property Value",
+        "Ambiguous Project Scope"
+      ]
+    },
+    "diff": -25.0
+  },
+  {
+    "lead_id": "3735b35a",
+    "project": "residential remodel",
+    "owner": "BARKER, RICHARD D",
+    "value": 227501.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 60.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 30,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 35,
+      "tier": "C",
+      "reasoning": "Generic 'residential remodel' project type (Silver tier, base 50) with low market value ($227k, -20 points) making luxury upgrades unlikely. While data is fresh (5 days old), the combination of vague project scope and low property value severely limits high-ticket sales potential.",
+      "ideal_contractor": "General Remodeler",
+      "flags": [
+        "Low Property Value",
+        "Vague Project Scope"
+      ]
+    },
+    "diff": -25.0
+  },
+  {
+    "lead_id": "e5339072",
+    "project": "residential remodel",
+    "owner": "RUDDOCK, BRIAN",
+    "value": 362902.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 65.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 30,
+        "high_contrast": 5,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 35,
+      "tier": "C",
+      "reasoning": "Generic 'residential remodel' is ambiguous but typically indicates interior work (kitchens, bathrooms) rather than high-ticket outdoor living. Market value of $362k is below the $350k threshold for luxury upgrades, triggering a -20 penalty. While data is fresh (5 days old), the combination of unclear outdoor intent and low property value makes this a low-probability lead for $20k+ outdoor sales.",
+      "ideal_contractor": "General Remodeler (not outdoor specialty)",
+      "flags": [
+        "Low Property Value",
+        "Ambiguous Project Type"
+      ]
+    },
+    "diff": -30.0
+  },
+  {
+    "lead_id": "b8694681",
+    "project": "residential remodel",
+    "owner": "BRAGG, PATSY ANN",
+    "value": 288605.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 60.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 30,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 35,
+      "tier": "C",
+      "reasoning": "Generic 'residential remodel' project with low market value ($288k) indicates limited budget for high-ticket outdoor living upgrades. While data is fresh (5 days old), the project type lacks specificity for premium outdoor features and the property value suggests mid-tier wealth at best.",
+      "ideal_contractor": "General Remodeler",
+      "flags": [
+        "Low Property Value",
+        "Vague Project Scope"
+      ]
+    },
+    "diff": -25.0
+  },
+  {
+    "lead_id": "9a2db801",
+    "project": "residential remodel",
+    "owner": "BARNARD, DEBRA REYNOLDS",
+    "value": 118867.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 60.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 30,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 45,
+      "tier": "C",
+      "reasoning": "Generic 'residential remodel' is ambiguous but typically indicates interior work (kitchen/bath) rather than outdoor living. Market value of $118k suggests a small project, not a high-ticket outdoor transformation. While data is fresh (5 days old), the lack of clear outdoor intent and low project value make this a low probability for $20k+ outdoor sales.",
+      "ideal_contractor": "General Remodeler",
+      "flags": [
+        "Low Project Value",
+        "Ambiguous Scope"
+      ]
+    },
+    "diff": -15.0
+  },
+  {
+    "lead_id": "8ab6e4be",
+    "project": "residential remodel",
+    "owner": "ROSS, BRIDGETTE",
+    "value": 242902.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 60.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 30,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 45,
+      "tier": "C",
+      "reasoning": "Generic 'residential remodel' is ambiguous but typically indicates interior work (kitchen/bath) rather than outdoor living. Low market value ($242k) suggests limited budget for high-ticket outdoor upgrades. While data is fresh (5 days old), the combination of vague project type and low property value makes this unlikely to convert to a $20k+ outdoor sale.",
+      "ideal_contractor": "General Remodeler (not outdoor-specific)",
+      "flags": [
+        "Low Property Value",
+        "Vague Project Scope"
+      ]
+    },
+    "diff": -15.0
+  },
+  {
+    "lead_id": "f3e96ccb",
+    "project": "residential new",
+    "owner": "THOMAS CROSSING LLC",
+    "value": 0.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 60.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 45,
+        "high_contrast": 0,
+        "absentee": 0,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 10,
+      "tier": "C",
+      "reasoning": "Owner name 'THOMAS CROSSING LLC' indicates corporate/builder ownership. Builder/LLC leads are scored at 10 regardless of other factors as we target retail homeowners, not B2B clients.",
+      "ideal_contractor": "None",
+      "flags": [
+        "Builder/Corporate",
+        "Absentee Owner"
+      ]
+    },
+    "diff": -50.0
+  },
+  {
+    "lead_id": "a221fb3f",
+    "project": "residential new",
+    "owner": "BLOOMFIELD HOMES LP",
+    "value": 46181.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 75.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 45,
+        "high_contrast": 0,
+        "absentee": 15,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 10,
+      "tier": "C",
+      "reasoning": "Builder/Corporate owner detected - not a retail homeowner",
+      "ideal_contractor": "Skip",
+      "flags": [
+        "Builder"
+      ]
+    },
+    "diff": -65.0
+  },
+  {
+    "lead_id": "10d32ca9",
+    "project": "residential new",
+    "owner": "FORT WORTH AREA HABITAT FOR HU",
+    "value": 0.0,
+    "permit_date": "2025-12-01",
+    "existing": {
+      "score": 60.0,
+      "tier": "B",
+      "breakdown": {
+        "permit_type": 45,
+        "high_contrast": 0,
+        "absentee": 0,
+        "freshness": 15
+      }
+    },
+    "ai": {
+      "score": 10,
+      "tier": "C",
+      "reasoning": "This is a non-profit builder/organization (Habitat for Humanity), not a retail homeowner. Builder/Corporate owned leads are automatically scored at 10. The 'residential new' project type is ambiguous but irrelevant given the owner type.",
+      "ideal_contractor": "None (Not a target customer)",
+      "flags": [
+        "Builder/Corporate",
+        "Non-Profit"
+      ]
+    },
+    "diff": -50.0
+  }
+]

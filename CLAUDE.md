@@ -1,5 +1,22 @@
 # Contractor Intelligence System
 
+## Prompting Principles
+
+**Always use positive framing** - say what TO do, specify what to preserve:
+- "Keep all X in Y" instead of "Don't put X here"
+- "Remove ONLY these items: X, Y, Z"
+- "Preserve all structural elements exactly"
+
+---
+
+## Repo Scope: Contractor Auditing Only
+
+- Keep all **permit logic** in `~/testhome/permit-scraper/`
+- Keep all **imports** within this repo
+- The `contractors/` Django app name is preserved for database compatibility
+
+---
+
 ## MANDATORY STARTUP PROTOCOL (Every Session)
 
 **Before doing ANY work, Claude MUST:**
@@ -109,8 +126,8 @@ python3 manage.py runserver 8002
 - Always use Puppeteer scraping (Google Places API caused $300 overcharge)
 
 ### Prompts
-- Always use positive framing: "Remove ONLY these items: X, Y, Z"
-- Always specify what to preserve: "Preserve all structural elements exactly"
+- Use positive framing (see Prompting Principles at top)
+- Specify what to preserve: "Preserve all structural elements exactly"
 
 ### Scoring
 - Always enforce score caps in code via `enforceScoreMultipliers()`
@@ -183,4 +200,4 @@ For architecture decisions or complex problem-solving:
 3. Claude reads critique, revises
 4. Repeat until solid
 
-This is NOT for code writing. This is for THINKING through hard problems with a second brain that has 5x context.
+Use this for THINKING through hard problems only - implement code separately with Claude's tools.

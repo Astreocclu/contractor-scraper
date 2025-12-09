@@ -1,0 +1,127 @@
+lead_id,score,tier,reasoning,red_flags,ideal_contractor_type,contact_priority,applicant_type,chain_of_thought,scored_at,tokens_used,cost_usd,scoring_method
+bf3a90d4,85,B,"Homeowner applicant on a property valued just below the premium tier, with a very fresh and specific permit for a pool. The project has a long sales cycle, but high intent is indicated. Absentee status is ambiguous but not a negative in this price range.","Mailing address differs from property address, but flagged as non-absentee. Verify occupant status.",pool,high,homeowner,"We are scoring a lead for a pool project in Denton, TX.
+ Lead data:
+   Owner: DAVIS, KELLY
+   Property Value: $725,603.0
+   Project Description: pool
+   Category: pool
+   Permit Date: 2025-12-05 (2 days ago, so very fresh)
+   City: denton
+   Absentee Owner: None (mailing address differs from property) -> Actually, note says ""None"" but then in parentheses it says mailing address differs. That might be a mistake. Let's read carefully: ""Absentee Owner: None (mailing address differs from property)"". The field says ""None"" but then there's a note that mailing address differs. This could be ambiguous. In the data, it might be that the absentee owner flag is set to ""None"" meaning not marked as absentee, but the note suggests the mailing address is different. We'll have to interpret. Typically, if mailing address differs, it could be an absentee owner. However, the field explicitly says ""None"". We'll go by the field and treat as not absentee, but note the discrepancy.
+
+ We'll break down by principles:
+
+ 1. APPLICANT TYPE: Owner is ""DAVIS, KELLY"". It's an individual, not an LLC or builder. We assume homeowner. So full score potential.
+
+ 2. PROPERTY VALUE: $725,603.0 in Denton. This is above $750K? Actually $725,603 is just below $750K. But note the threshold: ""> $750K = Nice suburbs, good budget"". This property is $725K, which is less than $750K. However, it is above $550K (typical family). So we can consider it in the ""Typical family, standard budget"" or maybe on the higher end of that. But note the thresholds: 
+    >$1.5M, >$1.0M, >$750K, >$550K, >$400K, <$400K.
+    $725K is between $550K and $750K, so it's in the ""Typical family, standard budget"" range. But $725K is close to $750K, so we might give a slight bump. However, the scoring principles don't specify exact points, so we'll use this as a factor in overall score.
+
+ 3. FRESHNESS: Permit date is 2025-12-05, which is 2 days ago. For pools, the window is 60-90 days. So this is very fresh and within the ideal window.
+
+ 4. ABSENTEE OWNER: The field says ""None"", but note says mailing address differs. This is conflicting. Since the field says ""None"", we'll treat as not absentee. But if we consider the note, it might be an absentee owner. However, the property value is $725K, which is in the middle range (neither >$750K nor <$400K). According to the principle, absentee in middle range is ambiguous, no adjustment. So either way, no adjustment.
+
+ 5. PROJECT CLARITY: Project description is ""pool"", and category is ""pool"". It's specific. So that's good.
+
+ 6. MISSING DATA: None missing.
+
+ Now, let's think about the scoring. We don't have a fixed formula, but we have to come up with a score between 0-100.
+
+ Steps to score:
+
+ - Applicant Type: Homeowner, so we can score high.
+ - Property Value: $725K is good, but not in the premium tiers. It's above average for the area, but note that Denton is not as expensive as Southlake or Westlake. So we adjust accordingly.
+ - Freshness: Very fresh, within 2 days, for a pool project which has a long cycle. This is positive.
+ - Absentee: No adjustment.
+ - Project Clarity: Clear.
+
+ We also have to consider that pools are high-value projects, so a homeowner with a property value of $725K is likely to have a good budget for a pool.
+
+ Let's think about the tier:
+   A: 90-100
+   B: 70-89
+   C: 50-69
+
+ We want to place this lead in one of these.
+
+ Given that it's a homeowner, very fresh, clear pool project, and property value is decent, it's a strong lead. But is it a 90+? Possibly not, because the property value is not in the premium tier. However, in Denton, $725K is a nice property. The lead is very fresh and the applicant is the homeowner.
+
+ We can score it in the 70-89 range (B tier) or maybe even low 90s? Let's calibrate:
+
+  90-100: Call today, high-value homeowner with urgent need.
+
+  This lead is for a pool, which is not typically an urgent need (like a roof leak). But it's a high-value sale. The property value is not in the top tier, but still good.
+
+  Maybe we score it around 80-85.
+
+  Let's break it down with a more quantitative approach (even though the principles are qualitative):
+
+  We can assign points:
+
+  Applicant Type: Homeowner: 40 points (if we assume 40% of the score comes from this, but note it's the most important signal). Alternatively, we can set a base score from this and adjust.
+
+  One way: start with a base score for homeowner: say 80. Then adjust:
+
+  Property Value: $725K is above $550K, which is typical family, standard budget. We can add 5 points for being above $550K, but note that it's below $750K so not in the ""nice suburbs, good budget"" threshold. Actually, the threshold for ""good budget"" is >$750K. So we are in the tier below. We might not add points, or even subtract? No, it's still a decent property. We'll add 0 points for being in the $550K-$750K range.
+
+  Freshness: For pool, 2 days is very fresh. We can add 10 points for being within the first week? But the principle says the window is 60-90 days, so 2 days is very fresh and indicates a recent decision. We'll add 5 points.
+
+  Absentee: No adjustment.
+
+  Project Clarity: Specific, add 5 points.
+
+  So 80 + 5 (freshness) + 5 (clarity) = 90.
+
+  But wait, property value didn't add. So 90 would be in the A tier.
+
+  Alternatively, if we start with a base of 75 for homeowner, then 75+5+5=85.
+
+  Since the property value is not in the top tier, we might start at 75. But note that the principles say homeowner is ideal buyer (full score potential). So we don't want to cap the score because of property value. However, the property value is a signal of budget. A $725K home in Denton is likely a higher-end home for the area. Denton median home price is around $300K, so $725K is well above median.
+
+  Given that, I think this is a strong lead. I'll go with a score of 85.
+
+  Red flags: None, but note the absentee owner note. We'll list the discrepancy if we think it's a concern.
+
+  Ideal contractor type: pool.
+
+  Contact priority: high, because it's fresh and a homeowner.
+
+  Applicant type: homeowner.
+
+  Tier: B (since 85 is in 70-89).
+
+  But wait, 85 is in B, but 90 is A. I think 85 is a strong B, but the calibration says 70-89 is strong lead, worth prioritizing. So that fits.
+
+  Alternatively, we could score it 90 if we think the property value is high enough. But the threshold for ""good budget"" is >$750K, and this is $725K, which is $25K less. It's close, but not quite. I'll stick with 85.
+
+  Reasoning: Homeowner with a clear pool project on a property valued at $725K, and the permit was pulled only 2 days ago, indicating high intent and freshness.
+
+  Red flags: We note the discrepancy in the absentee owner field: the field says ""None"" but the note says mailing address differs. We'll list that as a concern.
+
+  So, red_flags: [""Mailing address differs from property, but absentee owner field is None""]
+
+  But wait, the scoring principle for absentee owner says: if absentee and >$750K, +5; if absentee and <$400K, -10; else no adjustment. Here, if we consider it absentee, then since $725K is in the middle, no adjustment. So it doesn't affect the score. But it's still a data inconsistency.
+
+  Alternatively, the note might be part of the data indicating that the mailing address is different, so it is an absentee owner. But the field says ""None"". We'll trust the field and note the inconsistency.
+
+  We'll output in JSON.
+
+  Let's write the JSON:
+
+  {
+    ""score"": 85,
+    ""tier"": ""B"",
+    ""reasoning"": ""Homeowner with clear pool intent on a $725K property in Denton, permit pulled just 2 days ago. Property value is above average for the area, indicating good budget. No significant red flags."",
+    ""red_flags"": [""Mailing address differs from property, but absentee owner field marked as None.""],
+    ""ideal_contractor_type"": ""pool"",
+    ""contact_priority"": ""high"",
+    ""applicant_type"": ""homeowner""
+  }
+
+  But note: the property value is $725,603.0, which is above $550K and below $750K. So it's in the ""Typical family, standard budget"" category. We might adjust the reasoning.
+
+  Alternatively, we can say: ""Property value is in the upper mid-range for DFW, suggesting a solid budget for a pool project.""
+
+  Also, note that the permit date is in the future? 2025-12-05 is two days ago from when? Assuming today is 2025-12-07, then it's two days ago. So that's correct.
+
+  We'll go with the above.",2025-12-07T11:57:11.132131,"{'prompt': 706, 'completion': 2336, 'reasoning': 2201}",0.005504140000000001,ai-r1
