@@ -38,6 +38,11 @@
 - [ ] Delete deprecated JS scrapers after migration complete
 
 ## Later
+- [ ] **Migrate SQLite → PostgreSQL** - `docs/POSTGRESQL_MIGRATION_PLAN.md`
+  - Enables parallel audit workers (SQLite locks on writes)
+  - Required for 1000+ contractor scaling
+  - Ready to execute: 4 phases, ~4-5 hours total
+  - Trigger: After Boss deal response
 - [ ] Batch audit remaining 1,500+ contractors
 - [ ] Build permit cross-reference (claims vs actual volume)
 

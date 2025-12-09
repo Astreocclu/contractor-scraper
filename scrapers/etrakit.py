@@ -409,42 +409,41 @@ HTML:
                     return vs ? vs.value.slice(0, 100) : null;
                 }''')
 
-                has_next = data.get('has_next_page', False)
-                if not has_next:
-                    # Look for pagination - eTRAKiT uses input buttons with changePage() onclick
-                    has_next = await page.evaluate('''() => {
-                        // Method 1: Find Next button by class (preferred)
-                        const nextBtn = document.querySelector('input.NextPage:not(.aspNetDisabled), input.PagerButton.NextPage:not([disabled])');
-                        if (nextBtn) {
-                            nextBtn.click();
+                # DeepSeek's has_next_page is just a hint - we still need to click!
+                # Always try to click the Next button regardless of DeepSeek's response
+                has_next = await page.evaluate('''() => {
+                    // Method 1: Find Next button by class (preferred)
+                    const nextBtn = document.querySelector('input.NextPage:not(.aspNetDisabled), input.PagerButton.NextPage:not([disabled])');
+                    if (nextBtn) {
+                        nextBtn.click();
+                        return true;
+                    }
+
+                    // Method 2: Find by ID pattern
+                    const nextById = document.querySelector('input[id*="btnPageNext"]:not([disabled])');
+                    if (nextById) {
+                        nextById.click();
+                        return true;
+                    }
+
+                    // Method 3: Call changePage directly if function exists
+                    if (typeof changePage === 'function') {
+                        changePage('next');
+                        return true;
+                    }
+
+                    // Method 4: Fallback to anchor tags with __doPostBack
+                    const links = document.querySelectorAll('a');
+                    for (const link of links) {
+                        const text = (link.textContent || '').toLowerCase().trim();
+                        const href = link.href || '';
+                        if ((text === 'next' || text === '>') && href.includes('__doPostBack')) {
+                            link.click();
                             return true;
                         }
-
-                        // Method 2: Find by ID pattern
-                        const nextById = document.querySelector('input[id*="btnPageNext"]:not([disabled])');
-                        if (nextById) {
-                            nextById.click();
-                            return true;
-                        }
-
-                        // Method 3: Call changePage directly if function exists
-                        if (typeof changePage === 'function') {
-                            changePage('next');
-                            return true;
-                        }
-
-                        // Method 4: Fallback to anchor tags with __doPostBack
-                        const links = document.querySelectorAll('a');
-                        for (const link of links) {
-                            const text = (link.textContent || '').toLowerCase().trim();
-                            const href = link.href || '';
-                            if ((text === 'next' || text === '>') && href.includes('__doPostBack')) {
-                                link.click();
-                                return true;
-                            }
-                        }
-                        return false;
-                    }''')
+                    }
+                    return false;
+                }''')
 
                 if not has_next:
                     print('    No more pages available')

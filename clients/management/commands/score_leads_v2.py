@@ -204,11 +204,11 @@ class Command(BaseCommand):
         if not options.get('rescore'):
             permits_qs = permits_qs.exclude(scored_lead__isnull=False)
 
-        # Exclude permits that would fail "no CAD data" filter
-        # (no owner AND no market value = auto-discard)
-        # Keep permits that have: applicant_name OR property with owner/value
+        # Exclude permits that would fail "no useful data" filter
+        # Keep permits that have: applicant_name OR contractor_name OR property with owner/value
         permits_qs = permits_qs.filter(
             Q(applicant_name__isnull=False) & ~Q(applicant_name='') |  # Has applicant
+            Q(contractor_name__isnull=False) & ~Q(contractor_name='') |  # Has contractor
             Q(property_address__in=Property.objects.filter(
                 Q(owner_name__isnull=False) & ~Q(owner_name='') |  # Has owner
                 Q(market_value__gt=0)  # Has value

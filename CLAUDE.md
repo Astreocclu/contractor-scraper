@@ -1,5 +1,31 @@
 # Contractor Intelligence System
 
+## MANDATORY STARTUP PROTOCOL (Every Session)
+
+**Before doing ANY work, Claude MUST:**
+
+1. Have Gemini read and summarize ALL documentation:
+   ```bash
+   gemini -p "Read and summarize ALL of these files in one comprehensive briefing:
+   - TODO.md
+   - STATUS.md
+   - ERRORS.md
+   - docs/AGENTIC_QUICKREF.md
+   - docs/AGENTIC_AUDIT_SPEC.md
+   - docs/CODEBASE_DOCUMENTATION.md
+   - docs/MGO_SCRAPER_STATUS.md
+   - docs/DATABASE_ANALYSIS.md
+   - scrapers/README.md
+
+   Provide: current priorities, system state, known bugs, architecture overview, and any critical warnings."
+   ```
+2. Read and internalize Gemini's summary
+3. Run `git status` to confirm branch state
+
+This ensures Claude has full project context before making any changes.
+
+---
+
 ## What This Is
 Forensic contractor auditing. Puppeteer scrapes → DeepSeek analyzes → Trust Score.
 

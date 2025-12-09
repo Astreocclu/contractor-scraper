@@ -1,5 +1,27 @@
 """
-Django management command to enrich leads with multi-county CAD data.
+Django management command to enrich PERMITS with multi-county CAD data.
+
+=============================================================================
+DATA FLOW (DO NOT CHANGE WITHOUT UNDERSTANDING THIS):
+=============================================================================
+
+    PERMIT (scraped from city portals)
+        ↓
+    enrich_cad (THIS COMMAND) - looks up CAD data by address
+        ↓
+    PROPERTY (cache of CAD data: owner, market value, year built, etc.)
+        ↓
+    scoring_v2.py - scores permits using Property data
+        ↓
+    SCOREDLEAD (the sellable product)
+
+IMPORTANT:
+- This command works on PERMITS, not Leads or Properties directly
+- Property is just a cache keyed by address - created/updated by this command
+- The Lead model is LEGACY - use ScoredLead for scored/sellable leads
+- If you break this flow, permits won't get enriched and scoring will fail
+
+=============================================================================
 
 Supports: Tarrant, Denton, Dallas, Collin counties
 
@@ -15,7 +37,7 @@ import requests
 from django.core.management.base import BaseCommand
 from django.utils import timezone
 
-from clients.models import Lead, Property
+from clients.models import Permit, Property
 
 
 # =============================================================================
@@ -215,6 +237,80 @@ ZIP_TO_COUNTY = {
     '76044': 'johnson', '76050': 'johnson', '76059': 'johnson', '76093': 'johnson',
     '76097': 'johnson',
 }
+
+# City to county mapping (for when address lacks zip code)
+CITY_TO_COUNTY = {
+    # Collin County cities
+    'frisco': 'collin',
+    'allen': 'collin',
+    'mckinney': 'collin',
+    'plano': 'collin',
+    'prosper': 'collin',
+    'celina': 'collin',
+    'anna': 'collin',
+    'princeton': 'collin',
+    'melissa': 'collin',
+    'fairview': 'collin',
+    'lucas': 'collin',
+    'murphy': 'collin',
+    'wylie': 'collin',  # split with Dallas county
+    'sachse': 'collin',  # split with Dallas county
+
+    # Denton County cities
+    'denton': 'denton',
+    'lewisville': 'denton',
+    'flower mound': 'denton',
+    'highland village': 'denton',
+    'the colony': 'denton',
+    'little elm': 'denton',
+    'corinth': 'denton',
+    'aubrey': 'denton',
+    'pilot point': 'denton',
+    'sanger': 'denton',
+    'argyle': 'denton',
+    'bartonville': 'denton',
+    'trophy club': 'denton',
+
+    # Tarrant County cities
+    'fort worth': 'tarrant',
+    'arlington': 'tarrant',
+    'north richland hills': 'tarrant',
+    'hurst': 'tarrant',
+    'bedford': 'tarrant',
+    'euless': 'tarrant',
+    'grapevine': 'tarrant',
+    'colleyville': 'tarrant',
+    'southlake': 'tarrant',
+    'keller': 'tarrant',
+    'watauga': 'tarrant',
+    'haltom city': 'tarrant',
+    'richland hills': 'tarrant',
+    'mansfield': 'tarrant',
+
+    # Dallas County cities
+    'dallas': 'dallas',
+    'irving': 'dallas',
+    'grand prairie': 'dallas',
+    'mesquite': 'dallas',
+    'garland': 'dallas',
+    'richardson': 'dallas',
+    'carrollton': 'dallas',
+    'farmers branch': 'dallas',
+    'coppell': 'dallas',
+    'desoto': 'dallas',
+    'duncanville': 'dallas',
+    'cedar hill': 'dallas',
+    'lancaster': 'dallas',
+    'rowlett': 'dallas',
+}
+
+
+def get_county_from_city(city):
+    """Get county from city name."""
+    if not city:
+        return None
+    return CITY_TO_COUNTY.get(city.lower().strip())
+
 
 def get_county_from_zip(address):
     """Extract zip code and determine county."""
@@ -694,28 +790,30 @@ class Command(BaseCommand):
         delay = options['delay']
 
         self.stdout.write(self.style.HTTP_INFO('=== MULTI-COUNTY CAD ENRICHMENT ==='))
-        self.stdout.write(f'Supported counties: Tarrant, Denton, Dallas\n')
+        self.stdout.write(f'Supported counties: Tarrant, Denton, Dallas, Collin\n')
 
-        # Get all leads (all tiers)
-        leads = Lead.objects.all().select_related('property')
+        # Work on Permits - create/update Property records with CAD data
+        permits = Permit.objects.all()
 
         if force:
             pass  # Process all
         elif retry_failed:
-            # Only retry failed ones
-            leads = leads.filter(property__enrichment_status='failed')
+            # Only retry permits whose Property failed enrichment
+            failed_addrs = Property.objects.filter(enrichment_status='failed').values_list('property_address', flat=True)
+            permits = permits.filter(property_address__in=list(failed_addrs))
         else:
-            # Only process pending (not success, not failed)
-            leads = leads.filter(property__enrichment_status='pending')
+            # Only process permits that don't have successfully enriched Property
+            success_addrs = Property.objects.filter(enrichment_status='success').values_list('property_address', flat=True)
+            permits = permits.exclude(property_address__in=list(success_addrs))
 
         if limit:
-            leads = leads[:limit]
+            permits = permits[:limit]
 
-        total = leads.count()
-        self.stdout.write(f'Found {total} leads to enrich\n')
+        total = permits.count()
+        self.stdout.write(f'Found {total} permits to enrich\n')
 
         if total == 0:
-            self.stdout.write('No leads need enrichment. Use --force to re-enrich or --retry-failed.\n')
+            self.stdout.write('No permits need enrichment. Use --force to re-enrich or --retry-failed.\n')
             return
 
         success_count = 0
@@ -723,12 +821,24 @@ class Command(BaseCommand):
         skip_count = 0
         county_counts = {}
 
-        for i, lead in enumerate(leads, 1):
-            prop = lead.property
-            address = prop.property_address
+        for i, permit in enumerate(permits, 1):
+            address = permit.property_address
 
-            # Detect county for display
+            # Get or create Property record for this address
+            prop, created = Property.objects.get_or_create(
+                property_address=address,
+                defaults={'enrichment_status': 'pending'}
+            )
+
+            # Skip if already enriched (unless --force)
+            if not force and prop.enrichment_status == 'success':
+                skip_count += 1
+                continue
+
+            # Detect county for display - try zip first, then city
             detected_county = get_county_from_zip(address)
+            if not detected_county:
+                detected_county = get_county_from_city(permit.city)
             county_display = detected_county.upper() if detected_county else '???'
 
             self.stdout.write(f'\n[{i}/{total}] [{county_display}] {address}')
