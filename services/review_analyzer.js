@@ -181,18 +181,23 @@ async function analyzeReviews(contractorName, reviewData) {
     }
 
     if (jsonMatch) {
+      // Declare outside try so catch block can access
+      let jsonStr = jsonMatch[0];
       try {
         // Clean up common LLM JSON issues before parsing
-        let jsonStr = jsonMatch[0];
         // Remove markdown code block markers if present
         jsonStr = jsonStr.replace(/^```json?\s*/i, '').replace(/\s*```$/i, '');
         // Fix template placeholders that weren't replaced
-        jsonStr = jsonStr.replace(/<0-100[^>]*>/g, '50');
-        jsonStr = jsonStr.replace(/<true\|false>/g, 'false');
-        jsonStr = jsonStr.replace(/<HIGH\|MEDIUM\|LOW>/g, '"MEDIUM"');
-        jsonStr = jsonStr.replace(/<TRUST_REVIEWS\|VERIFY_REVIEWS\|DISTRUST_REVIEWS>/g, '"VERIFY_REVIEWS"');
-        // Fix unquoted template strings
-        jsonStr = jsonStr.replace(/<[^>]+>/g, '""');
+        // Handle numeric ranges like <0-100>, <1-5>, etc.
+        jsonStr = jsonStr.replace(/<\d+-\d+>/g, '50');
+        // Handle boolean templates
+        jsonStr = jsonStr.replace(/<true\|false>/gi, 'false');
+        // Handle string enum templates (with or without quotes around them)
+        jsonStr = jsonStr.replace(/"?<HIGH\|MEDIUM\|LOW>"?/gi, '"MEDIUM"');
+        jsonStr = jsonStr.replace(/"?<TRUST_REVIEWS\|VERIFY_REVIEWS\|DISTRUST_REVIEWS>"?/gi, '"VERIFY_REVIEWS"');
+        // Handle any remaining template strings like <description>, <value>, etc.
+        jsonStr = jsonStr.replace(/"<[^>]+>"/g, '""');  // Quoted templates -> empty string
+        jsonStr = jsonStr.replace(/<[^>]+>/g, 'null');  // Unquoted templates -> null
 
         const analysis = JSON.parse(jsonStr);
         analysis.analyzed_at = new Date().toISOString();
@@ -203,11 +208,27 @@ async function analyzeReviews(contractorName, reviewData) {
         }
         return analysis;
       } catch (parseErr) {
-        // JSON found but failed to parse
-        return {
+        // JSON found but failed to parse - try fallback extraction
+        console.error(`[review_analyzer] JSON parse failed: ${parseErr.message}`);
+        console.error(`[review_analyzer] Problematic JSON (first 300 chars): ${jsonStr.substring(0, 300)}`);
+
+        // Fallback: extract key fields with regex
+        const fallback = {
           error: `JSON parse error: ${parseErr.message}`,
-          raw_response: jsonMatch[0].substring(0, 500)
+          fallback_extraction: true,
+          fake_review_score: null,
+          recommendation: 'VERIFY_REVIEWS'
         };
+
+        // Try to extract fake_review_score
+        const scoreMatch = jsonStr.match(/"fake_review_score"\s*:\s*(\d+)/);
+        if (scoreMatch) fallback.fake_review_score = parseInt(scoreMatch[1]);
+
+        // Try to extract recommendation
+        const recMatch = jsonStr.match(/"recommendation"\s*:\s*"([^"]+)"/);
+        if (recMatch) fallback.recommendation = recMatch[1];
+
+        return fallback;
       }
     }
 

@@ -25,19 +25,19 @@ finalize_score()      → Commit the Trust Score
 Agent: get_stored_data()
        → "I see BBB, Yelp, Google. No TDLR data."
        
-Agent: "Contractor claims licensed. Let me check..."
-       request_collection("tdlr", "Claims to be licensed but no data")
-       → TDLR scraped, shows ACTIVE license
-       
-Agent: "License verified. But claims 500 projects..."
-       request_collection("permits", "Need permit history to verify volume claim")
-       → Permit data fetched
-       
-Agent: "Only 47 permits in 3 years. Claims don't match."
+Agent: "Google rating is 4.9★ but only 12 reviews. Let me check other sources..."
+       request_collection("bbb", "Need BBB data to verify reputation")
+       → BBB shows A+ rating, 15 years accredited
+
+Agent: "BBB looks good. Checking Trustpilot for broader picture..."
+       request_collection("trustpilot", "Cross-reference customer reviews")
+       → Trustpilot shows 4.7★ with 89 reviews
+
+Agent: "Consistent ratings across platforms. No red flags."
        finalize_score({
-         trust_score: 62,
-         risk_level: "MODERATE", 
-         red_flags: [{severity: "MEDIUM", description: "Claims don't match permit history"}]
+         trust_score: 88,
+         risk_level: "LOW",
+         positive_signals: ["Consistent 4.7-4.9★ across Google/BBB/Trustpilot", "15 years BBB accredited"]
        })
 ```
 
@@ -47,7 +47,7 @@ Agent: "Only 47 permits in 3 years. Claims don't match."
 contractors/
 ├── run_audit.js              # Entry point
 ├── services/
-│   ├── collection_service.js # Puppeteer scraping
+│   ├── collection_service.js # Playwright (w/ Puppeteer backup) scraping
 │   ├── audit_agent.js        # DeepSeek with tools
 │   └── orchestrator.js       # Coordinates loop
 └── schema.sql                # New DB tables
@@ -67,9 +67,9 @@ node run_audit.js --name "Orange Elephant" --city "Dallas" --state "TX"
 
 | Pattern | Agent Action |
 |---------|--------------|
-| Claims 15yr, BBB shows 2022 formation | request_collection("permits") |
-| Google 4.8★, Yelp 2.1★ | Flag as manipulation |
-| No license data | request_collection("tdlr") |
+| Google 4.8★, Trustpilot 1.5★ | Flag as rating manipulation |
+| Only 10 reviews on Google | request_collection("bbb", "yelp_yahoo") |
+| BBB shows F rating | Flag as CRITICAL |
 | Vague complaints | search_web("Company lawsuit 2024") |
 | All data collected, consistent | finalize_score() |
 

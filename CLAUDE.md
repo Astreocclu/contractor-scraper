@@ -29,7 +29,6 @@
    - docs/AGENTIC_QUICKREF.md
    - docs/AGENTIC_AUDIT_SPEC.md
    - docs/CODEBASE_DOCUMENTATION.md
-   - docs/MGO_SCRAPER_STATUS.md
    - docs/DATABASE_ANALYSIS.md
    - scrapers/README.md
 
@@ -43,7 +42,7 @@ This ensures Claude has full project context before making any changes.
 ---
 
 ## What This Is
-Forensic contractor auditing. Puppeteer scrapes → DeepSeek analyzes → Trust Score.
+Forensic contractor auditing. Playwright (with Puppeteer as backup) scrapes → DeepSeek analyzes → Trust Score.
 
 ## Isolation
 - Port: 8002 | Database: db.sqlite3 | Venv: `./venv`
@@ -75,8 +74,6 @@ All documentation is in `docs/` except the top-level status files.
 | **Audit quick reference** | `docs/AGENTIC_QUICKREF.md` |
 | Audit full spec | `docs/AGENTIC_AUDIT_SPEC.md` |
 | Codebase overview | `docs/CODEBASE_DOCUMENTATION.md` |
-| Permit portals (CORRECTED) | `docs/dfw-contractor-audit-v3-corrected.md` |
-| **MGO Scraper Status** | `docs/MGO_SCRAPER_STATUS.md` |
 | Database stats | `docs/DATABASE_ANALYSIS.md` |
 | Archived session logs | `docs/_archive/` |
 
@@ -117,8 +114,8 @@ python3 manage.py runserver 8002
 - Always say `contractors` (the term `homescreen` is contaminated)
 - Always say `pool` or `swimming pool` (the term `pool enclosure` means Florida screen rooms)
 - **Sourcing** = Collecting data for EXISTING contractors (via `batch_collect.js`) - Audit prep
-- Always use DeepSeek + Puppeteer (Perplexity API is banned)
-- Always use Puppeteer scraping (Google Places API caused $300 overcharge)
+- Always use DeepSeek + Playwright (with Puppeteer as backup) (Perplexity API is banned)
+- Always use Playwright scraping (with Puppeteer as backup) (Google Places API caused $300 overcharge)
 
 ### Prompts
 - Use positive framing (see Prompting Principles at top)

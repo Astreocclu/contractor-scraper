@@ -18,7 +18,7 @@
 │                    CONTRACTOR SCRAPER                        │
 ├─────────────────────────────────────────────────────────────┤
 │                                                               │
-│  1. SCRAPING LAYER (Google Maps via Puppeteer)               │
+│  1. SCRAPING LAYER (Google Maps via Playwright w/ Puppeteer backup) │
 │     └─ google_scraper.py → 1,523 leads from DFW Metroplex   │
 │                                                               │
 │  2. ENRICHMENT LAYER (Yelp + BBB)                            │
@@ -75,7 +75,7 @@
 │   │   └── dedupe_contractors.py
 │   │
 │   └── services/                # Business logic
-│       ├── google_scraper.py    # Google Maps (Puppeteer, NOT API)
+│       ├── google_scraper.py    # Google Maps (Playwright w/ Puppeteer backup, NOT API)
 │       ├── enrichment.py        # BBB scraper
 │       ├── yelp_service.py      # Yelp Fusion API
 │       ├── ai_auditor.py        # DeepSeek AI analyzer
@@ -168,7 +168,7 @@ manage.py scrape_contractors
     ↓
 google_scraper.py
     - Searches 40+ DFW metro cities
-    - Uses Puppeteer scraping (Google Places API is BANNED)
+    - Uses Playwright scraping (with Puppeteer as backup) (Google Places API is BANNED)
     - Rate limiting: 2s between searches
     - Fetches place details (phone, website)
     ↓
@@ -263,7 +263,7 @@ manage.py audit_contractors
 # Activate virtual environment
 source venv/bin/activate
 
-# Scrape contractors from Google Maps (via Puppeteer)
+# Scrape contractors from Google Maps (via Playwright w/ Puppeteer backup)
 python manage.py scrape_contractors [--vertical SLUG] [--city CITY] [--limit N]
 
 # Enrich with BBB/Yelp data
@@ -337,7 +337,7 @@ DEBUG=True
 ## Key Services Explained
 
 ### google_scraper.py
-The primary data source. Uses Puppeteer to scrape Google Maps for contractors in 40+ DFW cities using configured search terms per vertical. **Note:** Google Places API is BANNED (caused $300 overcharge).
+The primary data source. Uses Playwright (with Puppeteer as backup) to scrape Google Maps for contractors in 40+ DFW cities using configured search terms per vertical. **Note:** Google Places API is BANNED (caused $300 overcharge).
 
 **Key methods:**
 - `search(query, city)` - Text search for businesses
@@ -398,7 +398,7 @@ The scoring system works correctly, but data is incomplete:
 ## Node.js Tools
 
 ### scrape_emails_deepseek.js
-Extracts emails from contractor websites using Puppeteer for rendering and DeepSeek for intelligent extraction.
+Extracts emails from contractor websites using Playwright (with Puppeteer as backup) for rendering and DeepSeek for intelligent extraction.
 
 ```bash
 node scrape_emails_deepseek.js [--limit N]

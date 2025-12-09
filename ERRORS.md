@@ -1,43 +1,27 @@
-# Contractor Scraper - Error Log
+# Contractor Auditor - Error Log
 
 ## Format
 | Date | Phase | Error | Resolution |
-|------|-------|-------|------------|
 
 ## Critical Architecture Mistakes (DO NOT REPEAT)
 
-### 2025-12-08: Enrichment worked on Leads instead of Permits
+### Google Places API - BANNED
+**What happened:** Google Places API caused $300 overcharge.
 
-**What happened:** `enrich_cad.py` was querying `Lead.objects.all()` and enriching Properties via Lead→Property FK. This meant:
-- Properties without Leads were NEVER enriched (49% of data stuck as "pending")
-- 1,914 orphan Properties accumulated (no matching Permit)
-- Scoring failed silently because CAD data was missing
-
-**Root cause:** Confusion about data flow. Someone thought enrichment should work on Leads.
-
-**The correct flow is:**
-```
-PERMIT (scraped) → enrich address → PROPERTY (CAD cache) → score → SCOREDLEAD (sellable)
-```
-
-**Fix:** Changed `enrich_cad.py` to work on `Permit.objects.all()` and create/update Property records.
-
-**Lesson:** The business logic is: **Permits are the input, ScoredLeads are the output.** Property is just a cache of CAD data keyed by address. Lead model is legacy - use ScoredLead.
+**Fix:** Use Playwright scraping for Google Maps instead. NEVER enable Google Places API.
 
 ---
 
-## Disabled Data Sources
+## Resolved Issues
 
-| Source | Status | Date | Notes |
-|--------|--------|------|-------|
-| Yelp | DISABLED | 2025-12-08 | Do not factor into scoring. Do not penalize for missing Yelp data. |
-| BBB | BLOCKED | 2025-12-07 | Anti-scraping measures. Do not penalize for missing BBB data. |
+| Date | Issue | Resolution |
+|------|-------|------------|
+| 2025-12-09 | Trustpilot SERP matching wrong companies | Fixed - now uses direct URL check (`trustpilot.com/review/{domain}`) |
+| 2025-12-09 | JSON parse error in review_analyzer.js | Fixed - added error handling |
+| 2025-12-08 | Only 4 contractors showing despite 116 qualified | Fixed - `passes_threshold` now updates correctly |
 
 ---
 
-## Errors
+## Current Known Issues
 
-| 2024-12-02 | Phase 0 | PostgreSQL not installed - `createdb` command not found | Using SQLite fallback for dev. Install PostgreSQL for production. |
-| 2024-12-02 | Scrape | Google Places API REQUEST_DENIED - Legacy API not enabled | Need to enable Places API in Google Cloud Console |
-| 2024-12-02 | Audit | Gemini API 404 - gemini-1.5-flash model not found | Need to enable Generative Language API or use different model |
-| 2025-12-08 | Audit | Only 4 contractors showing despite 116 qualified | `passes_threshold` not updated when `trust_score` changes via `.update()`. Must call `.save()` or use signal. See `docs/ISSUE_4_CONTRACTORS_SHOWING.md` |
+None at this time.

@@ -27,7 +27,7 @@ Transform the monolithic `forensic_audit_puppeteer.js` into an agentic system wh
 │   │   COLLECTION    │◄───────►│   AUDIT AGENT   │                     │
 │   │    SERVICE      │         │   (DeepSeek)    │                     │
 │   │                 │         │                 │                     │
-│   │ • Puppeteer     │         │ Tools:          │                     │
+│   │ • Playwright    │         │ Tools:          │                     │
 │   │ • TDLR scraper  │         │ • get_data()    │                     │
 │   │ • Court scraper │         │ • request()     │                     │
 │   │ • API sources   │         │ • search_web()  │                     │
@@ -53,13 +53,13 @@ Create these files in `/contractors/`:
 contractors/
 ├── run_audit.js                    # Entry point (replaces forensic_audit_puppeteer.js)
 ├── services/
-│   ├── collection_service.js       # Puppeteer scraping, stores to DB
+│   ├── collection_service.js       # Playwright (w/ Puppeteer backup) scraping, stores to DB
 │   ├── audit_agent.js              # DeepSeek with function calling
 │   └── orchestrator.js             # Controls the collect→audit loop
 ├── tools/                          # Agent tools
 │   ├── get_stored_data.js          # Read from DB
 │   ├── request_collection.js       # Trigger targeted scrape
-│   ├── search_web.js               # Perplexity/Puppeteer ad-hoc search
+│   ├── search_web.js               # Perplexity/Playwright ad-hoc search
 │   └── finalize_score.js           # Commit final audit
 ├── lib/                            # Keep existing
 │   ├── tdlr_scraper.js             # (existing)
@@ -341,13 +341,13 @@ const TOOLS = [
         properties: {
           source: {
             type: 'string',
-            enum: ['permits', 'insurance', 'bbb', 'yelp', 'google', 'tdlr', 
-                   'court_records', 'news', 'social', 'employee_reviews'],
+            enum: ['bbb', 'yelp_yahoo', 'google_maps', 'trustpilot', 'angi', 'houzz',
+                   'court_records', 'news', 'reddit', 'glassdoor', 'indeed'],
             description: 'Which source to collect'
           },
           reason: {
             type: 'string',
-            description: 'Why you need this data (e.g., "Claims 500 projects but no permit history")'
+            description: 'Why you need this data (e.g., "Only 10 Google reviews, need more sources")'
           }
         },
         required: ['source', 'reason']
@@ -419,12 +419,12 @@ const SYSTEM_PROMPT = `You are a forensic contractor auditor. Your job is to:
 WORKFLOW:
 1. First, call get_stored_data() to see what data we have
 2. Analyze the data for red flags and positive signals
-3. If you notice gaps (e.g., "claims 15 years but no permit history"), call request_collection()
+3. If you notice gaps (e.g., "only Google data, need BBB/Trustpilot"), call request_collection()
 4. If you need to verify specific claims, call search_web()
 5. When you have enough data, call finalize_score()
 
 SCORING METHODOLOGY:
-- Verification: License status OR permit history vs claims (15 pts)
+- Verification: BBB accreditation, business registration (15 pts)
 - Reputation: Cross-platform ratings, fake detection (15 pts)
 - Credibility: Years, portfolio, consistency (10 pts)  
 - Financial: Liens, bankruptcy, distress signals (10 pts)
@@ -939,7 +939,7 @@ node run_audit.js --id 123  # Your known good contractor
 
 # Test 3: Unknown contractor (should request more data)
 node run_audit.js --name "Random New Company" --city "Fort Worth" --state "TX"
-# Expected: Agent requests permits, news, etc.
+# Expected: Agent requests BBB, Trustpilot, news, etc.
 ```
 
 ---
@@ -948,7 +948,7 @@ node run_audit.js --name "Random New Company" --city "Fort Worth" --state "TX"
 
 | Operation | Cost |
 |-----------|------|
-| Initial collection (26 sources) | ~$0 (Puppeteer) |
+| Initial collection (26 sources) | ~$0 (Playwright w/ Puppeteer backup) |
 | DeepSeek get_stored_data | ~$0.002 |
 | DeepSeek reasoning turn | ~$0.003 |
 | DeepSeek finalize | ~$0.002 |

@@ -1,7 +1,7 @@
 /**
  * Collection Service
  *
- * Handles all data collection (Puppeteer scraping, API calls, form submissions).
+ * Handles all data collection (Playwright/Puppeteer scraping, API calls, form submissions).
  * Stores raw data to SQLite with cache TTL.
  */
 
@@ -132,6 +132,64 @@ async function scrapeTrustpilotPython(websiteUrl) {
   return callPythonScraper('trustpilot.py', [websiteUrl], 30000);
 }
 
+/**
+ * Build Serper search queries for various sources
+ */
+function buildSerperQuery(source, businessName, city, state) {
+  const queries = {
+    reddit: `site:reddit.com "${businessName}" ${city}`,
+    youtube: `site:youtube.com "${businessName}" review`,
+    nextdoor_search: `site:nextdoor.com "${businessName}" ${city}`,
+    indeed: `site:indeed.com/cmp "${businessName}"`,
+    glassdoor: `site:glassdoor.com "${businessName}"`,
+    osha: `site:osha.gov "${businessName}"`,
+    epa_echo: `site:echo.epa.gov "${businessName}"`,
+    porch: `site:porch.com "${businessName}" ${city}`,
+    buildzoom: `site:buildzoom.com "${businessName}"`,
+    homeadvisor: `site:homeadvisor.com "${businessName}"`,
+    google_news: `"${businessName}" ${city} lawsuit OR complaint OR scam`,
+  };
+  return queries[source] || `"${businessName}" ${city}`;
+}
+
+/**
+ * Fetch from Serper API and return structured result
+ */
+async function fetchSerperSource(source, businessName, city, state) {
+  const apiKey = process.env.SERPER_API_KEY;
+  if (!apiKey) {
+    return { found: false, error: 'No SERPER_API_KEY' };
+  }
+
+  const query = buildSerperQuery(source, businessName, city, state);
+
+  try {
+    const fetch = require('node-fetch');
+    const res = await fetch('https://google.serper.dev/search', {
+      method: 'POST',
+      headers: { 'X-API-KEY': apiKey, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ q: query, num: 10 })
+    });
+
+    const data = await res.json();
+    const results = data.organic || [];
+
+    return {
+      found: results.length > 0,
+      query,
+      result_count: results.length,
+      results: results.slice(0, 5).map(r => ({
+        title: r.title,
+        link: r.link,
+        snippet: r.snippet?.slice(0, 200)
+      })),
+      source
+    };
+  } catch (err) {
+    return { found: false, error: err.message, source };
+  }
+}
+
 // Source definitions with cache TTL (in seconds)
 const SOURCES = {
   // Tier 1: Reviews (cache 24h)
@@ -150,18 +208,18 @@ const SOURCES = {
   google_news: { ttl: 43200, tier: 2, type: 'url' },
   local_news: { ttl: 43200, tier: 2, type: 'url' },
 
-  // Tier 3: Social (cache 24h)
-  reddit: { ttl: 86400, tier: 3, type: 'url' },
-  youtube: { ttl: 86400, tier: 3, type: 'url' },
-  nextdoor_search: { ttl: 86400, tier: 3, type: 'url' },
+  // Tier 3: Social (cache 24h) - via Serper
+  reddit: { ttl: 86400, tier: 3, type: 'serper' },
+  youtube: { ttl: 86400, tier: 3, type: 'serper' },
+  nextdoor_search: { ttl: 86400, tier: 3, type: 'serper' },
 
-  // Tier 4: Employee (cache 7d)
-  indeed: { ttl: 604800, tier: 4, type: 'url' },
-  glassdoor: { ttl: 604800, tier: 4, type: 'url' },
+  // Tier 4: Employee (cache 7d) - via Serper
+  indeed: { ttl: 604800, tier: 4, type: 'serper' },
+  glassdoor: { ttl: 604800, tier: 4, type: 'serper' },
 
-  // Tier 5: Government (cache 7d)
-  osha: { ttl: 604800, tier: 5, type: 'url' },
-  epa_echo: { ttl: 604800, tier: 5, type: 'url' },
+  // Tier 5: Government (cache 7d) - via Serper
+  osha: { ttl: 604800, tier: 5, type: 'serper' },
+  epa_echo: { ttl: 604800, tier: 5, type: 'serper' },
 
   // Tier 6: TX-Specific (cache 7d)
   // tdlr removed - unreliable, Texas-only, many trades don't require it
@@ -177,10 +235,10 @@ const SOURCES = {
   denton_court: { ttl: 604800, tier: 7, type: 'url' },
   court_listener: { ttl: 604800, tier: 7, type: 'api' },
 
-  // Tier 8: Industry (cache 24h)
-  porch: { ttl: 86400, tier: 8, type: 'url' },
-  buildzoom: { ttl: 86400, tier: 8, type: 'url' },
-  homeadvisor: { ttl: 86400, tier: 8, type: 'url' },
+  // Tier 8: Industry (cache 24h) - via Serper
+  porch: { ttl: 86400, tier: 8, type: 'serper' },
+  buildzoom: { ttl: 86400, tier: 8, type: 'serper' },
+  homeadvisor: { ttl: 86400, tier: 8, type: 'serper' },
 
   // Website (cache 24h)
   website: { ttl: 86400, tier: 0, type: 'url' },
@@ -264,15 +322,17 @@ function parseBBBResults(text, contractorName) {
   }
 
   // Check for accreditation - only if we found the business
-  // Look for accreditation status near the business name, not globally
   if (result.found) {
-    // F-rated businesses are typically NOT accredited
-    // Only mark as accredited if explicitly stated near the business listing
-    result.accredited = false; // Default to false, safer assumption
+    result.accredited = false; // Default to false
 
-    // Look for explicit accreditation mention with the business name nearby
-    const accreditedMatches = textLower.match(/orange.*elephant.*bbb accredited|bbb accredited.*orange.*elephant/i);
-    if (accreditedMatches) {
+    // Build dynamic regex using contractor name words
+    const namePattern = nameWords.join('.*');
+
+    // Look for accreditation near contractor name (either order)
+    const accreditedRegex1 = new RegExp(namePattern + '.*(?:bbb accredited|accredited business|accredited since)', 'i');
+    const accreditedRegex2 = new RegExp('(?:bbb accredited|accredited business|accredited since).*' + namePattern, 'i');
+
+    if (accreditedRegex1.test(textLower) || accreditedRegex2.test(textLower)) {
       result.accredited = true;
     }
   }
@@ -632,7 +692,7 @@ class CollectionService {
   }
 
   /**
-   * Fetch a single page with Puppeteer (or API if blocked)
+   * Fetch a single page with Playwright/Puppeteer (or API if blocked)
    */
   async fetchPage(url, source, timeout = 20000) {
     // List of sources blocked by Google/Captcha that we should route to Serper
@@ -838,7 +898,7 @@ class CollectionService {
       }
     }
 
-    // BBB - Use Python httpx scraper (more reliable than Puppeteer)
+    // BBB - Use Python httpx scraper (more reliable than browser automation)
     log('\n  Fetching BBB (Python scraper)...');
     try {
       const bbbResult = await scrapeBBBPython(contractor.name, contractor.city, contractor.state);
@@ -1094,6 +1154,41 @@ class CollectionService {
       }
     } catch (err) {
       warn(`    Trustpilot: Error - ${err.message}`);
+    }
+
+    // Additional sources via Serper API
+    const serperSources = [
+      { key: 'homeadvisor', name: 'HomeAdvisor' },
+      { key: 'glassdoor', name: 'Glassdoor' },
+      { key: 'indeed', name: 'Indeed' },
+      { key: 'reddit', name: 'Reddit' },
+      { key: 'osha', name: 'OSHA' },
+      { key: 'google_news', name: 'News' },
+    ];
+
+    log('\n  Fetching additional sources (via Serper)...');
+    for (const { key, name } of serperSources) {
+      try {
+        const serperResult = await fetchSerperSource(key, contractor.name, contractor.city, contractor.state);
+        const data = {
+          source: key,
+          url: serperResult.results?.[0]?.link || `https://google.com/search?q=${encodeURIComponent(serperResult.query)}`,
+          status: serperResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(serperResult, null, 2),
+          structured: serperResult
+        };
+        this.storeRawData(contractorId, key, data);
+        this.logCollectionRequest(contractorId, key, 'initial', 'Initial collection - Serper');
+        results.push(data);
+
+        if (serperResult.found) {
+          success(`    ${name}: ${serperResult.result_count} result(s)`);
+        } else {
+          warn(`    ${name}: Not found`);
+        }
+      } catch (err) {
+        warn(`    ${name}: Error - ${err.message}`);
+      }
     }
 
     // NOTE: TDLR license verification removed - too unreliable and Texas-specific
