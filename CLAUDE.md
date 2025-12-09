@@ -11,7 +11,6 @@
 
 ## Repo Scope: Contractor Auditing Only
 
-- Keep all **permit logic** in `~/testhome/permit-scraper/`
 - Keep all **imports** within this repo
 - The `contractors/` Django app name is preserved for database compatibility
 
@@ -95,11 +94,7 @@ All documentation is in `docs/` except the top-level status files.
 
 ---
 
-## Permit Scrapers
 
-**Major updates Dec 6, 2025** - See `scrapers/README.md` and `docs/MGO_SCRAPER_STATUS.md`
-
----
 
 ## Commands
 
@@ -121,7 +116,7 @@ python3 manage.py runserver 8002
 ### Terminology
 - Always say `contractors` (the term `homescreen` is contaminated)
 - Always say `pool` or `swimming pool` (the term `pool enclosure` means Florida screen rooms)
-- Always say `clients` for homeowner leads from permits (formerly `leads` app)
+- **Sourcing** = Collecting data for EXISTING contractors (via `batch_collect.js`) - Audit prep
 - Always use DeepSeek + Puppeteer (Perplexity API is banned)
 - Always use Puppeteer scraping (Google Places API caused $300 overcharge)
 

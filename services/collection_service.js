@@ -21,7 +21,7 @@ const SCRAPERS_DIR = path.join(__dirname, '..', 'scrapers');
 function callPythonScraper(script, args = [], timeout = 60000) {
   const scriptPath = path.join(SCRAPERS_DIR, script);
   const quotedArgs = args.map(arg => `"${arg.replace(/"/g, '\\"')}"`).join(' ');
-  const cmd = `python "${scriptPath}" ${quotedArgs} --json`;
+  const cmd = `python3 "${scriptPath}" ${quotedArgs} --json`;
 
   try {
     const output = execSync(cmd, {
@@ -72,7 +72,7 @@ async function scrapeYelpYahooPython(businessName, location = 'Fort Worth, TX') 
   // Note: yelp.py doesn't support --json, outputs to stderr, parses result differently
   const scriptPath = path.join(SCRAPERS_DIR, 'yelp.py');
   const quotedArgs = [businessName, location].map(arg => `"${arg.replace(/"/g, '\\"')}"`).join(' ');
-  const cmd = `python "${scriptPath}" ${quotedArgs} --yahoo`;
+  const cmd = `python3 "${scriptPath}" ${quotedArgs} --yahoo`;
 
   try {
     const output = execSync(cmd, {
@@ -114,61 +114,72 @@ async function scrapeYelpYahooPython(businessName, location = 'Fort Worth, TX') 
 }
 
 /**
- * Scrape rating from SERP for any site (Angi, Trustpilot, Houzz, etc.)
+ * Scrape rating from SERP for any site (Angi, Houzz, etc.)
  * Bypasses anti-bot by reading Yahoo Search snippets
  */
 async function scrapeSerpRatingPython(businessName, location = 'Fort Worth, TX', site = 'angi.com') {
   return callPythonScraper('serp_rating.py', [businessName, location, '--site', site, '--json'], 60000);
 }
 
+/**
+ * Scrape Trustpilot by direct URL check (trustpilot.com/review/{domain})
+ * More accurate than SERP - no wrong company matches
+ */
+async function scrapeTrustpilotPython(websiteUrl) {
+  if (!websiteUrl) {
+    return { found: false, error: 'No website URL provided' };
+  }
+  return callPythonScraper('trustpilot.py', [websiteUrl], 30000);
+}
+
 // Source definitions with cache TTL (in seconds)
 const SOURCES = {
   // Tier 1: Reviews (cache 24h)
-  bbb:       { ttl: 86400, tier: 1, type: 'url' },
-  yelp:      { ttl: 86400, tier: 1, type: 'url' },
+  bbb: { ttl: 86400, tier: 1, type: 'url' },
+  yelp: { ttl: 86400, tier: 1, type: 'url' },
   yelp_yahoo: { ttl: 86400, tier: 1, type: 'scraper' },  // Yahoo Search fallback for Yelp rating
   google_maps_local: { ttl: 86400, tier: 1, type: 'url' },  // Search in target market (DFW)
-  google_maps_hq:    { ttl: 86400, tier: 1, type: 'url' },  // Search in contractor's HQ location
-  angi:      { ttl: 86400, tier: 1, type: 'serp' },      // SERP scraper (bypasses anti-bot)
-  houzz:     { ttl: 86400, tier: 1, type: 'serp' },      // SERP scraper (bypasses anti-bot)
-  trustpilot: { ttl: 86400, tier: 1, type: 'serp' },     // SERP scraper (bypasses anti-bot)
+  google_maps_hq: { ttl: 86400, tier: 1, type: 'url' },  // Search in contractor's HQ location
+  angi: { ttl: 86400, tier: 1, type: 'serp' },       // SERP scraper (bypasses anti-bot)
+  houzz: { ttl: 86400, tier: 1, type: 'serp' },      // SERP scraper (bypasses anti-bot)
+  trustpilot: { ttl: 86400, tier: 1, type: 'direct' },  // Direct URL check by domain (more accurate)
   thumbtack: { ttl: 86400, tier: 1, type: 'url' },
-  facebook:  { ttl: 86400, tier: 1, type: 'url' },
+  facebook: { ttl: 86400, tier: 1, type: 'url' },
 
   // Tier 2: News (cache 12h)
   google_news: { ttl: 43200, tier: 2, type: 'url' },
-  local_news:  { ttl: 43200, tier: 2, type: 'url' },
+  local_news: { ttl: 43200, tier: 2, type: 'url' },
 
   // Tier 3: Social (cache 24h)
-  reddit:   { ttl: 86400, tier: 3, type: 'url' },
-  youtube:  { ttl: 86400, tier: 3, type: 'url' },
+  reddit: { ttl: 86400, tier: 3, type: 'url' },
+  youtube: { ttl: 86400, tier: 3, type: 'url' },
   nextdoor_search: { ttl: 86400, tier: 3, type: 'url' },
 
   // Tier 4: Employee (cache 7d)
-  indeed:    { ttl: 604800, tier: 4, type: 'url' },
+  indeed: { ttl: 604800, tier: 4, type: 'url' },
   glassdoor: { ttl: 604800, tier: 4, type: 'url' },
 
   // Tier 5: Government (cache 7d)
-  osha:     { ttl: 604800, tier: 5, type: 'url' },
+  osha: { ttl: 604800, tier: 5, type: 'url' },
   epa_echo: { ttl: 604800, tier: 5, type: 'url' },
 
   // Tier 6: TX-Specific (cache 7d)
   // tdlr removed - unreliable, Texas-only, many trades don't require it
   tx_ag_complaints: { ttl: 604800, tier: 6, type: 'url' },
-  tx_sos_search:   { ttl: 604800, tier: 6, type: 'url' },
-  tx_franchise:    { ttl: 604800, tier: 6, type: 'api' },
+  tx_sos_search: { ttl: 604800, tier: 6, type: 'url' },
+  tx_franchise: { ttl: 604800, tier: 6, type: 'api' },
 
   // Tier 7: Courts (cache 7d)
-  court_records:   { ttl: 604800, tier: 7, type: 'scraper' },
-  tarrant_court:   { ttl: 604800, tier: 7, type: 'url' },
-  dallas_court:    { ttl: 604800, tier: 7, type: 'url' },
-  collin_court:    { ttl: 604800, tier: 7, type: 'url' },
-  denton_court:    { ttl: 604800, tier: 7, type: 'url' },
-  court_listener:  { ttl: 604800, tier: 7, type: 'api' },
+  court_records: { ttl: 604800, tier: 7, type: 'scraper' },
+  tarrant_court: { ttl: 604800, tier: 7, type: 'url' },
+  dallas_court: { ttl: 604800, tier: 7, type: 'url' },
+  collin_court: { ttl: 604800, tier: 7, type: 'url' },
+  denton_court: { ttl: 604800, tier: 7, type: 'url' },
+  court_listener: { ttl: 604800, tier: 7, type: 'api' },
 
   // Tier 8: Industry (cache 24h)
-  porch:       { ttl: 86400, tier: 8, type: 'url' },
-  buildzoom:   { ttl: 86400, tier: 8, type: 'url' },
+  porch: { ttl: 86400, tier: 8, type: 'url' },
+  buildzoom: { ttl: 86400, tier: 8, type: 'url' },
   homeadvisor: { ttl: 86400, tier: 8, type: 'url' },
 
   // Website (cache 24h)
@@ -535,9 +546,109 @@ class CollectionService {
   }
 
   /**
-   * Fetch a single page with Puppeteer
+   * Fetch search results via Serper API (bypasses Google blocking)
+   */
+  async fetchSerper(urlOrQuery, source, timeout = 20000) {
+    const apiKey = process.env.SERPER_API_KEY || '1da327ecf7f11f83885d70dc2637bd5dec2f9426';
+
+    let query = urlOrQuery;
+
+    // Smart Query Generation
+    if (source === 'yelp' && urlOrQuery.includes('yelp.com')) {
+      // Convert Yelp internal search to Google Site Search (much cleaner results)
+      try {
+        const urlObj = new URL(urlOrQuery);
+        const desc = urlObj.searchParams.get('find_desc');
+        const loc = urlObj.searchParams.get('find_loc');
+        if (desc && loc) {
+          query = `site:yelp.com "${desc}" "${loc}"`;
+        }
+      } catch (e) {
+        // fallback
+      }
+    } else if (urlOrQuery.includes('google.com/search') || urlOrQuery.includes('google.com/maps')) {
+      // Extract query from Google URL
+      try {
+        const urlObj = new URL(urlOrQuery);
+        query = urlObj.searchParams.get('q');
+        if (!query && urlOrQuery.includes('q=')) {
+          query = decodeURIComponent(urlOrQuery.split('q=')[1].split('&')[0]).replace(/\+/g, ' ');
+        }
+      } catch (e) {
+        // use raw
+      }
+    }
+
+    if (!query) query = urlOrQuery;
+
+    log(`  Fetching ${source} via Serper API...`);
+
+    try {
+      const response = await fetch('https://google.serper.dev/search', {
+        method: 'POST',
+        headers: {
+          'X-API-KEY': apiKey,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ q: query })
+      });
+
+      if (!response.ok) {
+        throw new Error(`Serper API error: ${response.status} ${response.statusText}`);
+      }
+
+      const json = await response.json();
+      const results = json.organic || [];
+
+      // Convert to string for storage (simulate text equivalent of a search page)
+      // We format this to look like what our parsers might expect, or just generic text
+      const text = results.map(r => `${r.title}\n${r.link}\n${r.snippet}`).join('\n\n---\n\n');
+
+      success(`    ${source}: Found ${results.length} results via API`);
+
+      return {
+        source,
+        url: urlOrQuery,
+        status: results.length > 0 ? 'success' : 'not_found',
+        text: text,
+        structured: {
+          source: 'serper',
+          query: query,
+          results: results
+        }
+      };
+
+    } catch (err) {
+      warn(`    ${source}: API Error - ${err.message}`);
+      return {
+        source,
+        url: urlOrQuery,
+        status: 'error',
+        error: err.message,
+        text: null,
+        structured: null
+      };
+    }
+  }
+
+  /**
+   * Fetch a single page with Puppeteer (or API if blocked)
    */
   async fetchPage(url, source, timeout = 20000) {
+    // List of sources blocked by Google/Captcha that we should route to Serper
+    const BLOCKED_SOURCES = [
+      'yelp', // Moved to Serper per user request
+      'court_records', 'tarrant_court', 'dallas_court', 'collin_court', 'denton_court',
+      'tx_sos_search', 'tx_franchise', 'tx_ag_complaints',
+      'osha', 'epa_echo',
+      'google_news', 'local_news', 'nextdoor_search',
+      'open_corporates'
+    ];
+
+    if (BLOCKED_SOURCES.includes(source)) {
+      return this.fetchSerper(url, source, timeout);
+    }
+
     const page = await this.browser.newPage();
 
     try {
@@ -685,7 +796,7 @@ class CollectionService {
     // URL-based sources in parallel batches
     log(`URL sources to fetch: ${Object.keys(urls).length}`);
     const urlEntries = Object.entries(urls);
-    const BATCH_SIZE = 5;
+    const BATCH_SIZE = 1;
 
     for (let i = 0; i < urlEntries.length; i += BATCH_SIZE) {
       const batch = urlEntries.slice(i, i + BATCH_SIZE);
@@ -920,10 +1031,9 @@ class CollectionService {
       warn(`    Yelp (Yahoo): Error - ${err.message}`);
     }
 
-    // Angi, Trustpilot, Houzz via SERP scraping (bypasses anti-bot)
+    // Angi, Houzz via SERP scraping (bypasses anti-bot)
     const serpSites = [
       { key: 'angi', site: 'angi.com', name: 'Angi' },
-      { key: 'trustpilot', site: 'trustpilot.com', name: 'Trustpilot' },
       { key: 'houzz', site: 'houzz.com', name: 'Houzz' },
     ];
 
@@ -953,6 +1063,37 @@ class CollectionService {
       } catch (err) {
         warn(`    ${name}: Error - ${err.message}`);
       }
+    }
+
+    // Trustpilot via direct URL check (more accurate than SERP)
+    log(`  Fetching Trustpilot rating (via direct URL)...`);
+    try {
+      if (contractor.website) {
+        const tpResult = await scrapeTrustpilotPython(contractor.website);
+        const tpData = {
+          source: 'trustpilot',
+          url: tpResult.profile_url || 'https://www.trustpilot.com',
+          status: tpResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(tpResult, null, 2),
+          structured: tpResult
+        };
+        this.storeRawData(contractorId, 'trustpilot', tpData);
+        this.logCollectionRequest(contractorId, 'trustpilot', 'initial', 'Initial collection - direct URL');
+        results.push(tpData);
+
+        if (tpResult.found && tpResult.rating) {
+          const reviewInfo = tpResult.review_count ? `${tpResult.review_count} reviews` : 'No count';
+          success(`    Trustpilot: ${tpResult.rating}★ (${reviewInfo}) - ${tpResult.business_name || 'unknown'}`);
+        } else if (tpResult.found) {
+          warn(`    Trustpilot: Profile exists but no rating`);
+        } else {
+          warn(`    Trustpilot: No profile found for domain`);
+        }
+      } else {
+        warn(`    Trustpilot: Skipped (no website URL)`);
+      }
+    } catch (err) {
+      warn(`    Trustpilot: Error - ${err.message}`);
     }
 
     // NOTE: TDLR license verification removed - too unreliable and Texas-specific
@@ -1174,9 +1315,9 @@ class CollectionService {
       } catch (err) {
         result = { source: 'yelp_yahoo', status: 'error', error: err.message };
       }
-    } else if (sourceName === 'angi' || sourceName === 'trustpilot' || sourceName === 'houzz') {
+    } else if (sourceName === 'angi' || sourceName === 'houzz') {
       // Use SERP scraper for these sites (bypasses anti-bot)
-      const siteMap = { angi: 'angi.com', trustpilot: 'trustpilot.com', houzz: 'houzz.com' };
+      const siteMap = { angi: 'angi.com', houzz: 'houzz.com' };
       try {
         const location = `${contractor.city}, ${contractor.state}`;
         const serpResult = await scrapeSerpRatingPython(contractor.name, location, siteMap[sourceName]);
@@ -1192,6 +1333,25 @@ class CollectionService {
         }
       } catch (err) {
         result = { source: sourceName, status: 'error', error: err.message };
+      }
+    } else if (sourceName === 'trustpilot') {
+      // Use direct URL check (trustpilot.com/review/{domain}) - more accurate than SERP
+      try {
+        const tpResult = await scrapeTrustpilotPython(contractor.website);
+        result = {
+          source: 'trustpilot',
+          url: tpResult.profile_url || 'https://www.trustpilot.com',
+          status: tpResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(tpResult, null, 2),
+          structured: tpResult
+        };
+        if (tpResult.found) {
+          log(`    📋 Trustpilot: ${tpResult.rating}★ (${tpResult.review_count} reviews) - ${tpResult.business_name}`);
+        } else if (!contractor.website) {
+          log(`    ⏭️  Trustpilot: Skipped (no website)`);
+        }
+      } catch (err) {
+        result = { source: 'trustpilot', status: 'error', error: err.message };
       }
     } else if (sourceName === 'google_maps' || sourceName === 'google_maps_local' || sourceName === 'google_maps_hq') {
       // Use Python Playwright scraper for Google Maps (NO API)
@@ -1317,3 +1477,5 @@ function calculateInsuranceConfidence(collectedData) {
 }
 
 module.exports = { CollectionService, SOURCES, calculateInsuranceConfidence };
+// ... existing code ...
+

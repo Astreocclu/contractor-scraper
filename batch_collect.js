@@ -26,6 +26,10 @@ const getArg = (name) => {
   if (['all', 'dry-run', 'force'].includes(name)) return true;
   return args[idx + 1];
 };
+const getIntArg = (name) => {
+  const val = getArg(name);
+  return val ? parseInt(val, 10) : null;
+};
 
 const log = (msg) => console.log(msg);
 const success = (msg) => console.log(`\x1b[32m${msg}\x1b[0m`);
@@ -88,9 +92,10 @@ async function main() {
   console.log('═'.repeat(60));
 
   const dryRun = getArg('dry-run');
-  const singleId = getArg('id') ? parseInt(getArg('id')) : null;
+  const singleId = getIntArg('id');
   const multiIds = getArg('ids') ? getArg('ids').split(',').map(Number) : null;
   const collectAll = getArg('all');
+  const limit = getIntArg('limit') || 50;
 
   // Initialize database
   const SQL = await initSqlJs();
@@ -118,7 +123,7 @@ async function main() {
       WHERE c.is_active = 1
         AND (rd.fresh_count IS NULL OR rd.fresh_count < 20)
       ORDER BY c.id
-      LIMIT 50
+      LIMIT ${limit}
     `);
 
     if (result.length && result[0].values) {

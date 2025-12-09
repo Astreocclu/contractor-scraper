@@ -8,34 +8,14 @@
   - See: `docs/SESSION_2025-12-08_batch_audit_results.md`
 
 ## Next (P1)
-- [ ] **Test permit scraper filter fixes** - CODE COMPLETE, NEEDS TESTING
-  - Added type filters (exclude complaints, code enforcement, rentals, garage sales)
-  - Added 2-month date range filter
-  - Added module selection for Keller/Mesquite Tyler CSS
-  - Test: `python3 scrapers/energov.py keller 20`
-  - Test: `python3 scrapers/energov.py mesquite 20`
-  - Test: `python3 scrapers/accela.py fort_worth 20`
-  - See: `docs/SESSION_2025-12-08_permit_filter_fixes.md`
-- [ ] **McKinney CSS extraction regex** - `scrapers/citizen_self_service.py`
-  - Search/navigation FIXED (325k permits accessible!)
-  - Extraction regex not matching "Permit Number 000001-2024" format
-  - See: `docs/SESSION_2025-12-08_permit_scraper_fixes.md`
-- [ ] **Frisco eTRAKiT pagination testing** - `scrapers/etrakit.py`
-  - ViewState wait code ADDED, needs testing
-  - Target: get past 200 permits (4,312 available)
-- [ ] **Test Grand Prairie EnerGov** - config added, not tested
-  - `python3 scrapers/energov.py grand_prairie_energov 100`
+- [ ] **Data Sourcing** - Run `batch_collect.js` for existing contractors
+  - Target: 100 contractors with low data freshness
+  - Source: BBB, Google Maps, Yahoo/Yelp
+- [ ] **Fix Trustpilot SERP pulling wrong companies** - `scrapers/serp_rating.py`
+  - ~8/20 contractors had wrong Trustpilot data
+  - Needs stricter name matching
 - [ ] **Fix local Google Maps score prioritization** - `services/audit_agent.js`
-  - Agent sometimes uses lower HQ/Listed score instead of local DFW score
-  - Example: Used 3.0★ (48 reviews) instead of 4.5★ (387 reviews)
 - [ ] **Fix review analysis JSON parse error** - `services/review_analyzer.js`
-  - Intermittent: `JSON parse error: Unexpected token '<'`
-  - DeepSeek sometimes returns invalid JSON
-- [ ] Add Plano eTRAKiT login handling (requires credentials)
-- [ ] Cross-reference permit history vs contractor claims
-- [ ] Create MyGov scraper (Rowlett, Grapevine, Lancaster)
-- [ ] Create CityView scraper (Carrollton)
-- [ ] Delete deprecated JS scrapers after migration complete
 
 ## Later
 - [ ] **Migrate SQLite → PostgreSQL** - `docs/POSTGRESQL_MIGRATION_PLAN.md`
