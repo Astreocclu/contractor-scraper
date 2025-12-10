@@ -15,7 +15,7 @@ The contractor auditing system is **fully operational**. Data collection pipelin
 | Component | Status | Notes |
 |-----------|--------|-------|
 | Django project | Working | Runs on port 8002 |
-| Database | Working | SQLite (PostgreSQL ready when needed) |
+| Database | Working | PostgreSQL (contractors_dev) |
 | Models | Working | Vertical, Contractor, ContractorAudit |
 | Admin interface | Working | Full CRUD at /admin/ |
 | REST API | Working | DRF with pagination |
@@ -44,6 +44,7 @@ The contractor auditing system is **fully operational**. Data collection pipelin
 | News | Serper API | Working |
 | Court Records | Puppeteer | Working - Tarrant, Dallas, Collin, Denton |
 | TX Franchise | API | Working |
+| **County Liens** | Playwright | **BLOCKED** - Portals showing CAPTCHA (see ERRORS.md) |
 
 ### 3. AI Auditor (DeepSeek)
 | Feature | Status |
@@ -99,6 +100,7 @@ node run_audit.js --name "Company" --city "Dallas" --state "TX"
 node batch_collect.js --id 123 --force
 
 # Start server
+export DATABASE_URL=postgresql://contractors_user:localdev123@localhost/contractors_dev
 python3 manage.py runserver 8002
 ```
 
