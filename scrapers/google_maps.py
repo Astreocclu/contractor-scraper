@@ -4,20 +4,24 @@ GOOGLE MAPS SCRAPER (Playwright Python)
 NO API - scrapes directly from Google Maps search results.
 
 Gets review count and rating without Google Places API limits/costs.
+Uses playwright-stealth to avoid bot detection.
 
 Usage:
   python scrapers/google_maps.py "Orange Elephant Roofing" "Fort Worth, TX"
-  python scrapers/google_maps.py "Smith Electric" --max-reviews 5
+  python scrapers/google_maps.py "Smith Electric" --max-reviews 50
+  python scrapers/google_maps.py "Claffey Pools" "Southlake, TX" --visible --json
 """
 
 import asyncio
 import json
 import re
+import sys
 import urllib.parse
 from dataclasses import dataclass, field
 from typing import Optional
 
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeout
+from playwright_stealth import Stealth
 
 try:
     from scrapers.utils import (
@@ -57,6 +61,7 @@ class GoogleMapsResult:
     review_count: Optional[int] = None
     address: Optional[str] = None
     phone: Optional[str] = None
+    email: Optional[str] = None
     website: Optional[str] = None
     status: Optional[str] = None  # Open, Closed, Temporarily closed
     hours: Optional[str] = None
@@ -69,7 +74,7 @@ class GoogleMapsResult:
 async def scrape_google_maps(
     business_name: str,
     location: str = "Fort Worth, TX",
-    max_reviews: int = 5,
+    max_reviews: int = 50,  # Increased for pattern analysis
     use_cache: bool = True,
     headless: bool = True
 ) -> GoogleMapsResult:
@@ -101,6 +106,7 @@ async def scrape_google_maps(
                 review_count=cached.get("review_count"),
                 address=cached.get("address"),
                 phone=cached.get("phone"),
+                email=cached.get("email"),
                 website=cached.get("website"),
                 status=cached.get("status"),
                 hours=cached.get("hours"),
@@ -136,14 +142,23 @@ async def scrape_google_maps(
         )
         page = await context.new_page()
 
+        # Apply stealth to avoid bot detection
+        stealth = Stealth()
+        await stealth.apply_stealth_async(page)
+
         try:
             # Navigate to Google Maps search
-            import sys as _sys
-            print(f"[Google Maps] Searching for: {business_name} in {location}", file=_sys.stderr)
+            print(f"[Google Maps] Searching for: {business_name} in {location}", file=sys.stderr)
             await page.goto(search_url, wait_until="domcontentloaded", timeout=30000)
 
             # Wait for results to load
             await asyncio.sleep(3)
+
+            # CAPTCHA Detection
+            if await _is_captcha(page):
+                result.error = "CAPTCHA_DETECTED"
+                print("[Google Maps] CAPTCHA detected - cannot proceed", file=sys.stderr)
+                return result
 
             # Check if we landed on a business page directly or search results
             current_url = page.url
@@ -178,6 +193,15 @@ async def scrape_google_maps(
             phone_match = re.search(r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}', page_text)
             if phone_match:
                 result.phone = phone_match.group(0)
+
+            # Look for email address (Google sometimes shows it on business profiles)
+            email_match = re.search(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b', page_text)
+            if email_match:
+                email_candidate = email_match.group(0).lower()
+                # Filter out junk emails
+                junk_domains = ['wix.com', 'sentry.io', 'example.com', 'google.com', 'gstatic.com']
+                if not any(junk in email_candidate for junk in junk_domains):
+                    result.email = email_candidate
 
             # Look for status (Open/Closed)
             if re.search(r'\bOpen\b.*(?:24 hours|Opens|hours)', page_text, re.I):
@@ -229,13 +253,14 @@ async def scrape_google_maps(
                     result.review_count = extracted.get("review_count") or result.review_count
                     result.address = extracted.get("address") or result.address
                     result.phone = extracted.get("phone") or result.phone
+                    result.email = extracted.get("email") or result.email
                     result.website = extracted.get("website")
                     result.status = extracted.get("status") or result.status
                     result.categories = extracted.get("categories", [])
 
             # Try to extract actual reviews if we found the business
             if result.found and max_reviews > 0:
-                reviews = await _extract_reviews_from_page(page, max_reviews)
+                reviews = await _extract_reviews_from_page(page, max_reviews, business_name)
                 if reviews:
                     result.reviews = reviews
                 elif not result.reviews:
@@ -265,125 +290,197 @@ async def scrape_google_maps(
             await browser.close()
 
 
-async def _extract_reviews_from_page(page, max_reviews: int) -> list[GoogleMapsReview]:
+async def _is_captcha(page) -> bool:
+    """Check if Google is showing a CAPTCHA challenge."""
+    try:
+        page_text = await page.evaluate("document.body.innerText")
+        if "unusual traffic" in page_text.lower():
+            return True
+        if "robot" in page_text.lower() and "are you a robot" in page_text.lower():
+            return True
+        # Check for reCAPTCHA iframe
+        captcha_iframe = await page.query_selector('iframe[src*="recaptcha"]')
+        if captcha_iframe:
+            return True
+        return False
+    except:
+        return False
+
+
+async def _extract_reviews_from_page(page, max_reviews: int, business_name: str = "") -> list[GoogleMapsReview]:
     """
-    Extract reviews by clicking into the reviews section on Google Maps.
+    Extract reviews using robust selectors and smart scrolling.
     """
     reviews = []
 
     try:
-        # Try to click on reviews tab/button - Google Maps has various selectors
+        # Step 0: Make sure we're on a business detail page, not search results
+        # Check if we're still on search results (multiple article cards visible)
+        search_cards = await page.query_selector_all('[role="article"]')
+        if len(search_cards) > 2:
+            print(f"[Google Maps] Still on search results, clicking into business...", file=sys.stderr)
+            # Click the first matching card
+            for card in search_cards[:5]:
+                try:
+                    card_text = await card.inner_text()
+                    if business_name.split()[0].lower() in card_text.lower():
+                        await card.click()
+                        await asyncio.sleep(3)
+                        print(f"[Google Maps] Clicked into business detail", file=sys.stderr)
+                        break
+                except:
+                    continue
+
+        # Step 1: Open reviews panel
+        print(f"[Google Maps] Opening reviews panel...", file=sys.stderr)
+
+        # Try multiple selectors for the reviews button/tab
         review_buttons = [
-            'button[aria-label*="review"]',
-            '[data-tab="reviews"]',
+            'button[aria-label*="Reviews"]',
+            'div[role="tab"][aria-label*="Reviews"]',
             'button:has-text("Reviews")',
-            '[role="tab"]:has-text("Reviews")',
-            '.fontTitleSmall:has-text("reviews")',  # "123 reviews" link
+            '[data-tab-id="2"]',  # Sometimes reviews tab is index 2
+            'button[aria-label*="review"]',
+            '.fontTitleSmall:has-text("reviews")',
         ]
 
-        clicked = False
+        opened = False
         for selector in review_buttons:
             try:
                 btn = await page.query_selector(selector)
                 if btn:
                     await btn.click()
                     await asyncio.sleep(2)
-                    clicked = True
+                    opened = True
+                    print(f"[Google Maps] Clicked: {selector}", file=sys.stderr)
                     break
             except:
                 continue
 
-        # Also try clicking on the rating/review count text
-        if not clicked:
+        # Fallback: click on the star rating/review count
+        if not opened:
             try:
-                # Look for text like "4.5 (123)" and click it
-                rating_elem = await page.query_selector('[role="img"][aria-label*="stars"]')
-                if rating_elem:
-                    await rating_elem.click()
-                    await asyncio.sleep(2)
-                    clicked = True
+                await page.click('[aria-label*="reviews"]')
+                await asyncio.sleep(2)
+                opened = True
             except:
                 pass
 
-        # Scroll to load more reviews
-        for _ in range(3):
-            try:
-                await page.evaluate('document.querySelector("[role=\'main\']")?.scrollBy(0, 500)')
-                await asyncio.sleep(0.5)
-            except:
-                break
+        # Step 2: Scroll to load reviews
+        print(f"[Google Maps] Scrolling to load up to {max_reviews} reviews...", file=sys.stderr)
 
-        # Extract reviews from the page
-        page_text = await page.evaluate("() => document.body.innerText")
+        no_new_count = 0
+        previous_count = 0
+        seen_texts = set()  # For deduplication
 
-        # Look for review patterns - Google Maps reviews typically show:
-        # "Reviewer Name" followed by rating stars, date, and review text
-        import re
-
-        # Pattern for reviews: Name, then rating indicator, then date, then text
-        # Reviews often have "Local Guide" or level indicators
-        review_blocks = re.split(r'\n(?=[A-Z][a-z]+ [A-Z]|\d+ reviews?|Local Guide)', page_text)
-
-        for block in review_blocks[:max_reviews * 2]:  # Check more blocks than needed
+        # Scroll up to 20 times (usually gets ~100 reviews)
+        for scroll_num in range(20):
             if len(reviews) >= max_reviews:
                 break
 
-            # Look for rating in block (star indicators)
-            rating = 5  # Default
-            if '1 star' in block.lower():
-                rating = 1
-            elif '2 star' in block.lower():
-                rating = 2
-            elif '3 star' in block.lower():
-                rating = 3
-            elif '4 star' in block.lower():
-                rating = 4
+            # Extract currently visible reviews using robust selectors
+            review_elements = await page.query_selector_all('div[data-review-id]')
 
-            # Look for date pattern
-            date_match = re.search(r'(\d+\s+(?:day|week|month|year)s?\s+ago|a\s+(?:day|week|month|year)\s+ago)', block, re.I)
-            date = date_match.group(1) if date_match else ""
+            # If primary selector fails, try fallback
+            if not review_elements:
+                review_elements = await page.query_selector_all('[role="article"]')
 
-            # Look for reviewer name (first line that looks like a name)
-            name_match = re.match(r'^([A-Z][a-z]+(?:\s+[A-Z][a-z]*)?)', block.strip())
-            reviewer_name = name_match.group(1) if name_match else "Anonymous"
+            for elem in review_elements:
+                if len(reviews) >= max_reviews:
+                    break
 
-            # Extract review text - look for substantial text content
-            # Skip short blocks or blocks that look like metadata
-            text_lines = [line.strip() for line in block.split('\n')
-                         if len(line.strip()) > 30
-                         and not re.match(r'^(Local Guide|Level \d|\d+ review|\d+ photo)', line.strip(), re.I)]
-
-            if text_lines:
-                review_text = ' '.join(text_lines)[:500]
-                if len(review_text) > 50:  # Only add if there's substantial text
-                    reviews.append(GoogleMapsReview(
-                        text=review_text,
-                        rating=rating,
-                        date=date,
-                        reviewer_name=reviewer_name
-                    ))
-
-        # If direct extraction didn't work well, try a more structured approach
-        if len(reviews) < max_reviews:
-            # Look for review containers with aria labels
-            review_elements = await page.query_selector_all('[data-review-id], [aria-label*="stars"]')
-            for elem in review_elements[:max_reviews - len(reviews)]:
                 try:
-                    text = await elem.inner_text()
-                    if len(text) > 50:
-                        # Extract what we can
-                        date_match = re.search(r'(\d+\s+(?:day|week|month|year)s?\s+ago)', text, re.I)
+                    # Get full text first for dedup check
+                    full_text = await elem.inner_text()
+
+                    # Skip if we've seen this review (dedup)
+                    text_hash = full_text[:100]
+                    if text_hash in seen_texts:
+                        continue
+                    seen_texts.add(text_hash)
+
+                    # Extract rating from aria-label like "5 stars"
+                    rating = 5
+                    rating_el = await elem.query_selector('[role="img"][aria-label*="star"]')
+                    if rating_el:
+                        rating_label = await rating_el.get_attribute("aria-label")
+                        if rating_label and rating_label[0].isdigit():
+                            rating = int(rating_label[0])
+
+                    # Extract author from "Photo of [Name]" button
+                    author = "Anonymous"
+                    author_btn = await elem.query_selector('button[aria-label^="Photo of"]')
+                    if author_btn:
+                        author_label = await author_btn.get_attribute("aria-label")
+                        if author_label:
+                            author = author_label.replace("Photo of ", "")
+
+                    # Extract date (relative like "2 months ago")
+                    date = ""
+                    date_match = re.search(r'(\d+\s+(?:day|week|month|year)s?\s+ago|a\s+(?:day|week|month|year)\s+ago)', full_text, re.I)
+                    if date_match:
+                        date = date_match.group(1)
+
+                    # Try to click "More" button to expand text
+                    try:
+                        more_btn = await elem.query_selector('button:has-text("More")')
+                        if more_btn:
+                            await more_btn.click()
+                            await asyncio.sleep(0.2)
+                            full_text = await elem.inner_text()
+                    except:
+                        pass
+
+                    # Extract review text (try specific class, then fallback to filtering)
+                    review_text = ""
+                    text_el = await elem.query_selector('.wiI7pd')  # Common class for review text
+                    if text_el:
+                        review_text = await text_el.inner_text()
+                    else:
+                        # Filter out metadata from full text
+                        lines = [l.strip() for l in full_text.split('\n')
+                                if len(l.strip()) > 30
+                                and not re.match(r'^(Local Guide|Level \d|\d+ review|\d+ photo|ago$)', l.strip(), re.I)]
+                        if lines:
+                            review_text = ' '.join(lines)
+
+                    # Only add if we have meaningful content
+                    if len(review_text) > 20:
                         reviews.append(GoogleMapsReview(
-                            text=text[:500],
-                            rating=5,  # Would need more parsing
-                            date=date_match.group(1) if date_match else "",
-                            reviewer_name="Anonymous"
+                            text=review_text[:500],
+                            rating=rating,
+                            date=date,
+                            reviewer_name=author
                         ))
-                except:
+
+                except Exception as e:
                     continue
 
+            # Check if we got new reviews this scroll
+            if len(reviews) == previous_count:
+                no_new_count += 1
+            else:
+                no_new_count = 0
+            previous_count = len(reviews)
+
+            # Stop if no new reviews after 3 scrolls
+            if no_new_count >= 3:
+                break
+
+            # Scroll down
+            try:
+                # Scroll the last review into view
+                if review_elements:
+                    await review_elements[-1].scroll_into_view_if_needed()
+                # Also try scrolling the main panel
+                await page.mouse.wheel(0, 2000)
+                await asyncio.sleep(1.5)
+            except:
+                break
+
+        print(f"[Google Maps] Extracted {len(reviews)} reviews", file=sys.stderr)
+
     except Exception as e:
-        import sys
         print(f"[Google Maps] Review extraction error: {e}", file=sys.stderr)
 
     return reviews
@@ -400,6 +497,7 @@ Find the business that best matches "{business_name}" and extract:
 - review_count: Total number of reviews (just the number)
 - address: Full street address
 - phone: Phone number
+- email: Email address if shown
 - website: Website URL if shown
 - status: "open" or "closed" based on current status
 - categories: List of business categories/types
@@ -416,6 +514,7 @@ Return JSON:
   "review_count": 123,
   "address": "123 Main St, City, TX",
   "phone": "(555) 123-4567",
+  "email": "info@business.com",
   "website": "https://...",
   "status": "open",
   "categories": ["Roofing Contractor", "Home Services"],
@@ -445,6 +544,7 @@ def _cache_result(cache_key: str, result: GoogleMapsResult):
         "review_count": result.review_count,
         "address": result.address,
         "phone": result.phone,
+        "email": result.email,
         "website": result.website,
         "status": result.status,
         "hours": result.hours,
@@ -473,6 +573,7 @@ def result_to_dict(result: GoogleMapsResult) -> dict:
         "review_count": result.review_count,
         "address": result.address,
         "phone": result.phone,
+        "email": result.email,
         "website": result.website,
         "status": result.status,
         "hours": result.hours,
@@ -502,7 +603,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scrape Google Maps for business reviews")
     parser.add_argument("business_name", help="Business name to search for")
     parser.add_argument("location", nargs="?", default="Fort Worth, TX", help="City, State")
-    parser.add_argument("--max-reviews", type=int, default=5, help="Max reviews to extract")
+    parser.add_argument("--max-reviews", type=int, default=50, help="Max reviews to extract")
     parser.add_argument("--no-cache", action="store_true", help="Skip cache")
     parser.add_argument("--visible", action="store_true", help="Show browser window")
     parser.add_argument("--json", action="store_true", help="Output JSON format")
@@ -534,6 +635,7 @@ if __name__ == "__main__":
             print(f"Reviews: {result.review_count}")
             print(f"Address: {result.address or 'N/A'}")
             print(f"Phone: {result.phone or 'N/A'}")
+            print(f"Email: {result.email or 'N/A'}")
             print(f"Website: {result.website or 'N/A'}")
             print(f"Status: {result.status or 'Unknown'}")
             print(f"Categories: {', '.join(result.categories) if result.categories else 'N/A'}")

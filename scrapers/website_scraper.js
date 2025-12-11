@@ -46,9 +46,16 @@ function findContactPageUrl(links) {
 async function extractEmailsFromPage(page) {
   const emails = [];
 
-  // Method 1: mailto links
+  // Method 1: mailto links (decode URL-encoded characters like %20)
   const mailtoLinks = await page.$$eval('a[href^="mailto:"]', els =>
-    els.map(el => el.href.replace('mailto:', '').split('?')[0])
+    els.map(el => {
+      try {
+        const raw = el.href.replace('mailto:', '').split('?')[0];
+        return decodeURIComponent(raw).trim();
+      } catch {
+        return el.href.replace('mailto:', '').split('?')[0];
+      }
+    })
   );
   emails.push(...mailtoLinks);
 
