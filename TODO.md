@@ -9,10 +9,7 @@
 - [ ] **Batch Audit Scale-up** - Run audits for remaining contractors
   - Target: All contractors in database
   - Monitor for patterns/issues
-- [ ] **Migrate SQLite → PostgreSQL** - `docs/POSTGRESQL_MIGRATION_PLAN.md`
-  - Enables parallel audit workers (SQLite locks on writes)
-  - Required for 1000+ contractor scaling
-  - Ready to execute: 4 phases
+
 
 ## Later
 - [ ] Batch audit remaining contractors
@@ -22,6 +19,10 @@
 - [x] **Trustpilot Direct URL Check** (Dec 9, 2025)
   - Fixed wrong company matching by using direct domain lookup
   - `scrapers/trustpilot.py` now checks `trustpilot.com/review/{domain}`
+- [x] **Migrate SQLite → PostgreSQL** (Dec 9, 2025)
+  - Successfully migrated schema and data (including audit_records)
+  - Updated Node.js services (orchestrator, collection, audit agents) to use `node-pg`
+  - Fixed unique constraint issues and verified data integrity
 - [x] **JSON Parse Error Fixed** (Dec 9, 2025)
   - `services/review_analyzer.js` no longer crashes on malformed responses
 - [x] **Batch Audit Validation** (Dec 8, 2025)

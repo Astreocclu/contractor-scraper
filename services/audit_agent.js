@@ -340,7 +340,7 @@ class AuditAgent {
 
     switch (name) {
       case 'get_stored_data':
-        return this.toolGetStoredData();
+        return await this.toolGetStoredData();
 
       case 'request_collection':
         if (this.collectionRounds >= this.maxRounds) {
@@ -351,13 +351,13 @@ class AuditAgent {
           };
         }
         this.collectionRounds++;
-        return this.toolRequestCollection(args.source, args.reason);
+        return await this.toolRequestCollection(args.source, args.reason);
 
       case 'search_web':
-        return this.toolSearchWeb(args.query);
+        return await this.toolSearchWeb(args.query);
 
       case 'finalize_score':
-        return this.toolFinalizeScore(args);
+        return await this.toolFinalizeScore(args);
 
       default:
         return { error: `Unknown tool: ${name}` };
@@ -367,15 +367,18 @@ class AuditAgent {
   /**
    * Tool: Get all stored data for this contractor
    */
-  toolGetStoredData() {
-    const result = this.db.exec(`
+  /**
+   * Tool: Get all stored data for this contractor
+   */
+  async toolGetStoredData() {
+    const rows = await this.db.exec(`
       SELECT source_name, raw_text, structured_data, fetch_status, fetched_at
       FROM contractor_raw_data
       WHERE contractor_id = ?
       ORDER BY source_name
     `, [this.contractorId]);
 
-    if (!result.length || !result[0].values.length) {
+    if (rows.length === 0) {
       return {
         message: 'No data collected yet for this contractor',
         contractor: this.contractor,
@@ -384,21 +387,25 @@ class AuditAgent {
     }
 
     const data = {};
-    const cols = result[0].columns;
 
-    for (const row of result[0].values) {
-      const sourceName = row[0];
-      const rawText = row[1];
-      const structuredData = row[2];
-      const status = row[3];
+    for (const row of rows) {
+      const sourceName = row.source_name;
+      const rawText = row.raw_text;
+      const structuredData = row.structured_data;
+      const status = row.fetch_status;
 
       // Truncate long text for context window
       const truncatedText = rawText ? rawText.substring(0, 4000) : null;
 
+      // PostgreSQL jsonb returns object directly, no parsing needed
+      const parsed = structuredData
+        ? (typeof structuredData === 'string' ? JSON.parse(structuredData) : structuredData)
+        : null;
+
       data[sourceName] = {
         status,
         text: truncatedText,
-        structured: structuredData ? JSON.parse(structuredData) : null,
+        structured: parsed,
         truncated: rawText && rawText.length > 4000
       };
     }
@@ -467,7 +474,10 @@ class AuditAgent {
   /**
    * Tool: Finalize the audit score
    */
-  toolFinalizeScore(args) {
+  /**
+   * Tool: Finalize the audit score
+   */
+  async toolFinalizeScore(args) {
     const now = new Date().toISOString();
 
     // Validate required fields
@@ -476,14 +486,15 @@ class AuditAgent {
     }
 
     // Save to audit_records
-    this.db.run(`
+    await this.db.run(`
       INSERT INTO audit_records (
-        contractor_id, trust_score, risk_level, recommendation,
+        contractor_id, audit_version, trust_score, risk_level, recommendation,
         reasoning_trace, red_flags, positive_signals, gaps_identified,
         sources_used, collection_rounds, total_cost, created_at, finalized_at
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `, [
       this.contractorId,
+      1,  // audit_version: 1 = agentic audit v1
       args.trust_score,
       args.risk_level,
       args.recommendation,
@@ -491,7 +502,7 @@ class AuditAgent {
       JSON.stringify(args.red_flags || []),
       JSON.stringify(args.positive_signals || []),
       JSON.stringify(args.gaps_remaining || []),
-      JSON.stringify(this.getSourcesUsed()),
+      JSON.stringify(await this.getSourcesUsed()),
       this.collectionRounds,
       this.totalCost,
       now,
@@ -499,7 +510,7 @@ class AuditAgent {
     ]);
 
     // Update contractor's trust_score
-    this.db.run(`
+    await this.db.run(`
       UPDATE contractors_contractor
       SET trust_score = ?
       WHERE id = ?
@@ -524,22 +535,22 @@ class AuditAgent {
   /**
    * Get list of sources used
    */
-  getSourcesUsed() {
-    const result = this.db.exec(`
+  async getSourcesUsed() {
+    const rows = await this.db.exec(`
       SELECT source_name FROM contractor_raw_data
       WHERE contractor_id = ? AND fetch_status = 'success'
     `, [this.contractorId]);
 
-    if (!result.length) return [];
-    return result[0].values.map(row => row[0]);
+    if (rows.length === 0) return [];
+    return rows.map(row => row.source_name);
   }
 
   /**
    * Force finalization when limits hit
    */
-  forceFinalize(reason) {
+  async forceFinalize(reason) {
     warn(`Forced finalization: ${reason}`);
-    return this.toolFinalizeScore({
+    return await this.toolFinalizeScore({
       trust_score: 50,
       risk_level: 'MODERATE',
       recommendation: 'VERIFY',

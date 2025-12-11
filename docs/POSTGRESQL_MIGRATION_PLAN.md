@@ -1,7 +1,8 @@
 # PostgreSQL Migration Plan
 
-**Status:** Ready to execute when prioritized
-**Trigger:** After Boss deal response (or if Boss delays)
+**Status:** Ready to execute
+**Estimated Time:** 5-6 hours
+**Confidence:** 95% (validated with Gemini)
 
 ---
 
@@ -10,14 +11,14 @@
 Migrate from SQLite to PostgreSQL to enable:
 - Parallel audit workers (SQLite locks on writes)
 - 1000+ contractor scaling
-- Native JSON querying (`JSONB`)
-- Full-text search (`SearchVector`)
+- Native JSON querying (JSONB)
+- Connection pooling
 
 ---
 
-## Phase 1: Infrastructure (30 min)
+## Phase 1: Infrastructure (20 min)
 
-### 1.1 Install PostgreSQL locally
+### 1.1 Install PostgreSQL
 ```bash
 sudo apt update && sudo apt install postgresql postgresql-contrib
 sudo systemctl start postgresql
@@ -35,221 +36,302 @@ GRANT ALL ON SCHEMA public TO contractors_user;
 EOF
 ```
 
-### 1.3 Update Python dependencies
+### 1.3 Python dependencies
 ```bash
 source venv/bin/activate
 pip install psycopg2-binary
 pip freeze > requirements.txt
 ```
 
-### 1.4 Create `.env.postgres`
+### 1.4 Node dependencies
+```bash
+npm install pg
+```
+
+### 1.5 Update .env
 ```bash
 DATABASE_URL=postgres://contractors_user:localdev123@localhost:5432/contractors_dev
 ```
 
-### 1.5 Test Django connection
+### 1.6 Test Django connection
 ```bash
-# Temporarily update .env, then:
 python3 manage.py check
-python3 manage.py migrate
 ```
 
 ---
 
-## Phase 2: Python Refactoring (2-3 hours)
+## Phase 2: Create DB Module (30 min)
 
-**Files with `import sqlite3` that need ORM conversion:**
+Create `services/db_pg.js`:
 
-| File | Current Usage | Fix |
-|------|---------------|-----|
-| `scripts/get_unaudited_ids.py` | Direct sqlite3 queries | Django ORM |
-| `clients/management/commands/import_scraper_data.py` | sqlite3 import | Django ORM |
-| `run_batch_audit.sh` | Inline Python sqlite3 | Django management command |
-| `run_batch_audit_seq.sh` | Inline Python sqlite3 | Django management command |
-
-### 2.1 Pattern: Replace sqlite3 with Django ORM
-
-**Before:**
-```python
-import sqlite3
-conn = sqlite3.connect('db.sqlite3')
-cursor = conn.execute('SELECT id FROM contractors_contractor WHERE trust_score = 0')
-ids = [row[0] for row in cursor.fetchall()]
-```
-
-**After:**
-```python
-import django
-django.setup()
-from contractors.models import Contractor
-
-ids = list(Contractor.objects.filter(trust_score=0).values_list('id', flat=True))
-```
-
-### 2.2 Create management command for batch scripts
-
-Create `contractors/management/commands/get_unaudited.py`:
-```python
-from django.core.management.base import BaseCommand
-from contractors.models import Contractor
-
-class Command(BaseCommand):
-    def handle(self, *args, **options):
-        ids = Contractor.objects.filter(trust_score=0).values_list('id', flat=True)
-        for id in ids:
-            self.stdout.write(str(id))
-```
-
-Then shell scripts become:
-```bash
-python3 manage.py get_unaudited | while read id; do
-  node audit_only.js --id "$id"
-done
-```
-
----
-
-## Phase 3: Node.js Refactoring (1-2 hours)
-
-**Files using `sql.js` that need `pg` conversion:**
-
-| File | Current | Fix |
-|------|---------|-----|
-| `audit_only.js` | `sql.js` (async, file-based) | `pg` Pool |
-| `services/orchestrator.js` | sqlite references | `pg` Pool |
-| `scrape_tx_sos.js` | sqlite references | `pg` Pool |
-
-### 3.1 Install pg
-```bash
-npm install pg
-npm uninstall sql.js better-sqlite3  # cleanup
-```
-
-### 3.2 Create shared db connection
-
-Create `services/db.js`:
 ```javascript
 const { Pool } = require('pg');
+const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL
-});
+module.exports = {
+  /**
+   * Execute a query and return result
+   */
+  async query(text, params) {
+    return pool.query(text, params);
+  },
 
-module.exports = { pool };
+  /**
+   * Get a single row
+   */
+  async getOne(text, params) {
+    const result = await pool.query(text, params);
+    return result.rows[0] || null;
+  },
+
+  /**
+   * Execute multiple statements in a transaction
+   */
+  async withTransaction(callback) {
+    const client = await pool.connect();
+    try {
+      await client.query('BEGIN');
+      const result = await callback(client);
+      await client.query('COMMIT');
+      return result;
+    } catch (e) {
+      await client.query('ROLLBACK');
+      throw e;
+    } finally {
+      client.release();
+    }
+  },
+
+  pool
+};
 ```
-
-### 3.3 Pattern: Replace sql.js with pg
-
-**Before (sql.js):**
-```javascript
-const initSqlJs = require('sql.js');
-const fs = require('fs');
-
-const SQL = await initSqlJs();
-const db = new SQL.Database(fs.readFileSync('db.sqlite3'));
-const result = db.exec('SELECT * FROM contractors_contractor WHERE id = ?', [id]);
-// ...
-fs.writeFileSync('db.sqlite3', Buffer.from(db.export()));
-```
-
-**After (pg):**
-```javascript
-const { pool } = require('./services/db');
-
-const result = await pool.query(
-  'SELECT * FROM contractors_contractor WHERE id = $1',
-  [id]
-);
-const contractor = result.rows[0];
-
-// Updates are immediate, no file save needed
-await pool.query(
-  'UPDATE contractors_contractor SET trust_score = $1 WHERE id = $2',
-  [score, id]
-);
-```
-
-### 3.4 Key SQL syntax differences
-
-| SQLite | PostgreSQL |
-|--------|------------|
-| `?` placeholders | `$1, $2, $3` placeholders |
-| `AUTOINCREMENT` | `SERIAL` or `GENERATED` |
-| `json_extract(col, '$.key')` | `col->>'key'` |
-| No native JSON type | `JSONB` with indexing |
 
 ---
 
-## Phase 4: Data Migration (30 min)
+## Phase 3: Migrate Core Files (2-3 hours)
 
-### Option A: pgloader (Recommended)
-```bash
-sudo apt install pgloader
+### Files to migrate (in order):
 
-pgloader sqlite:///home/reid/testhome/contractors/db.sqlite3 \
-  postgresql://contractors_user:localdev123@localhost/contractors_dev
+| # | File | DB Operations | Notes |
+|---|------|---------------|-------|
+| 1 | `services/collection_service.js` | SELECT, INSERT, UPDATE | Most DB ops, make class methods async |
+| 2 | `services/audit_agent_v2.js` | SELECT, INSERT, UPDATE | Needs transaction for finalizeResult |
+| 3 | `batch_collect.js` | SELECT, UPDATE | Entry point for collection |
+| 4 | `services/orchestrator.js` | SELECT, INSERT, UPDATE | Main audit orchestration |
+| 5 | `audit_only.js` | SELECT, UPDATE | Simplified audit entry |
+
+### Conversion pattern for each file:
+
+**Step 1: Update imports**
+```javascript
+// REMOVE:
+const initSqlJs = require('sql.js');
+const fs = require('fs');  // if only used for DB
+
+// ADD:
+const db = require('./services/db_pg');
 ```
 
-### Option B: Django dumpdata/loaddata
-```bash
-# With SQLite still active:
-python3 manage.py dumpdata --natural-foreign --indent 2 > backup.json
+**Step 2: Convert queries**
+```javascript
+// BEFORE (sql.js):
+const result = db.exec(`SELECT * FROM contractors_contractor WHERE id = ?`, [id]);
+const contractor = result[0]?.values[0];
 
-# Switch to PostgreSQL in .env, then:
+// AFTER (pg):
+const result = await db.query(`SELECT * FROM contractors_contractor WHERE id = $1`, [id]);
+const contractor = result.rows[0];
+```
+
+**Step 3: Convert writes**
+```javascript
+// BEFORE:
+db.run(`UPDATE contractors_contractor SET trust_score = ? WHERE id = ?`, [score, id]);
+
+// AFTER:
+await db.query(`UPDATE contractors_contractor SET trust_score = $1 WHERE id = $2`, [score, id]);
+```
+
+**Step 4: Remove file saves**
+```javascript
+// REMOVE (no longer needed):
+fs.writeFileSync(DB_PATH, Buffer.from(db.export()));
+```
+
+**Step 5: Add async/await up the chain**
+- Any function calling a DB method must be `async`
+- All DB calls must use `await`
+
+**Step 6: Wrap multi-statement writes in transactions**
+```javascript
+// For operations like finalizeResult that do INSERT + UPDATE:
+await db.withTransaction(async (client) => {
+  await client.query(`INSERT INTO contractor_audits ...`, [...]);
+  await client.query(`UPDATE contractors_contractor SET trust_score = $1 ...`, [...]);
+});
+```
+
+---
+
+## Phase 4: SQL Syntax Conversion
+
+| SQLite | PostgreSQL | Example |
+|--------|------------|---------|
+| `?` placeholders | `$1, $2, $3...` | `WHERE id = ?` → `WHERE id = $1` |
+| `datetime('now')` | `NOW()` | Or pass `new Date().toISOString()` from JS |
+| `last_insert_rowid()` | `RETURNING id` | `INSERT ... RETURNING id` |
+| `json_extract(col, '$.key')` | `col->>'key'` | Not currently used |
+
+### Placeholder conversion helper:
+```javascript
+// Manual conversion is safest - count params in order
+// Before: (?, ?, ?)
+// After:  ($1, $2, $3)
+```
+
+---
+
+## Phase 5: Data Migration (30 min)
+
+### 5.1 Backup from SQLite (while still on SQLite)
+```bash
+python3 manage.py dumpdata --natural-foreign --indent 2 > backup.json
+```
+
+### 5.2 Switch DATABASE_URL to Postgres in .env
+
+### 5.3 Create tables
+```bash
 python3 manage.py migrate
+```
+
+### 5.4 Load data
+```bash
 python3 manage.py loaddata backup.json
 ```
 
----
-
-## Phase 5: Verification
-
+### 5.5 Verify counts
 ```bash
-# Django admin should work
-python3 manage.py runserver 8002
-
-# Node audits should work
-node audit_only.js --id 1524 --dry-run
-
-# Check counts match
-python3 manage.py shell -c "from contractors.models import Contractor; print(Contractor.objects.count())"
+python3 manage.py shell -c "
+from contractors.models import Contractor
+from django.contrib.auth.models import User
+print(f'Contractors: {Contractor.objects.count()}')
+print(f'Users: {User.objects.count()}')
+"
 ```
 
 ---
 
-## Post-Migration Improvements (Future)
+## Phase 6: Testing (1 hour)
 
-1. **Parallel workers**: Run multiple `audit_only.js` instances
-2. **Connection pooling**: Already built into `pg.Pool`
-3. **JSON queries**: Filter by `google_reviews_json` contents
-4. **Full-text search**: Replace `icontains` with `SearchVector`
+### 6.1 Django admin
+```bash
+python3 manage.py runserver 8002
+# Browse to http://localhost:8002/admin/
+```
+
+### 6.2 Collection test
+```bash
+source venv/bin/activate && set -a && . ./.env && set +a
+node batch_collect.js --id 12 --force
+```
+
+### 6.3 Audit test
+```bash
+node run_audit.js --id 12
+```
+
+### 6.4 Parallel test (the whole point!)
+```bash
+# Terminal 1:
+node run_audit.js --id 11
+
+# Terminal 2 (simultaneously):
+node run_audit.js --id 13
+```
+
+Both should complete without locking errors.
+
+---
+
+## Phase 7: Cleanup
+
+### 7.1 Remove old dependencies
+```bash
+npm uninstall sql.js better-sqlite3
+```
+
+### 7.2 Archive SQLite database
+```bash
+mv db.sqlite3 db.sqlite3.bak
+```
+
+### 7.3 Update package.json scripts (if any reference sqlite)
+
+### 7.4 Update this document to mark complete
+
+---
+
+## Risks & Mitigations
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| Data loss during migration | Low | High | Keep db.sqlite3 untouched until verified |
+| Async chain breaks | Medium | Medium | Test each file individually after migration |
+| Transaction race conditions | Low | Medium | Use `withTransaction()` for multi-statement writes |
+| Type mismatches (string vs int) | Medium | Low | Test with known contractors (ID 12, 1524) |
+| Connection pool exhaustion | Low | Medium | pg.Pool defaults are sane; monitor in production |
 
 ---
 
 ## Rollback Plan
 
-Keep `db.sqlite3` untouched during migration. If anything breaks:
+If anything breaks after migration:
+
 ```bash
-# In .env, revert to:
+# 1. Revert .env to SQLite
 DATABASE_URL=sqlite:///db.sqlite3
+
+# 2. Revert Node files from git
+git checkout -- services/collection_service.js batch_collect.js ...
+
+# 3. Restore SQLite backup if needed
+mv db.sqlite3.bak db.sqlite3
 ```
+
+---
+
+## Post-Migration Benefits
+
+Once complete, you can:
+
+1. **Run parallel workers**: Multiple `node run_audit.js` instances
+2. **Use connection pooling**: Already built into pg.Pool
+3. **Query JSON fields**: `SELECT * WHERE collected_data->>'bbb_rating' = 'F'`
+4. **Full-text search**: Replace `icontains` with `SearchVector` (future)
+5. **Scale to 10,000+ contractors**: No more file locking
 
 ---
 
 ## Files Checklist
 
-### Python (need ORM conversion)
-- [ ] `scripts/get_unaudited_ids.py`
-- [ ] `clients/management/commands/import_scraper_data.py`
-- [ ] `run_batch_audit.sh` (inline Python)
-- [ ] `run_batch_audit_seq.sh` (inline Python)
-
 ### Node.js (need pg conversion)
-- [ ] `audit_only.js`
+- [ ] `services/db_pg.js` (CREATE NEW)
+- [ ] `services/collection_service.js`
+- [ ] `services/audit_agent_v2.js`
+- [ ] `batch_collect.js`
 - [ ] `services/orchestrator.js`
-- [ ] `scrape_tx_sos.js`
+- [ ] `audit_only.js`
+
+### Python (already uses Django ORM - just verify)
+- [ ] `scripts/get_unaudited_ids.py` → convert to Django ORM
 
 ### Config
-- [ ] `.env` → add PostgreSQL URL
+- [ ] `.env` → add PostgreSQL DATABASE_URL
 - [ ] `requirements.txt` → add psycopg2-binary
 - [ ] `package.json` → add pg, remove sql.js/better-sqlite3
+
+---
+
+*Plan validated: December 9, 2025*
+*Gemini confidence: 95% | Claude confidence: 95%*

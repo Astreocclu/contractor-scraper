@@ -133,6 +133,49 @@ async function scrapeTrustpilotPython(websiteUrl) {
 }
 
 /**
+ * Scrape county lien records (mechanic's liens, tax liens, judgments)
+ * Uses Python Playwright scrapers for Tarrant, Dallas, Collin, and Denton counties
+ */
+async function scrapeCountyLiensPython(businessName, ownerName = null, city = 'Fort Worth', state = 'TX') {
+  const scriptPath = path.join(SCRAPERS_DIR, 'county_liens', 'orchestrator.py');
+  const args = ['--name', businessName];
+
+  if (ownerName) {
+    args.push('--owner', ownerName);
+  }
+
+  const quotedArgs = args.map(arg => `"${arg.replace(/"/g, '\\"')}"`).join(' ');
+  const cmd = `python3 "${scriptPath}" ${quotedArgs}`;
+
+  try {
+    const output = execSync(cmd, {
+      cwd: SCRAPERS_DIR,
+      timeout: 300000, // 5 minutes - scraping 4 counties takes time
+      encoding: 'utf-8',
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
+    return JSON.parse(output.trim());
+  } catch (err) {
+    // Try to parse any output even on error
+    if (err.stdout) {
+      try {
+        return JSON.parse(err.stdout.trim());
+      } catch (parseErr) {
+        // ignore
+      }
+    }
+    log(`County liens scraper error: ${err.message}`);
+    return {
+      error: err.message,
+      total_records: 0,
+      counties: {},
+      lien_score: { score: 10, max_score: 10, notes: ['Scraper error - could not retrieve records'] }
+    };
+  }
+}
+
+
+/**
  * Build Serper search queries for various sources
  */
 function buildSerperQuery(source, businessName, city, state) {
@@ -234,6 +277,9 @@ const SOURCES = {
   collin_court: { ttl: 604800, tier: 7, type: 'url' },
   denton_court: { ttl: 604800, tier: 7, type: 'url' },
   court_listener: { ttl: 604800, tier: 7, type: 'api' },
+
+  // Tier 7b: County Liens (mechanic's liens, tax liens, judgments) - cache 7d
+  county_liens: { ttl: 604800, tier: 7, type: 'scraper' },
 
   // Tier 8: Industry (cache 24h) - via Serper
   porch: { ttl: 86400, tier: 8, type: 'serper' },
@@ -753,61 +799,50 @@ class CollectionService {
   /**
    * Store raw data to database
    */
-  storeRawData(contractorId, source, data) {
+  /**
+   * Store raw data to database
+   */
+  async storeRawData(contractorId, source, data) {
     const now = new Date().toISOString();
     const ttl = SOURCES[source]?.ttl || 86400;
     const expires = new Date(Date.now() + ttl * 1000).toISOString();
 
-    // Check if exists
-    const existing = this.db.exec(
-      `SELECT id FROM contractor_raw_data WHERE contractor_id = ? AND source_name = ?`,
-      [contractorId, source]
-    );
-
-    if (existing.length && existing[0].values.length) {
-      // Update existing
-      this.db.run(`
-        UPDATE contractor_raw_data SET
-          source_url = ?, raw_text = ?, structured_data = ?,
-          fetch_status = ?, error_message = ?, fetched_at = ?, expires_at = ?
-        WHERE contractor_id = ? AND source_name = ?
-      `, [
-        data.url,
-        data.text,
-        data.structured ? JSON.stringify(data.structured) : null,
-        data.status,
-        data.error || null,
-        now,
-        expires,
-        contractorId,
-        source
-      ]);
-    } else {
-      // Insert new
-      this.db.run(`
-        INSERT INTO contractor_raw_data
-        (contractor_id, source_name, source_url, raw_text, structured_data, fetch_status, error_message, fetched_at, expires_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-      `, [
-        contractorId,
-        source,
-        data.url,
-        data.text,
-        data.structured ? JSON.stringify(data.structured) : null,
-        data.status,
-        data.error || null,
-        now,
-        expires
-      ]);
-    }
+    // Upsert using ON CONFLICT (Postgres specific)
+    await this.db.run(`
+      INSERT INTO contractor_raw_data
+      (contractor_id, source_name, source_url, raw_text, structured_data, fetch_status, error_message, fetched_at, expires_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ON CONFLICT (contractor_id, source_name)
+      DO UPDATE SET
+        source_url = EXCLUDED.source_url,
+        raw_text = EXCLUDED.raw_text,
+        structured_data = EXCLUDED.structured_data,
+        fetch_status = EXCLUDED.fetch_status,
+        error_message = EXCLUDED.error_message,
+        fetched_at = EXCLUDED.fetched_at,
+        expires_at = EXCLUDED.expires_at
+    `, [
+      contractorId,
+      source,
+      data.url,
+      data.text,
+      data.structured ? JSON.stringify(data.structured) : null,
+      data.status,
+      data.error || null,
+      now,
+      expires
+    ]);
   }
 
   /**
    * Log a collection request
    */
-  logCollectionRequest(contractorId, source, requestedBy, reason) {
+  /**
+   * Log a collection request
+   */
+  async logCollectionRequest(contractorId, source, requestedBy, reason) {
     const now = new Date().toISOString();
-    this.db.run(`
+    await this.db.run(`
       INSERT INTO collection_log (contractor_id, source_name, requested_by, request_reason, status, started_at)
       VALUES (?, ?, ?, ?, 'running', ?)
     `, [contractorId, source, requestedBy, reason, now]);
@@ -816,23 +851,26 @@ class CollectionService {
   /**
    * Get cached data for a source
    */
-  getCachedData(contractorId, source) {
-    const result = this.db.exec(`
+  /**
+   * Get cached data for a source
+   */
+  async getCachedData(contractorId, source) {
+    const rows = await this.db.exec(`
       SELECT raw_text, structured_data, fetch_status, expires_at
       FROM contractor_raw_data
       WHERE contractor_id = ? AND source_name = ?
     `, [contractorId, source]);
 
-    if (!result.length || !result[0].values.length) {
+    if (rows.length === 0) {
       return null;
     }
 
-    const row = result[0].values[0];
+    const row = rows[0];
     return {
-      text: row[0],
-      structured: row[1] ? JSON.parse(row[1]) : null,
-      status: row[2],
-      expires_at: row[3]
+      text: row.raw_text,
+      structured: row.structured_data ? JSON.parse(row.structured_data) : null,
+      status: row.fetch_status,
+      expires_at: row.expires_at
     };
   }
 
@@ -888,8 +926,8 @@ class CollectionService {
             }
           }
         }
-        this.storeRawData(contractorId, result.source, result);
-        this.logCollectionRequest(contractorId, result.source, 'initial', 'Initial collection');
+        await this.storeRawData(contractorId, result.source, result);
+        await this.logCollectionRequest(contractorId, result.source, 'initial', 'Initial collection');
         results.push(result);
       }
 
@@ -909,8 +947,8 @@ class CollectionService {
         text: JSON.stringify(bbbResult, null, 2),
         structured: bbbResult
       };
-      this.storeRawData(contractorId, 'bbb', bbbData);
-      this.logCollectionRequest(contractorId, 'bbb', 'initial', 'Initial collection (Python)');
+      await this.storeRawData(contractorId, 'bbb', bbbData);
+      await this.logCollectionRequest(contractorId, 'bbb', 'initial', 'Initial collection (Python)');
       // Replace any existing BBB result from URL batch
       const existingIdx = results.findIndex(r => r.source === 'bbb');
       if (existingIdx >= 0) {
@@ -956,8 +994,8 @@ class CollectionService {
         text: JSON.stringify(gmapsLocalResult, null, 2),
         structured: gmapsLocalResult
       };
-      this.storeRawData(contractorId, 'google_maps_local', gmapsLocalData);
-      this.logCollectionRequest(contractorId, 'google_maps_local', 'initial', 'Initial collection - DFW market');
+      await this.storeRawData(contractorId, 'google_maps_local', gmapsLocalData);
+      await this.logCollectionRequest(contractorId, 'google_maps_local', 'initial', 'Initial collection - DFW market');
 
       // Replace any existing from URL batch
       const existingLocalIdx = results.findIndex(r => r.source === 'google_maps_local');
@@ -998,8 +1036,8 @@ class CollectionService {
           text: JSON.stringify(gmapsListedResult, null, 2),
           structured: gmapsListedResult
         };
-        this.storeRawData(contractorId, 'google_maps_listed', gmapsListedData);
-        this.logCollectionRequest(contractorId, 'google_maps_listed', 'initial', 'Initial collection - Listed location');
+        await this.storeRawData(contractorId, 'google_maps_listed', gmapsListedData);
+        await this.logCollectionRequest(contractorId, 'google_maps_listed', 'initial', 'Initial collection - Listed location');
         results.push(gmapsListedData);
 
         if (gmapsListedResult.found) {
@@ -1034,8 +1072,8 @@ class CollectionService {
           text: JSON.stringify(gmapsHqResult, null, 2),
           structured: gmapsHqResult
         };
-        this.storeRawData(contractorId, 'google_maps_hq', gmapsHqData);
-        this.logCollectionRequest(contractorId, 'google_maps_hq', 'initial', 'Initial collection - True HQ');
+        await this.storeRawData(contractorId, 'google_maps_hq', gmapsHqData);
+        await this.logCollectionRequest(contractorId, 'google_maps_hq', 'initial', 'Initial collection - True HQ');
         results.push(gmapsHqData);
 
         if (gmapsHqResult.found) {
@@ -1060,7 +1098,7 @@ class CollectionService {
       const existingListed = results.find(r => r.source === 'google_maps_listed');
       if (existingListed) {
         const gmapsHqData = { ...existingListed, source: 'google_maps_hq' };
-        this.storeRawData(contractorId, 'google_maps_hq', gmapsHqData);
+        await this.storeRawData(contractorId, 'google_maps_hq', gmapsHqData);
         results.push(gmapsHqData);
       }
     }
@@ -1076,8 +1114,8 @@ class CollectionService {
         text: JSON.stringify(yelpResult, null, 2),
         structured: yelpResult
       };
-      this.storeRawData(contractorId, 'yelp_yahoo', yelpData);
-      this.logCollectionRequest(contractorId, 'yelp_yahoo', 'initial', 'Initial collection - Yahoo fallback');
+      await this.storeRawData(contractorId, 'yelp_yahoo', yelpData);
+      await this.logCollectionRequest(contractorId, 'yelp_yahoo', 'initial', 'Initial collection - Yahoo fallback');
       results.push(yelpData);
 
       if (yelpResult.found) {
@@ -1108,8 +1146,8 @@ class CollectionService {
           text: JSON.stringify(serpResult, null, 2),
           structured: serpResult
         };
-        this.storeRawData(contractorId, key, serpData);
-        this.logCollectionRequest(contractorId, key, 'initial', `Initial collection - SERP ${site}`);
+        await this.storeRawData(contractorId, key, serpData);
+        await this.logCollectionRequest(contractorId, key, 'initial', `Initial collection - SERP ${site}`);
         results.push(serpData);
 
         if (serpResult.found && serpResult.rating) {
@@ -1137,8 +1175,8 @@ class CollectionService {
           text: JSON.stringify(tpResult, null, 2),
           structured: tpResult
         };
-        this.storeRawData(contractorId, 'trustpilot', tpData);
-        this.logCollectionRequest(contractorId, 'trustpilot', 'initial', 'Initial collection - direct URL');
+        await this.storeRawData(contractorId, 'trustpilot', tpData);
+        await this.logCollectionRequest(contractorId, 'trustpilot', 'initial', 'Initial collection - direct URL');
         results.push(tpData);
 
         if (tpResult.found && tpResult.rating) {
@@ -1177,8 +1215,8 @@ class CollectionService {
           text: JSON.stringify(serperResult, null, 2),
           structured: serperResult
         };
-        this.storeRawData(contractorId, key, data);
-        this.logCollectionRequest(contractorId, key, 'initial', 'Initial collection - Serper');
+        await this.storeRawData(contractorId, key, data);
+        await this.logCollectionRequest(contractorId, key, 'initial', 'Initial collection - Serper');
         results.push(data);
 
         if (serperResult.found) {
@@ -1205,8 +1243,8 @@ class CollectionService {
         text: `COURT RECORDS:\n${JSON.stringify(courtResult, null, 2)}`,
         structured: courtResult
       };
-      this.storeRawData(contractorId, 'court_records', data);
-      this.logCollectionRequest(contractorId, 'court_records', 'initial', 'Initial collection');
+      await this.storeRawData(contractorId, 'court_records', data);
+      await this.logCollectionRequest(contractorId, 'court_records', 'initial', 'Initial collection');
       results.push(data);
 
       if (courtResult.total_cases_found > 0) {
@@ -1217,6 +1255,40 @@ class CollectionService {
     } catch (err) {
       warn(`    Courts: Error - ${err.message}`);
     }
+
+    // County Liens (mechanic's liens, tax liens, judgments)
+    log('\n  Searching county lien records...');
+    try {
+      const lienResult = await scrapeCountyLiensPython(contractor.name, null, contractor.city, contractor.state);
+      const data = {
+        source: 'county_liens',
+        url: 'DFW County OPR',
+        status: lienResult.total_records > 0 ? 'success' : 'not_found',
+        text: `COUNTY LIENS:\n${JSON.stringify(lienResult, null, 2)}`,
+        structured: lienResult
+      };
+      await this.storeRawData(contractorId, 'county_liens', data);
+      await this.logCollectionRequest(contractorId, 'county_liens', 'initial', 'Initial collection - liens');
+      results.push(data);
+
+      if (lienResult.total_records > 0) {
+        const activeCount = lienResult.lien_score?.active_liens || 0;
+        const resolvedCount = lienResult.lien_score?.resolved_liens || 0;
+        warn(`    Liens: Found ${lienResult.total_records} record(s) - ${activeCount} active, ${resolvedCount} resolved`);
+
+        // Flag if there are active liens
+        if (activeCount >= 3) {
+          error(`    ⚠️ CRITICAL: ${activeCount} active liens (pattern of non-payment)`);
+        } else if (activeCount >= 1) {
+          warn(`    ⚠️ WARNING: ${activeCount} active lien(s) found`);
+        }
+      } else {
+        success(`    Liens: No liens found`);
+      }
+    } catch (err) {
+      warn(`    Liens: Error - ${err.message}`);
+    }
+
 
     // API sources
     log('\n  Fetching API sources...');
@@ -1234,7 +1306,7 @@ class CollectionService {
           text: JSON.stringify(apiResults.tx_franchise, null, 2),
           structured: apiResults.tx_franchise
         };
-        this.storeRawData(contractorId, 'tx_franchise', data);
+        await this.storeRawData(contractorId, 'tx_franchise', data);
         results.push(data);
 
         if (apiResults.tx_franchise.found) {
@@ -1251,7 +1323,7 @@ class CollectionService {
           text: JSON.stringify(apiResults.open_corporates, null, 2),
           structured: apiResults.open_corporates
         };
-        this.storeRawData(contractorId, 'open_corporates', data);
+        await this.storeRawData(contractorId, 'open_corporates', data);
         results.push(data);
       }
 
@@ -1264,7 +1336,7 @@ class CollectionService {
           text: JSON.stringify(apiResults.court_listener, null, 2),
           structured: apiResults.court_listener
         };
-        this.storeRawData(contractorId, 'court_listener', data);
+        await this.storeRawData(contractorId, 'court_listener', data);
         results.push(data);
       }
     } catch (err) {
@@ -1316,7 +1388,7 @@ class CollectionService {
             text: analysis.summary || 'Analysis complete',
             structured: analysis
           };
-          this.storeRawData(contractorId, 'review_analysis', analysisData);
+          await this.storeRawData(contractorId, 'review_analysis', analysisData);
           results.push(analysisData);
 
           // Log key findings
@@ -1350,10 +1422,10 @@ class CollectionService {
    * Fetch a specific source on demand (for agent requests)
    */
   async fetchSpecificSource(contractorId, contractor, sourceName, reason) {
-    this.logCollectionRequest(contractorId, sourceName, 'audit_agent', reason);
+    await this.logCollectionRequest(contractorId, sourceName, 'audit_agent', reason);
 
     // Check cache
-    const cached = this.getCachedData(contractorId, sourceName);
+    const cached = await this.getCachedData(contractorId, sourceName);
     if (cached && !this.isExpired(cached)) {
       log(`  ${sourceName}: Using cached data`);
       return { source: sourceName, status: 'cached', ...cached };
@@ -1484,7 +1556,7 @@ class CollectionService {
 
     // Store result
     if (result) {
-      this.storeRawData(contractorId, sourceName, result);
+      await this.storeRawData(contractorId, sourceName, result);
     }
 
     return result;

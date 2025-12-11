@@ -8,12 +8,8 @@
  *   node test_insurance_confidence.js --name "Orange Elephant Roofing" --city "Dallas"
  */
 
-const initSqlJs = require('sql.js');
-const fs = require('fs');
-const path = require('path');
-const { CollectionService, calculateInsuranceConfidence } = require('./services/collection_service');
-
-const DB_PATH = path.join(__dirname, 'db.sqlite3');
+const db = require('../services/db_pg');
+const { CollectionService, calculateInsuranceConfidence } = require('../services/collection_service');
 
 // Parse CLI args
 const args = process.argv.slice(2);
@@ -43,9 +39,7 @@ async function main() {
   log(`📍 Location: ${city}, ${state}`);
 
   // Initialize database
-  const SQL = await initSqlJs();
-  const dbBuffer = fs.readFileSync(DB_PATH);
-  const db = new SQL.Database(dbBuffer);
+  // (Postgres pool initialized on require)
 
   // Check if contractor exists or create
   let contractorId;
@@ -53,15 +47,18 @@ async function main() {
     SELECT id, business_name FROM contractors_contractor
     WHERE LOWER(business_name) LIKE LOWER(?)
   `, [`%${name}%`]);
+  const rows = await db.exec(`
+    SELECT id, business_name FROM contractors_contractor
+    WHERE LOWER(business_name) LIKE LOWER(?)
+  `, [`%${name}%`]);
 
-  if (result.length && result[0].values.length) {
-    contractorId = result[0].values[0][0];
+  if (rows.length > 0) {
+    contractorId = rows[0].id;
     log(`\n✓ Found existing contractor ID: ${contractorId}`);
   } else {
     // Create new contractor with all required fields
     const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').trim();
-    const now = new Date().toISOString();
-    db.run(`
+    const inserted = await db.insert(`
       INSERT INTO contractors_contractor (
         business_name, slug, address, city, state, zip_code, phone, website,
         google_review_count, google_reviews_json, yelp_review_count,
@@ -71,11 +68,10 @@ async function main() {
         ai_summary, ai_sentiment_score, ai_red_flags,
         is_claimed, is_active, first_scraped_at, tier
       )
-      VALUES (?, ?, '', ?, ?, '', '', '', 0, '[]', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0, '[]', 0, 1, ?, 'standard')
-    `, [name, slug, city, state, now]);
+      VALUES (?, ?, '', ?, ?, '', '', '', 0, '[]', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0, '[]', 0, 1, NOW(), 'standard')
+    `, [name, slug, city, state]);
 
-    const idResult = db.exec('SELECT last_insert_rowid()');
-    contractorId = idResult[0].values[0][0];
+    contractorId = inserted.id;
     log(`\n+ Created new contractor ID: ${contractorId}`);
   }
 
@@ -91,24 +87,25 @@ async function main() {
     const results = await collectionService.runInitialCollection(contractorId, contractor);
 
     const successCount = results.filter(r => r.status === 'success').length;
-    success(`\n✓ Collected ${successCount}/${results.length} sources`);
+    success(`\n✓ Collected ${successCount} / ${results.length} sources`);
 
     // Get all collected data from database
-    const rawDataResult = db.exec(`
+    // Get all collected data from database
+    const rawDataRows = await db.exec(`
       SELECT source_name, raw_text, structured_data, fetch_status
       FROM contractor_raw_data
       WHERE contractor_id = ?
-    `, [contractorId]);
+      `, [contractorId]);
 
     // Format data for insurance confidence calculation
     const collectedData = [];
-    if (rawDataResult.length && rawDataResult[0].values) {
-      for (const row of rawDataResult[0].values) {
+    if (rawDataRows.length > 0) {
+      for (const row of rawDataRows) {
         collectedData.push({
-          source_name: row[0],
-          raw_text: row[1],
-          structured_data: row[2] ? JSON.parse(row[2]) : null,
-          fetch_status: row[3]
+          source_name: row.source_name,
+          raw_text: row.raw_text,
+          structured_data: row.structured_data,
+          fetch_status: row.fetch_status
         });
       }
     }
@@ -121,9 +118,9 @@ async function main() {
     const insuranceResult = calculateInsuranceConfidence(collectedData);
 
     const levelColor = insuranceResult.level === 'HIGH' ? '\x1b[32m' :
-                       insuranceResult.level === 'MEDIUM' ? '\x1b[33m' : '\x1b[31m';
+      insuranceResult.level === 'MEDIUM' ? '\x1b[33m' : '\x1b[31m';
 
-    console.log(`\n  Score: ${levelColor}${insuranceResult.score}/${insuranceResult.max}\x1b[0m`);
+    console.log(`\n  Score: ${levelColor}${insuranceResult.score} / ${insuranceResult.max}\x1b[0m`);
     console.log(`  Level: ${levelColor}${insuranceResult.level}\x1b[0m`);
 
     if (insuranceResult.signals.length) {
@@ -161,7 +158,7 @@ async function main() {
       const data = collectedData.find(d => d.source_name === src);
       if (data) {
         const statusIcon = data.fetch_status === 'success' ? '✓' :
-                          data.fetch_status === 'not_found' ? '○' : '✗';
+          data.fetch_status === 'not_found' ? '○' : '✗';
         console.log(`    ${statusIcon} ${src}: ${data.fetch_status}`);
       } else {
         console.log(`    - ${src}: not collected`);
@@ -170,8 +167,6 @@ async function main() {
 
     // Save database
     if (!dryRun) {
-      const data = db.export();
-      fs.writeFileSync(DB_PATH, Buffer.from(data));
       success('\n✅ Database saved');
     } else {
       warn('\n⚠️  DRY RUN - not saved');
@@ -183,7 +178,7 @@ async function main() {
 
   } finally {
     await collectionService.close();
-    db.close();
+    await db.close();
   }
 }
 

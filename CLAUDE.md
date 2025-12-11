@@ -45,7 +45,7 @@ This ensures Claude has full project context before making any changes.
 Forensic contractor auditing. Playwright (with Puppeteer as backup) scrapes → DeepSeek analyzes → Trust Score.
 
 ## Isolation
-- Port: 8002 | Database: db.sqlite3 | Venv: `./venv`
+- Port: 8002 | Database: PostgreSQL (contractors_dev) | Venv: `./venv`
 - Always keep completely separate from Boss (8000) and Pools (8001)
 
 ---

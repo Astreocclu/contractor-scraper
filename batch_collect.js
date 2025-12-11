@@ -11,12 +11,8 @@
  *   node batch_collect.js --ids 29,74,83       # Multiple IDs
  */
 
-const initSqlJs = require('sql.js');
-const fs = require('fs');
-const path = require('path');
+const db = require('./services/db_pg');
 const { CollectionService } = require('./services/collection_service');
-
-const DB_PATH = path.join(__dirname, 'db.sqlite3');
 
 // Parse CLI args
 const args = process.argv.slice(2);
@@ -38,37 +34,37 @@ const error = (msg) => console.log(`\x1b[31m${msg}\x1b[0m`);
 
 async function collectForContractor(db, collectionService, contractorId) {
   // Get contractor info
-  const result = db.exec(`
+  const rows = await db.exec(`
     SELECT id, business_name, city, state, website, zip_code
     FROM contractors_contractor WHERE id = ?
   `, [contractorId]);
 
-  if (!result.length || !result[0].values.length) {
+  if (rows.length === 0) {
     error(`Contractor ID ${contractorId} not found`);
     return null;
   }
 
-  const row = result[0].values[0];
+  const row = rows[0];
   const contractor = {
-    id: row[0],
-    name: row[1],
-    city: row[2],
-    state: row[3],
-    website: row[4],
-    zip: row[5]
+    id: row.id,
+    name: row.business_name,
+    city: row.city,
+    state: row.state,
+    website: row.website,
+    zip: row.zip_code
   };
 
   log(`\n📋 ${contractor.name} (ID ${contractor.id})`);
   log(`   ${contractor.city}, ${contractor.state}`);
 
   // Check cache freshness
-  const cacheResult = db.exec(`
-    SELECT COUNT(*), SUM(CASE WHEN datetime(expires_at) > datetime('now') THEN 1 ELSE 0 END)
+  const cacheRows = await db.exec(`
+    SELECT COUNT(*) as count, SUM(CASE WHEN expires_at > NOW() THEN 1 ELSE 0 END) as fresh
     FROM contractor_raw_data WHERE contractor_id = ?
   `, [contractorId]);
 
-  const total = cacheResult[0]?.values[0][0] || 0;
-  const fresh = cacheResult[0]?.values[0][1] || 0;
+  const total = parseInt(cacheRows[0]?.count || 0);
+  const fresh = parseInt(cacheRows[0]?.fresh || 0);
 
   const force = getArg('force');
 
@@ -98,9 +94,7 @@ async function main() {
   const limit = getIntArg('limit') || 50;
 
   // Initialize database
-  const SQL = await initSqlJs();
-  const dbBuffer = fs.readFileSync(DB_PATH);
-  const db = new SQL.Database(dbBuffer);
+  // (Postgres pool initialized on require)
 
   // Determine which contractors to collect
   let contractorIds = [];
@@ -111,24 +105,22 @@ async function main() {
     contractorIds = multiIds;
   } else if (collectAll) {
     // Get contractors needing refresh (no fresh data or never collected)
-    const result = db.exec(`
+    const rows = await db.exec(`
       SELECT DISTINCT c.id
       FROM contractors_contractor c
       LEFT JOIN (
         SELECT contractor_id, COUNT(*) as fresh_count
         FROM contractor_raw_data
-        WHERE datetime(expires_at) > datetime('now')
+        WHERE expires_at > NOW()
         GROUP BY contractor_id
       ) rd ON c.id = rd.contractor_id
-      WHERE c.is_active = 1
+      WHERE c.is_active = true
         AND (rd.fresh_count IS NULL OR rd.fresh_count < 20)
       ORDER BY c.id
       LIMIT ${limit}
     `);
 
-    if (result.length && result[0].values) {
-      contractorIds = result[0].values.map(r => r[0]);
-    }
+    contractorIds = rows.map(r => r.id);
   } else {
     console.log(`
 Usage:
@@ -160,8 +152,6 @@ Options:
 
     // Save database
     if (!dryRun) {
-      const data = db.export();
-      fs.writeFileSync(DB_PATH, Buffer.from(data));
       success('\n✅ Database saved');
     } else {
       warn('\n⚠️  DRY RUN - not saved');
@@ -180,10 +170,9 @@ Options:
     console.log(`  Cached (skipped): ${cached}`);
     console.log(`  Time: ${elapsed}s`);
     console.log('═'.repeat(60) + '\n');
-
   } finally {
     await collectionService.close();
-    db.close();
+    await db.close();
   }
 }
 

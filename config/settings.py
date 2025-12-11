@@ -63,7 +63,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database - uses DATABASE_URL from .env, falls back to SQLite
 DATABASES = {
-    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
+    'default': dj_database_url.config(default='postgresql://contractors_user:localdev123@localhost/contractors_dev')
 }
 
 AUTH_PASSWORD_VALIDATORS = [

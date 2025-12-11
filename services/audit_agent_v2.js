@@ -46,11 +46,38 @@ Ask yourself:
 4. What's the STORY here?
 
 ## CHECK FOR
-- Lawsuits, judgments, liens (check all court data)
+- Lawsuits, judgments, liens (check all court data AND county_liens data)
 - News investigations (local news, CBS, ABC investigations are CRITICAL)
 - BBB complaints and rating (pattern of complaints = problem)
 - Victim reports (Reddit, Nextdoor, consumer forums)
 - Business registration issues (franchise tax problems, SOS status)
+
+## LIEN ANALYSIS (CRITICAL FOR FINANCIAL HEALTH)
+County lien records reveal a contractor's financial reliability:
+
+### CRITICAL RED FLAGS (auto-fail, score ≤15):
+- 3+ active mechanic's liens = PATTERN OF NON-PAYMENT (stiffing subcontractors/suppliers)
+- Abstract of Judgment > $50,000 = LOST MAJOR LAWSUIT
+- Federal Tax Lien > $50,000 = IRS IS PURSUING THEM
+
+### SEVERE RED FLAGS (score max 35):
+- 1-2 active mechanic's liens = FINANCIAL STRESS
+- State Tax Lien = TEXAS COMPTROLLER PURSUING UNPAID TAXES
+- Pattern of slow releases (liens taking >90 days to resolve)
+
+### MODERATE CONCERNS (score max 60):
+- Resolved mechanic's liens (lien + matching release) = HAD DISPUTES but resolved
+- Quick resolution disputes (<30 days) = May be paperwork issues not bad faith
+
+### WHAT LIENS MEAN:
+- MECH_LIEN = A subcontractor/supplier filed because they weren't paid
+- REL_LIEN = A lien was resolved (check if it pairs with active liens)
+- ABS_JUDG = Lost a lawsuit and owes money
+- FED_TAX_LIEN = Federal taxes unpaid
+- STATE_TAX_LIEN = State taxes unpaid
+
+Always check if liens have corresponding releases. Active unreleased liens are MUCH worse than resolved ones.
+
 
 ## REVIEWS - CRITICAL GUIDANCE (READ CAREFULLY)
 The Review Analyzer has already evaluated reviews for authenticity. TRUST ITS VERDICT.
@@ -156,8 +183,8 @@ function enforceScoreMultipliers(auditResult) {
 
   // Enforce recommendation
   auditResult.recommendation = enforcedScore <= 40 ? 'AVOID' :
-                                enforcedScore <= 60 ? 'CAUTION' :
-                                enforcedScore <= 80 ? 'VERIFY' : 'RECOMMENDED';
+    enforcedScore <= 60 ? 'CAUTION' :
+      enforcedScore <= 80 ? 'VERIFY' : 'RECOMMENDED';
 
   return auditResult;
 }
@@ -176,15 +203,18 @@ class AuditAgentV2 {
   /**
    * Build the data prompt with all collected data
    */
-  buildDataPrompt() {
-    const result = this.db.exec(`
+  /**
+   * Build the data prompt with all collected data
+   */
+  async buildDataPrompt() {
+    const rows = await this.db.exec(`
       SELECT source_name, raw_text, structured_data, fetch_status
       FROM contractor_raw_data
       WHERE contractor_id = ?
       ORDER BY source_name
     `, [this.contractorId]);
 
-    if (!result.length || !result[0].values.length) {
+    if (rows.length === 0) {
       return 'NO DATA COLLECTED - cannot audit without data.';
     }
 
@@ -198,30 +228,30 @@ Website: ${this.contractor.website || 'Not provided'}
     let totalChars = 0;
     const MAX_CHARS = 60000; // Leave room for system prompt
 
-    for (const row of result[0].values) {
-      const [source, rawText, structuredData, status] = row;
+    for (const row of rows) {
+      const { source_name, raw_text, structured_data, fetch_status } = row;
 
-      if (status !== 'success' && status !== 'not_found') continue;
+      if (fetch_status !== 'success' && fetch_status !== 'not_found') continue;
 
       let content = '';
-      if (structuredData) {
+      if (structured_data) {
         try {
-          const parsed = JSON.parse(structuredData);
+          const parsed = JSON.parse(structured_data);
           content = JSON.stringify(parsed, null, 2);
         } catch {
-          content = structuredData;
+          content = structured_data;
         }
-      } else if (rawText) {
+      } else if (raw_text) {
         // Truncate long text per source
-        content = rawText.length > 3000 ? rawText.substring(0, 3000) + '...[truncated]' : rawText;
+        content = raw_text.length > 3000 ? raw_text.substring(0, 3000) + '...[truncated]' : raw_text;
       } else {
-        content = `[${status}]`;
+        content = `[${fetch_status}]`;
       }
 
-      const section = `\n### ${source.toUpperCase()}\n${content}\n`;
+      const section = `\n### ${source_name.toUpperCase()}\n${content}\n`;
 
       if (totalChars + section.length > MAX_CHARS) {
-        prompt += `\n### ${source.toUpperCase()}\n[Content truncated - ${rawText?.length || 0} chars]\n`;
+        prompt += `\n### ${source_name.toUpperCase()}\n[Content truncated - ${raw_text?.length || 0} chars]\n`;
       } else {
         prompt += section;
         totalChars += section.length;
@@ -239,7 +269,7 @@ Website: ${this.contractor.website || 'Not provided'}
 
     log('\n🤖 Audit Agent V2 analyzing data...');
 
-    const dataPrompt = this.buildDataPrompt();
+    const dataPrompt = await this.buildDataPrompt();
 
     const messages = [
       { role: 'system', content: SYSTEM_PROMPT },
@@ -283,7 +313,7 @@ Website: ${this.contractor.website || 'Not provided'}
         if (jsonMatch) {
           try {
             const result = JSON.parse(jsonMatch[0]);
-            return this.finalizeResult(result);
+            return await this.finalizeResult(result);
           } catch (e) {
             warn(`Failed to parse JSON: ${e.message}`);
             messages.push(message);
@@ -304,7 +334,7 @@ Website: ${this.contractor.website || 'Not provided'}
     }
 
     // Fallback
-    return this.fallbackResult('Max iterations reached without valid response');
+    return await this.fallbackResult('Max iterations reached without valid response');
   }
 
   /**
@@ -348,7 +378,10 @@ Website: ${this.contractor.website || 'Not provided'}
   /**
    * Finalize and save result
    */
-  finalizeResult(result) {
+  /**
+   * Finalize and save result
+   */
+  async finalizeResult(result) {
     const now = new Date().toISOString();
 
     // Validate
@@ -361,14 +394,15 @@ Website: ${this.contractor.website || 'Not provided'}
     result = enforceScoreMultipliers(result);
 
     // Save to audit_records
-    this.db.run(`
+    await this.db.run(`
       INSERT INTO audit_records (
-        contractor_id, trust_score, risk_level, recommendation,
+        contractor_id, audit_version, trust_score, risk_level, recommendation,
         reasoning_trace, red_flags, positive_signals, gaps_identified,
-        collection_rounds, total_cost, created_at, finalized_at
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        sources_used, collection_rounds, total_cost, created_at, finalized_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `, [
       this.contractorId,
+      2,  // audit_version: 2 = agentic audit v2
       result.trust_score,
       result.risk_level || 'MODERATE',
       result.recommendation || 'VERIFY',
@@ -376,6 +410,7 @@ Website: ${this.contractor.website || 'Not provided'}
       JSON.stringify(result.red_flags || []),
       JSON.stringify(result.positive_signals || []),
       JSON.stringify(result.gaps || []),
+      JSON.stringify([]),  // sources_used - empty for v2 (data already collected)
       this.investigationCount,
       this.totalCost,
       now,
@@ -383,7 +418,7 @@ Website: ${this.contractor.website || 'Not provided'}
     ]);
 
     // Update contractor
-    this.db.run(`
+    await this.db.run(`
       UPDATE contractors_contractor SET trust_score = ? WHERE id = ?
     `, [result.trust_score, this.contractorId]);
 
@@ -396,8 +431,8 @@ Website: ${this.contractor.website || 'Not provided'}
     };
   }
 
-  fallbackResult(reason) {
-    return this.finalizeResult({
+  async fallbackResult(reason) {
+    return await this.finalizeResult({
       trust_score: 50,
       risk_level: 'MODERATE',
       recommendation: 'VERIFY',

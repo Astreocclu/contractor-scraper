@@ -10,13 +10,9 @@
  *   node run_audit_v2.js --id 29 --dry-run
  */
 
-const initSqlJs = require('sql.js');
-const fs = require('fs');
-const path = require('path');
+const db = require('./services/db_pg');
 const puppeteer = require('puppeteer');
 const { AuditAgentV2 } = require('./services/audit_agent_v2');
-
-const DB_PATH = path.join(__dirname, 'db.sqlite3');
 
 // Parse CLI args
 const args = process.argv.slice(2);
@@ -62,39 +58,37 @@ Usage:
   console.log('═'.repeat(60));
 
   // Open database
-  const SQL = await initSqlJs();
-  const dbBuffer = fs.readFileSync(DB_PATH);
-  const db = new SQL.Database(dbBuffer);
+  // (Postgres pool initialized on require)
 
   // Get contractor
-  const result = db.exec(`
+  const rows = await db.exec(`
     SELECT id, business_name, city, state, website
     FROM contractors_contractor WHERE id = ?
   `, [contractorId]);
 
-  if (!result.length || !result[0].values.length) {
+  if (rows.length === 0) {
     error(`Contractor ID ${contractorId} not found`);
     process.exit(1);
   }
 
-  const row = result[0].values[0];
+  const row = rows[0];
   const contractor = {
-    id: row[0],
-    name: row[1],
-    city: row[2],
-    state: row[3],
-    website: row[4]
+    id: row.id,
+    name: row.business_name,
+    city: row.city,
+    state: row.state,
+    website: row.website
   };
 
   log(`\n📋 Contractor: ${contractor.name}`);
   log(`📍 Location: ${contractor.city}, ${contractor.state}`);
 
   // Check for collected data
-  const dataCheck = db.exec(`
-    SELECT COUNT(*) FROM contractor_raw_data WHERE contractor_id = ?
+  const dataCheck = await db.exec(`
+    SELECT COUNT(*) as count FROM contractor_raw_data WHERE contractor_id = ?
   `, [contractorId]);
 
-  const sourceCount = dataCheck[0]?.values[0][0] || 0;
+  const sourceCount = parseInt(dataCheck[0]?.count || 0);
 
   if (sourceCount === 0) {
     error(`\nNo collected data found for this contractor.`);
@@ -151,7 +145,7 @@ Usage:
     console.log('═'.repeat(60));
 
     const scoreColor = auditResult.trust_score >= 70 ? '\x1b[32m' :
-                       auditResult.trust_score >= 40 ? '\x1b[33m' : '\x1b[31m';
+      auditResult.trust_score >= 40 ? '\x1b[33m' : '\x1b[31m';
 
     console.log(`\n  Trust Score:    ${scoreColor}${auditResult.trust_score}/100\x1b[0m`);
     console.log(`  Risk Level:     ${auditResult.risk_level}`);
@@ -164,7 +158,7 @@ Usage:
       console.log('\n--- RED FLAGS ---');
       for (const flag of auditResult.red_flags) {
         const color = flag.severity === 'CRITICAL' || flag.severity === 'HIGH' ? '\x1b[31m' :
-                      flag.severity === 'MEDIUM' ? '\x1b[33m' : '\x1b[0m';
+          flag.severity === 'MEDIUM' ? '\x1b[33m' : '\x1b[0m';
         console.log(`${color}  [${flag.severity}] ${flag.category}: ${flag.description}\x1b[0m`);
         if (flag.evidence) console.log(`    Evidence: ${flag.evidence}`);
       }
@@ -186,8 +180,6 @@ Usage:
 
     // Save
     if (!dryRun) {
-      const data = db.export();
-      fs.writeFileSync(DB_PATH, Buffer.from(data));
       success('\n✅ Saved to database');
     } else {
       warn('\n⚠️  DRY RUN - not saved');
@@ -197,7 +189,7 @@ Usage:
 
   } finally {
     if (browser) await browser.close();
-    db.close();
+    await db.close();
   }
 }
 

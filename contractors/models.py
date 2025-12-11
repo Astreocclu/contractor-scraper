@@ -44,7 +44,7 @@ class Contractor(models.Model):
     zip_code = models.CharField(max_length=10, blank=True)
     phone = models.CharField(max_length=20, blank=True)
     email = models.EmailField(blank=True, null=True)
-    website = models.URLField(blank=True, null=True)
+    website = models.URLField(max_length=500, blank=True, null=True)
 
     # Google
     google_place_id = models.CharField(max_length=255, unique=True, null=True, blank=True)
@@ -231,3 +231,138 @@ class AuditTimeline(models.Model):
 
     def __str__(self):
         return f"{self.date}: {self.event[:50]}"
+
+
+class ContractorRawData(models.Model):
+    contractor = models.ForeignKey(Contractor, on_delete=models.CASCADE, related_name='raw_data')
+    source_name = models.TextField()
+    source_url = models.TextField(blank=True, null=True)
+    raw_text = models.TextField(blank=True, null=True)
+    structured_data = models.JSONField(blank=True, null=True)
+    fetch_status = models.TextField(blank=True, null=True)
+    error_message = models.TextField(blank=True, null=True)
+    fetched_at = models.DateTimeField(blank=True, null=True)
+    expires_at = models.DateTimeField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'contractor_raw_data'
+
+
+class CollectionLog(models.Model):
+    contractor = models.ForeignKey(Contractor, on_delete=models.CASCADE, related_name='collection_logs')
+    source_name = models.TextField()
+    requested_by = models.TextField(blank=True, null=True)
+    request_reason = models.TextField(blank=True, null=True)
+    status = models.TextField()
+    started_at = models.DateTimeField(blank=True, null=True)
+    completed_at = models.DateTimeField(blank=True, null=True)
+    error_message = models.TextField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'collection_log'
+
+
+class AuditRecord(models.Model):
+    contractor = models.ForeignKey(Contractor, on_delete=models.CASCADE, related_name='audit_records')
+    audit_version = models.IntegerField(default=1)
+    trust_score = models.IntegerField(default=0)
+    risk_level = models.CharField(max_length=50, blank=True, null=True)
+    recommendation = models.CharField(max_length=50, blank=True, null=True)
+    reasoning_trace = models.TextField(blank=True, null=True)
+    red_flags = models.JSONField(default=list, blank=True)
+    positive_signals = models.JSONField(default=list, blank=True)
+    gaps_identified = models.JSONField(default=list, blank=True)
+    sources_used = models.JSONField(default=list, blank=True)
+    collection_rounds = models.IntegerField(default=0)
+    total_cost = models.FloatField(default=0.0)
+    created_at = models.DateTimeField(blank=True, null=True)
+    finalized_at = models.DateTimeField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'audit_records'
+
+
+# Lien document type choices
+LIEN_DOCUMENT_TYPES = [
+    ('MECH_LIEN', 'Mechanic\'s Lien'),
+    ('REL_LIEN', 'Release of Lien'),
+    ('ABS_JUDG', 'Abstract of Judgment'),
+    ('FED_TAX_LIEN', 'Federal Tax Lien'),
+    ('STATE_TAX_LIEN', 'State Tax Lien'),
+]
+
+MATCH_CONFIDENCE_CHOICES = [
+    ('exact', 'Exact Match'),
+    ('fuzzy', 'Fuzzy Match'),
+    ('owner', 'Owner Name Match'),
+]
+
+
+class CountyLienRecord(models.Model):
+    """
+    Public record from Texas county clerk's office.
+    Tracks mechanic's liens, tax liens, and abstracts of judgment.
+    """
+    
+    # Source identification
+    county = models.CharField(max_length=50)  # "tarrant", "dallas", "collin", "denton"
+    instrument_number = models.CharField(max_length=100)
+    document_type = models.CharField(max_length=20, choices=LIEN_DOCUMENT_TYPES)
+    
+    # Parties
+    grantor = models.CharField(max_length=255)  # Who filed (creditor)
+    grantee = models.CharField(max_length=255)  # Who owes (debtor - the contractor)
+    
+    # Dates
+    filing_date = models.DateField()
+    recording_date = models.DateField(null=True, blank=True)
+    
+    # Amounts (if available)
+    amount = models.DecimalField(max_digits=12, decimal_places=2, null=True, blank=True)
+    
+    # Linking to contractor
+    matched_contractor = models.ForeignKey(
+        Contractor,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='lien_records'
+    )
+    match_confidence = models.CharField(
+        max_length=20,
+        choices=MATCH_CONFIDENCE_CHOICES,
+        blank=True,
+        null=True
+    )
+    match_score = models.IntegerField(null=True, blank=True)  # 0-100 fuzzy score
+    
+    # Status tracking for lien resolution
+    has_release = models.BooleanField(default=False)
+    release_date = models.DateField(null=True, blank=True)
+    release_instrument_number = models.CharField(max_length=100, blank=True, null=True)
+    days_to_release = models.IntegerField(null=True, blank=True)  # Calculated field
+    
+    # Metadata
+    raw_data = models.JSONField(default=dict, blank=True)
+    scraped_at = models.DateTimeField(auto_now_add=True)
+    source_url = models.URLField(max_length=500, blank=True)
+
+    class Meta:
+        db_table = 'county_lien_records'
+        unique_together = [['county', 'instrument_number']]
+        indexes = [
+            models.Index(fields=['grantee']),
+            models.Index(fields=['document_type']),
+            models.Index(fields=['filing_date']),
+            models.Index(fields=['matched_contractor']),
+        ]
+
+    def __str__(self):
+        status = "RELEASED" if self.has_release else "ACTIVE"
+        return f"[{status}] {self.document_type} - {self.grantee} ({self.county}) ${self.amount or 'N/A'}"
+
+    def save(self, *args, **kwargs):
+        # Calculate days_to_release if both dates exist
+        if self.has_release and self.release_date and self.filing_date:
+            self.days_to_release = (self.release_date - self.filing_date).days
+        super().save(*args, **kwargs)

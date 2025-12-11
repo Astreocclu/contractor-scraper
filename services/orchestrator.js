@@ -5,13 +5,9 @@
  * Handles database connection, caching, and overall flow.
  */
 
-const initSqlJs = require('sql.js');
-const fs = require('fs');
-const path = require('path');
+const db = require('./db_pg');
 const { CollectionService } = require('./collection_service');
 const { AuditAgent } = require('./audit_agent');
-
-const DB_PATH = path.join(__dirname, '..', 'db.sqlite3');
 
 // Logging helpers
 const log = (msg) => console.log(msg);
@@ -30,9 +26,7 @@ async function runForensicAudit(contractorInput, options = {}) {
   console.log('═'.repeat(60));
 
   // Initialize sql.js
-  const SQL = await initSqlJs();
-  const dbBuffer = fs.readFileSync(DB_PATH);
-  const db = new SQL.Database(dbBuffer);
+  // Initialize DB (Postgres pool is already active)
 
   // Find or validate contractor
   let contractor;
@@ -40,26 +34,25 @@ async function runForensicAudit(contractorInput, options = {}) {
 
   if (contractorInput.id) {
     // Lookup by ID
-    const result = db.exec(`
+    const rows = await db.exec(`
       SELECT id, business_name, city, state, website, zip_code
       FROM contractors_contractor WHERE id = ?
     `, [contractorInput.id]);
 
-    if (!result.length || !result[0].values.length) {
+    if (rows.length === 0) {
       error(`Contractor ID ${contractorInput.id} not found`);
-      db.close();
       return null;
     }
 
-    const row = result[0].values[0];
-    contractorId = row[0];
+    const row = rows[0];
+    contractorId = row.id;
     contractor = {
-      id: row[0],
-      name: row[1],
-      city: row[2],
-      state: row[3],
-      website: row[4],
-      zip: row[5]
+      id: row.id,
+      name: row.business_name,
+      city: row.city,
+      state: row.state,
+      website: row.website,
+      zip: row.zip_code
     };
   } else if (contractorInput.name) {
     // Create temp contractor (not in DB)
@@ -74,24 +67,24 @@ async function runForensicAudit(contractorInput, options = {}) {
     };
 
     // Try to find matching contractor in DB
-    const result = db.exec(`
+    // Try to find matching contractor in DB
+    const rows = await db.exec(`
       SELECT id, business_name, city, state, website, zip_code
       FROM contractors_contractor
       WHERE LOWER(business_name) LIKE LOWER(?)
       LIMIT 1
     `, [`%${contractor.name}%`]);
 
-    if (result.length && result[0].values.length) {
-      const row = result[0].values[0];
-      contractorId = row[0];
-      contractor.id = row[0];
+    if (rows.length > 0) {
+      const row = rows[0];
+      contractorId = row.id;
+      contractor.id = row.id;
       log(`  Found matching contractor in DB: ID ${contractorId}`);
     } else {
       warn(`  Contractor not in database - creating temporary entry`);
       // Insert temporary contractor with all required NOT NULL fields
       const slug = contractor.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').trim();
-      const now = new Date().toISOString();
-      db.run(`
+      const contractorResult = await db.insert(`
         INSERT INTO contractors_contractor (
           business_name, slug, address, city, state, website, zip_code, phone,
           google_review_count, google_reviews_json, yelp_review_count,
@@ -100,17 +93,16 @@ async function runForensicAudit(contractorInput, options = {}) {
           credibility_score, red_flag_score, bonus_score,
           admin_override_reason, ai_summary, ai_sentiment_score, ai_red_flags,
           is_claimed, is_active, first_scraped_at, tier
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, '[]', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0, '[]', 0, 1, ?, 'UNRATED')
-      `, [contractor.name, slug, '', contractor.city, contractor.state, contractor.website || '', contractor.zip || '', contractor.phone || '', now]);
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, '[]', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0, '[]', 0, 1, NOW(), 'UNRATED')
+      `, [contractor.name, slug, '', contractor.city, contractor.state, contractor.website || '', contractor.zip || '', contractor.phone || '']);
 
-      const idResult = db.exec('SELECT last_insert_rowid()');
-      contractorId = idResult[0].values[0][0];
+      contractorId = contractorResult.id;
       contractor.id = contractorId;
       log(`  Created contractor ID: ${contractorId}`);
     }
   } else {
     error('Must provide either --id or --name');
-    db.close();
+    await db.close();
     return null;
   }
 
@@ -124,14 +116,15 @@ async function runForensicAudit(contractorInput, options = {}) {
 
   try {
     // Check for existing cached data
-    const cacheResult = db.exec(`
-      SELECT COUNT(*), SUM(CASE WHEN datetime(expires_at) > datetime('now') THEN 1 ELSE 0 END)
+    // Check for existing cached data
+    const cacheRows = await db.exec(`
+      SELECT COUNT(*) as count, SUM(CASE WHEN expires_at > NOW() THEN 1 ELSE 0 END) as fresh
       FROM contractor_raw_data
       WHERE contractor_id = ?
     `, [contractorId]);
 
-    const totalCached = cacheResult[0]?.values[0][0] || 0;
-    const freshCached = cacheResult[0]?.values[0][1] || 0;
+    const totalCached = parseInt(cacheRows[0]?.count || 0);
+    const freshCached = parseInt(cacheRows[0]?.fresh || 0);
 
     if (!skipCollection) {
       if (freshCached >= 20) {
@@ -150,7 +143,7 @@ async function runForensicAudit(contractorInput, options = {}) {
 
     // If collect-only, return summary and exit
     if (collectOnly) {
-      const coverage = db.exec(`
+      const coverage = await db.exec(`
         SELECT fetch_status, COUNT(*) as cnt
         FROM contractor_raw_data
         WHERE contractor_id = ?
@@ -158,10 +151,8 @@ async function runForensicAudit(contractorInput, options = {}) {
       `, [contractorId]);
 
       const stats = {};
-      if (coverage.length && coverage[0].values) {
-        for (const row of coverage[0].values) {
-          stats[row[0]] = row[1];
-        }
+      for (const row of coverage) {
+        stats[row.fetch_status] = parseInt(row.cnt);
       }
 
       console.log('\n' + '═'.repeat(60));
@@ -175,8 +166,7 @@ async function runForensicAudit(contractorInput, options = {}) {
 
       // Save DB
       if (!dryRun) {
-        const data = db.export();
-        fs.writeFileSync(DB_PATH, Buffer.from(data));
+        // No explicit save needed for Postgres
         success('\n✅ Collection saved to database');
       } else {
         warn('\n⚠️  DRY RUN - collection not saved');
@@ -196,7 +186,7 @@ async function runForensicAudit(contractorInput, options = {}) {
     console.log('═'.repeat(60));
 
     const scoreColor = result.trust_score >= 70 ? '\x1b[32m' :
-                       result.trust_score >= 40 ? '\x1b[33m' : '\x1b[31m';
+      result.trust_score >= 40 ? '\x1b[33m' : '\x1b[31m';
 
     console.log(`\n  Trust Score:    ${scoreColor}${result.trust_score}/100\x1b[0m`);
     console.log(`  Risk Level:     ${result.risk_level}`);
@@ -209,8 +199,8 @@ async function runForensicAudit(contractorInput, options = {}) {
       console.log('\n--- RED FLAGS ---');
       for (const flag of result.red_flags) {
         const severityColor = flag.severity === 'CRITICAL' ? '\x1b[31m' :
-                              flag.severity === 'HIGH' ? '\x1b[31m' :
-                              flag.severity === 'MEDIUM' ? '\x1b[33m' : '\x1b[0m';
+          flag.severity === 'HIGH' ? '\x1b[31m' :
+            flag.severity === 'MEDIUM' ? '\x1b[33m' : '\x1b[0m';
         console.log(`${severityColor}  [${flag.severity}] ${flag.category}: ${flag.description}\x1b[0m`);
         if (flag.evidence) {
           console.log(`    Evidence: ${flag.evidence}`);
@@ -238,8 +228,7 @@ async function runForensicAudit(contractorInput, options = {}) {
 
     // Save database
     if (!dryRun) {
-      const data = db.export();
-      fs.writeFileSync(DB_PATH, Buffer.from(data));
+      // Postgres auto-saves (transaction committed in agent)
       success('\n✅ Audit saved to database');
     } else {
       warn('\n⚠️  DRY RUN - results not saved');
@@ -251,7 +240,7 @@ async function runForensicAudit(contractorInput, options = {}) {
 
   } finally {
     await collectionService.close();
-    db.close();
+    await db.close();
   }
 }
 
@@ -259,12 +248,8 @@ async function runForensicAudit(contractorInput, options = {}) {
  * List recent audits
  */
 async function listRecentAudits(limit = 10) {
-  const SQL = await initSqlJs();
-  const dbBuffer = fs.readFileSync(DB_PATH);
-  const db = new SQL.Database(dbBuffer);
-
   try {
-    const result = db.exec(`
+    const rows = await db.exec(`
       SELECT
         ar.id,
         cc.business_name,
@@ -279,7 +264,7 @@ async function listRecentAudits(limit = 10) {
       LIMIT ?
     `, [limit]);
 
-    if (!result.length || !result[0].values.length) {
+    if (rows.length === 0) {
       log('No audits found');
       return [];
     }
@@ -287,15 +272,15 @@ async function listRecentAudits(limit = 10) {
     console.log('\nRecent Audits:');
     console.log('-'.repeat(80));
 
-    for (const row of result[0].values) {
-      const [id, name, score, risk, rec, rounds, date] = row;
-      const scoreColor = score >= 70 ? '\x1b[32m' : score >= 40 ? '\x1b[33m' : '\x1b[31m';
-      console.log(`  #${id} | ${name.substring(0, 30).padEnd(30)} | ${scoreColor}${score}/100\x1b[0m | ${rec} | ${date}`);
+    for (const row of rows) {
+      const { id, business_name, trust_score, risk_level, recommendation, collection_rounds, created_at } = row;
+      const scoreColor = trust_score >= 70 ? '\x1b[32m' : trust_score >= 40 ? '\x1b[33m' : '\x1b[31m';
+      console.log(`  #${id} | ${business_name.substring(0, 30).padEnd(30)} | ${scoreColor}${trust_score}/100\x1b[0m | ${recommendation} | ${created_at}`);
     }
 
-    return result[0].values;
+    return rows;
   } finally {
-    db.close();
+    await db.close();
   }
 }
 
@@ -303,28 +288,24 @@ async function listRecentAudits(limit = 10) {
  * Get data coverage for a contractor
  */
 async function getDataCoverage(contractorId) {
-  const SQL = await initSqlJs();
-  const dbBuffer = fs.readFileSync(DB_PATH);
-  const db = new SQL.Database(dbBuffer);
-
   try {
-    const result = db.exec(`
+    const rows = await db.exec(`
       SELECT source_name, fetch_status, fetched_at, expires_at
       FROM contractor_raw_data
       WHERE contractor_id = ?
       ORDER BY source_name
     `, [contractorId]);
 
-    if (!result.length) {
+    if (rows.length === 0) {
       return { sources: [], total: 0 };
     }
 
-    const sources = result[0].values.map(row => ({
-      name: row[0],
-      status: row[1],
-      fetched: row[2],
-      expires: row[3],
-      fresh: row[3] ? new Date(row[3]) > new Date() : false
+    const sources = rows.map(row => ({
+      name: row.source_name,
+      status: row.fetch_status,
+      fetched: row.fetched_at,
+      expires: row.expires_at,
+      fresh: row.expires_at ? new Date(row.expires_at) > new Date() : false
     }));
 
     return {
@@ -334,7 +315,7 @@ async function getDataCoverage(contractorId) {
       fresh: sources.filter(s => s.fresh).length
     };
   } finally {
-    db.close();
+    await db.close();
   }
 }
 
