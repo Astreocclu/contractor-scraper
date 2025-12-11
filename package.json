@@ -4,6 +4,7 @@
   "description": "Contractor data scraping and enrichment tools",
   "main": "scrape_emails_deepseek.js",
   "scripts": {
+    "test": "mocha",
     "scrape": "node scrape_emails_deepseek.js",
     "scrape:limit": "node scrape_emails_deepseek.js --limit 10",
     "scrape:dry": "node scrape_emails_deepseek.js --dry-run",
@@ -19,5 +20,8 @@
     "pg": "^8.16.3",
     "playwright": "^1.57.0",
     "puppeteer": "^21.7.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.5"
   }
 }
