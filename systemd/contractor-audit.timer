@@ -1,0 +1,15 @@
+[Unit]
+Description=Run Contractor Auditor at 8 PM Central daily
+
+[Timer]
+# 8 PM Central Time (America/Chicago)
+OnCalendar=*-*-* 20:00:00 America/Chicago
+
+# If system was down at 8 PM, run immediately on boot
+Persistent=true
+
+# Small random delay to avoid thundering herd
+RandomizedDelaySec=60
+
+[Install]
+WantedBy=timers.target
