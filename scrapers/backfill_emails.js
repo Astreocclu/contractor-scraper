@@ -31,14 +31,31 @@ const specificIds = idsIdx !== -1 ? args[idsIdx + 1].split(',').map(Number) : nu
 // Test IDs (verified to have website but no email)
 const TEST_IDS = [101, 19, 9, 33, 60];
 
-// Database connection
-const pool = new Pool({
-  host: process.env.POSTGRES_HOST || 'localhost',
-  port: process.env.POSTGRES_PORT || 5432,
-  database: process.env.POSTGRES_DB || 'contractors_dev',
-  user: process.env.POSTGRES_USER || 'postgres',
-  password: process.env.POSTGRES_PASSWORD || '',
-});
+// Database connection - parse DATABASE_URL or use individual env vars
+function createPool() {
+  const databaseUrl = process.env.DATABASE_URL;
+  if (databaseUrl) {
+    // Parse postgresql://user:password@host/database
+    const url = new URL(databaseUrl);
+    return new Pool({
+      host: url.hostname,
+      port: url.port || 5432,
+      database: url.pathname.slice(1), // Remove leading /
+      user: url.username,
+      password: url.password,
+    });
+  }
+  // Fallback to individual env vars
+  return new Pool({
+    host: process.env.POSTGRES_HOST || 'localhost',
+    port: process.env.POSTGRES_PORT || 5432,
+    database: process.env.POSTGRES_DB || 'contractors_dev',
+    user: process.env.POSTGRES_USER || 'postgres',
+    password: process.env.POSTGRES_PASSWORD || '',
+  });
+}
+
+const pool = createPool();
 
 /**
  * Sleep for random duration (rate limiting)
