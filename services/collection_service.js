@@ -8,7 +8,7 @@
 const puppeteer = require('puppeteer');
 const { runCommand } = require('./async_command');
 const path = require('path');
-const { searchCourtRecords } = require('../lib/court_scraper');
+const { searchCourtRecords } = require('../scrapers/court_scraper');
 const { fetchAPISources } = require('../lib/api_sources');
 const { analyzeReviews, quickDiscrepancyCheck } = require('./review_analyzer');
 
@@ -654,6 +654,92 @@ class CollectionService {
     }
 
     log(`    No email found in any source to promote`);
+  }
+
+  /**
+   * Promote discovered website and phone from raw_data to main contractor record
+   */
+  async promoteWebsiteAndPhoneToMainRecord(contractorId) {
+    // 1. Check what contractor already has
+    const existing = await this.db.exec(`
+      SELECT website, phone FROM contractors_contractor WHERE id = ?
+    `, [contractorId]);
+
+    const hasWebsite = existing[0]?.website;
+    const hasPhone = existing[0]?.phone;
+
+    if (hasWebsite && hasPhone) {
+      return; // Already has both
+    }
+
+    // 2. Get data from raw sources (priority order)
+    const sources = ['google_maps_local', 'google_maps_listed', 'google_maps_hq', 'google_maps', 'bbb'];
+
+    let foundWebsite = null;
+    let foundPhone = null;
+
+    for (const sourceName of sources) {
+      const rows = await this.db.exec(`
+        SELECT structured_data
+        FROM contractor_raw_data
+        WHERE contractor_id = ? AND source_name = ?
+      `, [contractorId, sourceName]);
+
+      if (rows.length > 0 && rows[0].structured_data) {
+        try {
+          const data = typeof rows[0].structured_data === 'string'
+            ? JSON.parse(rows[0].structured_data)
+            : rows[0].structured_data;
+
+          // Get website if we don't have one yet
+          if (!hasWebsite && !foundWebsite && data.website) {
+            // Skip social media URLs
+            const skipDomains = ['facebook.com', 'instagram.com', 'twitter.com', 'linkedin.com'];
+            if (!skipDomains.some(d => data.website.toLowerCase().includes(d))) {
+              foundWebsite = data.website;
+            }
+          }
+
+          // Get phone if we don't have one yet
+          if (!hasPhone && !foundPhone && data.phone) {
+            foundPhone = data.phone;
+          }
+
+          // Stop if we found both
+          if ((hasWebsite || foundWebsite) && (hasPhone || foundPhone)) {
+            break;
+          }
+        } catch (e) {
+          // JSON parse error, continue to next source
+        }
+      }
+    }
+
+    // 3. Update main record
+    if (foundWebsite || foundPhone) {
+      const updates = [];
+      const values = [];
+
+      if (foundWebsite) {
+        updates.push('website = ?');
+        values.push(foundWebsite);
+      }
+      if (foundPhone) {
+        updates.push('phone = ?');
+        values.push(foundPhone);
+      }
+
+      values.push(contractorId);
+
+      await this.db.run(`
+        UPDATE contractors_contractor
+        SET ${updates.join(', ')}
+        WHERE id = ?
+      `, values);
+
+      if (foundWebsite) success(`    Promoted website to main record: ${foundWebsite}`);
+      if (foundPhone) success(`    Promoted phone to main record: ${foundPhone}`);
+    }
   }
 
   /**
@@ -1548,6 +1634,14 @@ class CollectionService {
       await this.promoteEmailsToMainRecord(contractorId);
     } catch (err) {
       warn(`    Email promotion error: ${err.message}`);
+    }
+
+    // === WEBSITE & PHONE PROMOTION (copy from raw_data to main contractor record) ===
+    log('\n🌐 Promoting website and phone to main record...');
+    try {
+      await this.promoteWebsiteAndPhoneToMainRecord(contractorId);
+    } catch (err) {
+      warn(`    Website/phone promotion error: ${err.message}`);
     }
 
     return results;
