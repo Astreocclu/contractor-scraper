@@ -6,7 +6,7 @@
  */
 
 const puppeteer = require('puppeteer');
-const { execSync } = require('child_process');
+const { runCommand } = require('./async_command');
 const path = require('path');
 const { searchCourtRecords } = require('../lib/court_scraper');
 const { fetchAPISources } = require('../lib/api_sources');
@@ -18,19 +18,17 @@ const SCRAPERS_DIR = path.join(__dirname, '..', 'scrapers');
 /**
  * Call a Python scraper and return JSON result
  */
-function callPythonScraper(script, args = [], timeout = 60000) {
+async function callPythonScraper(script, args = [], timeout = 60000) {
   const scriptPath = path.join(SCRAPERS_DIR, script);
-  const quotedArgs = args.map(arg => `"${arg.replace(/"/g, '\\"')}"`).join(' ');
-  const cmd = `python3 "${scriptPath}" ${quotedArgs} --json`;
+  const cmdArgs = [...args, '--json'];
 
   try {
-    const output = execSync(cmd, {
+    const result = await runCommand('python3', [scriptPath, ...cmdArgs], {
       cwd: SCRAPERS_DIR,
       timeout,
-      encoding: 'utf-8',
-      stdio: ['pipe', 'pipe', 'pipe']
+      json: true
     });
-    return JSON.parse(output.trim());
+    return result;
   } catch (err) {
     // Try to parse any output even on error
     if (err.stdout) {
@@ -71,16 +69,13 @@ async function scrapeGoogleMapsPython(businessName, location = 'Fort Worth, TX',
 async function scrapeYelpYahooPython(businessName, location = 'Fort Worth, TX') {
   // Note: yelp.py doesn't support --json, outputs to stderr, parses result differently
   const scriptPath = path.join(SCRAPERS_DIR, 'yelp.py');
-  const quotedArgs = [businessName, location].map(arg => `"${arg.replace(/"/g, '\\"')}"`).join(' ');
-  const cmd = `python3 "${scriptPath}" ${quotedArgs} --yahoo`;
 
   try {
-    const output = execSync(cmd, {
+    const output = await runCommand('python3', [scriptPath, businessName, location, '--yahoo'], {
       cwd: SCRAPERS_DIR,
-      timeout: 60000,
-      encoding: 'utf-8',
-      stdio: ['pipe', 'pipe', 'pipe']
+      timeout: 60000
     });
+
     // Parse output - look for rating pattern
     const ratingMatch = output.match(/Rating:\s*([\d.]+)/);
     const reviewsMatch = output.match(/Reviews:\s*(\d+)/);
@@ -144,17 +139,13 @@ async function scrapeCountyLiensPython(businessName, ownerName = null, city = 'F
     args.push('--owner', ownerName);
   }
 
-  const quotedArgs = args.map(arg => `"${arg.replace(/"/g, '\\"')}"`).join(' ');
-  const cmd = `python3 "${scriptPath}" ${quotedArgs}`;
-
   try {
-    const output = execSync(cmd, {
+    const result = await runCommand('python3', [scriptPath, ...args], {
       cwd: SCRAPERS_DIR,
       timeout: 300000, // 5 minutes - scraping 4 counties takes time
-      encoding: 'utf-8',
-      stdio: ['pipe', 'pipe', 'pipe']
+      json: true
     });
-    return JSON.parse(output.trim());
+    return result;
   } catch (err) {
     // Try to parse any output even on error
     if (err.stdout) {
@@ -592,16 +583,12 @@ class CollectionService {
     log(`  Scraping website for email...`);
 
     const scriptPath = path.join(SCRAPERS_DIR, 'website_scraper.js');
-    const cmd = `node "${scriptPath}" "${url}"`;
 
     try {
-      const output = execSync(cmd, {
+      const result = await runCommand('node', [scriptPath, url], {
         timeout: 30000,  // 30s total timeout
-        encoding: 'utf-8',
-        stdio: ['pipe', 'pipe', 'pipe']
+        json: true
       });
-
-      const result = JSON.parse(output.trim());
 
       if (result.email) {
         success(`    Website email: ${result.email} (${result.source})`);
