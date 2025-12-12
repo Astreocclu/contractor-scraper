@@ -1,11 +1,19 @@
 # Contractor Auditor - Status Report
-**Updated:** 2025-12-09
+**Updated:** 2025-12-12
+
+> **Note:** If the date above isn't today, this document may be out of date. Check SESSION-NOTES.md for the latest work.
 
 ---
 
 ## Executive Summary
 
-The contractor auditing system is **fully operational**. Data collection pipeline works end-to-end, scoring is accurate, and contractors are passing/failing appropriately based on real data.
+The contractor auditing system is **fully operational** with new **batch processing capabilities**. Data collection pipeline works end-to-end, scoring is accurate, and contractors are passing/failing appropriately based on real data.
+
+**Recent Additions (Dec 12):**
+- Batch audit runner with sequential execution and state persistence
+- Review analysis tracking with separate retry bucket
+- Async subprocess handling (replaced blocking execSync)
+- Cost tracking and rate limiting infrastructure
 
 ---
 
@@ -44,7 +52,7 @@ The contractor auditing system is **fully operational**. Data collection pipelin
 | News | Serper API | Working |
 | Court Records | Puppeteer | Working - Tarrant, Dallas, Collin, Denton |
 | TX Franchise | API | Working |
-| **County Liens** | Playwright | **BLOCKED** - Portals showing CAPTCHA (see ERRORS.md) |
+| County Liens | Playwright | Working - Tarrant (48), Collin (50), Dallas (942) records |
 
 ### 3. AI Auditor (DeepSeek)
 | Feature | Status |
@@ -74,6 +82,29 @@ The contractor auditing system is **fully operational**. Data collection pipelin
 | GET /api/contractors/top/ | Working |
 | GET /api/contractors/{slug}/ | Working |
 
+### 6. Batch Audit System (NEW Dec 12)
+| Component | Status | Notes |
+|-----------|--------|-------|
+| batch_audit_runner.js | Working | Sequential execution with state persistence |
+| State persistence | Working | `batch_progress.json` tracks pending/completed/failed |
+| Review analysis bucket | Working | Separate retry queue for JSON parse failures |
+| async_command.js | Working | Replaced blocking execSync calls |
+| cost_tracker.js | Working | JSON-L logging of API costs |
+| rate_limiter.js | Working | Token bucket rate limiting |
+
+**State Buckets:**
+- `completed` - Successful audits with review analysis
+- `needsReviewAnalysis` - Audits where DeepSeek returned non-JSON
+- `failed` - Audits that threw errors
+- `pending` - Queued contractors
+
+### 7. Email Collection
+| Metric | Value |
+|--------|-------|
+| Contractors with email | 679/2,529 (26.8%) |
+| Coverage gap cause | Discovery pipeline doesn't collect email |
+| Tracerfy integration | Created but 3% hit rate |
+
 ---
 
 ## API Keys Status
@@ -96,12 +127,39 @@ source venv/bin/activate && set -a && . ./.env && set +a
 node run_audit.js --id 123
 node run_audit.js --name "Company" --city "Dallas" --state "TX"
 
+# Batch audit (NEW)
+node batch_audit_runner.js --reset --limit 10    # Fresh batch of 10
+node batch_audit_runner.js --status              # Check progress
+node batch_audit_runner.js --retry-review        # Retry failed review analysis
+node batch_audit_runner.js --resume              # Continue interrupted batch
+
 # Batch collection
 node batch_collect.js --id 123 --force
 
 # Start server
 export DATABASE_URL=postgresql://contractors_user:localdev123@localhost/contractors_dev
 python3 manage.py runserver 8002
+```
+
+### Nightly Scheduler
+
+```bash
+# Test nightly scheduler (bypasses time window)
+node scripts/nightly_scheduler.js --force
+
+# Test with lien scraping (slower)
+node scripts/nightly_scheduler.js --force --with-liens
+
+# Install systemd timer (runs 8 PM - 6 AM Central)
+sudo cp systemd/*.service systemd/*.timer /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now contractor-audit.timer
+
+# Check timer status
+systemctl list-timers contractor-audit.timer
+
+# View logs
+journalctl -u contractor-audit.service -f
 ```
 
 ---
@@ -113,13 +171,25 @@ services/
 ├── collection_service.js   # All data collection (Playwright/Python scrapers)
 ├── audit_agent.js          # DeepSeek agentic audit loop
 ├── audit_agent_v2.js       # Score enforcement with caps
-└── review_analyzer.js      # Fake review detection
+├── review_analyzer.js      # Fake review detection (4-tier JSON fallback)
+├── orchestrator.js         # Core audit orchestration (batchMode flag)
+├── async_command.js        # Async subprocess runner (replaced execSync)
+├── cost_tracker.js         # API cost tracking with JSON-L logging
+└── rate_limiter.js         # Token bucket rate limiting
 
 scrapers/
 ├── bbb.py                  # BBB httpx scraper
-├── google_maps.py          # Google Maps Playwright scraper
+├── google_maps.py          # Google Maps Playwright scraper (stealth, CAPTCHA detection)
 ├── yelp.py                 # Yelp via Yahoo Search
 ├── trustpilot.py           # Trustpilot direct URL check
 ├── serp_rating.py          # Angi/Houzz via SERP
+├── county_liens/           # Texas county lien scrapers (Tarrant, Collin, Dallas)
 └── utils.py                # Rate limiting, caching, retry
+
+root/
+├── batch_audit_runner.js   # Batch orchestration with state persistence
+└── batch_progress.json     # State file (pending/completed/failed/needsReviewAnalysis)
+
+scripts/
+└── tracerfy_enrich.py      # Tracerfy skip tracing integration
 ```
