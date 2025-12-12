@@ -582,6 +582,94 @@ class CollectionService {
   }
 
   /**
+   * Scrape email from contractor website using Playwright CLI
+   * @param {string} url - Website URL
+   * @returns {Promise<{email: string|null, source: string|null, error: string|null}>}
+   */
+  async scrapeWebsiteEmail(url) {
+    if (!url) return { email: null, source: null, error: 'No URL' };
+
+    log(`  Scraping website for email...`);
+
+    const scriptPath = path.join(SCRAPERS_DIR, 'website_scraper.js');
+    const cmd = `node "${scriptPath}" "${url}"`;
+
+    try {
+      const output = execSync(cmd, {
+        timeout: 30000,  // 30s total timeout
+        encoding: 'utf-8',
+        stdio: ['pipe', 'pipe', 'pipe']
+      });
+
+      const result = JSON.parse(output.trim());
+
+      if (result.email) {
+        success(`    Website email: ${result.email} (${result.source})`);
+      } else if (result.error) {
+        warn(`    Website scraper error: ${result.error}`);
+      } else {
+        log(`    No email found on website`);
+      }
+
+      return result;
+    } catch (err) {
+      warn(`    Website scraper failed: ${err.message.split('\n')[0]}`);
+      return { email: null, source: null, error: err.message };
+    }
+  }
+
+  /**
+   * Promote discovered emails from raw_data to main contractor record
+   * Priority: website > google_maps > bbb
+   */
+  async promoteEmailsToMainRecord(contractorId) {
+    // 1. Check if contractor already has email
+    const existing = await this.db.exec(`
+      SELECT email FROM contractors_contractor WHERE id = ?
+    `, [contractorId]);
+
+    if (existing[0]?.email) {
+      log(`    Contractor already has email: ${existing[0].email}`);
+      return;
+    }
+
+    // 2. Get emails from raw data (priority order)
+    const sources = ['website', 'google_maps_local', 'google_maps_hq', 'google_maps_listed', 'google_maps', 'bbb'];
+
+    for (const sourceName of sources) {
+      const rows = await this.db.exec(`
+        SELECT structured_data
+        FROM contractor_raw_data
+        WHERE contractor_id = ? AND source_name = ?
+      `, [contractorId, sourceName]);
+
+      if (rows.length > 0 && rows[0].structured_data) {
+        try {
+          const data = typeof rows[0].structured_data === 'string'
+            ? JSON.parse(rows[0].structured_data)
+            : rows[0].structured_data;
+
+          if (data.email) {
+            // Update main record
+            await this.db.run(`
+              UPDATE contractors_contractor
+              SET email = ?
+              WHERE id = ?
+            `, [data.email, contractorId]);
+
+            success(`    Promoted email to main record: ${data.email} (from ${sourceName})`);
+            return;
+          }
+        } catch (e) {
+          // JSON parse error, continue to next source
+        }
+      }
+    }
+
+    log(`    No email found in any source to promote`);
+  }
+
+  /**
    * Build URLs for all sources
    */
   buildUrls(contractor) {
@@ -890,6 +978,26 @@ class CollectionService {
 
     const results = [];
     const urls = this.buildUrls(contractor);
+
+    // === WEBSITE EMAIL EXTRACTION (runs first, highest quality source) ===
+    if (urls.website) {
+      log('\n  Scraping website for contact email...');
+      try {
+        const emailResult = await this.scrapeWebsiteEmail(urls.website);
+        const emailData = {
+          source: 'website',
+          url: urls.website,
+          status: emailResult.email ? 'success' : (emailResult.error ? 'error' : 'not_found'),
+          text: JSON.stringify(emailResult),
+          structured: emailResult
+        };
+        await this.storeRawData(contractorId, 'website', emailData);
+        await this.logCollectionRequest(contractorId, 'website', 'initial', 'Email extraction');
+        results.push(emailData);
+      } catch (err) {
+        warn(`    Website email: Error - ${err.message}`);
+      }
+    }
 
     // URL-based sources in parallel batches
     log(`URL sources to fetch: ${Object.keys(urls).length}`);
@@ -1413,6 +1521,14 @@ class CollectionService {
       }
     } catch (err) {
       warn(`    Review analysis error: ${err.message}`);
+    }
+
+    // === EMAIL PROMOTION (copy best email from raw_data to main contractor record) ===
+    log('\n📧 Promoting emails to main record...');
+    try {
+      await this.promoteEmailsToMainRecord(contractorId);
+    } catch (err) {
+      warn(`    Email promotion error: ${err.message}`);
     }
 
     return results;

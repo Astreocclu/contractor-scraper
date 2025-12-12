@@ -160,3 +160,30 @@ module.exports = {
   extractEmailsFromPage,
   getPageLinks,
 };
+
+// ==========================================
+// CLI Interface
+// ==========================================
+if (require.main === module) {
+  (async () => {
+    const url = process.argv[2];
+    if (!url) {
+      console.log(JSON.stringify({ error: 'URL required as argument' }));
+      process.exit(1);
+    }
+
+    let browser;
+    try {
+      browser = await chromium.launch({ headless: true });
+      const result = await scrapeEmailFromWebsite(url, {
+        browser,
+        timeout: 15000
+      });
+      console.log(JSON.stringify(result));
+    } catch (err) {
+      console.log(JSON.stringify({ email: null, source: null, error: err.message }));
+    } finally {
+      if (browser) await browser.close();
+    }
+  })();
+}

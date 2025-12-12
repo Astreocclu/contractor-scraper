@@ -52,6 +52,8 @@ class BBBResult:
     rating: Optional[str] = None  # A+, A, B, C, D, F
     accredited: bool = False
     profile_url: Optional[str] = None
+    email: Optional[str] = None  # Business contact email
+    phone: Optional[str] = None  # Business phone number
     years_in_business: Optional[int] = None
     complaint_count: Optional[int] = None
     complaints_closed_12mo: Optional[int] = None
@@ -97,6 +99,8 @@ async def scrape_bbb(
                 rating=cached.get("rating"),
                 accredited=cached.get("accredited", False),
                 profile_url=cached.get("profile_url"),
+                email=cached.get("email"),
+                phone=cached.get("phone"),
                 years_in_business=cached.get("years_in_business"),
                 complaint_count=cached.get("complaint_count"),
                 complaints_closed_12mo=cached.get("complaints_closed_12mo"),
@@ -314,7 +318,44 @@ async def _fetch_profile_details(client: httpx.AsyncClient, result: BBBResult) -
         response = await client.get(result.profile_url, headers=get_headers(), follow_redirects=True)
         response.raise_for_status()
 
-        html = clean_html(response.text)
+        raw_html = response.text
+        html = clean_html(raw_html)
+
+        # === EMAIL REGEX EXTRACTION (before LLM call - $0 cost) ===
+        # Junk domains to filter
+        junk_domains = ['wix.com', 'squarespace.com', 'example.com', 'domain.com', 'bbb.org']
+
+        # 1. Look for mailto links (highest confidence)
+        email_match = re.search(
+            r'mailto:([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})',
+            raw_html,
+            re.IGNORECASE
+        )
+        if email_match:
+            candidate = email_match.group(1).strip().lower()
+            if not any(j in candidate for j in junk_domains):
+                result.email = candidate
+
+        # 2. Fallback: Search visible text for email pattern
+        if not result.email:
+            text_email = re.search(
+                r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b',
+                html
+            )
+            if text_email:
+                candidate = text_email.group(0).strip().lower()
+                if not any(j in candidate for j in junk_domains):
+                    result.email = candidate
+
+        # === PHONE REGEX EXTRACTION ===
+        # Look for phone patterns: (XXX) XXX-XXXX or XXX-XXX-XXXX
+        phone_match = re.search(
+            r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}',
+            html
+        )
+        if phone_match:
+            result.phone = phone_match.group(0).strip()
+
         details = await _extract_profile_details(html)
 
         if details:
@@ -421,6 +462,8 @@ def _cache_result(cache_key: str, result: BBBResult):
         "rating": result.rating,
         "accredited": result.accredited,
         "profile_url": result.profile_url,
+        "email": result.email,
+        "phone": result.phone,
         "years_in_business": result.years_in_business,
         "complaint_count": result.complaint_count,
         "complaints_closed_12mo": result.complaints_closed_12mo,
@@ -464,6 +507,8 @@ def result_to_dict(result: BBBResult) -> dict:
         "rating": result.rating,
         "accredited": result.accredited,
         "profile_url": result.profile_url,
+        "email": result.email,
+        "phone": result.phone,
         "years_in_business": result.years_in_business,
         "complaint_count": result.complaint_count,
         "complaints_closed_12mo": result.complaints_closed_12mo,
@@ -518,6 +563,10 @@ if __name__ == "__main__":
             print(f"Rating: {result.rating}")
             print(f"Accredited: {result.accredited}")
             print(f"URL: {result.profile_url}")
+            if result.email:
+                print(f"Email: {result.email}")
+            if result.phone:
+                print(f"Phone: {result.phone}")
 
             if result.years_in_business:
                 print(f"Years in Business: {result.years_in_business}")
