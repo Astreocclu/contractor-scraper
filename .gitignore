@@ -104,3 +104,7 @@ portal_test_results.json
 portal_test_run.log
 db.sqlite3*
 *.archived.*
+
+# Scraper cache (centralized)
+data/cache/
+!data/cache/.gitkeep
