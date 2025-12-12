@@ -6,6 +6,40 @@
 const { chromium } = require('playwright');
 const { extractEmailsFromText, filterJunkEmails, selectBestEmail } = require('./email_utils');
 
+/**
+ * Safe wrapper for page.$$eval with retry logic for navigation errors
+ * @param {import('playwright').Page} page - Playwright page
+ * @param {string} selector - CSS selector
+ * @param {Function} pageFunction - Function to execute in page context
+ * @param {number} maxRetries - Maximum retry attempts (default 3)
+ * @returns {Promise<any>} - Result from pageFunction
+ */
+async function safeEval(page, selector, pageFunction, maxRetries = 3) {
+  let lastError;
+
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      return await page.$$eval(selector, pageFunction);
+    } catch (error) {
+      lastError = error;
+
+      // Only retry on execution context errors
+      if (error.message && error.message.includes('Execution context was destroyed')) {
+        if (attempt < maxRetries) {
+          // Brief pause before retry
+          await new Promise(resolve => setTimeout(resolve, 500));
+          continue;
+        }
+      }
+
+      // For other errors or max retries reached, throw immediately
+      throw error;
+    }
+  }
+
+  throw lastError;
+}
+
 // Contact page link patterns
 const CONTACT_PATTERNS = [
   /contact/i,
@@ -47,7 +81,7 @@ async function extractEmailsFromPage(page) {
   const emails = [];
 
   // Method 1: mailto links (decode URL-encoded characters like %20)
-  const mailtoLinks = await page.$$eval('a[href^="mailto:"]', els =>
+  const mailtoLinks = await safeEval(page, 'a[href^="mailto:"]', els =>
     els.map(el => {
       try {
         const raw = el.href.replace('mailto:', '').split('?')[0];
@@ -75,7 +109,7 @@ async function extractEmailsFromPage(page) {
  * @returns {Promise<Array<{href: string, text: string}>>}
  */
 async function getPageLinks(page) {
-  return page.$$eval('a[href]', els =>
+  return safeEval(page, 'a[href]', els =>
     els.map(el => ({
       href: el.getAttribute('href'),
       text: el.innerText?.trim() || '',
