@@ -7,6 +7,60 @@
 
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
 
+/**
+ * Extract JSON from LLM response that may contain markdown or extra text
+ * Handles multiple formats:
+ * - Direct JSON parse
+ * - JSON inside markdown code blocks
+ * - JSON object extracted from surrounding text
+ * - Regex fallback for key fields (fake_review_score, confidence, recommendation)
+ */
+function extractJSON(text) {
+  // Try 1: Direct parse
+  try {
+    return JSON.parse(text);
+  } catch (e) {}
+
+  // Try 2: Extract from markdown code block
+  const codeBlockMatch = text.match(/```(?:json)?\s*([\s\S]*?)```/);
+  if (codeBlockMatch) {
+    try {
+      return JSON.parse(codeBlockMatch[1].trim());
+    } catch (e) {}
+  }
+
+  // Try 3: Find JSON object in text
+  const jsonMatch = text.match(/\{[\s\S]*\}/);
+  if (jsonMatch) {
+    try {
+      return JSON.parse(jsonMatch[0]);
+    } catch (e) {}
+  }
+
+  // Try 4: Regex extraction for key fields
+  const result = {
+    fake_review_score: null,
+    confidence: null,
+    recommendation: 'VERIFY_REVIEWS'
+  };
+
+  const scoreMatch = text.match(/["']?fake_review_score["']?\s*[:=]\s*(\d+)/i);
+  if (scoreMatch) result.fake_review_score = parseInt(scoreMatch[1]);
+
+  const confMatch = text.match(/["']?confidence["']?\s*[:=]\s*["']?(\w+)["']?/i);
+  if (confMatch) result.confidence = confMatch[1];
+
+  const recMatch = text.match(/["']?recommendation["']?\s*[:=]\s*["']?(TRUST_REVIEWS|VERIFY_REVIEWS|DISTRUST_REVIEWS)["']?/i);
+  if (recMatch) result.recommendation = recMatch[1].toUpperCase();
+
+  // Only return if we got at least the score
+  if (result.fake_review_score !== null) {
+    return result;
+  }
+
+  return null;
+}
+
 const ANALYSIS_PROMPT = `You are a review analyst with deep reasoning capabilities. Your job is to understand the TRUE story behind a contractor's reviews.
 
 ## YOUR MISSION
@@ -174,68 +228,42 @@ async function analyzeReviews(contractorName, reviewData) {
     const content = message.content || '';
     const reasoningContent = message.reasoning_content || '';
 
-    // Try to find JSON in content first, then in reasoning_content
-    let jsonMatch = content.match(/\{[\s\S]*\}/);
-    if (!jsonMatch && reasoningContent) {
-      jsonMatch = reasoningContent.match(/\{[\s\S]*\}/);
+    // Try to extract JSON from content first, then from reasoning_content
+    const textToExtract = content || reasoningContent;
+
+    // First clean up common LLM JSON issues
+    let cleanedText = textToExtract;
+    cleanedText = cleanedText.replace(/<\d+-\d+>/g, '50');
+    cleanedText = cleanedText.replace(/<true\|false>/gi, 'false');
+    cleanedText = cleanedText.replace(/"?<HIGH\|MEDIUM\|LOW>"?/gi, '"MEDIUM"');
+    cleanedText = cleanedText.replace(/"?<TRUST_REVIEWS\|VERIFY_REVIEWS\|DISTRUST_REVIEWS>"?/gi, '"VERIFY_REVIEWS"');
+    cleanedText = cleanedText.replace(/"<[^>]+>"/g, '""');
+    cleanedText = cleanedText.replace(/<[^>]+>/g, 'null');
+
+    // Use robust extractJSON function
+    const analysis = extractJSON(cleanedText);
+
+    if (!analysis) {
+      console.warn('[review_analyzer] Could not extract JSON from response');
+      return {
+        error: 'Failed to parse AI response - no JSON found',
+        raw_response: textToExtract.substring(0, 500),
+        fake_review_score: null,
+        confidence: null,
+        recommendation: 'VERIFY_REVIEWS'
+      };
     }
 
-    if (jsonMatch) {
-      // Declare outside try so catch block can access
-      let jsonStr = jsonMatch[0];
-      try {
-        // Clean up common LLM JSON issues before parsing
-        // Remove markdown code block markers if present
-        jsonStr = jsonStr.replace(/^```json?\s*/i, '').replace(/\s*```$/i, '');
-        // Fix template placeholders that weren't replaced
-        // Handle numeric ranges like <0-100>, <1-5>, etc.
-        jsonStr = jsonStr.replace(/<\d+-\d+>/g, '50');
-        // Handle boolean templates
-        jsonStr = jsonStr.replace(/<true\|false>/gi, 'false');
-        // Handle string enum templates (with or without quotes around them)
-        jsonStr = jsonStr.replace(/"?<HIGH\|MEDIUM\|LOW>"?/gi, '"MEDIUM"');
-        jsonStr = jsonStr.replace(/"?<TRUST_REVIEWS\|VERIFY_REVIEWS\|DISTRUST_REVIEWS>"?/gi, '"VERIFY_REVIEWS"');
-        // Handle any remaining template strings like <description>, <value>, etc.
-        jsonStr = jsonStr.replace(/"<[^>]+>"/g, '""');  // Quoted templates -> empty string
-        jsonStr = jsonStr.replace(/<[^>]+>/g, 'null');  // Unquoted templates -> null
+    // Add metadata to successful parse
+    analysis.analyzed_at = new Date().toISOString();
+    analysis.cost = estimateCost(result);
 
-        const analysis = JSON.parse(jsonStr);
-        analysis.analyzed_at = new Date().toISOString();
-        analysis.cost = estimateCost(result);
-        // Include reasoning if available (from deepseek-reasoner)
-        if (reasoningContent) {
-          analysis.reasoning_trace = reasoningContent.substring(0, 2000);
-        }
-        return analysis;
-      } catch (parseErr) {
-        // JSON found but failed to parse - try fallback extraction
-        console.error(`[review_analyzer] JSON parse failed: ${parseErr.message}`);
-        console.error(`[review_analyzer] Problematic JSON (first 300 chars): ${jsonStr.substring(0, 300)}`);
-
-        // Fallback: extract key fields with regex
-        const fallback = {
-          error: `JSON parse error: ${parseErr.message}`,
-          fallback_extraction: true,
-          fake_review_score: null,
-          recommendation: 'VERIFY_REVIEWS'
-        };
-
-        // Try to extract fake_review_score
-        const scoreMatch = jsonStr.match(/"fake_review_score"\s*:\s*(\d+)/);
-        if (scoreMatch) fallback.fake_review_score = parseInt(scoreMatch[1]);
-
-        // Try to extract recommendation
-        const recMatch = jsonStr.match(/"recommendation"\s*:\s*"([^"]+)"/);
-        if (recMatch) fallback.recommendation = recMatch[1];
-
-        return fallback;
-      }
+    // Include reasoning if available (from deepseek-reasoner)
+    if (reasoningContent) {
+      analysis.reasoning_trace = reasoningContent.substring(0, 2000);
     }
 
-    return {
-      error: 'Failed to parse AI response - no JSON found',
-      raw_response: (content || reasoningContent).substring(0, 500)
-    };
+    return analysis;
 
   } catch (err) {
     return {
