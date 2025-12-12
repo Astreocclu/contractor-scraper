@@ -169,7 +169,7 @@ async function gracefulShutdown(signal) {
 async function main() {
   const args = process.argv.slice(2);
   const forceMode = args.includes('--force');
-  const skipLiens = !args.includes('--with-liens'); // Default: skip liens
+  const skipLiens = args.includes('--skip-liens'); // Default: include liens
 
   if (args.includes('--help')) {
     console.log(`
@@ -179,7 +179,7 @@ Usage: node nightly_scheduler.js [options]
 
 Options:
   --force       Bypass time window check (for testing)
-  --with-liens  Include county lien scraping (slower, ~5min each)
+  --skip-liens  Skip county lien scraping (faster, ~2x throughput)
   --help        Show this help
 
 The scheduler runs in a loop, processing batches of 50 contractors

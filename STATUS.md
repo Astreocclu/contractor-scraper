@@ -147,8 +147,8 @@ python3 manage.py runserver 8002
 # Test nightly scheduler (bypasses time window)
 node scripts/nightly_scheduler.js --force
 
-# Test with lien scraping (slower)
-node scripts/nightly_scheduler.js --force --with-liens
+# Test without lien scraping (faster, ~2x throughput)
+node scripts/nightly_scheduler.js --force --skip-liens
 
 # Install systemd timer (runs 8 PM - 6 AM Central)
 sudo cp systemd/*.service systemd/*.timer /etc/systemd/system/
