@@ -216,7 +216,7 @@ async def scrape_serp_rating(
 
         try:
             print(f"[SERP/{site}] Searching for: {business_name} in {location}", file=sys.stderr)
-            await page.goto(search_url, timeout=15000)
+            await page.goto(search_url, timeout=30000)
             await asyncio.sleep(3)
 
             body = await page.inner_text("body")
