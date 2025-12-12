@@ -91,6 +91,25 @@ All documentation is in `docs/` except the top-level status files.
 
 ---
 
+## Pipeline Architecture (V1 vs V2)
+
+The system has two execution pipelines. **Do not merge them** - they serve different purposes.
+
+### V1 Pipeline (Production - Sequential)
+- **Entry points:** `run_audit.js`, `batch_audit_runner.js`
+- **Orchestrator:** `services/orchestrator.js`
+- **Agent:** `services/audit_agent.js`
+- **Features:** State persistence (batch_progress.json), resume capability, interactive mode
+- **Use for:** Production audits, batch processing with resume
+
+### V2 Pipeline (Experimental - Concurrent)
+- **Entry point:** `batch_full_pipeline.js`
+- **Agent:** `services/audit_agent_v2.js`
+- **Features:** Stateless, concurrent execution, simplified flow
+- **Use for:** Testing, experimentation
+
+---
+
 
 
 ## Commands
