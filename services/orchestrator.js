@@ -19,7 +19,7 @@ const error = (msg) => console.log(`\x1b[31m${msg}\x1b[0m`);
  * Run a forensic audit on a contractor
  */
 async function runForensicAudit(contractorInput, options = {}) {
-  const { dryRun = false, skipCollection = false, collectOnly = false, batchMode = false } = options;
+  const { dryRun = false, skipCollection = false, collectOnly = false, batchMode = false, skipLiens = false } = options;
 
   console.log('\n' + '═'.repeat(60));
   console.log('  🔍 AGENTIC FORENSIC AUDIT');
@@ -132,10 +132,10 @@ async function runForensicAudit(contractorInput, options = {}) {
       } else if (totalCached > 0) {
         log(`\n📦 Found ${totalCached} cached sources (${freshCached} fresh)`);
         log(`📥 Running collection to refresh stale data...`);
-        await collectionService.runInitialCollection(contractorId, contractor);
+        await collectionService.runInitialCollection(contractorId, contractor, { skipLiens });
       } else {
         log(`\n📥 No cached data - running initial collection...`);
-        await collectionService.runInitialCollection(contractorId, contractor);
+        await collectionService.runInitialCollection(contractorId, contractor, { skipLiens });
       }
     } else {
       log(`\n⏭️  Skipping collection (--skip-collection)`);
