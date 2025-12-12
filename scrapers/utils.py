@@ -167,9 +167,15 @@ class ScraperCache:
 
     DEFAULT_TTL = timedelta(days=1)
 
-    def __init__(self, cache_dir: str = ".scraper_cache"):
-        self.cache_dir = Path(cache_dir)
-        self.cache_dir.mkdir(exist_ok=True)
+    def __init__(self, cache_dir: Optional[str] = None):
+        if cache_dir:
+            self.cache_dir = Path(cache_dir)
+        else:
+            # Default to data/cache in project root
+            # utils.py is in scrapers/, so project root is parent
+            root_dir = Path(__file__).parent.parent
+            self.cache_dir = root_dir / "data" / "cache"
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
 
     def _get_key(self, source: str, identifier: str) -> str:
         """Generate cache key from source and identifier."""
