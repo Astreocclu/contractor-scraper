@@ -19,7 +19,7 @@ const path = require('path');
 // Import lib modules
 const { searchTDLR, requiresTDLRLicense } = require('./lib/tdlr_scraper');
 const { searchCourtRecords } = require('./lib/court_scraper');
-const { fetchAPISources } = require('./lib/api_sources');
+const { fetchAPISources } = require('../services/api_sources');
 
 // Config
 const DB_PATH = path.join(__dirname, 'db.sqlite3');

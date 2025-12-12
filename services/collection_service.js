@@ -9,7 +9,7 @@ const puppeteer = require('puppeteer');
 const { runCommand } = require('./async_command');
 const path = require('path');
 const { searchCourtRecords } = require('../scrapers/court_scraper');
-const { fetchAPISources } = require('../lib/api_sources');
+const { fetchAPISources } = require('./api_sources');
 const { analyzeReviews, quickDiscrepancyCheck } = require('./review_analyzer');
 
 // Path to Python scrapers
