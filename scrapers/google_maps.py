@@ -203,6 +203,35 @@ async def scrape_google_maps(
                 if not any(junk in email_candidate for junk in junk_domains):
                     result.email = email_candidate
 
+            # Look for website URL - Google Maps shows this as a button/link
+            # Try multiple methods to extract the website
+            try:
+                # Method 1: Look for website button (aria-label contains "Website")
+                website_btn = await page.query_selector('a[data-item-id="authority"], a[aria-label*="Website"], a[data-tooltip*="website" i]')
+                if website_btn:
+                    website_href = await website_btn.get_attribute('href')
+                    if website_href and not website_href.startswith('https://www.google.com'):
+                        result.website = website_href
+
+                # Method 2: Look for links that look like business websites (not google/maps/etc)
+                if not result.website:
+                    all_links = await page.query_selector_all('a[href^="http"]')
+                    for link in all_links[:20]:  # Check first 20 links
+                        href = await link.get_attribute('href')
+                        if href and not any(skip in href for skip in ['google.com', 'gstatic.com', 'youtube.com', 'facebook.com', 'yelp.com', 'bbb.org']):
+                            # Check if it looks like a business website
+                            if re.match(r'https?://(?:www\.)?[a-z0-9-]+\.[a-z]{2,}/?$', href, re.I):
+                                result.website = href
+                                break
+
+                # Method 3: Regex on page text for URL patterns
+                if not result.website:
+                    url_match = re.search(r'(?:Website|Visit)\s*:?\s*(https?://[^\s<>"]+)', page_text, re.I)
+                    if url_match:
+                        result.website = url_match.group(1)
+            except Exception as e:
+                print(f"[Google Maps] Website extraction error: {e}", file=sys.stderr)
+
             # Look for status (Open/Closed)
             if re.search(r'\bOpen\b.*(?:24 hours|Opens|hours)', page_text, re.I):
                 result.status = "open"

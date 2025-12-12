@@ -1211,6 +1211,38 @@ class CollectionService {
       }
     }
 
+    // === FALLBACK: Scrape website discovered by Google Maps (if we didn't already have one) ===
+    const existingWebsiteResult = results.find(r => r.source === 'website');
+    const websiteAlreadyScraped = existingWebsiteResult && existingWebsiteResult.status !== 'error';
+
+    if (!websiteAlreadyScraped) {
+      // Check if Google Maps found a website we can scrape
+      const gmapsSources = ['google_maps_local', 'google_maps_listed', 'google_maps_hq'];
+      for (const gmSource of gmapsSources) {
+        const gmResult = results.find(r => r.source === gmSource);
+        if (gmResult && gmResult.structured && gmResult.structured.website) {
+          const discoveredWebsite = gmResult.structured.website;
+          log(`\n  📧 Scraping website discovered by Google Maps: ${discoveredWebsite}`);
+          try {
+            const emailResult = await this.scrapeWebsiteEmail(discoveredWebsite);
+            const emailData = {
+              source: 'website',
+              url: discoveredWebsite,
+              status: emailResult.email ? 'success' : (emailResult.error ? 'error' : 'not_found'),
+              text: JSON.stringify(emailResult),
+              structured: emailResult
+            };
+            await this.storeRawData(contractorId, 'website', emailData);
+            await this.logCollectionRequest(contractorId, 'website', 'initial', 'Email extraction (from Google Maps discovered URL)');
+            results.push(emailData);
+            break;  // Only scrape first found website
+          } catch (err) {
+            warn(`    Website email (fallback): Error - ${err.message}`);
+          }
+        }
+      }
+    }
+
     // Yelp via Yahoo Search (bypasses DataDome blocking)
     log('\n  Fetching Yelp rating (via Yahoo Search)...');
     try {
