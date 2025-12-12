@@ -1046,7 +1046,8 @@ class CollectionService {
   /**
    * Run initial collection for all sources
    */
-  async runInitialCollection(contractorId, contractor) {
+  async runInitialCollection(contractorId, contractor, options = {}) {
+    const { skipLiens = false } = options;
     log('\n📥 Running initial collection...');
 
     const results = [];
@@ -1470,36 +1471,40 @@ class CollectionService {
     }
 
     // County Liens (mechanic's liens, tax liens, judgments)
-    log('\n  Searching county lien records...');
-    try {
-      const lienResult = await scrapeCountyLiensPython(contractor.name, null, contractor.city, contractor.state);
-      const data = {
-        source: 'county_liens',
-        url: 'DFW County OPR',
-        status: lienResult.total_records > 0 ? 'success' : 'not_found',
-        text: `COUNTY LIENS:\n${JSON.stringify(lienResult, null, 2)}`,
-        structured: lienResult
-      };
-      await this.storeRawData(contractorId, 'county_liens', data);
-      await this.logCollectionRequest(contractorId, 'county_liens', 'initial', 'Initial collection - liens');
-      results.push(data);
+    if (!skipLiens) {
+      log('\n  Searching county lien records...');
+      try {
+        const lienResult = await scrapeCountyLiensPython(contractor.name, null, contractor.city, contractor.state);
+        const data = {
+          source: 'county_liens',
+          url: 'DFW County OPR',
+          status: lienResult.total_records > 0 ? 'success' : 'not_found',
+          text: `COUNTY LIENS:\n${JSON.stringify(lienResult, null, 2)}`,
+          structured: lienResult
+        };
+        await this.storeRawData(contractorId, 'county_liens', data);
+        await this.logCollectionRequest(contractorId, 'county_liens', 'initial', 'Initial collection - liens');
+        results.push(data);
 
-      if (lienResult.total_records > 0) {
-        const activeCount = lienResult.lien_score?.active_liens || 0;
-        const resolvedCount = lienResult.lien_score?.resolved_liens || 0;
-        warn(`    Liens: Found ${lienResult.total_records} record(s) - ${activeCount} active, ${resolvedCount} resolved`);
+        if (lienResult.total_records > 0) {
+          const activeCount = lienResult.lien_score?.active_liens || 0;
+          const resolvedCount = lienResult.lien_score?.resolved_liens || 0;
+          warn(`    Liens: Found ${lienResult.total_records} record(s) - ${activeCount} active, ${resolvedCount} resolved`);
 
-        // Flag if there are active liens
-        if (activeCount >= 3) {
-          error(`    ⚠️ CRITICAL: ${activeCount} active liens (pattern of non-payment)`);
-        } else if (activeCount >= 1) {
-          warn(`    ⚠️ WARNING: ${activeCount} active lien(s) found`);
+          // Flag if there are active liens
+          if (activeCount >= 3) {
+            error(`    ⚠️ CRITICAL: ${activeCount} active liens (pattern of non-payment)`);
+          } else if (activeCount >= 1) {
+            warn(`    ⚠️ WARNING: ${activeCount} active lien(s) found`);
+          }
+        } else {
+          success(`    Liens: No liens found`);
         }
-      } else {
-        success(`    Liens: No liens found`);
+      } catch (err) {
+        warn(`    Liens: Error - ${err.message}`);
       }
-    } catch (err) {
-      warn(`    Liens: Error - ${err.message}`);
+    } else {
+      log('\n  Skipping county lien records (--skip-liens)');
     }
 
 
