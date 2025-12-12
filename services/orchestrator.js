@@ -19,7 +19,7 @@ const error = (msg) => console.log(`\x1b[31m${msg}\x1b[0m`);
  * Run a forensic audit on a contractor
  */
 async function runForensicAudit(contractorInput, options = {}) {
-  const { dryRun = false, skipCollection = false, collectOnly = false } = options;
+  const { dryRun = false, skipCollection = false, collectOnly = false, batchMode = false } = options;
 
   console.log('\n' + '═'.repeat(60));
   console.log('  🔍 AGENTIC FORENSIC AUDIT');
@@ -240,7 +240,10 @@ async function runForensicAudit(contractorInput, options = {}) {
 
   } finally {
     await collectionService.close();
-    await db.close();
+    // Only close DB pool if not in batch mode (batch runner manages pool lifecycle)
+    if (!batchMode) {
+      await db.close();
+    }
   }
 }
 

@@ -123,7 +123,7 @@ async function runBatch(contractorIds) {
     const auditPromise = (async () => {
       try {
         console.log(`[${++processed}/${toProcess.length}] Auditing contractor ${id}...`);
-        const result = await runForensicAudit({ id }, { dryRun: false });
+        const result = await runForensicAudit({ id }, { dryRun: false, batchMode: true });
 
         if (!result) {
           throw new Error('Audit returned null result');
@@ -156,6 +156,9 @@ async function runBatch(contractorIds) {
   console.log(`Failed: ${state.failed.length}`);
   console.log(`Total API cost: $${costs.total.toFixed(4)}`);
   console.log(`State saved to: ${STATE_FILE}`);
+
+  // Close database pool at end of batch
+  await db.close();
 
   return results;
 }

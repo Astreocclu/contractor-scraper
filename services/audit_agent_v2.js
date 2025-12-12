@@ -98,8 +98,8 @@ Score 0-100 based on what you find:
 0-15 (CRITICAL/AVOID): Known fraudster, news investigation, pattern of victims, active lawsuits for fraud
 15-35 (SEVERE/AVOID): Serious red flags, multiple complaints of same issue, BBB F rating
 40-60 (MODERATE/CAUTION): Mixed signals, some concerns, needs verification
-60-75 (LOW/VERIFY): Solid contractor with minor issues, mostly positive
-75-90 (TRUSTED/RECOMMENDED): Good track record, verified, minor gaps
+60-79 (LOW/VERIFY): Solid contractor with minor issues, mostly positive
+80-90 (TRUSTED/RECOMMENDED): Good track record, verified, minor gaps
 90-100 (TRUSTED/RECOMMENDED): Squeaky clean, everything verified, years of positive history
 
 ## ENTITY NAME MATCHING
@@ -184,7 +184,7 @@ function enforceScoreMultipliers(auditResult) {
   // Enforce recommendation
   auditResult.recommendation = enforcedScore <= 40 ? 'AVOID' :
     enforcedScore <= 60 ? 'CAUTION' :
-      enforcedScore <= 80 ? 'VERIFY' : 'RECOMMENDED';
+      enforcedScore < 80 ? 'VERIFY' : 'RECOMMENDED';
 
   return auditResult;
 }
