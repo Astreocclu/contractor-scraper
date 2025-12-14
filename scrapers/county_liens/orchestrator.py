@@ -233,54 +233,120 @@ def pair_liens_with_releases(records: list[dict]) -> list[dict]:
     return records
 
 
-def calculate_lien_score(records: list[dict]) -> dict:
+def calculate_lien_score(records: list[dict], search_term: str = '') -> dict:
     """
     Calculate a lien-based financial health score.
-    
+
+    IMPORTANT: Distinguishes liens filed BY contractor (neutral) vs AGAINST contractor (red flag).
+    - GRANTEE = creditor (who filed the lien, who is owed money)
+    - GRANTOR = debtor (property owner, who owes money)
+
+    If contractor is GRANTEE: they filed to collect payment (NEUTRAL)
+    If contractor is GRANTOR: someone filed against them (RED FLAG)
+
     Returns:
         Dict with score (0-10), deductions, and notes
     """
+    from datetime import datetime, timedelta
+
     score = 10
     notes = []
-    
+    search_lower = search_term.lower() if search_term else ''
+
     # Filter to active liens only
     active_liens = [r for r in records if r['document_type'] != 'REL_LIEN' and not r.get('has_release')]
     resolved_liens = [r for r in records if r.get('has_release', False)]
-    
-    # Count by severity
-    critical_count = len([r for r in active_liens if LIEN_SEVERITY.get(r['document_type']) == 'CRITICAL'])
-    high_count = len([r for r in active_liens if LIEN_SEVERITY.get(r['document_type']) == 'HIGH'])
-    
-    # Deductions for active liens
+
+    # Classify liens by direction
+    liens_by_contractor = []  # Contractor filed (GRANTEE = contractor) - NEUTRAL
+    liens_against_contractor = []  # Filed against contractor (GRANTOR = contractor) - RED FLAG
+    liens_unclear = []  # Can't determine direction
+
+    for r in active_liens:
+        grantee = (r.get('grantee') or '').lower()
+        grantor = (r.get('grantor') or '').lower()
+
+        # Check if contractor name appears in grantee (they filed it)
+        contractor_is_grantee = search_lower and any(
+            term in grantee for term in [search_lower] + search_lower.split()[:2]
+        )
+        # Check if contractor name appears in grantor (filed against them)
+        contractor_is_grantor = search_lower and any(
+            term in grantor for term in [search_lower] + search_lower.split()[:2]
+        )
+
+        if contractor_is_grantee and not contractor_is_grantor:
+            liens_by_contractor.append(r)
+        elif contractor_is_grantor and not contractor_is_grantee:
+            liens_against_contractor.append(r)
+        else:
+            liens_unclear.append(r)
+
+    # Age-weight: liens older than 7 years are less concerning
+    cutoff_date = datetime.now() - timedelta(days=7*365)
+    def is_old_lien(r):
+        try:
+            filing = r.get('filing_date')
+            if isinstance(filing, str):
+                filing = datetime.fromisoformat(filing.replace('Z', '+00:00'))
+            return filing and filing.replace(tzinfo=None) < cutoff_date
+        except:
+            return False
+
+    recent_against = [r for r in liens_against_contractor if not is_old_lien(r)]
+    old_against = [r for r in liens_against_contractor if is_old_lien(r)]
+
+    # Count by severity (only for liens AGAINST contractor)
+    critical_count = len([r for r in recent_against if LIEN_SEVERITY.get(r['document_type']) == 'CRITICAL'])
+    high_count = len([r for r in recent_against if LIEN_SEVERITY.get(r['document_type']) == 'HIGH'])
+
+    # Deductions only for liens AGAINST contractor (recent)
     if critical_count >= 1:
         score -= 5
-        notes.append(f"{critical_count} CRITICAL lien(s) (tax lien or judgment)")
-    
+        notes.append(f"{critical_count} CRITICAL lien(s) AGAINST contractor (tax lien or judgment)")
+
     if high_count >= 3:
         score -= 5
-        notes.append(f"{high_count} HIGH severity liens (pattern of non-payment)")
+        notes.append(f"{high_count} liens AGAINST contractor (pattern of non-payment to suppliers)")
     elif high_count >= 1:
-        score -= 3
-        notes.append(f"{high_count} active mechanic's lien(s)")
-    
+        score -= 2
+        notes.append(f"{high_count} lien(s) AGAINST contractor")
+
+    # Old liens against contractor: minor concern
+    if old_against:
+        score -= 1
+        notes.append(f"{len(old_against)} old lien(s) against contractor (>7 years ago)")
+
+    # Liens BY contractor are NEUTRAL - note but don't penalize
+    if liens_by_contractor:
+        notes.append(f"{len(liens_by_contractor)} lien(s) filed BY contractor (collecting payment - neutral)")
+
+    # Unclear liens: minor concern
+    if liens_unclear:
+        score -= 1
+        notes.append(f"{len(liens_unclear)} lien(s) with unclear direction")
+
     # Check for slow releases
     slow_releases = [r for r in resolved_liens if r.get('days_to_release', 0) > 90]
     if len(slow_releases) >= 2:
-        score -= 2
+        score -= 1
         notes.append(f"{len(slow_releases)} liens took >90 days to resolve")
-    
-    # Total amount check
-    total_active_amount = sum(r.get('amount', 0) or 0 for r in active_liens)
-    if total_active_amount > 50000:
+
+    # Total amount check (only for liens AGAINST contractor)
+    total_against_amount = sum(r.get('amount', 0) or 0 for r in liens_against_contractor)
+    if total_against_amount > 50000:
         score -= 2
-        notes.append(f"Active liens total ${total_active_amount:,.2f}")
-    
+        notes.append(f"Liens against contractor total ${total_against_amount:,.2f}")
+
     return {
         'score': max(0, score),
         'max_score': 10,
         'active_liens': len(active_liens),
+        'liens_by_contractor': len(liens_by_contractor),
+        'liens_against_contractor': len(liens_against_contractor),
+        'liens_unclear': len(liens_unclear),
         'resolved_liens': len(resolved_liens),
-        'total_active_amount': total_active_amount,
+        'total_against_amount': total_against_amount,
         'notes': notes
     }
 
@@ -314,8 +380,8 @@ async def main():
     
     all_records = pair_liens_with_releases(all_records)
     
-    # Calculate score
-    lien_score = calculate_lien_score(all_records)
+    # Calculate score (pass search term for direction classification)
+    lien_score = calculate_lien_score(all_records, search_term=args.name)
     results['lien_score'] = lien_score
     
     # Output
