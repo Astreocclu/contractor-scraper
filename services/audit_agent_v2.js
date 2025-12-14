@@ -9,6 +9,7 @@
  */
 
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
+const scoringConstraints = require('./scoring_constraints');
 
 // Single tool - investigate suspicious findings
 const TOOLS = [
@@ -95,12 +96,11 @@ IMPORTANT: High review volume with high ratings is a POSITIVE signal.
 ## SCORING - Trust your judgment
 Score 0-100 based on what you find:
 
-0-15 (CRITICAL/AVOID): Known fraudster, news investigation, pattern of victims, active lawsuits for fraud
-15-35 (SEVERE/AVOID): Serious red flags, multiple complaints of same issue, BBB F rating
-40-60 (MODERATE/CAUTION): Mixed signals, some concerns, needs verification
-60-79 (LOW/VERIFY): Solid contractor with minor issues, mostly positive
-80-90 (TRUSTED/RECOMMENDED): Good track record, verified, minor gaps
-90-100 (TRUSTED/RECOMMENDED): Squeaky clean, everything verified, years of positive history
+0-30 (AVOID): Known fraudster, serious red flags, BBB F rating, pattern of complaints, active lawsuits
+30-49 (AVOID): Multiple concerns, unverified business, suspicious reviews, significant gaps
+50-79 (NOT_RECOMMENDED): Mixed signals, some concerns, insufficient positive data to recommend
+80-89 (RECOMMENDED): Good track record, verified business, minor gaps acceptable
+90-100 (RECOMMENDED): Excellent reputation, everything verified, years of positive history
 
 ## ENTITY NAME MATCHING
 Company names vary in records. These are the SAME company:
@@ -119,8 +119,8 @@ Only when you see something suspicious that needs deeper digging:
 After your investigation, respond with ONLY this JSON:
 {
   "trust_score": <0-100>,
-  "risk_level": "<CRITICAL|SEVERE|MODERATE|LOW|TRUSTED>",
-  "recommendation": "<AVOID|CAUTION|VERIFY|RECOMMENDED>",
+  "risk_level": "<HIGH|MODERATE|TRUSTED>",
+  "recommendation": "<AVOID|NOT_RECOMMENDED|RECOMMENDED>",
   "reasoning": "<Your investigative findings. What's the story? What did you find? Be specific.>",
   "red_flags": [
     {"severity": "<CRITICAL|HIGH|MEDIUM|LOW>", "category": "<category>", "description": "<what you found>", "evidence": "<which source showed this>"}
@@ -177,14 +177,13 @@ function enforceScoreMultipliers(auditResult) {
   // Also enforce risk_level consistency
   if (enforcedScore <= 15) auditResult.risk_level = 'CRITICAL';
   else if (enforcedScore <= 35) auditResult.risk_level = 'SEVERE';
-  else if (enforcedScore <= 60) auditResult.risk_level = 'MODERATE';
-  else if (enforcedScore <= 75) auditResult.risk_level = 'LOW';
+  else if (enforcedScore < 80) auditResult.risk_level = 'MODERATE';
   else auditResult.risk_level = 'TRUSTED';
 
-  // Enforce recommendation
-  auditResult.recommendation = enforcedScore <= 40 ? 'AVOID' :
-    enforcedScore <= 60 ? 'CAUTION' :
-      enforcedScore < 80 ? 'VERIFY' : 'RECOMMENDED';
+  // Enforce recommendation (simplified tiers)
+  // 80+ = RECOMMENDED, 50-79 = NOT_RECOMMENDED, <50 = AVOID
+  auditResult.recommendation = enforcedScore < 50 ? 'AVOID' :
+    enforcedScore < 80 ? 'NOT_RECOMMENDED' : 'RECOMMENDED';
 
   return auditResult;
 }
@@ -393,6 +392,10 @@ Website: ${this.contractor.website || 'Not provided'}
     // Enforce score multipliers based on red flag severity
     result = enforceScoreMultipliers(result);
 
+    // Apply strict constraints (if enabled)
+    const dataContext = await scoringConstraints.extractDataContext(this.db, this.contractorId);
+    result = scoringConstraints.applyConstraints(result, dataContext);
+
     // Save to audit_records
     await this.db.run(`
       INSERT INTO audit_records (
@@ -417,10 +420,11 @@ Website: ${this.contractor.website || 'Not provided'}
       now
     ]);
 
-    // Update contractor
+    // Update contractor (trust_score and passes_threshold)
+    const passesThreshold = result.trust_score >= 80;
     await this.db.run(`
-      UPDATE contractors_contractor SET trust_score = ? WHERE id = ?
-    `, [result.trust_score, this.contractorId]);
+      UPDATE contractors_contractor SET trust_score = ?, passes_threshold = ? WHERE id = ?
+    `, [result.trust_score, passesThreshold, this.contractorId]);
 
     success(`✓ Audit complete: ${result.trust_score}/100 (${result.recommendation})`);
 
@@ -435,7 +439,7 @@ Website: ${this.contractor.website || 'Not provided'}
     return await this.finalizeResult({
       trust_score: 50,
       risk_level: 'MODERATE',
-      recommendation: 'VERIFY',
+      recommendation: 'NOT_RECOMMENDED',
       reasoning: `Audit incomplete: ${reason}. Manual review recommended.`,
       red_flags: [],
       positive_signals: [],

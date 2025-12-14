@@ -6,6 +6,7 @@
  */
 
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
+const scoringConstraints = require('./scoring_constraints');
 
 // Tool definitions for DeepSeek function calling
 const TOOLS = [
@@ -81,8 +82,8 @@ const TOOLS = [
           },
           recommendation: {
             type: 'string',
-            enum: ['AVOID', 'CAUTION', 'VERIFY', 'RECOMMENDED'],
-            description: 'Action recommendation for homeowners'
+            enum: ['AVOID', 'NOT_RECOMMENDED', 'RECOMMENDED'],
+            description: 'Action recommendation for homeowners (80+ = RECOMMENDED, 50-79 = NOT_RECOMMENDED, <50 = AVOID)'
           },
           reasoning: {
             type: 'string',
@@ -310,7 +311,7 @@ class AuditAgent {
         messages: this.messages,
         tools: TOOLS,
         tool_choice: 'auto',
-        temperature: 0.1,
+        temperature: 0.0,
         max_tokens: 4000
       })
     });
@@ -485,6 +486,21 @@ class AuditAgent {
       return { error: 'Invalid trust_score - must be 0-100' };
     }
 
+    // Apply strict constraints (if enabled)
+    let result = {
+      trust_score: args.trust_score,
+      risk_level: args.risk_level,
+      recommendation: args.recommendation,
+      gaps: args.gaps_remaining || []
+    };
+    const dataContext = await scoringConstraints.extractDataContext(this.db, this.contractorId);
+    result = scoringConstraints.applyConstraints(result, dataContext);
+
+    // Use constrained values
+    const finalScore = result.trust_score;
+    const finalRiskLevel = result.risk_level;
+    const finalRecommendation = result.recommendation;
+
     // Save to audit_records
     await this.db.run(`
       INSERT INTO audit_records (
@@ -495,9 +511,9 @@ class AuditAgent {
     `, [
       this.contractorId,
       1,  // audit_version: 1 = agentic audit v1
-      args.trust_score,
-      args.risk_level,
-      args.recommendation,
+      finalScore,
+      finalRiskLevel,
+      finalRecommendation,
       this.reasoningTrace.join('\n\n---\n\n'),
       JSON.stringify(args.red_flags || []),
       JSON.stringify(args.positive_signals || []),
@@ -509,20 +525,22 @@ class AuditAgent {
       now
     ]);
 
-    // Update contractor's trust_score
+    // Update contractor's trust_score and passes_threshold
+    const passesThreshold = finalScore >= 80;
     await this.db.run(`
       UPDATE contractors_contractor
-      SET trust_score = ?
+      SET trust_score = ?, passes_threshold = ?
       WHERE id = ?
-    `, [args.trust_score, this.contractorId]);
+    `, [finalScore, passesThreshold, this.contractorId]);
 
-    success(`\n✓ Audit finalized: ${args.trust_score}/100 (${args.recommendation})`);
+    success(`\n✓ Audit finalized: ${finalScore}/100 (${finalRecommendation})`);
 
-    return {
+    // Include constraint info in result if applied
+    const returnResult = {
       finalized: true,
-      trust_score: args.trust_score,
-      risk_level: args.risk_level,
-      recommendation: args.recommendation,
+      trust_score: finalScore,
+      risk_level: finalRiskLevel,
+      recommendation: finalRecommendation,
       reasoning: args.reasoning,
       red_flags: args.red_flags || [],
       positive_signals: args.positive_signals || [],
@@ -530,6 +548,12 @@ class AuditAgent {
       collection_rounds: this.collectionRounds,
       total_cost: this.totalCost
     };
+
+    if (result.strict_constraints) {
+      returnResult.strict_constraints = result.strict_constraints;
+    }
+
+    return returnResult;
   }
 
   /**
@@ -553,7 +577,7 @@ class AuditAgent {
     return await this.toolFinalizeScore({
       trust_score: 50,
       risk_level: 'MODERATE',
-      recommendation: 'VERIFY',
+      recommendation: 'NOT_RECOMMENDED',
       reasoning: `Forced finalization due to: ${reason}. Insufficient data or iterations for a confident assessment. Manual review recommended.`,
       red_flags: [],
       positive_signals: [],

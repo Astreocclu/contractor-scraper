@@ -129,6 +129,17 @@ async function runForensicAudit(contractorInput, options = {}) {
     if (!skipCollection) {
       if (freshCached >= 20) {
         log(`\n📦 Using ${freshCached} fresh cached sources (skipping collection)`);
+
+        // Check if review_analysis exists - run it if missing
+        const reviewAnalysisCheck = await db.exec(`
+          SELECT COUNT(*) as count FROM contractor_raw_data
+          WHERE contractor_id = ? AND source_name = 'review_analysis' AND fetch_status = 'success'
+        `, [contractorId]);
+
+        if (parseInt(reviewAnalysisCheck[0]?.count || 0) === 0) {
+          log(`📊 Running review analysis on cached data...`);
+          await collectionService.runReviewAnalysisOnly(contractorId, contractor);
+        }
       } else if (totalCached > 0) {
         log(`\n📦 Found ${totalCached} cached sources (${freshCached} fresh)`);
         log(`📥 Running collection to refresh stale data...`);

@@ -11,13 +11,14 @@
  */
 
 const { runForensicAudit, listRecentAudits } = require('./services/orchestrator');
+const scoringConstraints = require('./services/scoring_constraints');
 
 // Parse CLI args
 const args = process.argv.slice(2);
 const getArg = (name) => {
   const idx = args.indexOf(`--${name}`);
   if (idx === -1) return null;
-  if (['dry-run', 'skip-collection', 'collect-only', 'list', 'help'].includes(name)) return true;
+  if (['dry-run', 'skip-collection', 'collect-only', 'list', 'help', 'strict'].includes(name)) return true;
   return args[idx + 1];
 };
 
@@ -38,6 +39,10 @@ Options:
   --dry-run           Don't save results to database
   --skip-collection   Skip data collection, use cached data only
   --collect-only      Only run collection, skip audit agent
+  --strict            Enable strict scoring constraints:
+                      - Require 25+ reviews for RECOMMENDED (80+)
+                      - Require verified registration for 85+
+                      - Cap at 75 if critical data gaps exist
   --list              List recent audits
   --help              Show this help
 
@@ -92,6 +97,15 @@ async function main() {
     skipCollection: getArg('skip-collection') || false,
     collectOnly: getArg('collect-only') || false
   };
+
+  // Enable strict constraints if requested
+  if (getArg('strict')) {
+    scoringConstraints.enable();
+    console.log('\x1b[33m⚠️  Strict scoring constraints ENABLED\x1b[0m');
+    console.log('   - Require 25+ reviews for RECOMMENDED (80+)');
+    console.log('   - Require verified registration for 85+');
+    console.log('   - Cap at 75 if critical data gaps exist\n');
+  }
 
   try {
     const result = await runForensicAudit(input, options);

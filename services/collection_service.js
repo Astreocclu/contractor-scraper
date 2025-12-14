@@ -1827,6 +1827,91 @@ class CollectionService {
       await page.close();
     }
   }
+
+  /**
+   * Run review analysis only (for when using cached data that lacks review_analysis)
+   */
+  async runReviewAnalysisOnly(contractorId, contractor) {
+    const log = (msg) => console.log(msg);
+    const warn = (msg) => console.log(`\x1b[33m${msg}\x1b[0m`);
+    const success = (msg) => console.log(`\x1b[32m${msg}\x1b[0m`);
+    const error = (msg) => console.log(`\x1b[31m${msg}\x1b[0m`);
+
+    try {
+      // Get review data from stored sources
+      const reviewSources = await this.db.exec(`
+        SELECT source_name, structured_data, raw_text
+        FROM contractor_raw_data
+        WHERE contractor_id = ?
+        AND source_name IN ('google_maps', 'google_maps_local', 'google_maps_hq', 'yelp', 'yelp_yahoo', 'bbb', 'trustpilot', 'angi', 'houzz', 'glassdoor', 'porch')
+        AND fetch_status = 'success'
+      `, [contractorId]);
+
+      const reviewData = {};
+      for (const source of reviewSources) {
+        if (source.structured_data) {
+          const data = typeof source.structured_data === 'string'
+            ? JSON.parse(source.structured_data)
+            : source.structured_data;
+          if (data.rating || data.reviews) {
+            reviewData[source.source_name] = {
+              ...data,
+              raw_text: source.raw_text || ''
+            };
+          }
+        }
+      }
+
+      // Quick discrepancy check first (no API needed)
+      const quickCheck = quickDiscrepancyCheck(reviewData);
+      if (quickCheck.flags.length > 0) {
+        for (const flag of quickCheck.flags) {
+          warn(`    ⚠️ ${flag}`);
+        }
+      }
+
+      // Run full AI analysis if we have enough data
+      if (Object.keys(reviewData).length >= 2) {
+        const analysis = await analyzeReviews(contractor.name, reviewData);
+
+        if (!analysis.skipped && !analysis.error) {
+          // Store analysis as a special source
+          const analysisData = {
+            source: 'review_analysis',
+            url: 'AI Analysis',
+            status: 'success',
+            text: analysis.summary || 'Analysis complete',
+            structured: analysis
+          };
+          await this.storeRawData(contractorId, 'review_analysis', analysisData);
+
+          // Log key findings
+          if (analysis.fake_review_score >= 60) {
+            error(`    🚨 FAKE REVIEW SCORE: ${analysis.fake_review_score}/100 - ${analysis.recommendation}`);
+          } else if (analysis.fake_review_score >= 30) {
+            warn(`    ⚠️ Fake Review Score: ${analysis.fake_review_score}/100 - ${analysis.recommendation}`);
+          } else {
+            success(`    ✓ Review Analysis: Score ${analysis.fake_review_score}/100 - ${analysis.recommendation}`);
+          }
+
+          if (analysis.discrepancy_detected) {
+            warn(`    ⚠️ Rating Discrepancy: ${analysis.discrepancy_explanation}`);
+          }
+
+          log(`    💰 Analysis cost: $${analysis.cost?.toFixed(4) || '0.0000'}`);
+          return analysis;
+        } else if (analysis.error) {
+          warn(`    Review analysis error: ${analysis.error}`);
+        }
+      } else {
+        log(`    Insufficient review data for AI analysis (${Object.keys(reviewData).length} sources)`);
+      }
+    } catch (err) {
+      warn(`    Review analysis error: ${err.message}`);
+    }
+
+    return null;
+  }
 }
 
 /**

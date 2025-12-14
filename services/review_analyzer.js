@@ -207,7 +207,7 @@ async function analyzeReviews(contractorName, reviewData) {
         'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
       },
       body: JSON.stringify({
-        model: 'deepseek-reasoner',
+        model: 'deepseek-chat',  // Use chat model, not reasoner (reasoner puts output in reasoning_content which breaks JSON extraction)
         messages: [
           { role: 'system', content: ANALYSIS_PROMPT },
           { role: 'user', content: context }
@@ -228,7 +228,7 @@ async function analyzeReviews(contractorName, reviewData) {
     const content = message.content || '';
     const reasoningContent = message.reasoning_content || '';
 
-    // Try to extract JSON from content first, then from reasoning_content
+    // Try to extract JSON from content first, then from reasoning_content (fallback for reasoner model)
     const textToExtract = content || reasoningContent;
 
     // First clean up common LLM JSON issues
