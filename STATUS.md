@@ -1,5 +1,5 @@
 # Contractor Auditor - Status Report
-**Updated:** 2025-12-12
+**Updated:** 2025-12-13
 
 > **Note:** If the date above isn't today, this document may be out of date. Check SESSION-NOTES.md for the latest work.
 
@@ -9,11 +9,12 @@
 
 The contractor auditing system is **fully operational** with new **batch processing capabilities**. Data collection pipeline works end-to-end, scoring is accurate, and contractors are passing/failing appropriately based on real data.
 
-**Recent Additions (Dec 12):**
+**Recent Additions (Dec 12-13):**
 - Batch audit runner with sequential execution and state persistence
 - Review analysis tracking with separate retry bucket
 - Async subprocess handling (replaced blocking execSync)
 - Cost tracking and rate limiting infrastructure
+- **Website discovery batch run**: 31% → 61% coverage (+1,291 websites)
 
 ---
 
@@ -105,6 +106,21 @@ The contractor auditing system is **fully operational** with new **batch process
 | Coverage gap cause | Discovery pipeline doesn't collect email |
 | Tracerfy integration | Created but 3% hit rate |
 
+### 8. Website Discovery (Dec 13)
+| Metric | Value |
+|--------|-------|
+| Contractors with website | 2,575/4,195 (61.4%) |
+| Batch run results | 1,605 processed, 1,338 websites found (83.4% hit rate) |
+| Before batch | 1,284 websites (31%) |
+| After batch | 2,575 websites (61%) |
+| Script | `scrapers/batch_website_discovery.py` |
+
+**Usage:**
+```bash
+python3 scrapers/batch_website_discovery.py --limit 100    # Single batch
+python3 scrapers/batch_website_discovery.py --continuous   # Process all
+```
+
 ---
 
 ## API Keys Status
@@ -184,6 +200,7 @@ scrapers/
 ├── trustpilot.py           # Trustpilot direct URL check
 ├── serp_rating.py          # Angi/Houzz via SERP
 ├── county_liens/           # Texas county lien scrapers (Tarrant, Collin, Dallas)
+├── batch_website_discovery.py  # Batch website lookup via Google Maps
 └── utils.py                # Rate limiting, caching, retry
 
 root/

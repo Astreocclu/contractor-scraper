@@ -98,46 +98,10 @@ Usage:
 
   log(`📦 Found ${sourceCount} collected sources`);
 
-  // Setup browser for investigate tool
-  let browser = null;
-
-  const searchFn = async (query) => {
-    if (!browser) {
-      browser = await puppeteer.launch({
-        headless: 'new',
-        args: ['--no-sandbox']
-      });
-    }
-
-    const page = await browser.newPage();
-    try {
-      await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
-      await page.goto(`https://www.google.com/search?q=${encodeURIComponent(query)}`, {
-        waitUntil: 'networkidle2',
-        timeout: 15000
-      });
-
-      const results = await page.evaluate(() => {
-        const items = document.querySelectorAll('#search .g');
-        return Array.from(items).slice(0, 5).map(item => {
-          const title = item.querySelector('h3')?.innerText || '';
-          const snippet = item.querySelector('.VwiC3b')?.innerText || '';
-          return `${title}\n${snippet}`;
-        }).join('\n\n---\n\n');
-      });
-
-      return { results: results.substring(0, 2000), status: 'success' };
-    } catch (err) {
-      return { error: err.message, status: 'error' };
-    } finally {
-      await page.close();
-    }
-  };
-
   try {
-    // Run audit
+    // Run audit (no web access - pure analysis)
     const agent = new AuditAgentV2(db, contractorId, contractor);
-    const auditResult = await agent.run(searchFn);
+    const auditResult = await agent.run();
 
     // Display results
     console.log('\n' + '═'.repeat(60));

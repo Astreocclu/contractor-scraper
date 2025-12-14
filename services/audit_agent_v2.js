@@ -1,40 +1,19 @@
 /**
- * Audit Agent V2 - Simplified
+ * Audit Agent V2 - Pure Analysis Engine
  *
  * Key changes from V1:
  * - Receives ALL collected data upfront in the prompt
- * - No discovery tools (get_stored_data, request_collection removed)
- * - Only ONE tool: investigate() for suspicious cases
+ * - NO tools at all - pure analysis, no web access
  * - Returns structured JSON directly
+ *
+ * NOTE: Web search capability removed - agent works only with pre-collected data.
  */
 
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
 const scoringConstraints = require('./scoring_constraints');
 
-// Single tool - investigate suspicious findings
-const TOOLS = [
-  {
-    type: 'function',
-    function: {
-      name: 'investigate',
-      description: 'Run an ad-hoc web search to investigate suspicious claims or verify specific information. Use sparingly - only when you see something that needs deeper investigation.',
-      parameters: {
-        type: 'object',
-        properties: {
-          query: {
-            type: 'string',
-            description: 'Search query (e.g., "Company Name lawsuit 2024" or "Owner Name fraud")'
-          },
-          reason: {
-            type: 'string',
-            description: 'Why you need to investigate this'
-          }
-        },
-        required: ['query', 'reason']
-      }
-    }
-  }
-];
+// No tools - V2 is a pure analysis engine with no web access
+const TOOLS = [];
 
 const SYSTEM_PROMPT = `You are a forensic investigator with deep reasoning capabilities. Your job: protect homeowners from fraud.
 
@@ -108,12 +87,9 @@ Company names vary in records. These are the SAME company:
 - "Smith Pools" = "Smith Pools Inc" = "Smith's Pool Service"
 Look for the business, not exact string matches.
 
-## WHEN TO USE investigate()
-Only when you see something suspicious that needs deeper digging:
-- News article mentions lawsuit but no details
-- Claims "15 years experience" but BBB shows formed 2022
-- Name appears in complaint database
-- Review Analyzer flagged DISTRUST_REVIEWS and you want to verify specific claims
+## DATA COMPLETENESS
+All relevant data has been pre-collected. Work with what you have.
+If critical data is missing, note it in the "gaps" field but DO NOT reduce score for missing data alone.
 
 ## OUTPUT FORMAT
 After your investigation, respond with ONLY this JSON:
@@ -193,10 +169,7 @@ class AuditAgentV2 {
     this.db = db;
     this.contractorId = contractorId;
     this.contractor = contractor;
-    this.investigationCount = 0;
-    this.maxInvestigations = 2;
     this.totalCost = 0;
-    this.searchFn = null; // Set by orchestrator
   }
 
   /**
@@ -263,9 +236,7 @@ Website: ${this.contractor.website || 'Not provided'}
   /**
    * Run the audit
    */
-  async run(searchFn) {
-    this.searchFn = searchFn;
-
+  async run() {
     log('\n🤖 Audit Agent V2 analyzing data...');
 
     const dataPrompt = await this.buildDataPrompt();
@@ -289,46 +260,30 @@ Website: ${this.contractor.website || 'Not provided'}
         throw new Error('No response from DeepSeek');
       }
 
-      // Check for tool calls
-      if (message.tool_calls && message.tool_calls.length > 0) {
-        messages.push(message);
+      // Parse JSON response (no tool calls - pure analysis)
+      const content = message.content || '';
 
-        for (const toolCall of message.tool_calls) {
-          if (toolCall.function.name === 'investigate') {
-            const result = await this.executeInvestigate(toolCall);
-            messages.push({
-              role: 'tool',
-              tool_call_id: toolCall.id,
-              content: JSON.stringify(result)
-            });
-          }
-        }
-      } else {
-        // No tool calls - try to parse JSON response
-        const content = message.content || '';
-
-        // Extract JSON from response
-        const jsonMatch = content.match(/\{[\s\S]*\}/);
-        if (jsonMatch) {
-          try {
-            const result = JSON.parse(jsonMatch[0]);
-            return await this.finalizeResult(result);
-          } catch (e) {
-            warn(`Failed to parse JSON: ${e.message}`);
-            messages.push(message);
-            messages.push({
-              role: 'user',
-              content: 'Please respond with valid JSON only, no other text.'
-            });
-          }
-        } else {
-          // Ask for JSON
+      // Extract JSON from response
+      const jsonMatch = content.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        try {
+          const result = JSON.parse(jsonMatch[0]);
+          return await this.finalizeResult(result);
+        } catch (e) {
+          warn(`Failed to parse JSON: ${e.message}`);
           messages.push(message);
           messages.push({
             role: 'user',
-            content: 'Please provide your final assessment as JSON.'
+            content: 'Please respond with valid JSON only, no other text.'
           });
         }
+      } else {
+        // Ask for JSON
+        messages.push(message);
+        messages.push({
+          role: 'user',
+          content: 'Please provide your final assessment as JSON.'
+        });
       }
     }
 
@@ -336,47 +291,6 @@ Website: ${this.contractor.website || 'Not provided'}
     return await this.fallbackResult('Max iterations reached without valid response');
   }
 
-  /**
-   * Execute investigate tool
-   */
-  async executeInvestigate(toolCall) {
-    let args;
-    try {
-      args = JSON.parse(toolCall.function.arguments);
-    } catch {
-      return { error: 'Invalid arguments' };
-    }
-
-    if (this.investigationCount >= this.maxInvestigations) {
-      return {
-        error: 'Investigation limit reached',
-        limit: this.maxInvestigations
-      };
-    }
-
-    this.investigationCount++;
-    log(`  🔍 Investigating: ${args.query}`);
-    log(`     Reason: ${args.reason}`);
-
-    if (!this.searchFn) {
-      return { error: 'Search function not available' };
-    }
-
-    try {
-      const result = await this.searchFn(args.query);
-      return {
-        query: args.query,
-        results: result.results || result.text || 'No results',
-        status: result.status || 'success'
-      };
-    } catch (err) {
-      return { error: err.message };
-    }
-  }
-
-  /**
-   * Finalize and save result
-   */
   /**
    * Finalize and save result
    */
@@ -414,7 +328,7 @@ Website: ${this.contractor.website || 'Not provided'}
       JSON.stringify(result.positive_signals || []),
       JSON.stringify(result.gaps || []),
       JSON.stringify([]),  // sources_used - empty for v2 (data already collected)
-      this.investigationCount,
+      0,  // collection_rounds - none for v2 (no web access)
       this.totalCost,
       now,
       now
@@ -430,7 +344,6 @@ Website: ${this.contractor.website || 'Not provided'}
 
     return {
       ...result,
-      investigations: this.investigationCount,
       total_cost: this.totalCost
     };
   }

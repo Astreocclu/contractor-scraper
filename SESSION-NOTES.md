@@ -2,6 +2,132 @@
 
 ---
 
+## Session: 2025-12-12 - Batch Audit Scaling to 1000+ Contractors
+
+### Context
+- User wanted to scale contractor auditor from single audits to batch processing 1000+ contractors
+- Starting state: Individual audits working but used blocking `execSync` calls preventing parallelism
+- Goals: Identify and fix reliability issues, create batch runner with state persistence
+
+### Work Completed
+
+**Phase 1: Initial Testing (10 audits)**
+- Ran 10 full collection + audit cycles to identify issues
+- Results: Scores ranged 16-90/100, identified 8 reliability problems
+- Changed RECOMMENDED threshold from 70+ to 80+ in `services/audit_agent_v2.js`
+
+**Phase 2: Implementation Plan via Gemini Collaboration**
+- Used `/geminiplan` for iterative planning (3 rounds to 95% confidence)
+- Created detailed plan: `docs/plans/2025-12-12-scale-to-1000-audits.md`
+
+**Phase 3: Subagent-Driven Implementation (8 tasks completed)**
+
+| Task | File | Description |
+|------|------|-------------|
+| 1 | `services/async_command.js` | NEW: Async spawn wrapper replacing execSync |
+| 2 | `services/cost_tracker.js` | NEW: API cost tracking with JSON-L logging |
+| 3 | `services/rate_limiter.js` | NEW: Token bucket rate limiting |
+| 4 | `services/collection_service.js` | Converted 4 execSync calls to async |
+| 5 | `services/review_analyzer.js` | Added 4-tier JSON extraction fallback |
+| 6 | `scrapers/website_scraper.js` | Added `safeEval()` retry wrapper |
+| 7 | `scrapers/serp_rating.py` | Increased Houzz timeout 15s→30s |
+| 8 | `batch_audit_runner.js` | NEW: Batch orchestration with concurrency |
+
+**Phase 4: Integration Testing & Bug Fix**
+- Discovered critical bug: DB pool closed after first audit in batch mode
+- Fixed by adding `batchMode` option to `runForensicAudit()` in `services/orchestrator.js`
+- Verified: 5/5 audits completed successfully with parallelism
+
+**Phase 5: Sequential Mode with Review Analysis Tracking (In Progress)**
+- User requested blocking (sequential) execution instead of parallel
+- Added `needsReviewAnalysis` bucket for contractors where review analysis fails
+- New CLI commands: `--status`, `--retry-review`
+
+### Files Modified/Created
+
+**New Files:**
+- `services/async_command.js` - Async subprocess runner (88 lines)
+- `services/cost_tracker.js` - API cost tracking (57 lines)
+- `services/rate_limiter.js` - Token bucket rate limiter (56 lines)
+- `batch_audit_runner.js` - Batch orchestration (395 lines)
+- `docs/plans/2025-12-12-scale-to-1000-audits.md` - Implementation plan
+
+**Modified Files:**
+- `services/audit_agent_v2.js` - Line 187: Changed threshold `<= 80` to `< 80`
+- `services/collection_service.js` - Converted execSync to async spawn
+- `services/review_analyzer.js` - Added `extractJSON()` with 4 fallback tiers
+- `services/orchestrator.js` - Added `batchMode` option for pool lifecycle
+- `scrapers/website_scraper.js` - Added `safeEval()` retry wrapper
+- `scrapers/serp_rating.py` - Houzz timeout increase
+
+### Current State
+- **Batch Runner**: Working in sequential mode with state persistence
+- **Review Analysis Tracking**: Contractors failing review analysis go to separate bucket
+- **Last Test**: 5/5 contractors completed, all tracked correctly
+- **Integration Test Interrupted**: Test with 2 contractors was interrupted mid-collection
+
+**State Buckets in `batch_progress.json`:**
+- `completed` - Audits with successful review analysis
+- `needsReviewAnalysis` - Audits where review analysis failed (can retry)
+- `failed` - Audits that threw errors
+- `pending` - Queued contractors
+
+### Next Steps
+1. Run a clean sequential batch test (`--limit 10`) to verify full flow
+2. Test `--retry-review` command to re-run review analysis on failed contractors
+3. Scale up to 100+ audits once verified
+4. Consider re-enabling parallelism as optional `--parallel` flag
+
+### Notes
+
+**Key Bug Fixed - Database Pool Closure:**
+- `services/orchestrator.js` called `db.close()` in `finally` block
+- In batch mode, this killed the shared pool after first audit
+- Fix: Pass `batchMode: true`, skip `db.close()` when true
+
+**Review Analysis Failure Causes:**
+- DeepSeek sometimes returns prose instead of JSON
+- 4-tier fallback helps but doesn't catch all cases
+- Separate bucket allows targeted retry
+
+**Scoring Threshold Change:**
+```javascript
+// services/audit_agent_v2.js line 187
+// OLD: enforcedScore <= 80 ? 'VERIFY' : 'RECOMMENDED'
+// NEW: enforcedScore < 80 ? 'VERIFY' : 'RECOMMENDED'
+// Effect: 80+ is now RECOMMENDED (was 81+)
+```
+
+### Key Files
+- `batch_audit_runner.js` - Main batch entry point
+- `services/orchestrator.js` - Core audit orchestration (batchMode flag)
+- `services/async_command.js` - Async subprocess wrapper
+- `services/review_analyzer.js` - DeepSeek review analysis with JSON fallback
+- `batch_progress.json` - State persistence file
+- `docs/plans/2025-12-12-scale-to-1000-audits.md` - Full implementation plan
+
+### Relevant Commands
+```bash
+# Run batch audit (sequential)
+cd /home/reid/testhome/contractor-auditor
+export $(cat .env | grep -v "^#" | xargs)
+node batch_audit_runner.js --reset --limit 10
+
+# Check batch status
+node batch_audit_runner.js --status
+
+# Retry failed review analysis
+node batch_audit_runner.js --retry-review
+
+# Resume interrupted batch
+node batch_audit_runner.js --resume
+
+# Single audit (for debugging)
+node run_audit.js --id 123
+```
+
+---
+
 ## Session: 2025-12-11 - Email Collection Investigation + Tracerfy Integration
 
 ### Context

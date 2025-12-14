@@ -2,7 +2,8 @@
  * Audit Agent
  *
  * DeepSeek-powered agent with function calling for forensic contractor audits.
- * Can request more data, search the web, and finalize trust scores.
+ * Can request more data from predefined sources and finalize trust scores.
+ * NOTE: Web search capability removed - agent works only with pre-collected data.
  */
 
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
@@ -41,23 +42,6 @@ const TOOLS = [
           }
         },
         required: ['source', 'reason']
-      }
-    }
-  },
-  {
-    type: 'function',
-    function: {
-      name: 'search_web',
-      description: 'Run an ad-hoc web search for specific information about the contractor.',
-      parameters: {
-        type: 'object',
-        properties: {
-          query: {
-            type: 'string',
-            description: 'Search query (e.g., "Company Name Dallas lawsuit 2024")'
-          }
-        },
-        required: ['query']
       }
     }
   },
@@ -129,8 +113,9 @@ WORKFLOW:
 1. First, call get_stored_data() to see what data we have
 2. Analyze the data for red flags and positive signals
 3. If you notice gaps (e.g., "claims 15 years but no permit history"), call request_collection()
-4. If you need to verify specific claims, call search_web()
-5. When you have enough data OR hit collection limits, call finalize_score()
+4. When you have enough data OR hit collection limits, call finalize_score()
+
+NOTE: Work with the data available. All relevant sources are pre-collected or can be requested via request_collection().
 
 SCORING METHODOLOGY (base 60 points, normalize to 100):
 - Reputation (25 pts): Cross-platform ratings, review authenticity, complaint patterns
@@ -354,9 +339,6 @@ class AuditAgent {
         this.collectionRounds++;
         return await this.toolRequestCollection(args.source, args.reason);
 
-      case 'search_web':
-        return await this.toolSearchWeb(args.query);
-
       case 'finalize_score':
         return await this.toolFinalizeScore(args);
 
@@ -453,28 +435,6 @@ class AuditAgent {
     }
   }
 
-  /**
-   * Tool: Ad-hoc web search
-   */
-  async toolSearchWeb(query) {
-    log(`  Web search: ${query}`);
-    this.reasoningTrace.push(`Web search: ${query}`);
-
-    try {
-      const result = await this.collectionService.searchWeb(query);
-      return result;
-    } catch (err) {
-      return {
-        query,
-        status: 'error',
-        error: err.message
-      };
-    }
-  }
-
-  /**
-   * Tool: Finalize the audit score
-   */
   /**
    * Tool: Finalize the audit score
    */

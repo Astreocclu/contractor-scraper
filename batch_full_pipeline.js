@@ -12,7 +12,6 @@
 
 const db = require('./services/db_pg');
 const { CollectionService } = require('./services/collection_service');
-const puppeteer = require('puppeteer');
 const { AuditAgentV2 } = require('./services/audit_agent_v2');
 
 // Parse CLI args
@@ -79,8 +78,8 @@ async function collectForContractor(collectionService, contractorId, force) {
     }
 }
 
-// Run audit for a single contractor
-async function auditContractor(contractorId, searchFn) {
+// Run audit for a single contractor (no web access - pure analysis)
+async function auditContractor(contractorId) {
     const rows = await db.exec(`
     SELECT id, business_name, city, state, website
     FROM contractors_contractor WHERE id = ?
@@ -114,7 +113,7 @@ async function auditContractor(contractorId, searchFn) {
 
     try {
         const agent = new AuditAgentV2(db, contractorId, contractor);
-        const auditResult = await agent.run(searchFn);
+        const auditResult = await agent.run();
 
         const scoreColor = auditResult.trust_score >= 70 ? '\x1b[32m' :
             auditResult.trust_score >= 40 ? '\x1b[33m' : '\x1b[31m';
@@ -247,54 +246,14 @@ Options:
     // Phase 2: Auditing
     if (!skipAudit) {
         console.log('\n' + '─'.repeat(70));
-        console.log('  🔍 PHASE 2: AUDITING');
+        console.log('  🔍 PHASE 2: AUDITING (no web access - pure analysis)');
         console.log('─'.repeat(70));
 
-        // Setup shared browser for investigations
-        let browser = null;
-
-        const searchFn = async (query) => {
-            if (!browser) {
-                browser = await puppeteer.launch({
-                    headless: 'new',
-                    args: ['--no-sandbox']
-                });
-            }
-
-            const page = await browser.newPage();
-            try {
-                await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
-                await page.goto(`https://www.google.com/search?q=${encodeURIComponent(query)}`, {
-                    waitUntil: 'networkidle2',
-                    timeout: 15000
-                });
-
-                const results = await page.evaluate(() => {
-                    const items = document.querySelectorAll('#search .g');
-                    return Array.from(items).slice(0, 5).map(item => {
-                        const title = item.querySelector('h3')?.innerText || '';
-                        const snippet = item.querySelector('.VwiC3b')?.innerText || '';
-                        return `${title}\n${snippet}`;
-                    }).join('\n\n---\n\n');
-                });
-
-                return { results: results.substring(0, 2000), status: 'success' };
-            } catch (err) {
-                return { error: err.message, status: 'error' };
-            } finally {
-                await page.close();
-            }
-        };
-
-        try {
-            auditResults = await runInBatches(
-                contractorIds,
-                (id) => auditContractor(id, searchFn),
-                concurrency
-            );
-        } finally {
-            if (browser) await browser.close();
-        }
+        auditResults = await runInBatches(
+            contractorIds,
+            (id) => auditContractor(id),
+            concurrency
+        );
 
         // Audit Summary
         const audited = auditResults.filter(r => r.status === 'audited').length;
