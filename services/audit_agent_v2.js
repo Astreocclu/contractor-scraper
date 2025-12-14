@@ -32,31 +32,40 @@ Ask yourself:
 - Victim reports (Reddit, Nextdoor, consumer forums)
 - Business registration issues (franchise tax problems, SOS status)
 
-## LIEN ANALYSIS (CRITICAL FOR FINANCIAL HEALTH)
-County lien records reveal a contractor's financial reliability:
+## LIEN ANALYSIS (CRITICAL - READ CAREFULLY)
+County lien records show financial disputes. You MUST check WHO FILED the lien:
 
-### CRITICAL RED FLAGS (auto-fail, score ≤15):
-- 3+ active mechanic's liens = PATTERN OF NON-PAYMENT (stiffing subcontractors/suppliers)
-- Abstract of Judgment > $50,000 = LOST MAJOR LAWSUIT
-- Federal Tax Lien > $50,000 = IRS IS PURSUING THEM
+### HOW TO READ LIEN DATA:
+- GRANTEE = The CREDITOR (who is owed money, filed the lien)
+- GRANTOR = The PROPERTY OWNER (whose property the lien is against)
 
-### SEVERE RED FLAGS (score max 35):
-- 1-2 active mechanic's liens = FINANCIAL STRESS
-- State Tax Lien = TEXAS COMPTROLLER PURSUING UNPAID TAXES
-- Pattern of slow releases (liens taking >90 days to resolve)
+### LIEN DIRECTION MATTERS:
+**If GRANTEE = contractor name**: The contractor filed the lien to get paid
+  - This is NEUTRAL - contractor is protecting themselves from non-paying customers
+  - Common for busy contractors - some customers don't pay
+  - 1-4 liens filed BY contractor = normal business practice, NOT a red flag
+  - Only concerning if 10+ liens (may indicate pricing/contract disputes)
 
-### MODERATE CONCERNS (score max 60):
-- Resolved mechanic's liens (lien + matching release) = HAD DISPUTES but resolved
-- Quick resolution disputes (<30 days) = May be paperwork issues not bad faith
+**If GRANTOR = contractor name**: Someone filed a lien AGAINST the contractor
+  - This is a RED FLAG - contractor owes money to subcontractors/suppliers
+  - 1-2 liens against contractor = FINANCIAL STRESS (max score 60)
+  - 3+ liens against contractor = PATTERN OF NON-PAYMENT (max score 35)
 
-### WHAT LIENS MEAN:
-- MECH_LIEN = A subcontractor/supplier filed because they weren't paid
-- REL_LIEN = A lien was resolved (check if it pairs with active liens)
-- ABS_JUDG = Lost a lawsuit and owes money
-- FED_TAX_LIEN = Federal taxes unpaid
-- STATE_TAX_LIEN = State taxes unpaid
+### DOCUMENT TYPES:
+- MECH_LIEN = Mechanic's lien (unpaid work) - CHECK DIRECTION
+- REL_LIEN = Lien release (dispute resolved) - GOOD sign
+- ABS_JUDG = Abstract of judgment (lost lawsuit) - If against contractor, SEVERE
+- FED_TAX_LIEN = Federal tax lien - CRITICAL if against contractor
+- STATE_TAX_LIEN = State tax lien - SEVERE if against contractor
 
-Always check if liens have corresponding releases. Active unreleased liens are MUCH worse than resolved ones.
+### CRITICAL RED FLAGS (only if AGAINST contractor):
+- 3+ active liens AGAINST contractor = AVOID (max 35)
+- Judgment > $50,000 AGAINST contractor = AVOID (max 15)
+- Tax lien > $50,000 AGAINST contractor = AVOID (max 15)
+
+### NOT RED FLAGS:
+- Liens filed BY the contractor = normal collections activity
+- Resolved liens with releases = disputes handled properly
 
 
 ## REVIEWS - CRITICAL GUIDANCE (READ CAREFULLY)
