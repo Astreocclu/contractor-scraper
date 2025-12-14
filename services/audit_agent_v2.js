@@ -372,7 +372,7 @@ Website: ${this.contractor.website || 'Not provided'}
         messages,
         tools: TOOLS,
         tool_choice: 'auto',
-        temperature: 0.1,
+        temperature: 0,
         max_tokens: 4000
       })
     });

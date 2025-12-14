@@ -212,7 +212,7 @@ async function analyzeReviews(contractorName, reviewData) {
           { role: 'system', content: ANALYSIS_PROMPT },
           { role: 'user', content: context }
         ],
-        temperature: 0.1,
+        temperature: 0,
         max_tokens: 1500
       })
     });
