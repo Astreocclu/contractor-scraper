@@ -10,9 +10,9 @@
  *   node run_audit_v2.js --id 29 --dry-run
  */
 
-const db = require('./services/db_pg');
+const db = require('../services/db_pg');
 const puppeteer = require('puppeteer');
-const { AuditAgentV2 } = require('./services/audit_agent_v2');
+const { AuditAgentV2 } = require('../services/audit_agent_v2');
 
 // Parse CLI args
 const args = process.argv.slice(2);

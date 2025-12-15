@@ -12,12 +12,12 @@
 
 const fs = require('fs');
 const path = require('path');
-const { runForensicAudit } = require('./services/orchestrator');
-const db = require('./services/db_pg');
-const { getSessionCosts, resetSessionCosts } = require('./services/cost_tracker');
+const { runForensicAudit } = require('../services/orchestrator');
+const db = require('../services/db_pg');
+const { getSessionCosts, resetSessionCosts } = require('../services/cost_tracker');
 
 // Configuration
-const STATE_FILE = path.join(__dirname, 'batch_progress.json');
+const STATE_FILE = path.join(__dirname, '..', 'batch_progress.json');
 
 // Graceful shutdown handling
 let isShuttingDown = false;
@@ -209,7 +209,7 @@ async function retryReviewAnalysis() {
   console.log(`RETRY REVIEW ANALYSIS - ${state.needsReviewAnalysis.length} contractors`);
   console.log(`${'='.repeat(60)}\n`);
 
-  const { analyzeReviews } = require('./services/review_analyzer');
+  const { analyzeReviews } = require('../services/review_analyzer');
   const toRetry = [...state.needsReviewAnalysis];
   let successCount = 0;
 

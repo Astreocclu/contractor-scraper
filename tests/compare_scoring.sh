@@ -14,9 +14,9 @@ for id in $IDS; do
   echo "=== Auditing contractor $id ($MODE mode) ==="
 
   if [ "$MODE" = "strict" ]; then
-    OUTPUT=$(node run_audit.js --id $id --strict 2>&1)
+    OUTPUT=$(node bin/run_audit.js --id $id --strict 2>&1)
   else
-    OUTPUT=$(node run_audit.js --id $id 2>&1)
+    OUTPUT=$(node bin/run_audit.js --id $id 2>&1)
   fi
 
   # Extract results

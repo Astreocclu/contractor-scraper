@@ -86,7 +86,7 @@ The contractor auditing system is **fully operational** with new **batch process
 ### 6. Batch Audit System (NEW Dec 12)
 | Component | Status | Notes |
 |-----------|--------|-------|
-| batch_audit_runner.js | Working | Sequential execution with state persistence |
+| bin/batch_audit_runner.js | Working | Sequential execution with state persistence |
 | State persistence | Working | `batch_progress.json` tracks pending/completed/failed |
 | Review analysis bucket | Working | Separate retry queue for JSON parse failures |
 | async_command.js | Working | Replaced blocking execSync calls |
@@ -140,42 +140,21 @@ python3 scrapers/batch_website_discovery.py --continuous   # Process all
 source venv/bin/activate && set -a && . ./.env && set +a
 
 # Run single audit
-node run_audit.js --id 123
-node run_audit.js --name "Company" --city "Dallas" --state "TX"
+node bin/run_audit.js --id 123
+node bin/run_audit.js --name "Company" --city "Dallas" --state "TX"
 
-# Batch audit (NEW)
-node batch_audit_runner.js --reset --limit 10    # Fresh batch of 10
-node batch_audit_runner.js --status              # Check progress
-node batch_audit_runner.js --retry-review        # Retry failed review analysis
-node batch_audit_runner.js --resume              # Continue interrupted batch
+# Batch audit
+node bin/batch_audit_runner.js --reset --limit 10    # Fresh batch of 10
+node bin/batch_audit_runner.js --status              # Check progress
+node bin/batch_audit_runner.js --retry-review        # Retry failed review analysis
+node bin/batch_audit_runner.js --resume              # Continue interrupted batch
 
 # Batch collection
-node batch_collect.js --id 123 --force
+node bin/batch_collect.js --id 123 --force
 
 # Start server
 export DATABASE_URL=postgresql://contractors_user:localdev123@localhost/contractors_dev
 python3 manage.py runserver 8002
-```
-
-### Nightly Scheduler
-
-```bash
-# Test nightly scheduler (bypasses time window)
-node scripts/nightly_scheduler.js --force
-
-# Test without lien scraping (faster, ~2x throughput)
-node scripts/nightly_scheduler.js --force --skip-liens
-
-# Install systemd timer (runs 8 PM - 6 AM Central)
-sudo cp systemd/*.service systemd/*.timer /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable --now contractor-audit.timer
-
-# Check timer status
-systemctl list-timers contractor-audit.timer
-
-# View logs
-journalctl -u contractor-audit.service -f
 ```
 
 ---
@@ -203,8 +182,14 @@ scrapers/
 ├── batch_website_discovery.py  # Batch website lookup via Google Maps
 └── utils.py                # Rate limiting, caching, retry
 
-root/
+bin/
+├── run_audit.js            # Single contractor audit CLI
 ├── batch_audit_runner.js   # Batch orchestration with state persistence
+├── batch_collect.js        # Data collection only
+├── batch_full_pipeline.js  # Full V2 pipeline (experimental)
+└── audit_only.js           # Analysis only (requires pre-collected data)
+
+root/
 └── batch_progress.json     # State file (pending/completed/failed/needsReviewAnalysis)
 
 scripts/

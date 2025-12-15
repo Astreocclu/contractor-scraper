@@ -10,8 +10,8 @@
  *   node run_audit.js --list
  */
 
-const { runForensicAudit, listRecentAudits } = require('./services/orchestrator');
-const scoringConstraints = require('./services/scoring_constraints');
+const { runForensicAudit, listRecentAudits } = require('../services/orchestrator');
+const scoringConstraints = require('../services/scoring_constraints');
 
 // Parse CLI args
 const args = process.argv.slice(2);

@@ -11,8 +11,8 @@
  *   node batch_collect.js --ids 29,74,83       # Multiple IDs
  */
 
-const db = require('./services/db_pg');
-const { CollectionService } = require('./services/collection_service');
+const db = require('../services/db_pg');
+const { CollectionService } = require('../services/collection_service');
 
 // Parse CLI args
 const args = process.argv.slice(2);

@@ -83,7 +83,9 @@ All documentation is in `docs/` except the top-level status files.
 
 | Need | File |
 |------|------|
-| CLI entry | `run_audit.js` |
+| CLI entry | `bin/run_audit.js` |
+| Batch runner | `bin/batch_audit_runner.js` |
+| Data collection | `bin/batch_collect.js` |
 | Scraping | `services/collection_service.js` |
 | DeepSeek agent | `services/audit_agent.js` |
 | Score enforcement | `services/audit_agent_v2.js` |
@@ -96,14 +98,14 @@ All documentation is in `docs/` except the top-level status files.
 The system has two execution pipelines. **Do not merge them** - they serve different purposes.
 
 ### V1 Pipeline (Production - Sequential)
-- **Entry points:** `run_audit.js`, `batch_audit_runner.js`
+- **Entry points:** `bin/run_audit.js`, `bin/batch_audit_runner.js`
 - **Orchestrator:** `services/orchestrator.js`
 - **Agent:** `services/audit_agent.js`
 - **Features:** State persistence (batch_progress.json), resume capability, interactive mode
 - **Use for:** Production audits, batch processing with resume
 
 ### V2 Pipeline (Experimental - Concurrent)
-- **Entry point:** `batch_full_pipeline.js`
+- **Entry point:** `bin/batch_full_pipeline.js`
 - **Agent:** `services/audit_agent_v2.js`
 - **Features:** Stateless, concurrent execution, simplified flow
 - **Use for:** Testing, experimentation
@@ -119,9 +121,9 @@ The system has two execution pipelines. **Do not merge them** - they serve diffe
 ```bash
 source venv/bin/activate && set -a && . ./.env && set +a
 
-node run_audit.js --id 123
-node run_audit.js --name "Company" --city "Dallas" --state "TX"
-node batch_collect.js --id 123 --force
+node bin/run_audit.js --id 123
+node bin/run_audit.js --name "Company" --city "Dallas" --state "TX"
+node bin/batch_collect.js --id 123 --force
 python3 manage.py runserver 8002
 ```
 
@@ -132,7 +134,7 @@ python3 manage.py runserver 8002
 ### Terminology
 - Always say `contractors` (the term `homescreen` is contaminated)
 - Always say `pool` or `swimming pool` (the term `pool enclosure` means Florida screen rooms)
-- **Sourcing** = Collecting data for EXISTING contractors (via `batch_collect.js`) - Audit prep
+- **Sourcing** = Collecting data for EXISTING contractors (via `bin/batch_collect.js`) - Audit prep
 - Always use DeepSeek + Playwright (with Puppeteer as backup) (Perplexity API is banned)
 - Always use Playwright scraping (with Puppeteer as backup) (Google Places API caused $300 overcharge)
 

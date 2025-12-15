@@ -19,7 +19,7 @@ for i in $(seq 1 $RUNS); do
   echo ""
   echo "=== Run $i of $RUNS ==="
 
-  OUTPUT=$(node run_audit.js --id $CONTRACTOR_ID 2>&1)
+  OUTPUT=$(node bin/run_audit.js --id $CONTRACTOR_ID 2>&1)
 
   SCORE=$(echo "$OUTPUT" | grep "Trust Score:" | grep -oE '[0-9]+/100' | cut -d'/' -f1)
   REC=$(echo "$OUTPUT" | grep "Recommendation:" | head -1 | awk '{print $2}')

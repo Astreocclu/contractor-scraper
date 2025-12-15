@@ -10,9 +10,9 @@
  *   node batch_full_pipeline.js --count 350 --concurrency 5 --skip-collection
  */
 
-const db = require('./services/db_pg');
-const { CollectionService } = require('./services/collection_service');
-const { AuditAgentV2 } = require('./services/audit_agent_v2');
+const db = require('../services/db_pg');
+const { CollectionService } = require('../services/collection_service');
+const { AuditAgentV2 } = require('../services/audit_agent_v2');
 
 // Parse CLI args
 const args = process.argv.slice(2);
