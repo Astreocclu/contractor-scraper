@@ -1,5 +1,5 @@
 # Contractor Auditor - Status Report
-**Updated:** 2025-12-13
+**Updated:** 2025-12-14
 
 > **Note:** If the date above isn't today, this document may be out of date. Check SESSION-NOTES.md for the latest work.
 
@@ -9,7 +9,12 @@
 
 The contractor auditing system is **fully operational** with new **batch processing capabilities**. Data collection pipeline works end-to-end, scoring is accurate, and contractors are passing/failing appropriately based on real data.
 
-**Recent Additions (Dec 12-13):**
+**Recent Fixes (Dec 14):**
+- **Temperature 0 fix**: Reduced score variance from 29 points to 2 points
+- **Lien direction fix**: Agent now correctly interprets liens filed BY contractor (collecting payment) vs AGAINST contractor (red flag)
+- **Lien scraper fix**: `calculate_lien_score()` now categorizes liens by direction with proper scoring
+
+**Previous Additions (Dec 12-13):**
 - Batch audit runner with sequential execution and state persistence
 - Review analysis tracking with separate retry bucket
 - Async subprocess handling (replaced blocking execSync)
