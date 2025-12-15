@@ -8,6 +8,14 @@ from io import StringIO
 import threading
 import uuid
 import ctypes
+import asyncio
+import sys
+import os
+
+# Add permit-scraper to path for browser_scraper import
+PERMIT_SCRAPER_PATH = os.path.join(os.path.dirname(__file__), '..', '..', '..', 'permit-scraper')
+if PERMIT_SCRAPER_PATH not in sys.path:
+    sys.path.insert(0, os.path.abspath(PERMIT_SCRAPER_PATH))
 
 from .models import Vertical, Contractor, PASS_THRESHOLD
 from .serializers import VerticalSerializer, ContractorListSerializer, ContractorDetailSerializer
@@ -239,3 +247,47 @@ class CommandRunnerView(APIView):
 
         # Thread already finished
         return Response({'task_id': task_id, 'status': task.get('status')})
+
+
+class ScrapePermitView(APIView):
+    """
+    API endpoint to scrape permit data using browser-use automation.
+    Integrates with permit-scraper's browser_scraper module.
+    """
+
+    def post(self, request):
+        city = request.data.get("city")
+        address = request.data.get("address")
+        permit_type = request.data.get("permit_type", "Building")
+
+        if not city or not address:
+            return Response(
+                {"error": "city and address are required"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        try:
+            # Import here to avoid issues if permit-scraper not available
+            from services.browser_scraper.runner import PermitScraperRunner
+
+            runner = PermitScraperRunner()
+            # Run async code from sync view
+            result = asyncio.run(runner.scrape_permit(city, address, permit_type))
+
+            if result["success"]:
+                return Response(result["data"])
+            else:
+                return Response(
+                    {"error": result["error"], "details": result.get("data", {})},
+                    status=status.HTTP_500_INTERNAL_SERVER_ERROR
+                )
+        except ImportError as e:
+            return Response(
+                {"error": f"permit-scraper not available: {str(e)}"},
+                status=status.HTTP_503_SERVICE_UNAVAILABLE
+            )
+        except Exception as e:
+            return Response(
+                {"error": str(e)},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
