@@ -123,6 +123,12 @@ SCORING METHODOLOGY (base 60 points, normalize to 100):
 - Financial (10 pts): Liens, bankruptcy signals, payment complaint patterns
 - Red Flag Absence (10 pts): No critical issues found
 
+LIEN DATA: Use the pre-computed lien_assessment. Do NOT re-interpret raw lien records.
+- liens_by_contractor: Contractor filed these to collect payment (NEUTRAL - no penalty)
+- liens_against_contractor: Filed against contractor (RED FLAG)
+- Accept the risk_level and human_summary as given
+- If lien_assessment shows risk_level 'SEVERE' or 'MODERATE', treat as financial_distress red flag
+
 BASELINE SCORING:
 - Start at 70 for any established business with reviews
 - Strong reviews (4.5+ on Google with 20+ reviews) → base 80
@@ -385,12 +391,55 @@ class AuditAgent {
         ? (typeof structuredData === 'string' ? JSON.parse(structuredData) : structuredData)
         : null;
 
-      data[sourceName] = {
-        status,
-        text: truncatedText,
-        structured: parsed,
-        truncated: rawText && rawText.length > 4000
-      };
+      // For county_liens, send only pre-computed summary instead of raw records
+      if (sourceName === 'county_liens' && parsed && parsed.lien_score) {
+        const ls = parsed.lien_score;
+
+        // Handle both old and new lien_score formats
+        // New format has: human_summary, risk_level, liens_by_count, liens_against_count
+        // Old format has: liens_by_contractor, liens_against_contractor (but no summary/risk)
+        const byCount = ls.liens_by_count !== undefined ? ls.liens_by_count : ls.liens_by_contractor;
+        const againstCount = ls.liens_against_count !== undefined ? ls.liens_against_count : ls.liens_against_contractor;
+
+        // Generate summary if not present
+        let summary = ls.human_summary;
+        let riskLevel = ls.risk_level;
+
+        if (!summary) {
+          if (againstCount > 0) {
+            summary = `${againstCount} lien(s) filed AGAINST contractor (potential payment issues)`;
+            riskLevel = againstCount >= 3 ? 'SEVERE' : 'MODERATE';
+          } else if (byCount > 0) {
+            summary = `${byCount} liens filed BY contractor to collect payment (normal business, no penalty)`;
+            riskLevel = 'NONE';
+          } else {
+            summary = 'No liens found';
+            riskLevel = 'NONE';
+          }
+        }
+
+        data[sourceName] = {
+          status,
+          lien_assessment: {
+            summary: summary || 'No lien data available',
+            risk_level: riskLevel || 'UNKNOWN',
+            liens_by_contractor: byCount || 0,
+            liens_against_contractor: againstCount || 0,
+            score: ls.score,
+            note: 'Liens BY contractor = they filed to collect payment (neutral). Liens AGAINST = red flag.'
+          },
+          // DO NOT include raw lien records - LLM should not re-interpret
+          structured: null,
+          text: null
+        };
+      } else {
+        data[sourceName] = {
+          status,
+          text: truncatedText,
+          structured: parsed,
+          truncated: rawText && rawText.length > 4000
+        };
+      }
     }
 
     return {
