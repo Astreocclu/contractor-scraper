@@ -510,19 +510,24 @@ class AuditAgent {
       return { error: 'Invalid trust_score - must be 0-100' };
     }
 
-    // Step 1: Fetch lien data from database
-    const lienRows = await this.db.exec(`
-      SELECT structured_data
-      FROM contractor_raw_data
-      WHERE contractor_id = ? AND source_name = 'county_liens'
-    `, [this.contractorId]);
-
+    // Fetch lien data from database
     let lienData = null;
-    if (lienRows.length > 0) {
-      const structuredData = lienRows[0].structured_data;
-      lienData = typeof structuredData === 'string'
-        ? JSON.parse(structuredData)
-        : structuredData;
+    try {
+      const lienRows = await this.db.exec(`
+        SELECT structured_data
+        FROM contractor_raw_data
+        WHERE contractor_id = ? AND source_name = 'county_liens'
+      `, [this.contractorId]);
+
+      if (lienRows.length > 0) {
+        const structuredData = lienRows[0].structured_data;
+        lienData = typeof structuredData === 'string'
+          ? JSON.parse(structuredData)
+          : structuredData;
+      }
+    } catch (err) {
+      console.error('Error fetching lien data for caps:', err.message);
+      // Continue with lienData = null (no caps applied)
     }
 
     // Step 2: Apply lien caps FIRST (code-level enforcement)
