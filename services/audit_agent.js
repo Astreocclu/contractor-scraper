@@ -397,9 +397,24 @@ class AuditAgent {
 
         // Handle both old and new lien_score formats
         // New format has: human_summary, risk_level, liens_by_count, liens_against_count
-        // Old format has: liens_by_contractor, liens_against_contractor (but no summary/risk)
-        const byCount = ls.liens_by_count !== undefined ? ls.liens_by_count : ls.liens_by_contractor;
-        const againstCount = ls.liens_against_count !== undefined ? ls.liens_against_count : ls.liens_against_contractor;
+        // Old format has: liens_by_contractor, liens_against_contractor (arrays or counts)
+        let byCount = ls.liens_by_count;
+        if (byCount === undefined) {
+          byCount = Array.isArray(ls.liens_by_contractor)
+            ? ls.liens_by_contractor.length
+            : (ls.liens_by_contractor || 0);
+        }
+
+        let againstCount = ls.liens_against_count;
+        if (againstCount === undefined) {
+          againstCount = Array.isArray(ls.liens_against_contractor)
+            ? ls.liens_against_contractor.length
+            : (ls.liens_against_contractor || 0);
+        }
+
+        // Ensure numeric
+        byCount = parseInt(byCount) || 0;
+        againstCount = parseInt(againstCount) || 0;
 
         // Generate summary if not present
         let summary = ls.human_summary;
