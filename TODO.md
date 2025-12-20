@@ -16,6 +16,11 @@
 - [ ] Improve fuzzy name matching for liens (avoid matching "similar" business names)
 
 ## Done
+- [x] **Documentation Gap Fix** (Dec 15, 2025)
+  - Updated CLAUDE.md with complete documentation index
+  - Added `docs/plans/` and `/home/reid/command-center/exports/` to startup protocol
+  - Gemini now reads recent work FIRST before reference docs
+  - SESSION-NOTES.md updated with Dec 14 and Dec 15 sessions
 - [x] **Score Variance Fix** (Dec 14, 2025)
   - Set `temperature: 0` in all audit agents (was 0.1)
   - Reduced variance from 29 points to 2 points across 5 runs

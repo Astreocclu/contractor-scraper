@@ -2,6 +2,70 @@
 
 ---
 
+## Session: 2025-12-15 - Documentation Gap Fix
+
+### Context
+- Started session, couldn't find Dec 14 variance session documentation
+- User frustrated that critical work from last 48 hours was not discoverable
+
+### Problem Identified
+CLAUDE.md documentation index was incomplete:
+- Missing `docs/plans/` directory
+- Missing `/home/reid/command-center/exports/` directory
+- No instructions to check recent work first
+- Gemini startup prompt didn't include recent plans/exports
+
+### Key Documents Found
+| Document | Location | Contents |
+|----------|----------|----------|
+| Variance session | `/home/reid/command-center/exports/2025-12-14-variance-session.md` | Temperature 0 fix, lien direction fix, full session transcript |
+| Standardize collection plan | `docs/plans/2025-12-13-standardize-collection-remove-websearch.md` | Plan to remove web search from DeepSeek agents |
+
+### Fixes Applied
+Updated `CLAUDE.md`:
+
+1. **Documentation Index** - Added "Recent Work" section at top:
+   - `docs/plans/` for implementation plans
+   - `/home/reid/command-center/exports/` for session exports
+   - Naming convention: `YYYY-MM-DD-description.md`
+   - Commands to find recent docs by date
+
+2. **Startup Protocol** - Gemini now reads recent work FIRST:
+   - `docs/plans/*.md`
+   - `/home/reid/command-center/exports/*.md`
+   - `SESSION-NOTES.md`
+   - Output item #1: "What was worked on in the last 48 hours"
+
+### Lesson Learned
+Always check `docs/plans/` and `command-center/exports/` for recent work before starting any session. The naming convention `YYYY-MM-DD-*.md` makes date-based searching easy.
+
+---
+
+## Session: 2025-12-14 - Variance & Lien Direction Fixes
+
+**Full session transcript:** `/home/reid/command-center/exports/2025-12-14-variance-session.md`
+
+### Summary
+| Fix | Before | After |
+|-----|--------|-------|
+| Temperature | 0.1 (29-point variance) | 0 (2-point variance) |
+| Lien direction prompt | All liens = red flag | Liens BY contractor = neutral |
+| Lien scraper scoring | No direction tracking | `liens_by_contractor` vs `liens_against_contractor` |
+
+### Key Findings
+- Same contractor scored 49-78 across 5 runs at temp 0.1
+- After temp 0: same contractor scored 90-92 (2-point spread)
+- Liens filed BY contractor (collecting payment) were incorrectly penalized
+- Old lien cache didn't have direction fields - needs refresh for accurate scoring
+
+### Files Changed
+- `services/audit_agent.js` - temperature: 0
+- `services/audit_agent_v2.js` - temperature: 0, updated lien prompt
+- `services/review_analyzer.js` - temperature: 0
+- `scrapers/county_liens/orchestrator.py` - `calculate_lien_score()` with direction
+
+---
+
 ## Session: 2025-12-12 - Batch Audit Scaling to 1000+ Contractors
 
 ### Context

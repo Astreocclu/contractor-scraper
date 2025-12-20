@@ -1,5 +1,5 @@
 # Contractor Auditor - Status Report
-**Updated:** 2025-12-14
+**Updated:** 2025-12-15
 
 > **Note:** If the date above isn't today, this document may be out of date. Check SESSION-NOTES.md for the latest work.
 
@@ -8,6 +8,10 @@
 ## Executive Summary
 
 The contractor auditing system is **fully operational** with new **batch processing capabilities**. Data collection pipeline works end-to-end, scoring is accurate, and contractors are passing/failing appropriately based on real data.
+
+**Recent Fixes (Dec 15):**
+- **Documentation gap fix**: CLAUDE.md now includes `docs/plans/` and `command-center/exports/` in startup protocol
+- Gemini reads recent work FIRST (plans, exports, SESSION-NOTES) before reference docs
 
 **Recent Fixes (Dec 14):**
 - **Temperature 0 fix**: Reduced score variance from 29 points to 2 points

@@ -20,19 +20,34 @@
 
 **Before doing ANY work, Claude MUST:**
 
-1. Have Gemini read and summarize ALL documentation:
+1. Have Gemini read and summarize ALL documentation including recent work:
    ```bash
    gemini -p "Read and summarize ALL of these files in one comprehensive briefing:
+
+   RECENT WORK (CRITICAL - read these first):
+   - docs/plans/*.md (all recent implementation plans)
+   - /home/reid/command-center/exports/*.md (session exports from last 48 hours)
+   - SESSION-NOTES.md
+
+   STATUS FILES:
    - TODO.md
    - STATUS.md
    - ERRORS.md
+
+   REFERENCE DOCS:
    - docs/AGENTIC_QUICKREF.md
    - docs/AGENTIC_AUDIT_SPEC.md
    - docs/CODEBASE_DOCUMENTATION.md
    - docs/DATABASE_ANALYSIS.md
    - scrapers/README.md
 
-   Provide: current priorities, system state, known bugs, architecture overview, and any critical warnings."
+   Provide:
+   1. What was worked on in the last 48 hours (from plans/ and exports/)
+   2. Current priorities
+   3. System state
+   4. Known bugs
+   5. Architecture overview
+   6. Any critical warnings"
    ```
 2. Read and internalize Gemini's summary
 3. Run `git status` to confirm branch state
@@ -64,18 +79,45 @@ Forensic contractor auditing. Playwright (with Puppeteer as backup) scrapes → 
 
 ## Documentation Index
 
-All documentation is in `docs/` except the top-level status files.
+**CRITICAL: Check recent work FIRST before starting any session.**
 
+### Recent Work (CHECK THESE FIRST)
+| Location | Contents | How to Find |
+|----------|----------|-------------|
+| `docs/plans/` | Implementation plans | `ls -lt docs/plans/ | head -5` |
+| `/home/reid/command-center/exports/` | Session exports (full conversation logs) | `ls -lt /home/reid/command-center/exports/ | head -5` |
+| `SESSION-NOTES.md` | Running session log | Direct read |
+
+**Naming convention:** `YYYY-MM-DD-description.md` — search by date for recent work.
+
+### Status Files (Top Level)
 | Need | File |
 |------|------|
 | Current priorities | `TODO.md` |
 | System state | `STATUS.md` |
 | Known bugs | `ERRORS.md` |
+| Running session log | `SESSION-NOTES.md` |
+
+### Reference Documentation (`docs/`)
+| Need | File |
+|------|------|
 | **Audit quick reference** | `docs/AGENTIC_QUICKREF.md` |
 | Audit full spec | `docs/AGENTIC_AUDIT_SPEC.md` |
 | Codebase overview | `docs/CODEBASE_DOCUMENTATION.md` |
 | Database stats | `docs/DATABASE_ANALYSIS.md` |
 | Archived session logs | `docs/_archive/` |
+
+### Finding Recent Changes
+```bash
+# Recent plans (last 48 hours of work)
+ls -lt docs/plans/ | head -10
+
+# Session exports (full conversation history)
+ls -lt /home/reid/command-center/exports/ | head -10
+
+# Find docs by date pattern
+find docs/plans /home/reid/command-center/exports -name "*$(date +%Y-%m-%d)*" -o -name "*$(date -d yesterday +%Y-%m-%d)*"
+```
 
 ---
 
