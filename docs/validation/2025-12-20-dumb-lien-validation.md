@@ -18,6 +18,27 @@ The "dumb lien logic" has been implemented and is working correctly. The key ach
 
 ## Test Results
 
+### Contractor 39 (Claffey Pools) - Liens AGAINST Contractor ✅
+
+**Lien Data:**
+- 106 liens filed BY contractor (collecting payment - neutral)
+- **7 liens filed AGAINST contractor (red flag - didn't pay suppliers)**
+- Risk Level: **SEVERE**
+- Summary: "WARNING: 7 liens filed AGAINST Claffey Pools (contractor didn't pay suppliers/subs)"
+
+**Variance Test (3 runs):**
+| Run | Score | Recommendation |
+|-----|-------|----------------|
+| 1 | 15 | AVOID |
+| 2 | 15 | AVOID |
+| 3 | 15 | AVOID |
+
+**Analysis:**
+- Spread: **0 points** ✅
+- **PERFECT CONSISTENCY**
+- LLM correctly interprets the pre-computed "SEVERE" risk level
+- No lien direction misinterpretation possible
+
 ### Contractor 101 (Beautiful Backyard Living) - Liens BY Contractor
 
 **Lien Data:**
@@ -54,14 +75,6 @@ if (hasTaxLien) {
 ```
 
 **When a contractor has liens AGAINST them, the LLM CANNOT override these caps.**
-
-### No Contractors with Liens AGAINST
-
-We searched the database and found no contractors with `liens_against_count > 0`. This means we cannot test the cap enforcement directly, but the code is correctly implemented:
-
-1. Python correctly identifies lien direction (lines 266-283 of orchestrator.py)
-2. JavaScript caps are in place (scoring_constraints.js)
-3. Caps are applied in toolFinalizeScore() before other constraints
 
 ## The "Dumb" Logic
 
