@@ -253,6 +253,52 @@ async function extractDataContext(db, contractorId) {
   return context;
 }
 
+/**
+ * Enforce lien-based score caps
+ * Code-level enforcement that the LLM CANNOT override
+ *
+ * @param {number} baseScore - The score from the LLM
+ * @param {Object} lienData - Lien score data from database
+ * @returns {Object} - { score, wasCapped, maxAllowed, reason }
+ */
+function enforceLienCaps(baseScore, lienData) {
+    if (!lienData || !lienData.lien_score) return baseScore;
+
+    const lienScore = lienData.lien_score;
+    const againstCount = lienScore.liens_against_count || lienScore.liens_against_contractor?.length || 0;
+    const notes = lienScore.notes || [];
+    const hasTaxLien = notes.some(n => n.toLowerCase().includes('tax lien'));
+
+    let maxScore = 100;
+    let reason = null;
+
+    // Liens AGAINST contractor = they didn't pay someone
+    if (againstCount >= 3) {
+        maxScore = 35;
+        reason = `${againstCount} liens filed AGAINST contractor (pattern of non-payment)`;
+    } else if (againstCount >= 1) {
+        maxScore = 70;
+        reason = `${againstCount} lien(s) filed AGAINST contractor (payment issues)`;
+    }
+
+    // Tax liens are critical
+    if (hasTaxLien) {
+        maxScore = Math.min(maxScore, 15);
+        reason = 'Tax lien against contractor (CRITICAL)';
+    }
+
+    // Liens BY contractor = no penalty (they filed to collect, normal business)
+
+    const cappedScore = Math.min(baseScore, maxScore);
+
+    return {
+        score: cappedScore,
+        wasCapped: cappedScore < baseScore,
+        maxAllowed: maxScore,
+        reason: reason
+    };
+}
+
 module.exports = {
   configure,
   getConfig,
@@ -260,5 +306,6 @@ module.exports = {
   disable,
   applyConstraints,
   extractDataContext,
+  enforceLienCaps,
   DEFAULT_CONFIG
 };
