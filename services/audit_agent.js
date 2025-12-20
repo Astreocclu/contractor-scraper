@@ -510,9 +510,32 @@ class AuditAgent {
       return { error: 'Invalid trust_score - must be 0-100' };
     }
 
-    // Apply strict constraints (if enabled)
+    // Step 1: Fetch lien data from database
+    const lienRows = await this.db.exec(`
+      SELECT structured_data
+      FROM contractor_raw_data
+      WHERE contractor_id = ? AND source_name = 'county_liens'
+    `, [this.contractorId]);
+
+    let lienData = null;
+    if (lienRows.length > 0) {
+      const structuredData = lienRows[0].structured_data;
+      lienData = typeof structuredData === 'string'
+        ? JSON.parse(structuredData)
+        : structuredData;
+    }
+
+    // Step 2: Apply lien caps FIRST (code-level enforcement)
+    const lienCapResult = scoringConstraints.enforceLienCaps(args.trust_score, lienData);
+    const lienCappedScore = lienCapResult.score;
+
+    if (lienCapResult.wasCapped) {
+      console.log(`⚠️ Score capped from ${args.trust_score} to ${lienCappedScore}: ${lienCapResult.reason}`);
+    }
+
+    // Step 3: Apply other strict constraints (if enabled)
     let result = {
-      trust_score: args.trust_score,
+      trust_score: lienCappedScore,  // Use lien-capped score
       risk_level: args.risk_level,
       recommendation: args.recommendation,
       gaps: args.gaps_remaining || []
@@ -572,6 +595,16 @@ class AuditAgent {
       collection_rounds: this.collectionRounds,
       total_cost: this.totalCost
     };
+
+    // Include lien cap info if applied
+    if (lienCapResult.wasCapped) {
+      returnResult.lien_cap = {
+        original_score: args.trust_score,
+        capped_score: lienCapResult.score,
+        max_allowed: lienCapResult.maxAllowed,
+        reason: lienCapResult.reason
+      };
+    }
 
     if (result.strict_constraints) {
       returnResult.strict_constraints = result.strict_constraints;
