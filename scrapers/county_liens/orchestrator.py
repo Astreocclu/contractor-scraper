@@ -338,6 +338,25 @@ def calculate_lien_score(records: list[dict], search_term: str = '') -> dict:
         score -= 2
         notes.append(f"Liens against contractor total ${total_against_amount:,.2f}")
 
+    # Build human-readable summary
+    by_count = len(liens_by_contractor)
+    against_count = len(liens_against_contractor)
+    unclear_count = len(liens_unclear)
+
+    if against_count > 0:
+        if against_count >= 3:
+            risk_level = 'SEVERE'
+            summary = f"WARNING: {against_count} liens filed AGAINST {search_term} (contractor didn't pay suppliers/subs)"
+        else:
+            risk_level = 'MODERATE'
+            summary = f"CAUTION: {against_count} lien(s) filed AGAINST {search_term} (potential payment issues)"
+    elif by_count > 0:
+        risk_level = 'NONE'
+        summary = f"OK: {by_count} liens filed BY {search_term} to collect payment (normal business, no penalty)"
+    else:
+        risk_level = 'NONE'
+        summary = f"CLEAN: No liens found for {search_term}"
+
     return {
         'score': max(0, score),
         'max_score': 10,
@@ -347,7 +366,11 @@ def calculate_lien_score(records: list[dict], search_term: str = '') -> dict:
         'liens_unclear': len(liens_unclear),
         'resolved_liens': len(resolved_liens),
         'total_against_amount': total_against_amount,
-        'notes': notes
+        'notes': notes,
+        'human_summary': summary,
+        'risk_level': risk_level,
+        'liens_by_count': by_count,
+        'liens_against_count': against_count
     }
 
 
