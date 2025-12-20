@@ -353,6 +353,9 @@ def calculate_lien_score(records: list[dict], search_term: str = '') -> dict:
     elif by_count > 0:
         risk_level = 'NONE'
         summary = f"OK: {by_count} liens filed BY {search_term} to collect payment (normal business, no penalty)"
+    elif unclear_count > 0:
+        risk_level = 'MODERATE'
+        summary = f"UNCLEAR: {unclear_count} lien(s) found but direction undetermined (needs manual review)"
     else:
         risk_level = 'NONE'
         summary = f"CLEAN: No liens found for {search_term}"
