@@ -262,7 +262,14 @@ async function extractDataContext(db, contractorId) {
  * @returns {Object} - { score, wasCapped, maxAllowed, reason }
  */
 function enforceLienCaps(baseScore, lienData) {
-    if (!lienData || !lienData.lien_score) return baseScore;
+    if (!lienData || !lienData.lien_score) {
+        return {
+            score: baseScore,
+            wasCapped: false,
+            maxAllowed: 100,
+            reason: null
+        };
+    }
 
     const lienScore = lienData.lien_score;
     const againstCount = lienScore.liens_against_count || lienScore.liens_against_contractor?.length || 0;
