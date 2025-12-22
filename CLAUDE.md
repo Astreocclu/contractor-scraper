@@ -131,6 +131,25 @@ find docs/plans /home/reid/command-center/exports -name "*$(date +%Y-%m-%d)*" -o
 | Scraping | `services/collection_service.js` |
 | DeepSeek agent | `services/audit_agent.js` |
 | Review analysis | `services/review_analyzer.js` |
+| Gemini wrapper | `scrapers/llm_gemini.py` |
+| Google Maps scraper | `scrapers/google_maps_browseruse.py` |
+
+---
+
+## browser-use + Gemini 3 Pro
+
+Vision-based browser automation for Google Maps scraping:
+
+- `scrapers/google_maps_browseruse.py` - Vision-based Google Maps review scraper
+- `scrapers/llm_gemini.py` - ChatGemini wrapper with rate limiting
+- Requires: `GOOGLE_API_KEY` environment variable
+- Model: `gemini-3-pro-preview` (native vision support)
+- Rate limits: 10s between requests, 10 req/min, 60s backoff on 429
+
+```bash
+# Usage
+python3.11 scrapers/google_maps_browseruse.py "Business Name" "City, State" [max_reviews]
+```
 
 ---
 
