@@ -130,27 +130,31 @@ find docs/plans /home/reid/command-center/exports -name "*$(date +%Y-%m-%d)*" -o
 | Data collection | `bin/batch_collect.js` |
 | Scraping | `services/collection_service.js` |
 | DeepSeek agent | `services/audit_agent.js` |
-| Score enforcement | `services/audit_agent_v2.js` |
 | Review analysis | `services/review_analyzer.js` |
 
 ---
 
-## Pipeline Architecture (V1 vs V2)
+## Pipeline Architecture
 
-The system has two execution pipelines. **Do not merge them** - they serve different purposes.
+The system uses a single audit pipeline:
 
-### V1 Pipeline (Production - Sequential)
-- **Entry points:** `bin/run_audit.js`, `bin/batch_audit_runner.js`
-- **Orchestrator:** `services/orchestrator.js`
-- **Agent:** `services/audit_agent.js`
-- **Features:** State persistence (batch_progress.json), resume capability, interactive mode
-- **Use for:** Production audits, batch processing with resume
+### Entry Points
+- **Single audit:** `bin/run_audit.js --id 123`
+- **Batch audit:** `bin/batch_audit_runner.js --limit 100`
 
-### V2 Pipeline (Experimental - Concurrent)
-- **Entry point:** `bin/batch_full_pipeline.js`
-- **Agent:** `services/audit_agent_v2.js`
-- **Features:** Stateless, concurrent execution, simplified flow
-- **Use for:** Testing, experimentation
+### Flow
+1. `run_audit.js` → `orchestrator.js` → `collection_service.js` → `audit_agent.js`
+2. Collection gathers data from all sources (Google, BBB, Yelp, county liens, etc.)
+3. Review analyzer pre-processes reviews for authenticity
+4. Lien scraper pre-computes lien scores with direction analysis
+5. Audit agent receives ALL data in prompt (no web access)
+6. Agent returns JSON with score, risk level, reasoning
+
+### Key Design Decisions
+- **No score caps:** LLM receives pre-analyzed data, trust its judgment
+- **Deterministic:** Uses `deepseek-chat` + `seed: 42` for reproducible results
+- **Pre-computed summaries:** Lien scores and review analysis passed as summaries, not raw data
+- **Zero variance:** Tested at 0-point variance across 5 runs with complex contractors
 
 ---
 
@@ -240,7 +244,7 @@ Gemini is a **consultant**, not an executor. It has 5x context but limited tool 
 ### EXAMPLE FLOW:
 ```
 Claude: "gemini -p 'What files handle the audit scoring in this project?'"
-Gemini: "Check services/audit_agent_v2.js, contractors/services/scoring.py"
+Gemini: "Check services/audit_agent.js, services/review_analyzer.js"
 Claude: [Uses Read tool on those files, then implements changes]
 ```
 
