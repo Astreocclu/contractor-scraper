@@ -9,6 +9,13 @@
 
 The contractor auditing system is **fully operational** with new **batch processing capabilities**. Data collection pipeline works end-to-end, scoring is accurate, and contractors are passing/failing appropriately based on real data.
 
+**V2 Consolidation (Dec 22):**
+- Removed V1 agent (had tools, web access, 12-point variance)
+- V2 is now the only pipeline (`services/audit_agent.js`)
+- Zero variance achieved with `deepseek-chat` + `seed: 42`
+- Score caps removed - trust pre-analyzed data
+- Lien summaries extracted (not 110KB raw records)
+
 **Recent Fixes (Dec 15):**
 - **Documentation gap fix**: CLAUDE.md now includes `docs/plans/` and `command-center/exports/` in startup protocol
 - Gemini reads recent work FIRST (plans, exports, SESSION-NOTES) before reference docs
@@ -173,8 +180,7 @@ python3 manage.py runserver 8002
 ```
 services/
 ├── collection_service.js   # All data collection (Playwright/Python scrapers)
-├── audit_agent.js          # DeepSeek agentic audit loop
-├── audit_agent_v2.js       # Score enforcement with caps
+├── audit_agent.js          # DeepSeek agentic audit loop (V2)
 ├── review_analyzer.js      # Fake review detection (4-tier JSON fallback)
 ├── orchestrator.js         # Core audit orchestration (batchMode flag)
 ├── async_command.js        # Async subprocess runner (replaced execSync)
