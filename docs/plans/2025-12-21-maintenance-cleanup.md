@@ -117,6 +117,17 @@ psql -d contractors_dev -c "SELECT id, audit_version FROM audit_records ORDER BY
 
 **Action:** Add default value to code or DB schema if missing.
 
+#### ✅ RESOLVED (2025-12-22)
+
+**Root Cause:** PostgreSQL `audit_records.audit_version` had `NOT NULL` but no `DEFAULT` at the database level. Django's `default=1` is application-level only, not enforced by PostgreSQL.
+
+**Fix Applied:** Created migration `0008_fix_audit_version_default.py`:
+```sql
+ALTER TABLE audit_records ALTER COLUMN audit_version SET DEFAULT 1;
+```
+
+**Verification:** `\d audit_records` now shows `audit_version | integer | not null | 1`
+
 ---
 
 ## Post-Cleanup Verification
