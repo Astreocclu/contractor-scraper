@@ -112,7 +112,7 @@ class ChatGemini:
                 parts = []
                 for content in msg.content:
                     if isinstance(content, ContentText):
-                        parts.append(types.Part.from_text(content.text))
+                        parts.append(types.Part.from_text(text=content.text))
                     elif isinstance(content, ContentImage):
                         # Handle base64 image - decode string to bytes
                         if content.image_base64:
@@ -123,7 +123,7 @@ class ChatGemini:
                             ))
                 contents.append(types.Content(role="user", parts=parts))
             elif isinstance(msg, AssistantMessage):
-                parts = [types.Part.from_text(msg.content)]
+                parts = [types.Part.from_text(text=msg.content)]
                 contents.append(types.Content(role="model", parts=parts))
 
         return system_instruction, contents
