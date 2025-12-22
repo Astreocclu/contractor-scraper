@@ -224,6 +224,82 @@ async function fetchSerperSource(source, businessName, city, state) {
   }
 }
 
+/**
+ * Fetch business rating from Angi/Houzz via Serper API
+ * Serper returns structured rating/ratingCount fields when available
+ * Only returns found:true if we actually get rating data (not just any mention)
+ */
+async function fetchSerperRating(businessName, city, state, site = 'angi.com') {
+  const apiKey = process.env.SERPER_API_KEY;
+  if (!apiKey) {
+    return { found: false, error: 'No SERPER_API_KEY', source: `serper_${site.replace('.com', '')}` };
+  }
+
+  // Search for the business profile on the target site
+  const siteName = site.replace('.com', '');
+  const query = `site:${site} "${businessName}" ${city} ${state}`;
+
+  try {
+    const fetch = require('node-fetch');
+    const res = await fetch('https://google.serper.dev/search', {
+      method: 'POST',
+      headers: { 'X-API-KEY': apiKey, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ q: query, num: 10 })
+    });
+
+    const data = await res.json();
+    const results = data.organic || [];
+
+    // Look for a result with actual rating data (Serper returns this structured)
+    // Also check if the result is a business profile, not a generic article
+    let bestMatch = null;
+    for (const r of results) {
+      // Skip generic articles/listicles - look for actual business profiles
+      const isProfilePage = r.link && (
+        r.link.includes('/companylist/') ||  // Angi company pages
+        r.link.includes('/professionals/') || // Houzz pro pages
+        r.link.includes('/pro/') ||           // Houzz alternative
+        r.link.includes('/biz/')              // Business pages
+      );
+
+      // Serper returns rating/ratingCount when Google has structured data
+      if (r.rating && r.ratingCount) {
+        // Found structured rating data
+        if (!bestMatch || isProfilePage) {
+          bestMatch = {
+            found: true,
+            rating: r.rating,
+            review_count: r.ratingCount,
+            url: r.link,
+            title: r.title,
+            source: `serper_${siteName}`,
+            confidence: isProfilePage ? 'high' : 'medium'
+          };
+          if (isProfilePage) break; // Profile page with rating is ideal
+        }
+      }
+    }
+
+    // If we found rating data, return it
+    if (bestMatch) {
+      return bestMatch;
+    }
+
+    // No rating data found - return not_found (don't say "found but no rating")
+    return {
+      found: false,
+      rating: null,
+      review_count: null,
+      url: null,
+      source: `serper_${siteName}`,
+      note: results.length > 0 ? 'Results found but no rating data' : 'No results'
+    };
+
+  } catch (err) {
+    return { found: false, error: err.message, source: `serper_${siteName}` };
+  }
+}
+
 // Source definitions with cache TTL (in seconds)
 const SOURCES = {
   // Tier 1: Reviews (cache 24h)
@@ -232,8 +308,8 @@ const SOURCES = {
   yelp_yahoo: { ttl: 86400, tier: 1, type: 'scraper' },  // Yahoo Search fallback for Yelp rating
   google_maps_local: { ttl: 86400, tier: 1, type: 'url' },  // Search in target market (DFW)
   google_maps_hq: { ttl: 86400, tier: 1, type: 'url' },  // Search in contractor's HQ location
-  angi: { ttl: 86400, tier: 1, type: 'serp' },       // SERP scraper (bypasses anti-bot)
-  houzz: { ttl: 86400, tier: 1, type: 'serp' },      // SERP scraper (bypasses anti-bot)
+  angi: { ttl: 86400, tier: 1, type: 'serper_rating' },   // Serper API with structured rating data
+  houzz: { ttl: 86400, tier: 1, type: 'serper_rating' },  // Serper API with structured rating data
   trustpilot: { ttl: 86400, tier: 1, type: 'direct' },  // Direct URL check by domain (more accurate)
   thumbtack: { ttl: 86400, tier: 1, type: 'url' },
   facebook: { ttl: 86400, tier: 1, type: 'url' },
@@ -1343,33 +1419,32 @@ class CollectionService {
       warn(`    Yelp (Yahoo): Error - ${err.message}`);
     }
 
-    // Angi, Houzz via SERP scraping (bypasses anti-bot)
-    const serpSites = [
+    // Angi, Houzz via Serper API (structured rating data from Google)
+    const ratingSites = [
       { key: 'angi', site: 'angi.com', name: 'Angi' },
       { key: 'houzz', site: 'houzz.com', name: 'Houzz' },
     ];
 
-    for (const { key, site, name } of serpSites) {
-      log(`  Fetching ${name} rating (via SERP)...`);
+    for (const { key, site, name } of ratingSites) {
+      log(`  Fetching ${name} rating (via Serper API)...`);
       try {
-        const serpResult = await scrapeSerpRatingPython(contractor.name, listedLocation, site);
-        const serpData = {
+        const ratingResult = await fetchSerperRating(contractor.name, contractor.city, contractor.state, site);
+        const ratingData = {
           source: key,
-          url: serpResult.url || `https://www.${site}`,
-          status: serpResult.found ? 'success' : 'not_found',
-          text: JSON.stringify(serpResult, null, 2),
-          structured: serpResult
+          url: ratingResult.url || `https://www.${site}`,
+          status: ratingResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(ratingResult, null, 2),
+          structured: ratingResult
         };
-        await this.storeRawData(contractorId, key, serpData);
-        await this.logCollectionRequest(contractorId, key, 'initial', `Initial collection - SERP ${site}`);
-        results.push(serpData);
+        await this.storeRawData(contractorId, key, ratingData);
+        await this.logCollectionRequest(contractorId, key, 'initial', `Initial collection - Serper ${site}`);
+        results.push(ratingData);
 
-        if (serpResult.found && serpResult.rating) {
-          const reviewInfo = serpResult.review_count ? `${serpResult.review_count} reviews` : 'No count';
-          success(`    ${name}: ${serpResult.rating}★ (${reviewInfo})`);
-        } else if (serpResult.found) {
-          warn(`    ${name}: Found but no rating extracted`);
+        if (ratingResult.found && ratingResult.rating) {
+          const reviewInfo = ratingResult.review_count ? `${ratingResult.review_count} reviews` : 'No count';
+          success(`    ${name}: ${ratingResult.rating}★ (${reviewInfo})`);
         } else {
+          // No false positives - if no rating, we say not found
           warn(`    ${name}: Not found`);
         }
       } catch (err) {
@@ -1717,20 +1792,19 @@ class CollectionService {
         result = { source: 'yelp_yahoo', status: 'error', error: err.message };
       }
     } else if (sourceName === 'angi' || sourceName === 'houzz') {
-      // Use SERP scraper for these sites (bypasses anti-bot)
+      // Use Serper API for structured rating data (no more false positives)
       const siteMap = { angi: 'angi.com', houzz: 'houzz.com' };
       try {
-        const location = `${contractor.city}, ${contractor.state}`;
-        const serpResult = await scrapeSerpRatingPython(contractor.name, location, siteMap[sourceName]);
+        const ratingResult = await fetchSerperRating(contractor.name, contractor.city, contractor.state, siteMap[sourceName]);
         result = {
           source: sourceName,
-          url: serpResult.url || `https://www.${siteMap[sourceName]}`,
-          status: serpResult.found ? 'success' : 'not_found',
-          text: JSON.stringify(serpResult, null, 2),
-          structured: serpResult
+          url: ratingResult.url || `https://www.${siteMap[sourceName]}`,
+          status: ratingResult.found ? 'success' : 'not_found',
+          text: JSON.stringify(ratingResult, null, 2),
+          structured: ratingResult
         };
-        if (serpResult.found) {
-          log(`    📋 ${sourceName}: ${serpResult.rating}★ (${serpResult.review_count} reviews)`);
+        if (ratingResult.found && ratingResult.rating) {
+          log(`    📋 ${sourceName}: ${ratingResult.rating}★ (${ratingResult.review_count} reviews)`);
         }
       } catch (err) {
         result = { source: sourceName, status: 'error', error: err.message };
