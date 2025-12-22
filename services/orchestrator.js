@@ -93,7 +93,7 @@ async function runForensicAudit(contractorInput, options = {}) {
           credibility_score, red_flag_score, bonus_score,
           admin_override_reason, ai_summary, ai_sentiment_score, ai_red_flags,
           is_claimed, is_active, first_scraped_at, tier
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, '[]', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0, '[]', 0, 1, NOW(), 'UNRATED')
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, '[]', 0, false, 0, 0, false, 0, 0, 0, 0, 0, '', '', 0, '[]', false, true, NOW(), 'UNRATED')
       `, [contractor.name, slug, '', contractor.city, contractor.state, contractor.website || '', contractor.zip || '', contractor.phone || '']);
 
       contractorId = contractorResult.id;
