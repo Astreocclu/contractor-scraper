@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.11
 """
-Google Maps Review Scraper using browser-use + DeepSeek
-Uses DOM extraction mode (no vision required)
+Google Maps Review Scraper using browser-use + Gemini 3 Pro
+Uses vision mode for better accuracy
 
 Usage:
   python3.11 scrapers/google_maps_browseruse.py "Business Name" "City, State" [max_reviews]
@@ -14,9 +14,11 @@ import re
 import sys
 from typing import Optional
 
-# browser-use imports (has built-in DeepSeek support)
+# browser-use imports
 from browser_use import Agent
-from browser_use.llm.deepseek.chat import ChatDeepSeek
+
+# Local Gemini wrapper with rate limiting
+from llm_gemini import ChatGemini
 
 
 async def scrape_reviews(
@@ -25,56 +27,53 @@ async def scrape_reviews(
     max_reviews: int = 20
 ) -> dict:
     """
-    Use browser-use + DeepSeek to navigate Google Maps and extract reviews.
-
-    Args:
-        business_name: Name of the business to search
-        location: City, State to search in
-        max_reviews: Maximum number of reviews to extract
-
-    Returns:
-        dict with found, reviews, review_count, rating, error
+    Use browser-use + Gemini 3 Pro to navigate Google Maps and extract reviews.
+    Vision mode enabled for better element detection.
     """
 
-    # Configure DeepSeek as the LLM
-    api_key = os.environ.get("DEEPSEEK_API_KEY")
+    # Check for API key
+    api_key = os.environ.get("GOOGLE_API_KEY")
     if not api_key:
         return {
             "found": False,
-            "error": "DEEPSEEK_API_KEY not set",
+            "error": "GOOGLE_API_KEY not set",
             "reviews": [],
-            "source": "browser_use"
+            "source": "browser_use_gemini"
         }
 
-    llm = ChatDeepSeek(
-        model="deepseek-chat",
+    # Configure Gemini 3 Pro with vision support
+    llm = ChatGemini(
+        model="gemini-3-pro-preview",
         api_key=api_key,
-        temperature=0,  # Deterministic
+        temperature=0.1,
+        min_interval=10.0,     # 10s between requests
+        max_per_minute=10,     # Max 10 RPM
+        backoff_seconds=60.0,  # 60s backoff on 429
     )
 
-    # Task instructions for the agent
+    # Task with vision-aware instructions
     task = f"""
-Go to Google Maps and find reviews for "{business_name}" in "{location}".
+TASK: Find and extract Google Maps reviews for "{business_name}" in "{location}".
 
-Steps:
-1. Navigate to https://www.google.com/maps
+VISUAL NAVIGATION:
+1. Go to https://www.google.com/maps
 2. Search for "{business_name} {location}"
-3. Click on the business result that matches (look for the correct name)
-4. Find and click the "Reviews" tab or button (it shows the star count)
-5. Scroll down in the reviews section to load more reviews
-6. Extract up to {max_reviews} reviews
+3. LOOK at the search results - click the one matching the business name
+4. Find the Reviews section (look for star icons and review count)
+5. Scroll to load reviews
 
+EXTRACTION (up to {max_reviews} reviews):
 For each review, extract:
-- The full review text
-- Star rating (1-5)
+- Full review text (click "More" if truncated)
+- Star rating (count filled stars, 1-5)
 - Reviewer name
-- Date (like "2 months ago")
+- Date (e.g., "2 months ago")
 
 Also extract:
-- Overall business rating (like 4.5)
+- Overall rating (e.g., 4.5)
 - Total review count
 
-Return results as JSON with this exact format:
+OUTPUT FORMAT (JSON only):
 {{
   "business_name": "...",
   "rating": 4.5,
@@ -86,28 +85,28 @@ Return results as JSON with this exact format:
 """
 
     try:
-        print(f"[browser-use] Starting agent for: {business_name}", file=sys.stderr)
+        print(f"[browser-use+Gemini] Starting for: {business_name}", file=sys.stderr)
 
         agent = Agent(
             task=task,
             llm=llm,
-            use_vision=False,  # DOM-only mode, no screenshots
+            use_vision=True,   # ENABLED - Gemini has native vision
+            headless=True,
+            max_steps=15,
         )
 
         result = await agent.run()
-
-        # Parse the result
         parsed = parse_agent_result(result)
 
         if parsed and parsed.get("reviews"):
-            print(f"[browser-use] Extracted {len(parsed['reviews'])} reviews", file=sys.stderr)
+            print(f"[browser-use+Gemini] Extracted {len(parsed['reviews'])} reviews", file=sys.stderr)
             return {
                 "found": True,
                 "name": parsed.get("business_name", business_name),
                 "rating": parsed.get("rating"),
                 "review_count": parsed.get("review_count") or len(parsed["reviews"]),
                 "reviews": parsed["reviews"][:max_reviews],
-                "source": "browser_use",
+                "source": "browser_use_gemini",
                 "error": None
             }
         else:
@@ -118,16 +117,16 @@ Return results as JSON with this exact format:
                 "review_count": parsed.get("review_count") if parsed else None,
                 "error": "No reviews extracted" if not parsed else None,
                 "reviews": [],
-                "source": "browser_use"
+                "source": "browser_use_gemini"
             }
 
     except Exception as e:
-        print(f"[browser-use] Error: {e}", file=sys.stderr)
+        print(f"[browser-use+Gemini] Error: {e}", file=sys.stderr)
         return {
             "found": False,
             "error": str(e),
             "reviews": [],
-            "source": "browser_use"
+            "source": "browser_use_gemini"
         }
 
 

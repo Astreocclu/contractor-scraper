@@ -20,7 +20,7 @@ from google.genai import types
 
 from browser_use.llm.base import BaseChatModel, ChatInvokeCompletion
 from browser_use.llm.messages import BaseMessage, UserMessage, AssistantMessage, SystemMessage
-from browser_use.llm.views import ContentImage, ContentText
+from browser_use.llm import ContentImage, ContentText
 
 
 T = TypeVar('T')
