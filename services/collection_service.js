@@ -18,12 +18,12 @@ const SCRAPERS_DIR = path.join(__dirname, '..', 'scrapers');
 /**
  * Call a Python scraper and return JSON result
  */
-async function callPythonScraper(script, args = [], timeout = 60000) {
+async function callPythonScraper(script, args = [], timeout = 60000, pythonCmd = 'python3') {
   const scriptPath = path.join(SCRAPERS_DIR, script);
   const cmdArgs = [...args, '--json'];
 
   try {
-    const result = await runCommand('python3', [scriptPath, ...cmdArgs], {
+    const result = await runCommand(pythonCmd, [scriptPath, ...cmdArgs], {
       cwd: SCRAPERS_DIR,
       timeout,
       json: true
@@ -61,6 +61,14 @@ async function scrapeBBBPython(businessName, city = 'Fort Worth', state = 'TX') 
  */
 async function scrapeGoogleMapsPython(businessName, location = 'Fort Worth, TX', maxReviews = 20) {
   return callPythonScraper('google_maps.py', [businessName, location, '--max-reviews', String(maxReviews)], 90000);
+}
+
+/**
+ * Scrape Google Maps reviews using browser-use + DeepSeek (LLM-driven, more robust)
+ * This is slower (~2 min) but handles DOM changes better than hardcoded selectors
+ */
+async function scrapeGoogleMapsBrowserUse(businessName, location = 'Fort Worth, TX', maxReviews = 10) {
+  return callPythonScraper('google_maps_browseruse.py', [businessName, location, String(maxReviews)], 180000, 'python3.11');
 }
 
 /**
@@ -198,7 +206,6 @@ async function fetchSerperSource(source, businessName, city, state) {
   const query = buildSerperQuery(source, businessName, city, state);
 
   try {
-    const fetch = require('node-fetch');
     const res = await fetch('https://google.serper.dev/search', {
       method: 'POST',
       headers: { 'X-API-KEY': apiKey, 'Content-Type': 'application/json' },
@@ -240,7 +247,6 @@ async function fetchSerperRating(businessName, city, state, site = 'angi.com') {
   const query = `site:${site} "${businessName}" ${city} ${state}`;
 
   try {
-    const fetch = require('node-fetch');
     const res = await fetch('https://google.serper.dev/search', {
       method: 'POST',
       headers: { 'X-API-KEY': apiKey, 'Content-Type': 'application/json' },
@@ -871,7 +877,7 @@ class CollectionService {
     if (state.toUpperCase() === 'TX') {
       urls.tx_ag_complaints = `https://www.google.com/search?q=site:texasattorneygeneral.gov+${encodedName}`;
       urls.tx_sos_search = `https://mycpa.cpa.state.tx.us/coa/coaSearchBtn`;
-      urls.tarrant_court = `https://www.google.com/search?q=site:apps.tarrantcounty.com+${encodedName}`;
+      urls.tarrant_court = `https://www.google.com/search?q=site:odyssey.tarrantcounty.com+${encodedName}`;
       urls.dallas_court = `https://www.google.com/search?q=site:dallascounty.org+${encodedName}+civil`;
       urls.collin_court = `https://www.google.com/search?q=site:collincountytx.gov+${encodedName}`;
       urls.denton_court = `https://www.google.com/search?q=site:dentoncounty.gov+${encodedName}`;
@@ -1243,8 +1249,29 @@ class CollectionService {
 
     // 1. Search in LOCAL market (where homeowners search)
     log('\n  Fetching Google Maps LOCAL (DFW market)...');
+    let gmapsLocalResult = null;
     try {
-      const gmapsLocalResult = await scrapeGoogleMapsPython(contractor.name, TARGET_MARKET);
+      gmapsLocalResult = await scrapeGoogleMapsPython(contractor.name, TARGET_MARKET);
+
+      // Fallback to browser-use if enabled and no review text was extracted
+      const useBrowserUse = process.env.USE_BROWSERUSE === 'true';
+      const hasReviewText = gmapsLocalResult.reviews && gmapsLocalResult.reviews.length > 0;
+
+      if (useBrowserUse && gmapsLocalResult.found && !hasReviewText) {
+        log(`    ⚡ Trying browser-use fallback for review text...`);
+        try {
+          const browserUseResult = await scrapeGoogleMapsBrowserUse(contractor.name, TARGET_MARKET, 10);
+          if (browserUseResult.reviews && browserUseResult.reviews.length > 0) {
+            // Merge browser-use reviews into the result
+            gmapsLocalResult.reviews = browserUseResult.reviews;
+            gmapsLocalResult.review_source = 'browser_use';
+            success(`    ✓ browser-use extracted ${browserUseResult.reviews.length} reviews`);
+          }
+        } catch (buErr) {
+          warn(`    ⚠️ browser-use fallback failed: ${buErr.message}`);
+        }
+      }
+
       const gmapsLocalData = {
         source: 'google_maps_local',
         url: gmapsLocalResult.maps_url || 'https://www.google.com/maps',
