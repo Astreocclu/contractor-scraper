@@ -1,529 +1,345 @@
 /**
- * Audit Agent
+ * Audit Agent - Pure Analysis Engine
  *
- * DeepSeek-powered agent with function calling for forensic contractor audits.
- * Can request more data from predefined sources and finalize trust scores.
- * NOTE: Web search capability removed - agent works only with pre-collected data.
+ * Receives ALL collected data upfront in the prompt.
+ * NO tools - pure analysis, no web access.
+ * Returns structured JSON directly.
+ * Uses deepseek-chat with seed:42 for deterministic scoring.
  */
 
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
 const scoringConstraints = require('./scoring_constraints');
 
-// Tool definitions for DeepSeek function calling
-const TOOLS = [
-  {
-    type: 'function',
-    function: {
-      name: 'get_stored_data',
-      description: 'Get all collected data for this contractor from the database. Call this first to see what data is available.',
-      parameters: {
-        type: 'object',
-        properties: {},
-        required: []
-      }
-    }
-  },
-  {
-    type: 'function',
-    function: {
-      name: 'request_collection',
-      description: 'Request additional data collection for a specific source. Use this when you notice gaps or need to verify claims.',
-      parameters: {
-        type: 'object',
-        properties: {
-          source: {
-            type: 'string',
-            enum: ['bbb', 'yelp', 'yelp_yahoo', 'google_maps', 'angi', 'trustpilot', 'houzz', 'court_records', 'google_news', 'reddit', 'glassdoor', 'indeed', 'osha', 'epa_echo', 'tx_franchise', 'porch', 'buildzoom', 'homeadvisor'],
-            description: 'Which source to collect from'
-          },
-          reason: {
-            type: 'string',
-            description: 'Why you need this data (e.g., "Claims 500 projects but no permit history")'
-          }
-        },
-        required: ['source', 'reason']
-      }
-    }
-  },
-  {
-    type: 'function',
-    function: {
-      name: 'finalize_score',
-      description: 'Commit the final Trust Score and audit results. Call this when you have enough data to make a decision.',
-      parameters: {
-        type: 'object',
-        properties: {
-          trust_score: {
-            type: 'integer',
-            minimum: 0,
-            maximum: 100,
-            description: 'Overall trust score from 0-100'
-          },
-          risk_level: {
-            type: 'string',
-            enum: ['CRITICAL', 'SEVERE', 'MODERATE', 'LOW', 'TRUSTED'],
-            description: 'Risk level categorization'
-          },
-          recommendation: {
-            type: 'string',
-            enum: ['AVOID', 'NOT_RECOMMENDED', 'RECOMMENDED'],
-            description: 'Action recommendation for homeowners (80+ = RECOMMENDED, 50-79 = NOT_RECOMMENDED, <50 = AVOID)'
-          },
-          reasoning: {
-            type: 'string',
-            description: 'Your full analysis and reasoning'
-          },
-          red_flags: {
-            type: 'array',
-            items: {
-              type: 'object',
-              properties: {
-                severity: { type: 'string', enum: ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'] },
-                category: { type: 'string' },
-                description: { type: 'string' },
-                evidence: { type: 'string' }
-              }
-            },
-            description: 'List of identified red flags'
-          },
-          positive_signals: {
-            type: 'array',
-            items: { type: 'string' },
-            description: 'List of positive indicators'
-          },
-          gaps_remaining: {
-            type: 'array',
-            items: { type: 'string' },
-            description: 'Data gaps that could not be filled'
-          }
-        },
-        required: ['trust_score', 'risk_level', 'recommendation', 'reasoning']
-      }
-    }
-  }
-];
+// No tools - pure analysis engine with no web access
+const TOOLS = [];
 
-const SYSTEM_PROMPT = `You are a forensic contractor auditor. Your job is to:
-1. Analyze available data about a contractor
-2. Identify gaps that could change your assessment
-3. Request additional data collection when needed
-4. Produce a final Trust Score with detailed reasoning
+const SYSTEM_PROMPT = `You are a forensic investigator with deep reasoning capabilities. Your job: protect homeowners from fraud.
 
-WORKFLOW:
-1. First, call get_stored_data() to see what data we have
-2. Analyze the data for red flags and positive signals
-3. If you notice gaps (e.g., "claims 15 years but no permit history"), call request_collection()
-4. When you have enough data OR hit collection limits, call finalize_score()
+INVESTIGATE this contractor. Look at ALL the data collected.
 
-NOTE: Work with the data available. All relevant sources are pre-collected or can be requested via request_collection().
+Ask yourself:
+1. What do they CLAIM? (years in business, reviews, quality, licensing)
+2. What does the EVIDENCE show? (BBB records, court cases, news, actual reviews)
+3. Do claims match evidence?
+4. What's the STORY here?
 
-SCORING METHODOLOGY (base 60 points, normalize to 100):
-- Reputation (25 pts): Cross-platform ratings, review authenticity, complaint patterns
-- Credibility (15 pts): Years in business, business registration, professional affiliations
-- Financial (10 pts): Liens, bankruptcy signals, payment complaint patterns
-- Red Flag Absence (10 pts): No critical issues found
+## CHECK FOR
+- Lawsuits, judgments, liens (check all court data AND county_liens data)
+- News investigations (local news, CBS, ABC investigations are CRITICAL)
+- BBB complaints and rating (pattern of complaints = problem)
+- Victim reports (Reddit, Nextdoor, consumer forums)
+- Business registration issues (franchise tax problems, SOS status)
 
-LIEN DATA: Use the pre-computed lien_assessment. Do NOT re-interpret raw lien records.
-- liens_by_contractor: Contractor filed these to collect payment (NEUTRAL - no penalty)
-- liens_against_contractor: Filed against contractor (RED FLAG)
-- Accept the risk_level and human_summary as given
-- If lien_assessment shows risk_level 'SEVERE' or 'MODERATE', treat as financial_distress red flag
+## LIEN ANALYSIS (CRITICAL - READ CAREFULLY)
+County lien records show financial disputes. You MUST check WHO FILED the lien:
 
-BASELINE SCORING:
-- Start at 70 for any established business with reviews
-- Strong reviews (4.5+ on Google with 20+ reviews) → base 80
-- Excellent reviews (4.8+ with 50+ reviews, consistent across platforms) → base 90
-- Deduct from baseline for red flags, don't penalize for missing data
+### HOW TO READ LIEN DATA:
+- GRANTEE = The CREDITOR (who is owed money, filed the lien)
+- GRANTOR = The PROPERTY OWNER (whose property the lien is against)
 
-REVIEW COUNT RULES:
-- AGGREGATE reviews across all locations (Dallas 63 + Fort Myers 16 = 79 total)
-- Multi-location businesses should sum their review counts
-- 50+ total reviews qualifies for "excellent" tier regardless of per-location distribution
+### LIEN DIRECTION MATTERS:
+**If GRANTEE = contractor name**: The contractor filed the lien to get paid
+  - This is NEUTRAL - contractor is protecting themselves from non-paying customers
+  - Common for busy contractors - some customers don't pay
+  - 1-4 liens filed BY contractor = normal business practice, NOT a red flag
+  - Only concerning if 10+ liens (may indicate pricing/contract disputes)
 
-GOOGLE MAPS LOCATION PRIORITY:
-- ALWAYS prioritize LOCAL/DFW market scores over HQ or out-of-state scores
-- If you see both "Google Maps DFW" and "Google Maps HQ/Listed", use the DFW score for scoring
-- Local scores represent the actual customer experience in the service area
-- HQ scores may be from a different market with different crews/management
-- Example: If DFW shows 4.5★ (387 reviews) but Listed/HQ shows 3.0★ (48 reviews), use 4.5★
+**If GRANTOR = contractor name**: Someone filed a lien AGAINST the contractor
+  - This is a RED FLAG - contractor owes money to subcontractors/suppliers
+  - 1-2 liens against contractor = FINANCIAL STRESS (max score 60)
+  - 3+ liens against contractor = PATTERN OF NON-PAYMENT (max score 35)
 
-MULTIPLIERS:
-- CRITICAL red flag (fraud, active lawsuit, BBB F rating) → ×0.15 (score 0-15)
-- SEVERE red flag (major complaint pattern, rating manipulation) → ×0.4 (score 15-40)
-- MODERATE red flags only (some inconsistencies) → ×0.7 (score 45-65)
-- MINOR red flags only (small issues) → ×0.85 (score 65-80)
-- No red flags → ×1.0 (score 80-100)
+### DOCUMENT TYPES:
+- MECH_LIEN = Mechanic's lien (unpaid work) - CHECK DIRECTION
+- REL_LIEN = Lien release (dispute resolved) - GOOD sign
+- ABS_JUDG = Abstract of judgment (lost lawsuit) - If against contractor, SEVERE
+- FED_TAX_LIEN = Federal tax lien - CRITICAL if against contractor
+- STATE_TAX_LIEN = State tax lien - SEVERE if against contractor
 
-RED FLAGS (only flag these with EVIDENCE):
-- complaint_pattern: Multiple similar complaints indicating systemic issues
-- rating_conflict: Major discrepancy between CUSTOMER review platforms (e.g., 4.8 Google vs 1.5 Trustpilot)
-- deposit_abandonment: Pattern of taking deposits then ghosting or abandoning work
-- lawsuit_history: Active or recent lawsuits
-- fake_reviews: Signs of review manipulation (suspiciously perfect ratings, generic text)
-- financial_distress: Liens, bankruptcy, collection actions
+### CRITICAL RED FLAGS (only if AGAINST contractor):
+- 3+ active liens AGAINST contractor = AVOID (max 35)
+- Judgment > $50,000 AGAINST contractor = AVOID (max 15)
+- Tax lien > $50,000 AGAINST contractor = AVOID (max 15)
 
-NORMAL PATTERNS (treat as neutral or positive):
-- Glassdoor 3.4 with Google 5.0: Employee reviews are always lower than customer reviews. This is expected.
-- Missing Trustpilot/Yelp/BBB: Absence of a profile means no data, treat as neutral.
-- Business registration unverified: Assume legitimate unless evidence suggests otherwise.
-- One location has fewer reviews: Aggregate total reviews across all locations.
+### NOT RED FLAGS:
+- Liens filed BY the contractor = normal collections activity
+- Resolved liens with releases = disputes handled properly
 
-SCORING MINDSET:
-- Reward what you CAN verify: great reviews, clean court records, longevity, responsiveness.
-- Require EVIDENCE to deduct points. Speculation and gaps stay neutral.
-- 79 reviews at 4.9-5.0 with zero complaints = 90+ baseline.
-- Only actual negative signals (BBB F, Trustpilot 1.5, lawsuits) reduce the score.
 
-RULES:
-- Maximum 3 collection rounds (cost control)
-- Always explain WHY you're requesting more data
-- If a source already failed or returned no data, don't re-request
-- Log your reasoning - humans will review this
-- Be specific about evidence for each red flag
-- Consider context - a 2-year-old company won't have 15 years of history
+## REVIEWS - CRITICAL GUIDANCE (READ CAREFULLY)
+The Review Analyzer has already evaluated reviews for authenticity. TRUST ITS VERDICT.
+- If Review Analysis says "TRUST_REVIEWS" → the reviews are legitimate, DO NOT question them
+- If Review Analysis says "DISTRUST_REVIEWS" → flag as concern
+- If Review Analysis says "VERIFY_REVIEWS" → note as data gap, not red flag
 
-Start by calling get_stored_data() to see what we have.`;
+IMPORTANT: High review volume with high ratings is a POSITIVE signal.
+- 5.0 stars with 500+ reviews = excellent contractor who consistently delivers quality work
+- This is ACHIEVABLE - many contractors maintain perfect ratings through genuine excellence
+- Screen/awning/pool contractors often have passionate customers who leave detailed glowing reviews
+- DO NOT flag "statistically rare" or "statistically improbable" as a red flag for review volume
+- Only flag reviews if Review Analyzer found ACTUAL manipulation evidence (fake accounts, identical text)
 
-// Logging helpers
+## SCORING - Trust your judgment
+Score 0-100 based on what you find:
+
+0-30 (AVOID): Known fraudster, serious red flags, BBB F rating, pattern of complaints, active lawsuits
+30-49 (AVOID): Multiple concerns, unverified business, suspicious reviews, significant gaps
+50-79 (NOT_RECOMMENDED): Mixed signals, some concerns, insufficient positive data to recommend
+80-89 (RECOMMENDED): Good track record, verified business, minor gaps acceptable
+90-100 (RECOMMENDED): Excellent reputation, everything verified, years of positive history
+
+## ENTITY NAME MATCHING
+Company names vary in records. These are the SAME company:
+- "Orange Elephant" = "Orange Elephant Roofing LLC" = "Orange Elephant LLC"
+- "Smith Pools" = "Smith Pools Inc" = "Smith's Pool Service"
+Look for the business, not exact string matches.
+
+## DATA COMPLETENESS
+All relevant data has been pre-collected. Work with what you have.
+If critical data is missing, note it in the "gaps" field but DO NOT reduce score for missing data alone.
+
+## OUTPUT FORMAT
+After your investigation, respond with ONLY this JSON:
+{
+  "trust_score": <0-100>,
+  "risk_level": "<HIGH|MODERATE|TRUSTED>",
+  "recommendation": "<AVOID|NOT_RECOMMENDED|RECOMMENDED>",
+  "reasoning": "<Your investigative findings. What's the story? What did you find? Be specific.>",
+  "red_flags": [
+    {"severity": "<CRITICAL|HIGH|MEDIUM|LOW>", "category": "<category>", "description": "<what you found>", "evidence": "<which source showed this>"}
+  ],
+  "positive_signals": ["<verified positive finding>"],
+  "gaps": ["<what couldn't you verify?>"]
+}
+
+What's your assessment?`;
+
 const log = (msg) => console.log(msg);
 const success = (msg) => console.log(`\x1b[32m${msg}\x1b[0m`);
 const warn = (msg) => console.log(`\x1b[33m${msg}\x1b[0m`);
-const error = (msg) => console.log(`\x1b[31m${msg}\x1b[0m`);
+
+// Enforce score multipliers based on red flag severity
+function enforceScoreMultipliers(auditResult) {
+  const flags = auditResult.red_flags || [];
+
+  const hasCritical = flags.some(f => f.severity === 'CRITICAL');
+  const hasSevere = flags.some(f => f.severity === 'SEVERE' || f.severity === 'HIGH');
+  const hasModerate = flags.some(f => f.severity === 'MODERATE' || f.severity === 'MEDIUM');
+
+  let maxScore, minScore;
+
+  if (hasCritical) {
+    maxScore = 15;
+    minScore = 0;
+  } else if (hasSevere) {
+    maxScore = 35;
+    minScore = 15;
+  } else if (hasModerate) {
+    maxScore = 60;
+    minScore = 40;
+  } else {
+    maxScore = 100;
+    minScore = 60;
+  }
+
+  const originalScore = auditResult.trust_score;
+  const enforcedScore = Math.min(maxScore, Math.max(minScore, originalScore));
+
+  // Log if we had to override
+  if (enforcedScore !== originalScore) {
+    console.log(`⚠️ Score override: ${originalScore} → ${enforcedScore} (${hasCritical ? 'CRITICAL' : hasSevere ? 'SEVERE' : 'MODERATE'} flag ceiling)`);
+    auditResult.score_override = {
+      original: originalScore,
+      enforced: enforcedScore,
+      reason: `Capped by ${hasCritical ? 'CRITICAL' : hasSevere ? 'SEVERE' : 'MODERATE'} red flag`
+    };
+  }
+
+  auditResult.trust_score = enforcedScore;
+
+  // Also enforce risk_level consistency
+  if (enforcedScore <= 15) auditResult.risk_level = 'CRITICAL';
+  else if (enforcedScore <= 35) auditResult.risk_level = 'SEVERE';
+  else if (enforcedScore < 80) auditResult.risk_level = 'MODERATE';
+  else auditResult.risk_level = 'TRUSTED';
+
+  // Enforce recommendation (simplified tiers)
+  // 80+ = RECOMMENDED, 50-79 = NOT_RECOMMENDED, <50 = AVOID
+  auditResult.recommendation = enforcedScore < 50 ? 'AVOID' :
+    enforcedScore < 80 ? 'NOT_RECOMMENDED' : 'RECOMMENDED';
+
+  return auditResult;
+}
 
 class AuditAgent {
   constructor(db, contractorId, contractor) {
     this.db = db;
     this.contractorId = contractorId;
     this.contractor = contractor;
-    this.collectionRounds = 0;
-    this.maxRounds = 3;
-    this.reasoningTrace = [];
     this.totalCost = 0;
-    this.messages = [];
-    this.collectionService = null;
   }
 
   /**
-   * Run the agentic audit loop
+   * Build the data prompt with all collected data
    */
-  async run(collectionService) {
-    this.collectionService = collectionService;
-
-    log('\n🤖 Starting audit agent...');
-
-    // Initialize conversation
-    this.messages = [
-      { role: 'system', content: SYSTEM_PROMPT },
-      {
-        role: 'user',
-        content: `Audit this contractor:\n` +
-          `Name: ${this.contractor.name}\n` +
-          `Location: ${this.contractor.city}, ${this.contractor.state}\n` +
-          `Website: ${this.contractor.website || 'Not provided'}\n\n` +
-          `Analyze all available data and produce a Trust Score.`
-      }
-    ];
-
-    let complete = false;
-    let iterations = 0;
-    const maxIterations = 10;
-
-    while (!complete && iterations < maxIterations) {
-      iterations++;
-      log(`\n--- Agent iteration ${iterations} ---`);
-
-      const response = await this.callDeepSeek();
-      this.totalCost += this.estimateCost(response);
-
-      const message = response.choices?.[0]?.message;
-      if (!message) {
-        error('No message in response');
-        break;
-      }
-
-      // Check for tool calls
-      const toolCalls = message.tool_calls;
-
-      if (toolCalls && toolCalls.length > 0) {
-        // Add assistant message with tool calls
-        this.messages.push(message);
-
-        // Process each tool call
-        for (const toolCall of toolCalls) {
-          log(`  Tool: ${toolCall.function.name}`);
-
-          const result = await this.executeTool(toolCall);
-
-          // Add tool result to messages
-          this.messages.push({
-            role: 'tool',
-            tool_call_id: toolCall.id,
-            content: typeof result === 'string' ? result : JSON.stringify(result)
-          });
-
-          // Check if finalize was called
-          if (toolCall.function.name === 'finalize_score') {
-            complete = true;
-            return result;
-          }
-        }
-      } else {
-        // No tool calls - agent is thinking/reasoning
-        if (message.content) {
-          log(`  Agent thinking: ${message.content.substring(0, 100)}...`);
-          this.reasoningTrace.push(message.content);
-        }
-        this.messages.push(message);
-      }
-    }
-
-    // Force finalization if we hit limits
-    warn(`\nMax iterations (${maxIterations}) reached, forcing finalization...`);
-    return this.forceFinalize('Max iterations reached');
-  }
-
-  /**
-   * Call DeepSeek API
-   */
-  async callDeepSeek() {
-    const apiKey = process.env.DEEPSEEK_API_KEY;
-    if (!apiKey) {
-      throw new Error('DEEPSEEK_API_KEY not set');
-    }
-
-    const response = await fetch(`${DEEPSEEK_API_BASE}/chat/completions`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
-      },
-      body: JSON.stringify({
-        model: 'deepseek-chat',
-        messages: this.messages,
-        tools: TOOLS,
-        tool_choice: 'auto',
-        temperature: 0.0,
-        max_tokens: 4000
-      })
-    });
-
-    if (!response.ok) {
-      const text = await response.text();
-      throw new Error(`DeepSeek API error: ${response.status} - ${text}`);
-    }
-
-    return response.json();
-  }
-
-  /**
-   * Execute a tool call
-   */
-  async executeTool(toolCall) {
-    const name = toolCall.function.name;
-    let args = {};
-
-    try {
-      args = JSON.parse(toolCall.function.arguments || '{}');
-    } catch (e) {
-      return { error: `Failed to parse arguments: ${e.message}` };
-    }
-
-    this.reasoningTrace.push(`Tool: ${name}(${JSON.stringify(args)})`);
-
-    switch (name) {
-      case 'get_stored_data':
-        return await this.toolGetStoredData();
-
-      case 'request_collection':
-        if (this.collectionRounds >= this.maxRounds) {
-          return {
-            error: 'Max collection rounds reached',
-            rounds_used: this.collectionRounds,
-            max_rounds: this.maxRounds
-          };
-        }
-        this.collectionRounds++;
-        return await this.toolRequestCollection(args.source, args.reason);
-
-      case 'finalize_score':
-        return await this.toolFinalizeScore(args);
-
-      default:
-        return { error: `Unknown tool: ${name}` };
-    }
-  }
-
-  /**
-   * Tool: Get all stored data for this contractor
-   */
-  /**
-   * Tool: Get all stored data for this contractor
-   */
-  async toolGetStoredData() {
+  async buildDataPrompt() {
     const rows = await this.db.exec(`
-      SELECT source_name, raw_text, structured_data, fetch_status, fetched_at
+      SELECT source_name, raw_text, structured_data, fetch_status
       FROM contractor_raw_data
       WHERE contractor_id = ?
       ORDER BY source_name
     `, [this.contractorId]);
 
     if (rows.length === 0) {
-      return {
-        message: 'No data collected yet for this contractor',
-        contractor: this.contractor,
-        data: {}
-      };
+      return 'NO DATA COLLECTED - cannot audit without data.';
     }
 
-    const data = {};
+    let prompt = `## CONTRACTOR INFO
+Name: ${this.contractor.name}
+Location: ${this.contractor.city}, ${this.contractor.state}
+Website: ${this.contractor.website || 'Not provided'}
+
+## COLLECTED DATA\n`;
+
+    let totalChars = 0;
+    const MAX_CHARS = 60000; // Leave room for system prompt
 
     for (const row of rows) {
-      const sourceName = row.source_name;
-      const rawText = row.raw_text;
-      const structuredData = row.structured_data;
-      const status = row.fetch_status;
+      const { source_name, raw_text, structured_data, fetch_status } = row;
 
-      // Truncate long text for context window
-      const truncatedText = rawText ? rawText.substring(0, 4000) : null;
+      if (fetch_status !== 'success' && fetch_status !== 'not_found') continue;
 
-      // PostgreSQL jsonb returns object directly, no parsing needed
-      const parsed = structuredData
-        ? (typeof structuredData === 'string' ? JSON.parse(structuredData) : structuredData)
-        : null;
-
-      // For county_liens, send only pre-computed summary instead of raw records
-      if (sourceName === 'county_liens' && parsed && parsed.lien_score) {
-        const ls = parsed.lien_score;
-
-        // Handle both old and new lien_score formats
-        // New format has: human_summary, risk_level, liens_by_count, liens_against_count
-        // Old format has: liens_by_contractor, liens_against_contractor (arrays or counts)
-        let byCount = ls.liens_by_count;
-        if (byCount === undefined) {
-          byCount = Array.isArray(ls.liens_by_contractor)
-            ? ls.liens_by_contractor.length
-            : (ls.liens_by_contractor || 0);
-        }
-
-        let againstCount = ls.liens_against_count;
-        if (againstCount === undefined) {
-          againstCount = Array.isArray(ls.liens_against_contractor)
-            ? ls.liens_against_contractor.length
-            : (ls.liens_against_contractor || 0);
-        }
-
-        // Ensure numeric
-        byCount = parseInt(byCount) || 0;
-        againstCount = parseInt(againstCount) || 0;
-
-        // Generate summary if not present
-        let summary = ls.human_summary;
-        let riskLevel = ls.risk_level;
-
-        if (!summary) {
-          if (againstCount > 0) {
-            summary = `${againstCount} lien(s) filed AGAINST contractor (potential payment issues)`;
-            riskLevel = againstCount >= 3 ? 'SEVERE' : 'MODERATE';
-          } else if (byCount > 0) {
-            summary = `${byCount} liens filed BY contractor to collect payment (normal business, no penalty)`;
-            riskLevel = 'NONE';
-          } else {
-            summary = 'No liens found';
-            riskLevel = 'NONE';
+      let content = '';
+      if (structured_data) {
+        // PostgreSQL JSONB returns already-parsed objects, not strings
+        let data = structured_data;
+        if (typeof structured_data === 'string') {
+          try {
+            data = JSON.parse(structured_data);
+          } catch {
+            data = structured_data;
           }
         }
 
-        data[sourceName] = {
-          status,
-          lien_assessment: {
-            summary: summary || 'No lien data available',
-            risk_level: riskLevel || 'UNKNOWN',
-            liens_by_contractor: byCount || 0,
-            liens_against_contractor: againstCount || 0,
-            score: ls.score,
-            note: 'Liens BY contractor = they filed to collect payment (neutral). Liens AGAINST = red flag.'
-          },
-          // DO NOT include raw lien records - LLM should not re-interpret
-          structured: null,
-          text: null
-        };
+        // Smart extraction for large sources - extract summaries instead of full records
+        if (typeof data === 'object' && data !== null) {
+          if (source_name === 'county_liens' && data.lien_score) {
+            // For liens: pass the pre-computed summary, not all 100+ records
+            content = JSON.stringify({
+              lien_score: data.lien_score,
+              summary: data.summary,
+              total_records: data.total_records,
+              search_term: data.search_term
+            }, null, 2);
+          } else if (source_name === 'review_analysis' && data.summary) {
+            // For review analysis: pass the summary
+            content = JSON.stringify(data, null, 2);
+          } else {
+            // Default: stringify the whole thing
+            const full = JSON.stringify(data, null, 2);
+            // Cap individual sources at 5000 chars to leave room for all sources
+            if (full.length > 5000) {
+              content = full.substring(0, 5000) + '\n...[truncated]';
+            } else {
+              content = full;
+            }
+          }
+        } else {
+          content = String(data);
+        }
+      } else if (raw_text) {
+        // Truncate long text per source
+        content = raw_text.length > 3000 ? raw_text.substring(0, 3000) + '...[truncated]' : raw_text;
       } else {
-        data[sourceName] = {
-          status,
-          text: truncatedText,
-          structured: parsed,
-          truncated: rawText && rawText.length > 4000
-        };
+        content = `[${fetch_status}]`;
+      }
+
+      const section = `\n### ${source_name.toUpperCase()}\n${content}\n`;
+
+      if (totalChars + section.length > MAX_CHARS) {
+        prompt += `\n### ${source_name.toUpperCase()}\n[Content truncated - ${raw_text?.length || 0} chars]\n`;
+      } else {
+        prompt += section;
+        totalChars += section.length;
       }
     }
 
-    return {
-      contractor: this.contractor,
-      sources_collected: Object.keys(data).length,
-      sources_successful: Object.values(data).filter(d => d.status === 'success').length,
-      data
-    };
+    return prompt;
   }
 
   /**
-   * Tool: Request additional collection
+   * Run the audit
    */
-  async toolRequestCollection(source, reason) {
-    log(`  Requesting collection: ${source} - ${reason}`);
-    this.reasoningTrace.push(`Requested ${source}: ${reason}`);
+  async run() {
+    log('\n🤖 Audit Agent analyzing data...');
 
-    try {
-      const result = await this.collectionService.fetchSpecificSource(
-        this.contractorId,
-        this.contractor,
-        source,
-        reason
-      );
+    const dataPrompt = await this.buildDataPrompt();
 
-      return {
-        source,
-        reason,
-        status: result.status,
-        data_preview: result.text ? result.text.substring(0, 2000) : null,
-        structured: result.structured || null,
-        collection_round: this.collectionRounds,
-        rounds_remaining: this.maxRounds - this.collectionRounds
-      };
-    } catch (err) {
-      return {
-        source,
-        reason,
-        status: 'error',
-        error: err.message
-      };
+    const messages = [
+      { role: 'system', content: SYSTEM_PROMPT },
+      { role: 'user', content: dataPrompt }
+    ];
+
+    let iterations = 0;
+    const maxIterations = 5;
+
+    while (iterations < maxIterations) {
+      iterations++;
+
+      const response = await this.callDeepSeek(messages);
+      this.totalCost += this.estimateCost(response);
+
+      const message = response.choices?.[0]?.message;
+      if (!message) {
+        throw new Error('No response from DeepSeek');
+      }
+
+      // Parse JSON response (no tool calls - pure analysis)
+      const content = message.content || '';
+
+      // Extract JSON from response
+      const jsonMatch = content.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        try {
+          const result = JSON.parse(jsonMatch[0]);
+          return await this.finalizeResult(result);
+        } catch (e) {
+          warn(`Failed to parse JSON: ${e.message}`);
+          messages.push(message);
+          messages.push({
+            role: 'user',
+            content: 'Please respond with valid JSON only, no other text.'
+          });
+        }
+      } else {
+        // Ask for JSON
+        messages.push(message);
+        messages.push({
+          role: 'user',
+          content: 'Please provide your final assessment as JSON.'
+        });
+      }
     }
+
+    // Fallback
+    return await this.fallbackResult('Max iterations reached without valid response');
   }
 
   /**
-   * Tool: Finalize the audit score
+   * Finalize and save result
    */
-  async toolFinalizeScore(args) {
+  async finalizeResult(result) {
     const now = new Date().toISOString();
 
-    // Validate required fields
-    if (typeof args.trust_score !== 'number' || args.trust_score < 0 || args.trust_score > 100) {
-      return { error: 'Invalid trust_score - must be 0-100' };
+    // Validate
+    if (typeof result.trust_score !== 'number') {
+      result.trust_score = 50;
     }
+    result.trust_score = Math.max(0, Math.min(100, result.trust_score));
 
-    // Apply strict constraints (if enabled)
-    let result = {
-      trust_score: args.trust_score,
-      risk_level: args.risk_level,
-      recommendation: args.recommendation,
-      gaps: args.gaps_remaining || []
-    };
-    const dataContext = await scoringConstraints.extractDataContext(this.db, this.contractorId);
-    result = scoringConstraints.applyConstraints(result, dataContext);
-
-    // Use constrained values
-    const finalScore = result.trust_score;
-    const finalRiskLevel = result.risk_level;
-    const finalRecommendation = result.recommendation;
+    // No score caps - trust the LLM's assessment with standardized data
+    // The LLM receives pre-analyzed lien scores, review analysis, etc.
+    // Caps were causing information loss and hiding actual variance
 
     // Save to audit_records
     await this.db.run(`
@@ -534,90 +350,73 @@ class AuditAgent {
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `, [
       this.contractorId,
-      1,  // audit_version: 1 = agentic audit v1
-      finalScore,
-      finalRiskLevel,
-      finalRecommendation,
-      this.reasoningTrace.join('\n\n---\n\n'),
-      JSON.stringify(args.red_flags || []),
-      JSON.stringify(args.positive_signals || []),
-      JSON.stringify(args.gaps_remaining || []),
-      JSON.stringify(await this.getSourcesUsed()),
-      this.collectionRounds,
+      2,  // audit_version: 2 = agentic audit v2
+      result.trust_score,
+      result.risk_level || 'MODERATE',
+      result.recommendation || 'VERIFY',
+      result.reasoning || '',
+      JSON.stringify(result.red_flags || []),
+      JSON.stringify(result.positive_signals || []),
+      JSON.stringify(result.gaps || []),
+      JSON.stringify([]),  // sources_used - empty for v2 (data already collected)
+      0,  // collection_rounds - none for v2 (no web access)
       this.totalCost,
       now,
       now
     ]);
 
-    // Update contractor's trust_score and passes_threshold
-    const passesThreshold = finalScore >= 80;
+    // Update contractor (trust_score and passes_threshold)
+    const passesThreshold = result.trust_score >= 80;
     await this.db.run(`
-      UPDATE contractors_contractor
-      SET trust_score = ?, passes_threshold = ?
-      WHERE id = ?
-    `, [finalScore, passesThreshold, this.contractorId]);
+      UPDATE contractors_contractor SET trust_score = ?, passes_threshold = ? WHERE id = ?
+    `, [result.trust_score, passesThreshold, this.contractorId]);
 
-    success(`\n✓ Audit finalized: ${finalScore}/100 (${finalRecommendation})`);
+    success(`✓ Audit complete: ${result.trust_score}/100 (${result.recommendation})`);
 
-    // Include constraint info in result if applied
-    const returnResult = {
-      finalized: true,
-      trust_score: finalScore,
-      risk_level: finalRiskLevel,
-      recommendation: finalRecommendation,
-      reasoning: args.reasoning,
-      red_flags: args.red_flags || [],
-      positive_signals: args.positive_signals || [],
-      gaps_remaining: args.gaps_remaining || [],
-      collection_rounds: this.collectionRounds,
+    return {
+      ...result,
       total_cost: this.totalCost
     };
-
-    if (result.strict_constraints) {
-      returnResult.strict_constraints = result.strict_constraints;
-    }
-
-    return returnResult;
   }
 
-  /**
-   * Get list of sources used
-   */
-  async getSourcesUsed() {
-    const rows = await this.db.exec(`
-      SELECT source_name FROM contractor_raw_data
-      WHERE contractor_id = ? AND fetch_status = 'success'
-    `, [this.contractorId]);
-
-    if (rows.length === 0) return [];
-    return rows.map(row => row.source_name);
-  }
-
-  /**
-   * Force finalization when limits hit
-   */
-  async forceFinalize(reason) {
-    warn(`Forced finalization: ${reason}`);
-    return await this.toolFinalizeScore({
+  async fallbackResult(reason) {
+    return await this.finalizeResult({
       trust_score: 50,
       risk_level: 'MODERATE',
       recommendation: 'NOT_RECOMMENDED',
-      reasoning: `Forced finalization due to: ${reason}. Insufficient data or iterations for a confident assessment. Manual review recommended.`,
+      reasoning: `Audit incomplete: ${reason}. Manual review recommended.`,
       red_flags: [],
       positive_signals: [],
-      gaps_remaining: ['Manual review required', `Reason: ${reason}`]
+      gaps: ['Automated audit incomplete']
     });
   }
 
-  /**
-   * Estimate cost of API call
-   */
+  async callDeepSeek(messages) {
+    const response = await fetch(`${DEEPSEEK_API_BASE}/chat/completions`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
+      },
+      body: JSON.stringify({
+        model: 'deepseek-chat',  // chat is more deterministic than reasoner
+        messages,
+        temperature: 0,
+        max_tokens: 4000,
+        seed: 42  // fixed seed for reproducibility
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error(`DeepSeek error: ${response.status}`);
+    }
+
+    return response.json();
+  }
+
   estimateCost(response) {
     const usage = response.usage || {};
-    const inputTokens = usage.prompt_tokens || 0;
-    const outputTokens = usage.completion_tokens || 0;
-    // DeepSeek pricing: ~$0.14/1M input, ~$0.28/1M output (approximate)
-    return (inputTokens * 0.00000014) + (outputTokens * 0.00000028);
+    return ((usage.prompt_tokens || 0) * 0.00000014) + ((usage.completion_tokens || 0) * 0.00000028);
   }
 }
 
