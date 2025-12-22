@@ -189,7 +189,7 @@ async function runForensicAudit(contractorInput, options = {}) {
 
     // Run agentic audit
     const agent = new AuditAgent(db, contractorId, contractor);
-    const result = await agent.run(collectionService);
+    const result = await agent.run();
 
     // Display results
     console.log('\n' + '═'.repeat(60));
