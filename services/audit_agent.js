@@ -350,7 +350,7 @@ Website: ${this.contractor.website || 'Not provided'}
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `, [
       this.contractorId,
-      2,  // audit_version: 2 = agentic audit v2
+      2,  // audit_version (V1 deprecated, V2 is now the only pipeline)
       result.trust_score,
       result.risk_level || 'MODERATE',
       result.recommendation || 'VERIFY',
