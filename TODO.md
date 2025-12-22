@@ -16,6 +16,12 @@
 - [ ] Improve fuzzy name matching for liens (avoid matching "similar" business names)
 
 ## Done
+- [x] **V2 Consolidation** (Dec 22, 2025)
+  - Removed V1 agent (archived to `archive/deprecated/`)
+  - V2 is now the only audit pipeline
+  - Zero variance with `deepseek-chat` + `seed: 42`
+  - Score caps removed
+  - Lien/review pre-analysis preserved
 - [x] **Documentation Gap Fix** (Dec 15, 2025)
   - Updated CLAUDE.md with complete documentation index
   - Added `docs/plans/` and `/home/reid/command-center/exports/` to startup protocol
