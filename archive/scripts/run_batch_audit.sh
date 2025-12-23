@@ -2,7 +2,7 @@
 # Batch audit script - runs 5 audits at a time
 set -e
 
-cd /home/reid/testhome/contractors
+cd /home/astre/command-center/testhome/contractor-auditor
 source venv/bin/activate
 set -a && source .env && set +a
 export DEEPSEEK_API_KEY
