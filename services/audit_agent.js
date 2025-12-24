@@ -1,17 +1,13 @@
 /**
- * Audit Agent - Pure Analysis Engine
+ * Audit Agent - Pure Analysis Engine (V3)
  *
  * Receives ALL collected data upfront in the prompt.
  * NO tools - pure analysis, no web access.
- * Returns structured JSON directly.
+ * Returns structured JSON with verdict/confidence (score is internal only).
  * Uses deepseek-chat with seed:42 for deterministic scoring.
  */
 
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
-const scoringConstraints = require('./scoring_constraints');
-
-// No tools - pure analysis engine with no web access
-const TOOLS = [];
 
 const SYSTEM_PROMPT = `You are a forensic investigator with deep reasoning capabilities. Your job: protect homeowners from fraud.
 
@@ -40,76 +36,91 @@ County lien records show financial disputes. You MUST check WHO FILED the lien:
 ### LIEN DIRECTION MATTERS:
 **If GRANTEE = contractor name**: The contractor filed the lien to get paid
   - This is NEUTRAL - contractor is protecting themselves from non-paying customers
-  - Common for busy contractors - some customers don't pay
   - 1-4 liens filed BY contractor = normal business practice, NOT a red flag
-  - Only concerning if 10+ liens (may indicate pricing/contract disputes)
 
 **If GRANTOR = contractor name**: Someone filed a lien AGAINST the contractor
   - This is a RED FLAG - contractor owes money to subcontractors/suppliers
-  - 1-2 liens against contractor = FINANCIAL STRESS (max score 60)
-  - 3+ liens against contractor = PATTERN OF NON-PAYMENT (max score 35)
-
-### DOCUMENT TYPES:
-- MECH_LIEN = Mechanic's lien (unpaid work) - CHECK DIRECTION
-- REL_LIEN = Lien release (dispute resolved) - GOOD sign
-- ABS_JUDG = Abstract of judgment (lost lawsuit) - If against contractor, SEVERE
-- FED_TAX_LIEN = Federal tax lien - CRITICAL if against contractor
-- STATE_TAX_LIEN = State tax lien - SEVERE if against contractor
-
-### CRITICAL RED FLAGS (only if AGAINST contractor):
-- 3+ active liens AGAINST contractor = AVOID (max 35)
-- Judgment > $50,000 AGAINST contractor = AVOID (max 15)
-- Tax lien > $50,000 AGAINST contractor = AVOID (max 15)
+  - 1-2 liens against contractor = FINANCIAL STRESS
+  - 3+ liens against contractor = PATTERN OF NON-PAYMENT
 
 ### NOT RED FLAGS:
 - Liens filed BY the contractor = normal collections activity
 - Resolved liens with releases = disputes handled properly
 
+## SEVERITY CLASSIFICATION RULES
 
-## REVIEWS - CRITICAL GUIDANCE (READ CAREFULLY)
+Use these rules to assign severity levels. The key distinction is CONFIRMED vs UNVERIFIED.
+
+**CRITICAL - Confirmed fraud or deception:**
+- Fake reviews (>30% fake score from Review Analyzer)
+- Scam allegations from multiple independent sources
+- Impersonating another business
+- Confirmed consumer protection violations
+- Contractor makes a verifiable claim (licensed, insured) that is confirmed FALSE
+
+**HIGH - Confirmed operational problems:**
+- Active lawsuit AGAINST the contractor
+- Judgment or lien AGAINST the contractor (not liens filed BY them)
+- BBB F rating or revoked accreditation
+- Official government or licensing board disciplinary action
+- License confirmed EXPIRED, SUSPENDED, or REVOKED (not just "not found")
+- Clear pattern of multiple verified customer complaints (3+ similar issues)
+- News investigation confirming wrongdoing
+
+**MEDIUM - Unverified or uncertain issues:**
+- Cannot find business registration (may be database issue or different name)
+- License not found in state database (may be under DBA or different entity)
+- Mixed reviews or significant rating discrepancies between platforms
+- Single unverified complaint without corroboration
+- Data collection errors (scraper failed, website down)
+- Glassdoor/employee complaints (internal issues, not customer-facing)
+
+**LOW - Minor gaps with no negative implication:**
+- No BBB profile (common for small businesses, not required)
+- Low review volume (new or niche business)
+- Missing social media presence
+- Old, resolved issues (5+ years ago, case dismissed, lien released)
+- Minor data gaps where other sources provide verification
+
+## SCORING GUIDANCE
+
+Your score should reflect CONFIRMED evidence, not speculation about unknowns.
+
+CORE PRINCIPLES:
+1. UNKNOWN ≠ BAD: Missing data indicates uncertainty, NOT evidence of wrongdoing
+2. WEIGHT CONFIRMED OVER UNCONFIRMED: 500 authentic reviews outweighs "cannot find registration"
+3. RECENCY MATTERS: Issues from 5+ years ago matter less than recent issues
+4. PATTERNS > ISOLATED: One complaint is noise; five similar complaints is a pattern
+5. CONTEXT MATTERS: A sole proprietor may not have LLC registration - that's legal
+
+SCORE ANCHORS:
+- 90-100: Exceptional. Zero HIGH/CRITICAL flags. Verified excellence across all dimensions.
+- 80-89: Recommended. Minor gaps only (MEDIUM/LOW flags). Strong positive signals dominate.
+- 65-79: Mixed. Has at least one HIGH flag OR multiple MEDIUM flags. Positives exist but concerns remain.
+- 50-64: Concerning. Multiple HIGH flags OR unresolved serious operational issues.
+- Below 50: Avoid. CRITICAL flags present OR clear pattern of confirmed problems.
+
+CRITICAL RULE:
+A contractor with a MEDIUM-severity "cannot verify registration" flag BUT 500+ authentic 5-star reviews and no other issues should score 80-85, NOT 65. The verified positive evidence outweighs the unverified data gap.
+
+## REVIEWS - CRITICAL GUIDANCE
 The Review Analyzer has already evaluated reviews for authenticity. TRUST ITS VERDICT.
-- If Review Analysis says "TRUST_REVIEWS" → the reviews are legitimate, DO NOT question them
-- If Review Analysis says "DISTRUST_REVIEWS" → flag as concern
-- If Review Analysis says "VERIFY_REVIEWS" → note as data gap, not red flag
+- If Review Analysis says "TRUST_REVIEWS" -> the reviews are legitimate
+- If Review Analysis says "DISTRUST_REVIEWS" -> flag as concern
+- If Review Analysis says "VERIFY_REVIEWS" -> note as data gap, not red flag
 
-IMPORTANT: High review volume with high ratings is a POSITIVE signal.
-- 5.0 stars with 500+ reviews = excellent contractor who consistently delivers quality work
-- This is ACHIEVABLE - many contractors maintain perfect ratings through genuine excellence
-- Screen/awning/pool contractors often have passionate customers who leave detailed glowing reviews
-- DO NOT flag "statistically rare" or "statistically improbable" as a red flag for review volume
-- Only flag reviews if Review Analyzer found ACTUAL manipulation evidence (fake accounts, identical text)
-
-## SCORING - Trust your judgment
-Score 0-100 based on what you find:
-
-0-30 (AVOID): Known fraudster, serious red flags, BBB F rating, pattern of complaints, active lawsuits
-30-49 (AVOID): Multiple concerns, unverified business, suspicious reviews, significant gaps
-50-79 (NOT_RECOMMENDED): Mixed signals, some concerns, insufficient positive data to recommend
-80-89 (RECOMMENDED): Good track record, verified business, minor gaps acceptable
-90-100 (RECOMMENDED): Excellent reputation, everything verified, years of positive history
-
-## ENTITY NAME MATCHING
-Company names vary in records. These are the SAME company:
-- "Orange Elephant" = "Orange Elephant Roofing LLC" = "Orange Elephant LLC"
-- "Smith Pools" = "Smith Pools Inc" = "Smith's Pool Service"
-Look for the business, not exact string matches.
-
-## DATA COMPLETENESS
-All relevant data has been pre-collected. Work with what you have.
-If critical data is missing, note it in the "gaps" field but DO NOT reduce score for missing data alone.
+High review volume with high ratings is a POSITIVE signal - do not question it unless Review Analyzer found manipulation.
 
 ## OUTPUT FORMAT
 After your investigation, respond with ONLY this JSON:
 {
   "trust_score": <0-100>,
-  "risk_level": "<HIGH|MODERATE|TRUSTED>",
-  "recommendation": "<AVOID|NOT_RECOMMENDED|RECOMMENDED>",
   "reasoning": "<Your investigative findings. What's the story? What did you find? Be specific.>",
   "red_flags": [
     {"severity": "<CRITICAL|HIGH|MEDIUM|LOW>", "category": "<category>", "description": "<what you found>", "evidence": "<which source showed this>"}
   ],
-  "positive_signals": ["<verified positive finding>"],
-  "gaps": ["<what couldn't you verify?>"]
+  "verified_items": ["<verified positive finding with specifics>"],
+  "unverified_items": ["<what couldn't you verify and why>"]
 }
 
 What's your assessment?`;
@@ -117,58 +128,90 @@ What's your assessment?`;
 const log = (msg) => console.log(msg);
 const success = (msg) => console.log(`\x1b[32m${msg}\x1b[0m`);
 const warn = (msg) => console.log(`\x1b[33m${msg}\x1b[0m`);
+const error = (msg) => console.log(`\x1b[31m${msg}\x1b[0m`);
 
-// Enforce score multipliers based on red flag severity
-function enforceScoreMultipliers(auditResult) {
-  const flags = auditResult.red_flags || [];
+/**
+ * Map numeric score to verdict
+ */
+function getVerdict(score) {
+  if (score >= 80) return 'RECOMMENDED';
+  if (score >= 65) return 'USE CAUTION';
+  if (score >= 50) return 'NOT RECOMMENDED';
+  return 'AVOID';
+}
 
-  const hasCritical = flags.some(f => f.severity === 'CRITICAL');
-  const hasSevere = flags.some(f => f.severity === 'SEVERE' || f.severity === 'HIGH');
-  const hasModerate = flags.some(f => f.severity === 'MODERATE' || f.severity === 'MEDIUM');
+/**
+ * Calculate confidence based on data completeness
+ */
+function getConfidence(result) {
+  const unverifiedCount = (result.unverified_items || []).length;
+  const verifiedCount = (result.verified_items || []).length;
+  const total = unverifiedCount + verifiedCount;
 
-  let maxScore, minScore;
+  if (total === 0) return 'MEDIUM';
 
-  if (hasCritical) {
-    maxScore = 15;
-    minScore = 0;
-  } else if (hasSevere) {
-    maxScore = 35;
-    minScore = 15;
-  } else if (hasModerate) {
-    maxScore = 60;
-    minScore = 40;
+  const ratio = verifiedCount / total;
+  if (ratio >= 0.9) return 'HIGH';
+  if (ratio >= 0.7) return 'MEDIUM';
+  return 'LOW';
+}
+
+/**
+ * Format result for display
+ */
+function formatDisplayOutput(result) {
+  const verdict = getVerdict(result.trust_score);
+  const confidence = getConfidence(result);
+
+  let output = `
+════════════════════════════════════════════════════════════
+  AUDIT RESULTS
+════════════════════════════════════════════════════════════
+
+  VERDICT:    ${verdict}
+  CONFIDENCE: ${confidence}
+
+--- WHAT WE VERIFIED ---`;
+
+  if (result.verified_items && result.verified_items.length > 0) {
+    for (const item of result.verified_items) {
+      output += `\n  ✓ ${item}`;
+    }
   } else {
-    maxScore = 100;
-    minScore = 60;
+    output += '\n  (No items verified)';
   }
 
-  const originalScore = auditResult.trust_score;
-  const enforcedScore = Math.min(maxScore, Math.max(minScore, originalScore));
-
-  // Log if we had to override
-  if (enforcedScore !== originalScore) {
-    console.log(`⚠️ Score override: ${originalScore} → ${enforcedScore} (${hasCritical ? 'CRITICAL' : hasSevere ? 'SEVERE' : 'MODERATE'} flag ceiling)`);
-    auditResult.score_override = {
-      original: originalScore,
-      enforced: enforcedScore,
-      reason: `Capped by ${hasCritical ? 'CRITICAL' : hasSevere ? 'SEVERE' : 'MODERATE'} red flag`
-    };
+  output += '\n\n--- WHAT WE COULDN\'T VERIFY ---';
+  if (result.unverified_items && result.unverified_items.length > 0) {
+    for (const item of result.unverified_items) {
+      output += `\n  - ${item}`;
+    }
+  } else {
+    output += '\n  (All items verified)';
   }
 
-  auditResult.trust_score = enforcedScore;
+  output += '\n\n--- RED FLAGS ---';
+  if (result.red_flags && result.red_flags.length > 0) {
+    for (const flag of result.red_flags) {
+      const color = flag.severity === 'CRITICAL' || flag.severity === 'HIGH' ? '\x1b[31m' : '\x1b[33m';
+      output += `\n${color}  [${flag.severity}] ${flag.category}: ${flag.description}\x1b[0m`;
+      if (flag.evidence) {
+        output += `\n    Evidence: ${flag.evidence}`;
+      }
+    }
+  } else {
+    output += '\n  None found';
+  }
 
-  // Also enforce risk_level consistency
-  if (enforcedScore <= 15) auditResult.risk_level = 'CRITICAL';
-  else if (enforcedScore <= 35) auditResult.risk_level = 'SEVERE';
-  else if (enforcedScore < 80) auditResult.risk_level = 'MODERATE';
-  else auditResult.risk_level = 'TRUSTED';
+  output += '\n\n--- REASONING ---';
+  output += `\n${result.reasoning || 'No reasoning provided'}`;
 
-  // Enforce recommendation (simplified tiers)
-  // 80+ = RECOMMENDED, 50-79 = NOT_RECOMMENDED, <50 = AVOID
-  auditResult.recommendation = enforcedScore < 50 ? 'AVOID' :
-    enforcedScore < 80 ? 'NOT_RECOMMENDED' : 'RECOMMENDED';
+  output += `\n
+--- METADATA ---
+  Internal Score: ${result.trust_score}/100
+  API cost: $${result.total_cost?.toFixed(4) || '0.0000'}`;
 
-  return auditResult;
+  return output;
 }
 
 class AuditAgent {
@@ -202,7 +245,7 @@ Website: ${this.contractor.website || 'Not provided'}
 ## COLLECTED DATA\n`;
 
     let totalChars = 0;
-    const MAX_CHARS = 60000; // Leave room for system prompt
+    const MAX_CHARS = 60000;
 
     for (const row of rows) {
       const { source_name, raw_text, structured_data, fetch_status } = row;
@@ -211,7 +254,6 @@ Website: ${this.contractor.website || 'Not provided'}
 
       let content = '';
       if (structured_data) {
-        // PostgreSQL JSONB returns already-parsed objects, not strings
         let data = structured_data;
         if (typeof structured_data === 'string') {
           try {
@@ -221,10 +263,8 @@ Website: ${this.contractor.website || 'Not provided'}
           }
         }
 
-        // Smart extraction for large sources - extract summaries instead of full records
         if (typeof data === 'object' && data !== null) {
           if (source_name === 'county_liens' && data.lien_score) {
-            // For liens: pass the pre-computed summary, not all 100+ records
             content = JSON.stringify({
               lien_score: data.lien_score,
               summary: data.summary,
@@ -232,12 +272,9 @@ Website: ${this.contractor.website || 'Not provided'}
               search_term: data.search_term
             }, null, 2);
           } else if (source_name === 'review_analysis' && data.summary) {
-            // For review analysis: pass the summary
             content = JSON.stringify(data, null, 2);
           } else {
-            // Default: stringify the whole thing
             const full = JSON.stringify(data, null, 2);
-            // Cap individual sources at 5000 chars to leave room for all sources
             if (full.length > 5000) {
               content = full.substring(0, 5000) + '\n...[truncated]';
             } else {
@@ -248,7 +285,6 @@ Website: ${this.contractor.website || 'Not provided'}
           content = String(data);
         }
       } else if (raw_text) {
-        // Truncate long text per source
         content = raw_text.length > 3000 ? raw_text.substring(0, 3000) + '...[truncated]' : raw_text;
       } else {
         content = `[${fetch_status}]`;
@@ -294,10 +330,8 @@ Website: ${this.contractor.website || 'Not provided'}
         throw new Error('No response from DeepSeek');
       }
 
-      // Parse JSON response (no tool calls - pure analysis)
       const content = message.content || '';
 
-      // Extract JSON from response
       const jsonMatch = content.match(/\{[\s\S]*\}/);
       if (jsonMatch) {
         try {
@@ -312,7 +346,6 @@ Website: ${this.contractor.website || 'Not provided'}
           });
         }
       } else {
-        // Ask for JSON
         messages.push(message);
         messages.push({
           role: 'user',
@@ -321,7 +354,6 @@ Website: ${this.contractor.website || 'Not provided'}
       }
     }
 
-    // Fallback
     return await this.fallbackResult('Max iterations reached without valid response');
   }
 
@@ -331,15 +363,27 @@ Website: ${this.contractor.website || 'Not provided'}
   async finalizeResult(result) {
     const now = new Date().toISOString();
 
-    // Validate
+    // Validate score
     if (typeof result.trust_score !== 'number') {
       result.trust_score = 50;
     }
     result.trust_score = Math.max(0, Math.min(100, result.trust_score));
 
-    // No score caps - trust the LLM's assessment with standardized data
-    // The LLM receives pre-analyzed lien scores, review analysis, etc.
-    // Caps were causing information loss and hiding actual variance
+    // Derive verdict and confidence
+    const verdict = getVerdict(result.trust_score);
+    const confidence = getConfidence(result);
+
+    // Map to recommendation for DB compatibility
+    let recommendation;
+    if (result.trust_score >= 80) recommendation = 'RECOMMENDED';
+    else if (result.trust_score >= 50) recommendation = 'NOT_RECOMMENDED';
+    else recommendation = 'AVOID';
+
+    // Map to risk level for DB compatibility
+    let riskLevel;
+    if (result.trust_score >= 80) riskLevel = 'TRUSTED';
+    else if (result.trust_score >= 50) riskLevel = 'MODERATE';
+    else riskLevel = 'HIGH';
 
     // Save to audit_records
     await this.db.run(`
@@ -350,44 +394,46 @@ Website: ${this.contractor.website || 'Not provided'}
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `, [
       this.contractorId,
-      2,  // audit_version (V1 deprecated, V2 is now the only pipeline)
+      3,  // audit_version V3 with new output format
       result.trust_score,
-      result.risk_level || 'MODERATE',
-      result.recommendation || 'VERIFY',
+      riskLevel,
+      recommendation,
       result.reasoning || '',
       JSON.stringify(result.red_flags || []),
-      JSON.stringify(result.positive_signals || []),
-      JSON.stringify(result.gaps || []),
-      JSON.stringify([]),  // sources_used - empty for v2 (data already collected)
-      0,  // collection_rounds - none for v2 (no web access)
+      JSON.stringify(result.verified_items || []),
+      JSON.stringify(result.unverified_items || []),
+      JSON.stringify([]),
+      0,
       this.totalCost,
       now,
       now
     ]);
 
-    // Update contractor (trust_score and passes_threshold)
+    // Update contractor
     const passesThreshold = result.trust_score >= 80;
     await this.db.run(`
       UPDATE contractors_contractor SET trust_score = ?, passes_threshold = ? WHERE id = ?
     `, [result.trust_score, passesThreshold, this.contractorId]);
 
-    success(`✓ Audit complete: ${result.trust_score}/100 (${result.recommendation})`);
+    // Add derived fields to result
+    result.verdict = verdict;
+    result.confidence = confidence;
+    result.total_cost = this.totalCost;
 
-    return {
-      ...result,
-      total_cost: this.totalCost
-    };
+    // Display formatted output
+    console.log(formatDisplayOutput(result));
+    success('\n✅ Audit saved to database');
+
+    return result;
   }
 
   async fallbackResult(reason) {
     return await this.finalizeResult({
       trust_score: 50,
-      risk_level: 'MODERATE',
-      recommendation: 'NOT_RECOMMENDED',
       reasoning: `Audit incomplete: ${reason}. Manual review recommended.`,
       red_flags: [],
-      positive_signals: [],
-      gaps: ['Automated audit incomplete']
+      verified_items: [],
+      unverified_items: ['Automated audit incomplete']
     });
   }
 
@@ -399,11 +445,11 @@ Website: ${this.contractor.website || 'Not provided'}
         'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
       },
       body: JSON.stringify({
-        model: 'deepseek-chat',  // chat is more deterministic than reasoner
+        model: 'deepseek-chat',
         messages,
         temperature: 0,
         max_tokens: 4000,
-        seed: 42  // fixed seed for reproducibility
+        seed: 42
       })
     });
 
@@ -420,4 +466,4 @@ Website: ${this.contractor.website || 'Not provided'}
   }
 }
 
-module.exports = { AuditAgent };
+module.exports = { AuditAgent, getVerdict, getConfidence, formatDisplayOutput };

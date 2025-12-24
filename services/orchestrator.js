@@ -192,60 +192,6 @@ async function runForensicAudit(contractorInput, options = {}) {
     const result = await agent.run();
 
     // Display results
-    console.log('\n' + '═'.repeat(60));
-    console.log('  AUDIT RESULTS');
-    console.log('═'.repeat(60));
-
-    const scoreColor = result.trust_score >= 70 ? '\x1b[32m' :
-      result.trust_score >= 40 ? '\x1b[33m' : '\x1b[31m';
-
-    console.log(`\n  Trust Score:    ${scoreColor}${result.trust_score}/100\x1b[0m`);
-    console.log(`  Risk Level:     ${result.risk_level}`);
-    console.log(`  Recommendation: ${result.recommendation}`);
-
-    console.log('\n--- REASONING ---');
-    console.log(result.reasoning);
-
-    if (result.red_flags && result.red_flags.length > 0) {
-      console.log('\n--- RED FLAGS ---');
-      for (const flag of result.red_flags) {
-        const severityColor = flag.severity === 'CRITICAL' ? '\x1b[31m' :
-          flag.severity === 'HIGH' ? '\x1b[31m' :
-            flag.severity === 'MEDIUM' ? '\x1b[33m' : '\x1b[0m';
-        console.log(`${severityColor}  [${flag.severity}] ${flag.category}: ${flag.description}\x1b[0m`);
-        if (flag.evidence) {
-          console.log(`    Evidence: ${flag.evidence}`);
-        }
-      }
-    }
-
-    if (result.positive_signals && result.positive_signals.length > 0) {
-      console.log('\n--- POSITIVE SIGNALS ---');
-      for (const signal of result.positive_signals) {
-        console.log(`  ✓ ${signal}`);
-      }
-    }
-
-    if (result.gaps_remaining && result.gaps_remaining.length > 0) {
-      console.log('\n--- DATA GAPS ---');
-      for (const gap of result.gaps_remaining) {
-        console.log(`  ⚠ ${gap}`);
-      }
-    }
-
-    console.log('\n--- METADATA ---');
-    console.log(`  Collection rounds: ${result.collection_rounds}`);
-    console.log(`  API cost: $${result.total_cost.toFixed(4)}`);
-
-    // Save database
-    if (!dryRun) {
-      // Postgres auto-saves (transaction committed in agent)
-      success('\n✅ Audit saved to database');
-    } else {
-      warn('\n⚠️  DRY RUN - results not saved');
-    }
-
-    console.log('\n' + '═'.repeat(60));
 
     return result;
 
