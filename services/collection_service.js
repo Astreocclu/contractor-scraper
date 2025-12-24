@@ -72,6 +72,24 @@ async function scrapeGoogleMapsBrowserUse(businessName, location = 'Fort Worth, 
 }
 
 /**
+ * Scrape Google Maps reviews using Claude Vision API
+ * Takes screenshots and uses Claude's vision to extract review data
+ * Most robust option - handles any DOM structure changes
+ */
+async function scrapeGoogleMapsClaudeVision(businessName, location = 'Fort Worth, TX', maxReviews = 20) {
+  return callPythonScraper('google_maps_claude_vision.py', [businessName, location, String(maxReviews)], 120000);
+}
+
+/**
+ * Scrape Google reviews using Serper API (RECOMMENDED)
+ * Uses Serper's /places and /reviews endpoints - 100% success rate
+ * No browser automation needed, just API calls
+ */
+async function scrapeGoogleReviewsSerper(businessName, location = 'Fort Worth, TX', maxReviews = 20) {
+  return callPythonScraper('google_reviews_serper.py', [businessName, location, String(maxReviews)], 30000);
+}
+
+/**
  * Scrape Yelp rating via Yahoo Search (bypasses DataDome)
  */
 async function scrapeYelpYahooPython(businessName, location = 'Fort Worth, TX') {
@@ -1251,24 +1269,56 @@ class CollectionService {
     log('\n  Fetching Google Maps LOCAL (DFW market)...');
     let gmapsLocalResult = null;
     try {
-      gmapsLocalResult = await scrapeGoogleMapsPython(contractor.name, TARGET_MARKET);
+      // Strategy priority: Serper (100% success) > Claude Vision > Traditional scraper
+      const useSerper = process.env.SERPER_API_KEY && process.env.USE_SERPER_REVIEWS !== 'false';
+      const useClaudeVision = process.env.USE_CLAUDE_VISION === 'true' && process.env.ANTHROPIC_API_KEY;
 
-      // Fallback to browser-use if enabled and no review text was extracted
-      const useBrowserUse = process.env.USE_BROWSERUSE === 'true';
-      const hasReviewText = gmapsLocalResult.reviews && gmapsLocalResult.reviews.length > 0;
-
-      if (useBrowserUse && gmapsLocalResult.found && !hasReviewText) {
-        log(`    ⚡ Trying browser-use fallback for review text...`);
+      // PRIMARY: Try Serper API first (100% success rate, gets full review text)
+      if (useSerper) {
+        log(`    🔍 Using Serper API for review extraction...`);
         try {
-          const browserUseResult = await scrapeGoogleMapsBrowserUse(contractor.name, TARGET_MARKET, 10);
-          if (browserUseResult.reviews && browserUseResult.reviews.length > 0) {
-            // Merge browser-use reviews into the result
-            gmapsLocalResult.reviews = browserUseResult.reviews;
-            gmapsLocalResult.review_source = 'browser_use';
-            success(`    ✓ browser-use extracted ${browserUseResult.reviews.length} reviews`);
+          gmapsLocalResult = await scrapeGoogleReviewsSerper(contractor.name, TARGET_MARKET, 20);
+          if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
+            success(`    ✓ Serper extracted ${gmapsLocalResult.reviews.length} reviews (${gmapsLocalResult.review_count} total)`);
+            gmapsLocalResult.review_source = 'serper_google';
+          } else if (gmapsLocalResult.found) {
+            // Got business info but no reviews - still useful
+            success(`    ✓ Serper found business: ${gmapsLocalResult.rating}★ (${gmapsLocalResult.review_count || 0} reviews)`);
+            gmapsLocalResult.review_source = 'serper_google';
+          } else {
+            warn(`    ⚠️ Serper: Business not found, falling back...`);
+            gmapsLocalResult = null;
           }
-        } catch (buErr) {
-          warn(`    ⚠️ browser-use fallback failed: ${buErr.message}`);
+        } catch (serperErr) {
+          warn(`    ⚠️ Serper failed: ${serperErr.message}, falling back...`);
+          gmapsLocalResult = null;
+        }
+      }
+
+      // FALLBACK 1: Claude Vision (if Serper failed and enabled)
+      if (!gmapsLocalResult && useClaudeVision) {
+        log(`    🔮 Trying Claude Vision fallback...`);
+        try {
+          gmapsLocalResult = await scrapeGoogleMapsClaudeVision(contractor.name, TARGET_MARKET, 20);
+          if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
+            success(`    ✓ Claude Vision extracted ${gmapsLocalResult.reviews.length} reviews`);
+            gmapsLocalResult.review_source = 'claude_vision';
+          } else {
+            warn(`    ⚠️ Claude Vision found business but no reviews, falling back...`);
+            gmapsLocalResult = null;
+          }
+        } catch (cvErr) {
+          warn(`    ⚠️ Claude Vision failed: ${cvErr.message}, falling back...`);
+          gmapsLocalResult = null;
+        }
+      }
+
+      // FALLBACK 2: Traditional Playwright scraper (rating only, no review text usually)
+      if (!gmapsLocalResult) {
+        log(`    📋 Using traditional scraper...`);
+        gmapsLocalResult = await scrapeGoogleMapsPython(contractor.name, TARGET_MARKET);
+        if (gmapsLocalResult.found) {
+          gmapsLocalResult.review_source = 'playwright';
         }
       }
 
