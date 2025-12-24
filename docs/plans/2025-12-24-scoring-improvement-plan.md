@@ -231,3 +231,48 @@ The remaining uncertainty is around edge cases that will only surface with more 
 This plan was developed through 6 rounds of iterative analysis between Claude and Gemini on December 24, 2025. The session analyzed all 49 audits from `2025-12-24-scoring-analysis.md` and identified the core issue: treating unverified data gaps the same as confirmed negative findings.
 
 The solution avoids hard caps in favor of teaching the LLM to classify risks correctly through explicit prompt guidance.
+
+---
+
+## Implementation Status: COMPLETE ✓
+
+**Implemented on:** December 24, 2025
+**Commit:** 2286dc5
+
+### Changes Made:
+
+1. **services/audit_agent.js** - Complete rewrite (V3)
+   - Added SEVERITY CLASSIFICATION RULES to prompt
+   - Added SCORING GUIDANCE to prompt
+   - New output format: VERDICT + CONFIDENCE
+   - Score kept internal (for database/analytics only)
+   - New display format with verified/unverified/red flags sections
+
+2. **services/orchestrator.js**
+   - Removed duplicate display code (audit_agent.js handles display now)
+
+### New Output Format:
+```
+VERDICT:    RECOMMENDED
+CONFIDENCE: HIGH
+
+WHAT WE VERIFIED:
+✓ 399 authentic reviews, 4.9 average
+✓ BBB A+ accredited
+✓ No lawsuits in 4 county searches
+
+WHAT WE COULDN'T VERIFY:
+- Lien records (scraper error)
+
+RED FLAGS: None found
+
+METADATA:
+  Internal Score: 92/100
+  API cost: $0.0024
+```
+
+### Testing:
+- Tested on contractors 1, 16
+- Verified MEDIUM flags for data gaps (not HIGH)
+- Verified score is internal only
+- Verified verdict maps correctly from score
