@@ -439,8 +439,8 @@ This is a **standalone project** with no code sharing:
 ```
 Projects (separate):
 ├─ contractors (port 8002) ← This project
-├─ boss-security-visualizer (port 8000)
-└─ pool-enclosure-visualizer (port 8001)
+├─ testhome-visualizer (port 8000) - multi-tenant: pools, screens, windows, roofs
+└─ (boss-security-visualizer archived, merged into testhome-visualizer)
 ```
 
 Each has its own database, virtual environment, and API.

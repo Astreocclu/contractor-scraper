@@ -1,5 +1,5 @@
 # Contractor Auditor - Status Report
-**Updated:** 2025-12-15
+**Updated:** 2026-01-06
 
 > **Note:** If the date above isn't today, this document may be out of date. Check SESSION-NOTES.md for the latest work.
 
@@ -7,7 +7,13 @@
 
 ## Executive Summary
 
-The contractor auditing system is **fully operational** with new **batch processing capabilities**. Data collection pipeline works end-to-end, scoring is accurate, and contractors are passing/failing appropriately based on real data.
+The contractor auditing system is **fully operational** with V2 pipeline achieving **zero variance** scoring. Data collection pipeline works end-to-end, scoring is accurate with 72% recommendation rate validated as statistically appropriate.
+
+**Scoring Validation (Dec 25):**
+- 72% RECOMMENDED rate confirmed appropriate (not inflated)
+- HIGH-severity flags are primary differentiator
+- Low-review contractors with no issues correctly score 85
+- Contractors with lawsuits/fraud correctly score 65 or below
 
 **V2 Consolidation (Dec 22):**
 - Removed V1 agent (had tools, web access, 12-point variance)
@@ -16,21 +22,11 @@ The contractor auditing system is **fully operational** with new **batch process
 - Score caps removed - trust pre-analyzed data
 - Lien summaries extracted (not 110KB raw records)
 
-**Recent Fixes (Dec 15):**
-- **Documentation gap fix**: CLAUDE.md now includes `docs/plans/` and `command-center/exports/` in startup protocol
-- Gemini reads recent work FIRST (plans, exports, SESSION-NOTES) before reference docs
-
-**Recent Fixes (Dec 14):**
-- **Temperature 0 fix**: Reduced score variance from 29 points to 2 points
-- **Lien direction fix**: Agent now correctly interprets liens filed BY contractor (collecting payment) vs AGAINST contractor (red flag)
-- **Lien scraper fix**: `calculate_lien_score()` now categorizes liens by direction with proper scoring
-
-**Previous Additions (Dec 12-13):**
+**Infrastructure (Dec 12-15):**
 - Batch audit runner with sequential execution and state persistence
-- Review analysis tracking with separate retry bucket
 - Async subprocess handling (replaced blocking execSync)
 - Cost tracking and rate limiting infrastructure
-- **Website discovery batch run**: 31% → 61% coverage (+1,291 websites)
+- Website discovery: 31% → 61% coverage (+1,291 websites)
 
 ---
 

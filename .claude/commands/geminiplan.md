@@ -7,6 +7,8 @@ argument-hint: [task description]
 
 You are entering **iterative planning mode** with Gemini as your co-architect.
 
+**Model:** Always use `-m gemini-3-pro-preview` for maximum reasoning capability.
+
 **CRITICAL:** Gemini has 5x the context. Gemini reads the files, NOT Claude. This saves tokens.
 
 ## Task to Plan
@@ -18,7 +20,7 @@ $ARGUMENTS
 **DO NOT read files yourself.** Send Gemini to explore and draft the initial plan:
 
 ```bash
-gemini -p "PLANNING TASK: $ARGUMENTS
+gemini -m gemini-3-pro-preview -p "PLANNING TASK: $ARGUMENTS
 
 YOUR JOB:
 1. Read any relevant files in this codebase to understand the current implementation
@@ -46,7 +48,7 @@ Each round:
 3. State your current confidence level and why
 4. Send your critique back to Gemini:
 ```bash
-gemini -p "PLAN REVISION REQUEST (Round N)
+gemini -m gemini-3-pro-preview -p "PLAN REVISION REQUEST (Round N)
 
 Task: $ARGUMENTS
 

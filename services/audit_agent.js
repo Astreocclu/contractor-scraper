@@ -448,8 +448,8 @@ Website: ${this.contractor.website || 'Not provided'}
         model: 'deepseek-chat',
         messages,
         temperature: 0,
-        max_tokens: 4000,
-        seed: 42
+        max_tokens: 4000
+        // seed: 42  // Removed to test variance
       })
     });
 

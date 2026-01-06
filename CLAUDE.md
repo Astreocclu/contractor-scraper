@@ -1,5 +1,9 @@
 # Contractor Intelligence System
 
+> **Server Info:** User connects from host PC to server `testhome` (192.168.1.254) as user `astre`
+
+---
+
 ## Prompting Principles
 
 **Always use positive framing** - say what TO do, specify what to preserve:
@@ -26,7 +30,7 @@
 
    RECENT WORK (CRITICAL - read these first):
    - docs/plans/*.md (all recent implementation plans)
-   - /home/reid/command-center/exports/*.md (session exports from last 48 hours)
+   - /home/astre/command-center/exports/*.md (session exports from last 48 hours)
    - SESSION-NOTES.md
 
    STATUS FILES:
@@ -85,7 +89,7 @@ Forensic contractor auditing. Playwright (with Puppeteer as backup) scrapes → 
 | Location | Contents | How to Find |
 |----------|----------|-------------|
 | `docs/plans/` | Implementation plans | `ls -lt docs/plans/ | head -5` |
-| `/home/reid/command-center/exports/` | Session exports (full conversation logs) | `ls -lt /home/reid/command-center/exports/ | head -5` |
+| `/home/astre/command-center/exports/` | Session exports (full conversation logs) | `ls -lt /home/astre/command-center/exports/ | head -5` |
 | `SESSION-NOTES.md` | Running session log | Direct read |
 
 **Naming convention:** `YYYY-MM-DD-description.md` — search by date for recent work.
@@ -113,10 +117,10 @@ Forensic contractor auditing. Playwright (with Puppeteer as backup) scrapes → 
 ls -lt docs/plans/ | head -10
 
 # Session exports (full conversation history)
-ls -lt /home/reid/command-center/exports/ | head -10
+ls -lt /home/astre/command-center/exports/ | head -10
 
 # Find docs by date pattern
-find docs/plans /home/reid/command-center/exports -name "*$(date +%Y-%m-%d)*" -o -name "*$(date -d yesterday +%Y-%m-%d)*"
+find docs/plans /home/astre/command-center/exports -name "*$(date +%Y-%m-%d)*" -o -name "*$(date -d yesterday +%Y-%m-%d)*"
 ```
 
 ---

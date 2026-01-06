@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-key-change-me')
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.254']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,7 +38,11 @@ MIDDLEWARE = [
 # CORS settings for local development
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:4000',
+    'http://localhost:4001',
     'http://127.0.0.1:4000',
+    'http://127.0.0.1:4001',
+    'http://192.168.1.254:4000',
+    'http://192.168.1.254:4001',
 ]
 
 ROOT_URLCONF = 'config.urls'

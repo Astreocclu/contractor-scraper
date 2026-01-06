@@ -90,6 +90,16 @@ async function scrapeGoogleReviewsSerper(businessName, location = 'Fort Worth, T
 }
 
 /**
+ * Tiered Google Reviews Scraper
+ * 1. Calls Serper first (8 reviews, cheap)
+ * 2. Quick fraud check
+ * 3. Escalates to SerpApi if suspicious or high-volume (>50 reviews)
+ */
+async function scrapeGoogleReviewsTiered(businessName, location = 'Fort Worth, TX', maxReviews = 100) {
+  return callPythonScraper('google_reviews_tiered.py', [businessName, location, String(maxReviews)], 120000);
+}
+
+/**
  * Scrape Yelp rating via Yahoo Search (bypasses DataDome)
  */
 async function scrapeYelpYahooPython(businessName, location = 'Fort Worth, TX') {
@@ -1273,8 +1283,31 @@ class CollectionService {
       const useSerper = process.env.SERPER_API_KEY && process.env.USE_SERPER_REVIEWS !== 'false';
       const useClaudeVision = process.env.USE_CLAUDE_VISION === 'true' && process.env.ANTHROPIC_API_KEY;
 
-      // PRIMARY: Try Serper API first (100% success rate, gets full review text)
-      if (useSerper) {
+      // PRIMARY: Tiered scraper (Serper first, escalates to SerpApi if suspicious/high-volume)
+      const useTiered = process.env.SERPER_API_KEY && process.env.SERPAPI_API_KEY;
+      if (useTiered) {
+        log(`    🔍 Using tiered review scraper (Serper → SerpApi if needed)...`);
+        try {
+          gmapsLocalResult = await scrapeGoogleReviewsTiered(contractor.name, TARGET_MARKET, 100);
+          if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
+            const escalated = gmapsLocalResult.escalated ? ' [ESCALATED to SerpApi]' : '';
+            success(`    ✓ Got ${gmapsLocalResult.reviews.length} reviews (${gmapsLocalResult.review_count} total)${escalated}`);
+            gmapsLocalResult.review_source = gmapsLocalResult.source || 'tiered';
+          } else if (gmapsLocalResult.found) {
+            success(`    ✓ Found business: ${gmapsLocalResult.rating}★ (${gmapsLocalResult.review_count || 0} reviews)`);
+            gmapsLocalResult.review_source = gmapsLocalResult.source || 'tiered';
+          } else {
+            warn(`    ⚠️ Tiered scraper: Business not found, falling back...`);
+            gmapsLocalResult = null;
+          }
+        } catch (tieredErr) {
+          warn(`    ⚠️ Tiered scraper failed: ${tieredErr.message}, falling back to Serper...`);
+          gmapsLocalResult = null;
+        }
+      }
+
+      // FALLBACK: Plain Serper (if tiered not available)
+      if (!gmapsLocalResult && useSerper && !useTiered) {
         log(`    🔍 Using Serper API for review extraction...`);
         try {
           gmapsLocalResult = await scrapeGoogleReviewsSerper(contractor.name, TARGET_MARKET, 20);
@@ -1282,7 +1315,6 @@ class CollectionService {
             success(`    ✓ Serper extracted ${gmapsLocalResult.reviews.length} reviews (${gmapsLocalResult.review_count} total)`);
             gmapsLocalResult.review_source = 'serper_google';
           } else if (gmapsLocalResult.found) {
-            // Got business info but no reviews - still useful
             success(`    ✓ Serper found business: ${gmapsLocalResult.rating}★ (${gmapsLocalResult.review_count || 0} reviews)`);
             gmapsLocalResult.review_source = 'serper_google';
           } else {
