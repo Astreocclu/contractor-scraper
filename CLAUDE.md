@@ -76,8 +76,9 @@ Forensic contractor auditing. Playwright (with Puppeteer as backup) scrapes → 
 1. `TODO.md` — Current priorities (what to work on)
 2. `STATUS.md` — System state (what's working/broken)
 3. `ERRORS.md` — Known issues (avoid repeating mistakes)
-4. `docs/AGENTIC_QUICKREF.md` — Audit system overview (how it works)
-5. Run `git status` — Confirm branch and uncommitted changes
+4. `docs/EXPERIMENTS.md` — Previous tests/investigations (what was tried, what we learned)
+5. `docs/AGENTIC_QUICKREF.md` — Audit system overview (how it works)
+6. Run `git status` — Confirm branch and uncommitted changes
 
 ---
 
@@ -198,6 +199,53 @@ python3 manage.py runserver 8002
 
 ---
 
+## Dialectic Audit Mode
+
+The `--mode=dialectic` flag enables three-persona adversarial analysis:
+
+### The Three Personas
+
+| Persona | Role | Question Asked |
+|---------|------|----------------|
+| Consumer Advocate | Skeptical, protective | "Why should we NOT trust this contractor?" |
+| Fair Arbiter | Charitable, balanced | "Why might this contractor be trustworthy despite red flags?" |
+| Synthesizer | Senior analyst | "Who made the stronger case and why?" |
+
+### Usage
+
+```bash
+# Standard single-pass audit
+node bin/run_audit.js --id 123
+
+# Dialectic three-persona audit
+node bin/run_audit.js --id 123 --mode dialectic
+```
+
+### Output Structure
+
+Each persona produces:
+- `trust_score` (0-100)
+- `assessment_confidence` (0-100) - how certain about their score
+- `data_confidence` (0-100) - how reliable the evidence is
+- `reasoning` - detailed text another analyst could challenge
+
+The Synthesizer also produces:
+- `agreements` - where both personas agreed
+- `disagreements` - where they differed and why
+- `stronger_case` - which persona was more convincing
+- `summary` - final assessment
+
+### When to Use
+
+- **Standard mode:** Fast, cheap (~$0.003), good for batch audits
+- **Dialectic mode:** Slower, 3x cost (~$0.007), better reasoning quality for important audits
+
+### Database
+
+Dialectic audits are saved with `audit_version = 4`. The full three-persona trace is stored in `reasoning_trace` as JSON.
+
+---
+
 ## Always Do These
 
 ### Terminology
@@ -226,6 +274,12 @@ python3 manage.py runserver 8002
 - Always analyze problems first, wait for confirmation before changes
 - Always show `git status` before any git operations
 - Always suggest commits, wait for approval before running
+
+### Experiment Logging
+- After completing any test/investigation with **measurable outcomes** (metrics, scores, pass/fail), ask: "Should this be logged to EXPERIMENTS.md?"
+- "Significant" means: measurable outcome + method is repeatable + results influence decisions + took >15 min
+- If yes, append structured entry: Date, Type, Hypothesis, Method, Results, Conclusion, Details link
+- For automated scripts (like `ab_test_reviews.js`): they append automatically, no prompt needed
 
 ---
 
