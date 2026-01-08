@@ -7,7 +7,7 @@
 
 const db = require('./db_pg');
 const { CollectionService } = require('./collection_service');
-const { AuditAgent } = require('./audit_agent');
+const { AuditAgent, DialecticAuditAgent } = require('./audit_agent');
 
 // Logging helpers
 const log = (msg) => console.log(msg);
@@ -19,7 +19,7 @@ const error = (msg) => console.log(`\x1b[31m${msg}\x1b[0m`);
  * Run a forensic audit on a contractor
  */
 async function runForensicAudit(contractorInput, options = {}) {
-  const { dryRun = false, skipCollection = false, collectOnly = false, batchMode = false, skipLiens = false } = options;
+  const { dryRun = false, skipCollection = false, collectOnly = false, batchMode = false, skipLiens = false, mode = 'standard' } = options;
 
   console.log('\n' + '═'.repeat(60));
   console.log('  🔍 AGENTIC FORENSIC AUDIT');
@@ -188,7 +188,13 @@ async function runForensicAudit(contractorInput, options = {}) {
     }
 
     // Run agentic audit
-    const agent = new AuditAgent(db, contractorId, contractor);
+    let agent;
+    if (mode === 'dialectic') {
+      log('\n🎭 Using DIALECTIC mode (three-persona analysis)');
+      agent = new DialecticAuditAgent(db, contractorId, contractor);
+    } else {
+      agent = new AuditAgent(db, contractorId, contractor);
+    }
     const result = await agent.run();
 
     // Display results
