@@ -709,7 +709,9 @@ Website: ${this.contractor.website || 'Not provided'}
         } catch (e) {
           warn(`  ${personaName} JSON parse error: ${e.message}`);
           if (attempts < maxAttempts) {
-            messages.push(message);
+            if (message) {
+              messages.push(message);
+            }
             messages.push({
               role: 'user',
               content: 'Please respond with valid JSON only, no other text.'
@@ -719,7 +721,9 @@ Website: ${this.contractor.website || 'Not provided'}
       } else {
         warn(`  ${personaName} no JSON found in response`);
         if (attempts < maxAttempts) {
-          messages.push(message);
+          if (message) {
+            messages.push(message);
+          }
           messages.push({
             role: 'user',
             content: 'Please provide your assessment as JSON.'
@@ -789,7 +793,9 @@ Now synthesize these two perspectives and produce your final assessment.`;
         } catch (e) {
           warn(`  Synthesizer JSON parse error: ${e.message}`);
           if (attempts < maxAttempts) {
-            messages.push(message);
+            if (message) {
+              messages.push(message);
+            }
             messages.push({
               role: 'user',
               content: 'Please respond with valid JSON only, no other text.'
@@ -799,7 +805,9 @@ Now synthesize these two perspectives and produce your final assessment.`;
       } else {
         warn('  Synthesizer no JSON found in response');
         if (attempts < maxAttempts) {
-          messages.push(message);
+          if (message) {
+            messages.push(message);
+          }
           messages.push({
             role: 'user',
             content: 'Please provide your final assessment as JSON.'
@@ -855,8 +863,9 @@ Now synthesize these two perspectives and produce your final assessment.`;
   async finalizeResult(synthesis, advocate, arbiter) {
     const now = new Date().toISOString();
 
-    // Extract final score
-    const trustScore = Math.max(0, Math.min(100, synthesis.final_trust_score || 50));
+    // Extract final score with null coalescing
+    let finalScore = synthesis?.final_trust_score ?? 50;
+    const trustScore = Math.max(0, Math.min(100, finalScore));
 
     // Derive verdict and confidence
     const verdict = getVerdict(trustScore);
@@ -974,10 +983,10 @@ Now synthesize these two perspectives and produce your final assessment.`;
   TRUST SCORE:      ${result.trust_score}/100
 
 --- PERSONA ANALYSIS ---
-  Consumer Advocate (skeptical): ${advocate.trust_score}/100
-  Fair Arbiter (charitable):     ${arbiter.trust_score}/100
+  Consumer Advocate (skeptical): ${advocate?.trust_score ?? 'N/A'}/100
+  Fair Arbiter (charitable):     ${arbiter?.trust_score ?? 'N/A'}/100
   Score Spread:                  ${spread} points (${agreementLevel})
-  Stronger Case:                 ${synthesis.stronger_case.toUpperCase()}
+  Stronger Case:                 ${(synthesis?.stronger_case ?? 'unknown').toUpperCase()}
 
 --- SYNTHESIS ---
 ${synthesis.summary || 'No summary provided'}
@@ -1052,10 +1061,15 @@ ${synthesis.summary || 'No summary provided'}
     });
 
     if (!response.ok) {
-      throw new Error(`DeepSeek error: ${response.status}`);
+      const text = await response.text();
+      throw new Error(`DeepSeek error: ${response.status} - ${text.substring(0, 200)}`);
     }
 
-    return response.json();
+    try {
+      return await response.json();
+    } catch (e) {
+      throw new Error(`DeepSeek returned invalid JSON: ${e.message}`);
+    }
   }
 
   estimateCost(response) {
