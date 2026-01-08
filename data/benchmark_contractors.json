@@ -1,0 +1,38 @@
+{
+  "description": "Benchmark contractors for prompt optimization. Expected scores based on human judgment.",
+  "tolerance_default": 10,
+  "contractors": [
+    {
+      "id": 141,
+      "name": "Tropic Island Pools",
+      "expected": 40,
+      "tolerance": 10,
+      "category": "bad",
+      "notes": "BBB F rating, unverified license - should score low"
+    },
+    {
+      "id": 656,
+      "name": "Bonnie & Clydes Pools and Spas",
+      "expected": 35,
+      "tolerance": 10,
+      "category": "bad",
+      "notes": "Deceptive sales practices, fake reviews flagged"
+    },
+    {
+      "id": 665,
+      "name": "Pinch A Penny Pool Patio Spa",
+      "expected": 52,
+      "tolerance": 15,
+      "category": "mixed",
+      "notes": "Mixed signals - good local reviews but poor Trustpilot"
+    },
+    {
+      "id": 682,
+      "name": "Empowered Renovations",
+      "expected": 40,
+      "tolerance": 10,
+      "category": "bad",
+      "notes": "Suspicious review profile, unverified credentials"
+    }
+  ]
+}
