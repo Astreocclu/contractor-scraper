@@ -43,6 +43,8 @@ Options:
                       - Require 25+ reviews for RECOMMENDED (80+)
                       - Require verified registration for 85+
                       - Cap at 75 if critical data gaps exist
+  --mode <mode>       Audit mode: 'standard' (default) or 'dialectic'
+                      Dialectic uses three-persona adversarial analysis
   --list              List recent audits
   --help              Show this help
 
@@ -51,6 +53,7 @@ Examples:
   node run_audit.js --name "Orange Elephant Roofing" --city "Dallas" --state "TX"
   node run_audit.js --id 29 --dry-run
   node run_audit.js --id 29 --collect-only
+  node run_audit.js --id 29 --mode dialectic
   node run_audit.js --list
 `);
 };
@@ -95,8 +98,16 @@ async function main() {
   const options = {
     dryRun: getArg('dry-run') || false,
     skipCollection: getArg('skip-collection') || false,
-    collectOnly: getArg('collect-only') || false
+    collectOnly: getArg('collect-only') || false,
+    mode: getArg('mode') || 'standard'
   };
+
+  // Validate mode
+  const validModes = ['standard', 'dialectic'];
+  if (!validModes.includes(options.mode)) {
+    console.error(`\x1b[31mERROR: Invalid audit mode '${options.mode}'. Must be 'standard' or 'dialectic'\x1b[0m`);
+    process.exit(1);
+  }
 
   // Enable strict constraints if requested
   if (getArg('strict')) {
