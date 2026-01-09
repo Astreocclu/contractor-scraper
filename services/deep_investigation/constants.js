@@ -53,7 +53,7 @@ const LLM_CONFIG = {
   gemini: {
     base_url: 'https://generativelanguage.googleapis.com/v1beta/models',
     model: 'gemini-2.5-flash',
-    max_tokens: 2000,
+    max_tokens: 4000,  // Increased from 2000 - Gemini was truncating JSON
     temperature: 0.1
   }
   // Note: Claude config removed - using Gemini Evaluator as third tier
