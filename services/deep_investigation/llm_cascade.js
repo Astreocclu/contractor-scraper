@@ -15,9 +15,23 @@ const warn = (msg) => console.log(`\x1b[33m${msg}\x1b[0m`);
 
 // ============ PROMPTS ============
 
-const DEEPSEEK_GAP_ANALYSIS_PROMPT = `You are a forensic investigator analyzing contractor data for fraud indicators.
+const DEEPSEEK_GAP_ANALYSIS_PROMPT = `You are a forensic investigator analyzing contractor data for ACTUAL fraud indicators.
 
-TASK: Identify knowledge gaps and generate targeted search queries.
+CRITICAL CONTEXT - What is NOT a red flag:
+- Missing license: Texas does NOT require licenses for most contractors (pools, roofing, fencing, patios). Only plumbers, electricians, and HVAC need state licenses.
+- New company: Being new is not suspicious. Many legitimate contractors start fresh.
+- Missing insurance verification: We can't verify insurance for most contractors. This is normal.
+- Out-of-state origin: Not suspicious. Many contractors relocate.
+- Failed searches/scrapers: Technical failures are not evidence of fraud.
+- BBB not having phone/email: BBB often has incomplete data. Not a red flag.
+
+ACTUAL red flags to look for:
+- Timeline fabrication: Claims "30 years experience" but BBB shows established 2024
+- Virtual mailbox address: UPS Store, Regus, "Suite" at a strip mall
+- Review manipulation: 4.8 Google rating but 1.9 Yelp, or no reviews anywhere
+- Active lawsuits: Court cases for breach of contract, fraud, non-payment
+- News investigations: Media coverage of scams or complaints
+- BBB F rating or "critical" status with actual complaints
 
 CONTRACTOR: {{contractor_name}}
 LOCATION: {{contractor_city}}, {{contractor_state}}
@@ -29,24 +43,37 @@ RAW DATA SUMMARY:
 {{raw_data_summary}}
 
 ANALYZE:
-1. What discrepancies exist between claimed and verified information?
-2. What critical information is missing?
-3. What specific searches would help verify or disprove the flags?
+1. What ACTUAL discrepancies exist? (not missing data, but conflicting claims)
+2. Are there patterns suggesting intentional deception?
+3. What searches would find EVIDENCE of fraud (lawsuits, complaints, news)?
 
 OUTPUT JSON ONLY:
 {
   "analysis": {
-    "key_discrepancies": ["..."],
-    "missing_information": ["..."],
+    "key_discrepancies": ["only list ACTUAL conflicts, not missing data"],
+    "fraud_indicators": ["specific evidence of deception"],
     "suspicion_level": "high|medium|low"
   },
   "suggested_queries": [
-    {"query": "search string", "rationale": "why this search helps"}
+    {"query": "search string", "rationale": "what fraud evidence this would find"}
   ],
   "confidence": 0.0-1.0
 }`;
 
-const GEMINI_STRUCTURE_PROMPT = `You are a data analyst structuring investigation findings.
+const GEMINI_STRUCTURE_PROMPT = `You are a data analyst structuring investigation findings for a Texas contractor.
+
+CRITICAL: Do NOT flag these as issues:
+- Missing license (Texas doesn't require for pools, roofing, fencing, patios)
+- New company or recent BBB registration
+- Failed scrapers or missing data
+- Can't verify insurance (normal - we can't verify most)
+- BBB missing phone/email (common, not suspicious)
+
+ONLY flag ACTUAL evidence of fraud:
+- CRITICAL: Active lawsuits, BBB F rating, confirmed scam reports
+- SEVERE: Timeline fabrication, virtual mailbox, review manipulation
+- MODERATE: Patterns suggesting deception with some evidence
+- LOW: Minor concerns worth noting
 
 CONTRACTOR: {{contractor_name}}
 
@@ -56,17 +83,15 @@ DEEPSEEK ANALYSIS:
 QUERY RESULTS:
 {{query_results}}
 
-TASK: Structure the findings into actionable intelligence.
+TASK: Structure findings. Only include flags with ACTUAL EVIDENCE, not data gaps.
 
 OUTPUT JSON ONLY:
 {
   "confirmed_flags": [
-    {"severity": "CRITICAL|SEVERE|MODERATE|LOW", "category": "...", "description": "...", "evidence": "..."}
+    {"severity": "CRITICAL|SEVERE|MODERATE|LOW", "category": "...", "description": "...", "evidence": "specific evidence, not 'could not verify'"}
   ],
-  "unconfirmed_flags": [
-    {"category": "...", "description": "...", "needs": "what would confirm this"}
-  ],
-  "verified_positives": ["..."],
+  "verified_positives": ["good things we confirmed"],
+  "data_gaps": ["things we couldn't verify - NOT flags, just notes"],
   "additional_queries": [
     {"query": "...", "rationale": "...", "priority": "high|medium|low"}
   ],
@@ -74,44 +99,49 @@ OUTPUT JSON ONLY:
   "recommendation": "continue_investigation|sufficient_data|escalate_to_human"
 }`;
 
-const GEMINI_EVALUATOR_PROMPT = `You are a senior fraud analyst evaluating TWO independent analyses of the same contractor.
+const GEMINI_EVALUATOR_PROMPT = `You are a senior fraud analyst evaluating TWO independent analyses of a Texas contractor.
+
+CRITICAL CONTEXT - These are NOT red flags:
+- Missing license: Texas doesn't require licenses for pools, roofing, fencing, patios
+- New company: Legitimate contractors start new businesses all the time
+- Missing insurance verification: Normal - we can't verify most contractors
+- Failed scrapers/searches: Technical issues, not fraud indicators
+- BBB missing data: BBB often has incomplete profiles
+- Out-of-state origin: Contractors relocate, not suspicious
+
+ACTUAL red flags require EVIDENCE:
+- BBB F rating with actual complaints
+- Active lawsuits for fraud/breach of contract
+- News investigations about scams
+- Timeline fabrication (claims don't match records)
+- Virtual mailbox (UPS Store, Regus)
+- Severe review manipulation (4.8 Google vs 1.9 Yelp)
 
 CONTRACTOR: {{contractor_name}}
 LOCATION: {{contractor_city}}, {{contractor_state}}
 
-=== ANALYSIS 1: DeepSeek Gap Analysis ===
+=== ANALYSIS 1: DeepSeek ===
 {{deepseek_output}}
 
-=== ANALYSIS 2: Gemini Structured Findings ===
+=== ANALYSIS 2: Gemini ===
 {{gemini_output}}
 
-TASK: Compare both analyses and provide final judgment.
-
-Consider:
-- Where do both analyses AGREE? (high confidence findings)
-- Where do they DISAGREE? (needs more investigation or human review)
-- Are the flags genuine red flags or explainable?
-- Is there a pattern suggesting intentional deception?
-- What is the risk level for a homeowner hiring this contractor?
+TASK: Synthesize both analyses. Ignore flags about missing data/licenses/insurance.
+Only report flags with ACTUAL EVIDENCE of fraud or deception.
 
 OUTPUT JSON ONLY:
 {
   "final_assessment": {
     "fraud_likelihood": "high|medium|low|negligible",
     "confidence": 0.0-1.0,
-    "reasoning": "detailed explanation"
+    "reasoning": "focus on actual evidence, not data gaps"
   },
-  "analysis_comparison": {
-    "agreements": ["findings both analyses confirmed"],
-    "disagreements": ["findings where analyses differed"],
-    "stronger_analysis": "deepseek|gemini|equal"
-  },
-  "critical_flags": [
-    {"category": "...", "description": "...", "evidence": "...", "severity": "CRITICAL|SEVERE"}
+  "confirmed_fraud_indicators": [
+    {"category": "...", "description": "...", "evidence": "specific evidence", "severity": "CRITICAL|SEVERE"}
   ],
-  "mitigating_factors": ["..."],
-  "recommendation": "avoid|caution|acceptable|recommended",
-  "suggested_human_review_points": ["..."]
+  "verified_positives": ["good things confirmed about contractor"],
+  "data_gaps_noted": ["things we couldn't verify - informational only"],
+  "recommendation": "avoid|caution|acceptable|recommended"
 }`;
 
 // ============ API CALLS ============
