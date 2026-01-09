@@ -17,40 +17,73 @@ const warn = (msg) => console.log(`\x1b[33m${msg}\x1b[0m`);
 
 const DEEPSEEK_GAP_ANALYSIS_PROMPT = `You are a forensic investigator analyzing contractor data for ACTUAL fraud indicators.
 
-CRITICAL CONTEXT - What is NOT a red flag:
-- Missing license: Texas does NOT require licenses for most contractors (pools, roofing, fencing, patios). Only plumbers, electricians, and HVAC need state licenses.
-- New company: Being new is not suspicious. Many legitimate contractors start fresh.
-- Missing insurance verification: We can't verify insurance for most contractors. This is normal.
-- Out-of-state origin: Not suspicious. Many contractors relocate.
-- Failed searches/scrapers: Technical failures are not evidence of fraud.
-- BBB not having phone/email: BBB often has incomplete data. Not a red flag.
+## MANDATORY FIRST STEP: TIMELINE RECONSTRUCTION
 
-ACTUAL red flags to look for:
-- Timeline fabrication: Claims "30 years experience" but BBB shows established 2024
-- Virtual mailbox address: UPS Store, Regus, "Suite" at a strip mall
-- Review manipulation: 4.8 Google rating but 1.9 Yelp, or no reviews anywhere
-- Active lawsuits: Court cases for breach of contract, fraud, non-payment
-- News investigations: Media coverage of scams or complaints
-- BBB F rating or "critical" status with actual complaints
+BEFORE analyzing anything else, you MUST reconstruct the complete business timeline from ALL available sources:
+
+TIMELINE DATA FROM SOURCES:
+{{timeline_summary}}
+
+Your FIRST task is to:
+1. List every timeline claim from every source (website, Google, BBB, HomeAdvisor, Angi, etc.)
+2. Identify the most AUTHORITATIVE source (BBB founding_date is gold standard - it's from official records)
+3. Calculate discrepancies between claims and authoritative records
+4. A 25+ year discrepancy is FRAUD - the contractor is lying about their history
+
+## CONTEXT FOR NON-ISSUES
+
+What is NOT a red flag:
+- Missing license: Texas doesn't require licenses for pools, roofing, fencing, patios
+- New company: Being new is fine. LYING about being old is fraud.
+- Missing insurance verification: Normal - we can't verify most
+- Failed searches/scrapers: Technical failures, not evidence
+
+## ACTUAL RED FLAGS
+
+- Timeline fabrication: Claims "30 years experience" but BBB shows founded 2024 → CRITICAL FRAUD
+- Virtual mailbox address: UPS Store, Regus, "Suite" at strip mall
+- Review manipulation: 4.8 Google rating but 1.9 Yelp
+- Active lawsuits: Court cases for fraud, breach of contract
+- BBB F rating with actual complaints
 
 CONTRACTOR: {{contractor_name}}
 LOCATION: {{contractor_city}}, {{contractor_state}}
 
-RULE-BASED FLAGS FOUND:
+RULE-BASED FLAGS:
 {{rule_flags}}
 
-RAW DATA SUMMARY:
+RAW DATA:
 {{raw_data_summary}}
 
-ANALYZE:
-1. What ACTUAL discrepancies exist? (not missing data, but conflicting claims)
-2. Are there patterns suggesting intentional deception?
-3. What searches would find EVIDENCE of fraud (lawsuits, complaints, news)?
+## YOUR ANALYSIS
+
+1. TIMELINE ANALYSIS (REQUIRED FIRST):
+   - What does each source claim about business age/founding?
+   - What is the BBB founding_date (most authoritative)?
+   - Is there a discrepancy? How many years?
+   - If discrepancy > 5 years, this is intentional deception
+
+2. OTHER DISCREPANCIES:
+   - Address conflicts
+   - Review pattern issues
+   - Legal/complaint issues
+
+3. FRAUD INDICATORS:
+   - List specific evidence of intentional deception
 
 OUTPUT JSON ONLY:
 {
+  "timeline_analysis": {
+    "bbb_founding_date": "date or null",
+    "bbb_years_in_business": number,
+    "claims_from_sources": [
+      {"source": "...", "claim": "...", "years_claimed": number}
+    ],
+    "max_discrepancy_years": number,
+    "timeline_verdict": "consistent|minor_discrepancy|major_discrepancy|FRAUD"
+  },
   "analysis": {
-    "key_discrepancies": ["only list ACTUAL conflicts, not missing data"],
+    "key_discrepancies": ["only ACTUAL conflicts with evidence"],
     "fraud_indicators": ["specific evidence of deception"],
     "suspicion_level": "high|medium|low"
   },
@@ -62,18 +95,33 @@ OUTPUT JSON ONLY:
 
 const GEMINI_STRUCTURE_PROMPT = `You are a data analyst structuring investigation findings for a Texas contractor.
 
-CRITICAL: Do NOT flag these as issues:
-- Missing license (Texas doesn't require for pools, roofing, fencing, patios)
-- New company or recent BBB registration
-- Failed scrapers or missing data
-- Can't verify insurance (normal - we can't verify most)
-- BBB missing phone/email (common, not suspicious)
+## TIMELINE VERIFICATION (HIGHEST PRIORITY)
 
-ONLY flag ACTUAL evidence of fraud:
-- CRITICAL: Active lawsuits, BBB F rating, confirmed scam reports
-- SEVERE: Timeline fabrication, virtual mailbox, review manipulation
-- MODERATE: Patterns suggesting deception with some evidence
-- LOW: Minor concerns worth noting
+You MUST verify the timeline analysis from DeepSeek:
+
+TIMELINE DATA:
+{{timeline_summary}}
+
+DEEPSEEK'S TIMELINE ANALYSIS:
+(See deepseek_output below)
+
+Your job:
+1. Verify DeepSeek correctly identified all timeline claims
+2. Confirm or dispute the discrepancy calculation
+3. If BBB shows founded in 2024 but contractor claims 30 years → CRITICAL FRAUD
+4. Timeline fraud is grounds for AVOID recommendation regardless of other factors
+
+## DO NOT FLAG THESE:
+- Missing license (Texas doesn't require for pools, roofing, fencing, patios)
+- Being a new company (new is fine, lying about age is fraud)
+- Failed scrapers or missing data
+- Can't verify insurance
+
+## FLAG THESE WITH EVIDENCE:
+- CRITICAL: Timeline fraud (claiming years they don't have), active lawsuits, BBB F rating
+- SEVERE: Virtual mailbox, review manipulation, 5+ year timeline discrepancy
+- MODERATE: 2-5 year timeline discrepancy, patterns of deception
+- LOW: Minor concerns
 
 CONTRACTOR: {{contractor_name}}
 
@@ -83,15 +131,20 @@ DEEPSEEK ANALYSIS:
 QUERY RESULTS:
 {{query_results}}
 
-TASK: Structure findings. Only include flags with ACTUAL EVIDENCE, not data gaps.
-
 OUTPUT JSON ONLY:
 {
+  "timeline_verification": {
+    "deepseek_timeline_correct": true|false,
+    "verified_bbb_founding": "date or null",
+    "verified_max_discrepancy": number,
+    "timeline_fraud_confirmed": true|false,
+    "timeline_notes": "explanation"
+  },
   "confirmed_flags": [
-    {"severity": "CRITICAL|SEVERE|MODERATE|LOW", "category": "...", "description": "...", "evidence": "specific evidence, not 'could not verify'"}
+    {"severity": "CRITICAL|SEVERE|MODERATE|LOW", "category": "...", "description": "...", "evidence": "specific evidence"}
   ],
-  "verified_positives": ["good things we confirmed"],
-  "data_gaps": ["things we couldn't verify - NOT flags, just notes"],
+  "verified_positives": ["good things confirmed"],
+  "data_gaps": ["things we couldn't verify - informational only"],
   "additional_queries": [
     {"query": "...", "rationale": "...", "priority": "high|medium|low"}
   ],
@@ -99,23 +152,29 @@ OUTPUT JSON ONLY:
   "recommendation": "continue_investigation|sufficient_data|escalate_to_human"
 }`;
 
-const GEMINI_EVALUATOR_PROMPT = `You are a senior fraud analyst evaluating TWO independent analyses of a Texas contractor.
+const GEMINI_EVALUATOR_PROMPT = `You are a senior fraud analyst making the FINAL determination on a Texas contractor.
 
-CRITICAL CONTEXT - These are NOT red flags:
-- Missing license: Texas doesn't require licenses for pools, roofing, fencing, patios
-- New company: Legitimate contractors start new businesses all the time
-- Missing insurance verification: Normal - we can't verify most contractors
-- Failed scrapers/searches: Technical issues, not fraud indicators
-- BBB missing data: BBB often has incomplete profiles
-- Out-of-state origin: Contractors relocate, not suspicious
+## CRITICAL: TIMELINE FRAUD IS AN AUTOMATIC AVOID
 
-ACTUAL red flags require EVIDENCE:
-- BBB F rating with actual complaints
-- Active lawsuits for fraud/breach of contract
-- News investigations about scams
-- Timeline fabrication (claims don't match records)
-- Virtual mailbox (UPS Store, Regus)
-- Severe review manipulation (4.8 Google vs 1.9 Yelp)
+TIMELINE DATA FROM ALL SOURCES:
+{{timeline_summary}}
+
+If the contractor claims significantly more years in business than authoritative records show (BBB founding_date), this is FRAUD and warrants an AVOID recommendation regardless of other factors.
+
+Example: If BBB shows founding_date "09/25/2024" but contractor claims "30 years experience" → This is TIMELINE FRAUD → AVOID
+
+## WHAT IS NOT A RED FLAG:
+- Missing license (Texas doesn't require for most contractors)
+- Being a new company (new is fine, LYING about being old is fraud)
+- Missing insurance verification (normal)
+- Failed scrapers/searches (technical issues)
+
+## WHAT IS A RED FLAG (requires evidence):
+- Timeline fabrication: Claiming 30 years but founded in 2024 → CRITICAL
+- BBB F rating with complaints → CRITICAL
+- Active lawsuits → CRITICAL
+- Virtual mailbox (UPS Store, Regus) → SEVERE
+- Review manipulation → SEVERE
 
 CONTRACTOR: {{contractor_name}}
 LOCATION: {{contractor_city}}, {{contractor_state}}
@@ -126,21 +185,44 @@ LOCATION: {{contractor_city}}, {{contractor_state}}
 === ANALYSIS 2: Gemini ===
 {{gemini_output}}
 
-TASK: Synthesize both analyses. Ignore flags about missing data/licenses/insurance.
-Only report flags with ACTUAL EVIDENCE of fraud or deception.
+## YOUR FINAL DETERMINATION
+
+1. TIMELINE VERDICT:
+   - What is the BBB founding_date?
+   - What is the maximum years claimed anywhere?
+   - Is there a discrepancy? How many years?
+   - If discrepancy > 10 years → TIMELINE FRAUD → AVOID
+
+2. OTHER FRAUD INDICATORS:
+   - List any with ACTUAL evidence
+
+3. RECOMMENDATION:
+   - If TIMELINE FRAUD confirmed → "avoid" (non-negotiable)
+   - If other CRITICAL flags → "avoid"
+   - If SEVERE flags only → "caution"
+   - If clean → "recommended" or "acceptable"
 
 OUTPUT JSON ONLY:
 {
+  "timeline_verdict": {
+    "bbb_founding_date": "date from records",
+    "bbb_years_in_business": number,
+    "max_years_claimed": number,
+    "claim_source": "where the claim came from",
+    "discrepancy_years": number,
+    "is_timeline_fraud": true|false,
+    "explanation": "detailed reasoning"
+  },
   "final_assessment": {
     "fraud_likelihood": "high|medium|low|negligible",
     "confidence": 0.0-1.0,
-    "reasoning": "focus on actual evidence, not data gaps"
+    "reasoning": "based on timeline and other evidence"
   },
   "confirmed_fraud_indicators": [
-    {"category": "...", "description": "...", "evidence": "specific evidence", "severity": "CRITICAL|SEVERE"}
+    {"category": "timeline_fraud|virtual_address|review_manipulation|legal_issues", "description": "...", "evidence": "specific evidence", "severity": "CRITICAL|SEVERE"}
   ],
-  "verified_positives": ["good things confirmed about contractor"],
-  "data_gaps_noted": ["things we couldn't verify - informational only"],
+  "verified_positives": ["good things confirmed"],
+  "data_gaps_noted": ["informational only - NOT reasons to penalize"],
   "recommendation": "avoid|caution|acceptable|recommended"
 }`;
 
@@ -317,6 +399,10 @@ async function runLLMCascade(contractor, ruleCheckResults, rawData, queryResults
   const ruleFlagsSummary = JSON.stringify(ruleCheckResults.flags, null, 2);
   const queryResultsSummary = summarizeQueryResults(queryResults);
 
+  // CRITICAL: Extract comprehensive timeline data for fraud detection
+  const timelineSummary = extractTimelineSummary(rawData);
+  log('    Timeline summary generated');
+
   // ============ TIER 1: DeepSeek ============
   try {
     log('    Tier 1: DeepSeek gap analysis...');
@@ -325,6 +411,7 @@ async function runLLMCascade(contractor, ruleCheckResults, rawData, queryResults
       .replace('{{contractor_name}}', contractor.name)
       .replace('{{contractor_city}}', contractor.city)
       .replace('{{contractor_state}}', contractor.state)
+      .replace('{{timeline_summary}}', timelineSummary)
       .replace('{{rule_flags}}', ruleFlagsSummary)
       .replace('{{raw_data_summary}}', rawDataSummary);
 
@@ -366,6 +453,7 @@ async function runLLMCascade(contractor, ruleCheckResults, rawData, queryResults
 
     const geminiPrompt = GEMINI_STRUCTURE_PROMPT
       .replace('{{contractor_name}}', contractor.name)
+      .replace('{{timeline_summary}}', timelineSummary)
       .replace('{{deepseek_output}}', JSON.stringify(deepseekResponse.result, null, 2))
       .replace('{{query_results}}', queryResultsSummary);
 
@@ -399,6 +487,7 @@ async function runLLMCascade(contractor, ruleCheckResults, rawData, queryResults
       .replace('{{contractor_name}}', contractor.name)
       .replace('{{contractor_city}}', contractor.city)
       .replace('{{contractor_state}}', contractor.state)
+      .replace('{{timeline_summary}}', timelineSummary)
       .replace('{{deepseek_output}}', JSON.stringify(deepseekResponse.result, null, 2))
       .replace('{{gemini_output}}', JSON.stringify(geminiResponse.result, null, 2));
 
@@ -429,6 +518,193 @@ async function runLLMCascade(contractor, ruleCheckResults, rawData, queryResults
 }
 
 // ============ HELPERS ============
+
+/**
+ * Extract comprehensive timeline data from all sources
+ * This is the MOST IMPORTANT data for fraud detection
+ * @param {array} rawData - Array of raw data rows
+ * @returns {string} Formatted timeline summary for LLM prompts
+ */
+function extractTimelineSummary(rawData) {
+  if (!rawData || rawData.length === 0) return 'No timeline data available';
+
+  const currentYear = new Date().getFullYear();
+  const timelineData = {
+    bbb: null,
+    claims: [],
+    authoritative_founding: null
+  };
+
+  // Patterns to extract years claimed from text
+  const yearPatterns = [
+    /since\s+(\d{4})/gi,
+    /established\s+(\d{4})/gi,
+    /founded\s+(\d{4})/gi,
+    /(\d+)\+?\s*years?\s+(in\s+business|of\s+experience|serving)/gi,
+    /serving\s+.*\s+since\s+(\d{4})/gi,
+    /over\s+(\d+)\s+years/gi,
+    /more\s+than\s+(\d+)\s+years/gi
+  ];
+
+  for (const row of rawData) {
+    const sourceName = row.source_name;
+    let data = null;
+
+    // Parse structured data
+    if (row.structured_data) {
+      try {
+        data = typeof row.structured_data === 'string'
+          ? JSON.parse(row.structured_data)
+          : row.structured_data;
+      } catch (e) {
+        data = null;
+      }
+    }
+
+    // BBB is the gold standard for founding date
+    if (sourceName === 'bbb' && data) {
+      timelineData.bbb = {
+        founding_date: data.founding_date || null,
+        accredited_since: data.accredited_since || null,
+        years_in_business: data.years_in_business || null
+      };
+
+      // Calculate founding year from BBB data
+      if (data.founding_date) {
+        const parts = data.founding_date.split('/');
+        if (parts.length === 3) {
+          const year = parseInt(parts[2]);
+          timelineData.authoritative_founding = year;
+          timelineData.bbb.founding_year = year;
+          timelineData.bbb.calculated_years = currentYear - year;
+        }
+      } else if (data.years_in_business) {
+        timelineData.authoritative_founding = currentYear - data.years_in_business;
+        timelineData.bbb.founding_year = currentYear - data.years_in_business;
+      }
+    }
+
+    // Extract years claimed from structured data
+    if (data && data.years_in_business && sourceName !== 'bbb') {
+      timelineData.claims.push({
+        source: sourceName,
+        type: 'structured_data',
+        years_claimed: data.years_in_business,
+        raw: `${data.years_in_business} years in business`
+      });
+    }
+
+    // Extract years claimed from raw text
+    if (row.raw_text) {
+      const text = row.raw_text;
+      for (const pattern of yearPatterns) {
+        const matches = text.matchAll(new RegExp(pattern));
+        for (const match of matches) {
+          const value = parseInt(match[1]);
+          if (value > 1900 && value <= currentYear) {
+            // It's a year (e.g., "since 1995")
+            timelineData.claims.push({
+              source: sourceName,
+              type: 'year_mention',
+              year: value,
+              years_claimed: currentYear - value,
+              raw: match[0]
+            });
+          } else if (value >= 1 && value <= 100) {
+            // It's years of experience (e.g., "30 years")
+            timelineData.claims.push({
+              source: sourceName,
+              type: 'years_experience',
+              years_claimed: value,
+              raw: match[0]
+            });
+          }
+        }
+      }
+    }
+  }
+
+  // Build the summary
+  const lines = ['=== TIMELINE DATA ===', ''];
+
+  // BBB (authoritative source)
+  lines.push('AUTHORITATIVE SOURCE (BBB):');
+  if (timelineData.bbb) {
+    if (timelineData.bbb.founding_date) {
+      lines.push(`  - Founding Date: ${timelineData.bbb.founding_date}`);
+      lines.push(`  - Founding Year: ${timelineData.bbb.founding_year}`);
+      lines.push(`  - Calculated Years in Business: ${timelineData.bbb.calculated_years}`);
+    } else if (timelineData.bbb.years_in_business) {
+      lines.push(`  - Years in Business: ${timelineData.bbb.years_in_business}`);
+      lines.push(`  - Estimated Founding Year: ${timelineData.bbb.founding_year}`);
+    } else {
+      lines.push('  - No founding date available from BBB');
+    }
+    if (timelineData.bbb.accredited_since) {
+      lines.push(`  - BBB Accredited Since: ${timelineData.bbb.accredited_since}`);
+    }
+  } else {
+    lines.push('  - BBB data not available');
+  }
+
+  // Claims from other sources
+  lines.push('');
+  lines.push('CLAIMS FROM OTHER SOURCES:');
+  if (timelineData.claims.length > 0) {
+    // Deduplicate and sort by years claimed (descending)
+    const uniqueClaims = [];
+    const seen = new Set();
+    for (const claim of timelineData.claims) {
+      const key = `${claim.source}-${claim.years_claimed}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        uniqueClaims.push(claim);
+      }
+    }
+    uniqueClaims.sort((a, b) => b.years_claimed - a.years_claimed);
+
+    for (const claim of uniqueClaims) {
+      lines.push(`  - [${claim.source}]: Claims ${claim.years_claimed} years ("${claim.raw}")`);
+    }
+  } else {
+    lines.push('  - No years-in-business claims found in other sources');
+  }
+
+  // Discrepancy analysis
+  lines.push('');
+  lines.push('DISCREPANCY ANALYSIS:');
+  if (timelineData.authoritative_founding && timelineData.claims.length > 0) {
+    const maxClaim = Math.max(...timelineData.claims.map(c => c.years_claimed));
+    const actualYears = currentYear - timelineData.authoritative_founding;
+    const discrepancy = maxClaim - actualYears;
+
+    lines.push(`  - BBB shows: ${actualYears} years (founded ${timelineData.authoritative_founding})`);
+    lines.push(`  - Max claim: ${maxClaim} years`);
+    lines.push(`  - Discrepancy: ${discrepancy} years`);
+
+    if (discrepancy > 10) {
+      lines.push('');
+      lines.push('  ⚠️  CRITICAL: This is likely TIMELINE FRAUD');
+      lines.push(`      Contractor claims ${maxClaim} years but BBB shows founded ${timelineData.authoritative_founding}`);
+      lines.push('      This level of discrepancy (>10 years) indicates intentional deception');
+    } else if (discrepancy > 5) {
+      lines.push('');
+      lines.push('  ⚠️  WARNING: Significant timeline discrepancy (>5 years)');
+    } else if (discrepancy > 2) {
+      lines.push('');
+      lines.push('  ℹ️  NOTE: Minor timeline discrepancy (2-5 years) - may be rounding or interpretation');
+    } else {
+      lines.push('');
+      lines.push('  ✓ Timeline claims appear consistent with BBB records');
+    }
+  } else if (!timelineData.authoritative_founding) {
+    lines.push('  - Cannot verify: No authoritative founding date from BBB');
+  } else {
+    lines.push('  - Cannot verify: No years-in-business claims found to compare');
+  }
+
+  return lines.join('\n');
+}
 
 /**
  * Summarize raw data for LLM prompts (truncate to fit context)
@@ -486,6 +762,7 @@ module.exports = {
   runLLMCascade,
   callDeepSeek,
   callGemini,
+  extractTimelineSummary,
   summarizeRawData,
   summarizeQueryResults,
   // Export prompts for testing
