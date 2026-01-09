@@ -271,11 +271,13 @@ async function runLLMCascade(contractor, ruleCheckResults, rawData, queryResults
       return trace;
     }
 
-    // Check if we need to escalate
+    // In standard mode, check if we can skip Gemini (cost optimization)
+    // In full mode, ALWAYS run all tiers
     const deepseekConfidence = deepseekResponse.result.confidence || 0;
-    if (deepseekConfidence >= THRESHOLDS.ESCALATE_TO_GEMINI &&
+    if (mode === 'standard' &&
+        deepseekConfidence >= THRESHOLDS.ESCALATE_TO_GEMINI &&
         !ruleCheckResults.flags.some(f => f.severity === SEVERITY.CRITICAL)) {
-      log('      DeepSeek confidence high, skipping Gemini...');
+      log('      DeepSeek confidence high, skipping Gemini (standard mode)...');
       trace.final_result = {
         source: 'deepseek',
         ...deepseekResponse.result
@@ -311,20 +313,8 @@ async function runLLMCascade(contractor, ruleCheckResults, rawData, queryResults
       return trace;
     }
 
-    // Check if we need to escalate to Claude
-    const geminiConfidence = geminiResponse.result.confidence || 0;
-    const hasCriticalFlags = (geminiResponse.result.confirmed_flags || [])
-      .some(f => f.severity === SEVERITY.CRITICAL);
-
-    if (geminiConfidence >= THRESHOLDS.ESCALATE_TO_EVALUATOR && !hasCriticalFlags) {
-      log('      Gemini confidence sufficient, skipping evaluator...');
-      trace.final_result = {
-        source: 'gemini',
-        deepseek_analysis: deepseekResponse.result,
-        ...geminiResponse.result
-      };
-      return trace;
-    }
+    // Full mode: ALWAYS run evaluator (no early exit)
+    // The evaluator compares DeepSeek and Gemini analyses for final judgment
 
     // ============ TIER 3: Gemini Evaluator (full mode only) ============
     log('    Tier 3: Gemini evaluator (comparing both analyses)...');
