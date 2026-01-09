@@ -198,18 +198,48 @@ async function callGemini(prompt) {
   const inputTokens = Math.ceil(prompt.length / 4);
   const outputTokens = Math.ceil(content.length / 4);
 
-  // Extract JSON from response
-  const jsonMatch = content.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) throw new Error('No JSON in Gemini response');
+  // Extract JSON from response - try multiple methods
+  let jsonStr = null;
 
-  return {
-    result: JSON.parse(jsonMatch[0]),
-    usage: {
-      input_tokens: inputTokens,
-      output_tokens: outputTokens,
-      cost: (inputTokens * 0.000000075) + (outputTokens * 0.0000003)  // Gemini Flash pricing
+  // Method 1: Look for markdown code block
+  const codeBlockMatch = content.match(/```(?:json)?\s*([\s\S]*?)```/);
+  if (codeBlockMatch) {
+    jsonStr = codeBlockMatch[1].trim();
+  }
+
+  // Method 2: Look for raw JSON object
+  if (!jsonStr) {
+    const jsonMatch = content.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      jsonStr = jsonMatch[0];
     }
-  };
+  }
+
+  if (!jsonStr) {
+    warn(`      Gemini response (no JSON found): ${content.substring(0, 500)}`);
+    throw new Error('No JSON in Gemini response');
+  }
+
+  // Clean up common JSON issues
+  jsonStr = jsonStr
+    .replace(/,\s*}/g, '}')   // Remove trailing commas before }
+    .replace(/,\s*]/g, ']')   // Remove trailing commas before ]
+    .replace(/[\x00-\x1F]/g, ' '); // Remove control characters
+
+  try {
+    return {
+      result: JSON.parse(jsonStr),
+      usage: {
+        input_tokens: inputTokens,
+        output_tokens: outputTokens,
+        cost: (inputTokens * 0.000000075) + (outputTokens * 0.0000003)  // Gemini Flash pricing
+      }
+    };
+  } catch (parseErr) {
+    warn(`      Gemini JSON parse error: ${parseErr.message}`);
+    warn(`      JSON string (first 500 chars): ${jsonStr.substring(0, 500)}`);
+    throw parseErr;
+  }
 }
 
 // Note: callClaude removed - using Gemini Evaluator as third tier instead
