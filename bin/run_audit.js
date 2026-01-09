@@ -100,9 +100,14 @@ async function main() {
 
   // Options
   const deepMode = args.includes('--deep');
-  const investigationMode = args.includes('--investigation-mode')
-    ? args[args.indexOf('--investigation-mode') + 1]
-    : 'standard';
+  const investigationMode = getArg('investigation-mode') || 'standard';
+
+  // Validate investigation mode
+  const validInvestigationModes = ['minimal', 'standard', 'full'];
+  if (deepMode && investigationMode && !validInvestigationModes.includes(investigationMode)) {
+    console.error(`\x1b[31mERROR: Invalid investigation mode '${investigationMode}'. Must be 'minimal', 'standard', or 'full'\x1b[0m`);
+    process.exit(1);
+  }
 
   const options = {
     dryRun: getArg('dry-run') || false,
