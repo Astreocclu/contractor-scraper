@@ -76,9 +76,8 @@ Forensic contractor auditing. Playwright (with Puppeteer as backup) scrapes → 
 1. `TODO.md` — Current priorities (what to work on)
 2. `STATUS.md` — System state (what's working/broken)
 3. `ERRORS.md` — Known issues (avoid repeating mistakes)
-4. `docs/EXPERIMENTS.md` — Previous tests/investigations (what was tried, what we learned)
-5. `docs/AGENTIC_QUICKREF.md` — Audit system overview (how it works)
-6. Run `git status` — Confirm branch and uncommitted changes
+4. `docs/QUICKREF.md` — Quick reference (commands, key files, what's working)
+5. Run `git status` — Confirm branch and uncommitted changes
 
 ---
 
@@ -103,14 +102,17 @@ Forensic contractor auditing. Playwright (with Puppeteer as backup) scrapes → 
 | Known bugs | `ERRORS.md` |
 | Running session log | `SESSION-NOTES.md` |
 
-### Reference Documentation (`docs/`)
+### Core Documentation (`docs/`)
 | Need | File |
 |------|------|
-| **Audit quick reference** | `docs/AGENTIC_QUICKREF.md` |
-| Audit full spec | `docs/AGENTIC_AUDIT_SPEC.md` |
-| Codebase overview | `docs/CODEBASE_DOCUMENTATION.md` |
-| Database stats | `docs/DATABASE_ANALYSIS.md` |
-| Archived session logs | `docs/_archive/` |
+| **Session start** | `docs/QUICKREF.md` |
+| System design | `docs/ARCHITECTURE.md` |
+| Data sources | `docs/SOURCES.md` |
+| Database schema | `docs/DATABASE.md` |
+| Experiment log | `docs/EXPERIMENTS.md` |
+
+### Archived Documentation (`docs/_archive/`)
+Historical docs preserved for reference. Not needed for current work.
 
 ### Finding Recent Changes
 ```bash
