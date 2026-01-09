@@ -99,9 +99,15 @@ function checkTimelineFabrication(contractor, rawData) {
   let bbbStartYear = null;
   const bbbData = rawData?.find(r => r.source_name === 'bbb');
   if (bbbData?.structured_data) {
-    const data = typeof bbbData.structured_data === 'string'
-      ? JSON.parse(bbbData.structured_data)
-      : bbbData.structured_data;
+    let data;
+    try {
+      data = typeof bbbData.structured_data === 'string'
+        ? JSON.parse(bbbData.structured_data)
+        : bbbData.structured_data;
+    } catch (e) {
+      data = null;
+    }
+    if (!data) return flags;
     if (data.years_in_business) {
       bbbStartYear = new Date().getFullYear() - parseInt(data.years_in_business);
     } else if (data.start_date) {
@@ -186,10 +192,17 @@ function checkPermitGroundTruth(contractor, rawData) {
   // Check BuildZoom for permits
   let permitCount = 0;
   if (buildzoomData?.structured_data) {
-    const data = typeof buildzoomData.structured_data === 'string'
-      ? JSON.parse(buildzoomData.structured_data)
-      : buildzoomData.structured_data;
-    permitCount = data.permit_count || 0;
+    let data;
+    try {
+      data = typeof buildzoomData.structured_data === 'string'
+        ? JSON.parse(buildzoomData.structured_data)
+        : buildzoomData.structured_data;
+    } catch (e) {
+      data = null;
+    }
+    if (data) {
+      permitCount = data.permit_count || 0;
+    }
   }
 
   if (claimsHighVolume && permitCount === 0) {
@@ -225,9 +238,18 @@ function checkReviewPresence(contractor, rawData) {
   for (const sourceName of reviewSources) {
     const data = rawData?.find(r => r.source_name === sourceName || r.source_name?.includes(sourceName));
     if (data?.structured_data) {
-      const parsed = typeof data.structured_data === 'string'
-        ? JSON.parse(data.structured_data)
-        : data.structured_data;
+      let parsed;
+      try {
+        parsed = typeof data.structured_data === 'string'
+          ? JSON.parse(data.structured_data)
+          : data.structured_data;
+      } catch (e) {
+        parsed = null;
+      }
+      if (!parsed) {
+        sourcesMissing.push(sourceName);
+        continue;
+      }
       if (parsed.found && (parsed.review_count > 0 || parsed.rating)) {
         sourcesWithReviews.push(sourceName);
       } else {
@@ -262,7 +284,7 @@ function checkReviewPresence(contractor, rawData) {
 /**
  * Main rule check function
  */
-async function runRuleChecks(contractor, rawData) {
+function runRuleChecks(contractor, rawData) {
   const results = {
     flags: [],
     suggested_queries: [],
