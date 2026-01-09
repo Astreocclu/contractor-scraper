@@ -4,7 +4,7 @@
  * Orchestrates multi-LLM analysis:
  * - DeepSeek: Initial gap analysis (cheap, good reasoning)
  * - Gemini: Structured output refinement (cheap, good at formatting)
- * - Claude: Nuanced judgment (expensive, only when needed)
+ * - Gemini Evaluator: Final judgment comparing both analyses (free tier)
  */
 
 const { INVESTIGATION_MODE, LLM_CONFIG, THRESHOLDS, SEVERITY } = require('./constants');
@@ -74,17 +74,22 @@ OUTPUT JSON ONLY:
   "recommendation": "continue_investigation|sufficient_data|escalate_to_human"
 }`;
 
-const CLAUDE_JUDGMENT_PROMPT = `You are a senior fraud analyst making final determinations.
+const GEMINI_EVALUATOR_PROMPT = `You are a senior fraud analyst evaluating TWO independent analyses of the same contractor.
 
 CONTRACTOR: {{contractor_name}}
 LOCATION: {{contractor_city}}, {{contractor_state}}
 
-INVESTIGATION SUMMARY:
-{{investigation_summary}}
+=== ANALYSIS 1: DeepSeek Gap Analysis ===
+{{deepseek_output}}
 
-TASK: Provide final judgment on fraud indicators.
+=== ANALYSIS 2: Gemini Structured Findings ===
+{{gemini_output}}
+
+TASK: Compare both analyses and provide final judgment.
 
 Consider:
+- Where do both analyses AGREE? (high confidence findings)
+- Where do they DISAGREE? (needs more investigation or human review)
 - Are the flags genuine red flags or explainable?
 - Is there a pattern suggesting intentional deception?
 - What is the risk level for a homeowner hiring this contractor?
@@ -95,6 +100,11 @@ OUTPUT JSON ONLY:
     "fraud_likelihood": "high|medium|low|negligible",
     "confidence": 0.0-1.0,
     "reasoning": "detailed explanation"
+  },
+  "analysis_comparison": {
+    "agreements": ["findings both analyses confirmed"],
+    "disagreements": ["findings where analyses differed"],
+    "stronger_analysis": "deepseek|gemini|equal"
   },
   "critical_flags": [
     {"category": "...", "description": "...", "evidence": "...", "severity": "CRITICAL|SEVERE"}
@@ -202,51 +212,7 @@ async function callGemini(prompt) {
   };
 }
 
-/**
- * Call Claude API for final judgment
- * @param {string} prompt - The prompt to send
- * @returns {Promise<{result: object, usage: {input_tokens: number, output_tokens: number, cost: number}}>}
- */
-async function callClaude(prompt) {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) throw new Error('No ANTHROPIC_API_KEY');
-
-  const response = await fetch(`${LLM_CONFIG.claude.base_url}/messages`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01'
-    },
-    body: JSON.stringify({
-      model: LLM_CONFIG.claude.model,
-      max_tokens: LLM_CONFIG.claude.max_tokens,
-      messages: [{ role: 'user', content: prompt }]
-    })
-  });
-
-  if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`Claude error: ${response.status} - ${text.substring(0, 200)}`);
-  }
-
-  const data = await response.json();
-  const content = data.content?.[0]?.text || '';
-  const usage = data.usage || {};
-
-  // Extract JSON from response
-  const jsonMatch = content.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) throw new Error('No JSON in Claude response');
-
-  return {
-    result: JSON.parse(jsonMatch[0]),
-    usage: {
-      input_tokens: usage.input_tokens || 0,
-      output_tokens: usage.output_tokens || 0,
-      cost: ((usage.input_tokens || 0) * 0.00000025) + ((usage.output_tokens || 0) * 0.00000125)  // Haiku pricing
-    }
-  };
-}
+// Note: callClaude removed - using Gemini Evaluator as third tier instead
 
 // ============ CASCADE ORCHESTRATION ============
 
@@ -350,8 +316,8 @@ async function runLLMCascade(contractor, ruleCheckResults, rawData, queryResults
     const hasCriticalFlags = (geminiResponse.result.confirmed_flags || [])
       .some(f => f.severity === SEVERITY.CRITICAL);
 
-    if (geminiConfidence >= THRESHOLDS.ESCALATE_TO_CLAUDE && !hasCriticalFlags) {
-      log('      Gemini confidence sufficient, skipping Claude...');
+    if (geminiConfidence >= THRESHOLDS.ESCALATE_TO_EVALUATOR && !hasCriticalFlags) {
+      log('      Gemini confidence sufficient, skipping evaluator...');
       trace.final_result = {
         source: 'gemini',
         deepseek_analysis: deepseekResponse.result,
@@ -360,37 +326,31 @@ async function runLLMCascade(contractor, ruleCheckResults, rawData, queryResults
       return trace;
     }
 
-    // ============ TIER 3: Claude (full mode only) ============
-    log('    Tier 3: Claude final judgment...');
+    // ============ TIER 3: Gemini Evaluator (full mode only) ============
+    log('    Tier 3: Gemini evaluator (comparing both analyses)...');
 
-    const investigationSummary = {
-      rule_flags: ruleCheckResults.flags,
-      deepseek_analysis: deepseekResponse.result,
-      gemini_structure: geminiResponse.result,
-      query_results_summary: queryResultsSummary
-    };
-
-    const claudePrompt = CLAUDE_JUDGMENT_PROMPT
+    const evaluatorPrompt = GEMINI_EVALUATOR_PROMPT
       .replace('{{contractor_name}}', contractor.name)
       .replace('{{contractor_city}}', contractor.city)
       .replace('{{contractor_state}}', contractor.state)
-      .replace('{{investigation_summary}}', JSON.stringify(investigationSummary, null, 2));
+      .replace('{{deepseek_output}}', JSON.stringify(deepseekResponse.result, null, 2))
+      .replace('{{gemini_output}}', JSON.stringify(geminiResponse.result, null, 2));
 
-    const claudeResponse = await callClaude(claudePrompt);
+    const evaluatorResponse = await callGemini(evaluatorPrompt);
     trace.steps.push({
-      tier: 'claude',
-      result: claudeResponse.result,
-      usage: claudeResponse.usage
+      tier: 'gemini_evaluator',
+      result: evaluatorResponse.result,
+      usage: evaluatorResponse.usage
     });
-    trace.total_cost += claudeResponse.usage.cost;
+    trace.total_cost += evaluatorResponse.usage.cost;
 
-    success(`      Claude complete (cost: $${claudeResponse.usage.cost.toFixed(4)})`);
+    success(`      Gemini evaluator complete (cost: $${evaluatorResponse.usage.cost.toFixed(4)})`);
 
     trace.final_result = {
-      source: 'claude',
+      source: 'gemini_evaluator',
       deepseek_analysis: deepseekResponse.result,
       gemini_structure: geminiResponse.result,
-      ...claudeResponse.result
+      ...evaluatorResponse.result
     };
 
     return trace;
@@ -460,11 +420,10 @@ module.exports = {
   runLLMCascade,
   callDeepSeek,
   callGemini,
-  callClaude,
   summarizeRawData,
   summarizeQueryResults,
   // Export prompts for testing
   DEEPSEEK_GAP_ANALYSIS_PROMPT,
   GEMINI_STRUCTURE_PROMPT,
-  CLAUDE_JUDGMENT_PROMPT
+  GEMINI_EVALUATOR_PROMPT
 };

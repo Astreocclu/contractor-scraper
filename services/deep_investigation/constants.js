@@ -2,8 +2,8 @@
  * Deep Investigation Framework - Configuration
  *
  * Modes:
- * - "full": Rules → DeepSeek → Gemini → Claude (all tiers)
- * - "standard": Rules → DeepSeek → Gemini (skip Claude)
+ * - "full": Rules → DeepSeek → Gemini → Gemini Evaluator (compares both)
+ * - "standard": Rules → DeepSeek → Gemini (skip evaluator)
  * - "minimal": Rules → DeepSeek only (fastest/cheapest)
  */
 
@@ -15,8 +15,8 @@ const MAX_QUERIES_PER_ITERATION = 5;
 
 // Confidence thresholds for LLM cascade escalation
 const THRESHOLDS = {
-  ESCALATE_TO_GEMINI: 0.6,   // If DeepSeek confidence < 60%, escalate
-  ESCALATE_TO_CLAUDE: 0.4,  // If Gemini confidence < 40%, escalate (rare)
+  ESCALATE_TO_GEMINI: 0.6,     // If DeepSeek confidence < 60%, escalate
+  ESCALATE_TO_EVALUATOR: 0.4, // If Gemini confidence < 40%, escalate to evaluator
   CRITICAL_FLAG_AUTO_ESCALATE: true  // Always escalate CRITICAL flags to next tier
 };
 
@@ -55,13 +55,8 @@ const LLM_CONFIG = {
     model: 'gemini-2.5-flash',
     max_tokens: 2000,
     temperature: 0.1
-  },
-  claude: {
-    base_url: 'https://api.anthropic.com/v1',
-    model: 'claude-3-haiku-20240307',  // Use Haiku for cost efficiency
-    max_tokens: 2000,
-    temperature: 0.1
   }
+  // Note: Claude config removed - using Gemini Evaluator as third tier
 };
 
 // Flag severity levels
