@@ -8,6 +8,7 @@
 const db = require('./db_pg');
 const { CollectionService } = require('./collection_service');
 const { AuditAgent, DialecticAuditAgent } = require('./audit_agent');
+const { runDeepInvestigation } = require('./deep_investigation');
 
 // Logging helpers
 const log = (msg) => console.log(msg);
@@ -19,7 +20,7 @@ const error = (msg) => console.log(`\x1b[31m${msg}\x1b[0m`);
  * Run a forensic audit on a contractor
  */
 async function runForensicAudit(contractorInput, options = {}) {
-  const { dryRun = false, skipCollection = false, collectOnly = false, batchMode = false, skipLiens = false, mode = 'standard' } = options;
+  const { dryRun = false, skipCollection = false, collectOnly = false, batchMode = false, skipLiens = false, mode = 'standard', deep = false, investigationMode = 'standard' } = options;
 
   console.log('\n' + '═'.repeat(60));
   console.log('  🔍 AGENTIC FORENSIC AUDIT');
@@ -187,6 +188,22 @@ async function runForensicAudit(contractorInput, options = {}) {
       return { collectOnly: true, stats, contractor };
     }
 
+    // Run deep investigation if enabled
+    let investigationResult = null;
+    if (deep) {
+      log('\n🔬 Running deep investigation...');
+      investigationResult = await runDeepInvestigation(contractorId, contractor, db, {
+        mode: investigationMode,
+        maxIterations: 5,
+        maxTimeMs: 180000
+      });
+
+      // Check if investigation recommends avoiding audit
+      if (investigationResult.recommendation === 'AVOID') {
+        warn('\n⚠️  Deep investigation found critical issues - flagging for review');
+      }
+    }
+
     // Run agentic audit
     let agent;
     if (mode === 'dialectic') {
@@ -195,6 +212,13 @@ async function runForensicAudit(contractorInput, options = {}) {
     } else {
       agent = new AuditAgent(db, contractorId, contractor);
     }
+
+    // Attach investigation results if available
+    if (investigationResult) {
+      agent.investigationFlags = investigationResult.flags;
+      agent.investigationRecommendation = investigationResult.recommendation;
+    }
+
     const result = await agent.run();
 
     // Display results
