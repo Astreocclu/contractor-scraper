@@ -201,17 +201,33 @@ async function callGemini(prompt) {
   // Extract JSON from response - try multiple methods
   let jsonStr = null;
 
-  // Method 1: Look for markdown code block
+  // Method 1: Look for complete markdown code block
   const codeBlockMatch = content.match(/```(?:json)?\s*([\s\S]*?)```/);
   if (codeBlockMatch) {
     jsonStr = codeBlockMatch[1].trim();
   }
 
-  // Method 2: Look for raw JSON object
+  // Method 2: Look for incomplete markdown block (no closing ```)
+  if (!jsonStr) {
+    const incompleteBlockMatch = content.match(/```(?:json)?\s*(\{[\s\S]*)/);
+    if (incompleteBlockMatch) {
+      jsonStr = incompleteBlockMatch[1].trim();
+    }
+  }
+
+  // Method 3: Look for raw JSON object
   if (!jsonStr) {
     const jsonMatch = content.match(/\{[\s\S]*\}/);
     if (jsonMatch) {
       jsonStr = jsonMatch[0];
+    }
+  }
+
+  // Method 4: Look for JSON that starts but might be truncated
+  if (!jsonStr) {
+    const partialMatch = content.match(/\{[\s\S]*/);
+    if (partialMatch) {
+      jsonStr = partialMatch[0];
     }
   }
 
