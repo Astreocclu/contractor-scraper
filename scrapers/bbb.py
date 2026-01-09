@@ -51,10 +51,12 @@ class BBBResult:
     name: Optional[str] = None
     rating: Optional[str] = None  # A+, A, B, C, D, F
     accredited: bool = False
+    accredited_since: Optional[str] = None  # Date of BBB accreditation
     profile_url: Optional[str] = None
     email: Optional[str] = None  # Business contact email
     phone: Optional[str] = None  # Business phone number
-    years_in_business: Optional[int] = None
+    founding_date: Optional[str] = None  # Raw founding date from BBB (e.g., "09/25/2024")
+    years_in_business: Optional[int] = None  # Calculated from founding_date
     complaint_count: Optional[int] = None
     complaints_closed_12mo: Optional[int] = None
     review_count: Optional[int] = None
@@ -98,9 +100,11 @@ async def scrape_bbb(
                 name=cached.get("name"),
                 rating=cached.get("rating"),
                 accredited=cached.get("accredited", False),
+                accredited_since=cached.get("accredited_since"),
                 profile_url=cached.get("profile_url"),
                 email=cached.get("email"),
                 phone=cached.get("phone"),
+                founding_date=cached.get("founding_date"),
                 years_in_business=cached.get("years_in_business"),
                 complaint_count=cached.get("complaint_count"),
                 complaints_closed_12mo=cached.get("complaints_closed_12mo"),
@@ -135,6 +139,9 @@ async def scrape_bbb(
             json_result = _parse_embedded_json(html, business_name)
             if json_result:
                 result = json_result
+                # Fetch profile details if requested (for founding_date, accredited_since, etc.)
+                if with_details and result.profile_url:
+                    result = await _fetch_profile_details(client, result)
                 _cache_result(cache_key, result)
                 return result
 
@@ -242,13 +249,16 @@ def _parse_embedded_json(html: str, business_name: str) -> Optional[BBBResult]:
     name = best_match.get("business_name", "")
     business_id = best_match.get("business_id", "")
     bbb_id = best_match.get("bbb_id", "")
+    phone = best_match.get("business_phone", "")
 
-    # Construct profile URL if we have the IDs
+    # Find profile URL in HTML - BBB embeds it in href attributes
     profile_url = None
     if business_id:
-        # BBB profile URLs follow pattern like /us/tx/fort-worth/profile/roofing-contractors/business-name-id
-        # We'd need to fetch or construct this - for now leave it None and let details fetch find it
-        pass
+        # Look for profile link containing the business_id
+        profile_pattern = rf'href="(/us/[^"]+/profile/[^"]*-{business_id})"'
+        profile_match = re.search(profile_pattern, html)
+        if profile_match:
+            profile_url = f"https://www.bbb.org{profile_match.group(1)}"
 
     return BBBResult(
         found=True,
@@ -256,6 +266,7 @@ def _parse_embedded_json(html: str, business_name: str) -> Optional[BBBResult]:
         rating=rating if rating else None,
         accredited=accredited,
         profile_url=profile_url,
+        phone=phone if phone else None,
         source="bbb"
     )
 
@@ -321,6 +332,56 @@ async def _fetch_profile_details(client: httpx.AsyncClient, result: BBBResult) -
         raw_html = response.text
         html = clean_html(raw_html)
 
+        # === JSON-LD EXTRACTION (foundingDate, accreditedSince) ===
+        # BBB embeds structured data in <script type="application/ld+json">
+        # Note: BBB sometimes omits quotes around attribute values
+        import json
+        from datetime import datetime
+
+        jsonld_matches = re.findall(
+            r'<script[^>]*type=["\']?application/ld\+json["\']?[^>]*>(.*?)</script>',
+            raw_html,
+            re.DOTALL | re.IGNORECASE
+        )
+        for jsonld_str in jsonld_matches:
+            try:
+                jsonld_data = json.loads(jsonld_str.strip())
+                # Handle both single objects and arrays
+                items = jsonld_data if isinstance(jsonld_data, list) else [jsonld_data]
+                for item in items:
+                    # Look for LocalBusiness or Organization type
+                    item_type = item.get("@type", "")
+                    if isinstance(item_type, list):
+                        item_type = item_type[0] if item_type else ""
+                    if "Business" in item_type or "Organization" in item_type or "LocalBusiness" in item_type:
+                        # Extract foundingDate (e.g., "09/25/2024" or "2024-09-25")
+                        founding = item.get("foundingDate")
+                        if founding and not result.founding_date:
+                            result.founding_date = founding
+                            # Calculate years_in_business from founding_date
+                            try:
+                                # Try MM/DD/YYYY format first
+                                if "/" in founding:
+                                    dt = datetime.strptime(founding, "%m/%d/%Y")
+                                else:
+                                    dt = datetime.strptime(founding, "%Y-%m-%d")
+                                years = (datetime.now() - dt).days // 365
+                                result.years_in_business = max(0, years)
+                            except ValueError:
+                                pass  # Keep raw string, skip calculation
+            except json.JSONDecodeError:
+                continue
+
+        # === ACCREDITED SINCE EXTRACTION ===
+        # Look for "Accredited Since: MM/DD/YYYY" pattern in page text
+        accredited_match = re.search(
+            r'(?:Accredited\s+Since|BBB\s+Accredited\s+Since)[:\s]+(\d{1,2}/\d{1,2}/\d{4})',
+            raw_html,
+            re.IGNORECASE
+        )
+        if accredited_match and not result.accredited_since:
+            result.accredited_since = accredited_match.group(1)
+
         # === EMAIL REGEX EXTRACTION (before LLM call - $0 cost) ===
         # Junk domains to filter
         junk_domains = ['wix.com', 'squarespace.com', 'example.com', 'domain.com', 'bbb.org']
@@ -349,12 +410,14 @@ async def _fetch_profile_details(client: httpx.AsyncClient, result: BBBResult) -
 
         # === PHONE REGEX EXTRACTION ===
         # Look for phone patterns: (XXX) XXX-XXXX or XXX-XXX-XXXX
-        phone_match = re.search(
-            r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}',
-            html
-        )
-        if phone_match:
-            result.phone = phone_match.group(0).strip()
+        # Only extract if we don't already have a phone from search results
+        if not result.phone:
+            phone_match = re.search(
+                r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}',
+                html
+            )
+            if phone_match:
+                result.phone = phone_match.group(0).strip()
 
         details = await _extract_profile_details(html)
 
@@ -461,9 +524,11 @@ def _cache_result(cache_key: str, result: BBBResult):
         "name": result.name,
         "rating": result.rating,
         "accredited": result.accredited,
+        "accredited_since": result.accredited_since,
         "profile_url": result.profile_url,
         "email": result.email,
         "phone": result.phone,
+        "founding_date": result.founding_date,
         "years_in_business": result.years_in_business,
         "complaint_count": result.complaint_count,
         "complaints_closed_12mo": result.complaints_closed_12mo,
@@ -506,9 +571,11 @@ def result_to_dict(result: BBBResult) -> dict:
         "name": result.name,
         "rating": result.rating,
         "accredited": result.accredited,
+        "accredited_since": result.accredited_since,
         "profile_url": result.profile_url,
         "email": result.email,
         "phone": result.phone,
+        "founding_date": result.founding_date,
         "years_in_business": result.years_in_business,
         "complaint_count": result.complaint_count,
         "complaints_closed_12mo": result.complaints_closed_12mo,
@@ -562,13 +629,17 @@ if __name__ == "__main__":
             print(f"Name: {result.name}")
             print(f"Rating: {result.rating}")
             print(f"Accredited: {result.accredited}")
+            if result.accredited_since:
+                print(f"Accredited Since: {result.accredited_since}")
             print(f"URL: {result.profile_url}")
             if result.email:
                 print(f"Email: {result.email}")
             if result.phone:
                 print(f"Phone: {result.phone}")
 
-            if result.years_in_business:
+            if result.founding_date:
+                print(f"Founding Date: {result.founding_date}")
+            if result.years_in_business is not None:
                 print(f"Years in Business: {result.years_in_business}")
             if result.complaint_count is not None:
                 print(f"Total Complaints: {result.complaint_count}")
