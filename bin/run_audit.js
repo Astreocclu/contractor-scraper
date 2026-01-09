@@ -18,7 +18,7 @@ const args = process.argv.slice(2);
 const getArg = (name) => {
   const idx = args.indexOf(`--${name}`);
   if (idx === -1) return null;
-  if (['dry-run', 'skip-collection', 'collect-only', 'list', 'help', 'strict'].includes(name)) return true;
+  if (['dry-run', 'skip-collection', 'collect-only', 'list', 'help', 'strict', 'deep'].includes(name)) return true;
   return args[idx + 1];
 };
 
@@ -45,6 +45,8 @@ Options:
                       - Cap at 75 if critical data gaps exist
   --mode <mode>       Audit mode: 'standard' (default) or 'dialectic'
                       Dialectic uses three-persona adversarial analysis
+  --deep              Enable deep investigation (iterative fraud detection)
+  --investigation-mode   Deep investigation mode: minimal|standard|full (default: standard)
   --list              List recent audits
   --help              Show this help
 
@@ -54,6 +56,8 @@ Examples:
   node run_audit.js --id 29 --dry-run
   node run_audit.js --id 29 --collect-only
   node run_audit.js --id 29 --mode dialectic
+  node run_audit.js --id 1524 --deep
+  node run_audit.js --id 1524 --deep --investigation-mode full
   node run_audit.js --list
 `);
 };
@@ -95,11 +99,18 @@ async function main() {
   }
 
   // Options
+  const deepMode = args.includes('--deep');
+  const investigationMode = args.includes('--investigation-mode')
+    ? args[args.indexOf('--investigation-mode') + 1]
+    : 'standard';
+
   const options = {
     dryRun: getArg('dry-run') || false,
     skipCollection: getArg('skip-collection') || false,
     collectOnly: getArg('collect-only') || false,
-    mode: getArg('mode') || 'standard'
+    mode: getArg('mode') || 'standard',
+    deep: deepMode,
+    investigationMode
   };
 
   // Validate mode
