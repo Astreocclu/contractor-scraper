@@ -1,5 +1,5 @@
 # Contractor Auditor - Status Report
-**Updated:** 2026-01-06
+**Updated:** 2026-01-09
 
 > **Note:** If the date above isn't today, this document may be out of date. Check SESSION-NOTES.md for the latest work.
 
@@ -85,7 +85,17 @@ The contractor auditing system is **fully operational** with V2 pipeline achievi
 | Tier system | Working | Gold (80+), Silver (65+), Bronze (50+) |
 | Score caps | Working | CRITICAL=15, SEVERE=35, MODERATE=60 |
 
-### 5. API Endpoints
+### 5. Dialectic Audit System (NEW Jan 2026)
+| Feature | Status |
+|---------|--------|
+| 3-persona mode | Working |
+| Consumer Advocate persona | Working |
+| Fair Arbiter persona | Working |
+| Synthesizer persona | Working |
+| audit_version=4 storage | Working |
+| Full reasoning trace | Working |
+
+### 6. API Endpoints
 | Endpoint | Status |
 |----------|--------|
 | GET /api/verticals/ | Working |
@@ -95,7 +105,7 @@ The contractor auditing system is **fully operational** with V2 pipeline achievi
 | GET /api/contractors/top/ | Working |
 | GET /api/contractors/{slug}/ | Working |
 
-### 6. Batch Audit System (NEW Dec 12)
+### 7. Batch Audit System (Dec 12)
 | Component | Status | Notes |
 |-----------|--------|-------|
 | bin/batch_audit_runner.js | Working | Sequential execution with state persistence |
@@ -111,14 +121,14 @@ The contractor auditing system is **fully operational** with V2 pipeline achievi
 - `failed` - Audits that threw errors
 - `pending` - Queued contractors
 
-### 7. Email Collection
+### 8. Email Collection
 | Metric | Value |
 |--------|-------|
 | Contractors with email | 679/2,529 (26.8%) |
 | Coverage gap cause | Discovery pipeline doesn't collect email |
 | Tracerfy integration | Created but 3% hit rate |
 
-### 8. Website Discovery (Dec 13)
+### 9. Website Discovery (Dec 13)
 | Metric | Value |
 |--------|-------|
 | Contractors with website | 2,575/4,195 (61.4%) |
