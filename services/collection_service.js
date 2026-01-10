@@ -11,6 +11,7 @@ const path = require('path');
 const { searchCourtRecords } = require('../scrapers/court_scraper');
 const { fetchAPISources } = require('./api_sources');
 const { analyzeReviews, quickDiscrepancyCheck } = require('./review_analyzer');
+const { scrapeGoogleReviewsApify } = require('./apify_service');
 
 // Path to Python scrapers
 const SCRAPERS_DIR = path.join(__dirname, '..', 'scrapers');
@@ -97,6 +98,74 @@ async function scrapeGoogleReviewsSerper(businessName, location = 'Fort Worth, T
  */
 async function scrapeGoogleReviewsTiered(businessName, location = 'Fort Worth, TX', maxReviews = 100) {
   return callPythonScraper('google_reviews_tiered.py', [businessName, location, String(maxReviews)], 120000);
+}
+
+// ============ OUTSCRAPER INTEGRATION ============
+// Feature flag: Set USE_OUTSCRAPER=true in .env to use Outscraper instead of Serper
+const USE_OUTSCRAPER = process.env.USE_OUTSCRAPER === 'true';
+const APIFY_API_TOKEN = process.env.APIFY_API_TOKEN;
+
+/**
+ * Scrape Google reviews via Outscraper API
+ * Cost: $3/1000 reviews (500 free/month)
+ */
+async function scrapeGoogleReviewsOutscraper(businessName, location = 'Fort Worth, TX', maxReviews = 100) {
+  return callPythonScraper('outscraper_reviews.py', [businessName, location, '--source', 'google', '--max-reviews', String(maxReviews)], 90000);
+}
+
+/**
+ * Scrape Yelp reviews via Outscraper API
+ */
+async function scrapeYelpOutscraper(businessName, location = 'Fort Worth, TX', maxReviews = 100) {
+  return callPythonScraper('outscraper_reviews.py', [businessName, location, '--source', 'yelp', '--max-reviews', String(maxReviews)], 90000);
+}
+
+/**
+ * Scrape BBB data via Outscraper API
+ */
+async function scrapeBBBOutscraper(businessName, location = 'Fort Worth, TX') {
+  return callPythonScraper('outscraper_reviews.py', [businessName, location, '--source', 'bbb'], 60000);
+}
+
+/**
+ * Scrape Trustpilot reviews via Outscraper API
+ * Requires domain (e.g., "example.com")
+ */
+async function scrapeTrustpilotOutscraper(domain, maxReviews = 100) {
+  return callPythonScraper('outscraper_reviews.py', [domain, '', '--source', 'trustpilot', '--domain', domain, '--max-reviews', String(maxReviews)], 90000);
+}
+
+// ============ APIFY INTEGRATION ============
+// Feature flag: Set USE_APIFY=true in .env to enable Apify fallback
+const USE_APIFY = process.env.USE_APIFY === 'true';
+
+/**
+ * Scrape Google reviews via Apify API
+ * Cost: ~$0.50-1.00 per 100 reviews (pay per compute unit)
+ * @param {string} businessName - Business name for URL lookup
+ * @param {string} location - Location string (e.g., "Dallas, TX")
+ * @param {number} maxReviews - Max reviews to fetch
+ * @param {string} googleMapsUrl - Optional direct URL (skips lookup)
+ */
+async function scrapeGoogleReviewsApifyWrapper(businessName, location, maxReviews = 50, googleMapsUrl = null) {
+  // If we don't have a direct URL, we need to find one first
+  if (!googleMapsUrl) {
+    // Use Serper to find the Google Maps URL
+    if (process.env.SERPER_API_KEY) {
+      console.log(`    [Apify] No URL provided, using Serper to find Google Maps URL...`);
+      const serperResult = await scrapeGoogleReviewsSerper(businessName, location, 1);
+      if (serperResult.found && serperResult.maps_url) {
+        googleMapsUrl = serperResult.maps_url;
+        console.log(`    [Apify] Found URL: ${googleMapsUrl}`);
+      } else {
+        return { found: false, error: 'Could not find Google Maps URL via Serper' };
+      }
+    } else {
+      return { found: false, error: 'No Google Maps URL and no SERPER_API_KEY to find one' };
+    }
+  }
+
+  return scrapeGoogleReviewsApify(googleMapsUrl, maxReviews);
 }
 
 /**
@@ -1345,6 +1414,24 @@ class CollectionService {
         }
       }
 
+      // FALLBACK: Apify (if enabled and previous methods failed)
+      if (!gmapsLocalResult && USE_APIFY && APIFY_API_TOKEN) {
+        log(`    [Apify] Trying Apify fallback...`);
+        try {
+          gmapsLocalResult = await scrapeGoogleReviewsApifyWrapper(contractor.name, TARGET_MARKET, 50);
+          if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
+            success(`    [Apify] Got ${gmapsLocalResult.reviews.length} reviews`);
+            gmapsLocalResult.review_source = 'apify';
+          } else {
+            warn(`    [Apify] No reviews found, falling back...`);
+            gmapsLocalResult = null;
+          }
+        } catch (apifyErr) {
+          warn(`    [Apify] Error: ${apifyErr.message}, falling back...`);
+          gmapsLocalResult = null;
+        }
+      }
+
       // FALLBACK 2: Traditional Playwright scraper (rating only, no review text usually)
       if (!gmapsLocalResult) {
         log(`    📋 Using traditional scraper...`);
@@ -2145,6 +2232,15 @@ function calculateInsuranceConfidence(collectedData) {
   };
 }
 
-module.exports = { CollectionService, SOURCES, calculateInsuranceConfidence };
-// ... existing code ...
+module.exports = {
+  CollectionService,
+  SOURCES,
+  calculateInsuranceConfidence,
+  // Outscraper integration (set USE_OUTSCRAPER=true in .env)
+  USE_OUTSCRAPER,
+  scrapeGoogleReviewsOutscraper,
+  scrapeYelpOutscraper,
+  scrapeBBBOutscraper,
+  scrapeTrustpilotOutscraper
+};
 
