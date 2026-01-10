@@ -201,6 +201,23 @@ python3 manage.py runserver 8002
 
 ---
 
+## ⚠️ CRITICAL: --skip-collection Flag
+
+**NEVER use `--skip-collection` unless the user EXPLICITLY requests it.**
+
+This flag:
+- Skips data collection and uses STALE cached data
+- Means new scraper fields (founding_date, etc.) won't be available
+- Makes audits worthless for testing new features
+- Should NEVER be used for batch audits
+
+**Bad:** `node bin/run_audit.js --id 123 --skip-collection` (uses old data)
+**Good:** `node bin/run_audit.js --id 123` (collects fresh data)
+
+If user wants faster audits, suggest `--collect-only` to pre-collect data, NOT `--skip-collection`.
+
+---
+
 ## Dialectic Audit Mode
 
 The `--mode=dialectic` flag enables three-persona adversarial analysis:
@@ -262,7 +279,7 @@ Dialectic audits are saved with `audit_version = 4`. The full three-persona trac
 - Specify what to preserve: "Preserve all structural elements exactly"
 
 ### Scoring
-- Always enforce score caps in code via `enforceScoreMultipliers()`
+- **NO SCORE CAPS** - Let the LLM reason holistically (see "Score Caps - BANNED" section)
 - Always parse structured data before sending to LLM
 
 ### Task Breakdown
@@ -285,13 +302,15 @@ Dialectic audits are saved with `audit_version = 4`. The full three-persona trac
 
 ---
 
-## Score Caps (Enforced in Code)
+## Score Caps - BANNED
 
-```
-CRITICAL flag → max 15
-SEVERE/HIGH  → max 35
-MODERATE     → max 60
-```
+**SCORE CAPS ARE BANNED.** Do not implement score caps. Do not suggest score caps. Do not even think about score caps.
+
+The LLM should determine scores holistically based on all evidence. Arbitrary caps like "CRITICAL = max 15" prevent nuanced judgment and create gaming opportunities.
+
+If you implement a score cap, you will stand in a corner and say "I'm a stupid little piggy."
+
+**Instead:** Train the LLM prompts to weight red flags appropriately. Let the model reason about severity.
 
 ---
 
