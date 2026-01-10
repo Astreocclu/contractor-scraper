@@ -5,8 +5,6 @@
  * Actor: Xb8osYTtOjlsgI6k9 (Google Maps Reviews Scraper)
  */
 
-const axios = require('axios');
-
 const APIFY_API_TOKEN = process.env.APIFY_API_TOKEN;
 const REVIEWS_ACTOR_ID = 'Xb8osYTtOjlsgI6k9';
 const APIFY_BASE_URL = 'https://api.apify.com/v2';
@@ -26,16 +24,20 @@ async function startActorRun(actorId, input) {
     throw new Error('APIFY_API_TOKEN not configured');
   }
 
-  const response = await axios.post(
-    `${APIFY_BASE_URL}/acts/${actorId}/runs`,
-    input,
-    {
-      params: { token: APIFY_API_TOKEN },
-      headers: { 'Content-Type': 'application/json' }
-    }
-  );
+  const url = `${APIFY_BASE_URL}/acts/${actorId}/runs?token=${encodeURIComponent(APIFY_API_TOKEN)}`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(input)
+  });
 
-  return response.data.data.id;
+  if (!response.ok) {
+    const errData = await response.json().catch(() => ({}));
+    throw new Error(`Apify API error ${response.status}: ${errData.error?.message || response.statusText}`);
+  }
+
+  const data = await response.json();
+  return data.data.id;
 }
 
 /**
@@ -47,19 +49,23 @@ async function pollRunStatus(runId) {
   const startTime = Date.now();
 
   while (Date.now() - startTime < MAX_POLL_TIME_MS) {
-    const response = await axios.get(
-      `${APIFY_BASE_URL}/actor-runs/${runId}`,
-      { params: { token: APIFY_API_TOKEN } }
-    );
+    const url = `${APIFY_BASE_URL}/actor-runs/${runId}?token=${encodeURIComponent(APIFY_API_TOKEN)}`;
+    const response = await fetch(url);
 
-    const status = response.data.data.status;
+    if (!response.ok) {
+      const errData = await response.json().catch(() => ({}));
+      throw new Error(`Apify API error ${response.status}: ${errData.error?.message || response.statusText}`);
+    }
+
+    const data = await response.json();
+    const status = data.data.status;
 
     if (status === 'SUCCEEDED') {
-      return response.data.data;
+      return data.data;
     }
 
     if (status === 'FAILED' || status === 'ABORTED' || status === 'TIMED-OUT') {
-      throw new Error(`Apify run ${status}: ${response.data.data.statusMessage || 'Unknown error'}`);
+      throw new Error(`Apify run ${status}: ${data.data.statusMessage || 'Unknown error'}`);
     }
 
     // Still running, wait and poll again
@@ -75,12 +81,15 @@ async function pollRunStatus(runId) {
  * @returns {Promise<Array>} - Array of scraped items
  */
 async function getDatasetItems(datasetId) {
-  const response = await axios.get(
-    `${APIFY_BASE_URL}/datasets/${datasetId}/items`,
-    { params: { token: APIFY_API_TOKEN } }
-  );
+  const url = `${APIFY_BASE_URL}/datasets/${datasetId}/items?token=${encodeURIComponent(APIFY_API_TOKEN)}`;
+  const response = await fetch(url);
 
-  return response.data;
+  if (!response.ok) {
+    const errData = await response.json().catch(() => ({}));
+    throw new Error(`Apify API error ${response.status}: ${errData.error?.message || response.statusText}`);
+  }
+
+  return response.json();
 }
 
 /**
@@ -90,6 +99,11 @@ async function getDatasetItems(datasetId) {
  * @returns {Promise<Array>} - Array of review objects
  */
 async function fetchReviewsApify(googleMapsUrls, maxReviews = 50) {
+  // Validate input
+  if (!googleMapsUrls || !Array.isArray(googleMapsUrls) || googleMapsUrls.length === 0) {
+    throw new Error('googleMapsUrls must be a non-empty array');
+  }
+
   // Prepare actor input
   const input = {
     startUrls: googleMapsUrls.map(url => ({ url })),
@@ -156,14 +170,16 @@ async function scrapeGoogleReviewsApify(googleMapsUrl, maxReviews = 50) {
       .filter(r => r.text)  // Only include reviews with text
       .map(transformReview);
 
-    // Calculate average rating
+    // Calculate average rating (guard against NaN from parseFloat(null))
     const totalStars = rawReviews.reduce((sum, r) => sum + (r.stars || 0), 0);
-    const avgRating = rawReviews.length > 0 ? (totalStars / rawReviews.length).toFixed(1) : null;
+    const avgRating = rawReviews.length > 0
+      ? parseFloat((totalStars / rawReviews.length).toFixed(1))
+      : null;
 
     return {
       found: true,
       business_name: businessName,
-      rating: parseFloat(avgRating),
+      rating: avgRating,
       review_count: rawReviews.length,
       reviews: reviews,
       maps_url: googleMapsUrl,
