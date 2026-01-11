@@ -59,7 +59,7 @@ async function loadContractorData(contractorId) {
         try { data = JSON.parse(data); } catch { continue; }
       }
       const dataStr = JSON.stringify(data, null, 2);
-      enriched += `${row.source_name.toUpperCase()}:\n${dataStr.substring(0, 500)}\n\n`;
+      enriched += `${row.source_name.toUpperCase()}:\n${dataStr}\n\n`;
     }
   }
 
