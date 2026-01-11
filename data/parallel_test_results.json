@@ -1,0 +1,203 @@
+[
+  {
+    "contractor_id": 8109,
+    "contractor_name": "Dalrock Foundation Repair",
+    "timestamp": "2026-01-11T01:43:49.950Z",
+    "system_a_runs": [
+      {
+        "score": 88,
+        "confidence": "HIGH",
+        "reasoning": "All three models converge on the strongest signals: verified A+ accreditation, high-volume positive reviews, zero public complaints, and no legal issues. The Consumer Advocate's skepticism about address/branding clarity is procedurally valid (transparency matters in home services), but unsupported by evidence of actual wrongdoing. The Fair Arbiter and Independent Scorer appropriately weighted the concrete positive indicators heavily. A mid-to-high score (88) reflects: strong reputation and credentials, but acknowledgment that administrative clarity gaps create minor friction and justify a consumer doing direct verification before hire.",
+        "council_scores": {
+          "advocate": 62,
+          "arbiter": 98,
+          "scorer": 92
+        },
+        "cost": 0.012554860000000001,
+        "promptSet": "control"
+      },
+      {
+        "score": 88,
+        "confidence": "HIGH",
+        "reasoning": "Dalrock Foundation Repair presents a strong trust profile. The foundation is the BBB A+ accreditation (zero complaints is a powerful signal), consistent high Google reviews from a substantive sample (59 reviews), and verified positive local media coverage. The review analysis confirms authentic customer satisfaction, including ethical decision-making (advising against unnecessary repairs). Deep investigation found no legal, fraud, or regulatory red flags. The Consumer Advocate's concerns about documentation and address fragmentation are reasonable due diligence questions, but they are not confirmed as actual risks by the investigation, and the Fair Arbiter's positive signals are well-founded. Score reflects Excellent category with minor deductions for: (1) the legitimate recommendation that homeowners still verify proof of insurance/bonding before engaging (standard practice, not specific red flag), and (2) limited presence on independent review platforms beyond Google, which is normal for small regional contractors.",
+        "council_scores": {
+          "advocate": 58,
+          "arbiter": 97,
+          "scorer": 89
+        },
+        "cost": 0.012536559999999999,
+        "promptSet": "control"
+      }
+    ],
+    "system_b_runs": [
+      {
+        "score": 86,
+        "confidence": "HIGH",
+        "reasoning": "The strong agreement between Independent Scorer and Fair Arbiter on core signals—BBB A+ with zero complaints, 4.6/5 ratings, positive review analysis, and no red flags—represents robust convergent evidence. Deep Investigation's empty flag list further validates the positive assessment. The Consumer Advocate's concerns are legitimate pre-engagement due diligence items (verify engineering oversight, confirm warranties in writing) but do not reflect actual service failures or fraud. For a foundation repair contractor, these are reasonable verification steps rather than disqualifiers. Final score of 86 reflects high trustworthiness with acknowledged gaps in public documentation that should be addressed during consultation.",
+        "council_scores": {
+          "advocate": 52,
+          "arbiter": 96,
+          "scorer": 88
+        },
+        "cost": 0.01473269,
+        "promptSet": "qualitative"
+      },
+      {
+        "score": 83,
+        "confidence": "MEDIUM-HIGH",
+        "reasoning": "Dalrock Foundation Repair demonstrates a strong reputation profile across verifiable third-party sources (BBB, Google, local media). The zero complaints at BBB and high review volume with consistent 4.6 rating are difficult to fabricate and indicate genuine customer satisfaction. However, Consumer Advocate correctly identifies that for foundation work—a high-stakes, outcome-dependent service—the absence of transparent, easily accessible documentation on insurance, warranties, years in operation, and service area definition creates justifiable caution. The multiple addresses across sources suggest either poor record management or unclear service boundaries, which warrants customer verification. This is not evidence of fraud but of transparency gaps that increase due diligence burden on the homeowner. The business appears legitimate and well-regarded, but not so clearly that a customer can skip verification of credentials and service terms.",
+        "council_scores": {
+          "advocate": 60,
+          "arbiter": 96,
+          "scorer": 88
+        },
+        "cost": 0.01375757,
+        "promptSet": "qualitative"
+      }
+    ],
+    "system_a_variance": 0,
+    "system_a_average": 88,
+    "system_b_variance": 1.5,
+    "system_b_average": 84.5,
+    "comparison": {
+      "tighter_variance": "A",
+      "score_delta": "3.5",
+      "a_total_cost": "0.0251",
+      "b_total_cost": "0.0285"
+    }
+  },
+  {
+    "contractor_id": 7691,
+    "contractor_name": "Cowboy Hat Capital Foundation Repair Co",
+    "timestamp": "2026-01-11T01:48:05.118Z",
+    "system_a_runs": [
+      {
+        "score": 38,
+        "confidence": "HIGH",
+        "reasoning": "The council's high confidence signals strong evidentiary grounding. The most likely truth: this is a genuine listing hijacking or technical error rather than intentional fraud, supported by the contractor's clean regulatory and litigation record. Fraudulent contractors typically accumulate complaints; clean records suggest this is a victim of hijacking, not a perpetrator. However, this distinction doesn't resolve the core problem—the contractor's failure to correct or claim the listing renders them functionally unverifiable. A homeowner cannot confidently vet this business using primary sources. The absence of negative records is reassuring but insufficient to overcome verification failure. Fair Arbiter is too charitable (40) in treating this as a minor issue; Independent Scorer is too strict (30) in calling unproven intent 'confirmed fraud.' The true risk sits between: high uncertainty due to compromised identity verification.",
+        "council_scores": {
+          "advocate": 46,
+          "arbiter": 40,
+          "scorer": 30
+        },
+        "cost": 0.01449412,
+        "promptSet": "control"
+      },
+      {
+        "score": 38,
+        "confidence": "MEDIUM",
+        "reasoning": "The Google Maps listing issue is real and unresolved—auto repair reviews attached to a foundation repair company is a substantial credibility problem, especially for structural safety work. However, the total absence of regulatory violations, legal complaints, AG findings, or court records weighs against a 'confirmed fraud' interpretation; active fraud typically leaves traces in public records. The most probable explanation is administrative error (previous business at same address, miscategorized or inherited listing), but a responsible contractor would have corrected this. The core risk is not fraud per se, but rather lack of verifiable track record in foundation work and poor listing management, which combined suggest either inexperience, disorganization, or intentional obscuring of history. Given structural/safety implications, this warrants meaningful caution and additional verification before engagement.",
+        "council_scores": {
+          "advocate": 46,
+          "arbiter": 25,
+          "scorer": 35
+        },
+        "cost": 0.01289292,
+        "promptSet": "control"
+      }
+    ],
+    "system_b_runs": [
+      {
+        "score": 18,
+        "confidence": "MEDIUM",
+        "reasoning": "The core problem is real and severe: the contractor's primary online identity is fundamentally compromised. Whether this is fraud, hijacking, or administrative failure is unclear, but the distinction is irrelevant to the risk calculus. For a high-stakes service like foundation repair—where failures endanger structural integrity and homeowner safety—an inability to verify expertise through legitimate channels is disqualifying. The absence of legal complaints provides no comfort; it merely means no one has yet sued, which tells us nothing about actual competence or trustworthiness. The Fair Arbiter's charitable framing ('database error') is well-intentioned but misses the point: a homeowner cannot reasonably verify they're hiring a qualified foundation repair contractor here. The Independent Scorer's skepticism is justified, though a score of 15 slightly over-weights the deception angle relative to simple opacity. A mid-range score reflects that the listing problem is definitive and disqualifying, even if its root cause remains ambiguous.",
+        "council_scores": {
+          "advocate": 28,
+          "arbiter": 25,
+          "scorer": 15
+        },
+        "cost": 0.012221969999999999,
+        "promptSet": "qualitative"
+      },
+      {
+        "score": 16,
+        "confidence": "HIGH",
+        "reasoning": "The evidence points to one of three scenarios: (1) the company's Google Maps listing was hijacked by someone else, (2) the company is deliberately using fake/misattributed reviews, or (3) the company does not actually perform foundation work. None of these scenarios support hiring them. For foundation repair—a structural, expensive, and safety-critical service—a homeowner needs verifiable credentials, real references, and transparent business identity. An unverifiable listing with automotive reviews instead of foundation work reviews is a disqualifying red flag. The absence of lawsuits (noted by Fair Arbiter) is not reassuring; it simply means no complaint has been filed yet, not that the company is trustworthy. A legitimate contractor would have clear, verifiable foundation repair credentials and genuine reviews.",
+        "council_scores": {
+          "advocate": 18,
+          "arbiter": 30,
+          "scorer": 15
+        },
+        "cost": 0.01094804,
+        "promptSet": "qualitative"
+      }
+    ],
+    "system_a_variance": 0,
+    "system_a_average": 38,
+    "system_b_variance": 1,
+    "system_b_average": 17,
+    "comparison": {
+      "tighter_variance": "A",
+      "score_delta": "21.0",
+      "a_total_cost": "0.0274",
+      "b_total_cost": "0.0232"
+    }
+  },
+  {
+    "contractor_id": 665,
+    "contractor_name": "Pinch A Penny Pool Patio Spa",
+    "timestamp": "2026-01-11T01:52:20.103Z",
+    "system_a_runs": [
+      {
+        "score": 58,
+        "confidence": "MEDIUM",
+        "reasoning": "The contractor operates in a legally permitting-light market (Texas pools/patios) where franchise backing provides some standardization. Local metrics (Google 4.5, Yelp 'top local', BBB B+) indicate satisfied local customers and responsiveness to complaints. However: (1) Trustpilot's 111-review sample is too large to dismiss as pure bias; (2) geographic inconsistencies remain unresolved—the claim of a Saginaw location is not clearly verified; (3) the review platform gap, while explainable, raises questions about selective curation; (4) no explicit local permitting/licensing trail for the specific project location. The contractor appears operational and locally regarded, but lacks the transparency and consistency required for high trust. A homeowner should verify the specific local operator's identity and Saginaw credentials before engagement.",
+        "council_scores": {
+          "advocate": 45,
+          "arbiter": 82,
+          "scorer": 45
+        },
+        "cost": 0.0156181,
+        "promptSet": "control"
+      },
+      {
+        "score": 64,
+        "confidence": "MEDIUM",
+        "reasoning": "This contractor operates under a recognizable national brand with a concerning overall reputation (2.3 Trustpilot) but manages a specific Saginaw location that performs better locally. The B+ BBB rating and absence of local complaints are positive anchors. However, the brand's poor aggregate reviews suggest systemic issues (quality, follow-through, or service recovery) that may affect this location. The limited local review sample (8 reviews) provides insufficient confidence that the Saginaw operation is an exception. Licensing ambiguity and address questions add friction but are not disqualifying. A homeowner should proceed cautiously and verify scope of work before commitment.",
+        "council_scores": {
+          "advocate": 46,
+          "arbiter": 82,
+          "scorer": 58
+        },
+        "cost": 0.01455699,
+        "promptSet": "control"
+      }
+    ],
+    "system_b_runs": [
+      {
+        "score": 45,
+        "confidence": "MEDIUM",
+        "reasoning": "The Trustpilot data—111 reviews averaging 2.3 stars—cannot be dismissed as anomalous or platform-specific. This volume and negativity suggests real customer dissatisfaction at the brand level or systematic issues. The 4.5-star Google rating contradicts this so severely that review manipulation or strategic customer routing (positive to Google, negative elsewhere) becomes a reasonable inference, per Independent Scorer's analysis. The BBB's clean record is a positive signal but insufficient to override the magnitude of negative Trustpilot feedback. Location confusion and absence of verifiable local insurance/permits compound risk for a home safety-critical project. Fair Arbiter's faith in franchise standardization is outweighed by evidence of inconsistent customer outcomes across platforms. This contractor presents unresolved red flags that demand verification before hire.",
+        "council_scores": {
+          "advocate": 32,
+          "arbiter": 76,
+          "scorer": 40
+        },
+        "cost": 0.01329933,
+        "promptSet": "qualitative"
+      },
+      {
+        "score": 43,
+        "confidence": "MEDIUM",
+        "reasoning": "The contractor presents a classic trust paradox: nationally backed franchise with local storefront (positive structure) combined with massive customer dissatisfaction signal (negative outcome). The BBB rating and lack of complaints provide some floor. However, Trustpilot's 111 reviews at 2.3★ represents real customer experience at scale and cannot be dismissed. The Google-Trustpilot gap suggests selective promotion of positive reviews rather than actual service quality improvement. The location inconsistencies and unverified permitting claims compound the risk. This is not fraud-level bad, but it is unreliable-at-scale bad. A homeowner hiring this contractor faces material dissatisfaction risk despite the franchise brand.",
+        "council_scores": {
+          "advocate": 28,
+          "arbiter": 82,
+          "scorer": 48
+        },
+        "cost": 0.01453544,
+        "promptSet": "qualitative"
+      }
+    ],
+    "system_a_variance": 3,
+    "system_a_average": 61,
+    "system_b_variance": 1,
+    "system_b_average": 44,
+    "comparison": {
+      "tighter_variance": "B",
+      "score_delta": "17.0",
+      "a_total_cost": "0.0302",
+      "b_total_cost": "0.0278"
+    }
+  }
+]
