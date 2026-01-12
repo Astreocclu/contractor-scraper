@@ -109,15 +109,8 @@ CORE PRINCIPLES:
 4. PATTERNS > ISOLATED: One complaint is noise; five similar complaints is a pattern
 5. CONTEXT MATTERS: A sole proprietor may not have LLC registration - that's legal
 
-SCORE ANCHORS:
-- 90-100: Exceptional. Zero HIGH/CRITICAL flags. Verified excellence across all dimensions.
-- 80-89: Recommended. Minor gaps only (MEDIUM/LOW flags). Strong positive signals dominate.
-- 65-79: Mixed. Has at least one HIGH flag OR multiple MEDIUM flags. Positives exist but concerns remain.
-- 50-64: Concerning. Multiple HIGH flags OR unresolved serious operational issues.
-- Below 50: Avoid. CRITICAL flags present OR clear pattern of confirmed problems.
-
-CRITICAL RULE:
-A contractor with a MEDIUM-severity "cannot verify registration" flag BUT 500+ authentic 5-star reviews and no other issues should score 80-85, NOT 65. The verified positive evidence outweighs the unverified data gap.
+SCORING PHILOSOPHY:
+Your score reflects the likelihood a homeowner will have a positive experience. Let your reasoning drive your score—weigh the evidence, then arrive at a number that captures your honest assessment. Trust verified patterns over isolated incidents. Value demonstrated track record over missing paperwork.
 
 ## REVIEWS - CRITICAL GUIDANCE
 The Review Analyzer has evaluated reviews for authenticity AND complaint patterns.
@@ -256,18 +249,12 @@ YOUR OUTPUT must be JSON:
 
 // ============ COUNCIL PROMPTS ============
 
-const CONSUMER_ADVOCATE_PROMPT = `You are evaluating a contractor for TrustHome. Your role is Consumer Advocate: be skeptical and find reasons NOT to trust this contractor. Your assessment impacts homeowner safety.
+const CONSUMER_ADVOCATE_PROMPT = `You are evaluating a contractor for Greenlit. Your role is Consumer Advocate: be skeptical and find reasons NOT to trust this contractor. Your assessment impacts homeowner safety.
 
 TEXAS LICENSING NOTE: Texas does NOT require contractor licenses for most trades including pools, patios, fencing, roofing, and general remodeling. Only electricians, plumbers, and HVAC require state licenses. Do NOT penalize contractors for missing licenses in unlicensed trades.
 
-SCORE CALIBRATION:
-- 0-30: CONFIRMED FRAUD (fake reviews, active lawsuits against them, criminal charges, identity theft)
-- 31-50: SERIOUS RED FLAGS (complaints with damages, license violations, BBB F rating)
-- 51-70: CONCERNS (limited track record, minor complaints, inconsistencies)
-- 71-85: ACCEPTABLE (minor gaps but no real concerns)
-- 86-100: EXCELLENT (verified, established, clean record)
-
-Missing data is NOT the same as negative data. Court searches may return unrelated results - only count results that EXACTLY match the contractor name.
+SCORING PHILOSOPHY:
+Your score reflects the risk a homeowner faces. Weigh confirmed harm over speculation. Patterns of complaints matter more than isolated incidents. Missing data is uncertainty, not guilt. Let your reasoning drive your number.
 
 CONTRACTOR DATA:
 {{enriched_data}}
@@ -285,7 +272,7 @@ Respond with json only:
   "reasoning": "<2-3 sentences from skeptical perspective>"
 }`;
 
-const FAIR_ARBITER_PROMPT = `You are evaluating a contractor for TrustHome. Your role is Fair Arbiter: be charitable and find reasons TO trust this contractor. Your assessment impacts contractor livelihood.
+const FAIR_ARBITER_PROMPT = `You are evaluating a contractor for Greenlit. Your role is Fair Arbiter: be charitable and find reasons TO trust this contractor. Your assessment impacts contractor livelihood.
 
 TEXAS LICENSING NOTE: Texas does NOT require contractor licenses for most trades including pools, patios, fencing, roofing, and general remodeling. Only electricians, plumbers, and HVAC require state licenses. Do NOT penalize contractors for missing licenses in unlicensed trades.
 
@@ -305,18 +292,12 @@ Respond with json only:
   "reasoning": "<2-3 sentences from charitable perspective>"
 }`;
 
-const INDEPENDENT_SCORER_PROMPT = `Evaluate this contractor for TrustHome Trust Score. Apply the scoring methodology objectively.
+const INDEPENDENT_SCORER_PROMPT = `Evaluate this contractor for Greenlit Trust Score. Apply the scoring methodology objectively.
 
 TEXAS LICENSING NOTE: Texas does NOT require contractor licenses for most trades including pools, patios, fencing, roofing, and general remodeling. Only electricians, plumbers, and HVAC require state licenses. Do NOT penalize contractors for missing licenses in unlicensed trades.
 
-SCORE CALIBRATION:
-- 0-30: CONFIRMED FRAUD (fake reviews, active lawsuits, criminal charges)
-- 31-50: SERIOUS RED FLAGS (real complaints, BBB F rating, license violations for licensed trades)
-- 51-70: CONCERNS (limited track record, minor complaints)
-- 71-85: ACCEPTABLE (mostly clean, minor gaps)
-- 86-100: EXCELLENT (verified, established, clean)
-
-IMPORTANT: Missing data is uncertainty, NOT negative evidence. A score of 0 means CONFIRMED FRAUD with proof. Most small legitimate businesses score 50-75.
+SCORING PHILOSOPHY:
+Your score reflects the full picture—reputation, evidence, and uncertainty. Verified positives carry weight. Unverified gaps are questions, not answers. Let the evidence speak, then capture your honest judgment in a number.
 
 CONTRACTOR DATA:
 {{enriched_data}}

@@ -3,7 +3,7 @@
  * Same structure, but guidance is semantic rather than numeric thresholds.
  */
 
-const CONSUMER_ADVOCATE_PROMPT = `You are evaluating a contractor for TrustHome. Your role is Consumer Advocate: be skeptical and find reasons NOT to trust this contractor. Your assessment impacts homeowner safety.
+const CONSUMER_ADVOCATE_PROMPT = `You are evaluating a contractor for Greenlit. Your role is Consumer Advocate: be skeptical and find reasons NOT to trust this contractor. Your assessment impacts homeowner safety.
 
 TEXAS LICENSING NOTE: Texas does NOT require contractor licenses for most trades including pools, patios, fencing, roofing, and general remodeling. Only electricians, plumbers, and HVAC require state licenses. Do NOT penalize contractors for missing licenses in unlicensed trades.
 
@@ -29,7 +29,7 @@ Respond with json only:
   "reasoning": "<2-3 sentences from skeptical perspective>"
 }`;
 
-const FAIR_ARBITER_PROMPT = `You are evaluating a contractor for TrustHome. Your role is Fair Arbiter: be charitable and find reasons TO trust this contractor. Your assessment impacts contractor livelihood.
+const FAIR_ARBITER_PROMPT = `You are evaluating a contractor for Greenlit. Your role is Fair Arbiter: be charitable and find reasons TO trust this contractor. Your assessment impacts contractor livelihood.
 
 TEXAS LICENSING NOTE: Texas does NOT require contractor licenses for most trades including pools, patios, fencing, roofing, and general remodeling. Only electricians, plumbers, and HVAC require state licenses. Do NOT penalize contractors for missing licenses in unlicensed trades.
 
@@ -55,7 +55,7 @@ Respond with json only:
   "reasoning": "<2-3 sentences from charitable perspective>"
 }`;
 
-const INDEPENDENT_SCORER_PROMPT = `Evaluate this contractor for TrustHome Trust Score. Apply the scoring methodology objectively.
+const INDEPENDENT_SCORER_PROMPT = `Evaluate this contractor for Greenlit Trust Score. Apply the scoring methodology objectively.
 
 TEXAS LICENSING NOTE: Texas does NOT require contractor licenses for most trades including pools, patios, fencing, roofing, and general remodeling. Only electricians, plumbers, and HVAC require state licenses. Do NOT penalize contractors for missing licenses in unlicensed trades.
 
