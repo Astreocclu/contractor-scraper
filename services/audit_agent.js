@@ -9,6 +9,15 @@
 
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
 
+const {
+  callAzureGPT,
+  callGeminiFairArbiter,
+  callDeepSeekScorer,
+  callClaudeJudge,
+  callDeepSeekR1Judge
+} = require('./council_callers');
+const { COUNCIL_CONFIG } = require('./deep_investigation/constants');
+
 const SYSTEM_PROMPT = `You are a forensic investigator with deep reasoning capabilities. Your job: protect homeowners from fraud.
 
 INVESTIGATE this contractor. Look at ALL the data collected.
@@ -142,7 +151,8 @@ YOUR MINDSET:
 - Bad actors game reviews. Look for patterns that indicate manipulation.
 - BBB F ratings are damning - businesses can respond to complaints but chose not to.
 - When you see a pattern of complaints, assume the pattern is real.
-- Missing data in critical areas (licensing, insurance) is a red flag, not neutral.
+- Focus on verifiable data: BBB complaints, court records, liens, review authenticity patterns.
+- Note: Texas does not require contractor licenses for most trades. Insurance records are rarely available. Only flag licensing/insurance if the contractor CLAIMS credentials that evidence contradicts.
 - Your job is to surface every legitimate concern a homeowner should know about.
 
 ANALYZE THE DATA:
@@ -206,9 +216,12 @@ YOUR PROCESS:
 4. FINAL SCORE: Your score emerges from your reasoning. Don't average the two scores - make your own judgment.
 
 CRITICAL RULES:
-- If both analysts agree (within 15 points), your confidence should be HIGH.
-- If they disagree by 30+ points, you MUST explain which specific evidence each weighted differently.
+- If both analysts agree, your confidence should be HIGH.
+- If they significantly disagree, you MUST explain which specific evidence each weighted differently.
 - Your reasoning must be detailed enough that a third analyst could challenge it.
+
+DOUBLE-CHECK YOUR JUDGMENT:
+Before finalizing, ask yourself: "Will this score enable a homeowner to make an intelligent decision?"
 
 YOUR OUTPUT must be JSON:
 {
@@ -232,6 +245,107 @@ YOUR OUTPUT must be JSON:
   ],
   "verified_positives": ["<Verified positive finding>"],
   "unverified_items": ["<What remains uncertain>"]
+}`;
+
+// ============ COUNCIL PROMPTS ============
+
+const CONSUMER_ADVOCATE_PROMPT = `You are evaluating a contractor for TrustHome. Your role is Consumer Advocate: be skeptical and find reasons NOT to trust this contractor. Your assessment impacts homeowner safety.
+
+TEXAS LICENSING NOTE: Texas does NOT require contractor licenses for most trades including pools, patios, fencing, roofing, and general remodeling. Only electricians, plumbers, and HVAC require state licenses. Do NOT penalize contractors for missing licenses in unlicensed trades.
+
+SCORE CALIBRATION:
+- 0-30: CONFIRMED FRAUD (fake reviews, active lawsuits against them, criminal charges, identity theft)
+- 31-50: SERIOUS RED FLAGS (complaints with damages, license violations, BBB F rating)
+- 51-70: CONCERNS (limited track record, minor complaints, inconsistencies)
+- 71-85: ACCEPTABLE (minor gaps but no real concerns)
+- 86-100: EXCELLENT (verified, established, clean record)
+
+Missing data is NOT the same as negative data. Court searches may return unrelated results - only count results that EXACTLY match the contractor name.
+
+CONTRACTOR DATA:
+{{enriched_data}}
+
+FLAGS FROM DEEP INVESTIGATION:
+{{flags}}
+
+Find holes in their story. Question their claims. Look for what's missing or inconsistent.
+
+Respond with json only:
+{
+  "score": <0-100>,
+  "confidence": <0.0-1.0>,
+  "concerns": ["<specific concerns>"],
+  "reasoning": "<2-3 sentences from skeptical perspective>"
+}`;
+
+const FAIR_ARBITER_PROMPT = `You are evaluating a contractor for TrustHome. Your role is Fair Arbiter: be charitable and find reasons TO trust this contractor. Your assessment impacts contractor livelihood.
+
+TEXAS LICENSING NOTE: Texas does NOT require contractor licenses for most trades including pools, patios, fencing, roofing, and general remodeling. Only electricians, plumbers, and HVAC require state licenses. Do NOT penalize contractors for missing licenses in unlicensed trades.
+
+CONTRACTOR DATA:
+{{enriched_data}}
+
+FLAGS FROM DEEP INVESTIGATION:
+{{flags}}
+
+Consider context. Give benefit of doubt where reasonable. Acknowledge what they've done right.
+
+Respond with json only:
+{
+  "score": <0-100>,
+  "confidence": <0.0-1.0>,
+  "positives": ["<evidence of trustworthiness>"],
+  "reasoning": "<2-3 sentences from charitable perspective>"
+}`;
+
+const INDEPENDENT_SCORER_PROMPT = `Evaluate this contractor for TrustHome Trust Score. Apply the scoring methodology objectively.
+
+TEXAS LICENSING NOTE: Texas does NOT require contractor licenses for most trades including pools, patios, fencing, roofing, and general remodeling. Only electricians, plumbers, and HVAC require state licenses. Do NOT penalize contractors for missing licenses in unlicensed trades.
+
+SCORE CALIBRATION:
+- 0-30: CONFIRMED FRAUD (fake reviews, active lawsuits, criminal charges)
+- 31-50: SERIOUS RED FLAGS (real complaints, BBB F rating, license violations for licensed trades)
+- 51-70: CONCERNS (limited track record, minor complaints)
+- 71-85: ACCEPTABLE (mostly clean, minor gaps)
+- 86-100: EXCELLENT (verified, established, clean)
+
+IMPORTANT: Missing data is uncertainty, NOT negative evidence. A score of 0 means CONFIRMED FRAUD with proof. Most small legitimate businesses score 50-75.
+
+CONTRACTOR DATA:
+{{enriched_data}}
+
+FLAGS FROM DEEP INVESTIGATION:
+{{flags}}
+
+Consider the full picture: reputation, online presence, red flags, and verification. Use your judgment.
+
+Respond with json only:
+{
+  "score": <0-100>,
+  "confidence": <0.0-1.0>,
+  "key_factors": ["<what drove your score>"],
+  "reasoning": "<brief holistic assessment>"
+}`;
+
+const JUDGE_PROMPT = `You are the final judge for contractor Trust Scores. Three models evaluated this contractor from different perspectives:
+
+- Consumer Advocate (skeptical): {{gpt_response}}
+- Fair Arbiter (charitable): {{gemini_response}}
+- Independent Scorer (objective): {{deepseek_response}}
+
+Deep Investigation also found these flags: {{flags}}
+
+Synthesize their perspectives. Where they agree, that's strong signal. Where they diverge, read their reasoning and decide what's true.
+
+Respond with json only:
+{
+  "final_score": <0-100>,
+  "confidence": "HIGH/MEDIUM/LOW",
+  "council_agreed_on": "<what all three saw>",
+  "council_diverged_on": "<disagreements and how you resolved>",
+  "reasoning": "<your synthesis>",
+  "human_review_needed": <true/false>,
+  "review_reason": "<if true, why>"
 }`;
 
 const log = (msg) => console.log(msg);
@@ -482,6 +596,12 @@ Website: ${this.contractor.website || 'Not provided'}
     const verdict = getVerdict(result.trust_score);
     const confidence = getConfidence(result);
 
+    // Add legal disclaimers for trust score
+    const disclaimer = "AI-generated trust assessment based on publicly available data. " +
+      "This score is an estimate and should not be the sole factor in hiring decisions. " +
+      "We recommend verifying credentials directly with the contractor.";
+    const disclaimer_short = "AI-generated estimate based on public data";
+
     // Map to recommendation for DB compatibility
     let recommendation;
     if (result.trust_score >= 80) recommendation = 'RECOMMENDED';
@@ -528,6 +648,8 @@ Website: ${this.contractor.website || 'Not provided'}
     result.verdict = verdict;
     result.confidence = confidence;
     result.total_cost = this.totalCost;
+    result.disclaimer = disclaimer;
+    result.disclaimer_short = disclaimer_short;
 
     // Display formatted output
     console.log(formatDisplayOutput(result));
@@ -869,8 +991,14 @@ Now synthesize these two perspectives and produce your final assessment.`;
 
     // Derive verdict and confidence
     const verdict = getVerdict(trustScore);
-    const confidence = synthesis.final_assessment_confidence >= 70 ? 'HIGH' :
-                       synthesis.final_assessment_confidence >= 40 ? 'MEDIUM' : 'LOW';
+    const assessmentConf = synthesis?.final_assessment_confidence ?? 50;
+    const confidence = assessmentConf >= 70 ? 'HIGH' : assessmentConf >= 40 ? 'MEDIUM' : 'LOW';
+
+    // Add legal disclaimers for trust score
+    const disclaimer = "AI-generated trust assessment based on publicly available data. " +
+      "This score is an estimate and should not be the sole factor in hiring decisions. " +
+      "We recommend verifying credentials directly with the contractor.";
+    const disclaimer_short = "AI-generated estimate based on public data";
 
     // Map to recommendation for DB compatibility
     let recommendation;
@@ -948,6 +1076,8 @@ Now synthesize these two perspectives and produce your final assessment.`;
       verified_items: synthesis.verified_positives || [],
       unverified_items: synthesis.unverified_items || [],
       total_cost: this.totalCost,
+      disclaimer,
+      disclaimer_short,
       dialectic: {
         advocate_score: advocate.trust_score,
         arbiter_score: arbiter.trust_score,
@@ -989,7 +1119,7 @@ Now synthesize these two perspectives and produce your final assessment.`;
   Stronger Case:                 ${(synthesis?.stronger_case ?? 'unknown').toUpperCase()}
 
 --- SYNTHESIS ---
-${synthesis.summary || 'No summary provided'}
+${synthesis?.summary || 'No summary provided'}
 
 --- AGREEMENTS ---`;
 
@@ -1078,4 +1208,356 @@ ${synthesis.summary || 'No summary provided'}
   }
 }
 
-module.exports = { AuditAgent, DialecticAuditAgent, getVerdict, getConfidence, formatDisplayOutput };
+/**
+ * Council Audit Agent (V5)
+ *
+ * Runs real multi-LLM council with different personas:
+ * - GPT-5-mini: Consumer Advocate (skeptical)
+ * - Gemini: Fair Arbiter (charitable)
+ * - DeepSeek V3: Independent Scorer (objective)
+ * - Claude: Judge (synthesizer)
+ */
+class CouncilAuditAgent {
+  constructor(db, contractorId, contractor) {
+    this.db = db;
+    this.contractorId = contractorId;
+    this.contractor = contractor;
+    this.councilResponses = {};
+    this.rawData = null;
+    this.investigationFlags = [];
+    this.totalCost = 0;
+  }
+
+  async loadRawData() {
+    this.rawData = await this.db.exec(`
+      SELECT source_name, raw_text, structured_data, fetch_status
+      FROM contractor_raw_data
+      WHERE contractor_id = ?
+      ORDER BY source_name
+    `, [this.contractorId]);
+
+    // Load investigation flags if available
+    const flagsRow = this.rawData.find(r => r.source_name === 'deep_investigation_flags');
+    if (flagsRow?.structured_data) {
+      try {
+        this.investigationFlags = typeof flagsRow.structured_data === 'string'
+          ? JSON.parse(flagsRow.structured_data)
+          : flagsRow.structured_data;
+      } catch {
+        this.investigationFlags = [];
+      }
+    }
+  }
+
+  buildEnrichedData() {
+    let summary = `CONTRACTOR: ${this.contractor.name}\n`;
+    summary += `LOCATION: ${this.contractor.city}, ${this.contractor.state || 'TX'}\n\n`;
+
+    const MAX_TOTAL_CHARS = 8000;  // Keep prompt small for council
+
+    for (const row of this.rawData || []) {
+      if (summary.length >= MAX_TOTAL_CHARS) break;
+
+      if (row.structured_data && row.fetch_status === 'success') {
+        let data;
+        try {
+          data = typeof row.structured_data === 'string'
+            ? JSON.parse(row.structured_data)
+            : row.structured_data;
+        } catch {
+          continue;
+        }
+        const dataStr = JSON.stringify(data, null, 2);
+        const remainingChars = MAX_TOTAL_CHARS - summary.length - 100;
+        const truncatedData = dataStr.substring(0, Math.min(500, remainingChars));
+        summary += `${row.source_name.toUpperCase()}:\n${truncatedData}\n\n`;
+      }
+    }
+
+    return summary;
+  }
+
+  async runCouncil() {
+    const enrichedData = this.buildEnrichedData();
+    const flagsJson = JSON.stringify(this.investigationFlags || [], null, 2);
+
+    // Debug: show what data council receives
+    if (process.env.DEBUG_COUNCIL) {
+      console.log('\n=== ENRICHED DATA ===\n' + enrichedData);
+      console.log('\n=== FLAGS ===\n' + flagsJson);
+    }
+
+    log('\n  Running Multi-LLM Council...');
+
+    // Build prompts for each council member
+    const advocatePrompt = CONSUMER_ADVOCATE_PROMPT
+      .replace('{{enriched_data}}', enrichedData)
+      .replace('{{flags}}', flagsJson);
+
+    const arbiterPrompt = FAIR_ARBITER_PROMPT
+      .replace('{{enriched_data}}', enrichedData)
+      .replace('{{flags}}', flagsJson);
+
+    const scorerPrompt = INDEPENDENT_SCORER_PROMPT
+      .replace('{{enriched_data}}', enrichedData)
+      .replace('{{flags}}', flagsJson);
+
+    // Run all three in parallel
+    const startTime = Date.now();
+    const [advocateResult, arbiterResult, scorerResult] = await Promise.allSettled([
+      callAzureGPT(advocatePrompt),
+      callGeminiFairArbiter(arbiterPrompt),
+      callDeepSeekScorer(scorerPrompt)
+    ]);
+
+    const elapsed = Date.now() - startTime;
+    let successCount = 0;
+    let totalCost = 0;
+
+    // Process Consumer Advocate (GPT-5-mini)
+    if (advocateResult.status === 'fulfilled' && !advocateResult.value.skipped) {
+      this.councilResponses.consumer_advocate = advocateResult.value.result;
+      totalCost += advocateResult.value.usage.cost;
+      successCount++;
+      success(`    Consumer Advocate: Score ${advocateResult.value.result.score}, Cost $${advocateResult.value.usage.cost.toFixed(4)}`);
+    } else {
+      const reason = advocateResult.status === 'rejected' ? advocateResult.reason?.message : 'Skipped';
+      warn(`    Consumer Advocate: Failed - ${reason}`);
+      this.councilResponses.consumer_advocate = { error: reason };
+    }
+
+    // Process Fair Arbiter (Gemini)
+    if (arbiterResult.status === 'fulfilled' && !arbiterResult.value.skipped) {
+      this.councilResponses.fair_arbiter = arbiterResult.value.result;
+      totalCost += arbiterResult.value.usage.cost;
+      successCount++;
+      success(`    Fair Arbiter: Score ${arbiterResult.value.result.score}, Cost $${arbiterResult.value.usage.cost.toFixed(4)}`);
+    } else {
+      const reason = arbiterResult.status === 'rejected' ? arbiterResult.reason?.message : 'Skipped';
+      warn(`    Fair Arbiter: Failed - ${reason}`);
+      this.councilResponses.fair_arbiter = { error: reason };
+    }
+
+    // Process Independent Scorer (DeepSeek)
+    if (scorerResult.status === 'fulfilled' && !scorerResult.value.skipped) {
+      this.councilResponses.independent_scorer = scorerResult.value.result;
+      totalCost += scorerResult.value.usage.cost;
+      successCount++;
+      success(`    Independent Scorer: Score ${scorerResult.value.result.score}, Cost $${scorerResult.value.usage.cost.toFixed(4)}`);
+    } else {
+      const reason = scorerResult.status === 'rejected' ? scorerResult.reason?.message : 'Skipped';
+      warn(`    Independent Scorer: Failed - ${reason}`);
+      this.councilResponses.independent_scorer = { error: reason };
+    }
+
+    log(`  Council completed in ${elapsed}ms (${successCount}/3 successful)`);
+    this.totalCost += totalCost;
+
+    return { successCount, totalCost };
+  }
+
+  async runJudge() {
+    log('\n  Running Judge...');
+
+    const flagsJson = JSON.stringify(this.investigationFlags || [], null, 2);
+
+    const judgePrompt = JUDGE_PROMPT
+      .replace('{{gpt_response}}', JSON.stringify(this.councilResponses.consumer_advocate || {}, null, 2))
+      .replace('{{gemini_response}}', JSON.stringify(this.councilResponses.fair_arbiter || {}, null, 2))
+      .replace('{{deepseek_response}}', JSON.stringify(this.councilResponses.independent_scorer || {}, null, 2))
+      .replace('{{flags}}', flagsJson);
+
+    try {
+      // Try Claude first
+      const response = await callClaudeJudge(judgePrompt);
+      this.totalCost += response.usage.cost;
+      success(`    Claude Judge: Final Score ${response.result.final_score}, Cost $${response.usage.cost.toFixed(4)}`);
+      return { result: response.result, cost: response.usage.cost, model: 'claude' };
+    } catch (claudeError) {
+      warn(`    Claude failed: ${claudeError.message}, trying DeepSeek R1...`);
+      try {
+        // Fallback to DeepSeek R1
+        const response = await callDeepSeekR1Judge(judgePrompt);
+        this.totalCost += response.usage.cost;
+        success(`    DeepSeek R1 Judge: Final Score ${response.result.final_score}, Cost $${response.usage.cost.toFixed(4)}`);
+        return { result: response.result, cost: response.usage.cost, model: 'deepseek-r1' };
+      } catch (r1Error) {
+        error(`    DeepSeek R1 also failed: ${r1Error.message}`);
+        throw new Error('All judges failed');
+      }
+    }
+  }
+
+  async run() {
+    log('\n🏛️ COUNCIL AUDIT (V5)');
+    log(`Contractor: ${this.contractor.name}`);
+
+    // Load data
+    await this.loadRawData();
+
+    // Run the council
+    const { successCount } = await this.runCouncil();
+
+    // Handle failures per spec
+    if (successCount === 0) {
+      error('    All council members failed - cannot produce score');
+      return {
+        mode: 'council',
+        error: 'All council members failed',
+        final_score: null,
+        confidence: 'NONE'
+      };
+    }
+
+    if (successCount < 2) {
+      warn('    Only 1 council member succeeded - falling back to single-model LOW confidence');
+      // Use the one that succeeded
+      const workingResponse = this.councilResponses.consumer_advocate?.score
+        || this.councilResponses.fair_arbiter?.score
+        || this.councilResponses.independent_scorer?.score;
+
+      // Add legal disclaimers for trust score
+      const disclaimer = "AI-generated trust assessment based on publicly available data. " +
+        "This score is an estimate and should not be the sole factor in hiring decisions. " +
+        "We recommend verifying credentials directly with the contractor.";
+      const disclaimer_short = "AI-generated estimate based on public data";
+
+      const result = {
+        mode: 'council',
+        final_score: workingResponse || 50,
+        confidence: 'LOW',
+        warning: 'Only one council member responded',
+        council_responses: this.councilResponses,
+        total_cost: this.totalCost,
+        disclaimer,
+        disclaimer_short
+      };
+
+      await this.saveAudit(result);
+      return result;
+    }
+
+    // Run judge with 2+ council responses
+    const judgeResult = await this.runJudge();
+
+    // Add legal disclaimers for trust score
+    const disclaimer = "AI-generated trust assessment based on publicly available data. " +
+      "This score is an estimate and should not be the sole factor in hiring decisions. " +
+      "We recommend verifying credentials directly with the contractor.";
+    const disclaimer_short = "AI-generated estimate based on public data";
+
+    const result = {
+      mode: 'council',
+      council_scores: {
+        consumer_advocate: this.councilResponses.consumer_advocate?.score,
+        fair_arbiter: this.councilResponses.fair_arbiter?.score,
+        independent_scorer: this.councilResponses.independent_scorer?.score
+      },
+      council_responses: this.councilResponses,
+      judge_result: judgeResult.result,
+      judge_model: judgeResult.model,
+      final_score: judgeResult.result.final_score,
+      confidence: judgeResult.result.confidence,
+      council_agreed_on: judgeResult.result.council_agreed_on,
+      council_diverged_on: judgeResult.result.council_diverged_on,
+      reasoning: judgeResult.result.reasoning,
+      human_review_needed: judgeResult.result.human_review_needed,
+      review_reason: judgeResult.result.review_reason,
+      total_cost: this.totalCost,
+      disclaimer,
+      disclaimer_short
+    };
+
+    await this.saveAudit(result);
+    this.displayResult(result);
+    return result;
+  }
+
+  displayResult(result) {
+    const verdict = getVerdict(result.final_score);
+
+    let output = `
+════════════════════════════════════════════════════════════
+  COUNCIL AUDIT RESULTS (V5)
+════════════════════════════════════════════════════════════
+
+  VERDICT:    ${verdict}
+  CONFIDENCE: ${result.confidence}
+  TRUST SCORE: ${result.final_score}/100
+  JUDGE MODEL: ${result.judge_model}
+
+--- COUNCIL SCORES ---
+  Consumer Advocate (GPT-5): ${result.council_scores.consumer_advocate ?? 'FAILED'}
+  Fair Arbiter (Gemini):     ${result.council_scores.fair_arbiter ?? 'FAILED'}
+  Independent Scorer (DS):   ${result.council_scores.independent_scorer ?? 'FAILED'}
+
+--- COUNCIL AGREED ON ---
+${result.council_agreed_on || '(No agreement recorded)'}
+
+--- COUNCIL DIVERGED ON ---
+${result.council_diverged_on || '(No divergence recorded)'}
+
+--- SYNTHESIS ---
+${result.reasoning || 'No reasoning provided'}`;
+
+    if (result.human_review_needed) {
+      output += `\n
+\x1b[33m⚠️ HUMAN REVIEW NEEDED: ${result.review_reason}\x1b[0m`;
+    }
+
+    output += `\n
+--- METADATA ---
+  Internal Score: ${result.final_score}/100
+  API cost: $${result.total_cost?.toFixed(4) || '0.0000'}
+  Audit Version: V5 (Council)`;
+
+    console.log(output);
+  }
+
+  async saveAudit(result) {
+    const now = new Date().toISOString();
+
+    // Map to verdict/risk for DB compatibility
+    const recommendation = result.final_score >= 70 ? 'RECOMMENDED' :
+      result.final_score >= 50 ? 'CAUTION' : 'AVOID';
+    const riskLevel = result.confidence === 'HIGH' ? 'LOW' :
+      result.confidence === 'LOW' ? 'HIGH' : 'MEDIUM';
+
+    await this.db.run(`
+      INSERT INTO audit_records (
+        contractor_id, audit_version, trust_score, risk_level, recommendation,
+        reasoning_trace, red_flags, positive_signals, gaps_identified,
+        sources_used, collection_rounds, total_cost, created_at, finalized_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `, [
+      this.contractorId,
+      5,  // Version 5 = council mode
+      result.final_score,
+      riskLevel,
+      recommendation,
+      result.reasoning || JSON.stringify(result),
+      JSON.stringify([]),  // red_flags populated from council responses if needed
+      JSON.stringify([]),
+      JSON.stringify([]),
+      JSON.stringify(['council']),
+      0,
+      result.total_cost,
+      now,
+      now
+    ]);
+
+    // Update contractor's trust_score
+    if (result.final_score) {
+      const passesThreshold = result.final_score >= 80;
+      await this.db.run(`
+        UPDATE contractors_contractor
+        SET trust_score = ?, passes_threshold = ?
+        WHERE id = ?
+      `, [result.final_score, passesThreshold, this.contractorId]);
+    }
+
+    success('\n✅ Audit saved to database (V5 council)');
+  }
+}
+
+module.exports = { AuditAgent, DialecticAuditAgent, CouncilAuditAgent, getVerdict, getConfidence, formatDisplayOutput };
