@@ -18,6 +18,13 @@ const {
 } = require('./council_callers');
 const { COUNCIL_CONFIG } = require('./deep_investigation/constants');
 
+// Trust Score Disclaimers - centralized for maintainability
+const TRUST_SCORE_DISCLAIMER = "AI-generated trust assessment based on publicly available data. " +
+  "This score is an estimate and should not be the sole factor in hiring decisions. " +
+  "We recommend verifying credentials directly with the contractor.";
+
+const TRUST_SCORE_DISCLAIMER_SHORT = "AI-generated estimate based on public data";
+
 const SYSTEM_PROMPT = `You are a forensic investigator with deep reasoning capabilities. Your job: protect homeowners from fraud.
 
 INVESTIGATE this contractor. Look at ALL the data collected.
@@ -597,10 +604,8 @@ Website: ${this.contractor.website || 'Not provided'}
     const confidence = getConfidence(result);
 
     // Add legal disclaimers for trust score
-    const disclaimer = "AI-generated trust assessment based on publicly available data. " +
-      "This score is an estimate and should not be the sole factor in hiring decisions. " +
-      "We recommend verifying credentials directly with the contractor.";
-    const disclaimer_short = "AI-generated estimate based on public data";
+    const disclaimer = TRUST_SCORE_DISCLAIMER;
+    const disclaimer_short = TRUST_SCORE_DISCLAIMER_SHORT;
 
     // Map to recommendation for DB compatibility
     let recommendation;
@@ -995,10 +1000,8 @@ Now synthesize these two perspectives and produce your final assessment.`;
     const confidence = assessmentConf >= 70 ? 'HIGH' : assessmentConf >= 40 ? 'MEDIUM' : 'LOW';
 
     // Add legal disclaimers for trust score
-    const disclaimer = "AI-generated trust assessment based on publicly available data. " +
-      "This score is an estimate and should not be the sole factor in hiring decisions. " +
-      "We recommend verifying credentials directly with the contractor.";
-    const disclaimer_short = "AI-generated estimate based on public data";
+    const disclaimer = TRUST_SCORE_DISCLAIMER;
+    const disclaimer_short = TRUST_SCORE_DISCLAIMER_SHORT;
 
     // Map to recommendation for DB compatibility
     let recommendation;
@@ -1417,10 +1420,8 @@ class CouncilAuditAgent {
         || this.councilResponses.independent_scorer?.score;
 
       // Add legal disclaimers for trust score
-      const disclaimer = "AI-generated trust assessment based on publicly available data. " +
-        "This score is an estimate and should not be the sole factor in hiring decisions. " +
-        "We recommend verifying credentials directly with the contractor.";
-      const disclaimer_short = "AI-generated estimate based on public data";
+      const disclaimer = TRUST_SCORE_DISCLAIMER;
+      const disclaimer_short = TRUST_SCORE_DISCLAIMER_SHORT;
 
       const result = {
         mode: 'council',
@@ -1441,10 +1442,8 @@ class CouncilAuditAgent {
     const judgeResult = await this.runJudge();
 
     // Add legal disclaimers for trust score
-    const disclaimer = "AI-generated trust assessment based on publicly available data. " +
-      "This score is an estimate and should not be the sole factor in hiring decisions. " +
-      "We recommend verifying credentials directly with the contractor.";
-    const disclaimer_short = "AI-generated estimate based on public data";
+    const disclaimer = TRUST_SCORE_DISCLAIMER;
+    const disclaimer_short = TRUST_SCORE_DISCLAIMER_SHORT;
 
     const result = {
       mode: 'council',
