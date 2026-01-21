@@ -2,21 +2,41 @@
 """
 Tiered Google Reviews Scraper
 
-Strategy:
-1. Call Serper first (8 reviews, cheap)
-2. Quick fraud check on those 8 reviews
-3. If suspicious or high-volume contractor, escalate to SerpApi for full reviews
+Strategies:
+  current:  Serper(8) + SerpAPI(100) if >50 reviews or fraud signals
+  proposed: Serper(10) + SerpAPI(10% or 10 min) - cost-optimized
 
 Usage:
-  python3 scrapers/google_reviews_tiered.py "Business Name" "City, State" [max_reviews]
+  python3 scrapers/google_reviews_tiered.py "Business Name" "City, State" --strategy current
+  python3 scrapers/google_reviews_tiered.py "Business Name" "City, State" --strategy proposed
 """
 
+import argparse
 import json
 import os
 import sys
 import re
 from typing import Optional
 import requests
+
+
+# Cost constants
+SERPER_COST_PER_CALL = 0.001
+SERPAPI_COST_PER_CALL = 0.015
+
+
+def estimate_serpapi_calls(reviews_needed: int) -> int:
+    """Estimate SerpAPI calls: 1 search + ceil((reviews-8)/10) pages"""
+    if reviews_needed <= 0:
+        return 1  # Just search
+    if reviews_needed <= 8:
+        return 2  # Search + 1 review page
+    return 2 + ((reviews_needed - 8) + 9) // 10
+
+
+def calculate_cost(serper_calls: int, serpapi_calls: int) -> float:
+    """Calculate total API cost"""
+    return round(serper_calls * SERPER_COST_PER_CALL + serpapi_calls * SERPAPI_COST_PER_CALL, 4)
 
 
 def quick_fraud_check(reviews: list) -> dict:
@@ -271,79 +291,148 @@ def scrape_tiered(
     business_name: str,
     location: str = "Fort Worth, TX",
     max_reviews: int = 100,
-    force_full: bool = False
+    force_full: bool = False,
+    strategy: str = "current"
 ) -> dict:
     """
     Tiered scraping strategy:
-    1. Serper first (8 reviews)
-    2. Quick fraud check
-    3. Escalate to SerpApi if suspicious or high-volume
+
+    current:  Serper(8) + SerpAPI(100) if >50 reviews or fraud signals
+    proposed: Serper(10) + SerpAPI(max(10, 10%) - serper_count) if target > serper_count
     """
-    print(f"[Tiered] Starting for: {business_name} in {location}", file=sys.stderr)
+    print(f"[Tiered] Starting for: {business_name} in {location} (strategy={strategy})", file=sys.stderr)
+
+    # Track metrics
+    metrics = {
+        "strategy": strategy,
+        "serper_calls": 0,
+        "serpapi_calls": 0,
+        "target_reviews": 0,
+        "actual_reviews": 0
+    }
 
     # Step 1: Serper (fast/cheap)
     print("[Tiered] Step 1: Serper quick check...", file=sys.stderr)
     serper_result = scrape_serper(business_name, location)
+    metrics["serper_calls"] = 2  # places + reviews
 
     if not serper_result.get("found"):
         print(f"[Tiered] Serper failed: {serper_result.get('error')}", file=sys.stderr)
         # Try SerpApi directly as fallback
         print("[Tiered] Falling back to SerpApi...", file=sys.stderr)
-        return scrape_serpapi(business_name, location, max_reviews)
+        fallback_result = scrape_serpapi(business_name, location, max_reviews)
+        metrics["serpapi_calls"] = estimate_serpapi_calls(max_reviews)
+        metrics["target_reviews"] = max_reviews
+        metrics["actual_reviews"] = len(fallback_result.get("reviews", []))
+        fallback_result["metrics"] = metrics
+        fallback_result["collection_cost"] = calculate_cost(metrics["serper_calls"], metrics["serpapi_calls"])
+        return fallback_result
 
     serper_reviews = serper_result.get("reviews", [])
     total_available = serper_result.get("review_count", 0) or 0
 
     print(f"[Tiered] Serper found: {len(serper_reviews)} reviews ({total_available} total available)", file=sys.stderr)
 
-    # Step 2: Quick fraud check
+    # Step 2: Quick fraud check (used by current strategy)
     fraud_check = quick_fraud_check(serper_reviews)
     serper_result["fraud_check"] = fraud_check
 
     print(f"[Tiered] Fraud check: {fraud_check['reason']} (escalate={fraud_check['escalate']})", file=sys.stderr)
 
-    # Step 3: Decide on escalation
-    should_escalate = (
-        force_full or
-        fraud_check["escalate"] or
-        total_available > 50  # High-volume contractor - get more data
-    )
+    # Step 3: Strategy-specific escalation logic
+    if strategy == "proposed":
+        # PROPOSED: 10% or 10 minimum
+        target_reviews = max(10, int(total_available * 0.10))
+        serper_count = len(serper_reviews)
+        should_escalate = target_reviews > serper_count
+        escalation_reason = f"PROPOSED_STRATEGY (target={target_reviews}, have={serper_count})"
+        reviews_to_fetch = target_reviews  # SerpAPI will fetch this many total
+    else:
+        # CURRENT: Escalate if >50 reviews or fraud signals
+        should_escalate = (
+            force_full or
+            fraud_check["escalate"] or
+            total_available > 50
+        )
+        target_reviews = 100 if should_escalate else len(serper_reviews)
+        escalation_reason = fraud_check["reason"] if fraud_check["escalate"] else f"HIGH_VOLUME ({total_available} reviews)"
+        reviews_to_fetch = max_reviews
+
+    metrics["target_reviews"] = target_reviews
 
     if not should_escalate:
-        print("[Tiered] No escalation needed - returning Serper results", file=sys.stderr)
+        print(f"[Tiered] No escalation needed - returning Serper results (target={target_reviews})", file=sys.stderr)
         serper_result["escalated"] = False
+        metrics["actual_reviews"] = len(serper_reviews)
+        serper_result["metrics"] = metrics
+        serper_result["collection_cost"] = calculate_cost(metrics["serper_calls"], metrics["serpapi_calls"])
         return serper_result
 
     # Step 4: Escalate to SerpApi
-    escalation_reason = fraud_check["reason"] if fraud_check["escalate"] else f"HIGH_VOLUME ({total_available} reviews)"
     print(f"[Tiered] Escalating to SerpApi: {escalation_reason}", file=sys.stderr)
 
-    serpapi_result = scrape_serpapi(business_name, location, max_reviews)
+    serpapi_result = scrape_serpapi(business_name, location, reviews_to_fetch)
+    metrics["serpapi_calls"] = estimate_serpapi_calls(reviews_to_fetch)
 
     if serpapi_result.get("found") and serpapi_result.get("reviews"):
         serpapi_result["escalated"] = True
         serpapi_result["escalation_reason"] = escalation_reason
         serpapi_result["serper_fraud_check"] = fraud_check
-        print(f"[Tiered] SerpApi returned {len(serpapi_result['reviews'])} reviews", file=sys.stderr)
+        metrics["actual_reviews"] = len(serpapi_result.get("reviews", []))
+        serpapi_result["metrics"] = metrics
+        serpapi_result["collection_cost"] = calculate_cost(metrics["serper_calls"], metrics["serpapi_calls"])
+        print(f"[Tiered] SerpApi returned {len(serpapi_result['reviews'])} reviews (cost=${serpapi_result['collection_cost']})", file=sys.stderr)
         return serpapi_result
 
     # SerpApi failed - return Serper results
     print("[Tiered] SerpApi failed, using Serper results", file=sys.stderr)
     serper_result["escalated"] = False
     serper_result["serpapi_error"] = serpapi_result.get("error")
+    metrics["actual_reviews"] = len(serper_reviews)
+    serper_result["metrics"] = metrics
+    serper_result["collection_cost"] = calculate_cost(metrics["serper_calls"], metrics["serpapi_calls"])
     return serper_result
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python3 google_reviews_tiered.py 'Business Name' ['City, State'] [max_reviews]")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description='Tiered Google Reviews Scraper with A/B test support',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Strategies:
+  current   Serper(8) + SerpAPI(100) if >50 reviews or fraud signals
+  proposed  Serper(10) + SerpAPI(10%% or 10 min) - cost-optimized
 
-    business_name = sys.argv[1]
-    location = sys.argv[2] if len(sys.argv) > 2 else "Fort Worth, TX"
-    max_reviews = int(sys.argv[3]) if len(sys.argv) > 3 else 100
+Examples:
+  python3 scrapers/google_reviews_tiered.py "Texas Outdoor Oasis" "Dallas, TX" --strategy current
+  python3 scrapers/google_reviews_tiered.py "Small Contractor" "Fort Worth, TX" --strategy proposed
+  # Legacy (backward compatible):
+  python3 scrapers/google_reviews_tiered.py "Business" "City, TX" 100 --json
+        """
+    )
+    parser.add_argument('business_name', help='Business name to search')
+    parser.add_argument('location', nargs='?', default='Fort Worth, TX', help='City, State (default: Fort Worth, TX)')
+    # Backward compatibility: accept optional 3rd positional arg for max_reviews
+    parser.add_argument('max_reviews_pos', nargs='?', type=int, default=None,
+                        help=argparse.SUPPRESS)  # Hidden: legacy positional max_reviews
+    parser.add_argument('--max-reviews', type=int, default=100, help='Max reviews for current strategy (default: 100)')
+    parser.add_argument('--strategy', choices=['current', 'proposed'], default='current',
+                        help='Collection strategy (default: current)')
+    parser.add_argument('--force-full', action='store_true', help='Force full SerpAPI collection')
+    parser.add_argument('--json', action='store_true', help='Output JSON (default, kept for compatibility)')
 
-    result = scrape_tiered(business_name, location, max_reviews)
+    args = parser.parse_args()
+
+    # Legacy positional arg takes precedence if provided
+    max_reviews = args.max_reviews_pos if args.max_reviews_pos is not None else args.max_reviews
+
+    result = scrape_tiered(
+        args.business_name,
+        args.location,
+        max_reviews,
+        args.force_full,
+        args.strategy
+    )
     print(json.dumps(result, indent=2))
 
 

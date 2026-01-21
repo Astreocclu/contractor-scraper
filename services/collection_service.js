@@ -13,6 +13,11 @@ const { fetchAPISources } = require('./api_sources');
 const { analyzeReviews, quickDiscrepancyCheck } = require('./review_analyzer');
 const { scrapeGoogleReviewsApify } = require('./apify_service');
 
+// New tiered search system (2026-01-20)
+const { TieredSearch } = require('./tiered_search');
+const { SearchLogger } = require('./search_logger');
+const { getVariant, logResult: logABResult } = require('./ab_test');
+
 // Path to Python scrapers
 const SCRAPERS_DIR = path.join(__dirname, '..', 'scrapers');
 
@@ -734,6 +739,10 @@ class CollectionService {
   constructor(db) {
     this.db = db;
     this.browser = null;
+
+    // Initialize tiered search system (2026-01-20)
+    this.tieredSearch = new TieredSearch(scrapeGoogleReviewsTiered);
+    this.searchLogger = new SearchLogger();
   }
 
   async init() {
@@ -1336,7 +1345,7 @@ class CollectionService {
 
     // Google Maps - Use Python Playwright scraper (NO API, avoids $300 overcharge)
     // Search local market, contractor's listed city, AND true HQ if different
-    const TARGET_MARKET = 'Dallas, TX';  // DFW target market for homeowner leads
+    const TARGET_MARKET = 'Dallas, TX';  // DFW target market for homeowner leads (legacy fallback)
 
     // Determine HQ location - use contractor.hq_location if set, else fall back to city/state
     const listedLocation = `${contractor.city}, ${contractor.state}`;
@@ -1344,112 +1353,194 @@ class CollectionService {
       ? `${contractor.hq_city || contractor.city}, ${contractor.hq_state || contractor.state}`
       : null;
 
-    // 1. Search in LOCAL market (where homeowners search)
-    log('\n  Fetching Google Maps LOCAL (DFW market)...');
+    // A/B Test: New tiered search vs legacy hardcoded Dallas search
+    const searchVariant = getVariant(contractor.id);
+    log(`\n  Fetching Google Maps (${searchVariant === 'new' ? 'TIERED' : 'LEGACY'})...`);
     let gmapsLocalResult = null;
+    let tieredSearchResult = null;
+    const searchStartTime = Date.now();
+
     try {
-      // Strategy priority: Serper (100% success) > Claude Vision > Traditional scraper
-      const useSerper = process.env.SERPER_API_KEY && process.env.USE_SERPER_REVIEWS !== 'false';
-      const useClaudeVision = process.env.USE_CLAUDE_VISION === 'true' && process.env.ANTHROPIC_API_KEY;
-
-      // PRIMARY: Tiered scraper (Serper first, escalates to SerpApi if suspicious/high-volume)
-      const useTiered = process.env.SERPER_API_KEY && process.env.SERPAPI_API_KEY;
-      if (useTiered) {
-        log(`    🔍 Using tiered review scraper (Serper → SerpApi if needed)...`);
+      if (searchVariant === 'new') {
+        // NEW: Tiered search with location resolution and validation
+        log(`    🔍 [NEW] Using tiered search with location validation...`);
         try {
-          gmapsLocalResult = await scrapeGoogleReviewsTiered(contractor.name, TARGET_MARKET, 100);
-          if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
-            const escalated = gmapsLocalResult.escalated ? ' [ESCALATED to SerpApi]' : '';
-            success(`    ✓ Got ${gmapsLocalResult.reviews.length} reviews (${gmapsLocalResult.review_count} total)${escalated}`);
-            gmapsLocalResult.review_source = gmapsLocalResult.source || 'tiered';
-          } else if (gmapsLocalResult.found) {
-            success(`    ✓ Found business: ${gmapsLocalResult.rating}★ (${gmapsLocalResult.review_count || 0} reviews)`);
-            gmapsLocalResult.review_source = gmapsLocalResult.source || 'tiered';
+          tieredSearchResult = await this.tieredSearch.search(contractor);
+
+          if (tieredSearchResult.result) {
+            gmapsLocalResult = tieredSearchResult.result;
+            gmapsLocalResult.search_tier = tieredSearchResult.tier;
+            gmapsLocalResult.search_confidence = tieredSearchResult.confidence;
+            gmapsLocalResult.search_variant = 'new';
+            gmapsLocalResult.review_source = 'tiered_validated';
+
+            // Queue for review if needed
+            if (tieredSearchResult.needsReview) {
+              await this.searchLogger.queueForReview(contractor, tieredSearchResult.result, tieredSearchResult);
+              warn(`    ⚠️ Queued for manual review (confidence: ${(tieredSearchResult.confidence * 100).toFixed(0)}%)`);
+            } else if (tieredSearchResult.autoApprove) {
+              success(`    ✓ Auto-approved match (tier ${tieredSearchResult.tier}, confidence: ${(tieredSearchResult.confidence * 100).toFixed(0)}%)`);
+            } else {
+              success(`    ✓ Match found (tier ${tieredSearchResult.tier}, confidence: ${(tieredSearchResult.confidence * 100).toFixed(0)}%)`);
+            }
+
+            if (gmapsLocalResult.reviews?.length > 0) {
+              const escalated = gmapsLocalResult.escalated ? ' [ESCALATED]' : '';
+              success(`    ✓ Got ${gmapsLocalResult.reviews.length} reviews (${gmapsLocalResult.review_count} total)${escalated}`);
+            } else if (gmapsLocalResult.found) {
+              success(`    ✓ Found business: ${gmapsLocalResult.rating}★ (${gmapsLocalResult.review_count || 0} reviews)`);
+            }
           } else {
-            warn(`    ⚠️ Tiered scraper: Business not found, falling back...`);
-            gmapsLocalResult = null;
+            // No match found after all tiers
+            warn(`    ✗ No match found after ${tieredSearchResult.attempts?.length || 0} attempts`);
+            gmapsLocalResult = { found: false, search_variant: 'new', notFound: true };
           }
+
+          // Log search result
+          await this.searchLogger.logResult(contractorId, tieredSearchResult);
+
         } catch (tieredErr) {
-          warn(`    ⚠️ Tiered scraper failed: ${tieredErr.message}, falling back to Serper...`);
-          gmapsLocalResult = null;
+          error(`    ✗ Tiered search error: ${tieredErr.message}, falling back to legacy...`);
+          tieredSearchResult = { found: false, error: tieredErr.message };
+          // Fall through to legacy as fallback
         }
+
+        // Log A/B result
+        await logABResult(contractor.id, 'new', {
+          found: gmapsLocalResult?.found || false,
+          tier: tieredSearchResult?.tier || null,
+          confidence: tieredSearchResult?.confidence || 0,
+          searchTime: Date.now() - searchStartTime,
+          attempts: tieredSearchResult?.attempts?.length || 0
+        });
+
       }
 
-      // FALLBACK: Plain Serper (if tiered not available)
-      if (!gmapsLocalResult && useSerper && !useTiered) {
-        log(`    🔍 Using Serper API for review extraction...`);
-        try {
-          gmapsLocalResult = await scrapeGoogleReviewsSerper(contractor.name, TARGET_MARKET, 20);
-          if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
-            success(`    ✓ Serper extracted ${gmapsLocalResult.reviews.length} reviews (${gmapsLocalResult.review_count} total)`);
-            gmapsLocalResult.review_source = 'serper_google';
-          } else if (gmapsLocalResult.found) {
-            success(`    ✓ Serper found business: ${gmapsLocalResult.rating}★ (${gmapsLocalResult.review_count || 0} reviews)`);
-            gmapsLocalResult.review_source = 'serper_google';
-          } else {
-            warn(`    ⚠️ Serper: Business not found, falling back...`);
+      // LEGACY path (or fallback if new search failed)
+      if (searchVariant === 'legacy' || (!gmapsLocalResult?.found && searchVariant === 'new')) {
+        const isLegacyFallback = searchVariant === 'new' && !gmapsLocalResult?.found;
+        if (isLegacyFallback) {
+          log(`    📋 [FALLBACK] Using legacy Dallas search...`);
+        } else {
+          log(`    📋 [LEGACY] Using hardcoded Dallas search...`);
+        }
+
+        // Strategy priority: Serper (100% success) > Claude Vision > Traditional scraper
+        const useSerper = process.env.SERPER_API_KEY && process.env.USE_SERPER_REVIEWS !== 'false';
+        const useClaudeVision = process.env.USE_CLAUDE_VISION === 'true' && process.env.ANTHROPIC_API_KEY;
+
+        // PRIMARY: Tiered scraper (Serper first, escalates to SerpApi if suspicious/high-volume)
+        const useTiered = process.env.SERPER_API_KEY && process.env.SERPAPI_API_KEY;
+        if (useTiered) {
+          log(`    🔍 Using tiered review scraper (Serper → SerpApi if needed)...`);
+          try {
+            gmapsLocalResult = await scrapeGoogleReviewsTiered(contractor.name, TARGET_MARKET, 100);
+            if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
+              const escalated = gmapsLocalResult.escalated ? ' [ESCALATED to SerpApi]' : '';
+              success(`    ✓ Got ${gmapsLocalResult.reviews.length} reviews (${gmapsLocalResult.review_count} total)${escalated}`);
+              gmapsLocalResult.review_source = gmapsLocalResult.source || 'tiered';
+            } else if (gmapsLocalResult.found) {
+              success(`    ✓ Found business: ${gmapsLocalResult.rating}★ (${gmapsLocalResult.review_count || 0} reviews)`);
+              gmapsLocalResult.review_source = gmapsLocalResult.source || 'tiered';
+            } else {
+              warn(`    ⚠️ Tiered scraper: Business not found, falling back...`);
+              gmapsLocalResult = null;
+            }
+          } catch (tieredErr) {
+            warn(`    ⚠️ Tiered scraper failed: ${tieredErr.message}, falling back to Serper...`);
             gmapsLocalResult = null;
           }
-        } catch (serperErr) {
-          warn(`    ⚠️ Serper failed: ${serperErr.message}, falling back...`);
-          gmapsLocalResult = null;
         }
-      }
 
-      // FALLBACK 1: Claude Vision (if Serper failed and enabled)
-      if (!gmapsLocalResult && useClaudeVision) {
-        log(`    🔮 Trying Claude Vision fallback...`);
-        try {
-          gmapsLocalResult = await scrapeGoogleMapsClaudeVision(contractor.name, TARGET_MARKET, 20);
-          if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
-            success(`    ✓ Claude Vision extracted ${gmapsLocalResult.reviews.length} reviews`);
-            gmapsLocalResult.review_source = 'claude_vision';
-          } else {
-            warn(`    ⚠️ Claude Vision found business but no reviews, falling back...`);
+        // FALLBACK: Plain Serper (if tiered not available)
+        if (!gmapsLocalResult && useSerper && !useTiered) {
+          log(`    🔍 Using Serper API for review extraction...`);
+          try {
+            gmapsLocalResult = await scrapeGoogleReviewsSerper(contractor.name, TARGET_MARKET, 20);
+            if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
+              success(`    ✓ Serper extracted ${gmapsLocalResult.reviews.length} reviews (${gmapsLocalResult.review_count} total)`);
+              gmapsLocalResult.review_source = 'serper_google';
+            } else if (gmapsLocalResult.found) {
+              success(`    ✓ Serper found business: ${gmapsLocalResult.rating}★ (${gmapsLocalResult.review_count || 0} reviews)`);
+              gmapsLocalResult.review_source = 'serper_google';
+            } else {
+              warn(`    ⚠️ Serper: Business not found, falling back...`);
+              gmapsLocalResult = null;
+            }
+          } catch (serperErr) {
+            warn(`    ⚠️ Serper failed: ${serperErr.message}, falling back...`);
             gmapsLocalResult = null;
           }
-        } catch (cvErr) {
-          warn(`    ⚠️ Claude Vision failed: ${cvErr.message}, falling back...`);
-          gmapsLocalResult = null;
         }
-      }
 
-      // FALLBACK: Apify (if enabled and previous methods failed)
-      if (!gmapsLocalResult && USE_APIFY && APIFY_API_TOKEN) {
-        log(`    [Apify] Trying Apify fallback...`);
-        try {
-          gmapsLocalResult = await scrapeGoogleReviewsApifyWrapper(contractor.name, TARGET_MARKET, 50);
-          if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
-            success(`    [Apify] Got ${gmapsLocalResult.reviews.length} reviews`);
-            gmapsLocalResult.review_source = 'apify';
-          } else {
-            warn(`    [Apify] No reviews found, falling back...`);
+        // FALLBACK 1: Claude Vision (if Serper failed and enabled)
+        if (!gmapsLocalResult && useClaudeVision) {
+          log(`    🔮 Trying Claude Vision fallback...`);
+          try {
+            gmapsLocalResult = await scrapeGoogleMapsClaudeVision(contractor.name, TARGET_MARKET, 20);
+            if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
+              success(`    ✓ Claude Vision extracted ${gmapsLocalResult.reviews.length} reviews`);
+              gmapsLocalResult.review_source = 'claude_vision';
+            } else {
+              warn(`    ⚠️ Claude Vision found business but no reviews, falling back...`);
+              gmapsLocalResult = null;
+            }
+          } catch (cvErr) {
+            warn(`    ⚠️ Claude Vision failed: ${cvErr.message}, falling back...`);
             gmapsLocalResult = null;
           }
-        } catch (apifyErr) {
-          warn(`    [Apify] Error: ${apifyErr.message}, falling back...`);
-          gmapsLocalResult = null;
         }
-      }
 
-      // FALLBACK 2: Traditional Playwright scraper (rating only, no review text usually)
-      if (!gmapsLocalResult) {
-        log(`    📋 Using traditional scraper...`);
-        gmapsLocalResult = await scrapeGoogleMapsPython(contractor.name, TARGET_MARKET);
-        if (gmapsLocalResult.found) {
-          gmapsLocalResult.review_source = 'playwright';
+        // FALLBACK: Apify (if enabled and previous methods failed)
+        if (!gmapsLocalResult && USE_APIFY && APIFY_API_TOKEN) {
+          log(`    [Apify] Trying Apify fallback...`);
+          try {
+            gmapsLocalResult = await scrapeGoogleReviewsApifyWrapper(contractor.name, TARGET_MARKET, 50);
+            if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
+              success(`    [Apify] Got ${gmapsLocalResult.reviews.length} reviews`);
+              gmapsLocalResult.review_source = 'apify';
+            } else {
+              warn(`    [Apify] No reviews found, falling back...`);
+              gmapsLocalResult = null;
+            }
+          } catch (apifyErr) {
+            warn(`    [Apify] Error: ${apifyErr.message}, falling back...`);
+            gmapsLocalResult = null;
+          }
+        }
+
+        // FALLBACK 2: Traditional Playwright scraper (rating only, no review text usually)
+        if (!gmapsLocalResult) {
+          log(`    📋 Using traditional scraper...`);
+          gmapsLocalResult = await scrapeGoogleMapsPython(contractor.name, TARGET_MARKET);
+          if (gmapsLocalResult.found) {
+            gmapsLocalResult.review_source = 'playwright';
+          }
+        }
+
+        // Mark as legacy variant
+        if (gmapsLocalResult) {
+          gmapsLocalResult.search_variant = isLegacyFallback ? 'new_fallback' : 'legacy';
+        }
+
+        // Log A/B result for legacy (only if not already logged as new)
+        if (!isLegacyFallback) {
+          await logABResult(contractor.id, 'legacy', {
+            found: gmapsLocalResult?.found || false,
+            searchTime: Date.now() - searchStartTime
+          });
         }
       }
 
       const gmapsLocalData = {
         source: 'google_maps_local',
-        url: gmapsLocalResult.maps_url || 'https://www.google.com/maps',
-        status: gmapsLocalResult.found ? 'success' : 'not_found',
+        url: gmapsLocalResult?.maps_url || 'https://www.google.com/maps',
+        status: gmapsLocalResult?.found ? 'success' : 'not_found',
         text: JSON.stringify(gmapsLocalResult, null, 2),
         structured: gmapsLocalResult
       };
       await this.storeRawData(contractorId, 'google_maps_local', gmapsLocalData);
-      await this.logCollectionRequest(contractorId, 'google_maps_local', 'initial', 'Initial collection - DFW market');
+      await this.logCollectionRequest(contractorId, 'google_maps_local', 'initial', `Initial collection - ${searchVariant === 'new' ? 'Tiered' : 'Legacy'}`);
 
       // Replace any existing from URL batch
       const existingLocalIdx = results.findIndex(r => r.source === 'google_maps_local');
@@ -1459,10 +1550,10 @@ class CollectionService {
         results.push(gmapsLocalData);
       }
 
-      if (gmapsLocalResult.found) {
+      if (gmapsLocalResult?.found) {
         const ratingInfo = gmapsLocalResult.rating ? `${gmapsLocalResult.rating}★` : 'No rating';
         const reviewInfo = gmapsLocalResult.review_count ? `${gmapsLocalResult.review_count} reviews` : 'No reviews';
-        success(`    Google Maps (DFW): ${ratingInfo} (${reviewInfo})`);
+        success(`    Google Maps: ${ratingInfo} (${reviewInfo})`);
 
         // Flag insufficient reviews (< 20 threshold)
         const reviewCount = gmapsLocalResult.review_count || 0;
@@ -1472,7 +1563,7 @@ class CollectionService {
           warn(`    ⚠️ INSUFFICIENT_REVIEWS: Only ${reviewCount} reviews (threshold: 20)`);
         }
       } else {
-        warn(`    Google Maps (DFW): Not found`);
+        warn(`    Google Maps: Not found`);
       }
     } catch (err) {
       warn(`    Google Maps (DFW): Error - ${err.message}`);
