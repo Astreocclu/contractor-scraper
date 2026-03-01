@@ -1,0 +1,950 @@
+{
+  "contractor_id": 526,
+  "business_name": "Elite Concepts",
+  "city": "Lewisville",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-12T20:25:24.153Z",
+  "sources": {
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:10.461Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2025-12-25T15:22:58.430Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Elite Concepts",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:58.927Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "ELITE CONCEPTS INC",
+        "taxpayer_number": "30114888321"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-25T15:22:58.929Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:21:01.653Z",
+      "data": {
+        "found": true,
+        "rating": 5,
+        "status": null,
+        "review_count": 2,
+        "business_name": "See photos Elite Concepts"
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:27.872Z",
+      "data": {
+        "name": "Elite Concepts, Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": null,
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2025-12-25T15:20:49.982Z",
+      "data": {
+        "query": "site:yelp.com \"Elite Concepts\" \"Lewisville, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2025-12-25T15:22:35.505Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2025-12-25T15:22:36.016Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:21:26.456Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:21:30.355Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:21:32.476Z",
+      "data": {
+        "query": "Elite Concepts Lewisville site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jul 24, 2025",
+            "link": "https://www.nbcdfw.com/news/business/money-report/kelly-evans-how-do-you-fix-the-fed/3892892/",
+            "title": "Kelly Evans: How do you “fix” the Fed?",
+            "snippet": "The Fed's hundreds of economists and staffers are too one-sided, according to Lindsey, because they are hired from a small handful of \"elite\" ...",
+            "position": 1
+          },
+          {
+            "date": "Sep 25, 2025",
+            "link": "https://www.dallasnews.com/arts-entertainment/2025/09/25/will-cain-on-charlie-kirks-impact-social-media-derangement-and-americas-spiritual-war/",
+            "title": "Will Cain on his friend Charlie Kirk, social media ...",
+            "snippet": "On Sept. 10, Will Cain was in the middle of filming his afternoon news show when he learned through his earpiece that Charlie Kirk died.",
+            "position": 2
+          },
+          {
+            "date": "Jun 21, 2013",
+            "link": "https://www.dallasnews.com/opinion/commentary/2013/06/22/gregory-currie-does-great-literature-make-us-better/",
+            "title": "Gregory Currie: Does great literature make us better?",
+            "snippet": "Most of us believe that reading great fiction refines our moral sensibilities. But the evidence is scant.",
+            "position": 3
+          },
+          {
+            "date": "Mar 1, 2025",
+            "link": "https://www.fox4news.com/news/shaun-rabb-elite-news-awards",
+            "title": "FOX 4's Shaun Rabb honored at Elite News Awards",
+            "snippet": "FOX 4 reporter Shaun Rabb received the Cheryl Smith Communications Award at the 50th annual Elite News Awards on Friday night.",
+            "position": 4
+          },
+          {
+            "date": "Nov 15, 2013",
+            "link": "https://www.dallasnews.com/opinion/commentary/2013/11/16/qa-william-deresiewicz-winner-of-the-dallas-institutes-hiett-prize/",
+            "title": "Q&A: William Deresiewicz, winner of the Dallas Institute's ...",
+            "snippet": "The essayist, critic and author takes to task elite education in the latest of his writings on the humanities.",
+            "position": 5
+          },
+          {
+            "date": "Feb 9, 2017",
+            "link": "https://www.nbcdfw.com/news/sports/scouting-the-nfl-draft-lsu-s-jamal-adams/52841/",
+            "title": "Scouting the NFL Draft: LSU S Jamal Adams",
+            "snippet": "Lewisville native Jamal Adams was a star at Hebron High School in Carrollton, where he notched 138 tackles and 7 INT as a defensive back and ...",
+            "position": 6
+          },
+          {
+            "date": "May 15, 2020",
+            "link": "https://www.dallasnews.com/sports/texas-longhorns/2020/05/15/qa-with-texas-longhorns-coach-tom-herman-what-it-will-take-to-dethrone-oklahoma-which-80s-movies-hes-showing-his-kids-and-more/",
+            "title": "Q&A with Texas coach Tom Herman: What it will take to ...",
+            "snippet": "It's going to take a continued effort to recruit elite talent and to develop that talent and then hopefully one of these days they'll stop ...",
+            "position": 7
+          },
+          {
+            "date": "Jul 27, 2022",
+            "link": "https://www.dallasnews.com/arts-entertainment/architecture/2022/07/27/how-dallas-became-the-worlds-capital-of-the-mall/",
+            "title": "How Dallas became the world's capital of the mall",
+            "snippet": "The story of the mall in Dallas does not begin with NorthPark, however, but a short distance away, off Hillcrest Boulevard.",
+            "position": 8
+          },
+          {
+            "date": "Aug 17, 2011",
+            "link": "https://www.dallasnews.com/news/education/2011/08/17/college-test-prep-can-be-pricey-but-may-be-worth-cost-for-some/",
+            "title": "College test prep can be pricey but may be worth cost for ...",
+            "snippet": "Area districts including Dallas, Plano, Irving and Lewisville offer free or low-cost test prep classes — sometimes during the regular school day ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 1, 2022",
+            "link": "https://interactives.dallasnews.com/2022/the-black-box-social-sentinel/",
+            "title": "Colleges spend thousands on AI to prevent suicides and ...",
+            "snippet": "Colleges spend thousands on Social Sentinel AI to prevent suicides and shootings. Evidence that it works is scant.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:21:43.947Z",
+      "data": "Elite Concepts Lewisville review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 0:18 0:18 Now playing td run in state championship game vs Lightning Elite from Lewisville Tx The Landen Williams-Callis The Landen Williams-Callis • • 81 views 3 years ago The Landen Williams-Callis The Landen Williams-Callis td run in state championship game vs Lightning Elite from Lewisville Tx. td run in state championship game vs Lightning Elite from Lewisville Tx. From the video description SHORTS SHORTS Now playing Why Lewisville, TX Feels 'In-Between'—My Honest Review! Brielle Oakley Brielle Oakley • • 1.2K views 11 months ago Brielle Oakley Brielle Oakley Curious about living in Lewisville , TX? I break down what makes this suburb feel like you're caught between bigger ... Curious about living in Lewisville , TX? I break down what makes this suburb feel like you're caught between bigger ... From the video description 0:55 0:55 Now playing Tenant challenges Lancium AI facility property value BigCountryHomepage BigCountryHomepage • • 227 views 5 months ago BigCountryHomepage BigCountryHomepage ABILENE, Texas (KTAB/KRBC) – A tenant at the Lancium AI facility, also known as Stargate, being built in far northern Abilene, ... ABILENE, Texas (KTAB/KRBC) – A tenant at the Lancium AI facility, also known as Stargate, being built in far northern Abilene, ... From the video description CC SHORTS SHORTS Now playing The BIGGEST 12-Year-Old you will ever see 😳🤯 #shorts MaxPreps MaxPreps • • 19M views 2 years ago MaxPreps MaxPreps (Via bentenuta/ig) #football #youthsports #highschoolsports #highschoolfootball #youthfootball #insane #funny #agegap ... (Via bentenuta/ig) #football #youthsports #highschoolsports #highschoolfootball #youthfootball #insane #funny #agegap ... From the video description 2:21 2:21 Now playing Texas education commissioner warns state takeover likely for Lake Worth ISD WFAA WFAA • • 2.3K views 2 months ago WFAA WFAA During a campus visit, TEA Commissioner Mike Morath said he can't make the decision not to intervene. During a campus visit, TEA Commissioner Mike Morath said he can't make the decision not to intervene. From the video description CC SHORTS SHORTS Now playing 3 Unconventional Things on our Sailing Boat ⛵️ #sailing #shorts #climbing Teulu Tribe Teulu Tribe • • 4.7M views 1 year ago Teulu Tribe Teulu Tribe SHORTS SHORTS Now playing Sweeping The House In Tactical Gear Johnny Q Johnny Q • • 2.3M views 2 years ago Johnny Q Johnny Q 5:22 5:22 Now playing Lewisville, TX Pros and Cons | Is This DFW Suburb Worth It for 2024? | Best DFW Suburb? The DFW Homeowner The DFW Homeowner • • 2.3K views 1 year ago The DFW Homeowner The DFW Homeowner DFW Homebuyer Class - https://www.dfwhomebuyerclass.com Save THOUSANDS on your next home purchase! If you're thinking ... DFW Homebuyer Class - https://www.dfwhomebuyerclass.com Save THOUSANDS on your next home purchase! If you're thinking ... From the video description 6 chapters Intro | Pro #1 | Pro #2 | Pro #3 | Con #1 | Con #2 6 chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Pro #1 Pro #1 0:48 Pro #1 0:48 Pro #2 Pro #2 1:15 Pro #2 1:15 Pro #3 Pro #3 1:33 Pro #3 1:33 Con #1 Con #1 3:10 Con #1 3:10 Con #2 Con #2 3:40 Con #2 3:40 5:25 5:25 Now playing Pros and Cons of Living in Lewisville Texas | The Truth About This DFW Suburb Anne-Kirby Smith Anne-Kirby Smith • • 4 views 3 weeks ago Anne-Kirby Smith Anne-Kirby Smith Wondering what it's really like living in Lewisville Texas and whether this DFW suburb is the right fit for you? In this video, I break ... Wondering what it's really like living in Lewisville Texas and whether this DFW suburb is the right fit for you? In this video, I break ... From the video description 10 chapters Introduction to Lewisville, Texas | PRO: Prime Location & Short Commutes | PRO: Affordable Housing for DFW | PRO: Parks, Lake & Outdoor Lifestyle | PRO: Diversity, Community & No State Income Tax | CON: Higher Property Taxes | CON: Home Value Dip & Higher Cost of Living | CON: School Quality Varies by Neighborhood | CON: I-35 Traffic & Congestion | Final Thoughts: Who Lewisville Is Best For 10 chapters in this video 10 chapters Introduction to Lewisville, Texas Introduction to Lewisville, Texas 0:00 Introduction to Lewisville, Texas 0:00 PRO: Prime Location & Short Commutes PRO: Prime Location & Short Commutes 0:42 PRO: Prime Location & Short Commutes 0:42 PRO: Affordable Housing for DFW PRO: Affordable Housing for DFW 1:14 PRO: Affordable Housing for DFW 1:14 PRO: Parks, Lake & Outdoor Lifestyle PRO: Parks, Lake & Outdoor Lifestyle 1:33 PRO: Parks, Lake & Outdoor Lifestyle 1:33 PRO: Diversity, Community & No State Income Tax PRO: Diversity, Community & No State Income Tax 2:10 PRO: Diversity, Community & No State Income Tax 2:10 CON: Higher Property Taxes CON: Higher Property Taxes 2:56 CON: Higher Property Taxes 2:56 CON: Home Value Dip & Higher Cost of Living CON: Home Value Dip & Higher Cost of Living 3:19 CON: Home Value Dip & Higher Cost of Living 3:19 SHORTS SHORTS Now playing Police vs. Sheriffs! Here’s The Difference Johnny Q Johnny Q • • 1.4M views 2 years ago Johnny Q Johnny Q 1:53 1:53 Now playing Elmdale RV Park in Abilene adds housing for AI workforce BigCountryHomepage BigCountryHomepage • • 331 views 2 months ago BigCountryHomepage BigCountryHomepage ABILENE, Texas (KTAB/KRBC) - Developments are continuing for one of the largest RV parks in Abilene. It is a new housing ... ABILENE, Texas (KTAB/KRBC) - Developments are continuing for one of the largest RV parks in Abilene. It is a new housing ... From the video description CC People also watched 6:18 6:18 Now playing LEWISVILLE Texas Explained | What Living in LEWISVILLE TX is REALLY Like in 2024 The DFW Homeowner The DFW Homeowner • • 5K views 3 years ago The DFW Homeowner The DFW Homeowner DFW Homebuyer Class - https://www.dfwhomebuyerclass.com Save THOUSANDS on your next home purchase! Are you thinking ... DFW Homebuyer Class - https://www.dfwhomebuyerclass.com Save THOUSANDS on your next home purchase! Are you thinking ... From the video description 4K 13 chapters Intro | Where is Lewisville? | Lewisville Commute | History of Lewisville | Lewisville Report Card | Parks in Lewisville | Lewisville Schools | Is there a Chick-Fil-A in Lewisville? | Lewisville Real Estate | Lewisville's Neighboring Cities Home Values | Lewisville Homes for Sale | Cost of Living in Lewisville | Outro 13 chapters in this video 13 chapters Intro Intro 0:00 Intro 0:00 Where is Lewisville? Where is Lewisville? 0:30 Where is Lewisville? 0:30 Lewisville Commute Lewisville Commute 0:43 Lewisville Commute 0:43 History of Lewisville History of Lewisville 1:20 History of Lewisville 1:20 Lewisville Report Card Lewisville Report Card 2:01 Lewisville Report Card 2:01 Parks in Lewisville Parks in Lewisville 2:32 Parks in Lewisville 2:32 Lewisville Schools Lewisville Schools 2:57 Lewisville Schools 2:57 23:36 23:36 Now playing Affordable Dallas Town: Lewisville Texas a Good Place to Live? Should You Live in Lewisville Texas? DFW Family Home Guide DFW Family Home Guide • • 4.2K views 1 year ago DFW Family Home Guide DFW Family Home Guide Thinking about living in North Dallas Texas and are trying to find the right place to live in the Dallas Fort Worth metroplex? Thinking about living in North Dallas Texas and are trying to find the right place to live in the Dallas Fort Worth metroplex? From the video description 4K CC 7:51 7:51 Now playing Lewisville, Texas - Population 106,021 Brit Trips Brit Trips • • 12K views 6 years ago Brit Trips Brit Trips Driving around in the awesome city of Lewisville , Texas. Lewisville is located in Denton County which is located in the North ... Driving around in the awesome city of Lewisville , Texas. Lewisville is located in Denton County which is located in the North ... From the video description 7:02 7:02 Now playing THAT’S COLD: Parents SLAM EV school buses over winter safety concerns Fox News Clips Fox News Clips • • 29K views 10 hours ago Fox News Clips Fox News Clips The 'Outnumbered' panel discusses the controversy in a New York school district over the reliability of EV school buses. The 'Outnumbered' panel discusses the controversy in a New York school district over the reliability of EV school buses. From the video description New CC + 6 more SHORTS SHORTS Now playing His kayak costs HOW MUCH?!? #fishing #shorts Jake Lowery Jake Lowery • • 20M views 6 months ago Jake Lowery Jake Lowery fishing #shorts. fishing #shorts. From the video description 1:51 1:51 Now playing Elite and Elite Plus Inspection Packages: Whats the Difference? The Elite Group Property Inspections, Inc. The Elite Group Property Inspections, Inc. • • 377 views 4 years ago The Elite Group Property Inspections, Inc. The Elite Group Property Inspections, Inc. The key differences between the Elite and Elite Plus Home Inspection Packages. See more DIY videos like this on our channel, ... The key differences between the Elite and Elite Plus Home Inspection Packages. See more DIY videos like this on our channel, ... From the video description 5 chapters Intro | Elite Inspection | Whats Included | Elite Plus | Elite Plus Package 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Elite Inspection Elite Inspection 0:17 Elite Inspection 0:17 Whats Included Whats Included 0:31 Whats Included 0:31 Elite Plus Elite Plus 0:53 Elite Plus 0:53 Elite Plus Package Elite Plus Package 1:11 Elite Plus Package 1:11 SHORTS SHORTS Now playing $26 Million Texas Mansion! Full Package Media Full Package Media • • 1.4M views 7 months ago Full Package Media Full Package Media This legendary Southlake, Texas mansion has it all! Would you call this estate home? $25950000 8 Bed | 11 Bath | 31234 SqFt ... This legendary Southlake, Texas mansion has it all! Would you call this estate home? $25950000 8 Bed | 11 Bath | 31234 SqFt ... From the video description SHORTS SHORTS Now playing The secret to a perfect reload. Enjoy paintball. #paintball #shorts #nxl verbhal verbhal • • 40M views 3 years ago verbhal verbhal 2:01 2:01 Now playing Lewisville ISD begins special feedback meetings ahead of decision to close 5 elementary schools WFAA WFAA • • 635 views 1 year ago WFAA WFAA Board members expect to make a final decision by the end of 2024 on how to save on annual operational costs, which would ... Board members expect to make a final decision by the end of 2024 on how to save on annual operational costs, which would ... From the video description CC 0:21 0:21 Now playing Lewisville City Council approves 1-year ban on new short-term rentals in a narrow vote WFAA WFAA • • 201 views 1 year ago WFAA WFAA I think we need the time to just get our feet under us as a city,\" Mayor TJ Gilmore said. I think we need the time to just get our feet under us as a city,\" Mayor TJ Gilmore said. From the video description CC 0:43 0:43 Now playing Lewisville ISD considers school closures and boundary changes amid enrollment decline CBS TEXAS CBS TEXAS • • 593 views 1 year ago CBS TEXAS CBS TEXAS Lewisville ISD may close five elementary schools and adjust boundaries for eight others due to declining enrollment and budget ... Lewisville ISD may close five elementary schools and adjust boundaries for eight others due to declining enrollment and budget ... From the video description CC 8:29 8:29 Now playing Elyson VS. Bridgeland: Don't pick the wrong one! Houston Suburbs Houston Suburbs • • 2.6K views 1 year ago Houston Suburbs Houston Suburbs I've put all my new construction buyer guides, builder resources, and ways to work together in one place. I've put all my new construction buyer guides, builder resources, and ways to work together in one place. From the video description 12 chapters Intro | Who am I | Cost of Home | Size | Commercial | Roads | School Districts | Waller ISD | Amenities | Resale | Build Choices | Conclusion 12 auto-generated chapters in this video 12 chapters Intro Intro 0:00 Intro 0:00 Who am I Who am I 0:35 Who am I 0:35 Cost of Home Cost of Home 0:51 Cost of Home 0:51 Size Size 1:18 Size 1:18 Commercial Commercial 2:01 Commercial 2:01 Roads Roads 2:59 Roads 2:59 School Districts School Districts 4:01 School Districts 4:01 SHORTS SHORTS Now playing JV brought the HEAT 😎🤝 #shorts MaxPreps MaxPreps • • 8.5M views 2 years ago MaxPreps MaxPreps (via jaybrod33/tt) #football #drip #jv #teammates #footballseason #sports #highschoolfootball #highschoolsports #friends #fun. (via jaybrod33/tt) #football #drip #jv #teammates #footballseason #sports #highschoolfootball #highschoolsports #friends #fun. From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2025-12-25T15:21:44.974Z",
+      "data": {
+        "query": "site:nextdoor.com Elite Concepts Lewisville",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:38.238Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Elite Concepts\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-Elite-Concepts-EI_IE4077017.11,25.htm",
+            "title": "Working at Elite Concepts",
+            "snippet": "Life at Elite Concepts ... Glassdoor gives you an inside look at what it's like to work at Elite Concepts, including salaries, reviews, office photos, and more."
+          },
+          {
+            "link": "https://www.glassdoor.com/job-listing/customer-service-representative-elite-concepts-solutions-inc-JV_IC1145705_KO0,31_KE32,60.htm?jl=1009832641370",
+            "title": "Customer Service Representative",
+            "snippet": "Conversations @Elite concepts solutions inc. Kick off the conversation by asking about salaries, interviews or anything else @Elite concepts solutions inc."
+          },
+          {
+            "link": "https://www.glassdoor.com/job-listing/customer-service-coordinator-baptist-memorial-health-care-JV_IC1144463_KO0,28_KE29,57.htm?jl=1009696076943",
+            "title": "Baptist Memorial Health Care hiring Customer Service ...",
+            "snippet": "We've got options. Elite concepts solutions inc. Customer Service Representative. Memphis, TN. $20.00 Per Hour (Employer provided). Easy Apply. 24h. Reynolds ..."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:00.236Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Elite%20Concepts&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Elite% 20Concepts&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Elite% 20Concepts&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://echo.epa.gov/help/training",
+                "title": "ECHO Training"
+              }
+            ],
+            "attributes": {
+              "Missing": "search_type= Name&Name= Elite% 20Concepts&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "search_type= Name&Name= Elite% 20Concepts&State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 5,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Elite% 20Concepts&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Elite% 20Concepts&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 7,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Elite% 20Concepts&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Elite% 20Concepts&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter and is refreshed ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Elite% 20Concepts&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Elite% 20Concepts&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:04.310Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:18.705Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Elite Concepts",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Sep 12, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/executive-management/Montana%20Coalition%20Title%20IX%20Comment%20FINAL%209.12.22.pdf",
+            "title": "Hon. Miguel Cardona Secretary of Education U.S. ...",
+            "snippet": "Courts expect that schools will adhere to basic concepts of fairness in dealing with students in disciplinary matters. Schools must employ ...",
+            "position": 1
+          },
+          {
+            "date": "May 19, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Press/DOE%20Letter%20FINAL%205.19.21%20(002).pdf",
+            "title": "OFFICE OF THE ATTORNEY GENERAL May 19, 2021 ...",
+            "snippet": "It is a shameless attempt to twist a federal program designed and clearly intended by Congress to promote American history and civics education ...",
+            "position": 2
+          },
+          {
+            "date": "Mar 19, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Press/SFFA%20--%20Amicus%20final.pdf",
+            "title": "In the Supreme Court of the United States",
+            "snippet": "Instead, elite American universities consider race because they want to. See Grutter, 539 U.S. at 360. (Thomas, J., dissenting). And they ...",
+            "position": 3
+          },
+          {
+            "date": "Aug 13, 2013",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Annunciation%20House%20TI%20Motion.pdf",
+            "title": "CAUSE NO: 2024-DCV-0616 ANNUNCIATION HOUSE, ...",
+            "snippet": "... elite, the 'Refugees without Status,' and those who resided in Mexico but who are U.S. born or have legal permanent residency in the U.S. ...",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:19.651Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 6
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 7
+          },
+          {
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21925&ItemID=15407",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "If you have questions about the search results, send an email to tax.help@cpa.texas.gov. or call. 1-800-252-1386. Name. Taxpayers ID#.",
+            "position": 8
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Information on this site is obtained from the most recent Public Information Report (PIR) processed by the Secretary of State (SOS).",
+            "position": 9
+          },
+          {
+            "link": "https://comptroller.texas.gov/taxes/franchise/coas-instructions.php",
+            "title": "Franchise Tax Account Status - Texas Comptroller",
+            "snippet": "Use our online search to find a taxpayer's Franchise Tax Account Status. The \"Franchise Tax Account Status,\" previously referred to as \"Good Standing,\" ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-25T15:22:20.554Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Elite Concepts",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:21.418Z",
+      "data": {
+        "query": "site:dallascounty.org Elite Concepts civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "Jan Almon, narrative Mary Ann Sherman, photography",
+            "snippet": "This practice has allowed the County to be able to financially address key issues that have arisen and to still have one of the lowest property tax rates in the ...",
+            "position": 1
+          },
+          {
+            "date": "Dec 31, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/district-clerk/appt-fees/2024/ApprovedFeeDetailsReport-December-2024.pdf",
+            "title": "Court No Activity Judge Case Number ...",
+            "snippet": "CONCEPTS, LLC.et al. TRUE. 03254380. FAITH. BRUNER. Mediator. Not applicable. 12/04/2024. No activity. 0.00. 0. 0.00. County Court at Law. No. 4.",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/historical/markers.xls",
+            "title": "Dallas County Historical Markers",
+            "snippet": "Also believed to be buried here are five men and a boy who were victims of a lynching in 1869; several Confederate vererans of the Civil War; and two former ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:22.278Z",
+      "data": {
+        "query": "site:collincountytx.gov Elite Concepts",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Feb 6, 2023",
+            "link": "https://eagenda.collincountytx.gov/docs/2023/CC/20230206_2821/53469_FY2023%20Disbursements%20for%202.6.23%20Court.pdf",
+            "title": "2023 COUNTY AUDITOR APPROVED DISBURSEMENTS",
+            "snippet": "FOR COURT DATE: FEBRUARY 6, 2023. THE ATTACHED CLAIMS AGAINST COLLIN COUNTY FOR THE. PERIOD ENDING: FEBRUARY 3, 2023.",
+            "position": 1
+          },
+          {
+            "date": "Dec 16, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/CC/20191216_2424/47734_FY2020%20P-Card%20Disbursement%20for%2012.16.19%20Court.pdf",
+            "title": "2020 COUNTY AUDITOR APPROVED PROCUREMENT ...",
+            "snippet": "Transaction. Acquirer Reference. Date. Posting Date. Number. Description. Address. Amount. 11/11/2019. 11/13/2019. 55310209316978000349789.",
+            "position": 2
+          },
+          {
+            "date": "Jul 24, 2023",
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Plano.pdf",
+            "title": "city of plano - parks, recreation, trails & open space",
+            "snippet": "sports, adult sports, elite sports, and finally tournaments. Implementation of additional turf fields, beyond what has been installed at ...",
+            "position": 3
+          },
+          {
+            "date": "Nov 3, 2015",
+            "link": "https://eagenda.collincountytx.gov/docs/2015/CC/20151102_1822/40668_RFP%20Packet%20for%2011-2%2C%2010-27.pdf",
+            "title": "RFP No. 2016-020 P25 Trunked Radio System Replacement",
+            "snippet": "Collin County operates a Motorola Gold Elite CRT based dispatch console system. The County's console system includes “two” different Central ...",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:23.195Z",
+      "data": {
+        "query": "site:dentoncounty.gov Elite Concepts",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=223",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "GROUP ELITE SERVICES. $100.27. 20080408. GROUP ELITE SERVICES. $1,281.82 ... PROGRESSIVE CONCEPTS/HAWK. $1,321.10. 20080429. PROGRESSIVE CONCEPTS/HAWK.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=228",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "GROUP ELITE SERVICES. $133.08. 20090804. GST PUBLIC SAFETY SUPPLY. $106.75 ... PROGRESSIVE CONCEPTS/HAWK. $23.69. 20090825. PROGRESSIVE CONCEPTS/HAWK. $893.00.",
+            "position": 2
+          },
+          {
+            "link": "https://www.dentoncounty.gov/1785/393rd-Civil-cases-transferred-to-the-367",
+            "title": "393rd Civil cases transferred to the 367th District Court",
+            "snippet": "... Concepts, LLC, and John Doe. Injury/Damages - Not Motor Vehicle. 09/06/2022 ... Elite Commercial Installers LLC. Debt/Contract. Debt/Contract 08/04/2023.",
+            "position": 3
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=252",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "GROUP ELITE SERVICES. $461.33. 20080325. GROUP ELITE SERVICES. $90.00 ... PROGRESSIVE CONCEPTS/HAWK. $481.17. 20080304. PROGRESSIVE CONCEPTS/HAWK. $321.98.",
+            "position": 4
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=215",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "GROUP ELITE SERVICES. $375.57. 20080916. GROUP ELITE SERVICES. $196.92 ... PROGRESSIVE CONCEPTS/HAWK. $926.88. 20080930. PROGRESSIVE CONCEPTS/HAWK. $414.36.",
+            "position": 5
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=211",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "GROUP ELITE SERVICES. $406.71. 20081028. GST PUBLIC SAFETY SUPPLY. $199.80 ... PROGRESSIVE CONCEPTS/HAWK. $923.38. 20081028. PROGRESSIVE CONCEPTS/HAWK. $413.58.",
+            "position": 6
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=244",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "GROUP ELITE SERVICES. $1,876.69. 20080701. GST PUBLIC SAFETY SUPPLY. $113.70 ... PROGRESSIVE CONCEPTS/HAWK. $1,335.26. 20080729. PROGRESSIVE CONCEPTS/HAWK.",
+            "position": 7
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=236",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "GROUP ELITE SERVICES. $719.67. 20080212. GROUP ELITE SERVICES. $144.09 ... PROGRESSIVE CONCEPTS/HAWK. $20.00. 20080226. PROPATH ASSOCIATES. $25.45. 20080226.",
+            "position": 8
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=237",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "ELITE TACTICAL GROUP/C&F EMS. $1,345.00. 20090203. ELIZABETH PARMER -ATTY@LAW ... PROGRESSIVE CONCEPTS/HAWK. $12.99. 20090224. PROGRESSIVE CONCEPTS/HAWK.",
+            "position": 9
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=231",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "GROUP ELITE SERVICES. $116.11. 20071211. GT DISTRIBUTORS, INC. $5,280.25 ... PROGRESSIVE CONCEPTS/HAWK. $2,399.96. 20071218. PROGRESSIVE CONCEPTS/HAWK.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:27.005Z",
+      "data": "Michael W. Nantz Elite Concepts Inc Texas Pool Designer International Pool Designer Pool Industry Expert Witness 214.222.1225 mike@eliteconceptsinc.com close Home Portfolio Design Philosophy Services Specialty Team Publication Affiliations Contact 12/22/2025 Swimming pool design and construction knowledge. \"Top Notch service for Top Notch Clientele\". Elite Concepts Inc Michael W. Nantz 214.222.1225 https://eliteconceptsinc.com/mike-nantz-elite-concepts-philosophy.htm #PoolDesign #PoolConstructionDefect #ExpertWitness Previous Post See all Blog Posts Michael W. Nantz, IWI Clientele in the USA and abroad Consultant + Designer + Builder + Educator + Expert Witness 30+ Years of Pool Industry Experience 214.222.1225 Expertise Advanced Renderings Every Detail read more services Expert Witness Design, Construction, Business Operations read more services International Watershape Institute IWI Dean of Culture read more Pools Design Build view portfolio Pool Houses Design Build view portfolio Outdoor Living Design Build view portfolio Advanced Renderings Every Detail read more services Expert Witness Design, Construction, Business Operations read more services International Watershape Institute IWI Dean of Culture read more Pools Design Build view portfolio Pool Houses Design Build view portfolio Outdoor Living Design Build view portfolio Expert Witness Home Page Go to Elite Concepts Inc Home Page Michael W. Nantz, Dean of Culture International Watershape Institute (IWI) © 2025 Elite Concepts Inc Pool Design | Build ↑"
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:29.917Z",
+      "data": {
+        "cid": "14524803744012328013",
+        "name": "Elite Concepts",
+        "error": null,
+        "found": true,
+        "phone": "(214) 222-1225",
+        "rating": 5,
+        "source": "serper_google",
+        "address": "701 Stemmons Fwy # 210, Lewisville, TX 75067",
+        "reviews": [
+          {
+            "id": "ChdDSUhNMG9nS0VJQ0FnSUNxMi1iTGd3RRAB",
+            "date": "4 years ago",
+            "text": "I love, love, love my new floors!!! We needed a solution for our cement floors in the basement and he and his team came to the rescue!!! Professional, reliable and reasonably priced! I could not be happier with the results!!!! Thank you so much!!! Garage floors next!!! Y’all are the best!",
+            "likes": null,
+            "author": "Victoria Whalen",
+            "rating": 5
+          },
+          {
+            "id": "ChdDSUhNMG9nS0VJQ0FnSURNeklxcjl3RRAB",
+            "date": "6 years ago",
+            "text": "",
+            "likes": null,
+            "author": "David Penton",
+            "rating": 5
+          }
+        ],
+        "website": "https://eliteconceptsinc.com/",
+        "category": "Swimming pool contractor",
+        "review_count": 2,
+        "review_source": "serper_google"
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:35.088Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/elite-construction-and-remodeling-lewisville-2",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2025-12-25T15:22:37.381Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "eliteconceptsinc.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:37.841Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Elite Concepts\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.ELITECONCEPTSLLC.139218140.html",
+            "title": "Elite Concepts, LLC Reviews - Cedar Rapids, IA",
+            "snippet": "At Elite Concepts, we're more than just a remodeling company—we're your trusted partner in transforming your house into the home of your dreams."
+          },
+          {
+            "link": "https://www.homeadvisor.com/tloc/Lufkin-TX/Doors-Repair/",
+            "title": "Top-Rated Doors Repairs Experts in Lufkin, TX",
+            "snippet": "Elite Concepts General Construction Group. No reviews yet. Elite Concepts General Construction Group. No reviews yet. 26 years of experience. We have experience ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Docks.Stephenville.TX.-12023.html",
+            "title": "Top-Rated Dock Services Experts in Stephenville, TX",
+            "snippet": "Elite Concepts General Construction Group. P.O. Box 9214. No reviews yet. Elite Concepts General Construction Group. P.O. Box 9214. No reviews yet. 26 years of ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Flooring-Carpet.Giddings.TX.-12032.html",
+            "title": "Flooring and Carpeting Services - Giddings",
+            "snippet": "Elite Concepts General Construction Group. No reviews yet. Elite Concepts General Construction Group. No reviews yet. 26 years of experience. We have experience ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.PatriotFencing.130415683.html",
+            "title": "Patriot Fencing & Construction Reviews - Wichita Falls, TX",
+            "snippet": "We are a Veteran owned and operated Fence contractor in the Wichita Falls area. I started our business in 2016 as Elite Concepts doing all things ..."
+          }
+        ],
+        "result_count": 9
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:38.843Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Elite Concepts\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Elite-Concepts/reviews",
+            "title": "Working at ELITE CONCEPTS: Employee Reviews",
+            "snippet": "Elite Concepts is by far the best salon you could work at. However, this doesn't not apply to those who are not passionate about the beauty industry."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Elite-Concepts",
+            "title": "ELITE CONCEPTS Careers and Employment",
+            "snippet": "Find out what works well at ELITE CONCEPTS from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Elite-Concepts/interviews",
+            "title": "ELITE CONCEPTS Interview Questions & Answers",
+            "snippet": "Prepare yourself for your interview at ELITE CONCEPTS by browsing Interview questions and processes from real candidates."
+          },
+          {
+            "link": "https://hk.indeed.com/cmp/Elite-Concepts/salaries/Server",
+            "title": "Server monthly salaries in Hong Kong at ELITE CONCEPTS",
+            "snippet": "Average ELITE CONCEPTS Server monthly pay in Hong Kong is approximately $12,473, which is 27% below the national average. Salary estimated from 2 past and ..."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-25T15:22:39.401Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Elite Concepts\" Lewisville",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:39.876Z",
+      "data": {
+        "found": true,
+        "query": "site:osha.gov \"Elite Concepts\"",
+        "source": "osha",
+        "results": [
+          {
+            "link": "https://www.osha.gov/ords/imis/establishment.search?establishment=&state=all&officetype=all&office=523400&sitezip=100000&startmonth=01&startday=05&startyear=2006&endmonth=01&endday=05&endyear=2011&p_case=closed&p_start=3260&p_finish=3280&p_sort=12&p_desc=DESC&p_direction=Prev&p_show=20&p_violations_exist=both",
+            "title": "Establishment Search Results | Occupational Safety and Health ...",
+            "snippet": "Elite Concepts In Building, Inc. 3258, 309352912, 01/31/2006, 0523400, WI, Planned, Partial, 1761, 238170, 2, Teknok Siding, Inc."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search?sic=&naics=23&state=All&officetype=All&office=All&startmonth=12&startday=31&startyear=2012&endmonth=01&endday=01&endyear=2002&scope=&fedagncode=&owner=&p_start=10380&p_finish=10400&p_sort=site_state&p_desc=DESC&p_direction=Next&p_show=20",
+            "title": "Industry Search Results Page | Occupational Safety and ...",
+            "snippet": "Elite Concepts In Building, Inc. Result Page: ... 516 517 518 519 520 521 522 523 524 525 ... OSHA · Standards · Enforcement · Topics · Media Center · Contact ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:22:40.532Z",
+      "data": {
+        "found": true,
+        "query": "\"Elite Concepts\" Lewisville lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/lake-dallas/category/pool-contractors",
+            "title": "Pool Contractors near Lake Dallas, TX",
+            "snippet": "Lewisville, TX 75077-2409. Get a Quote · Elite Concepts, Inc. Pool Contractors. BBB Rating: A+. not BBB accredited. (214) 222-1225. PO Box 293314, Lewisville, ..."
+          },
+          {
+            "link": "https://stevieawards.com/uploads/file/sascs12_awardsprogram_web_lr.pdf",
+            "title": "2020-SASCS10 Awards Program",
+            "snippet": "Gene McNaughton, President, Elite Concepts, Inc.,. Ladera Ranch, California, USA. Carajane Moore, President, Hunt Big Sales, Fishers, Indiana ..."
+          },
+          {
+            "link": "https://www.yumpu.com/en/document/view/4604976/2020-sascs10-awards-program-the-stevie-awards",
+            "title": "2020-SASCS10 Awards Program - the Stevie Awards",
+            "snippet": "Gene McNaughton, President, Elite Concepts, Inc.,<br />. Ladera Ranch, California, USA<br />. Carajane Moore, President, Hunt Big Sales ..."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/reno/category/window-installation",
+            "title": "753 results for Window Installation near Reno, TX",
+            "snippet": "Elite Concepts General Construction Group. General Contractor, Plumber, Siding Contractors ... not BBB accredited. (903) 453-4834. PO Box 9214, Greenville, TX ..."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-25T15:22:58.288Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-25T15:22:43Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Elite%20Concepts%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=wlZNabPkK9yjptQP6qm_qAc\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-25T15:22:52Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Elite%20Concepts%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=zFZNabK2DOuYptQPpI_cOQ\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Elite Concepts",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-25T15:23:10.122Z",
+      "data": {
+        "cost": 0.00054418,
+        "summary": "The review data is extremely sparse and outdated. The single detailed review appears authentic, but the overall volume is suspiciously low for an established contractor. The empty 5-star review is a significant red flag. There is not enough evidence to confirm a pattern of authentic customer feedback.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2025-12-25T15:23:10.122Z",
+        "fake_signals": [
+          "Extremely low review volume (2) for a company in business for years",
+          "One review is empty text with a 5-star rating",
+          "No reviews on other major platforms (Angi, Houzz, Yelp)",
+          "BBB A+ rating lacks supporting complaint/review data",
+          "Google reviews are old (4 and 6 years ago) with no recent activity"
+        ],
+        "recommendation": "INSUFFICIENT_DATA",
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "One detailed review mentions specific project (basement cement floors)",
+          "Review mentions future intent (garage floors next)",
+          "Reviewer is a Google Local Guide with other reviews"
+        ],
+        "fake_review_score": 65,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Insufficient review data across platforms to detect meaningful discrepancies. BBB rating is high but lacks complaint/review data."
+      }
+    }
+  }
+}

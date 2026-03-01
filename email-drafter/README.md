@@ -2,10 +2,12 @@
 
 Creates Gmail drafts for Texas construction leads. **Does NOT send emails** - only populates your Drafts folder for manual review.
 
+Note: The canonical email drafter lives at `/home/astre/command-center/src/greenlit/outbound`. This copy is legacy.
+
 ## Quick Start
 
 ```bash
-cd email-drafter
+cd /home/astre/command-center/src/greenlit/outbound
 npm install
 node index.js
 ```
@@ -51,12 +53,12 @@ node index.js
 5. Click **Create**
 6. Click **Download JSON**
 7. Rename the downloaded file to `credentials.json`
-8. Move it to this `email-drafter` folder
+8. Move it to this `outbound` folder
 
 ## File Structure
 
 ```
-email-drafter/
+outbound/
 ├── index.js          # Main script
 ├── package.json      # Dependencies
 ├── leads.json        # Your leads (edit this)

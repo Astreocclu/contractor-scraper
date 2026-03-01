@@ -1,0 +1,2156 @@
+{
+  "contractor_id": 2968,
+  "business_name": "Watercrest Pools",
+  "city": "Keller",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-14T18:35:55.034Z",
+  "sources": {
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:17:07.491Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": true,
+          "satisfaction": true,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "http://www.watercrestpools.com/",
+            "type": "workmanship",
+            "snippet": "Custom Pools Discover our custom luxury pool services, where expert design and craftsmanship create one-of-a-kind pools tailored to your outdoor space and lifestyle. Pool R"
+          },
+          {
+            "url": "http://www.watercrestpools.com/",
+            "type": "workmanship",
+            "snippet": "s. Commercial Pools Explore our commercial pool building services, where expert craftsmanship and custom designs bring community together in style and function. LET'S TALK A"
+          },
+          {
+            "url": "http://www.watercrestpools.com/",
+            "type": "satisfaction",
+            "snippet": "expert guidance. With a focus on high-end, unique projects and a dedication to customer satisfaction, we continue to redefine luxury pool building in our market. Latest projects LE"
+          }
+        ],
+        "durations": [
+          "50 years"
+        ],
+        "confidence": "MODERATE",
+        "source_url": "http://www.watercrestpools.com/",
+        "analyzed_pages": [
+          {
+            "url": "http://www.watercrestpools.com/",
+            "type": "homepage",
+            "title": "Home | Watercrest Pools | Dallas / Fort Worth Custom Pool Builder"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:19:00.437Z",
+      "data": {
+        "name": "Watercrest Pools & Outdoor Living",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 431-8997",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/southlake/profile/pool-contractors/watercrest-pools-outdoor-living-0825-235975673",
+        "review_count": null,
+        "founding_date": "11/12/2007",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 18,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:17:14.783Z",
+      "data": {
+        "query": "site:yelp.com \"Watercrest Pools\" \"Keller, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://m.yelp.com/search?cflt=swimmingpools&find_loc=Westlake%2C+tx",
+            "title": "THE BEST 10 SWIMMING POOLS near WESTLAKE, TX - Yelp",
+            "rating": 3.7,
+            "snippet": "... Watercrest Pools, Texas Best Fiberglass Pools, Rock-Scapes, GCISD Swim ... 721 Keller Pkwy, Keller, TX 76248. (817) 741-4103. Explore More Options.",
+            "position": 1,
+            "ratingCount": 336
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Kid+Friendly+Pool&find_loc=Keller%2C+TX",
+            "title": "TOP 10 BEST Kid Friendly Pool near Keller, TX - Updated 2025 - Yelp",
+            "snippet": "Top 10 Best Kid Friendly Pool in Keller, TX ... Watercrest Pools, SafeSplash Swim School - Keller ... Best Kid Friendly Pool near Keller, TX. Sponsored ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pools&find_loc=Northeast%2C+Fort+Worth%2C+TX",
+            "title": "Best Swimming Pools near Northeast, Fort Worth, TX - Yelp",
+            "rating": 3.3,
+            "snippet": "Watercrest Pools - Swimming Pools near me - Fort Worth, Texas. 20. Watercrest ... Keller, TX 76244. (325) 320-3030. From the business: 3D Pools is a ...",
+            "position": 3,
+            "ratingCount": 1014
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=swimmingpools&find_near=chisholm-aquatics-center-hurst",
+            "title": "The Best 10 Swimming Pools near Chisholm Aquatics Center ... - Yelp",
+            "rating": 3.8,
+            "snippet": "... Watercrest Pools, Grapevine Pool and Spa, Bliss Pools, Keller ISD Natatorium ... 721 Keller Pkwy, Keller, TX 76248. (817) 741-4103. Explore More Options.",
+            "position": 4,
+            "ratingCount": 615
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Public+Pools&find_loc=North+Richland+Hills%2C+TX",
+            "title": "Top 10 Best Public Pools Near North Richland Hills, Texas - Yelp",
+            "rating": 3.7,
+            "snippet": "... Keller TX. We offer year-round activities promoting wellbeing with a ... Watercrest Pools - Public Pools near me - North Richland Hills, Texas. 43 ...",
+            "position": 5,
+            "ratingCount": 2459
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Public+Swimming+Pools&find_loc=Flower+Mound%2C+TX",
+            "title": "TOP 10 BEST Public Swimming Pools in Flower Mound, TX - Yelp",
+            "rating": 3.9,
+            "snippet": "Watercrest Pools - Public Swimming Pools near me - Flower Mound, Texas. 27 ... 1610 Keller Pkwy, Keller, TX 76248. (682) 294-2187. First, they did a GREAT ...",
+            "position": 6,
+            "ratingCount": 2442
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Swimming+Pool+Rental&find_loc=Southlake%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Rental near Southlake, TX - Yelp",
+            "rating": 3.7,
+            "snippet": "Watercrest Pools - Swimming Pool Rental near me - Southlake, Texas. 12 ... Keller, TX 76244. (325) 320-3030. From the business: 3D Pools is a Construction ...",
+            "position": 7,
+            "ratingCount": 2028
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Hot+Tub+%26+Pool&find_loc=Haltom+City%2C+TX",
+            "title": "TOP 10 BEST Hot Tub & Pool in Haltom City, TX - Updated 2026 - Yelp",
+            "rating": 3.8,
+            "snippet": "... Keller, TX 76248. Family-owned & operated. Locally owned & operated. On their ... Watercrest Pools - Hot Tub & Pool near me - Haltom City, Texas. 36 ...",
+            "position": 8,
+            "ratingCount": 685
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Hot+Tub+%26+Pool&find_loc=Northlake%2C+TX",
+            "title": "TOP 10 BEST Hot Tub & Pool in Northlake, TX - Updated 2026 - Yelp",
+            "rating": 4.2,
+            "snippet": "10.8 mi•. This is a placeholder. Keller, TX 76248. Family-owned & operated ... Watercrest Pools - Hot Tub & Pool near me - Northlake, Texas. 32. Watercrest ...",
+            "position": 9,
+            "ratingCount": 693
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Heated+Pool&find_loc=Flower+Mound%2C+TX",
+            "title": "TOP 10 BEST Heated Pool in Flower Mound, TX - Yelp",
+            "rating": 3.6,
+            "snippet": "... Keller, TX serving surrounding cities including Southlake, Plano, McKinney ... Watercrest Pools - Heated Pool near me - Flower Mound, Texas. 41 ...",
+            "position": 10,
+            "ratingCount": 5563
+          }
+        ]
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:19:33.179Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:19:34.119Z",
+      "data": {
+        "url": "https://www.houzz.com/professionals/swimming-pool-builders/watercrest-pools-and-outdoor-living-pfvwus-pf~1451858944",
+        "found": true,
+        "title": "WATERCREST POOLS AND OUTDOOR LIVING - Keller, TX US",
+        "rating": 4.3,
+        "source": "serper_houzz",
+        "confidence": "high",
+        "review_count": 7
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:19:03.090Z",
+      "data": {
+        "cid": "15838247814994188483",
+        "name": "Watercrest Pools",
+        "found": true,
+        "rating": 4.9,
+        "source": "serper",
+        "address": "580 Commerce St Ste. #140, Southlake, TX 76092",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "4 months ago",
+            "text": "We recently worked with Watercrest Pools to design and build a custom Spool (a combination of pool, spa, and water feature) and an elevated patio — and the entire experience was outstanding from start to finish!\n\nFrom our very first meeting, Greg Neppl and his team truly understood our vision. We had spent time sketching a design based on the Golden Ratio, with flowing, organic lines to complement our home and wooded surroundings. Greg took those sketches and turned them into a stunning 3D architectural plan that perfectly captured what we had envisioned.\n\nThe build process was smooth, efficient, and enjoyable. The entire crew was professional, courteous, and highly skilled. Brian Pucci, the onsite foreman, deserves special recognition — he was thoughtful, communicative, and meticulous throughout the project. His attention to detail and craftsmanship made a significant impact and kept the project on track from start to finish.\n\nA special mention also goes to Mike Buckman, the master stone mason who built our six-foot custom stone retaining wall for the elevated patio. His precision and artistry were remarkable — the entire wall is perfectly level and beautifully finished, showcasing true craftsmanship in custom stonework.\n\nWe were also impressed by Watercrest’s ability to handle the city inspection process with professionalism and creativity. Their expertise and persistence ensured everything moved forward smoothly despite several challenging requirements.\n\nOur new Spool and patio turned out even better than we imagined — elegant, functional, and seamlessly integrated with our outdoor living space. We highly recommend Watercrest Pools, Greg Neppl, and the entire team for anyone seeking exceptional pool design, quality construction, and masterful stonework.",
+            "author": "Dean",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We had an absolutely awesome experience with Watercrest! We redid out pool and patio, adding a jacuzzi, firepit and outdoor kitchen. Even with all the rain in May, they were able to complete the job to useable status in time for my parents 60th anniversary party. The backyard is beautiful! From the design process with Greg, to the material selection with Fiorella, the actual crazy redo with Anthony and the finish work with AJ, we are extremely pleased and so glad we went with Watercrest! This was a big job and they came through on every request!  The photos show a still in progress backyard, but we are almost done!",
+            "author": "Chris Kettner",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Exceeded our expectations! Our pool was finished four months ago but I thought it would be worthwhile to wait until it was operating awhile before giving a review. This way I can speak to the project installation as well as the reliability of the equipment and the quality of Watercrest's service. Working with Watercrest was a really good experience from start to finish. Sam and his team have a well oiled design and selection process....makes it easy to connect the pool's design and content to your vision and budget. The construction process went remarkably smoothly. Our project manager, Brian, did a great job of coordinating the different crews needed to make our pool a reality. He communicated frequently and so we had very few surprises as the project came together. That is a major accomplishment by itself!  If you haven't built a pool before, the project will run from 4 to 6 months, so you're spending a lot of time looking out of the window at construction when you just want to go swimming :-)  Watercrest was excellent at navigating the inevitable delays of weather issues or supplier back orders to get us in the water as quickly as possible. They do enough pools so they are able to get things done when others not as large may get stuck. When they finished and turned the pool on AJ walked us through the equipment, scheduled \"pool school\" and made certain we could operate the pool directly or on our phones. Our only service issue was a dropped connection between the pool equipment and the Pentair mobile app. AJ got that squared away quickly. Otherwise, the pool has been \"bullet proof\", even during the most recent freeze. Overall, its easy to recommend Watercrest to you and to say they \"exceeded our expectations!\"",
+            "author": "Louis Myers",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Watercrest pools was absolutely amazing from start to finish with our pool. Brian our project manager made sure everything was done correctly and fixed anything that went wrong, quickly and efficiently. We LOVE our backyard now thanks to them! You will not regret picking this company to build your dream pool!",
+            "author": "Chelsee Smith",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Sam, Greg, A.J. and Sam's entire team at Watercrest Pools are amazing!  They made the entire process so easy; they are all incredibly responsive and they truly care about the product they deliver!  Sam was able to take our design thoughts/ideas and come up with a beautiful design which he put into a 3D design program; it was even better than we imagined, on the first try!  We couldn't be happier!  Thanks so much Watercrest Pools!",
+            "author": "Kim Weitz",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Building our pool with Watercrest was a fantastic experience from design to startup. Sam, Greg, Ryan and AJ are all accessible, knowledgeable and committed to your satisfaction. Any and all concerns have been addressed and resolved expeditiously. I have high expectations (and am extremely particular with high quality specs and attention to detail) when selecting contractors and would confidently recommend Watercrest. They use Pentair which I am overall already impressed with over Jandy on our previous pool. The biggest difference from out last pool builder in Houston to Watercrest is the after startup customer service. Overall top notch company to work with.",
+            "author": "Evan Feldman",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Watercrest completed our pool about six months ago. It turned out beautiful, and any issue that we had was addressed promptly. I feel that I can contact them any time even after business hours and receive a  timely response. AJ provides great service!",
+            "author": "Deepal Patel",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Watercrest finished our pool in May of 2024. We did our homework, knew what we wanted and they came through with a quality product.  Enjoyed working with the staff and they were on top of every aspect though out the build. If we were to build again they would be first on our list.",
+            "author": "Doug Sherar",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 48,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Keller, TX",
+        "search_confidence": 0.6799999999999999
+      }
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:21:11.656Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 3,
+            "MECH_LIEN": 44
+          },
+          "active_liens": 44,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 2,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "WATERCREST POOLS",
+                "grantor": "GARRIGUES DAVID GERARD",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GARRIGUES DAVID GERARD",
+                    "WATERCREST POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "12/13/2018",
+                    "20181213001517210",
+                    "--/--/--",
+                    "Subdivision- Name: WHITLEY PLACE #4 PROSPER 2012/69 Lot: 2 Block: C, Reference - 2012 / 69"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2018-12-13",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20181213001517210"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "ANDERSON AMBER L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ANDERSON AMBER L",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "4/23/2010",
+                    "20100423000398470",
+                    "--/--/--",
+                    "Subdivision- Name: WREN CREEK MCK N/855 Lot: 41 Block: C, Reference - N / 855"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2010-04-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20100423000398470"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 3,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "WATERCREST POOLS",
+                "grantor": "THOMPSON DANIEL W",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "THOMPSON DANIEL W",
+                    "WATERCREST POOLS",
+                    "MECHANICS LIEN",
+                    "10/5/2012",
+                    "201200296804",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: PECAN HOLLOW Lot: 23 Block: G, Reference - 90139 / 2914"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2012-10-05",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "201200296804"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "HUBERT MATTHEW P",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HUBERT MATTHEW P",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "3/11/2015",
+                    "201500059501",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: ARBOR MANORS Lot: 15 Block: A, Reference - - / 201000014098"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-03-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500059501"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "grantor": "WOOLLEY DAN",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WOOLLEY DAN",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "3/21/2008",
+                    "20080092675",
+                    "--/--/--",
+                    "DALLAS",
+                    "Subdivision- Name: LAKE WAY Lot: 23 Block: 1 CBLK: 2976, CITY: DALLAS,, Reference - 9 / 27"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2008-03-21",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20080092675"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 42,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/30/2010",
+                    "D210101269",
+                    "--/--/--",
+                    "KLR, Subdivision: SOUTHERN HILLS, Lot: 21, Block: B"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2010-04-30",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D210101269"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "BARKEMEYER MARCY C",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BARKEMEYER MARCY C",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "3/14/2022",
+                    "D222066516",
+                    "OPR/--/--",
+                    "NORTH RICHLAND HILLS, Subdivision: THORNBRIDGE EAST, Lot: 14, Block: 4"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2022-03-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D222066516"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WAGONER JONATHAN R",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WAGONER JONATHAN R",
+                    "RELEASE",
+                    "6/17/2013",
+                    "D213155172",
+                    "--/--/--",
+                    "KLR, Subdivision: BOURLAND OAKS, Lot: 10, Block: G"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2013-06-17",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D213155172"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "JENSEN JOSEPH N",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "JENSEN JOSEPH N",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/27/2015",
+                    "D215085180",
+                    "--/--/--",
+                    "KLR, Subdivision: MELODY LN ESTS, Lot: 1, Block: A"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2015-04-27",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D215085180"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "SHAFFER ROBIN T",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SHAFFER ROBIN T",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "1/15/2015",
+                    "D215009073",
+                    "--/--/--",
+                    "KLR, Subdivision: TUSCANY KLR, Lot: 1, Block: C"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2015-01-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D215009073"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "5/22/2014",
+                    "D214105536",
+                    "--/--/--",
+                    "FT W, Subdivision: HERITAGE, Lot: 4, Block: 55"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2014-05-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D214105536"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "CROWELL LEE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CROWELL LEE",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/30/2013",
+                    "D213109025",
+                    "--/--/--",
+                    "KLR, Subdivision: HARMONSON FARMS, Lot: 4, Block: E"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2013-04-30",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D213109025"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "JAYNES CLINT D",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "JAYNES CLINT D",
+                    "RELEASE",
+                    "9/23/2014",
+                    "D214208389",
+                    "--/--/--",
+                    "COLVL, Subdivision: WESTMONT, Lot: 13, Block: C"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2014-09-23",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D214208389"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "TATUM MICHAEL A",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "TATUM MICHAEL A",
+                    "RELEASE",
+                    "4/24/2012",
+                    "D212097350",
+                    "--/--/--",
+                    "COLVL, Subdivision: BRIGHTON OAKS, Lot: 2, Block: 4"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2012-04-24",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D212097350"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "7/26/2023",
+                    "D223132393",
+                    "OPR/--/--",
+                    "TROPHY CLUB, Subdivision: TROPHY CLUB, Lot: 727"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-07-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223132393"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "3/29/2012",
+                    "D212075788",
+                    "--/--/--",
+                    "KLR, Subdivision: BOURLAND OAKS, Lot: 10, Block: G"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2012-03-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D212075788"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "GIROLAMO MARCUS D",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GIROLAMO MARCUS D",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "7/15/2009",
+                    "D209188367",
+                    "--/--/--",
+                    "KLR, Subdivision: BELLA VISTA, Lot: 4, Block: A"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2009-07-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D209188367"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "12/14/2021",
+                    "D221363998",
+                    "OPR/--/--",
+                    "SOUTHLAKE, Subdivision: VERANDAS AT SOUTHLAKE, Lot: 3, Block: 1"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-12-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221363998"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "12/22/2025",
+                    "D225237386",
+                    "OPR/--/--",
+                    "SOUTHLAKE, Subdivision: J CHILDRESS NO 254, Lot: 12"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2025-12-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D225237386"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVINNG",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVINNG",
+                    "MECHANICS LIEN",
+                    "8/24/2011",
+                    "D211205035",
+                    "--/--/--",
+                    "SAG, Subdivision: WILLOW CRK ESTS, Lot: 2, Block: 4"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2011-08-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D211205035"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "4/18/2013",
+                    "D213099212",
+                    "--/--/--",
+                    "KLR, Subdivision: BOURLAND OAKS, Lot: 7, Block: H"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2013-04-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D213099212"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "12/5/2013",
+                    "D213309245",
+                    "--/--/--",
+                    "COLVL, Subdivision: WESTMONT, Lot: 13, Block: C"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2013-12-05",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D213309245"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/20/2010",
+                    "D210091480",
+                    "--/--/--",
+                    "GPV, Subdivision: VINEYARD, Lot: 18, Block: 1"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2010-04-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D210091480"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "10/28/2013",
+                    "D213278948",
+                    "--/--/--",
+                    "W LK, Subdivision: TERRA BELLA, Lot: 8, Block: 2"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2013-10-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D213278948"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "2/27/2014",
+                    "D214039104",
+                    "--/--/--",
+                    "KLR, Subdivision: ESCOTO, Lot: 1R1-1, Block: 1"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2014-02-27",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D214039104"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "8/26/2015",
+                    "D215192802",
+                    "--/--/--",
+                    "GPV, Subdivision: TWN, Lot: 2, Block: 31"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2015-08-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D215192802"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "10/18/2022",
+                    "D222251325",
+                    "OPR/--/--",
+                    "SOUTHLAKE, Subdivision: CARILLON, Lot: 16, Block: 1"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2022-10-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D222251325"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "3/20/2009",
+                    "D209076507",
+                    "--/--/--",
+                    "MNFLD, Subdivision: MANSFIELD NATL, Lot: 30, Block: 13"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2009-03-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D209076507"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "2/12/2014",
+                    "D214028284",
+                    "--/--/--",
+                    "KLR, Subdivision: NEWTON RANCH, Lot: 2, Block: 1"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2014-02-12",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D214028284"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "9/17/2018",
+                    "D218206831",
+                    "--/--/--",
+                    "KELLER, Subdivision: WOODLANDS AT HIDDEN LAKES, Lot: 20, Block: 3"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2018-09-17",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D218206831"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "10/30/2017",
+                    "D217251825",
+                    "--/--/--",
+                    "KELLER, Subdivision: WOODFORD, Lot: 3, Block: B"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2017-10-30",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D217251825"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "1/27/2022",
+                    "D222024464",
+                    "OPR/--/--",
+                    "COLLEYVILLE, Subdivision: HIGHLAND MEADOWS, Lot: 1R, Block: 4"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2022-01-27",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D222024464"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "4/9/2012",
+                    "D212084015",
+                    "--/--/--",
+                    "GPV, Subdivision: CRESTWOOD HOLLOW, Lot: 11, Block: A"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2012-04-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D212084015"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "7/23/2019",
+                    "D219159975",
+                    "--/--/--",
+                    "FORT WORTH, Subdivision: VALLEY RIDGE, Lot: 5, Block: K"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2019-07-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D219159975"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "7/1/2013",
+                    "D213170297",
+                    "--/--/--",
+                    "COLVL, Subdivision: COVINGTON, Lot: 11, Block: A"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2013-07-01",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D213170297"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "5/26/2017",
+                    "D217119035",
+                    "--/--/--",
+                    "KLR, Subdivision: PRESERVE AT HIDDEN LKS, Lot: 17, Block: C"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2017-05-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D217119035"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS INC",
+                "grantor": "WATERCREST POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS INC",
+                    "WATERCREST POOLS INC",
+                    "MECHANICS LIEN",
+                    "12/3/2009",
+                    "D209315921",
+                    "--/--/--",
+                    ""
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2009-12-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D209315921"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "1/27/2021",
+                    "D221022275",
+                    "OPR/--/--",
+                    "COLLEYVILLE, Subdivision: HIGHLAND MEADOWS, Lot: 16, Block: 21"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-01-27",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221022275"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "9/29/2016",
+                    "D216228626",
+                    "--/--/--",
+                    "N R H, Subdivision: THORNBRIDGE E, Lot: 21, Block: 5"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2016-09-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D216228626"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "6/11/2018",
+                    "D218126712",
+                    "--/--/--",
+                    "KELLER, Subdivision: WOODLANDS AT HIDDEN LAKES, Lot: 18, Block: 3"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2018-06-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D218126712"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "5/25/2021",
+                    "D221149149",
+                    "OPR/--/--",
+                    "Subdivision: THORNBRIDGE NORTH, Lot: 2, Block: C"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-05-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221149149"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "9/9/2010",
+                    "D210221057",
+                    "--/--/--",
+                    "GPV, Subdivision: BLAIR MNR ESTS, Lot: 4, Block: 2"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2010-09-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D210221057"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS AND OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "WATERCREST POOLS AND OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "3/2/2020",
+                    "D220049387",
+                    "--/--/--",
+                    "FORT WORTH, Subdivision: SARATOGA, Lot: 22, Block: 24"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2020-03-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D220049387"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "4/9/2008",
+                    "D208128006",
+                    "--/--/--",
+                    "KLR, Subdivision: TIMBERKNOLL ESTS, Lot: 31B, Block: 2"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2008-04-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D208128006"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "LEGACYTEXAS BANK",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "LEGACYTEXAS BANK",
+                    "MECHANICS LIEN",
+                    "7/27/2015",
+                    "D215164686",
+                    "--/--/--",
+                    "KLR, Subdivision: WOODFORD, Lot: 22, Block: A"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2015-07-27",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D215164686"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "5/3/2010",
+                    "D210102411",
+                    "--/--/--",
+                    "ARL, Subdivision: RIVERBROOK ESTS, Lot: 9, Block: 1"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2010-05-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D210102411"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATERCREST POOLS & OUTDOOR LIVING",
+                "grantor": "WATERCREST POOLS & OUTDOOR LIVING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "WATERCREST POOLS & OUTDOOR LIVING",
+                    "MECHANICS LIEN",
+                    "2/8/2010",
+                    "D210027994",
+                    "--/--/--",
+                    "FT W, Subdivision: SUNSET HILLS, Lot: 23, Block: 1"
+                  ],
+                  "search_term": "Watercrest Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2010-02-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D210027994"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 old lien(s) against contractor (>7 years ago)",
+            "10 lien(s) filed BY contractor (collecting payment - neutral)",
+            "33 lien(s) with unclear direction"
+          ],
+          "score": 8,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 44,
+          "human_summary": "CAUTION: 1 lien(s) filed AGAINST Watercrest Pools (potential payment issues)",
+          "liens_unclear": 33,
+          "liens_by_count": 10,
+          "resolved_liens": 0,
+          "liens_against_count": 1,
+          "liens_by_contractor": 10,
+          "total_against_amount": 0,
+          "liens_against_contractor": 1
+        },
+        "owner_name": null,
+        "search_term": "Watercrest Pools",
+        "searched_at": "2026-02-13T23:19:58.690457",
+        "total_records": 47
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:21:12.105Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "WATERCREST POOLS, INC.",
+        "taxpayer_number": "32034124308"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T23:21:12.106Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:21:24.372Z",
+      "data": {
+        "cost": 0.00076174,
+        "summary": "Reviews appear highly authentic. The content is detailed, names specific employees and project types, and discusses both the build process and post-completion service. The lack of negative reviews in the sample and relatively low total volume are minor concerns, but the consistency and depth of positive reviews strongly indicate a quality contractor with satisfied customers.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-13T23:21:24.372Z",
+        "fake_signals": [
+          "Limited negative reviews in sample (all 5-star)",
+          "Small total review volume (48 Google, 43 Yelp)"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 4.9,
+          "houzz": 4.3,
+          "google": 4.9
+        },
+        "warranty_signals": {
+          "mentions": [
+            "addressed promptly",
+            "fixed anything that went wrong",
+            "resolved expeditiously"
+          ],
+          "confidence": "HIGH",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Any issue that we had was addressed promptly",
+            "fixed anything that went wrong, quickly and efficiently",
+            "all concerns have been addressed and resolved expeditiously"
+          ]
+        },
+        "authentic_signals": [
+          "Specific project details (Spool, patio, firepit, kitchen)",
+          "Multiple employee names mentioned (Greg, Sam, AJ, Brian, Anthony, Ryan, Fiorella)",
+          "Varied writing styles and perspectives",
+          "Mentions of timeline challenges (rain) and post-completion service",
+          "Emotional authenticity in praise"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are consistently high across Google, Yelp, and BBB. The slightly lower Houzz rating is based on only 7 reviews and is still positive, not a significant discrepancy."
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:19:26.744Z",
+      "data": {
+        "name": "Watercrest Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 431-8997",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "open",
+        "address": "580 Commerce St Ste. #140, Southlake, TX 76092",
+        "reviews": [],
+        "website": "http://www.watercrestpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Watercrest%20Pools%20Keller%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:19:31.671Z",
+      "data": {
+        "found": true,
+        "rating": 4.9,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": 43
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:19:34.955Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "watercrestpools.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:18:47.584Z",
+      "data": {
+        "query": "site:dentoncounty.gov Watercrest Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=320_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "WATERCREST POOLS, INC. 13401 PRAIRIE CHAPEL TRL, AVERY RANCH BLK 4 LOT 34, SWIMMING POOL, 10/09/2017, 656209, Approved, 10/05/2017, MCCARTY, BRANDON C & KELLY T ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:18:54.805Z",
+      "data": "Home | Watercrest Pools | Dallas / Fort Worth Custom Pool Builder Home Services Custom Pool Builder Luxury Pool Renovation Commercial Pools Custom Pool Design Outdoor Living Our Process Inspiration Modern Pool Designs Formal Pool Designs Transitional Pool Designs Blog Service Request Video Library Pool Maintenance Videos Freeze Protection Videos Pool School Videos Home Services Custom Pool Builder Luxury Pool Renovation Commercial Pools Custom Pool Design Outdoor Living Our Process Inspiration Modern Pool Designs Formal Pool Designs Transitional Pool Designs Blog Service Request Video Library Pool Maintenance Videos Freeze Protection Videos Pool School Videos  Call today 817-431-8997  Call today 817-431-8997 Expert Pool Builders Crafting Custom Pools in Dallas-Fort Worth Transform Your Backyard into an Oasis with Our Professional Pool Building Services. REQUEST A DISCOVERY CALL Δ Company This field is for validation purposes and should be left unchanged. Name (Required) First Last Email (Required) Phone (Required) Address (Required) Street Address City Project Type (Required) Project Type I live in my home and want to remodel I live in my home and want to build a new pool I am building a house and want to build a new pool Remodel Budget (Required) Budget $20K-$50K $50K-$85K Above $85K Budget (Required) Budget $100K-$150K $150K-$200K Above $250K Your Project Details (Required) Crafted Exclusively for Your Lifestyle Behind every Watercrest pool is a team devoted to excellence. From concept to completion, our 12 specialists bring over 50 years of combined expertise to create custom pools defined by precision, performance, and artful design. With more than 200 projects completed, our reputation is built on detail and distinction. 12 TEAM MEMBERS 50+ COMBINED YEARS OF EXPERIENCE All categories Formal Pool Modern Pool Transitional Pool 200+ PROJECTS What Our Clients Say Services Our skilled pool builders collaborate with you to design and construct a custom pool that enhances your outdoor space, meets your vision, and exceeds expectations—contact us today for a free consultation to start creating your dream pool. Custom Pools Discover our custom luxury pool services, where expert design and craftsmanship create one-of-a-kind pools tailored to your outdoor space and lifestyle. Pool Renovation Transform your existing pool with our remodeling services, enhancing its beauty, functionality, and value with expert upgrades and designs. Commercial Pools Explore our commercial pool building services, where expert craftsmanship and custom designs bring community together in style and function. LET'S TALK ABOUT YOUR VISION From first sketch to final detail, we design and build with intention. Connect with our team to begin crafting a space that reflects your vision and elevates your way of living. REQUEST A DISCOVERY CALL What Makes Watercrest Pools Different? At Watercrest Pools, we specialize in designing and building custom pools for luxury homes. We also take on luxury pool remodels as well. Our commitment to exceptional service and efficiency is what truly sets us apart. With our team you get: Faster Turn Around Our sales team works persistently to provide designs and proposals quickly, helping customers make informed decisions with minimal delays. Focused Project Management Unlike many competitors, our project managers handle an average of just 10 projects at a time, allowing them to dedicate quality time to each job and develop strong relationships with clients. Customer-Centric Design Process We collaborate closely with customers, ensuring their vision is realized through detailed design revisions and expert guidance. With a focus on high-end, unique projects and a dedication to customer satisfaction, we continue to redefine luxury pool building in our market. Latest projects LET'S TALK ABOUT YOUR PROJECT REQUEST A DESIGN CALL Our Process STEP 1 Request a Design Consultation Begin your custom pool journey with a personalized design consultation. During this complimentary meeting, one of our expert designers will meet with you to discuss your vision, preferences, and lifestyle. We’ll explore design possibilities, answer your questions, and begin crafting a pool that perfectly complements your home and outdoor space. STEP 2 Approve Your Design Once we’ve captured your vision, our talented design team will translate your ideas into stunning 3D renderings and detailed plans. You’ll be able to visualize your future oasis, complete with all the features and finishes you’ve selected. We’ll work closely with you to refine every detail, ensuring your complete satisfaction before moving forward. STEP 3 Watch Your Design Become Reality Then, our team of skilled craftsmen will meticulously bring your vision to life. Using only the finest materials and proven construction techniques, we’ll transform your backyard. Throughout the construction process, our team will keep you informed and involved, ensuring a seamless and stress-free experience. Watercrest Pools ADDRESS 580 Commerce St. Suite 140 Southlake, Texas 76092 PHONE 817-431-8997 EMAIL info@watercrestpools.com HOURS OF OPERATION Mon–Fri: 9:00am – 5:00pm Sat–Sun: Closed SOCIAL MEDIA LET'S TALK ABOUT YOUR VISION REQUEST A DISCOVERY CALL © 2026 Watercrest Pools LLC. All rights reserved. Terms of use Privacy Policy Contact Us Winter Weather Advisory Terms of use Privacy Policy Contact Us Winter Weather Advisory Notifications"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:17:48.434Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:17:52.593Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:17:55.152Z",
+      "data": {
+        "query": "Watercrest Pools Keller site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:19:38.473Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Watercrest Pools\" Keller",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:18:07.971Z",
+      "data": "Watercrest Pools Keller review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 5:17 5:17 Now playing About Watercrest Pools Watercrestpools Watercrestpools • • 787 views 15 years ago Watercrestpools Watercrestpools 2:31 2:31 Now playing Pool Maintenance | Perform a Bucket Test to Find a Leak Watercrest Pools Watercrest Pools • • 44 views 6 months ago Watercrest Pools Watercrest Pools How to Do a Bucket Test for Pool Leaks Wondering if your pool is leaking or just losing water to evaporation? In this video ... How to Do a Bucket Test for Pool Leaks Wondering if your pool is leaking or just losing water to evaporation? In this video ... From the video description 4:49 4:49 Now playing Pool Maintenance | The Weekly Basics Watercrest Pools Watercrest Pools • • 134 views 1 month ago Watercrest Pools Watercrest Pools In this video, we walk you through the essential steps to keep your pool clean, safe, and sparkling — without spending all day ... In this video, we walk you through the essential steps to keep your pool clean, safe, and sparkling — without spending all day ... From the video description 6:03 6:03 Now playing Freeze Protecting Your Pool When the Power Goes Out Watercrest Pools Watercrest Pools • • 1.2K views 7 months ago Watercrest Pools Watercrest Pools In this video we will show you how to Freeze protect your pool when the power goes out. We will also show you how to get your ... In this video we will show you how to Freeze protect your pool when the power goes out. We will also show you how to get your ... From the video description Watercrest Pools Watercrest Pools @watercrestpoolstx • 39 subscribers Subscribe 1:13 1:13 Now playing Prepare Your Pool for Freezing Temperatures Watercrest Pools Watercrest Pools • • 267 views 6 months ago Watercrest Pools Watercrest Pools In this quick video, we cover the essential steps to protect your pool during cold weather, including: ✓ How freeze protection ... In this quick video, we cover the essential steps to protect your pool during cold weather, including: ✓ How freeze protection ... From the video description 3:25 3:25 Now playing Watercrest Pools - Knights Crest Lazy River chris Pucci chris Pucci • • 80 views 1 year ago chris Pucci chris Pucci Lazy River, Boulder Waterfalls, Grotto, Game Pool , Slide, Rain Curtains. Lazy River, Boulder Waterfalls, Grotto, Game Pool , Slide, Rain Curtains. From the video description 2:56 2:56 Now playing Watercrest Pools - Toon Outdoor Living 2.8.2020 chris Pucci chris Pucci • • 32 views 6 years ago chris Pucci chris Pucci Pool , Spa, Pergola, and Kitchen. Pool , Spa, Pergola, and Kitchen. From the video description 1:54 1:54 Now playing General Pool Care Watercrest Pools Watercrest Pools • • 70 views 7 years ago Watercrest Pools Watercrest Pools Here are things you should do on a routine basis to keep your swimming pool looking great. Here are things you should do on a routine basis to keep your swimming pool looking great. From the video description 6 chapters Intro | Visual Inspection | Reach Routine | Water Level | Chemicals | Outro 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Visual Inspection Visual Inspection 0:10 Visual Inspection 0:10 Reach Routine Reach Routine 0:25 Reach Routine 0:25 Water Level Water Level 0:58 Water Level 0:58 Chemicals Chemicals 1:11 Chemicals 1:11 Outro Outro 1:36 Outro 1:36 SHORTS SHORTS Now playing Basement therapy pool The pool man Pete The pool man Pete • • 1.1K views 2 years ago The pool man Pete The pool man Pete SHORTS SHORTS Now playing $28 FAMILY PASS - Keller Tx Waterpark Ludwin & Margie - Dallas Fort Worth Texas Life Ludwin & Margie - Dallas Fort Worth Texas Life • • 1.1K views 7 months ago Ludwin & Margie - Dallas Fort Worth Texas Life Ludwin & Margie - Dallas Fort Worth Texas Life for a full day of waterpark fun with the whole family?! Yes, please! ☀️ We took the kids to Keller Pointe in Keller , and it was the ... for a full day of waterpark fun with the whole family?! Yes, please! ☀️ We took the kids to Keller Pointe in Keller , and it was the ... From the video description 0:50 0:50 Now playing Impressive Keller Pool & Spa with water feature wall Blue Lagoon Enterprises LLC Blue Lagoon Enterprises LLC • • 1.2K views 3 years ago Blue Lagoon Enterprises LLC Blue Lagoon Enterprises LLC Custom pool and spa designed by The Blue Lagoons, 214-791-2583. Check us out at www.bluelagoonspoolservice.com. Custom pool and spa designed by The Blue Lagoons, 214-791-2583. Check us out at www.bluelagoonspoolservice.com. From the video description People also watched 6:39 6:39 Now playing Cracks are appearing in Central Texas pools, causing them to drain dry | Here's why KVUE KVUE • • 367K views 1 year ago KVUE KVUE Alkali-silica reaction, also called \"concrete cancer,\" is a hidden defect plaguing pools in Central Texas, making them unusable ... Alkali-silica reaction, also called \"concrete cancer,\" is a hidden defect plaguing pools in Central Texas, making them unusable ... From the video description CC 3 chapters Intro | Pool Problems | Pool Construction 3 auto-generated chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 Pool Problems Pool Problems 0:33 Pool Problems 0:33 Pool Construction Pool Construction 5:52 Pool Construction 5:52 5:21 5:21 Now playing What Pool Contractor\\Builders will NEVER show you WetScapes Fiberglass Pools WetScapes Fiberglass Pools • • 94K views 2 years ago WetScapes Fiberglass Pools WetScapes Fiberglass Pools hello y'all. I want to show you what pool builders and contractors will never show you. Everything on a pool build is super ... hello y'all. I want to show you what pool builders and contractors will never show you. Everything on a pool build is super ... From the video description 4K CC Summary This video provides a behind-the-scenes look at the construction of a fiberglass pool, highlighting details that are often overlooked. The video focuses on the importance of meticulous preparation and execution, including the use of specific materials and techniques to ensure a high-quality, long-lasting pool. AI-generated video summary Quality and accuracy may vary. Summary This video provides a behind-the-scenes look at the construction of a fiberglass pool, highlighting details that are often overlooked. The video focuses on the importance of meticulous preparation and execution, including the use of specific materials and techniques to ensure a high-quality, long-lasting pool. 2:34 2:34 Now playing How to Protect Your Pool From an Impending Freeze. Pool-Aid Pros Pool-Aid Pros • • 332 views 4 years ago Pool-Aid Pros Pool-Aid Pros What can you do to your pool in a power outage during a freeze? This short video will help you to act when your power goes out ... What can you do to your pool in a power outage during a freeze? This short video will help you to act when your power goes out ... From the video description 7:13 7:13 Now playing Inground Fiberglass Pool Pricing in 2025 River Pools Twin Cities River Pools Twin Cities • • 38K views 10 months ago River Pools Twin Cities River Pools Twin Cities In this video, we break down the full pricing for fiberglass pools from us here at River Pools Red Wing! Whether you're just starting ... In this video, we break down the full pricing for fiberglass pools from us here at River Pools Red Wing! Whether you're just starting ... From the video description CC 13 chapters Intro | What's Included In Pricing | What's Not Included In Pricing | D-Series Prices | R-Series Prices | M-Series Prices | C-Series Prices | I-Series Prices | The T-Series (Deepest Pool) | X-Series (Most features) | L-Series (Roman shaped) | A-Series (NEW RELEASE) | More Details 13 chapters in this video 13 chapters Intro Intro 0:00 Intro 0:00 What's Included In Pricing What's Included In Pricing 0:43 What's Included In Pricing 0:43 What's Not Included In Pricing What's Not Included In Pricing 1:07 What's Not Included In Pricing 1:07 D-Series Prices D-Series Prices 2:00 D-Series Prices 2:00 R-Series Prices R-Series Prices 2:56 R-Series Prices 2:56 M-Series Prices M-Series Prices 3:25 M-Series Prices 3:25 C-Series Prices C-Series Prices 3:45 C-Series Prices 3:45 + 6 more 1:56 1:56 Now playing Frio Pools Keller design Frio Pools Frio Pools • • 10 views 4 weeks ago Frio Pools Frio Pools 1:56 1:56 Now playing Frio Pools Keller freeform design Frio Pools Frio Pools • • 5 views 3 weeks ago Frio Pools Frio Pools 2:14 2:14 Now playing Watercrest Joe Family Custom Pool Elevated Deck 2 001 Richard Berins Richard Berins • • 23 views 9 years ago Richard Berins Richard Berins SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description 1:04 1:04 Now playing Pool Repair Keller TX Local Guide Local Guide • • 8 views 6 years ago Local Guide Local Guide Pool Repair Keller TX https://alliancepoolsandpatio.com/ We are your trusted source for pool repair and pool resurfacing in Keller , ... Pool Repair Keller TX https://alliancepoolsandpatio.com/ We are your trusted source for pool repair and pool resurfacing in Keller , ... From the video description 2:06 2:06 Now playing Keller Trying To Fix Rule Keeping People From Building Pools CBS TEXAS CBS TEXAS • • 156 views 8 years ago CBS TEXAS CBS TEXAS The problem is a policy that was meant to precent flooding. The problem is a policy that was meant to precent flooding. From the video description CC SHORTS SHORTS Now playing Power Washing a pool patio in Keller, TX! 682-308-7663 Staining with JB Staining with JB • • 129 views 3 years ago Staining with JB Staining with JB 3:02 3:02 Now playing Pool Addition | Keller, Tx P&OL Designs P&OL Designs • • 62 views 2 years ago P&OL Designs P&OL Designs Like this video, Let us know! THANK YOU FOR WATCHING Presentation created by POOL & OUTDOOR LIVING DESIGNS WWW. Like this video, Let us know! THANK YOU FOR WATCHING Presentation created by POOL & OUTDOOR LIVING DESIGNS WWW. From the video description Shorts Poolside in Keller, TX 213 views Swimming Pool Park Heritage Keller TX 362 views Keller pool - new bottom and Tara liner installation #premierchoicepools #tarapools 78 views Pool Weather-Pool Deck Cleaning Fence Cleaning in Fort Worth TX Keller Tx Southlake Tx 236 views New pool bottom - Keller pool #premierchoicepools 2.6K views Show more Show less Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:18:09.290Z",
+      "data": {
+        "query": "site:nextdoor.com Watercrest Pools Keller",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/watercrest-pools-keller-tx/",
+            "title": "Watercrest Pools - Keller, TX - Nextdoor",
+            "snippet": "Watercrest Pools is a Neighborhood Favorite in 1 neighborhood. In Grapevine: Placid Peninsula. Don't miss updates from your local businesses.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:19:37.759Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Watercrest Pools\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:19:36.466Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Watercrest Pools\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:19:26.737Z",
+      "data": {
+        "name": "Watercrest Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 431-8997",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "open",
+        "address": "580 Commerce St Ste. #140, Southlake, TX 76092",
+        "reviews": [],
+        "website": "http://www.watercrestpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Watercrest%20Pools%20Keller%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:18:22.180Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Watercrest%20Pools&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Search by facility name or ID ... Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State="
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search Map, All Facilities, Corporate Compliance Screener, ECHO Notify Air, Air Facility Search Map, Air Facilities, ECHO Clean Air Tracking Tool ( ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:18:27.942Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:18:34.248Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:18:41.511Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Watercrest Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:18:42.682Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 3
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 4
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 6
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 7
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Taxable Entity Search. David Herrera and Oscar Alvarez. 2 reactions. 󱎖. Are they ...",
+            "position": 8
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 9
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn and Texas Tax Code, Sec. 171.2515. [2] https://statutes.capitol.texas.gov/Docs/TX/htm/TX ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:18:43.830Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Watercrest Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:18:44.928Z",
+      "data": {
+        "query": "site:dallascounty.org Watercrest Pools civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:18:46.409Z",
+      "data": {
+        "query": "site:collincountytx.gov Watercrest Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps2.collincountytx.gov/ForeclosureNotices/DetailPage/3938853",
+            "title": "Foreclosures - Collin County",
+            "snippet": "1200 Whitestone Dr Murphy, TX 75094 · Property Map · Property Information · Improvement Information · Jurisdiction Information · Owner Information · Tax Information.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:19:35.738Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Watercrest Pools\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.WatercrestPoolService.124906582.html",
+            "title": "Watercrest Pool Service Reviews - Winter Springs, FL | HomeAdvisor",
+            "snippet": "With over 5 years of experience ,Watercrest pool Service is committed to excellence every aspect of our business. We uphold a standard of integrity bound by ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:19:39.453Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Watercrest Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T23:19:39.994Z",
+      "data": {
+        "found": true,
+        "query": "\"Watercrest Pools\" Keller lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?cflt=swimmingpools&find_loc=Euless%2C+TX+76039",
+            "title": "THE BEST 10 SWIMMING POOLS near EULESS, TX 76039 - Yelp",
+            "snippet": "... Watercrest Pools, Texas Best Fiberglass Pools, Rock-Scapes, Hawk 3 ... They're unprofessional and will attempt to scam you out of your money as they ..."
+          },
+          {
+            "link": "https://laserfiche.westlake-tx.org/WebLink/DocView.aspx?id=402476&dbid=0&repo=WESTLAKE",
+            "title": "01-28-19 TC Agenda Packet - IIS Windows Server - Westlake, TX",
+            "snippet": "... KELLER Legend Announced Conceptual Under Construction Existing Town Limits ... Watercrest Pools Inc.2,897 $115,000.00 POOL - 18 - 0336 Pool Permit 1740 ..."
+          },
+          {
+            "link": "https://issuu.com/fwtx/docs/fort_worth_magazine_-_may_2017",
+            "title": "Fort Worth Magazine - May 2017 by fwtx - Issuu",
+            "snippet": "Choose Watercrest Pools for an extraordinary building experience that exceeds every expectation. ... It's costly to try a lawsuit or attempt to modify orders ..."
+          },
+          {
+            "link": "https://issuu.com/fwtx/docs/fort_worth_magazine_-_november_2016",
+            "title": "Fort Worth Magazine - November 2016 by fwtx - Issuu",
+            "snippet": "WATERCREST POOLS : Pool. Roses and Restaurants. Local chefs and hungry patrons come together for a night of food and philanthropy. | by Samantha Calimbahin ..."
+          },
+          {
+            "link": "https://guide.in.ua/texas/unique-pool-designs-in-fort-worth",
+            "title": "The 30 best unique pool designs in Fort Worth, TX — Reviews ...",
+            "snippet": "“Dealt with multiple pool builders. Watercrest pools attention to detail, expertise,Communication and integrity is second to none."
+          }
+        ],
+        "result_count": 5
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T23:19:58.556Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T23:19:44Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Watercrest%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=j7GPabaWLdi7wPAP19D-sAU\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T23:19:54Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Watercrest%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=mbGPaevPNauKhbIPiqHDiQ0\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Watercrest Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

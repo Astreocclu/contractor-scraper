@@ -307,6 +307,7 @@ Usage: node batch_audit_runner.js [options]
 Options:
   --limit N       Process only N contractors (default: all unaudited)
   --ids 1,2,3     Process specific contractor IDs
+  --vertical pool Process contractors in a vertical (ordered by city)
   --resume        Resume from saved state
   --reset         Clear state and start fresh
   --retry-review  Retry review analysis for failed contractors
@@ -318,6 +319,7 @@ Options:
 Examples:
   node batch_audit_runner.js --limit 10
   node batch_audit_runner.js --ids 1,2,3
+  node batch_audit_runner.js --vertical pool --limit 100
   node batch_audit_runner.js --resume --limit 50
   node batch_audit_runner.js --reset --limit 100
   node batch_audit_runner.js --retry-review
@@ -364,12 +366,34 @@ Examples:
 
   // Parse skipLiens flag (before contractor selection)
   const skipLiens = args.includes('--skip-liens');
+  const vertical = args.includes('--vertical') ? args[args.indexOf('--vertical') + 1] : null;
 
   let contractorIds;
 
   if (args.includes('--ids')) {
     const idsArg = args[args.indexOf('--ids') + 1];
     contractorIds = idsArg.split(',').map(id => parseInt(id.trim()));
+  } else if (vertical) {
+    let limit = null;
+    if (args.includes('--limit')) {
+      limit = parseInt(args[args.indexOf('--limit') + 1]);
+    } else if (args.includes('--max')) {
+      limit = parseInt(args[args.indexOf('--max') + 1]);
+    }
+
+    const query = `
+      SELECT DISTINCT c.id
+      FROM contractors_contractor c
+      JOIN contractors_contractor_verticals cv ON cv.contractor_id = c.id
+      JOIN contractors_vertical v ON v.id = cv.vertical_id
+      WHERE v.slug = ?
+        AND c.is_active = true
+        AND (c.trust_score = 0 OR c.trust_score IS NULL)
+      ORDER BY c.city, c.business_name, c.id
+      ${limit ? `LIMIT ${limit}` : ''}
+    `;
+    const result = await db.exec(query, [vertical]);
+    contractorIds = result.map(r => r.id);
   } else {
     // Get unaudited contractors from DB
     // Parse limit (support both --limit and --max as aliases)

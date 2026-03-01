@@ -1,0 +1,2415 @@
+{
+  "contractor_id": 6849,
+  "business_name": "Excel Construction Group",
+  "city": "McKinney",
+  "state": "TX",
+  "verticals": [
+    "roofing"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-15T21:10:09.887Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:46:22.677Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "ABS_JUDG": 1,
+            "REL_LIEN": 13,
+            "MECH_LIEN": 26
+          },
+          "active_liens": 27,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 5,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "EXCEL GROUP CONSTRUCTION SERVICES",
+                "grantor": "CHAPA SERVICE CO INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CHAPA SERVICE CO INC",
+                    "EXCEL GROUP CONSTRUCTION SERVICES",
+                    "LIEN",
+                    "12/15/2022",
+                    "2022000177106",
+                    "--/--/--",
+                    "Subdivision- Name: MCKINNEY AIRPORT CENTER ADDITION L1/A Lot: 1 Block: A, Reference - 2021 / 771"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2022-12-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2022000177106"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "EXCEL GROUP CONSTRUCTION",
+                "grantor": "REXEL USA INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "REXEL USA INC",
+                    "EXCEL GROUP CONSTRUCTION",
+                    "LIEN",
+                    "1/11/2023",
+                    "2023000003299",
+                    "--/--/--",
+                    "Subdivision- Name: MCKINNEY AIRPORT CENTER ADDITION L1/A Lot: 1 Block: A, Reference - 2021 / 771"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2023-01-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2023000003299"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "EXCEL GROUP CONSTRUCTION",
+                "grantor": "CONSOLIDATED ELECTRICAL DISTRIBUTORS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CONSOLIDATED ELECTRICAL DISTRIBUTORS INC",
+                    "EXCEL GROUP CONSTRUCTION",
+                    "LIEN",
+                    "12/8/2022",
+                    "2022000174161",
+                    "--/--/--",
+                    "Subdivision- Name: MCKINNEY AIRPORT CENTER ADDITION L1/A Lot: 1 Block: A, Reference - 2021 / 771"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2022-12-08",
+                "has_release": true,
+                "release_date": "2023-04-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "days_to_release": 116,
+                "instrument_number": "2022000174161"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "EXCEL GROUP CONSTRUCTION",
+                "grantor": "CONSOLIDATED ELECTRICAL DISTRIBUTORS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CONSOLIDATED ELECTRICAL DISTRIBUTORS INC",
+                    "EXCEL GROUP CONSTRUCTION",
+                    "RELEASE",
+                    "4/3/2023",
+                    "2023000034746",
+                    "--/--/--",
+                    "Subdivision- Name: MCKINNEY AIRPORT CENTER ADDITION L1/A Lot: 1 Block: A, Reference - 2021 / 771"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2023-04-03",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "2023000034746"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "THORNTON TUWANNA A",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "THORNTON TUWANNA A",
+                    "LIEN",
+                    "9/20/2024",
+                    "2024000116173",
+                    "--/--/--",
+                    "Subdivision- Name: PRINCETON MEADOWS WEST 1 Lot: 26 Block: D, Reference - O / 192"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2024-09-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2024000116173"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 10,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "EXCEL GROUP CONSTRUCTION SERVICES",
+                "grantor": "EASTER LARRY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EASTER LARRY",
+                    "EXCEL GROUP CONSTRUCTION SERVICES",
+                    "RELEASE",
+                    "4/2/2015",
+                    "201500080815",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: OLD TOWN Lot: 1R Block: D, Reference - - / 201200173120"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-04-02",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500080815"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "SIMPLEXGRINNELL LP",
+                "grantor": "EXCEL GROUP CONSTRUCTION SERVICE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL GROUP CONSTRUCTION SERVICE",
+                    "SIMPLEXGRINNELL LP",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "3/11/2014",
+                    "201400058674",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: ROLEX Lot: 1A Block: 7 CBLK: 362,, Reference - 2000124 / 3421"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2014-03-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "201400058674"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "EXCEL GROUP CONSTRUCTION",
+                "grantor": "KC ELECTRIC SYSTEMS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KC ELECTRIC SYSTEMS INC",
+                    "EXCEL GROUP CONSTRUCTION",
+                    "RELEASE",
+                    "4/2/2015",
+                    "201500080812",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: OLD TOWN Lot: 1R Block: D"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-04-02",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500080812"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "EXCEL GROUP CONSTRUCTION",
+                "grantor": "PENNINGTON CONCRETE INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PENNINGTON CONCRETE INC",
+                    "EXCEL GROUP CONSTRUCTION",
+                    "RELEASE",
+                    "4/2/2015",
+                    "201500080809",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: OLD TOWN Lot: 1R Block: D"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-04-02",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500080809"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "EXCEL GROUP CONSTRUCTION",
+                "grantor": "CHOICE REMODELING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CHOICE REMODELING",
+                    "EXCEL GROUP CONSTRUCTION",
+                    "RELEASE",
+                    "4/2/2015",
+                    "201500080811",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: OLD TOWN Lot: 1R Block: D"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-04-02",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500080811"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "EXCEL GROUP CONSTRUCTION",
+                "grantor": "CUSTOM FENCE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CUSTOM FENCE",
+                    "EXCEL GROUP CONSTRUCTION",
+                    "RELEASE",
+                    "4/2/2015",
+                    "201500080810",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: OLD TOWN Lot: 1R Block: D"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-04-02",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500080810"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "EXCEL GROUP CONSTRUCTION",
+                "grantor": "NATIONAL WHOLESALE SUPPLY INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "NATIONAL WHOLESALE SUPPLY INC",
+                    "EXCEL GROUP CONSTRUCTION",
+                    "RELEASE",
+                    "4/2/2015",
+                    "201500080813",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: OLD TOWN Lot: 1R Block: D"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-04-02",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500080813"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "EXCEL GROUP CONSTRUCTION",
+                "grantor": "HAMBLIN PLUMBING INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HAMBLIN PLUMBING INC",
+                    "EXCEL GROUP CONSTRUCTION",
+                    "RELEASE",
+                    "4/2/2015",
+                    "201500080814",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: OLD TOWN Lot: 1R Block: D"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-04-02",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500080814"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "EDITH ARC LLC",
+                "grantor": "EXCEL GROUP CONSTRUCTION SERVICES",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL GROUP CONSTRUCTION SERVICES",
+                    "EDITH ARC LLC",
+                    "RELEASE",
+                    "11/24/2015",
+                    "201500313369",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: JEFFERSON TILLEY SURVEY, Reference - 1474 / -"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-11-24",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500313369"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "EXCEL CONSTRUCTION GROUP",
+                "grantor": "DALLAS COUNTY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DALLAS COUNTY",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "ABSTRACT OF JUDGMENT",
+                    "10/9/2023",
+                    "202300205780",
+                    "--/--/--",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "ABSTRACT OF JUDGMENT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2023-10-09",
+                "document_type": "ABS_JUDG",
+                "recording_date": null,
+                "instrument_number": "202300205780"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 25,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WATKINS SUZANNE",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "WATKINS SUZANNE",
+                    "RELEASE",
+                    "4/12/2019",
+                    "D219075551",
+                    "--/--/--",
+                    "Subdivision: INTERURBAN, Lot: 28, Block: 21"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2019-04-12",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D219075551"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WHITE JUDITH",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "WHITE JUDITH",
+                    "RELEASE",
+                    "8/26/2025",
+                    "D225158332",
+                    "OPR/--/--",
+                    "N/A"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2025-08-26",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D225158332"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "FULLER PATRICIA A",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "FULLER PATRICIA A",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "12/3/2010",
+                    "D210298102",
+                    "--/--/--",
+                    "Subdivision: NORTH HILLS, Lot: 1R, Block: 14"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2010-12-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D210298102"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "SALLIS ANDREA",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "SALLIS ANDREA",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "10/24/2022",
+                    "D222255293",
+                    "OPR/--/--",
+                    "SAGINAW, Subdivision: PARKWEST, Lot: 3, Block: 19"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2022-10-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D222255293"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "ESPERANTO DEVELOPMENTS LLC",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "ESPERANTO DEVELOPMENTS LLC",
+                    "RELEASE",
+                    "12/22/2021",
+                    "D221373024",
+                    "OPR/--/--",
+                    "Subdivision: CITY VIEW, Lot: 3R9, Block: 2"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-12-22",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221373024"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CHAMPION RAMONA",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "CHAMPION RAMONA",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "6/26/2025",
+                    "D225116023",
+                    "OPR/--/--",
+                    "Subdivision: EDGEWOOD HEIGHTS, Lot: L, Block: 2"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2025-06-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D225116023"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "COFIELD ELLIS LAMAR",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "COFIELD ELLIS LAMAR",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "11/16/2022",
+                    "D222270713",
+                    "OPR/--/--",
+                    "N/A"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2022-11-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D222270713"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DON LEE FARMS",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "DON LEE FARMS",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "12/23/2015",
+                    "D215285877",
+                    "--/--/--",
+                    "MNFLD"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2015-12-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D215285877"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WHITE JUDITH",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "WHITE JUDITH",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "6/4/2025",
+                    "D225100942",
+                    "OPR/--/--",
+                    "HURST, Subdivision: BELLVUE, Lot: 17, Block: 8"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2025-06-04",
+                "has_release": true,
+                "release_date": "2025-08-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "days_to_release": 83,
+                "instrument_number": "D225100942"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "NSA MWANGA",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "NSA MWANGA",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "8/11/2023",
+                    "D223143877",
+                    "OPR/--/--",
+                    "Subdivision: BAR C RANCH, Lot: 6, Block: 11"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-08-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223143877"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CAMERON COUNTY HOUSING CORP",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "CAMERON COUNTY HOUSING CORP",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "6/26/2025",
+                    "D225116028",
+                    "OPR/--/--",
+                    "Subdivision: OAKWOOD ACRES ESTATES, Lot: 2, Block: 4"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2025-06-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D225116028"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BURNETTE-DAVIS MARIE",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "BURNETTE-DAVIS MARIE",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "11/16/2022",
+                    "D222270714",
+                    "OPR/--/--",
+                    "N/A"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2022-11-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D222270714"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "ENCLAVE AT PARKVIEW LP",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "ENCLAVE AT PARKVIEW LP",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "8/18/2021",
+                    "D221239000",
+                    "OPR/--/--",
+                    "Subdivision: ENCLAVE, Lot: 1, Block: 1"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-08-18",
+                "has_release": true,
+                "release_date": "2023-09-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "days_to_release": 749,
+                "instrument_number": "D221239000"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "LANDERS TERRY",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "LANDERS TERRY",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "12/16/2024",
+                    "D224224030",
+                    "OPR/--/--",
+                    "Subdivision: COTTONWOOD CREEK, Lot: 1, Block: 1"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2024-12-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D224224030"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "ESPERANTO DEVELOPMENTS LLC",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "ESPERANTO DEVELOPMENTS LLC",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "8/6/2021",
+                    "D221227235",
+                    "OPR/--/--",
+                    "FORT WORTH, Subdivision: CITY VIEW, Lot: 3R9, Block: 2"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-08-06",
+                "has_release": true,
+                "release_date": "2021-12-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "days_to_release": 138,
+                "instrument_number": "D221227235"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "EZE MOSES",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "EZE MOSES",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "4/14/2023",
+                    "D223062636",
+                    "OPR/--/--",
+                    ""
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-04-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223062636"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "RIVERSIDE KENNEL",
+                "grantor": "EXCEL CONSTRUCTION GROUP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "RIVERSIDE KENNEL",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "5/4/2016",
+                    "D216093873",
+                    "--/--/--",
+                    "FT W"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2016-05-04",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D216093873"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "EXCEL CONSTRUCTION GROUP",
+                "grantor": "KING MICHAEL WALTER",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KING MICHAEL WALTER",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "MECHANICS LIEN",
+                    "11/11/2021",
+                    "D221331217",
+                    "OPR/--/--",
+                    "NORTH RICHLAND HILLS, Subdivision: FOSSIL CREEK TRAILS, Lot: 6, Block: 5"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-11-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221331217"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "EXCEL CONSTRUCTION GROUP",
+                "grantor": "KING MICHAEL WALTER",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KING MICHAEL WALTER",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "MECHANICS LIEN",
+                    "11/30/2021",
+                    "D221348251",
+                    "OPR/--/--",
+                    "NORTH RICHLAND HILLS, Subdivision: FOSSIL CREEK TRAILS, Lot: 6, Block: 5"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-11-30",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221348251"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "EXCEL SURETY GROUP",
+                "grantor": "AFFORDABLE ROOFING INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "AFFORDABLE ROOFING INC",
+                    "EXCEL SURETY GROUP",
+                    "MECHANICS LIEN",
+                    "10/18/1988",
+                    "D188038350",
+                    "OPR/9409/1895",
+                    "N R H, Subdivision: TANDY CENT PL, Lot: 1, Block: 5"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1988-10-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D188038350"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "ENCLAVE AT PARKVIEW LP",
+                "grantor": "EXCEL CONSTRUCTION GROUP DOING BUSINESS AS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL CONSTRUCTION GROUP DOING BUSINESS AS",
+                    "ENCLAVE AT PARKVIEW LP",
+                    "RELEASE",
+                    "9/6/2023",
+                    "D223160699",
+                    "OPR/--/--",
+                    "FORT WORTH, Subdivision: ENCLAVE AT PARKVIEW, Lot: 1, Block: 1"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-09-06",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223160699"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "EXCEL CONSTRUCTION GROUP",
+                "grantor": "BARTON SURVEYING & LASER SCANNING LLC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BARTON SURVEYING & LASER SCANNING LLC",
+                    "EXCEL CONSTRUCTION GROUP",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "6/28/2023",
+                    "D223113534",
+                    "OPR/--/--",
+                    "HALTOM CITY, Subdivision: W WATT, Lot: 1, Block: 1"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-06-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223113534"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "EXCEL SURETY GROUP INC",
+                "grantor": "DAVIS CO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DAVIS CO",
+                    "EXCEL SURETY GROUP INC",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "5/1/1989",
+                    "D189069719",
+                    "OPR/9580/1216",
+                    "N RICH HLS, Subdivision: RICHLAND OAKS, Lot: 1, Block: 5"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1989-05-01",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D189069719"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "SCHENKER INC",
+                "grantor": "EXCEL GROUP CONSTRUCTION SERVICES DOING BUSINESS AS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EXCEL GROUP CONSTRUCTION SERVICES DOING BUSINESS AS",
+                    "SCHENKER INC",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "2/14/2023",
+                    "D223023787",
+                    "OPR/--/--",
+                    "Subdivision: PT H S HOPE SURVEY"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-02-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223023787"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "EXCEL CONSTRUCTION GROUP COMMERCIAL INC",
+                "grantor": "BROTHERS CABINETRY COMPANY LLC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BROTHERS CABINETRY COMPANY LLC",
+                    "EXCEL CONSTRUCTION GROUP COMMERCIAL INC",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "1/18/2022",
+                    "D222016000",
+                    "OPR/--/--",
+                    "HURST, Subdivision: CALLOWAY BUSINESS PARK, Lot: 1, Block: 1"
+                  ],
+                  "search_term": "Excel Construction Group",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2022-01-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D222016000"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "10 liens AGAINST contractor (pattern of non-payment to suppliers)",
+            "4 old lien(s) against contractor (>7 years ago)",
+            "9 lien(s) filed BY contractor (collecting payment - neutral)",
+            "3 liens took >90 days to resolve"
+          ],
+          "score": 3,
+          "max_score": 10,
+          "risk_level": "SEVERE",
+          "active_liens": 23,
+          "human_summary": "WARNING: 14 liens filed AGAINST Excel Construction Group (contractor didn't pay suppliers/subs)",
+          "liens_unclear": 0,
+          "liens_by_count": 9,
+          "resolved_liens": 4,
+          "liens_against_count": 14,
+          "liens_by_contractor": 9,
+          "total_against_amount": 0,
+          "liens_against_contractor": 14
+        },
+        "owner_name": null,
+        "search_term": "Excel Construction Group",
+        "searched_at": "2026-02-15T14:45:11.380628",
+        "total_records": 40
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:46:23.178Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "EXCEL CONSTRUCTION GROUP COMMERCIAL INC",
+        "taxpayer_number": "32074726285"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-15T14:46:23.181Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:30.557Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:36.866Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:44.966Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Excel Construction Group",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/grants/FY2026-27/FY26-27-OVAG-VCLG-App-Kit-Instruct.pdf",
+            "title": "[PDF] fy 2026-2027 grant application kit - Texas Attorney General",
+            "snippet": "The request for exception is located directly beneath the Personnel Position Narratives in the Excel Budget Workbook. • An Applicant that requests 80% or more ...",
+            "position": 1
+          },
+          {
+            "date": "Dec 22, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/NCAA%20DTPA%20Petition%20Filed.pdf",
+            "title": "[PDF] THE STATE OF TEXAS § § IN THE DISTRICT COURT Plaintiff, v ...",
+            "snippet": "During the 2024 season, male Blaire Fleming competed in NCAA women's volleyball for San Jose State University (“SJSU”), leading the team to win ...",
+            "position": 2
+          },
+          {
+            "date": "Jun 30, 2022",
+            "link": "https://texasattorneygeneral.gov/sites/default/files/images/executive-management/Challenge_Final%20Draft%20(with%20Rule).pdf",
+            "title": "[PDF] in the united states court of appeals - Texas Attorney General",
+            "snippet": "... Group on the. Social Cost of Greenhouse Gases (IWG), and discounted it at values recommended by the IWG for its main analysis. Those values ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/grants/FY2024-2025/SAPCS-State%20Application%20Kit%20FY%202024-2025%20.pdf",
+            "title": "[PDF] FY 2024 - 2025 SAPCS-State Application Kit Instructions",
+            "snippet": "This Application Kit provides the information and forms necessary to prepare an Application for funding through the OAG for the SAPCS-State Program.",
+            "position": 4
+          },
+          {
+            "date": "May 13, 2015",
+            "link": "https://www2.texasattorneygeneral.gov/victims/grants/fy15grantkit/FY2016-2017_OVAG-VCLG_Application_Kit_Instructions.pdf",
+            "title": "[PDF] Other Victim Assistance Grants (OVAG)",
+            "snippet": "The Application consists of an Excel workbook, “Statements Supporting Submission of the. Application to the OAG Crime Victim Services Division,” ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/grants/FY2026-27/FY26-27-SAPCS-PHHS-Block-App-Kit.pdf",
+            "title": "[PDF] Preventive Health and Health Services (PHHS) Block Grant FY 2026",
+            "snippet": "Microsoft Excel 97 or newer version as well as the Internet is required to create an on-line account, complete the Application, and apply for a grant. It is ...",
+            "position": 6
+          },
+          {
+            "date": "May 23, 2025",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/grants/FY2026-27/FY26-27-Sexual-Assault-Services-Program-Grant-App-Kit.pdf",
+            "title": "[PDF] Sexual Assault Services Program Grant FY 2026-2027 Grant ...",
+            "snippet": "The Budget Excel Workbook is located on the main Application page under “Task”. Download the budget template, complete the budget request, and ...",
+            "position": 7
+          },
+          {
+            "date": "Jun 1, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/general-oag/Agency-Strategic-Plan-FY25-29.pdf",
+            "title": "[PDF] Agency Strategic Plan Fiscal Years 2025-2029",
+            "snippet": "The division's team of experienced attorneys regularly litigate highly complex cases across any subject matter, both as plaintiffs and as ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/grants/FY2024-2025/Support%20Adoption%20Grant%20Application%20Kit%20FY%202024-2025%20.pdf",
+            "title": "[PDF] Support Adoption Grant Program FY 2024-2025 Grant Application ...",
+            "snippet": "Microsoft Excel 97 or newer version as well as the Internet is required to create an on-line account, complete the Application, and apply for a grant. It is ...",
+            "position": 9
+          },
+          {
+            "date": "Nov 10, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/22_1110%20CTCL%20CID%20final.pdf",
+            "title": "[PDF] CIVIL INVESTIGATIVE DEMAND - Attorney General",
+            "snippet": "Produce documents identifying all entities who received monetary disbursements from you organization for the relevant time period. In lieu of ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:44:47.072Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [
+          {
+            "link": "https://www.houzz.com/professionals/roofing-and-gutters/excel-construction-group-pfvwus-pf~884454009",
+            "title": "EXCEL CONSTRUCTION GROUP - Project Photos & Reviews - Houzz",
+            "snippet": "Excel Construction Group. \"We offer a life time warranty on workmanship. Business has been established for over 20 years and customers always come first."
+          }
+        ],
+        "result_count": 1,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:47.611Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Excel Construction Group\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.BUSCHMANJEREMYD.45827980.html",
+            "title": "EXCEL CONSTRUCTION GROUP LLC Reviews - ROSEVILLE, MN ...",
+            "snippet": "See reviews for EXCEL CONSTRUCTION GROUP LLC in ROSEVILLE, MN at 2233 Bossard Drive from Angi members or join today to leave your own review."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:42:18.573Z",
+      "data": {
+        "query": "site:yelp.com \"Excel Construction Group\" \"McKinney, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/excel-construction-group-mckinney-3",
+            "title": "EXCEL CONSTRUCTION GROUP - Updated February 2026 - Roofing",
+            "snippet": "More info about Excel Construction Group ; 1408 S Chestnut St. McKinney, TX 75069. Directions ; (469) 545-1500. Call Now ; Visit Website. https://www.excelcg.com ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=roofing&find_loc=Collin+County%2C+TX",
+            "title": "THE BEST 10 ROOFING in COLLIN COUNTY, TX - Yelp",
+            "rating": 4.7,
+            "snippet": "... Excel Construction Group, Titan Roofing of Texas, Pickle Roofing Solutions ... 1.8 mi•. This is a placeholder. 2045 FM546, McKinney, TX 75069. (817) 586 ...",
+            "position": 2,
+            "ratingCount": 746
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Construction+Companies&find_loc=Valley+View%2C+TX",
+            "title": "TOP 10 BEST Construction Companies near Valley View, TX - Yelp",
+            "rating": 4.6,
+            "snippet": "... Excel Construction Group, Monte Homes Unlimited, ARD Home Services, Mfg Pros ... McKinney, TX 75070. (833) 512-0216. On their website: remodel. I don't do ...",
+            "position": 3,
+            "ratingCount": 555
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Architects&find_loc=Watauga%2C+TX",
+            "title": "TOP 10 BEST Architects near Watauga, TX - Updated 2026 - Yelp",
+            "rating": 4.5,
+            "snippet": "Roofer Doll, who represented the Excel Construction Group, was just super in ... Mckinney, TX 75071. (214) 403-2063. From the business: We are a three ...",
+            "position": 4,
+            "ratingCount": 124
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Builders&find_loc=Watauga%2C+TX",
+            "title": "TOP 10 BEST Builders near Watauga, TX - Updated 2026 - Yelp",
+            "rating": 4.5,
+            "snippet": "... Excel Construction Group, Living Water Pool Services, Texas Wounded Veterans ... McKinney, TX 75072. (469) 937-0217. This company does proficient and ...",
+            "position": 5,
+            "ratingCount": 746
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Concrete+%26+Masonry&find_loc=Amarillo%2C+TX",
+            "title": "TOP 10 BEST Concrete & Masonry in Amarillo, TX - Yelp",
+            "rating": 4.3,
+            "snippet": "Excel Construction Group - Concrete & Masonry near me - Amarillo, Texas ... DT1 opened designTEN1 Interiors in historic Downtown McKinney Square in McKinney, TX.",
+            "position": 6,
+            "ratingCount": 90
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=residential+contractor&find_loc=Amarillo%2C+TX",
+            "title": "TOP 10 BEST Residential Contractor in Amarillo, TX - Updated 2026",
+            "rating": 4.2,
+            "snippet": "DT1 opened designTEN1 Interiors in historic Downtown McKinney Square in McKinney, TX ... Excel Construction Group - residential contractor near me - Amarillo, ...",
+            "position": 7,
+            "ratingCount": 110
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Barn+Builders&find_loc=Burleson%2C+TX",
+            "title": "TOP 10 BEST Barn Builders near Burleson, TX - Updated 2026 - Yelp",
+            "rating": 3.2,
+            "snippet": "3514 N Central Expy, Mckinney, TX 75071. (972) 562-3772. WARNING!!!! I ... Excel Construction Group - Barn Builders near me - Burleson, Texas. Excel ...",
+            "position": 8,
+            "ratingCount": 125
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Window+Screens&find_loc=Greenville%2C+TX",
+            "title": "TOP 10 BEST Window Screens in Greenville, TX - Yelp",
+            "rating": 4,
+            "snippet": "... Mckinney, TX 75071. (214) 774-1639. Established in 1957. Free estimates ... Excel Construction Group - Window Screens near me - Greenville, Texas. Excel ...",
+            "position": 9,
+            "ratingCount": 998
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=milgard&find_loc=Dallas%2C+TX",
+            "title": "TOP 10 BEST Milgard in Dallas, TX - Updated 2026 - Yelp",
+            "rating": 3.5,
+            "snippet": "... McKinney TX and other North Dallas areas. We provide an opportunity to home ... Excel Construction Group - Lewisville - milgard near me - Dallas, Texas ...",
+            "position": 10,
+            "ratingCount": 212
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:30.284Z",
+      "data": {
+        "name": "EXCEL CONSTRUCTION GROUP",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 545-1500",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "1408 Chestnut St, McKinney, TX 75069",
+        "reviews": [],
+        "website": "https://www.excelcg.com/texas/collin-county/mckinney/",
+        "maps_url": "https://www.google.com/maps/search/Excel%20Construction%20Group%20McKinney%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:44:46.278Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [
+          {
+            "link": "https://www.angi.com/companylist/us/tx/sherman/garage-builders.htm?page=7",
+            "title": "Top 10 Best Garage pros in Sherman, TX | Angi - Page 7 - Angie's List",
+            "snippet": "Excel Construction Group strives to not only meet, but to excel in ... Your # 1 Handyman Company serving Collin County TX, Plano TX, McKinney TX, Frisco TX, Allen ..."
+          },
+          {
+            "link": "https://www.angi.com/companylist/us/tx/cleburne/concrete-driveways.htm?page=6",
+            "title": "Top 10 Best Concrete driveway pros in Cleburne, TX | Angi - Page 6",
+            "snippet": "Your # 1 Handyman Company serving Collin County TX, Plano TX, McKinney TX, Frisco TX, Allen TX, Fairview TX ... Excel Construction Group strives to not only meet, ..."
+          },
+          {
+            "link": "https://www.angi.com/companylist/us/tx/arlington/concrete-driveways.htm?page=12",
+            "title": "Top 10 Best Concrete driveway pros in Arlington, TX | Angi - Page 12",
+            "snippet": "Your # 1 Handyman Company serving Collin County TX, Plano TX, McKinney TX, Frisco TX, Allen TX, Fairview TX ... Excel Construction Group strives to not only meet, ..."
+          }
+        ],
+        "result_count": 3,
+        "review_count": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:07.229Z",
+      "data": {
+        "name": "EXCEL CONSTRUCTION GROUP",
+        "found": true,
+        "rating": 4.9,
+        "source": "serpapi",
+        "address": "1408 Chestnut St, McKinney, TX 75069",
+        "data_id": "0x864c133237860d0f:0xe39bedfb09d5ad43",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "2 years ago",
+            "text": "My roofer Mike Parker was so helpful in getting my roof replaced. The insurance company that I have, have declined me in the past but this time with Mike's expertise he talked to the insurance company and was able to get a complete roof replacement for me. Once approved he came back to my home to discuss roof type, color and cost and replacement day. On the day of replacement he arrived at the same time the actual roofers arrived and he was there all day to answer any questions that I might have had while the job was happening. The clean up job was just as perfect as the whole process. And boom I have a new 30 year roof.  Thanks for Everything\nTammy Patrignani\nNorth Richland Hills TX",
+            "author": "Tammy Patrignani",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "On Friday, May 16, 2025, Excel conducted and completed a roof install on my residence. The crew showed up on time and completed the tear down and install in one day. They were supervised by Rick Walton, who stayed on-site the whole day. I was impressed with Rick's level of experience and his ability to answer any questions or concerns. Clean-up was good and thorough. I initially worked with Jessica Meador as part of a bid process which Excel ultimately won. All requested documents were provided in a timely manner. I am very pleased with the quality of work and would have no issue recommending them for roofing work.",
+            "author": "Dave Lyday",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Mike and Robin helped me through the whole process of getting my roof replaced. They were both very kind and professional at all times. Very detailed in explaining every phase from the inspection to the walk with insurance agent and then on the day of installation they were there making sure the new roof was installed correctly and with the correct color that was selected. I highly recommend Mike Parker and Robin Elmore. I have already recommended Excel Construction to others that need help with their roof replacement.",
+            "author": "Steve Eppler",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "They did a great job replacing our roof! They arrived as I was leaving for work in the morning, and the roof was complete and they were gone by the time I got back home that afternoon. They had cleaned up everything perfectly, I literally could not even tell that anyone had been there. And the roof looked great. Customer service has been wonderful as well. Highly recommend! 👏🏻",
+            "author": "Sara Cross",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "A Big Thank you to Ms. Jessica. My insurance company would not replace the entire roof which needed replacing. Thanks to Ms. Jessica who worked closely with me. I was able to replace my entire roof at a very reasonable price. Ms. Jessica's team arrived on time. Replaced my roof before the end of the day along with cleaning up and made it look as if no work had been to my home.  Thank yo Ms. Jessica for making everything go so smoothly. Anyone who ask do you know a roofer, I think of Jessica and her team at Excel.They will be returning soon to do the siding.\n\nBonnie Ramos of Grand Prairie, TX",
+            "author": "Bonnie Ramos",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Just finished having a new roof installed due to storm damage and worked with two wonderful women, Stacey and Jennifer who were the ultimate in professionalism and customer service! Couldn’t have asked for a better experience with a contractor! Loved that they worked with my insurance company and were hands on all the way to the finish line! 5 stars!",
+            "author": "laurapankey",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Stacy Strittmatter and her crew did a complete roof replacement for me.  She was very friendly, professional and told me exactly what needed to be done.  The work was checked and completed timely.  I recommend when asked about my roof replacement. Great Job.",
+            "author": "Vicky Lee",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Jessica and Stacy from Excel Construction are absolutely fantastic to work with! They took care of everything, and my new roof looks great 👍. They also handled the insurance claim for me!\nYou will not be disappointed in using their services.",
+            "author": "Randy Saleh",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": null,
+        "pages_fetched": 2,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "NO_REVIEWS",
+        "location_searched": "McKinney, TX",
+        "search_confidence": 0.7249999999999999,
+        "serper_fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:42:48.312Z",
+      "data": "Trustpilot Search Results Companies Excel Digital Group exceldigitalgroup.com • 8 reviews 2.2 Excel activity Group www.excelactivitygroup.co.uk • 83 reviews 4.6 Warehouse15 warehouse15.group • 3 reviews 3.4 Male Excel maleexcel.com • 3.9K reviews 4.5 JLM Construction Group jlmconstructiongrp.com • 18 reviews 4.6 Categories Construction Company The best companies in the category 'Construction Company' Construction & Manufacturing The best companies in the category 'Construction & Manufacturing' Construction Services The best companies in the category 'Construction Services' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (8930) Excel Digital Group exceldigitalgroup.com 2.2 8 reviews 505 N Lake Shore Dr. STE 217, Chicago, United States Excel activity Group www.excelactivitygroup.co.uk 4.6 83 reviews United Kingdom Warehouse15 warehouse15.group 3.4 3 reviews United States Male Excel maleexcel.com 4.5 3,862 reviews 809 Westmere Ave, Suite A, Charlotte, United States JLM Construction Group jlmconstructiongrp.com 4.6 18 reviews United States Maya Construction Group mayaconstructioninc.com 3.2 1 review 4408 North Milwaukee Avenue, Chicago, United States American Group Construction americangroupconstruction.com 3.1 4 reviews 11th Street , Union city , United States V9 business www.v9.group 2.9 3 reviews The Barn, 27 Hepworth Road, London, United Kingdom Jm2 group www.jm2.group 3.9 28 reviews Unit 1a Howard Road, Essex, United Kingdom Excel University excel-university.com 4.9 1,224 reviews 518 N Cliff Ave #3, Harrisburg, United States Previous 1 2 3 4 893 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Construction Company Construction & Manufacturing Construction & Manufacturing Construction & Manufacturing Construction Services Construction & Manufacturing Machine Construction Construction & Manufacturing Construction Equipment Supplier Construction & Manufacturing Construction Material Wholesaler Business Services are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:42:53.413Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:42:57.264Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:00.071Z",
+      "data": {
+        "query": "Excel Construction Group McKinney site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 15, 2019",
+            "link": "https://www.star-telegram.com/news/business/growth/article231450098.html",
+            "title": "Buyer beware! Texas does little to hold home builders accountable.",
+            "snippet": "David Cartisano is a project manager for Excel Construction, which specializes in storm damage repairs, and also owns his own construction ...",
+            "position": 1
+          },
+          {
+            "date": "Apr 4, 2014",
+            "link": "https://www.dallasnews.com/news/2014/04/05/how-a-dallas-billionaire-helped-plano-s-julius-randle-become-kentucky-s-biggest-star/",
+            "title": "How a Dallas billionaire helped Plano's Julius Randle become ...",
+            "snippet": "Troutt worked his way through Southern Illinois University by selling life insurance and years later founded Excel Communications, which he sold ...",
+            "position": 2
+          },
+          {
+            "date": "Jul 13, 2024",
+            "link": "https://www.dallasnews.com/business/technology/2024/07/13/hundreds-of-students-to-race-their-own-solar-powered-cars-on-nascar-track/",
+            "title": "Hundreds of students to race their own solar-powered cars on ...",
+            "snippet": "Teams collect donations and sponsorships to fund the construction of their car and their trip to Texas. Some teams estimate their cars are worth ...",
+            "position": 3
+          },
+          {
+            "date": "Feb 28, 2023",
+            "link": "https://www.dallasnews.com/opinion/letters-to-the-editor/2023/02/28/letters-to-the-editor-school-vouchers-homelessness-helping-teens-drivers-license/",
+            "title": "School vouchers, homelessness, helping teens, driver's license",
+            "snippet": "If vouchers are adopted by the Texas Legislature, Texas schoolchildren could be at risk of a substandard education caused by the bias of the ...",
+            "position": 4
+          },
+          {
+            "date": "Oct 2, 2025",
+            "link": "https://www.dallasnews.com/high-school-sports/football/2025/10/02/dallas-north-texas-high-school-football-booster-clubs/",
+            "title": "How much do booster clubs in North Texas spend on football, and ...",
+            "snippet": "The South Oak Cliff booster club projects it will raise about $10,000 this year, the same as 2024. The group has to stretch every dollar. After ...",
+            "position": 5
+          },
+          {
+            "date": "Nov 20, 2022",
+            "link": "https://www.dallasnews.com/business/top-100/2022/11/20/top-100-places-to-work-leaders-share-moments-that-brightened-a-somber-2022/",
+            "title": "Top 100 Places to Work leaders share moments that brightened 2022",
+            "snippet": "In the spirit of Thanksgiving, our Top 100 leaders shared the heartwarming or funny moments that made 2022 more bearable.",
+            "position": 6
+          },
+          {
+            "date": "Aug 8, 2012",
+            "link": "https://www.dallasnews.com/sports/other-sports/2012/08/08/flashback-jason-richardson-is-our-2004-all-area-track-athlete-of-year/",
+            "title": "Flashback: Jason Richardson is our 2004 All-Area track athlete of year",
+            "snippet": "Achievements: Richardson won Class 5A state championships in the 110 (13.46) and 300 hurdles (36.05). Both times were the fastest high school ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.dallasnews.com/opinion/commentary/2017/07/12/why-the-portion-of-americans-with-jobs-keeps-shrinking/",
+            "title": "Why the portion of Americans with jobs keeps shrinking",
+            "snippet": "The mild recession of 1969-70 produced a drop in the employment rate of this group, from 95 percent to 92.5 percent, and there was no rebound. The 1973-74 ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.dallasnews.com/sitemap/2017/january/20/",
+            "title": "A sitemap for every Dallas Morning News article for the year 2017.",
+            "snippet": "Sitemap for Dallas Morning News articles for the year 2017.",
+            "position": 9
+          },
+          {
+            "date": "Feb 25, 2022",
+            "link": "https://www.dallasnews.com/business/real-estate/2022/02/25/plano-apartment-community-goes-to-arizona-investor/",
+            "title": "Plano apartment community goes to Arizona investor",
+            "snippet": "Western Wealth Capital purchased the Bel Air K Station Apartment Homes in Plano. Located on K Avenue in Plano's historic downtown district.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:44:51.562Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Excel Construction Group\" McKinney",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:10.802Z",
+      "data": "Excel Construction Group McKinney review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 1:43 1:43 Now playing Excel Construction Group Lewisville Texas roofing Zack Towne Zack Towne • • 18 views 2 years ago Zack Towne Zack Towne Out on a build with Stephen Zertuche out of Lewisville Texas. Contact us directly for FREE roof evaluations!! We specialize in ... Out on a build with Stephen Zertuche out of Lewisville Texas. Contact us directly for FREE roof evaluations!! We specialize in ... From the video description 1:47 1:47 Now playing VIDEO: Borger veteran to receive a free roof Installed by Excel Construction Group KFDANewsChannel10 KFDANewsChannel10 • • 6 views 1 year ago KFDANewsChannel10 KFDANewsChannel10 Excel Construction is providing a new roof for a U.S. Navy veteran as part of the Owens Corning Roof Development Project. Excel Construction is providing a new roof for a U.S. Navy veteran as part of the Owens Corning Roof Development Project. From the video description CC 1:01 1:01 Now playing Excel Construction Group - HIRING! Excel Construction Group Excel Construction Group • • 326 views 5 years ago Excel Construction Group Excel Construction Group Lorie Thomas explaining some hiring key points! Lorie Thomas explaining some hiring key points! From the video description 4K 4:23 4:23 Now playing How and When To Sue A Contractor | Riverside Construction Attorney Mark Mellor Mark Mellor • • 29K views 14 years ago Mark Mellor Mark Mellor http://www.mellorlawfirm.com. http://www.mellorlawfirm.com. From the video description 4:04 4:04 Now playing Colorado family says contractor failed to finish construction project, filed for bankruptcy CBS Colorado CBS Colorado • • 5.6K views 8 months ago CBS Colorado CBS Colorado One Colorado family's hopes turned into a nightmare after they said a construction company disappeared mid-project then filed for ... One Colorado family's hopes turned into a nightmare after they said a construction company disappeared mid-project then filed for ... From the video description CC 6:24 6:24 Now playing Excel Construction Group KC Phoenix SEO KC Phoenix SEO • • 3 views 4 years ago KC Phoenix SEO KC Phoenix SEO ... shows Excel Construction Group that \"Denver Roofing\" is actually very easy to rank for! https://www.kcphoenixseo.com​​​​, ... ... shows Excel Construction Group that \"Denver Roofing\" is actually very easy to rank for! https://www.kcphoenixseo.com​​​​, ... From the video description 10:45 10:45 Now playing NEVER Break Down A Bid For A Customer - Here's Why Successful Contractor Successful Contractor • • 555K views 2 years ago Successful Contractor Successful Contractor Should you break down your bid for the customer when requested? What's the difference between a bid and an estimate. I'll show ... Should you break down your bid for the customer when requested? What's the difference between a bid and an estimate. I'll show ... From the video description 4K Summary Learn why a lump-sum bid is usually best for contracting work. This video explores the potential pitfalls of itemized bids, offering insights based on 30 years of experience. Discover strategies to handle customer requests for breakdowns and maintain profitability. AI-generated video summary Quality and accuracy may vary. Summary Learn why a lump-sum bid is usually best for contracting work. This video explores the potential pitfalls of itemized bids, offering insights based on 30 years of experience. Discover strategies to handle customer requests for breakdowns and maintain profitability. SHORTS SHORTS Now playing HOW MUCH SHOULD GENERAL CONTRACTORS CHARGE? TAMPA GENERAL CONTRACTOR ANSWERS! Home Love Construction Home Love Construction • • 26K views 3 years ago Home Love Construction Home Love Construction Click here to set up a FREE same-day estimate: https://homelove. construction /get-a-quote Click here to have Home Love ... Click here to set up a FREE same-day estimate: https://homelove. construction /get-a-quote Click here to have Home Love ... From the video description 2:45 2:45 Now playing Construction complaints KX News KX News • • 69 views 1 year ago KX News KX News Construction complaints. Construction complaints. From the video description CC 14:59 14:59 Now playing CONTRACTOR NIGHTMARE: How I Sued My Contractor, Froze His Bank Account, AND GOT NOTHING!! Zero To Awesome Zero To Awesome • • 3.7K views 2 years ago Zero To Awesome Zero To Awesome Not gonna lie, this isn't a happy story. Stay away from M.H.I. My Home Improvement. Not gonna lie, this isn't a happy story. Stay away from M.H.I. My Home Improvement. From the video description 2:45 2:45 Now playing Fiber company vows to cover expenses after construction crews damage Conroe man's property KHOU 11 KHOU 11 • • 1.8K views 5 months ago KHOU 11 KHOU 11 A homeowner said construction crews left him with thousands of dollars in property damage after a gas line was struck outside his ... A homeowner said construction crews left him with thousands of dollars in property damage after a gas line was struck outside his ... From the video description CC 26:49 26:49 Now playing How to Estimate Construction Projects as a General Contractor *Excel Spreadsheet* Jesse Lane Jesse Lane • • 417K views 6 years ago Jesse Lane Jesse Lane Learn More About Structur Software Here: https://www.structur.com/ ▻ GET THE EXCEL FILE HERE: ... Learn More About Structur Software Here: https://www.structur.com/ ▻ GET THE EXCEL FILE HERE: ... From the video description 9 moments Secret to Being a Good General Contractor | Hard Costs versus the Intangibles | Subcontractor Bids | Internal Spreadsheet | General Conditions | Total Project Price | Total Project Direct Costs | Add Project Management and Superintendent | Division Markup Amounts 9 auto-generated moments in this video 9 moments Secret to Being a Good General Contractor Secret to Being a Good General Contractor 1:04 Secret to Being a Good General Contractor 1:04 Hard Costs versus the Intangibles Hard Costs versus the Intangibles 4:30 Hard Costs versus the Intangibles 4:30 Subcontractor Bids Subcontractor Bids 5:30 Subcontractor Bids 5:30 Internal Spreadsheet Internal Spreadsheet 6:02 Internal Spreadsheet 6:02 General Conditions General Conditions 9:55 General Conditions 9:55 Total Project Price Total Project Price 18:45 Total Project Price 18:45 Total Project Direct Costs Total Project Direct Costs 19:24 Total Project Direct Costs 19:24 People also watched 11:59 11:59 Now playing Couple Sued for Giving Bad Review to Roofers Steve Lehto Steve Lehto • • 87K views 4 years ago Steve Lehto Steve Lehto The suit seeks $112000 in damages - for two reviews. http://www.lehtoslaw.com. The suit seeks $112000 in damages - for two reviews. http://www.lehtoslaw.com. From the video description 4 chapters Intro | Couple Sued | Story | The Damages 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Couple Sued Couple Sued 0:26 Couple Sued 0:26 Story Story 4:22 Story 4:22 The Damages The Damages 9:02 The Damages 9:02 22:49 22:49 Now playing Is this Building Inspector For Real? Stanley \"Dirt Monkey\" Genadek Stanley \"Dirt Monkey\" Genadek • • 3M views 4 years ago Stanley \"Dirt Monkey\" Genadek Stanley \"Dirt Monkey\" Genadek 5 Years later a Building Inspector wants me to dig up a yard to prove how we built a retaining wall??? 5 Years later a Building Inspector wants me to dig up a yard to prove how we built a retaining wall??? From the video description 4K 4:40 4:40 Now playing Homeowner stuck with $18K+ repair bill after damage done by company she did not hire KPRC 2 Click2Houston KPRC 2 Click2Houston • • 3.7M views 2 years ago KPRC 2 Click2Houston KPRC 2 Click2Houston What would you do if you were suddenly stuck with a huge bill, all because of someone else's mistake? It could happen to anyone ... What would you do if you were suddenly stuck with a huge bill, all because of someone else's mistake? It could happen to anyone ... From the video description CC 16:57 16:57 Now playing How to Price Handyman and Contractor Jobs Handy Dandy Dalton Handy Dandy Dalton • • 217K views 7 years ago Handy Dandy Dalton Handy Dandy Dalton Basic overview of the steps i take to price simple jobs. Basic overview of the steps i take to price simple jobs. From the video description 4 chapters Intro | Research | Visualization | Hourly 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Research Research 3:20 Research 3:20 Visualization Visualization 7:50 Visualization 7:50 Hourly Hourly 14:05 Hourly 14:05 + 6 more 1:07 1:07 Now playing Top Roofers McKinney TX SLM General Contractors | 5 Star Roofers SLM General Contractors & Roofing SLM General Contractors & Roofing • • 29 views 6 years ago SLM General Contractors & Roofing SLM General Contractors & Roofing http://SLMGC.com Call 469-844-2300 for home remodeling contractors in McKinney , TX! Painting, plumbing, electrical repairs, ... http://SLMGC.com Call 469-844-2300 for home remodeling contractors in McKinney , TX! Painting, plumbing, electrical repairs, ... From the video description 13:40 13:40 Now playing The WORST contractor SCAM I've seen! Stanley \"Dirt Monkey\" Genadek Stanley \"Dirt Monkey\" Genadek • • 3M views 3 years ago Stanley \"Dirt Monkey\" Genadek Stanley \"Dirt Monkey\" Genadek The General Contractor (GC) scammed the customer, The Excavator, the Concrete Contractor, the lumber yard and BANK all at ... The General Contractor (GC) scammed the customer, The Excavator, the Concrete Contractor, the lumber yard and BANK all at ... From the video description 4K 3:40 3:40 Now playing Asphalt Roof Cost in 2026. What Will You Actually Pay? Excel Roofing Excel Roofing • • 58 views 3 days ago Excel Roofing Excel Roofing If you're wondering how much a new asphalt roof costs in 2026 and whether it's the right choice for your home, this video breaks it ... If you're wondering how much a new asphalt roof costs in 2026 and whether it's the right choice for your home, this video breaks it ... From the video description New 4K 7 chapters Asphalt Roof Cost 2026 Explained | Why Homeowners Choose Asphalt | What You’ll Actually Pay | The Downsides Nobody Mentions | What Drives Your Final Price | How Contractors Price Bids | Is Asphalt Right for You? 7 chapters in this video 7 chapters Asphalt Roof Cost 2026 Explained Asphalt Roof Cost 2026 Explained 0:00 Asphalt Roof Cost 2026 Explained 0:00 Why Homeowners Choose Asphalt Why Homeowners Choose Asphalt 0:40 Why Homeowners Choose Asphalt 0:40 What You’ll Actually Pay What You’ll Actually Pay 1:08 What You’ll Actually Pay 1:08 The Downsides Nobody Mentions The Downsides Nobody Mentions 1:24 The Downsides Nobody Mentions 1:24 What Drives Your Final Price What Drives Your Final Price 1:48 What Drives Your Final Price 1:48 How Contractors Price Bids How Contractors Price Bids 2:37 How Contractors Price Bids 2:37 Is Asphalt Right for You? Is Asphalt Right for You? 3:19 Is Asphalt Right for You? 3:19 0:30 0:30 Now playing Excel Roofing: Committed to MD Homeowners Since 1998! Bold Velocities Bold Velocities • • 243 views 2 years ago Bold Velocities Bold Velocities It's not just about the end result; it's about the experience. Excel Roofing believes your home deserves excellence. From start to ... It's not just about the end result; it's about the experience. Excel Roofing believes your home deserves excellence. From start to ... From the video description 2:34 2:34 Now playing How do I prove four years of experience in construction? - Contractor License School Contractor License School Contractor License School • • 38K views 4 years ago Contractor License School Contractor License School How do I prove that I have four years of experience in construction ? How do I verify to the State of California (CSLB) my 4 years of ... How do I prove that I have four years of experience in construction ? How do I verify to the State of California (CSLB) my 4 years of ... From the video description 6:55 6:55 Now playing Xcel Roofing Investigation Update: where did the money go? Roofing Insights Roofing Insights • • 3K views 4 years ago Roofing Insights Roofing Insights Xcel Roofing Investigation Update: where did the money go? If you have story for Dmitry to cover, submit it here: ... Xcel Roofing Investigation Update: where did the money go? If you have story for Dmitry to cover, submit it here: ... From the video description 6 chapters Intro | Xcel Roofing is under investigation | Did they actually have 5 locations? | 100+ iPads missing | McCoy Roofing is willing to do Xcel's unfinished work | Don't look at anyone bragging about their business size 6 chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Xcel Roofing is under investigation Xcel Roofing is under investigation 0:27 Xcel Roofing is under investigation 0:27 Did they actually have 5 locations? Did they actually have 5 locations? 1:05 Did they actually have 5 locations? 1:05 100+ iPads missing 100+ iPads missing 1:57 100+ iPads missing 1:57 McCoy Roofing is willing to do Xcel's unfinished work McCoy Roofing is willing to do Xcel's unfinished work 3:20 McCoy Roofing is willing to do Xcel's unfinished work 3:20 Don't look at anyone bragging about their business size Don't look at anyone bragging about their business size 4:49 Don't look at anyone bragging about their business size 4:49 Excel Roofing & Contracting Excel Roofing & Contracting @excelroofingcontracting-ke2jc • Subscribe 3:02 3:02 Now playing Does Xcel have to pay businesses that lose revenue due to power outages? Next 9NEWS Next 9NEWS • • 194 views 1 year ago Next 9NEWS Next 9NEWS Dakota Soifer, the chef and owner of Cafe Aion on The Hill in Boulder, said they have had a series of extended power outages ... Dakota Soifer, the chef and owner of Cafe Aion on The Hill in Boulder, said they have had a series of extended power outages ... From the video description CC Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:11.948Z",
+      "data": {
+        "query": "site:nextdoor.com Excel Construction Group McKinney",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/excel-construction-group-mckinney-tx-1/",
+            "title": "Excel Construction Group - McKinney, TX - Nextdoor",
+            "snippet": "Performance Roofing just did our gutters and we love them. Great job and reasonable price. Ask for Rachael Batscha-Stanley, 940.218.0188 direct or 972.30.8042 ...",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/ask-neighbors/mckinney--tx/we-damaged-the-wall-little-bit-when-we-moved-a-furniture--H8FsSnLknMHn/",
+            "title": "We damaged the wall little bit when we moved a furniture ... - Nextdoor",
+            "snippet": "We damaged the wall little bit when we moved a furniture. Door knob was pushed against the wall and made a small hole. How much it will cost to fix it ?",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/pages/airview-ac-whitewright-tx/",
+            "title": "Airview AC - Van Alstyne, TX - Nextdoor",
+            "snippet": "Their focus on building a skilled, reliable team ensures every project—from air conditioning repair to full AC installation—is completed with precision and care ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:43:26.614Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Excel%20Construction%20Group&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:46.030Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller of Public Accounts",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Comptroller.Texas.Gov is the website for the Texas Comptroller of Public Accounts.",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://www.sos.state.tx.us/search.shtml?dropXSL=&pr=default&prox=page&rorder=500&rprox=500&rdfreq=500&rwfreq=500&rlead=500&sufs=0&order=r&rdepth=0&query=CERTIFICATE+OF+ACCOUNT+STATUS",
+            "title": "Current Search Results - the Texas Secretary of State",
+            "snippet": "If you've been asked to obtain a “certificate of good standing,” the first step is to determine what type of certificate is being requested.",
+            "position": 4,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Franchise Search Results. 心. Franchise Tax Account Status. As of 09/13/2021 14:10:44 ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 7
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 8
+          },
+          {
+            "link": "https://comptroller.texas.gov/taxes/franchise/coas-instructions.php",
+            "title": "Franchise Tax Account Status",
+            "snippet": "Use our online search to find a taxpayer's Franchise Tax Account Status. The \"Franchise Tax Account Status,\" previously referred to as \"Good Standing,\" ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:43:47.366Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Excel Construction Group",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:48.396Z",
+      "data": {
+        "query": "site:dallascounty.org Excel Construction Group civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 22, 2026",
+            "link": "https://dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet%202026-012-7097.pdf",
+            "title": "[PDF] Notice - Dallas County",
+            "snippet": "Event Type. Prebid Conference. Attendance. Recommended. Event date. 02/04/2026 10:00 AM CST. Location. Microsoft Teams. Event Note.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/facilities-mgmt/strategic-plan/2017/4th_QuarterlyUpdate_100117.pdf",
+            "title": "Facilities Management - Dallas County",
+            "snippet": "Goal 1: Become a Goal-Oriented Team. Strategy 1.5: Promote Integrity and Trust. ✓Continuation of the “peer to peer” meeting group with supervisors.",
+            "position": 2
+          },
+          {
+            "date": "Nov 12, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2015/2015-11.pdf",
+            "title": "[PDF] 2015-11.pdf - Dallas County",
+            "snippet": "The Dallas County BH Work. Group is committed to a data driven decision-making process with a focus on data supported outcomes. ATTENDEES ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/cares-act/arp/Dallas-County-2025-Recovery-Plan-Performance-Report-V2.pdf",
+            "title": "[PDF] 2025 arpa slfrf recovery plan | table of contents - Dallas County",
+            "snippet": "Uses of Funding. Dallas County engaged in various public health, negative economic impacts, and public sector capacity projects.",
+            "position": 4
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "[PDF] A 21st Century Mosaic - Dallas County",
+            "snippet": "Voters reaffirmed their support in. November 2005, overwhelmingly approving a $23.8 million bond referendum that would fund construction and initial operation ...",
+            "position": 5
+          },
+          {
+            "date": "Jul 26, 2006",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/lepc/LEPCHandbook.pdf",
+            "title": "[PDF] Local Emergency Planning Committee (LEPC) - Hunt County",
+            "snippet": "The document is also available online in PDF format, as an Excel spreadsheet, and as a web- based searchable database. ... Local Environmental ...",
+            "position": 6
+          },
+          {
+            "date": "May 7, 2019",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/bidtabs/2018/BidTab/2018-048-6741.E-CommerceSolutions.pdf",
+            "title": "[PDF] COURT ORDER 2019-0458 - Dallas County",
+            "snippet": "LEGAL IMPACT: Dallas County District Attorney's Office-Civil Division has reviewed all documentation and has approved the contract to form.",
+            "position": 7
+          },
+          {
+            "date": "Aug 1, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/cares-act/arp/2024-Dallas-County-ARPA-SLFRF-Recovery-Plan.pdf",
+            "title": "[PDF] DALLAS COUNTY TEXAS",
+            "snippet": "The team will continue to lead and provide expertise on evidence-based practices for other affordable housing projects being pursued by Dallas ...",
+            "position": 8
+          },
+          {
+            "date": "Oct 1, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/research-statistics/annual-reports/AR-2023-web-version-20241001.pdf",
+            "title": "[PDF] Annual Report 2023 | Dallas County Juvenile Department",
+            "snippet": "The initial phase of deployment involved creating six facility implementation groups, each composed of six individuals from diverse backgrounds ...",
+            "position": 9
+          },
+          {
+            "date": "Feb 13, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2020/2020-02.pdf",
+            "title": "[PDF] Dallas County Behavioral Health Leadership Team Thursday ...",
+            "snippet": "Lynn Richardson stated that attorneys manually enter their daily data into excel spreadsheets and many attorneys have caseloads of 100+ clients.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:49.523Z",
+      "data": {
+        "query": "site:collincountytx.gov Excel Construction Group",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Apr 14, 2023",
+            "link": "https://eagenda.collincountytx.gov/docs/2023/CC/20230410_2841/53832_Solicitation%20LEMHWA.pdf",
+            "title": "[PDF] OMB No. 1103-0098 Expires 4/30/2024 U.S. Department of Justice ...",
+            "snippet": "Budget Narrative.” Recommended file formats are PDF, Microsoft Word, and Microsoft Excel. The system may reject applications with other formats.",
+            "position": 1
+          },
+          {
+            "date": "Jul 29, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250728_3116/58382_Solicitation%20Packet.pdf",
+            "title": "[PDF] Collin County, TX REQUEST FOR PROPOSAL 2025-082 ASSET ...",
+            "snippet": "The County Facilities department utilizes an Excel spreadsheet for building asset inventory such as exterior facades, flooring, ceiling grids, ...",
+            "position": 2
+          },
+          {
+            "date": "Mar 31, 2023",
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/Collin%20County%202022%20Annual%20Report%2003-31-23.pdf",
+            "title": "[PDF] Collin County TPDES Phase 2 MS4 SWMP",
+            "snippet": "Brochures that educate contractors and builders on construction SWPPPs and inform them of TCEQ construction storm water requirements are ...",
+            "position": 3
+          },
+          {
+            "date": "Mar 18, 2013",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200615_2490/48549_OCFO_2014Financial_Guide.pdf",
+            "title": "[PDF] OCFO 2014 Financial Guide - Office of Justice Programs",
+            "snippet": "□ Excel spreadsheet. A Microsoft Excel spreadsheet can be downloaded, filled in, and uploaded to FederalReporting. gov. Be sure to use the ...",
+            "position": 4
+          },
+          {
+            "date": "Nov 4, 2024",
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/Collin%20County%20Floodplain%20Regulations_11-4-2024.pdf",
+            "title": "[PDF] COLLIN COUNTY FLOODPLAIN MANAGEMENT REGULATIONS",
+            "snippet": "DEVELOPMENT – all land modification activity, including the grading or construction of buildings, roadways, parking lots and/or other impervious ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 24, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/CC/20190923_2389/47257_RFP%20Packet%20-3.pdf",
+            "title": "[PDF] Land and Vitals Record Management System Contact Information",
+            "snippet": "Contractor shall perform all tasks necessary to develop and install all operating systems and user databases including data conversion from the ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/PerrymanStudy.pdf",
+            "title": "[PDF] Potential Economic Effects of Converting Portions of US 380 in ...",
+            "snippet": "The Perryman Group (TPG) was recently asked to estimate the economic and fiscal effects of converting US 380 in Collin County from the Collin-Denton County ...",
+            "position": 7
+          },
+          {
+            "date": "Apr 6, 2023",
+            "link": "https://eagenda.collincountytx.gov/docs/2023/CC/20230306_2831/53601_Binder1.pdf",
+            "title": "[PDF] 2023-168 Bonds for Elected Officials Contact Information",
+            "snippet": "The Excel spreadsheet is set up to calculate the totals, so please enter ... fund or risk retention group created by one or more governmental.",
+            "position": 8
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2011/CC/20110411_1167/33460_CCAC-WWTP-North%20TX%20Contracting.pdf",
+            "title": "[PDF] North Texas Contracting, Inc. - Collin County",
+            "snippet": "Over 2 million in contracts, Hunt Construction Group, Jim Monroe, 972-298-3334. ... 98, TerraModel, Microsoft Word, Excel 97, WordPerfect & Microsoft Works, C++, ...",
+            "position": 9
+          },
+          {
+            "date": "Jul 24, 2023",
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Plano.pdf",
+            "title": "[PDF] city of plano - parks, recreation, trails & open space - Collin County",
+            "snippet": "Special Interest Groups: Special interest groups were also invited to a focus group meeting during the visioning week in June. 2017. When ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:51.190Z",
+      "data": {
+        "query": "site:dentoncounty.gov Excel Construction Group",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/279/June-2012-Vendor-Check-Register-PDF",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "EXCEL ANESTHESIA PA. $1,001.03. 20120612. EXPRESS PEST CONTROL. $3,420.00 ... LANE CONSTRUCTION CORP/SUNMOUN $150,673.08. 20120626. LANE CONSTRUCTION CORP ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dentoncounty.gov/",
+            "title": "Denton County, TX | Official Website",
+            "snippet": "We are committed to the promotion of high-quality development in all parts of the county and to an ongoing improvement in the quality of life for our citizens.",
+            "position": 2
+          },
+          {
+            "date": "Apr 1, 2013",
+            "link": "https://www.dentoncounty.gov/378/Historic-Iron-Bridges",
+            "title": "Historic Iron Bridges | Denton County, TX",
+            "snippet": "The county had placed about 30 iron and steel bridges over waterways once spanned only by wooden bridges or by none at all.",
+            "position": 3
+          },
+          {
+            "link": "https://www.dentoncounty.gov/1537/County-News",
+            "title": "News Flash • - Denton County",
+            "snippet": "Last week, the Denton County Commissioners Court approved a $2,058,939 bid to Ed Bell Construction Company. Construction of the project is expected to begin ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.dentoncounty.gov/CivicAlerts.aspx",
+            "title": "News Flash • Denton County, TX • CivicEngage",
+            "snippet": "Construction of the project is expected to begin in February and take about 100 days to complete. The FM407 at I-35W Micro Breakout Project consists of ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.dentoncounty.gov/352/Denton-County-History",
+            "title": "Denton County History",
+            "snippet": "Denton County was established by the Texas legislature on April 11, 1846, shortly after Texas abandoned its dream of being a Republic and joined the United ...",
+            "position": 6
+          },
+          {
+            "date": "Apr 26, 2021",
+            "link": "https://www.dentoncounty.gov/CivicAlerts.asp?AID=551&ARC=924",
+            "title": "News Flash • Denton County, TX • CivicEngage",
+            "snippet": "Construction began in January 2019 for a total project cost of $55.9 million. Denton County contributed $2.64 million for the project. This ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/278/July-2012-Vendor-Check-Register-PDF",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "EXCEL ANESTHESIA PA. $9,424.50. 20120717. EXPRESS PEST CONTROL. $360.00 ... OFFICE OF NAK FAMILY LAW GROUP. $11,085.91. 20120717. OFFICE/ATTORNEY GENERAL ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.dentoncounty.gov/1479/Basic-Safety-Tips",
+            "title": "Basic Safety Tips | Denton County, TX",
+            "snippet": "It's best to work in groups of 3 to 4 people. Group sizes should not exceed 25 participants because this could distract the driving public. Carpool to the ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.dentoncounty.gov/1852/Voluntary-Organizations-Active-in-Disast",
+            "title": "VOAD Member Directory - Denton County, TX",
+            "snippet": "VOAD is a network of nonprofits, faith-based groups, and community organizations that work together to provide crucial assistance during and after disasters.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:43:56.681Z",
+      "data": {
+        "name": "Excel Construction Group",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(469) 545-1500",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/fort-worth/profile/roofing-contractors/excel-construction-group-0825-164659304",
+        "review_count": null,
+        "founding_date": "04/17/1996",
+        "complaint_count": null,
+        "accredited_since": "9/5/2014",
+        "years_in_business": 29,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:30.277Z",
+      "data": {
+        "name": "EXCEL CONSTRUCTION GROUP",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 545-1500",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "1408 Chestnut St, McKinney, TX 75069",
+        "reviews": [],
+        "website": "https://www.excelcg.com/texas/collin-county/mckinney/",
+        "maps_url": "https://www.google.com/maps/search/Excel%20Construction%20Group%20McKinney%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:34.145Z",
+      "data": {
+        "email": "info@excelcg.com",
+        "error": null,
+        "source": "contact_page"
+      }
+    },
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:40.194Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": true,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "https://www.excelcg.com/texas/collin-county/mckinney/",
+            "type": "explicit",
+            "snippet": "T. SINCE '1996 Toggle Navigation Home About Contact Team Divisions License Info Warranty Info News Gallery Careers Reviews Deals & Offers Terms and Conditions Privacy p"
+          },
+          {
+            "url": "https://www.excelcg.com/texas/collin-county/mckinney/",
+            "type": "explicit",
+            "snippet": "DAY CALL TODAY Toggle Navigation Home About Contact Team Divisions License Info Warranty Info News Gallery Careers Reviews Deals & Offers Terms and Conditions Privacy p"
+          },
+          {
+            "url": "https://www.excelcg.com/texas/collin-county/mckinney/",
+            "type": "explicit",
+            "snippet": "sparent pricing and complete project breakdown Step 3: Professional Execution & Guarantee As scheduled Complete roofing installation, quality control checks, thorough si"
+          },
+          {
+            "url": "https://www.excelcg.com/texas/collin-county/mckinney/",
+            "type": "workmanship",
+            "snippet": "protect your home with premium materials, transparent pricing, and our lifetime workmanship warranty—call now to secure your roof’s future! Get a Free Quote Call Us Get a"
+          },
+          {
+            "url": "https://www.excelcg.com/texas/collin-county/mckinney/",
+            "type": "workmanship",
+            "snippet": "s, transparent pricing up front, and backs every installation with our lifetime workmanship warranty—because your roof should be done right the first time. 20+ Years in Bu"
+          },
+          {
+            "url": "https://www.excelcg.com/texas/collin-county/mckinney/",
+            "type": "workmanship",
+            "snippet": "eam has transformed homes throughout McKinney with quality materials and expert craftsmanship. Each project showcases our commitment to durability and aesthetic appeal—click"
+          },
+          {
+            "url": "https://www.excelcg.com/texas/collin-county/mckinney/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "in 48 hours—our trained eyes catch damage homeowners often miss. Remember, most insurance claims must be filed within one year of the storm date. What roofing materials"
+          },
+          {
+            "url": "https://www.excelcg.com/texas/collin-county/mckinney/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "asphalt shingles (Class 3 or 4) perform excellently here, often qualifying for insurance discounts up to 35%. Metal roofing provides superior hail resistance and energy"
+          },
+          {
+            "url": "https://www.excelcg.com/about/warranty-info/",
+            "type": "explicit",
+            "snippet": "Warranty Information | ECG Lifetime Workmanship | Com - Res Skip to content EST. SINCE '"
+          },
+          {
+            "url": "https://www.excelcg.com/about/warranty-info/",
+            "type": "explicit",
+            "snippet": "T. SINCE '1996 Toggle Navigation Home About Contact Team Divisions License Info Warranty Info News Gallery Careers Reviews Deals & Offers Terms and Conditions Privacy p"
+          },
+          {
+            "url": "https://www.excelcg.com/about/warranty-info/",
+            "type": "workmanship",
+            "snippet": "Warranty Information | ECG Lifetime Workmanship | Com - Res Skip to content EST. SINCE '1996 EST. SINCE '1996 Toggle Navigation"
+          },
+          {
+            "url": "https://www.excelcg.com/about/warranty-info/",
+            "type": "workmanship",
+            "snippet": "5+00:00 WARRANTY INFORMATION ECG Warranty Information – One reason ECG offers a workmanship warranty provides peace of mind to consumers. It assures them that the construc"
+          }
+        ],
+        "durations": [
+          "lifetime",
+          "26 years",
+          "30 year",
+          "50 year",
+          "3 days",
+          "One year"
+        ],
+        "confidence": "MODERATE",
+        "source_url": "https://www.excelcg.com/texas/collin-county/mckinney/",
+        "analyzed_pages": [
+          {
+            "url": "https://www.excelcg.com/texas/collin-county/mckinney/",
+            "type": "homepage",
+            "title": "Roofing Company near McKinney, TX"
+          },
+          {
+            "url": "https://www.excelcg.com/about/warranty-info/",
+            "type": "warranty_page",
+            "title": "Warranty Information | ECG Lifetime Workmanship | Com - Res"
+          }
+        ],
+        "warranty_pages": [
+          {
+            "url": "https://www.excelcg.com/about/warranty-info/",
+            "title": "Warranty Information | ECG Lifetime Workmanship | Com - Res"
+          }
+        ],
+        "explicit_guarantee": true,
+        "insurance_bonding_mentions": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:45.347Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/excel-construction-group-mckinney-3",
+        "review_count": null
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:48.971Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Excel Construction Group\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Reviews/Excel-Construction-Group-Reviews-E4046688.htm",
+            "title": "Excel Construction Group Reviews (7) - Glassdoor",
+            "snippet": "7 Excel Construction Group reviews. A free inside look at company reviews and salaries posted anonymously by employees."
+          },
+          {
+            "link": "https://www.glassdoor.com/Reviews/Employee-Review-Excel-Construction-Group-E4046688-RVW37739743.htm",
+            "title": "Excel Construction Group - Sucks to work here | Glassdoor",
+            "snippet": "Excel Construction Group reviews. A free inside look at company reviews and salaries posted anonymously by employees."
+          },
+          {
+            "link": "https://www.glassdoor.com/Salary/Excel-Construction-Group-Salaries-E4046688.htm",
+            "title": "How Much Does Excel Construction Group Pay in 2026? (8 Salaries)",
+            "snippet": "Explore Excel Construction Group salaries ; Office Administrator · $46K - $64K ; Internship · $42K - $66K ; Retail Sales Consultant · $96K - $172K ; Laborer · $42K - ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-Excel-Construction-Group-EI_IE4046688.11,35.htm",
+            "title": "Working at Excel Construction Group - Glassdoor",
+            "snippet": "Glassdoor gives you an inside look at what it's like to work at Excel Construction Group, including salaries, reviews, office photos, and more. This is the ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/Reviews/Employee-Review-Excel-Construction-Group-E4046688-RVW64952982.htm",
+            "title": "Excel Construction Group - Decent - Glassdoor",
+            "snippet": "Excel Construction Group reviews. A free inside look at company reviews and salaries posted anonymously by employees."
+          }
+        ],
+        "result_count": 8
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:49.800Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Excel Construction Group\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Excel-Construction-Group-2/reviews?fcountry=ALL",
+            "title": "Working at Excel Construction Group: Employee Reviews - Indeed",
+            "snippet": "Reviews from Excel Construction Group employees about Excel Construction Group culture, salaries, benefits, work-life balance, management, job security, ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Excel-Construction-Group-1/reviews",
+            "title": "Working at Excel Construction Group: 5 Reviews - Indeed",
+            "snippet": "Reviews from Excel Construction Group employees about Excel Construction Group culture, salaries, benefits, work-life balance, management, job security, ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Excel-Construction-Group-2/job-titles",
+            "title": "All Excel Construction Group job titles | Indeed.com",
+            "snippet": "Working at Excel Construction Group. Select a job title to read reviews and discover what it's like to work in that position."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Excel-Construction-Group-1",
+            "title": "Excel Construction Group Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at Excel Construction Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Excel-Construction-Group-2/salaries/Project-Manager",
+            "title": "Excel Construction Group Project Management salaries - Indeed",
+            "snippet": "Average Excel Construction Group Project Manager yearly pay in the United States is approximately $89,443, which meets the national average. Salary estimated ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "osha": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:52.160Z",
+      "data": {
+        "found": true,
+        "query": "site:osha.gov \"Excel Construction Group\"",
+        "source": "osha",
+        "results": [
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search?sic=&naics=23&state=All&officetype=&office=All&startmonth=12&startday=31&startyear=2014&endmonth=01&endday=01&endyear=2013&scope=&fedagncode=&owner=&p_start=&p_finish=26200&p_sort=estab_name&p_desc=ASC&p_direction=Next&p_show=20",
+            "title": "Industry Search Results Page | Occupational Safety and Health ...",
+            "snippet": "Excel Construction Group Inc. 26216, 912466.015, 06/12/2013, 0111100, ME, Planned, No Insp/Process Inactive, 236210, Excel Construction Management. 26217 ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search?sic=&naics=23&state=All&officetype=All&office=All&startmonth=09&startday=30&startyear=2015&endmonth=10&endday=01&endyear=2014&scope=&fedagncode=&owner=&p_start=&p_finish=30340&p_sort=&p_desc=DESC&p_direction=Next&p_show=20",
+            "title": "Industry Search Results Page | Occupational Safety and Health ...",
+            "snippet": "Excel Construction Group Inc. 30344, 1012849.015, 12/10/2014, 0552651, MI, Planned, Partial, 236115, 1, K R Construction & Design, Inc. 30345, 1015281.015, 12/ ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search?sic=&naics=23&state=All&officetype=&office=All&startmonth=01&startday=01&startyear=2019&endmonth=12&endday=31&endyear=2019&scope=&fedagncode=&owner=&p_start=30000&p_finish=37379&p_sort=&p_desc=DESC&p_direction=Prev&p_show=10000",
+            "title": "Industry Search Results Page | Occupational Safety and Health ...",
+            "snippet": "... Excel Construction Group. 20733, 1406642.015, 06/07/2019, 0418800, FL, Planned, Partial, 238140, 2, Azul Masonry Llc. 20734, 1406487.015, 06/07/2019, 0625500 ..."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:44:53.181Z",
+      "data": {
+        "found": true,
+        "query": "\"Excel Construction Group\" McKinney lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.facebook.com/chase.sortore/photos/d41d8cd9/9982419505148736/",
+            "title": "Warning: beware of unqualified roofers in Tarrant County tomorrow",
+            "snippet": "... Excel Construction Group 4850 NE Loop 820 Haltom City, TX 76117 P: (817) 380-1500 F:(817)527-1900 F: :(817) 527-1900 RESIDENTIAL EXCEL CONSTRUCTION GROUP ..."
+          },
+          {
+            "link": "https://cases.stretto.com/public/x361/13083/PLEADINGS/1308302202580000000124.pdf",
+            "title": "[PDF] LUMIO HOLDINGS, INC., et al.,1 Debtors. - Stretto",
+            "snippet": "Excel Construction Group [Felix. Salinas Group Inc. DBA Excel. Construction]. Excel Electric LLC. ExlService Holdings Inc. Express Connection ..."
+          },
+          {
+            "link": "https://www.facebook.com/groups/387567328711035/posts/2040922836708801/",
+            "title": "Have Hail Damage? Keep your business local here in Kennedale ...",
+            "snippet": "... excel construction group to help assess the damage. If you need a free inspection or just want peace of mind, give me a call. Photo report ..."
+          },
+          {
+            "link": "https://www.angi.com/companylist/us/tx/dallas/concrete-leveling.htm?page=8",
+            "title": "Top 10 Best Concrete leveling pros in Dallas, TX | Angi - Page 8",
+            "snippet": "Therefore I have filed a complaint with the BBB ... Excel Construction Group strives to not only meet ... Your # 1 Handyman Company serving Collin County TX, Plano ..."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/anna/category/construction-services",
+            "title": "Construction Services near Anna, TX | Better Business Bureau",
+            "snippet": "Excel Construction Group. Roofing Contractors, Construction Services, Foundation Contractors ... BBB Rating: A+. This rating reflects BBB's opinion about the ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:45:11.219Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T14:44:51Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Excel%20Construction%20Group%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=49uRaZXrB76HptQPtca9yAs\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T14:45:01Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Excel%20Construction%20Group%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=7duRaZGJAoKvptQPosGiwQw\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Excel Construction Group",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:46:30.934Z",
+      "data": {
+        "cost": 0.00092148,
+        "summary": "The available reviews appear authentic and detailed, but the extremely low volume of reviews (8 on Google) for a company in business for 29 years is unusual and warrants caution. There are no visible complaints or negative patterns. The high ratings are consistent where they exist.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-15T14:46:30.933Z",
+        "fake_signals": [
+          "All sampled Google reviews are 5-star",
+          "Low review volume (8) for a 29-year-old company"
+        ],
+        "recommendation": "TRUST_REVIEWS_WITH_CAUTION",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 4.9,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [
+            "lifetime warranty on workmanship"
+          ],
+          "confidence": "LOW",
+          "follow_through": "UNKNOWN",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Specific employee names and project details mentioned",
+          "Varied writing styles and perspectives",
+          "Mentions of insurance claim assistance",
+          "Descriptions of on-site supervision and cleanup"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "No contradictory ratings found. Google and BBB ratings are high and positive. Yelp and other platforms show no negative ratings, only business listings."
+      }
+    }
+  }
+}

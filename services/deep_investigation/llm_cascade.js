@@ -758,10 +758,91 @@ function summarizeQueryResults(queryResults) {
   return summary.join('\n');
 }
 
+/**
+ * Verify if news mentions are actually negative news about this specific contractor
+ * Filters out: BBB boilerplate, positive mentions, different companies with similar names
+ *
+ * @param {string} contractorName - Full contractor name
+ * @param {string} contractorCity - Contractor's city
+ * @param {Array} newsMentions - Array of {title, snippet, url} objects
+ * @returns {Promise<{verified: Array, cost: number}>} - Verified negative news and cost
+ */
+async function verifyNewsMentions(contractorName, contractorCity, newsMentions) {
+  if (!newsMentions || newsMentions.length === 0) {
+    return { verified: [], cost: 0 };
+  }
+
+  const prompt = `You are verifying if search results contain ACTUAL negative news about a specific contractor.
+
+CONTRACTOR: ${contractorName}
+LOCATION: ${contractorCity}
+
+SEARCH RESULTS TO VERIFY:
+${newsMentions.map((m, i) => `
+[${i + 1}] Title: ${m.title}
+    URL: ${m.url}
+    Snippet: ${m.snippet}
+`).join('\n')}
+
+FILTER OUT (these are NOT negative news):
+- BBB boilerplate text like "When considering complaint information, please take into account..."
+- BBB navigation text like "File a Complaint" (just a menu link)
+- Positive statements like "No complaints" or "great reviews"
+- News about DIFFERENT companies with similar names (check city/location carefully)
+- Generic review site descriptions
+
+KEEP ONLY:
+- Actual lawsuits against THIS contractor
+- Real complaints/scam reports about THIS contractor
+- News investigations about THIS contractor
+- BBB complaints with actual content (not just boilerplate)
+
+Respond with JSON only:
+{
+  "verified_negative_news": [
+    {
+      "index": 1,
+      "reason": "Why this is actual negative news about this contractor"
+    }
+  ],
+  "filtered_out": [
+    {
+      "index": 2,
+      "reason": "Why this was filtered (e.g., 'BBB boilerplate', 'different company in Austin')"
+    }
+  ]
+}`;
+
+  try {
+    const response = await callDeepSeek(prompt);
+    const result = response.result;
+
+    // Extract verified mentions
+    const verifiedIndices = (result.verified_negative_news || []).map(v => v.index - 1);
+    const verified = verifiedIndices
+      .filter(i => i >= 0 && i < newsMentions.length)
+      .map(i => ({
+        ...newsMentions[i],
+        verification_reason: result.verified_negative_news.find(v => v.index === i + 1)?.reason
+      }));
+
+    return {
+      verified,
+      cost: response.usage.cost,
+      filtered_count: newsMentions.length - verified.length
+    };
+  } catch (error) {
+    warn(`    News verification failed: ${error.message}`);
+    // On error, return empty (fail safe - don't flag without verification)
+    return { verified: [], cost: 0, error: error.message };
+  }
+}
+
 module.exports = {
   runLLMCascade,
   callDeepSeek,
   callGemini,
+  verifyNewsMentions,
   extractTimelineSummary,
   summarizeRawData,
   summarizeQueryResults,

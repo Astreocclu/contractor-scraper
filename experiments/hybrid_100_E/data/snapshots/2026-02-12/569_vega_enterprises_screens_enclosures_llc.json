@@ -1,0 +1,703 @@
+{
+  "contractor_id": 569,
+  "business_name": "Vega enterprises screens enclosures LLC",
+  "city": "Burleson",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-12T20:25:23.827Z",
+  "sources": {
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:10:36.249Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Vega enterprises screens enclosures LLC\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:07:17.399Z",
+      "data": {
+        "query": "site:yelp.com \"Vega enterprises screens enclosures LLC\" \"Burleson, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:09:06.514Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:10:35.115Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Vega enterprises screens enclosures LLC\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:10:34.504Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Vega enterprises screens enclosures LLC\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:15:57.156Z",
+      "data": {
+        "error": "Command timed out after 300000ms: python3 /home/reid/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Vega enterprises screens enclosures LLC",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:15:57.729Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:15:57.732Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:16:09.829Z",
+      "data": {
+        "cost": 0.00050652,
+        "summary": "The reviews are not authentic. The Google Maps listings show a perfect 5.0 rating, but the 'reviews' are merely automated scrapes of the business's address and hours. There are no genuine customer testimonials describing work performed, project details, or experiences. Other platforms (BBB, Yelp, Angi, Houzz) show no ratings or reviews. This profile lacks any evidence of real customer feedback.",
+        "confidence": "HIGH",
+        "analyzed_at": "2025-12-22T03:16:09.829Z",
+        "fake_signals": [
+          "All reviews are generic business listings, not customer experiences",
+          "No review text describes a project or service",
+          "All reviewers are 'Anonymous'",
+          "No dates on reviews",
+          "Perfect 5.0 rating with no substantive reviews"
+        ],
+        "recommendation": "DO_NOT_TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "authentic_signals": [],
+        "fake_review_score": 95,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "No meaningful ratings exist to compare. The only rating is a perfect 5.0 on Google, but the reviews are not authentic customer feedback."
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:07:54.435Z",
+      "data": "Trustpilot Search Results Companies Vega www.vega.dk • 49 reviews 2.3 Vega vegalogistics.pl • 5 reviews 4.1 Sunwise Screens sunwise-screens.be • 12 reviews 3.5 KGA Enclosures www.kgaenclosures.com • 1 review 3.7 CotterWeb Enterprises, Llc www.sendearnings.com • 1 review 3.7 Categories Software Company The best companies in the category 'Software Company' Media & Publishing The best companies in the category 'Media & Publishing' Shipping Service The best companies in the category 'Shipping Service' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (8637) Vega www.vega.dk 2.3 49 reviews Denmark Vega vegalogistics.pl 4.1 5 reviews Burakowska 5/7, Warsaw, Poland Sunwise Screens sunwise-screens.be 3.5 12 reviews Belgium KGA Enclosures www.kgaenclosures.com 3.7 1 review 44 Egroms Lane, Hull, United Kingdom Prophet Enterprises, LLC currencyprofit.com 4.3 7 reviews 871 Coronado Center Drive Suite 7000, Henderson, United States CotterWeb Enterprises, Llc www.sendearnings.com 3.7 1 review Northland Drive 1295, Mendota Heights, United States Citzo Enterprises LLC citzo.com 4.4 10 reviews 30 N Gould St Ste N, Sheridan, United States BMJ Enterprises LLC bmj419.com 4.0 7 reviews P.O. Box 153, Toledo, United States Pickett Enterprises LLC pickettenterprises.com 3.8 2 reviews 539 W. Commerce St. Ste. 350, Dallas, United States KAKEL ENTERPRISES LLC kakelstore.com 4.0 3 reviews United States Previous 1 2 3 4 864 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Software Company Electronics & Technology Accounting Firm Money & Insurance Electronics Store Electronics & Technology Media & Publishing Media & Publishing Shipping Service Business Services Container Service Business Services are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2025 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:07:59.679Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:08:03.177Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:08:05.568Z",
+      "data": {
+        "query": "Vega enterprises screens enclosures LLC Burleson site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:08:25.226Z",
+      "data": "Vega enterprises screens enclosures LLC Burleson review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Book now Year-End Sunroom Sale Custom-Designed, Custom-Built Sunrooms. Proudly Made in the USA. Design Yours Today. Sponsored Patio Enclosures 2:54 2:54 Now playing Superscreen vs Fiberglass vs Aluminum Mesh on Wooden Screen Porch Enclosure Screen Medic Screen Medic • • 132K views 5 years ago Screen Medic Screen Medic When rescreening a screen porch get it done right the first time. Call Screen Medic Today!!! 612-232-7378 or visit ... When rescreening a screen porch get it done right the first time. Call Screen Medic Today!!! 612-232-7378 or visit ... From the video description 3 chapters Intro | Fiberglass vs Aluminum | Outro 3 auto-generated chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 Fiberglass vs Aluminum Fiberglass vs Aluminum 0:56 Fiberglass vs Aluminum 0:56 Outro Outro 2:42 Outro 2:42 2:00 2:00 Now playing Retractable Motorized Bug Enclosure Patio Screens - Shading Texas Shading Texas Shading Texas • • 178K views 4 years ago Shading Texas Shading Texas Another amazing and beautiful job by Shading Texas! (5) Motorized patio screens that provide a complete bug enclosure for our ... Another amazing and beautiful job by Shading Texas! (5) Motorized patio screens that provide a complete bug enclosure for our ... From the video description 4K Summary A representative from Shading Texas demonstrates retractable motorized bug enclosure patio screens. The screens are shown being lowered and raised, showcasing their ability to provide bug protection while maintaining an open feel. The representative highlights the screens' durability, warranty, and versatility, emphasizing their ability to transform a patio into a usable space. AI-generated video summary Quality and accuracy may vary. Summary A representative from Shading Texas demonstrates retractable motorized bug enclosure patio screens. The screens are shown being lowered and raised, showcasing their ability to provide bug protection while maintaining an open feel. The representative highlights the screens' durability, warranty, and versatility, emphasizing their ability to transform a patio into a usable space. Try It Yourself Try It Yourself Sponsored Wix.com Watch Learn more 2:07 2:07 Now playing FlexScreen Install on a SummerSpace Porch Enclosure Panel Spencer Berube Spencer Berube • • 205 views 1 year ago Spencer Berube Spencer Berube This video explains the right and the wrong way to install a FlexScreen into a @SummerSpaceUSA Porch Enclosure Panel and ... This video explains the right and the wrong way to install a FlexScreen into a @SummerSpaceUSA Porch Enclosure Panel and ... From the video description 2:23 2:23 Now playing Can we rescreen your aluminum screen enclosure? What to look for. Screen Medic Screen Medic • • 1.2K views 3 years ago Screen Medic Screen Medic screen enclosures i'm looking for the spline groove&nbsp;...\"> 0:36 ... the things we'll be looking for okay so here's what we're looking for on these screen enclosures i'm looking for the spline groove ... ... the things we'll be looking for okay so here's what we're looking for on these screen enclosures i'm looking for the spline groove ... Automatic captions The Little Entrepreneur – The Lincoln Wish List Sales Event Share a little light this holiday season during the Lincoln Wish List Sales Event. Sponsored Lincoln Watch Learn more 1:37 1:37 Now playing Motorized patio screens Security Shutter & Screens - Dallas, TX Security Shutter & Screens - Dallas, TX • • 7.9K views 2 years ago Security Shutter & Screens - Dallas, TX Security Shutter & Screens - Dallas, TX screens we'll show you them in a minute this is a black powder coat with a dark&nbsp;...\"> 0:00 Today we just finished up four electric retractable screens we'll show you them in a minute this is a black powder coat with a dark ... Today we just finished up four electric retractable screens we'll show you them in a minute this is a black powder coat with a dark ... Automatic captions 0:27 0:27 Now playing Transform Your Patio! See Our Retractable Screen Install in Rancho Cucamonga, CA Apollo Screen & Shade Apollo Screen & Shade • • 18K views 1 year ago Apollo Screen & Shade Apollo Screen & Shade Discover the Magic of a Screened-In Patio! ➡ Check out how our retractable screens can transform your outdoor living space in ... Discover the Magic of a Screened-In Patio! ➡ Check out how our retractable screens can transform your outdoor living space in ... From the video description 2:02 2:02 Now playing Bertha Screen Enclosures Update Flame Productions Flame Productions • • 8K views 14 years ago Flame Productions Flame Productions 1:51 1:51 Now playing How Much do Motorized Retractable Screens Cost? #retractablescreens #howmuch #patiodesign Apollo Screen & Shade Apollo Screen & Shade • • 3.5K views 7 months ago Apollo Screen & Shade Apollo Screen & Shade https://apolloscreen.com/blog/how-much-do-motorized-retractable- screens -cost-/ Average Motorized Retractable Screens Price ... https://apolloscreen.com/blog/how-much-do-motorized-retractable- screens -cost-/ Average Motorized Retractable Screens Price ... From the video description 4K 12:24 12:24 Now playing The RIGHT Way to Install a Window Screen (Wish I’d Known This) Home RenoVision DIY Home RenoVision DIY • • 121K views 2 years ago Home RenoVision DIY Home RenoVision DIY My screen fell apart in a wind storm because I installed it wrong. The good news is I finally learned how to ACTUALLY do it right, ... My screen fell apart in a wind storm because I installed it wrong. The good news is I finally learned how to ACTUALLY do it right, ... From the video description 4K Summary The video follows a homeowner's frustrating experience trying to install a window screen. They encounter issues with the spline, the tool, and the lack of clear instructions from the manufacturer and retailers. The video promises to show viewers how to install the screen correctly, using the right tools and techniques, and avoid the mistakes made by the homeowner. AI-generated video summary Quality and accuracy may vary. Summary The video follows a homeowner's frustrating experience trying to install a window screen. They encounter issues with the spline, the tool, and the lack of clear instructions from the manufacturer and retailers. The video promises to show viewers how to install the screen correctly, using the right tools and techniques, and avoid the mistakes made by the homeowner. Learn more Meadow Park | Melissa, TX Thoughtful layouts and smart details. Spaces designed for the moments that matter most. Sponsored Ashton Woods 2:48 2:48 Now playing How to Install a Patio Screen Enclosure the East Way! That Guy's Home That Guy's Home • • 13K views 2 years ago That Guy's Home That Guy's Home 00:00 Introduction 00:04 Measuring and Cutting Screen Framing 00:24 Installing Screen Framing 00:46 Installing A Screen Door ... 00:00 Introduction 00:04 Measuring and Cutting Screen Framing 00:24 Installing Screen Framing 00:46 Installing A Screen Door ... From the video description 6 chapters Introduction | Measuring and Cutting Screen Framing | Installing Screen Framing | Installing A Screen Door | Installing Sreening | Installing Screen Sealant 6 chapters in this video 6 chapters Introduction Introduction 0:00 Introduction 0:00 Measuring and Cutting Screen Framing Measuring and Cutting Screen Framing 0:04 Measuring and Cutting Screen Framing 0:04 Installing Screen Framing Installing Screen Framing 0:24 Installing Screen Framing 0:24 Installing A Screen Door Installing A Screen Door 0:46 Installing A Screen Door 0:46 Installing Sreening Installing Sreening 1:34 Installing Sreening 1:34 Installing Screen Sealant Installing Screen Sealant 2:33 Installing Screen Sealant 2:33 3:06 3:06 Now playing Patio Enclosures - Glass & Screens...It's all in the details. Patio Enclosures Patio Enclosures • • 151K views 12 years ago Patio Enclosures Patio Enclosures It's All in the Details - Bob Zielinski walks you through of the small, minute details of each Patio Enclosures room. Learn the ... It's All in the Details - Bob Zielinski walks you through of the small, minute details of each Patio Enclosures room. Learn the ... From the video description 3 moments How Do You Clean Your Screens | Lock and Handle Sets | What Makes Patio Enclosures Different from Everybody Else 3 auto-generated moments in this video 3 moments How Do You Clean Your Screens How Do You Clean Your Screens 1:23 How Do You Clean Your Screens 1:23 Lock and Handle Sets Lock and Handle Sets 1:47 Lock and Handle Sets 1:47 What Makes Patio Enclosures Different from Everybody Else What Makes Patio Enclosures Different from Everybody Else 2:21 What Makes Patio Enclosures Different from Everybody Else 2:21 0:17 0:17 Now playing Mirage Horizon Motorized Screens - Install Overview Mirage Screen Systems Mirage Screen Systems • • 16K views 5 years ago Mirage Screen Systems Mirage Screen Systems At the touch of a button, turn your backyard living space into a private, comfortable retreat with Mirage Horizon Motorized Screens . At the touch of a button, turn your backyard living space into a private, comfortable retreat with Mirage Horizon Motorized Screens . From the video description People also watched 7:41 7:41 Now playing World's Strongest Retractable Screen | MagnaTrack Defender The Window Experts The Window Experts • • 14K views 2 years ago The Window Experts The Window Experts For windows in the Houston area visit: https://houstonwindowexperts.com Looking for a window company in your area? For windows in the Houston area visit: https://houstonwindowexperts.com Looking for a window company in your area? From the video description 4K 8 chapters Intro | Who is Magnatrack | Defender Hurricane Screen | Magnatrack rail system | Use cases | Aesthetics | Durability test | Outro 8 chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Who is Magnatrack Who is Magnatrack 0:25 Who is Magnatrack 0:25 Defender Hurricane Screen Defender Hurricane Screen 1:20 Defender Hurricane Screen 1:20 Magnatrack rail system Magnatrack rail system 1:50 Magnatrack rail system 1:50 Use cases Use cases 3:23 Use cases 3:23 Aesthetics Aesthetics 4:56 Aesthetics 4:56 Durability test Durability test 6:14 Durability test 6:14 7:25 7:25 Now playing How to Screen a Porch and Trim | This Old House Porch - Part 4 Jeff Greene Jeff Greene • • 29K views 6 years ago Jeff Greene Jeff Greene In this video i show the steps on how to screen in a porch and trim. This is part of a larger restoration/renovation project that we ... In this video i show the steps on how to screen in a porch and trim. This is part of a larger restoration/renovation project that we ... From the video description Summary This episode of This Old House focuses on screening and adding lattice molding to a porch. The hosts discuss the challenges of measuring and cutting the lattice accurately, as well as the importance of using the right tools and techniques for a professional finish. They also share their experiences with using PVC lattice and offer tips for avoiding common mistakes. AI-generated video summary Quality and accuracy may vary. Summary This episode of This Old House focuses on screening and adding lattice molding to a porch. The hosts discuss the challenges of measuring and cutting the lattice accurately, as well as the importance of using the right tools and techniques for a professional finish. They also share their experiences with using PVC lattice and offer tips for avoiding common mistakes. 5:23 5:23 Now playing DIY Screen Porch Enclosure Donald Veryser Donald Veryser • • 207K views 10 years ago Donald Veryser Donald Veryser DIY video for installing EZ Storm Panels to enclose your screened porch. To learn more about our Porch Insulation and get a ... DIY video for installing EZ Storm Panels to enclose your screened porch. To learn more about our Porch Insulation and get a ... From the video description 5 chapters Intro | Easy Storm Panels | Measuring | Installation | Care 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Easy Storm Panels Easy Storm Panels 0:30 Easy Storm Panels 0:30 Measuring Measuring 1:38 Measuring 1:38 Installation Installation 2:48 Installation 2:48 Care Care 4:23 Care 4:23 5:55 5:55 Now playing Temporarily enclosing your deck for the winter months. Sandy's Cup of Tea Sandy's Cup of Tea • • 27K views 4 years ago Sandy's Cup of Tea Sandy's Cup of Tea enclosure just for the winter to keep this the leaves the snow and hopefully&nbsp;...\"> 1:57 ... nine rolls to complete the whole deck it's a temporary enclosure just for the winter to keep this the leaves the snow and hopefully ... ... nine rolls to complete the whole deck it's a temporary enclosure just for the winter to keep this the leaves the snow and hopefully ... Automatic captions + 6 more SHORTS SHORTS Now playing Large Motorized Patio Screen 🏡 Make the most of your outdoor living. Coeur Window Coverings Coeur Window Coverings • • 31K views 1 year ago Coeur Window Coverings Coeur Window Coverings Driving safely or driving less could help you save on Auto Insurance Drive your way and save with USAA SafePilot® or USAA SafePilot Miles™ Sponsored USAA Watch Get quote 2:59 2:59 Now playing Megaview Screen Enclosure Southern Screen & Construction Pools Southern Screen & Construction Pools • • 860 views 4 years ago Southern Screen & Construction Pools Southern Screen & Construction Pools Beautiful custom screen enclosure with 3 Megaview openings. Call us today for a free estimate! 386-574-7567. Beautiful custom screen enclosure with 3 Megaview openings. Call us today for a free estimate! 386-574-7567. From the video description 1:59 1:59 Now playing Best screen options for screen porch Porch Windows Direct Porch Windows Direct • • 5.7K views 1 year ago Porch Windows Direct Porch Windows Direct Find out what kind of screen is best for your screen porch. Visit our website at https://www.porchwindowsdirect.com/. Find out what kind of screen is best for your screen porch. Visit our website at https://www.porchwindowsdirect.com/. From the video description 4:55 4:55 Now playing How To Replace Patio Screen the fiX files the fiX files • • 416K views 6 years ago the fiX files the fiX files Link to the clips I used: https://amzn.to/3hhY7he. Link to the clips I used: https://amzn.to/3hhY7he. From the video description 5 chapters Intro | Removing spline | Installing new screen | Installing spline | Final touches 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Removing spline Removing spline 0:48 Removing spline 0:48 Installing new screen Installing new screen 1:15 Installing new screen 1:15 Installing spline Installing spline 2:10 Installing spline 2:10 Final touches Final touches 3:49 Final touches 3:49 2:39 2:39 Now playing Phantom Screens Retractable Remote/Wifi Outdoor Screens Review | Catherine Arensberg Catherine Arensberg Catherine Arensberg • • 9.9K views 3 years ago Catherine Arensberg Catherine Arensberg Our outdoor living space has been evolving for over a year as we continue to make it a space that reflects our lifestyle of living and ... Our outdoor living space has been evolving for over a year as we continue to make it a space that reflects our lifestyle of living and ... From the video description Summary The video reviews Phantom Screens retractable outdoor screens, highlighting their customizability and weather-resistant features. The reviewer discusses the challenges of finding a solution for afternoon sun glare and how Phantom Screens addressed these issues, ultimately providing a permanent and effective solution for their outdoor living space. AI-generated video summary Quality and accuracy may vary. Summary The video reviews Phantom Screens retractable outdoor screens, highlighting their customizability and weather-resistant features. The reviewer discusses the challenges of finding a solution for afternoon sun glare and how Phantom Screens addressed these issues, ultimately providing a permanent and effective solution for their outdoor living space. SHORTS SHORTS Now playing SHOULD YOU DO WHITE OR BRONZE FOR YOUR ALUMINUM SCREEN ENCLOSURE? TAMPA GENERAL CONTRACTOR ANSWERS! Home Love Construction Home Love Construction • • 1.1K views 2 years ago Home Love Construction Home Love Construction SHORTS SHORTS Now playing The Making of a Custom Window Screen Metro Screenworks Metro Screenworks • • 16K views 1 year ago Metro Screenworks Metro Screenworks Here at Metro Screenworks we make our screens by hand so they are built to your exact size and specifications. We take pride in ... Here at Metro Screenworks we make our screens by hand so they are built to your exact size and specifications. We take pride in ... From the video description 1:22 1:22 Now playing Top 5 Reasons to Build a Screen Enclosure | Screen Builders Screen Builders Screen Builders • • 121 views 12 years ago Screen Builders Screen Builders Call Screen Builders today for a great, new screen enclosure ! (561) 395-0801 There are several benefits a screen enclosure can ... Call Screen Builders today for a great, new screen enclosure ! (561) 395-0801 There are several benefits a screen enclosure can ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:08:26.212Z",
+      "data": {
+        "query": "site:nextdoor.com Vega enterprises screens enclosures LLC Burleson",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:10:15.358Z",
+      "data": {
+        "name": "Vega enterprises screens enclosures LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(254) 434-8922",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "1123 Apache Ridge Rd",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Vega Enterprises Screen Enclosures Closed · Opens 8 AM Mon · (254) 434-8922",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Vega enterprises screens enclosures LLC Construction company · 1123 Apache Ridge Rd Closed · Opens 8 AM Mon · (254) 434-8922",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Vega%20enterprises%20screens%20enclosures%20LLC%20Burleson%2C%20TX",
+        "categories": [
+          "Construction company"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:10:26.250Z",
+      "data": {
+        "url": "https://www.angi.com/companylist/us/tx/burleson/screen-repair.htm",
+        "name": "Vega enterprises screens enclosures LLC",
+        "site": "angi.com",
+        "error": null,
+        "found": true,
+        "rating": null,
+        "source": "serp_angi",
+        "confidence": "unknown",
+        "matched_name": null,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:10:31.867Z",
+      "data": {
+        "url": "https://www.houzz.com/professionals/specialty-contractors/security-shutter-screens-pfvwus-pf~1328491308",
+        "name": "Vega enterprises screens enclosures LLC",
+        "site": "houzz.com",
+        "error": null,
+        "found": true,
+        "rating": null,
+        "source": "serp_houzz",
+        "confidence": "unknown",
+        "matched_name": null,
+        "review_count": 1
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:10:35.704Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Vega enterprises screens enclosures LLC\" Burleson",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:10:37.096Z",
+      "data": {
+        "found": false,
+        "query": "\"Vega enterprises screens enclosures LLC\" Burleson lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:08:41.211Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Vega%20enterprises%20screens%20enclosures%20LLC&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20enterprises% 20enclosures% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= 20enterprises% 20enclosures% 20LLC&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://enviro.epa.gov/facts/tri/ef-facilities/",
+                "title": "TRI Facility Report"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= 20enterprises% 20enclosures% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= 20enterprises% 20enclosures% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20enterprises% 20enclosures% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= 20enterprises% 20enclosures% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= 20enterprises% 20enclosures% 20LLC&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter and is refreshed ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= 20enterprises% 20enclosures% 20LLC&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= 20enterprises% 20enclosures% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/compliance-screener",
+            "title": "Corporate Compliance Screener | ECHO | US EPA",
+            "snippet": "The Corporate Compliance Screener organizes existing ECHO facility data into reports that highlight recent compliance issues or enforcement actions.",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= 20enterprises% 20enclosures% 20LLC&State="
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:08:45.475Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:08:52.057Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:09:00.239Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Vega enterprises screens enclosures LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:09:01.432Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Information on this site is obtained from the most recent Public Information Report (PIR) processed by the Secretary of State (SOS).",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:09:02.418Z",
+      "data": {
+        "query": "site:apps.tarrantcounty.com Vega enterprises screens enclosures LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:09:03.341Z",
+      "data": {
+        "query": "site:dallascounty.org Vega enterprises screens enclosures LLC civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:09:04.350Z",
+      "data": {
+        "query": "site:collincountytx.gov Vega enterprises screens enclosures LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:09:05.344Z",
+      "data": {
+        "query": "site:dentoncounty.gov Vega enterprises screens enclosures LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:09:54.366Z",
+      "data": {
+        "name": "Vega enterprises screens enclosures LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(254) 434-8922",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "1123 Apache Ridge Rd",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Vega enterprises screens enclosures LLC Construction company · 1123 Apache Ridge Rd Closed · Opens 8 AM Mon · (254) 434-8922",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Vega Enterprises Screen Enclosures Closed · Opens 8 AM Mon · (254) 434-8922",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Vega%20enterprises%20screens%20enclosures%20LLC%20Dallas%2C%20TX",
+        "categories": [
+          "Construction company"
+        ],
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:10:32.652Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Vega enterprises screens enclosures LLC\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:10:15.353Z",
+      "data": {
+        "name": "Vega enterprises screens enclosures LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(254) 434-8922",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "1123 Apache Ridge Rd",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Vega Enterprises Screen Enclosures Closed · Opens 8 AM Mon · (254) 434-8922",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Vega enterprises screens enclosures LLC Construction company · 1123 Apache Ridge Rd Closed · Opens 8 AM Mon · (254) 434-8922",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Vega%20enterprises%20screens%20enclosures%20LLC%20Burleson%2C%20TX",
+        "categories": [
+          "Construction company"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2025-12-22T03:10:20.708Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/vega-enterprises-screen-enclosures-brazos-bend-3",
+        "review_count": null
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T03:10:57.045Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:c98f:d45e:7347:4fa0\nTime: 2025-12-22T03:10:40Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Vega%20enterprises%20screens%20enclosures%20LLC%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=r7ZIaeipHamew8cPwdKEuQ0\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:c98f:d45e:7347:4fa0\nTime: 2025-12-22T03:10:51Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Vega%20enterprises%20screens%20enclosures%20LLC%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=urZIaf_3N9O1ptQPj-yc-Ag\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "Failed to execute 'querySelectorAll' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.\nre (pptr:internal:3:12826)\nIe (pptr:internal:3:13100)\npptr:evaluateHandle;PQueryHandler.queryOne%20(%2Fhome%2Freid%2Fcommand-center%2Ftesthome%2Fcontractor-auditor%2Fnode_modules%2Fpuppeteer-core%2Flib%2Fcjs%2Fpuppeteer%2Fcommon%2FQueryHandler.js%3A130%3A73):2:16",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Vega enterprises screens enclosures LLC",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

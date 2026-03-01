@@ -1,0 +1,865 @@
+{
+  "contractor_id": 9273,
+  "business_name": "Sunny Side Pools",
+  "city": "Bedford",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-08T03:23:39.808Z",
+  "sources": {
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:02:46.815Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Sunny Side Pools\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:02:47.568Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Sunny Side Pools\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Sunnyside-Pools",
+            "title": "Sunnyside pools Careers and Employment",
+            "snippet": "Find out what works well at Sunnyside pools from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Sunnyside-Pools/reviews",
+            "title": "Working at Sunnyside pools: 2 Reviews",
+            "snippet": "Reviews from Sunnyside pools employees about Sunnyside pools culture, salaries, benefits, work-life balance, management, job security, and more."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:02:50.269Z",
+      "data": {
+        "found": false,
+        "query": "\"Sunny Side Pools\" Bedford lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:01.133Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:04.775Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:02:20.856Z",
+      "data": {
+        "name": "Sunny Side Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 225-3783",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2401 Meadow Ct, Bedford, TX 76021",
+        "reviews": [],
+        "website": "http://sunnysidepoolsdfw.com/",
+        "maps_url": "https://www.google.com/maps/search/Sunny%20Side%20Pools%20Bedford%2C%20TX",
+        "categories": [
+          "Pool cleaning service"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:02:29.644Z",
+      "data": {
+        "email": "sunnysidepoolsdfw@gmial.com",
+        "error": null,
+        "source": "contact_page"
+      }
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:02:38.208Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "http://sunnysidepoolsdfw.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "ing smoothly. Contact About Us Your Trusted Pool Care Experts With licensed and insured service, Sunny Side Pools delivers professional pool cleaning, maintenance, and"
+          },
+          {
+            "url": "http://sunnysidepoolsdfw.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "tal Clear, All Year Round At Sunny Side Pools, we bring 2 years of licensed and insured expertise to keep your pool in perfect condition. From deep cleaning to equipme"
+          }
+        ],
+        "durations": [
+          "2 years"
+        ],
+        "confidence": "WEAK",
+        "source_url": "http://sunnysidepoolsdfw.com/",
+        "analyzed_pages": [
+          {
+            "url": "http://sunnysidepoolsdfw.com/",
+            "type": "homepage",
+            "title": "Home -"
+          },
+          {
+            "url": "https://sunnysidepoolsdfw.com/crystal-clear-water-guaranteed-expert-pool-cleaning-in-bedford-tx/",
+            "type": "warranty_page",
+            "title": "Crystal Clear Water, Expert Pool Cleaning in Bedford, TX"
+          }
+        ],
+        "warranty_pages": [
+          {
+            "url": "https://sunnysidepoolsdfw.com/crystal-clear-water-guaranteed-expert-pool-cleaning-in-bedford-tx/",
+            "title": "Crystal Clear Water, Expert Pool Cleaning in Bedford, TX"
+          }
+        ],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:02:43.214Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:00:32.074Z",
+      "data": {
+        "query": "site:yelp.com \"Sunny Side Pools\" \"Bedford, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:02:43.956Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:02:44.788Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:00:56.587Z",
+      "data": "Trustpilot Search Results Companies Sunny sunny.co.uk • 7.4K reviews 4.6 Side side.co • 54 reviews 1.6 Sunny Side Up Shop sunnysideup-shop.com • 2 reviews 3.8 Sunny Cars www.sunnycars.de • 24K reviews 4.7 Sunny Cars www.sunnycars.nl • 30K reviews 4.5 Categories Loan Agency The best companies in the category 'Loan Agency' Non-Bank Financial Service The best companies in the category 'Non-Bank Financial Service' Recruitment Service The best companies in the category 'Recruitment Service' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (360) Sunny sunny.co.uk 4.6 7,421 reviews 7 Bell Yard, London, United Kingdom Side side.co 1.6 54 reviews 77 BD MARIUS VIVIER MERLE, Lyon, France Sunny Side Up Shop sunnysideup-shop.com 3.8 2 reviews United States Sunny Cars www.sunnycars.de 4.7 23,719 reviews Paul-Gerhardt-Allee 42, München, Germany Sunny Cars www.sunnycars.nl 4.5 30,074 reviews Diakenhuisweg 21, Haarlem, Netherlands Side sideinc.com 3.2 1 review Sunny Side Media GmbH sunnysidemedia.net 3.2 1 review Chemin du Vuasset 2/2nd floor, Préverenges , Switzerland Sunny Cars sunnycars.be 4.6 3,519 reviews Diakenhuisweg , Haarlem, Netherlands Sunny Cars sunnycars.at 4.7 451 reviews Paul-Gerhardt-Allee 42, München, Germany Y-SIDE www.yside-store.com 4.2 340 reviews France Previous 1 2 3 4 36 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Swimwear Store Shopping & Fashion Wellness Center Beauty & Well-being Loan Agency Money & Insurance Non-Bank Financial Service Money & Insurance Recruitment Service Business Services Employment Agency Public & Local Services are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:54.069Z",
+      "data": {
+        "cid": "17710773537001325065",
+        "name": "Sunny Side Pools",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "2401 Meadow Ct, Bedford, TX 76021",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "4 months ago",
+            "text": "I’ve been using this company for weekly pool maintenance, and they never disappoint. The team is reliable, professional, and always on time. My pool is consistently clean, crystal clear, and safe for swimming. Their attention to detail and quality of service give me peace of mind, and I couldn’t be happier with the results. Highly recommend them to anyone looking for dependable pool care!",
+            "author": "Moe Abdel",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Professional pool cleaning service that delivers consistent results. Sunny Side Pools maintains my pool perfectly and provides great value. Would recommend to anyone in Colleyville needing pool service.",
+            "author": "sara carrock",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Reliable and skilled pool cleaner who keeps my pool sparkling clean week after week. Sunny Side Pools is professional, punctual, and offers great service at competitive prices in Colleyville. Highly recommend!!",
+            "author": "Andrew Augustus (Drew)",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Would give 10 stars if I could!!! I switched to sunny side pools a few weeks ago and I’m LOVING the results. The owner Ethan was the sweetest ever, was super professional and punctual. I highly recommend them to anyone who is looking for a pool service who always goes above and beyond!!",
+            "author": "Rebecca Lee",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Sunny Side Pools has exceeded my expectations for pool cleaning in Bedford with great quality work and excellent customer service. Had lots of people work on my pool but Ethan and his team are professional, reliable, and reasonably priced.",
+            "author": "Doug Davis",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Sunny Side Pools does outstanding pool maintenance work in Bedford - always punctual, thorough, and keeps my pool in perfect condition. Highly recommend their professional service and reasonable rates.",
+            "author": "Crystal Diaz",
+            "rating": 5
+          },
+          {
+            "date": "3 weeks ago",
+            "text": "Sunny side pools has done an amazing job maintaining my pool! He is very dependable and I highly recommend his services!",
+            "author": "steven craine",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "I'm impressed with Sunny Side Pools’ thorough approach to pool maintenance. They catch issues early and keep everything running smoothly. Trustworthy service you can count on in Colleyville.",
+            "author": "Matthew Holtrop",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "MULTIPLE_SUSPICIOUS_SIGNALS",
+          "signals": [
+            "ALL_PERFECT_SCORES",
+            "GENERIC_LANGUAGE"
+          ],
+          "escalate": true,
+          "confidence": "MEDIUM"
+        },
+        "search_tier": 1,
+        "review_count": 19,
+        "review_source": "tiered_validated",
+        "serpapi_error": "SERPAPI_API_KEY not set",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "location_searched": "Bedford, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:09.511Z",
+      "data": {
+        "query": "Sunny Side Pools Bedford site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05",
+            "title": "sitemap.xml",
+            "snippet": "... Sunny, Warm Friday, Rain Likely Saturday</video:title><video:description>Senior Meteorologist David Finfrock updates the forecast for Thursday, May 30, 2019 ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05&type=video",
+            "title": "sitemap.xml",
+            "snippet": "... Sunny, Warm Friday, Rain Likely Saturday</video:title><video:description>Senior Meteorologist David Finfrock updates the forecast for Thursday, May 30, 2019 ...",
+            "position": 2
+          },
+          {
+            "date": "Mar 3, 2015",
+            "link": "https://www.nbcdfw.com/news/local/winter-weather-returns-on-wednesday/96608/",
+            "title": "Pets, People Make Best of Record-Setting Snowfall",
+            "snippet": "A late winter storm dropped up to 7 inches of sleet and snow overnight Wednesday, leading to more than 800 school closings and delays and nearly as many flight ...",
+            "position": 3
+          },
+          {
+            "date": "May 6, 2020",
+            "link": "https://www.nbcdfw.com/news/coronavirus/blue-angels-to-salute-north-texas-frontline-workers-with-flyover-on-wednesday/2362823/",
+            "title": "Blue Angels Honor North Texas Frontline Workers With ...",
+            "snippet": "The U.S. Navy Blue Angels will fly above North Texas on Wednesday to honor health care workers and first responders on the front line of the ...",
+            "position": 4
+          },
+          {
+            "date": "Feb 26, 2015",
+            "link": "https://www.nbcdfw.com/news/local/north-texas-prepares-for-next-round-of-winter-weather/170180/",
+            "title": "Winter Weather Advisory Ends for DFW",
+            "snippet": "Expect drizzle through most of the day today. Temperatures will climb above freezing by mid-afternoon and will stay above freezing through ...",
+            "position": 5
+          },
+          {
+            "date": "Mar 1, 2016",
+            "link": "https://www.wfaa.com/article/news/politics/texas-voters-head-to-polls-in-year-of-chaos/287-62724829",
+            "title": "Texas voters head to polls in 'year of chaos'",
+            "snippet": "Texas voters will head to the polls Tuesday in a consequential day for the presidential primaries that could reverberate down the ballot.",
+            "position": 6
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=07",
+            "title": "sitemap.xml",
+            "snippet": "... sunny and rain free with highs in the upper 90s to near triple digits.</video:description><video:player_loc allow_embed=\"yes\" autoplay=\"ap=1\">https://www ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2024&mm=06",
+            "title": "sitemap.xml",
+            "snippet": "... side-hustle-on-facebook-marketplace-now-it-brings-in-379000-a-year/3580165 ... pools, lakes, and the ocean.</video:description><video:player_loc ...",
+            "position": 8
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:02:48.660Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Sunny Side Pools\" Bedford",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:19.971Z",
+      "data": "Sunny Side Pools Bedford review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description SHORTS SHORTS Now playing Easy way to keep the pool clean! #summer #pool #tips Jeff & Lauren Show Jeff & Lauren Show • • 325K views 8 months ago Jeff & Lauren Show Jeff & Lauren Show Easy way to keep the pool clean! Tennis balls absorb oils and residue from the pool ! # pool #poolparty #summer ... Easy way to keep the pool clean! Tennis balls absorb oils and residue from the pool ! # pool #poolparty #summer ... From the video description SHORTS SHORTS Now playing This pool looks incredible 😧 | #shorts SportsNation SportsNation • • 8.6M views 3 years ago SportsNation SportsNation This pool looks incredible | #shorts (via @rikkicarman) This pool looks incredible | #shorts (via @rikkicarman) From the video description SHORTS SHORTS Now playing Pool cleaning or Swim coaching? 🤣 #swimming SwimGym SwimGym • • 779K views 7 months ago SwimGym SwimGym SHORTS SHORTS Now playing Inside the Deepest Swimming Pool of the City 🔥 #learnswimming #swimming #swim Swimming By Sanuj Swimming By Sanuj • • 8M views 1 year ago Swimming By Sanuj Swimming By Sanuj Girl Vs Boy Swimming Practice, Fast Swimming Tips for Beginners, Kicking Race, तैरना सीखें ▻ Join Video Analysis ... Girl Vs Boy Swimming Practice, Fast Swimming Tips for Beginners, Kicking Race, तैरना सीखें ▻ Join Video Analysis ... From the video description SHORTS SHORTS Now playing Do you have to do this too? 🫢 #diy #poolcleaning #pools Sabrina & Andrew Sabrina & Andrew • • 5.6M views 7 months ago Sabrina & Andrew Sabrina & Andrew Dr. Rick | Photo Op | Progressive Insurance Commercial Even when the road tests your patience, Progressive's Snapshot rewards your safe driving. Sponsored Progressive Watch Learn more SHORTS SHORTS Now playing Was it possible? | 1st try into the floaty in swimming pool watermagic #shorts watermagic #shorts • • 3.3M views 5 months ago watermagic #shorts watermagic #shorts SHORTS SHORTS Now playing Age 50+, Bottom of 20ft Deep Swimming Pool 🔥 #swimmingtips #swimming #swim Swimming By Sanuj Swimming By Sanuj • • 1.3M views 1 year ago Swimming By Sanuj Swimming By Sanuj Beginners Swimming Tips in Hindi, How To Swim Hindi, how to Float In Hindi, swimming technique in Hindi, swimming swimming ... Beginners Swimming Tips in Hindi, How To Swim Hindi, how to Float In Hindi, swimming technique in Hindi, swimming swimming ... From the video description SHORTS SHORTS Now playing Touching the Base of a Deep Swimming Pool at 55+ Age 🏊🏻 #swimming #swimmingtips #deepwater Swimming By Sanuj Swimming By Sanuj • • 4.2M views 7 months ago Swimming By Sanuj Swimming By Sanuj Beginners Swimming Tips in Hindi, How To Swim Hindi, how to Float In Hindi, swimming technique in Hindi, swimming tips in ... Beginners Swimming Tips in Hindi, How To Swim Hindi, how to Float In Hindi, swimming technique in Hindi, swimming tips in ... From the video description 4K SHORTS SHORTS Now playing The world’s deepest pool! #shorts Alex Ojeda Alex Ojeda • • 84M views 3 years ago Alex Ojeda Alex Ojeda SHORTS SHORTS Now playing Secret Pool Illusion Stokes Twins Stokes Twins • • 68M views 5 months ago Stokes Twins Stokes Twins Subscribe. Subscribe. From the video description People also watched 2:19:41 2:19:41 Now playing Una agente transmigra en chica tonta forzada a casarse, pide divorcio pero el príncipe se enamora Cine Chino en Español Cine Chino en Español • • 23K views 9 hours ago Cine Chino en Español Cine Chino en Español Juró Dejar a Su Marido | Peliculas Completas | Peliculas de Viajes en el Tiempo ▻ Suscríbete al canal: ... Juró Dejar a Su Marido | Peliculas Completas | Peliculas de Viajes en el Tiempo ▻ Suscríbete al canal: ... From the video description New 10:34 10:34 Now playing New Ghar Kab Complete Hoga ? 😞 Sourav Joshi Vlogs Sourav Joshi Vlogs • • 384K views 1 hour ago Sourav Joshi Vlogs Sourav Joshi Vlogs Folllow me on Instagram- https://www.instagram.com/souravjoshivlogs/?hl=en I hope you enjoyed this video hit likes. And do ... Folllow me on Instagram- https://www.instagram.com/souravjoshivlogs/?hl=en I hope you enjoyed this video hit likes. And do ... From the video description New 4K 53:49 53:49 Now playing You’re Seeing This Just Before Your Old Identity Fully Deletes Quantum Mind Quantum Mind • • 1.5K views 4 hours ago Quantum Mind Quantum Mind QuantumConsciousness Something has already shifted. You didn't imagine it. The sense of distance from your own life. The way ... QuantumConsciousness Something has already shifted. You didn't imagine it. The sense of distance from your own life. The way ... From the video description New 20:53 20:53 Now playing SESION DE FOTOS CON MI PLACA DE 100K SUSCRIPTORES😳🤩😱*unboxing*|Yulis Yulis Yulis • • 5.7K views 6 hours ago Yulis Yulis Holaaaa amigos, espero hayan disfrutado el video GRACIASSSSSSSSS POR VER EL VIDEO, no se les olvide suscribirse, tqm ... Holaaaa amigos, espero hayan disfrutado el video GRACIASSSSSSSSS POR VER EL VIDEO, no se les olvide suscribirse, tqm ... From the video description New 4K + 6 more SHORTS SHORTS Now playing Swimming pool epic domino prank trick watermagic #shorts watermagic #shorts • • 169M views 4 years ago watermagic #shorts watermagic #shorts Crazy swimming pool challenge and prank ✌ Our main channel: ... Crazy swimming pool challenge and prank ✌ Our main channel: ... From the video description SHORTS SHORTS Now playing Why Fiberglass Pools are Going Out of Style Blu H2O Pools Blu H2O Pools • • 24K views 2 years ago Blu H2O Pools Blu H2O Pools SHORTS SHORTS Now playing Son and Dad at the swimming pool 😳 Part 1 #swimming #waterpark #sonanddad watermagic family watermagic family • • 215M views 1 year ago watermagic family watermagic family watermagic family is always searching for best water parks, swimming pools , slip'n'slide, cliff diving, free diving, water jumps, ... watermagic family is always searching for best water parks, swimming pools , slip'n'slide, cliff diving, free diving, water jumps, ... From the video description 4K SHORTS SHORTS Now playing City View Pool - Cinnamon Life #travel #colombo #hotel #5starhotel #cinnamonlife #swimming Cham Cham • • 11K views 9 months ago Cham Cham There are two big swimming pools at Cinnamon life, and this one is the city view pool . The other one is sea view infinity pool . There are two big swimming pools at Cinnamon life, and this one is the city view pool . The other one is sea view infinity pool . From the video description SHORTS SHORTS Now playing Fiberglass swimming pools are dug/set in one day. #fiberglasspools #modernpoolbuild #excavation CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP • • 1.4M views 2 years ago CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP SHORTS SHORTS Now playing How To Make A Jello Pool 🤔 Zack D. Films Zack D. Films • • 31M views 6 months ago Zack D. Films Zack D. Films 4K SHORTS SHORTS Now playing Feel the Depth of a Giant Pool 🔥 #swimming #swimmingpool Swimming By Sanuj Swimming By Sanuj • • 5.9M views 9 months ago Swimming By Sanuj Swimming By Sanuj SHORTS SHORTS Now playing Sunny Pool 🌊 Safety Swim Lessons 😎! Blippi Learns to Swim! #shorts Blippi - Educational Videos for Kids Blippi - Educational Videos for Kids • • 12M views 8 months ago Blippi - Educational Videos for Kids Blippi - Educational Videos for Kids For more Blippi videos and Blippi songs be sure to SUBSCRIBE to Blippi at https://youtube.com/Blippi?sub_confirmation=1 Brand ... For more Blippi videos and Blippi songs be sure to SUBSCRIBE to Blippi at https://youtube.com/Blippi?sub_confirmation=1 Brand ... From the video description SHORTS SHORTS Now playing Unique Swimming Pool DOD Stories DOD Stories • • 9.1M views 1 year ago DOD Stories DOD Stories Look! If you ever go into this swimming pool your clothes won't get wet. This is because there is no water inside it and it's empty. Look! If you ever go into this swimming pool your clothes won't get wet. This is because there is no water inside it and it's empty. From the video description 4K Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:20.927Z",
+      "data": {
+        "query": "site:nextdoor.com Sunny Side Pools Bedford",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/neighborhood/bedfordfarms--concord--nc/",
+            "price": 1500,
+            "title": "Bedford Farms, Concord | Everything You Need to Know",
+            "snippet": "Known for its well-maintained homes, community pool, and playground, it's a great place for families. It's close to schools and shopping, making it a ...",
+            "currency": "US$",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/city/lynchburg--va/",
+            "title": "Lynchburg, VA | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "Lynchburg, VA, is a peaceful, family-friendly town known for its rich history and beautiful landscapes.",
+            "position": 2,
+            "subtitle": ""
+          },
+          {
+            "link": "https://nextdoor.com/city/greenville--nc/",
+            "price": 300,
+            "title": "Greenville, NC | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "Greenville, NC is a peaceful, family-friendly city known for its vibrant arts scene and East Carolina University.",
+            "currency": "US$",
+            "position": 3
+          },
+          {
+            "link": "https://nextdoor.com/city/concord--nc/",
+            "price": 550,
+            "title": "Concord, NC | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "Concord, NC is a peaceful, family-friendly town known for its NASCAR Speedway and historic downtown. Nextdoor Neighbors appreciate its cleanliness and the ...",
+            "currency": "US$",
+            "position": 4
+          },
+          {
+            "link": "https://us.nextdoor.com/city/greenville--nc/",
+            "title": "Greenville, NC | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "Greenville, NC is a peaceful, family-friendly city known for its vibrant arts scene and East Carolina University. Nextdoor Neighbors appreciate its clean, ...",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:02:49.412Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Sunny Side Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:02:46.019Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Sunny Side Pools\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.SunnysidePoolService.144183846.html",
+            "title": "Sunnyside Pool Services Reviews - Lavaca, AR",
+            "snippet": "Sunnyside Pool Services is your go-to solution for expert pool care. From maintenance to precise chemical balancing, we ensure your pool stays sparkling and ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/tloc/Fort-Smith-AR/Swimming-Pool-Clean-and-Maintain/",
+            "title": "Find Swimming pool cleaner and maintainers in Fort Smith",
+            "snippet": "Sunnyside Pool Services is your go-to solution for expert pool care. From maintenance to precise chemical balancing, we ensure your pool stays sparkling and ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:32.820Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Sunny%20Side%20Pools&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search Map, All Facilities, Corporate Compliance Screener, ECHO Notify Air, Air Facility Search Map, Air Facilities, ECHO Clean Air Tracking Tool ( ...",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:36.150Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:39.952Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:46.089Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Sunny Side Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "WALMART SETTLEMENT AGREEMENT",
+            "snippet": "Sunny Isles Beach, City of, Florida. 1117. Sunrise, City of, Florida. 1118 ... Pools. In other words, for the National Fee Pool described above in ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/criminal-justice/NuisanceAbatement.pdf",
+            "title": "NUISANCE ABATEMENT",
+            "snippet": "1234 Sunnyside. Austin, Texas 78711. II ... If there are common areas specifically designed for gatherings (pool areas), these will not be affected.",
+            "position": 2
+          },
+          {
+            "date": "Nov 12, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/images/TAC%20-%20Redacted%20Version%20(public).pdf",
+            "title": "Case 1:21-md-03010-PKC Document 176 Filed 11/12/ ...",
+            "snippet": "Google has a monopoly in the exchange market in the United States, as confirmed by both indirect and direct evidence. 146. Google's exchange has ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:47.181Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 2
+          },
+          {
+            "link": "https://security.app.cpa.state.tx.us/",
+            "title": "Page Unavailable - Comptroller.Texas.Gov",
+            "snippet": "The webpage you are trying to access is temporarily out of service. We are either working to address the issue or conducting routine maintenance, ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 6
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 7
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "date": "Jan 10, 2026",
+            "link": "https://www.facebook.com/groups/1494427604106723/posts/4294122614137194/",
+            "title": "Anyone looking to verify these fake LLC You can search on the ...",
+            "snippet": "Anyone looking to verify these fake LLC You can search on the Texas comptroller account page Type their LLC name correctly and you can see ...",
+            "position": 9
+          },
+          {
+            "date": "Mar 31, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21435&ItemID=15140",
+            "title": "[PDF] Texas Franchise Tax No Tax Due Report",
+            "snippet": "Registered Office Street Address 2709 LESLIE LN SAN MARCOS, TX 78666 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 2. TX2020 05 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:01:48.170Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Sunny Side Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:01:49.457Z",
+      "data": {
+        "query": "site:dallascounty.org Sunny Side Pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 31, 2012",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2012ACFR.pdf",
+            "title": "COMPREHENSIVE ANNUAL FINANCIAL REpORT",
+            "snippet": "FINANCIAL SECTION. Independent Auditors' Report. Management's Discussion and Analysis (Unaudited). Basic Financial Statements:.",
+            "position": 1
+          },
+          {
+            "date": "Jan 22, 2026",
+            "link": "https://dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet%202026-012-7097.pdf",
+            "title": "Notice",
+            "snippet": "Event Type. Prebid Conference. Attendance. Recommended. Event date. 02/04/2026 10:00 AM CST. Location. Microsoft Teams. Event Note.",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "Jan Almon, narrative Mary Ann Sherman, photography",
+            "snippet": "Dallas County features a number of lakes that are reservoirs for municipal water and recreational use. These include Lake Ray Hubbard, Lake North, Joe Pool, ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:01:50.534Z",
+      "data": {
+        "query": "site:collincountytx.gov Sunny Side Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:01:51.612Z",
+      "data": {
+        "query": "site:dentoncounty.gov Sunny Side Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:01:52.399Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:02:20.849Z",
+      "data": {
+        "name": "Sunny Side Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 225-3783",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2401 Meadow Ct, Bedford, TX 76021",
+        "reviews": [],
+        "website": "http://sunnysidepoolsdfw.com/",
+        "maps_url": "https://www.google.com/maps/search/Sunny%20Side%20Pools%20Bedford%2C%20TX",
+        "categories": [
+          "Pool cleaning service"
+        ],
+        "review_count": null
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:03:07.625Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-05T04:02:53Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Sunny%20Side%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=bBaEaeLJHIO3qtsP17G9kAI\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-05T04:03:02Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Sunny%20Side%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=dRaEaZ_KM_W5qtsPirDegQM\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Sunny Side Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:03:28.318Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "SUNNY SIDE POOLS, LLC",
+        "taxpayer_number": "32099583265"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:03:28.320Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:03:41.779Z",
+      "data": {
+        "cost": 0.00062076,
+        "summary": "The reviews show strong signs of inauthenticity. All 8 reviews are perfect 5-star ratings posted within a narrow 5-month window, with highly similar, generic language praising the owner and service. There is a complete absence of any critical or detailed feedback, which is unusual for a real service business. The pattern suggests a coordinated effort to build a perfect rating profile.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-05T04:03:41.779Z",
+        "fake_signals": [
+          "All reviews are 5-star",
+          "Reviews clustered in a short timeframe (5 months ago)",
+          "Generic, repetitive praise lacking specific details",
+          "Similar sentence structures and keywords (professional, reliable, punctual, highly recommend)",
+          "No negative or constructive feedback",
+          "Owner name (Ethan) mentioned in multiple reviews in a promotional way"
+        ],
+        "recommendation": "SUSPECT_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "NO_EVIDENCE",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Some reviewers mention specific locations (Colleyville, Bedford)",
+          "A few reviewers mention a specific service (weekly pool maintenance)"
+        ],
+        "fake_review_score": 75,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only one platform (Google) has reviews. No other platforms have ratings to compare."
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-06T02:45:18.559Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Sunny Side Pools",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Sunny Side Pools",
+        "searched_at": "2026-02-06T02:45:05.176829",
+        "total_records": 0
+      }
+    }
+  }
+}

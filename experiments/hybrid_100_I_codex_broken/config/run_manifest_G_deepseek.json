@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "created": "2026-02-13T03:54:20.363Z",
+  "cohort": "G",
+  "lane": "deepseek",
+  "description": "100 new contractor full run using DeepSeek for pairwise lane calibration (remaining pool cohort)",
+  "sample_config": "experiments/hybrid_100_G/config/sample_100_group_G.json",
+  "targets": {
+    "contractors": 100,
+    "comparisons_per_contractor": 30,
+    "approx_pairwise_decisions": 1500,
+    "has_raw_data_now": 0,
+    "needs_raw_collection": 100
+  },
+  "execution": {
+    "environment": "source venv/bin/activate && set -a && . ./.env && set +a",
+    "steps": [
+      {
+        "id": "source_missing",
+        "command": "node bin/source_missing_from_manifest.js --config=experiments/hybrid_100_G/config/sample_100_group_G.json --required=google_presence,bbb,court_records,county_liens,tx_franchise"
+      },
+      {
+        "id": "snapshot",
+        "command": "node bin/hybrid_100_snapshot.js --group=G"
+      },
+      {
+        "id": "first_pass",
+        "command": "node bin/hybrid_100_first_pass.js --group=G"
+      },
+      {
+        "id": "swiss_pairwise",
+        "command": "node bin/hybrid_100_swiss_pass.js --group=G --rounds 30 --fresh --model=deepseek --concurrency=8"
+      }
+    ]
+  }
+}

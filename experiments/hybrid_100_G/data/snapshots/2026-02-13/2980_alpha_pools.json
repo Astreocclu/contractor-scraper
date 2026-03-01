@@ -1,0 +1,1561 @@
+{
+  "contractor_id": 2980,
+  "business_name": "Alpha Pools",
+  "city": "Keller",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T08:27:38.726Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-13T08:01:31.264Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 1,
+            "MECH_LIEN": 9
+          },
+          "active_liens": 9,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 3,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "ALPHA OMEGA POOLS",
+                "grantor": "YOUNG C JANE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "YOUNG C JANE",
+                    "ALPHA OMEGA POOLS",
+                    "MECHANICS LIEN",
+                    "6/28/1984",
+                    "1984012811411",
+                    "ALL/84128/1047",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Alpha Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1984-06-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1984012811411"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "SANDLER POOLS INC",
+                "grantor": "SMITH ALPHA A",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SMITH ALPHA A",
+                    "SANDLER POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/16/1985",
+                    "1985007601521",
+                    "ALL/85076/3177",
+                    "DALLAS",
+                    "Subdivision- Name: PRESTNWOOD6 Lot: 39 Block: 13 CBLK: 8195, CITY: DALLAS,, Reference - 76187 / 783"
+                  ],
+                  "search_term": "Alpha Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1985-04-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1985007601521"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "ALPHA TESTIN INC",
+                "grantor": "BOYNTON JAY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BOYNTON JAY",
+                    "ALPHA TESTIN INC",
+                    "RELEASE",
+                    "7/30/2007",
+                    "20070271020",
+                    "--/--/--",
+                    "IRVING",
+                    "Subdivision- Name: COTTONWOOD VALLEY PH 2 Lot: 2 Block: 11 CITY: IRVING,"
+                  ],
+                  "search_term": "Alpha Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2007-07-30",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "20070271020"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 7,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "PREMIER POOLS",
+                "grantor": "ALPHA TILE SERV",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ALPHA TILE SERV",
+                    "PREMIER POOLS",
+                    "MECHANICS LIEN",
+                    "9/24/1987",
+                    "D187393867",
+                    "OPR/9076/1893",
+                    "ARL, Subdivision: PARKWAY N, Lot: 8, Block: 3"
+                  ],
+                  "search_term": "Alpha Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-09-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187393867"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "PREMIER POOLS",
+                "grantor": "ALPHA TILE SERV",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ALPHA TILE SERV",
+                    "PREMIER POOLS",
+                    "MECHANICS LIEN",
+                    "9/24/1987",
+                    "D187393868",
+                    "OPR/9076/1896",
+                    "BDFRD, Subdivision: TIMBERVIEW ESTS, Lot: 23, Block: G"
+                  ],
+                  "search_term": "Alpha Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-09-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187393868"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE HAVEN POOLS & SPAS",
+                "grantor": "ALPHA LAND SURVEYING INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ALPHA LAND SURVEYING INC",
+                    "BLUE HAVEN POOLS & SPAS",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "5/7/2024",
+                    "D224079131",
+                    "OPR/--/--",
+                    "Subdivision: PT IRENEUS NEACE SURVEY"
+                  ],
+                  "search_term": "Alpha Pools",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2024-05-07",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D224079131"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE HAVEN POOLS INC",
+                "grantor": "ALPHA DAVID B",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ALPHA DAVID B",
+                    "BLUE HAVEN POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/5/2002",
+                    "D202094811",
+                    "OPR/15588/301",
+                    "SOUTHLAKE, Subdivision: QUAIL CRK ESTS, Lot: 5, Block: A"
+                  ],
+                  "search_term": "Alpha Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2002-04-05",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D202094811"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "ACCENT POOLS",
+                "grantor": "ACCENT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ACCENT POOLS",
+                    "ACCENT POOLS",
+                    "MECHANICS LIEN",
+                    "7/15/2003",
+                    "D203254766",
+                    "OPR/16930/316",
+                    "MANSFIELD, Subdivision: ENCHANTED ACRES ESTS, Lot: 16, Block: 2"
+                  ],
+                  "search_term": "Alpha Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-07-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203254766"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "ALPHA POOLS DBA",
+                "grantor": "ALPHA POOLS DBA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ALPHA POOLS DBA",
+                    "ALPHA POOLS DBA",
+                    "MECHANICS LIEN",
+                    "3/9/2018",
+                    "D218050418",
+                    "--/--/--",
+                    "FORT WORTH, Subdivision: STEADMAN FARMS, Lot: 28, Block: K"
+                  ],
+                  "search_term": "Alpha Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2018-03-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D218050418"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "PULLIAM POOLS",
+                "grantor": "PLEMONS ALPHA K",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PLEMONS ALPHA K",
+                    "PULLIAM POOLS",
+                    "MECHANICS LIEN",
+                    "5/12/1997",
+                    "D197082886",
+                    "OPR/12763/426",
+                    "NONE, Subdivision: FORUM RESIDENTIAL COMM, Lot: 28, Block: A"
+                  ],
+                  "search_term": "Alpha Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1997-05-12",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D197082886"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 lien(s) filed BY contractor (collecting payment - neutral)",
+            "8 lien(s) with unclear direction"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 9,
+          "human_summary": "OK: 1 liens filed BY Alpha Pools to collect payment (normal business, no penalty)",
+          "liens_unclear": 8,
+          "liens_by_count": 1,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 1,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Alpha Pools",
+        "searched_at": "2026-02-13T08:00:21.502884",
+        "total_records": 10
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:47:49.557Z",
+      "data": {
+        "query": "Alpha Pools Keller site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 24, 2017",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2017/08/25/dog-about-town-paddling-partying-and-more-things-to-do-with-your-pooch/",
+            "title": "Dog About Town: Paddling, partying and more things to do with your ...",
+            "snippet": "Along with kiddie pools and toys, there will be free puppuccinos ... Keller Parkway, Keller, 817-431-2344. Pantry: 214 E. Louisiana St ...",
+            "position": 1
+          },
+          {
+            "date": "Aug 9, 2019",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-diving-into-pool-parties-and-more-things-to-do-2/210701/",
+            "title": "Dog About Town: Diving Into Pool Parties and More Things to Do",
+            "snippet": "It's time for this year's doggy swim days, when area pools invite pooches in before they close for the season. Dogs must be spayed/neutered, ...",
+            "position": 2
+          },
+          {
+            "date": "Mar 10, 2017",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-st-patrsquos-parties-and-more-things-to-do/57458/",
+            "title": "Dog About Town: St. Pat's Parties and More Things to Do",
+            "snippet": "A St. Patrick's Day Yappy Hour from 5:30 to 9 p.m. Thursday at Sloan & Williams Winery in Grapevine will raise money for Canine Companions ...",
+            "position": 3
+          },
+          {
+            "date": "Apr 19, 2019",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-egg-hunts-parading-and-more-things-to-do/251982/",
+            "title": "Dog About Town: Egg Hunts, Parading and More Things to Do - NBC 5",
+            "snippet": "After selling out last year, the Spay Neuter Network's Bone Hunt & Doggie Carnival is expanding, including moving to Flag Pole Hill, ...",
+            "position": 4
+          },
+          {
+            "date": "Jul 21, 2017",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-chilling-out-and-more-things-to-do-with-your-pooch/31424/",
+            "title": "Dog About Town: Chilling Out and More Things to Do With Your Pooch",
+            "snippet": "Dog Days of Summer, from 11 am to 1 pm Saturday in Highland Village, will feature adoptions, a pet parade, vendors, agility show, photo booth, caricature ...",
+            "position": 5
+          },
+          {
+            "date": "Apr 28, 2017",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-playdates-for-the-books-and-more-things-to-do/18712/",
+            "title": "Dog About Town: Playdates for the Books and More Things to Do",
+            "snippet": "This year's Dog Bowl, from 1 to 5 p.m. Sunday at the Cotton Bowl in Fair Park, will also feature off-leash playing and splashing in kiddie pools ...",
+            "position": 6
+          },
+          {
+            "date": "Mar 16, 2018",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-celebrating-st-pats-and-more-pooch-friendly-fun/220145/",
+            "title": "Dog About Town: Celebrating St. Pat's and More Pooch-friendly Fun",
+            "snippet": "Looking for someplace for you and your four-legger to wear green this weekend? Dogs who don't mind crowds can watch and some will even march ...",
+            "position": 7
+          },
+          {
+            "date": "Oct 20, 2017",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-costume-party-hopping-and-more-things-to-do/43528/",
+            "title": "Dog About Town: Costume Party Hopping and More Things to Do",
+            "snippet": "Mutts Canine Cantina's fifth annual Howl-O-Ween party, from 10 a.m. to 2 p.m. Saturday,will feature a costume contest at noon with prizes ...",
+            "position": 8
+          },
+          {
+            "date": "Oct 24, 2013",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2013/10/25/dog-about-town-trick-or-treating-for-a-good-cause-and-more-things-to-do-with-your-pooch/",
+            "title": "Dog About Town: Trick-or-treating for a good cause and more things ...",
+            "snippet": "Wondering where to take your four-legged trick-or-treater? There are Halloween celebrations on just about every block.",
+            "position": 9
+          },
+          {
+            "date": "Dec 8, 2017",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2017/12/08/dog-about-town-shopping-sipping-and-more-pooch-friendly-fun/",
+            "title": "Dog About Town: Shopping, sipping and more pooch-friendly fun",
+            "snippet": "Cats are welcome too. $150, includes a professional set and a mounted 8x10. 4950 Keller Springs Road, Suite 450. Reserve a spot (required) at ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:49:34.019Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Alpha Pools\" Keller",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:00.535Z",
+      "data": "Alpha Pools Keller review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You History History All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 1:06 1:06 Now playing Alpha Pool Service Review - Keller, Texas - (817) 379 – 6011 SuperSimpleVideo SuperSimpleVideo • • 63 views 11 years ago SuperSimpleVideo SuperSimpleVideo Alpha Pool Service Review - Keller , Texas - (817) 379 – 6011 Alpha pool service and Repair Keller understands your pool is an ... Alpha Pool Service Review - Keller , Texas - (817) 379 – 6011 Alpha pool service and Repair Keller understands your pool is an ... From the video description 2:36 2:36 Now playing Get to know Alpha Pools USA Alpha Pools USA Alpha Pools USA • • 45 views 1 year ago Alpha Pools USA Alpha Pools USA Billy and Joel discuss what sets Alpha Pools USA apart. From our commitment to building a pool that fits your needs and wants, ... Billy and Joel discuss what sets Alpha Pools USA apart. From our commitment to building a pool that fits your needs and wants, ... From the video description 2:06 2:06 Now playing Keller Trying To Fix Rule Keeping People From Building Pools CBS TEXAS CBS TEXAS • • 156 views 8 years ago CBS TEXAS CBS TEXAS The problem is a policy that was meant to precent flooding. The problem is a policy that was meant to precent flooding. From the video description CC 0:40 0:40 Now playing Alpha Pools (Commercial) In The Moment Productions In The Moment Productions • • 574 views 6 years ago In The Moment Productions In The Moment Productions Alpha Pools is a family owned and operated pool service company servicing the Hemet and San Jacinto valley for over 12 years. Alpha Pools is a family owned and operated pool service company servicing the Hemet and San Jacinto valley for over 12 years. From the video description 4K Shorts Your One Stop Solution For All Your Pool Requirements 186 views Keller pool - new bottom and Tara liner installation #premierchoicepools #tarapools 78 views This isn’t just a pool — it’s a statement. ✨ #AlphaFineHomes 1.4K views Does a Pool Add Value? 2.8K views New pool bottom - Keller pool #premierchoicepools 2.6K views Show more Show less SHORTS SHORTS Now playing Cleaner Pool with no chemicals: Oxygenated Pools are AMAZING! #oxygenatedpools #azpools Shasta Pool School Shasta Pool School • • 595 views 1 year ago Shasta Pool School Shasta Pool School Shasta Pools is a Phoenix pool builder who provides a variety of services including new pool construction, swimming pool ... Shasta Pools is a Phoenix pool builder who provides a variety of services including new pool construction, swimming pool ... From the video description 0:31 0:31 James Talarico for US Senate Vote by March 3rd Sponsored James Talarico James Talarico • • Vote by March 3rd Learn more Alpha Pool Services Alpha Pool Services @alphapoolservices250 • 9 subscribers All about pools , Subscribe SHORTS SHORTS Now playing Basement therapy pool The pool man Pete The pool man Pete • • 1.1K views 2 years ago The pool man Pete The pool man Pete 3:02 3:02 Now playing Pool Addition | Keller, Tx P&OL Designs P&OL Designs • • 62 views 2 years ago P&OL Designs P&OL Designs Like this video, Let us know! THANK YOU FOR WATCHING Presentation created by POOL & OUTDOOR LIVING DESIGNS WWW. Like this video, Let us know! THANK YOU FOR WATCHING Presentation created by POOL & OUTDOOR LIVING DESIGNS WWW. From the video description 3:02 3:02 Now playing New Swimming Pool Build | Keller, Tx P&OL Designs P&OL Designs • • 39 views 1 year ago P&OL Designs P&OL Designs Video presentation by Pool & Outdoor Living Designs . Video presentation by Pool & Outdoor Living Designs . From the video description 3:02 3:02 Now playing New Swimming Pool Build | Keller, Tx P&OL Designs P&OL Designs • • 17 views 1 year ago P&OL Designs P&OL Designs Video presentation by Pool & Outdoor Living Designs . Video presentation by Pool & Outdoor Living Designs . From the video description 0:29 0:29 Now playing Alpha Pool and Landscape Darrin Davidson Darrin Davidson • • 31 views 8 years ago Darrin Davidson Darrin Davidson 1:53 1:53 Now playing Swimming Pool Addition | Keller, Tx P&OL Designs P&OL Designs • • 86 views 2 years ago P&OL Designs P&OL Designs Like this video, Let us know! Hit the like button or leave a comment. THANK YOU FOR WATCHING Presentation created by POOL ... Like this video, Let us know! Hit the like button or leave a comment. THANK YOU FOR WATCHING Presentation created by POOL ... From the video description People also watched 2:48 2:48 Now playing 12764 Stuart RD Azle, TX 76020 Wyatt Admire Wyatt Admire • • 408 views 8 years ago Wyatt Admire Wyatt Admire Eagle Mountain Lake. Eagle Mountain Lake. From the video description 2:36 2:36 Now playing Fiberglass Pools Are CHEAP! Top 4 Fiberglass Pools Myths Exposed! Pool-ology Pool-ology • • 26K views 1 year ago Pool-ology Pool-ology Think fiberglass pools are cheap, low quality, and won't last? Think again! We're busting the top 4 myths about fiberglass pools ... Think fiberglass pools are cheap, low quality, and won't last? Think again! We're busting the top 4 myths about fiberglass pools ... From the video description 4K Summary This video debunks common misconceptions about fiberglass pools, such as the idea that they are cheap, low quality, and won't last. The video explores four myths, including the idea that fiberglass pool surfaces bubble and blister, and that they look cheap. It also addresses the misconception that fiberglass pools can't be customized and that they often float or pop out of the ground. AI-generated video summary Quality and accuracy may vary. Summary This video debunks common misconceptions about fiberglass pools, such as the idea that they are cheap, low quality, and won't last. The video explores four myths, including the idea that fiberglass pool surfaces bubble and blister, and that they look cheap. It also addresses the misconception that fiberglass pools can't be customized and that they often float or pop out of the ground. 7:13 7:13 Now playing Fiberglass pool install timelapse: part 1 Adam Miller Adam Miller • • 9.9M views 6 years ago Adam Miller Adam Miller Part 2 of the installation: https://youtu.be/6ZLrtMf0Hc0 Final product: https://youtu.be/VYm-EjXsGN8. Part 2 of the installation: https://youtu.be/6ZLrtMf0Hc0 Final product: https://youtu.be/VYm-EjXsGN8. From the video description 3:57 3:57 Now playing Crystal Clear Pool Water, the secret that pool stores don't want you to know!! FIX THIS FIRST... Next Level DIY Next Level DIY • • 1M views 2 years ago Next Level DIY Next Level DIY Stop wasting money on expensive pool chemicals. Perfect pool water can be easy and cheap to obtain. Testing your water is ... Stop wasting money on expensive pool chemicals. Perfect pool water can be easy and cheap to obtain. Testing your water is ... From the video description 6 chapters Intro | Balancing your water | Testing your water | Raising your alkalinity | Adding baking soda | Outro 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Balancing your water Balancing your water 0:43 Balancing your water 0:43 Testing your water Testing your water 1:01 Testing your water 1:01 Raising your alkalinity Raising your alkalinity 2:17 Raising your alkalinity 2:17 Adding baking soda Adding baking soda 2:55 Adding baking soda 2:55 Outro Outro 3:25 Outro 3:25 + 6 more 1:43 1:43 Now playing Swimming Pool Addition | Keller, Tx P&OL Designs P&OL Designs • • 63 views 2 years ago P&OL Designs P&OL Designs Like this video, Let us know! Hit the like button or leave a comment. THANK YOU FOR WATCHING Presentation created by POOL ... Like this video, Let us know! Hit the like button or leave a comment. THANK YOU FOR WATCHING Presentation created by POOL ... From the video description SHORTS SHORTS Now playing $28 FAMILY PASS - Keller Tx Waterpark Ludwin & Margie - Dallas Fort Worth Texas Life Ludwin & Margie - Dallas Fort Worth Texas Life • • 1.1K views 7 months ago Ludwin & Margie - Dallas Fort Worth Texas Life Ludwin & Margie - Dallas Fort Worth Texas Life for a full day of waterpark fun with the whole family?! Yes, please! ☀️ We took the kids to Keller Pointe in Keller , and it was the ... for a full day of waterpark fun with the whole family?! Yes, please! ☀️ We took the kids to Keller Pointe in Keller , and it was the ... From the video description 0:55 0:55 Now playing Pool Builders Keller, TX 817-921-3504 | Swimming Pool Builders Keller TX Darrell James Darrell James • • 202 views 12 years ago Darrell James Darrell James Pool Builders Keller TX Call for a free estimate: (817) 921-3504 Pool Builders Keller TX Flamingo Pool and Spa is a high quality ... Pool Builders Keller TX Call for a free estimate: (817) 921-3504 Pool Builders Keller TX Flamingo Pool and Spa is a high quality ... From the video description CC Navigation made stunning: GV70’s 27\" OLED Navigation Display shows the way in style. 27-Inch OLED Display Sponsored Genesis USA Watch Shop now SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description 1:55 1:55 Now playing Why It Pays to Choose Quality Hot Tub, Pool and Spa Supplies Keller Best Hot Tub Dealers Best Hot Tub Dealers • • 4 views 8 years ago Best Hot Tub Dealers Best Hot Tub Dealers Hot Tub, Pool and Spa Supplies Keller ☎ 817-919-0247 ☀ http://alphapools.com/ | Keep Your Swimming Pool and Spa Water ... Hot Tub, Pool and Spa Supplies Keller ☎ 817-919-0247 ☀ http://alphapools.com/ | Keep Your Swimming Pool and Spa Water ... From the video description 1:47 1:47 Now playing Discount Pool Supplies Keller, Texas Best Hot Tub Dealers Best Hot Tub Dealers • • 2 views 8 years ago Best Hot Tub Dealers Best Hot Tub Dealers Discount Pool Supplies Keller , Sale on Swimming Pool Chemicals ☎ 817-919-0247 ➤ Keller's Best Place to Buy Discount Pool ... Discount Pool Supplies Keller , Sale on Swimming Pool Chemicals ☎ 817-919-0247 ➤ Keller's Best Place to Buy Discount Pool ... From the video description KellerCustomPools KellerCustomPools @KellerCustomPools • 1 subscriber Custom Pool Builders Keller TX 817-993-6522 - http://www.KellerCustomPools.com Keller Custom Pool builders provides pool ... Subscribe 0:50 0:50 Now playing Impressive Keller Pool & Spa with water feature wall Blue Lagoon Enterprises LLC Blue Lagoon Enterprises LLC • • 1.2K views 3 years ago Blue Lagoon Enterprises LLC Blue Lagoon Enterprises LLC Custom pool and spa designed by The Blue Lagoons, 214-791-2583. Check us out at www.bluelagoonspoolservice.com. Custom pool and spa designed by The Blue Lagoons, 214-791-2583. Check us out at www.bluelagoonspoolservice.com. From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:01.595Z",
+      "data": {
+        "query": "site:nextdoor.com Alpha Pools Keller",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/marketplace/lumberton--tx/free/",
+            "title": "Free Finds in Lumberton, TX | For Sale & Free - Nextdoor",
+            "snippet": "Free Finds near the neighborhood in Lumberton, TX. Find items in For Sale & Free on Nextdoor - all listings are local.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:50.542Z",
+      "data": "Poolwerx North Richland Hills | Pool & Spa | Products & Advice --> 1800 407 6657 USA Australia New Zealand United States Services: View Details Business hours: Get Directions { if(checkIfCurrentPoolwerx) { $dispatch('open-modal','find-a-poolwerx-modal'); $dispatch('close-set-location') } else {setMyPool(locationItem?.lat,locationItem?.lng); $dispatch('open-set-location')} triggerButtonDataLayer($event, locationItem?.id, locationItem?.name, locationItem?.distance + 'km', $refs?.addressAutocomplete?.value || '', locationItem?.type)}\" class=\"hidden w-full transform items-center justify-center rounded-b-xl bg-lightBlue-300 py-3 text-charcoal\" x-bind:class=\"{ 'bg-charcoal-50': checkIfCurrentPoolwerx,'bg-lightBlue-300':!checkIfCurrentPoolwerx }\" > --> View Location Details Services: View Details Business hours: Get Directions { if(checkIfCurrentPoolwerx) { $dispatch('open-modal','find-a-poolwerx-modal'); $dispatch('close-set-location') } else {setMyPool(locationItem?.lat,locationItem?.lng); $dispatch('open-set-location')} triggerButtonDataLayer($event, locationItem?.id, locationItem?.name, locationItem?.distance + 'km', $refs?.addressAutocomplete?.value || '', locationItem?.type)}\" class=\"hidden w-full transform items-center justify-center rounded-b-xl bg-lightBlue-300 py-3 text-charcoal\" x-bind:class=\"{ 'bg-charcoal-50': checkIfCurrentPoolwerx,'bg-lightBlue-300':!checkIfCurrentPoolwerx }\" > --> View Location Details Poolwerx North Richland Hills Services: Retail | Mobile View Details Business hours: Get Directions { if(checkIfCurrentPoolwerx) { $dispatch('open-modal','find-a-poolwerx-modal'); $dispatch('close-set-location') } else {setMyPool(locationItem?.lat,locationItem?.lng); $dispatch('open-set-location')} triggerButtonDataLayer($event, locationItem?.id, locationItem?.name, locationItem?.distance + 'km', $refs?.addressAutocomplete?.value || '', locationItem?.type)}\" class=\"hidden w-full transform items-center justify-center rounded-b-xl bg-lightBlue-300 py-3 text-charcoal\" x-bind:class=\"{ 'bg-charcoal-50': checkIfCurrentPoolwerx,'bg-lightBlue-300':!checkIfCurrentPoolwerx }\" > --> View Location Details --> Poolwerx Poolwerx Services Services Residential Services Commercial Services Poolrite™ Service Packages One-Time Pool Service Green Pool Clean Up Pool Equipment Repair Pool Mastic & Deck-O Seal Hot Tub / Spa Service Pool Decking View All Residential Services Gyms & Health Clubs Homeowners Association Pool Services Hospitality Pool Services Insurance Provider Pool Services Pool Builder Services Realtors Pool Services Schools View All Commercial Services Poolrite™ Service Packages Our tailored service packages include regular pool cleaning, chemical balancing, equipment checks, and expert advice. Learn more Request a Service Locations Experts Tips & Advice Category Pool Maintenance & Care Pool Equipment Water Quality & Health Energy Efficiency Money Saving Tips Lifestyle View All Expert Tips & Advice Pool Maintenance Tips for Beginners How to Keep Your Pool Refreshed All Summer How to Keep Your Pool Safe Year-Round The Beginner's Guide to Pool Maintenance Basics How to Detect a Leak in Your Pool View All Pool Maintenance & Care Extending Your Pool Season: Pool Covers How to Keep Your Pool Equipment in Top Condition Helpful Facts New Pool Owners Should Know Top Reasons to Have Your Pool Equipment Checked View All Pool Equipment What Causes A Green Pool? Everything To Know About a Saltwater Pool 3 warning signs that you need to schedule a health check What to Know About Your Dog and Your Pool View All Water Quality & Health Which Pool Heating Solution is right for you? Why Invest in Energy Efficient Pool Equipment The Comforts Of Owning A Pool Chiller Top 3 benefits of pool automation Customize Your Pool Temperature All Season Long View All Energy Efficiency 5 Easy Ways To Reduce Your Pool's Energy Usage And Save Money View All Money Saving Tips 5 Workouts To Do In Your Swim Spa Why is it Important to Teach Your Kids How to Swim? The Benefits of Owning a Hot Tub How to Stay Safe in the Sun This Summer View All Lifestyle Benefits of Pool Covers Save money on your pool by investing in a cover, which offers benefits year-round, not just in cooler months. Learn more Join Us Join Us Franchise with Poolwerx Careers Franchising Overview Franchise Options Careers Overview View Open Positions Start a Career or Make a Change? With a rapidly expanding global business, Poolwerx is always on the lookout for talented, passionate and committed people who can make an immediate impact. Find out More News & events About us Careers Franchise with Poolwerx Contact us Find a Poolwerx Icon Search Browse our product range here Find a Poolwerx Browse our product range here Find a Poolwerx 1800 407 6657 Currently viewing United States Change Australia New Zealand United States Browse our product range here Close )} --> Browse our product range here Close )} --> Request a Quote Poolwerx North Richland Hills Request a Quote Request a Quote { JSON.stringify(blok, undefined, 2)} --> Your local pool & spa experts in Keller Pool Shop & Mobile Pool Servicing Visit us in-store for all your pool and spa needs, or let us bring expert care and services straight to your home. Request a Quote Call Now Home Locations Poolwerx North Richland Hills Home Previous page Current page --> { JSON.stringify(blok, undefined, 2)} --> Location Details What we offer Retail (Pool Shop) Mobile (Home servicing) ADDRESS 8528 Davis Boulevard, Suite 190, North Richland Hills, Texas 76182 BUSINESS HOURS Monday 10:00 AM - 5:00 PM Tuesday 10:00 AM - 5:00 PM Wednesday 10:00 AM - 5:00 PM Thursday 10:00 AM - 5:00 PM Friday 10:00 AM - 5:00 PM Saturday 9:00 AM - 5:00 PM Show all days less days GET IN TOUCH (972) 962-9119 Contact Us { JSON.stringify(blok, undefined, 2)} --> Close Pool Store and Mobile Pool Technicians in North Richland Hills & Keller Poolwerx North Richland Hills was started 22 years ago as just a pool service company, and then adding pool and deck remodel along to way. Poolwerx North Richland Hills prides themselves in helping clients and being a trustworthy team to help achieve backyard dreams. Our store and mobile technicians stock a selection of chemicals, equipment, and accessories for the spa and pool. If you have questions about pool maintenance, you can ask our team of pool experts. We’re here to ensure that your pool stays healthy and safe. } --> { JSON.stringify(blok, undefined, 2)} --> Pool & Spa Servicing We have several pool technicians that offer pool servicing in the North Richland Hills & Keller area. With over 70 years of experience, you can depend on us to keep your pool healthy all year round. Pool Retail Store Come into our pool store to browse our extensive range of pool products including chemicals, pool pumps, replacement parts, pool accessories and more. We also offer ‘Interest Free’ financing on larger purchases. Renovations & Remodel We can create your backyard oasis and change your swimming pool and spa to look anyway you want. Do you need re-plaster, tile, coping, decking, mastic and more. { JSON.stringify(blok, undefined, 2)} --> Pool & Spa Services We can come to you! We want to be the company you depend on for high-quality pool servicing. You can rely on our team of pool technicians when you need a pool inspection, installation, or repair job. We have the tools and expertise to make your pool seem brand-new!. Some of the services we offer include: Poolrite™ Service One-Time Pool Service Green Pool Clean Up Vacation Pool Service Welcome to your new Pool Pool Equipment Repair See All Residential Services See All Commercial Services { JSON.stringify(blok, undefined, 2)} --> Request a Quote or Inquire Our experts at Poolwerx are ready to serve your pool and hot tub needs. To request a quote or inquire about a specific service, please click the button to provide your contact information and we will promptly respond. Get Started Now { JSON.stringify(blok, undefined, 2)} --> Areas we service Our mobile teams provide swimming pool, hot tub, and spa services, cleaning, maintenance, water balancing, repairs, and more in the following zip codes: Keller (76244) North Richland Hills (76182) Keller (76248) View More View Less Close { JSON.stringify(blok, undefined, 2)} --> WHAT OUR CUSTOMERS SAY See why pool owners love Poolwerx! Discover real stories and reviews from customers about our pool services. Previous Next Debby Poolwerx North Richland Hills I couldn’t be more thrilled with the results of my PebbleTec pool resurfacing, managed by Raul and his team at Poolwerx. From start to finish, the entire process was smooth, professional, and stress-free. Raul communicated clearly throughout the project, kept me informed of every step, and followed through on every commitment. He made excellent suggestions that impro... Read more Charles Does Poolwerx North Richland Hills Poolwerx delivers top-notch service every week. My tech Jakob is always friendly, reliable, and incredibly knowledgeable. Couldn’t ask for better care for my pool! Read more Stephen Noakes Poolwerx North Richland Hills Courteous, knowledgeable sales personnel. Good job by the crew who did the “facelift” work. A special thanks to Raul. There was a bit of an issue getting the fresh water correctly balanced, but Raul worked diligently To resolve that issue. The pool looks great!. Read more Kevin Dydyk Poolwerx North Richland Hills Shop 'Local' - honest, helpful, not just looking to make a $$! Competitive prices and they won't sell you stuff you don't need like Leslie's does nor orvercharge you like, Claffey's. I've been coming here consistently for 8 years (previously Alpha pools) because these folks are 100% straightforward. I like to do as much pool maintenance and repair myself and they don'... Read more Keith Burkhalter Poolwerx North Richland Hills Just wanted to pass on a compliment on Dylan. He was very thorough yesterday in determining what repair work I needed and was super helpful answering the questions I had on my equipment setup as it was a bit different than my past pools. And today he completed the repair work and all appears to be operating fine. Customers can be quick to complain but can fail to comp... Read more Poolwerx Reviews close Debby Poolwerx North Richland Hills 16 October 2025 I couldn’t be more thrilled with the results of my PebbleTec pool resurfacing, managed by Raul and his team at Poolwerx. From start to finish, the entire process was smooth, professional, and stress-free. Raul communicated clearly throughout the project, kept me informed of every step, and followed through on every commitment. He made excellent suggestions that improved both the look and performance of the pool. The crew stayed on schedule and worked efficiently. Pricing was fair and transparent, and I truly appreciated that they made sure I was completely satisfied with the finished product before sending the final bill and closing the project. My pool looks absolutely stunning—better than I imagined! If you’re looking for top-quality work, honest timely communication, a company with integrity, and outstanding service, I highly recommend Poolwerx and Raul for your pool resurfacing project. Charles Does Poolwerx North Richland Hills 9 October 2025 Poolwerx delivers top-notch service every week. My tech Jakob is always friendly, reliable, and incredibly knowledgeable. Couldn’t ask for better care for my pool! Stephen Noakes Poolwerx North Richland Hills 6 June 2025 Courteous, knowledgeable sales personnel. Good job by the crew who did the “facelift” work. A special thanks to Raul. There was a bit of an issue getting the fresh water correctly balanced, but Raul worked diligently To resolve that issue. The pool looks great!. Kevin Dydyk Poolwerx North Richland Hills 12 June 2024 Shop 'Local' - honest, helpful, not just looking to make a $$! Competitive prices and they won't sell you stuff you don't need like Leslie's does nor orvercharge you like, Claffey's. I've been coming here consistently for 8 years (previously Alpha pools) because these folks are 100% straightforward. I like to do as much pool maintenance and repair myself and they don't hesitate to help me Every time I come in. If they don't have the part on hand they will tell me what to order so I can get my system up and running quickest. Recently, they have helped me replace a motor and install all the parts. I brought in a buddy's pump with a stubborn impeller and they brought it to the back bench and helped me remove it, no charge! I didn't bother to shop around when I needed to update my whole system about a year after the freeze. I knew Poolwerx were honest and reliable. I had a controller, pump, and new heater installed. Communication was great, the install was professional and they even came back to help tune up the settings. Try out Claffey and Leslies if you like, but if you want local reliability and dependability at a fair price, come see Poolwerx. Keith Burkhalter Poolwerx North Richland Hills 19 January 2024 Just wanted to pass on a compliment on Dylan. He was very thorough yesterday in determining what repair work I needed and was super helpful answering the questions I had on my equipment setup as it was a bit different than my past pools. And today he completed the repair work and all appears to be operating fine. Customers can be quick to complain but can fail to compliment so I wanted to make sure you know Dylan is the reason I am a satisfied customer who will now use you again in the future and recommend you to my neighbors. And for those wondering, I found the parts and labor fees to be fair. { JSON.stringify(blok, undefined, 2)} --> can’t find what you're looking for? } --> Check out some of the below options to see if we can assist you further. Request a Quote Contact Us Give us a Call Back to Search Looking for your local Poolwerx site? We’ve detected you’re browsing from Australia , but you’re currently viewing the United States Poolwerx website . For the most relevant information, services, and products near you, we recommend visiting our Australia Poolwerx Website. Continue browsing We’ve detected you’re browsing from United States , but you’re currently viewing the United States Poolwerx website . For the most relevant information, services, and products near you, we recommend visiting our United States Poolwerx Website. Continue browsing We’ve detected you’re browsing from New Zealand , but you’re currently viewing the United States Poolwerx website . For the most relevant information, services, and products near you, we recommend visiting our New Zealand Poolwerx Website. Continue browsing Change Sites Now We use cookies to enhance your experience. By continuing to visit this site, you accept our use of cookies. Accept Reject Follow us About Poolwerx About Us Locations News & Events Careers Franchise with Poolwerx Current Promotions Help & Support Contact Us Request a Service Find a Poolwerx Expert Tips & Advice Services Poolrite ™ Service Green Pool Clean Up One-Time Pool Service Pool Lighting Pool Equipment Repair Hot Tub / Spa Drain & Clean Commercial Services Brand Partners Fluidra Jandy Polaris Oreq Big Mouth WOW Sports Madimack 1800 407 6657 © 2026 Poolwerx Corporation Pty. Ltd. Terms of Trade Privacy Policy Cookie Policy Close Close Select your preferred Poolwerx We are the experts when it comes to pools and spas. Let’s find your closest Poolwerx. Use your current location The area you searched is serviced by Please use the search field to find your nearest location. Services: View Details Business hours: Get Directions { if(checkIfCurrentPoolwerx) { $dispatch('open-modal','find-a-poolwerx-modal'); $dispatch('close-set-location') } else {setMyPool(locationItem?.lat,locationItem?.lng); $dispatch('open-set-location')} triggerButtonDataLayer($event, locationItem?.id, locationItem?.name, locationItem?.distance + 'km', $refs?.addressAutocomplete?.value || '', locationItem?.type)}\" class=\"hidden w-full transform items-center justify-center rounded-b-xl bg-lightBlue-300 py-3 text-charcoal\" x-bind:class=\"{ 'bg-charcoal-50': checkIfCurrentPoolwerx,'bg-lightBlue-300':!checkIfCurrentPoolwerx }\" > --> View Location Details Other Poolwerx stores & mobile services nearby It looks like the location you entered is outside our mobile servicing area. For in-store assistance, please try entering a nearby suburb or postcode – our team will be happy to assist you in person when you visit your closest Poolwerx retailer. My preferred Poolwerx Poolwerx North Richland Hills Services: Retail | Mobile View Details Business hours: Get Directions { if(checkIfCurrentPoolwerx) { $dispatch('open-modal','find-a-poolwerx-modal'); $dispatch('close-set-location') } else {setMyPool(locationItem?.lat,locationItem?.lng); $dispatch('open-set-location')} triggerButtonDataLayer($event, locationItem?.id, locationItem?.name, locationItem?.distance + 'km', $refs?.addressAutocomplete?.value || '', locationItem?.type)}\" class=\"hidden w-full transform items-center justify-center rounded-b-xl bg-lightBlue-300 py-3 text-charcoal\" x-bind:class=\"{ 'bg-charcoal-50': checkIfCurrentPoolwerx,'bg-lightBlue-300':!checkIfCurrentPoolwerx }\" > --> View Location Details Search for other Locations Close"
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:47:07.832Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "https://www.poolwerx.com/locations/texas/poolwerx-north-richland-hills/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "s & Health Clubs Homeowners Association Pool Services Hospitality Pool Services Insurance Provider Pool Services Pool Builder Services Realtors Pool Services Schools Vie"
+          }
+        ],
+        "durations": [
+          "22 years",
+          "70 years",
+          "8 years"
+        ],
+        "confidence": "WEAK",
+        "source_url": "https://www.poolwerx.com/locations/texas/poolwerx-north-richland-hills/",
+        "analyzed_pages": [
+          {
+            "url": "https://www.poolwerx.com/locations/texas/poolwerx-north-richland-hills/",
+            "type": "homepage",
+            "title": "Poolwerx North Richland Hills | Pool & Spa | Products & Advice"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": true
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:47:13.563Z",
+      "data": {
+        "query": "site:yelp.com \"Alpha Pools\" \"Keller, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Service&find_loc=Keller%2C+TX+76248",
+            "title": "TOP 10 BEST Pool Service near Keller, TX 76248 - Yelp",
+            "rating": 4.3,
+            "snippet": "... Keller, TX 76248. Map. Swimming Pool Service in Keller, Texas · Swimming ... Alpha Pools) because these folks are 100% straightforward. I like to do as ...",
+            "position": 1,
+            "ratingCount": 591
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=poolservice&find_loc=Keller%2C+TX",
+            "title": "THE BEST 10 Pool & Hot Tub Service near KELLER, TX - Yelp",
+            "rating": 4.1,
+            "snippet": "... Keller, TX. Map. Swimming Pool Repair in Keller, Texas · Pool Installation ... Alpha Pools) because these folks are 100% straightforward. I like to do as ...",
+            "position": 2,
+            "ratingCount": 637
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=Keller%2C+TX+76248",
+            "title": "THE BEST 10 POOL CLEANERS near KELLER, TX 76248 - Yelp",
+            "rating": 4.1,
+            "snippet": "... Keller, TX - February 2026. Showing 1-80 of 240. Sunny Day Pools - Pool ... Alpha Pools) because these folks are 100% straightforward. I like to do as ...",
+            "position": 3,
+            "ratingCount": 714
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Keller%2C+TX",
+            "title": "Best Swimming Pool Builders near Keller, TX - Yelp",
+            "rating": 4.2,
+            "snippet": "... Keller, TX. Map. Revamp Your Swimming Pool With a Remodel in Keller, Texas ... Alpha Pools) because these folks are 100% straightforward. I like to do as ...",
+            "position": 4,
+            "ratingCount": 1115
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Weekly+Pool+Service&find_loc=Keller%2C+TX",
+            "title": "Best Weekly Pool Service near Keller, TX - Yelp",
+            "rating": 4.2,
+            "snippet": "... Keller, TX. Map. Swimming Pool Plastering in Keller, Texas · Swimming Pool ... Alpha Pools) because these folks are 100% straightforward. I like to do as ...",
+            "position": 5,
+            "ratingCount": 617
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Installation&find_loc=Keller%2C+TX",
+            "title": "TOP 10 BEST Pool Installation near Keller, TX - Updated 2026 - Yelp",
+            "rating": 4.2,
+            "snippet": "... Keller, TX. Map. Pool Tile Repair in Keller, Texas · Swimming Pool ... Alpha Pools) because these folks are 100% straightforward. I like to do as ...",
+            "position": 6,
+            "ratingCount": 715
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=hottubandpool&find_loc=keller%2C+TX",
+            "title": "THE BEST 10 HOT TUB & POOL near KELLER, TX - Yelp",
+            "rating": 4,
+            "snippet": "... Keller, TX · Gold Buyers in Keller, TX. Filters. Free price estimates from ... Alpha Pools) because these folks are 100% straightforward. I like to do as ...",
+            "position": 7,
+            "ratingCount": 787
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Cleaners&find_loc=Keller%2C+TX",
+            "title": "TOP 10 BEST Pool Cleaners near Keller, TX - Updated 2026 - Yelp",
+            "rating": 4.1,
+            "snippet": "... Keller, TX. Map. Pool Pump Repair in Keller, Texas · Swimming Pool Service ... Alpha Pools) because these folks are 100% straightforward. I like to do as ...",
+            "position": 8,
+            "ratingCount": 522
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Cleaning+Services&find_loc=Keller%2C+TX",
+            "title": "Best Pool Cleaning Services near Keller, TX - Yelp",
+            "rating": 4.2,
+            "snippet": "... Alpha Pools) because these folks are 100% straightforward. I like to do as ... Seasonal Searches in Keller, TX. Accountants in Keller, TX · Cpa Firms in ...",
+            "position": 9,
+            "ratingCount": 518
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Hot+Tub+%26+Pool&find_loc=Keller%2C+TX",
+            "title": "TOP 10 BEST Hot Tub & Pool near Keller, TX - Updated 2026 - Yelp",
+            "rating": 4,
+            "snippet": "... Alpha Pools) because these folks are 100% straightforward. I like to do as ... What did people search for similar to hot tub & pool near Keller, TX?",
+            "position": 10,
+            "ratingCount": 787
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:49:21.960Z",
+      "data": {
+        "name": "Alpha Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 919-0247",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "8528 Davis Blvd #190",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Hot tub store · 1175 Justin Road Closed · Opens 10 AM · (972) 317-1011 Why build a pool? Get a year-round swim spa in DFW with professional local installation.",
+            "rating": 4,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Swimming pool contractor · 500 Grapevine Highway Closed · Opens 8 AM · (817) 618-5731 Elevate your lifestyle with Dallas-Fort Worth's elite pool builders, Selah Pools.",
+            "rating": 4,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Swimming pool contractor · 8528 Davis Blvd #190 Closed · Opens 9 AM · (817) 919-0247",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "General contractor · 1103 Keller Pkwy",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": "https://www.poolwerx.com/locations/texas/poolwerx-north-richland-hills/",
+        "maps_url": "https://www.google.com/maps/search/Alpha%20Pools%20Keller%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:47:43.750Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:47:47.161Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:49:37.482Z",
+      "data": {
+        "found": true,
+        "query": "\"Alpha Pools\" Keller lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.facebook.com/groups/550214632341225/posts/737615890267764/",
+            "title": "Does anyone know if Roger Albright still does pool water and his ...",
+            "snippet": "Scammers never stop I am sharing this post as a warning to anyone considering hiring Thabo Helper or Alpha Pools for your swimming pool needs. This individual ..."
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Keller%2C+TX",
+            "title": "Best Swimming Pool Builders near Keller, TX - Yelp",
+            "snippet": "... Alpha Pools) because these folks are 100% straightforward. I like to do as much pool maintenance and repair myself and they don't hesitate to help me Every ..."
+          },
+          {
+            "link": "https://faithbasedmentoring.org/posts/",
+            "title": "Posts | We value people and relationships over programs.",
+            "snippet": "ACCC OFFENDER FRIENDLY EMPLOYERS (7/1/15) · January 11, 2023 Uncategorizedmlvastb. Adecco Alpha Pools Alro Steel Applebees Arbys Berne Apparel Buffalo Wings"
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=poolcleaners&find_desc=pool+repair&find_loc=Keller%2C+TX",
+            "title": "Searching within Pool Cleaners for Pool Repair Keller, TX - Yelp",
+            "snippet": "... Alpha Pools) because these folks are 100% straightforward. I like to do as much pool maintenance and repair myself and they don't hesitate to help me Every ..."
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Plastering&find_loc=Colleyville%2C+TX",
+            "title": "THE BEST 10 Pool Plastering near Colleyville, TX - Yelp",
+            "snippet": "Keller, TX 76244. 15 years in business. Certified professionals. 2 ... Alpha Pools) because these folks are 100% straightforward. I like to do as ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:20.566Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Alpha%20Pools&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Alpha% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Alpha% 20Pools&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Alpha% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Alpha% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Alpha% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Alpha% 20Pools&State= TX"
+            }
+          },
+          {
+            "link": "https://www.epa.gov/frs",
+            "title": "Facility Registry Service (FRS) - EPA",
+            "snippet": "Search a Single Facility or Location. Are you asking questions about a business? Search FRS data with the Enforcement and Compliance History Online website.",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= Alpha% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+            "title": "Search Results Help | ECHO | US EPA",
+            "snippet": "The search results page allows you to interact with the data and information presented. The results page can be customized to your preferred view.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= Alpha% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search",
+            "title": "Enforcement Case Search | ECHO | US EPA",
+            "snippet": "Enforcement Case Search · Case Identifiers · Facility Location · Case Attributes · Case Milestones and Dates · Enforcement Case Outcomes/Settlements.",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= Alpha% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= Alpha% 20Pools&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:23.791Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:29.563Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:35.940Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Alpha Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 9, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/2022-12-09%20CVS%20Global%20Settlement%20Agreement%20with%20Exhibits%20(003).pdf",
+            "title": "[PDF] CVS SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. CVS SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. Page. I. Definitions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "date": "Oct 14, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/Petition%20(Final).pdf",
+            "title": "[PDF] STATE OF TEXAS, Plaintiff, v. CITY OF AUSTIN, TEXAS, COUNTY ...",
+            "snippet": "A. control the movement of persons and occupancy of premises in a disaster area;7. B. issue executive orders that “have the force and effect ...",
+            "position": 2
+          },
+          {
+            "link": "https://www2.texasattorneygeneral.gov/opinions/openrecords/48morales/orl/1992/pdf/or199200424.pdf",
+            "title": "[PDF] Office of tty Glttornep Qkncrd - Liberty and Justice for Texas | Office ...",
+            "snippet": "Pursuant to Local Government Code sections 172.001-.015, Lubbock County has established a self-insurance plan for its employees and their dependents. Claims.",
+            "position": 3,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "date": "Nov 5, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/images/Petition%20for%20Review%20(to%20file)%20(1).pdf",
+            "title": "[PDF] In the United States Court of Appeals for the Fifth Circuit",
+            "snippet": "... Alpha variant. The CDC noted that Alpha is associated with an increase in transmission, as well as potentially increased incidences of ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "date": "Nov 30, 2023",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Pfizer%20Vaccine%20Petition%20Filed.pdf",
+            "title": "[PDF] Pfizer Vaccine Petition Filed - Texas Attorney General",
+            "snippet": "The increased antibodies in this highly limited pool of people was the full extent of Pfizer's showing that a booster would be effective against ...",
+            "position": 5,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:37.010Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 2
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 4
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Taxable Entity Search. David Herrera and Oscar Alvarez. 2 reactions. 󱎖. Are they ...",
+            "position": 7
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 8
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn and Texas Tax Code, Sec. 171.2515. [2] https://statutes.capitol.texas.gov/Docs/TX/htm/TX ...",
+            "position": 9
+          },
+          {
+            "link": "https://unitedwaydallas.org/wp-content/uploads/2024/04/Wright-Law-Confirmed.pdf",
+            "title": "[PDF] Wright-Law-Confirmed.pdf - United Way of Metropolitan Dallas",
+            "snippet": "Based in Dallas, Texas. Ability to travel extensively. Page 9. 2/26/24, 2:35 PM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:48:38.418Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Alpha Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:39.788Z",
+      "data": {
+        "query": "site:dallascounty.org Alpha Pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 22, 2026",
+            "link": "https://dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet%202026-012-7097.pdf",
+            "title": "[PDF] Notice - Dallas County",
+            "snippet": "Event Type. Prebid Conference. Attendance. Recommended. Event date. 02/04/2026 10:00 AM CST. Location. Microsoft Teams. Event Note.",
+            "position": 1
+          },
+          {
+            "date": "Jan 26, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2015/JB_Packet_012615_withoutOrders.pdf",
+            "title": "[PDF] DALLAS COUNTY JUVENILE BOARD - Agenda",
+            "snippet": "Program News & Updates: On Saturday, December 20, 2014 61 ladies of the Alpha Kappa Alpha Sorority, also known as the AKA's arrived bearing ...",
+            "position": 2
+          },
+          {
+            "date": "Oct 10, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/Payment-register/PaymentRegisterSEP16.pdf",
+            "title": "[PDF] 10/01/2015 and Ending: 9/30/2016 - Dallas County",
+            "snippet": "... ALPHA CARD SYSTEMS LLC. YTD Total For. 120662060. CHECK. 12/1/2015. ALPHA ... CIVIL ENGINEERS. $280.00. Is $280.00. AMERICAN SOCIETY OF CIVIL ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 26, 2018",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/Payment-register/FY18/PaymentRegister2018SEP.pdf",
+            "title": "[PDF] 10/01/2017 and Ending: 09/30/2018 - Dallas County",
+            "snippet": "... ALPHA CARD SYSTEMS LLC. YTD Total For. 120709847. CHECK. 2/6/2018. ALPHA ... CIVIL ENGINEERS. $330.00. Is $330.00. AMERICAN SOCIETY OF CIVIL ...",
+            "position": 4
+          },
+          {
+            "date": "Feb 23, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2015/JB_Packet_022715_withoutOrders.pdf",
+            "title": "[PDF] JB_Packet_022715_withoutOrders.pdf - Dallas County",
+            "snippet": "to generate a thank you letter to the Alpha Kappa Alpha Sorority Inc., and Alpha XI Omega Dallas Chapter for volunteering their Martin ...",
+            "position": 5
+          },
+          {
+            "date": "Apr 28, 2014",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/Payment-register/PaymentRegister2011.pdf",
+            "title": "[PDF] 10/01/2010 and Ending: 09/30/2011 - Dallas County",
+            "snippet": "... ALPHA SENSORS INC/DBA ALPHA TECHNICS. $356.92. Is $356.92. ALPHA ... CIVIL ENGINEERS. $265.00. Is $265.00. AMERICAN SOCIETY OF CIVIL ...",
+            "position": 6
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:40.957Z",
+      "data": {
+        "query": "site:collincountytx.gov Alpha Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20Business.pdf",
+            "title": "[PDF] Sorted by Business - Collin County",
+            "snippet": "250922 Designer Pool Table Services LLC. 22,334 Timothy. Seaberg. Owner. 10050 Grumman Lane, McKinney TX 75071. My business services billiard ...",
+            "position": 1
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20251117_3157/59164_Certificate%20of%20Public%20Hearing%20Officer%20-%20MHD%202026%20TEFRA%2810886969.1%29.pdf",
+            "title": "[PDF] Untitled - Collin County",
+            "snippet": "Room Alpha, 8008. Herb Kelleher Way,. Dallas, TX 75235. General contractors are welcome to bring key subs. A site visit will not be conducted. The RFCSP ...",
+            "position": 2
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2019/CC/20191216_2424/47726_Exhibit%20B%20Const.%20Plans.pdf",
+            "title": "[PDF] bloomdale rd and county road 124 construction plans",
+            "snippet": "WATERLINE VIONS PLAN. · DRAMARE PITCH GRADING PLAN. PAVING TYPICAL SECTIONS. PAVING PLAN & PROFILE BLOONDALE RD. PAVING PLAN B PROFILE COUNTY ROAD 124.",
+            "position": 3
+          },
+          {
+            "date": "Oct 28, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/CC/20191028_2405/47491_FY2020%20Disbursements%20for%2010.28.19%20Court.pdf",
+            "title": "[PDF] 2020 COUNTY AUDITOR APPROVED DISBURSEMENTS",
+            "snippet": "FOR COURT DATE: OCTOBER 28, 2019. THE ATTACHED CLAIMS AGAINST COLLIN COUNTY FOR THE. PERIOD ENDING: OCTOBER 22, 2019.",
+            "position": 4
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2017/CC/20170619_2057/43303_20170613-Final%20Plat.pdf",
+            "title": "[PDF] Final Plat - Collin County",
+            "snippet": "THE EXISTING CREEKS OR DRAINAGE CHANNELS TRAVERSING ALONG OR ACROSS THE ADDITION WILL. REMAIN AS OPEN CHANNELS AND WILL BE MAINTAINED BY INDIVIDUAL OWNERS ...",
+            "position": 5
+          },
+          {
+            "date": "Nov 12, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201116_2558/33858_RTC%20Packet%2011-12-2020.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on November 12, 2020, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 6
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2023/CC/20231016_2890/54876_FY2024%20Disbursements%20for%2010.16.23%20Court.pdf",
+            "title": "[PDF] 2024 COUNTY AUDITOR APPROVED ... - Collin County",
+            "snippet": "FOR COURT DATE: OCTOBER 16, 2023. THE ATTACHED CLAIMS AGAINST COLLIN COUNTY FOR THE. PERIOD ENDING: OCTOBER 10, 2023. ARE HEREBY APPROVED IN ACCORDANCE WITH ...",
+            "position": 7
+          },
+          {
+            "date": "Oct 2, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/cc/20201214_2575/48414_2020%20small%20business%20invoice%20approved%20payments.pdf",
+            "title": "[PDF] 2020 10 02 Invoice data extracts.csv - Collin County",
+            "snippet": "We have an indoor facility with a heated pool, allowing us to provide a life skill through out the year. #4. 251417 AEOS Talent Acquisition, Inc ...",
+            "position": 8
+          },
+          {
+            "date": "Dec 31, 2018",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/HCF/20190128_2283/46030_FY20%20PHEP%20Hazards%20Application.pdf",
+            "title": "[PDF] 46030_FY20 PHEP Hazards Application.pdf - Collin County",
+            "snippet": "A motor pool vehicle may be available for employees who prefer not to use their personal vehicle. Please refer to the Vehicle Usage and Take ...",
+            "position": 9
+          },
+          {
+            "date": "Nov 20, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201207_2569/48414_2020%2011%2020%20Small%20Busines%20Grant%20Invoice%20%239%20Approved%20for%20Payment%20with%20Business%20Details.pdf",
+            "title": "[PDF] Collin CARES Small Business Grant Program Invoice # 9 ...",
+            "snippet": "Business Owner -. First Name. Business Owner - Last Name. Business Owner - Title. Address of Business. Briefly describe your type of ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:49:29.416Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [
+          {
+            "link": "https://www.houzz.com/professionals/swimming-pool-builders/alpha-pool-service-pfvwus-pf~1259613674",
+            "title": "ALPHA POOL SERVICE - Project Photos & Reviews - Keller, TX US",
+            "snippet": "We strive to provide quality, efficient, and cost effective service to keep your pool looking and functioning its best. We are a family owned company with ..."
+          }
+        ],
+        "result_count": 1,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:49:30.595Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "domain": "poolwerx.com",
+        "rating": 0,
+        "source": "trustpilot",
+        "profile_url": "https://www.trustpilot.com/review/www.poolwerx.com",
+        "trust_score": null,
+        "review_count": 0,
+        "business_name": "Poolwerx"
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:42.165Z",
+      "data": {
+        "query": "site:dentoncounty.gov Alpha Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=87_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "PURYEAR POOLS, 7959 V RANCH RD, A0475A W.H. GORBETT, TR 2A, 0.32 ACRES, SWIMMING POOL, 02/22/2022, 162980, Approved, 02/15/2022, JACKSON, WILSON B & MADELINE P ...",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=231_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "ALPHA OMEGA WATER WELL, 1439 PLOVER CIR, SKYLINE ADDN LOT 6 ACRES 10.00 ... BLUEHAVEN POOLS, 1321 COYOTE RIDGE, ARROW BROOKE PHASE 4A BLK Y LOT 7, SWIMMING POOL ...",
+            "position": 2
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=158_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "ELIZABETH CREEK AT ALPHA RANCH BLK A LOT 3 (CO&SCH)(SEE 967 FOR W38), HOUSE ... FRISCO HILLS PHASE 3A BLK 17 LOT 5, SWIMMING POOL, 02/08/2021, 564573 ...",
+            "position": 3
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=34_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "BACK BUILDING. Note : Controlling the drainage is the responsibility of the property owner and any damage caused to adjacent property owners could result in ...",
+            "position": 4
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=138_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "Dev Permit Report ; 20212353, DEMETRA BELL, PULTE GROUP, 16032 GOTLAND LN, ELIZABETH CREEK AT ALPHA RANCH BLK E LOT 3 (CO&SCH)(SEE 967 FOR W38) ...",
+            "position": 5
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=72_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "WILLOW BRANCH POOLS, 7109 WOODSIDE DR, CANYON FALLS VILLAGE 8-AR BLK J LOT 3, SWIMMING POOL, 04/13/2022, 728733, Approved, 04/11/2022, STONEGATE VENTURES LLC ...",
+            "position": 6
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=136_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "FOLEY POOLS, 1901 ARTESIA BLVD, ARTESIA NORTH PHASE 1B BLK K LOT 18R, SWIMMING POOL, 04/30/2021, 672715, Approved, 04/27/2021, SCHRAMM, ZACHARY D & ALYCIA ...",
+            "position": 7
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=304_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "ALPHA OMEGA, 3280 FLORANCE RD, BELLA VISTA BLK A LOT 2, WATER WELL, 02/13 ... ZODIAC POOLS, 11100 INDIAN TRL, SAUNDERS ADDITION LOT 1, SWIMMING POOL, 02/07 ...",
+            "position": 8
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=50_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "RIVERBEND SANDLER POOLS, 1609 HANOVERIAN RD, SANDBROCK RANCH PHASE 5 BLK K LOT 17 (CO&SCH)(SEE 957707 FOR W47), SWIMMING POOL, 09/14/2022, 957395, Approved, 09/ ...",
+            "position": 9
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=88_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "SOUTHERNWIND POOLS, 10586 BUCANEER POINT, WYNNWOOD HAVEN ESTATES BLK A LOT 47, SWIMMING POOL, 02/14/2022, 46200, POOL MUST BE OUT OF THE COE FLOWAGE EASEMENT.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:55.782Z",
+      "data": {
+        "name": "Alpha Rock Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(972) 686-7539",
+        "rating": "B-",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/mesquite/profile/pool-contractors/alpha-rock-pools-0875-90380674",
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:48:57.726Z",
+      "data": {
+        "cid": "10695587240592456343",
+        "name": "Alpha Pools",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "8528 Davis Blvd #190, North Richland Hills, TX 76182",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 1,
+          "target_reviews": 1
+        },
+        "reviews": [
+          {
+            "date": "3 years ago",
+            "text": "",
+            "author": "CECILIA MUOKA",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "MANY_SHORT_REVIEWS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 1,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Keller, TX",
+        "search_confidence": 0.6199999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:49:21.936Z",
+      "data": {
+        "name": "Alpha Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 919-0247",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "8528 Davis Blvd #190",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Hot tub store · 1175 Justin Road Closed · Opens 10 AM · (972) 317-1011 Why build a pool? Get a year-round swim spa in DFW with professional local installation.",
+            "rating": 4,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Swimming pool contractor · 500 Grapevine Highway Closed · Opens 8 AM · (817) 618-5731 Elevate your lifestyle with Dallas-Fort Worth's elite pool builders, Selah Pools.",
+            "rating": 4,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Swimming pool contractor · 8528 Davis Blvd #190 Closed · Opens 9 AM · (817) 919-0247",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "General contractor · 1103 Keller Pkwy",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": "https://www.poolwerx.com/locations/texas/poolwerx-north-richland-hills/",
+        "maps_url": "https://www.google.com/maps/search/Alpha%20Pools%20Keller%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:49:26.855Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:49:27.521Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [
+          {
+            "link": "https://www.angi.com/companylist/us/tx/newark/pool-and-spa-service.htm?page=4",
+            "title": "Top 10 Best Pool and spa technicians in Newark, TX | Angi - Page 4",
+            "snippet": "Alpha Pool Service is your swimming pool's full service maintenance, repair, remodel, and new construction company. We are located at 8528 Davis Blvd #190 North ..."
+          }
+        ],
+        "result_count": 1,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:49:31.196Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Alpha Pools\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.AlphaPoolsinc.78164414.html",
+            "title": "Alpha Pools, Inc Reviews - Hume, VA - HomeAdvisor",
+            "snippet": "See reviews for Alpha Pools, Inc in Hume, VA at 4630 Leeds Manor Road from Angi members or join today to leave your own review."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.AlphaPoolsInc.113857628.html",
+            "title": "Alpha Pools USA, Inc. Reviews - Stephens City, VA - HomeAdvisor",
+            "snippet": "The actual build time was unbelievably quick and the quality was top notch. We absolutely love our pool and couldn't be happier with Alpha Pools USA. Thanks ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/sp/alpha-pools-lake-havasu-city-az",
+            "title": "Alpha Pools Reviews - Lake Havasu City, AZ | HomeAdvisor",
+            "snippet": "Alpha Pools are more than simply a backyard addition; its a reflection of your lifestyle, custom-tailored to complement your homes architecture and you."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.AlphaPoolServicesLLC.41450638.html",
+            "title": "Alpha Pool Services, LLC Reviews - Cape Coral, FL | HomeAdvisor",
+            "snippet": "They are very knowledgeable and helpful, professional and friendly. We would recommend these guys to anyone. Thanks Alpha Pools! See full review ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Springfield.VA.-12070.html",
+            "title": "Top-Rated Pool Constructions and Installations Experts in ...",
+            "snippet": "Avatar for Alpha Pools USA, Inc. Alpha Pools USA, Inc. 4.15(. 11. ) •Approved Pro. Alpha Pools USA, Inc. 4.15(. 11. ) •Approved Pro."
+          }
+        ],
+        "result_count": 7
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:49:31.857Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Alpha Pools\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/job-listing/pool-cleaner-alpha-pools-llc-JV_IC1133996_KO0,12_KE13,28.htm?jl=1009668158292",
+            "title": "Alpha Pools LLC hiring Pool Cleaner Job in Tucson, AZ | Glassdoor",
+            "snippet": "Job expiredThis job from Mar 10, 2025 is no longer available for applications. Alpha Pools LLC ... Conversations @Alpha Pools LLC. Kick off the conversation by ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/job-listing/pool-cleaner-alpha-pools-llc-JV_IC1133996_KO0,12_KE13,28.htm?jl=1009835147795",
+            "title": "Alpha Pools LLC hiring Pool Cleaner Job in Tucson, AZ | Glassdoor",
+            "snippet": "Job expiredThis job from Aug 5, 2025 is no longer available for applications. Alpha Pools LLC ... Conversations @Alpha Pools LLC. Kick off the conversation by ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/job-listing/office-assistant-alpha-pools-and-landscape-llc-JV_IC1133835_KO0,16_KE17,46.htm?jl=1009976206982",
+            "title": "Alpha Pools & Landscape LLC hiring Office Assistant Job in Lake ...",
+            "snippet": "Job expiredThis job from Dec 21, 2025 is no longer available for applications. Alpha Pools & Landscape LLC ... Conversations @Alpha Pools & Landscape LLC. Kick ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/job-listing/landscape-maintenance-technician-alpha-pools-and-landscape-llc-JV_IC1133835_KO0,32_KE33,62.htm?jl=1009996020989",
+            "title": "Landscape Maintenance Technician - Glassdoor",
+            "snippet": "Conversations @Alpha Pools & Landscape LLC. Kick off the conversation by asking about salaries, interviews or anything else @Alpha Pools & Landscape LLC."
+          },
+          {
+            "link": "https://www.glassdoor.com/Job/lake-havasu-city-pool-jobs-SRCH_IL.0,16_IC1133835_KO17,21.htm",
+            "title": "32 pool Jobs in Lake Havasu City, AZ, February 2026 | Glassdoor",
+            "snippet": "Alpha Pools & Landscape LLC. Landscape Maintenance Technician. Lake ... Employee reviews at Alpha Pools & Landscape LLCAlpha Pools & Landscape LLC Overview."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:49:32.538Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Alpha Pools\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/alpha-pools/reviews",
+            "title": "Working at ALPHA POOLS: Employee Reviews | Indeed.com",
+            "snippet": "Reviews from ALPHA POOLS employees about ALPHA POOLS culture, salaries, benefits, work-life balance, management, job security, and more."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Alpha-Pools",
+            "title": "ALPHA POOLS Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at ALPHA POOLS from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Alpha-Pools-LLC/interviews",
+            "title": "Alpha Pools LLC Interview Questions & Answers | Indeed.com",
+            "snippet": "Prepare yourself for your interview at Alpha Pools LLC by browsing Interview questions and processes from real candidates."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Alpha-Pools-LLC?campaignid=mobvjcmp&from=mobviewjob&tk=1jfnl450cg2vg80g&fromjk=908631b0f70b75ed",
+            "title": "Alpha Pools LLC Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at Alpha Pools LLC from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Alpha-Pools-LLC/salaries/Cleaner/Tucson-AZ",
+            "title": "Cleaner Salaries in Tucson, AZ for Alpha Pools LLC | Indeed.com",
+            "snippet": "How much does a Cleaner make at Alpha Pools LLC in Tucson? The estimated average pay for Cleaner at this company in Tucson is $23.15 per hour, ..."
+          }
+        ],
+        "result_count": 5
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:49:36.427Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Alpha Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:49:54.888Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T06:49:41Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Alpha%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=hMmOaaCyNPiomtkPmrz18Qo\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T06:49:50Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Alpha%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=jsmOaY-CBO64mtkP9JDlmQ8\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Alpha Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:49:55.520Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "ALPHA POOLS LLC",
+        "taxpayer_number": "32064540761"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T06:49:55.523Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:50:10.694Z",
+      "data": {
+        "cost": 0.00076846,
+        "summary": "The review data for Alpha Pools is critically insufficient. There is only one verifiable customer review (a 5-star on Google Local from 3 years ago). The business appears in search results and directories but has accumulated no meaningful, detailed customer feedback on Yelp, Google, BBB, or other platforms over what appears to be multiple years. This near-total absence of a digital reputation is a major red flag and makes authenticity assessment impossible. The available 'reviews' are not genuine customer testimonials.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-13T06:50:10.694Z",
+        "fake_signals": [
+          "Extremely low review volume (effectively 1 review)",
+          "No substantive reviews on any major platform",
+          "Google HQ 'reviews' are just business directory entries, not customer feedback",
+          "Search results show the business name but no actual review content",
+          "Pattern of appearing in search snippets without accompanying ratings or detailed reviews"
+        ],
+        "recommendation": "DO_NOT_TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "B-",
+          "yelp": null,
+          "glassdoor": null,
+          "google_hq": null,
+          "google_local": 5
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "UNKNOWN",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [],
+        "fake_review_score": 85,
+        "complaint_patterns": [],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Extremely limited review data. Only one identifiable review exists (a 5-star on Google Local). No substantive reviews on Yelp, Angi, Houzz, or other major platforms. The BBB has a B- rating but no complaint details. This lack of a review footprint is highly unusual for an established contractor."
+      }
+    }
+  }
+}

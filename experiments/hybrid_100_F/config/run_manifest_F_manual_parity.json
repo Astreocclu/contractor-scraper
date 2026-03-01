@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "created": "2026-02-10T22:40:00Z",
+  "cohort": "F",
+  "lane": "manual_parity",
+  "description": "100 new contractor full run using manual/agent comparisons with same pairwise prompt structure",
+  "sample_config_raw_ready": "experiments/hybrid_100_F/config/sample_100_group_F.json",
+  "sample_config_target_100": "experiments/hybrid_100_F/config/sample_100_group_F_target.json",
+  "raw_topup_manifest": "experiments/hybrid_100_F/config/f_needs_raw_collection.json",
+  "targets": {
+    "contractors": 100,
+    "comparisons_per_contractor": 30,
+    "approx_pairwise_decisions": 1500,
+    "raw_ready_now": 69,
+    "needs_raw_collection": 31
+  },
+  "execution": {
+    "environment": "source venv/bin/activate && set -a && . ./.env && set +a",
+    "steps": [
+      {
+        "id": "source_missing",
+        "command": "node bin/source_missing_from_manifest.js --config=experiments/hybrid_100_F/config/sample_100_group_F_target.json --required=google_presence,bbb,court_records,county_liens,tx_franchise"
+      },
+      {
+        "id": "snapshot",
+        "command": "node bin/hybrid_100_snapshot.js --group=F --config=experiments/hybrid_100_F/config/sample_100_group_F_target.json"
+      },
+      {
+        "id": "first_pass",
+        "command": "node bin/hybrid_100_first_pass.js --group=F"
+      },
+      {
+        "id": "swiss_pairwise_manual",
+        "command": "node bin/hybrid_swiss_agent.js --group=F --rounds=30 --concurrency=10 --model=sonnet --fresh"
+      }
+    ]
+  },
+  "prompt_parity": {
+    "source": "services/experiment_prompts.js",
+    "rule": "Manual lane must use the same pairwise prompt style/format as DeepSeek lane"
+  },
+  "logging_requirements": {
+    "must_capture": [
+      "pairwise comparison records with contractor IDs, winner, confidence, round, timestamp",
+      "model lane label (manual_parity)",
+      "prompt version/hash",
+      "run summary with comparison totals, retries/errors, elapsed time"
+    ],
+    "expected_outputs": [
+      "experiments/hybrid_100_F/results/first_pass.json",
+      "experiments/hybrid_100_F/results/swiss/pairwise/comparisons.jsonl",
+      "experiments/hybrid_100_F/results/swiss/final_ranked.json",
+      "experiments/hybrid_100_F/results/swiss/analysis/summary.json"
+    ]
+  }
+}

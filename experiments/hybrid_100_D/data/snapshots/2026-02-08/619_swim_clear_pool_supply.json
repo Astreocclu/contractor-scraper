@@ -1,0 +1,1412 @@
+{
+  "contractor_id": 619,
+  "business_name": "Swim Clear Pool Supply",
+  "city": "McKinney",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-08T03:23:39.365Z",
+  "sources": {
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:07:20.373Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Swim Clear Pool Supply",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:07:20.968Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:07:20.973Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:47.569Z",
+      "data": {
+        "name": "Clear Choice Pool Care",
+        "found": true,
+        "rating": 5,
+        "source": "serpapi",
+        "address": "8105 Rasor Boulevard Ste. 281, Plano, TX 75024",
+        "data_id": "0x864c3d4463f15a27:0x20e6c0e3cefb2e36",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 68,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "3 months ago",
+            "text": "This company is always professional, prompt, and has clean communication so you know what to expect and they follow through.  I work with them for my routine service and any repairs needed.  I had a mechanical issue that they were able to diagnose and repair the same day along with multiple options for cost vs. impact decision.  Jackson was excellent to work with.  Thanks!",
+            "author": "Shawn Kerns",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "I have been using Clear Choice for 7 year now and they are fantastic. Justice always does a great job for any repairs or service that I need. Recommend them highly!",
+            "author": "Hal Stewart",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "As always, this company is quick to respond. Service tech Justice came out immediately and got my equipment app up and running. I highly recommend using them for pool service.",
+            "author": "Jim Otto",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clearly Choice Pool performs ours weekly pool services on two homes.  Have never had an issues with their service.  Our pools have never looked better.  They are very professional and accommodating.\n\nWe recently had a small fire due to the pool heater.  Clearly Choice worked with our insurance provider to have the equipment replaced.  They did an excellent job and the communication was top notch.",
+            "author": "Danny Trager",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clear  Choice Pool Care is a fantastic weekly pool service provider ! Even on the one occasion when my pool started to turn greenish, they sent out a Tech who provided a service that morning and much to our surprise, it was beautiful blue that evening. Honestly !! They also let you know if they observe any potential issues with the equipment! Best  choice !",
+            "author": "Roger Powers",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clear Choice Pools has been great to us. From weekly maintenance to service calls, they've always sent someone who knows their stuff! The staff is kind and professional and gets you taken care of in a timely manner. The guys are always willing to answer questions about your pool, including how something works, anytime they are asked. For the weekly maintenance, I LOVE the email telling me exactly what was addressed, along with a photo of the pool after the cleaning.",
+            "author": "Craig Allen",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clear Choice has handled by weekly service since I moved 11 years ago.  The techs are always friendly and kind to both wife, children, and animals.  I get detailed reports of issues and a plan of action with an estimate to fix.  I appreciate that communication is only as needed and meaningful when I receive a notice from Clear Choice.  By far the best service provider and only remaining service provider we have used since day 1.",
+            "author": "Annie Martin",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "We had an excellent experience using Clear Choice Pool Care. The technicians were knowledgeable and provided great quality work as well as timely. Customer service minded and very patient addressing our questions and concerns. We feel we have found the perfect solution to our pool for many years to come!",
+            "author": "Sokol Gorenca",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We called Clear Choice Pool Care with an urgent need for service to be completed within a day. They sent out Rodney, who came and gave us a quote and started work the same day. Rodney was professional, knowledgable and did a very thorough job! They have been easy and responsive from the very first call. I am so happy I found them, they saved our pool and equipment. Thank you Rodney and Clear Choice Pool Care!",
+            "author": "Michelle Touma",
+            "rating": 5
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "Clear Choice is the new name for Flower Mound Pool Care, and still providing outstanding service. My primary pump died recently. The pool filled up with dirt and debris while the pump was out. Rodney, Jackson and Jonah did a phenomenal job bringing my pool back to life with a new motor and cleaning. We were able to enjoy it all weekend in the hot weather. All of the people who have ever serviced my pool have been so gracious and helpful, answering questions and providing guidance on what chemicals are needed.",
+            "author": "Vanessa Allison",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Very efficient and professional service from Clear Choice. We set up a new weekly service for our pool with them and they were able to give us our preferred days, kept us informed through the first few cleanings and have helped us maintain great water quality in our property!",
+            "author": "nathan connolly",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Efficient, Reliable, great communication, prices are reasonable.i would highly recommend for pool maintenance or pool weekly cleaning.",
+            "author": "Kerri Stone",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clear Choice Pools is a fantastic pool company!  SERVICE is their top priority. As a business owner I know it is so hard to find and keep talented people to represent your company to the public. Their  technicians, Jackson and Colby know Pools and Pool equipment!  We cannot thank you all enough for acting so quickly and coming so prepared!  You guys make the difference! Thank you.",
+            "author": "Deborah DuFresne",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We are extremely pleased with the level of service we are getting from clear choice. All their technicians are very professional and personable and easy to communicate. Customer needs to. Recently we had a unique issue with a pump and they were very prompt and helpful in resolving the problem . A fantastic team to work with..",
+            "author": "Johnny Manuel",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "They have done a great job with taking care of my pool for over 15 years. When I have a problem with my pool or spa they are quick to get me on the schedule. They communicate via text or calling to let me know when any work is being done besides weekly cleaning. Any big repairs they do that also without having to source out to other companies.",
+            "author": "Rene Brady",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "What a fantastic experience with our pool tech, Danny Riojas today. He was extremely professional and very knowledgeable about proper pool care. He took the time to explain exactly what he was doing with the pool, and why he was doing it. When he finished, my pool looked AMAZING! It's nice to know that a company like Clear Choice Pool Care, hires good hard-working people like Danny, and I highly recommend this pool company for any and all of your pool care needs.",
+            "author": "Kevin Epperson",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "These guys are outstanding!  Top notch service from beginning to end!  Will be using exclusively from here on!",
+            "author": "Matthew Timcho",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Since moving into my house (with a pool), Clear Choice Pool Care has been extremely helpful in helping us with balancing our chemicals and helping with some equipment failures.  Since I have never owned a pool before, they have made me feel at ease and more confident in how to work my pool equipment.",
+            "author": "Cindy Burnett",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clear choice pool care provides top notch professional services and repairs! Their team members are always on time, with professional attire and name badges for security purposes, and provide courtesy photos and service reminders of annual service to keep the pool in good working conditions. Their customer service and accounting staff are professional and respond to inquiries quickly. We have iswd CCP for the last 3 years and they current service our pool.  I highly recommend them in the Flower Mound area!",
+            "author": "Alisa Mercado",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I called Clear Choice Pools twice this week. Each time they responded to my request right away actually the same day. They fixed my problem and they took time to explain to me  the situation. Which eased my mind a great deal. I trust, and highly recommend them!",
+            "author": "Barbara Horton",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Danny was very efficient switching out the old pump to a brand new. He also gave me some extra tips on running the filter and the pool sweep. He even moved out the electric connections so when the pool filter is not running, the pool sweep will not turn on.\nThanks again Danny!",
+            "author": "Maggie Reinhold",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Its a pleasure to work with a company that understands service and communicates with the customer.  They let you know they were there, and point out things to keep an eye on without pressuring the up sale.  Great Company  For us they are the \"Clear Choice\".",
+            "author": "Robert Presley",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great service and a great price! Quick to get on the schedule and they still came a day early due to a break in their schedule. Easy to work with. Very pleased! I’ll use them again for sure.",
+            "author": "Michael O'Brien",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Can't recommend them enough! I was nervous about how my pool would handle the recent cold snap due to past freezes. They communicated prior to the freeze what prevention could be taken to avoid any major issues, which put my mind at ease!",
+            "author": "Will Schae",
+            "rating": 5
+          },
+          {
+            "date": "3 weeks ago",
+            "text": "Always a fabulous job, very professional, always on time and communicative.",
+            "author": "Sarah Bell",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "The response time and service level was exceptional.  Addressed my filter issues and brushed and vacuumed my pool to be spotless. Such great work ethic. Danny is exceptional. Thanks!!",
+            "author": "Patrick Conner",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I have been using Clear Choice to take care of my parents pool. The managers are knowledgeable and the cleaners are kind and professional. I cannot recommend them enough.",
+            "author": "Ryan Cronin",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "The service has been outstanding! They have been to my home 5 times in the past 2 weeks to be sure my green pool turned to beautiful blue and ready for summer.  Absolutely incredible communication and service!",
+            "author": "Holly Demond",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Rodney came out and really helped narrow down and solve some of the issues I’d been having. Cannot recommend this company enough.\n\nGabriel is the best project manager around and Al was very informative and fair in his pricing.",
+            "author": "Jonathan Saunders",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "During the Big Freeze of ‘21 this company sent an email to all its customers to turn off their pumps. We were not a customer at that time. Our neighbor was. We had over $3000 in damage, our neighbor, zero dollars in damage. We immediately switched and have been with them ever since. Communication with your customers is key!",
+            "author": "Wallace Family Trust",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Zack Gray did an excellent job taking care of my pool!",
+            "author": "Noah Mescher",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I experienced terrible service from 3 other companies before finding Clear Choice Pool Care.  Save yourself frustration and money - call them 1st!  Great team who consistently provides great service…every time!",
+            "author": "Kristina “Krissye” Clements",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Technician was very courteous and professional. He responded quickly to my questions and gave me reasonable details. I highly recommend this company for all my pool needs.",
+            "author": "William Dalrymple",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "You will never have a better experience with a pool care company than with these guys.  They are extremely professional, build quality into all that they do and stand behind their work.\nA true step above the rest!",
+            "author": "James Knight",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clear Choice did an awesome job cleaning my filter and gosh it needed it. Danny did a fantastic job, I certainly call them back!",
+            "author": "Rosemary Miramontes",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Extremely reliable, trustworthy, and communicative. I’ve known the owners for years and providing an exceptional customer experience has been something they are very passionate about. Highly recommend!",
+            "author": "Alex Mazur",
+            "rating": 5
+          },
+          {
+            "date": "Edited a month ago",
+            "text": "Booster Polaris installed\nJustice\nReal professional job thanks",
+            "author": "Michael Miller",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clear Choice (formerly Flower Mound Pool Care) always does a great job. Danny was out today and, as usual, went above and beyond to get everything squared away. Thanks.",
+            "author": "Robert Curtis",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Love this company and it's people. They save me from myself and are way more patient than I deserve. They will have to get rid of me before I get rid of them.",
+            "author": "Paul Drew",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Jakson is a fantastic tech. He came out and fixed our issue very quickly and efficiently. Very happy with the service",
+            "author": "Sean Galgano",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "This has been a complete success switching to Clear Choice Pool Care. Their service has been awesome. My pool has not looked this good in years.",
+            "author": "Buzzy Murphy",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clear Choice Pool has maintained my pool for a number of years and I have been consistently impressed with the quality of both the people and the service.",
+            "author": "David Neal",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clear Choice Pool Care is the best pool company I have ever had service my pool. They aim to please.",
+            "author": "Theresa Strayer",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Hope Jackson was great in identifying the problem and fixing it. Highly recommended ClearChoice to do the work.",
+            "author": "Laurence Lentz",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "The service from Rodney and Jackson was outstanding, it is hard to find honest people in the pool industry. I will be using them from now on.",
+            "author": "David Gustafson",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Clear Choice takes such good care of my pool. The best I’ve ever had!",
+            "author": "Pam De La Porte",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Love the service we always get from Clear Choice Pool Care. Great to work with these folks!!",
+            "author": "Larry Syfert",
+            "rating": 5
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "Fantastic service team.  Jackson was very professional and did a fantastic job.  Thank you.",
+            "author": "John Atkinson",
+            "rating": 5
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "Grant has been here before and as usual he did a great job",
+            "author": "Mike Lynch",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Great people and great service.",
+            "author": "Mark Tulbert",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Been using them for years. Very happy with the service they provide.",
+            "author": "W",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Very knowledgeable & excellent customer service. Will definitely use their services again.",
+            "author": "Kate Hoogenboom",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "As always, an excellent experience! Friendly, efficient, timely - great communication!",
+            "author": "David Emerton",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great experience with this company, they went over and above for me.",
+            "author": "Mike Sweis",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I am always impressed on how knowledgeable and professional your service technicians  are.",
+            "author": "Patti Burns",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "Rodney was a professional",
+            "author": "Donald Thurston",
+            "rating": 4
+          },
+          {
+            "date": "a year ago",
+            "text": "Thanks for saving me a service call by advising over the phone.",
+            "author": "Martin Flanagan",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great job as always!",
+            "author": "John Boldt",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "On time. Excellent work",
+            "author": "Michael Keyser",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Good and effective service",
+            "author": "Harry Schmidt",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Excellent Service.  Excellent technician.\nLouis Chenault",
+            "author": "Louis Chenault",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "",
+            "author": "Hoss Gabbard",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "",
+            "author": "David Hope",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "",
+            "author": "Sharlis Smith",
+            "rating": 5
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "",
+            "author": "Kendra Both",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "",
+            "author": "Dan Didier",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "",
+            "author": "Arthur Passafiume",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "",
+            "author": "STEVEN HESS",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "review_count": 68,
+        "pages_fetched": 7,
+        "review_source": "serpapi",
+        "collection_cost": 0.182,
+        "escalation_reason": "HIGH_VOLUME (108 reviews)",
+        "serper_fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:06:55.925Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "swimclearpoolsupply.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:05:46.517Z",
+      "data": {
+        "query": "site:nextdoor.com Swim Clear Pool Supply McKinney",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/swim-clear-pool-supplies/",
+            "title": "Swim Clear Pool Service, Repair, Supplies and Remodel",
+            "snippet": "McKinney. TX. 75070. US. +14699523937. 33.17533. -96.68311. Pool cleaner. Pool repair service. Swimming Pool Supply Store. Pool designer. Nextdoor. About · News ...",
+            "position": 1
+          },
+          {
+            "link": "https://api.us.nextdoor.com/pages/swim-clear-pool-supplies/",
+            "title": "Swim Clear Pool Service, Repair, Supplies and Remodel",
+            "snippet": "Swim Clear Pool Supplies in McKinney, TX comes highly recommended for their exceptional pool services. Customers appreciate their reliable weekly ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:33.123Z",
+      "data": "403 - Forbidden bg_error_lines circle_dots 403 - Forbidden Access to this page is forbidden. clouds_shape"
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:04:43.552Z",
+      "data": {
+        "query": "site:yelp.com \"Swim Clear Pool Supply\" \"McKinney, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/swim-clear-pool-supply-mckinney-2",
+            "title": "SWIM CLEAR POOL SUPPLY - Updated December 2025",
+            "rating": 4.5,
+            "snippet": "4900 W Eldorado Pkwy. Ste 148. Mckinney, TX 75070 · (469) 952-3937. Call Now · More Info. Hours · Payment methods. Does Swim Clear Pool Supply take credit cards?",
+            "position": 1,
+            "ratingCount": 13
+          },
+          {
+            "link": "https://www.yelp.com/biz/swim-clear-pool-supply-allen",
+            "title": "SWIM CLEAR POOL SUPPLY - Updated January 2026",
+            "rating": 4.3,
+            "snippet": "SWIM CLEAR POOL SUPPLY, 1212 W McDermott, Ste 200, Allen, TX 75013, 7 ... McKinney,Tx. Booster Pump going so call them still in warranty said have ...",
+            "position": 2,
+            "ratingCount": 6
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Supplies&find_loc=McKinney%2C+TX",
+            "title": "TOP 10 BEST Pool Supplies in McKinney, TX - Updated 2026",
+            "rating": 3.7,
+            "snippet": "1. Pinch A Penny Pool Patio Spa · 4.4 mi · 301 N Custer Rd, Ste 130 McKinney, TX 75071. (469) 625-1042 ; 2. Swim Clear Pool Supply · 3.0 mi · 4900 W Eldorado Pkwy, ...",
+            "position": 3,
+            "ratingCount": 1343
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Supplies&find_loc=Dallas%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Supplies in Dallas, TX",
+            "rating": 3.9,
+            "snippet": "Top 10 Best Swimming Pool Supplies in Dallas, TX - Last Updated December 2025 - Yelp - Swim Clear Pool Supply ... McKinney, TX 75070. (214) 380-3109. 13 ...",
+            "position": 4,
+            "ratingCount": 1260
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Service+And+Pool+Cleaning&find_loc=McKinney%2C+TX",
+            "title": "Pool Service and Pool Cleaning - McKinney, TX",
+            "rating": 4.5,
+            "snippet": "4900 W Eldorado Pkwy, Ste 148 Mckinney, TX 75070. (469) 952-3937. On their website: pool maintenance. My first experience at Swim Clear Pool Supply's Allen TX ...",
+            "position": 5,
+            "ratingCount": 616
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Supply+Store&find_loc=Frisco%2C+TX",
+            "title": "Top 10 Best Pool Supply Store Near Frisco, Texas",
+            "rating": 3.7,
+            "snippet": "1. Swim Clear Pool Supply · 8.4 mi · 4900 W Eldorado Pkwy, Ste 148 Mckinney, TX 75070. (469) 952-3937 ; 2. Leslie's Pool Supplies · 2.8 mi · 8756 Teel Pkwy, Ste 300 ...",
+            "position": 6,
+            "ratingCount": 3650
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Swimming+Pool+Supplies&find_loc=Prosper%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Supplies near Prosper, TX",
+            "rating": 4.2,
+            "snippet": "Top 10 Best Swimming Pool Supplies in Prosper, TX - Last Updated December 2025 - Yelp - Leslie's Pool Supplies, Swim Clear Pool Supply ... McKinney, TX 75070.",
+            "position": 7,
+            "ratingCount": 978
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Service&find_loc=McKinney%2C+TX",
+            "title": "THE BEST 10 Pool Service in McKinney, TX - Updated 2026",
+            "rating": 4.4,
+            "snippet": "... Mckinney, TX 75070. (469) 952-3937. On their website: pool maintenance. My first experience at Swim Clear Pool Supply's Allen TX store was fantastic and Robert ...",
+            "position": 8,
+            "ratingCount": 585
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Supply+Store&find_loc=Gun+Barrel+City%2C+TX",
+            "title": "Best Pool Supply Store near Gun Barrel City, TX",
+            "rating": 3.7,
+            "snippet": "... Swim Clear Pool Supply, Sunshine Pools & Billiards, Kelley Clean Pools ... McKinney, TX 75070. (469) 307-6660. Excellent pool service company!!! The ...",
+            "position": 9,
+            "ratingCount": 624
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Supply+Store&find_loc=Plano%2C+TX",
+            "title": "Top 10 Best Pool Supply Store Near Plano, Texas",
+            "rating": 3.8,
+            "snippet": "... Swim Clear Pool Supply, Pool Pump Experts - Pool Motor Supply, Leslie's Pool ... McKinney, TX · Richardson, TX · Rowlett, TX · The Colony, TX. Neighborhoods.",
+            "position": 10,
+            "ratingCount": 3635
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:04:57.491Z",
+      "data": {
+        "found": true,
+        "rating": 4.6,
+        "status": null,
+        "review_count": 108,
+        "business_name": "See photos Swim Clear Pool Supply"
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:06:54.159Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:06:55.101Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:05:25.469Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:05:29.491Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:05:31.847Z",
+      "data": {
+        "query": "Swim Clear Pool Supply McKinney site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 29, 2015",
+            "link": "https://www.dallasnews.com/opinion/commentary/2015/05/29/tracy-begland-get-a-terrible-summer-job-kids-and-thank-me-later/",
+            "title": "Tracy Begland: Get a terrible summer job, kids, and thank ...",
+            "snippet": "I had passed my swim test with an odd hybrid of the freestyle and doggy paddle. Instead I worked the concession stand from noon until 8 p.m. ...",
+            "position": 1
+          },
+          {
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/matthew-henry-obituary?id=28072457",
+            "title": "Matthew Henry Obituary (2003) - Dallas, TX",
+            "snippet": "Matthew Robert, was born on February 22, 1974 and passed away on September 23, 2003. He is survived by his father, Sam Henry, his mother, Gretchen Henry, his ...",
+            "position": 2
+          },
+          {
+            "date": "Jul 10, 2015",
+            "link": "https://www.dallasnews.com/opinion/commentary/2015/07/10/ralph-strangis-im-learning-to-travel-light/",
+            "title": "Ralph Strangis: I'm learning to travel light",
+            "snippet": "One day some years ago, as I was writing checks to my landscaper and pool guy and paying down credit card balances, I stopped and thought — IS ...",
+            "position": 3
+          },
+          {
+            "date": "Jul 2, 2021",
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/betty-hitchings-obituary?id=12798154",
+            "title": "Betty Hitchings Obituary (2021) - McKinney, TX",
+            "snippet": "HITCHINGS, Betty Kuhne Sawyer On July 2, 2021, Betty Kuhne Sawyer Hitchings, 93, marched through the gates of Heaven and immediately asked ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 20, 2023",
+            "link": "https://www.dallasnews.com/high-school-sports/football/2023/12/20/for-athletes-with-olympic-aspirations-being-elite-simply-isnt-enough-to-cash-in-on-nil/",
+            "title": "For athletes with Olympic aspirations, being elite isn't ...",
+            "snippet": "The Woodrow Wilson student is so dominant in the pool that she will move to Austin in the fall to continue her illustrious swimming career.",
+            "position": 5
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=01",
+            "title": "sitemap.xml",
+            "snippet": "... store installed a high-pitch sound generator to clear out homeless loiterers.</video:description><video:player_loc allow_embed=\"yes\" autoplay=\"ap=1\">https ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05&type=video",
+            "title": "sitemap.xml",
+            "snippet": "... pool perfect four year-round parties. It is thirteen hundred square feet of constant suprises. We join agent Loy Carlos for a tour.</video:description> ...",
+            "position": 7
+          },
+          {
+            "date": "Nov 9, 2021",
+            "link": "https://www.nbcdfw.com/news/local/fed-up-apartment-tenants-hang-banner-our-elevator-has-been-broken-4-months/2810270/",
+            "title": "Fed-Up Tenants Hang Banner: Elevator Broken 4 Months!",
+            "snippet": "It's a complaint reported by apartment dwellers across North Texas from time to time: They have a broken elevator that isn't being fixed.",
+            "position": 8
+          },
+          {
+            "date": "Nov 23, 2023",
+            "link": "https://www.wfaa.com/article/features/how-toddlers-death-became-story-thanksgiving/287-e5efea00-3f0c-4653-8186-2b79868e17f9",
+            "title": "How a toddler's death became a story of Thanksgiving",
+            "snippet": "Though one family lost a 14-month-old boy, they found meaning through his organ donations helping to save others.",
+            "position": 9
+          },
+          {
+            "date": "Oct 6, 2018",
+            "link": "https://www.wfaa.com/article/news/297-acre-development-slated-for-collin-county/287-601581355",
+            "title": "297-acre development slated for Collin County",
+            "snippet": "A small town in Collin County will soon be home to a large mixed-use development featuring residential, commercial and retail uses.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:06:59.975Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Swim Clear Pool Supply\" McKinney",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:05:45.325Z",
+      "data": "Swim Clear Pool Supply McKinney review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters SHORTS SHORTS Now playing Got a CLOUDY Pool? It's Your CHLORINE 🙈 Swim University Swim University • • 68K views 6 months ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description SHORTS SHORTS Now playing How To Clean a Cloudy Pool - Cloudy Swimming Pool Water Anthony Anthony • • 170K views 4 years ago Anthony Anthony How To Clean a Cloudy Pool - Cloudy Swimming Pool Water this is part 2 and my gren Cloudy water is already a shade away ... How To Clean a Cloudy Pool - Cloudy Swimming Pool Water this is part 2 and my gren Cloudy water is already a shade away ... From the video description 1:14 1:14 Now playing RiverbendPoolSupply.com - ProTeam Microfloc Clarifier - McKinney Pool Supply Riverbend Sandler Pool Supply Riverbend Sandler Pool Supply • • 965 views 11 years ago Riverbend Sandler Pool Supply Riverbend Sandler Pool Supply ProTeam Microfloc Clarifier can not tell the difference between algae spores and dirt. Used weekly in combination with ... ProTeam Microfloc Clarifier can not tell the difference between algae spores and dirt. Used weekly in combination with ... From the video description 3:57 3:57 Now playing Crystal Clear Pool Water, the secret that pool stores don't want you to know!! FIX THIS FIRST... Next Level DIY Next Level DIY • • 1M views 2 years ago Next Level DIY Next Level DIY Stop wasting money on expensive pool chemicals. Perfect pool water can be easy and cheap to obtain. Testing your water is ... Stop wasting money on expensive pool chemicals. Perfect pool water can be easy and cheap to obtain. Testing your water is ... From the video description 6 chapters Intro | Balancing your water | Testing your water | Raising your alkalinity | Adding baking soda | Outro 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Balancing your water Balancing your water 0:43 Balancing your water 0:43 Testing your water Testing your water 1:01 Testing your water 1:01 Raising your alkalinity Raising your alkalinity 2:17 Raising your alkalinity 2:17 Adding baking soda Adding baking soda 2:55 Adding baking soda 2:55 Outro Outro 3:25 Outro 3:25 4:23 4:23 Now playing 6 POOL CHEMICALS to Stop Buying Right Now Swim University Swim University • • 124K views 2 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 8 chapters Stop Buying These Pool Chemicals | 1. Alkalinity Increaser | 2. pH Increaser | 3. pH Decreaser | 4. Chlorine Stabilizer | 5. Calcium Hardness | 6. Phosphate Remover | How to Stop Buying Chlorine 8 chapters in this video 8 chapters Stop Buying These Pool Chemicals Stop Buying These Pool Chemicals 0:00 Stop Buying These Pool Chemicals 0:00 1. Alkalinity Increaser 1. Alkalinity Increaser 0:37 1. Alkalinity Increaser 0:37 2. pH Increaser 2. pH Increaser 1:05 2. pH Increaser 1:05 3. pH Decreaser 3. pH Decreaser 1:51 3. pH Decreaser 1:51 4. Chlorine Stabilizer 4. Chlorine Stabilizer 2:27 4. Chlorine Stabilizer 2:27 5. Calcium Hardness 5. Calcium Hardness 2:48 5. Calcium Hardness 2:48 6. Phosphate Remover 6. Phosphate Remover 3:04 6. Phosphate Remover 3:04 8:01 8:01 Now playing How to Clear Up a CLOUDY POOL in 48 HOURS OR LESS Swim University Swim University • • 206K views 2 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 9 chapters How to Clear Up Cloudy Pool Water | Four Problems That Cause Cloudy Water | 1. Poor Filtration | 2. Low Chlorine Levels | 3. Poor Water Chemistry | 4. Contaminants, like Debris or Algae | Flocculant vs. Clarifier | How to Use Pool Flocculant to Clear Up Cloudy Water | How to Use Pool Clarifier to Clear Up Cloudy Water 9 chapters in this video 9 chapters How to Clear Up Cloudy Pool Water How to Clear Up Cloudy Pool Water 0:00 How to Clear Up Cloudy Pool Water 0:00 Four Problems That Cause Cloudy Water Four Problems That Cause Cloudy Water 0:50 Four Problems That Cause Cloudy Water 0:50 1. Poor Filtration 1. Poor Filtration 1:01 1. Poor Filtration 1:01 2. Low Chlorine Levels 2. Low Chlorine Levels 2:07 2. Low Chlorine Levels 2:07 3. Poor Water Chemistry 3. Poor Water Chemistry 2:53 3. Poor Water Chemistry 2:53 4. Contaminants, like Debris or Algae 4. Contaminants, like Debris or Algae 3:22 4. Contaminants, like Debris or Algae 3:22 Flocculant vs. Clarifier Flocculant vs. Clarifier 3:50 Flocculant vs. Clarifier 3:50 People also watched 16:02 16:02 Now playing Real talk about copper pool ionizers: the good, the bad, and the algae! Saving Green Saving Green • • 61K views 3 years ago Saving Green Saving Green Our plucky pool professional, Paul, breaks down the benefits and drawbacks of solar copper pool ionizers. They can be tricky and ... Our plucky pool professional, Paul, breaks down the benefits and drawbacks of solar copper pool ionizers. They can be tricky and ... From the video description 16 chapters start/intro | how to you assess water quality? | why did you start using copper ionizers? | how are salt water pools different? | how do you make a solar copper ionizer? | what ionizer brands do you recommend? | why did you remove copper ionizers? | how to do you treat black copper deposition? | do copper ionizers save time? | do copper ionizers save chlorine? | what is the risk of copper deposition? | how hard is transitioning away from ionizers? | when do you recommend using ionizers? | any seasonal variation? | how much chlorine do you recommend? | general summary 16 chapters in this video 16 chapters start/intro start/intro 0:00 start/intro 0:00 how to you assess water quality? how to you assess water quality? 0:58 how to you assess water quality? 0:58 why did you start using copper ionizers? why did you start using copper ionizers? 1:40 why did you start using copper ionizers? 1:40 how are salt water pools different? how are salt water pools different? 2:24 how are salt water pools different? 2:24 how do you make a solar copper ionizer? how do you make a solar copper ionizer? 3:03 how do you make a solar copper ionizer? 3:03 what ionizer brands do you recommend? what ionizer brands do you recommend? 4:17 what ionizer brands do you recommend? 4:17 why did you remove copper ionizers? why did you remove copper ionizers? 4:44 why did you remove copper ionizers? 4:44 24:56 24:56 Now playing Above Ground Pool Swamp To Oasis in 36 Hours for $30| FAST CLEAN Redneck Filter HACK| SUMMER 2022 Simple Life Reclaimed Simple Life Reclaimed • • 1M views 3 years ago Simple Life Reclaimed Simple Life Reclaimed Our Above ground Pool gets filled with well water that turns a nice shade of chocolate milk mixed with swamp as soon as we add ... Our Above ground Pool gets filled with well water that turns a nice shade of chocolate milk mixed with swamp as soon as we add ... From the video description 4K Summary Transforming murky well water into a sparkling oasis, this video demonstrates a budget-friendly pool cleaning solution. The process involves building a simple filter stand and assembling a unique filtration system using readily available materials. Watch as they tackle the challenging task of clearing the pool in just 36 hours! AI-generated video summary Quality and accuracy may vary. Summary Transforming murky well water into a sparkling oasis, this video demonstrates a budget-friendly pool cleaning solution. The process involves building a simple filter stand and assembling a unique filtration system using readily available materials. Watch as they tackle the challenging task of clearing the pool in just 36 hours! 17:59 17:59 Now playing How to keep your pool water CRYSTAL CLEAR (new video) DIY JIM DIY JIM • • 176K views 2 years ago DIY JIM DIY JIM I show you how to keep your pool water crystal clear . Tips and tricks Thank you very much for watching and God bless. ✓How to ... I show you how to keep your pool water crystal clear . Tips and tricks Thank you very much for watching and God bless. ✓How to ... From the video description Summary This video provides a comprehensive guide on how to keep pool water crystal clear. The speaker covers daily, weekly, and monthly tasks, including cleaning the skimmer basket, vacuuming the pool, checking water chemistry, and backwashing the filter. The video also includes tips on using pool clarifier, shocking the pool, and maintaining the pump. AI-generated video summary Quality and accuracy may vary. Summary This video provides a comprehensive guide on how to keep pool water crystal clear. The speaker covers daily, weekly, and monthly tasks, including cleaning the skimmer basket, vacuuming the pool, checking water chemistry, and backwashing the filter. The video also includes tips on using pool clarifier, shocking the pool, and maintaining the pump. 4:10 4:10 Now playing How to unclog your pool lines and pool filter with basic wet dry vacuum! BTUFF BTUFF • • 306K views 7 years ago BTUFF BTUFF Here are some easy steps on getting your pool lines cleared up after they've been clogged with leaves or debris. With a shop vac ... Here are some easy steps on getting your pool lines cleared up after they've been clogged with leaves or debris. With a shop vac ... From the video description 6 chapters Intro | Disconnect pool line | Wetdry vac | Disconnect hose | Turn on skimmer | Jandy valve 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Disconnect pool line Disconnect pool line 0:45 Disconnect pool line 0:45 Wetdry vac Wetdry vac 0:55 Wetdry vac 0:55 Disconnect hose Disconnect hose 1:17 Disconnect hose 1:17 Turn on skimmer Turn on skimmer 2:25 Turn on skimmer 2:25 Jandy valve Jandy valve 2:47 Jandy valve 2:47 + 6 more 0:26 0:26 Now playing #02 - What is Alkalinity Plus - Swim Clear Pool Chemicals & Pool Supplies Family Leisure Indianapolis Family Leisure Indianapolis • • 6.9K views 12 years ago Family Leisure Indianapolis Family Leisure Indianapolis http://www.FamilyLeisure.com | What is Alkalinity Plus used for? Mike the Pool Guy will teach you what Alkalinity Plus is used for ... http://www.FamilyLeisure.com | What is Alkalinity Plus used for? Mike the Pool Guy will teach you what Alkalinity Plus is used for ... From the video description 12 videos Swimming Pool Chemicals and What They Do | By: SwimClear Family Leisure Indianapolis • Playlist #01 - INTRODUCTION how to use Pool Chemicals - Swim Clear Pool Chemicals & Pool Supplies · 1:45 #02 - What is Alkalinity Plus - Swim Clear Pool Chemicals & Pool Supplies · 0:26 View full playlist 0:46 0:46 Now playing McKinney's Pool Service Beehive Web Solutions Beehive Web Solutions • • 4.7K views 1 year ago Beehive Web Solutions Beehive Web Solutions McKinney's Pool Service Inc. was established with a vision of helping our customers receive the highest caliber service, ... McKinney's Pool Service Inc. was established with a vision of helping our customers receive the highest caliber service, ... From the video description 0:41 0:41 Now playing Mckinney Pool Service Chelsea Reddy Chelsea Reddy • • No views 1 year ago Chelsea Reddy Chelsea Reddy Make a splash with Allied Aquatics Complete Pool Care's exceptional McKinney pool service! Our skilled technicians provide ... Make a splash with Allied Aquatics Complete Pool Care's exceptional McKinney pool service! Our skilled technicians provide ... From the video description SHORTS SHORTS Now playing Getting rid of algae in your pool . Simply use a copper pipe;) Gilla Leigh Home Design’s Gilla Leigh Home Design’s • • 388K views 3 years ago Gilla Leigh Home Design’s Gilla Leigh Home Design’s The Best way to get rid of algae in a pool or fountain ! Place a metal Pop in the skimmer basket . #algae # pool #cleaning ... The Best way to get rid of algae in a pool or fountain ! Place a metal Pop in the skimmer basket . #algae # pool #cleaning ... From the video description 23:06 23:06 Now playing How to Clear Cloudy Pool Water: Cloudy Pool Water Fix: Cleaning a Cloudy Pool: Cloudy Swimming Pool Pool elementary Pool elementary • • 197K views 2 years ago Pool elementary Pool elementary Easy Pool Cleaning and Pool Maintenance to Clear a Cloudy Pool . Cloudy Pool Cleaning. Easy Pool Cleaning and Pool Maintenance to Clear a Cloudy Pool . Cloudy Pool Cleaning. From the video description 7 moments Pool Filtration | Check Chlorine | Free Chlorine | Balance water | PH 7.4-7.6 | Contaminants | #1 Flocculants are 7 auto-generated moments in this video 7 moments Pool Filtration Pool Filtration 0:22 Pool Filtration 0:22 Check Chlorine Check Chlorine 3:39 Check Chlorine 3:39 Free Chlorine Free Chlorine 4:10 Free Chlorine 4:10 Balance water Balance water 5:33 Balance water 5:33 PH 7.4-7.6 PH 7.4-7.6 5:47 PH 7.4-7.6 5:47 Contaminants Contaminants 7:02 Contaminants 7:02 #1 Flocculants are #1 Flocculants are 8:26 #1 Flocculants are 8:26 1:45 1:45 Now playing #01 - INTRODUCTION how to use Pool Chemicals - Swim Clear Pool Chemicals & Pool Supplies Family Leisure Indianapolis Family Leisure Indianapolis • • 8.2K views 12 years ago Family Leisure Indianapolis Family Leisure Indianapolis http://www.FamilyLeisure.com | MIke the Pool Guy will introduce you to swimming pool chemicals and how they are made and ... http://www.FamilyLeisure.com | MIke the Pool Guy will introduce you to swimming pool chemicals and how they are made and ... From the video description 4 chapters Intro | Keep it dry | Consistency | Dissolve 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Keep it dry Keep it dry 0:23 Keep it dry 0:23 Consistency Consistency 0:46 Consistency 0:46 Dissolve Dissolve 1:12 Dissolve 1:12 5:44 5:44 Now playing How to clear up a cloudy pool the easy way DIY JIM DIY JIM • • 127K views 3 years ago DIY JIM DIY JIM I show you how I cleared up my cloudy pool . Hope this video helped you out. Thank you very much for watching and God bless. I show you how I cleared up my cloudy pool . Hope this video helped you out. Thank you very much for watching and God bless. From the video description Summary DIY JIM demonstrates an easy method for clearing cloudy pool water. The process involves vacuuming, filter adjustments, and adding a pool clarifier. This approach aims to bind particles together for easier filtration. AI-generated video summary Quality and accuracy may vary. Summary DIY JIM demonstrates an easy method for clearing cloudy pool water. The process involves vacuuming, filter adjustments, and adding a pool clarifier. This approach aims to bind particles together for easier filtration. 9:57 9:57 Now playing The Easiest Way to UNCLOG your Swimming Pool Skimmer! Hallmark Pool Supplies Hallmark Pool Supplies • • 493K views 4 years ago Hallmark Pool Supplies Hallmark Pool Supplies HAVE A QUESTION FOR MARK? ⏪ Book a 1 on 1 phone session / virtual service call with Mark today! HAVE A QUESTION FOR MARK? ⏪ Book a 1 on 1 phone session / virtual service call with Mark today! From the video description 5 chapters Introduction | Most common cause of clogs | Check these things first | Unclogging the skimmer | More extreme scenarios 5 chapters in this video 5 chapters Introduction Introduction 0:00 Introduction 0:00 Most common cause of clogs Most common cause of clogs 0:12 Most common cause of clogs 0:12 Check these things first Check these things first 1:05 Check these things first 1:05 Unclogging the skimmer Unclogging the skimmer 2:14 Unclogging the skimmer 2:14 More extreme scenarios More extreme scenarios 7:13 More extreme scenarios 7:13 3:28 3:28 Now playing pool remodeling company McKinney Tx. ~ Executive Pool Service Executive Pool Service Executive Pool Service • • 1.5K views 6 months ago Executive Pool Service Executive Pool Service Recent pool remodels in McKinney , Texas by Executive Pool Service. Before & after photos with brief description of materials and ... Recent pool remodels in McKinney , Texas by Executive Pool Service. Before & after photos with brief description of materials and ... From the video description 16:12 16:12 Now playing CHEMICAL FREE POOL, safe, no salt? Little maintenance, not a gimmick it works! #820 Pool Ionizer The Kelley's Country Life The Kelley's Country Life • • 118K views 2 years ago The Kelley's Country Life The Kelley's Country Life A chemical free or no salt pool seems almost impossible, I have been running mine for months with no issues through the heat of ... A chemical free or no salt pool seems almost impossible, I have been running mine for months with no issues through the heat of ... From the video description CC 6:56 6:56 Now playing What's the BEST POOL SHOCK for Your Pool? Swim University Swim University • • 279K views 3 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 11 chapters Introduction to the Right Pool Shock | What Does Shock Do to a Pool? | What Are the Different Types of Pool Shock? | What's the Best Type of Shock for Your Pool? | 1. Cal-Hypo Shock | 2. Dichlor Shock | 3. Non-Chlorine Shock or Oxidizer | What Kind of Shock is Best for Algae? | What Kind of Shock is Best for Saltwater Pools? | What Kind of Shock is Best for Smaller Pools? | When Should You Add Shock? 11 chapters in this video 11 chapters Introduction to the Right Pool Shock Introduction to the Right Pool Shock 0:00 Introduction to the Right Pool Shock 0:00 What Does Shock Do to a Pool? What Does Shock Do to a Pool? 1:06 What Does Shock Do to a Pool? 1:06 What Are the Different Types of Pool Shock? What Are the Different Types of Pool Shock? 1:46 What Are the Different Types of Pool Shock? 1:46 What's the Best Type of Shock for Your Pool? What's the Best Type of Shock for Your Pool? 2:19 What's the Best Type of Shock for Your Pool? 2:19 1. Cal-Hypo Shock 1. Cal-Hypo Shock 2:45 1. Cal-Hypo Shock 2:45 2. Dichlor Shock 2. Dichlor Shock 3:34 2. Dichlor Shock 3:34 3. Non-Chlorine Shock or Oxidizer 3. Non-Chlorine Shock or Oxidizer 4:15 3. Non-Chlorine Shock or Oxidizer 4:15 6:33 6:33 Now playing How To Clear A Green Pool FAST Swim University Swim University • • 953K views 3 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 10 chapters Introduction to How To Clean A Green Pool | What Causes Green Pool Water? | How To Fix Green Pool Water in 6 Steps | 1. Brush Pool Walls and Pool Floor | 2. Test Alkalinity and pH | 3. Shock Pool with Chlorine Shock | 4. Run Filter for At Least 8 Hours | 5. Clean Your Filter | 6. Test Water and Adjust Chemicals | How To Stop Pool Algae from Returning 10 chapters in this video 10 chapters Introduction to How To Clean A Green Pool Introduction to How To Clean A Green Pool 0:00 Introduction to How To Clean A Green Pool 0:00 What Causes Green Pool Water? What Causes Green Pool Water? 0:31 What Causes Green Pool Water? 0:31 How To Fix Green Pool Water in 6 Steps How To Fix Green Pool Water in 6 Steps 1:00 How To Fix Green Pool Water in 6 Steps 1:00 1. Brush Pool Walls and Pool Floor 1. Brush Pool Walls and Pool Floor 1:13 1. Brush Pool Walls and Pool Floor 1:13 2. Test Alkalinity and pH 2. Test Alkalinity and pH 1:44 2. Test Alkalinity and pH 1:44 3. Shock Pool with Chlorine Shock 3. Shock Pool with Chlorine Shock 2:38 3. Shock Pool with Chlorine Shock 2:38 4. Run Filter for At Least 8 Hours 4. Run Filter for At Least 8 Hours 3:59 4. Run Filter for At Least 8 Hours 3:59 8:05 8:05 Now playing Cloudy pool water fix Life Less Ordinary Life Less Ordinary • • 946K views 4 years ago Life Less Ordinary Life Less Ordinary Cloudy pool water fix. In this video I show you exactly what to do and how to fix a cloudy pool . It's so easy but you need to know ... Cloudy pool water fix. In this video I show you exactly what to do and how to fix a cloudy pool . It's so easy but you need to know ... From the video description Summary This video demonstrates how to clear cloudy pool water using a flocculant. The creator explains the difference between a high pH level and microscopic debris as causes of cloudiness and details the process of using a flocculant to remove the debris. The video concludes with a follow-up showing the results of the process. AI-generated video summary Quality and accuracy may vary. Summary This video demonstrates how to clear cloudy pool water using a flocculant. The creator explains the difference between a high pH level and microscopic debris as causes of cloudiness and details the process of using a flocculant to remove the debris. The video concludes with a follow-up showing the results of the process. Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:57.591Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Swim Clear Pool Supply\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/job-listing/office-assistant-store-associate-exp-pref-entry-level-for-swimming-pool-store-swim-clear-pool-supply-JV_IC1140029_KO0,77_KE78,100.htm?jl=1009944281244",
+            "title": "Swim Clear Pool Supply hiring Office Assistant/Store Associate ...",
+            "snippet": "Swim Clear Pool Supply 4900 Eldorado PKWY STE. 148 McKinney TX. 75070. Swim Clear Pool Supply's staff is expanding and looking for energetic full time office ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/job-listing/office-assistant-sales-associate-exp-pref-entry-level-for-swiming-pool-store-swim-clear-pool-supply-JV_IC1140029_KO0,76_KE77,99.htm?jl=1009835450070",
+            "title": "Swim Clear Pool Supply hiring Office Assistant/Sales Associate ...",
+            "snippet": "Swim Clear Pool Supply 4900 Eldorado PKWY STE. 148 McKinney TX. 75070. Swim Clear Pool Supply's staff is expanding and looking for energetic full time office ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:08.597Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2026 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:15.177Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:06:56.906Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Swim Clear Pool Supply\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:06:25.414Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Swim Clear Pool Supply",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:26.393Z",
+      "data": {
+        "query": "site:dallascounty.org Swim Clear Pool Supply civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2003/GeneralFund.PDF",
+            "title": "GENERAL FUND",
+            "snippet": "Other funds that have the character of capital project funds, even though they may be funded directly by the property tax, are discussed within Part VI: ...",
+            "position": 1
+          },
+          {
+            "date": "Sep 10, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/comcrt/county-code/DallasCountyCode-09102024.pdf",
+            "title": "Dallas County Code",
+            "snippet": "Chapter 1 – General Provisions. Chapter 2 – Administration. Chapter 6 – Animals. Chapter 10 – Business. Chapter 14 – Civil Emergencies.",
+            "position": 2
+          },
+          {
+            "date": "Aug 15, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2015/FY15_ApprovedBudget.pdf",
+            "title": "FY2015",
+            "snippet": "establishments, foster homes, day care centers, and swimming pools for the unincorporated areas of Dallas. County as well as certain cities ...",
+            "position": 3
+          },
+          {
+            "date": "Aug 15, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2013/FY2013ApprovedBudget.pdf",
+            "title": "FY2013",
+            "snippet": "establishments, foster homes, day care centers, and swimming pools for the unincorporated areas of Dallas. County as well as certain cities ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 20, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2017/FY2017_ApprovedBudget_Complete.pdf",
+            "title": "FY2017",
+            "snippet": "establishments, foster homes, day care centers, and swimming pools for the unincorporated areas of Dallas. County as well as certain cities ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2016/FY2016_ApprovedBudget.pdf",
+            "title": "FY2016",
+            "snippet": "establishments, foster homes, day care centers, and swimming pools for the unincorporated areas of Dallas. County as well as certain cities through contract ...",
+            "position": 6
+          },
+          {
+            "date": "Aug 15, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2014/FY2014_ApprovedBudget.pdf",
+            "title": "FY2014",
+            "snippet": "This is the fourth year that the rate has been set at 24.31 cents per $100 assessed valuation. Equipment and Major Capital. The accompanying ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 15, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2012/FY2012ApprovedBudget.pdf",
+            "title": "FY2012",
+            "snippet": "establishments, foster homes, day care centers, and swimming pools for the unincorporated areas of Dallas. County as well as certain cities ...",
+            "position": 8
+          },
+          {
+            "date": "May 4, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/covid-19/orders-media/2020/may/050820-SupplementalDallasCountyOrderonReopenedServices.pdf",
+            "title": "supplemental order of county judge clay jenkins on ...",
+            "snippet": "3. Swimming pools; provided, however, that (1) indoor swimming pool is may operate at up to 25 percent of the total listed occupancy.",
+            "position": 9
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2020/FY2020-ApprovedBudgetBook-FINAL.pdf",
+            "title": "FY2020",
+            "snippet": "establishments, foster homes, day care centers, and swimming pools for the unincorporated areas of Dallas. County as well as certain cities through contract ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:27.943Z",
+      "data": {
+        "query": "site:collincountytx.gov Swim Clear Pool Supply",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Feb 22, 2017",
+            "link": "https://eagenda.collincountytx.gov/docs/2017/CC/20170403_2024/42922_237%20-%2042922%20Lake%20Patrol%20Contract.pdf",
+            "title": "\\<e\\th ~c, &1.tn~3~",
+            "snippet": "1.1 Description of Services/Introduction: The Contractor shall provide all personnel, equipment, supplies, facilities, transportation, tools, ...",
+            "position": 1
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2023/CC/20230814_2873/54438_HB04559F.pdf",
+            "title": "88(R) HB 4559",
+            "snippet": "in a neighborhood a swimming pool that is not protected with: (A)AAa fence that is at least four feet high and that has a latched and locked gate; and. (B) ...",
+            "position": 2
+          },
+          {
+            "date": "Cited by 2",
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/proposed-txr04-permit.pdf",
+            "title": "Proposed TXR040000",
+            "snippet": "This Comprehensive General Permit provides authorization for stormwater and certain non- stormwater discharges from small (Phase II) municipal separate storm ...",
+            "position": 3
+          },
+          {
+            "date": "Aug 23, 2019",
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Van%20Alstyne.pdf",
+            "title": "CITY OF VAN ALSTYNE, TEXAS ORDINANCE ...",
+            "snippet": "The metropolitan park is a natural area or developed area for a variety of outdoor recreation such as ballfields, playgrounds, boating, fishing, ...",
+            "position": 4
+          },
+          {
+            "date": "Aug 5, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250804_3121/58414_2025-270%20Solicitation%20Packet.pdf",
+            "title": "Collin County, TX REQUEST FOR PROPOSAL 2025-270 ...",
+            "snippet": "The subject also displays various site improvements consisting of an amphitheater, swimming pool, climbing apparatus, activity pavilions, ...",
+            "position": 5
+          },
+          {
+            "date": "Jul 23, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/CC/20190722_2358/46822_Collin%20County%202019%20SWMP%20Final_07.01.2019_.pdf",
+            "title": "STORMWATER MANAGEMENT PROGRAM (SWMP) ...",
+            "snippet": "Dechlorinated swimming pool discharges that do not violate Texas Surface Water. Quality Standards;. 14. Street wash water excluding street ...",
+            "position": 6
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200427_2472/48332_4%202020%20LP%20CONTRACT.pdf",
+            "title": "SEE ITEM 9",
+            "snippet": "by SEE SCHEDULE · 2020 — The Contractor shall provide all personnel, equipment, supplies, facilities, transportation, tools, materials, supervision, and other items and.",
+            "position": 7
+          },
+          {
+            "date": "Sep 30, 2024",
+            "link": "https://www.collincountytx.gov/Government/Budget/budgetreport/fy2024-quarter4.pdf",
+            "title": "QUARTERLY REPORT",
+            "snippet": "... pool and overflow phone bank included (25) additional workstations. (2) additional ballot printers were purchased as a result of recent ...",
+            "position": 8
+          },
+          {
+            "date": "Feb 3, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250203_3050/57406_Collin%20County%20SWMP%20Final_20250121.pdf",
+            "title": "Storm Water Management Program",
+            "snippet": "The reservoir was impounded in 1968 and designated uses include public water supply, contact recreation and high aquatic life use. The segment ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_McKinney.pdf",
+            "title": "master plan - parks recreation open space",
+            "snippet": "Classification: Recreation Facility. 1101 E. Louisiana St. Outdoor Pool. Outdoor Pavilion. Restrooms/Showers. Page 71 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:33.965Z",
+      "data": {
+        "name": "Swim Clear Pool Service, LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:53.290Z",
+      "data": {
+        "found": true,
+        "rating": 4.5,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/swim-clear-pool-supply-mckinney-2",
+        "review_count": 14
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:07:01.311Z",
+      "data": {
+        "found": true,
+        "query": "\"Swim Clear Pool Supply\" McKinney lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://files.brokercheck.finra.org/individual/individual_7372659.pdf",
+            "title": "BLAINE JOSEPH BOTKIN",
+            "snippet": "05/2018 - 08/2018 Swim Clear Pool Supply. Sales Associate. N. Mckinney, TX, United States. 08/2017 - 05/2018 University of Arkansas. Student. N. Fayetteville, ..."
+          },
+          {
+            "link": "https://www.facebook.com/groups/637529959937311/posts/2625569291133358/",
+            "title": "Is this swimming pool installation fixable?",
+            "snippet": "Make a complaint and get a new one, hopefully an upgrade, for free. 3 ... Swim Clear Pool Supply and 2 others. 3 reactions ·. 17 comments."
+          },
+          {
+            "link": "https://www.yelp.com/biz/expert-pools-prosper",
+            "title": "EXPERT POOLS - Updated January 2026 - 83 Reviews",
+            "snippet": "... McKinney, Allen, Fairview,… read more · DFW Woodland Remodeling. 5.0 ... Swim Clear Pool Supply. 13 reviews. Photo of Pinch A Penny Pool Patio Spa."
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Supplies&find_loc=Dallas%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Supplies in Dallas, TX",
+            "snippet": "Top 10 Best Swimming Pool Supplies Near Dallas, Texas ; 1. Swim Clear Pool Supply · 19.1 mi · 1212 W McDermott, Ste 200 Allen, TX 75013. (972) 649-4770 ; 2."
+          },
+          {
+            "link": "https://www.facebook.com/groups/541537959328537/posts/3489227197892917/",
+            "title": "Just took these out of a house been hooked up and ...",
+            "snippet": "Swim Clear Pool Supply and 18 others. 19 reactions ·. 104 comments ... This post is a SCAM!!! This property is actually managed by ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:07:20.206Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T01:07:04Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Swim%20Clear%20Pool%20Supply%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=t7FdafqbJfDLwPAP-bSd8QM\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T01:07:14Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Swim%20Clear%20Pool%20Supply%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=wbFdadWjKtiovr0PluKa4Qk\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Swim Clear Pool Supply",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:29.284Z",
+      "data": {
+        "query": "site:dentoncounty.gov Swim Clear Pool Supply",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 8, 1999",
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1630/TXR040000-Fact-Sheet-PDF",
+            "title": "Fact Sheet and Executive Director's Preliminary Decision",
+            "snippet": "Like the general permit, language in the SWMP must be clear, specific, and measurable and meet requirements under the Remand Rule. Proposed ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1637/Pollution-Prevent--Good-Housekeeping-PDF?bidId=",
+            "title": "Pollution Prevention/Good Housekeeping for Municipal ...",
+            "snippet": "An average swimming pool holds 19,000 gallons of chlorinated water. Pools have high concentrations of chlorine, which is toxic to wildlife and fish ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dentoncounty.gov/FAQ.aspx",
+            "title": "FAQs • Denton County, TX • CivicEngage",
+            "snippet": "The forms you print must be clear and sharp. Applications that are blurred or illegible will not be accepted. They must be printed in black print on white paper ...",
+            "position": 3
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=235_50",
+            "title": "Dev Permit Report",
+            "snippet": "VENTURE CUSTOM POOLS, 1721 CANTER CT, SANDBROCK RANCH PHASE 1A BLK F LOT 22 (CO & SCH)(SEE 752283 FOR W47), SWIMMING POOL ... SHAN POOLS (PREMIER POOLS & SPAS ...",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:23.284Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Swim Clear Pool Supply",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1968/M-0268.pdf",
+            "title": "TETE ATFORNEY GENERAL Opinion No. M- 268",
+            "snippet": "Hon. J. W. Edgar. Opinion No. M- 268. Commissioner of Education. Texas Education Agency. Re: Whether an independent. Austin, Texas.",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/Texas%20v.%20California%20-%20filed.pdf",
+            "title": "In the Supreme Court of the United States",
+            "snippet": "55. “The Constitution . . . was framed upon the theo- ry that the peoples of the several states must sink or swim together, ...",
+            "position": 2
+          },
+          {
+            "date": "Jan 30, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/First%20Assistant%20Brent%20Webster%20Congressional%20Testimony%20-%20FINAL.pdf",
+            "title": "Written Testimony Before the House of Representatives ...",
+            "snippet": "Once again, Attorney General Paxton has denied the Biden Administration's unfounded requests in a letter on January 26, 2024.21 Further, he ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 19, 2024",
+            "link": "https://texasattorneygeneral.gov/sites/default/files/images/press/State%20Fair%20of%20Texas%20Emergency%20Motion%20For%20Relief%20Pending%20Appeal%20Filed.pdf",
+            "title": "In the Court of Appeals for the Fifteenth Judicial District",
+            "snippet": "To the Honorable Fifteenth Court of Appeals: The Texas Legislature could hardly have been clearer: “[A] political subdivision.",
+            "position": 4
+          },
+          {
+            "date": "Nov 5, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/images/Petition%20for%20Review%20(to%20file)%20(1).pdf",
+            "title": "In the United States Court of Appeals for the Fifth Circuit",
+            "snippet": "... supply face coverings meeting. F3502–01 and/or NIOSH Workplace. Performance or Workplace Performance. Plus criteria to all employees covered by.",
+            "position": 5
+          },
+          {
+            "date": "Aug 13, 2013",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Annunciation%20House%20TI%20Motion.pdf",
+            "title": "CAUSE NO: 2024-DCV-0616 ANNUNCIATION HOUSE, ...",
+            "snippet": "... clear that entities registered in Texas must allow. “the attorney general to inspect, examine, and make copies, as the attorney general ...",
+            "position": 6
+          }
+        ]
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T01:07:00.513Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Swim Clear Pool Supply\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:58.431Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Swim Clear Pool Supply\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Swim-Clear-Pool-Supply",
+            "title": "Swim Clear Pool Supply Careers and Employment",
+            "snippet": "Find out what works well at Swim Clear Pool Supply from the people who know best. Get the inside scoop on jobs, salaries, top office locations, ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Swim-Clear-Pool-Supply/faq",
+            "title": "Questions and Answers about Swim Clear Pool Supply",
+            "snippet": "Find 6 questions and answers about working at Swim Clear Pool Supply. Learn about the interview process, employee benefits, company culture and more on ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Swim-Clear-Pool-Supply/reviews",
+            "title": "Working at Swim Clear Pool Supply: 3 Reviews",
+            "snippet": "Reviews from Swim Clear Pool Supply employees about Swim Clear Pool Supply culture, salaries, benefits, work-life balance, management, job security, ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Swim-Clear-Pool-Supply/faq/what-questions-did-they-ask-during-your-interview-at-swim-clear-pool-supply?quid=1bgf27ud2akd6aph",
+            "title": "What questions did they ask during your interview at Swim ...",
+            "snippet": "Find answers to 'What questions did they ask during your interview at Swim Clear Pool Supply?' from Swim Clear Pool Supply employees."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Swim-Clear-Pool-Supply-1/salaries",
+            "title": "Swim Clear Pool Supply salaries",
+            "snippet": "Average Swim Clear Pool Supply hourly pay ranges from approximately $11.49 per hour for Retail Sales Associate to $15.49 per hour for Entry ..."
+          }
+        ],
+        "result_count": 5
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:00.748Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Swim%20Clear%20Pool%20Supply&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20Clear% 20Pool% 20Supply&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= 20Clear% 20Pool% 20Supply&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= 20Clear% 20Pool% 20Supply&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search Map, All Facilities, Corporate Compliance Screener, ECHO Notify Air, Air Facility Search Map, Air Facilities, ECHO Clean Air Tracking Tool ( ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= 20Clear% 20Pool% 20Supply&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Clear% 20Pool% 20Supply&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= 20Clear% 20Pool% 20Supply&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Biosolids Facility Search · Biosolids Annual Report Search · Industrial Stormwater Facility Search · Map Water Facilities · Water Pollutant ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= 20Clear% 20Pool% 20Supply&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+            "title": "Search Results Help | ECHO | US EPA",
+            "snippet": "The search results page allows you to interact with the data and information presented. The results page can be customized to your preferred view.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= 20Clear% 20Pool% 20Supply&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= 20Clear% 20Pool% 20Supply&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= 20Clear% 20Pool% 20Supply&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T01:06:24.373Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.sos.state.tx.us/search.shtml?dropXSL=&pr=default&prox=page&rorder=500&rprox=500&rdfreq=500&rwfreq=500&rlead=500&sufs=0&order=r&rdepth=0&query=CERTIFICATE+OF+ACCOUNT+STATUS",
+            "title": "Current Search Results - the Texas Secretary of State",
+            "snippet": "If you've been asked to obtain a “certificate of good standing,” the first step is to determine what type of certificate is being requested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 7
+          },
+          {
+            "date": "Jan 23, 2019",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0036331_TEXAS%20Certificate%20of%20Good%20Standing_20190123.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "State of Formation TX. Effective SOS Registration Date 09/13/2018. Texas SOS File Number ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 8
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 9
+          },
+          {
+            "date": "Mar 31, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21435&ItemID=15140",
+            "title": "[PDF] Texas Franchise Tax No Tax Due Report",
+            "snippet": "Registered Office Street Address 2709 LESLIE LN SAN MARCOS, TX 78666 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 2. TX2020 05 ...",
+            "position": 10
+          }
+        ]
+      }
+    }
+  }
+}

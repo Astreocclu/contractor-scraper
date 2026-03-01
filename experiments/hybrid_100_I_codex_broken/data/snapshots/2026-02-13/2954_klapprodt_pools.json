@@ -1,0 +1,1869 @@
+{
+  "contractor_id": 2954,
+  "business_name": "Klapprodt Pools",
+  "city": "Fort Worth",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T08:27:38.885Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:25:19.641Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 6,
+            "MECH_LIEN": 31
+          },
+          "active_liens": 31,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 2,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "GOSS ROBERT A",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GOSS ROBERT A",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "8/6/2013",
+                    "20130806001110720",
+                    "--/--/--",
+                    "Subdivision- Name: VILLAGES STONELAKE ESTATES #1A FRISCO 2008/272 Lot: 3 Block: F, Reference - 2008 / 272"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2013-08-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20130806001110720"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "PULLEN CHARLES ROBERT",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PULLEN CHARLES ROBERT",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "10/31/2014",
+                    "20141031001188120",
+                    "--/--/--",
+                    "Subdivision- Name: VILLAGE PROSPER TRAIL #1 2008/271 Lot: 7 Block: I, Reference - 2008 / 271"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2014-10-31",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20141031001188120"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 1,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "DALLAS POOLS",
+                "grantor": "KLAPPRODT BARBARA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT BARBARA",
+                    "DALLAS POOLS",
+                    "MECHANICS LIEN",
+                    "12/23/1975",
+                    "1975004177381",
+                    "ALL/75249/1875",
+                    "N/A",
+                    "23 4/8397 SCHRBR 3"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1975-12-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1975004177381"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 34,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BAILEY CHRISTOPHER",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "BAILEY CHRISTOPHER",
+                    "RELEASE",
+                    "8/16/2019",
+                    "D219183505",
+                    "--/--/--",
+                    "FORT WORTH, Subdivision: QUAIL RIDGE ESTATES, Lot: 6, Block: 10"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2019-08-16",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D219183505"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "AGOSTINI ANGEL",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "AGOSTINI ANGEL",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "6/6/2014",
+                    "D214117688",
+                    "--/--/--",
+                    "FT W, Subdivision: VILLAGES OF WOODLAND SPGS, Lot: 21, Block: 176"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2014-06-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D214117688"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "8/14/2012",
+                    "D212198380",
+                    "--/--/--",
+                    "FT W, Subdivision: QUAIL RIDGE ESTS, Lot: 6, Block: 10"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2012-08-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D212198380"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "TABOR JAMES A",
+                "grantor": "KLAPPRODT POOLS I LTD",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS I LTD",
+                    "TABOR JAMES A",
+                    "RELEASE",
+                    "4/1/2015",
+                    "D215064842",
+                    "--/--/--",
+                    "HASLET, Subdivision: ASHMORE FARMS, Lot: 11, Block: 5"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2015-04-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D215064842"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "9/18/2020",
+                    "D220237254",
+                    "--/--/--",
+                    "SOUTHLAKE, Subdivision: VILLAS AT HIDDEN KNOLL, Lot: 19, Block: B"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2020-09-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D220237254"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DELAGNES DOMINIQUE",
+                "grantor": "KLAPPRODT POOLS I, LTD",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS I, LTD",
+                    "DELAGNES DOMINIQUE",
+                    "RELEASE",
+                    "11/2/2017",
+                    "D217255398",
+                    "--/--/--",
+                    "GRAND PRAIRIE, Subdivision: LAKESIDE AT GRAND PENINSULA, Lot: 34, Block: A"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2017-11-02",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D217255398"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "HICKS SEAN M",
+                "grantor": "KLAPPRODT POOLS I LTD",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS I LTD",
+                    "HICKS SEAN M",
+                    "RELEASE",
+                    "8/26/2024",
+                    "D224151197",
+                    "OPR/--/--",
+                    "KELLER, Subdivision: MARSHALL POINT ESTATES, Lot: 19, Block: A"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2024-08-26",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D224151197"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "HARPER CHARLES P",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HARPER CHARLES P",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "5/12/2015",
+                    "D215098878",
+                    "--/--/--",
+                    "FT W, Subdivision: LAGO VISTA AT BONDS RANCH, Lot: 9, Block: E"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2015-05-12",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D215098878"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "FIRST STATE BANK",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "FIRST STATE BANK",
+                    "KLAPPRODT POOLS I LTD",
+                    "RELEASE",
+                    "10/5/2020",
+                    "D220255121",
+                    "--/--/--",
+                    "KELLER, Subdivision: U S RESTAURANT, Lot: 3, Block: A"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2020-10-05",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D220255121"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "GRANT MARTY WAYNE",
+                "grantor": "KLAPPRODT POOLS I LTD",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS I LTD",
+                    "GRANT MARTY WAYNE",
+                    "RELEASE",
+                    "4/6/2020",
+                    "D220078883",
+                    "--/--/--",
+                    "FORT WORTH, Subdivision: SANCTUARY AT BEAR CREEK, Lot: 3, Block: 2"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2020-04-06",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D220078883"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS LTD",
+                "grantor": "ABBOTT STEVE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ABBOTT STEVE",
+                    "KLAPPRODT POOLS LTD",
+                    "MECHANICS LIEN",
+                    "1/22/2007",
+                    "D207023112",
+                    "--/--/--",
+                    "MNFLD, Subdivision: PLANTATION ESTS, Lot: 9, Block: 3"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2007-01-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D207023112"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "4/4/2016",
+                    "D216068373",
+                    "--/--/--",
+                    "FT W, Subdivision: STEADMAN FARMS, Lot: 3, Block: B"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2016-04-04",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D216068373"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS LTD",
+                "grantor": "KRAATZ MATTHEW K",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KRAATZ MATTHEW K",
+                    "KLAPPRODT POOLS LTD",
+                    "MECHANICS LIEN",
+                    "2/12/2008",
+                    "D208047828",
+                    "--/--/--",
+                    "Subdivision: AVONDALE FARMS, Lot: 6, Block: B"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2008-02-12",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D208047828"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "5/8/2015",
+                    "D215095540",
+                    "--/--/--",
+                    "FT W, Subdivision: VILLAGES OF WOODLAND SPGS, Lot: 8, Block: 28"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2015-05-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D215095540"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "12/8/2016",
+                    "D216285924",
+                    "--/--/--",
+                    "Subdivision: WILLOW SPGS RANCH, Lot: 5, Block: 4"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2016-12-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D216285924"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "HART BRIAN W",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HART BRIAN W",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "9/27/2011",
+                    "D211234835",
+                    "--/--/--",
+                    "SAG, Subdivision: HIGHLAND STA, Lot: 4, Block: 6"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2011-09-27",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D211234835"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS & SPAS",
+                "grantor": "DESABRAIS DAN M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DESABRAIS DAN M",
+                    "KLAPPRODT POOLS & SPAS",
+                    "MECHANICS LIEN",
+                    "2/25/2005",
+                    "D205054014",
+                    "--/--/--",
+                    "KLR, Subdivision: WILDWOOD, Lot: 8, Block: A"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2005-02-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D205054014"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "REASONER KENNETH W JR",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "REASONER KENNETH W JR",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "6/15/2012",
+                    "D212143731",
+                    "--/--/--",
+                    "ARL, Subdivision: WOODBINE, Lot: 30, Block: 9"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2012-06-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D212143731"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "SCHIEWE MARK D",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SCHIEWE MARK D",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "10/29/2010",
+                    "D210268249",
+                    "--/--/--",
+                    "KLR, Subdivision: NEWTON RANCH, Lot: 10, Block: B"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2010-10-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D210268249"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "SCHRADER KEVIN J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SCHRADER KEVIN J",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "3/30/2007",
+                    "D207111939",
+                    "--/--/--",
+                    "FT W, Subdivision: KINGSRIDGE, Lot: 2, Block: 4"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2007-03-30",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D207111939"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "HEALD BRADLEY J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HEALD BRADLEY J",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "1/2/2008",
+                    "D208000206",
+                    "--/--/--",
+                    "Subdivision: VISTA RANCH, Lot: 3, Block: 13"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2008-01-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D208000206"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "5/20/2019",
+                    "D219106718",
+                    "--/--/--",
+                    "FORT WORTH, Subdivision: WILLOW RIDGE ESTATES, Lot: 47, Block: 10"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2019-05-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D219106718"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "9/30/2013",
+                    "D213255655",
+                    "--/--/--",
+                    "FT W, Subdivision: VILLAGES OF WOODLAND SPGS W, Lot: 41, Block: 173"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2013-09-30",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D213255655"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "DILLARD JUSTIN",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DILLARD JUSTIN",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "12/31/2010",
+                    "D210323299",
+                    "--/--/--",
+                    "FT W, Subdivision: VILLAGES OF WOODLAND SPGS W, Lot: 6, Block: 161"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2010-12-31",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D210323299"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS LTD",
+                "grantor": "AUSTIN BRUCE W JR",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "AUSTIN BRUCE W JR",
+                    "KLAPPRODT POOLS LTD",
+                    "MECHANICS LIEN",
+                    "3/28/2006",
+                    "D206086846",
+                    "--/--/--",
+                    "N/A"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2006-03-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D206086846"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "VENUTOLO DEREK",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "VENUTOLO DEREK",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "8/15/2014",
+                    "D214177574",
+                    "--/--/--",
+                    "FT W, Subdivision: VILLAGES OF WOODLAND SPGS, Lot: 10, Block: 176"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2014-08-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D214177574"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "JONES DONALD K",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "JONES DONALD K",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "6/2/2011",
+                    "D211129920",
+                    "--/--/--",
+                    "G P, Subdivision: BLUFFS AT GRAND PEN, Lot: 15, Block: A"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2011-06-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D211129920"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "4/20/2017",
+                    "D217086793",
+                    "--/--/--",
+                    "Subdivision: LAGO VISTA AT BONDS RANCH, Lot: 29, Block: F"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2017-04-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D217086793"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "2/20/2018",
+                    "D218036041",
+                    "--/--/--",
+                    "HASLET, Subdivision: NORTH RIDGE ESTATES, Lot: 32, Block: 1"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2018-02-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D218036041"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "5/13/2009",
+                    "D209127952",
+                    "--/--/--",
+                    "KLR, Subdivision: CREEKWOOD AT HIDDEN LKS, Lot: 15, Block: A"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2009-05-13",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D209127952"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "MILES KEVIN S",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MILES KEVIN S",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "10/24/2008",
+                    "D208405054",
+                    "--/--/--",
+                    "KLR, Subdivision: NEWTON RANCH, Lot: 14, Block: A"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2008-10-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D208405054"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS",
+                "grantor": "KLAPPRODT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KLAPPRODT POOLS",
+                    "KLAPPRODT POOLS",
+                    "MECHANICS LIEN",
+                    "10/3/2007",
+                    "D207353047",
+                    "--/--/--",
+                    "FT W, Subdivision: VILLAGES OF WOODLAND SPGS, Lot: 22, Block: 66"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2007-10-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D207353047"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "HILL MITCH",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HILL MITCH",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "4/28/2008",
+                    "D208152315",
+                    "--/--/--",
+                    "HASLET, Subdivision: ASHMORE FARMS, Lot: 10, Block: 6"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2008-04-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D208152315"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KLAPPRODT POOLS I LTD",
+                "grantor": "DEEGAN DENNY G",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DEEGAN DENNY G",
+                    "KLAPPRODT POOLS I LTD",
+                    "MECHANICS LIEN",
+                    "5/31/2007",
+                    "D207186699",
+                    "--/--/--",
+                    "N R H, Subdivision: IRON HORSE, Lot: 56, Block: 1"
+                  ],
+                  "search_term": "Klapprodt Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2007-05-31",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D207186699"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "19 lien(s) filed BY contractor (collecting payment - neutral)",
+            "12 lien(s) with unclear direction"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 31,
+          "human_summary": "OK: 19 liens filed BY Klapprodt Pools to collect payment (normal business, no penalty)",
+          "liens_unclear": 12,
+          "liens_by_count": 19,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 19,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Klapprodt Pools",
+        "searched_at": "2026-02-13T07:24:08.077414",
+        "total_records": 37
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:42:44.599Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:42:50.166Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:43:49.593Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Klapprodt Pools\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:42:56.639Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Klapprodt Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www2.texasattorneygeneral.gov/opinions/openrecords/51paxton/orl/2017/pdf/or201701821.pdf",
+            "title": "[PDF] Scanned Document",
+            "snippet": "Dwayne's Landscape, H&A Engineering, Inc., Klapprodt Pools, Loyd Bransom Surveyors,. Inc., Peskuski Home Design, Q Home Designs, and Whitworth Engineering ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:42:57.543Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 4
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 5
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 6
+          },
+          {
+            "date": "Sep 5, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Travis%20County%20Voter%20Registration%20Petition%20Filed.pdf",
+            "title": "[PDF] THE STATE OF TEXAS, Plaintiff, v. BRUCE ELFANT, in his official ...",
+            "snippet": "See Texas. Comptroller of Public Accounts, Taxable Entity Search Results, “Civitech, INC.” https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 7
+          },
+          {
+            "link": "https://hplarchives.lyrasistechnology.org/repositories/2/resources/1008",
+            "title": "Collection: T. D. Howe Construction Company Photographs",
+            "snippet": "Images in this collection suggest it operated until at least 1978. Sources: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (search \"T D HOWE CONSTRUCTION CO INC ...",
+            "position": 8
+          },
+          {
+            "link": "https://unitedwaydallas.org/wp-content/uploads/2024/04/Wright-Law-Confirmed.pdf",
+            "title": "[PDF] Wright-Law-Confirmed.pdf - United Way of Metropolitan Dallas",
+            "snippet": "Based in Dallas, Texas. Ability to travel extensively. Page 9. 2/26/24, 2:35 PM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 9
+          },
+          {
+            "date": "Feb 11, 2025",
+            "link": "https://www.facebook.com/groups/KirbyTX/posts/9233109076797002/",
+            "title": "Still looking for the owner of LoJax... Let's make it happen! - Facebook",
+            "snippet": "However, the LLC is registered to Michelle Barber. https://mycpa.cpa.state.tx. us/coa/coaSearchBtn https://www.bizapedia.com/tx ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:42:58.796Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Klapprodt Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:42:59.928Z",
+      "data": {
+        "query": "site:dallascounty.org Klapprodt Pools civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:43:01.057Z",
+      "data": {
+        "query": "site:collincountytx.gov Klapprodt Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:43:02.164Z",
+      "data": {
+        "query": "site:dentoncounty.gov Klapprodt Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:43:11.850Z",
+      "data": {
+        "name": "Klapprodt Pools I LTD",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 431-2033",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/keller/profile/pool-contractors/klapprodt-pools-i-ltd-0825-235963607",
+        "review_count": null,
+        "founding_date": "01/01/1979",
+        "complaint_count": null,
+        "accredited_since": "2/8/2010",
+        "years_in_business": 47,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:43:07.012Z",
+      "data": "Home | Klapprodt Pools | Keller, TX Call Klapprodt Pools if you’re looking to build, remodel, or service your pool. Contact Us  817-431-2033 sales@klapprodtpools.com service@klapprodtpools.com Showroom Hours Monday – Friday 9 AM – 5 PM Home About Portfolio New Pool Pool Renovations Construction Process Pool Service FAQ Financing Contact Us Home About Portfolio New Pool Pool Renovations Construction Process Pool Service FAQ Financing Contact Us Quality And Integrity Since 1987 Request A Quote Video Player 00:03 00:00 00:54 Use Up/Down Arrow keys to increase or decrease volume. Award-Winning Pool Company In Keller, TX Ready To Transform Your Backyard? Klapprodt Pools is ready to help! Transform your backyard into a true paradise with our top-notch pool design and construction services. From custom designs to expert construction, we’ll work with you every step of the way to create your dream pool. And if you’re looking to update your current pool, our remodeling services are second to none. From simple updates to complete makeovers, we’ll help you bring new life to your backyard. And once your pool is complete, our professional pool service will ensure it stays in top condition for years to come. Klapprodt Pools has been family operated since 1987 , bringing over 30 years of experience to the Keller, Texas community. Our team of skilled professionals has a passion for creating beautiful outdoor spaces that families can enjoy for years to come. From initial design to final construction, we handle every aspect of the process with attention to detail and a commitment to excellence. Are You Ready To Transform Your Backyard? From custom pools to outdoor kitchens, fire pits, and more, we'll help you create the ultimate outdoor living space. Schedule a consultation with our team today to start designing your dream backyard! Request A Quote Or give us a call! 817-431-2033 Our core services We Specialize In Pool Design, Construction, Renovations, And Service! Klapprodt Pools has become synonymous with quality and customer satisfaction in the swimming pool industry. Our company offers a range of services for pool design, construction, renovation, and maintenance. Our team of experienced designers and builders is dedicated to creating award-winning pool designs that are tailored to meet the specific needs and desires of our clients. We use the highest quality materials and construction techniques to ensure that our pools are not only visually stunning but also built to last. In addition to new pool construction , we also offer comprehensive pool renovation services to help bring older pools back to their former glory. Our pool service team is available to provide regular maintenance and repairs to keep your pool in top condition all year round. With our attention to detail and commitment to customer satisfaction, you can trust us to deliver exceptional results for all your pool-related needs. New Pools Owning a pool offers a multitude of benefits such as exercise, entertainment, relaxation, and increased property value, making it a worthwhile investment for any homeowner. Learn More Renovations Our pool renovation service offers various options, including resurfacing, updating tiles, installing water features, and lighting to create a modern pool that perfectly matches your lifestyle. Learn More Pool Service Our comprehensive pool service provides regular maintenance, cleaning, and repair to keep your pool in optimal condition, ensuring it remains an enjoyable place for you and your family to swim and relax. Learn More Visit the showcase of our award-winning pool designs and renovations. View Our Gallery Find out why our customers are raving about their swimming pools & Spas! “I can not say enough good things about this pool company. I am so glad I decided to have my pool built by Klapprodt. Everyone was so wonderful, from JJ (the designer), Kevin (the contractor), Julie (office manager), and Mark (the pool expert). Anytime I had a question or concern they were quick to respond. Any issue that arose they were on top of it. They came highly recommended by people I know and I now see why. We can now make a lifetime of memories in our beautiful pool. Thank you Klapprodt! :)” – Angie, Fort Worth “My pump stopped working the day before the hard freeze. I was very concerned and Klapprodt responded very quickly with getting someone out to winterize the heater and filter. It was freezing out and high winds but the tech was able to replace the pump and controller under these horrible conditions. I ma very grateful for their service and having the parts in stock.” – Tassie McElroy | Google Review “We have been long-time Klapprodt customers (built 2 fabulous pools for us) but felt it prudent to leave a Google review due to the continued high level of service we have been receiving during unprecedented times. Though many small businesses have been impacted by the pandemic and hiring shortages, Klapprodt has continued to provide a very high level of service to us. Whether fixing our winter storm damage or weekly service routine they continue to deliver for us.” – Dustin Hannifin | Google Review “Kladdprodt pool did an awesome job on our design and installation. A huge shout out to Cameron, Travis and Clint for all the knowledge they shared along the way plus answering all of my questions. They always responded with any questions or concerns we threw at them. We will enjoy the pool for many years to come.” – Rodney Jacks | Google Review To discuss your pool needs, contact us today at 817-431-2033 ! Business Hours Showroom Monday - Friday 9 AM - 12 PM / 1 PM - 5 PM Service & Repair Monday - Friday 8 AM - 5 PM Address 181 N Main Street Keller, TX 76248 To discuss your pool needs, contact us today at 817-431-2033 ! Quick Links Home About Us Portfolio New Pools Remodeling Service Contact Us Contact Us Phone: 817-431-2033 sales@klapprodtpools.com service@klapprodtpools.com Follow Follow Follow Follow Follow Follow Copyright © 2023 Klapprodt Pools. All rights reserved. Website & Pool Marketing by Klapprodt Pools"
+    },
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:41:29.206Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": true,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "http://www.klapprodtpools.com/",
+            "type": "satisfaction",
+            "snippet": "enovations, And Service! Klapprodt Pools has become synonymous with quality and customer satisfaction in the swimming pool industry. Our company offers a range of services for pool"
+          },
+          {
+            "url": "http://www.klapprodtpools.com/",
+            "type": "satisfaction",
+            "snippet": "in top condition all year round. With our attention to detail and commitment to customer satisfaction, you can trust us to deliver exceptional results for all your pool-related need"
+          }
+        ],
+        "durations": [
+          "lifetime",
+          "30 years"
+        ],
+        "confidence": "MODERATE",
+        "source_url": "http://www.klapprodtpools.com/",
+        "analyzed_pages": [
+          {
+            "url": "http://www.klapprodtpools.com/",
+            "type": "homepage",
+            "title": "Home | Klapprodt Pools | Keller, TX"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:41:34.969Z",
+      "data": {
+        "query": "site:yelp.com \"Klapprodt Pools\" \"Fort Worth, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Northeast%2C+Fort+Worth%2C+TX",
+            "title": "Best Swimming Pool Builders near Northeast, Fort Worth, TX - Yelp",
+            "rating": 3.8,
+            "snippet": "... Fort Worth, TX. Map. Skilled Pool Installation Experts Serving Fort Worth, Texas ... Klapprodt Pools - Swimming Pool Builders near me - Fort Worth, Texas ...",
+            "position": 1,
+            "ratingCount": 737
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Contractor&find_loc=Fort+Worth%2C+TX",
+            "title": "Top 10 Best Swimming Pool Contractor Near Fort Worth, Texas - Yelp",
+            "rating": 3.9,
+            "snippet": "... Fort Worth, TX · Plastic Surgeons in Fort Worth, TX · Courthouses in Fort Worth ... Klapprodt Pools - Swimming Pool Contractor near me - Fort Worth, Texas ...",
+            "position": 2,
+            "ratingCount": 1052
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Fort+Worth%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Builders in Fort Worth, TX - Yelp",
+            "rating": 3.7,
+            "snippet": "... Fort Worth, TX. Map. Pool Remodeling & Renovation in Fort Worth, Texas · Pool ... Klapprodt Pools - Swimming Pool Builders near me - Fort Worth, Texas ...",
+            "position": 3,
+            "ratingCount": 982
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Supplies&find_loc=Fort+Worth%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Supplies in Fort Worth, TX - Yelp",
+            "rating": 4,
+            "snippet": "Klapprodt Pools - Swimming Pool Supplies near me - Fort Worth, Texas. 54 ... What did people search for similar to swimming pool supplies in Fort Worth, TX?",
+            "position": 4,
+            "ratingCount": 994
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Northside%2C+Fort+Worth%2C+TX",
+            "title": "Best Swimming Pool Builders near Northside, Fort Worth, TX - Yelp",
+            "rating": 4.3,
+            "snippet": "... Fort Worth, TX. Map. Pool Construction in Fort Worth, Texas · Swimming Pool Repair ... Klapprodt Pools - Swimming Pool Builders near me - Fort Worth, Texas ...",
+            "position": 5,
+            "ratingCount": 979
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Builders&find_loc=Fort+Worth%2C+TX",
+            "title": "TOP 10 BEST Pool Builders in Fort Worth, TX - Updated 2026 - Yelp",
+            "rating": 4,
+            "snippet": "... Fort Worth, TX. Map. Paving Contractors in Fort Worth, Texas · Pool and Spa ... Klapprodt Pools - Pool Builders near me - Fort Worth, Texas. Klapprodt Pools.",
+            "position": 6,
+            "ratingCount": 771
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Contractors&find_loc=Far+North%2C+Fort+Worth%2C+TX",
+            "title": "Top 10 Best Pool Contractors Near Fort Worth, Texas - Yelp",
+            "snippet": "... Klapprodt Pools, Pool Pro's, Petri Pools, Cowtown ... Fort Worth, TX. Map. Explore Fiberglass Pools ... Fort Worth, TX · General Dentistry in Fort Worth ...",
+            "position": 7
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Hot+Tub+%26+Pool&find_loc=Keller%2C+TX",
+            "title": "TOP 10 BEST Hot Tub & Pool near Keller, TX - Updated 2026 - Yelp",
+            "rating": 4,
+            "snippet": "... a placeholder. Fort Worth, TX 76244. (817) 345-1698. Request a Quote. Klapprodt Pools & Spas - Hot Tub & Pool near me - Keller, Texas. 79. Klapprodt Pools & ...",
+            "position": 8,
+            "ratingCount": 787
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Keller%2C+TX",
+            "title": "Best Swimming Pool Builders near Keller, TX - Yelp",
+            "rating": 4.2,
+            "snippet": "... Klapprodt Pools - Swimming Pool Builders near me - Keller, Texas. Klapprodt ... Fort Worth, TX · Downtown, Fort Worth, TX · Far North, Fort Worth, TX · Far ...",
+            "position": 9,
+            "ratingCount": 1115
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Cleaners&find_loc=Keller%2C+TX",
+            "title": "TOP 10 BEST Pool Cleaners near Keller, TX - Updated 2026 - Yelp",
+            "rating": 4.1,
+            "snippet": "... Klapprodt Pools - Pool Cleaners near me - Keller, Texas. Klapprodt Pools. 3.2 ... Fort Worth, TX · Downtown, Fort Worth, TX · Far North, Fort Worth, TX · Far ...",
+            "position": 10,
+            "ratingCount": 522
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:43:39.736Z",
+      "data": {
+        "name": "Klapprodt Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 431-2033",
+        "rating": 4.3,
+        "source": "google_maps",
+        "status": "open",
+        "address": "181 N Main St, Keller, TX 76248",
+        "reviews": [],
+        "website": "http://www.klapprodtpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Klapprodt%20Pools%20Fort%20Worth%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "houzz": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:43:47.683Z",
+      "data": {
+        "url": "https://www.houzz.com/professionals/swimming-pool-builders/klapprodt-pools-pfvwus-pf~1670243714",
+        "found": true,
+        "title": "KLAPPRODT POOLS - Project Photos & Reviews - Keller, TX US",
+        "rating": 4.5,
+        "source": "serper_houzz",
+        "confidence": "high",
+        "review_count": 6
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:43:48.680Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "klapprodtpools.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:42:08.370Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:42:11.885Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:42:13.931Z",
+      "data": {
+        "query": "Klapprodt Pools Fort Worth site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallasnews.com/news/2021/03/10/here-are-nearly-50-business-in-keller-that-will-still-require-mask-use/",
+            "title": "Here are nearly 50 businesses in Keller that will still require mask use",
+            "snippet": "Klapprodt Pools 181 N. Main St. Kumon Math and Reading Center of Keller-North 1540 Keller Pkwy., Ste. 100; Made by Sue 1103 Keller Pkwy., Ste. 101; Moviehouse ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:43:53.116Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Klapprodt Pools\" Fort Worth",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:42:26.058Z",
+      "data": "Klapprodt Pools Fort Worth review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Best Luxury Infrared Saunas The ultimate home sauna for wellness, detox, and longevity—designed for your home. Sponsored Sun Home Saunas Watch Visit site 1:38 1:38 Now playing Klapprodt Pools - Fort Worth Home and Garden Show Spring 2010 Klapprodt Pools Klapprodt Pools • • 1.1K views 16 years ago Klapprodt Pools Klapprodt Pools Klapprodt Pools and DFW Creative Homes at the Fort Worth Home and Garden Show Spring 2010, featuring new pool design and ... Klapprodt Pools and DFW Creative Homes at the Fort Worth Home and Garden Show Spring 2010, featuring new pool design and ... From the video description 1:29 1:29 Now playing Klapprodt Pools - how to shut down your pool equipment during freezing weather Klapprodt Pools Klapprodt Pools • • 6.9K views 16 years ago Klapprodt Pools Klapprodt Pools You might need to shut down your swimming pool equipment if you have a leak or the system is not operating properly. Follow ... You might need to shut down your swimming pool equipment if you have a leak or the system is not operating properly. Follow ... From the video description 0:31 Tired of Hearing No? The Yes Monsters at Longhorn Nissan Say YES to Your Credit! Get the car you actually want. The Yes Monsters are waiting for you at Longhorn Nissan! Sponsored Longhorn Nissan 0:26 0:26 Now playing Klapprodt Pools Klapprodt Pools Klapprodt Pools • • 314 views 15 years ago Klapprodt Pools Klapprodt Pools This freeform diving pool was designed and built by Klapprodt Pools of Keller, Texas. It features a diving board and raised spa ... This freeform diving pool was designed and built by Klapprodt Pools of Keller, Texas. It features a diving board and raised spa ... From the video description 0:34 0:34 Now playing Klapprodt Pools Klapprodt Pools Klapprodt Pools • • 1.8K views 15 years ago Klapprodt Pools Klapprodt Pools This custom free form diving pool by Klapprodt Pools was built in Fort Worth , Texas. It features a raised spa with random stack ... This custom free form diving pool by Klapprodt Pools was built in Fort Worth , Texas. It features a raised spa with random stack ... From the video description 1:12 1:12 Now playing Klapprodt Pools Klapprodt Pools Klapprodt Pools • • 1.7K views 15 years ago Klapprodt Pools Klapprodt Pools This custom pool and spa was designed and built by Klapprodt Pools of Keller, TX. It is located in Southlake, TX and features ... This custom pool and spa was designed and built by Klapprodt Pools of Keller, TX. It is located in Southlake, TX and features ... From the video description 0:55 0:55 Now playing Klapprodt Pools - Shady Lane (drone) Klapprodt Pools Klapprodt Pools • • 2.8K views 6 years ago Klapprodt Pools Klapprodt Pools A complete backyard with pool and tiled spa, water features, cabana with grill, smoker, massive storage and drop in coolers... all ... A complete backyard with pool and tiled spa, water features, cabana with grill, smoker, massive storage and drop in coolers... all ... From the video description 0:52 0:52 Now playing Klapprodt Pools Klapprodt Pools Klapprodt Pools • • 1.2K views 15 years ago Klapprodt Pools Klapprodt Pools This custom pool and spa is in Keller, Texas and was designed and built by Klapprodt Pools . It is a play pool that features a 24\" to ... This custom pool and spa is in Keller, Texas and was designed and built by Klapprodt Pools . It is a play pool that features a 24\" to ... From the video description 7:53 7:53 Now playing Klapprodt Pools - Building a Backyard Retreat Klapprodt Pools Klapprodt Pools • • 425K views 12 years ago Klapprodt Pools Klapprodt Pools Time lapse video of Klapprodt Pools building a beautiful backyard retreat. This backyard includes a pool and spa with fire and ... Time lapse video of Klapprodt Pools building a beautiful backyard retreat. This backyard includes a pool and spa with fire and ... From the video description 2:30 2:30 Now playing Klapprodt Pools - 3D Design Walkthrough Klapprodt Pools Klapprodt Pools • • 8.8K views 15 years ago Klapprodt Pools Klapprodt Pools This custom 3D rendering was designed and created by Klapprodt Pools . The walkthrough highlights the many features of this ... This custom 3D rendering was designed and created by Klapprodt Pools . The walkthrough highlights the many features of this ... From the video description 0:29 0:29 Now playing Klapprodt Pools Klapprodt Pools Klapprodt Pools • • 875 views 15 years ago Klapprodt Pools Klapprodt Pools This custom diving pool was designed and built by Klapprodt Pools of Keller, Texas. It features a retaining wall and raised decking ... This custom diving pool was designed and built by Klapprodt Pools of Keller, Texas. It features a retaining wall and raised decking ... From the video description 1:30 1:30 Now playing Klapprodt Pools - fog system Klapprodt Pools Klapprodt Pools • • 13K views 15 years ago Klapprodt Pools Klapprodt Pools This custom backyard was designed and built by Klapprodt Pools in Keller, Texas. This video features a fog system by FOGCO ... This custom backyard was designed and built by Klapprodt Pools in Keller, Texas. This video features a fog system by FOGCO ... From the video description People also watched 6:22 6:22 Now playing Everything You Need To Know Before Building A Pool! Josh Beberg Josh Beberg • • 220K views 3 years ago Josh Beberg Josh Beberg Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... From the video description 4K Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. AI-generated video summary Quality and accuracy may vary. Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. 2:36 2:36 Now playing Fiberglass Pools Are CHEAP! Top 4 Fiberglass Pools Myths Exposed! Pool-ology Pool-ology • • 26K views 1 year ago Pool-ology Pool-ology Think fiberglass pools are cheap, low quality, and won't last? Think again! We're busting the top 4 myths about fiberglass pools ... Think fiberglass pools are cheap, low quality, and won't last? Think again! We're busting the top 4 myths about fiberglass pools ... From the video description 4K Summary This video debunks common misconceptions about fiberglass pools, such as the idea that they are cheap, low quality, and won't last. The video explores four myths, including the idea that fiberglass pool surfaces bubble and blister, and that they look cheap. It also addresses the misconception that fiberglass pools can't be customized and that they often float or pop out of the ground. AI-generated video summary Quality and accuracy may vary. Summary This video debunks common misconceptions about fiberglass pools, such as the idea that they are cheap, low quality, and won't last. The video explores four myths, including the idea that fiberglass pool surfaces bubble and blister, and that they look cheap. It also addresses the misconception that fiberglass pools can't be customized and that they often float or pop out of the ground. 20:25 20:25 Now playing The REAL Cost to Build a Pool in Florida (2025) | Full Breakdown Deanin' It Yourself Deanin' It Yourself • • 37K views 1 year ago Deanin' It Yourself Deanin' It Yourself My pool is finally complete and i will discuss the cost if you are planning on building a pool check out my video where i go over the ... My pool is finally complete and i will discuss the cost if you are planning on building a pool check out my video where i go over the ... From the video description 4K 19 chapters Start | Intro | Preliminary Costs | General Pool / Permit Cost | Spa Cost | Heater Cost | Pool Automation Cost | Floating Steps Cost | Tanning Ledge Cost | Decking & Coping Cost | Waterfall Cost | Incidentals | Landscaping repair cost | Sprinkler repair cost and tips | Baby fence cost | Perimeter Fence Cost | Upgrades (Tiles, Plaster, LED Lights) | Total Cost for everything | Recap and Final Pool Shots 19 chapters in this video 19 chapters Start Start 0:00 Start 0:00 Intro Intro 0:19 Intro 0:19 Preliminary Costs Preliminary Costs 1:55 Preliminary Costs 1:55 General Pool / Permit Cost General Pool / Permit Cost 2:47 General Pool / Permit Cost 2:47 Spa Cost Spa Cost 3:47 Spa Cost 3:47 Heater Cost Heater Cost 4:40 Heater Cost 4:40 Pool Automation Cost Pool Automation Cost 5:28 Pool Automation Cost 5:28 12:17 12:17 Now playing FULL TRANSFORMATION OF THE SWAMP POOL thep00lguy ML thep00lguy ML • • 4.3M views 1 year ago thep00lguy ML thep00lguy ML PAID PROMOTION! Finally the swamp pool is now finished and ready for the customers to use! Let me know what you think in the ... PAID PROMOTION! Finally the swamp pool is now finished and ready for the customers to use! Let me know what you think in the ... From the video description 4K 5 chapters Intro | Emptying | Pool Liner | Pool Robot | Pool Cleaner 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Emptying Emptying 0:21 Emptying 0:21 Pool Liner Pool Liner 4:30 Pool Liner 4:30 Pool Robot Pool Robot 6:29 Pool Robot 6:29 Pool Cleaner Pool Cleaner 9:26 Pool Cleaner 9:26 + 6 more 1:48 1:48 Now playing Klapprodt Pools - Fowler (drone) Klapprodt Pools Klapprodt Pools • • 1.6K views 10 years ago Klapprodt Pools Klapprodt Pools Drone footage of a beautiful backyard featuring a swimming pool , spa, and outdoor living. Drone footage of a beautiful backyard featuring a swimming pool , spa, and outdoor living. From the video description 0:50 0:50 Now playing Klapprodt Pools - McClendon (drone) Klapprodt Pools Klapprodt Pools • • 1.1K views 9 years ago Klapprodt Pools Klapprodt Pools Drone footage of a beautiful backyard we recently completed. Drone footage of a beautiful backyard we recently completed. From the video description 1:17 1:17 Now playing Klapprodt Pools - Paramount Jetpak for gunite pools and spas Klapprodt Pools Klapprodt Pools • • 10K views 16 years ago Klapprodt Pools Klapprodt Pools True hydro-therapy is now available for gunite pools and spas. This is a Paramount Jetpak in action. It was shot above water and ... True hydro-therapy is now available for gunite pools and spas. This is a Paramount Jetpak in action. It was shot above water and ... From the video description SHORTS SHORTS Now playing Why Fiberglass Pools are Going Out of Style Cameron Simmons Cameron Simmons • • 24K views 2 years ago Cameron Simmons Cameron Simmons 1:04 1:04 Now playing Klapprodt Pools - Bobe cannon scuppers and fire bowls - custom pool builder in Keller, TX Klapprodt Pools Klapprodt Pools • • 3.1K views 15 years ago Klapprodt Pools Klapprodt Pools This custom pool was designed and built by Klapprodt Pools . This video features Bobe cannon scuppers, fire bowls, and Hayward ... This custom pool was designed and built by Klapprodt Pools . This video features Bobe cannon scuppers, fire bowls, and Hayward ... From the video description SHORTS SHORTS Now playing Inground Pool Costs 2025 River Pools River Pools • • 36K views 11 months ago River Pools River Pools Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... From the video description 4K 11:20 11:20 Now playing Should You Buy An Above Ground Pool? Review and Costs DoItYourselfDad DoItYourselfDad • • 446K views 5 years ago DoItYourselfDad DoItYourselfDad We go through the pro's and cons of an above ground pool , things you'll need to enjoy it and how much an above ground pool ... We go through the pro's and cons of an above ground pool , things you'll need to enjoy it and how much an above ground pool ... From the video description 14 chapters Intro | Pros and Cons | Ladders and Steps | Smaller Pools | Filtration | Maintenance | Solar Covers | Cheap Pool | Ground Level | Installation Costs | Pool Costs | Pool Accessories | The Bargain Approach | Outro 14 auto-generated chapters in this video 14 chapters Intro Intro 0:00 Intro 0:00 Pros and Cons Pros and Cons 0:22 Pros and Cons 0:22 Ladders and Steps Ladders and Steps 2:15 Ladders and Steps 2:15 Smaller Pools Smaller Pools 3:32 Smaller Pools 3:32 Filtration Filtration 4:12 Filtration 4:12 Maintenance Maintenance 4:54 Maintenance 4:54 Solar Covers Solar Covers 5:55 Solar Covers 5:55 SHORTS SHORTS Now playing Can you fit a pool in a SMALL BACKYARD? Calimingo Calimingo • • 1.2M views 3 years ago Calimingo Calimingo 4K SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN Sun Home Saunas Reviews Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • Up next Live Upcoming Cancel Play Now Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:12"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:42:27.139Z",
+      "data": {
+        "query": "site:nextdoor.com Klapprodt Pools Fort Worth",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:43:50.716Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Klapprodt Pools\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-Klapprodt-Pools-EI_IE3376521.11,26.htm",
+            "title": "Working at Klapprodt Pools | Glassdoor",
+            "snippet": "See what employees say it's like to work at Klapprodt Pools. Salaries, reviews, and more - all posted by employees working at Klapprodt Pools."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:43:53.889Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Klapprodt Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:42:41.083Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Klapprodt%20Pools&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:43:16.881Z",
+      "data": {
+        "name": "Klapprodt Pools",
+        "found": true,
+        "rating": 4.3,
+        "source": "serpapi",
+        "address": "181 N Main St, Keller, TX 76248",
+        "data_id": "0x864dd742a7f3ba13:0x34c001e220b71275",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "2 years ago",
+            "text": "Klapprodt Pools built our pool and has serviced it for 3+ years. As new pool owners we had a lot to learn. Justin is our pool service tech has been there every step of the way.  We appreciate his advice, expertise and patience. Such a great guy! Our dogs look forward to his weekly visits too.",
+            "author": "DeLane Jackson",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Jayda has been servicing our pool for a little over 2 1/2 years. She is amazing at her job!  She makes sure your pool and spa is up and run all year long. She is at our home each week on time as schedule. If she’s going to be out she notifies me and lets me know who’s going to cover for her.  I appreciate all she does.. 😊😊",
+            "author": "Jennifer Bacon",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Purchased a new home with a Klapprodt pool remodel. As a new homeowner I wanted some assistance - called them multiple times and left messages, and also sent emails. Not one call back or email response. Maybe the name has reputation and they're too busy, but I'll never try to contact them again.",
+            "author": "Bob Xerri",
+            "rating": 1
+          },
+          {
+            "date": "a year ago",
+            "text": "So happy we went with this company. We love our pool and the patience they gave us during the design process was so appreciated! Especially picking the plaster!! Excellent customer service!",
+            "author": "Brenda",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Such an amazing experience with Klapprodt.  We did our research and asked around there are so many builders in the area but finally went with Klapprodt when we found consistent and honest feedback from folks we knew that built pools with them.  At the same time we built our pool we have several friends put theirs in too and they did not have the same  pleasant experience as we did.  We love our pool and love our customer service manager Travis!",
+            "author": "Greg Langford",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We’ve been with Klapprodt for over 5 years now and have had nothing but a great experience. Jayda is absolutely wonderful and updates us on anything that is having issues and works to correct it quickly. She’s given us so many great tips and recommendations. Cannot say enough great things about her! After the big freeze, their team was quick to repair our busted pump and pipes. They are always very prompt and professional. Highly recommend for your pool needs.",
+            "author": "mary nivens",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "Best design and build experience ever!  The team was honest, accurate, accountable and on schedule.  Joe Ray is the construction foreman and is involved in every detail of the process - before, during and after construction.  His experience and knowledge are unmatched.  He was on site nearly every day of the construction phase and when I needed something 6 months after installation was complete - he responded the same day and resolved the issue within hours.  I can't say enough positive things about my experience with Joe Ray and the Klapprodt team.",
+            "author": "Diana Young",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Kladdprodt pool did an awesome job on our design and installation. A huge shout out to Cameron,  Travis and Clint for all the knowledge they shared along the way plus answering all of my questions.  They always responded with any questions or concerns we threw at them.  We will enjoy the pool for many years to come.",
+            "author": "Rodney Jacks",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": null,
+        "pages_fetched": 2,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "HIGH_VOLUME (150 reviews)",
+        "location_searched": "Fort Worth, TX",
+        "search_confidence": 0.6799999999999999,
+        "serper_fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:43:39.724Z",
+      "data": {
+        "name": "Klapprodt Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 431-2033",
+        "rating": 4.3,
+        "source": "google_maps",
+        "status": "open",
+        "address": "181 N Main St, Keller, TX 76248",
+        "reviews": [],
+        "website": "http://www.klapprodtpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Klapprodt%20Pools%20Fort%20Worth%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:43:44.725Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:43:46.226Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [
+          {
+            "link": "https://www.angi.com/companylist/us/tx/white-settlement/pool-and-spa-service.htm?page=3",
+            "title": "Top 10 Best Pool and spa technicians in White Settlement, TX | Angi ...",
+            "snippet": "The pool is protected. Klapprodt Pools. 4.75(. 20. ) Klapprodt Pools. 4.75(. 20. ) Customers say: Quick response. Recommended by 90% of Angi customers."
+          },
+          {
+            "link": "https://www.angi.com/companylist/us/tx/white-settlement/pool-and-spa-service.htm?page=6",
+            "title": "Top 10 Best Pool and spa technicians in White Settlement, TX | Angi ...",
+            "snippet": "Great Job!\" Matthew B on October 2022. Avatar for Klapprodt Pools. Klapprodt Pools. 4.75(. 20. ) Klapprodt Pools. 4.75(. 20. ) Customers say: Quick response."
+          },
+          {
+            "link": "https://www.angi.com/companylist/us/tx/southlake/pool-and-spa-service.htm?page=9",
+            "title": "Top 10 Best Pool and spa technicians in Southlake, TX | Angi - Page 9",
+            "snippet": "Great Job!\" Matthew B on October 2022. Avatar for Klapprodt Pools. Klapprodt Pools. 4.75(. 20. ) Klapprodt Pools. 4.75(. 20. ) Customers say: Quick response."
+          }
+        ],
+        "result_count": 3,
+        "review_count": null
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:43:52.347Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Klapprodt Pools\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Klapprodt-Pools",
+            "title": "Klapprodt Pools Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at Klapprodt Pools from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Klapprodt-Pools/reviews",
+            "title": "Working at Klapprodt Pools: Employee Reviews | Indeed.com",
+            "snippet": "Reviews from Klapprodt Pools employees about Klapprodt Pools culture, salaries, benefits, work-life balance, management, job security, and more."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Klapprodt-Pools/job-titles",
+            "title": "All Klapprodt Pools job titles | Indeed.com",
+            "snippet": "Working at Klapprodt Pools. Select a job title to read reviews and discover what it's like to work in that position."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Klapprodt-Pools/job-titles/Pool-Technician",
+            "title": "Pool Technician at Klapprodt Pools | Indeed.com",
+            "snippet": "Learn about Pool Technician careers at Klapprodt Pools. See jobs, salaries, employee reviews and more for Pool Technician careers at Klapprodt Pools."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:43:54.555Z",
+      "data": {
+        "found": true,
+        "query": "\"Klapprodt Pools\" Fort Worth lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/keller/category/pool-contractors/accredited",
+            "title": "BBB Accredited Pool Contractors near Keller, TX",
+            "snippet": "Showing: 229 results for Pool Contractors near Keller, TX ; Klapprodt Pools I LTD. Pool Contractors, Pool Service, Hot Tub Service and Repair ... · (817) 431-2033."
+          },
+          {
+            "link": "https://www.yelp.com/biz/fort-worth-clear-pool-services-fort-worth",
+            "title": "FORT WORTH CLEAR POOL SERVICES - Updated February 2026",
+            "snippet": "... scam. Whatever good reviews they might have most likely is all made up ... Klapprodt Pools. 35 reviews. About. About Yelp · Careers · Press · Investor Relations ..."
+          },
+          {
+            "link": "https://www.houzz.com/discussions/2545109/need-good-pool-builder-at-dallas-tx",
+            "title": "Need good pool builder at Dallas, TX - Houzz",
+            "snippet": "I was in sticker shock when I received my first 2 bids but decided it was worth it to double my usable space. ... Klapprodt Pools, Pool ..."
+          },
+          {
+            "link": "https://www.angi.com/companylist/us/tx/kennedale/install-above-ground-pools.htm",
+            "title": "Top 10 Best Above ground pool installation pros in Kennedale, TX ...",
+            "snippet": ", Klapprodt Pools · Request a quote. Joy L. 5.0 ... , Pool Guard Dallas/Fort Worth · Request a quote ... This place is a scam. Do not pay half or full ..."
+          },
+          {
+            "link": "https://reviews.birdeye.com/starvolt-solar-167496547845419",
+            "title": "StarVolt Solar - 8 Reviews - Contractors in Fort Worth, TX - Birdeye",
+            "snippet": "Klapprodt's Pools. 128 reviews. 181 N. Main; 17.5 miles from this business. Reliable Paving, Inc. 3 reviews. 1903 Peyco Drive North; 18.3 miles from this ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:44:11.610Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T06:43:58Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Klapprodt%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=LciOaf68McuwqtsPzqCeMQ\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T06:44:07Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Klapprodt%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=NsiOacSzNfu7qtsPvIfm0Ak\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Klapprodt Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:44:12.351Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "KLAPPRODT POOLS, LTD.",
+        "taxpayer_number": "14215750366"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T06:44:12.354Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:44:26.090Z",
+      "data": {
+        "cost": 0.0008443400000000001,
+        "summary": "Reviews for Klapprodt Pools appear highly authentic and reflect a company with strong long-term customer relationships, particularly for pool service and maintenance. The detailed, personal reviews naming specific employees and describing multi-year relationships are credible. The primary complaint pattern involves unresponsiveness to new inquiries (not from existing service customers), which may indicate a prioritization of current clients over new leads. The company demonstrates good follow-through on service and warranty issues for their customer base.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-13T06:44:26.090Z",
+        "fake_signals": [
+          "Limited review volume on primary platforms (Google, Houzz) for a 47-year-old company",
+          "No negative reviews with specific project details"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "angi": 4.75,
+          "yelp": null,
+          "houzz": 4.5,
+          "google": 4.3,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [
+            "service",
+            "repair",
+            "fix",
+            "correct"
+          ],
+          "confidence": "HIGH",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [
+            "Single complaint about unresponsiveness to a new inquiry suggests potential gap in follow-through for non-service customers"
+          ],
+          "positive_evidence": [
+            "'came back and fixed the issue at no charge' implied in review #6",
+            "'works to correct it quickly' (review #5)",
+            "Quick repair after freeze mentioned",
+            "Post-installation issue resolved same day"
+          ]
+        },
+        "authentic_signals": [
+          "Specific employee names and roles mentioned (Justin, Jayda, Travis, Joe Ray, Cameron, Clint)",
+          "Varied writing styles and personal anecdotes",
+          "Mention of long-term service relationships (3-5+ years)",
+          "Details about project phases (design, construction, post-installation support)",
+          "Reference to specific events (big freeze repairs)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "Unresponsiveness to new inquiries/calls",
+          "Potential communication gaps for non-service customers"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Available ratings are consistently high (4.3-4.75) and align with the company's long-standing reputation. No significant discrepancies exist."
+      }
+    }
+  }
+}

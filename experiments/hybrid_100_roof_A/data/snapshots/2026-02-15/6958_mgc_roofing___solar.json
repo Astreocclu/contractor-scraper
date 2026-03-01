@@ -1,0 +1,725 @@
+{
+  "contractor_id": 6958,
+  "business_name": "MGC Roofing & Solar",
+  "city": "Mesquite",
+  "state": "TX",
+  "verticals": [
+    "roofing"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-15T21:10:09.895Z",
+  "sources": {
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:55:12.533Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for MGC Roofing & Solar",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "MGC Roofing & Solar",
+        "searched_at": "2026-02-15T14:53:43.527456",
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:55:12.972Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "MGC ROOFING & SOLAR LLC",
+        "taxpayer_number": "32092143737"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-15T14:55:12.980Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:55:23.120Z",
+      "data": {
+        "cost": 0.0005936,
+        "summary": "The reviews exhibit strong signs of inauthenticity. The sample is exclusively 5-star, posted in a tight timeframe, and uses repetitive, generic language lacking the specific details and varied perspectives of genuine customer experiences. The complete absence of the contractor on other review platforms (BBB, Yelp, Angi) is highly unusual and concerning. The story presented is one-dimensional perfection, which is not credible for a roofing and solar contractor.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-15T14:55:23.120Z",
+        "fake_signals": [
+          "All 8 sampled reviews are 5-star with no critical feedback",
+          "5 of 8 reviews posted in the same month (2 months ago)",
+          "Reviews lack specific project details (materials, crew names, exact timelines, costs)",
+          "Writing style is uniformly generic, corporate, and promotional",
+          "No mention of any problems, delays, or minor issues typical of real projects",
+          "Low total review count (42) for a contractor claiming high volume",
+          "No reviews found on any other consumer platform (Angi, Houzz, Trustpilot, Yelp)"
+        ],
+        "recommendation": "DISTRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "NO_EVIDENCE",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Some reviews mention a team leader's name (Gustavo)",
+          "One review mentions a specific project type (hailstorm damage repair)"
+        ],
+        "fake_review_score": 85,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only one platform (Google) has reviews, so no cross-platform discrepancy exists. The lack of presence on other platforms is a separate concern."
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:52:48.350Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:52:49.981Z",
+      "data": {
+        "cid": "11559845646846565488",
+        "name": "MGC Roofing & Solar",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "2533 Franklin Dr # 16A, Mesquite, TX 75150",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "4 weeks ago",
+            "text": "5-Star Review for MGC Roofing & Solar\n\nWe had an excellent experience with MGC Roofing & Solar from start to finish. They did exactly what they said they were going to do, when they said they would do it. Their crews operated like well-oiled machines — extremely efficient, organized, and professional.\n\nThey did a fantastic job with site prep, protecting our property during the work, and cleaning everything up afterward. The quality of materials really stood out as well, including premium Class 4 shingles that even qualified us for an insurance premium discount.\n\nIn addition to the roof, they also replaced our gutters and window screens and re-stained our fence that had been damaged by hail. Everything looks amazing.\n\nHighly recommend.",
+            "author": "Mike Daniel",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "I recently hired MGC Roofing and Solar, led by Gustavo, to replace my roof, install new gutters, and repair hailstorm damage to my property: Gustavo and his team delivered outstanding service from start to finish.\n\nGustavo was professional, communicative, and upfront during the consultation, providing a clear estimate with no surprises. The team completed the roof replacement and gutter installation efficiently in less than 2 days, and the quality of their work was exceptional. The new roof looks great, and the seamless gutters function perfectly, keeping water away from my property. They used high standard class 4 GAF Shingles.\n\nGustavo’s commitment to customer The hailstorm damage repairs, including fixes to my garage area, were handled with precision, fully restoring my property. The crew was courteous, kept the worksite clean, and ensured no debris or nails were left behind.\n\nMGC Roofing and Solar offered competitive pricing compared to other DFW contractors, delivering top-quality work at a fair cost. I wholeheartedly recommend Gustavo and MGC Roofing and Solar to anyone in DFW needing roofing or gutter services. They’ve earned my trust, and I’ll call them again for future projects!",
+            "author": "DeweyJohn Huffer",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "The team did an amazing job from the very first inspection to the final installation. Everything was handled professionally, and the quality of their roofing work really shows. I couldn’t be happier with how smooth and stress-free the entire process was.",
+            "author": "Daniel Harris",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Outstanding service from start to finish! The crew was professional, efficient, and incredibly thorough with both the roofing and solar work. The final result looks amazing and performs flawlessly — truly exceptional craftsmanship.",
+            "author": "Grace Ainsworth",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Top-notch experience all the way around. They explained every step clearly, worked with precision, and delivered a beautiful, clean installation. If you want reliable roofing and solar experts who take pride in their work, this is the team to trust.",
+            "author": "Caleb Rogers",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Exceptional service from start to finish! The roofing work was completed with precision, and the team made sure everything was clean and secure before leaving. Reliable, efficient, and truly professional.",
+            "author": "Andres Perkins",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "I’m beyond satisfied with the quality of work and attention to detail. The crew was punctual, skilled, and kept me informed at every step. The results speak for themselves—excellent craftsmanship and reliable service all the way.",
+            "author": "Madison Blake",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Professional, reliable, and extremely knowledgeable! They explained every step clearly and made the whole process stress-free. My roof looks amazing, and the solar setup is performing better than expected.",
+            "author": "Spencer Tate",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 42,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Mesquite, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:53:12.751Z",
+      "data": {
+        "name": "MGC Roofing & Solar",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(214) 484-1401",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2533 Franklin Dr # 16A, Mesquite, TX 75150",
+        "reviews": [],
+        "website": "https://www.mgcroofingandsolarllc.com/",
+        "maps_url": "https://www.google.com/maps/search/MGC%20Roofing%20%26%20Solar%20Mesquite%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:53:17.747Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:53:21.864Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"MGC Roofing & Solar\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:53:22.599Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"MGC Roofing & Solar\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:53:23.174Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"MGC Roofing & Solar\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:53:23.815Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"MGC Roofing & Solar\" Mesquite",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:51:12.273Z",
+      "data": {
+        "query": "site:yelp.com \"MGC Roofing & Solar\" \"Mesquite, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Lobo&find_loc=Dallas%2C+TX",
+            "title": "Lobo Dallas, TX - Last Updated January 2026 - Yelp",
+            "rating": 3.7,
+            "snippet": "... MGC Roofing & Solar, Lake Cities Sun, Rockwall Independent School District ... Mesquite, TX · Plano, TX · Richardson, TX · Rockwall, TX · Southlake, TX · Waco ...",
+            "position": 1,
+            "ratingCount": 2005
+          }
+        ]
+      }
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:51:53.428Z",
+      "data": {
+        "query": "MGC Roofing & Solar Mesquite site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:52:06.055Z",
+      "data": "MGC Roofing & Solar Mesquite review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Shorts Can you replace a GAF solar shingle? #tool #construction #diy #roofing #technology 57K views New This Customer Review Exposes the Roofing Industry Problem 137 views GAF Timberline Solar Roof | Before & After #solar #solarroof #solarenergy #solarpower 2.3K views Why the GAF Solar Shingle? #solar #myhouse #monarchroo 1.5K views Roofing & Solar Team! Get A Free Energy Audit! 1.3K views Show more Show less SHORTS SHORTS Now playing Replacing roofing shingle with solar panels #contractor #tool #roofing #building #diy #construction American Contractor American Contractor • • 18K views 2 years ago American Contractor American Contractor SHORTS SHORTS Now playing Installing Solar Shingles⚡️ Future Remodeling Future Remodeling • • 38K views 6 months ago Future Remodeling Future Remodeling Installation of GAF Timberline Solar shingles⚡️ The Timberline Solar ® roofing system combines durability and clean energy in ... Installation of GAF Timberline Solar shingles⚡️ The Timberline Solar ® roofing system combines durability and clean energy in ... From the video description SHORTS SHORTS Now playing Very Impressive #Solar Installation on a Roof💪 - Subscribe for more! ☀️ Simplified Solar Simplified Solar • • 3M views 2 years ago Simplified Solar Simplified Solar Shorts Do Solar Panels Damage Your Roof? 2023 Update 984 views GAF Affordable Solar Roofing Shingle #solarpower #renewableenergy 1.7K views New 3MG Roofing & Solar Edgewater FL! let’s protect your investment! #roofing #roofreplacement 🏠 No views Metal Roof? 🤔 #solar #shorts 930 views GAF Timberline Nailable Solar Roof #solar #roofing #MyGAFRoof #solarpanel #short 1.3K views Show more Show less SHORTS SHORTS Now playing Roofers Hate Solar #solarinstaller #solarinstallation #solar #construction #roofing #roofer Solar Goat Solar Goat • • 8.7K views 3 years ago Solar Goat Solar Goat SHORTS SHORTS Now playing Wait for it... 😱💪 - Impressive #Solar Installation on a Roof 😱 - Subscribe for more! ☀️ Simplified Solar Simplified Solar • • 913K views 2 years ago Simplified Solar Simplified Solar SHORTS SHORTS Now playing What to look for before you install your solar panels. #sanantonio #solar #roofing #roof BH Roofing BH Roofing • • 4.5K views 2 years ago BH Roofing BH Roofing 0:00 Okay we're here on the roof um a homeowner said that he had a Solar Company now because he was interested in getting some ... Okay we're here on the roof um a homeowner said that he had a Solar Company now because he was interested in getting some ... Automatic captions SHORTS SHORTS Now playing Forget bulky solar panels… Solar Shingles are sleek, efficient, and built right into your roof. Northface Construction Northface Construction • • 55K views 9 months ago Northface Construction Northface Construction SHORTS SHORTS Now playing How A Composite Shingle Mounting System Works For Solar #solarcompany #residentialsolar #solarenergy Supreme Solar & Electric Supreme Solar & Electric • • 11K views 2 years ago Supreme Solar & Electric Supreme Solar & Electric 0:00 If you have a composite shingle roof that looks like this this is how a solar mounting system works for your home we start by ... If you have a composite shingle roof that looks like this this is how a solar mounting system works for your home we start by ... Automatic captions SHORTS SHORTS Now playing Watch this before installing solar panels on your roof. #roofing #solarpanelsinstallation Mattsson Roofing Mattsson Roofing • • 142K views 2 years ago Mattsson Roofing Mattsson Roofing 0:00 Everybody wants solar panels good for the environment reduce money on your energy bill but potential issue is if you install solar ... Everybody wants solar panels good for the environment reduce money on your energy bill but potential issue is if you install solar ... Automatic captions SHORTS SHORTS Now playing Tesla Solar Roof Tiles #tool #contractor #construction #roofing #tesla American Contractor American Contractor • • 168K views 2 years ago American Contractor American Contractor SHORTS SHORTS Now playing Solar on Tile Roofs? Hell Yeah! David Ringo David Ringo • • 3.7K views 7 months ago David Ringo David Ringo People are concerned about installing solar on tile roofs . Here's how we do it. Completely waterproof and up to 150 MPH. People are concerned about installing solar on tile roofs . Here's how we do it. Completely waterproof and up to 150 MPH. From the video description SHORTS SHORTS Now playing GAF Timberline Solar 🛠️⚡️ Future Remodeling Future Remodeling • • 3.4K views 5 months ago Future Remodeling Future Remodeling roofing #construction #njcontractor #njroofing # roofer #asphaltshingles #roofrepair #njroofingcontractor #nj #roofreplacement ... roofing #construction #njcontractor #njroofing # roofer #asphaltshingles #roofrepair #njroofingcontractor #nj #roofreplacement ... From the video description People also watched 10:40 10:40 Now playing Marques Brownlee Isn't Telling You the Truth About Buying Solar, So I Have To Scotty Kilmer Scotty Kilmer • • 367K views 2 years ago Scotty Kilmer Scotty Kilmer Solar panel review . Marques Brownlee Isn't Telling You the Truth About Solar Panels, So I Have To, DIY and car review Scotty ... Solar panel review . Marques Brownlee Isn't Telling You the Truth About Solar Panels, So I Have To, DIY and car review Scotty ... From the video description 4K 6 chapters Intro Summary | How Solar Works | Its Not Cheap | Can Ruin Your Roof | Other Things to Consider | Solar Scams 6 auto-generated chapters in this video 6 chapters Intro Summary Intro Summary 0:00 Intro Summary 0:00 How Solar Works How Solar Works 0:32 How Solar Works 0:32 Its Not Cheap Its Not Cheap 1:12 Its Not Cheap 1:12 Can Ruin Your Roof Can Ruin Your Roof 2:27 Can Ruin Your Roof 2:27 Other Things to Consider Other Things to Consider 5:01 Other Things to Consider 5:01 Solar Scams Solar Scams 7:16 Solar Scams 7:16 9:09 9:09 Now playing What's The Best Shingle? A Roofer's Honest Opinion (NOT a sponsored video) Homestead Roofing, Inc Homestead Roofing, Inc • • 53K views 1 year ago Homestead Roofing, Inc Homestead Roofing, Inc Which shingle is the best shingle? This is NOT a sponsored video. This is my unfiltered opinion after seeing how most shingles ... Which shingle is the best shingle? This is NOT a sponsored video. This is my unfiltered opinion after seeing how most shingles ... From the video description 12 chapters Introduction | DISCLAIMER | What affects shingle performance? | The main thing: HAIL! | Next: WIND | SBS modified asphalt | The story of installing on my house | Next: How it looks after years | Guess which shingle it is | Discounts on your insurance rates! | REVEALED: The BEST shingle... | What's the problem with it? 12 chapters in this video 12 chapters Introduction Introduction 0:00 Introduction 0:00 DISCLAIMER DISCLAIMER 0:36 DISCLAIMER 0:36 What affects shingle performance? What affects shingle performance? 0:54 What affects shingle performance? 0:54 The main thing: HAIL! The main thing: HAIL! 1:26 The main thing: HAIL! 1:26 Next: WIND Next: WIND 3:04 Next: WIND 3:04 SBS modified asphalt SBS modified asphalt 3:39 SBS modified asphalt 3:39 The story of installing on my house The story of installing on my house 3:53 The story of installing on my house 3:53 8:33 8:33 Now playing Solar Panels After 1 Year: Are They Worth It? Shelby Church Shelby Church • • 1.8M views 1 year ago Shelby Church Shelby Church 1 year ago I got 20 solar panels installed on my house in palm springs, and now we can see if it was worth it! Solar video about ... 1 year ago I got 20 solar panels installed on my house in palm springs, and now we can see if it was worth it! Solar video about ... From the video description 4K 4 chapters Intro | Cost | Electricity | Savings 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Cost Cost 0:34 Cost 0:34 Electricity Electricity 2:30 Electricity 2:30 Savings Savings 4:30 Savings 4:30 9:49 9:49 Now playing Roofing Insulation is getting RIDICULOUS! IRE did not disappoint Matt Risinger Matt Risinger • • 247K views 1 day ago Matt Risinger Matt Risinger Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... From the video description New Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. AI-generated video summary Quality and accuracy may vary. Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. + 6 more SHORTS SHORTS Now playing Wait for it... 😱💪 Very Impressive #Solar Installation on a Roof 💪 - Subscribe for more! ☀️ Simplified Solar Simplified Solar • • 70K views 2 years ago Simplified Solar Simplified Solar SHORTS SHORTS Now playing Wait for it... 😱💪 Very Impressive #Solar Installation on a Roof 💪 - Subscribe for more! ☀️ Simplified Solar Simplified Solar • • 48M views 2 years ago Simplified Solar Simplified Solar 2:22 2:22 Now playing Solar Basics: The latest on solar shingles, solar roofs and solar tiles Solar Power World Solar Power World • • 20K views 6 years ago Solar Power World Solar Power World Building-applied solar PV technologies allow homeowners to go solar in a more minimalistic way. From rackless solar systems to ... Building-applied solar PV technologies allow homeowners to go solar in a more minimalistic way. From rackless solar systems to ... From the video description 1 moments Do they make solar shingles? 1 auto-generated moments in this video 1 moments Do they make solar shingles? Do they make solar shingles? 0:39 Do they make solar shingles? 0:39 3:53 3:53 Now playing What are Solar Roof Shingles and how much do they cost? SolarReviews SolarReviews • • 17K views 6 years ago SolarReviews SolarReviews Here's anupdate on solar roof shingles. We explain what they are & how much they cost, and compare Tesla solar shingles VS the ... Here's anupdate on solar roof shingles. We explain what they are & how much they cost, and compare Tesla solar shingles VS the ... From the video description 6 chapters Intro | What are Solar Roof Shingles | How much do they cost | How does the cost compare to a conventional roof | Certainteed Apollo | Drawbacks 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 What are Solar Roof Shingles What are Solar Roof Shingles 0:25 What are Solar Roof Shingles 0:25 How much do they cost How much do they cost 0:47 How much do they cost 0:47 How does the cost compare to a conventional roof How does the cost compare to a conventional roof 1:06 How does the cost compare to a conventional roof 1:06 Certainteed Apollo Certainteed Apollo 1:47 Certainteed Apollo 1:47 Drawbacks Drawbacks 2:37 Drawbacks 2:37 SHORTS SHORTS Now playing Solar Roof Tile combines functions of roofing materials and solar panels #sangobuildroofingproducts Sangobuild Roofing Products Sangobuild Roofing Products • • 20K views 11 months ago Sangobuild Roofing Products Sangobuild Roofing Products 0:00 Hello this is solar Rift tiles slick and stylish no extra structures easy to install like traditional tiles 100% waterproof and buil to last ... Hello this is solar Rift tiles slick and stylish no extra structures easy to install like traditional tiles 100% waterproof and buil to last ... Automatic captions SHORTS SHORTS Now playing How much is a Tesla Solar Roof #tesla #roofing #information American Contractor American Contractor • • 7.3K views 2 years ago American Contractor American Contractor SHORTS SHORTS Now playing Solar is very sexy, Roof is not! #solar #solarenergy #solarpower #roofing Roofing Insights Roofing Insights • • 860 views 2 years ago Roofing Insights Roofing Insights Roofing Insights & more: https://linktr.ee/Dmitrylipinskiy ============================ HOMEOWNERS: find your next ... Roofing Insights & more: https://linktr.ee/Dmitrylipinskiy ============================ HOMEOWNERS: find your next ... From the video description SHORTS SHORTS Now playing Solar Shingles instead of Solar panels? Total Roofing reviewing the Timberline Solar Panel with GAF. Total Roofing & Construction Services, Inc. Total Roofing & Construction Services, Inc. • • 7.3K views 2 years ago Total Roofing & Construction Services, Inc. Total Roofing & Construction Services, Inc. SHORTS SHORTS Now playing What are solar roof tiles? Solar roof tile prices. Solar Roof Tile Suppliers #solarenergy #roofing RoofGlory RoofGlory • • 6.7K views 5 months ago RoofGlory RoofGlory We are Chinese manufacturer of building materials, no local distributor.If you want to know more details, such as catalogue/quote, ... We are Chinese manufacturer of building materials, no local distributor.If you want to know more details, such as catalogue/quote, ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:52:07.420Z",
+      "data": {
+        "query": "site:nextdoor.com MGC Roofing & Solar Mesquite",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:53:24.648Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"MGC Roofing & Solar\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:52:21.209Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=MGC%20Roofing%20%26%20Solar&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= MGC% 26% 20Solar&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= MGC% 20Roofing% 20% 26% 20Solar&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= MGC% 20Roofing% 20% 26% 20Solar&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= MGC% 20Roofing% 20% 26% 20Solar&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:52:25.031Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:52:31.096Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:52:37.939Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov MGC Roofing & Solar",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:52:39.072Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller of Public Accounts",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Comptroller.Texas.Gov is the website for the Texas Comptroller of Public Accounts.",
+            "position": 3
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.sos.state.tx.us/search.shtml?dropXSL=&pr=default&prox=page&rorder=500&rprox=500&rdfreq=500&rwfreq=500&rlead=500&sufs=0&order=r&rdepth=0&query=CERTIFICATE+OF+ACCOUNT+STATUS",
+            "title": "Current Search Results - the Texas Secretary of State",
+            "snippet": "If you've been asked to obtain a “certificate of good standing,” the first step is to determine what type of certificate is being requested.",
+            "position": 5
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07.",
+            "position": 6
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Franchise Search Results. 心. Franchise Tax Account Status. As of 09/13/2021 14:10:44 ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 7
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 8
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "Search TDLR Then look up the business to see if it's still active. Get ... asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 9
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non-profits):",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:52:40.231Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com MGC Roofing & Solar",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:52:41.446Z",
+      "data": {
+        "query": "site:dallascounty.org MGC Roofing & Solar civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:52:43.080Z",
+      "data": {
+        "query": "site:collincountytx.gov MGC Roofing & Solar",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:52:44.120Z",
+      "data": {
+        "query": "site:dentoncounty.gov MGC Roofing & Solar",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:52:47.594Z",
+      "data": "SITE NOT FOUND Site not found This site is not published or does not have a domain assigned to it. If you have any questions, please contact your website administrator."
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:51:05.481Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "https://www.mgcroofingandsolar.com/",
+        "analyzed_pages": [
+          {
+            "url": "https://www.mgcroofingandsolar.com/",
+            "type": "homepage",
+            "title": "SITE NOT FOUND"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:53:12.759Z",
+      "data": {
+        "name": "MGC Roofing & Solar",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(214) 484-1401",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2533 Franklin Dr # 16A, Mesquite, TX 75150",
+        "reviews": [],
+        "website": "https://www.mgcroofingandsolarllc.com/",
+        "maps_url": "https://www.google.com/maps/search/MGC%20Roofing%20%26%20Solar%20Mesquite%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:53:19.842Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:53:20.473Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:53:21.304Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "mgcroofingandsolar.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:51:45.713Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:51:49.788Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:53:25.206Z",
+      "data": {
+        "found": true,
+        "query": "\"MGC Roofing & Solar\" Mesquite lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.mapquest.com/us/texas/aztec-construction-group-377446345",
+            "title": "Aztec Construction Group, Sunnyvale, TX 75182, US - MapQuest",
+            "snippet": "This company is a scam they not only scam the customers but also scam ... Residential painting. MGC Roofing & Solar. MGC Roofing & Solar is a trusted roofing ..."
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Lobo&find_loc=Dallas%2C+TX",
+            "title": "Lobo Dallas, TX - Last Updated January 2026 - Yelp",
+            "snippet": "See all reviews · Right before the rollback. See all. Pain Management · Orthopedists. MGC Roofing & Solar - Lobo near me - Dallas, Texas. 45. MGC Roofing & ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:53:43.392Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T14:53:23Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22MGC%20Roofing%20%26%20Solar%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=492RacPKCaWzmtkPyLC0oAs\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T14:53:33Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22MGC%20Roofing%20%26%20Solar%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=7d2RaaLNDI6zmtkPkLeOyQk\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "MGC Roofing & Solar",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

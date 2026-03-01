@@ -1,0 +1,882 @@
+{
+  "contractor_id": 629,
+  "business_name": "Super Outdoor Spaces",
+  "city": "Rowlett",
+  "state": "TX",
+  "verticals": [
+    "pool",
+    "patio-covers",
+    "motorized-shades"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T15:51:56.558Z",
+  "sources": {
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:56.910Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:56.905Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "SUPER OUTDOOR SPACES LLC",
+        "taxpayer_number": "32098976270"
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:56.103Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Super Outdoor Spaces",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:28.594Z",
+      "data": "Super Outdoor Spaces | Custom Pools, Outdoor Living, & Patios Skip to content Phone (469) 473-7693 Home About Expand Financing Services Our Process Get An Estimate Toggle Menu Custom Outdoor Living Solutions in Plano, TX Unleash the power of your backyard. Super Outdoor Spaces delivers heroic patio design & landscaping in Plano, TX, and nearby areas. Get An Estimate Your Backyard, Our SUPERPOWER! Serving Plano, Rowlett, and the surrounding areas, Super Outdoor Spaces will transform your outdoor living experience into something truly SUPER! From backyard retreats to entertaining havens, we’re dedicated to saving your backyard from the ordinary. We capture your unique style and vision and bring it to life. Master Craftsmanship Personalized Designs Streamlined Process Learn More Custom Pools and Patios Made Super Simple From crafting custom pergolas and unbreakable patio covers to forging outdoor culinary command centers and summoning the warmth of cozy fire pits, we channel expertise and passion into every mission. Knowing the scorching summers and frosty nights of North Texas, we engineer resilient and breathtaking spaces, perfect for hosting epic gatherings or finding your own fortress of solitude. See All Services Patio Covers Custom Pools Outdoor Living Stone Work Inspiration Takes Flight with Custom Backyard Designs At Super Outdoor Spaces, we’re more than just outdoor experts— we’re your partners in creating a backyard you’ll love . Our commitment to quality craftsmanship, personalized designs, and a seamless process sets us apart. See Our Process Master Craftsmanship Forged Our league of artisans wields only the most resilient materials, crafting outdoor havens built to withstand the tests of time and nature’s might. Your Vision Unleashed We channel your unique desires and needs, tailoring each project with laser-like precision to create a personalized sanctuary that reflects your heroic style. Effortless Transformation Activated From the initial strategic consultation to the final triumphant completion, we ensure a smooth and stress-free journey to unlock the full potential of your backyard. Is Your Backyard Ready for a Heroic Upgrade? Your backyard deserves to be more than just grass—it should be a space that reflects you. At Super Outdoor Spaces, we’ve redefined outdoor living with pergolas, patio covers, and fire features that astonish! CALL US TODAY! (469) 473-7693 \" * \" indicates required fields Name * First Last Email * Phone * Address Street Address City Zip What Services Are You Interested In? * Patio Cover Custom Pool Stonework Other Outdoor Living Project What is Your Budget Range? * About $10,000 $10,000-$20,000 $20,000-$30,000 $30,000-$40,000 $40,000-$50,000 $50,000+ About Your Project Your Backyard, Our SUPERPOWER! Super Outdoor Spaces turns ordinary backyards into extraordinary spaces with passion and expertise. We forge custom outdoor solutions that blend beauty and function. Give your backyard a heroic upgrade and prepare to be amazed. Get Started Today Our Blog Concrete Makeover: Transform Your Outdoor Spaces October 22, 2025 Stone Masonry Transforms Outdoor Spaces Forever October 8, 2025 Small Backyard Solutions: Making the Most of Limited Outdoor Space September 26, 2025 Contact Us (469) 473-7693 Mon-Fri: 8am-4pm 3106 Main St #101 Rowlett, TX 75088 © 2025 Super Outdoor Spaces | Sitemap | Local Leap Marketing Facebook X Instagram YouTube Linkedin CALL US TODAY! (469) 473-7693 Scroll to top Scroll to top Home Services Our Process About Toggle child menu Expand Financing Get An Estimate Notifications"
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:28.862Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:04:51.299Z",
+      "data": {
+        "query": "site:yelp.com \"Super Outdoor Spaces\" \"Rowlett, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:05:02.403Z",
+      "data": {
+        "found": true,
+        "rating": 4.9,
+        "status": "closed",
+        "review_count": 17,
+        "business_name": "See photos Super Outdoor Spaces"
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:32.819Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:33.594Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:33.841Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "superoutdoorspaces.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:05:27.660Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:05:31.546Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:37.996Z",
+      "data": {
+        "found": false,
+        "query": "\"Super Outdoor Spaces\" Rowlett lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:36.600Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Super Outdoor Spaces\" Rowlett",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:05:45.473Z",
+      "data": "Super Outdoor Spaces Rowlett review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 20:15 20:15 Now playing 10 Expensive Backyard Mistakes (Everyone Keeps Making) Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living • • 19K views 5 months ago Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living 3D DESIGN - https://www.backyardlivingguyde.com/3d-design-process TRUE FLAME ... 3D DESIGN - https://www.backyardlivingguyde.com/3d-design-process TRUE FLAME ... From the video description 4K Summary Avoid costly backyard blunders! This video details ten common mistakes, from lacking a master plan to overcrowding. Learn how to design functional outdoor spaces that enhance your lifestyle, not just your landscape. AI-generated video summary Quality and accuracy may vary. Summary Avoid costly backyard blunders! This video details ten common mistakes, from lacking a master plan to overcrowding. Learn how to design functional outdoor spaces that enhance your lifestyle, not just your landscape. 9:38 9:38 Now playing Start at $5 and win $1200 W/ This Roulette Strategy CEG Dealer School CEG Dealer School • • 1.9M views 3 years ago CEG Dealer School CEG Dealer School Get Private Internet Access: https://piavpn.com/CEG Gambling is never guaranteed. Casinos are profitable because there are no ... Get Private Internet Access: https://piavpn.com/CEG Gambling is never guaranteed. Casinos are profitable because there are no ... From the video description 11:23 11:23 Now playing 10 Best Landscaping (BUDGET) Ideas Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living • • 1M views 2 years ago Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living 3D Design - https://www.backyardlivingguyde.com/3d-design-process Budget Products ... 3D Design - https://www.backyardlivingguyde.com/3d-design-process Budget Products ... From the video description 4K Summary Explore ten budget-friendly landscaping ideas to transform your backyard into an outdoor living space. The video details various elements, from covered structures to lighting, suggesting multiple destinations within the yard. Learn how to create functional and visually appealing areas using affordable materials and DIY techniques. AI-generated video summary Quality and accuracy may vary. Summary Explore ten budget-friendly landscaping ideas to transform your backyard into an outdoor living space. The video details various elements, from covered structures to lighting, suggesting multiple destinations within the yard. Learn how to create functional and visually appealing areas using affordable materials and DIY techniques. 2:54 2:54 Now playing Superscreen vs Fiberglass vs Aluminum Mesh on Wooden Screen Porch Enclosure Screen Medic Screen Medic • • 132K views 5 years ago Screen Medic Screen Medic When rescreening a screen porch get it done right the first time. Call Screen Medic Today!!! 612-232-7378 or visit ... When rescreening a screen porch get it done right the first time. Call Screen Medic Today!!! 612-232-7378 or visit ... From the video description 3 chapters Intro | Fiberglass vs Aluminum | Outro 3 auto-generated chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 Fiberglass vs Aluminum Fiberglass vs Aluminum 0:56 Fiberglass vs Aluminum 0:56 Outro Outro 2:42 Outro 2:42 18:33 18:33 Now playing Best PATIO COVER Ideas – 7 Styles you NEED TO KNOW Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living • • 97K views 8 months ago Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living 3D Design - https://www.backyardlivingguyde.com/3d-design-process True Flame Products ... 3D Design - https://www.backyardlivingguyde.com/3d-design-process True Flame Products ... From the video description 4K Summary Explore seven popular patio cover styles, from modern to rustic. This guide provides pros, cons, and design tips for maximizing comfort and functionality in any climate. Consider space, aesthetics, and budget before building your dream outdoor living space. AI-generated video summary Quality and accuracy may vary. Summary Explore seven popular patio cover styles, from modern to rustic. This guide provides pros, cons, and design tips for maximizing comfort and functionality in any climate. Consider space, aesthetics, and budget before building your dream outdoor living space. 11:47 11:47 Now playing Stop Making BACKYARD MISTAKES (same Mistakes over and over again) Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living • • 242K views 3 years ago Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living Same old Mistakes - I've seen 100000's of times!! IT'S TIME TO STOP!! Stop the torture!! Stop the Wasting of Money!! Stop the ... Same old Mistakes - I've seen 100000's of times!! IT'S TIME TO STOP!! Stop the torture!! Stop the Wasting of Money!! Stop the ... From the video description 4K Summary Avoid common backyard design mistakes by prioritizing flow and functionality. This video demonstrates how to create a cohesive outdoor living space, not just a landscape. Learn how proper design placement maximizes space and avoids costly errors. AI-generated video summary Quality and accuracy may vary. Summary Avoid common backyard design mistakes by prioritizing flow and functionality. This video demonstrates how to create a cohesive outdoor living space, not just a landscape. Learn how proper design placement maximizes space and avoids costly errors. 10:16 10:16 Now playing Best Patio Covers (Top 10 Ideas) Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living • • 174K views 2 years ago Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living Every Backyard Needs a Patio Cover. Here is my top 10 Best Patio Cover Ideas 3D Design ... Every Backyard Needs a Patio Cover. Here is my top 10 Best Patio Cover Ideas 3D Design ... From the video description 4K 1:52 1:52 Now playing Simple Ways to Create the Best Outdoor Space /// Lowe's Design Basics Lowe's Home Improvement Lowe's Home Improvement • • 30K views 5 years ago Lowe's Home Improvement Lowe's Home Improvement Caroline from the Lowe's Trend Team share ideas for how to get the most out of your cooking, dining and relaxing spaces outside . Caroline from the Lowe's Trend Team share ideas for how to get the most out of your cooking, dining and relaxing spaces outside . From the video description 3 moments Dining area ideas | Cooking/prep area ideas | Relaxation area ideas 3 moments in this video 3 moments Dining area ideas Dining area ideas 0:18 Dining area ideas 0:18 Cooking/prep area ideas Cooking/prep area ideas 0:49 Cooking/prep area ideas 0:49 Relaxation area ideas Relaxation area ideas 1:08 Relaxation area ideas 1:08 5:59 5:59 Now playing RTA Outdoor Kitchen Cost | 3 Reasons Why Our Islands are So Expensive The Outdoor Kitchen Experience The Outdoor Kitchen Experience • • 6K views 2 years ago The Outdoor Kitchen Experience The Outdoor Kitchen Experience If you've inquired about RTA outdoor kitchen cost… You may have experienced a bit of sticker shock at first! That's perfectly ... If you've inquired about RTA outdoor kitchen cost… You may have experienced a bit of sticker shock at first! That's perfectly ... From the video description 4 chapters Intro | Convenience | Quality | Customer Satisfaction 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Convenience Convenience 0:35 Convenience 0:35 Quality Quality 1:57 Quality 1:57 Customer Satisfaction Customer Satisfaction 4:13 Customer Satisfaction 4:13 8:43 8:43 Now playing Outdoor Living is NOT CHEAP, However, I have some ideas! Landscaping Made Simple - Bobby K Designs Landscaping Made Simple - Bobby K Designs • • 17K views 4 years ago Landscaping Made Simple - Bobby K Designs Landscaping Made Simple - Bobby K Designs Outdoor Living Spaces with a Structure can be affordable IF you know the options...well, Bobby K is here once again to break ... Outdoor Living Spaces with a Structure can be affordable IF you know the options...well, Bobby K is here once again to break ... From the video description 4K 6 moments UNDER $10,000 | $65,000 - $80,000 | $7,500 - $10,000 | $15,000 - $20,000 | $40,000 - $45,000 | $60,000 - $70,000 6 auto-generated moments in this video 6 moments UNDER $10,000 UNDER $10,000 2:04 UNDER $10,000 2:04 $65,000 - $80,000 $65,000 - $80,000 3:19 $65,000 - $80,000 3:19 $7,500 - $10,000 $7,500 - $10,000 4:53 $7,500 - $10,000 4:53 $15,000 - $20,000 $15,000 - $20,000 5:47 $15,000 - $20,000 5:47 $40,000 - $45,000 $40,000 - $45,000 7:00 $40,000 - $45,000 7:00 $60,000 - $70,000 $60,000 - $70,000 7:39 $60,000 - $70,000 7:39 11:41 11:41 Now playing Creative Ways to Add Privacy 🪴 Landscape design strategies for instantly private backyards Garden Project Academy Garden Project Academy • • 1.2M views 3 years ago Garden Project Academy Garden Project Academy Seeking ideas and creative ways to add privacy? Learn specific, creative landscape design strategies for instantly private ... Seeking ideas and creative ways to add privacy? Learn specific, creative landscape design strategies for instantly private ... From the video description CC 16 chapters Intro | Privacy and Seating Areas | Framing | Panels | Wire Panels | Outdoor Curtains | Lattice | Vines | How to Choose the Perfect Plant | Bamboo | Containers | Raised Beds | Shed | Ornamental grasses | Fastgrowing summer plants | Landscape layout course 16 auto-generated chapters in this video 16 chapters Intro Intro 0:00 Intro 0:00 Privacy and Seating Areas Privacy and Seating Areas 0:37 Privacy and Seating Areas 0:37 Framing Framing 1:01 Framing 1:01 Panels Panels 1:36 Panels 1:36 Wire Panels Wire Panels 1:55 Wire Panels 1:55 Outdoor Curtains Outdoor Curtains 2:24 Outdoor Curtains 2:24 Lattice Lattice 3:39 Lattice 3:39 People also watched 16:59 16:59 Now playing KICKED OUT Of RV Park | The REASON Will SHOCK YOU life redesigned life redesigned • • 791K views 1 year ago life redesigned life redesigned We got the knock at the RV Park recently and were kicked out. The reason is absurd and will shock you! Want ideas for MUST ... We got the knock at the RV Park recently and were kicked out. The reason is absurd and will shock you! Want ideas for MUST ... From the video description 4K CC 5:34 5:34 Now playing Homeowner says home is \"worthless\" after discovering easement 14 years after purchase Tampa Bay 28 Tampa Bay 28 • • 4.2M views 2 years ago Tampa Bay 28 Tampa Bay 28 An Odessa man is suing the City of St. Petersburg, alleging the city didn't correctly record a 50-foot easement through his property. An Odessa man is suing the City of St. Petersburg, alleging the city didn't correctly record a 50-foot easement through his property. From the video description 10:01 10:01 Now playing Outdoor Kitchen Ideas on a Budget | Top 5 Ways to Save The Outdoor Kitchen Experience The Outdoor Kitchen Experience • • 15K views 3 years ago The Outdoor Kitchen Experience The Outdoor Kitchen Experience Looking for outdoor kitchen ideas on a budget? As you've seen… An outdoor kitchen project is expensive. But it doesn't always ... Looking for outdoor kitchen ideas on a budget? As you've seen… An outdoor kitchen project is expensive. But it doesn't always ... From the video description 7 chapters RTA OUTDOOR LIVING | Top 5 Ways To Save Money | BUILD CLOSER TO YOUR HOME | AVOID RUNNING UTILITY LINES | SELECT APPLIANCES WITH VERSATILITY | GOING PREFABRICATED | GET EDUCATED ON MATERIALS 7 auto-generated chapters in this video 7 chapters RTA OUTDOOR LIVING RTA OUTDOOR LIVING 0:00 RTA OUTDOOR LIVING 0:00 Top 5 Ways To Save Money Top 5 Ways To Save Money 0:11 Top 5 Ways To Save Money 0:11 BUILD CLOSER TO YOUR HOME BUILD CLOSER TO YOUR HOME 0:43 BUILD CLOSER TO YOUR HOME 0:43 AVOID RUNNING UTILITY LINES AVOID RUNNING UTILITY LINES 2:53 AVOID RUNNING UTILITY LINES 2:53 SELECT APPLIANCES WITH VERSATILITY SELECT APPLIANCES WITH VERSATILITY 4:49 SELECT APPLIANCES WITH VERSATILITY 4:49 GOING PREFABRICATED GOING PREFABRICATED 6:17 GOING PREFABRICATED 6:17 GET EDUCATED ON MATERIALS GET EDUCATED ON MATERIALS 8:14 GET EDUCATED ON MATERIALS 8:14 2:24 2:24 Now playing Outdoor Kitchen Plumbing & Utilities | Why Location Matters The Outdoor Kitchen Experience The Outdoor Kitchen Experience • • 6.9K views 3 years ago The Outdoor Kitchen Experience The Outdoor Kitchen Experience Many homeowners struggle with planning outdoor kitchen plumbing and other utilities. We can't blame you! The process can be ... Many homeowners struggle with planning outdoor kitchen plumbing and other utilities. We can't blame you! The process can be ... From the video description + 6 more 2:06 2:06 Now playing RTA Outdoor Living Reviews | The Ideal Upgrade for Vacation Rentals The Outdoor Kitchen Experience The Outdoor Kitchen Experience • • 67K views 2 years ago The Outdoor Kitchen Experience The Outdoor Kitchen Experience If you're curious about adding an RTA outdoor kitchen to your vacation rentals… This RTA Outdoor Living review is perfect for you! If you're curious about adding an RTA outdoor kitchen to your vacation rentals… This RTA Outdoor Living review is perfect for you! From the video description Summary A couple who owns vacation rentals in Ohio shares their experience with RTA Outdoor Living. They were impressed with the ease of installation, the quality of the product, and the helpful customer service. They believe an RTA outdoor kitchen is a great way to add a luxury element to any property. AI-generated video summary Quality and accuracy may vary. Summary A couple who owns vacation rentals in Ohio shares their experience with RTA Outdoor Living. They were impressed with the ease of installation, the quality of the product, and the helpful customer service. They believe an RTA outdoor kitchen is a great way to add a luxury element to any property. 13:29 13:29 Now playing 10 Top Outdoor Features Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living • • 195K views 4 years ago Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living 10 Top Outdoor Living Features People are always asking me what my top ten list is for an Outdoor Living Space . In this video we ... 10 Top Outdoor Living Features People are always asking me what my top ten list is for an Outdoor Living Space . In this video we ... From the video description 4K 10 chapters Intro | OUTDOOR BAR | FIRE FEATURES | WATER FEATURES | OUTDOOR COOKSPACES | GARDENS | OUTDOOR LIGHTING | OUTDOOR SHED | PET FEATURES | PRIVACY 10 auto-generated chapters in this video 10 chapters Intro Intro 0:00 Intro 0:00 OUTDOOR BAR OUTDOOR BAR 0:33 OUTDOOR BAR 0:33 FIRE FEATURES FIRE FEATURES 2:37 FIRE FEATURES 2:37 WATER FEATURES WATER FEATURES 3:57 WATER FEATURES 3:57 OUTDOOR COOKSPACES OUTDOOR COOKSPACES 6:05 OUTDOOR COOKSPACES 6:05 GARDENS GARDENS 7:31 GARDENS 7:31 OUTDOOR LIGHTING OUTDOOR LIGHTING 8:52 OUTDOOR LIGHTING 8:52 4:34 4:34 Now playing Give your outdoor space the WOW factor with Rubber Stone AZ by StressLess Remodeling ABC15 Arizona ABC15 Arizona • • 741 views 1 year ago ABC15 Arizona ABC15 Arizona (SL Advertiser)) To learn more about Rubber Stone AZ and StressLess Remodeling call (623) 263-3257 or visit, ... (SL Advertiser)) To learn more about Rubber Stone AZ and StressLess Remodeling call (623) 263-3257 or visit, ... From the video description CC 10:08 10:08 Now playing Deck Outdoor Living Space Under Deck IDEAS (Waterproof Cover) Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living • • 130K views 5 years ago Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living Yes, we can help you with your BACKYARD DESIGN wherever you live! Please contact me here and I will send you over our ... Yes, we can help you with your BACKYARD DESIGN wherever you live! Please contact me here and I will send you over our ... From the video description 4 moments During Construction | Timelapse | BEFORE | ALUMINUM UNDERDECK SYSTEM 4 auto-generated moments in this video 4 moments During Construction During Construction 5:22 During Construction 5:22 Timelapse Timelapse 5:38 Timelapse 5:38 BEFORE BEFORE 6:37 BEFORE 6:37 ALUMINUM UNDERDECK SYSTEM ALUMINUM UNDERDECK SYSTEM 8:26 ALUMINUM UNDERDECK SYSTEM 8:26 16:01 16:01 Now playing 13 Backyard Privacy Ideas / Privacy Screens Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living • • 3.1M views 5 years ago Backyard Design Guy - Outdoor Living Backyard Design Guy - Outdoor Living 3D Design - https://www.backyardlivingguyde.com/3d-design-process Privacy Products ... 3D Design - https://www.backyardlivingguyde.com/3d-design-process Privacy Products ... From the video description 4K 16 chapters Intro | STRUCTURE WITH WALLS | LEAN-TO STRUCTURE | FULL FIREPLACE WALL | ITALIAN CYPRESS HEDGES | ARBORVITAE HEDGES | WALLS WITH PLANTS | ELEVATED LIVING WALL | LIVING WALL AND WATER FEATURE | EYE CANDY LIVING WALL | BAMBOO TREES | FRONT YARD STOP BORDER SCREENING | DECK SCREEN | FULL KITCHEN WALL | HOT TUB WALL | LANDSCAPING 16 auto-generated chapters in this video 16 chapters Intro Intro 0:00 Intro 0:00 STRUCTURE WITH WALLS STRUCTURE WITH WALLS 1:44 STRUCTURE WITH WALLS 1:44 LEAN-TO STRUCTURE LEAN-TO STRUCTURE 2:16 LEAN-TO STRUCTURE 2:16 FULL FIREPLACE WALL FULL FIREPLACE WALL 3:56 FULL FIREPLACE WALL 3:56 ITALIAN CYPRESS HEDGES ITALIAN CYPRESS HEDGES 5:35 ITALIAN CYPRESS HEDGES 5:35 ARBORVITAE HEDGES ARBORVITAE HEDGES 6:34 ARBORVITAE HEDGES 6:34 WALLS WITH PLANTS WALLS WITH PLANTS 6:56 WALLS WITH PLANTS 6:56 Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:37.177Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Super Outdoor Spaces\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:55.966Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-27T01:06:40Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Super%20Outdoor%20Spaces%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=IDFPabKCCZXhp84P7ueR8A4\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-27T01:06:50Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Super%20Outdoor%20Spaces%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=KjFPaY6DBsH9ptQP7qyf0QM\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Super Outdoor Spaces",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:05:46.548Z",
+      "data": {
+        "query": "site:nextdoor.com Super Outdoor Spaces Rowlett",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/peacock-property-services-rowlett-tx/",
+            "title": "Super Outdoor Spaces - Rowlett, TX",
+            "snippet": "Super Outdoor Spaces in Rowlett, TX. Connect with neighborhood businesses on Nextdoor ... Super Outdoor Spaces. 3106 Main St. Rowlett. TX. 75088. US. + ...",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/ask-neighbors/plano--tx/awhile-back-i-mentioned-we-are-thinking-about-selling-and-moving-to-a-retirement-senior-community-in-the-next-couple-of-years--Nsg253QG44mR/",
+            "title": "Awhile back I mentioned we are thinking about selling and ...",
+            "snippet": "Awhile back I mentioned we are thinking about selling and moving to a retirement/senior community in the next couple of years. A lady posted she could help with ...",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/pages/essential-key/",
+            "title": "Essential Key - Rowlett, TX",
+            "snippet": "✓ Perfect For: • Driveways, patios, and decks • Vehicles, boats, and RVs 🛥️ • Outdoor furniture & fences • Sidewalks, garages, and more!",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:35.889Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Super Outdoor Spaces\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:35.122Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Super Outdoor Spaces\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-Super-Outdoor-Spaces-EI_IE10813237.11,31.htm",
+            "title": "Working at Super Outdoor Spaces",
+            "snippet": "See what employees say it's like to work at Super Outdoor Spaces. Salaries, reviews, and more - all posted by employees working at Super Outdoor Spaces."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:04.330Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:10.326Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:34.547Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Super Outdoor Spaces\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:17.648Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Super Outdoor Spaces",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Mar 8, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Methane%20Rule%20Challenge%20Filestamped.pdf",
+            "title": "IN THE UNITED STATES COURT OF APPEALS FOR ...",
+            "snippet": "Agency (EPA) is finalizing multiple actions to reduce air pollution emissions from the Crude Oil and. Natural Gas source category.",
+            "position": 1
+          },
+          {
+            "date": "Nov 5, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/images/Petition%20for%20Review%20(to%20file)%20(1).pdf",
+            "title": "In the United States Court of Appeals for the Fifth Circuit",
+            "snippet": "... spaces (within approximately six feet for at least fifteen minutes) (CDC, August 13, 2021). Additionally, airborne transmission may occur in ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:20.022Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Super Outdoor Spaces",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:20.950Z",
+      "data": {
+        "query": "site:dallascounty.org Super Outdoor Spaces civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 19, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/cjab/meetings/2016/CJAB_Packet_121916.pdf",
+            "title": "The Honorable Elba Garcia, Chair, CJAB II. III. M",
+            "snippet": "Designed around a resort-styled pool and landscaped courtyard, residents will also enjoy a resident club with a community kitchen and.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "Jan Almon, narrative Mary Ann Sherman, photography",
+            "snippet": "Opposite, top inset: Dallas County has established one of the largest county open space systems in the state, and it is helping build a comprehensive trail ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:21.953Z",
+      "data": {
+        "query": "site:collincountytx.gov Super Outdoor Spaces",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210125_2587/33858_RTC%20Packet%2001-14-2021.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "... space, a community lawn and outdoor music venue and trails for hiking and biking. This portion of the development will include. 2.2 of the ...",
+            "position": 1
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240513_2960/55855_2024-282%20-%20Bid%20Packet_v.3.pdf",
+            "title": "2024-282 Construction, Emergency Generator Fueling ...",
+            "snippet": "BY ORDER OF the Collin County Commissioners Court, Collin County, Texas, bids will be received electronically through Collin County eBid ...",
+            "position": 2
+          },
+          {
+            "date": "Dec 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210816_2672/50383_RTC%20Packet%2008-12-2021.pdf",
+            "title": "AGENDA Regional Transportation Council Thursday, ...",
+            "snippet": "searching for a combination of affordability and more space, whether that's outdoor space or an extra bedroom to turn into a home office. In ...",
+            "position": 3
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210315_2611/33858_agenda-packet-mar.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "have a 23,000-square-foot outdoor rooftop with green landscaping, indoor-outdoor fitness center, event spaces, conference spaces, and private exterior terraces ...",
+            "position": 4
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250908_3100/58568_2025-266%20Bid%20Packet.pdf",
+            "title": "Collin County, TX INVITATION FOR BID 2025-266 BUILDING ...",
+            "snippet": "SCOPE OF WORK INCLUDES all materials, labor, equipment and services to produce or be incorporated in such construction. Contract will be a general contract ...",
+            "position": 5
+          },
+          {
+            "date": "Nov 11, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20211115_2703/33858_RTC%20Packet%2011-11-2021.pdf",
+            "title": "AGENDA Regional Transportation Council Thursday, ...",
+            "snippet": "The RTC meeting on November 11, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 6
+          },
+          {
+            "date": "Aug 12, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210920_2680/33858_RTC%20Packet%2009-09-2021.pdf",
+            "title": "AGENDA Regional Transportation Council Thursday, ...",
+            "snippet": "Spaces that were once devoted to cars become places people want to gather, live and do business. In all cases, predicted traffic disasters ...",
+            "position": 7
+          },
+          {
+            "date": "Oct 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20211018_2693/33858_RTC%20Packet%2010-14-2021.pdf",
+            "title": "AGENDA Regional Transportation Council Thursday, ...",
+            "snippet": "The RTC meeting on October 14, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210412_2620/33858_agenda-packet-apr.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "... space for café and outdoor seating — a much needed addition. It would also provide a link to the tunnel system below the park, where ...",
+            "position": 9
+          },
+          {
+            "date": "Jul 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210716_2662/33858_RTC%20Packet%2007-08-2021.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "Background: The CMP is a systemic and regionally coordinated approach for managing congestion that provides up-to- date information on ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:22.960Z",
+      "data": {
+        "query": "site:dentoncounty.gov Super Outdoor Spaces",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1637/Pollution-Prevent--Good-Housekeeping-PDF?bidId=",
+            "title": "Pollution Prevention/Good Housekeeping for Municipal ...",
+            "snippet": "Storage areas, outdoor material deposits, loading and unloading areas, and raw materials should all be covered or enclosed. Priority should be given to.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2025-12-27T01:06:31.779Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:07:09.127Z",
+      "data": {
+        "cost": 0.0005612600000000001,
+        "summary": "The 17 Google reviews appear authentic, with specific details, varied writing, and personalized owner responses. The lack of any critical reviews and low total volume are minor concerns, but not strong indicators of manipulation. The story is coherent: a small, quality-focused contractor with a passionate, satisfied clientele.",
+        "confidence": "HIGH",
+        "analyzed_at": "2025-12-27T01:07:09.127Z",
+        "fake_signals": [
+          "Low review volume (17) for a high rating",
+          "All reviews are 5-star with no critical feedback"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 4.9,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Specific project details (artificial turf, brickwork, flower beds)",
+          "Mention of owner/crew by name (Jimmy)",
+          "Varied writing styles and perspectives",
+          "Owner responses are personalized and non-defensive",
+          "Reviews reference different company names (Peacock Landscaping, Peacock Property Services) indicating a possible rebrand, which is a realistic business detail"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only Google reviews are available, showing a consistent high rating. No contradictory ratings from other platforms were found."
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:31.387Z",
+      "data": {
+        "cid": "9549675581929361902",
+        "name": "Super Outdoor Spaces",
+        "found": true,
+        "rating": 4.9,
+        "source": "serper",
+        "address": "3106 Main St Suite 101, Rowlett, TX 75088",
+        "reviews": [
+          {
+            "date": "a year ago",
+            "text": "From start to finish, working with them has been nothing short of exceptional.\n\nPeacock Landscaping impressed us from the beginning with its meticulous approach. They promptly visited our property, took precise measurements, and presented us with a detailed virtual visual recommendation that truly brought our vision to life. Throughout the construction process, Jimmy maintained excellent communication, ensuring that we were informed and involved every step of the way. They consistently prioritized quality and customer satisfaction, going above and beyond to guarantee that each task was completed to perfection before proceeding to the next.\n\nI commend Jimmy for his attentive listening skills, valuable suggestions, and efficient project execution. The entire crew was professional and friendly, working diligently to transform our backyard into a space that exceeded our expectations. Their swift work ethic and commitment to cleanliness did not go unnoticed. Thanks to Peacock Landscaping, we now have a beautiful backyard that has already become a place where cherished memories are made. We are truly delighted with the outcome and grateful for the outstanding service provided by Peacock Landscaping.",
+            "author": "Marineyda Rivas",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Peacock Property Services did a fantastic job of transforming my backyard and adding some brickwork to the front. Jimmy took the time to listen to my vision, making suggestions and putting the plan in motion. The workers were friendly, worked quickly and cleaned up after themselves. A few days after my beautiful landscape was done, they returned to fine tune a few things. I'm beyond thrilled with three outcome!",
+            "author": "Mary Jones",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "I am in love with my new artificial turf in the backyard. Super Outdoor Spaces did an amazing job with the installation. No more muddy paws in the house combined with year round beautiful green grass.I highly recommend this company!!",
+            "author": "Beverly Brin",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Peacock Landscaping was fantastic to work with. They came, measured, then provided a detailed virtual visual recommendation including the names of the recommended plants for our flower beds. They accept feedback and provide options to meet your budget, if needed.",
+            "author": "Susan Hardy",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Jimmy is awesome and his crews are great! Wanted a specific stamp design that they didn’t have but they made sure to find it just to give us exactly what we wanted. I’m no concrete guy but it sure looks like a great job to me. Another month or so and we get to put up a gazebo. We will definitely be enjoying our patio for years to come. Thank you Jimmy!",
+            "author": "christian bergin",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Jimmy was absolutely wonderful to work with! Our project was fairly small, but he never made us feel like we weren't a priority, and really took the time to answer our questions. His design was wonderful and did a great job at capturing both mine and my husband's styles (despite the fact that they're quite different). When we first engaged PPS, we had communicated that we were hoping to get everything done before my daughter's birthday party. Not only was not an issue for Jimmy and his team, but they finished the project a week early! Finally, his team was wonderful about cleaning up the yard after their day of work was finished, which I highly appreciated. All in all, I would absolutely recommend Peacock Property Services and look forward to working with them again in the future!",
+            "author": "Brittany Lehman",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Peacock Properties just completed a Sod installation job at my residence. I contacted Mr. Jimmy a few weeks ago. He provided a competitive quote and was very responsive during the entire process. The new lawn looks beautiful!",
+            "author": "The Miggins Family",
+            "rating": 5
+          },
+          {
+            "date": "10 months ago",
+            "text": "Great job and great customer service. I would definitely recommend this company to my community. Honest price in a very competitive industry.  Jimmy is very knowledgeable with many year of experience under his wing. He was really patient and able to respond to all my questions and concerns.",
+            "author": "Rodrigo Valenzuela",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "review_count": 17,
+        "review_source": "serper"
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:05:34.162Z",
+      "data": {
+        "query": "Super Outdoor Spaces Rowlett site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 24, 2018",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2018/05/24/8-great-places-with-playgrounds-in-north-texas-where-parents-can-grab-a-drink-too/",
+            "title": "8 great places with playgrounds in North Texas",
+            "snippet": "Today, that's the centerpiece of the company's 10 locations, including newly opened North Texas outposts in McKinney, Rowlett and The Hill at ...",
+            "position": 1
+          },
+          {
+            "date": "Jul 13, 2023",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2023/07/13/splash-pads-and-water-parks-offer-some-relief-from-the-heat-in-dallas-fort-worth/",
+            "title": "Splash pads and water parks offer some relief from the ...",
+            "snippet": "We've rounded up some of the area's free splash pads and spraygrounds plus several big paid water parks featuring slides, rides and lazy rivers.",
+            "position": 2
+          },
+          {
+            "date": "Jul 27, 2017",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2017/07/28/dog-about-town-sipping-and-swimming-and-more-things-to-do/",
+            "title": "Dog About Town: Sipping and swimming and more things ...",
+            "snippet": "Dog-friendly patios. Note: Dog-friendly dining is outdoors and can depend on several factors, including the weather, how busy the restaurant is ...",
+            "position": 3
+          },
+          {
+            "date": "Apr 6, 2016",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2016/04/06/summer-is-closer-than-you-think-here-s-the-only-list-you-ll-need-of-d-fw-camps-for-kids/",
+            "title": "Here's the only list you'll need of D-FW camps for kids",
+            "snippet": "Rowlett: Rowlett Community Center, 5300 Main St., Rowlett. July 5-8. One-week session, Tuesday-Friday 2-4:45 p.m. $120. 972-412-6170. Sachse ...",
+            "position": 4
+          },
+          {
+            "date": "Jun 23, 2016",
+            "link": "http://interactives.dallasnews.com/2016/tornado-anniversary/",
+            "title": "Devastated but not defeated",
+            "snippet": "The outdoor space is what drew Felix to the house initially. Now, the maple tree that once shaded the backyard has fallen. It was Felix's ...",
+            "position": 5
+          },
+          {
+            "date": "Jul 21, 2017",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-chilling-out-and-more-things-to-do-with-your-pooch/31424/",
+            "title": "Dog About Town: Chilling Out and More Things to Do With ...",
+            "snippet": "Dog Days of Summer, from 11 am to 1 pm Saturday in Highland Village, will feature adoptions, a pet parade, vendors, agility show, photo booth, caricature ...",
+            "position": 6
+          },
+          {
+            "date": "Sep 18, 2024",
+            "link": "https://www.wfaa.com/article/features/75-moments-shaped-dallas-fort-worth/287-d84960cf-1c8c-4e27-8efa-81d246e9de3f",
+            "title": "75 moments that shaped DFW over the last 75 years: Full list",
+            "snippet": "In honor of WFAA's 75th anniversary, our staff looks back at 75 moments that shaped North Texas into the place it is today.",
+            "position": 7
+          },
+          {
+            "date": "Jul 18, 2013",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2013/07/19/dog-about-town-learning-listening-to-music-and-more-things-to-do-with-your-pooch/",
+            "title": "Dog About Town: Learning, listening to music and more ...",
+            "snippet": "B.K. has details on classes, concerts and other events, along with an updated list of dog-friendly patios, stores and attractions.",
+            "position": 8
+          },
+          {
+            "date": "Aug 2, 2013",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2013/08/02/dog-about-town-listening-to-jazz-catching-a-movie-and-more-things-to-do-with-your-pooch/",
+            "title": "Dog About Town: Listening to jazz, catching a movie and ...",
+            "snippet": "B.K. has details on Puss 'N' Pooch Jazz Night and other events, along with an updated list of dog-friendly patios, stores and attractions.",
+            "position": 9
+          },
+          {
+            "date": "Sep 10, 2018",
+            "link": "https://www.dallasnews.com/arts-entertainment/music/2018/09/10/this-musician-wants-to-move-dallas-onto-national-playlist-with-roots-picnic-inspired-music-festival/",
+            "title": "This musician wants to move Dallas onto national playlist ...",
+            "snippet": "Band leader RC Williams is \"super excited\" to be bringing the inaugural Gritznic: A Backyard Jam, to the Longhorn Ballroom's outdoor event space ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:00.267Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Super%20Outdoor%20Spaces&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Super% 20Outdoor% 20Spaces&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Super% 20Outdoor% 20Spaces&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://echo.epa.gov/help/training",
+                "title": "ECHO Training"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Super% 20Outdoor% 20Spaces&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search Map, All Facilities, Corporate Compliance Screener, ECHO Notify Air, Air Facility Search Map, Air Facilities, ECHO Clean Air Tracking Tool ( ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Super% 20Outdoor% 20Spaces&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Outdoor% 20Spaces&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Super% 20Outdoor% 20Spaces&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= Super% 20Outdoor% 20Spaces&State= TX"
+            }
+          },
+          {
+            "date": "Jun 26, 2025",
+            "link": "https://echo.epa.gov/help/reports/detailed-facility-report-help",
+            "title": "Detailed Facility Report Help | ECHO | US EPA",
+            "snippet": "The Detailed Facility Report is an interactive report that allows you to quickly find data of interest. Data are organized into six primary categories.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= Super% 20Outdoor% 20Spaces&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter and is refreshed ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= Super% 20Outdoor% 20Spaces&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= Super% 20Outdoor% 20Spaces&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-27T01:06:18.657Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 9
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 10
+          }
+        ]
+      }
+    }
+  }
+}

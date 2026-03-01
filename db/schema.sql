@@ -53,6 +53,7 @@ CREATE TABLE IF NOT EXISTS audit_records (
     red_flags TEXT,                      -- JSON array of detected issues
     positive_signals TEXT,               -- JSON array of good signs
     gaps_identified TEXT,                -- JSON array of what couldn't be verified
+    guarantee_analysis TEXT,             -- JSON object for warranty/guarantee analysis
     
     -- Metadata
     sources_used TEXT,                   -- JSON array of sources that had data

@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "created": "2026-02-10T22:40:00Z",
+  "cohort": "E",
+  "lane": "deepseek",
+  "description": "100 new contractor full run using DeepSeek for pairwise lane calibration",
+  "sample_config": "experiments/hybrid_100_E/config/sample_100_group_E.json",
+  "targets": {
+    "contractors": 100,
+    "comparisons_per_contractor": 30,
+    "approx_pairwise_decisions": 1500
+  },
+  "execution": {
+    "environment": "source venv/bin/activate && set -a && . ./.env && set +a",
+    "steps": [
+      {
+        "id": "source_missing",
+        "command": "node bin/source_missing_from_manifest.js --config=experiments/hybrid_100_E/config/sample_100_group_E.json --required=google_presence,bbb,court_records,county_liens,tx_franchise"
+      },
+      {
+        "id": "snapshot",
+        "command": "node bin/hybrid_100_snapshot.js --group=E"
+      },
+      {
+        "id": "first_pass",
+        "command": "node bin/hybrid_100_first_pass.js --group=E"
+      },
+      {
+        "id": "swiss_pairwise",
+        "command": "node bin/hybrid_100_swiss_pass.js --group=E --rounds 30 --fresh --model=deepseek"
+      }
+    ]
+  },
+  "logging_requirements": {
+    "must_capture": [
+      "pairwise comparison records with contractor IDs, winner, confidence, round, timestamp",
+      "model lane label (deepseek)",
+      "prompt version/hash",
+      "run summary with comparison totals, retries/errors, elapsed time, and cost estimate"
+    ],
+    "expected_outputs": [
+      "experiments/hybrid_100_E/results/first_pass.json",
+      "experiments/hybrid_100_E/results/swiss/pairwise/comparisons.jsonl",
+      "experiments/hybrid_100_E/results/swiss/rankings.json",
+      "experiments/hybrid_100_E/results/swiss/pairwise_results.json"
+    ]
+  }
+}

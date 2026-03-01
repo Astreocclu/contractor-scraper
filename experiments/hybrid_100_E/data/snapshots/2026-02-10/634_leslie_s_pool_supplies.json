@@ -1,0 +1,955 @@
+{
+  "contractor_id": 634,
+  "business_name": "Leslie's Pool Supplies",
+  "city": "Wylie",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-10T23:16:55.300Z",
+  "sources": {
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:44:09.514Z",
+      "data": {
+        "query": "Leslie's Pool Supplies Wylie site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jul 24, 2014",
+            "link": "https://www.dallasnews.com/sitemap/2014/july/24/",
+            "title": "A sitemap for every Dallas Morning News article for the year 2014.",
+            "snippet": "Sitemap for Dallas Morning News articles for the year 2014.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:43:20.637Z",
+      "data": {
+        "query": "site:yelp.com \"Leslie's Pool Supplies\" \"Wylie, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/leslies-wylie",
+            "title": "LESLIE'S POOL SUPPLIES - Updated January 2026",
+            "rating": 3,
+            "snippet": "More info about Leslie's Pool Supplies ; 2041 N Highway 78. Ste 104. Wylie, TX 75098. Directions ; (972) 429-4042. Call Now ; Visit Website. http://lesliespool.com.",
+            "position": 1,
+            "ratingCount": 5
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=leslie%27s+swimming+pool+supplies&find_loc=Wylie%2C+TX",
+            "title": "TOP 10 BEST Leslie's Swimming Pool Supplies in Wylie, TX",
+            "rating": 3.9,
+            "snippet": "These are some highly rated hot tub & pool in Wylie, TX: Leslie's Pool Supplies (5/5). Eclipse Pool Service (5/5). Mr Pool Leak Repair ( ...",
+            "position": 2,
+            "ratingCount": 795
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=waterstores&find_loc=Wylie%2C+TX",
+            "title": "THE BEST 10 WATER STORES in WYLIE, TX",
+            "rating": 3.7,
+            "snippet": "What are some highly rated water stores in Wylie, TX? These are some highly rated water stores in Wylie, TX: Aqua Refill (5/5). Leslie's Pool Supplies ( ...",
+            "position": 3,
+            "ratingCount": 327
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool&find_near=target-wylie",
+            "title": "Best Pool near Target in Wylie, TX",
+            "snippet": "... Leslie's Pool Supplies, Canyon Creek Country Club, POOLTEX, Spades Pools ... Wylie, TX · Fire Protection Services in Wylie, TX · Taxidermy in Wylie, TX. Filters.",
+            "position": 4
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Leslies+Pool+Supplies&find_loc=Dallas%2C+TX",
+            "title": "Leslies Pool Supplies Dallas, TX",
+            "rating": 3.4,
+            "snippet": "Leslie's Pool Supplies. 3.1 (7 reviews). Hot Tub & Pool ... 2041 N Highway 78, Ste 104 Wylie, TX 75098. (972) 429-4042. Local Leslie's in Wylie Texas - good ...",
+            "position": 5,
+            "ratingCount": 1072
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Supplies&find_loc=Allen%2C+TX",
+            "title": "TOP 10 BEST Pool Supplies in Allen, TX - Updated 2026",
+            "rating": 4.1,
+            "snippet": "Top 10 Best Pool Supplies in Allen, TX - Last Updated December 2025 - Yelp - Leslie's Pool Supplies ... Wylie, TX 75098. (972) 979-9004. Very pleased with ...",
+            "position": 6,
+            "ratingCount": 1425
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Hot+Tub+Sales&find_loc=Wylie%2C+TX",
+            "title": "TOP 10 BEST Hot Tub Sales in Wylie, TX - Updated 2025",
+            "snippet": "Top 10 Best Hot Tub Sales in Wylie, TX - Last ... Leslie's Pool Supplies, Native Pool Service ... Winter Coats in Wylie, TX · Firing Range in Wylie, TX.",
+            "position": 7
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Supplies&find_loc=Irving%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Supplies in Irving, TX",
+            "rating": 3.9,
+            "snippet": "... Leslie's Pool Supplies, Service & Repair, McAndrew Hot Tubs, Watermark Pools ... Wylie, TX 75098. (972) 979-9004. Very pleased with the reasonable cost ...",
+            "position": 8,
+            "ratingCount": 1020
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Supplies&find_loc=Gainesville%2C+TX+76240",
+            "title": "TOP 10 BEST Pool Supplies near Gainesville, TX 76240",
+            "rating": 3.7,
+            "snippet": "Leslie's Pool Supplies. 2.4 (9 reviews). Hot Tub & Pool ... 2041 N Highway 78, Ste 104 Wylie, TX 75098. (972) 429-4042. I stopped in yesterday (April 18) to ...",
+            "position": 9,
+            "ratingCount": 844
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=pool+stop&find_loc=Rockwall%2C+TX",
+            "title": "Pool Stop Rockwall, TX - Last Updated January 2026",
+            "rating": 3.3,
+            "snippet": "... Leslie's Pool Supplies, Poolwerx - Forest Lane, Texas Leisure Pools & Spas ... Wylie, TX. Show more. Neighborhoods. Deep Ellum, Dallas, TX · Downtown ...",
+            "position": 10,
+            "ratingCount": 882
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:22.501Z",
+      "data": {
+        "cid": "14363585195559885524",
+        "name": "Leslie's Pool Supplies",
+        "found": true,
+        "rating": 4.1,
+        "source": "serper",
+        "address": "11722 Marsh Ln Ste 340, Dallas, TX 75229",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "3 years ago",
+            "text": "My Polaris pool cleaner broke the other day. One of the wheels broke at the flange. I thought I had to buy a new one. They were way more than I expected. It came with the house, so I didn't know. Anyway, the sales person suggested a replacement part instead. Easy. 4 screws and $20 bucks vs $650. Nice. *I didn't catch the sales persons name, but she was about 5ft 4in and had short hair, almost a Mohawk. Receipt says Sydney. If that's you thanks! If not, Sydney, please pass on this review.",
+            "author": "Michael Zittel",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Four guys and not a single person said hello or asked what help we needed.   We walked the entire store, which isn’t big…. From tools to chemicals to toys.   Everyone looked at us and not a word.   We went to another store and bought what we needed.   We will not be back.",
+            "author": "Jason Rutledge",
+            "rating": 1
+          },
+          {
+            "date": "3 years ago",
+            "text": "Just a heads up that even WITH a receipt, I was   asked for my driver's license (?)  to return an item I bought a 1/2 HR before, with the SAME cashier. Was NOT asked for ID when purchasing with a credit card, and it felt totally unnecessary. When I asked about the hassle (I had the receipt AND the credit card) was told it is policy & they had to confirm I was the same person. Felt unnecessary. Leslie's needs to catch up to the 21st century & I won't be going back again. ☹️",
+            "author": "Paul Sue",
+            "rating": 1
+          },
+          {
+            "date": "3 years ago",
+            "text": "I thought my pool pump died because that’s what the crooks at Poolwerx told me. Poolwerx quoted me $2800 for a new pump. I went into Leslie’s on Forest Lane and they quoted me half the price for the same pump. But, after talking with one of their associates about the problem I was experiencing, he figured it was just an issue with the pool pump capacitor, which is a $46 fix. Sure enough, I replaced the capacitor and the pump started working like new again. He literally saved me $2750. Honesty is really hard to find these days so this is the store I will continue to use.",
+            "author": "Michael Schmidt",
+            "rating": 5
+          },
+          {
+            "date": "12 years ago",
+            "text": "Decent place to get everything needed for home pools.   Convenient,   Great hours availability.     It is a little higher priced than mass merchant stores but pay for proximity and convenience -- it's worth it.\n\nTheir Pool School was okay and did learn a little more.\n\nCraig,  the store manager,  reminds me of Jim Cramer.   A good thing !   Helpful,  knowledgeable,   and I have thought friendly enough.     Of course,  like most retail stores,  this is not a  \"bartering open air market\"  so take your coupons and special advertisements in with you when they're offered..   and one should not expect to \"barter\"  for additional discounts like you're coming in from the backwood roads -- cheap cheap cheap !",
+            "author": "D M",
+            "rating": 4
+          },
+          {
+            "date": "8 years ago",
+            "text": "Bad customer service. Been shopping here for years. Tried to return a broken pool brush I bought a month ago and they won't return because it's past 14 days. I need my equipment to last longer than that, it was clearly a bad piece of plastic now it's just junk. Will be taking my business to Dolphin Pool Supply from now on.",
+            "author": "Holt Barber",
+            "rating": 1
+          },
+          {
+            "date": "12 years ago",
+            "text": "I had a really bad shopping experience at this store. The store manager, Craig,  was really mean and rude. He yelled at me when I ask discounts for chlorine and shock. Will never go back there unless Leslie install someone with proper customer service training in place.",
+            "author": "Chen Zhang",
+            "rating": 1
+          },
+          {
+            "date": "3 years ago",
+            "text": "Nick and his staff do a great job with customer service and Polaris repair. Really appreciate all the help. Keep up the good work!",
+            "author": "Josh Holden",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "review_count": 39,
+        "review_source": "serper",
+        "collection_cost": 0.002
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:43:34.872Z",
+      "data": {
+        "found": true,
+        "rating": 3.8,
+        "status": "open",
+        "review_count": 93,
+        "business_name": "Leslie's Pool Supplies"
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T18:45:29.523Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T18:45:30.108Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:32.040Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "domain": "lesliespool.com",
+        "rating": 1.7,
+        "source": "trustpilot",
+        "profile_url": "https://www.trustpilot.com/review/www.lesliespool.com",
+        "trust_score": null,
+        "review_count": 90,
+        "business_name": "Leslie's Poolmart"
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:44:03.075Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:44:07.256Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:44:23.661Z",
+      "data": "Leslie's Pool Supplies Wylie review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 1:50 1:50 Now playing Leslie's Pool Supplies Mobile App 2.0 | Leslie's Leslie's Leslie's • • 13M views 6 years ago Leslie's Leslie's The new and improved Leslie's mobile app is here! On the new Leslie's app, you can log water test information, order pool ... The new and improved Leslie's mobile app is here! On the new Leslie's app, you can log water test information, order pool ... From the video description 10 moments TEST WATER | CUSTOMIZED TREATMENT PLAN | SUPER FAST SUPER | CREATE A POOL PROFILE | ACCESS REWARDS | EXCLUSIVE DEALS | VIEW YOUR TRANSACTION HISTORY | EASY REORDERING | POOL CARE TIPS | STORE LOCATOR 10 auto-generated moments in this video 10 moments TEST WATER TEST WATER 0:13 TEST WATER 0:13 CUSTOMIZED TREATMENT PLAN CUSTOMIZED TREATMENT PLAN 0:26 CUSTOMIZED TREATMENT PLAN 0:26 SUPER FAST SUPER SUPER FAST SUPER 0:33 SUPER FAST SUPER 0:33 CREATE A POOL PROFILE CREATE A POOL PROFILE 0:41 CREATE A POOL PROFILE 0:41 ACCESS REWARDS ACCESS REWARDS 0:49 ACCESS REWARDS 0:49 EXCLUSIVE DEALS EXCLUSIVE DEALS 0:52 EXCLUSIVE DEALS 0:52 VIEW YOUR TRANSACTION HISTORY VIEW YOUR TRANSACTION HISTORY 1:05 VIEW YOUR TRANSACTION HISTORY 1:05 2:33 2:33 Now playing Q&A: What Chemicals Do I Need for My Pool? | Leslie's Leslie's Leslie's • • 6.4K views 2 years ago Leslie's Leslie's With so many pool chemicals out there, how do you know which ones your pool needs? Don't worry! Knowing what pool ... With so many pool chemicals out there, how do you know which ones your pool needs? Don't worry! Knowing what pool ... From the video description 6 chapters Intro | Water Balancers | Sanitizers | Types of Pool Shock | Specialty Chemicals | Free AccuBlue Water Tests 6 chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Water Balancers Water Balancers 0:24 Water Balancers 0:24 Sanitizers Sanitizers 0:43 Sanitizers 0:43 Types of Pool Shock Types of Pool Shock 1:03 Types of Pool Shock 1:03 Specialty Chemicals Specialty Chemicals 1:29 Specialty Chemicals 1:29 Free AccuBlue Water Tests Free AccuBlue Water Tests 2:06 Free AccuBlue Water Tests 2:06 9:23 9:23 Now playing 1:37 9:23 Leslie's Pool Supply - Worth Testing Your Hot Tub Water There? Hot Tub Owner HQ Hot Tub Owner HQ • • 2.5K views 2 years ago Hot Tub Owner HQ Hot Tub Owner HQ Leslie's Pool Supply is a large chain. And while they do cater to pools, they also carry chemicals and supplies for hot tubs. Leslie's Pool Supply is a large chain. And while they do cater to pools, they also carry chemicals and supplies for hot tubs. From the video description Matching chapter 1:37 Leslies Pool Supply Matching chapter Matching chapter Intro Intro 0:00 Intro 0:00 Testing My Water Testing My Water 0:39 Testing My Water 0:39 Leslies Pool Supply Leslies Pool Supply 1:37 Leslies Pool Supply 1:37 Leslies Pool Supply Walkthrough Leslies Pool Supply Walkthrough 2:21 Leslies Pool Supply Walkthrough 2:21 Results Results 3:30 Results 3:30 4:23 4:23 Now playing 6 POOL CHEMICALS to Stop Buying Right Now Swim University Swim University • • 124K views 2 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 8 chapters Stop Buying These Pool Chemicals | 1. Alkalinity Increaser | 2. pH Increaser | 3. pH Decreaser | 4. Chlorine Stabilizer | 5. Calcium Hardness | 6. Phosphate Remover | How to Stop Buying Chlorine 8 chapters in this video 8 chapters Stop Buying These Pool Chemicals Stop Buying These Pool Chemicals 0:00 Stop Buying These Pool Chemicals 0:00 1. Alkalinity Increaser 1. Alkalinity Increaser 0:37 1. Alkalinity Increaser 0:37 2. pH Increaser 2. pH Increaser 1:05 2. pH Increaser 1:05 3. pH Decreaser 3. pH Decreaser 1:51 3. pH Decreaser 1:51 4. Chlorine Stabilizer 4. Chlorine Stabilizer 2:27 4. Chlorine Stabilizer 2:27 5. Calcium Hardness 5. Calcium Hardness 2:48 5. Calcium Hardness 2:48 6. Phosphate Remover 6. Phosphate Remover 3:04 6. Phosphate Remover 3:04 1:30 1:30 Now playing Q&A: What Supplies Are Needed to Open a Pool? | Leslie's Leslie's Leslie's • • 1.1K views 1 year ago Leslie's Leslie's Pool opening is perhaps the most exciting time of year for pool owners. And with Leslie's Pool Opening Kits, we've made opening ... Pool opening is perhaps the most exciting time of year for pool owners. And with Leslie's Pool Opening Kits, we've made opening ... From the video description 4K 2:44 2:44 Now playing Leslie's AccuBlue Home® Dos and Don'ts | Leslie's Leslie's Leslie's • • 5.8K views 2 years ago Leslie's Leslie's At-home pool water testing is easier than ever with Leslie's AccuBlue Home®! In this video, we'll show you the dos and don'ts of ... At-home pool water testing is easier than ever with Leslie's AccuBlue Home®! In this video, we'll show you the dos and don'ts of ... From the video description 3 chapters Intro | AccuBlue Home Best Practices | AccuBlue Home Practices to Avoid 3 chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 AccuBlue Home Best Practices AccuBlue Home Best Practices 0:24 AccuBlue Home Best Practices 0:24 AccuBlue Home Practices to Avoid AccuBlue Home Practices to Avoid 1:22 AccuBlue Home Practices to Avoid 1:22 34:26 34:26 Now playing An Overview of Leslie's Wholesale: Benefits Such as Referrals, Wholesale Pricing and 950 Locations! Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL • • 1.2K views 4 years ago Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL I think one of the best keep secrets and very unintentionally is the fact that Lesli's Pool Supplies also has a growing Wholesale ... I think one of the best keep secrets and very unintentionally is the fact that Lesli's Pool Supplies also has a growing Wholesale ... From the video description 9 moments Number of Locations | Benefits | In-Store Services | Referrals | Wholesale Reps | Wholesale Sales Representatives | Store Teams | Training Programs | Leslie's Pro Program 9 auto-generated moments in this video 9 moments Number of Locations Number of Locations 5:29 Number of Locations 5:29 Benefits Benefits 8:44 Benefits 8:44 In-Store Services In-Store Services 9:16 In-Store Services 9:16 Referrals Referrals 10:38 Referrals 10:38 Wholesale Reps Wholesale Reps 24:38 Wholesale Reps 24:38 Wholesale Sales Representatives Wholesale Sales Representatives 25:00 Wholesale Sales Representatives 25:00 Store Teams Store Teams 27:31 Store Teams 27:31 3:09 3:09 Now playing Leslie's Black Algae Killer Review-Mommy thoughts Mommyisms Mommyisms • • 86K views 9 years ago Mommyisms Mommyisms Review with before and after pool. I used Leslie's pool supplies black algae killer to treat a black algae problem. Cost 30$. Thanks ... Review with before and after pool. I used Leslie's pool supplies black algae killer to treat a black algae problem. Cost 30$. Thanks ... From the video description Summary The video follows a pool owner as they use a black algae killer product from Leslie's Pool Supply. They scrub the pool with a wire brush to remove the algae before adding the product and leaving the pumps running for 24 hours. The video shows the process and the results, leaving the viewer to decide if the product is effective. AI-generated video summary Quality and accuracy may vary. Summary The video follows a pool owner as they use a black algae killer product from Leslie's Pool Supply. They scrub the pool with a wire brush to remove the algae before adding the product and leaving the pumps running for 24 hours. The video shows the process and the results, leaving the viewer to decide if the product is effective. 3:53 3:53 Now playing Leslie's 3\" Chlorine Tabs Review w/ @SPL | Leslie's Leslie's Leslie's • • 2.7K views 1 year ago Leslie's Leslie's At first glance, it can be easy to assume that all chlorine tablets are created equal. But that couldn't be further from the truth! At first glance, it can be easy to assume that all chlorine tablets are created equal. But that couldn't be further from the truth! From the video description 2:45 2:45 Now playing Q&A: How Do I Safely Store My Pool Chemicals? | Leslie's Leslie's Leslie's • • 5.2K views 2 years ago Leslie's Leslie's Whether you have multiple types of pool chemicals or just a few, knowing how to store them correctly is vital. Not only is proper ... Whether you have multiple types of pool chemicals or just a few, knowing how to store them correctly is vital. Not only is proper ... From the video description 5 chapters Intro | Security | Temperature | Ventilation | Safety Tips 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Security Security 0:11 Security 0:11 Temperature Temperature 0:44 Temperature 0:44 Ventilation Ventilation 1:00 Ventilation 1:00 Safety Tips Safety Tips 1:20 Safety Tips 1:20 2:55 2:55 Now playing Pool Service Pro: Open A Leslie's Wholesale Account Today! Free and Easy! Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL • • 2.4K views 5 years ago Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL If you are a pool service pro you may not know that Leslie's Pool Supplies has a Wholesale Division. This means if you are a pool ... If you are a pool service pro you may not know that Leslie's Pool Supplies has a Wholesale Division. This means if you are a pool ... From the video description 4K People also watched 33:35 33:35 Now playing This Might be the World's Best CHEAP Pool Cue! | Pathline FULL REVIEW! Average Joes Pool Average Joes Pool • • 10K views 2 months ago Average Joes Pool Average Joes Pool Seriously, this just might be the best pool cue in the world with such a SUPER CHEAP price tag! Let's take a look... AMAZON ... Seriously, this just might be the best pool cue in the world with such a SUPER CHEAP price tag! Let's take a look... AMAZON ... From the video description 11 chapters Intro | About the Cue | Test 1: Features | Test 2: Straightness | Test 3: Performance | Play Testing | Performance Rating | Test 4: Quality | Test 5: Value | Average Joes Rating | Final Thoughts 11 chapters in this video 11 chapters Intro Intro 0:00 Intro 0:00 About the Cue About the Cue 0:20 About the Cue 0:20 Test 1: Features Test 1: Features 2:01 Test 1: Features 2:01 Test 2: Straightness Test 2: Straightness 7:29 Test 2: Straightness 7:29 Test 3: Performance Test 3: Performance 9:38 Test 3: Performance 9:38 Play Testing Play Testing 10:44 Play Testing 10:44 Performance Rating Performance Rating 14:14 Performance Rating 14:14 25:00 25:00 Now playing The Good, the Bad and the Ugly of a Retail Pool Store Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL • • 5.2K views 6 years ago Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL Everyone seems to have widely differing opinions on retail pool stores . Either you love them, hate them or you fall somewhere in ... Everyone seems to have widely differing opinions on retail pool stores . Either you love them, hate them or you fall somewhere in ... From the video description 8 chapters Intro | Retail Pool Stores | Types of Retail Pool Stores | Customer Service | Education | Testing | Pool Service | Do Your Research 8 auto-generated chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Retail Pool Stores Retail Pool Stores 0:40 Retail Pool Stores 0:40 Types of Retail Pool Stores Types of Retail Pool Stores 2:02 Types of Retail Pool Stores 2:02 Customer Service Customer Service 4:04 Customer Service 4:04 Education Education 10:29 Education 10:29 Testing Testing 13:01 Testing 13:01 Pool Service Pool Service 16:24 Pool Service 16:24 7:22 7:22 Now playing Dolphin Pool Cleaner - BROKEN is FIXED!!! SOLVED with 1$ Bearing | HOW TO REPAIR for MOST Models! LeisureLuke LeisureLuke • • 149K views 5 years ago LeisureLuke LeisureLuke Read the comments! So many people fixing theirs! My $450 Motor Assembly had a seized impeller motor! I took it all apart and ... Read the comments! So many people fixing theirs! My $450 Motor Assembly had a seized impeller motor! I took it all apart and ... From the video description 4 chapters Intro | Diagnosis | The Fix | The Test 4 chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Diagnosis Diagnosis 0:58 Diagnosis 0:58 The Fix The Fix 2:45 The Fix 2:45 The Test The Test 5:23 The Test 5:23 1:48 1:48 Now playing Leslie’s Pool Supplies, Service & Repair- Clarksville, Indiana Jeffrey Sabaj Jeffrey Sabaj • • 582 views 7 years ago Jeffrey Sabaj Jeffrey Sabaj Leslie's Pool Supplies , Service & Repair- Clarksville, Indiana. Leslie's Pool Supplies , Service & Repair- Clarksville, Indiana. From the video description + 6 more 3:13 3:13 Now playing How to Use Pool Test Strips | Leslie's Leslie's Leslie's • • 19K views 1 year ago Leslie's Leslie's For years, test strips have been the go-to way to test your pool water chemistry. They're quick, convenient, and relatively easy to ... For years, test strips have been the go-to way to test your pool water chemistry. They're quick, convenient, and relatively easy to ... From the video description 4 chapters Intro | How Test Strips Work | How to Use Test Strips | Leslie's AccuBlue Home 4 chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 How Test Strips Work How Test Strips Work 0:20 How Test Strips Work 0:20 How to Use Test Strips How to Use Test Strips 0:47 How to Use Test Strips 0:47 Leslie's AccuBlue Home Leslie's AccuBlue Home 1:33 Leslie's AccuBlue Home 1:33 1:38 1:38 Now playing Leslie's Free In-Store AccuBlue® Water Test | Leslie's Leslie's Leslie's • • 729 views 2 years ago Leslie's Leslie's Leslie's AccuBlue® water test is here to help you take the guesswork out of maintaining a clear, safe, and beautiful pool . Leslie's AccuBlue® water test is here to help you take the guesswork out of maintaining a clear, safe, and beautiful pool . From the video description 0:31 0:31 Now playing Leslie's Pool Supplies Off Madison Ave Off Madison Ave • • 1.4K views 6 years ago Off Madison Ave Off Madison Ave 30 Second Commercial. 30 Second Commercial. From the video description 1:43 1:43 Now playing Introducing Leslie's AccuBlue Home® | Leslie's Leslie's Leslie's • • 59K views 2 years ago Leslie's Leslie's Discover the easiest, most accurate way to test your pool water chemistry with Leslie's AccuBlue Home®. Say goodbye to the ... Discover the easiest, most accurate way to test your pool water chemistry with Leslie's AccuBlue Home®. Say goodbye to the ... From the video description Summary Leslie's introduces AccuBlue Home, a device that allows pool owners to test their water at home. The device provides accurate results and a personalized treatment plan, delivered directly to the Leslie's app. With a monthly membership, users receive a free device, monthly credit, and the convenience of ordering supplies directly from the app. AI-generated video summary Quality and accuracy may vary. Summary Leslie's introduces AccuBlue Home, a device that allows pool owners to test their water at home. The device provides accurate results and a personalized treatment plan, delivered directly to the Leslie's app. With a monthly membership, users receive a free device, monthly credit, and the convenience of ordering supplies directly from the app. 2:42 2:42 Now playing Q&A: Can You Put Chlorine Tablets in the Skimmer? | Leslie's Leslie's Leslie's • • 46K views 2 years ago Leslie's Leslie's Putting chlorine tablets in the skimmer is a fairly common trend among pool owners. But while it might seem like a harmless, ... Putting chlorine tablets in the skimmer is a fairly common trend among pool owners. But while it might seem like a harmless, ... From the video description 6 chapters Intro | Why You Shouldn't Put Tablets in the Skimmer | Pump and Filter Concerns | Floating Chlorinators | In-Line and Off-Line Auotmatic Chlorinators | Chlorine Tablet Handling and Use 6 chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Why You Shouldn't Put Tablets in the Skimmer Why You Shouldn't Put Tablets in the Skimmer 0:26 Why You Shouldn't Put Tablets in the Skimmer 0:26 Pump and Filter Concerns Pump and Filter Concerns 1:26 Pump and Filter Concerns 1:26 Floating Chlorinators Floating Chlorinators 1:38 Floating Chlorinators 1:38 In-Line and Off-Line Auotmatic Chlorinators In-Line and Off-Line Auotmatic Chlorinators 1:50 In-Line and Off-Line Auotmatic Chlorinators 1:50 Chlorine Tablet Handling and Use Chlorine Tablet Handling and Use 2:09 Chlorine Tablet Handling and Use 2:09 1:43 1:43 Now playing Tips & Tricks: Leslie's FREE In-Store Pool Cleaner Repairs | Leslie's Leslie's Leslie's • • 1.2K views 1 year ago Leslie's Leslie's At Leslie's , we know that keeping your pool clean, clear, and beautiful takes a lot of time and energy. Which is why we offer FREE ... At Leslie's , we know that keeping your pool clean, clear, and beautiful takes a lot of time and energy. Which is why we offer FREE ... From the video description SHORTS SHORTS Now playing My first purchase in the Leslie’s pool store Tiffainy Casey Tiffainy Casey • • 960 views 3 years ago Tiffainy Casey Tiffainy Casey Pool school at Casey Manor June 10th 2022. Pool school at Casey Manor June 10th 2022. From the video description 1:10 1:10 Now playing How Leslie's In-Store AccuBlue Water Test Works | Leslie's Leslie's Leslie's • • 1K views 1 year ago Leslie's Leslie's Leslie's in- store AccuBlue water test combines cutting edge technology with unbeatable convenience. This revolutionary, 10-point ... Leslie's in- store AccuBlue water test combines cutting edge technology with unbeatable convenience. This revolutionary, 10-point ... From the video description 4K 3:44 3:44 Now playing Leslie's Pool Supplies Store in Simi Valley Review matthew zeleny matthew zeleny • • 572 views 1 year ago matthew zeleny matthew zeleny 0:00 Today I'm going to review you guys a L's boost. Surprise let's go. Inside what's. Going there's a pool . Outside. Wow all for. Poo. Today I'm going to review you guys a L's boost. Surprise let's go. Inside what's. Going there's a pool . Outside. Wow all for. Poo. Automatic captions Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:44:24.692Z",
+      "data": {
+        "query": "site:nextdoor.com Leslie's Pool Supplies Wylie",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/leslies-wylie-tx/",
+            "title": "Leslie's Pool Supplies - Wylie, TX - Nextdoor",
+            "snippet": "We offer the best selection of pool and spa chemicals, pool cleaners, equipment, cleaning accessories, floats, and pool toys. Count on us for complete pool care ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "osha": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:35.697Z",
+      "data": {
+        "found": true,
+        "query": "site:osha.gov \"Leslie's Pool Supplies\"",
+        "source": "osha",
+        "results": [
+          {
+            "link": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1477233.015",
+            "title": "Inspection: 1477233.015 - Leslie'S Pool Supplies",
+            "snippet": "Site Address: Leslie'S Pool Supplies 830 N Imperial Street El Centro, CA 92243 ; Mailing Address: 830 N Imperial Street, El Centro, CA 92243."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search?sic=&naics=&state=CA&officetype=&office=&startmonth=03&startday=09&startyear=2017&endmonth=&endday=09&endyear=&scope=&fedagncode=&owner=&p_start=39180&p_finish=39200&p_sort=open_date&p_desc=DESC&p_direction=Next&p_show=20",
+            "title": "Industry Search Results Page | Occupational Safety and ...",
+            "snippet": "1477233.015, 05/26/2020, 0950632, CA, Complaint, Partial, 453998, Leslie'S Pool Supplies. 39202, 1477425.015, 05/26/2020, 0950635, CA, Unprog Rel, Partial ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search?sic=&naics=&state=CA&officetype=&office=All&startmonth=03&startday=06&startyear=2017&endmonth=&endday=06&endyear=&scope=&fedagncode=&owner=&p_start=24420&p_finish=24440&p_sort=site_state&p_desc=DESC&p_direction=Next&p_show=20",
+            "title": "Industry Search Results Page | Occupational Safety and ...",
+            "snippet": "1477233.015, 05/26/2020, 0950632, CA, Complaint, Partial, 453998, Leslie'S Pool Supplies. 24455, 1477234.015, 06/03/2020, 0950632, CA, Fat/Cat, Partial, 622110 ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search?sic=&naics=&state=CA&officetype=&office=All&startmonth=03&startday=23&startyear=2017&endmonth=03&endday=23&endyear=&scope=&fedagncode=&owner=&p_start=&p_finish=26200&p_sort=open_date&p_desc=ASC&p_direction=Next&p_show=20",
+            "title": "Industry Search Results Page | Occupational Safety and Health ...",
+            "snippet": "Grand Electric & Construction Co. Inc. 26214, 1477233.015, 05/26/2020, 0950632, CA, Complaint, Partial, 453998, Leslie'S Pool Supplies."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:44:41.197Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Leslie's%20Pool%20Supplies&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Leslie's% 20Pool% 20Supplies&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Leslie's% 20Pool% 20Supplies&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Leslie's% 20Pool% 20Supplies&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Leslie's% 20Pool% 20Supplies&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Pool% 20Supplies&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Leslie's% 20Pool% 20Supplies&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= Leslie's% 20Pool% 20Supplies&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:44:45.756Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2026 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:44:52.447Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:00.718Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Leslie's Pool Supplies",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Nov 14, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. WALMART SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. I. Definitions.",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT | NJ.gov",
+            "snippet": "EXHIBIT A - Alleged Harm................................................................................................. A-1.",
+            "position": 2
+          },
+          {
+            "date": "May 14, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/TDP%20v.%20Abbott%20-%20Fifth%20Circuit%20Stay%20(with%20Exhibits).pdf",
+            "title": "In the United States Court of Appeals for the Fifth Circuit",
+            "snippet": "... Supplies: Because there may be a higher volume of ballot by mail requests in 2020, we strongly recommend that you review your current supply ...",
+            "position": 3
+          },
+          {
+            "date": "Feb 28, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/child-support/FINAL.pdf",
+            "title": "[PDF] PETITION FOR REVIEW - Texas Attorney General",
+            "snippet": "... pool of consultants who were available to respond in writing to questions from CASAC members. With limited access to relevant expertise ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Global%20Opioid%20Settlement%20Files/Final%20Distributor%20Settlement%20Agreement.pdf",
+            "title": "DISTRIBUTOR SETTLEMENT AGREEMENT - Attorney General",
+            "snippet": "Page 1. DISTRIBUTOR SETTLEMENT. AGREEMENT. Page 2. i. Table of Contents. Page. I.",
+            "position": 5
+          },
+          {
+            "date": "Sep 19, 2024",
+            "link": "https://texasattorneygeneral.gov/sites/default/files/images/press/State%20Fair%20of%20Texas%20Emergency%20Motion%20For%20Relief%20Pending%20Appeal%20Filed.pdf",
+            "title": "[PDF] In the Court of Appeals for the Fifteenth Judicial District Austin, Texas",
+            "snippet": "To the Honorable Fifteenth Court of Appeals: The Texas Legislature could hardly have been clearer: “[A] political subdivision.",
+            "position": 6
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:01.696Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T18:45:02.862Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Leslie's Pool Supplies",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:03.884Z",
+      "data": {
+        "query": "site:dallascounty.org Leslie's Pool Supplies civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Oct 12, 2017",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2017/2017%20-%2010.pdf",
+            "title": "[PDF] Dallas County Behavioral Health Leadership Team",
+            "snippet": "The DSRIP pool allocation for DY7-8 would be $3.1 billion per DY. The UC pool allocation would be $3.1 billion per DY. Ms. Mintner stated ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "statutory - Dallas County",
+            "snippet": "(Equals Line 1b minus Line 4 plus Line 8.) Criminal Matters. Total Cases. Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL ...",
+            "position": 2
+          },
+          {
+            "date": "Jun 8, 2017",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2017/2017%20-%2006.pdf",
+            "title": "[PDF] Dallas County Behavioral Health Leadership Team",
+            "snippet": "The Bridge has integrated operations with United Gospel Mission. Additionally, The Bridge is sharing a funding pool with Austin Street and will ...",
+            "position": 3
+          },
+          {
+            "date": "Aug 24, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2015/JB_Packet_082415.pdf",
+            "title": "[PDF] z:\"=~\" - Dallas County",
+            "snippet": "The grant funds are not expended for the purchase of equipment, renovation, or construction unless explicitly authorized by the Department ...",
+            "position": 4
+          },
+          {
+            "date": "Jan 6, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2016/JB_Packet_012516_withOrders.pdf",
+            "title": "[PDF] Ptl 4 - Dallas County",
+            "snippet": "Basic supplies and materials are ordered in advance to ensure that ... that the violation of a civil right caused or resulted. from ...",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:05.057Z",
+      "data": {
+        "query": "site:collincountytx.gov Leslie's Pool Supplies",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20Business.pdf",
+            "title": "[PDF] Sorted by Business - Collin County",
+            "snippet": "We have many tools and equipment we provide for our customer's use along with with an onsite store for supply replenishment. We also provide ...",
+            "position": 1
+          },
+          {
+            "date": "Apr 7, 2011",
+            "link": "https://eagenda.collincountytx.gov/docs/2011/CC/20110620_1194/33673_MGT%20Proposal.pdf",
+            "title": "[PDF] MGT of America, Inc. - Collin County",
+            "snippet": "... supplies, general stores, space, and motor pool usage. This task includes for each billed or allocated cost the acquisition of a description.",
+            "position": 2
+          },
+          {
+            "date": "Mar 16, 2015",
+            "link": "https://eagenda.collincountytx.gov/docs/2015/CC/20150316_1720/39623_Certificate%20of%20Public%20Hearing%20-%20signed%20RLD.pdf",
+            "title": "[PDF] certificate of public hearing - Collin County",
+            "snippet": "THE CROWLEY Independent School. District is accepting sealed catalog discount proposals for Maintenance. Equipment, Supplies and Services.",
+            "position": 3
+          },
+          {
+            "date": "Oct 2, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201221_2572/48414_2020%20Small%20Business%20Invoice%20Approved%20Payments.pdf",
+            "title": "[PDF] 2020 10 02 Invoice data extracts.csv - Collin County",
+            "snippet": "Pool cleaning service and pool equipment repair. #4. 251611 FunAsia ... 5000 LESLIE grismore. GRISMORE. OWNER. 552 Oldbridge dr, allen tx ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20City.pdf",
+            "title": "[PDF] Sorted by City - Collin County",
+            "snippet": "253518 Leslie Mason. 12,486 Plano. Leslie. Mason. Owner. 1201, E ... Pool cleaning service and pool equipment repair. 251494 HAM & Cheese ...",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T18:45:08.127Z",
+      "data": {
+        "query": "site:dentoncounty.gov Leslie's Pool Supplies",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:19.889Z",
+      "data": "Leslie’s Pool Supplies Store 812 - Wylie, TX | Supplies, Service & Repair Press Alt+1 for screen-reader mode, Alt+0 to cancel Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window $10 off $100 or more - Buy Online and Pick Up In Store - Shop Now * Track Order | Expert Advice | Services | Are you a Pro? Use Up and Down arrow keys to navigate search results. Are you a Pro? Join or sign in » To earn points ✕ Unlock your Perks! Earn 1 point per $1 spent Access free shipping benefits 5% in rewards with $800+ purchase Rewards today = Savings tomorrow Sign in or join for free » Delivering to 76148 Looks like your current store isn't near your delivery area. Need to update your store? close Enter Delivery ZIP Code Update i We cannot deliver to Hawaii, Alaska, or Puerto Rico. Please enter a zip code within the 48 contiguous states. i Please enter a valid zip code Your zip code will help us to provide you with the most up-to-date delivery information WATAUGA, TX #222 Buy Online Pickup In-Store Available! Curbside Available Leslie's Pool Supplies 6651 WATAUGA RD STE 111 FORT WORTH, TX 76148-3361 Go to store page Find Other Stores My Store WATAUGA, TX #222 0 Back My Store WATAUGA, TX #222 Delivering to 76148 Looks like your current store isn't near your delivery area. Need to update your store? close Enter Delivery ZIP Code Update i We cannot deliver to Hawaii, Alaska, or Puerto Rico. Please enter a zip code within the 48 contiguous states. i Please enter a valid zip code Your zip code will help us to provide you with the most up-to-date delivery information Pool Chemicals Pool Chlorine Tablets Pool Shock Algae Control Water Balancers Specialty Chemicals Bromine Tablets Mineral Systems Water Testing Electronic Water Testing Pool Liquid Chlorine Pool Clarifiers Phosphate Remover Pool Chlorine Tabs 35 lbs Pool Chlorine Tabs 20 lbs Cal Hypo Pool Shock 12-Pk Perfect Weekly 3L Equipment Automatic Pool Cleaners Pool Pumps Pool Filters Above Ground Pool Equipment Pool Heaters & Heat Pumps Salt Systems Pool Lighting Pool Pump Motors Filter Cartridges Chemical Dispensers Automation Controls Hayward Pentair Polaris Shop All Brands In-Store Exclusives Pool Parts Automatic Pool Cleaner Parts Pool Pump Parts Pool Filter Parts Pool Heater & Heat Pump Parts Pool Ladder Parts Pool Vacuum Parts Pool Valve Parts Pool Motors & Motor Parts Hayward Pool Parts Polaris Pool Parts Pentair Pool Parts Jacuzzi® Pool Parts Pools & Accessories Above Ground Pools Pool Covers Above Ground Pool Liners Pool Maintenance Pool Floats & Toys Backyard & Patio Pool Products Soft Sided Pools Pool Ladders & Rails Pool Safety Inground Pool Liners Above Ground Pool Accessories Hot Tub & Spa Hot Tubs Custom Spa Covers Spa Chemicals Spa Parts & Equipment AquaRest Hot Tubs & Accessories Spa Accessories Spa Cartridges Spa Pumps Daily Deals Clearance Clearance Chemicals Clearance Pool Equipment Clearance Pool and Spa Parts Clearance Pool Accessories Clearance Pool Maintenance Clearance Floats, Toys, and Rec Shop All Clearance Shop More Deals SERVICES Feedback Login Use Up and Down arrow keys to navigate search results. Are you a Pro? WYLIE, TX #812 Set as My Store Details: (972) 429-4042 2041 N HIGHWAY 78 STE 104 WYLIE, TX 75098-6048 Get directions Services: Installation Services Hours: Sunday : 10 AM - 5 PM Monday : 10 AM - 6 PM Tuesday : 10 AM - 6 PM Wednesday : 10 AM - 6 PM Thursday : 10 AM - 6 PM Friday : 10 AM - 6 PM Saturday : 10 AM - 6 PM ← Move left → Move right ↑ Move up ↓ Move down + Zoom in - Zoom out Home Jump left by 75% End Jump right by 75% Page Up Jump up by 75% Page Down Jump down by 75% To activate drag with keyboard, press Alt + Enter. Once in keyboard drag state, use the arrow keys to move the marker. To complete the drag, press the Enter key. To cancel, press Escape. Map Terrain Satellite Labels Keyboard shortcuts Map Data Map data ©2026 Google Map data ©2026 Google 10 km Click to toggle between metric and imperial units Terms Report a map error About Wylie, Texas Leslie's Poolmart: At Leslie's Wylie, Texas, find the pool equipment you want or need — including pool pumps, pool motors, heating & cooling, automatic cleaners, cleaning attachments, and much more. Leslie’s is the industry leader in all things pool and spa, So whether you are looking for the best deals on chlorine tablets and other maintenance essentials, or you need to find fun pool floats, we have you covered. Ask any of our pool experts about pool maintenance and the best way to take care of your pool or spa. While you’re in, talk to any of our pool experts and get the best solutions to take care of your pool and/or spa maintenance issues. Let Leslies help you make the best poolside memories. Expert Advice In-Store and Online Resources Price Match Promise If You Find A Lower Price, We Will Match It Free Water Testing Customized Treatment Plans Free In-Store Repair Labor You Only Pay For Parts Free APC Inspection Thousands of Parts In Stock Mobile App Track Water Tests, Rewards, and More At Leslie's, we know pools. But we're more than just pool experts — we're dedicated to helping you get the most out of your pool experience. Whether you're in need of the highest quality pool products always in stock, complimentary in-store AccuBlue® water testing, free in-store labor for pool cleaner repairs, or a range of convenient at-home services from our nationwide service department, Leslie's has you covered. Your local Leslie's is not just a destination for pool maintenance essentials — it's a hub of enjoyment. Explore our collection of fun accessories, including pool toys, vibrant floats, thrilling outdoor games, patio accessories, and more, designed to enhance your poolside lifestyle. And don't forget to ask us about our Price Match Promise — if you find a lower competitor's price, we will match it. No matter what you may need to keep your pool or spa clean, safe, and beautiful, you can always count on Leslie's to help you get the job done right the first time. Frequently Asked Questions What is Leslie's return policy? If you are not satisfied with your purchase, you can return your item(s) within 30 days for a replacement or refund. Products must be unused, in new condition, and in original packaging. You can find more information sabout our policy and exclusions on our Returns & Exchanges page . Do you have a price match policy? Leslie's is proud to offer competitive prices on the highest quality products you need for your pool. If you find a current lower price on an identical, in-stock item from a qualified local or online retailer, we will match the price. Some exclusions apply. You can learn more about this on our policy page for Leslie's Price Match Promise . Does Leslie's offer in-store pickup for online orders With Leslie's, you have the ability to buy the products you need online, in the store, or buy online and pick up in store — whatever is most convenient for you! If you'd like to pick your order up at your local Leslie's, all you need to do is select your preferred store when adding an item to your digital shopping cart. You'll be able to see available inventory at the store(s) closest to your address, so you can select the pickup option that's best for you. After checkout, you'll receive emails with updates about your order status, including a notification when your order is ready for pickup. Why should I sign up for Leslie's Pool Perks? Pool Perks is a loyalty rewards program that offers many great benefits for pool owners. It's FREE to sign up, and you'll automatically start earning points back in Perks rewards on every purchase. You'll also receive exclusive members-only offers and promotions, free shipping for online orders, and lots of other great benefits . What's the difference between AccuBlue® and AccuBlue Home®? If you're familiar with Leslie's in-store water testing experience, you're probably familiar with the power of Leslie's AccuBlue® technology. It's the best way to get comprehensive, precise water test results, and it comes with a customized water treatment plan. With an AccuBlue Home® membership, you can get the same level of water testing accuracy and reliability in the comfort of your own home, with a customized water treatment plan delivered right to your phone. Members receive a state-of-the-art testing device, and the $50 monthly membership fee essentially pays for itself in store credits to purchase the supplies you need. It's the total solution for a clean, safe, and beautiful pool. You can learn more about the program by visiting our page about AccuBlue Home . What kinds of pool equipment can Leslie's repair? Leslie's offers FREE in-store labor on equipment repairs — you only pay for parts. This is perfect for automatic pool cleaners, which are the most frequently repaired pieces of pool equipment. If your robotic, suction side, or pressure side cleaner isn't working as expected, shows wear and tear, or is simply due for a tune-up, just bring it to your local Leslie's for a FREE inspection. If it needs new parts, that's the only thing you'll pay for. We provide the repair labor as a complimentary in-store service. If you're having problems with your pool pump, you can also bring the motor in for a FREE diagnostic test. While we don't repair motors directly, we can help you in finding a replacement capacitor or a new motor, if need be. If you're having trouble with larger and heavier equipment, like your filter, heater, or the pool pump itself, this is where our at-home services come in handy. Stop by your local Leslie's to schedule an appointment with one of our certified service technicians, or you can request an appointment online . You can also learn more about our in-store repair services in this Resource Center article . Best Sellers Liquid Chlorine 4-Pack of 1 Gallon Bottles 46 Reviews $33.99 Shop Now Leslie's - Power Powder Pro Calcium Hypochlorite Pool Shock - 50 lbs 225 Reviews $274.99 Price reduced from $349.99 Shop Now Leslie's - Chlor Brite Granular Chlorine Spa Shock, 2 lbs 137 Reviews $17.99 Price reduced from $23.99 Shop Now Air Supply - Cyclone 3 HP Liner Vacuum and Pool Line Blower 0 Reviews $208.00 Price reduced from $519.99 Shop Now Leslie's - 3 in Jumbo Chlorine Pool Tabs - 35 lbs Bucket 1035 Reviews $149.99 Price reduced from $199.99 Shop Now Leslie's - Perfect Weekly Triple Action Phosphate Remover - 3L 407 Reviews $49.99 Price reduced from $59.99 Shop Now Leslie's - 3 in. Jumbo Chlorine Pool Tabs - 20 lbs. Bucket 1034 Reviews $109.99 Price reduced from $139.99 Shop Now Leslie's - Fresh 'N Clear Non-Chlorine Oxidizing Pool Shock 1 lb. Bags, 12-Pack 62 Reviews $59.88 Price reduced from $119.88 Shop Now Leslie's - Fresh 'N Clear Non-Chlorine Oxidizing Pool Shock, 1 lb Bag 81 Reviews $4.99 Price reduced from $9.99 Shop Now Muriatic Acid 2-Pack of 1 Gallon Bottles 62 Reviews $19.49 Shop Now Liquid Chlorine 4-Pack of 1 Gallon Bottles 46 Reviews $33.99 Shop Now Leslie's - Power Powder Pro Calcium Hypochlorite Pool Shock - 50 lbs 225 Reviews $274.99 Price reduced from $349.99 Shop Now Leslie's - Chlor Brite Granular Chlorine Spa Shock, 2 lbs 137 Reviews $17.99 Price reduced from $23.99 Shop Now Air Supply - Cyclone 3 HP Liner Vacuum and Pool Line Blower 0 Reviews $208.00 Price reduced from $519.99 Shop Now Leslie's - 3 in Jumbo Chlorine Pool Tabs - 35 lbs Bucket 1035 Reviews $149.99 Price reduced from $199.99 Shop Now Leslie's - Perfect Weekly Triple Action Phosphate Remover - 3L 407 Reviews $49.99 Price reduced from $59.99 Shop Now Leslie's - 3 in. Jumbo Chlorine Pool Tabs - 20 lbs. Bucket 1034 Reviews $109.99 Price reduced from $139.99 Shop Now Leslie's - Fresh 'N Clear Non-Chlorine Oxidizing Pool Shock 1 lb. Bags, 12-Pack 62 Reviews $59.88 Price reduced from $119.88 Shop Now Leslie's - Fresh 'N Clear Non-Chlorine Oxidizing Pool Shock, 1 lb Bag 81 Reviews $4.99 Price reduced from $9.99 Shop Now Muriatic Acid 2-Pack of 1 Gallon Bottles 62 Reviews $19.49 Shop Now Liquid Chlorine 4-Pack of 1 Gallon Bottles 46 Reviews $33.99 Shop Now Leslie's - Power Powder Pro Calcium Hypochlorite Pool Shock - 50 lbs 225 Reviews $274.99 Price reduced from $349.99 Shop Now Leslie's - Chlor Brite Granular Chlorine Spa Shock, 2 lbs 137 Reviews $17.99 Price reduced from $23.99 Shop Now Air Supply - Cyclone 3 HP Liner Vacuum and Pool Line Blower 0 Reviews $208.00 Price reduced from $519.99 Shop Now 1 2 3 Need Help? Contact Us Shop Online or at any of our many retail stores! Dive In! Check Order Status Start A Return Expert Advice Find A Service Find a Store Customer Service Check Order Status Returns & Exchanges Store Locator Pool Perks FAQ Gift, Merchandise Cards AccuBlue Home Credits Account Login Product Support Resource Center Pool Service Utility Rebates Leslie's Pro Warranty Safety Data Sheets / SDS Measuring Forms Vendor Code Of Conduct About Us About Leslie's Investor Relations Jobs & Careers Store Locator Commercial Contact Us Leslie's App Customer Service Check Order Status Returns & Exchanges Store Locator Pool Perks FAQ Gift, Merchandise Cards AccuBlue Home Credits Account Login Product Support Resource Center Pool Service Utility Rebates Leslie's Pro Warranty Safety Data Sheets / SDS Measuring Forms Vendor Code Of Conduct About Us About Leslie's Investor Relations Jobs & Careers Store Locator Commercial Contact Us Leslie's App Privacy Policy | Do Not Sell or Share My Personal Information | Terms and Conditions | CA Transp. In Supply Chain Act | Accessibility | Affirm Financing *Pricing, promotions and product availability may vary by location and at lesliespool.com. Pricing and offers are subject to change. Freight charges may apply on oversized products. Shipping charges may apply on select products such as sand and salt. Discounts do not apply toward shipping, handling and freight fees, taxes, the purchase of select items, or previously purchased merchandise. For more details on our price match promise visit: Help Price Match . **OFFER VALID ONLINE AND INSTORE. Limits and restrictions apply. Offer excludes all products from Hayward, Maytronics, Pentair, Pleatco, Raypak, Zodiac/Polaris, service labor, gift certificates, custom covers, custom liners, and other select products from select manufactures. See MAP Terms and Conditions . Offers governed by Leslie’s T&C at Terms and Conditions - Leslie's Help Center . Offer cannot be combined with any other Tabs, Shock, or Perfect Weekly offers. All rights reserved. © 2026 Leslies Poolmart Inc. Our Agents are Offline We’re sorry we missed you; we look forward to assisting you soon. Feel free to leave us a message and we will be in touch as soon as an agent is available. For urgent questions, you can reach us directly at 1-800-537-5437. Thank you for your business! Contact Name Email Phone Subject Description We value your privacy This website uses cookies and similar technologies to manage content, assist in our advertising and marketing efforts, and improve your website experience. You can manage your options by clicking Do Not Sell or Share My Personal Information . By proceeding with our website, you agree to our Terms and Conditions . Learn more in our Privacy Policy . Cookie Settings Acknowledge Privacy Preference Center Your Opt Out Preference Signal is Honored Privacy Policy Strictly Necessary Cookies Performance Cookies Targeting and Social Media Cookies Privacy Policy When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. View the categories below to learn more or to change the default settings. Please note that blocking some types of cookies may impact your experience of the site and the services we are able to offer. View our Privacy Policy Strictly Necessary Cookies Always Active These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Performance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Targeting and Social Media Cookies Targeting and Social Media Cookies Under the CPRA, you have the right to opt-out of the sale or sharing of your personal information to third parties. These cookies collect information for analytics and to personalize your experience with targeted ads. You may exercise your right to opt out of the sale or sharing of personal information by using this toggle switch. If you opt out we will not be able to offer you personalized ads and will not hand over your personal information to any third parties. Additionally, you may contact our legal department for further clarification about your rights as a California consumer by using this Exercise My Rights link.If you have enabled privacy controls on your browser (such as a plugin), we have to take that as a valid request to opt-out. Therefore we would not be able to track your activity through the web. This may affect our ability to personalize ads according to your preferences. Targeting Cookies Switch Label label These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Back Button Cookie List Filter Button Consent Leg.Interest checkbox label label checkbox label label checkbox label label Clear checkbox label label Apply Cancel Confirm My Choices Reject All Allow All Feedback Live chat: Chat with an Expert"
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:20.735Z",
+      "data": {
+        "name": "Leslie's Pool Supplies",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": null,
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:28.013Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/leslies-wylie",
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:32.873Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Leslie's Pool Supplies\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Nellis_afb.NV.-12070.html",
+            "title": "Get matched with top pool builders and installers in Nellis Afb, NV",
+            "snippet": "I ran across Andrew and Kevin via a recommendation from Leslie's pool supplies. I've lived in Vegas a long time, and suffered the creeping cynicism that ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.MaverickPools.145591473.html",
+            "title": "Maverick Pools, LLC Reviews - Las Vegas, NV",
+            "snippet": "I ran across Andrew and Kevin via a recommendation from Leslie's pool supplies. I've lived in Vegas a long time, and suffered the creeping cynicism that ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Grosse_Ile.MI.-12070.html?page=2",
+            "title": "Get matched with top pool builders and installers in Grosse Ile, MI",
+            "snippet": "I hired Ron Johnson who owns Big Surf Pools based on a recommendation from Leslie's Pool Supplies Service & Repair. What a huge mistake. The job to replace ..."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:33.462Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Leslie's Pool Supplies\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-Leslie-s-Swimming-Pool-Supplies-EI_IE1707.11,42.htm",
+            "title": "Working at Leslie's Swimming Pool Supplies",
+            "snippet": "Leslie's Swimming Pool Supplies photo of: Leslie's Pool Supplies. Leslie's Swimming Pool Supplies photo of: Inside. Leslie's Swimming Pool Supplies awards ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/Reviews/Employee-Review-Leslie-s-Swimming-Pool-Supplies-E1707-RVW27783968.htm",
+            "title": "Leslie's Swimming Pool Supplies - Leslie's Pool Supplies review",
+            "snippet": "Leslie's Pool Supplies review - Sales Associate/Cashier Leslie's Swimming Pool Supplies Employee Review ... Teachers you a lot of customer service skills."
+          },
+          {
+            "link": "https://www.glassdoor.com/Reviews/Employee-Review-Leslie-s-Swimming-Pool-Supplies-E1707-RVW85327695.htm",
+            "title": "Leslie's Swimming Pool Supplies",
+            "snippet": "Leslie's pool supplies - Lead Sales Associate Leslie's Swimming Pool Supplies Employee Review. See All Reviews (1271). 4.0. Mar 14, 2024."
+          },
+          {
+            "link": "https://www.glassdoor.com/Photos/Leslie-s-Swimming-Pool-Supplies-Office-Photos-E1707.htm",
+            "title": "Leslie's Swimming Pool Supplies Office Photos",
+            "snippet": "Leslie's Swimming Pool Supplies photo of: Leslie's Pool Supplies Leslie's ... Tampa, FL. Leslie's Swimming Pool Supplies photo of: store Leslie's Swimming Pool ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/job-listing/general-manager-leslie-s-swimming-pool-supplies-JV_IC1132267_KO0,15_KE16,47.htm?jl=1009783454283",
+            "title": "General Manager - leslies poolmart inc",
+            "snippet": "Leslie's pool supplies is the “World's Largest Retailer of Swimming Pool Supplies.” With over 1,000 retail stores in 39 states plus Pro, Service, E-Commerce ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:34.377Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Leslie's Pool Supplies\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Leslie's-Poolmart/reviews/it-s-was-interesting?id=5eec24a5ae19e0e5",
+            "title": "Leslie's Poolmart Leslie's pool supplies Review",
+            "snippet": "Leslie's pool supplies. California. It was an interesting job for those 3 months working there both managers were amazing and fun to work with ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Leslie's-Poolmart/reviews?ftext=summer",
+            "title": "Working at Leslie's Poolmart: 173 Reviews",
+            "snippet": "Working at Leslie's Pool Supplies can be exhausting and frustrating due to high seasonal workloads, frequent inventory inaccuracies, and ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Leslie's-Poolmart/reviews?ftext=pool",
+            "title": "Working at Leslie's Poolmart: 239 Reviews",
+            "snippet": "Working at Leslie's Pool Supplies can be exhausting and frustrating due to high seasonal workloads, frequent inventory inaccuracies, and limited growth ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Leslie's-Poolmart/reviews?fcountry=ALL&fjobtitle=Lead+Associate&ftext=pool",
+            "title": "Leslie's Poolmart Employee Reviews for Lead Associate",
+            "snippet": "Leslie's pool supplies was a fun and lively place to work! The customers were usually compliant, it does get a little intensely busy during the spring and ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Leslie's-Poolmart/salaries/Pool-Manager",
+            "title": "Pool Manager Salaries in the United States for Leslie's ...",
+            "snippet": "Leslie's Pool Supplies Store Manager. Tucson, AZ. no comment after 10 years stress got to me wish it was different and not like how it turned out i was great ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "reddit": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:34.908Z",
+      "data": {
+        "found": true,
+        "query": "site:reddit.com \"Leslie's Pool Supplies\" Wylie",
+        "source": "reddit",
+        "results": [
+          {
+            "link": "https://www.reddit.com/r/pools/comments/manf5y/thoughts_on_leslies_pool_supplies/",
+            "title": "Thoughts on Leslie's Pool Supplies?",
+            "snippet": "Thoughts on Leslie's Pool Supplies? Just looking to know what to think about my Local Leslie's. They seem alright as the manager is awesome ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:45:36.862Z",
+      "data": {
+        "found": true,
+        "query": "\"Leslie's Pool Supplies\" Wylie lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.latimes.com/archives/la-xpm-2003-aug-19-me-poolguy19-story.html",
+            "title": "Death Suit Names Utility",
+            "snippet": "A lawyer for Phoenix-based Leslie's Pool Supplies declined to comment. Kincannon, 46, practiced real estate law for an Irvine firm and was ..."
+          },
+          {
+            "link": "https://www.reddit.com/r/pools/comments/manf5y/thoughts_on_leslies_pool_supplies/",
+            "title": "Thoughts on Leslie's Pool Supplies?",
+            "snippet": "Thoughts on Leslie's Pool Supplies? Just looking to know what to think about my Local Leslie's. They seem alright as the manager is awesome ..."
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=leslie%27s+swimming+pool+supplies&find_loc=Wylie%2C+TX",
+            "title": "TOP 10 BEST Leslie's Swimming Pool Supplies in Wylie, TX",
+            "snippet": "These are some highly rated hot tub & pool in Wylie, TX: Leslie's Pool Supplies (5/5). Eclipse Pool Service (5/5). Mr Pool Leak Repair ( ..."
+          },
+          {
+            "link": "https://www.facebook.com/groups/681745597426721/posts/1150287363905873/",
+            "title": "Pool sand filter repair near Texarkana?",
+            "snippet": "Already reached out to Leslie's pool supplies and Aquavita but they take forever to call back. Trying to get it done asap since holiday ..."
+          },
+          {
+            "link": "https://www.scribd.com/document/455926045/Clarification-List-4420-Through-41020-335741092",
+            "title": "Clarification List 4420 Through 41020 - 335741092 | PDF",
+            "snippet": "Spartanburg Leslie's pool supplies and service Essential 7750 Warren H Abernathy hwy Spartanburg 29301 4/4/2020. Spartanburg Littlemans Auto Parts & Wrecker ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T18:45:55.623Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T18:45:39Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Leslie%27s%20Pool%20Supplies%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=06leaZyJCJWqw8cPkKjcUA\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T18:45:50Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Leslie%27s%20Pool%20Supplies%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=3aleabmTEMGtw8cP1MWpiAg\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Leslie's Pool Supplies",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T18:45:55.835Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Leslie's Pool Supplies",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T18:45:56.394Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T18:45:56.396Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-01-07T18:46:11.266Z",
+      "data": {
+        "cost": 0.00108598,
+        "summary": "The reviews for Leslie's Pool Supplies (retail stores) appear overwhelmingly authentic. The low Trustpilot score is a major outlier but is consistent with the platform's tendency to aggregate complaints about larger corporations, likely related to online sales or corporate policies, not the in-store service reflected in Google reviews. The Google reviews show a realistic mix of very positive experiences (saving money, great advice) and legitimate complaints about customer service and policies.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-01-07T18:46:11.266Z",
+        "fake_signals": [
+          "No clear fake signals in provided review text; reviews contain specific, varied details and span many years."
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "glassdoor": null,
+          "google_hq": 3.8,
+          "trustpilot": 1.7,
+          "google_local": 4.1
+        },
+        "authentic_signals": [
+          "Highly specific details in positive reviews (part names, prices, employee descriptions, competitor quotes)",
+          "Varied writing styles and perspectives across all ratings",
+          "Emotionally authentic complaints with specific incidents",
+          "Reviews span 12+ years, showing long-term pattern",
+          "Mix of praise for knowledgeable staff and criticism for service/policy"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "Poor in-store customer service (ignored, rude staff)",
+          "Strict/unreasonable return policies",
+          "Perceived overpricing compared to competitors",
+          "Online/e-commerce issues (inferred from low Trustpilot)"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Significant discrepancy between Google/BBB ratings (positive) and Trustpilot rating (extremely negative). This suggests Trustpilot may attract a different, more complaint-driven customer base, often for online/e-commerce issues, while Google reviews reflect in-store retail experiences."
+      }
+    }
+  }
+}

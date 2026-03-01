@@ -1,0 +1,100 @@
+{
+  "variation": "C2",
+  "generated_at": "2026-01-20T19:13:01.604Z",
+  "metrics": {
+    "rank_consistency": 1,
+    "avg_variance": 2.993235537619708,
+    "separation": 79.2,
+    "avg_duration_ms": 8369,
+    "avg_cost_usd": 0.07897829999999999
+  },
+  "contractor_results": {
+    "656": {
+      "name": "Bonnie & Clydes Pools and Spas",
+      "archetype": "established_sketchy",
+      "expected": 35,
+      "scores": [
+        62,
+        35,
+        35,
+        35,
+        35
+      ],
+      "avg": 40.4,
+      "variance": 10.8,
+      "avg_duration_ms": 9349,
+      "avg_cost": 0.07889325
+    },
+    "3512": {
+      "name": "1-Tom-Plumber",
+      "archetype": "new_promising",
+      "expected": 75,
+      "scores": [
+        85,
+        82,
+        82,
+        78,
+        82
+      ],
+      "avg": 81.8,
+      "variance": 2.2,
+      "avg_duration_ms": 8188,
+      "avg_cost": 0.09623475
+    },
+    "5744": {
+      "name": "AC Repair Garland",
+      "archetype": "middle_tier",
+      "expected": 50,
+      "scores": [
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "avg": 25,
+      "variance": 0,
+      "avg_duration_ms": 8604,
+      "avg_cost": 0.10190174999999999
+    },
+    "7691": {
+      "name": "Cowboy Hat Capital Foundation Repair Co",
+      "archetype": "known_bad",
+      "expected": 20,
+      "scores": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "avg": 5,
+      "variance": 0,
+      "avg_duration_ms": 7713,
+      "avg_cost": 0.052285500000000006
+    },
+    "8958": {
+      "name": "Splash Pools",
+      "archetype": "gold_standard",
+      "expected": 78,
+      "scores": [
+        85,
+        85,
+        82,
+        87,
+        82
+      ],
+      "avg": 84.2,
+      "variance": 1.9,
+      "avg_duration_ms": 7991,
+      "avg_cost": 0.06557625
+    }
+  },
+  "pass_fail": {
+    "rank_consistency": "PASS",
+    "variance": "PASS",
+    "separation": "PASS",
+    "speed": true,
+    "cost": true
+  }
+}

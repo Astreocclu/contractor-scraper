@@ -1,0 +1,1331 @@
+{
+  "contractor_id": 459,
+  "business_name": "Canyon Oak Pools",
+  "city": "McKinney",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T15:51:56.825Z",
+  "sources": {
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:16:13.520Z",
+      "data": {
+        "query": "site:yelp.com \"Canyon Oak Pools\" \"McKinney, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:19:07.920Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Canyon Oak Pools\" McKinney",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:18:19.765Z",
+      "data": {
+        "name": "Canyon Oak Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 561-9090",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "7850 Collin McKinney Pkwy #204, McKinney, TX 75070",
+        "reviews": [],
+        "website": "https://www.canyonoakpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Canyon%20Oak%20Pools%20Dallas%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:19:04.266Z",
+      "data": {
+        "url": "https://www.houzz.com/professionals/pools-and-spas/mckinney-tx-us-probr0-bo~t_11795~r_4710178",
+        "name": "Canyon Oak Pools",
+        "site": "houzz.com",
+        "error": null,
+        "found": true,
+        "rating": null,
+        "source": "serp_houzz",
+        "confidence": "unknown",
+        "matched_name": null,
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:16:51.398Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:16:54.900Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:16:57.147Z",
+      "data": {
+        "query": "Canyon Oak Pools McKinney site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 9, 2019",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-diving-into-pool-parties-and-more-things-to-do-2/210701/",
+            "title": "Dog About Town: Diving Into Pool Parties and More Things ...",
+            "snippet": "It's time for this year's doggy swim days, when area pools invite pooches in before they close for the season. Dogs must be spayed/neutered, ...",
+            "position": 1
+          },
+          {
+            "date": "Jul 26, 2019",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2019/07/26/dog-about-town-partying-along-the-trinity-and-more-things-to-do/",
+            "title": "Dog About Town: Partying along the Trinity and more ...",
+            "snippet": "Mutts Canine Cantina is celebrating the Dog Days of Summer with ice-filled pools for the pooches and $4 draft beer all day Wednesdays at both ...Read more",
+            "position": 2
+          },
+          {
+            "date": "Jul 23, 2010",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2010/07/23/dog-about-town-nibbling-to-help-others-and-more-things-to-do/",
+            "title": "Dog About Town: Nibbling to help others and more things ...",
+            "snippet": "Along with wading pools, they'll have free frozen treats (while supplies last) for the dogs and lemonade for their companions, and a doggie spa ...Read more",
+            "position": 3
+          },
+          {
+            "date": "Aug 9, 2019",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2019/08/09/dog-about-town-diving-into-pool-parties-and-more-things-to-do/",
+            "title": "Dog About Town: Diving into pool parties and more things ...",
+            "snippet": "It's time for this year's doggy swim days, when area pools invite pooches in before they close for the season. Dogs must be spayed/neutered, ...",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:09.591Z",
+      "data": "Canyon Oak Pools McKinney review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 1:47 1:47 Now playing Canyon Oak Pools \"A Day in the Life\" | Pool Builders Canyon Oak Pools Canyon Oak Pools • • 629 views 2 years ago Canyon Oak Pools Canyon Oak Pools Come along for the journey of building custom swimming pools in North Texas! At Canyon Oak Pools , we knew from the very ... Come along for the journey of building custom swimming pools in North Texas! At Canyon Oak Pools , we knew from the very ... From the video description 4K 1:49 1:49 Now playing Watch Us Build a CUSTOM POOL in Just 2 Minutes! Canyon Oak Pools Canyon Oak Pools • • 426 views 2 years ago Canyon Oak Pools Canyon Oak Pools After 28 years selling, designing, and building custom swimming pools , Canyon Oak Pools has the expertise and experience to ... After 28 years selling, designing, and building custom swimming pools , Canyon Oak Pools has the expertise and experience to ... From the video description 4K 6:22 6:22 Now playing Everything You Need To Know Before Building A Pool! Josh Beberg Josh Beberg • • 214K views 2 years ago Josh Beberg Josh Beberg Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... From the video description 4K Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. AI-generated video summary Quality and accuracy may vary. Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. Save a bundle on auto and renters insurance Help cover your needs and save with USAA. Sponsored USAA Watch Get quote 2:58 2:58 Now playing Homeowner says warranty company refuses to pay for pool pump repair Arizona’s Family (3TV / CBS 5) Arizona’s Family (3TV / CBS 5) • • 1.7K views 1 year ago Arizona’s Family (3TV / CBS 5) Arizona’s Family (3TV / CBS 5) Cave Creek homeowner John Glynn says his pool filter broke, but when Choice Home Warranty denied his claim, he called On ... Cave Creek homeowner John Glynn says his pool filter broke, but when Choice Home Warranty denied his claim, he called On ... From the video description CC 3:05 3:05 Now playing Pros and Cons of Screened Pool | St Johns County New Home Pro Tips Moving To St Johns County Florida With Josh Rogers Moving To St Johns County Florida With Josh Rogers • • 10K views 2 years ago Moving To St Johns County Florida With Josh Rogers Moving To St Johns County Florida With Josh Rogers Screening in a Pool has both Pros and Cons. On the negative side, the expense of installing and maintaining screen enclosures ... Screening in a Pool has both Pros and Cons. On the negative side, the expense of installing and maintaining screen enclosures ... From the video description 12:06 12:06 Now playing Avoid Living In A 55 Plus Community - Problems In Adult Retirement Communities - Don’t Buy 55+ TheRetirementality TheRetirementality • • 146K views 1 year ago TheRetirementality TheRetirementality Many people want to downsize their homes when they get older. But, not everyone is cut out to live in a condo. So people looks to ... Many people want to downsize their homes when they get older. But, not everyone is cut out to live in a condo. So people looks to ... From the video description 3:57 3:57 Now playing Gilbert pool business license revoked after consumer complaints Arizona’s Family (3TV / CBS 5) Arizona’s Family (3TV / CBS 5) • • 7.9K views 1 year ago Arizona’s Family (3TV / CBS 5) Arizona’s Family (3TV / CBS 5) Gilbert pool building business Unity Pools , owned by Travis Scott, is under fire for taking homeowners' money and abandoning ... Gilbert pool building business Unity Pools , owned by Travis Scott, is under fire for taking homeowners' money and abandoning ... From the video description CC People also watched 1:34 1:34 Now playing Step by Step swimming pool construction Florida Pool Patio Corp. Florida Pool Patio Corp. • • 449 views 6 years ago Florida Pool Patio Corp. Florida Pool Patio Corp. Do you want to know how to build a swimming pool ? Here we show you the whole process in under 2 minutes. If you have any ... Do you want to know how to build a swimming pool ? Here we show you the whole process in under 2 minutes. If you have any ... From the video description 11:07 11:07 Now playing How Katz's Deli Serves 70,000 Pounds Of Meat A Week | Full Service Insider Food Insider Food • • 158K views 15 hours ago Insider Food Insider Food Eating at Katz's Delicatessen, which has been on the Lower East Side since 1888, is basically a New York rite of passage. Eating at Katz's Delicatessen, which has been on the Lower East Side since 1888, is basically a New York rite of passage. From the video description New 8 chapters Intro | The Breakfast Shift and Kitchen Prep | The Ticketing System | The Sandwich Counter | The Cutters | The Other Counters | Katz’s Legacy | Credits 8 chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 The Breakfast Shift and Kitchen Prep The Breakfast Shift and Kitchen Prep 1:01 The Breakfast Shift and Kitchen Prep 1:01 The Ticketing System The Ticketing System 2:35 The Ticketing System 2:35 The Sandwich Counter The Sandwich Counter 3:22 The Sandwich Counter 3:22 The Cutters The Cutters 5:23 The Cutters 5:23 The Other Counters The Other Counters 8:15 The Other Counters 8:15 Katz’s Legacy Katz’s Legacy 9:47 Katz’s Legacy 9:47 1:44:59 1:44:59 Now playing 2 HOURS of Bluey Christmas Moments, and Much More! 🤩 🎅 ✨ | Bluey Bluey - Official Channel Bluey - Official Channel • • 177K views 14 hours ago Bluey - Official Channel Bluey - Official Channel Dive into 2 hours of Christmas magic with Bluey and her family, featuring special moments and Christmas joy!... SUBSCRIBE ... Dive into 2 hours of Christmas magic with Bluey and her family, featuring special moments and Christmas joy!... SUBSCRIBE ... From the video description New 8:28 8:28 Now playing SNEAK PEEK: Gizelle on Angel's Eviction Rumor: \"It Was a Joke\" | RHOP After Show (S10 E12) | Bravo Bravo Bravo • • 10K views 4 hours ago Bravo Bravo On The Real Housewives of Potomac After Show Season 10 Episode 12, Angel Massie addresses her eviction rumors, with ... On The Real Housewives of Potomac After Show Season 10 Episode 12, Angel Massie addresses her eviction rumors, with ... From the video description New 3 chapters Introduction | The RHOP Ladies Weigh In On Keiarna Moving Back In With Her Boyfriend Greg | Angel Massie Shuts Down The Eviction Rumors 3 chapters in this video 3 chapters Introduction Introduction 0:00 Introduction 0:00 The RHOP Ladies Weigh In On Keiarna Moving Back In With Her Boyfriend Greg The RHOP Ladies Weigh In On Keiarna Moving Back In With Her Boyfriend Greg 1:02 The RHOP Ladies Weigh In On Keiarna Moving Back In With Her Boyfriend Greg 1:02 Angel Massie Shuts Down The Eviction Rumors Angel Massie Shuts Down The Eviction Rumors 6:24 Angel Massie Shuts Down The Eviction Rumors 6:24 + 6 more Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:10.610Z",
+      "data": {
+        "query": "site:nextdoor.com Canyon Oak Pools McKinney",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/city/mckinney--tx/",
+            "price": 150,
+            "title": "McKinney, TX | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "McKinney, Texas is a peaceful and family-friendly city known for its historic downtown and natural parks. Nextdoor Neighbors appreciate its cleanliness and ...",
+            "currency": "US$",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:23.572Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Canyon%20Oak%20Pools&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Canyon% 20Oak% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Canyon% 20Oak% 20Pools&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://echo.epa.gov/help/training",
+                "title": "ECHO Training"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Canyon% 20Oak% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Canyon% 20Oak% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Canyon% 20Oak% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Canyon% 20Oak% 20Pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter and is refreshed ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= Canyon% 20Oak% 20Pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= Canyon% 20Oak% 20Pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+            "title": "Search Results Help | ECHO | US EPA",
+            "snippet": "The search results page allows you to interact with the data and information presented. The results page can be customized to your preferred view.",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= Canyon% 20Oak% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "Aug 26, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= Canyon% 20Oak% 20Pools&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:51.490Z",
+      "data": {
+        "name": "Canyon Oak Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": null,
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:19:07.345Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Canyon Oak Pools\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:19:08.491Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Canyon Oak Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:27.525Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:33.074Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:17:41.701Z",
+      "data": {
+        "query": "site:apps.tarrantcounty.com Canyon Oak Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:43.873Z",
+      "data": {
+        "query": "site:collincountytx.gov Canyon Oak Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jul 22, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210726_2664/38983_20210722%20NCTCOG%20Executive%20Board%20Meeting.pdf",
+            "title": "North Central Texas Council of Governments TO",
+            "snippet": "He explained the goal of the project is to prepare the trail to be a local, State, and national attraction by creating a regional trail name and ...Read more",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:49.927Z",
+      "data": "Canyon Oak Pools | DFW Pool Builders 0 Fall and Winter are the best times to build. Call us today to ensure you’re swimming next summer! Skip to Content Home About Us Our Team Our Service Area Our Projects Pool Build FAQ Services Custom Pool & Spa Design Your Own Pool Remodel Design & Build Financing Reviews Blog Get Quote Open Menu Close Menu Home About Us Our Team Our Service Area Our Projects Pool Build FAQ Services Custom Pool & Spa Design Your Own Pool Remodel Design & Build Financing Reviews Blog Get Quote Open Menu Close Menu Home Folder: About Us Folder: Services Financing Reviews Blog Get Quote Back Our Team Our Service Area Our Projects Pool Build FAQ Back Custom Pool & Spa Design Your Own Pool Remodel Design & Build YOUR NORTH TEXAS CUSTOM POOL BUILDER Who You Build With Matters® \\n\\n \"}\" data-block-type=\"22\" data-sqsp-block=\"embed\" id=\"block-yui_3_17_2_1_1745424564006_15052\"> Building pools, from our family to yours. Canyon Oak Pools is family-owned and operated by design, servicing our neighbors in North Texas. Being an elite custom builder is more than a finished product. We operate with core values of integrity, attention to detail, and unmatched customer service. Your project matters. Your home matters. Your family matters. Who you build with matters. Let us help you design the perfect pool for your space, according to your unique dreams! After our consultant walks your home and learns what is important to you, they will create an interactive 3-D design according to your exact specifications. At this stage you also get to choose materials such as tiles, water features, and stone to truly put your unique touch on your project. This entire process will be a collaboration, and you can be as hands-on as you like! Whatever your idea, let Canyon Oak Pools’ experienced team help you turn it into a reality. \", \"button\": { \"buttonText\": \"Pool Design\", \"buttonLink\": \"https://www.canyonoakpools.com/design-your-own-pool\", \"buttonNewWindow\": false }, \"imageId\": \"67fd68923ec0885b5757aa10\", \"imageAltText\": \"a pool and swing in a residential backyard.\", \"image\": { \"id\": \"67fd68923ec0885b5757aa10\", \"recordType\": 2, \"addedOn\": 1744660626598, \"updatedOn\": 1744660626665, \"workflowState\": 1, \"publishOn\": 1744660626598, \"authorId\": \"60eb4a2e805469324a214f12\", \"systemDataId\": \"0c27cc4f-1630-4a2e-a805-c99585750100\", \"systemDataVariants\": \"1200x960,100w,300w,500w,750w,1000w\", \"systemDataSourceType\": \"JPG\", \"filename\": \"IMG_2893.JPG\", \"mediaFocalPoint\": { \"x\": 0.5, \"y\": 0.5, \"source\": 3 }, \"colorData\": { \"topLeftAverage\": \"1f2b27\", \"topRightAverage\": \"2c2713\", \"bottomLeftAverage\": \"e7e6e6\", \"bottomRightAverage\": \"bbbabf\", \"centerAverage\": \"3f6e73\", \"suggestedBgColor\": \"5b6a6a\" }, \"urlId\": \"1p8ituo0ud0ihag0fjszgyr0as44fq\", \"title\": \"\", \"body\": null, \"likeCount\": 0, \"commentCount\": 0, \"publicCommentCount\": 0, \"commentState\": 2, \"unsaved\": false, \"assetUrl\": \"https://images.squarespace-cdn.com/content/v1/60eb4b8a060c752cc3add9f8/0c27cc4f-1630-4a2e-a805-c99585750100/IMG_2893.JPG\", \"contentType\": \"image/jpeg\", \"items\": [ ], \"pushedServices\": { }, \"pendingPushedServices\": { }, \"originalSize\": \"1200x960\", \"recordTypeLabel\": \"image\" } }, { \"title\": \"Build it.\", \"description\": \" Building your backyard oasis is an incredibly exciting time! Watch your dreams manifest as our experienced team takes you from “Dig Day” all the way to filling your new pool. We pride ourselves not only on decades of experience in pool construction, but also on utilizing materials that provide top-notch quality and integrity to your build. What and who you use to build your pool matters. Enjoy “white glove” customer service from start to splash. \", \"button\": { \"buttonText\": \"Pool Construction\", \"buttonLink\": \"/custom-pool-and-spa\", \"buttonNewWindow\": false }, \"imageId\": \"67fd69f24e260c2b717251be\", \"imageAltText\": \"a beautiful water feature on a custom pool.\", \"image\": { \"id\": \"67fd69f24e260c2b717251be\", \"recordType\": 2, \"addedOn\": 1744660978912, \"updatedOn\": 1744660978984, \"workflowState\": 1, \"publishOn\": 1744660978912, \"authorId\": \"60eb4a2e805469324a214f12\", \"systemDataId\": \"f6e29a7d-4628-47ed-906c-dcbcf1893aa8\", \"systemDataVariants\": \"1200x1015,100w,300w,500w,750w,1000w\", \"systemDataSourceType\": \"JPG\", \"filename\": \"IMG_0730.JPG\", \"mediaFocalPoint\": { \"x\": 0.5, \"y\": 0.5, \"source\": 3 }, \"colorData\": { \"topLeftAverage\": \"68656b\", \"topRightAverage\": \"545345\", \"bottomLeftAverage\": \"758238\", \"bottomRightAverage\": \"818745\", \"centerAverage\": \"65625f\", \"suggestedBgColor\": \"7c8466\" }, \"urlId\": \"meixod0l25nc9z99r9vd9j41fsk27l\", \"title\": \"\", \"body\": null, \"likeCount\": 0, \"commentCount\": 0, \"publicCommentCount\": 0, \"commentState\": 2, \"unsaved\": false, \"assetUrl\": \"https://images.squarespace-cdn.com/content/v1/60eb4b8a060c752cc3add9f8/f6e29a7d-4628-47ed-906c-dcbcf1893aa8/IMG_0730.JPG\", \"contentType\": \"image/jpeg\", \"items\": [ ], \"pushedServices\": { }, \"pendingPushedServices\": { }, \"originalSize\": \"1200x1015\", \"recordTypeLabel\": \"image\" } }, { \"title\": \"Grow it.\", \"description\": \" Transform your existing pool from an eyesore to your own peaceful paradise. Perhaps your tastes have changed, or perhaps you bought-in to a pool that never quite fit your style. Either way, a remodel is a time-efficient and cost-effective way for you to recreate the backyard you’ve always wanted! While you’re updating the aesthetics, you may also enjoy upgrading your pool operating equipment to a more energy efficient and eco - friendly system, that you control from your fingertips. You have the bones, we will make them beautiful and functional for your family! \", \"button\": { \"buttonText\": \"Pool Remodels\", \"buttonLink\": \"/remodel\", \"buttonNewWindow\": false }, \"imageId\": \"68a60ed6ac3c267083c5be59\", \"imageAltText\": \"a custom pool with a branded Canyon Oak Pools tote bag.\", \"image\": { \"id\": \"68a60ed6ac3c267083c5be59\", \"recordType\": 2, \"addedOn\": 1755713238747, \"updatedOn\": 1755713238783, \"workflowState\": 1, \"publishOn\": 1755713238747, \"authorId\": \"60eb4a2e805469324a214f12\", \"systemDataId\": \"929947d7-d9af-4020-b779-25d10a70763e\", \"systemDataVariants\": \"1200x960,100w,300w,500w,750w,1000w\", \"systemDataSourceType\": \"JPG\", \"filename\": \"IMG_9674.JPG\", \"mediaFocalPoint\": { \"x\": 0.5, \"y\": 0.5, \"source\": 3 }, \"colorData\": { \"topLeftAverage\": \"7cacd2\", \"topRightAverage\": \"77a8cd\", \"bottomLeftAverage\": \"8c9b9f\", \"bottomRightAverage\": \"2f92ad\", \"centerAverage\": \"3a6688\", \"suggestedBgColor\": \"63848e\" }, \"urlId\": \"b3y2nxdxvnchvbm5uccij4h4n282of\", \"title\": \"\", \"body\": null, \"likeCount\": 0, \"commentCount\": 0, \"publicCommentCount\": 0, \"commentState\": 2, \"unsaved\": false, \"assetUrl\": \"https://images.squarespace-cdn.com/content/v1/60eb4b8a060c752cc3add9f8/929947d7-d9af-4020-b779-25d10a70763e/IMG_9674.JPG\", \"contentType\": \"image/jpeg\", \"items\": [ ], \"pushedServices\": { }, \"pendingPushedServices\": { }, \"originalSize\": \"1200x960\", \"recordTypeLabel\": \"image\" } } ], \"styles\": { \"imageFocalPoint\": { \"x\": 0.5, \"y\": 0.5 }, \"imageOverlayOpacity\": 0.3, \"sectionTheme\": \"white\", \"imageEffect\": \"none\", \"backgroundMode\": \"image\", \"backgroundImage\": null }, \"video\": { \"filter\": 1, \"videoFallbackContentItem\": null, \"nativeVideoContentItem\": null, \"videoSourceProvider\": \"none\" }, \"backgroundImageFocalPoint\": null, \"backgroundImageId\": null, \"options\": { \"maxColumns\": 3, \"isCardEnabled\": false, \"isMediaEnabled\": true, \"isTitleEnabled\": false, \"isBodyEnabled\": true, \"isButtonEnabled\": true, \"mediaAspectRatio\": \"4:3\", \"layoutWidth\": \"full\", \"mediaWidth\": { \"value\": 100, \"unit\": \"%\" }, \"mediaAlignment\": \"left\", \"contentWidth\": { \"value\": 100, \"unit\": \"%\" }, \"titleAlignment\": \"center\", \"bodyAlignment\": \"center\", \"buttonAlignment\": \"center\", \"titlePlacement\": \"center\", \"bodyPlacement\": \"center\", \"buttonPlacement\": \"center\", \"cardVerticalAlignment\": \"top\", \"contentOrder\": \"media-first\", \"verticalPaddingTop\": { \"value\": 3.3, \"unit\": \"vmax\" }, \"verticalPaddingBottom\": { \"value\": 3.3, \"unit\": \"vmax\" }, \"spaceBetweenColumns\": { \"value\": 20, \"unit\": \"px\" }, \"spaceBetweenRows\": { \"value\": 20, \"unit\": \"px\" }, \"spaceBetweenContentAndMedia\": { \"value\": 0, \"unit\": \"%\" }, \"spaceBelowTitle\": { \"value\": 6, \"unit\": \"%\" }, \"spaceBelowBody\": { \"value\": 7, \"unit\": \"%\" }, \"cardPaddingTop\": { \"value\": 20, \"unit\": \"px\" }, \"cardPaddingRight\": { \"value\": 20, \"unit\": \"px\" }, \"cardPaddingBottom\": { \"value\": 20, \"unit\": \"px\" }, \"cardPaddingLeft\": { \"value\": 20, \"unit\": \"px\" }, \"titleFontSize\": \"heading-2\", \"bodyFontSize\": \"paragraph-2\", \"buttonFontSize\": \"button-medium\", \"customOptions\": { \"customTitleFontSize\": { \"value\": 1.2, \"unit\": \"rem\" }, \"customBodyFontSize\": { \"value\": 0.9, \"unit\": \"rem\" }, \"customButtonFontSize\": { \"value\": 0.8, \"unit\": \"rem\" } } }, \"layout\": \"simple\", \"isSectionTitleEnabled\": false, \"sectionTitle\": null, \"spaceBelowSectionTitle\": { \"value\": 70, \"unit\": \"px\" }, \"sectionTitleAlignment\": \"center\", \"isSectionButtonEnabled\": false, \"sectionButton\": { \"buttonText\": \"Make It\", \"buttonLink\": \"#\", \"buttonNewWindow\": false }, \"sectionButtonSize\": \"large\", \"sectionButtonAlignment\": \"left\", \"spaceAboveSectionButton\": { \"value\": 70, \"unit\": \"px\" } }\" data-media-alignment=\"left\" data-title-alignment=\"center\" data-body-alignment=\"center\" data-button-alignment=\"center\" data-title-placement=\"center\" data-body-placement=\"center\" data-button-placement=\"center\" data-layout-width=\"full\" data-title-font-unit=\"rem\" data-description-font-unit=\"rem\" data-button-font-unit=\"rem\" data-space-between-rows=\"20px\" data-space-between-columns=\"20px\" data-vertical-padding-top-value=\"3.3\" data-vertical-padding-bottom-value=\"3.3\" data-vertical-padding-top-unit=\"vmax\" data-vertical-padding-bottom-unit=\"vmax\" data-controllers-bound=\"UserItemsListSimple\"> Let us help you design the perfect pool for your space, according to your unique dreams! After our consultant walks your home and learns what is important to you, they will create an interactive 3-D design according to your exact specifications. At this stage you also get to choose materials such as tiles, water features, and stone to truly put your unique touch on your project. This entire process will be a collaboration, and you can be as hands-on as you like! Whatever your idea, let Canyon Oak Pools’ experienced team help you turn it into a reality. Pool Design Building your backyard oasis is an incredibly exciting time! Watch your dreams manifest as our experienced team takes you from “Dig Day” all the way to filling your new pool. We pride ourselves not only on decades of experience in pool construction, but also on utilizing materials that provide top-notch quality and integrity to your build. What and who you use to build your pool matters. Enjoy “white glove” customer service from start to splash. Pool Construction Transform your existing pool from an eyesore to your own peaceful paradise. Perhaps your tastes have changed, or perhaps you bought-in to a pool that never quite fit your style. Either way, a remodel is a time-efficient and cost-effective way for you to recreate the backyard you’ve always wanted! While you’re updating the aesthetics, you may also enjoy upgrading your pool operating equipment to a more energy efficient and eco - friendly system, that you control from your fingertips. You have the bones, we will make them beautiful and functional for your family! Pool Remodels \\n\\n \"}\" data-block-type=\"22\" data-sqsp-block=\"embed\" id=\"block-yui_3_17_2_1_1745424564006_10490\"> Canyon Oak Pools is the company all of your neighbors are talking about! Follow along with us on a “day in the life” of your neighborhood custom pool builder! \"},\"isOldBlock\":false,\"html\":\" \",\"url\":\"https://youtu.be/Yz0_Xe0-5_0\",\"width\":200,\"height\":113,\"providerName\":\"YouTube\",\"thumbnailUrl\":\"https://i.ytimg.com/vi/Yz0_Xe0-5_0/hqdefault.jpg\",\"resolvedBy\":\"youtube\"}\" data-block-type=\"32\" id=\"block-aa1784b2b38090891c3a\"> \" id=\"yui_3_17_2_1_1766384265996_79\"> Melissa K, Google \", \"button\": { \"buttonText\": \"Make It\", \"buttonLink\": \"#\" }, \"mediaFocalPoint\": { \"x\": 0.5055350553505535, \"y\": 0.7433776217932648 }, \"imageId\": \"636c59252c694d21490f43e1\", \"image\": { \"id\": \"636c59252c694d21490f43e1\", \"recordType\": 2, \"addedOn\": 1618511383668, \"updatedOn\": 1618512009075, \"starred\": false, \"passthrough\": false, \"workflowState\": 1, \"publishOn\": 1618511383668, \"authorId\": \"60eb4a2e805469324a214f12\", \"systemDataId\": \"1618511387030-5LI1E5QMVTQ2RY9S00A4\", \"systemDataVariants\": \"2500x1723,100w,300w,500w,750w,1000w,1500w,2500w\", \"systemDataSourceType\": \"JPG\", \"filename\": \"20140228_Trade 151_0046 1.jpg\", \"mediaFocalPoint\": { \"x\": 0.5, \"y\": 0.5, \"source\": 3 }, \"colorData\": { \"topLeftAverage\": \"f5fbfb\", \"topRightAverage\": \"f0f5f9\", \"bottomLeftAverage\": \"6189a3\", \"bottomRightAverage\": \"514f41\", \"centerAverage\": \"e4edf1\", \"suggestedBgColor\": \"f5fbfb\" }, \"urlId\": \"6pkz29duzq94fmhgz4r0cem3u3wyj5-7gskj-sm3lh\", \"title\": \"\", \"body\": null, \"likeCount\": 0, \"commentCount\": 0, \"publicCommentCount\": 0, \"commentState\": 2, \"unsaved\": false, \"assetUrl\": \"https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1618511387030-5LI1E5QMVTQ2RY9S00A4/20140228_Trade+151_0046+1.jpg\", \"contentType\": \"image/jpeg\", \"items\": [ ], \"pushedServices\": { }, \"pendingPushedServices\": { }, \"originalSize\": \"2500x1723\", \"recordTypeLabel\": \"image\" } }, { \"title\": \"\\\"Canyon Oak Pools was a dream to work with from design to clean up. Every detail was explained. My questions were always answered in a very timely manner & I was never made to feel like my questions weren’t important. I wanted to beautiful pool that was great quality and that’s exactly what I received. The owner of the company himself was at our home anytime anyone was working on our pool. He expects high quality work so things were addressed before I even had to. Our pool was completed in about 53 days! I received 7 quotes from different companies but my gut told me to go with canyon oaks & I am 1000% confident I made the right choice. I have a beautiful oasis, there were no major issues or wait times & the communication was stellar. I would recommend these guys to anyone!\\\" \", \"description\": \" Megan H, Google \", \"button\": { \"buttonText\": \"Make It\" }, \"mediaFocalPoint\": { \"x\": 0.5, \"y\": 0.5 }, \"imageId\": \"636c59252c694d21490f43e4\", \"image\": { \"id\": \"636c59252c694d21490f43e4\", \"recordType\": 2, \"addedOn\": 1618511437285, \"updatedOn\": 1618512009081, \"starred\": false, \"passthrough\": false, \"workflowState\": 1, \"publishOn\": 1618511437285, \"authorId\": \"60eb4a2e805469324a214f12\", \"systemDataId\": \"1618511440608-5BVMHVN4WR2I9YQV1WWR\", \"systemDataVariants\": \"2500x1658,100w,300w,500w,750w,1000w,1500w,2500w\", \"systemDataSourceType\": \"JPG\", \"filename\": \"Aro Ha_0010 1.jpg\", \"mediaFocalPoint\": { \"x\": 0.5, \"y\": 0.5, \"source\": 3 }, \"colorData\": { \"topLeftAverage\": \"cbd9e0\", \"topRightAverage\": \"d3d8dc\", \"bottomLeftAverage\": \"6e5b2b\", \"bottomRightAverage\": \"5f4e29\", \"centerAverage\": \"bdcfd5\", \"suggestedBgColor\": \"c7d6dd\" }, \"urlId\": \"zvgfd0amkuhmnh8lklpautk0xbyz2u-5zy4d-mkcdb\", \"title\": \"\", \"body\": null, \"likeCount\": 0, \"commentCount\": 0, \"publicCommentCount\": 0, \"commentState\": 2, \"unsaved\": false, \"assetUrl\": \"https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1618511440608-5BVMHVN4WR2I9YQV1WWR/Aro+Ha_0010+1.jpg\", \"contentType\": \"image/jpeg\", \"items\": [ ], \"pushedServices\": { }, \"pendingPushedServices\": { }, \"originalSize\": \"2500x1658\", \"recordTypeLabel\": \"image\" } }, { \"title\": \"“We are so happy with our pool! It's crazy how easy this whole process was. Mike Woodfin was extremely patient with us during the design phase, and we ended up with something that blows away anything we could have imagined. Constant communication, detailed explanations on everything as it was happening, and just great work. We can't thank Larry, Susan and Mike enough!!”\", \"description\": \" Mike K, Facebook \", \"button\": { \"buttonText\": \"Click Here\", \"buttonLink\": \"/\" }, \"image\": null }, { \"title\": \"\\\"We highly recommend Canyon Oak Pools. They communicated with us so well during the process and helped us realize the vision for our backyard oasis! You won’t regret using them.\\\"\", \"description\": \" Danny E, Facebook \", \"button\": { \"buttonText\": \"Click Here\", \"buttonLink\": \"/\" }, \"image\": null }, { \"title\": \"\\\"We’ve seen how professional and personable they are. We talked with so many companies and have built three pools at our last three homes. Canyon Oak Pools has proven to be the best group to work with. They have pictures of the prettiest pools and they’ve building a pool and outdoor kitchen at our new home in Melissa, Texas. Don’t hesitate to contact them. Larry and Susan, the owners will become your new best friends! Years of experience.\\\"\", \"description\": \" Mickie M, Facebook \", \"button\": { \"buttonText\": \"Click Here\", \"buttonLink\": \"/\" }, \"image\": null } ], \"styles\": { \"imageFocalPoint\": { \"x\": 0.5, \"y\": 0.5 }, \"imageOverlayOpacity\": 0.3, \"sectionTheme\": \"white\", \"imageEffect\": \"none\", \"backgroundMode\": \"image\", \"backgroundImage\": { \"id\": \"651c04979c69cd59d2f9035d\", \"recordType\": 2, \"addedOn\": 1696334999585, \"updatedOn\": 1696334999649, \"workflowState\": 1, \"publishOn\": 1696334999585, \"authorId\": \"6512258c4523a93ee1d476cb\", \"systemDataId\": \"cad83fa3-9f22-482f-b8a8-a05f8fe17f8b\", \"systemDataVariants\": \"1920x1080,100w,300w,500w,750w,1000w,1500w\", \"systemDataSourceType\": \"PNG\", \"filename\": \"3.png\", \"mediaFocalPoint\": { \"x\": 0.5, \"y\": 0.5, \"source\": 3 }, \"colorData\": { \"topLeftAverage\": \"9ddfe6\", \"topRightAverage\": \"99dce4\", \"bottomLeftAverage\": \"a1e2e7\", \"bottomRightAverage\": \"a2e1e6\", \"centerAverage\": \"9ce1ea\", \"suggestedBgColor\": \"a9e6ec\" }, \"urlId\": \"5tycx5po8z3cfori0hrnwnglfsv1vp\", \"title\": \"\", \"body\": null, \"likeCount\": 0, \"commentCount\": 0, \"publicCommentCount\": 0, \"commentState\": 2, \"unsaved\": false, \"assetUrl\": \"https://images.squarespace-cdn.com/content/v1/60eb4b8a060c752cc3add9f8/cad83fa3-9f22-482f-b8a8-a05f8fe17f8b/3.png\", \"contentType\": \"image/png\", \"items\": [ ], \"pushedServices\": { }, \"pendingPushedServices\": { }, \"originalSize\": \"1920x1080\", \"recordTypeLabel\": \"image\" } }, \"video\": { \"filter\": 1, \"videoFallbackContentItem\": null, \"nativeVideoContentItem\": null, \"videoSourceProvider\": \"none\" }, \"backgroundImageFocalPoint\": null, \"backgroundImageId\": \"651c04979c69cd59d2f9035d\", \"options\": { \"isCardEnabled\": false, \"isShowAdjacentSlides\": false, \"isInfiniteEnabled\": true, \"slideDurationMs\": 1000, \"isMediaEnabled\": false, \"isTitleEnabled\": true, \"isBodyEnabled\": true, \"isButtonEnabled\": false, \"layoutWidth\": \"full-bleed\", \"titleAlignment\": \"center\", \"bodyAlignment\": \"center\", \"buttonAlignment\": \"center\", \"cardHorizontalPosition\": \"center\", \"cardVerticalPosition\": \"middle\", \"titleFontSize\": \"heading-2\", \"bodyFontSize\": \"paragraph-2\", \"buttonFontSize\": \"button-medium\", \"customOptions\": { \"customTitleFontSize\": { \"value\": 1.2, \"unit\": \"rem\" }, \"customBodyFontSize\": { \"value\": 0.9, \"unit\": \"rem\" }, \"customButtonFontSize\": { \"value\": 0.8, \"unit\": \"rem\" } }, \"minSlideHeight\": { \"value\": 43, \"unit\": \"vh\" }, \"verticalPaddingTop\": { \"value\": 0, \"unit\": \"vmax\" }, \"verticalPaddingBottom\": { \"value\": 0, \"unit\": \"vmax\" }, \"slideContentPaddingTop\": { \"value\": 2, \"unit\": \"%\" }, \"slideContentPaddingRight\": { \"value\": 2, \"unit\": \"%\" }, \"slideContentPaddingBottom\": { \"value\": 2, \"unit\": \"%\" }, \"slideContentPaddingLeft\": { \"value\": 2, \"unit\": \"%\" }, \"spaceBetweenSlides\": { \"value\": 0, \"unit\": \"px\" }, \"spaceBelowTitle\": { \"value\": 10, \"unit\": \"%\" }, \"spaceBelowBody\": { \"value\": 10, \"unit\": \"%\" }, \"cardPaddingTop\": { \"value\": 20, \"unit\": \"px\" }, \"cardPaddingRight\": { \"value\": 20, \"unit\": \"px\" }, \"cardPaddingBottom\": { \"value\": 20, \"unit\": \"px\" }, \"cardPaddingLeft\": { \"value\": 20, \"unit\": \"px\" }, \"navigationOffset\": { \"value\": 3, \"unit\": \"vw\" }, \"slideContentWidth\": { \"value\": 50, \"unit\": \"%\" }, \"navigationControls\": \"arrows\", \"navigationPlacement\": \"center\", \"navigationAlignment\": \"center\", \"progressIndicators\": \"bars\" }, \"layout\": \"banner-slideshow\", \"isSectionTitleEnabled\": false, \"sectionTitle\": \" Client Reviews \", \"spaceBelowSectionTitle\": { \"value\": 120, \"unit\": \"px\" }, \"sectionTitleAlignment\": \"center\", \"isSectionButtonEnabled\": false, \"sectionButton\": { \"buttonText\": \"Make It\", \"buttonLink\": \"#\", \"buttonNewWindow\": false }, \"sectionButtonSize\": \"medium\", \"sectionButtonAlignment\": \"center\", \"spaceAboveSectionButton\": { \"value\": 120, \"unit\": \"px\" } }\" data-layout-width=\"full-bleed\" data-title-font-unit=\"rem\" data-description-font-unit=\"rem\" data-button-font-unit=\"rem\" data-vertical-padding-top-value=\"0\" data-vertical-padding-bottom-value=\"0\" data-vertical-padding-top-unit=\"vmax\" data-vertical-padding-bottom-unit=\"vmax\" data-has-multiple-slides=\"\" data-controllers-bound=\"UserItemsListBannerSlideshow\"> \"I can’t say enough good things about Canyon Oak pools! Everything about the pool building process was enjoyable. The quality, the timeline, the communication was all top notch. They are a family run business through and through, you won’t get this level of service elsewhere. THE BEST IN THE BUSINESS!! Thank you Larry, David and Susan!!\" Melissa K, Google \"Canyon Oak Pools was a dream to work with from design to clean up. Every detail was explained. My questions were always answered in a very timely manner & I was never made to feel like my questions weren’t important. I wanted to beautiful pool that was great quality and that’s exactly what I received. The owner of the company himself was at our home anytime anyone was working on our pool. He expects high quality work so things were addressed before I even had to. Our pool was completed in about 53 days! I received 7 quotes from different companies but my gut told me to go with canyon oaks & I am 1000% confident I made the right choice. I have a beautiful oasis, there were no major issues or wait times & the communication was stellar. I would recommend these guys to anyone!\" Megan H, Google “We are so happy with our pool! It's crazy how easy this whole process was. Mike Woodfin was extremely patient with us during the design phase, and we ended up with something that blows away anything we could have imagined. Constant communication, detailed explanations on everything as it was happening, and just great work. We can't thank Larry, Susan and Mike enough!!” Mike K, Facebook \"We highly recommend Canyon Oak Pools. They communicated with us so well during the process and helped us realize the vision for our backyard oasis! You won’t regret using them.\" Danny E, Facebook \"We’ve seen how professional and personable they are. We talked with so many companies and have built three pools at our last three homes. Canyon Oak Pools has proven to be the best group to work with. They have pictures of the prettiest pools and they’ve building a pool and outdoor kitchen at our new home in Melissa, Texas. Don’t hesitate to contact them. Larry and Susan, the owners will become your new best friends! Years of experience.\" Mickie M, Facebook Item 1 of 5 Get inspired by some of our latest custom pool builds! Get a Personalized Quote! Take the plunge and begin your journey to becoming a pool owner. All of our quotes are customized to your exact specifications, and are obligation-free. Get Quote Your #1 Neighborhood North Texas Pool Builder Service Areas of Specialty: Blue Ridge, TX Melissa, TX McKinney, Allen , Lucas, and Wylie , TX Fairview, TX Dallas, TX (and all it’s suburbs) Celina and Prosper, TX Leonard, Celeste, and Trenton, TX and all surrounding areas in the DFW Metroplex! Stay Up-to-date With our Latest Builds on Social Media \" data-provider-name=\"\" id=\"yui_3_17_2_1_1766384265996_371\" style=\"opacity: 1;\"> \" data-provider-name=\"\" id=\"yui_3_17_2_1_1766384265996_428\" style=\"opacity: 1;\"> \" data-provider-name=\"\" id=\"yui_3_17_2_1_1766384265996_485\" style=\"opacity: 1;\"> Canyon Oak Pools Who you build with matters®️ 7850 Collin McKinney Parkway, Suite 204, McKinney, TX, 75070 info@canyonoakpools.com 972-561-9090 Privacy Policy Hours Monday – Saturday 9am – 5pm Get a Quote! Service Area Additional Links Follow Facebook Instagram TikTok YouTube 5.0 88 reviews Have Questions? There is nothing we love more than talking pools! TEXT US!"
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:19:05.617Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "canyonoakpools.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:19:06.159Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Canyon Oak Pools\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:19:08.933Z",
+      "data": {
+        "found": true,
+        "query": "\"Canyon Oak Pools\" McKinney lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/mckinney/profile/swimming-pools/canyon-oak-pools-0875-91307524",
+            "title": "Canyon Oak Pools | BBB Business Profile",
+            "snippet": "(972) 561-9090 Overview Canyon Oak Pools 7850 Collin McKinney Pkwy Ste 204 McKinney, TX 75070-2595 Get Directions View Service AreaRead more"
+          },
+          {
+            "link": "https://livingmagazine.net/12-23-mccraw-law-group",
+            "title": "McCraw Law Group | McKinney / Allen",
+            "snippet": "“Ninety percent of our clients have never been involved in a lawsuit before. ... Locally Owned and Operated Canyon Oak Pools. McKinney / Allen · Spotlight · Who ...Read more"
+          },
+          {
+            "link": "https://www.facebook.com/juan.l.mercado.1/photos/d41d8cd9/10226823206877803/",
+            "title": "Need a quote for a customer on building a pool like this ...",
+            "snippet": "Canyon Oak Pools. 3 yrs · Corey Moody. Tyler McFarlin looking for subs . 3 yrs ... Job is in McKinney 75071 · No photo description available. Mike Domenico and 3 ...Read more"
+          },
+          {
+            "link": "https://www.tiktok.com/@brianreagan972/video/7569994638015089975",
+            "title": "Responding to the misinformation about Mckinney ISD ...",
+            "snippet": "BBB Fall Toast 2024! Congrats to @Canyon Oak Pools & @B Square Foundation Repair ! Loved seeing all of my clients who came out!Read more"
+          },
+          {
+            "link": "https://www.tiktok.com/discover/how-much-does-it-cost-to-build-a-pool-in-alabama",
+            "title": "How Much Does It Cost to Build A Pool in Alabama",
+            "snippet": "TikTok video from Canyon Oak Pools (@canyonoakpools). 42341w ago. canyonoakpools. Canyon Oak Pools. With good scheduling, great subcontractors, and some weather ...Read more"
+          }
+        ],
+        "result_count": 6
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:18:48.202Z",
+      "data": {
+        "name": "Canyon Oak Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 561-9090",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "7850 Collin McKinney Pkwy #204, McKinney, TX 75070",
+        "reviews": [],
+        "website": "https://www.canyonoakpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Canyon%20Oak%20Pools%20McKinney%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:18:48.207Z",
+      "data": {
+        "name": "Canyon Oak Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 561-9090",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "7850 Collin McKinney Pkwy #204, McKinney, TX 75070",
+        "reviews": [],
+        "website": "https://www.canyonoakpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Canyon%20Oak%20Pools%20McKinney%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:18:53.818Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:18:59.052Z",
+      "data": {
+        "url": "https://www.angi.com/companylist/us/tx/mckinney/mckinney-pools-reviews-6333644.htm",
+        "name": "Canyon Oak Pools",
+        "site": "angi.com",
+        "error": null,
+        "found": true,
+        "rating": 4.5,
+        "source": "serp_angi",
+        "confidence": "unknown",
+        "matched_name": null,
+        "review_count": 4
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:19:28.339Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:c98f:d45e:7347:4fa0\nTime: 2025-12-22T06:19:12Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Canyon%20Oak%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=3-JIabW5FaG0ptQPtYWEkAc\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:c98f:d45e:7347:4fa0\nTime: 2025-12-22T06:19:22Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Canyon%20Oak%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=6uJIafHzCo_sptQPtLjYiA4\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "Failed to execute 'querySelectorAll' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.\nre (pptr:internal:3:12826)\nIe (pptr:internal:3:13100)\npptr:evaluateHandle;PQueryHandler.queryOne%20(%2Fhome%2Freid%2Fcommand-center%2Ftesthome%2Fcontractor-auditor%2Fnode_modules%2Fpuppeteer-core%2Flib%2Fcjs%2Fpuppeteer%2Fcommon%2FQueryHandler.js%3A130%3A73):2:16",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Canyon Oak Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:20:41.106Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "CANYON OAK POOLS, LLC",
+        "taxpayer_number": "32064217931"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:20:41.112Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:20:54.883Z",
+      "data": {
+        "cost": 0.00040278000000000004,
+        "summary": "The contractor's online presence shows significant red flags for review authenticity. A perfect 5.0 rating on Google with no available reviews is highly suspect and not typical for a real business with customer interactions. The lack of any review text across all platforms prevents analysis of writing styles, specific details, or emotional authenticity. The BBB rating is positive but lacks supporting complaint or review data. The available data suggests the reviews, if they exist, are not transparent or may be manipulated.",
+        "confidence": "HIGH",
+        "analyzed_at": "2025-12-22T06:20:54.883Z",
+        "fake_signals": [
+          "Perfect 5.0 rating on Google with null review count",
+          "No review text available on any platform for content analysis",
+          "BBB shows no complaint or review data",
+          "High rating with no supporting textual evidence"
+        ],
+        "recommendation": "DISTRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "BBB A+ accreditation",
+          "Angi shows a non-perfect 4.5 rating which is more realistic"
+        ],
+        "fake_review_score": 85,
+        "complaint_patterns": [
+          "No review content available to identify patterns"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Perfect 5.0 Google rating with no reviews is highly unusual and suspicious. Angi shows a more plausible 4.5 rating with 4 reviews, but no review content is available for analysis."
+      }
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:20:40.316Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "MECH_LIEN": 15
+          },
+          "active_liens": 15,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 12,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS",
+                "grantor": "CHIOTTI SHONDA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CHIOTTI SHONDA",
+                    "CANYON OAK POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "11/16/2022",
+                    "2022000165779",
+                    "--/--/--",
+                    "Subdivision- Name: LIGHT FARMS #3 CYPRESS NEIGHBORHOOD SAGE NEIGHBORHOOD CELINA Lot: 19 Block: D, Reference - 2015 / 149"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2022-11-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2022000165779"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS",
+                "grantor": "CIRRONE COLLIN J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CIRRONE COLLIN J",
+                    "CANYON OAK POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "1/16/2025",
+                    "2025000004808",
+                    "--/--/--",
+                    "Subdivision - Name: VILLAGES MELISSA #2B Lot: 20 Block: X Reference - 2015/670"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2025-01-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2025000004808"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS",
+                "grantor": "YATES LAUREN SUE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "YATES LAUREN SUE",
+                    "CANYON OAK POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "7/24/2023",
+                    "2023000082783",
+                    "--/--/--",
+                    "Subdivision- Name: BLUEWOOD #2A CELINA Lot: 21 Block: H, Reference - 2019 / 470"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2023-07-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2023000082783"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS",
+                "grantor": "RIO BRADLEY ANTHONY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "RIO BRADLEY ANTHONY",
+                    "CANYON OAK POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "6/16/2023",
+                    "2023000067466",
+                    "--/--/--",
+                    "Subdivision- Name: LIBERTY #4 MELISSA RPLT Lot: 5R Block: B, Reference - 2018 / 925"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2023-06-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2023000067466"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS",
+                "grantor": "RHOADES MITCHELL ALAN",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "RHOADES MITCHELL ALAN",
+                    "CANYON OAK POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "2/22/2023",
+                    "2023000017422",
+                    "--/--/--",
+                    "Subdivision- Name: LIBERTY #7B SOUTH MELISSA Lot: 3 Block: N, Reference - 2021 / 147"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2023-02-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2023000017422"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS",
+                "grantor": "JOSEY WHITNEY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "JOSEY WHITNEY",
+                    "CANYON OAK POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "11/18/2022",
+                    "2022000166979",
+                    "--/--/--",
+                    "Subdivision- Name: LIBERTY #4 MELISSA Lot: 8 Block: A, Reference - 2016 / 691"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2022-11-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2022000166979"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS LLC",
+                "grantor": "HARTT CHRISTOPHER",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HARTT CHRISTOPHER",
+                    "CANYON OAK POOLS LLC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "8/24/2022",
+                    "2022000129630",
+                    "--/--/--",
+                    "Subdivision- Name: TRAILS BLUE RIDGE #2 COLLIN COUNTY 2019/150 Lot: 17 Block: A, Reference - 2019 / 150"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2022-08-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2022000129630"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS LLC",
+                "grantor": "THURMAN CHELSEA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "THURMAN CHELSEA",
+                    "CANYON OAK POOLS LLC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "6/26/2023",
+                    "2023000071310",
+                    "--/--/--",
+                    "Subdivision- Name: WILLOW WOOD #3 MCKINNEY Lot: 9 Block: P, Reference - 2019 / 572"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2023-06-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2023000071310"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS LLC",
+                "grantor": "MUNHALL DANIEL",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MUNHALL DANIEL",
+                    "CANYON OAK POOLS LLC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "5/18/2023",
+                    "2023000054512",
+                    "--/--/--",
+                    "Subdivision- Name: WILLOW WOOD #3 MCKINNEY Lot: 15 Block: O, Reference - 2019 / 572"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2023-05-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2023000054512"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS LLC",
+                "grantor": "BARNES LARRY DON",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BARNES LARRY DON",
+                    "CANYON OAK POOLS LLC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "7/6/2022",
+                    "2022000105481",
+                    "--/--/--",
+                    "Subdivision- Name: LIGHT FARMS HAZEL NEIGHBORHOOD #2 CELINA 2016/604 Lot: 10 Block: K, Reference - 2016 / 604"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2022-07-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2022000105481"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS LLC",
+                "grantor": "POST SARA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POST SARA",
+                    "CANYON OAK POOLS LLC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "7/10/2025",
+                    "2025000086208",
+                    "--/--/--",
+                    "Subdivision - Name: BLUEWOOD #2A CELINA Lot: 9 Block: H Reference - 2019/470"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2025-07-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2025000086208"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON OAK POOLS LLC",
+                "grantor": "GEIGER TABITHA DAWN",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GEIGER TABITHA DAWN",
+                    "CANYON OAK POOLS LLC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "7/10/2024",
+                    "2024000083438",
+                    "--/--/--",
+                    "Survey- Name: RUTHERFORD, J SY Survey: 761 Acres: 19.500"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2024-07-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2024000083438"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 3,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "PACESETTER POOLS",
+                "grantor": "PACESETTER POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PACESETTER POOLS",
+                    "PACESETTER POOLS",
+                    "MECHANICS LIEN",
+                    "3/12/1992",
+                    "D192046387",
+                    "OPR/10561/901",
+                    "ARL, Subdivision: OAK CANYON, Lot: 18"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1992-03-12",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D192046387"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "PACESETTER POOLS INC",
+                "grantor": "PACESETTER POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PACESETTER POOLS INC",
+                    "PACESETTER POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/20/1992",
+                    "D192074070",
+                    "OPR/10605/2332",
+                    "ARL, Subdivision: OAK CANYON, Lot: 11"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1992-04-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D192074070"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "HUNT POOLS",
+                "grantor": "HUNT POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HUNT POOLS",
+                    "HUNT POOLS",
+                    "MECHANICS LIEN",
+                    "6/17/1991",
+                    "D191097733",
+                    "OPR/10288/2316",
+                    "ARL, Subdivision: OAK CANYON, Lot: 6"
+                  ],
+                  "search_term": "Canyon Oak Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1991-06-17",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D191097733"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "12 lien(s) filed BY contractor (collecting payment - neutral)",
+            "3 lien(s) with unclear direction"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 15,
+          "human_summary": "OK: 12 liens filed BY Canyon Oak Pools to collect payment (normal business, no penalty)",
+          "liens_unclear": 3,
+          "liens_by_count": 12,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 12,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Canyon Oak Pools",
+        "searched_at": "2025-12-22T00:19:28.487928",
+        "total_records": 15
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:39.722Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Canyon Oak Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 20, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Final%20Allergan%20Global%20Agreement%20and%20Exhibits%20(12-20-22).pdf",
+            "title": "ALLERGAN PUBLIC GLOBAL OPIOID SETTLEMENT ...",
+            "snippet": "... pools. The maximum amount of Incentive Payments for Incentives. A-C shall be $863,609,640.48, which is 48% of the maximum Net Abatement.Read more",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "WALMART SETTLEMENT AGREEMENT",
+            "snippet": "... Pool, while paragraph 3.b represents allocation based on a proportional share of the Separate. State Fee Pools. In other words, for the National Fee Pool ...Read more",
+            "position": 2
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Global%20Opioid%20Settlement%20Files/Final%20Distributor%20Settlement%20Agreement.pdf",
+            "title": "DISTRIBUTOR SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. DISTRIBUTOR SETTLEMENT. AGREEMENT. Page 2. i. Table of Contents. Page. I.Read more",
+            "position": 3
+          },
+          {
+            "date": "Sep 30, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/Distributors%20Texas%20Settlement%20Agreement%20Distributors%20TXAG%20Executed.pdf",
+            "title": "DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT",
+            "snippet": "Committee shall exchange pools of recommended candidates to serve as the Monitor. The pools shall each contain the names of three (3) ...Read more",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:40.786Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 9
+          },
+          {
+            "date": "Jun 3, 2024",
+            "link": "https://www.facebook.com/groups/BrevardJobsNetwork/posts/7948709071817959/",
+            "title": "Is LABORMAX a legitimate company and should I send them my ...",
+            "snippet": "There is so much fraud out right now. They are registered in Texas but not current https://mycpa.cpa.state.tx. us/coa/coaSearchBtn The entity's ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:42.805Z",
+      "data": {
+        "query": "site:dallascounty.org Canyon Oak Pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Oct 10, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2024/2024-10.pdf.pdf",
+            "title": "Dallas County Behavioral Health Leadership ...",
+            "snippet": "During the board meeting, NTBHA's Charity Care Pool Policy funds that are used for outpatient services were passed, the Tenant Based Rental ...Read more",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "Jan Almon, narrative Mary Ann Sherman, photography",
+            "snippet": "Dallas County features a number of lakes that are reservoirs for municipal water and recreational use. These include Lake Ray Hubbard, Lake North, Joe Pool, ...Read more",
+            "position": 2
+          },
+          {
+            "date": "by GCT Daniel",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHHW/2023/August%202023%20HWG%20Meeting%20Packet.pdf",
+            "title": "August 23, 2023, 10:00-11:30am",
+            "snippet": "“It is the intent of the Legislature that all costs above appropriations for completing construction of the new 200-bed adult unit, of which at ...Read more",
+            "position": 3
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/historical/markers.xls",
+            "title": "Dallas County Historical Markers",
+            "snippet": "Also believed to be buried here are five men and a boy who were victims of a lynching in 1869; several Confederate vererans of the Civil War; and two former ...Read more",
+            "position": 4
+          },
+          {
+            "date": "Sep 26, 2018",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/Payment-register/FY18/PaymentRegister2018SEP.pdf",
+            "title": "10/01/2017 and Ending: 09/30/2018",
+            "snippet": "... CANYON OAKS APTS LLC. $900.00. 120717706. CHECK. 6/19/2018. 1021 CANYON ... CIVIL ENGINEERS. $330.00. Is $330.00. AMERICAN SOCIETY OF CIVIL ...Read more",
+            "position": 5
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/spanishdcbook.pdf",
+            "title": "El Condado De Dallas",
+            "snippet": "El condado de Dallas presume unos cuantos lagos que sirven como represas para agua municipal y agua para espaciamiento. Estos incluyen Lake Ray Hubbard, Lake ...Read more",
+            "position": 6
+          },
+          {
+            "date": "Apr 28, 2014",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/Payment-register/PaymentRegister2011.pdf",
+            "title": "10/01/2010 and Ending: 09/30/2011",
+            "snippet": "... CANYON PARTNERS LP. $799.00. Is $799.00. 10588 STONE CANYON PARTNERS LP ... CIVIL ENGINEERS. $265.00. Is $265.00. AMERICAN SOCIETY OF CIVIL ...Read more",
+            "position": 7
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2025-12-22T06:17:44.861Z",
+      "data": {
+        "query": "site:dentoncounty.gov Canyon Oak Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=22_50",
+            "title": "Dev Permit Report",
+            "snippet": "CANYON OAK POOLS, 3405 TEMPEST LN, WELLINGTON TRACE PHASE II BLK F LOT 19, SWIMMING POOL, 03/02/2023, 651684, Approved, 02/28/2023, CELEDON, JULIAN & MARITZA ...Read more",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=67_50",
+            "title": "Dev Permit Report",
+            "snippet": "CUSTOM OUTDOOR TRENDS, 490 CANYON OAKS, CANYON OAKS BLK D LOT 28, SWIMMING POOL, 05/17/2022, 114555, Approved, 05/16/2022, WILMER, JOSEPH A & DENISE R TRUSTEES ...Read more",
+            "position": 2
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=196_50",
+            "title": "Dev Permit Report",
+            "snippet": "DILLON PECK, 430 CANYON OAKS, CANYON OAKS BLK D LOT 22, OTHER, 07/13/2020, 114541 ... GOHLKE POOLS, 7441 DAWN AVE, TIMBERLAKE TRAILS BLK B LOT 8, SWIMMING POOL ...Read more",
+            "position": 3
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=35_50",
+            "title": "Dev Permit Report",
+            "snippet": "BMR POOL AND PATIO, 7108 CANYON POINT, CANYON FALLS VILLAGE 8-AR BLK L LOT 3, SWIMMING POOL, 12/13/2022, 728746, Approved, 12/06/2022, COLQUHOUN, LUEROY J & ...Read more",
+            "position": 4
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=31_50",
+            "title": "Dev Permit Report",
+            "snippet": "OAK GROVE PROJECT, LLC, 2036 OAK GROVE LN #103, LEGACY OAK ... SOUTHERNWIND POOLS, 4109 SANDBROCK PKWY, SANDBROCK RANCH PHASE 5 BLK W LOT 21, SWIMMING POOL ...Read more",
+            "position": 5
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=171_50",
+            "title": "Dev Permit Report",
+            "snippet": "LUCENT POOLS, LLC, 11500 HICKORY FALLS DR, CANYON FALLS VILLAGE 8-AR BLK J LOT 13, SWIMMING POOL, 12/02/2020, 728705, Approved, 11/19/2020, SERRANO, PEDRO LUIS ...Read more",
+            "position": 6
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=103_50",
+            "title": "Dev Permit Report",
+            "snippet": "Dev Permit Report ; 20214090, VIRGINIA YEARY ; 20214089, KYLE BURNS, EMERALD CUSTOM POOLS ; 20214088, TIMOTHY JACKSON, HIGHLAND HOMES ...Read more",
+            "position": 7
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=233_50",
+            "title": "Dev Permit Report",
+            "snippet": "OVERLY CUSTOM POOLS, 3793 NEW HOPE RD, MERRY HEART ADDITION BLK A LOT 1, SWIMMING POOL, 09/09/2019, 767311, CULVERT VERBAL APPRL BY MARIO 9/6/19, Approved, 09/ ...Read more",
+            "position": 8
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=210_50",
+            "title": "Dev Permit Report",
+            "snippet": "Dev Permit Report ; 20201379, DEANA EILAND, OUTDOOR LIVING POOL & PATIO ; 20201378, SAM BROCK, METROPLEX POOLS ; 20201377, JOSE NEVAREZ, 851 OAK MEADOW CT OAK ...Read more",
+            "position": 9
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=32_50",
+            "title": "Dev Permit Report",
+            "snippet": "KLAPPORDT POOLS, 11500 ANTLER RIDGE WAY, CANYON FALLS VILLAGE 19-AR BLK E LOT 4, SWIMMING POOL, 12/28/2022, 958077, Approved, 12/22/2022, LEONARD, JOHN EDWARD ...Read more",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T06:19:06.817Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Canyon Oak Pools\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    }
+  }
+}

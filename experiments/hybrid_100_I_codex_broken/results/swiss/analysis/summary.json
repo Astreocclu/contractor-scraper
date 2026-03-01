@@ -1,0 +1,21 @@
+{
+  "mode": "vertical",
+  "engine": "codex",
+  "model": "gpt-5",
+  "rounds": 3,
+  "concurrency": 6,
+  "total_comparisons": 30,
+  "failed_comparisons": 117,
+  "vertical_groups": {
+    "pool": 97,
+    "outdoor-living": 3
+  },
+  "cost_usd": 0,
+  "pricing": {
+    "type": "codex_subscription",
+    "engine": "codex",
+    "model": "gpt-5"
+  },
+  "resume_from_round": 1,
+  "elapsed_seconds": 415
+}

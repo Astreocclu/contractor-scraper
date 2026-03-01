@@ -1,0 +1,936 @@
+{
+  "contractor_id": 7452,
+  "business_name": "First Advantage Roofing",
+  "city": "Southlake",
+  "state": "TX",
+  "verticals": [
+    "roofing"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-15T21:10:09.904Z",
+  "sources": {
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:13:19.172Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for First Advantage Roofing",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "First Advantage Roofing",
+        "searched_at": "2026-02-15T15:11:50.366074",
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:13:19.654Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-15T15:13:19.657Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:13:30.054Z",
+      "data": {
+        "cost": 0.00065114,
+        "summary": "The reviews show some authentic details but raise significant red flags. A 9-year-old contractor with only 8 perfect reviews, all 5-star and lacking substantive criticism, is highly unusual. The absence of reviews on Angi, Houzz, or Yelp, combined with the BBB's lack of customer feedback, suggests potential review manipulation or a very limited, curated customer base. The content is positive but generic.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-15T15:13:30.053Z",
+        "fake_signals": [
+          "All reviews are 5-star with no critical feedback",
+          "Low review volume (8) for a 9-year-old company",
+          "Reviews lack specific dates or project timelines",
+          "Generic, repetitive praise ('professional', 'highly recommend')",
+          "No reviews on industry-specific platforms (Angi, Houzz)"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "NO_EVIDENCE",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Some reviews mention specific services (mold mitigation, re-roofing)",
+          "A few reviewers mention owner/crew names (Mr. Burkhart, Stuart)",
+          "Varied reviewer names and writing styles"
+        ],
+        "fake_review_score": 65,
+        "complaint_patterns": [],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Perfect 5.0 Google rating with only 8 reviews, all 5-star, and no reviews on other major platforms (Angi, Houzz, Yelp). BBB shows A+ but no customer reviews or complaint data, making the perfect score suspiciously isolated."
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:09:46.424Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:09:50.501Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:09:53.353Z",
+      "data": {
+        "query": "First Advantage Roofing Southlake site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Oct 30, 2019",
+            "link": "https://www.dallasnews.com/news/watchdog/2019/10/30/texas-regulators-issue-first-post-tornado-alert-of-roofing-scheme-designed-to-fool-storm-victims/",
+            "title": "Texas regulators issue first post-tornado alert of roofing scheme ...",
+            "snippet": "Just days after Dallas was hit by a tornado, Texas insurance regulators have stepped up to issue a fraud alert because of a flyer they call deceptive.",
+            "position": 1
+          },
+          {
+            "date": "May 9, 2025",
+            "link": "https://www.fox4news.com/news/robert-morris-court-not-guilty-gateway-church",
+            "title": "Robert Morris, Gateway Church founder, pleads not guilty to sexual ...",
+            "snippet": "North Texas' Gateway Church founder Robert Morris appeared in court for the first time Friday in a case related to accusations of sexual assault from the 1980s.",
+            "position": 2
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05",
+            "title": "[XML] https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05",
+            "snippet": "... First Jobs of NBC 5 Today: Deborah Ferguson at Target</video:title><video:description>All week we've been looking at the first jobs of the NBC 5 Today team.",
+            "position": 3
+          },
+          {
+            "date": "Jun 5, 2015",
+            "link": "https://interactives.dallasnews.com/2015/consumer-wins/",
+            "title": "WATCHDOG: New state laws will protect Texas consumers",
+            "snippet": "The Watchdog asked for your help to push state lawmakers into solving five of the most annoying consumer problems in Texas.",
+            "position": 4
+          },
+          {
+            "date": "Apr 10, 2025",
+            "link": "https://www.nbcdfw.com/news/business/ikea-says-new-smaller-urban-store-in-dallas-to-open-later-this-year/3814302/",
+            "title": "IKEA says new, smaller urban store in Dallas to open later this year",
+            "snippet": "IKEA says it's building a new, smaller-format two-story store in Dallas that will open later this year at University Park's The Shops at Park Lane.",
+            "position": 5
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=01",
+            "title": "[XML] https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=01 - NBC 5",
+            "snippet": "... first-year University of Iowa student says he's puzzled by the discovery of his son's body outside in subzero temperatures early Wednesday morning.</video ...",
+            "position": 6
+          },
+          {
+            "date": "Sep 7, 2017",
+            "link": "https://www.dallasnews.com/news/watchdog/2017/09/07/a-band-of-idiots-clowns-and-thieves-are-en-route-to-flooded-areas-and-theyre-up-to-no-good/",
+            "title": "A band of idiots, clowns and thieves are en route to flooded areas ...",
+            "snippet": "In a two-part series, The Watchdog show smart ways to fend off crooked contractors. And he names the lawmaker most responsible for not ...",
+            "position": 7
+          },
+          {
+            "date": "Mar 3, 2015",
+            "link": "https://www.nbcdfw.com/news/local/winter-weather-returns-on-wednesday/96608/",
+            "title": "Pets, People Make Best of Record-Setting Snowfall",
+            "snippet": "A late winter storm dropped up to 7 inches of sleet and snow overnight Wednesday, leading to more than 800 school closings and delays and nearly as many flight ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.dallasnews.com/sitemap/2023/october/28/",
+            "title": "A sitemap for every Dallas Morning News article for the year 2023.",
+            "snippet": "Sitemap for Dallas Morning News articles for the year 2023.",
+            "position": 9
+          },
+          {
+            "date": "Sep 26, 2019",
+            "link": "https://www.star-telegram.com/sports/dfwvarsity/article235463877.html",
+            "title": "TXHSFB final score: Keller Central vs. Denton Guyer",
+            "snippet": "Denton Guyer, ranked No. 7 in the Class 6A state rankings, scored 26 points in the fourth quarter. The Wildcats also scored the final 34 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:11:29.902Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"First Advantage Roofing\" Southlake",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:10:04.406Z",
+      "data": "First Advantage Roofing Southlake review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Channels Filters Search filters Advantage Roofing Advantage Roofing @AdvantageRoofingCincinnati • 3 subscribers For many years our locally owned and family operated, Cincinnati roofing company, has provided superior quality installation ... Subscribe Advantage Roofing Advantage Roofing @advantageroofing7818 • 7 subscribers We build roofs , and relationships. Every customer is treated with the same level of care and respect. This is how we have been ... Subscribe Shorts Roofers took advantage of this old lady. The worst roof. #scam #roofing #homeimprovement #roof 3.9K views Roof inspection, is it bad?? #roofing #construction 6.6K views 400$ roof repair scam #constructionfails #roofingfail 11K views Want to know what a good roof replacement looks like from start to finish? #LittleElm #roofer 12K views Quantity or quality? 🤔 #shorts #roof #roofer #roofing #roofershelper #shingles #quality 354K views Show more Show less SHORTS SHORTS Now playing Urgent beware allowing sales people on your roof ins scams #yt #sales #fyp #scam #trending #roof Simple Solutions Contracting LLC Simple Solutions Contracting LLC • • 5.8K views 2 years ago Simple Solutions Contracting LLC Simple Solutions Contracting LLC 5:15 5:15 Now playing First Advantage: The Company You NEED To Know About! Bill Clanton Bill Clanton • • 19K views 4 years ago Bill Clanton Bill Clanton Free Case Evaluation: 210 880 9865 Schedule: https://www.clantonlawoffice.com/schedule-now/ Have you ever heard of First ... Free Case Evaluation: 210 880 9865 Schedule: https://www.clantonlawoffice.com/schedule-now/ Have you ever heard of First ... From the video description CC 4 chapters Intro | Who is First Advantage | Background Checks | First Advantage Reviews 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Who is First Advantage Who is First Advantage 0:27 Who is First Advantage 0:27 Background Checks Background Checks 1:21 Background Checks 1:21 First Advantage Reviews First Advantage Reviews 3:04 First Advantage Reviews 3:04 1:11 1:11 Now playing Advantage Construction Customer Review - Full Roof Replacement Advantage Construction, Inc. Advantage Construction, Inc. • • 107 views 7 months ago Advantage Construction, Inc. Advantage Construction, Inc. Hear directly from one of our satisfied customers as they share their experience working with Advantage Construction on a recent ... Hear directly from one of our satisfied customers as they share their experience working with Advantage Construction on a recent ... From the video description 4K Shorts Contractors REMOVED My Whole F***** Roof!!! - Not Good 1.9K views Roofing: Why Quality Costs More: Explaining to Customers 11K views Premium shingles + clueless installer = 🤦‍♂️ #roof #roofer #roofing #roofershelper #fail 25K views UglyRoof Brought a 17 year old roof back to new conditions! #construction #contractor #tools 14K views Say no to low bid contractors #roof #roofing #construction #flashings #sanantonio #howto #doneright 2.1K views Show more Show less SHORTS SHORTS Now playing Tool for the ages? Or overpriced gadget? #roofer #overpriced Paint Life TV Paint Life TV • • 85K views 2 years ago Paint Life TV Paint Life TV 0:04 ... the pitch Hopper a roofer tool but can it be a painter's tool it makes standing on roofs a little bit easier working on roofs there you ... ... the pitch Hopper a roofer tool but can it be a painter's tool it makes standing on roofs a little bit easier working on roofs there you ... Automatic captions SHORTS SHORTS Now playing What goes on your roof first during an installation #construction #roofing #contractor American Contractor American Contractor • • 46M views 3 years ago American Contractor American Contractor SHORTS SHORTS Now playing First thing that goes on a roof? Ice & water shield #construction #roofing #contractor #tools #diy American Contractor American Contractor • • 535K views 3 years ago American Contractor American Contractor SHORTS SHORTS Now playing Worst roof ever? 🤯 #shorts #roof #roofer #roofing #roofershelper #fail #diy The Roofer's Helper The Roofer's Helper • • 92K views 3 years ago The Roofer's Helper The Roofer's Helper The Roofer's Helper promotes roofers and the roofing industry through our social channels and website. ▻Join 150k followers on ... The Roofer's Helper promotes roofers and the roofing industry through our social channels and website. ▻Join 150k followers on ... From the video description SHORTS SHORTS Now playing Roofing is dangerous work! #shorts #roof #roofer #roofing #roofershelper The Roofer's Helper The Roofer's Helper • • 18K views 3 years ago The Roofer's Helper The Roofer's Helper The Roofer's Helper promotes roofers and the roofing industry through our social channels and website. ▻Join 150k followers on ... The Roofer's Helper promotes roofers and the roofing industry through our social channels and website. ▻Join 150k followers on ... From the video description SHORTS SHORTS Now playing Signs you NEED a New Roof Josh Steinberger Josh Steinberger • • 2.1K views 2 years ago Josh Steinberger Josh Steinberger 0:00 Some signs that you need a new roof the roof is aged it's leaking shingles are blowing off as we start to get in that process ... Some signs that you need a new roof the roof is aged it's leaking shingles are blowing off as we start to get in that process ... Automatic captions People also watched 3:37 3:37 Now playing Insurance Adjuster says roof is repairable. 😂 See how this inspection is ignored & denied? Chicago Roofer Chicago Roofer • • 1.5M views 3 years ago Chicago Roofer Chicago Roofer Met with an insurance adjuster for a wind claim . top insure company in Illinois. Adjuster from this company insists the roof is ... Met with an insurance adjuster for a wind claim . top insure company in Illinois. Adjuster from this company insists the roof is ... From the video description Summary An insurance adjuster deems a roof repairable, despite a roofer's on-site demonstration of significant damage. The roofer meticulously documents the irreparable condition using a customer's phone. This video showcases the conflict between the adjuster's assessment and the reality of the roof's condition. AI-generated video summary Quality and accuracy may vary. Summary An insurance adjuster deems a roof repairable, despite a roofer's on-site demonstration of significant damage. The roofer meticulously documents the irreparable condition using a customer's phone. This video showcases the conflict between the adjuster's assessment and the reality of the roof's condition. 20:07 20:07 Now playing I Tried To Reroof My Entire 3 bedroom House By Myself The Adventurous Entrepreneur The Adventurous Entrepreneur • • 11M views 2 years ago The Adventurous Entrepreneur The Adventurous Entrepreneur In this video I'm attempting to reroof the 3 bedroom home I bought from the Detroit land bank, entirely by myself, without any help ... In this video I'm attempting to reroof the 3 bedroom home I bought from the Detroit land bank, entirely by myself, without any help ... From the video description Summary This DIY project documents the solo reroofing of a three-bedroom house. The process includes removing old shingles, installing OSB plywood and felt paper, and building overhangs. Watch a complete home reroofing project, from tear-off to final shingle installation. AI-generated video summary Quality and accuracy may vary. Summary This DIY project documents the solo reroofing of a three-bedroom house. The process includes removing old shingles, installing OSB plywood and felt paper, and building overhangs. Watch a complete home reroofing project, from tear-off to final shingle installation. 18:04 18:04 Now playing Top 10 Insurance denials by Adjusters Roofing Insights Roofing Insights • • 50K views 5 years ago Roofing Insights Roofing Insights Top 10 Roofing Insurance claims denials by Adjusters | Roofing Insights Contractors: comment insurance denials we missed ... Top 10 Roofing Insurance claims denials by Adjusters | Roofing Insights Contractors: comment insurance denials we missed ... From the video description 11 chapters Intro | You're the first contractor who had ever mentioned that or tried to get paid for that | We already have that included in this other line item on your estimate | I have five other contractors right now who would be willing to get paid for that | The prices this contractor is charging are way too high. You should get more estimates | We have never paid for that line item before | No roofer has ever asked for OSHA safety ropes | We don't pay for that because that is included in the waste | Just submit your estimate and we will look over it | There's no hail or wind damage | SURPRISE! 11 chapters in this video 11 chapters Intro Intro 0:00 Intro 0:00 You're the first contractor who had ever mentioned that or tried to get paid for that You're the first contractor who had ever mentioned that or tried to get paid for that 2:34 You're the first contractor who had ever mentioned that or tried to get paid for that 2:34 We already have that included in this other line item on your estimate We already have that included in this other line item on your estimate 4:24 We already have that included in this other line item on your estimate 4:24 I have five other contractors right now who would be willing to get paid for that I have five other contractors right now who would be willing to get paid for that 5:45 I have five other contractors right now who would be willing to get paid for that 5:45 The prices this contractor is charging are way too high. You should get more estimates The prices this contractor is charging are way too high. You should get more estimates 7:37 The prices this contractor is charging are way too high. You should get more estimates 7:37 We have never paid for that line item before We have never paid for that line item before 9:46 We have never paid for that line item before 9:46 No roofer has ever asked for OSHA safety ropes No roofer has ever asked for OSHA safety ropes 10:54 No roofer has ever asked for OSHA safety ropes 10:54 9:49 9:49 Now playing Roofing Insulation is getting RIDICULOUS! IRE did not disappoint Matt Risinger Matt Risinger • • 248K views 1 day ago Matt Risinger Matt Risinger Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... From the video description New Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. AI-generated video summary Quality and accuracy may vary. Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. + 6 more SHORTS SHORTS Now playing WORST ROOF MISTAKE First Out Roofing First Out Roofing • • 4.7K views 3 years ago First Out Roofing First Out Roofing SHORTS SHORTS Now playing Osha approved ? 😂 #shorts #roof #roofer #roofing #roofershelper The Roofer's Helper The Roofer's Helper • • 31K views 2 years ago The Roofer's Helper The Roofer's Helper SHORTS SHORTS Now playing Signs that you might need a new roof #construction #roofing #contractor #home American Contractor American Contractor • • 9.3K views 3 years ago American Contractor American Contractor 0:00 You might need a new roof cracked curl and missing granules are pretty obvious signs that it may be time to get a new roof if you ... You might need a new roof cracked curl and missing granules are pretty obvious signs that it may be time to get a new roof if you ... Automatic captions SHORTS SHORTS Now playing Steepgear roofing shorts #construction #tools #roofing #diy American Contractor American Contractor • • 19K views 3 years ago American Contractor American Contractor SHORTS SHORTS Now playing Leaking Roof Inspection #roof #construction #homeinspection ThemRoofBoys ThemRoofBoys • • 16K views 3 years ago ThemRoofBoys ThemRoofBoys check it out boys! this is why you should get a roof inspection after a major storm! CHEERS #shorts #short #shortsfeed. check it out boys! this is why you should get a roof inspection after a major storm! CHEERS #shorts #short #shortsfeed. From the video description Advantage Roofing Advantage Roofing @AdvantageRoofingsf • Since 1988 Advantage Roofing has been the Bay Area's trusted roofer, proudly serving the Peninsula to San Francisco with ... Subscribe SHORTS SHORTS Now playing Roofing Safety Tools #contractor #construction #roofing American Contractor American Contractor • • 54K views 3 years ago American Contractor American Contractor 0:10 ... slip-over shorts and they are warm but sometimes you get to the top of a roof and the roof is hot you don't feel it through these. ... slip-over shorts and they are warm but sometimes you get to the top of a roof and the roof is hot you don't feel it through these. Automatic captions SHORTS SHORTS Now playing Save yourself the hassle of needing an entire roof replacement #roofing #roofrepair #construction The Home Services Home Show The Home Services Home Show • • 9.9K views 2 years ago The Home Services Home Show The Home Services Home Show SHORTS SHORTS Now playing Allstate: the worst insurance company to work with for roofing contractors | Becca Switzer |#Shorts Roofing Insights Roofing Insights • • 13K views 4 years ago Roofing Insights Roofing Insights Allstate: the worst insurance company to work with for roofing contractors | Becca Switzer |#Shorts Roofing Insights Podcast ... Allstate: the worst insurance company to work with for roofing contractors | Becca Switzer |#Shorts Roofing Insights Podcast ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:10:05.883Z",
+      "data": {
+        "query": "site:nextdoor.com First Advantage Roofing Southlake",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:10:19.748Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=First%20Advantage%20Roofing&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:10:23.733Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:10:29.812Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:09:09.490Z",
+      "data": {
+        "query": "site:yelp.com \"First Advantage Roofing\" \"Southlake, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:11:13.607Z",
+      "data": {
+        "name": "First Advantage Roofing",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(682) 503-7420",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "521 W Southlake Blvd #175, Southlake, TX 76092",
+        "reviews": [],
+        "website": "https://firstadvantageroofing.com/",
+        "maps_url": "https://www.google.com/maps/search/First%20Advantage%20Roofing%20Southlake%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:11:23.030Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:11:25.422Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:09:41.050Z",
+      "data": "Trustpilot Search Results Companies First Advantage fadv.com • 769 reviews 1.5 Advantage First Financial adv1st.com • 139 reviews 4.7 Advantage Finance advantage-finance.co.uk • 5.3K reviews 4.9 Travel Advantage www.traveladvantage.com • 1.6K reviews 4.8 Advantage www.advantage.com • 180 reviews 1.4 Categories First Aid Station The best companies in the category 'First Aid Station' Roofing Contractor The best companies in the category 'Roofing Contractor' Roofing Supply Store The best companies in the category 'Roofing Supply Store' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (2192) First Advantage fadv.com 1.5 769 reviews 1 wilford lane industrial estate, Nottingham, United Kingdom Advantage First Financial adv1st.com 4.7 139 reviews 3187 Red Hill Ave, Costa Mesa, United States Advantage Finance advantage-finance.co.uk 4.9 5,334 reviews United Kingdom Travel Advantage www.traveladvantage.com 4.8 1,568 reviews 300 SE 2nd Street, Suite 600, Fort Lauderdale, United States Advantage www.advantage.com 1.4 180 reviews Advantage advantage.com.gi 2.5 5 reviews Advantage advantage.bg 4.3 7 reviews Bulgaria first direct www.firstdirect.com 4.5 36,638 reviews 40 Wakefield Road, Leeds, United Kingdom Pro Advantage Roofing proadvantageroofing.com 0.0 0 reviews United States Sterling, A First Advantage Company sterlingcheck.com 2.8 3,959 reviews 1 State Street Plaza , New York, United States Previous 1 2 3 4 220 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) First Aid Station Health & Medical Roofing Contractor Construction & Manufacturing Roofing Supply Store Construction & Manufacturing Business to Business Service Business Services Financial Consultant Money & Insurance Alternative Financial Service Money & Insurance are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:10:38.116Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov First Advantage Roofing",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Nov 9, 2012",
+            "link": "https://www2.texasattorneygeneral.gov/files/agency/oag_alamo_report.nov._2012.pdf",
+            "title": "[PDF] November, 2012 Office of the Attorney General - San Antonio Report",
+            "snippet": "Further, the manufacturer of the roofing product, the contractor that repaired the roof, and GLO's construction services' personnel, as well ...",
+            "position": 1
+          },
+          {
+            "link": "https://www2.texasattorneygeneral.gov/opinions/openrecords/49cornyn/orl/2000/htm/or200004755.htm",
+            "title": "Cornyn Open Records Letter Ruling <P>December 19, 2000",
+            "snippet": "Section 552.104 protects from required public disclosure \"information that, if released, would give advantage to a competitor or bidder.\" Section 552.104 is ...",
+            "position": 2
+          },
+          {
+            "date": "May 30, 2025",
+            "link": "https://texasattorneygeneral.gov/sites/default/files/images/press/Annunciation%20House%20SCOTX%20Ruling.pdf",
+            "title": "[PDF] Supreme Court of Texas",
+            "snippet": "The trial court therefore granted declaratory relief and an injunction in favor of Annunciation House, which included the requirement that any ...",
+            "position": 3
+          },
+          {
+            "date": "Mar 8, 1999",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1999/jc0011.pdf",
+            "title": "[PDF] March 8,1999 The Honorable Ren& 0. Oliveira Chair, Committee on ...",
+            "snippet": "The fact that there is no adequate law protecting laborers, workmen and mechanics engaged in doing and performing work on public works in Texas ...",
+            "position": 4
+          },
+          {
+            "date": "Jun 24, 2010",
+            "link": "https://www2.texasattorneygeneral.gov/opinions/openrecords/50abbott/orl/2010/pdf/or201007377.pdf",
+            "title": "[PDF] June 24,2010 Mr. Mark Adams ._.__...",
+            "snippet": "This office issued Open Records Letter No. 2010-07377 (2010) on May 21,2010. Wehave examined this lUling and determined that Open Records ...",
+            "position": 5
+          },
+          {
+            "date": "Nov 5, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/images/Petition%20for%20Review%20(to%20file)%20(1).pdf",
+            "title": "[PDF] In the United States Court of Appeals for the Fifth Circuit",
+            "snippet": "... first hazard that OSHA has regulated that occurs both inside and ... advantage may be exaggerated or non- existent in many cases (see ...",
+            "position": 6
+          },
+          {
+            "date": "Sep 19, 2024",
+            "link": "https://texasattorneygeneral.gov/sites/default/files/images/press/State%20Fair%20of%20Texas%20Emergency%20Motion%20For%20Relief%20Pending%20Appeal%20Filed.pdf",
+            "title": "[PDF] In the Court of Appeals for the Fifteenth Judicial District Austin, Texas",
+            "snippet": "To the Honorable Fifteenth Court of Appeals: The Texas Legislature could hardly have been clearer: “[A] political subdivision.",
+            "position": 7
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:10:39.197Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number must be from 6 to 10 digits.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller of Public Accounts",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Comptroller.Texas.Gov is the website for the Texas Comptroller of Public Accounts.",
+            "position": 3
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 4
+          },
+          {
+            "link": "https://www.sos.state.tx.us/search.shtml?dropXSL=&pr=default&prox=page&rorder=500&rprox=500&rdfreq=500&rwfreq=500&rlead=500&sufs=0&order=r&rdepth=0&query=CERTIFICATE+OF+ACCOUNT+STATUS",
+            "title": "Current Search Results - the Texas Secretary of State",
+            "snippet": "If you've been asked to obtain a “certificate of good standing,” the first step is to determine what type of certificate is being requested.",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 7
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "If you have questions about the search results, send an email to tax.help@cpa.texas.gov. or call 1 ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 2/2.",
+            "position": 8
+          },
+          {
+            "link": "https://comptroller.texas.gov/taxes/franchise/coas-instructions.php",
+            "title": "Franchise Tax Account Status",
+            "snippet": "The \"Franchise Tax Account Status,\" previously referred to as \"Good Standing,\" provides the status of an entity's right to transact business in Texas.",
+            "position": 9
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:10:40.326Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com First Advantage Roofing",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:10:41.701Z",
+      "data": {
+        "query": "site:dallascounty.org First Advantage Roofing civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Apr 8, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/bidtabs/2016/2016-034-6571CHODONon-ProfitSet-AsideProjects.pdf",
+            "title": "[PDF] COURT ORDER 2016-0595 - Dallas County",
+            "snippet": "Owner agrees to release, defend, indemnify and hold harmless the County, its elected officials, its officers, agents, and employees against any ...",
+            "position": 1
+          },
+          {
+            "date": "Sep 20, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/Purchasing-Manual-Revised-2022.pdf",
+            "title": "[PDF] DALLAS COUNTY PURCHASING MANUAL",
+            "snippet": "This document is intended to be a general guideline for Dallas County employees addressing purchasing requirements and general operating ...",
+            "position": 2
+          },
+          {
+            "date": "Nov 20, 2023",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/human-resources/chapters82-86/Chapter86-DallasCountyCode-11202023.pdf",
+            "title": "[PDF] The Dallas County Administrative Code",
+            "snippet": "The Dallas County Administrative Code contains the employment policies and procedures for Dallas County. It is not to be.",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:10:42.989Z",
+      "data": {
+        "query": "site:collincountytx.gov First Advantage Roofing",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Apr 27, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210426_2626/50130_Bid%20Packet_2021-202.pdf",
+            "title": "[PDF] Construction, Roof Replacement, Collin County 900 Building ...",
+            "snippet": "Contract will be a general contract for the replacement of an existing modified bituminous roof at the Collin County 900 Building located at 900 ...",
+            "position": 1
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2016/CC/20161219_1985/42514_Roof%20Warranty.pdf",
+            "title": "[PDF] Johns Manville - Collin County",
+            "snippet": "These Johns Manville Guaranteed components are referred to above as the \"Roofing System\" and ALL OTHER COMPONENTS OF THE OWNER'S BUILDING ARE EXCLUDED. FROM THE ...",
+            "position": 2
+          },
+          {
+            "date": "May 13, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250512_3089/57972_Solicitation%20Packet-IFB%202025-081.pdf",
+            "title": "[PDF] Collin County, TX INVITATION FOR BID 2025-081 COLLIN ...",
+            "snippet": "SCOPE OF WORK INCLUDES all materials, labor, equipment and services to produce or be incorporated in such construction.",
+            "position": 3
+          },
+          {
+            "date": "Jan 14, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250113_3042/57293_2025-002%20Bid%20packet%20debris_removal_emergency_work-2024-12-19-14-58-25.pdf",
+            "title": "[PDF] Collin County, TX REQUEST FOR PROPOSAL 2025-002 DEBRIS ...",
+            "snippet": "Under this contract, work shall consist of all labor, equipment, fuel, traffic control costs and other associated costs necessary for the ...",
+            "position": 4
+          },
+          {
+            "date": "Jun 16, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200810_2512/48840_Addendum%202.pdf",
+            "title": "[PDF] COLLIN COUNTY",
+            "snippet": "The above listed system will provide up to -52.5psf (105psf) of uplift resistance in the field of the roof; provided the roofing system is ...",
+            "position": 5
+          },
+          {
+            "date": "Aug 6, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/CC/20190805_2361/46934_Bid%20Packet.pdf",
+            "title": "[PDF] Collin County Public Works HVAC Replacement",
+            "snippet": "roofing mastic compatible with roofing system. Roofing Supplier/Contractor shall approve roof penetration and flashing. O. For additional ...",
+            "position": 6
+          },
+          {
+            "date": "Feb 5, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240205_2912/55388_Pages%20from%20ProjMan-Vol1of2-CollinCountyHC%2CP%2CMEFacilities_CSP%20Full%2001.24.pdf",
+            "title": "[PDF] Collin County Healthcare, Parking, and Medical Examiner Facilities ...",
+            "snippet": "Polyvinyl-Chloride (PVC) Roofing ... The Owner may first attempt to negotiate a contract with the selected Offeror.",
+            "position": 7
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2018/CC/20180409_2173/44703_294%20-%2044703%20Construction%20Agreement.pdf",
+            "title": "[PDF] construction agreement - Collin County",
+            "snippet": "THIS CONSTRUCTION AGREEMENT is made and entered into by and between JJ. Red Commercial Roofing, LLC, a TEXAS corporation (hereinafter referred to as.",
+            "position": 8
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2022/CC/20221219_2811/53336_Collin%20College%20JOC%20Bid%20Attachment%201%20-%20JOC%20Supplemental%20Conditions%20-%20FINAL%202.26.21%20%2811%29.pdf",
+            "title": "[PDF] JOC SUPPLEMENTAL CONDITIONS - Collin County",
+            "snippet": "The Contractor shall use the Construction Task Catalog® in effect on the date the Price. Proposal is due. v. The Contractor cannot delay submitting a Price ...",
+            "position": 9
+          },
+          {
+            "date": "Jan 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210125_2587/33858_RTC%20Packet%2001-14-2021.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCoG",
+            "snippet": "The RTC meeting on January 14, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:10:44.075Z",
+      "data": {
+        "query": "site:dentoncounty.gov First Advantage Roofing",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/279/June-2012-Vendor-Check-Register-PDF",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "ALL ABOUT ROOFING LLC. $5,681.00. 20120626. ALL TEXAS FENCE, INC. $1,100.00 ... FIRST BAPTIST SANGER/ELECTION. $550.00. 20120612. FIRST SOUTHWEST ASSET MGMT.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=86",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $1,250.00. 20140826. CBS ROOFING SERVICES. $1,350.00. 20140819. CCD COUNSELING, PA. $230.00. 20140819. CDCAT. $125.00. 20140812. CDW ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=201",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20080520. 4M YOUTH SERVICES, INC. $4,940.00. 20080520. 911 ETC, INC. $689.10. 20080520. A-1 PORTA PRIVY. $370.00.",
+            "position": 3
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=214",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $312.00. 20111018. CCD COUNSELING, PA. $93.00. 20111018. CCD COUNSELING, PA. $6,426.00. 20111004. CDW GOVERNMENT INC. $1,678.11. 20111011.",
+            "position": 4
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/282/May-2012-Vendor-Check-Register-PDF",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $625.00. 20120501. CCD COUNSELING, PA. $2,065.00 ... FIRST BAPTIST SANGER/ELECTION. $500.00. 20120515. FIRST CHOICE SAND AND GRAVEL.",
+            "position": 5
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=209",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $850.00. 20111101. CCA ADULT ... FIRST BAPTIST SANGER/ELECTION. $550.00. 20111101 ... STAPLES ADVANTAGE. $0.00. 20111101. STAPLES ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/187/May-2013-Vendor-Check-Register-PDF",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $625.00. 20130521. CCD COUNSELING, PA. $100.00. 20130521. CCD ... FIRST BAPTIST SANGER/ELECTION. $500.00. 20130507. FIRSTCARE MEDICAL CE.",
+            "position": 7
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=322",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $663.00. 20151117. CCD COUNSELING, PA. $270.00. 20151117 ... FIRST BAPTIST SANGER/ELECTION. $650.00. 20151103. FLETCHER, JOSEPH D.-MD.",
+            "position": 8
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=306",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $1,998.00. 20150728. CDCAT. $250.00. 20150721. CDYNE CORPORATION. $14.99. 20150714. CENTER FOR AMERICAN/INT'L LAW. $165.00. 20150714.",
+            "position": 9
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/281/March-2012-Vendor-Check-Register-PDF",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $220.83. 20120313. CCA ADULT HEALTH CENTER. $80.00 ... FIRST SOUTHWEST ASSET MGMT. $15,180.00. 20120306. FIRSTCARE MEDICAL. $362.40.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:10:49.352Z",
+      "data": {
+        "name": "First Advantage Roofing & Construction",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(682) 503-7420",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/southlake/profile/residential-roofing/first-advantage-roofing-construction-0825-1000230724",
+        "review_count": null,
+        "founding_date": "05/02/2016",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 9,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:10:51.678Z",
+      "data": {
+        "cid": "3226219627701911239",
+        "name": "First Advantage Roofing",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "521 W Southlake Blvd #175, Southlake, TX 76092",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "Edited a year ago",
+            "text": "Very professional company, finished ahead of schedule, stayed within our budget, transformed our kitchen into a space we now spend most of our time in. This GC had ideas we hadn’t thought of that added a lot more storage space. Also did the custom adjustable led lighting under the cabinets. Highly recommend if you want the project done right. Very professional and the crew was on time, cleaned up after themselves, very respectful of our home. It’s rare that a company delivers on time and what they say! I can’t say enough great things about them.",
+            "author": "dawnie foundit",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Mr. Burkhart and his crew have done several jobs for me and my wife including:\n1. Mold mitigation\n2. Re-roofing\n3. Laying down new floors\n4. Carpeting stairs\n5. Bathroom remodeling\n6. Kitchen countertop replacement\nMr. Burkhart, as well as every crew member I've had the pleasure of working with, have been professional and courteous.  The work they have done is excellent.  I would recommend them to anyone.\n\nJohn Hunt",
+            "author": "John Hunt",
+            "rating": 5
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "I have had First Advantage fix my roof, install new HVAC units, build my backyard oasis and remodel my kitchen.  I would highly recommend for honest high quality work.",
+            "author": "Greg May",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Stuart and his crew did an outstanding job! The project was done fast and efficiently and I could not be happier with the outcome. I will DEFINITELY use them agai!",
+            "author": "Mrs Tonya Woods",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "They did a fantastic job roofing our southlake office that had heaving winter storm damage and hail. Highly recommend!",
+            "author": "Santa Guajardo",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "First Advantage was fast, easy to work with, very professional, and did quality work. I couldn’t be happier with the service!",
+            "author": "Richard Hudson",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Fantastic.  Great quality of work and very honest and dependable.  I would recommend them highly.",
+            "author": "Stan Price",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "The work and they’re ideas were above my expectations",
+            "author": "Tommy O'Donnell",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 10,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Southlake, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:11:13.604Z",
+      "data": {
+        "name": "First Advantage Roofing",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(682) 503-7420",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "521 W Southlake Blvd #175, Southlake, TX 76092",
+        "reviews": [],
+        "website": "https://firstadvantageroofing.com/",
+        "maps_url": "https://www.google.com/maps/search/First%20Advantage%20Roofing%20Southlake%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "website": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:11:15.039Z",
+      "data": {
+        "email": null,
+        "error": null,
+        "source": null
+      }
+    },
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:11:16.952Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": true,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "https://firstadvantageroofing.com/",
+            "type": "workmanship",
+            "snippet": "business, and we’re proud of it. We have grown because of our focus on quality workmanship and customer service. We know how important your property is to you, and we wan"
+          }
+        ],
+        "durations": [],
+        "confidence": "WEAK",
+        "source_url": "https://firstadvantageroofing.com/",
+        "analyzed_pages": [
+          {
+            "url": "https://firstadvantageroofing.com/",
+            "type": "homepage",
+            "title": "First Advantage Roofing – & Construction"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:11:21.810Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:11:26.567Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"First Advantage Roofing\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:11:28.385Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"First Advantage Roofing\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:11:29.177Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"First Advantage Roofing\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:11:30.653Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"First Advantage Roofing\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:11:32.070Z",
+      "data": {
+        "found": true,
+        "query": "\"First Advantage Roofing\" Southlake lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/southlake/profile/residential-roofing/first-advantage-roofing-construction-0825-1000230724",
+            "title": "First Advantage Roofing & Construction | BBB Business Profile",
+            "snippet": "First Advantage Roofing & Construction is NOT a BBB Accredited Business. To become accredited, a business must agree to BBB Standards for Trust and pass BBB's ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:11:50.227Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T15:11:30Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22First%20Advantage%20Roofing%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=IuKRaYb3A938ptQPtYDWmQY\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T15:11:40Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22First%20Advantage%20Roofing%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=LOKRaY7SCK6qw8cP34TlyAo\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "First Advantage Roofing",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

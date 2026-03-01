@@ -57,10 +57,10 @@ If data is fresh (< 7 days old), show existing results unless user explicitly re
 
 ### Step 3: Run the Audit
 
-Navigate to the contractor-auditor directory and run the audit script:
+Navigate to the auditor directory and run the audit script:
 
 ```bash
-cd /home/astre/command-center/testhome/contractor-auditor
+cd /home/astre/command-center/src/greenlit/auditor
 source venv/bin/activate && set -a && . ./.env && set +a
 node bin/run_audit.js --id <contractor_id> [--mode dialectic]
 ```
@@ -164,7 +164,7 @@ Present the results in a structured format:
 - Note that lack of data itself is a signal (new business or inactive)
 
 **Audit script fails:**
-- Check error logs in contractor-auditor directory
+- Check error logs in auditor directory
 - Common issues:
   - Missing .env variables
   - Playwright browser not installed

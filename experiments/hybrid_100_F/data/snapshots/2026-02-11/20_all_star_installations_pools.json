@@ -1,0 +1,940 @@
+{
+  "contractor_id": 20,
+  "business_name": "All Star Installations pools",
+  "city": "Fort Worth",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-11T03:27:38.322Z",
+  "sources": {
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:35:13.290Z",
+      "data": {
+        "query": "site:nextdoor.com All Star Installations pools Fort Worth",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/blue-sage-pool-solutions-frisco-tx/",
+            "title": "Blue Sage Pools - Frisco, TX",
+            "snippet": "At Blue Sage Pool Solutions, we specialize in New Pool Construction, Pool Remodel, Pool Maintenance, Service Repairs, and Installations.",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/ranchoramon--cathedral-city--ca/",
+            "price": 50,
+            "title": "Rancho Ramon, Cathedral City | Everything You Need to ...",
+            "snippet": "Specializing in rewiring, outlet installations, circuit panel upgrades, solar panel installations, ceiling fan and light fixt ... Camp Gladiator East Fort Worth.Read more",
+            "currency": "$",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/city/ellenwood--ga/",
+            "price": 40,
+            "title": "Ellenwood, GA | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "Ellenwood, GA is a peaceful, family-friendly town known for its beautiful landscapes and clean environment.Read more",
+            "currency": "$",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:36:48.681Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "indeed"
+      }
+    },
+    "google_maps": {
+      "status": "success",
+      "fetched_at": "2025-12-05T16:26:48.155Z",
+      "data": "All Star Installations pools - Google Maps  Search  Close  Collapse side panel   Saved  Recents  Get app  See photos All Star Installations pools 3.0 (48) Swimming pool contractor Overview Reviews  Directions  Save  Nearby  Send to phone  Share  3813 N Commerce St, Fort Worth, TX 76106   Open · Closes 5 PM  Friday 9 AM–5 PM  Saturday Closed  Sunday Closed  Monday 9:30 AM–5 PM  Tuesday 9 AM–5 PM  Wednesday 9 AM–5 PM  Thursday 9 AM–5 PM  Suggest new hours  (817) 317-1614    RJ7X+7M Fort Worth, Texas    Claim this business   Suggest an edit Add missing information   Add website Photos & videos All Inside Street View & 360°  Add photos & videos Review summary   Reviews are automatically processed to detect inappropriate content like fake reviews and spam. We may take down reviews that are flagged in order to comply with Google policies or legal obligations. 5 4 3 2 1 3.0 48 reviews \"Could not be happier with the work they did.\" \"Not sure how this company is still being allowed to rip people off like they do.\" \"Sloppy and Unprofessional All Star is about quantity , not quality .\"  Write a review Reviews  Search reviews   Sort  All company 13 job 8 above ground pool 8 fee 5 pay 5 phone 4 pump 3 quality 3 rocks 2 sand 2 +6 Ken Will 2 reviews · 3 photos       4 years ago I would like to share my experience with Allstar Installations. We purchased a pool and decided to have Allstar do a countersink install, that is dig a 24\" deep recess for the pool. As you can see from the pictures it was a sloppy and … More  Like 4  Share Fred G 8 reviews · 2 photos       4 years ago Pictures can basically speak for themselves. Love that these guys were able to get me in their schedule but i could’ve waited if i would’ve gotten a cleaner setup. $700 and yet i’m still have to get dirt hauled away & pick up TRASH & … More  Like 1  Share Susan Gingola Local Guide · 17 reviews · 1 photo       a year ago I would give less if I could. They broke piece of pool and was not going to say anything. My husband noticed and then they said they would order and come fix. - never did. My filter is leaking on 2 spots since installing- we have … More  Like  Share More reviews (45) People also search for All Star Pools DFW 5.0 (4) Swimming pool contractor TXPool 4.9 (25) Swimming pool contractor Allstar General Contractors 4.0 (3) General contractor J Caldwell Custom Pools 4.5 (114) Swimming pool contractor RA POOLS 2.6 (5) Pool cleaning service  Web results About this data Get the most out of Google Maps Sign in  Collapse side panel  Collapse side panel"
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:36:48.693Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "google_news"
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:36:48.667Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "serper_angi"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:38:37.515Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:36:48.670Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "serper_houzz"
+      }
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:34:55.982Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:36:48.686Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "reddit"
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:34:14.428Z",
+      "data": {
+        "query": "site:yelp.com \"All Star Installations pools\" \"Fort Worth, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:34:52.229Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:35:12.146Z",
+      "data": "All Star Installations pools Fort Worth review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 6:22 6:22 Now playing Everything You Need To Know Before Building A Pool! Josh Beberg Josh Beberg • • 214K views 2 years ago Josh Beberg Josh Beberg Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... From the video description 4K Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. AI-generated video summary Quality and accuracy may vary. Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. SHORTS SHORTS Now playing A brand new liner makes all the difference! #pool #installation #transformation Plebian Pools Plebian Pools • • 30 views 5 months ago Plebian Pools Plebian Pools SHORTS SHORTS Now playing Inground Pool Costs 2025 River Pools River Pools • • 32K views 9 months ago River Pools River Pools Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... From the video description 4K 8:33 8:33 Now playing What Is The Cheapest Inground Swimming Pool? River Pools River Pools • • 112K views 1 year ago River Pools River Pools If you're wondering what is the cheapest inground swimming pool , you've come to the right place. In this video we're going to ... If you're wondering what is the cheapest inground swimming pool , you've come to the right place. In this video we're going to ... From the video description CC 9 chapters Introduction | Base kit, base package, turn-key | Who can provide specific price numbers? | Vinyl Liner Pool Pricing | Fiberglass Pool Pricing | Concrete Pool Pricing | What is the lowest cost? | Pros and Cons of Vinyl Liner Pools | What is the Cheapest Inground Swimming Pool? 9 chapters in this video 9 chapters Introduction Introduction 0:00 Introduction 0:00 Base kit, base package, turn-key Base kit, base package, turn-key 0:43 Base kit, base package, turn-key 0:43 Who can provide specific price numbers? Who can provide specific price numbers? 1:26 Who can provide specific price numbers? 1:26 Vinyl Liner Pool Pricing Vinyl Liner Pool Pricing 1:39 Vinyl Liner Pool Pricing 1:39 Fiberglass Pool Pricing Fiberglass Pool Pricing 3:13 Fiberglass Pool Pricing 3:13 Concrete Pool Pricing Concrete Pool Pricing 4:17 Concrete Pool Pricing 4:17 What is the lowest cost? What is the lowest cost? 5:21 What is the lowest cost? 5:21 SHORTS SHORTS Now playing Fiberglass swimming pools are dug/set in one day. #fiberglasspools #modernpoolbuild #excavation CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP • • 1.3M views 2 years ago CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP SHORTS SHORTS Now playing How much does it cost to build a pool? The Boeckle Brothers The Boeckle Brothers • • 132K views 4 years ago The Boeckle Brothers The Boeckle Brothers Any questions regarding construction/flipping/wholesaling/real estate? We want to help! Follow us on social media: ... Any questions regarding construction/flipping/wholesaling/real estate? We want to help! Follow us on social media: ... From the video description Sheraton – Goodnight Room The World's Gathering Place Sponsored Sheraton Watch Learn more SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description SHORTS SHORTS Now playing Can you fit a pool in a SMALL BACKYARD? Calimingo Calimingo • • 1.2M views 3 years ago Calimingo Calimingo 4K SHORTS SHORTS Now playing Tour this simple yet luxurious pool on the outskirts of Fort Worth, Tx!💧#shorts #pool The Complete Backyard The Complete Backyard • • 139 views 1 year ago The Complete Backyard The Complete Backyard SHORTS SHORTS Now playing Is this an in-ground or above-ground pool? 👀#luxuryhome #backyard #luxurypools #abovegroundpools Foxterra Design Foxterra Design • • 799K views 1 year ago Foxterra Design Foxterra Design SHORTS SHORTS Now playing Why Fiberglass Pools are Going Out of Style Blu H2O Pools Blu H2O Pools • • 23K views 2 years ago Blu H2O Pools Blu H2O Pools The Little Entrepreneur – The Lincoln Wish List Sales Event Share a little light this holiday season during the Lincoln Wish List Sales Event. Sponsored Lincoln Watch Learn more People also watched 7:13 7:13 Now playing Fiberglass pool install timelapse: part 1 Adam Miller Adam Miller • • 9.9M views 6 years ago Adam Miller Adam Miller Part 2 of the installation : https://youtu.be/6ZLrtMf0Hc0 Final product: https://youtu.be/VYm-EjXsGN8. Part 2 of the installation : https://youtu.be/6ZLrtMf0Hc0 Final product: https://youtu.be/VYm-EjXsGN8. From the video description 8:14 8:14 Now playing Fiberglass Pool Review | Full Explanation AlbertGroup AlbertGroup • • 16K views 2 years ago AlbertGroup AlbertGroup Thinking about getting a fiberglass pool in New York? Wondering if a Leisure Pools USA brand fiberglass pool is the right choice ... Thinking about getting a fiberglass pool in New York? Wondering if a Leisure Pools USA brand fiberglass pool is the right choice ... From the video description 4K 18 chapters Intro | Summit 30' in Ebony Blue | Best features | Friend's thoughts? | Texture of the fiberglass pool | Heat retention of the fiberglass pool | Splash deck and ledge feature review | Cleaning a Leisure pool | Automatic cover review | How the kids enjoy the pool? | Thoughts after owning the pool for 3 years? | Why did you want a swimming pool? | How does the whole Family enjoy the pool? | How do you like the salt water? | How has the pool affected the heating bill? | How many designs did Leisure pools offer? | Would you recommend a Leisure pool? | Contact info 18 chapters in this video 18 chapters Intro Intro 0:00 Intro 0:00 Summit 30' in Ebony Blue Summit 30' in Ebony Blue 0:20 Summit 30' in Ebony Blue 0:20 Best features Best features 0:40 Best features 0:40 Friend's thoughts? Friend's thoughts? 1:00 Friend's thoughts? 1:00 Texture of the fiberglass pool Texture of the fiberglass pool 1:17 Texture of the fiberglass pool 1:17 Heat retention of the fiberglass pool Heat retention of the fiberglass pool 1:36 Heat retention of the fiberglass pool 1:36 Splash deck and ledge feature review Splash deck and ledge feature review 2:27 Splash deck and ledge feature review 2:27 18:53 18:53 Now playing Cost To Build a Pool Florida Edition | Amy Kidwell | Construction Costs | Winter Garden, FL Heart and Home Orlando Heart and Home Orlando • • 252K views 3 years ago Heart and Home Orlando Heart and Home Orlando One of the most common question I get from buyers is \"What does it cost to build a pool in Florida?\" The answer is always \"It ... One of the most common question I get from buyers is \"What does it cost to build a pool in Florida?\" The answer is always \"It ... From the video description 7 chapters Introduction | Construction Costs | Required Option Choices | Design Options | Repair And Replacement | Extra Stuff | The Grand Total 7 chapters in this video 7 chapters Introduction Introduction 0:00 Introduction 0:00 Construction Costs Construction Costs 2:30 Construction Costs 2:30 Required Option Choices Required Option Choices 3:30 Required Option Choices 3:30 Design Options Design Options 10:00 Design Options 10:00 Repair And Replacement Repair And Replacement 13:45 Repair And Replacement 13:45 Extra Stuff Extra Stuff 15:00 Extra Stuff 15:00 The Grand Total The Grand Total 16:45 The Grand Total 16:45 7:29 7:29 Now playing 5 Types of above ground pools Above Ground Pool Builder Above Ground Pool Builder • • 434K views 9 years ago Above Ground Pool Builder Above Ground Pool Builder There are 5 types of above-ground pools - Steel, Rolled wall Aluminum, Resin, Hrbid, and, Slat-Walled Aluminum. Let's check out ... There are 5 types of above-ground pools - Steel, Rolled wall Aluminum, Resin, Hrbid, and, Slat-Walled Aluminum. Let's check out ... From the video description 3 moments Synflex Resin Vs Lower Quality Resin | Synflex Resin or Talc Filled Resin Parts | Ugly Above ground pools 3 auto-generated moments in this video 3 moments Synflex Resin Vs Lower Quality Resin Synflex Resin Vs Lower Quality Resin 3:05 Synflex Resin Vs Lower Quality Resin 3:05 Synflex Resin or Talc Filled Resin Parts Synflex Resin or Talc Filled Resin Parts 3:25 Synflex Resin or Talc Filled Resin Parts 3:25 Ugly Above ground pools Ugly Above ground pools 4:24 Ugly Above ground pools 4:24 + 6 more SHORTS SHORTS Now playing Get Affordable Mini Splits Here At The Home Depot & Have Us Install It For FREE‼️#homedepot #hvac Quick Refrigeration Quick Refrigeration • • 31K views 1 year ago Quick Refrigeration Quick Refrigeration 17:12 17:12 Now playing $65,000 Pool Installation from Start to Finish!! Komar Project Komar Project • • 1.9M views 3 years ago Komar Project Komar Project Install Raid for Free ✓ IOS/ANDROID/PC: https://clcr.me/qs72PX and get a special starter pack Available only for the next 30 days ... Install Raid for Free ✓ IOS/ANDROID/PC: https://clcr.me/qs72PX and get a special starter pack Available only for the next 30 days ... From the video description 3 moments Raid Shadow Legends | Create the Coping | Timeline 3 auto-generated moments in this video 3 moments Raid Shadow Legends Raid Shadow Legends 3:34 Raid Shadow Legends 3:34 Create the Coping Create the Coping 12:21 Create the Coping 12:21 Timeline Timeline 15:41 Timeline 15:41 SHORTS SHORTS Now playing The best above ground pool setup ideas! You don't wanna miss out on these best additions to the pool Poolhacker_official Poolhacker_official • • 371K views 1 year ago Poolhacker_official Poolhacker_official poolhacker # pool #pooldesign #abovegroundpools #ingroundpool #swimmingpool #poolparty #poolfun #backyardprojects ... poolhacker # pool #pooldesign #abovegroundpools #ingroundpool #swimmingpool #poolparty #poolfun #backyardprojects ... From the video description 2:01 2:01 Now playing Pool installation gone wrong Tampa Bay 28 Tampa Bay 28 • • 1.9M views 9 years ago Tampa Bay 28 Tampa Bay 28 A owner is worried about her family's safety after a pool installation goes wrong. ◂ The ABC Action News app brings you the ... A owner is worried about her family's safety after a pool installation goes wrong. ◂ The ABC Action News app brings you the ... From the video description 11:20 11:20 Now playing Should You Buy An Above Ground Pool? Review and Costs DoItYourselfDad DoItYourselfDad • • 444K views 5 years ago DoItYourselfDad DoItYourselfDad We go through the pro's and cons of an above ground pool , things you'll need to enjoy it and how much an above ground pool ... We go through the pro's and cons of an above ground pool , things you'll need to enjoy it and how much an above ground pool ... From the video description 14 chapters Intro | Pros and Cons | Ladders and Steps | Smaller Pools | Filtration | Maintenance | Solar Covers | Cheap Pool | Ground Level | Installation Costs | Pool Costs | Pool Accessories | The Bargain Approach | Outro 14 auto-generated chapters in this video 14 chapters Intro Intro 0:00 Intro 0:00 Pros and Cons Pros and Cons 0:22 Pros and Cons 0:22 Ladders and Steps Ladders and Steps 2:15 Ladders and Steps 2:15 Smaller Pools Smaller Pools 3:32 Smaller Pools 3:32 Filtration Filtration 4:12 Filtration 4:12 Maintenance Maintenance 4:54 Maintenance 4:54 Solar Covers Solar Covers 5:55 Solar Covers 5:55 SHORTS SHORTS Now playing Stunning Pool Installation cost WetScapes Fiberglass Pools WetScapes Fiberglass Pools • • 614 views 9 months ago WetScapes Fiberglass Pools WetScapes Fiberglass Pools Contact us to get a Wetscapes pool in your backyard! we are located near New Albany, Indiana, right across the bridge from ... Contact us to get a Wetscapes pool in your backyard! we are located near New Albany, Indiana, right across the bridge from ... From the video description 10:09 10:09 Now playing The TRUTH about above ground pools. MTB De-G3n MTB De-G3n • • 176K views 2 years ago MTB De-G3n MTB De-G3n The Best & the worst about above ground pools , and what you should know. Check out Vevor pool pumps: ... The Best & the worst about above ground pools , and what you should know. Check out Vevor pool pumps: ... From the video description Summary This video shares a three-year above-ground pool journey, detailing both successes and failures. The creator explores various pool products and maintenance techniques. Learn from trial-and-error experiences, including scuba diving in the pool and unique product reviews. AI-generated video summary Quality and accuracy may vary. Summary This video shares a three-year above-ground pool journey, detailing both successes and failures. The creator explores various pool products and maintenance techniques. Learn from trial-and-error experiences, including scuba diving in the pool and unique product reviews. SHORTS SHORTS Now playing This pool looks incredible 😧 | #shorts SportsNation SportsNation • • 8.5M views 3 years ago SportsNation SportsNation This pool looks incredible | #shorts (via @rikkicarman) This pool looks incredible | #shorts (via @rikkicarman) From the video description SHORTS SHORTS Now playing How deep should your pool be? #luxuryhome #pool #poolhome #backyard #backyarddesign Foxterra Design Foxterra Design • • 216K views 1 year ago Foxterra Design Foxterra Design 0:00 So I haven't felt this small in a long time but this is 8 ft deep typically we stick around 5 to 6 but this client wanted to go a little ... So I haven't felt this small in a long time but this is 8 ft deep typically we stick around 5 to 6 but this client wanted to go a little ... Automatic captions Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:35:49.325Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:35:30.548Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:35:35.990Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:36:48.674Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "homeadvisor"
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:36:48.689Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "osha"
+      }
+    },
+    "tdlr": {
+      "status": "not_found",
+      "fetched_at": "2025-12-05T16:27:29.255Z",
+      "data": {
+        "error": "Waiting for selector `input[name=\"SearchTerm\"], input[id=\"SearchTerm\"], input[type=\"text\"]` failed: Waiting failed: 10000ms exceeded",
+        "found": false,
+        "licenses": [],
+        "search_term": "All Star Installations pools"
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:38:37.511Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:35:44.122Z",
+      "data": {
+        "query": "site:apps.tarrantcounty.com All Star Installations pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:35:46.342Z",
+      "data": {
+        "query": "site:collincountytx.gov All Star Installations pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Nov 11, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20211115_2703/33858_RTC%20Packet%2011-11-2021.pdf",
+            "title": "AGENDA Regional Transportation Council Thursday, ...",
+            "snippet": "The RTC meeting on November 11, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...Read more",
+            "position": 1
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20Business.pdf",
+            "title": "Sorted by Business",
+            "snippet": "Business is a full service air conditioning and heating company that services, designs, installs and maintains systems of all sizes. We ...Read more",
+            "position": 2
+          },
+          {
+            "date": "Jan 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210125_2587/33858_RTC%20Packet%2001-14-2021.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "The RTC meeting on January 14, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...Read more",
+            "position": 3
+          },
+          {
+            "date": "Nov 12, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201116_2558/33858_RTC%20Packet%2011-12-2020.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "The RTC meeting on November 12, 2020, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...Read more",
+            "position": 4
+          },
+          {
+            "date": "Dec 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210816_2672/50383_RTC%20Packet%2008-12-2021.pdf",
+            "title": "AGENDA Regional Transportation Council Thursday, ...",
+            "snippet": "The RTC meeting on August 12, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...Read more",
+            "position": 5
+          },
+          {
+            "date": "Oct 2, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201221_2572/48414_2020%20Small%20Business%20Invoice%20Approved%20Payments.pdf",
+            "title": "48414_2020 Small Business Invoice Approved Payments.pdf",
+            "snippet": "Business is a full service air conditioning and heating company that services, designs, installs and maintains systems of all sizes. We ...Read more",
+            "position": 6
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210412_2620/33858_agenda-packet-apr.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "The RTC meeting on April 8, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so ...Read more",
+            "position": 7
+          },
+          {
+            "date": "Jul 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210716_2662/33858_RTC%20Packet%2007-08-2021.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "The RTC meeting on July 8, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so ...Read more",
+            "position": 8
+          },
+          {
+            "date": "Mar 19, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210322_2614/49828_BillsofInterestFiled3.6_12.21.pdf",
+            "title": "BILLS OF INTEREST FILED 3.6-12.21",
+            "snippet": "Remarks: JBD - Judges have right to deny bail for violent or sex offenses - if constitutional amendment passes. Adds a.Read more",
+            "position": 9
+          },
+          {
+            "date": "Jul 9, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200817_2520/33858_RTC%20Packet%20-%20August%2013%2C%202020.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "The network supports the movement of people and goods between population centers, major military installations, and intermodal facilities.Read more",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:35:48.134Z",
+      "data": {
+        "query": "site:dentoncounty.gov All Star Installations pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:37:06.657Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:c98f:d45e:7347:4fa0\nTime: 2025-12-22T13:36:51Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22All%20Star%20Installations%20pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=cklJacikOLjIp84P_dnBoAs\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:c98f:d45e:7347:4fa0\nTime: 2025-12-22T13:37:01Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22All%20Star%20Installations%20pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=fElJad7dJtjcwN4PvZOzyAQ\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "All Star Installations pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:36:48.661Z",
+      "data": {
+        "found": true,
+        "rating": 3.1,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/all-star-installations-fort-worth-2",
+        "review_count": 68
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:34:48.247Z",
+      "data": "Trustpilot Search Results Companies All Star Casino allstarcasino.com • 23 reviews 3.5 All Star Slots allstarslots.com • 32 reviews 4.1 All Star Wheelchairs allstarwheelchairs.com • 12 reviews 4.0 All Star Shirt allstarshirt.com • 35 reviews 3.5 All-Star Appliance allstarappliancerepairs.com • 1 review 3.7 Categories All-Girls High School The best companies in the category 'All-Girls High School' Casino The best companies in the category 'Casino' Gaming service Provider The best companies in the category 'Gaming service Provider' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (2615) All Star Casino allstarcasino.com 3.5 23 reviews Netherlands All Star Slots allstarslots.com 4.1 32 reviews United States All Star Wheelchairs allstarwheelchairs.com 4.0 12 reviews United States All Star Shirt allstarshirt.com 3.5 35 reviews 3763 Payne Street, Rosenberg, United States All-Star Appliance allstarappliancerepairs.com 3.7 1 review United States All Star BPO allstarbpo.com 2.7 5 reviews 1 Priority Ln #700 Murrysville, PA 15668, USA, Murrysville, United States All Star Bowling www.allstarlanes.com 1.7 25 reviews State Street 12101, Draper, United States All Star Prizes allstarprizes.co.uk 4.8 4,184 reviews United Kingdom The Pools www.thepools.com 4.2 1,140 reviews United Kingdom All-Star Tutors allstartutors.co.uk 4.5 15 reviews Common Lane, Hambleton, Selby , Selby , United Kingdom Previous 1 2 3 4 262 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) All-Girls High School Education & Training Casino Events & Entertainment Gaming service Provider Events & Entertainment Financial Institution Money & Insurance Gambling Service Events & Entertainment Online Casino or Bookmaker Events & Entertainment are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2025 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:35:42.168Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov All Star Installations pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 12, 2025",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Petition_5.pdf",
+            "title": "STATE OF TEXAS, Plaintiff, v. SOUTHWESTERN PUBLIC ...",
+            "snippet": "to both the Smokehouse Creek Fire and the Reamer Fire. 3 As used herein, “natural resources” includes, but is not limited to, all land, water, ...Read more",
+            "position": 1
+          },
+          {
+            "date": "Sep 19, 2024",
+            "link": "https://texasattorneygeneral.gov/sites/default/files/images/press/State%20Fair%20of%20Texas%20Emergency%20Motion%20For%20Relief%20Pending%20Appeal%20Filed.pdf",
+            "title": "In the Court of Appeals for the Fifteenth Judicial District",
+            "snippet": "As a result, the State was entitled as a matter of law to interim relief against the City Manager's participation in this unlawful scheme—relief ...Read more",
+            "position": 2
+          },
+          {
+            "date": "Jan 30, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Marijuana%20Lawsuits%20Filed.pdf",
+            "title": "THE STATE OF TEXAS, Plaintiff, v. CITY OF AUSTIN",
+            "snippet": "In all other Class A or Class B POM cases, and when officers have probable cause to believe the substance is marijuana, officers shall seize the ...Read more",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:35:00.144Z",
+      "data": {
+        "query": "All Star Installations pools Fort Worth site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 2, 2020",
+            "link": "https://www.nbcdfw.com/video/news/video-vault/justin-beaver-found-in-lakewood-backyard-pool/2285263/",
+            "title": "'Justin Beaver' Found in Lakewood Backyard Pool",
+            "snippet": "NBC 5 viewer Mindy Satterwhite sent us this video of “Justin Beaver” who she found in her backyard pool this week.",
+            "position": 1
+          },
+          {
+            "date": "Feb 7, 2022",
+            "link": "https://www.star-telegram.com/news/local/fort-worth/article256920297.html",
+            "title": "Speeding, accidents worry residents in Fort Worth ...",
+            "snippet": "Resident Sean Lawler said there was also a flashing red-and-blue police speed sign put up near the intersection by the neighborhood splash pool, ...Read more",
+            "position": 2
+          },
+          {
+            "date": "Jun 3, 2015",
+            "link": "https://www.star-telegram.com/entertainment/living/travel/article23012919.html",
+            "title": "One World Observatory visit is a soaring experience",
+            "snippet": "Surrounding the perimeter of the pools are parapets, with bronze plates bearing the inscribed names of 2,983 people — the victims of 9-11 ( ...Read more",
+            "position": 3
+          },
+          {
+            "date": "Aug 5, 2021",
+            "link": "https://www.nbcdfw.com/news/local/texas-news/texas-water-park-chemical-leak-blamed-on-filtration-system/2709477/",
+            "title": "Texas Water Park Chemical Leak Blamed on Filtration ...",
+            "snippet": "A Texas water park says a chemical exposure that sent dozens of people to hospitals was caused by improper installation of a water filtration system.Read more",
+            "position": 4
+          },
+          {
+            "date": "Nov 26, 2025",
+            "link": "https://www.fox4news.com/news/prairie-lights-kicks-off-20th-anniversary-bigger-brighter-than-ever",
+            "title": "Prairie Lights kicks off 20th anniversary bigger and brighter ...",
+            "snippet": "The display is located at Lynn Creek Park on Joe Pool Lake and costs $50 per vehicle, running nightly through New Year's Eve. GRAND PRAIRIE, ...Read more",
+            "position": 5
+          },
+          {
+            "date": "Jan 15, 2021",
+            "link": "https://www.nbcdfw.com/news/national-international/inauguration-day-2021-everything-you-need-to-know/2529145/?os&ref=app",
+            "title": "Viewers' Guide to Inauguration Day: Schedule, Performers, ...",
+            "snippet": "The Mass is expected to begin around 9 a.m. ET and will coincide with Trump's sendoff ceremony at Joint Base Andrews. Biden will then head to ...Read more",
+            "position": 6
+          },
+          {
+            "date": "Nov 7, 2024",
+            "link": "https://www.dallasnews.com/news/texas/2024/11/07/officials-redraw-texas-oklahoma-boundary-saying-it-will-secure-water-supply-for-2m-texans/",
+            "title": "Texas-Oklahoma boundary redrawn to secure 'vital' water ...",
+            "snippet": "State officials recently redrew an underwater Texas-Oklahoma boundary, officially returning the pump station on one of the nation's largest manmade lakes fully ...Read more",
+            "position": 7
+          },
+          {
+            "date": "Jul 13, 2024",
+            "link": "https://www.nbcdfw.com/entertainment/the-scene/indoor-summer-art-activities-in-north-texas/3590299/",
+            "title": "Indoor summer art activities in North Texas",
+            "snippet": "The pool isn't the only cool place to spend a hot Texas summer day. From toe-tapping musicals to immersive art exhibitions and beautiful ...Read more",
+            "position": 8
+          },
+          {
+            "date": "Nov 12, 2015",
+            "link": "https://www.star-telegram.com/news/local/fort-worth/article44534637.html",
+            "title": "Texas ready to defend its military installations",
+            "snippet": "Fort Worth and other military communities in Texas and other states are preparing to defend their installations against the prospect of ...",
+            "position": 9
+          },
+          {
+            "date": "Jun 17, 2025",
+            "link": "https://www.dallasnews.com/abode/2025/06/17/north-texas-landscaper-outlines-simple-rules-for-creating-an-unforgettable-modern-yard/",
+            "title": "North Texas landscaper outlines simple rules for creating ...",
+            "snippet": "Glenn Bonick, owner of Dallas-based Bonick Landscaping, offers tips for creating a contemporary modern garden, with sleek lines, ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:35:45.339Z",
+      "data": {
+        "query": "site:dallascounty.org All Star Installations pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2003/GeneralFund.PDF",
+            "title": "GENERAL FUND",
+            "snippet": "The following paragraphs describe the largest General Fund revenue sources and provide historical data and analysis on each. The Auditor's projections for all ...Read more",
+            "position": 1
+          },
+          {
+            "date": "Sep 10, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/comcrt/county-code/DallasCountyCode-09102024.pdf",
+            "title": "Dallas County Code",
+            "snippet": "- Definitions and rules of construction. (a) In the construction of this Code and of all orders and resolutions adopted by the county ...Read more",
+            "position": 2
+          },
+          {
+            "date": "Sep 20, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2017/FY2017_ApprovedBudget_Complete.pdf",
+            "title": "FY2017",
+            "snippet": "Under the direction of the Elections Administrator, the department strives to enhance the following processes: voter registration, ballot ...Read more",
+            "position": 3
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2020/FY2020-ApprovedBudgetBook-FINAL.pdf",
+            "title": "FY2020",
+            "snippet": "Under the direction of the Elections Administrator, the department strives to enhance the following processes: voter registration, ballot preparation, absentee ...Read more",
+            "position": 4
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2016/FY2016_ApprovedBudget.pdf",
+            "title": "FY2016",
+            "snippet": "Under the direction of the Elections Administrator, the department strives to enhance the following processes: voter registration, ballot preparation, absentee ...Read more",
+            "position": 5
+          },
+          {
+            "date": "Feb 15, 1994",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/human-resources/exam-study-guides/2025-General-Orders.pdf",
+            "title": "2025-General-Orders.pdf",
+            "snippet": "This manual provides employees with guidelines and policy for the uniform enforcement of state, local, and federal laws, ...Read more",
+            "position": 6
+          },
+          {
+            "date": "Aug 15, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2015/FY15_ApprovedBudget.pdf",
+            "title": "FY2015",
+            "snippet": "The Auditor's projections for all categories of revenue are provided in Table. III-2 which follows the discussion of individual revenues.Read more",
+            "position": 7
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2002/general_fund_62-368.PDF",
+            "title": "GENERAL FUND",
+            "snippet": "The following paragraphs describe the largest General Fund revenue sources and provide historical data and analysis on each. The Auditor's projections for all ...Read more",
+            "position": 8
+          },
+          {
+            "date": "Aug 15, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2012/FY2012ApprovedBudget.pdf",
+            "title": "FY2012",
+            "snippet": "District Attorney and Jury Fees are monies collected from all civil and criminal cases in which convictions ... facilities and Administration, ...Read more",
+            "position": 9
+          },
+          {
+            "date": "Oct 14, 2021",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2021/2021-10.pdf",
+            "title": "11:00am Virtual Meeting via Microsoft Teams",
+            "snippet": "DA Civil Division, Mental Illness Court September 2021 Stats: 1. Civil Commitments (Court Order for Inpatient Temporary Mental Health Services).Read more",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:36:15.655Z",
+      "data": {
+        "name": "All Star Installations pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 317-1614",
+        "rating": 3,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "3813 N Commerce St, Fort Worth, TX 76106",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/All%20Star%20Installations%20pools%20Dallas%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:36:43.281Z",
+      "data": {
+        "name": "All Star Installations pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 317-1614",
+        "rating": 3,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "3813 N Commerce St, Fort Worth, TX 76106",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/All%20Star%20Installations%20pools%20Fort%20Worth%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:38:48.194Z",
+      "data": {
+        "cost": 0.00046158,
+        "summary": "The contractor has consistently low ratings (3.0-3.1 stars) but no review content is available to analyze authenticity. The business is listed as 'closed' on Google Maps, which is a significant red flag. The lack of review text prevents a deep authenticity assessment.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2025-12-22T13:38:48.194Z",
+        "fake_signals": [
+          "No review text provided for authenticity analysis",
+          "Google Maps shows business as 'closed'",
+          "Null review counts on Google"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": 3.1,
+          "google": 3,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Yelp shows a moderate number of reviews (68)",
+          "Consistent low rating across platforms suggests genuine feedback"
+        ],
+        "fake_review_score": 65,
+        "complaint_patterns": [
+          "No specific complaint data available in provided reviews"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are consistently low across the two available platforms (Google and Yelp)."
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:35:26.810Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=All%20Star%20Installations%20pools&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20Star% 20Installations% 20pools&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= 20Star% 20Installations% 20pools&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://echo.epa.gov/help/training",
+                "title": "ECHO Training"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= 20Star% 20Installations% 20pools&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= 20Star% 20Installations% 20pools&State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Star% 20Installations% 20pools&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= 20Star% 20Installations% 20pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter and is refreshed ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= 20Star% 20Installations% 20pools&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= 20Star% 20Installations% 20pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= 20Star% 20pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= 20Star% 20pools&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:36:48.677Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "glassdoor"
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:35:43.162Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 8
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Information on this site is obtained from the most recent Public Information Report (PIR) processed by the Secretary of State (SOS).",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2025-12-22T13:36:43.276Z",
+      "data": {
+        "name": "All Star Installations pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 317-1614",
+        "rating": 3,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "3813 N Commerce St, Fort Worth, TX 76106",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/All%20Star%20Installations%20pools%20Fort%20Worth%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T13:38:36.936Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for All Star Installations pools",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "All Star Installations pools",
+        "searched_at": "2025-12-22T07:37:06.800987",
+        "total_records": 0
+      }
+    }
+  }
+}

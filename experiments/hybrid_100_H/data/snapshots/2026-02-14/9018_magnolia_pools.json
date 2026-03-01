@@ -1,0 +1,1613 @@
+{
+  "contractor_id": 9018,
+  "business_name": "Magnolia Pools",
+  "city": "Denton",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-14T18:35:55.205Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:17:33.081Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 1,
+            "MECH_LIEN": 20,
+            "STATE_TAX_LIEN": 1
+          },
+          "active_liens": 21,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 2,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "ROBERTSON JENNIFER",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ROBERTSON JENNIFER",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "7/19/2023",
+                    "2023000081145",
+                    "--/--/--",
+                    "Subdivision- Name: MAGNOLIA RIDGE #1 ADDITION MELISSA Lot: 14 Block: A, Reference - 2016 / 14"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2023-07-19",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2023000081145"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "FOLEY CUSTOM POOLS INC",
+                "grantor": "HILL ANGELA SUE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HILL ANGELA SUE",
+                    "FOLEY CUSTOM POOLS INC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "3/18/2019",
+                    "20190318000280950",
+                    "--/--/--",
+                    "Subdivision- Name: MAGNOLIA RIDGE #1 ADDITION MELISSA 2016/14 Lot: 13 Block: D, Reference - 2016 / 14"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2019-03-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20190318000280950"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 18,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "ANTHONY&SYLVAN POOLS",
+                "grantor": "SMITH KIRBY G",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SMITH KIRBY G",
+                    "ANTHONY&SYLVAN POOLS",
+                    "MECHANICS LIEN",
+                    "9/8/2003",
+                    "2003025353721",
+                    "ALL/2003180/4912",
+                    "ROWLETT",
+                    "Subdivision- Name: MAGNOLIA Lot: O Block: C CITY: ROWLETT,, Reference - 2000230 / 3026"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2003-09-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2003025353721"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "DESIGNER POOLS",
+                "grantor": "BELISLE GINA M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BELISLE GINA M",
+                    "DESIGNER POOLS",
+                    "MECHANICS LIEN",
+                    "3/8/2004",
+                    "2004027901941",
+                    "ALL/2004046/2069",
+                    "N/A",
+                    "Subdivision- Name: MAGNOLIA SP Lot: 8 Block: A, Reference - 2001037 / 1890"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2004-03-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2004027901941"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "RIO POOLS",
+                "grantor": "DOLLAR JOEL N",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DOLLAR JOEL N",
+                    "RIO POOLS",
+                    "MECHANICS LIEN",
+                    "9/5/2001",
+                    "200101519425",
+                    "ALL/2001173/12435",
+                    "COPPEL",
+                    "Subdivision- Name: MAGNOLIA PK Lot: 27 Block: E CITY: COPPEL,, Reference - 98145 / 506"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2001-09-05",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "200101519425"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CLAFFEY POOLS",
+                "grantor": "THOMPSON BRYAN",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "THOMPSON BRYAN",
+                    "CLAFFEY POOLS",
+                    "MECHANICS LIEN",
+                    "6/26/2001",
+                    "2001014340751",
+                    "ALL/2001125/451",
+                    "COPPEL",
+                    "Subdivision- Name: MAGNOLIA Lot: 18 Block: D CITY: COPPEL,, Reference - 98145 / 505"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2001-06-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2001014340751"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "ANTHONY&SYLVAN POOLS",
+                "grantor": "LE JEUNE ARTHUR A III",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "LE JEUNE ARTHUR A III",
+                    "ANTHONY&SYLVAN POOLS",
+                    "MECHANICS LIEN",
+                    "7/10/2002",
+                    "2002019038391",
+                    "ALL/2002134/3338",
+                    "ROWLETT",
+                    "Subdivision- Name: MAGNOLIA SP Lot: 4 Block: B CITY: ROWLETT,, Reference - 2001190 / 159"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2002-07-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2002019038391"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "MASTER CRAFT POOLS",
+                "grantor": "MIDDLETON EVELYN Y",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MIDDLETON EVELYN Y",
+                    "MASTER CRAFT POOLS",
+                    "MECHANICS LIEN",
+                    "2/22/2002",
+                    "200201724352",
+                    "ALL/2002038/2161",
+                    "COPPEL",
+                    "Subdivision- Name: MAGNOLIA PK Lot: 14 Block: E, Reference - 98145 / 506"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2002-02-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "200201724352"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "MERMAID POOLS TEX INC",
+                "grantor": "ROMEO JULLIANNE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ROMEO JULLIANNE",
+                    "MERMAID POOLS TEX INC",
+                    "MECHANICS LIEN",
+                    "3/26/2002",
+                    "2002017657601",
+                    "ALL/2002060/711",
+                    "COPPEL",
+                    "Subdivision- Name: MAGNOLIA PK Lot: 3 Block: C CITY: COPPEL,, Reference - 98145 / 506"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2002-03-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2002017657601"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "ANTHONY&SYLVAN POOLS INC",
+                "grantor": "WHATLEY JACQUELINE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WHATLEY JACQUELINE",
+                    "ANTHONY&SYLVAN POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/16/2002",
+                    "2002017936161",
+                    "ALL/2002075/2096",
+                    "ROWLETT",
+                    "Subdivision- Name: MAGNOLIA SP Lot: 21 Block: F CITY: ROWLETT,, Reference - 2001037 / 1890"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2002-04-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2002017936161"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "LOCAL RB SP POOLS",
+                "grantor": "PICKRELL ERIN A",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PICKRELL ERIN A",
+                    "LOCAL RB SP POOLS",
+                    "MECHANICS LIEN",
+                    "6/13/2002",
+                    "200201869492",
+                    "ALL/2002115/6827",
+                    "COPPEL",
+                    "Subdivision- Name: MAGNOLIA PK Lot: 17 Block: D, Reference - 98145 / 506"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2002-06-13",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "200201869492"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "RIVERBEND SANDLER POOLS",
+                "grantor": "CHASTAIN BRIAN M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CHASTAIN BRIAN M",
+                    "RIVERBEND SANDLER POOLS",
+                    "MECHANICS LIEN",
+                    "9/16/2003",
+                    "2003025512601",
+                    "ALL/2003186/4249",
+                    "COPPEL",
+                    "Subdivision- Name: MAGNOLIA PK Lot: 39 Block: E CITY: COPPEL,, Reference - 98145 / 506"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2003-09-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2003025512601"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "SUNDANCE POOLS INC",
+                "grantor": "KIRAN ANDREW",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KIRAN ANDREW",
+                    "SUNDANCE POOLS INC",
+                    "MECHANICS LIEN",
+                    "12/29/2003",
+                    "2003027020671",
+                    "ALL/2003256/10313",
+                    "COPPEL",
+                    "Subdivision- Name: MAGNOLIA PK Lot: 9 Block: C CITY: COPPEL,, Reference - 98145 / 506"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2003-12-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2003027020671"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "MIRAGE CUSTOM POOLS LLC",
+                "grantor": "SAYLOR JAMIE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SAYLOR JAMIE",
+                    "MIRAGE CUSTOM POOLS LLC",
+                    "MECHANICS LIEN",
+                    "9/26/2003",
+                    "200302567488",
+                    "ALL/2003192/7303",
+                    "COPPEL",
+                    "Subdivision- Name: MAGNOLIA PK Lot: 26 Block: E CITY: COPPEL,, Reference - 98145 / 506"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2003-09-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "200302567488"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "HOBERT POOLS INC",
+                "grantor": "TINDALL DWIGHT",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TINDALL DWIGHT",
+                    "HOBERT POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/28/2003",
+                    "2003023132501",
+                    "ALL/2003082/12410",
+                    "ROWLETT",
+                    "Subdivision- Name: MAGNOLIA Lot: 3 Block: G CITY: ROWLETT,, Reference - 2001190 / 162"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2003-04-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2003023132501"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CLAFFEY POOLS",
+                "grantor": "BERRY KAREN P",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BERRY KAREN P",
+                    "CLAFFEY POOLS",
+                    "MECHANICS LIEN",
+                    "7/13/2001",
+                    "2001014555621",
+                    "ALL/2001136/7227",
+                    "COPPEL",
+                    "Subdivision- Name: MAGNOLIA PK Lot: 20 Block: E CITY: COPPEL,, Reference - 98145 / 506"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2001-07-13",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2001014555621"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CLAFFEY POOLS",
+                "grantor": "SCHAUF ELAINE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SCHAUF ELAINE",
+                    "CLAFFEY POOLS",
+                    "MECHANICS LIEN",
+                    "6/5/2002",
+                    "2002018565431",
+                    "ALL/2002109/5655",
+                    "COPPEL",
+                    "Subdivision- Name: MAGNOLIA PK Lot: 16 Block: E CITY: COPPEL,, Reference - 98145 / 506"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2002-06-05",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2002018565431"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "BLUE HAVEN POOLS NATL IN",
+                "grantor": "STEARNS CAROL",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "STEARNS CAROL",
+                    "BLUE HAVEN POOLS NATL IN",
+                    "MECHANICS LIEN",
+                    "8/14/2002",
+                    "2002019513621",
+                    "ALL/2002159/11144",
+                    "ROWLETT",
+                    "Subdivision- Name: MAGNOLIA SP Lot: 1 Block: A CITY: ROWLETT,, Reference - 2001190 / 159"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2002-08-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2002019513621"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "RIVERBEND SANDLER POOLS",
+                "grantor": "DAVISON CORTNEY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DAVISON CORTNEY",
+                    "RIVERBEND SANDLER POOLS",
+                    "MECHANICS LIEN",
+                    "11/15/2006",
+                    "200600424305",
+                    "--/--/--",
+                    "ROWLETT",
+                    "Subdivision- Name: MAGNOLIA SPRINGS PHASE 3A Lot: 10 Block: F CITY: ROWLETT,, Reference - 2001190 / 159"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2006-11-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "200600424305"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "DISTINCTIVE POOLS INC",
+                "grantor": "BRADLEY DEANNA L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BRADLEY DEANNA L",
+                    "DISTINCTIVE POOLS INC",
+                    "MECHANICS LIEN",
+                    "8/21/2006",
+                    "200600306738",
+                    "--/--/--",
+                    "COPPELL",
+                    "Subdivision- Name: MAGNOLIA PARK Lot: 30 Block: E CITY: COPPELL,, Reference - 98145 / 506"
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2006-08-21",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "200600306738"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 2,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "MAGNOLIA POOLS LLC",
+                "grantor": "TEXAS STATE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE",
+                    "MAGNOLIA POOLS LLC",
+                    "RELEASE OF STATE TAX LIEN",
+                    "3/1/2023",
+                    "D223033197",
+                    "OPR/--/--",
+                    ""
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "RELEASE OF STATE TAX LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223033197"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "MAGNOLIA POOLS LLC",
+                "grantor": "TEXAS STATE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE",
+                    "MAGNOLIA POOLS LLC",
+                    "STATE TAX LIEN - PROPERTY",
+                    "1/20/2023",
+                    "D223010510",
+                    "OPR/--/--",
+                    ""
+                  ],
+                  "search_term": "Magnolia Pools",
+                  "doc_type_raw": "STATE TAX LIEN - PROPERTY"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-01-20",
+                "document_type": "STATE_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223010510"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "21 lien(s) filed BY contractor (collecting payment - neutral)"
+          ],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 21,
+          "human_summary": "OK: 21 liens filed BY Magnolia Pools to collect payment (normal business, no penalty)",
+          "liens_unclear": 0,
+          "liens_by_count": 21,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 21,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Magnolia Pools",
+        "searched_at": "2026-02-14T08:16:21.765761",
+        "total_records": 22
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:17:33.600Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "MAGNOLIA POOLS LLC",
+        "taxpayer_number": "32052210393"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-14T08:17:33.606Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:14:23.073Z",
+      "data": {
+        "query": "Magnolia Pools Denton site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 9, 2019",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-diving-into-pool-parties-and-more-things-to-do-2/210701/",
+            "title": "Dog About Town: Diving Into Pool Parties and More Things to Do",
+            "snippet": "It's time for this year's doggy swim days, when area pools invite pooches in before they close for the season. Dogs must be spayed/neutered, ...",
+            "position": 1
+          },
+          {
+            "date": "Aug 24, 2017",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2017/08/25/dog-about-town-paddling-partying-and-more-things-to-do-with-your-pooch/",
+            "title": "Dog About Town: Paddling, partying and more things to do with your ...",
+            "snippet": "Paddle alongside your four-legger in the lazy river when Bahama Beach water park ends its season with the annual Poochie Plunge from noon to ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2017&mm=06",
+            "title": "[XML] sitemap.xml - NBC 5 Dallas-Fort Worth",
+            "snippet": "... Pools for a mile, surviving the ordeal with only minor scratches.</video:description><video:player_loc allow_embed=\"yes\" autoplay=\"ap=1\">https://www.nbcdfw ...",
+            "position": 3
+          },
+          {
+            "date": "Aug 5, 2010",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2010/08/05/dog-about-town-a-date-with-minnelli-judy-and-lucky-and-more-things-to-do/",
+            "title": "Dog About Town: A date with Minnelli, Judy and Lucky and more ...",
+            "snippet": "... Magnolia Green Park, in the 1100 block of Lipscomb Street in Fort Worth. ... They'll also have pools for the pooches, giveaways and more.",
+            "position": 4
+          },
+          {
+            "date": "Mar 10, 2017",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-st-patrsquos-parties-and-more-things-to-do/57458/",
+            "title": "Dog About Town: St. Pat's Parties and More Things to Do",
+            "snippet": "A St. Patrick's Day Yappy Hour from 5:30 to 9 p.m. Thursday at Sloan & Williams Winery in Grapevine will raise money for Canine Companions ...",
+            "position": 5
+          },
+          {
+            "date": "Jul 2, 2010",
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/kyle-fagin-obituary?id=23234033",
+            "title": "Kyle Fagin Obituary (2010) - Dallas, TX",
+            "snippet": "Much beloved husband, father, grandfather and great-grandfather, passed away on July 1, 2010. Marshall was blessed with over a century of good health.",
+            "position": 6
+          },
+          {
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-playing-at-the-cotton-bowl-and-more-things-to-do/247912/",
+            "title": "Dog About Town: Playing at the Cotton Bowl and More Things to Do ...",
+            "snippet": "This year's Dog Bowl, which will turn Cotton Bowl Stadium into a giant dog park from 1 to 5 p.m. Sunday, will have a new player: Fletcher's will sell corny.",
+            "position": 7
+          },
+          {
+            "date": "Feb 3, 2022",
+            "link": "https://www.nbcdfw.com/weather/weather-connection/your-photos-freezing-rain-and-sleet-in-north-texas/2878412/",
+            "title": "Your Photos: Freezing Rain and Sleet in North Texas",
+            "snippet": "As a winter storm moved into North Texas Wednesday, Feb. 2 continuing into Thursday, Feb. 3, 2022, NBC 5 viewers captured photos of freezing rain and sleet.",
+            "position": 8
+          },
+          {
+            "date": "Mar 30, 2018",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-sniff-and-strut-with-your-pooch-this-weekend/65227/",
+            "title": "Dog About Town: Sniff and Strut With Your Pooch This Weekend",
+            "snippet": "This year's Easter Bacon Hunt, at 3 p.m. Saturday at Main Street Garden, offers a twist on the holiday pastime with bacon pieces for the ...",
+            "position": 9
+          },
+          {
+            "date": "Apr 19, 2017",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2017/04/19/8-adventurous-spins-on-date-night-in-dallas-fort-worth/",
+            "title": "8 adventurous spins on date night in Dallas-Fort Worth",
+            "snippet": "Grab a beer, order some barbecue and call it date night. We've nailed down eight of Dallas-Fort Worth's best adventure dates.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:20.361Z",
+      "data": {
+        "name": "Magnolia Pools LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 803-5501",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/hurst/profile/pool-service/magnolia-pools-llc-0825-235979547",
+        "review_count": null,
+        "founding_date": "10/15/2013",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 12,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:13:44.472Z",
+      "data": {
+        "query": "site:yelp.com \"Magnolia Pools\" \"Denton, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:49.929Z",
+      "data": {
+        "name": "Magnolia Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 803-5501",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "3300 Glade Creek Dr, Hurst, TX 76054",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Magnolia%20Pools%20Denton%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:15:56.876Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:15:57.839Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:14:11.167Z",
+      "data": "Trustpilot Search Results Companies Magnolia magnolia.com • 12 reviews 1.9 Magnolia magnolia.co.il • 1 review 3.2 Magnolia Nossebro www.magnolianossebro.se • 18 reviews 3.9 Magnolia magnolia.de • 25 reviews 3.5 The Pools www.thepools.com • 1.3K reviews 4.3 Categories Lighting Store The best companies in the category 'Lighting Store' Home Goods Store The best companies in the category 'Home Goods Store' Furniture Store The best companies in the category 'Furniture Store' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (201) Magnolia magnolia.com 1.9 12 reviews Webster Avenue 601, Waco, United States Magnolia magnolia.co.il 3.2 1 review Israel Magnolia Nossebro www.magnolianossebro.se 3.9 18 reviews Malma Bredöl 115, Nossebro, Sweden Magnolia magnolia.de 3.5 25 reviews Germany The Pools www.thepools.com 4.3 1,251 reviews United Kingdom Magnolia River river.com 3.4 3 reviews Magnolia Bank magnoliabank.com 3.7 37 reviews 651 West Dixie Avenue, Elizabethtown, United States Woodchip & Magnolia woodchipandmagnolia.co.uk 2.2 12 reviews United Kingdom Magnolia Home magnolia-home.de 3.7 2 reviews Germany Frk. Magnolia www.mostersbutik.dk 4.0 31 reviews Adelgade 75, Bogense, Denmark Previous 1 2 3 4 21 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Lighting Store Home & Garden Garden Center Home & Garden Home Goods Store Home & Garden Furniture Store Home & Garden Garden Public & Local Services Plant Nursery Home & Garden are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:14:16.613Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:14:20.260Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:16:02.255Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Magnolia Pools\" Denton",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:14:35.278Z",
+      "data": "Magnolia Pools Denton review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters SHORTS SHORTS Now playing ⚠️ WARNING for Texas Pool Buyers: Don’t Get Burned by Cheap Pool Shells! Texas Pool Ninja Dreamscapes Texas Pool Ninja Dreamscapes • • 118 views 6 months ago Texas Pool Ninja Dreamscapes Texas Pool Ninja Dreamscapes Texas homeowners — not all fiberglass pools are created equal. We're issuing this urgent warning because a growing number of ... Texas homeowners — not all fiberglass pools are created equal. We're issuing this urgent warning because a growing number of ... From the video description 4K SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.7M views 4 years ago Life With Evan Life With Evan SHORTS SHORTS Now playing Why Fiberglass Pools are Going Out of Style Cameron Simmons Cameron Simmons • • 24K views 2 years ago Cameron Simmons Cameron Simmons SHORTS SHORTS Now playing Building A Pool Costs HOW Much?? | The Honest Truth About Pool Costs Maggie McGaugh Maggie McGaugh • • 36K views 3 years ago Maggie McGaugh Maggie McGaugh Did I mention our pool company didn't allow loans? Did I mention our pool company didn't allow loans? From the video description SHORTS SHORTS Now playing Inground Pool Costs 2025 River Pools River Pools • • 36K views 11 months ago River Pools River Pools Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... From the video description 4K 2:53 2:53 Now playing CEO Profile: Grey Frandsen of Magnolia Pool and Spa Supply The Press-Enterprise The Press-Enterprise • • 497 views 13 years ago The Press-Enterprise The Press-Enterprise Grey Frandsen, CEO of Magnolia Pool & Spa Supply in Riverside, started with the company 16 years ago by sweeping floors, ... Grey Frandsen, CEO of Magnolia Pool & Spa Supply in Riverside, started with the company 16 years ago by sweeping floors, ... From the video description SHORTS SHORTS Now playing This pool looks incredible 😧 | #shorts SportsNation SportsNation • • 8.6M views 3 years ago SportsNation SportsNation This pool looks incredible | #shorts (via @rikkicarman) This pool looks incredible | #shorts (via @rikkicarman) From the video description SHORTS SHORTS Now playing How to choose the right color for your pool! 🌴 #luxuryhome #pool #pooldesign #backyard Foxterra Design Foxterra Design • • 406K views 1 year ago Foxterra Design Foxterra Design 0:00 How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... Automatic captions SHORTS SHORTS Now playing Fiberglass swimming pools are dug/set in one day. #fiberglasspools #modernpoolbuild #excavation CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP • • 1.4M views 2 years ago CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description Magnolia Patio and Pool Magnolia Patio and Pool @MagnoliaPatioandPool • 118 subscribers Magnolia Patio and Pool : Unleashing the Beauty of Outdoor Living through Innovative 3D Designs. Transforming your backyard ... Subscribe People also watched 5:26 5:26 Now playing Fiberglass pool installation with concrete patio and retaining wall. Start to finish. Derby City Pools & Outdoor Living Derby City Pools & Outdoor Living • • 74K views 2 years ago Derby City Pools & Outdoor Living Derby City Pools & Outdoor Living More Pool Builds: https://youtu.be/Lx1-nSaEFHI https://youtu.be/9XMoaUJqJe4 Derby City Pools & Outdoor Living in Louisville ... More Pool Builds: https://youtu.be/Lx1-nSaEFHI https://youtu.be/9XMoaUJqJe4 Derby City Pools & Outdoor Living in Louisville ... From the video description 6:22 6:22 Now playing Everything You Need To Know Before Building A Pool! Josh Beberg Josh Beberg • • 220K views 3 years ago Josh Beberg Josh Beberg Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... From the video description 4K Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. AI-generated video summary Quality and accuracy may vary. Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. 7:55 7:55 Now playing What Is A Fiberglass Pool? Is It A Good Choice For Me? Meral's Palm Beaches Meral's Palm Beaches • • 18K views 4 years ago Meral's Palm Beaches Meral's Palm Beaches In this video, I will explain what is a fiberglass pool and what you should know about fiberglass pool by laying out the pros and ... In this video, I will explain what is a fiberglass pool and what you should know about fiberglass pool by laying out the pros and ... From the video description 12 chapters Introduction to video | Introduction to Meral Ibrahim, realtor | What is a fiberglass pool? | Pro #1. Quicker Installation | Pro #2. Less Maintenance | Pro #3. Appearance and Customization | Pro #4. No Sore Feet | Pro #5. Endurance and Durability | Pro #6. Environmental and Cost Friendly | Con #1. Installation Cost and Expertise | Con #2. Susceptible to Bulging | Con #3. Slippery Surface 12 chapters in this video 12 chapters Introduction to video Introduction to video 0:00 Introduction to video 0:00 Introduction to Meral Ibrahim, realtor Introduction to Meral Ibrahim, realtor 0:25 Introduction to Meral Ibrahim, realtor 0:25 What is a fiberglass pool? What is a fiberglass pool? 1:16 What is a fiberglass pool? 1:16 Pro #1. Quicker Installation Pro #1. Quicker Installation 1:52 Pro #1. Quicker Installation 1:52 Pro #2. Less Maintenance Pro #2. Less Maintenance 2:30 Pro #2. Less Maintenance 2:30 Pro #3. Appearance and Customization Pro #3. Appearance and Customization 3:15 Pro #3. Appearance and Customization 3:15 Pro #4. No Sore Feet Pro #4. No Sore Feet 4:04 Pro #4. No Sore Feet 4:04 25:22 25:22 Now playing unfinished 1980's pool thep00lguy ML thep00lguy ML • • 5.7M views 4 years ago thep00lguy ML thep00lguy ML this is quite an interesting one here with this pool they started to build it during the 80's and I've since learnt the owner was doing it ... this is quite an interesting one here with this pool they started to build it during the 80's and I've since learnt the owner was doing it ... From the video description 4K Summary This video follows the restoration of an unfinished pool from the 1980s. The pool was abandoned mid-construction and left in a state of disrepair. The video documents the process of cleaning, painting, and plumbing the pool, culminating in the filling and testing of the system. AI-generated video summary Quality and accuracy may vary. Summary This video follows the restoration of an unfinished pool from the 1980s. The pool was abandoned mid-construction and left in a state of disrepair. The video documents the process of cleaning, painting, and plumbing the pool, culminating in the filling and testing of the system. + 6 more SHORTS SHORTS Now playing Pool Construction In Full Swing✨ #SwimmingPool #Construction #PoolBuild#DreamPool #ComingSoon Let Us Build Let Us Build • • 47K views 5 months ago Let Us Build Let Us Build SHORTS SHORTS Now playing Swimming Pool and Spa Plumbing and Rebar for John The Pool Expert John The Pool Expert • • 472K views 3 years ago John The Pool Expert John The Pool Expert underground pool and spa Plumbing. underground pool and spa Plumbing. From the video description SHORTS SHORTS Now playing Lap Pool In A Small Backyard ➡️ Swimming Pool Design Ideas Southern Poolscapes Southern Poolscapes • • 10K views 5 months ago Southern Poolscapes Southern Poolscapes SHORTS SHORTS Now playing Benefits of choosing a fiberglass pool! 🏊✨ John Roberts Signature Homes Inc. John Roberts Signature Homes Inc. • • 33K views 1 year ago John Roberts Signature Homes Inc. John Roberts Signature Homes Inc. Ever wonder what makes a fiberglass pool different from the rest? Anders from JRSH walks us through some of the benefits of a ... Ever wonder what makes a fiberglass pool different from the rest? Anders from JRSH walks us through some of the benefits of a ... From the video description SHORTS SHORTS Now playing Vinyl, Gunite, or Fiberglass: Which Pool Costs Less? | Marquee Pools Explains Marquee Pools Marquee Pools • • 6K views 1 year ago Marquee Pools Marquee Pools Which do you think costs less: Vinyl, Gunite, or Fiberglass? When considering the cost of pools , it's crucial to factor in both: The ... Which do you think costs less: Vinyl, Gunite, or Fiberglass? When considering the cost of pools , it's crucial to factor in both: The ... From the video description SHORTS SHORTS Now playing Don't Overlook these Costs During Your Pool Project River Pools River Pools • • 1.2K views 10 months ago River Pools River Pools Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... From the video description SHORTS SHORTS Now playing Why do people deliver water to swimming pools instead of using tap water?#shorts #trivia #viral BulletDodger BulletDodger • • 3M views 5 months ago BulletDodger BulletDodger 0:00 In the US there's a pretty unusual job delivering water to private swimming pools And it's not cheap One ton costs around $30 and ... In the US there's a pretty unusual job delivering water to private swimming pools And it's not cheap One ton costs around $30 and ... Automatic captions SHORTS SHORTS Now playing Why choose a Container Pool? Jonavan Roux Jonavan Roux • • 40K views 11 months ago Jonavan Roux Jonavan Roux 0:00 Three reasons to choose a container pool number one a complete filtration system including pump filter and heater come ... Three reasons to choose a container pool number one a complete filtration system including pump filter and heater come ... Automatic captions SHORTS SHORTS Now playing Jumping Through the Float Tube into the Swimming Pool Fun Trick #shorts Underwater Tori Underwater Tori • • 22M views 6 months ago Underwater Tori Underwater Tori Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:14:36.634Z",
+      "data": {
+        "query": "site:nextdoor.com Magnolia Pools Denton",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/neighborhood/wynfieldfarms--little-elm--tx/",
+            "title": "Wynfield Farms, Little Elm | Everything You Need to Know - Nextdoor",
+            "snippet": "Known for its well-maintained homes, community pool, and nearby schools, it's a peaceful place with a small-town feel, yet close to the conveniences of the city ...",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/villagesofcottonwoodck--coppell--tx/",
+            "title": "Villages of Cottonwood CK, Coppell | Everything You Need to Know",
+            "snippet": "Villages of Cottonwood CK is a peaceful, family-friendly neighborhood in Coppell, TX. Known for its well-maintained homes, lush green spaces, and excellent ...",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/carnegieridge--argyle--tx/",
+            "title": "Carnegie Ridge, Argyle | Everything You Need to Know - Nextdoor",
+            "snippet": "Known for its well-maintained homes, excellent schools, and community amenities like a pool and playground, it's a great place for families and those seeking a ...",
+            "position": 3
+          },
+          {
+            "link": "https://nextdoor.com/topics/pool-cleaner/wyoming/de/",
+            "title": "Best Pool Cleaner in Wyoming, DE with verified reviewers on Nextdoor",
+            "snippet": "See recommendations for best Pool Cleaner in Wyoming, DE from your neighbors. Read real reviews of local Pool Cleaner to contact a reliable, affordable Pool ...",
+            "position": 4
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/reserveateldorado--mckinney--tx/",
+            "title": "Reserve At Eldorado, McKinney | Everything You Need to Know",
+            "snippet": "Known for its well-maintained homes, community pool, and proximity to good schools, it's a great place for families. The neighborhood also has easy access to ...",
+            "position": 5
+          },
+          {
+            "link": "https://nextdoor.com/city/mckinney--tx/",
+            "title": "McKinney, TX | News, Crime, Lost Pets, Free Stuff - Nextdoor",
+            "snippet": "McKinney, Texas is a peaceful and family-friendly city known for its historic downtown and natural parks.",
+            "position": 6
+          },
+          {
+            "link": "https://nextdoor.com/city/dallas--tx/",
+            "title": "Dallas, TX | News, Crime, Lost Pets, Free Stuff - Nextdoor",
+            "snippet": "Nextdoor is the app for neighborhoodsWhether you're a longtime resident or new in town, Nextdoor is your source for local local advice, intel, and connections.",
+            "position": 7
+          },
+          {
+            "link": "https://nextdoor.com/city/fort-worth--tx/",
+            "title": "Fort Worth, TX | News, Crime, Lost Pets, Free Stuff - Nextdoor",
+            "snippet": "Nextdoor is the app for neighborhoodsWhether you're a longtime resident or new in town, Nextdoor is your source for local local advice, intel, and connections.",
+            "position": 8
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/sandylakecoppell--coppell--tx/",
+            "title": "Sandy Lake, Coppell | Everything You Need to Know - Nextdoor",
+            "snippet": "Sandy Lake is a peaceful, family-friendly neighborhood in Coppell, TX. Known for its well-maintained homes, lush parks, and excellent schools, ...",
+            "position": 9
+          },
+          {
+            "link": "https://nextdoor.com/for_sale_and_free/9e9fb0e8-15f3-42d7-9067-382ed1a277d1/",
+            "title": "Large Woven Rug For Free In Denton, TX | For Sale & Free—Nextdoor",
+            "snippet": "Free — Large Woven Rug near the Wheeler Ridge neighborhood in Denton, TX. Find items in For Sale & Free on Nextdoor - all listings are local.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:16:00.900Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Magnolia Pools\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:16:03.061Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Magnolia Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:14:50.442Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Magnolia%20Pools&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Magnolia% 20Pools&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Magnolia% 20Pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "Enforcement and Compliance History Online | US EPA",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Magnolia% 20Pools&State="
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Magnolia% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Magnolia% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Magnolia% 20Pools&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:14:54.365Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:00.743Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:07.725Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Magnolia Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Nov 14, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. WALMART SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. I. Definitions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT",
+            "snippet": "... Pools. In other words, for the National Fee Pool described above in ... Magnolia, City of, Arkansas. 155. Malvern, City of, Arkansas. 156. Marion, City ...",
+            "position": 2
+          },
+          {
+            "date": "Dec 9, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/2022-12-09%20CVS%20Global%20Settlement%20Agreement%20with%20Exhibits%20(003).pdf",
+            "title": "[PDF] CVS SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. CVS SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. Page. I. Definitions.",
+            "position": 3,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "date": "Jan 28, 2026",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Petition_6.pdf",
+            "title": "[PDF] Petition and Application for Temporary and Permanent Injunctive ...",
+            "snippet": "Magnolia. Plat No. CP202304. Precinct #I. Andean Emerald 937.94 If. Asphalt Width: 28'. Barn Swallow Way 560.00 If. Asphalt Width: 28'. Collard ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Global%20Opioid%20Settlement%20Files/Final%20Distributor%20Settlement%20Agreement.pdf",
+            "title": "[PDF] DISTRIBUTOR SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. DISTRIBUTOR SETTLEMENT. AGREEMENT. Page 2. i. Table of Contents. Page. I.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "date": "Dec 12, 2025",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Petition_5.pdf",
+            "title": "[PDF] STATE OF TEXAS, Plaintiff, v. SOUTHWESTERN PUBLIC SERVICE ...",
+            "snippet": "• Magnolia (step-down). Most of the electric equipment and conductor within substations are mounted onto structural members. In modern ...",
+            "position": 6,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "date": "Mar 14, 2017",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/press/NWF_Petition_(Filed_-_03-14-17).pdf",
+            "title": "[PDF] In the United States Court of Appeals for the Fifth Circuit",
+            "snippet": "SNF is highly radioactive and remains dangerous to humans, sometimes for thousands of years. SNF is so hot that it must be stored in deep pools.",
+            "position": 7
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1943/O-5700.pdf",
+            "title": "[PDF] Opinion No. O-5700 Re: Power of C",
+            "snippet": "The validity of an agreement by owners of private lands to pool their respective interests, thus forming a drilling unit for the exploration and development of ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "date": "Sep 30, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/Distributors%20Texas%20Settlement%20Agreement%20Distributors%20TXAG%20Executed.pdf",
+            "title": "[PDF] DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT",
+            "snippet": "Committee shall exchange pools of recommended candidates to serve as the Monitor. The pools shall each contain the names of three (3) ...",
+            "position": 9
+          },
+          {
+            "date": "Sep 19, 2024",
+            "link": "https://texasattorneygeneral.gov/sites/default/files/images/press/State%20Fair%20of%20Texas%20Emergency%20Motion%20For%20Relief%20Pending%20Appeal%20Filed.pdf",
+            "title": "[PDF] In the Court of Appeals for the Fifteenth Judicial District Austin, Texas",
+            "snippet": "pools. The improvements may include new filtration systems, new piping and chlorination systems, re-plastering of pool walls, new perimeter.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:08.831Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 2
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 3
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 4
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 5
+          },
+          {
+            "date": "Mar 15, 2024",
+            "link": "https://www.facebook.com/groups/chelanvalleystrong/posts/1098065754741305/",
+            "title": "How to check the license status of a local contractor in Chelan?",
+            "snippet": "The website is very easy to use - you can just search by name of company, or find the tab to search by a name, and there are many types of ...",
+            "position": 6
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 7
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn and Texas Tax Code, Sec. 171.2515. [2] https://statutes.capitol.texas.gov/Docs/TX/htm/TX ...",
+            "position": 8
+          },
+          {
+            "date": "Jan 23, 2019",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0036331_TEXAS%20Certificate%20of%20Good%20Standing_20190123.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "State of Formation TX. Effective SOS Registration Date 09/13/2018. Texas SOS File Number ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 9
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:15:10.075Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Magnolia Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:11.394Z",
+      "data": {
+        "query": "site:dallascounty.org Magnolia Pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/historical/markers.xls",
+            "title": "[XLS] Dallas County Historical Markers",
+            "snippet": "Also believed to be buried here are five men and a boy who were victims of a lynching in 1869; several Confederate vererans of the Civil War; and two former ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:13.247Z",
+      "data": {
+        "query": "site:collincountytx.gov Magnolia Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps2.collincountytx.gov/ForeclosureNotices/DetailPage/3953125",
+            "title": "616 Chuck Wagon Dr Royse City, TX 75189 - Collin County",
+            "snippet": "Property Information. Address. 616 Chuck Wagon Dr Royse City, TX 75189 ; Improvement Information. State Property Code. Residential Single Family (A1).",
+            "position": 1
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/agenda_publish.cfm?id=&mt=ALL&dsp=ag&seq=2568&swagitPlayer=true",
+            "title": "Agenda - Collin County",
+            "snippet": "Notice is hereby given that the Collin County Commissioners Court will meet in REGULAR SESSION. Following is the agenda for said meeting:.",
+            "position": 2
+          },
+          {
+            "date": "Sep 30, 2023",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240415_2937/55774_Annual%20Comprehensive%20Financial%20Report%202023.pdf",
+            "title": "[PDF] - Annual Comprehensive Financial Report 2023 (Collin County ...",
+            "snippet": "The County invests in all six pools to provide its primary liquidity needs. All are local government investment pools established in ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210125_2587/33858_RTC%20Packet%2001-14-2021.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on January 14, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 30, 2022",
+            "link": "https://eagenda.collincountytx.gov/docs/2023/CC/20230424_2845/53891_Annual%20Comprehensive%20Financial%20Report%202022.pdf",
+            "title": "[PDF] - Annual Comprehensive Financial Report 2022 (Collin County ...",
+            "snippet": "The County invests in all six pools to provide its primary liquidity needs. All are local government investment pools established in ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 14, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201005_2537/49195_978%20-%2049195.pdf",
+            "title": "[PDF] State of Texas Collin County Commissioners Court",
+            "snippet": "Commissioner Webb made a motion to approve this item with the addition of a paragraph which states,. \"The city shall install a project sign ...",
+            "position": 6
+          },
+          {
+            "date": "Oct 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20211018_2693/33858_RTC%20Packet%2010-14-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, October 14 ...",
+            "snippet": "The RTC meeting on October 14, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 7
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:15.913Z",
+      "data": {
+        "query": "site:dentoncounty.gov Magnolia Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=35_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "ABSOLUTE POOLS, 6750 BLACKJACK OAKS RD, BLACKJACK OAKS ADDN LOT 22(PT) ... MAGNOLIA LODGING DEVELOPMENT, 13735 JACKSON RD, JACKSON ROAD EST BLK A LOT 2 ...",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=284_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "SHEPERD'S MEADOW ADDITION BLK A LOT 3, SWIMMING POOL, 07/09/2018, 659409 ... DRIVEWAY CAN NOT BE LOCATED ON MAGNOLIA BLVD. Denied, 06/26/2018, LEFTLANE LLC ...",
+            "position": 2
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=34_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "BACK BUILDING. Note : Controlling the drainage is the responsibility of the property owner and any damage caused to adjacent property owners could result in ...",
+            "position": 3
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=805_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "7244 WATERS EDGE DR. THE WATERS EDGE 11RB, SWIMMING POOL, 08/17/2006, 191484, STEPHEN MULLICAN, PRIVATE, No, No ...",
+            "position": 4
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=22_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "MAGNOLIA LODGING DEVELOPMENT, 13765 JACKSON RD, JACKSON ROAD EST BLK A LOT 1 ... PINNACLE POOLS AND SPAS, 8812 HOLLIDAY LN, CROSS OAK RANCH PH 2 TR 2 BLK ...",
+            "position": 5
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=607_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "BRANDON PFAFFLY, 9801 MACAWAY DR, SPRING ACRES BLK A LOT 1, SWIMMING POOL, 06/08 ... MAGNOLIA ADDITION PHASE E BLK 29J LOT 5, HOUSE, 02/07/2013, 471061, All ...",
+            "position": 6
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=20_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "MCCAFFREY POOLS, 11513 ANTLERS RIDGE WAY, CANYON FALLS VILLAGE 19-AR BLK F LOT 2, SWIMMING POOL, 03/21/2023, 958110, Approved, 03/20/2023, BRAHOSKY, STEPHEN A ...",
+            "position": 7
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=502_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "RIVERBEND SANDLER POOLS, RIVERBEND SANDLER POOLS, 12109 KNOTS LN, THE SHORES AT HIDDEN COVE PHASE FOUR BLK C LOT 31, SWIMMING POOL, 11/12/2014, 497441, Approved ...",
+            "position": 8
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=483_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "GEORGE KUKETZ, 10452 PHEASANT RUN, HUNTWICK EST PH 1B BLK 2 LOT 8, SWIMMING POOL ... AMERICAN LEGEND HOMES, 830 MONTGOMERY WAY, MAGNOLIA ADDITION PHASE F BLK 29J ...",
+            "position": 9
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=602_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "RIVERBEND SANDLER POOLS, RIVERBEND SANDLER POOLS ... MAGNOLIA ADDITION PHASE E BLK 29H LOT 22, HOUSE, 02/07/2013, 471036, Approved, 07/17/2012, MAGNOLIA/LANTANA V ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:27.425Z",
+      "data": {
+        "cid": "10907953150440687643",
+        "name": "Magnolia Pools",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "3300 Glade Creek Dr, Hurst, TX 76054",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 0,
+          "target_reviews": 100
+        },
+        "reviews": [],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 1,
+        "review_source": "tiered_validated",
+        "serpapi_error": null,
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "location_searched": "Denton, TX",
+        "search_confidence": 0.6199999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:49.923Z",
+      "data": {
+        "name": "Magnolia Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 803-5501",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "3300 Glade Creek Dr, Hurst, TX 76054",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Magnolia%20Pools%20Denton%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:15:54.747Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:58.533Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Magnolia Pools\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.bluemagnoliapoolsllc.147481138.html",
+            "title": "Blue Magnolia Pools LLC Reviews - Florence, MS | HomeAdvisor",
+            "snippet": "See reviews for Blue Magnolia Pools LLC in Florence, MS at 404 West Dewey Camp Dr from Angi members or join today to leave your own review."
+          },
+          {
+            "link": "https://www.homeadvisor.com/review/147481138",
+            "title": "Untitled",
+            "snippet": "Blue Magnolia Pools LLC. 404 West Dewey Camp Dr, Florence, MS. *Indicates required fields. How would you rate this pro? *. Did you hire ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Florence.MS.-12070.html",
+            "title": "Get matched with top pool builders and installers in Florence, MS",
+            "snippet": "Find Pool builders and installers in Florence · Blue Magnolia Pools LLC · Blue Magnolia Pools LLC · Bros Pools LLC · Bros Pools LLC · Aqua Pulse Pool Equipment ..."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:15:59.659Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Magnolia Pools\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Salary/Magnolia-Pool-and-Spa-Supply-Salaries-EI_IE1357493.0,28.htm",
+            "title": "How Much Does Magnolia Pool & Spa Supply Pay in 2025? (1 ...",
+            "snippet": "What's your pay potential here? Just one step to get a personalized earnings estimate for Magnolia Pool & Spa Supply. See personalized insights ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-Magnolia-Pool-and-Spa-Supply-EI_IE1357493.11,39.htm",
+            "title": "Working at Magnolia Pool & Spa Supply | Glassdoor",
+            "snippet": "Glassdoor gives you an inside look at what it's like to work at Magnolia Pool & Spa Supply, including salaries, reviews, office photos, and more. This is the ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:16:03.822Z",
+      "data": {
+        "found": true,
+        "query": "\"Magnolia Pools\" Denton lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://digitize.gp.lib.mi.us/history/newspapers/grossePointeNews/year_ranges/1950s/1959/pdf/1959-06-25.pdf",
+            "title": "[PDF] To ,Erect Building - Grosse Pointe Public Library",
+            "snippet": "MAGNOLIA POOLS. DESIGNEe BY ANTHONY MAAONTO. 11029 L' Mil. 0\". H inti... o,.CWy .. ...., '\"'''''' CeI. \"'...,. PR 2-3000. E. Our 1959 Analysis of. Detroit Bank ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:16:21.629Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T08:16:08Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Magnolia%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=Ry-QabuuK-q1qtsPuPC9CQ\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T08:16:18Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Magnolia%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=US-QafCiJ-qtmtkP3d6MyAE\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Magnolia Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:17:41.992Z",
+      "data": {
+        "cost": 0.0006007400000000001,
+        "summary": "The review profile is highly anomalous. A 12-year-old pool company with only one perfect review across all platforms is extremely unlikely. The lack of any substantive customer feedback, positive or negative, suggests the business either does minimal public-facing work, has actively suppressed reviews, or the online presence is not representative. The perfect rating is not credible.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-14T08:17:41.992Z",
+        "fake_signals": [
+          "Extremely low review volume for business age",
+          "Perfect 5.0 rating with only 1 review",
+          "No reviews found on major contractor platforms (Angi, Houzz)",
+          "No customer feedback on BBB profile",
+          "No negative or neutral reviews present"
+        ],
+        "recommendation": "DISTRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "UNKNOWN",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "BBB profile shows 12 years in business"
+        ],
+        "fake_review_score": 85,
+        "complaint_patterns": [],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "A perfect 5.0 Google rating with only 1 review is highly suspicious for a 12-year-old business. The BBB A+ rating is based on accreditation/compliance, not customer feedback, and has no reviews or complaint data. The lack of reviews on any other platform (Angi, Houzz, Yelp) is a major red flag."
+      }
+    }
+  }
+}

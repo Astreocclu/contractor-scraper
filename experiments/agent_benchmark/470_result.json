@@ -1,0 +1,27 @@
+{
+  "trust_score": 18,
+  "risk_level": "CRITICAL",
+  "confidence": 82,
+  "reasoning": "Business is marked CLOSED on Google Maps, has only 1 generic review from 10 years ago, and its website returns 403 Forbidden. The listed address is a residential home in Houston TX while the contractor claims to serve Allen TX (200+ miles away), no TX franchise tax registration was found, and the business has zero presence on any major review or contractor platform. The totality of evidence points to a defunct or never-legitimate operation.",
+  "red_flags": [
+    "Business marked CLOSED on Google Maps",
+    "Only 1 review in 10+ years, flagged as suspicious (fake review score 85/100)",
+    "Website (patiohouston.org) returns 403 Forbidden - completely inaccessible",
+    "Residential address in Houston TX, not Allen TX where listed - 200+ mile geographic mismatch",
+    "No TX franchise tax registration found - questions legal existence",
+    "Zero presence on BBB, Yelp, Angi, Houzz, HomeAdvisor, or any other review platform",
+    "Review analysis recommendation: DISTRUST_REVIEWS",
+    "Second Google Maps listing references a different address entirely (229 Henry Hynds Expy Suite 101)"
+  ],
+  "positives": [
+    "No liens filed against the business in any DFW county",
+    "No court cases, lawsuits, or Attorney General complaints found",
+    "No OSHA violations or EPA enforcement actions"
+  ],
+  "category_scores": {
+    "reputation": 8,
+    "legal_financial": 75,
+    "business_legitimacy": 10,
+    "red_flag_severity": 12
+  }
+}

@@ -1,0 +1,759 @@
+{
+  "contractor_id": 3013,
+  "business_name": "Elmer's Pool Services",
+  "city": "Arlington",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-08T03:23:39.398Z",
+  "sources": {
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:28:16.765Z",
+      "data": {
+        "query": "site:yelp.com \"Elmer's Pool Services\" \"Arlington, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:28:54.958Z",
+      "data": {
+        "query": "Elmer's Pool Services Arlington site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 3, 2025",
+            "link": "https://obits.dallasnews.com/us/obituaries/washingtonpost/name/stanley-degler-obituary?id=59020665",
+            "title": "Stanley E. Degler obituary, 12/07/1929-07/04/2025",
+            "snippet": "Stanley E. Degler of Arlington, Va. And Hilton Head Island, SC died at age 95 on July 4, 2025, in Arlington, VA. He was born on Dec.",
+            "position": 1
+          },
+          {
+            "date": "Aug 4, 2009",
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/joanne-taylor-obituary?id=24085132",
+            "title": "Joanne Taylor Obituary (2009) - Dallas, TX",
+            "snippet": "Joanne Miller Taylor, 79, passed away on Sunday, August 2, 2009 in Arlington. Funeral: 4:00 pm Thursday at Robert Carr Chapel, 2855 S. University Drive, Fort ...",
+            "position": 2
+          },
+          {
+            "date": "Mar 10, 2025",
+            "link": "https://www.dallasnews.com/business/airlines/2025/03/10/boeing-ceo-ortberg-warns-needed-culture-shift-will-be-brutal-to-leadership/",
+            "title": "Boeing CEO Ortberg warns needed culture shift will be ' ...",
+            "snippet": "Boeing's management needs to shape up, listen more to front-line employees, and communicate better, CEO Kelly Ortberg said at a sometimes edgy all-hands ...",
+            "position": 3
+          },
+          {
+            "date": "Apr 19, 2024",
+            "link": "https://www.dallasnews.com/business/airlines/2024/04/19/southwest-airlines-jetblue-planes-nearly-collide-at-reagan-national-airport/",
+            "title": "Southwest Airlines, JetBlue planes nearly collide at D.C.'s ...",
+            "snippet": "Southwest Airlines and JetBlue Airways jets nearly collided at Ronald Reagan Washington National Airport on Thursday morning.",
+            "position": 4
+          },
+          {
+            "date": "May 20, 2024",
+            "link": "https://www.dallasnews.com/business/airlines/2024/05/20/watch-saturday-night-live-pokes-at-southwest-airlines-with-actor-jake-gyllenhaal/",
+            "title": "Watch: Saturday Night Live pokes at Southwest Airlines ...",
+            "snippet": "A Southwest Airlines flight pushes back from the gates at Pittsburgh International Airport on Tuesday, April 9, 2024. Smiley N. Pool / Staff ...",
+            "position": 5
+          },
+          {
+            "date": "Apr 15, 2025",
+            "link": "https://www.dallasnews.com/business/airlines/2025/04/15/american-airlines-adding-free-wi-fi-to-keep-up-with-competitors/",
+            "title": "American Airlines adds free Wi-Fi to keep up with competitors",
+            "snippet": "Fort Worth-based American Airlines will add free wireless internet to flights for members of its loyalty program, joining United and Delta ...",
+            "position": 6
+          },
+          {
+            "date": "Aug 7, 2025",
+            "link": "https://www.dallasnews.com/news/elections/2025/08/07/4-collin-county-mayors-share-vision-for-fast-growing-region/",
+            "title": "4 Collin County mayors share vision for fast-growing region",
+            "snippet": "From within their council chambers, city leaders in Collin County have steered small, sleepy suburbs into booming hubs.",
+            "position": 7
+          },
+          {
+            "date": "Aug 14, 2025",
+            "link": "https://www.dallasnews.com/news/politics/2025/08/14/international-tourism-forecast-to-drop-8-in-dallas-after-post-pandemic-record-in-2023/",
+            "title": "International tourism forecast to drop 8% in Dallas after ...",
+            "snippet": "Political, economic and immigration-related concerns are affecting international tourism just as Dallas is set to host the World Cup.",
+            "position": 8
+          },
+          {
+            "date": "Jun 18, 2025",
+            "link": "https://www.dallasnews.com/sports/fc-dallas/2025/06/18/mexico-beats-suriname-advances-to-quarterfinals-at-half-empty-att-stadium/",
+            "title": "Mexico beats Suriname, advances to Gold Cup ...",
+            "snippet": "Mexico won its Wednesday night game 2-0 and secured a spot in the quarterfinals, but attendance was the worst ever for an official Mexican national team game.",
+            "position": 9
+          },
+          {
+            "date": "Dec 19, 2024",
+            "link": "https://www.dallasnews.com/news/transportation/2024/12/18/streets-and-transit-could-define-downtown-dallas-in-2025-and-beyond/",
+            "title": "Streets and transit could define downtown Dallas in 2025 ...",
+            "snippet": "When it comes to how residents and visitors get around, Dallas is at a crossroads — and whatever road the city takes could remake downtown ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:30:12.950Z",
+      "data": {
+        "name": "Elmer's Pool Services",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 457-6225",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2117 Woodside Dr, Arlington, TX 76013",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Elmer%27s%20Pool%20Services%20Arlington%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:30:20.756Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:28:48.913Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:28:52.428Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:05.581Z",
+      "data": "Elmer's Pool Services Arlington review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You History History All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters SHORTS SHORTS Now playing Making money in the pool service business... srvcly srvcly • • 27K views 1 year ago srvcly srvcly In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... From the video description SHORTS SHORTS Now playing Pool Cleaning Tips 101: Netting, Vacuuming, Chemicals #poolcleaning Picture Perfect Pool Services Inc. Picture Perfect Pool Services Inc. • • 44K views 1 year ago Picture Perfect Pool Services Inc. Picture Perfect Pool Services Inc. Welcome to another day in the life of a professional pool cleaner! In this timelapse video, join me as I demonstrate the essential ... Welcome to another day in the life of a professional pool cleaner! In this timelapse video, join me as I demonstrate the essential ... From the video description SHORTS SHORTS Now playing Love your job? How much can a pool tech make? Pool Crew AU Pool Crew AU • • 6.1K views 3 years ago Pool Crew AU Pool Crew AU First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... From the video description SHORTS SHORTS Now playing Veteran Pool Service - Expert Care for Crystal Clear Pools Veteran Pool Service Veteran Pool Service • • 327 views 3 months ago Veteran Pool Service Veteran Pool Service Veteran Pool Service's 20+ years of expertise keeps my pool crystal clear and hassle-free—cheers to stress-free pool care ! Veteran Pool Service's 20+ years of expertise keeps my pool crystal clear and hassle-free—cheers to stress-free pool care ! From the video description SHORTS SHORTS Now playing Pool Technician | $68,930 to clean pools and repair pool equipment 👨‍🔧 🌊 🏊‍♀️ 🤽‍♂️ bookandtable bookandtable • • 8.6K views 2 years ago bookandtable bookandtable Book&Table Inc. In-Person & Online Tutors Find a Tutor Today ▪️https://www.linktr.ee/bookandtable. ▫️TikTok: ... Book&Table Inc. In-Person & Online Tutors Find a Tutor Today ▪️https://www.linktr.ee/bookandtable. ▫️TikTok: ... From the video description SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.6M views 4 years ago Life With Evan Life With Evan SHORTS SHORTS Now playing Money in Pools Services? #pool #poolcare #poolcleaning #luxurypools #smallbusiness #poolservice Dillon Brooks Dillon Brooks • • 307 views 2 years ago Dillon Brooks Dillon Brooks SHORTS SHORTS Now playing High end pool service in Scottsdale AZ Premier Pool Co. Premier Pool Co. • • 594 views 3 years ago Premier Pool Co. Premier Pool Co. SHORTS SHORTS Now playing Quality Over Price Pool Maintenance Tips Living in Huntsville Alabama - CL Brokered by eXp Living in Huntsville Alabama - CL Brokered by eXp • • 504 views 1 year ago Living in Huntsville Alabama - CL Brokered by eXp Living in Huntsville Alabama - CL Brokered by eXp Discover what successful entrepreneurship looks like from a former aircraft mechanic turned business owner. BlueDiamond Pools ... Discover what successful entrepreneurship looks like from a former aircraft mechanic turned business owner. BlueDiamond Pools ... From the video description SHORTS SHORTS Now playing Pool cleaning step by step - pool maintenance 🧽✅🧑🏻‍🔧 Dunota Pools, Central Florida Dunota Pools Dunota Pools • • 120K views 2 years ago Dunota Pools Dunota Pools SHORTS SHORTS Now playing 941-208-3829 We Have Over 49 5-Star Reviews! Contact Us For Reliable Pool Service! 💙🌴 Florida Detail Pools (0-1,000 Pools) Florida Detail Pools (0-1,000 Pools) • • 91 views 3 months ago Florida Detail Pools (0-1,000 Pools) Florida Detail Pools (0-1,000 Pools) 941-208-3829 We Have Over 49 5-Star Reviews! Contact Us For Reliable Pool Service ! 941-208-3829 We Have Over 49 5-Star Reviews! Contact Us For Reliable Pool Service ! From the video description SHORTS SHORTS Now playing I tried the $4k/month pool cleaning side hustle… Finance Unfolded Finance Unfolded • • 32K views 2 years ago Finance Unfolded Finance Unfolded People also watched 19:31 19:31 Now playing POOL CLEAN UP BEFORE THEY FILL IT IN 😭 thep00lguy ML thep00lguy ML • • 257K views 5 months ago thep00lguy ML thep00lguy ML My pool products are here ⬇️ https://www.thepoolguy.uk. My pool products are here ⬇️ https://www.thepoolguy.uk. From the video description Summary A neglected pool, green with algae, gets a final clean before being filled in. The pool guy tackles filter issues and chemical imbalances, using shock and flock treatments. Expect a thorough cleaning process, from brushing and netting to vacuuming to waste. AI-generated video summary Quality and accuracy may vary. Summary A neglected pool, green with algae, gets a final clean before being filled in. The pool guy tackles filter issues and chemical imbalances, using shock and flock treatments. Expect a thorough cleaning process, from brushing and netting to vacuuming to waste. 0:29 0:29 Now playing suasana pool attendant di kapal pesiar guski channel guski channel • • 686 views 3 years ago guski channel guski channel 12:32 12:32 Now playing How to Start a Pool Cleaning Business FINANCIAL BREAKDOWN (+ Template!!) ProjectionHub ProjectionHub • • 3.5K views 4 years ago ProjectionHub ProjectionHub In this video Adam will go through an example startup pool cleaning business financial projection where he will demonstrate ... In this video Adam will go through an example startup pool cleaning business financial projection where he will demonstrate ... From the video description CC 8 chapters Starting a Pool Cleaning Business Intro | Starting Assumptions for Pool Cleaning Business Projections | How Much Does it Cost to Start a Pool Cleaning Business | How Much revenue can a Pool Cleaning Business Generate | Cost of Labor and Materials (COGS) for Pool Cleaning Business | Operating Expenses for a Pool Cleaning Company | How Profitable is a Pool Cleaning Business | Over of Pool Cleaning Financial Pro Formas 8 chapters in this video 8 chapters Starting a Pool Cleaning Business Intro Starting a Pool Cleaning Business Intro 0:00 Starting a Pool Cleaning Business Intro 0:00 Starting Assumptions for Pool Cleaning Business Projections Starting Assumptions for Pool Cleaning Business Projections 1:43 Starting Assumptions for Pool Cleaning Business Projections 1:43 How Much Does it Cost to Start a Pool Cleaning Business How Much Does it Cost to Start a Pool Cleaning Business 2:45 How Much Does it Cost to Start a Pool Cleaning Business 2:45 How Much revenue can a Pool Cleaning Business Generate How Much revenue can a Pool Cleaning Business Generate 4:24 How Much revenue can a Pool Cleaning Business Generate 4:24 Cost of Labor and Materials (COGS) for Pool Cleaning Business Cost of Labor and Materials (COGS) for Pool Cleaning Business 7:50 Cost of Labor and Materials (COGS) for Pool Cleaning Business 7:50 Operating Expenses for a Pool Cleaning Company Operating Expenses for a Pool Cleaning Company 9:34 Operating Expenses for a Pool Cleaning Company 9:34 How Profitable is a Pool Cleaning Business How Profitable is a Pool Cleaning Business 11:25 How Profitable is a Pool Cleaning Business 11:25 23:35 23:35 Now playing Green to Blue Pool in 24 hours: How to Clean a Green Pool: Pool Cleaning: Cleaning a Swimming Pool Pool elementary Pool elementary • • 548K views 2 years ago Pool elementary Pool elementary Green to Blue Pool Cleaning . How to Clean a Swimming pool that is Green with Algae. How to Clean a Green Pool from start to ... Green to Blue Pool Cleaning . How to Clean a Swimming pool that is Green with Algae. How to Clean a Green Pool from start to ... From the video description 5 moments per 10,000 gallons depending on how bad the pool is. | Brush Everything Good | Always Add Chlorine when UV rays are at a minimum! | Eliminate any places Algae can hide out! | Pressures up 6-8 pounds! 5 auto-generated moments in this video 5 moments per 10,000 gallons depending on how bad the pool is. per 10,000 gallons depending on how bad the pool is. 3:53 per 10,000 gallons depending on how bad the pool is. 3:53 Brush Everything Good Brush Everything Good 6:15 Brush Everything Good 6:15 Always Add Chlorine when UV rays are at a minimum! Always Add Chlorine when UV rays are at a minimum! 8:18 Always Add Chlorine when UV rays are at a minimum! 8:18 Eliminate any places Algae can hide out! Eliminate any places Algae can hide out! 8:52 Eliminate any places Algae can hide out! 8:52 Pressures up 6-8 pounds! Pressures up 6-8 pounds! 10:10 Pressures up 6-8 pounds! 10:10 + 6 more SHORTS SHORTS Now playing Satisfying Green Pool Cleaning PatThePoolBoy PatThePoolBoy • • 2.9M views 2 years ago PatThePoolBoy PatThePoolBoy Watch as we transform a green pool into sparkling clean water in the most satisfying way possible. Sit back, relax, and enjoy the ... Watch as we transform a green pool into sparkling clean water in the most satisfying way possible. Sit back, relax, and enjoy the ... From the video description 4K SHORTS SHORTS Now playing 5 Things You Must Do Weekly To Your Pool #shorts Easy Clear Pool Easy Clear Pool • • 272K views 4 years ago Easy Clear Pool Easy Clear Pool Keep your pool clean and maintained regularly with these 5 weekly tips to do on a regular basis. This will help you maintain the ... Keep your pool clean and maintained regularly with these 5 weekly tips to do on a regular basis. This will help you maintain the ... From the video description 3 moments Check Pool Levels | Shock The Pool | Check Filters 3 auto-generated moments in this video 3 moments Check Pool Levels Check Pool Levels 0:10 Check Pool Levels 0:10 Shock The Pool Shock The Pool 0:37 Shock The Pool 0:37 Check Filters Check Filters 0:49 Check Filters 0:49 SHORTS SHORTS Now playing Pt. 2 Pool Service Estimate CaliWave Pools CaliWave Pools • • 1.2K views 2 years ago CaliWave Pools CaliWave Pools 0:52 ... as well for that and that's how you separate yourself and show value as a pool service company not just someone that's coming. ... as well for that and that's how you separate yourself and show value as a pool service company not just someone that's coming. Automatic captions SHORTS SHORTS Now playing Pool cleaning step by step💙 Dunota Pools - Maintenance Service Dunota Pools Dunota Pools • • 32K views 2 years ago Dunota Pools Dunota Pools SHORTS SHORTS Now playing #pool care 101 #poolmaintenance for beginners #poolcleaning That Backyard Life HWGAC That Backyard Life HWGAC • • 47K views 3 years ago That Backyard Life HWGAC That Backyard Life HWGAC Balance is key, when testing with Frog system test strips, I'm checking the PH levels the FREE CHLORINE & Acidity /Alkaline ... Balance is key, when testing with Frog system test strips, I'm checking the PH levels the FREE CHLORINE & Acidity /Alkaline ... From the video description SHORTS SHORTS Now playing Pool Maintenance in 60 Seconds ⏱️ Swim University Swim University • • 49K views 1 year ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description SHORTS SHORTS Now playing 🤫SECRET🤫 - CHEAT WAY TO VACUUM YOUR SWIMMING POOL PatThePoolBoy PatThePoolBoy • • 149K views 2 years ago PatThePoolBoy PatThePoolBoy DONT BUY A SEPERATE POOL VACUUM HOSE, USE THIS TRADE SECRET INSTEAD. Check us out on Insta ... DONT BUY A SEPERATE POOL VACUUM HOSE, USE THIS TRADE SECRET INSTEAD. Check us out on Insta ... From the video description CC SHORTS SHORTS Now playing Dubai Pool Maintenance Company | Get free estimation before you start work Bluescape Bluescape • • 666 views 2 years ago Bluescape Bluescape We Maintain your Swimming Pool | Highly Skilled and Equipped To build Custom Designed Swimming Pools . Lounge Pools ... We Maintain your Swimming Pool | Highly Skilled and Equipped To build Custom Designed Swimming Pools . Lounge Pools ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:06.895Z",
+      "data": {
+        "query": "site:nextdoor.com Elmer's Pool Services Arlington",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/elmers-pool-service-arlington-tx/",
+            "title": "Elmer's Pool Service - Arlington, TX",
+            "snippet": "Elmer's Pool Service in Arlington, TX. Connect with neighborhood businesses on Nextdoor.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:30:22.495Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Elmer's Pool Services\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:18.338Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Elmer's%20Pool%20Services&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Elmer's% 20Pool% 20Services&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Elmer's% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Elmer's% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Elmer's% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Elmer's% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Elmer's% 20Pool% 20Services&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:21.556Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:26.976Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:33.447Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Elmer's Pool Services",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1961/ww-1014.pdf",
+            "title": "THEATTORNEYGENERAL",
+            "snippet": "House Bill 248 of the 57th Legislature author- izing the establishment of a civil service sys- tem of selection, tenure and status for all employees of counties ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:34.428Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://security.app.cpa.state.tx.us/",
+            "title": "Page Unavailable - Comptroller.Texas.Gov",
+            "snippet": "The webpage you are trying to access is temporarily out of service. We are either working to address the issue or conducting routine maintenance, ...",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 4
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 5
+          },
+          {
+            "date": "Jan 10, 2026",
+            "link": "https://www.facebook.com/groups/1494427604106723/posts/4294122614137194/",
+            "title": "Anyone looking to verify these fake LLC You can search on the ...",
+            "snippet": "Anyone looking to verify these fake LLC You can search on the Texas comptroller account page Type their LLC name correctly and you can see ...",
+            "position": 6
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 7
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 8
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 9
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn and Texas Tax Code, Sec. 171.2515. [2] https://statutes.capitol.texas.gov/Docs/TX/htm/TX ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:29:35.455Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Elmer's Pool Services",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:36.662Z",
+      "data": {
+        "query": "site:dallascounty.org Elmer's Pool Services civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "statutory",
+            "snippet": "(Equals Line 1b minus Line 4 plus Line 8.) Criminal Matters. Total Cases. Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:37.941Z",
+      "data": {
+        "query": "site:collincountytx.gov Elmer's Pool Services",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20Business.pdf",
+            "title": "Sorted by Business",
+            "snippet": "250922 Designer Pool Table Services LLC. 22,334 Timothy. Seaberg. Owner. 10050 Grumman Lane, McKinney TX 75071. My business services billiard ...",
+            "position": 1
+          },
+          {
+            "date": "Oct 2, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/cc/20201214_2575/48414_2020%20small%20business%20invoice%20approved%20payments.pdf",
+            "title": "2020 10 02 Invoice data extracts.csv",
+            "snippet": "Suite 150 Allen TX. 75013. Software Consulting Firm, we provide ERP consulting and implementation services mostly for manufacturing companies.",
+            "position": 2
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20City.pdf",
+            "title": "Sorted by City",
+            "snippet": "Suite 170, Allen, TX 75002. We are a chiropractic and physical rehab clinic located in Allen, TX which is in Collin County. We provide ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:39.283Z",
+      "data": {
+        "query": "site:dentoncounty.gov Elmer's Pool Services",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 12, 2018",
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=1248",
+            "title": "OFFICE OF COURT ADMINISTRATION TEXAS JUDICIAL ...",
+            "snippet": "Style. Case Number. Activity Type. Activity Date. The State of Texas vs JOSEPH WELDON ROBERTS. 00-032J3. 01/06/2000. Filed document.",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/website/historicalmarkers/PDFs/Denton-1927-City-Hall-Building.pdf",
+            "title": "Denton 1927 City Hall Building",
+            "snippet": "Elmer Van Slyke was a New York native who moved to Fort Worth in 1913 from Oklahoma. City. He began his architectural career in Friendship, N.Y in 1885 after ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:30:19.069Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:30:21.344Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Elmer's Pool Services\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:30:25.271Z",
+      "data": {
+        "found": false,
+        "query": "\"Elmer's Pool Services\" Arlington lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-06T02:36:16.073Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Elmer's Pool Services",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Elmer's Pool Services",
+        "searched_at": "2026-02-06T02:36:02.712289",
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:31:03.523Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:31:03.529Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:31:14.308Z",
+      "data": {
+        "cost": 0.0005583200000000001,
+        "summary": "The review profile is highly suspicious. A company in business for 33 years has only one generic, 5-star review on Google and no presence on other major review platforms. This pattern is inconsistent with an established, reputable contractor and suggests either a lack of customer engagement or potential review manipulation.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-05T03:31:14.308Z",
+        "fake_signals": [
+          "Extremely low review volume for 33-year-old business",
+          "Single review is generic and lacks detail",
+          "No reviews on any other platform (Angi, Houzz, Yelp)"
+        ],
+        "recommendation": "DISTRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "Not Rated",
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "NO_DATA",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "BBB profile shows 33 years in business"
+        ],
+        "fake_review_score": 85,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Insufficient review data across platforms to detect meaningful discrepancies."
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:45.558Z",
+      "data": {
+        "name": "Elmer's Pool Service",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 457-6225",
+        "rating": "Not Rated",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/arlington/profile/pool-supplies/elmers-pool-service-0825-92120046",
+        "review_count": null,
+        "founding_date": "12/01/1992",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 33,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:28:41.878Z",
+      "data": "Trustpilot Search Results Companies Bilhuset Elmer A/S www.bilhusetelmer.dk • 809 reviews 4.6 Pool Protection 27 Pool Services www.poolprotection27.com • 1 review 3.7 Mogens Elmer A/S www.mogens-elmer.dk • 62 reviews 1.9 Elmer Advokater elmer-adv.dk • 42 reviews 2.5 Pool pool.net • 636 reviews 4.4 Categories Pool Academy The best companies in the category 'Pool Academy' Swimming Pool The best companies in the category 'Swimming Pool' Pool Hall The best companies in the category 'Pool Hall' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (10000) Bilhuset Elmer A/S www.bilhusetelmer.dk 4.6 809 reviews Denmark Pool Protection 27 Pool Services www.poolprotection27.com 3.7 1 review United States Mogens Elmer A/S www.mogens-elmer.dk 1.9 62 reviews Kirstinehøj 66, Kastrup, Denmark Elmer Advokater elmer-adv.dk 2.5 42 reviews Borgergade 24b, København K, Denmark Pool pool.net 4.4 636 reviews Edertalstr. 86, Mörlenbach, Germany S & S Services www.sandsservices.co.uk 3.7 11 reviews Old Bridge Road 8, Ayr, United Kingdom S sterkado.nl 2.1 16 reviews Jaap Bijzerweg 19, Woerden, Netherlands s snatched.no 3.2 86 reviews Nigeria POOL Total www.pooltotal.com 4.1 47 reviews Große Heide 3, Minden, Germany Turkey Pool Villa www.turkey-pool-villa.com 4.2 6 reviews Previous 1 2 3 4 1000 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Pool Academy Sports Swimming Pool Sports Pool Hall Sports Swimming Pool Supply Store Construction & Manufacturing Pool Cleaning Service Home Services Pool Billard Club Sports are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:30:12.947Z",
+      "data": {
+        "name": "Elmer's Pool Services",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 457-6225",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2117 Woodside Dr, Arlington, TX 76013",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Elmer%27s%20Pool%20Services%20Arlington%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:30:17.907Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/elmers-pool-service-arlington",
+        "review_count": null
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:30:23.927Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Elmer's Pool Services\" Arlington",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:30:23.021Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Elmer's Pool Services\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:30:24.448Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Elmer's Pool Services\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:29:47.062Z",
+      "data": {
+        "cid": "2922514669646296633",
+        "name": "Elmer's Pool Services",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "2117 Woodside Dr, Arlington, TX 76013",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 1,
+          "target_reviews": 1
+        },
+        "reviews": [
+          {
+            "date": "2 years ago",
+            "text": "Elmer’s been in the pool business a long time and is great at it!",
+            "author": "Jon S",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 1,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Arlington, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:30:42.817Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-05T03:30:28Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Elmer%27s%20Pool%20Services%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=0w6EaYLuHuTIp84P_J6uqAM\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-05T03:30:37Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Elmer%27s%20Pool%20Services%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=3A6EacXpLYrfp84P2dOM6AQ\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Elmer's Pool Services",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

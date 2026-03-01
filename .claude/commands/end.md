@@ -1,69 +1,80 @@
-# /end - End Auditor Session
+# /end (or end) - Hybrid Session Closeout
 
-Summarize session, update state, and save context.
+`end` and `/end` are identical.
+
+Modes:
+- `end` (default): Hybrid Core closeout now
+- `end full`: Hybrid Core + full closeout now
+- `end async`: Hybrid Core now + delegated heavy closeout
 
 ## Process
 
-### 1. Get Current Date/Time
+### 1. Resolve Date/Time (CT)
 ```bash
-date +%Y-%m-%d
-date +%H:%M
+TZ="America/Chicago" date +%Y-%m-%d
+TZ="America/Chicago" date +%H:%M
 ```
 
-### 2. Summarize Session
-Review the conversation and extract:
-- **Completed:** What was finished
-- **In Progress:** What's partially done
-- **Decisions:** Any decisions made
-- **Blockers:** What's stuck
-- **Next Actions:** What should happen next
+### 2. Ensure Session Log
+- Ensure `sessions/` exists.
+- Ensure `sessions/{TODAY}.md` exists.
 
-### 3. Update Session Log
-Append to `sessions/{TODAY}.md`:
+### 3. Hybrid Core (MANDATORY)
+Write immediately while context is fresh:
+
+1. Update `state/current.md` with:
+- active work
+- blockers
+- next actions
+- any handoffs needed
+
+2. Update `state/carry-forward.md` with one distilled next-session lesson.
+
+3a. Preferred authoring rule: keep `<tldr>` in source files at 150 chars or less:
+```bash
+/home/astre/command-center/src/orchestrator/tools/check_system_meta_tldr.sh "$(pwd)" || echo WARN_tldr_over_150_truncation_backup
+```
+(Truncation during local-index rebuild is backup only.)
+
+3. Rebuild `state/local-index.md` from workspace `\<system_meta\>` blocks:
+```bash
+/home/astre/command-center/src/orchestrator/tools/build_local_index.sh "$(pwd)"
+```
+
+4. Append concise summary to `sessions/{TODAY}.md`:
 ```markdown
-## Session Ended: {TIME}
+## Session Ended: HH:MM CT
 
-### Completed
-- [Task 1]
-- [Task 2]
+### Accomplished
+- ...
 
-### In Progress
-- [Partial work]
-
-### Decisions
-- [Decision made]
-
-### Next Actions
-- [What to do next]
-
----
+### Next
+- ...
 ```
 
-### 4. Update State File
-Update `state/current.md` with:
-- New priorities (if changed)
-- Updated open threads
-- Fresh "Recent Context" section
-- Clear any resolved blockers
+This step is required for all `/end` modes.
 
-### 5. Confirm to User
-Output:
-```
-**Session Summary:**
-- Completed: [count] tasks
-- In Progress: [count] items
-- Next session: [top priority]
+### 4. Mode Behavior
 
-**Saved:**
-- sessions/{TODAY}.md
-- state/current.md
+#### `end` (default)
+- Stop after Hybrid Core.
 
-See you next time!
-```
+#### `end full`
+- After Hybrid Core:
+  - add COOKIE/BAD ROBOT to `/home/astre/command-center/LESSONS.md` when reusable
+  - update `state/profile.md` for newly observed user preferences/patterns
+  - run doc/contract drift check if workflows changed
+  - rate session quality (`X/100`) with one concrete improvement
 
-### 6. Optional: Commit
-If user wants to commit:
-```bash
-git add state/ sessions/
-git commit -m "chore(auditor): session log {TODAY}"
-```
+#### `end async`
+- After Hybrid Core:
+  1. Write capsule: `state/end-capsule-{TODAY}-{TIME}.md`
+  2. Include: scope completed, key files touched, decisions, candidate lessons, profile deltas, open handoffs
+  3. Dispatch background worker (Task tool or dispatch surface) with capsule + workspace path
+  4. Worker may append/refine but must not overwrite Hybrid Core entries
+  5. Worker appends completion note to `sessions/{TODAY}.md` with CT timestamp
+
+### 5. Guardrails
+- `/end` can write what it needs for continuity.
+- Do not mutate lock/policy docs unless explicitly requested.
+- Keep timestamps in `CT`.

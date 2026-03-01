@@ -19,6 +19,7 @@ from google import genai
 from google.genai import types
 
 from browser_use.llm.base import BaseChatModel, ChatInvokeCompletion
+from browser_use.llm.schema import SchemaOptimizer
 from browser_use.llm.messages import BaseMessage, UserMessage, AssistantMessage, SystemMessage
 from browser_use.llm import ContentImage, ContentText
 
@@ -67,6 +68,11 @@ class ChatGemini:
     def name(self) -> str:
         return f"gemini/{self.model}"
 
+    @property
+    def model_name(self) -> str:
+        """Compatibility shim for browser-use telemetry/event hooks."""
+        return self.model
+
     async def _wait_for_rate_limit(self) -> None:
         """Enforce rate limiting before making a request."""
         global _request_timestamps, _last_request_time
@@ -111,17 +117,48 @@ class ChatGemini:
             elif isinstance(msg, UserMessage):
                 parts = []
                 for content in msg.content:
-                    if isinstance(content, ContentText):
-                        parts.append(types.Part.from_text(text=content.text))
-                    elif isinstance(content, ContentImage):
-                        # Handle base64 image - decode string to bytes
-                        if content.image_base64:
-                            image_data = base64.b64decode(content.image_base64)
+                    # Text content (robust to dicts and different message classes)
+                    if isinstance(content, ContentText) or hasattr(content, "text") or isinstance(content, dict) and "text" in content:
+                        text_val = content.text if hasattr(content, "text") else content.get("text") if isinstance(content, dict) else str(content)
+                        if text_val:
+                            parts.append(types.Part.from_text(text=text_val))
+                        continue
+
+                    # Image content (robust to dicts and different message classes)
+                    if isinstance(content, ContentImage) or hasattr(content, "image_url") or isinstance(content, dict) and "image_url" in content:
+                        # Handle base64 image (legacy) or image_url (current)
+                        image_base64 = getattr(content, "image_base64", None)
+                        image_url = getattr(content, "image_url", None)
+                        media_type = getattr(content, "media_type", None)
+                        if isinstance(content, dict):
+                            image_url = content.get("image_url", image_url)
+                            media_type = content.get("media_type", media_type)
+                            image_base64 = content.get("image_base64", image_base64)
+
+                        if image_base64:
+                            image_data = base64.b64decode(image_base64)
                             parts.append(types.Part.from_bytes(
                                 data=image_data,
-                                mime_type=content.media_type or "image/png"
+                                mime_type=media_type or "image/png"
                             ))
-                contents.append(types.Content(role="user", parts=parts))
+                        elif image_url is not None:
+                            url = getattr(image_url, "url", None) if not isinstance(image_url, str) else image_url
+                            if url:
+                                if url.startswith("data:"):
+                                    header, b64_data = url.split(",", 1)
+                                    mime_type = header.split(";")[0].replace("data:", "") or media_type or "image/png"
+                                    image_data = base64.b64decode(b64_data)
+                                    parts.append(types.Part.from_bytes(
+                                        data=image_data,
+                                        mime_type=mime_type
+                                    ))
+                                else:
+                                    parts.append(types.Part.from_uri(
+                                        file_uri=url,
+                                        mime_type=media_type or "image/png"
+                                    ))
+                if parts:
+                    contents.append(types.Content(role="user", parts=parts))
             elif isinstance(msg, AssistantMessage):
                 parts = [types.Part.from_text(text=msg.content)]
                 contents.append(types.Content(role="model", parts=parts))
@@ -137,26 +174,58 @@ class ChatGemini:
     async def ainvoke(
         self,
         messages: list[BaseMessage],
-        output_format: type[T] | None = None
+        output_format: type[T] | None = None,
+        session_id: str | None = None,
+        **kwargs
     ) -> ChatInvokeCompletion[T] | ChatInvokeCompletion[str]:
         """
         Invoke Gemini with rate limiting and retry logic.
         """
+        _ = session_id
+        _ = kwargs
         await self._wait_for_rate_limit()
 
         system_instruction, contents = self._convert_messages(messages)
+        if not contents:
+            contents = [types.Content(role="user", parts=[types.Part.from_text(text="continue")])]
 
         for attempt in range(self.max_retries):
             try:
-                response = await asyncio.to_thread(
-                    self._client.models.generate_content,
-                    model=self.model,
-                    contents=contents,
-                    config=types.GenerateContentConfig(
-                        temperature=self.temperature,
-                        system_instruction=system_instruction,
+                if output_format is None:
+                    response = await asyncio.to_thread(
+                        self._client.models.generate_content,
+                        model=self.model,
+                        contents=contents,
+                        config=types.GenerateContentConfig(
+                            temperature=self.temperature,
+                            system_instruction=system_instruction,
+                        )
                     )
-                )
+                else:
+                    schema = SchemaOptimizer.create_gemini_optimized_schema(output_format)
+
+                    def _strip_additional_props(obj):
+                        if isinstance(obj, dict):
+                            obj.pop("additionalProperties", None)
+                            obj.pop("additional_properties", None)
+                            for value in obj.values():
+                                _strip_additional_props(value)
+                        elif isinstance(obj, list):
+                            for item in obj:
+                                _strip_additional_props(item)
+
+                    _strip_additional_props(schema)
+                    response = await asyncio.to_thread(
+                        self._client.models.generate_content,
+                        model=self.model,
+                        contents=contents,
+                        config=types.GenerateContentConfig(
+                            temperature=self.temperature,
+                            system_instruction=system_instruction,
+                            response_mime_type="application/json",
+                            response_schema=schema,
+                        )
+                    )
 
                 # Extract text response
                 text = response.text if hasattr(response, 'text') else str(response)
@@ -164,13 +233,17 @@ class ChatGemini:
                 # Parse to output_format if specified
                 if output_format is not None:
                     try:
-                        parsed = json.loads(text)
-                        result = output_format(**parsed) if isinstance(parsed, dict) else parsed
-                        return ChatInvokeCompletion(content=result)
+                        parsed = output_format.model_validate_json(text)
+                        return ChatInvokeCompletion(completion=parsed, usage=None)
                     except Exception:
-                        return ChatInvokeCompletion(content=text)
+                        try:
+                            parsed_json = json.loads(text)
+                            result = output_format(**parsed_json) if isinstance(parsed_json, dict) else parsed_json
+                            return ChatInvokeCompletion(completion=result, usage=None)
+                        except Exception:
+                            return ChatInvokeCompletion(completion=text, usage=None)
 
-                return ChatInvokeCompletion(content=text)
+                return ChatInvokeCompletion(completion=text, usage=None)
 
             except Exception as e:
                 error_str = str(e).lower()

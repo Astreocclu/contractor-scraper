@@ -287,7 +287,7 @@ if __name__ == "__main__":
 
 **Step 3: Test the scraper manually**
 
-Run: `cd /home/astre/command-center/testhome/contractor-auditor && source venv/bin/activate && python3 scrapers/texas_sos.py "Orange Elephant Roofing" --json`
+Run: `cd /home/astre/command-center/src/greenlit/auditor && source venv/bin/activate && python3 scrapers/texas_sos.py "Orange Elephant Roofing" --json`
 
 Expected: JSON with entity info or "not found"
 
@@ -523,7 +523,7 @@ if __name__ == "__main__":
 
 **Step 2: Test manually**
 
-Run: `cd /home/astre/command-center/testhome/contractor-auditor && source venv/bin/activate && python3 scrapers/longevity_claims.py 1524 --json`
+Run: `cd /home/astre/command-center/src/greenlit/auditor && source venv/bin/activate && python3 scrapers/longevity_claims.py 1524 --json`
 
 Expected: JSON with claims from existing raw_data for contractor 1524
 
@@ -892,7 +892,7 @@ module.exports = { LongevityAnalyzer };
 Create a quick test script:
 
 ```bash
-cd /home/astre/command-center/testhome/contractor-auditor
+cd /home/astre/command-center/src/greenlit/auditor
 node -e "
 const { LongevityAnalyzer } = require('./services/longevity_analyzer');
 const { DatabaseService } = require('./services/database_service');
@@ -981,7 +981,7 @@ At the end of `runInitialCollection` method (before the final return), add:
 
 **Step 4: Test full collection with longevity**
 
-Run: `cd /home/astre/command-center/testhome/contractor-auditor && source venv/bin/activate && set -a && . ./.env && set +a && node bin/run_audit.js --id 1524`
+Run: `cd /home/astre/command-center/src/greenlit/auditor && source venv/bin/activate && set -a && . ./.env && set +a && node bin/run_audit.js --id 1524`
 
 Expected: See "Running longevity verification..." and tier output in collection logs
 
@@ -1220,7 +1220,7 @@ git commit -m "feat: add standalone longevity verification CLI"
 **Step 1: Run full audit with longevity**
 
 ```bash
-cd /home/astre/command-center/testhome/contractor-auditor
+cd /home/astre/command-center/src/greenlit/auditor
 source venv/bin/activate && set -a && . ./.env && set +a
 
 # Test with known contractor

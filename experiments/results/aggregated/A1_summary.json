@@ -1,0 +1,100 @@
+{
+  "variation": "A1",
+  "generated_at": "2026-01-20T18:52:16.965Z",
+  "metrics": {
+    "rank_consistency": 1,
+    "avg_variance": 0.56,
+    "separation": 65,
+    "avg_duration_ms": 7251.8,
+    "avg_cost_usd": 0.0035257011999999996
+  },
+  "contractor_results": {
+    "656": {
+      "name": "Bonnie & Clydes Pools and Spas",
+      "archetype": "established_sketchy",
+      "expected": 35,
+      "scores": [
+        55,
+        55,
+        55,
+        55,
+        55
+      ],
+      "avg": 55,
+      "variance": 0,
+      "avg_duration_ms": 7874,
+      "avg_cost": 0.003513454
+    },
+    "3512": {
+      "name": "1-Tom-Plumber",
+      "archetype": "new_promising",
+      "expected": 75,
+      "scores": [
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "avg": 85,
+      "variance": 0,
+      "avg_duration_ms": 6579,
+      "avg_cost": 0.00432474
+    },
+    "5744": {
+      "name": "AC Repair Garland",
+      "archetype": "middle_tier",
+      "expected": 50,
+      "scores": [
+        65,
+        65,
+        65,
+        65,
+        58
+      ],
+      "avg": 63.6,
+      "variance": 2.8,
+      "avg_duration_ms": 7842,
+      "avg_cost": 0.004601205
+    },
+    "7691": {
+      "name": "Cowboy Hat Capital Foundation Repair Co",
+      "archetype": "known_bad",
+      "expected": 20,
+      "scores": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "avg": 20,
+      "variance": 0,
+      "avg_duration_ms": 7041,
+      "avg_cost": 0.002290463
+    },
+    "8958": {
+      "name": "Splash Pools",
+      "archetype": "gold_standard",
+      "expected": 78,
+      "scores": [
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "avg": 85,
+      "variance": 0,
+      "avg_duration_ms": 6923,
+      "avg_cost": 0.0028986439999999997
+    }
+  },
+  "pass_fail": {
+    "rank_consistency": "PASS",
+    "variance": "PASS",
+    "separation": "PASS",
+    "speed": true,
+    "cost": true
+  }
+}

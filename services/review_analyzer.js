@@ -6,6 +6,12 @@
  */
 
 const DEEPSEEK_API_BASE = 'https://api.deepseek.com/v1';
+const REVIEW_QUALITY_ENABLED = process.env.REVIEW_QUALITY_ENABLED !== 'false';
+const REVIEW_QUALITY_BATCH_SIZE = parseInt(process.env.REVIEW_QUALITY_BATCH_SIZE || '10', 10);
+const REVIEW_QUALITY_MAX_REVIEWS = parseInt(process.env.REVIEW_QUALITY_MAX_REVIEWS || '200', 10);
+const REVIEW_QUALITY_TEXT_MAX_CHARS = parseInt(process.env.REVIEW_QUALITY_TEXT_MAX_CHARS || '0', 10);
+const REVIEW_CONTEXT_MAX_REVIEWS = parseInt(process.env.REVIEW_CONTEXT_MAX_REVIEWS || '200', 10);
+const REVIEW_CONTEXT_TEXT_MAX_CHARS = parseInt(process.env.REVIEW_CONTEXT_TEXT_MAX_CHARS || '0', 10);
 
 /**
  * Extract JSON from LLM response that may contain markdown or extra text
@@ -88,6 +94,11 @@ Use your reasoning to determine: Are these reviews authentic reflections of cust
    - Ghosting, unresponsive after payment
    - Legal threats in owner responses
    - Owner arguing with reviewers
+5. **Warranty & Guarantee Follow-Through**
+   - Look for warranty or guarantee claims in reviews and BBB complaint responses
+   - Positive: "came back and fixed it", "no charge", "stood behind their work"
+   - Negative: "refused to honor warranty", "denied claim", "charged to fix defects"
+   - Note patterns that indicate whether they stand behind their work
 
 ## IMPORTANT CONTEXT
 - High review volume is NORMAL for established, quality contractors
@@ -113,6 +124,13 @@ OUTPUT FORMAT (JSON only, no markdown code blocks):
   "complaint_patterns": ["Slow response times", "Pricing concerns"],
   "fake_signals": ["Multiple reviews posted same day"],
   "authentic_signals": ["Specific project details mentioned", "Varied writing styles"],
+  "warranty_signals": {
+    "mentions": ["warranty", "guarantee"],
+    "positive_evidence": ["They came back and fixed the issue at no charge"],
+    "negative_evidence": ["Refused to honor warranty claim"],
+    "follow_through": "MIXED",
+    "confidence": "MEDIUM"
+  },
   "summary": "Reviews appear authentic with minor concerns about response times.",
   "recommendation": "TRUST_REVIEWS"
 }
@@ -122,6 +140,284 @@ IMPORTANT:
 - discrepancy_detected must be true or false (no quotes)
 - Output ONLY valid JSON, no additional text or markdown
 - Replace example values above with your actual analysis`;
+
+const REVIEW_QUALITY_PROMPT = `You are a review quality grader. Read each review and score how credible and useful it is.
+
+For EACH review, output:
+- quality_score (0-100): usefulness + credibility of the review text
+- specificity (0-100): concrete details (scope, timeline, price, materials, crew, outcomes)
+- authenticity (0-100): reads like a real customer vs template/marketing
+- sentiment (-1 to 1): overall sentiment
+- severity (0-3): severity of negative issues (0 none, 3 severe)
+- issue_tags: list of short tags (e.g., "no_show", "poor_quality", "price_overrun", "warranty", "communication", "timeliness", "safety")
+- confidence (0-1)
+
+Return JSON ONLY in this format:
+{
+  "reviews": [
+    {
+      "id": "review_1",
+      "quality_score": 72,
+      "specificity": 60,
+      "authenticity": 80,
+      "sentiment": 0.6,
+      "severity": 0,
+      "issue_tags": ["communication"],
+      "confidence": 0.74
+    }
+  ]
+}
+
+Rules:
+- Use the review text only; do not infer missing facts.
+- If the review is too short or generic, lower quality_score and specificity.
+- If review contains red-flag details (deposit taken, not finished, unsafe work), set higher severity and tag it.
+- Output ONLY valid JSON, no markdown.`;
+
+function collectReviewTexts(reviewData) {
+  const reviews = [];
+  if (!reviewData || typeof reviewData !== 'object') return reviews;
+
+  const pushReview = (source, r, idx) => {
+    if (!r || typeof r !== 'object') return;
+    const text = (r.text || r.review_text || r.content || '').toString().trim();
+    if (!text) return;
+    reviews.push({
+      id: `${source}_${idx}`,
+      source,
+      rating: r.rating ?? r.stars ?? null,
+      date: r.date || r.review_date || null,
+      author: r.author || r.reviewer_name || r.user || r.name || null,
+      text
+    });
+  };
+
+  const maybeAdd = (sourceKey, list) => {
+    if (!Array.isArray(list)) return;
+    list.forEach((r, i) => pushReview(sourceKey, r, i));
+  };
+
+  // Google Maps variants
+  if (reviewData.google_maps?.reviews) {
+    maybeAdd('google_maps', reviewData.google_maps.reviews);
+  }
+  if (reviewData.google_maps_local?.reviews) {
+    maybeAdd('google_maps_local', reviewData.google_maps_local.reviews);
+  }
+  if (reviewData.google_maps_hq?.reviews) {
+    maybeAdd('google_maps_hq', reviewData.google_maps_hq.reviews);
+  }
+
+  // Yelp (direct or Yahoo fallback)
+  if (reviewData.yelp?.reviews) {
+    maybeAdd('yelp', reviewData.yelp.reviews);
+  }
+  if (reviewData.yelp_yahoo?.reviews) {
+    maybeAdd('yelp_yahoo', reviewData.yelp_yahoo.reviews);
+  }
+
+  // BBB (if reviews exist in structured data)
+  if (reviewData.bbb?.reviews) {
+    maybeAdd('bbb', reviewData.bbb.reviews);
+  }
+
+  // Other platforms
+  if (reviewData.angi?.reviews) {
+    maybeAdd('angi', reviewData.angi.reviews);
+  }
+  if (reviewData.houzz?.reviews) {
+    maybeAdd('houzz', reviewData.houzz.reviews);
+  }
+  if (reviewData.trustpilot?.reviews) {
+    maybeAdd('trustpilot', reviewData.trustpilot.reviews);
+  }
+  if (reviewData.porch?.reviews) {
+    maybeAdd('porch', reviewData.porch.reviews);
+  }
+  if (reviewData.glassdoor?.reviews) {
+    maybeAdd('glassdoor', reviewData.glassdoor.reviews);
+  }
+
+  const deduped = [];
+  const seen = new Set();
+  for (const review of reviews) {
+    const key = [
+      (review.source || '').toLowerCase(),
+      (review.author || '').toLowerCase(),
+      (review.date || '').toLowerCase(),
+      (review.text || '').toLowerCase().replace(/\s+/g, ' ').trim()
+    ].join('|');
+    if (seen.has(key)) continue;
+    seen.add(key);
+    deduped.push(review);
+  }
+  return deduped;
+}
+
+function chunkReviews(reviews, size) {
+  const chunks = [];
+  for (let i = 0; i < reviews.length; i += size) {
+    chunks.push(reviews.slice(i, i + size));
+  }
+  return chunks;
+}
+
+function summarizeReviewQuality(perReview) {
+  if (!Array.isArray(perReview) || perReview.length === 0) {
+    return {
+      avg_quality: null,
+      avg_specificity: null,
+      avg_authenticity: null,
+      avg_sentiment: null,
+      quality_distribution: { high: 0, medium: 0, low: 0 },
+      severity_counts: { 0: 0, 1: 0, 2: 0, 3: 0 },
+      issue_tags: {}
+    };
+  }
+
+  const sums = {
+    quality: 0,
+    specificity: 0,
+    authenticity: 0,
+    sentiment: 0
+  };
+  const dist = { high: 0, medium: 0, low: 0 };
+  const severityCounts = { 0: 0, 1: 0, 2: 0, 3: 0 };
+  const tags = {};
+
+  for (const r of perReview) {
+    const q = Number(r.quality_score) || 0;
+    sums.quality += q;
+    sums.specificity += Number(r.specificity) || 0;
+    sums.authenticity += Number(r.authenticity) || 0;
+    sums.sentiment += Number(r.sentiment) || 0;
+
+    if (q >= 75) dist.high += 1;
+    else if (q >= 45) dist.medium += 1;
+    else dist.low += 1;
+
+    const sev = Number.isFinite(r.severity) ? r.severity : 0;
+    if (severityCounts[sev] !== undefined) severityCounts[sev] += 1;
+
+    if (Array.isArray(r.issue_tags)) {
+      for (const tag of r.issue_tags) {
+        if (!tag) continue;
+        tags[tag] = (tags[tag] || 0) + 1;
+      }
+    }
+  }
+
+  const n = perReview.length;
+  return {
+    avg_quality: Math.round((sums.quality / n) * 10) / 10,
+    avg_specificity: Math.round((sums.specificity / n) * 10) / 10,
+    avg_authenticity: Math.round((sums.authenticity / n) * 10) / 10,
+    avg_sentiment: Math.round((sums.sentiment / n) * 100) / 100,
+    quality_distribution: dist,
+    severity_counts: severityCounts,
+    issue_tags: tags
+  };
+}
+
+async function analyzeReviewQuality(reviews) {
+  if (!REVIEW_QUALITY_ENABLED) {
+    return { skipped: true, reason: 'REVIEW_QUALITY_ENABLED=false' };
+  }
+  if (!process.env.DEEPSEEK_API_KEY) {
+    return { skipped: true, reason: 'DEEPSEEK_API_KEY not set' };
+  }
+  if (!Array.isArray(reviews) || reviews.length === 0) {
+    return { skipped: true, reason: 'No review text found' };
+  }
+
+  const limited = REVIEW_QUALITY_MAX_REVIEWS > 0 ? reviews.slice(0, REVIEW_QUALITY_MAX_REVIEWS) : reviews;
+  const batches = chunkReviews(limited, REVIEW_QUALITY_BATCH_SIZE);
+  const scored = [];
+  const errors = [];
+  let totalCost = 0;
+
+  for (let i = 0; i < batches.length; i++) {
+    const batch = batches[i].map(r => ({
+      id: r.id,
+      source: r.source,
+      rating: r.rating ?? null,
+      date: r.date ?? null,
+      text: REVIEW_QUALITY_TEXT_MAX_CHARS > 0
+        ? (r.text || '').slice(0, REVIEW_QUALITY_TEXT_MAX_CHARS)
+        : (r.text || '')
+    }));
+
+    try {
+      const response = await fetch(`${DEEPSEEK_API_BASE}/chat/completions`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
+        },
+        body: JSON.stringify({
+          model: 'deepseek-chat',
+          messages: [
+            { role: 'system', content: REVIEW_QUALITY_PROMPT },
+            { role: 'user', content: JSON.stringify({ reviews: batch }) }
+          ],
+          temperature: 0,
+          max_tokens: 2000
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`DeepSeek error: ${response.status}`);
+      }
+
+      const result = await response.json();
+      totalCost += estimateCost(result);
+      const message = result.choices?.[0]?.message || {};
+      const content = message.content || '';
+      const parsed = extractJSON(content);
+
+      if (!parsed || !Array.isArray(parsed.reviews)) {
+        errors.push({ batch: i, error: 'Failed to parse JSON' });
+        continue;
+      }
+
+      // Keep only expected fields
+      for (const r of parsed.reviews) {
+        if (!r || !r.id) continue;
+        scored.push({
+          id: r.id,
+          quality_score: r.quality_score ?? null,
+          specificity: r.specificity ?? null,
+          authenticity: r.authenticity ?? null,
+          sentiment: r.sentiment ?? null,
+          severity: r.severity ?? 0,
+          issue_tags: Array.isArray(r.issue_tags) ? r.issue_tags : [],
+          confidence: r.confidence ?? null
+        });
+      }
+    } catch (err) {
+      errors.push({ batch: i, error: err.message || String(err) });
+    }
+  }
+
+  const summary = summarizeReviewQuality(scored);
+  return {
+    total_reviews: reviews.length,
+    analyzed_reviews: scored.length,
+    max_reviews_limit: REVIEW_QUALITY_MAX_REVIEWS,
+    batch_size: REVIEW_QUALITY_BATCH_SIZE,
+    text_max_chars: REVIEW_QUALITY_TEXT_MAX_CHARS,
+    avg_quality: summary.avg_quality,
+    avg_specificity: summary.avg_specificity,
+    avg_authenticity: summary.avg_authenticity,
+    avg_sentiment: summary.avg_sentiment,
+    quality_distribution: summary.quality_distribution,
+    severity_counts: summary.severity_counts,
+    issue_tags: summary.issue_tags,
+    per_review: scored,
+    errors,
+    cost: Math.round(totalCost * 10000) / 10000
+  };
+}
 
 async function analyzeReviews(contractorName, reviewData) {
   // Defensive check for missing data
@@ -180,11 +476,38 @@ async function analyzeReviews(contractorName, reviewData) {
     // Skip if data is null/undefined or not an object
     if (!data || typeof data !== 'object') continue;
 
+    // For Google Maps sources with structured reviews, include full stored corpus.
+    if ((source === 'google_maps_local' || source === 'google_maps_hq' || source === 'google_maps') && data.reviews && Array.isArray(data.reviews)) {
+      const reviews = data.reviews;
+      const includeCount = REVIEW_CONTEXT_MAX_REVIEWS > 0
+        ? Math.min(reviews.length, REVIEW_CONTEXT_MAX_REVIEWS)
+        : reviews.length;
+
+      context += `\n### ${source.toUpperCase()} (Full Corpus: ${includeCount}/${reviews.length} stored reviews)\n`;
+
+      for (let i = 0; i < includeCount; i++) {
+        const r = reviews[i] || {};
+        const author = r.author || r.reviewer_name || r.name || 'Anonymous';
+        const date = r.date || 'Unknown date';
+        const rating = r.rating ?? r.stars ?? 'N/A';
+        const rawText = (r.text || '').toString();
+        const reviewText = REVIEW_CONTEXT_TEXT_MAX_CHARS > 0
+          ? rawText.slice(0, REVIEW_CONTEXT_TEXT_MAX_CHARS)
+          : rawText;
+        context += `[${i + 1}] ${author} (${date}) ${rating}★: ${reviewText}\n\n`;
+      }
+
+      if (includeCount < reviews.length) {
+        context += `[omitted ${reviews.length - includeCount} review(s) due to REVIEW_CONTEXT_MAX_REVIEWS]\n\n`;
+      }
+      continue;
+    }
+
     const rawText = data.raw_text || '';
     if (rawText.length > 50) {
-      // Truncate to reasonable size
-      const text = rawText.length > 3000
-        ? rawText.substring(0, 3000) + '...[truncated]'
+      // Increased truncation limit from 3000 to 20000
+      const text = rawText.length > 20000
+        ? rawText.substring(0, 20000) + '...[truncated]'
         : rawText;
       context += `\n### ${source.toUpperCase()}\n${text}\n`;
     }
@@ -197,6 +520,25 @@ async function analyzeReviews(contractorName, reviewData) {
       reason: 'Insufficient review data to analyze',
       platform_ratings: extractRatings(reviewData)
     };
+  }
+
+  // Optional: per-review quality scoring (full-text)
+  const reviewTexts = collectReviewTexts(reviewData);
+  const reviewQuality = await analyzeReviewQuality(reviewTexts);
+
+  if (!reviewQuality?.skipped) {
+    const qualitySummary = {
+      total_reviews: reviewQuality.total_reviews,
+      analyzed_reviews: reviewQuality.analyzed_reviews,
+      avg_quality: reviewQuality.avg_quality,
+      avg_specificity: reviewQuality.avg_specificity,
+      avg_authenticity: reviewQuality.avg_authenticity,
+      avg_sentiment: reviewQuality.avg_sentiment,
+      quality_distribution: reviewQuality.quality_distribution,
+      severity_counts: reviewQuality.severity_counts,
+      issue_tags: reviewQuality.issue_tags
+    };
+    context += `\n## FULL CORPUS LINGUISTIC/QUALITY SUMMARY\n${JSON.stringify(qualitySummary, null, 2)}\n`;
   }
 
   try {
@@ -257,6 +599,17 @@ async function analyzeReviews(contractorName, reviewData) {
     // Add metadata to successful parse
     analysis.analyzed_at = new Date().toISOString();
     analysis.cost = estimateCost(result);
+    analysis.review_quality = reviewQuality;
+
+    if (!analysis.warranty_signals || typeof analysis.warranty_signals !== 'object') {
+      analysis.warranty_signals = {
+        mentions: [],
+        positive_evidence: [],
+        negative_evidence: [],
+        follow_through: 'NONE_FOUND',
+        confidence: 'LOW'
+      };
+    }
 
     // Include reasoning if available (from deepseek-reasoner)
     if (reasoningContent) {
@@ -268,7 +621,8 @@ async function analyzeReviews(contractorName, reviewData) {
   } catch (err) {
     return {
       error: err.message,
-      platform_ratings: extractRatings(reviewData)
+      platform_ratings: extractRatings(reviewData),
+      review_quality: reviewQuality
     };
   }
 }

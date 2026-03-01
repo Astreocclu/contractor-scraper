@@ -1,0 +1,746 @@
+{
+  "contractor_id": 8981,
+  "business_name": "Calvery Pools DFW",
+  "city": "Mesquite",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-11T03:27:38.425Z",
+  "sources": {
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:28:26.017Z",
+      "data": {
+        "query": "site:yelp.com \"Calvery Pools DFW\" \"Mesquite, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:29:14.497Z",
+      "data": {
+        "query": "Calvery Pools DFW Mesquite site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/fred-pool-obituary?id=27354493",
+            "title": "Fred Pool Obituary (2005) - Dallas, TX - Dallas Morning News",
+            "snippet": "... Calvary Baptist Church of Mesquite and served in the U. S. Navy during WWII. Preceded in death by Wife: Lawanda Pool and brothers: Charles and Bo Pool. He ...",
+            "position": 1
+          },
+          {
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/alfred-valderas-obituary?id=21486617",
+            "title": "Alfred Valderas Obituary (1968 - 2012) - Dallas, TX",
+            "snippet": "Valderas, Alfred He was born December 6, 1968 in Dallas, TX, and passed away March 19, 2012. He is preceded in Eternal Rest by his beloved Mother, ...",
+            "position": 2
+          },
+          {
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/jeremiah-dibble-obituary?id=28345163",
+            "title": "Jeremiah Dibble Obituary (2002) - Dallas, TX - Dallas Morning News",
+            "snippet": "DIBBLE, JEREMIAH YOUNG, 24, passed away Saturday, August 3, 2002 in Jacksonville, Florida., His parents, Paul and Cyndi Gilliland brother Zackary; Grandmother ...",
+            "position": 3
+          },
+          {
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/browse",
+            "title": "All of Dallas Morning News's Recent Obituaries",
+            "snippet": "Browse Dallas Morning News obituaries, conduct other obituary searches, offer condolences/tributes, send flowers or create an online memorial.",
+            "position": 4
+          },
+          {
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/george-hill-obituary?id=8961879",
+            "title": "George Hill Obituary (1919 - 2013) - Mesquite, TX - Dallas Morning ...",
+            "snippet": "Hill, George Junior Born on Dec 12, 1919 in Yonkers, New York, George Junior Hill departed this world very peacefully on May 18, 2013 at the age of 93.",
+            "position": 5
+          },
+          {
+            "date": "Dec 13, 2017",
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/ruby-lee-gaynier-obituary?id=52049836",
+            "title": "Ruby Lee Gaynier Obituary (1921 - 2017) - Dallas, TX",
+            "snippet": "Ruby Lee Gaynier, 96, of Dallas, Texas, and recently residing in Clay Center, Kansas, went to be with her Lord and Savior Jesus Christ on Sunday, December 10, ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.dallasnews.com/news/public-health/page/8/",
+            "title": "Public Health | Page 8 | Dallas Morning News",
+            "snippet": "As of Thursday, officials said they have found a total of 98 West Nile virus-positive mosquito pools in Dallas County. By Alex NguyenAug 1, 2025.",
+            "position": 7
+          },
+          {
+            "date": "May 25, 2023",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2023/05/25/where-to-find-memorial-day-ceremonies-in-dallas-fort-worth/",
+            "title": "Where to find Memorial Day ceremonies in Dallas-Fort Worth",
+            "snippet": "MESQUITE MEMORIAL DAY CEREMONY. FREE A brief program will include remarks by Mesquite Mayor Daniel Aléman and a reading of the names on the ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "Calvery | Show results with:Calvery"
+            }
+          },
+          {
+            "date": "Jun 16, 2015",
+            "link": "https://www.dallasnews.com/news/2015/06/17/pouring-it-on-rains-return-will-test-the-limits-of-north-texas-lakes/",
+            "title": "Pouring it on: Rain's return will test the limits of North Texas lakes",
+            "snippet": "With North Texas lakes already brimming and branches of the Trinity River at flood stage, Tropical Storm Bill's timing couldn't be much worse.",
+            "position": 9
+          },
+          {
+            "date": "Feb 2, 2018",
+            "link": "https://interactives.dallasnews.com/2018/standoff/",
+            "title": "Standoff: How the Dallas SWAT team cornered and killed the July 7 ...",
+            "snippet": "A small group of elite cops had to gear up and get the shooter. This is the first full account of what happened inside El Centro College that night.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:30:36.092Z",
+      "data": {
+        "name": "Calvery Pools DFW",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 672-6271",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "5894 Cedar Ridge Dr, Midlothian, TX 76065",
+        "reviews": [],
+        "website": "https://www.calverypoolsdfw.com/",
+        "maps_url": "https://www.google.com/maps/search/Calvery%20Pools%20DFW%20Mesquite%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:46.122Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:46.799Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:29:02.554Z",
+      "data": "Trustpilot Search Results Companies The Pools www.thepools.com • 1.2K reviews 4.3 Dfw Limos dfw-limos.com • 1 review 3.7 DFW Security dfwsecurity.com • 90 reviews 3.5 Endless Pools www.endlesspools.com • 7 reviews 4.1 Pinnacle Pools pinnacle-pools.com • 3 reviews 2.8 Categories Gambling Service The best companies in the category 'Gambling Service' Lottery Vendor The best companies in the category 'Lottery Vendor' Online Casino or Bookmaker The best companies in the category 'Online Casino or Bookmaker' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (191) The Pools www.thepools.com 4.3 1,245 reviews United Kingdom DFW Security dfwsecurity.com 3.5 90 reviews 2533 E Loop 820 N, Fort Worth, United States Dfw Limos dfw-limos.com 3.7 1 review United States Endless Pools www.endlesspools.com 4.1 7 reviews 1601 Dutton Mill Rd, Aston, United States Pinnacle Pools pinnacle-pools.com 2.8 3 reviews United States Namco Pools namcopool.com 3.6 782 reviews 30 Waterchase Dr, Rocky Hill, CT, United States INYO Pools www.inyopools.com 2.7 189 reviews United States Showtime Pools www.showtimepoolmechanics.com 4.0 6 reviews 9461 Charleville Blvd., Beverly Hills, United States Pools Plus poolhouston.com 2.6 10 reviews 5554 S Peek Rd #54, Katy, TX Gelid Pools gelidpools.com 3.8 2 reviews 312 W 2nd St Unit #A2746, casper, United States Previous 1 2 3 4 20 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Financial Consultant Money & Insurance Gambling Service Events & Entertainment Lottery Vendor Events & Entertainment Online Casino or Bookmaker Events & Entertainment Security System Installer Home Services Internet Marketing Service Business Services are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:29:07.338Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:29:11.274Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:50.194Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Calvery Pools DFW\" Mesquite",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:29:25.921Z",
+      "data": "Calvery Pools DFW Mesquite review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Did you mean: Calvary Pools DFW Mesquite review OR complaint SHORTS SHORTS Now playing How to choose the right color for your pool! 🌴 #luxuryhome #pool #pooldesign #backyard Foxterra Design Foxterra Design • • 405K views 1 year ago Foxterra Design Foxterra Design 0:00 How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... Automatic captions 3:21 3:21 Now playing What are the Pros and Cons of Fiberglass Pools? | Hinkle Outdoor Living Hinkle Outdoor Living Hinkle Outdoor Living • • 27K views 2 years ago Hinkle Outdoor Living Hinkle Outdoor Living See more from Zach Hinkle at https://www.hinklehardscapes.com/what-are-the-pros-and-cons-of-fiberglass- pools -kansas-city/ See more from Zach Hinkle at https://www.hinklehardscapes.com/what-are-the-pros-and-cons-of-fiberglass- pools -kansas-city/ From the video description Summary Hinkle Outdoor Living discusses fiberglass pool installation, highlighting their quick two-to-three-week setup and the smooth pool surface. They also address common concerns, explaining proper backfilling to prevent hydrostatic pressure issues. Learn about the benefits and drawbacks of fiberglass pools, including size limitations and warranty information. AI-generated video summary Quality and accuracy may vary. Summary Hinkle Outdoor Living discusses fiberglass pool installation, highlighting their quick two-to-three-week setup and the smooth pool surface. They also address common concerns, explaining proper backfilling to prevent hydrostatic pressure issues. Learn about the benefits and drawbacks of fiberglass pools, including size limitations and warranty information. SHORTS SHORTS Now playing Why Fiberglass Pools are Going Out of Style Blu H2O Pools Blu H2O Pools • • 24K views 2 years ago Blu H2O Pools Blu H2O Pools 6:22 6:22 Now playing Everything You Need To Know Before Building A Pool! Josh Beberg Josh Beberg • • 220K views 2 years ago Josh Beberg Josh Beberg Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... From the video description 4K Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. AI-generated video summary Quality and accuracy may vary. Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. SHORTS SHORTS Now playing Inground Pool Costs 2025 River Pools River Pools • • 36K views 10 months ago River Pools River Pools Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... From the video description 4K SHORTS SHORTS Now playing Pool replastering cost in Dallas Fort Worth - black mini pebble Dallas Pro List Dallas Pro List • • 1.5K views 1 year ago Dallas Pro List Dallas Pro List SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description SHORTS SHORTS Now playing Fiberglass vs. Vinyl Pools: Cost, Feel & the Real Winner Revealed! River Pools River Pools • • 2.3K views 4 months ago River Pools River Pools Fiberglass or vinyl, which pool really wins in cost and comfort? We're breaking down initial price, lifetime value, and surface feel ... Fiberglass or vinyl, which pool really wins in cost and comfort? We're breaking down initial price, lifetime value, and surface feel ... From the video description 8:14 8:14 Now playing Fiberglass Pool Review | Full Explanation AlbertGroup AlbertGroup • • 16K views 2 years ago AlbertGroup AlbertGroup Thinking about getting a fiberglass pool in New York? Wondering if a Leisure Pools USA brand fiberglass pool is the right choice ... Thinking about getting a fiberglass pool in New York? Wondering if a Leisure Pools USA brand fiberglass pool is the right choice ... From the video description 4K 18 chapters Intro | Summit 30' in Ebony Blue | Best features | Friend's thoughts? | Texture of the fiberglass pool | Heat retention of the fiberglass pool | Splash deck and ledge feature review | Cleaning a Leisure pool | Automatic cover review | How the kids enjoy the pool? | Thoughts after owning the pool for 3 years? | Why did you want a swimming pool? | How does the whole Family enjoy the pool? | How do you like the salt water? | How has the pool affected the heating bill? | How many designs did Leisure pools offer? | Would you recommend a Leisure pool? | Contact info 18 chapters in this video 18 chapters Intro Intro 0:00 Intro 0:00 Summit 30' in Ebony Blue Summit 30' in Ebony Blue 0:20 Summit 30' in Ebony Blue 0:20 Best features Best features 0:40 Best features 0:40 Friend's thoughts? Friend's thoughts? 1:00 Friend's thoughts? 1:00 Texture of the fiberglass pool Texture of the fiberglass pool 1:17 Texture of the fiberglass pool 1:17 Heat retention of the fiberglass pool Heat retention of the fiberglass pool 1:36 Heat retention of the fiberglass pool 1:36 Splash deck and ledge feature review Splash deck and ledge feature review 2:27 Splash deck and ledge feature review 2:27 SHORTS SHORTS Now playing Fiberglass swimming pools are dug/set in one day. #fiberglasspools #modernpoolbuild #excavation CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP • • 1.4M views 2 years ago CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP SHORTS SHORTS Now playing Building A Pool Costs HOW Much?? | The Honest Truth About Pool Costs Maggie McGaugh Maggie McGaugh • • 36K views 2 years ago Maggie McGaugh Maggie McGaugh Did I mention our pool company didn't allow loans? Did I mention our pool company didn't allow loans? From the video description SHORTS SHORTS Now playing $20M Ocean Cliff Luxury Compound Timmerman Home Service Timmerman Home Service • • 21K views 1 day ago Timmerman Home Service Timmerman Home Service New 4K People also watched 29:53 29:53 Now playing Episode 1: How Much Does A Fiberglass Pool Really Cost in 2026 River Pools River Pools • • 988 views 1 month ago River Pools River Pools Thinking about installing a fiberglass pool in 2026? Wondering what it really costs—from start to finish? In this episode, we break ... Thinking about installing a fiberglass pool in 2026? Wondering what it really costs—from start to finish? In this episode, we break ... From the video description CC 10 chapters Why Pool Pricing Is Hard to Predict in 2026 | Builder Mindset: The Hidden Factor That Changes Your Price | Why Quotes Differ by $20K (Real Examples) | 2026 Price Ranges: Vinyl vs Fiberglass vs Concrete | Real Backyard Examples and Their Actual Costs | Hidden Cost Drivers Most Homeowners Miss | High-End Backyard Breakdown (Features & Upgrades) | Invisible Costs: Dirt, Access, Permits & Engineering | What You Must Decide Now vs What Can Wait | Closing Thoughts + Episode 2 Preview 10 chapters in this video 10 chapters Why Pool Pricing Is Hard to Predict in 2026 Why Pool Pricing Is Hard to Predict in 2026 0:00 Why Pool Pricing Is Hard to Predict in 2026 0:00 Builder Mindset: The Hidden Factor That Changes Your Price Builder Mindset: The Hidden Factor That Changes Your Price 1:29 Builder Mindset: The Hidden Factor That Changes Your Price 1:29 Why Quotes Differ by $20K (Real Examples) Why Quotes Differ by $20K (Real Examples) 3:28 Why Quotes Differ by $20K (Real Examples) 3:28 2026 Price Ranges: Vinyl vs Fiberglass vs Concrete 2026 Price Ranges: Vinyl vs Fiberglass vs Concrete 7:28 2026 Price Ranges: Vinyl vs Fiberglass vs Concrete 7:28 Real Backyard Examples and Their Actual Costs Real Backyard Examples and Their Actual Costs 11:23 Real Backyard Examples and Their Actual Costs 11:23 Hidden Cost Drivers Most Homeowners Miss Hidden Cost Drivers Most Homeowners Miss 14:16 Hidden Cost Drivers Most Homeowners Miss 14:16 High-End Backyard Breakdown (Features & Upgrades) High-End Backyard Breakdown (Features & Upgrades) 17:03 High-End Backyard Breakdown (Features & Upgrades) 17:03 49:45 49:45 Now playing 100 Days Alone: Building a Massive Stone House for Long Term Winter Survival Dũng Family Life Dũng Family Life • • 1.3K views 13 hours ago Dũng Family Life Dũng Family Life 100 Days Alone: Building a Massive Stone House for Long Term Winter Survival In this video, I spend 100 days alone building a ... 100 Days Alone: Building a Massive Stone House for Long Term Winter Survival In this video, I spend 100 days alone building a ... From the video description New 3:00 3:00 Now playing Can I Plaster My Own Pool? Swimming Pool Steve Swimming Pool Steve • • 39K views 5 years ago Swimming Pool Steve Swimming Pool Steve From http://www.swimmingpoolsteve.com/pages/ pool -plaster.html - Swimming pool plaster is not a do-it-yourself project. There is ... From http://www.swimmingpoolsteve.com/pages/ pool -plaster.html - Swimming pool plaster is not a do-it-yourself project. There is ... From the video description 5 chapters Intro | Price | Skill | Physical Skill | Conclusion 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Price Price 0:20 Price 0:20 Skill Skill 0:40 Skill 0:40 Physical Skill Physical Skill 1:20 Physical Skill 1:20 Conclusion Conclusion 2:00 Conclusion 2:00 8:06 8:06 Now playing What Are The Most Common Leaks In Pools? Swimming Pool Steve Swimming Pool Steve • • 60K views 1 year ago Swimming Pool Steve Swimming Pool Steve From https://www.swimimingpoolsteve.com/pages/leak-detection.html this video talks about the three most common leak sources ... From https://www.swimimingpoolsteve.com/pages/leak-detection.html this video talks about the three most common leak sources ... From the video description 10 chapters Introduction to common pool leaks | Pool lights are a very common leak source | How to repair leaking pool light with butyl tape | Return lines leaking from a hinge point | How to prevent return pipe sheering at pool wall | Pool skimmers leak in many different ways | Why do pool skimmers leak? | How to start finding a pool leak with a bucket test? | Bucket test part two | Conclusion and referral to www.swimmingpoolsteve.com 10 chapters in this video 10 chapters Introduction to common pool leaks Introduction to common pool leaks 0:00 Introduction to common pool leaks 0:00 Pool lights are a very common leak source Pool lights are a very common leak source 0:20 Pool lights are a very common leak source 0:20 How to repair leaking pool light with butyl tape How to repair leaking pool light with butyl tape 2:15 How to repair leaking pool light with butyl tape 2:15 Return lines leaking from a hinge point Return lines leaking from a hinge point 2:40 Return lines leaking from a hinge point 2:40 How to prevent return pipe sheering at pool wall How to prevent return pipe sheering at pool wall 4:10 How to prevent return pipe sheering at pool wall 4:10 Pool skimmers leak in many different ways Pool skimmers leak in many different ways 5:02 Pool skimmers leak in many different ways 5:02 Why do pool skimmers leak? Why do pool skimmers leak? 5:22 Why do pool skimmers leak? 5:22 + 6 more 2:36 2:36 Now playing Fiberglass Pools Are CHEAP! Top 4 Fiberglass Pools Myths Exposed! Pool-ology Pool-ology • • 26K views 1 year ago Pool-ology Pool-ology Think fiberglass pools are cheap, low quality, and won't last? Think again! We're busting the top 4 myths about fiberglass pools ... Think fiberglass pools are cheap, low quality, and won't last? Think again! We're busting the top 4 myths about fiberglass pools ... From the video description 4K Summary This video debunks common misconceptions about fiberglass pools, such as the idea that they are cheap, low quality, and won't last. The video explores four myths, including the idea that fiberglass pool surfaces bubble and blister, and that they look cheap. It also addresses the misconception that fiberglass pools can't be customized and that they often float or pop out of the ground. AI-generated video summary Quality and accuracy may vary. Summary This video debunks common misconceptions about fiberglass pools, such as the idea that they are cheap, low quality, and won't last. The video explores four myths, including the idea that fiberglass pool surfaces bubble and blister, and that they look cheap. It also addresses the misconception that fiberglass pools can't be customized and that they often float or pop out of the ground. SHORTS SHORTS Now playing Pool cleaning step by step - pool maintenance 🧽✅🧑🏻‍🔧 Dunota Pools, Central Florida Dunota Pools Dunota Pools • • 122K views 2 years ago Dunota Pools Dunota Pools 7:13 7:13 Now playing Inground Fiberglass Pool Pricing in 2025 River Pools Twin Cities River Pools Twin Cities • • 37K views 10 months ago River Pools Twin Cities River Pools Twin Cities In this video, we break down the full pricing for fiberglass pools from us here at River Pools Red Wing! Whether you're just starting ... In this video, we break down the full pricing for fiberglass pools from us here at River Pools Red Wing! Whether you're just starting ... From the video description CC 13 chapters Intro | What's Included In Pricing | What's Not Included In Pricing | D-Series Prices | R-Series Prices | M-Series Prices | C-Series Prices | I-Series Prices | The T-Series (Deepest Pool) | X-Series (Most features) | L-Series (Roman shaped) | A-Series (NEW RELEASE) | More Details 13 chapters in this video 13 chapters Intro Intro 0:00 Intro 0:00 What's Included In Pricing What's Included In Pricing 0:43 What's Included In Pricing 0:43 What's Not Included In Pricing What's Not Included In Pricing 1:07 What's Not Included In Pricing 1:07 D-Series Prices D-Series Prices 2:00 D-Series Prices 2:00 R-Series Prices R-Series Prices 2:56 R-Series Prices 2:56 M-Series Prices M-Series Prices 3:25 M-Series Prices 3:25 C-Series Prices C-Series Prices 3:45 C-Series Prices 3:45 SHORTS SHORTS Now playing Fiberglass pool enclosure premium quality from DreamPools. Clear polycarbonate, anthracite color DreamPools DreamPools • • 20K views 2 years ago DreamPools DreamPools 9:39 9:39 Now playing How Much Does a Pool Cost? | Premier Pools & Spas Premier Pools & Spas and Premier Pool Service Premier Pools & Spas and Premier Pool Service • • 148K views 5 years ago Premier Pools & Spas and Premier Pool Service Premier Pools & Spas and Premier Pool Service Contact us at https://premierpoolsandspas.com/ for a FREE estimate! Swimming pools range in cost. A simplistic pool might fall ... Contact us at https://premierpoolsandspas.com/ for a FREE estimate! Swimming pools range in cost. A simplistic pool might fall ... From the video description 4 moments QUICK BUILD SOMEWHAT CUSTOMIZABLE | Installation of Steel, Plumbing & Gunite | Decking | Pool Startup 4 auto-generated moments in this video 4 moments QUICK BUILD SOMEWHAT CUSTOMIZABLE QUICK BUILD SOMEWHAT CUSTOMIZABLE 0:37 QUICK BUILD SOMEWHAT CUSTOMIZABLE 0:37 Installation of Steel, Plumbing & Gunite Installation of Steel, Plumbing & Gunite 1:57 Installation of Steel, Plumbing & Gunite 1:57 Decking Decking 2:02 Decking 2:02 Pool Startup Pool Startup 2:07 Pool Startup 2:07 SHORTS SHORTS Now playing How much does it cost to build a pool? The Boeckle Brothers The Boeckle Brothers • • 139K views 4 years ago The Boeckle Brothers The Boeckle Brothers Any questions regarding construction/flipping/wholesaling/real estate? We want to help! Follow us on social media: ... Any questions regarding construction/flipping/wholesaling/real estate? We want to help! Follow us on social media: ... From the video description SHORTS SHORTS Now playing THE TRUTH ABOUT POOL SERVICE #poolservice #homes #backyard #homeimprovement #upgrades Calixpert Pools Calixpert Pools • • 527 views 11 months ago Calixpert Pools Calixpert Pools If you love your pool Watch this video. If you love your pool Watch this video. From the video description 6:05 6:05 Now playing Concrete cancer: Will insurance cover backyard pool problems? KVUE KVUE • • 1.3K views 10 months ago KVUE KVUE Concrete cancer is plaguing backyard pools across Central Texas . Now it's impacting insurance coverage. Read more: ... Concrete cancer is plaguing backyard pools across Central Texas . Now it's impacting insurance coverage. Read more: ... From the video description CC Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:29:27.020Z",
+      "data": {
+        "query": "site:nextdoor.com Calvery Pools DFW Mesquite",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:49.206Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Calvery Pools DFW\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:48.441Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Calvery Pools DFW\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:50.892Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Calvery Pools DFW\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:29:41.774Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Calvery%20Pools%20DFW&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:29:46.257Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:29:52.437Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:47.495Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Calvery Pools DFW\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:00.099Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Calvery Pools DFW",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:30:01.361Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 2
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 3
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 5
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 6
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 8
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Information on this site is obtained from the most recent Public Information Report (PIR) processed by the Secretary of State (SOS).",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:02.377Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Calvery Pools DFW",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:03.599Z",
+      "data": {
+        "query": "site:dallascounty.org Calvery Pools DFW civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:30:04.719Z",
+      "data": {
+        "query": "site:collincountytx.gov Calvery Pools DFW",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Mar 16, 2015",
+            "link": "https://eagenda.collincountytx.gov/docs/2015/CC/20150316_1720/39623_Certificate%20of%20Public%20Hearing%20-%20signed%20RLD.pdf",
+            "title": "[PDF] Certificate of Public Hearing - Collin County",
+            "snippet": "Pools and Spa. Pool Cleaning Service. All Repairs, filter cleans ... 1.4ac on 1709 btwn DFW airport &. Alliance. Xint location 817-313 ...",
+            "position": 1
+          },
+          {
+            "date": "Sep 19, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/CC/20191007_2393/38983_2019-09-COMPLETE-Agenda.pdf",
+            "title": "[PDF] North Central Texas Council of Governments TO - Collin County",
+            "snippet": "The Regional Transportation Council previously approved Surface Transportation Block Grant funding for the Dallas Fort Worth Core Express High- ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:07.144Z",
+      "data": {
+        "query": "site:dentoncounty.gov Calvery Pools DFW",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:08.070Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:30:10.118Z",
+      "data": {
+        "cid": "16881170159057131443",
+        "name": "Calvery Pools DFW",
+        "found": true,
+        "rating": 4.4,
+        "source": "serper",
+        "address": "5894 Cedar Ridge Dr, Midlothian, TX 76065",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 7,
+          "target_reviews": 7
+        },
+        "reviews": [
+          {
+            "date": "3 months ago",
+            "text": "The Calvery team did a fantastic job with our  backyard project. They were very easy to work with, timely, and did great work. Would highly recommend!",
+            "author": "Carson Coker",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Calvery Pools offered great, efficient, and friendly service. They were quick with solutions and to help for any needs at a great rate. Would definitely recommend, and will be using them again.",
+            "author": "Tristan Paschall",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "We absolutely loved working with Chris and his teams. Did not believe when he said he could build it in 60 days but he came through! Our pool turned out amazing! We would highly recommend using Calvary Pools.",
+            "author": "John Conder",
+            "rating": 5
+          },
+          {
+            "date": "a week ago",
+            "text": "My current pool and spa was built by Calvery Pools DFW , I reach out to Chris to get back on October of last year to get the paper work and receipt so I can submit the warranty pentair led pool and spa light never heard back or anyone from his office",
+            "author": "An Bui",
+            "rating": 1
+          },
+          {
+            "date": "Edited 3 months ago",
+            "text": "Thanks to Kendall with Calvert Pools! My backyard was a blank slate and he turned it into a true oasis. From design to being able to swim in the pool it was all perfect. Calvery Pools are the go to pool contractors in Lake Highlands. They even installed a putting green for me!",
+            "author": "Logan Owensby",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Awesome service! I was really pleased how the pool came out and the attention to detail. Highly recommend!!!",
+            "author": "Tripp Butts",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Great work from this company",
+            "author": "Mason Nay",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 7,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Mesquite, TX",
+        "search_confidence": 0.6199999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:30:36.085Z",
+      "data": {
+        "name": "Calvery Pools DFW",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 672-6271",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "5894 Cedar Ridge Dr, Midlothian, TX 76065",
+        "reviews": [],
+        "website": "https://www.calverypoolsdfw.com/",
+        "maps_url": "https://www.google.com/maps/search/Calvery%20Pools%20DFW%20Mesquite%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "website": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:37.454Z",
+      "data": {
+        "email": null,
+        "error": null,
+        "source": null
+      }
+    },
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:30:39.580Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": true,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "https://www.calverypoolsdfw.com/",
+            "type": "workmanship",
+            "snippet": "Why Choose Calvery Pools? Choosing Calvery Pools means opting for excellence in craftsmanship and customer service. Our dedicated team brings years of experience and a passi"
+          }
+        ],
+        "durations": [],
+        "confidence": "WEAK",
+        "source_url": "https://www.calverypoolsdfw.com/",
+        "analyzed_pages": [
+          {
+            "url": "https://www.calverypoolsdfw.com/",
+            "type": "homepage",
+            "title": "Pool Renovation, Repairs, and Service in Dallas and Fort Worth | New Pool Construction | Pool Lighting | Pool Demolition"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:44.497Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:30:52.442Z",
+      "data": {
+        "found": false,
+        "query": "\"Calvery Pools DFW\" Mesquite lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:31:10.631Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-11T02:30:55Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Calvery%20Pools%20DFW%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=3umLadi_GYOPp84P7Oq5-A4\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-11T02:31:05Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Calvery%20Pools%20DFW%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=6OmLabPyHI38p84P-dmQuAw\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Calvery Pools DFW",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:32:41.247Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Calvery Pools DFW",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Calvery Pools DFW",
+        "searched_at": "2026-02-11T02:31:10.766654",
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:32:41.963Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-11T02:32:41.965Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:32:55.017Z",
+      "data": {
+        "cost": 0.0006244,
+        "summary": "The reviews show mixed signals. The positive reviews are recent, brief, and clustered, raising questions about authenticity. However, they contain some specific details. The single negative review is highly specific about a warranty follow-up failure, which is a credible complaint pattern for contractors. The extremely low total review count is unusual for an established pool builder.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-11T02:32:55.017Z",
+        "fake_signals": [
+          "Low review volume (7) for a pool contractor",
+          "Multiple 5-star reviews posted in same 3-month period",
+          "Generic, brief praise in several 5-star reviews",
+          "No 3-4 star reviews, creating a polarized rating distribution"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 4.4,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [
+            "warranty"
+          ],
+          "confidence": "MEDIUM",
+          "follow_through": "NEGATIVE",
+          "negative_evidence": [
+            "Customer reached out for warranty paperwork for Pentair LED light and never heard back"
+          ],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Specific details in some reviews (project duration, crew names, putting green)",
+          "One negative review provides specific details (Pentair LED light, October timeframe)",
+          "Varied writing styles and lengths"
+        ],
+        "fake_review_score": 40,
+        "complaint_patterns": [
+          "Warranty/paperwork follow-up ignored"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only one platform (Google) has a rating. No other platforms have data to compare."
+      }
+    }
+  }
+}

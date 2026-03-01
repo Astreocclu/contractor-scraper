@@ -1,0 +1,681 @@
+{
+  "contractor_id": 599,
+  "business_name": "Louis Pools Building & Remodeling",
+  "city": "Lancaster",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T15:51:56.679Z",
+  "sources": {
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:06:16.166Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Louis Pools Building & Remodeling",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "WALMART SETTLEMENT AGREEMENT",
+            "snippet": "... Pools Calculation. Determine each Litigating Subdivision's percentage share of all amounts due under contingency fee contracts statewide by dividing the ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:06:17.184Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 9
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:19.943Z",
+      "data": {
+        "query": "site:collincountytx.gov Louis Pools Building & Remodeling",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:06:19.019Z",
+      "data": {
+        "query": "site:dallascounty.org Louis Pools Building & Remodeling civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Sep 30, 2014",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2014ACFR.pdf",
+            "title": "comprehensive annual financial report",
+            "snippet": "improvements and remodeling of certain County buildings including the jail, and improvements expected to increase energy savings ...",
+            "position": 1
+          },
+          {
+            "date": "Dec 31, 2013",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2013ACFR.pdf",
+            "title": "comprehensive annual financial report",
+            "snippet": "capital assets reflects increases in construction in progress for major building improvements and purchases of machinery and equipment. The ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "statutory",
+            "snippet": "(Equals Line 1b minus Line 4 plus Line 8.) Criminal Matters. Total Cases. Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL ...",
+            "position": 3
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2021/2021-04.pdf",
+            "title": "2021-04.pdf",
+            "snippet": "Denton reported that there should be something coming to the Commissioners Court for approval on remodeling the Deflection Center unit. ... Civil ...",
+            "position": 4
+          },
+          {
+            "date": "Feb 13, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2020/2020-02.pdf",
+            "title": "Dallas County Behavioral Health Leadership Team ...",
+            "snippet": "Theresa Daniel asked what the building would be transformed into behind the Dr. Louis E. Deere, Sr. Behavioral Health Complex (NTBHA Living Room) ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 30, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2015-ACFR.pdf",
+            "title": "COMPREHENSIVE ANNUAL FINANCIAL REPORT ...",
+            "snippet": "Building. Renovation of this fully depreciated building is expected to be completed within five. 91. Page 100. DALLAS COUNTY. Noles to the Basic ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/historical/markers.xls",
+            "title": "Dallas County Historical Markers",
+            "snippet": "After the Civil War, the Ladies Aid Society raised money for a permanent church site and donated $100 to launch the building fund. The first church was erected ...",
+            "position": 7
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:06:20.857Z",
+      "data": {
+        "query": "site:dentoncounty.gov Louis Pools Building & Remodeling",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1638/Illicit-Discharge-PDF",
+            "title": "Illicit Discharge Detection and Elimination",
+            "snippet": "Thorough inspection and verification by monitoring during the entire construction phase can prevent the illegal connection of wastewater sources during new ...",
+            "position": 1
+          },
+          {
+            "date": "Dec 12, 2000",
+            "link": "https://apps.dentoncounty.gov/website/historicalmarkers/PDFs/CAMPUS-THEATRE.pdf",
+            "title": "CAMPUS THEATRE",
+            "snippet": "Starting with the construction of the River Oaks Theatre in 1939 and continuing through. 1946, at least, they were responsible for the design of ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:24.360Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:06:32.423Z",
+      "data": {
+        "cid": "8063825402831645415",
+        "name": "Louis Pools Building & Remodeling",
+        "found": true,
+        "rating": null,
+        "source": "serper",
+        "address": "404 N Interstate 35 East Service Rd STE 114, Lancaster, TX 75146",
+        "reviews": [],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        },
+        "review_count": null,
+        "review_source": "serper",
+        "serpapi_error": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:37.631Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:40.660Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "louis-pools.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:42.565Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Louis Pools Building & Remodeling\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:07:02.998Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-26T03:06:47Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Louis%20Pools%20Building%20%26%20Remodeling%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=x_tNab37FNCrw8cPktOTsQQ\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-26T03:06:57Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Louis%20Pools%20Building%20%26%20Remodeling%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=0ftNacXGDJG9ptQPm7G9kAE\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Louis Pools Building & Remodeling",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:07:03.137Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Louis Pools Building & Remodeling",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:07:03.771Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:07:03.772Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:07:13.577Z",
+      "data": {
+        "cost": 0.0003955,
+        "summary": "The contractor 'Louis Pools Building & Remodeling' has no reviews found on any major platform. A related business, 'Louis Pool Services & Supply', has a 4.1 rating with 49 reviews, but this is a distinct entity. The complete absence of reviews for the specific building/remodeling contractor is a significant red flag.",
+        "confidence": "HIGH",
+        "analyzed_at": "2025-12-26T03:07:13.577Z",
+        "fake_signals": [
+          "No reviews found on any platform for the specific business entity",
+          "Google Maps search shows a related business with reviews but the target contractor has none",
+          "Fraud check escalated due to NO_REVIEWS"
+        ],
+        "recommendation": "DO_NOT_TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": null,
+          "glassdoor": null
+        },
+        "authentic_signals": [],
+        "fake_review_score": 85,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "No ratings found on any platform to compare."
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:06:24.093Z",
+      "data": "403 - Forbidden bg_error_lines circle_dots 403 - Forbidden Access to this page is forbidden. clouds_shape"
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:04:50.150Z",
+      "data": {
+        "query": "site:yelp.com \"Louis Pools Building & Remodeling\" \"Lancaster, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:39.736Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:40.403Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:05:01.624Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "status": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:05:27.011Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:05:30.591Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:45.176Z",
+      "data": {
+        "found": false,
+        "query": "\"Louis Pools Building & Remodeling\" Lancaster lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:43.126Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Louis Pools Building & Remodeling\" Lancaster",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:05:45.243Z",
+      "data": "Louis Pools Building & Remodeling Lancaster review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Shorts The client had no room left to build the pool, so we built it under the house. #insanepools #pool 12K views Backyard remodeling is hard work, but the end results are worth it #insanepools #lucaslagoons #pool 8.8K views WHY YOU SHOULD HIRE PROS TO BUILD/REMODEL YOUR POOL....WE HAVE TO BE VERY CAREFUL IF SPACE IS TIGHT! 1.4K views One of the Biggest, Craziest, Most Insane Pools we’ve ever built. #insanepools #pooldesign #pool 11K views Show more Show less SHORTS SHORTS Now playing Satisfying Complete New Pool Build Walkthrough 😱 (Can you Guess How Much it cost?) JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. • • 119K views 3 years ago JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. SHORTS SHORTS Now playing Fiberglass swimming pools are dug/set in one day. #fiberglasspools #modernpoolbuild #excavation CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP • • 1.3M views 2 years ago CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP SHORTS SHORTS Now playing Inground Pool Costs 2025 River Pools River Pools • • 32K views 9 months ago River Pools River Pools Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... From the video description 4K SHORTS SHORTS Now playing Swimming pool renovation, before and after - Pereira Construction Pereira Construction Pereira Construction • • 8.9K views 2 years ago Pereira Construction Pereira Construction This # swimming # pool #renovation was completed a little while back. The #travertine #pavers were #recycled, the deck was ... This # swimming # pool #renovation was completed a little while back. The #travertine #pavers were #recycled, the deck was ... From the video description SHORTS SHORTS Now playing INSANE Pool Remodel Before and After #shorts JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. • • 8.6K views 3 years ago JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. SHORTS SHORTS Now playing BUILDING A HUGE POOL! #concrete #construction #work #readymix #cdl #trucking #business #pool #build Jason Favela Jason Favela • • 62K views 3 years ago Jason Favela Jason Favela SHORTS SHORTS Now playing How to choose the right color for your pool! 🌴 #luxuryhome #pool #pooldesign #backyard Foxterra Design Foxterra Design • • 381K views 1 year ago Foxterra Design Foxterra Design 0:00 How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... Automatic captions SHORTS SHORTS Now playing Swimming Pool and Spa Plumbing and Rebar for John The Pool Expert John The Pool Expert • • 411K views 3 years ago John The Pool Expert John The Pool Expert underground pool and spa Plumbing. underground pool and spa Plumbing. From the video description SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description SHORTS SHORTS Now playing HOW MUCH VALUE DOES A SWIMMING POOL ADD TO YOUR HOME? TAMPA GENERAL CONTRACTOR ANSWERS! Home Love Construction Home Love Construction • • 4.6K views 2 years ago Home Love Construction Home Love Construction 0:00 So how much value does adding a swimming pool add to your home so a typical swimming pool is going to add between 40 to ... So how much value does adding a swimming pool add to your home so a typical swimming pool is going to add between 40 to ... Automatic captions SHORTS SHORTS Now playing Everything You Need to Know when Building a Pool Blu H2O Pools Blu H2O Pools • • 1.8K views 2 years ago Blu H2O Pools Blu H2O Pools 0:02 ... buying a pool a lot of pool builders like to sell you on this is going to be the best experience ever the truth is this is construction ... ... buying a pool a lot of pool builders like to sell you on this is going to be the best experience ever the truth is this is construction ... Automatic captions People also watched 12:06 12:06 Now playing Avoid Living In A 55 Plus Community - Problems In Adult Retirement Communities - Don’t Buy 55+ TheRetirementality TheRetirementality • • 146K views 1 year ago TheRetirementality TheRetirementality Many people want to downsize their homes when they get older. But, not everyone is cut out to live in a condo. So people looks to ... Many people want to downsize their homes when they get older. But, not everyone is cut out to live in a condo. So people looks to ... From the video description 25:22 25:22 Now playing unfinished 1980's pool thep00lguy ML thep00lguy ML • • 5.7M views 4 years ago thep00lguy ML thep00lguy ML this is quite an interesting one here with this pool they started to build it during the 80's and I've since learnt the owner was doing it ... this is quite an interesting one here with this pool they started to build it during the 80's and I've since learnt the owner was doing it ... From the video description 4K Summary This video follows the restoration of an unfinished pool from the 1980s. The pool was abandoned mid-construction and left in a state of disrepair. The video documents the process of cleaning, painting, and plumbing the pool, culminating in the filling and testing of the system. AI-generated video summary Quality and accuracy may vary. Summary This video follows the restoration of an unfinished pool from the 1980s. The pool was abandoned mid-construction and left in a state of disrepair. The video documents the process of cleaning, painting, and plumbing the pool, culminating in the filling and testing of the system. 4:54 4:54 Now playing $6,000 POOL MAKEOVER || Home Improvement Carole Robinson Carole Robinson • • 47K views 5 years ago Carole Robinson Carole Robinson Hi guys, We did a $6000 pool makeover || home improvement this year. To save extra money on this pool makeover, we kept our ... Hi guys, We did a $6000 pool makeover || home improvement this year. To save extra money on this pool makeover, we kept our ... From the video description 4 moments DRAINING THE POOL | CHIP IT OUT AND CLEAN THE TILES | RECOAT THE POOL | REFILLING THE POOL 4 auto-generated moments in this video 4 moments DRAINING THE POOL DRAINING THE POOL 1:02 DRAINING THE POOL 1:02 CHIP IT OUT AND CLEAN THE TILES CHIP IT OUT AND CLEAN THE TILES 1:29 CHIP IT OUT AND CLEAN THE TILES 1:29 RECOAT THE POOL RECOAT THE POOL 2:03 RECOAT THE POOL 2:03 REFILLING THE POOL REFILLING THE POOL 3:33 REFILLING THE POOL 3:33 5:44 5:44 Now playing 3 backyard pool renovation options for every budget Cityline Cityline • • 11K views 4 years ago Cityline Cityline From a luxe full-size pool to a no permit needed above-ground solution— Randy Feltis, Shoana Jensen, and Shai DeLuca ... From a luxe full-size pool to a no permit needed above-ground solution— Randy Feltis, Shoana Jensen, and Shai DeLuca ... From the video description + 6 more SHORTS SHORTS Now playing Pool Construction In Full Swing✨ #SwimmingPool #Construction #PoolBuild#DreamPool #ComingSoon Let Us Build Let Us Build • • 38K views 3 months ago Let Us Build Let Us Build SHORTS SHORTS Now playing How Much Does A Pool Cost In 2023? Tampa General Contractor Answers! Home Love Construction Home Love Construction • • 6.7K views 2 years ago Home Love Construction Home Love Construction construction #generalcontractor #contractor #constructioncompany #constructionproject #tampa # pool #pooldesign #pooltile ... construction #generalcontractor #contractor #constructioncompany #constructionproject #tampa # pool #pooldesign #pooltile ... From the video description SHORTS SHORTS Now playing Pool Remodeling (Prep) 😱 #shorts JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. • • 2K views 2 years ago JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. SHORTS SHORTS Now playing Is this pool to expensive? Dream pool build #construction #contractor #diy Life Of Lock Life Of Lock • • 15K views 2 years ago Life Of Lock Life Of Lock SHORTS SHORTS Now playing Swimming pool plaster. Satisfying application! #satisfying #pooldesign #satisfyingvideo Sierra Pool Co. Sierra Pool Co. • • 274K views 2 years ago Sierra Pool Co. Sierra Pool Co. SHORTS SHORTS Now playing Installing a tanning ledge to this swimming pool! 😳 #shorts JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. • • 3.7K views 2 years ago JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. SHORTS SHORTS Now playing Can you fit a pool in a SMALL BACKYARD? Calimingo Calimingo • • 1.2M views 3 years ago Calimingo Calimingo 4K SHORTS SHORTS Now playing Premier Pools & Spas - Expert Pool Remodeling & Resurfacing #shorts #shortsvideo 🏆 Premier Pools & Spas | Sacramento 🏆 Premier Pools & Spas | Sacramento • • 61K views 2 years ago 🏆 Premier Pools & Spas | Sacramento 🏆 Premier Pools & Spas | Sacramento s your pool in need of a facelift?? Let the experts at Premier Pools & Spas help renew your pool and bring new life to your summer ... s your pool in need of a facelift?? Let the experts at Premier Pools & Spas help renew your pool and bring new life to your summer ... From the video description CC SHORTS SHORTS Now playing $75,000 Pool Remodel (Spa Addition) JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. • • 1.7K views 3 years ago JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:05:46.308Z",
+      "data": {
+        "query": "site:nextdoor.com Louis Pools Building & Remodeling Lancaster",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:41.978Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Louis Pools Building & Remodeling\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:05:34.298Z",
+      "data": {
+        "query": "Louis Pools Building & Remodeling Lancaster site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.fox4news.com/sitemap.xml?type=articles&page=9",
+            "title": "sitemap.xml",
+            "snippet": "... lancaster-teen-murdered-after-kidnapping</loc><lastmod>2017-07-05T06:33:46 ... building-already-big-extra-bright</loc><lastmod>2017-07-04T11:28:09-05 ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:43.831Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Louis Pools Building & Remodeling\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:06:00.411Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Louis%20Pools%20Building%20%26%20Remodeling&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools% 20Building% 26% 20Remodeling&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools% 20Building% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://enviro.epa.gov/facts/tri/ef-facilities/",
+                "title": "TRI Facility Report"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Louis% 20Pools% 20Building% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= 20Pools% 20Building% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools% 20Building% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools% 20Building% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools% 20Building% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search",
+            "title": "Enforcement Case Search | ECHO | US EPA",
+            "snippet": "Enforcement Case Search · Case Identifiers · Facility Location · Case Attributes · Case Milestones and Dates · Enforcement Case Outcomes/Settlements.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools% 20Building% 20% 26% 20Remodeling&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:06:04.383Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-26T03:06:10.478Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:41.231Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Louis Pools Building & Remodeling\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T03:06:18.071Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Louis Pools Building & Remodeling",
+        "source": "serper",
+        "results": []
+      }
+    }
+  }
+}

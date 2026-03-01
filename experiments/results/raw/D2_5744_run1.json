@@ -1,0 +1,76 @@
+{
+  "variation": "D2",
+  "contractor_id": 5744,
+  "contractor_name": "AC Repair Garland",
+  "archetype": "middle_tier",
+  "expected_score": 50,
+  "run": 1,
+  "timestamp": "2026-01-20T19:20:59.438Z",
+  "success": true,
+  "trust_score": 56,
+  "risk_level": "MEDIUM",
+  "reasoning": "Mixed council: DeepSeek=72, Claude=25, Gemini=72, Avg=56",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 72,
+      "risk_level": "MEDIUM",
+      "reasoning": "This contractor presents a mixed profile with strong positive signals in customer service and technical competence, but concerning patterns in pricing transparency and communication. The Google reviews show a high volume of satisfied customers praising specific technicians and quality work, with a 4.7 rating across 635 reviews indicating generally reliable service. However, multiple credible negative reviews reveal consistent issues with unclear pricing, alleged upselling, and poor communication, particularly around emergency fees and replacement recommendations. The business appears legitimate with no legal or regulatory red flags, but the pricing complaints suggest potential for customer disputes.",
+      "key_factors": [
+        "High volume of positive Google reviews with specific technician praise",
+        "Multiple credible complaints about pricing transparency and alleged upselling",
+        "No legal/regulatory issues found across multiple court and government searches"
+      ],
+      "red_flags": [
+        "Pattern of pricing complaints including emergency fee surprises",
+        "Multiple allegations of unnecessary replacement recommendations",
+        "Scheduling and communication issues mentioned in negative reviews"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 25,
+      "risk_level": "HIGH",
+      "reasoning": "Major red flags emerge from cross-referencing data sources. The Google Maps reviews are for 'Garland Heating & Air Conditioning' at a different address (2113 S Garland Ave), while the website and business registration show 'AC Repair Garland' at 115 Richardson Ct Allen. This suggests potential review hijacking or identity confusion. Additionally, one devastating Google review details catastrophic installation failures including improper equipment placement on bricks instead of pads, gaps in connections, and work that would 'fail inspection right away.' Multiple reviews cite excessive pricing ($624 for a $30 part, $3500 quotes vs $750 from competitors).",
+      "key_factors": [
+        "Business identity/address mismatch between website and Google reviews",
+        "Detailed review documenting severe installation failures and code violations",
+        "Pattern of excessive pricing complaints across multiple reviews"
+      ],
+      "red_flags": [
+        "Potential review system manipulation or business identity confusion",
+        "Installation work described as failing basic inspection standards",
+        "Extreme pricing disparities compared to market rates"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 72,
+      "risk_level": "MEDIUM",
+      "reasoning": "AC Repair Garland presents a mixed picture. The high volume of positive Google reviews, often mentioning specific technicians and detailed experiences, suggests a generally reliable service. However, complaint patterns regarding pricing transparency and occasional upselling raise concerns. The lack of BBB accreditation and the presence of negative reviews detailing high-pressure sales tactics warrant a cautious approach.",
+      "key_factors": [
+        "High volume of positive Google reviews",
+        "Complaint patterns regarding pricing",
+        "Lack of BBB accreditation"
+      ],
+      "red_flags": [
+        "Pricing complaints",
+        "Upselling concerns",
+        "No BBB accreditation"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Pattern of pricing complaints including emergency fee surprises",
+    "Multiple allegations of unnecessary replacement recommendations",
+    "Scheduling and communication issues mentioned in negative reviews",
+    "Potential review system manipulation or business identity confusion",
+    "Installation work described as failing basic inspection standards",
+    "Extreme pricing disparities compared to market rates",
+    "Pricing complaints",
+    "Upselling concerns",
+    "No BBB accreditation"
+  ],
+  "cost_usd": 0.11046124875,
+  "duration_ms": 10043
+}

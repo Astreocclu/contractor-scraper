@@ -10,7 +10,7 @@
 
 const { runRuleChecks } = require('./rule_checks');
 const { executeQueries, extractFindings } = require('./query_executor');
-const { runLLMCascade } = require('./llm_cascade');
+const { runLLMCascade, verifyNewsMentions } = require('./llm_cascade');
 const {
   INVESTIGATION_MODE,
   MAX_ITERATIONS,
@@ -199,16 +199,30 @@ async function runDeepInvestigation(contractorId, contractor, db, options = {}) 
       }
     }
 
-    // Check if we found news mentions (lawsuits, scams)
+    // Check if we found news mentions (lawsuits, scams) - with LLM verification
     if (findings.news_mentions.length > 0) {
       const hasNewsFlag = state.all_flags.some(f => f.category === 'negative_news');
       if (!hasNewsFlag) {
-        state.all_flags.push({
-          severity: SEVERITY.SEVERE,
-          category: 'negative_news',
-          description: `Found ${findings.news_mentions.length} concerning news mentions`,
-          evidence: findings.news_mentions
-        });
+        // Verify with LLM to filter out BBB boilerplate, different companies, etc.
+        log(`    Verifying ${findings.news_mentions.length} potential news mentions...`);
+        const verification = await verifyNewsMentions(
+          contractor.name,
+          contractor.city,
+          findings.news_mentions
+        );
+        state.total_cost += verification.cost;
+
+        if (verification.verified.length > 0) {
+          state.all_flags.push({
+            severity: SEVERITY.SEVERE,
+            category: 'negative_news',
+            description: `Found ${verification.verified.length} verified negative news mentions`,
+            evidence: verification.verified
+          });
+          warn(`    Verified ${verification.verified.length}/${findings.news_mentions.length} as actual negative news`);
+        } else {
+          log(`    All ${findings.news_mentions.length} mentions filtered out (BBB boilerplate, different companies, etc.)`);
+        }
       }
     }
 

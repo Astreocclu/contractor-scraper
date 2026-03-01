@@ -1,0 +1,1412 @@
+{
+  "contractor_id": 672,
+  "business_name": "Yard Art Outdoor Living - Fort Worth",
+  "city": "White Settlement",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-07T13:25:45.877Z",
+  "sources": {
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:55:11.152Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:55:23.134Z",
+      "data": {
+        "cost": 0.0008918000000000001,
+        "summary": "The reviews for Yard Art Outdoor Living appear overwhelmingly authentic. The positive reviews are detailed, name-specific, and span several years. The negative reviews present credible, specific complaints about operational issues (delivery, scheduling, in-store service) rather than allegations of fraud or non-performance, which is typical for a retail business. There is no evidence of review manipulation.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-01-07T19:55:23.134Z",
+        "fake_signals": [
+          "No significant fake signals detected. The high volume of positive reviews is plausible for a successful retailer."
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": 4.7,
+          "google": 4.8,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Specific employee names (Lisa, Jason, Seth, Monte) and store locations mentioned repeatedly",
+          "Varied writing styles and levels of detail",
+          "Mix of praise and specific, credible complaints",
+          "Positive reviews mention specific products (OW Lee, gas logs) and project types",
+          "Negative reviews contain specific logistical details (dates, distances, promises)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "Delivery/pickup logistics and timing",
+          "Communication/response issues",
+          "Inconsistent or poor in-store service"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are highly consistent across Google (4.8) and Yelp (4.7), indicating a stable reputation."
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:50.948Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Yard Art Outdoor Living - Fort Worth\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:52:35.065Z",
+      "data": {
+        "query": "site:yelp.com \"Yard Art Outdoor Living - Fort Worth\" \"White Settlement, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:54:38.491Z",
+      "data": {
+        "name": "Galaxy Pool, Spa, Patio (formerly Yard Art Outdoor Living - Fort Worth)",
+        "found": true,
+        "rating": 4.8,
+        "source": "serpapi",
+        "address": "5238 S Hulen St, Fort Worth, TX 76132",
+        "data_id": "0x864e6d7bb8f08a41:0x9b287b1759008196",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 100,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "a year ago",
+            "text": "We have made several purchases at Yard Art to furnish our outdoor living space. Lisa was very helpful in achieving the look we wanted. We are extremely happy with our furniture and can’t thank Lisa enough directing us to perfect pieces. Looking forward to summertime fun!!",
+            "author": "Jennifer Gilmer",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We've purchased several items from Lisa at the Hulen location. We've added new outdoor spaces to our home and always go to Lisa for our OW Lee furniture. It's the best quality of outdoor furniture we've had. Lisa is a joy to work with.",
+            "author": "Laura Garrett",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Our sales representative was Lisa at the Ft.Worth store. She was amazingly kind, patient, and helpful in our decision.  She brought a smile to our face, and we are so happy with our purchase.",
+            "author": "Rebecca Shrauner",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "We met Jason at the Hulen location when my husband and I were just browsing furniture. Jason greeted us and just let us browse around. He was the perfect salesman! Not pushy, but very knowledgeable and had great suggestions. We didn’t purchase the day we came in but after getting a quote somewhere else- I contacted Jason because I didn’t care for the salesperson at the other company! Jason was responsive and quick to meet our needs. Thank you so much!",
+            "author": "Shelbie Wood",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "I purchased two O. W. Lee chairs from this location and was promised they would be there that week. I ordered two new chairs and requested they be left in the boxes. I received one chair in a box and one from their sales floor. They also did not have them available in the promised timeframe. They also told me I lived too far away for delivery, but then I noticed their policy was 60 miles from the closest store. I live 47 miles away. They told me they could be delivered that week if I wanted to pay for delivery, or I could pick them up the following week. Sounds like \"pay to play\" to me.  Now both new chairs squeak, and they want me to bring them back to the store or charge me to service them. It is a known issue with the chairs. Don't trust anything they tell you!!",
+            "author": "Matt Wise",
+            "rating": 1
+          },
+          {
+            "date": "Edited 2 weeks ago",
+            "text": "Hands down best experience! Easy in and out! Highly recommend these guys!",
+            "author": "Christopher Pinion",
+            "rating": 5
+          },
+          {
+            "date": "Edited 2 years ago",
+            "text": "First time shopping for our new patio furniture outside of Home Depot and Lowes and wow what a shocker in price difference and quality. Yard Art carries very high-end patio furniture with high-end prices.  Very impressed with the design and quality. This is not a spur of the moment buy, it needs to be planned if this high-end quality is the goal. I'm saving for my OW Lee. Actually, I found a set but at Grapevine store, combined Mallin and OW Lee. Wife is Very Happy!!!",
+            "author": "Rudy C",
+            "rating": 4
+          },
+          {
+            "date": "8 months ago",
+            "text": "Seth and Jason did an awesome job, not only helping us decide on our furniture, but helping us out when we had to change delivery date.  The furniture we bought is incredibly comfortable and looks amazing in our space!",
+            "author": "Margie Dixon",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Very professional. Great communication skills! Excellent customer service in store and during installation.  We are extremely satisfied with the purchase and installation of our gas logs.",
+            "author": "Ambar S",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Couldn’t be happier with our ceramic fire log purchase! Lisa DuPre was very knowledgeable about the products and very helpful. Our dog is already in love with the fireplace.",
+            "author": "Dustin Gilcrease",
+            "rating": 5
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "We really enjoyed shopping at Yard Art. They have a great selection! We wanted everything, and Lisa and Monty helped us narrow it down and select our favorites for our patio.  A minor snafu occurred with the delivery, and Lisa handled it promptly and completely to our satisfaction.",
+            "author": "Mary Allain",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Lisa & Monte at Yard Art Ft Worth were absolutely fabulous!  Answered every question we had when purchasing our new outdoor furniture, they were  fun & professional at the same time.  We will be back for more furniture in the future & hope to work with both of them again!",
+            "author": "Jan Weit",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "We love Yard Art patio and fireplace! We have been repeat customer for different items over the last few years and the quality has always been superb. Lisa is the absolute best sales person and we so appreciate her getting to know our needs and style and making excellent recommendations. Highly recommend.",
+            "author": "TC Elliott",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great store to find the perfect outdoor furniture— great sales staff Lisa is excellent and has so much knowledge & experience. Also referred a TN friend to order with Lisa and she took care of all her needs. Highly recommend Lisa and Yard Art!",
+            "author": "Kathy Prather",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I bought some chairs and a sofa last spring and Lisa Dupre helped with that purchase.  I had to order replacement cushions one year later because the squirrels ate holes in one chair.  Lisa graciously ordered my replacement cushions to match perfectly.  Thank you, Lisa!",
+            "author": "carol van zandt",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "We have had the best experience at the Hulen store. Lisa and everyone who works there have been so helpful and upbeat . They are up front and honest about lead times in getting things in and really helpful with everything from choosing your furniture , to space planning if it will work in your yard.  Lisa is quick returning calls and giving quotes.  Try them out , you won't be sorry",
+            "author": "Shannon Tabor",
+            "rating": 5
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "For the 3 minutes I was in the store, I was impressed with the inventory.  (6/12/24 1040am)\nI walked in was greated by the staff.  I explained to them, I was there to brouse, and that IF I had any questions, I would definitely reach out and that I didn't need assistance.\nLess than 1 minute later, here's the staff talking to me from across the floor, walking towards me, asking me if I needed help, what I was there for and if I had a patio....\nI get it, you're there to sell. If someone is there to brouse, let them.\nBye\nY'all had some great looking stuff I could've used on my huge patio and pool area.\nUPDATE:\nI was contacted immediately by the store owner.  He was able to email me several items that i had been looking for.  After a few emails, I did return to the store and was able to find and purchase EXACTLY what I was looking for...\nI want to thank Garrett for reaching out and Justin for completing the sale.\nI was correct, this place has literally everything you would need for a quality/high end backyard/patio.\nI'm sure we'll be back, and thank you to a great business owner, that's paying attention to his online reviews.\nThank you again.",
+            "author": "Michael M",
+            "rating": 4
+          },
+          {
+            "date": "3 years ago",
+            "text": "I was given a quality set of gas logs for our new house with a fireplace. I decided to have a professional install them to make sure it was done right. Jason was knowledgeable and eager to get me taken care of. The day of the install things didn’t go as smooth. My installation window was 10:30-12:30. At 9:30 I received an automated message that the installer was 15 minutes away. I had to leave an event early and rush home. The installer called 10 minutes later upset I wasn’t home. I arrived shortly after and let him in to begin work. After unwrapping his brand new tools he promptly broke the gas line coming into the fireplace. He offered a solution I wasn’t confident he was qualified to perform. I asked the he finish the set up of the logs and that I would try to find a solution to the broken gas line. He quickly finished and left. I contacted the store to get help with possible solutions. Jason was again helpful and offered a couple different solutions. Then the store manager stepped in and shut everything down. She stated that they had completed their install and I had refused the installer’s fix. I feel that my opinion, observations, and concerns were completely ignored by the manager.  Now it looks as though I’m going to be out a considerable amount of money to fix their installer’s screw up.",
+            "author": "Russell Lasiter",
+            "rating": 2
+          },
+          {
+            "date": "a year ago",
+            "text": "Loved working with Jason and Monte! This is our second purchase from Yard Art! They have great quality patio furniture and really know their products.",
+            "author": "Ronnie and Angela Parker",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "My intention was to look for patio furniture ideas, ending up leaving with several purchases due to the quality and durability of the products.\nChris was my primary and ultimately helped in my decision to purchase. Lisa and Jason were just as great. You can't go wrong with either team member.",
+            "author": "S Skillern",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "If you are looking for patio furniture, I stopped here and worked with Lisa. Great experience. Very clean store. Great quality furniture. She was knowledgeable about the products that I needed",
+            "author": "Cory Root",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "We had a great experience with Yard Art. We dealt with Lisa. She went over and above to help us.  Very personable and trustworthy.\nThe furniture is quality and delivery was earlier than expected.\nI highly recommend.",
+            "author": "Kim Southall",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "I can honestly leave a glowing review as I am a repeat customer and can attest to the incredible quality of their products as well as service. My sales representative, Jason, has gone above and beyond in making sure that not only am I satisfied with my selection but that the delivery and installation have been executed without a hitch. He personally follows up in each purchase to ensure complete satisfaction. Kudos to Yard Art Patio & Fireplace!",
+            "author": "N S Parish",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I had a great experience buying from Yard Art Fort Worth! Working with Lisa was a breeze, and she was extremely helpful and attentive!",
+            "author": "Mark Wallace",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Lisa and Garrett were so helpful and just as important, friendly! My whole shopping experience from reaching out online to the face 2 face in the store was beyond my expectations! My whole purchase was delivered in 2 days, set up ...in an akward to get to space... by competent and again, friendly, staff. I recommend Yard Art Patio beyond the 5 stars!",
+            "author": "Elizabeth Schwarz",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Fantastic service by Lisa and her team. Helped replace a broken part on one of my pool umbrellas with ease. They have a customer for life.",
+            "author": "Adrain Castillo",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "From the moment we walked into the Fort Worth store, we felt a warm, inviting chemistry with both Lisa and Susie. Both ladies were well versed with the knowledge of the products, and demonstrated the utmost of quality assurance, we were making a great investment, that will last through our lifetime. The only thing missing during the visit were cocktails😊😊..Thanks  so much ladies for the kind spirit shared with us!!\nGreat representatives  for Yard Art!!\n\nSelithia and Mark Cyrus",
+            "author": "Selithia Cyrus",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Amazing experience! They have so many different styles to choose from and the quality is the best. Jason helped us out, gave us a discount and was very knowledgeable about all of the furniture. It was a great experience and we will be back for sure!",
+            "author": "Kaitlyn Halsell",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "This is the best store!  As a pastor I always try to find a place that is honest and believes in good service. I found both the moment I walked in! Lisa is phenomenal! I can’t say enough good about her.  I can truly say that I’m now a loyal customer for life. Their pricing is great!  Their customer service is above and beyond. The selection is fabulous. You can’t go wrong shopping here. You’ll be glad you did!",
+            "author": "Rev. Travis P",
+            "rating": 5
+          },
+          {
+            "date": "7 months ago",
+            "text": "Lovely staff, we have been a customer for 5 years. Great sales also!!!",
+            "author": "Richard Moore",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "This is a great place for high quality patio furniture.  Shane and Lisa were most helpful.  Now I’ve just gotta talk my husband into letting me spend the money to get the quality.  But hey, my mom was shopping with me and she bought her new patio furniture :).  They have the most unique wind spinners too - which I’m gonna get even if I can’t get the furniture I want.",
+            "author": "Tammy Dressman",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Jason was super helpful and eager to satisfy his clients.  He immediately went to work and promised to contact me as soon as he was able.  He found the part I needed and contacted me.  My problem was resolved quickly and efficiently, thanks to Jason.",
+            "author": "Robert Spurgin",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We’re so impressed with the store, Yard Art and our lady, Lisa, that helped us and ordered what we wanted.  Excellent service!",
+            "author": "Lola McDaniel",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "We were THRILLED with the customer service Lisa gave us at Yard Art.  Her enthusiasm, knowledge and commitment sold us on buying all of our patio furniture.  We have enjoyed getting to know Lisa and will for sure recommend her to our friends and family.",
+            "author": "Chuck and Wanda Cox",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great quality outdoor furniture. The sales team was very welcoming and kind. Lisa answered all my questions and was very knowledgeable about all the different furniture lines.",
+            "author": "Andrew Wheeler",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Wonderful experience with Lisa.  She was so nice, efficient and customer service oriented.\nVery excited about my purchase...cannot wait until delivered.\nWill definitely be a return customer!\nThank you Lisa !",
+            "author": "Kim Johnson",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great quality outdoor furniture for my home. Lisa was extremely helpful and knowledgeable. We will definitely be back to shop for more outdoor furniture for the summer.",
+            "author": "Ryan Beiersdorfer",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "I really was impressed with this store.I saw that I was interested in online, and with in 30 minutes I had gone, seen it in person, and purchased it. It will be delivered less than three days later.\n\nLisa DuPre was super friendly and quickly efficient.\nI received a notification about the delivery when she said I would, and a follow up from the owner confirming I gotten it. Great customer service.",
+            "author": "A Harvey",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "Had just what we wanted, prices were better than anywhere we found and the staff was very knowledgeable, and helpful through the entire process.",
+            "author": "Trey Posey",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Very friendly and helpful sales associates. Very good selection of patio furniture. They didn’t have all of the dining chairs we wanted at their store. They took the time to find them at another store. Very good customer service. I recommend doing business with Yard Art Patio and Fireplace.",
+            "author": "Larry Carrell",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "Just took delivery of outdoor furniture purchased at the new Yard Art in Fort Worth on Hulen.  Lisa was a pleasure to work with!  While not inexpensive, the furniture offered a good value for the quality.  Delivery was easy and right on time.  If you're looking for outdoor furniture in Fort Worth, you should definitely check this place out!",
+            "author": "D D",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Me and my mom walked in the door and we’re quickly greeted with a smile and a friendly welcome. We went in to look at the beautiful patio art and walked out owning a beautiful tête-à-tête set!  The salesman was absolutely wonderful.  I will definitely go back!",
+            "author": "Paula Wilson",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Sales let you alone until you needed them.  The store was beautiful and the layout was very inviting.  I bought two swivel chairs and a beautiful fire pit.  Everything was delivered on time and they set everything up.  They also showed me how to use the fire pit.  I’ll definitely will be back to check out more beautiful things I saw there.",
+            "author": "Jean Allebach",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Thank you Jason!  Great salesman.  We love what we got from the Yard Art and Jason was very courteous and patient.  We changed our minds several times.  Good company to buy your patio furniture with.",
+            "author": "John Conner",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I bought a fantastic sofa for my patio and I absolutely love it! Lisa was super helpful and even coordinated two pillows to go with it.",
+            "author": "Beth Bond",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "They were so easy to work with. Ordered and should have in a couple of months. Tried to buy locally in Midland but it was a 6 month time frame and about 2k cheaper. I would reccommended them anytime. Such nice people!",
+            "author": "Richard Earls",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "We live in Mansfield but drove to Ft Worth to purchase an umbrella base. When we got there Jason helped us. He provided us with excellent customer service. He was very pleasant and professional.",
+            "author": "Regina Mack",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "Great big store with lots of selection! Lisa DuPre did a fantastic job of working with me and my wife find the perfect back yard furniture. I highly recommend this place. I will be coming back when our needs change.",
+            "author": "LANE STOCKTON",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "The store carries a great selection of top quality outdoor furniture. The staff is friendly and knows the product. The best part for me was the ability to ask questions, get great answers and not feel pressured. Delivery on in stock items is quick and easy. Thanks again",
+            "author": "Charles Silvey",
+            "rating": 5
+          },
+          {
+            "date": "Edited 2 years ago",
+            "text": "Wonderful store and even more wonderful employees\nThis is the second time we have purchased from the Hulen St., Fort Worth store. We will continue to give them our business and tell all our friends about them.",
+            "author": "Gordon Snook",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "Great selection of quality furniture. Lisa was very friendly helpful. Did not pressure me. I’ll be back next month when we are ready to buy. Yard Art has the best quality we've seen.",
+            "author": "M V",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Great selection of American made furniture that will last. No point wasting money buying foreign gear at the large retailers only to have it rust or break after 1 season. Staff is always friendly and helpful",
+            "author": "Brad Bartels",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Lisa has been extremely helpful in setting up installation of our logs after moving them from one house to another.  She and her installation expert have been awesome!!  Thanks!",
+            "author": "Nancy Merrill",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "This is a well run, locally owned store with several Metroplex locations and lots of personal attention.\nTheir patio furniture is well built, highest quality.  No comparison to the big-box merchandise.\nTheir patio furniture will last for years, and look good the whole time.\nI highly recommend them.",
+            "author": "Amy Meindl",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Lisa was friendly and helpful. We got an amazing deal on a truly gorgeous makeover for our outdoor space!! Go see Lisa and transform your yard too!",
+            "author": "Katie Burum",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great experience with Lisa and Monte! They made our finding chairs for back patio seamless. Very knowledgeable and helpful!",
+            "author": "Elizabeth Sansone",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "I needed a fireplace screen and had a very definite idea about what I wanted. My salesperson Savannah researched everything I wanted to make sure it would meet my expectations. She is very service oriented and I was very pleased.",
+            "author": "CASA Kathleen Evans",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Thank you so much Ms.Lisa yiu we're perfect professional and so courteous to help us with our fireplace needs.  Yard art and Patio offers full service and installation of our gas wood logs which is a surprising and definitely appreciated!  Looking forward to delivery and installation.next week.",
+            "author": "Elizabeth Contreras",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "This was a wonderful experience.  I walked in and was greeted by Liz and I told her I just wanted to look around. I wanted a chair that would be comfortable to sit in to watch the sunrise in the morning and be comfortable if I wanted to sit and read all day on the covered patio.  She showed me several to try.   Wow!  The first chair was just what I was looking for.  I was like Goldilocks.  It was just right.",
+            "author": "Sherry Gill",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Absolutely love the many patio selections and the prices are worth the quality of the furniture.\nWe have received so many compliments on our new patio selection and throughly enjoying it.\nThank you Lisa for being so helpful.",
+            "author": "Sylvia Saldana",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I had a great experience. I got plenty of help from jason and Lisa. I would recommend their store to everyone!",
+            "author": "Brad Buss",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Really enjoyed shopping with Lisa today! She gave us great info about our choices. Looking forward to furniture being delivered!",
+            "author": "Brian St.Clair",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Thank you so much for being so helpful in ordering my replacement cushions for my patio furniture!  Certainly saved me lots of time and money! It is nice to deal with those so knowledgeable about the products!",
+            "author": "Jeri Pedro",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Staff is very knowledgeable and patient. They took the time not only to explain how to use each insert, but they showed me all of the components that would be delivered with my insert and what purpose each component served. Would definitely recommend them.",
+            "author": "Kellye Saunders",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Disappointed with the extremely slow process of ordering replacement slings and your inability to make these repairs on 6 chairs.  Seems I’m getting the runaround instead of the exemplary service I expected.\nLove the fire pit we bought!",
+            "author": "Stanley Eisenman",
+            "rating": 3
+          },
+          {
+            "date": "3 years ago",
+            "text": "Jason was very knowledgeable about the fireplace products. He was ready with lead times and prices and responded to my inquiries quickly  Great sales experience!",
+            "author": "Karen Burdack",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Lisa DuPre was very professional and helped us with our selection of our patio furniture.\nShe made the process very pleasant.\nThank you\nAlan Harding",
+            "author": "Alan Harding",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Excellent service.  Jason was patient with all my questions, and spent as much time as I needed for asking questions.  He was thoroughly knowledgeable about the fireplace logs I was purchasing.",
+            "author": "Kaye Ferrara",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Lisa and Susie were absolutely amazing they were super sweet and very helpful with what we were looking for. They are a great team i highly recommend them for outdoor furniture!",
+            "author": "Tiffany Rutledge",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "If I could give this store zero stars I would. The lady that works there is very rude.  Asked for a product and she advised they can only order it. We asked for a price and she then yelled the price from across the store. Then she went and spoke to another customer and didn't even come back to us to finish working with us. We walked towards the exit door and she still ignored us. Products are over priced and workers aren't friendly.",
+            "author": "Bradley Goldstein",
+            "rating": 1
+          },
+          {
+            "date": "5 years ago",
+            "text": "first time to work with Jason and the Fort Worth store. He went above and beyond to help us locate a part for one of our umbrellas. Thank You Yard Art for your continued awesome customer service.",
+            "author": "lisa hennessy",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "This was my first visit to the store. I liked the layout of the merchandise. It was easy to find what I needed quickly. Lisa and Savannah were very nice. I’ll be back.",
+            "author": "Deborah Weyer",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Lisa went above and beyond to make sure we were making the right choice. Great customer service.",
+            "author": "Brady Mosher",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Lisa was wonderful. Great service.  Very patient and helped us find a wonderful outdoor couch that is just perfect for us.",
+            "author": "Eric Miller",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Jason was so great to work with. He listened to exactly what I was looking for and made the process so easy for me. He deserves a raise.",
+            "author": "Suzanne Worthen",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Very professional, friendly And knowledgeable of their product as well as their competitors.. no high pressure sales just there to answer any questions you have..\nLisa was awesome 👏",
+            "author": "Gary Lee",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Jason Bardellini our salesperson did an excellent job of answering all our questions and helping find the best product for us.  Highly recommend!",
+            "author": "Suzy Hill",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Wonderful experience here. Lisa was a huge help. Highly recommend her and the store",
+            "author": "Raymond Hansen",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Linda was awesome and very helpful! I would definitely recommend her and this store!",
+            "author": "Kelly Arnold",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "Great fireplace options and advice from Jason and Lisa. The installation was very smooth, and Ken, the installer was excellent. Could not be more pleased.",
+            "author": "Warren Spielman",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "The ladies were very nice and they even helped me carry the items I purchased out of the store, to load them into my car.",
+            "author": "Chris Gilbert",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Like recycling of “Milk Cartons “ for  2 chair & table Patio Settee. Very comfortable and durable. Delivery person very personable and explained features.",
+            "author": "Doug Fisher",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Great store, great customer service. Went in today just to look and ended up buying some chairs. Highly recommend.",
+            "author": "Kelley Hughes",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Jason was personable and helpful..  The store had a decent selection and we were able to get the main items we were shopping for.",
+            "author": "Jeanne Brady",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Excellent customer service.  The furniture is amazing and I was able to get the color I wanted!",
+            "author": "Shana Parkinson",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Great experience, they have high quality products. Delivered my furniture in 2 days....I’ll be back!",
+            "author": "Dave Hoffman",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "True customer service-top notch! Beautiful store with items in stock-no ordering! We will definitely be back!",
+            "author": "Malinda Andrus",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great customer service…. Jason was very helpful.  Highly recommend this place.",
+            "author": "Emily Trussell",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Jason was knowledgeable and very customer friendly in helping us find the perfect chairs for our patio!",
+            "author": "Kendall Condit",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Love the place!  Seth took great care of me.",
+            "author": "Mark D. Wood",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "We have shopped with YardArt several times and always been pleased with the sales staff and the products.",
+            "author": "Charlene Sparks",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great selection, great prices and great service. Thank you Jason for your help!",
+            "author": "Bree Young",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Lisa was so great  to us a total professional and great customer service  really impressed",
+            "author": "Winston Randle",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Jason and Lisa were very helpful with picking out our patio furniture. We will be back.",
+            "author": "Darryle Taylor",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Jason and Yard Art have gotten my entire backyard looking great !!   Go see Jason for all your outdoor furniture needs !!",
+            "author": "Charles Graham",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Great store!\nCourteous\nNo pressure\nHelpful\nProfessional\nWill buy from them again!",
+            "author": "Bill Devine",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "The staff were extremely helpful and fun to work with. They know their products!",
+            "author": "b martinez",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "So pleased with our new fireplace gas logs and quick installation!  Thank you Lisa!",
+            "author": "c measley",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great customer service. Jason was very helpful",
+            "author": "Carla Wix",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Found exactly what I wanted and even something that I didn’t know I wanted- those tall Adirondack chairs! Awesome!",
+            "author": "Hiedi Anderaon",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "review_count": 197,
+        "pages_fetched": 11,
+        "review_source": "serpapi",
+        "collection_cost": 0.182,
+        "escalation_reason": "HIGH_VOLUME (197 reviews)",
+        "serper_fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:52:45.163Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "status": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:45.436Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:53:13.135Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:53:16.813Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:52.045Z",
+      "data": {
+        "found": false,
+        "query": "\"Yard Art Outdoor Living - Fort Worth\" White Settlement lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:53:19.546Z",
+      "data": {
+        "query": "Yard Art Outdoor Living - Fort Worth White Settlement site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Mar 16, 2016",
+            "link": "https://www.star-telegram.com/entertainment/living/food-drink/article66568202.html",
+            "title": "The best restaurant patios in DFW | Fort Worth Star-Telegram",
+            "snippet": "And owner Jason Boso recently announced that he plans to open a Fort Worth location in the fall on White Settlement Road, not far from a Trinity ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallasnews.com/abode/page/8/",
+            "title": "Abode | Page 8 | The Dallas Morning News",
+            "snippet": "Abode is the destination for all things home in Dallas-Fort Worth — from statement-making real estate listings to design trends, tips and tricks. | Page 8.",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallasnews.com/author/mary-grace-granados/page/2/",
+            "title": "Mary Grace Granados | Dallas Morning News",
+            "snippet": "Fort Worth-area estate offers luxe living on Shady Oaks Country Club's golf course ... Owner and designer Tracy McNeese shares her favorite items from the shop, ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Art | Show results with:Art"
+            }
+          },
+          {
+            "date": "Mar 9, 2023",
+            "link": "https://www.star-telegram.com/entertainment/restaurants/eats-beat/article272624322.html",
+            "title": "61 Osteria, Quince top new Fort Worth restaurant patio dining",
+            "snippet": "Heim Barbecue on the River, 5333 White Settlement Road, has a sprawling lawn with picnic tables perfect for barbecue and brews. It's now ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Art | Show results with:Art"
+            }
+          },
+          {
+            "date": "Dec 30, 2018",
+            "link": "https://www.nbcdfw.com/news/local/wintry-weather-possible-wednesday/234246/",
+            "title": "Winter Weather Misses Major Parts of North Texas - NBC 5",
+            "snippet": "A dynamic winter storm brought widespread rain and even some thunder to the Dallas-Fort Worth area Thursday morning and will persist for much of the day.",
+            "position": 5
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2018&mm=10",
+            "title": "[XML] sitemap.xml - NBC 5 Dallas-Fort Worth",
+            "snippet": "... apartment by a white former Dallas police officer has filed a federal lawsuit.</video:description><video:player_loc allow_embed=\"yes\" autoplay=\"ap=1\">https ...",
+            "position": 6
+          },
+          {
+            "date": "Dec 8, 2017",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2017/12/08/dog-about-town-shopping-sipping-and-more-pooch-friendly-fun/",
+            "title": "Dog About Town: Shopping, sipping and more pooch-friendly fun",
+            "snippet": "The free event, from 12 to 7 p.m., will also feature an outdoor artisan market, live music, hot cocoa and cookies, kid's activities and more.",
+            "position": 7
+          },
+          {
+            "date": "Sep 18, 2024",
+            "link": "https://www.wfaa.com/article/features/75-moments-shaped-dallas-fort-worth/287-d84960cf-1c8c-4e27-8efa-81d246e9de3f",
+            "title": "75 moments that shaped DFW over the last 75 years: Full list - WFAA",
+            "snippet": "In honor of WFAA's 75th anniversary, our staff looks back at 75 moments that shaped North Texas into the place it is today.",
+            "position": 8
+          },
+          {
+            "date": "Jun 20, 2017",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2017/06/20/55-day-trips-on-a-tank-of-gas/",
+            "title": "55 day trips on a tank of gas - Dallas Morning News",
+            "snippet": "From exotic safari parks to glorious flower gardens, vintage-car and warbird museums, and then some. We've picked destinations within 200 miles of downtown ...",
+            "position": 9
+          },
+          {
+            "date": "May 17, 2018",
+            "link": "http://www.star-telegram.com/entertainment/restaurants/article211245549.html",
+            "title": "12 new restaurant patios for 2018 | Fort Worth Star-Telegram",
+            "snippet": "Backyard hangouts, roofs with a view and more: 12 new restaurant patios for 2018. By Robert Philpot. Updated May 17, 2018 12:10 PM.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:49.947Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Yard Art Outdoor Living - Fort Worth\" White Settlement",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:53:32.029Z",
+      "data": "Yard Art Outdoor Living - Fort Worth White Settlement review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 4:01 4:01 Now playing Yard Art Fort Worth Texas store MyYardArt MyYardArt • • 19 views 7 years ago MyYardArt MyYardArt We have a new store in Fort Worth Texas so come check it out. We have a new store in Fort Worth Texas so come check it out. From the video description 2:16 2:16 Now playing Patio Furniture Buyer's Guide | Tips from the Experts Patio Productions Patio Productions • • 3.8K views 2 years ago Patio Productions Patio Productions Looking for the ultimate patio furniture buying guide? We cover everything you need to know when shopping for outdoor furniture ... Looking for the ultimate patio furniture buying guide? We cover everything you need to know when shopping for outdoor furniture ... From the video description CC 1:56 1:56 Now playing Yardbird – Langdon Outdoor Sectional – From Best Buy Best Buy Best Buy • • 798K views 2 years ago Best Buy Best Buy A Best Buy Expert presents one of Yardbird's best selling pieces of furniture, the Langdon Outdoor Sectional, just one of several ... A Best Buy Expert presents one of Yardbird's best selling pieces of furniture, the Langdon Outdoor Sectional, just one of several ... From the video description CC Summary This video reviews the Langdon outdoor sectional from Yardbird. The reviewer discusses the sectional's design, build quality, and functionality, highlighting features like its antimicrobial wicker made from recycled ocean plastics and Sunbrella fabric cushions. They also explain how the modular design allows for customization to fit different spaces and needs. AI-generated video summary Quality and accuracy may vary. Summary This video reviews the Langdon outdoor sectional from Yardbird. The reviewer discusses the sectional's design, build quality, and functionality, highlighting features like its antimicrobial wicker made from recycled ocean plastics and Sunbrella fabric cushions. They also explain how the modular design allows for customization to fit different spaces and needs. 14:58 14:58 Now playing Outdoor Finishes Woodcraft of Spokane Woodcraft of Spokane • • 63K views 4 years ago Woodcraft of Spokane Woodcraft of Spokane Marc of Woodcraft Spokane educates is on outdoor finishes. Marc of Woodcraft Spokane educates is on outdoor finishes. From the video description 14 moments Outdoor Finishes | Antique Oil | Tung Oil | General Finishes Outdoor Oil | Watco's Marine Sealer | Osmo this Is Uv Protection Oil | Sealers | System Three Clear Coat | General Finishes Milk Paint | Waterlox Marine | Difference between the Waterlox Marine and Then the System 3 Spar Varnish | Spar Varnish | Pros and Cons | Can You Add a Water-Based Stain to Exterior 450 14 auto-generated moments in this video 14 moments Outdoor Finishes Outdoor Finishes 0:13 Outdoor Finishes 0:13 Antique Oil Antique Oil 1:43 Antique Oil 1:43 Tung Oil Tung Oil 1:47 Tung Oil 1:47 General Finishes Outdoor Oil General Finishes Outdoor Oil 2:43 General Finishes Outdoor Oil 2:43 Watco's Marine Sealer Watco's Marine Sealer 3:42 Watco's Marine Sealer 3:42 Osmo this Is Uv Protection Oil Osmo this Is Uv Protection Oil 4:30 Osmo this Is Uv Protection Oil 4:30 Sealers Sealers 6:42 Sealers 6:42 23:00 23:00 Now playing AVOID the BIGGEST OUTDOOR DECOR MISTAKES | EASY & BUDGET FRIENDLY FIXES | HOUSE OF VALENTINA House of Valentina House of Valentina • • 181K views 3 years ago House of Valentina House of Valentina Thank you to reMarkable for partnering with us on today's video. Click on my link to get your own reMarkable 2 here ... Thank you to reMarkable for partnering with us on today's video. Click on my link to get your own reMarkable 2 here ... From the video description 4K 11 chapters Intro | NOT FINDING A PURPOSE | FORGETTING ABOUT SCALE | Not Creating Interest | CHEAPING OUT | LEAVING IT EMPTY | USING PLASTIC | BUYING EVERYTHING NEW | USING A SET | FORGETTING THE GREENS | USING ONE STYLE 11 auto-generated chapters in this video 11 chapters Intro Intro 0:00 Intro 0:00 NOT FINDING A PURPOSE NOT FINDING A PURPOSE 1:35 NOT FINDING A PURPOSE 1:35 FORGETTING ABOUT SCALE FORGETTING ABOUT SCALE 5:05 FORGETTING ABOUT SCALE 5:05 Not Creating Interest Not Creating Interest 6:38 Not Creating Interest 6:38 CHEAPING OUT CHEAPING OUT 8:36 CHEAPING OUT 8:36 LEAVING IT EMPTY LEAVING IT EMPTY 11:56 LEAVING IT EMPTY 11:56 USING PLASTIC USING PLASTIC 12:56 USING PLASTIC 12:56 17:04 17:04 Now playing Top Tips for Choosing the BEST OUTDOOR FURNITURE (Designer Wayfair Picks!) Julie Khuu Julie Khuu • • 46K views 4 years ago Julie Khuu Julie Khuu Top Tips for Choosing the BEST OUTDOOR FURNITURE (Designer Wayfair Picks!) Thank you to Wayfair for sponsoring this ... Top Tips for Choosing the BEST OUTDOOR FURNITURE (Designer Wayfair Picks!) Thank you to Wayfair for sponsoring this ... From the video description 4K 5 moments Watch the full series on the Wayfair YouTube channel! | DETERMINE YOUR NEEDS AND PURCHASE FURNITURE TO SUPPORT IT | LOOK FOR LOW MAINTENANCE OUTDOOR FURNITURE | CONSIDER A NEUTRAL FRAME AND GO BOLD WITH ACCESSORIES | BUY THE BEST YOU CAN AFFORD 5 auto-generated moments in this video 5 moments Watch the full series on the Wayfair YouTube channel! Watch the full series on the Wayfair YouTube channel! 1:27 Watch the full series on the Wayfair YouTube channel! 1:27 DETERMINE YOUR NEEDS AND PURCHASE FURNITURE TO SUPPORT IT DETERMINE YOUR NEEDS AND PURCHASE FURNITURE TO SUPPORT IT 10:20 DETERMINE YOUR NEEDS AND PURCHASE FURNITURE TO SUPPORT IT 10:20 LOOK FOR LOW MAINTENANCE OUTDOOR FURNITURE LOOK FOR LOW MAINTENANCE OUTDOOR FURNITURE 12:01 LOOK FOR LOW MAINTENANCE OUTDOOR FURNITURE 12:01 CONSIDER A NEUTRAL FRAME AND GO BOLD WITH ACCESSORIES CONSIDER A NEUTRAL FRAME AND GO BOLD WITH ACCESSORIES 13:00 CONSIDER A NEUTRAL FRAME AND GO BOLD WITH ACCESSORIES 13:00 BUY THE BEST YOU CAN AFFORD BUY THE BEST YOU CAN AFFORD 14:37 BUY THE BEST YOU CAN AFFORD 14:37 1:13 1:13 Now playing #Adirondack Chairs - HDPE Weather Resistant, Patio, Firepit or #LawnChair #review Epic Value Data Epic Value Data • • 88 views 7 months ago Epic Value Data Epic Value Data Adirondack Chairs on Amazon: https://linktw.in/lelXhL Purchasing through my affiliate link above will help support this channel at ... Adirondack Chairs on Amazon: https://linktw.in/lelXhL Purchasing through my affiliate link above will help support this channel at ... From the video description 4:26 4:26 Now playing Find high quality outdoor furniture at a better price at Yardbird ABC15 Arizona ABC15 Arizona • • 3.4K views 3 years ago ABC15 Arizona ABC15 Arizona (SL Advertiser)) Find high quality outdoor furniture at a better price at Yardbird. To learn more, call (480) 865-1205, or go to ... (SL Advertiser)) Find high quality outdoor furniture at a better price at Yardbird. To learn more, call (480) 865-1205, or go to ... From the video description CC 11:23 11:23 Now playing Don't Use the Wrong Outdoor Wood and Finish for Your Project 731 Woodworks 731 Woodworks • • 163K views 2 years ago 731 Woodworks 731 Woodworks You want your outdoor woodworking projects to last as long as possible. Using the right wood and finish for outdoor projects is ... You want your outdoor woodworking projects to last as long as possible. Using the right wood and finish for outdoor projects is ... From the video description 4K 15 chapters How to Make Outdoor Projects Last | What's the Best Outdoor Finish | How to Apply Outdoor Finish | Food Safe Outdoor Finish | Best Selling Woodworking Projects | Prevent Cedar from Turning Gray | Using Pressure Treated Wood for Outdoor Furniture | How Often do Outdoor Wood Finishes Require Maintenance? | Best Clear Finish for Outdoor Wood Projects? | Best Wood for Outdoor Projects | Worst Wood for Outdoor Projects | Best Screws for Outdoor Wood Projects | Should You Space Boards Apart on Outdoor Projects? | Best Wood Glue for Outdoor Woodworking Projects | How to Make Outdoor Projects Last Longer 15 chapters in this video 15 chapters How to Make Outdoor Projects Last How to Make Outdoor Projects Last 0:00 How to Make Outdoor Projects Last 0:00 What's the Best Outdoor Finish What's the Best Outdoor Finish 0:20 What's the Best Outdoor Finish 0:20 How to Apply Outdoor Finish How to Apply Outdoor Finish 3:00 How to Apply Outdoor Finish 3:00 Food Safe Outdoor Finish Food Safe Outdoor Finish 3:27 Food Safe Outdoor Finish 3:27 Best Selling Woodworking Projects Best Selling Woodworking Projects 4:07 Best Selling Woodworking Projects 4:07 Prevent Cedar from Turning Gray Prevent Cedar from Turning Gray 4:38 Prevent Cedar from Turning Gray 4:38 Using Pressure Treated Wood for Outdoor Furniture Using Pressure Treated Wood for Outdoor Furniture 5:11 Using Pressure Treated Wood for Outdoor Furniture 5:11 6:02 6:02 Now playing 🏡✨ Best Outdoor Patio Furniture Sets in 2025 | Ultimate Review & Buying Guide Popular Gadget Items Popular Gadget Items • • 12K views 9 months ago Popular Gadget Items Popular Gadget Items Best Outdoor Patio Furniture Sets in 2025 | Ultimate Review & Buying Guide Amazon ▻ 3.SERWALL HDPE Outdoor Patio ... Best Outdoor Patio Furniture Sets in 2025 | Ultimate Review & Buying Guide Amazon ▻ 3.SERWALL HDPE Outdoor Patio ... From the video description 4:08 4:08 Now playing Elevate Your Outdoor Living Space | San Diego Living CBS 8 San Diego CBS 8 San Diego • • 455 views 2 years ago CBS 8 San Diego CBS 8 San Diego Sponsored by Today's Patio . Your outdoor furniture should be a reflection of your personal style and should look as great as your ... Sponsored by Today's Patio . Your outdoor furniture should be a reflection of your personal style and should look as great as your ... From the video description CC 2:27 2:27 Now playing Here's how salvage stores can help you stretch your budget | NBCDFW NBC DFW NBC DFW • • 370 views 4 months ago NBC DFW NBC DFW If you're looking to stretch your back-to-school budget, you may want to consider shopping 'salvage' to save on snacks and ... If you're looking to stretch your back-to-school budget, you may want to consider shopping 'salvage' to save on snacks and ... From the video description CC People also watched 5:34 5:34 Now playing Homeowner says home is \"worthless\" after discovering easement 14 years after purchase Tampa Bay 28 Tampa Bay 28 • • 4.2M views 2 years ago Tampa Bay 28 Tampa Bay 28 An Odessa man is suing the City of St. Petersburg, alleging the city didn't correctly record a 50-foot easement through his property. An Odessa man is suing the City of St. Petersburg, alleging the city didn't correctly record a 50-foot easement through his property. From the video description 3:46 3:46 Now playing Yardbird's sustainable and high quality outdoor furniture Houston Life Live Houston Life Houston Life • • 938 views 2 years ago Houston Life Houston Life Mel Camp takes you inside Yardbird's new showroom for all your outdoor furniture finds great for Houston weather. Mel Camp takes you inside Yardbird's new showroom for all your outdoor furniture finds great for Houston weather. From the video description CC 12:18 12:18 Now playing Low Cost High Profit - Small Projects That Sell - Make Money Woodworking (Episode 2) Matthew Peech Matthew Peech • • 3.1M views 3 years ago Matthew Peech Matthew Peech Grow your woodworking business with \"smalls\"! Often times smaller items are looked over by new builders because they are ... Grow your woodworking business with \"smalls\"! Often times smaller items are looked over by new builders because they are ... From the video description 5 chapters Intro | Wall Art | Thinking Outside the Box | Using Leftovers | Antique Dealer 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Wall Art Wall Art 0:30 Wall Art 0:30 Thinking Outside the Box Thinking Outside the Box 1:26 Thinking Outside the Box 1:26 Using Leftovers Using Leftovers 3:38 Using Leftovers 3:38 Antique Dealer Antique Dealer 10:36 Antique Dealer 10:36 11:03 11:03 Now playing Build Plate Adhesion Explained for Total Beginners Design & Forge Studios: Print to Profit Design & Forge Studios: Print to Profit • • 877 views 1 day ago Design & Forge Studios: Print to Profit Design & Forge Studios: Print to Profit If your 3D prints won't stick to the build plate, you're not alone — build plate adhesion is one of the most common beginner ... If your 3D prints won't stick to the build plate, you're not alone — build plate adhesion is one of the most common beginner ... From the video description New + 6 more 1:46 1:46 Now playing How you can upgrade your patio with budget-friendly solutions this spring WCPO 9 WCPO 9 • • 231 views 9 months ago WCPO 9 WCPO 9 Major retailers like Target, Lowe's and Walmart are offering discounts on patio furniture, grills and gardening essentials. Major retailers like Target, Lowe's and Walmart are offering discounts on patio furniture, grills and gardening essentials. From the video description CC Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:53:33.021Z",
+      "data": {
+        "query": "site:nextdoor.com Yard Art Outdoor Living - Fort Worth White Settlement",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/city/fort-worth--tx/",
+            "title": "Fort Worth, TX | News, Crime, Lost Pets, Free Stuff - Nextdoor",
+            "snippet": "Fort Worth is considered a beautiful place to live. Nextdoor Neighbors mention qualities such as: clean, peaceful, and well maintained. Is Fort Worth expensive?",
+            "position": 1,
+            "attributes": {
+              "Missing": "Yard | Show results with:Yard"
+            }
+          }
+        ]
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:48.367Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Yard Art Outdoor Living - Fort Worth\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:53:47.504Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Yard%20Art%20Outdoor%20Living%20-%20Fort%20Worth&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Yard% 20Art% 20Outdoor% 20Living% 20 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Yard% 20Art% 20Outdoor% 20Living% 20Fort% 20Worth&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Yard% 20Art% 20Outdoor% 20Living% 20 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "search_type= Name&Name= Yard% 20Art% 20Outdoor% 20Living% 20 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Yard% 20Art% 20Outdoor% 20Living% 20 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 6,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Yard% 20Art% 20Outdoor% 20Living% 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "date": "Jun 26, 2025",
+            "link": "https://echo.epa.gov/help/reports/detailed-facility-report-help",
+            "title": "Detailed Facility Report Help | ECHO | US EPA",
+            "snippet": "The Detailed Facility Report is an interactive report that allows you to quickly find data of interest. Data are organized into six primary categories.",
+            "position": 7,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Yard% 20Art% 20Outdoor% 20Living% 20 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Yard% 20Art% 20Outdoor% 20Living% 20 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Yard% 20Art% 20Outdoor% 20Living% 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search",
+            "title": "Enforcement Case Search | ECHO | US EPA",
+            "snippet": "Enforcement Case Search · Case Identifiers · Facility Location · Case Attributes · Case Milestones and Dates · Enforcement Case Outcomes/Settlements.",
+            "position": 10,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Yard% 20Art% 20Outdoor% 20Living% 20 20Fort% 20Worth&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:53:51.791Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2026 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:53:58.317Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:54:06.521Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Yard Art Outdoor Living - Fort Worth",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Sep 19, 2024",
+            "link": "https://texasattorneygeneral.gov/sites/default/files/images/press/State%20Fair%20of%20Texas%20Emergency%20Motion%20For%20Relief%20Pending%20Appeal%20Filed.pdf",
+            "title": "[PDF] In the Court of Appeals for the Fifteenth Judicial District Austin, Texas",
+            "snippet": "To the Honorable Fifteenth Court of Appeals: The Texas Legislature could hardly have been clearer: “[A] political subdivision.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Yard | Show results with:Yard"
+            }
+          },
+          {
+            "date": "Jun 17, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/OAG%20Amended%20Answer%20Filed.pdf",
+            "title": "[PDF] EXHIBIT 1-4 - Texas Attorney General",
+            "snippet": "Art. 2.07; Exhibit 4, Tex. Att'y Gen. Op. No. KP-0273.7 However, unless the district attorney is recused, OAG's assistance role is ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:54:07.667Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number must be from 6 to 10 digits.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Comptroller.Texas.Gov is the website for the Texas Comptroller of Public Accounts.",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:08.732Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Yard Art Outdoor Living - Fort Worth",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:54:09.931Z",
+      "data": {
+        "query": "site:dallascounty.org Yard Art Outdoor Living - Fort Worth civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Sep 10, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/comcrt/county-code/DallasCountyCode-09102024.pdf",
+            "title": "Dallas County Code",
+            "snippet": "Chapter 1 – General Provisions. Chapter 2 – Administration. Chapter 6 – Animals. Chapter 10 – Business. Chapter 14 – Civil Emergencies.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "[PDF] A 21st Century Mosaic - Dallas County",
+            "snippet": "Known for the scenic beauty of the rolling hills, Cedar Hill is a premier city, a unique and distinctive place, within the Dallas-Fort Worth. Metroplex. Located ...",
+            "position": 2
+          },
+          {
+            "date": "Dec 8, 2022",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/Ryan-White-HIV-Program/Final-Dallas-Regional-HIV-Prevention-and-Care-Plan-1.pdf",
+            "title": "[PDF] Dallas Regional Area Integrated HIV",
+            "snippet": "The Development of the CDC/HRSA Integrated HIV Prevention and Care Plan, CY 2022-2026 for the Dallas Regional areas was a collaborative ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Yard | Show results with:Yard"
+            }
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:54:11.062Z",
+      "data": {
+        "query": "site:collincountytx.gov Yard Art Outdoor Living - Fort Worth",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Celina.pdf",
+            "title": "[PDF] 2020 Parks and Recreation Master Plan - Celina, TX - Collin County",
+            "snippet": "Programming for school parks should include a generously-sized, level open space lawn for sports practice, pickup games and unprogrammed play activities.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Yard | Show results with:Yard"
+            }
+          },
+          {
+            "date": "Jan 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210125_2587/33858_RTC%20Packet%2001-14-2021.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The primary flights for the region are conducted every two years. The FY2021 Program includes aerials requested by the Dallas and Fort Worth ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_McKinney.pdf",
+            "title": "[PDF] master plan - parks recreation open space - Collin County",
+            "snippet": "Within an hour of both downtown Dallas and Fort Worth, McKinney is a picturesque city with a small-town atmosphere. For many years McKinney has thrived off ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Yard | Show results with:Yard"
+            }
+          },
+          {
+            "date": "Jul 24, 2023",
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Plano.pdf",
+            "title": "[PDF] city of plano - parks, recreation, trails & open space - Collin County",
+            "snippet": "Dallas-Fort Worth region. Table 6.0 depicts the approximate mileage ... Art centers/art studios. Indoor court facility. Pickleball courts.",
+            "position": 4
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210315_2611/33858_agenda-packet-mar.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL Thursday ...",
+            "snippet": "Background: Due to the ongoing COVID-19 outbreak, transit ridership in the. United States, Texas, and Dallas-Fort Worth region has suffered declines and ...",
+            "position": 5
+          },
+          {
+            "date": "Oct 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20211018_2693/33858_RTC%20Packet%2010-14-2021.pdf",
+            "title": "AGENDA Regional Transportation Council Thursday, October 14 ...",
+            "snippet": "The RTC meeting on October 14, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 6
+          },
+          {
+            "date": "Jul 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210716_2662/33858_RTC%20Packet%2007-08-2021.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL Thursday, July ...",
+            "snippet": "The RTC meeting on July 8, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Yard | Show results with:Yard"
+            }
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20Business.pdf",
+            "title": "[PDF] Sorted by Business - Collin County",
+            "snippet": "We provide Fencing, pool renovations, pergolas, outdoor kitchens and living ... 75094. Installation company working for independent school ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/PerrymanStudy.pdf",
+            "title": "[PDF] Potential Economic Effects of Converting Portions of US 380 in ...",
+            "snippet": "The Perryman Group (TPG) was recently asked to estimate the economic and fiscal effects of converting US 380 in Collin County from the Collin-Denton County ...",
+            "position": 9
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210412_2620/33858_agenda-packet-apr.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "Background: Due to the COVID-19 outbreak, the economies of the United. States, Texas, and Dallas-Fort Worth region have suffered large setbacks ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:12.180Z",
+      "data": {
+        "query": "site:dentoncounty.gov Yard Art Outdoor Living - Fort Worth",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:54:20.131Z",
+      "data": "Galaxy Home Recreation | Backyard fun and Indoor Leisure --> Yard Art is Now Part of Galaxy Backyard Leaders in Oklahoma and Arkansas since 1975. Yard Art is now the home of Galaxy Pool Spa Patio. You'll find much of the same patio furniture you love, plus new hot tubs, pools, saunas, and much more! Come see us today in Prosper and Fort Worth! × Products search 0 Menu Services Billiards Services Pool Table Recovering Pool Table/Shuffleboard Relocation Hot Tub Services Cal Connect Upgrade Cover Replacement Hot Tub Purge Hot Tub Relocation Hot Tub Repairs Sanitizer Replacement SmartTub Upgrade Swim Spa Services Cal Connect Upgrade Cover Replacement Sanitizer Replacement SmartTub Upgrade Swim Spa Relocation Swim Spa Repairs Pool Services Filter Change (Sand or Cartridge) Inground Pool Services Liner Replacement Pool Closing Service Pool Opening Service Pool Repairs Other Product Services Product Repairs Learning Center Contact Showrooms Fort Smith Fort Worth Norman North OKC Northwest Arkansas OKC Outlet Center Prosper Tulsa Financing Products search 0 Hot Tubs & Spas Hot Tub Overview Shop All Hot Tubs Shop by Type Bench Style Hot Tubs Lounge Style Hot Tubs Plug N Play Hot Tubs Shop by Seating 2 Person Hot Tubs 4 Person Hot Tubs 6+ Person Hot Tubs Shop by Brand Jacuzzi® Hot Tubs CalSpas® Hot Tubs Nordic Hot Tubs™ Sundance® Spas Build Your Hot Tub Shop Clearance Hot Tubs Hot Tub Chemicals Hot Tub Accessories Cold Plunge Tubs Shop Hot Tubs & Spas Swim Spas All-Season Swim Spa Overview Shop All Swim Spas & Season Pools Shop by Type Fitness Swim Spas Recreation Swim Spas Dual Temp Swim Spas Shop by Brand CalSpas® Swim Spas Jacuzzi® Swim Spas Sundance® Swim Spas Shop Clearance Swim Spas & All Season Pools Swim Spa Chemicals Swim Spa Accessories Shop Swim Spas Pools Round Above Ground Pools 18ft Models 21ft Models 24ft Models 27ft Models 30ft Models 33ft Models Oval Above Ground Pools 12x24ft Models 15x30ft Models 18x33ft Models Stealth Pools Semi-Inground Pools Stealth Inground Pools Custom Inground Pools Shop All Pools Build Your Stealth Pool Shop Pool Chemicals Shop Pool Accessories Shop Pools Pool & Spa Supplies Shop All Chemicals & Supplies Hot Tub Chemicals Shop All Hot Tub Care Hot Tub Chemical Bundles Hot Tub Sanitizers & Shock Hot Tub Aromatherapy Hot Tub Filters Hot Tub Balancers & Stabilizers Hot Tub Test Kits FROG @ease Super Purifier Mineral Pool Accessories Pool Liners Pool Heaters Pool Ladders Pool Parts & Maintenance Pool Covers & Winterizing Hot Tub Accessories Hot Tub Covers & Lifters Hot Tub Steps Hot Tub Vacuums Hot Tub Parts & Maintenance Hot Tub Umbrellas Hot Tub Water Seats Pool Chemicals Shop All Pool Care Pool Chemical Bundles Pool Sanitizers & Shock Pool Algaecide Pool Specialty Pool Filters Pool Test Kits Shop by Program Shop Pool & Spa Supplies Patio Shop All Outdoor & Patio Furniture Sofas & Sectionals Loveseats Lounge Chairs Chaise Lounges Dining Chairs Ottomans Dining & Pub Tables Accent Tables Fire Pits Patio Umbrellas & Bases Furniture Covers Shop Patio Saunas Shop All Saunas Traditional Steam Saunas Far Infrared Saunas Outdoor Saunas Red-Light Therapy Saunas Full Spectrum Saunas Shop by Size 2 Person 3 Person 4 Person Shop by Brand Jacuzzi FINSAUNA ZA Shop Saunas Outdoor Play Shop All Outdoor Play Swing Sets Double Decker Fort Playcenter Swing Set Accessories Basketball Goals CV Deluxe GS Standard Trampolines Oval Square Round Trampoline Accessories Shop Outdoor Play Game Room Shop All Pool Tables Shop By Size 8ft Pool Tables 7ft Pool Tables Shop By Brand Brunswick® Olhausen® Plank & Hide™ Pool Table Accessories Build Your Pool Table Shuffleboard Tables Shop Game Room Massage Chairs Shop All Massage Chairs Shop by Brand Jacuzzi® ZA™ Shop Massage Chairs Now Open in DFW! Galaxy is now in Fort Worth & Prosper — visit us for our grand opening! Learn More Swimming Pools Discover the best above ground, in-ground, and stealth semi-in-ground swimming pools. Affordable prices, expert installation, and 0% financing available. Shop now for fast installs, free essentials, and huge savings! Explore Pools View Locations Premium Hot Tubs Relax and unwind with premium hot tubs. Energy-efficient, feature-rich, and perfect for your backyard. Shop and save today! Shop Hot Tubs View Locations Outdoor Patio Shop stylish, durable patio furniture for your backyard. Weather-resistant, comfortable, and affordable designs available! Shop Patio View Locations 1 2 3 Jacuzzi ® Wellness Experience complete mind-body rejuvenation with Jacuzzi ® wellness products, including hot tubs, swim spas, saunas, cold plunges, and massage chairs—engineered to elevate your health, recovery, and relaxation at home. Premium-Quality Hot Tubs Shop Premium-Quality Hot Tubs Now Swim Spas Shop Swim Spas Now Saunas Shop Saunas Now Cold Plunge Tubs Shop Cold Plunge Tubs Now Massage Chairs Shop Massage Chairs Now Swimming Pools With 6 convenient locations across Oklahoma and Arkansas, Galaxy Home Recreation ® is your trusted source for inground and above ground pools, plus pool parts, supplies, accessories, and liners—everything you need to create the perfect backyard escape. Inground Pools Shop Inground Pools Now Semi-Inground Pools Shop Semi-Inground Pools Now Above Ground Pools Shop Above Ground Pools Now Outdoor Patio Furniture Shop premium patio furniture, shade solutions, and outdoor accessories at Galaxy Home Recreation—serving Oklahoma and Arkansas with 6 locations to help you create a stylish, comfortable outdoor living space built to last. Patio Seating Shop Patio Seating Now Patio Dining Tables Shop Patio Dining Tables Now Fire Tables Shop Fire Tables Now Gameroom Fun Discover the ultimate in gameroom entertainment at Galaxy Home Recreation featuring pool tables, shuffleboard, and more to bring family and friends together for endless fun. Classic Pool Tables Shop Classic Pool Tables Now Shuffleboards Shop Shuffleboards Now Celebrating 50 Years of Great Business Arkansas and Oklahoma's Backyard Fun Headquarters Galaxy Home Recreation is the largest retailer for backyard fun and indoor leisure in Oklahoma and Arkansas! Visit any of showrooms, open 7 days a week, to see the Galaxy difference. We've got everything fun including hot tubs, swim-spas, pools, patio furniture, outdoor play, pool tables, theater seating, gameroom, massage chairs, saunas and more. View Locations Galaxy In The News Explore our latest articles on whats happening with Galaxy Home Recreation. December 19, 2025 6 min read Galaxy Pool Spa Patio in Dallas-Fort Worth: Hot Tubs, Pools, & Patio We’re thrilled to announce the opening of our newest Galaxy Pool • Spa • Patio showrooms in Prosper and Fort Worth, Texas! For... Read More November 25, 2025 3 min read Galaxy Pool Spa Patio Comes to Dallas–Fort Worth: New Texas Stores in Fort Worth & Prosper Galaxy Pool Spa Patio is heading to Dallas–Fort Worth (DFW)! After 50 years of helping families in Oklahoma and Arkansas create relaxing, fun-filled... Read More March 25, 2025 5 min read Galaxy Home Recreation's New Outlet Center in Oklahoma City - Your Destination for Discount Outdoor Products Introduction Galaxy Home Recreation has expanded its offerings in Oklahoma City with a brand-new outlet center, bringing unbeatable deals on outdoor and indoor... See Latest News Our Latest Blogs All-Season Swim Spas in DFW: The Smarter Way to Swim, Exercise & Play Year-Round January 6, 2026 In the Dallas–Fort Worth (DFW) market, homeowners are searching for year-round pools, low-maintenance swim spas, and cost-effective alternatives to traditional inground pools. With... Est. reading time: 4 minutes Galaxy Pool Spa Patio in Dallas-Fort Worth: Hot Tubs, Pools, & Patio December 19, 2025 We’re thrilled to announce the opening of our newest Galaxy Pool • Spa • Patio showrooms in Prosper and Fort Worth, Texas! For... Est. reading time: 6 minutes Traditional vs Infrared Saunas: How to Choose the Right Sauna December 19, 2025 Sauna demand has exploded as more people discover the powerful role sauna therapy can play in supporting health, recovery, and overall well-being. Along... Est. reading time: 7 minutes See All Blogs Hot Tub & Pool School Δ Email This field is for validation purposes and should be left unchanged. First Name (Required) Last Name (Required) Email (Required) Mobile Phone (Required) Zip Code (Required) Nearest Store Location (Required) Pick Nearest Store Location South OKC Tulsa Broken Arrow North OKC Rogers Ft. Smith Norman Prosper Fort Worth School Interest (Required) School Interest Hot Tub School Pool School Hot Tub & Pool School Message (Required) SMS Text Messaging Opt-In Click this box to agree to receive SMS messages from Galaxy Home Recreation. If you require assistance, text HELP. In addition, you can reply STOP to opt-out at any time. Message rates may vary. Message and Data Rates apply. Please see our Terms and Conditions below. CAPTCHA Contact Us Today Need Help? Galaxy's design consultants can help you design the backyard or pool of your dreams. Please fill out the design form, and we will contact you to learn more about your project. Design Center Speak with a Design Consultant Book a free in-store design meeting for a limited time. Book In-Store Design Meeting Service Center Schedule Maintenance or Service Having issues or need maintenance? Schedule a service call today! Schedule Service Find Your Nearest Galaxy Showroom Galaxy Home Recreation has 6 convenient showrooms across Oklahoma, Western Arkansas, and Texas. Visit us today to experience our wide selection of products and exceptional customer service. Prosper Texas Fort Worth Texas Fort Smith Arkansas Northwest Arkansas Arkansas Norman Oklahoma North OKC Oklahoma OKC Outlet Center Oklahoma Tulsa Oklahoma 970 S Preston Rd, Prosper, TX 75078 Mon - Fri 10:00 am - 7:00 pm Saturday 10:00 am - 6:00 pm Sunday 12:00 pm - 5:00 pm (469) 243-3586 5238 S Hulen St, Fort Worth, TX 76132 Mon - Fri 10:00 am - 7:00 pm Saturday 10:00 am - 6:00 pm Sunday 12:00 pm - 5:00 pm (817) 946-0362 7607 Rogers Ave., Fort Smith, AR 72903 Mon - Fri 10:00 am - 7:00 pm Saturday 10:00 am - 6:00 pm Sunday 12:00 pm - 5:00 pm (479) 306-6800 559 N 46th Street, Rogers, AR 72756 Mon - Fri 10:00 am - 7:00 pm Saturday 10:00 am - 6:00 pm Sunday 12:00 pm - 5:00 pm (479) 250-1320 3449 W. Main Street, Norman, OK 73072 Mon - Fri 10:00 am - 7:00 pm Saturday 10:00 am - 6:00 pm Sunday 12:00 pm - 5:00 pm (405) 308-4445 6932 W. Memorial Rd., Oklahoma City, OK 73142 Mon - Fri 10:00 am - 7:00 pm Saturday 10:00 am - 6:00 pm Sunday 12:00 pm - 5:00 pm (405) 546-4050 4335 West Reno, Oklahoma City, OK 73107 Mon 10:00 am - 7:00 pm Tues - Wed Closed Thurs - Fri 10:00 am - 7:00 pm Saturday 10:00 am - 6:00 pm Sunday 12:00 pm - 5:00 pm (405) 947-6565 4900 W. Kenosha St., Broken Arrow, OK 74012 Mon - Fri 10:00 am - 7:00 pm Saturday 10:00 am - 6:00 pm Sunday 12:00 pm - 5:00 pm (918) 770-7134 Compare Site Navigation Financing About Us FAQs Careers Locations Referral Reward Program Outdoor Products Premium-Quality Hot Tubs Tranquillizing All Season Pools & Swim Spas Pools Patio Furniture Swing Sets Trampolines Basketball Goals Indoor Products Health & Wellness Sporty Game Room Essentials Shop Pool & Spa Pool Accessories Hot Tub Accessories Our Services Hot Tub Services Pool Services Swim Spa Services Billiards Services Other Product Services Subscribe Δ URL This field is for validation purposes and should be left unchanged. Email (Required) CAPTCHA Follow Us © Galaxy Home Recreation, All rights reserved. Website by Normal Bear Media Privacy Policy Refund Policy Shipping Policy Find your closest store Search North OKC 6932 W. Memorial Rd. Oklahoma City, OK 73142 Open in Google Maps Set default South OKC 4335 West Reno Oklahoma City, OK 73107 Open in Google Maps Set default North West Arkansas 559 N 46th Street Rogers, AR, 72756 Open in Google Maps Set default Broken Arrow 4900 W. Kenosha St. Broken Arrow, OK 74012 Open in Google Maps Set default Fort Smith 7607 Rogers Ave. Fort Smith, AR 72903 Open in Google Maps Set default Norman 3449 W. Main Street, Norman, OK 73072 Open in Google Maps Set default Fort Worth 5238 S Hulen St, Fort Worth, TX 76132 Open in Google Maps Set default Prosper 970 S Preston Rd, Prosper, TX 75078 Open in Google Maps Set default Call Us: 1-800-678-7665 What are you looking for? Products search Google Recaptcha Notifications"
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:21.119Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:54:43.964Z",
+      "data": {
+        "found": true,
+        "rating": 4.7,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/yard-art-patio-and-fireplace-fort-worth-2?start=10",
+        "review_count": 132
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:44.796Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:46.293Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "myyardart.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:47.304Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Yard Art Outdoor Living - Fort Worth\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:54:49.076Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Yard Art Outdoor Living - Fort Worth\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:55:10.465Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T19:54:54Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Yard%20Art%20Outdoor%20Living%20-%20Fort%20Worth%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=DrpeaYHmEbfcwN4P7rLqoQU\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T19:55:05Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Yard%20Art%20Outdoor%20Living%20-%20Fort%20Worth%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=GLpeafiGF57Bp84Ps5PyoAQ\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Yard Art Outdoor Living - Fort Worth",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:55:10.642Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Yard Art Outdoor Living - Fort Worth",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:55:11.145Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    }
+  }
+}

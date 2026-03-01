@@ -1,0 +1,67 @@
+{
+  "variation": "D2",
+  "contractor_id": 3512,
+  "contractor_name": "1-Tom-Plumber",
+  "archetype": "new_promising",
+  "expected_score": 75,
+  "run": 5,
+  "timestamp": "2026-01-20T19:23:49.356Z",
+  "success": true,
+  "trust_score": 87,
+  "risk_level": "LOW",
+  "reasoning": "Mixed council: DeepSeek=88, Claude=82, Gemini=92, Avg=87",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 88,
+      "risk_level": "LOW",
+      "reasoning": "This contractor demonstrates exceptional customer service with consistently outstanding reviews across Google (5.0/5.0 with 290 reviews) and Yelp (4.9/5.0 with 354 reviews), featuring detailed, authentic testimonials praising specific technicians like Scott and David for their professionalism, emergency responsiveness, and quality work. The business appears well-established with a professional website, 24/7 emergency service, and no significant legal or regulatory red flags found across court records, OSHA, EPA, or Texas AG complaints. While the archetype suggests 'new promising,' the review volume and consistency indicate a mature, reliable operation with strong customer satisfaction.",
+      "key_factors": [
+        "Exceptional customer reviews with high volume and authenticity",
+        "No significant legal or regulatory issues detected",
+        "Professional online presence and emergency service availability"
+      ],
+      "red_flags": [
+        "Higher pricing mentioned in some reviews",
+        "Limited employee satisfaction per Glassdoor (3.0/5.0)"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 82,
+      "risk_level": "LOW",
+      "reasoning": "1-Tom-Plumber demonstrates strong operational credibility with exceptional customer satisfaction (5.0 Google rating, 4.9 Yelp rating from 354+ reviews) and authentic, detailed feedback mentioning specific technicians like Scott and David. The company provides legitimate 24/7 emergency plumbing services with water damage restoration expertise through their PuroClean affiliation, showing specialized competency. While pricing is consistently noted as higher than competitors, this appears justified by emergency availability and quality service delivery. The absence of legal issues, complaints, or regulatory violations across multiple searches reinforces their reliability.",
+      "key_factors": [
+        "Exceptional customer reviews (290+ Google reviews, all 5-star) with authentic, detailed feedback",
+        "Legitimate 24/7 emergency service capability with specialized water damage restoration experience",
+        "No legal issues, complaints, or regulatory violations found across comprehensive searches"
+      ],
+      "red_flags": [
+        "Consistently higher pricing than competitors mentioned in reviews",
+        "Lower employee satisfaction rating (3.0/5 on Glassdoor) may indicate internal management issues"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 92,
+      "risk_level": "LOW",
+      "reasoning": "1-Tom-Plumber demonstrates a strong commitment to customer satisfaction, evidenced by overwhelmingly positive reviews on Google Maps and Yelp. The reviews highlight prompt service, knowledgeable technicians, and a willingness to go above and beyond. While some reviews mention higher pricing, this is often associated with emergency services and quality workmanship. The company's proactive engagement on social media and focus on water damage restoration further contribute to a positive overall assessment.",
+      "key_factors": [
+        "Exceptional customer reviews",
+        "24/7 emergency service",
+        "Water damage restoration expertise"
+      ],
+      "red_flags": [
+        "Higher pricing mentioned in some reviews"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Higher pricing mentioned in some reviews",
+    "Limited employee satisfaction per Glassdoor (3.0/5.0)",
+    "Consistently higher pricing than competitors mentioned in reviews",
+    "Lower employee satisfaction rating (3.0/5 on Glassdoor) may indicate internal management issues"
+  ],
+  "cost_usd": 0.10474837249999999,
+  "duration_ms": 8746
+}

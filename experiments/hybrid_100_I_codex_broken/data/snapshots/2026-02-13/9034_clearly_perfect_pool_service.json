@@ -1,0 +1,994 @@
+{
+  "contractor_id": 9034,
+  "business_name": "Clearly Perfect Pool Service",
+  "city": "Denton",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T08:27:38.861Z",
+  "sources": {
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:34:55.530Z",
+      "data": {
+        "query": "site:yelp.com \"Clearly Perfect Pool Service\" \"Denton, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=Denton%2C+TX",
+            "title": "THE BEST 10 POOL CLEANERS in DENTON, TX - Yelp",
+            "rating": 4.1,
+            "snippet": "... Clearly Perfect Pool Service, 24/7 Pool Service, Falco Poolcraft, Cool Pool ... Denton, TX. Map. Salt Water Pool in Denton, Texas · Jacuzzi Repair in ...",
+            "position": 1,
+            "ratingCount": 989
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Cleaners&find_loc=Hickory+Creek%2C+TX",
+            "title": "THE BEST 10 Pool Cleaners near Hickory Creek, TX - Yelp",
+            "rating": 4.3,
+            "snippet": "... Clearly Perfect Pool Service, Sting Rey Services, Ranger Pools, Pools by ... Denton, TX 76201. (940) 514-1043. I would recommend them to my grandmother ...",
+            "position": 2,
+            "ratingCount": 593
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Cleaners&find_loc=Double+Oak%2C+TX",
+            "title": "TOP 10 BEST Pool Cleaners near Double Oak, TX - Yelp",
+            "rating": 4,
+            "snippet": "... Clearly Perfect Pool Service, Shaw Pools, Texas Native Aquatics, Alex Pool ... Denton, TX 76201. (940) 514-1043. I would recommend them to my grandmother ...",
+            "position": 3,
+            "ratingCount": 824
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Hot+Tub+%26+Pool&find_loc=Lantana%2C+TX",
+            "title": "TOP 10 BEST Hot Tub & Pool near Lantana, TX - Updated 2026 - Yelp",
+            "rating": 4.3,
+            "snippet": "... Clearly Perfect Pool Service, Blueville Pool Care, Outdoor Signature ... Denton, TX 76201. (940) 514-1043. On their website: swimming pool. I would ...",
+            "position": 4,
+            "ratingCount": 905
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Hvac&find_near=clearly-perfect-pool-service-lantana",
+            "title": "Best Hvac near Clearly Perfect Pool Service in Lantana, TX - Yelp",
+            "snippet": "Best Hvac near Clearly Perfect Pool Service in Lantana, TX ... 5501 Fishtrap Rd, Ste 121 Denton, TX 76208 ... Denton, TX 76208. Yelp Guaranteed. •. Verified ...",
+            "position": 5
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Environmental+Testing&find_loc=Corinth%2C+TX",
+            "title": "TOP 10 BEST Environmental Testing near Corinth, TX - Yelp",
+            "rating": 4.3,
+            "snippet": "... Denton, TX 76210. (817) 662-7338. From the business: We Focus on Restoring ... Clearly Perfect Pool Service - Environmental Testing near me - Corinth ...",
+            "position": 6,
+            "ratingCount": 1450
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Restaurants&find_near=clearly-perfect-pool-service-lantana",
+            "title": "Best Restaurants near Clearly Perfect Pool Service in Lantana, TX ...",
+            "snippet": "Reviews on Restaurants near Clearly Perfect Pool Service ... Best Restaurants near Clearly Perfect Pool Service in Lantana, TX ... Denton, TX 76201. This is a ...",
+            "position": 7
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Things+to+Do&find_near=clearly-perfect-pool-service-lantana",
+            "title": "Best Things to Do near Clearly Perfect Pool Service in Lantana, TX ...",
+            "snippet": "Best Things to Do near Clearly Perfect Pool Service in Lantana, TX ... Old Alton Rd, Denton, TX 76210. Came across this place when I was looking for ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.yelp.com/biz/swan-custom-pools-denton",
+            "title": "SWAN CUSTOM POOLS - Updated February 2026 - Denton, Texas",
+            "rating": 3.7,
+            "snippet": "SWAN CUSTOM POOLS, Denton, TX 76210, 3 Photos, (940) 382-6409, Mon - 9:00 am ... Photo of Clearly Perfect Pool Service. Clearly Perfect Pool Service. 4 ...",
+            "position": 9,
+            "ratingCount": 9
+          },
+          {
+            "link": "https://www.yelp.com/biz/rsm-pool-care-and-maintenance-denton",
+            "title": "RSM POOL CARE AND MAINTENANCE - CLOSED - Yelp",
+            "rating": 3.6,
+            "snippet": "RSM POOL CARE AND MAINTENANCE - CLOSED, 3500 Fort Worth Drive, Denton, TX ... Photo of Clearly Perfect Pool Service. Clearly Perfect Pool Service. 4 reviews.",
+            "position": 10,
+            "ratingCount": 8
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:36:33.974Z",
+      "data": {
+        "query": "site:dentoncounty.gov Clearly Perfect Pool Service",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:37:23.386Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Clearly Perfect Pool Service\" Denton",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:35:32.710Z",
+      "data": {
+        "query": "Clearly Perfect Pool Service Denton site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Feb 19, 2023",
+            "link": "https://www.nbcdfw.com/news/business/money-report/the-most-expensive-home-in-the-caribbean-just-listed-for-200-million-take-a-look-inside/3198372/",
+            "title": "The Most Expensive Home in the Caribbean Just Listed for $200 ...",
+            "snippet": "The Terraces was just listed for $200 million, making it the most expensive home in the Caribbean. The sprawling estate spans 17 acres and ...",
+            "position": 1
+          },
+          {
+            "date": "Oct 9, 2017",
+            "link": "https://www.nbcdfw.com/news/local/im-not-giving-up-firefighters-battling-cancer-workers-comp-denials/42104/",
+            "title": "“I'm Not Giving Up”: Firefighters Battling Cancer & Worker's Comp ...",
+            "snippet": "So why are cases still being denied? NBC5 asked Captain Lindsey's worker's comp insurer, the Texas Municipal League Intergovernmental Risk Pool ...",
+            "position": 2
+          },
+          {
+            "date": "Oct 12, 2005",
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/evan-baxter-obituary?id=27230703",
+            "title": "Evan Baxter Obituary (1989 - 2005) - Dallas, TX",
+            "snippet": "Evan Andrew, age 15, of Lewisville, died Sunday, October 9, 2005 in Dallas as a result of an accident in Lewisville.",
+            "position": 3
+          },
+          {
+            "date": "Sep 7, 2023",
+            "link": "https://www.dallasnews.com/arts-entertainment/music/2023/09/07/sorry-i-like-the-cover-version-of-your-song-better-than-the-original-heres-why/",
+            "title": "Can weird cover versions of popular songs help you understand the ...",
+            "snippet": "Some cover songs on YouTube may be better than the original versions, writes The News' Christopher Wynn. From left, viral music star Joseph ...",
+            "position": 4
+          },
+          {
+            "date": "Aug 3, 2021",
+            "link": "https://www.nbcdfw.com/news/sports/tokyo-summer-olympics/5-to-watch/5-to-watch-more-medals-in-track-basketball-volleyball-quarterfinals-golf-and-park/2705641/",
+            "title": "Medals in Track, Basketball & Volleyball Quarterfinals, Golf and Park ...",
+            "snippet": "For a team that has won six straight gold medals and more than 50 consecutive games, playing from behind is unfamiliar and unexpected territory.",
+            "position": 5
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05",
+            "title": "[XML] https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05",
+            "snippet": "... pool perfect four year-round parties. It is thirteen hundred square feet of constant suprises. We join agent Loy Carlos for a tour.</video:description> ...",
+            "position": 6
+          },
+          {
+            "date": "Jun 22, 2025",
+            "link": "https://www.dallasnews.com/sports/fc-dallas/2025/06/22/how-the-usmnt-overcame-mistakes-to-beat-haiti-the-most-important-action-is-the-next-one/",
+            "title": "How the USMNT overcame mishaps to beat Haiti",
+            "snippet": "A goalkeeping error and a couple disallowed goals placed the US in a tricky spot Sunday at AT&T Stadium.",
+            "position": 7
+          },
+          {
+            "date": "Apr 1, 2022",
+            "link": "https://www.nbcdfw.com/video/news/sports/what-is-the-group-of-death-in-the-world-cup/2929829/",
+            "title": "What Is the Group of Death in the World Cup? – NBC 5 Dallas-Fort ...",
+            "snippet": "The toughest pool of teams in the World Cup tournament is sometimes called the Group of Death. Here's why.",
+            "position": 8
+          },
+          {
+            "date": "May 12, 2024",
+            "link": "https://www.dallasnews.com/opinion/letters-to-the-editor/2024/05/12/letters-to-the-editor-gun-culture-dallas-bonds-uncomfortable-talks-scripture/",
+            "title": "Letters to the Editor — Gun culture, Dallas bonds, uncomfortable ...",
+            "snippet": "In my anger and grief, it makes me think that those who defend it must care about guns more than these lives lost. How else could they defend it ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05&type=video",
+            "title": "[XML] sitemap.xml - NBC 5 Dallas-Fort Worth",
+            "snippet": "... pool perfect four year-round parties. It is thirteen hundred square feet of constant suprises. We join agent Loy Carlos for a tour.</video:description> ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:35:44.146Z",
+      "data": "Clearly Perfect Pool Service Denton review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.7M views 4 years ago Life With Evan Life With Evan SHORTS SHORTS Now playing Pool cleaning step by step - pool maintenance 🧽✅🧑🏻‍🔧 Dunota Pools, Central Florida Dunota Pools Dunota Pools • • 123K views 2 years ago Dunota Pools Dunota Pools SHORTS SHORTS Now playing The water is very cloudy. Look at the results! Part 1 Drive Your Pool Drive Your Pool • • 113K views 2 years ago Drive Your Pool Drive Your Pool Enjoy the treatment of this pool . Enjoy the treatment of this pool . From the video description Book now Easy International Payroll Reduce overhead with Remote's all-in-one payroll platform. Sponsored Remote SHORTS SHORTS Now playing Pool Cleaning Tips 101: Netting, Vacuuming, Chemicals #poolcleaning Picture Perfect Pool Services Inc. Picture Perfect Pool Services Inc. • • 46K views 1 year ago Picture Perfect Pool Services Inc. Picture Perfect Pool Services Inc. Welcome to another day in the life of a professional pool cleaner! In this timelapse video, join me as I demonstrate the essential ... Welcome to another day in the life of a professional pool cleaner! In this timelapse video, join me as I demonstrate the essential ... From the video description SHORTS SHORTS Now playing This ONE Thing Kills Pool Algae (and It's Not Algaecide) Swim University Swim University • • 298K views 2 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description Find new high-value customers with AI-powered ad delivery across top mobile apps. Tap into 1B+ daily mobile users and let Axon’s AI accelerate your brand’s growth. Sponsored Axon by AppLovin Watch Learn more People also watched 0:52 0:52 Now playing Pool Autofills Explained: What to Check If Your Water Level Is Too High or Too Low PoolStar Pool service and maintenance. PoolStar Pool service and maintenance. • • 310 views 7 days ago PoolStar Pool service and maintenance. PoolStar Pool service and maintenance. Is your pool water level constantly changing? An automatic pool autofill can be a huge convenience but when something isn't ... Is your pool water level constantly changing? An automatic pool autofill can be a huge convenience but when something isn't ... From the video description 18:44 18:44 Now playing Pool Rescue! Green to Clean Customer couldn't get any pool companies to help so I stepped in! Justin The Pool Guy Justin The Pool Guy • • 44K views 4 months ago Justin The Pool Guy Justin The Pool Guy This customers pool pump stopped working and they could not get a company to return their call or come out to help. They called ... This customers pool pump stopped working and they could not get a company to return their call or come out to help. They called ... From the video description 11 chapters First Look | Chemicals | Brush Pool | Algaecide and Flock | Remove filters | Next Day Visit | Deck Vac | Net pool | Retreat Chemicals | Rebrush pool | Last Day/ Before and After 11 chapters in this video 11 chapters First Look First Look 0:00 First Look 0:00 Chemicals Chemicals 1:05 Chemicals 1:05 Brush Pool Brush Pool 4:19 Brush Pool 4:19 Algaecide and Flock Algaecide and Flock 5:49 Algaecide and Flock 5:49 Remove filters Remove filters 7:07 Remove filters 7:07 Next Day Visit Next Day Visit 10:19 Next Day Visit 10:19 Deck Vac Deck Vac 11:20 Deck Vac 11:20 26:57 26:57 Now playing Customers Pool Company Stopped Showing Up! Swamp to Crystal Clear Water Justin The Pool Guy Justin The Pool Guy • • 445K views 6 months ago Justin The Pool Guy Justin The Pool Guy This customer had a pool guy stop showing up and there pool turned completely green. After just 2 visit this pool was swim ready ... This customer had a pool guy stop showing up and there pool turned completely green. After just 2 visit this pool was swim ready ... From the video description 8 moments Disassemble Filter | Add Chemicals and Brush | Clean Filter | 2 Hours post visit turn off equipment | Vac out pool | Treat and Brush Pool | Jump In Pool! | Before and After 8 moments in this video 8 moments Disassemble Filter Disassemble Filter 1:06 Disassemble Filter 1:06 Add Chemicals and Brush Add Chemicals and Brush 2:42 Add Chemicals and Brush 2:42 Clean Filter Clean Filter 6:44 Clean Filter 6:44 2 Hours post visit turn off equipment 2 Hours post visit turn off equipment 10:49 2 Hours post visit turn off equipment 10:49 Vac out pool Vac out pool 11:18 Vac out pool 11:18 Treat and Brush Pool Treat and Brush Pool 19:49 Treat and Brush Pool 19:49 Jump In Pool! Jump In Pool! 25:21 Jump In Pool! 25:21 23:35 23:35 Now playing Green to Blue Pool in 24 hours: How to Clean a Green Pool: Pool Cleaning: Cleaning a Swimming Pool Pool elementary Pool elementary • • 549K views 2 years ago Pool elementary Pool elementary Green to Blue Pool Cleaning . How to Clean a Swimming pool that is Green with Algae. How to Clean a Green Pool from start to ... Green to Blue Pool Cleaning . How to Clean a Swimming pool that is Green with Algae. How to Clean a Green Pool from start to ... From the video description 5 moments per 10,000 gallons depending on how bad the pool is. | Brush Everything Good | Always Add Chlorine when UV rays are at a minimum! | Eliminate any places Algae can hide out! | Pressures up 6-8 pounds! 5 auto-generated moments in this video 5 moments per 10,000 gallons depending on how bad the pool is. per 10,000 gallons depending on how bad the pool is. 3:53 per 10,000 gallons depending on how bad the pool is. 3:53 Brush Everything Good Brush Everything Good 6:15 Brush Everything Good 6:15 Always Add Chlorine when UV rays are at a minimum! Always Add Chlorine when UV rays are at a minimum! 8:18 Always Add Chlorine when UV rays are at a minimum! 8:18 Eliminate any places Algae can hide out! Eliminate any places Algae can hide out! 8:52 Eliminate any places Algae can hide out! 8:52 Pressures up 6-8 pounds! Pressures up 6-8 pounds! 10:10 Pressures up 6-8 pounds! 10:10 + 6 more 7:00 7:00 Now playing Pool Service Business - Understanding your service rates Pool Rescuers Pool Rescuers • • 15K views 6 years ago Pool Rescuers Pool Rescuers 0:00 What's up pool service pros my name is Ryan today I want to talk to you about understanding your service rates and why it's ... What's up pool service pros my name is Ryan today I want to talk to you about understanding your service rates and why it's ... Automatic captions 4K SHORTS SHORTS Now playing Making money in the pool service business... srvcly srvcly • • 27K views 1 year ago srvcly srvcly In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... From the video description SHORTS SHORTS Now playing How to Service an Intellichlor Salt Chlorinator 🏊‍♂️✨ Picture Perfect Pool Services Inc. Picture Perfect Pool Services Inc. • • 1.5K views 1 year ago Picture Perfect Pool Services Inc. Picture Perfect Pool Services Inc. Welcome to Picture Perfect Pools! ✨ In this video, our expert technician takes you through the step-by-step process of servicing ... Welcome to Picture Perfect Pools! ✨ In this video, our expert technician takes you through the step-by-step process of servicing ... From the video description SHORTS SHORTS Now playing Pool cleaning step by step💙 Dunota Pools - Maintenance Service Dunota Pools Dunota Pools • • 32K views 2 years ago Dunota Pools Dunota Pools Learn more Mil caminos por explorar Con la nueva Nissan Pathfinder V6 no hay camino que se le resista. Sponsored Nissan SHORTS SHORTS Now playing Ultimate pool care means zero guesswork. 😬😬😬 Calixpert Pools Calixpert Pools • • 1.8K views 7 days ago Calixpert Pools Calixpert Pools Just professionals handling your maintenance , repairs, and upgrades — the right way. No shortcuts. No surprises. Just reliable ... Just professionals handling your maintenance , repairs, and upgrades — the right way. No shortcuts. No surprises. Just reliable ... From the video description SHORTS SHORTS Now playing 5 Things You Must Do Weekly To Your Pool #shorts Easy Clear Pool Easy Clear Pool • • 272K views 4 years ago Easy Clear Pool Easy Clear Pool Keep your pool clean and maintained regularly with these 5 weekly tips to do on a regular basis. This will help you maintain the ... Keep your pool clean and maintained regularly with these 5 weekly tips to do on a regular basis. This will help you maintain the ... From the video description 3 moments Check Pool Levels | Shock The Pool | Check Filters 3 auto-generated moments in this video 3 moments Check Pool Levels Check Pool Levels 0:10 Check Pool Levels 0:10 Shock The Pool Shock The Pool 0:37 Shock The Pool 0:37 Check Filters Check Filters 0:49 Check Filters 0:49 SHORTS SHORTS Now playing The Ultimate Pool Cleaning Solution Revealed | DIY Filter Upgrade Try This DIY Try This DIY • • 409K views 2 years ago Try This DIY Try This DIY In this video I will show you how to clean your pool with your pool filter. My description includes referral codes/links that allow me ... In this video I will show you how to clean your pool with your pool filter. My description includes referral codes/links that allow me ... From the video description 4:23 4:23 Now playing 6 POOL CHEMICALS to Stop Buying Right Now Swim University Swim University • • 125K views 2 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 8 chapters Stop Buying These Pool Chemicals | 1. Alkalinity Increaser | 2. pH Increaser | 3. pH Decreaser | 4. Chlorine Stabilizer | 5. Calcium Hardness | 6. Phosphate Remover | How to Stop Buying Chlorine 8 chapters in this video 8 chapters Stop Buying These Pool Chemicals Stop Buying These Pool Chemicals 0:00 Stop Buying These Pool Chemicals 0:00 1. Alkalinity Increaser 1. Alkalinity Increaser 0:37 1. Alkalinity Increaser 0:37 2. pH Increaser 2. pH Increaser 1:05 2. pH Increaser 1:05 3. pH Decreaser 3. pH Decreaser 1:51 3. pH Decreaser 1:51 4. Chlorine Stabilizer 4. Chlorine Stabilizer 2:27 4. Chlorine Stabilizer 2:27 5. Calcium Hardness 5. Calcium Hardness 2:48 5. Calcium Hardness 2:48 6. Phosphate Remover 6. Phosphate Remover 3:04 6. Phosphate Remover 3:04 SHORTS SHORTS Now playing Cyclone Filter Cleaning Tool review. #shorts The cyclone in action. How To Swimming Pool How To Swimming Pool • • 2.6K views 3 years ago How To Swimming Pool How To Swimming Pool Shop Cyclone filter cleaning tools. https://cyclonefiltertools.com/?ref=10 https://pod.co/the-deep-end ​@turfsupradio ... Shop Cyclone filter cleaning tools. https://cyclonefiltertools.com/?ref=10 https://pod.co/the-deep-end ​@turfsupradio ... From the video description Visit site Real‑time tax rate engine Skip manual tax tables: Help reduce risk of under‑ or over‑charging customers. Sponsored Avalara 7:53 7:53 Now playing 9 Common SALT WATER POOL MAINTENANCE Mistakes Swim University Swim University • • 963K views 4 years ago Swim University Swim University The Salt Water Pool Cheat Sheet (Free): https://swimu.com/saltwater The Pool Care Handbook: https://swimu.com/book The Pool ... The Salt Water Pool Cheat Sheet (Free): https://swimu.com/saltwater The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 10 chapters Introduction to Salt Water Pool Maintenance | Mistake #1. Thinking A Salt Water Pool Has No Chlorine | Mistake #2. Not Testing Free Chlorine Each Week | Mistake #3. Not Keeping pH Levels In Check | Mistake #4. Adding Too Much Salt Too Quickly | Mistake #5. Not Testing Salinity Levels By Hand | Mistake #6. Not Balancing Alkalinity, Stabilizer, and Calcium Each Month | Mistake #7. Forgetting To Shock Pool Regularly | Mistake #8. Letting High Salt Levels Erode Pool Surfaces and Equipment | Mistake #9. Forgetting To Inspect Your Salt Cell 10 chapters in this video 10 chapters Introduction to Salt Water Pool Maintenance Introduction to Salt Water Pool Maintenance 0:00 Introduction to Salt Water Pool Maintenance 0:00 Mistake #1. Thinking A Salt Water Pool Has No Chlorine Mistake #1. Thinking A Salt Water Pool Has No Chlorine 0:37 Mistake #1. Thinking A Salt Water Pool Has No Chlorine 0:37 Mistake #2. Not Testing Free Chlorine Each Week Mistake #2. Not Testing Free Chlorine Each Week 1:06 Mistake #2. Not Testing Free Chlorine Each Week 1:06 Mistake #3. Not Keeping pH Levels In Check Mistake #3. Not Keeping pH Levels In Check 1:49 Mistake #3. Not Keeping pH Levels In Check 1:49 Mistake #4. Adding Too Much Salt Too Quickly Mistake #4. Adding Too Much Salt Too Quickly 2:29 Mistake #4. Adding Too Much Salt Too Quickly 2:29 Mistake #5. Not Testing Salinity Levels By Hand Mistake #5. Not Testing Salinity Levels By Hand 3:02 Mistake #5. Not Testing Salinity Levels By Hand 3:02 Mistake #6. Not Balancing Alkalinity, Stabilizer, and Calcium Each Month Mistake #6. Not Balancing Alkalinity, Stabilizer, and Calcium Each Month 3:34 Mistake #6. Not Balancing Alkalinity, Stabilizer, and Calcium Each Month 3:34 SHORTS SHORTS Now playing Pool Maintenance in 60 Seconds ⏱️ Swim University Swim University • • 49K views 1 year ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description SHORTS SHORTS Now playing Quick fix for green pools 🦠 #shorts FreshTake FreshTake • • 81K views 3 years ago FreshTake FreshTake Get it on Amazon https://geni.us/1FAryP (Amazon) Get it on Amazon https://geni.us/1FAryP (Amazon) From the video description 18:39 18:39 Now playing The Surprisingly Simple Business of Pool Cleaning Codie Sanchez Codie Sanchez • • 122K views 3 years ago Codie Sanchez Codie Sanchez Want to learn how to buy a business? (Free Consult): https://contrarianthinking.biz/youtubefam Learn Main Street ways to make ... Want to learn how to buy a business? (Free Consult): https://contrarianthinking.biz/youtubefam Learn Main Street ways to make ... From the video description 4K SHORTS SHORTS Now playing We turned this neon green pool back to blue without any shock! Ocion Blue Ocion Blue • • 50K views 2 years ago Ocion Blue Ocion Blue Many pool owners struggle with algae growth in the spring, especially when the weather starts to get a bit warmer, but not warm ... Many pool owners struggle with algae growth in the spring, especially when the weather starts to get a bit warmer, but not warm ... From the video description SHORTS SHORTS Now playing Maintenance & Changeover of Chlorinator Cells | Highfields, Toowoomba Craig's Pool Maintenance Craig's Pool Maintenance • • 6.4K views 4 years ago Craig's Pool Maintenance Craig's Pool Maintenance Does your chlorinator cell appear to have heavy calcification on the metallic plates? Salt cells require regular cleaning to remove ... Does your chlorinator cell appear to have heavy calcification on the metallic plates? Salt cells require regular cleaning to remove ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:35:45.430Z",
+      "data": {
+        "query": "site:nextdoor.com Clearly Perfect Pool Service Denton",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/neighborhood/castlehillslewisville--lewisville--tx/",
+            "title": "Castle Hills, Lewisville | Everything You Need to Know - Nextdoor",
+            "snippet": "Castle Hills is a friendly, family-oriented neighborhood in Lewisville, Texas. Known for its well-maintained parks, golf course, and community events, ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:37:09.029Z",
+      "data": {
+        "name": "Clearly Perfect Pool Service",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 800-2123",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "950 Hondo Rd, Lantana, TX 76226",
+        "reviews": [],
+        "website": "http://www.clearlyperfectpoolservice.com/",
+        "maps_url": "https://www.google.com/maps/search/Clearly%20Perfect%20Pool%20Service%20Denton%2C%20TX",
+        "categories": [
+          "Swimming pool"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:37:17.597Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [
+          {
+            "link": "https://www.angi.com/companylist/us/tx/denton/clearly-perfect-pool-service-reviews-1.htm",
+            "title": "Primary Pool Care Reviews - Denton, TX | Angi",
+            "snippet": "See reviews for Primary Pool Care in Denton, TX at 2117 Carefree Ct from Angi members or join today to leave your own review."
+          }
+        ],
+        "result_count": 1,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:37:18.554Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:35:21.984Z",
+      "data": "Trustpilot Search Results Companies Clearly clearly.ca • 62K reviews 4.4 Clearly clearly.eu • 890 reviews 4.8 Perfect Pool perfectpool.co 3.5 My Perfect Pool my-perfect-pool.de • 16 reviews 3.9 Perfect Pet www.perfectpetinsurance.co.uk • 15K reviews 4.6 Categories Pool Cleaning Service The best companies in the category 'Pool Cleaning Service' Swimming Pool The best companies in the category 'Swimming Pool' Pool Academy The best companies in the category 'Pool Academy' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (5753) Clearly clearly.ca 4.4 62,024 reviews 401 W Georgia St, Vancouver, Canada Clearly clearly.eu 4.8 890 reviews Netherlands Perfect Pool perfectpool.co 3.5 0 reviews United States My Perfect Pool my-perfect-pool.de 3.9 16 reviews Klosterstraße 32, Worms, Germany Perfect Pet www.perfectpetinsurance.co.uk 4.6 14,583 reviews Warner House, Salisbury, United Kingdom Clearly Therapy clearly.help 3.9 26 reviews 8 The Green St. Suite #13997, Dover, United States Clearly clearly.de 0.0 0 reviews Germany Pool pool.net 4.4 636 reviews Edertalstr. 86, Mörlenbach, Germany Perfect perfect.cash 4.1 5 reviews United States Perfect Cab Service perfectcabservice09.in 3.8 2 reviews Bhai Pratap Society BHarat Nagar, Gandhidham Kutch, India Previous 1 2 3 4 576 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Pool Cleaning Service Home Services Swimming Pool Repair Service Home & Garden Swimming Pool Sports Pool Academy Sports Pool Hall Sports Swimming Pool Supply Store Construction & Manufacturing are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:35:26.448Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:35:29.917Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:37:24.705Z",
+      "data": {
+        "found": true,
+        "query": "\"Clearly Perfect Pool Service\" Denton lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://m.yelp.ca/biz/outdoor-living-pool-and-patio-denton",
+            "title": "OUTDOOR LIVING POOL & PATIO - Denton, Texas - Yelp",
+            "snippet": "... scam! This company does not deserve a 1 star it deserves -100 stars ... Clearly Perfect Pool Service. Clearly Perfect Pool Service. 4 reviews. Photo of ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:37:21.861Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Clearly Perfect Pool Service\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:37:24.093Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Clearly Perfect Pool Service\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:36:10.499Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Clearly%20Perfect%20Pool%20Service&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Clearly% 20Perfect% 20Pool% 20Service&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Clearly% 20Perfect% 20Pool% 20Service&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Clearly% 20Perfect% 20Pool% 20Service&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Clearly% 20Perfect% 20Pool% 20Service&State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Clearly% 20Perfect% 20Pool% 20Service&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= 20Perfect% 20Pool% 20Service&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= 20Perfect% 20Pool% 20Service&State= TX"
+            }
+          },
+          {
+            "link": "https://www.epa.gov/frs",
+            "title": "Facility Registry Service (FRS) - EPA",
+            "snippet": "Search a Single Facility or Location. Are you asking questions about a business? Search FRS data with the Enforcement and Compliance History Online website.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= Clearly% 20Perfect% 20Pool% 20Service&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search",
+            "title": "Enforcement Case Search | ECHO | US EPA",
+            "snippet": "Enforcement Case Search · Case Identifiers · Facility Location · Case Attributes · Case Milestones and Dates · Enforcement Case Outcomes/Settlements.",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= Clearly% 20Perfect% 20Pool% 20Service&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:36:13.986Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:36:19.479Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:36:27.066Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Clearly Perfect Pool Service",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Sep 13, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/executive-management/Google%20ruling.pdf",
+            "title": "[PDF] Case 1:21-md-03010-PKC Document 308 Filed 09/13/22 Page 1 of 92",
+            "snippet": "Google then added this secretly retained payment into a pool that was used to increase the bids of Google's advertiser clients using AdX. As ...",
+            "position": 1
+          },
+          {
+            "date": "Feb 28, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/executive-management/Petition%20for%20Review%20(GHG%20Standards).pdf",
+            "title": "[PDF] PETITION FOR REVIEW - Texas Attorney General",
+            "snippet": "In accordance with 42 U.S.C. § 7607(b)(1), Federal Rule of Appellate Procedure. 15, and D.C. Circuit Rule 15(a)(1), Petitioner the State of ...",
+            "position": 2
+          },
+          {
+            "date": "Dec 12, 2025",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Petition_5.pdf",
+            "title": "[PDF] STATE OF TEXAS, Plaintiff, v. SOUTHWESTERN PUBLIC SERVICE ...",
+            "snippet": "SPS implemented a formal distribution wood pole maintenance program in 2009. As of September 2014, approximately 25% of the 450,000 ...",
+            "position": 3
+          },
+          {
+            "date": "May 5, 1999",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1999/jc0043.pdf",
+            "title": "[PDF] May 5,1999 Mr. Charles L. Dunlap Executive Director Teacher ...",
+            "snippet": "On behalf of the Board of Trustees of the Teacher Retirement System (the “Board”), you inquire about the Board's authority to invest the ...",
+            "position": 4
+          },
+          {
+            "date": "Aug 5, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Google%20Search%20Engine%20Monopoly%20Ruling.pdf",
+            "title": "[PDF] Case 1:20-cv-03010-APM Document 1033 Filed 08/05/24 Page 1 of ...",
+            "snippet": "MEMORANDUM OPINION. Case 1:20-cv-03010-APM Document 1033 Filed 08/05/24 Page 1 of 286. Page 2. i. TABLE OF CONTENTS. INTRODUCTION.",
+            "position": 5
+          },
+          {
+            "date": "Nov 5, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/images/Petition%20for%20Review%20(to%20file)%20(1).pdf",
+            "title": "[PDF] In the United States Court of Appeals for the Fifth Circuit",
+            "snippet": "... Service. On November 5, 2021, this petition for review was served by certified mail, return receipt requested, on: Douglas Parker, Assistant ...",
+            "position": 6
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:36:28.120Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number must be from 6 to 10 digits.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 4
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 8
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:36:30.469Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Clearly Perfect Pool Service",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:36:31.593Z",
+      "data": {
+        "query": "site:dallascounty.org Clearly Perfect Pool Service civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Feb 15, 1994",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/human-resources/exam-study-guides/2025-General-Orders.pdf",
+            "title": "[PDF] 2025-General-Orders.pdf - Dallas County",
+            "snippet": "This manual provides employees with guidelines and policy for the uniform enforcement of state, local, and federal laws, ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/treasurer/financials/Dallas-County-Investment-Policy-Updated.pdf",
+            "title": "[PDF] dallas county investment policy",
+            "snippet": "It is the policy of Dallas County to invest public funds in a manner which will provide safety of principal and a reasonable return while meeting the daily ...",
+            "position": 2
+          },
+          {
+            "date": "Jan 27, 2014",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2014/JBP_2014Jan27_ngSignedOrders.pdf",
+            "title": "[PDF] COUt+l Y CLErtK - Dallas County",
+            "snippet": "The Dallas County Juvenile Board met for its scheduled meeting on November 25, 2013, at the Dallas County. Youth Village, 1508 E. B. Langdon ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "[PDF] A 21st Century Mosaic - Dallas County",
+            "snippet": "First proposed in 1957 as an outer loop for Dallas County, service road construction began in 1977, but stalled for lack of money. Construction began in 1996, ...",
+            "position": 4
+          },
+          {
+            "date": "Feb 23, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2015/JB_Packet_022715_withoutOrders.pdf",
+            "title": "[PDF] JB_Packet_022715_withoutOrders.pdf - Dallas County",
+            "snippet": "... civil immigration purposes, immigrant services agencies. The facility shall enable reasonable communication between residents and these ...",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:36:32.834Z",
+      "data": {
+        "query": "site:collincountytx.gov Clearly Perfect Pool Service",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210125_2587/33858_RTC%20Packet%2001-14-2021.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on January 14, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 1
+          },
+          {
+            "date": "Oct 1, 2017",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/FY2018AdoptedBudget.pdf",
+            "title": "[PDF] FY 2018 Adopted Budget - Collin County",
+            "snippet": "This budget will raise more revenue from property taxes than last year's budget by an amount of $5,130,883 which is 2.48 percent increase ...",
+            "position": 2
+          },
+          {
+            "date": "Oct 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20211018_2693/33858_RTC%20Packet%2010-14-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, October 14 ...",
+            "snippet": "The RTC meeting on October 14, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 3
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210315_2611/33858_agenda-packet-mar.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL Thursday ...",
+            "snippet": "The RTC meeting on March 11, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so by calling ...",
+            "position": 4
+          },
+          {
+            "date": "Nov 12, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201116_2558/33858_RTC%20Packet%2011-12-2020.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on November 12, 2020, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 5
+          },
+          {
+            "date": "Jul 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210716_2662/33858_RTC%20Packet%2007-08-2021.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL Thursday, July ...",
+            "snippet": "The RTC meeting on July 8, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so ...",
+            "position": 6
+          },
+          {
+            "date": "Aug 12, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210920_2680/33858_RTC%20Packet%2009-09-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, September 9 ...",
+            "snippet": "NCTCOG anticipates all agreement delays will be. Page 3. resolved within 90 days, but interim funding is needed to continue vanpool service.",
+            "position": 7
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210412_2620/33858_agenda-packet-apr.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on April 8, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so ...",
+            "position": 8
+          },
+          {
+            "date": "Oct 8, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201012_2540/33858_agenda-packet-oct.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL Thursday ...",
+            "snippet": "The RTC meeting on October 8, 2020, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:37:22.359Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Clearly Perfect Pool Service\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Clearly-Perfect-Pool-Service/salaries/Cleaner",
+            "title": "Cleaner Salaries in the United States for Clearly Perfect Pool Service",
+            "snippet": "Average Clearly Perfect Pool Service Cleaner weekly pay in the United States is approximately $574, which is 9% below the national average. Salary estimated ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:36:39.266Z",
+      "data": {
+        "name": "Clearly Perfect Pools, Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(972) 617-7665",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/red-oak/profile/pool-service/clearly-perfect-pools-inc-0875-90025137",
+        "review_count": null,
+        "founding_date": "01/01/1990",
+        "complaint_count": null,
+        "accredited_since": "2/17/2006",
+        "years_in_business": 36,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:36:44.383Z",
+      "data": {
+        "name": "Clearly Perfect Pool Service",
+        "found": true,
+        "rating": 5,
+        "source": "serpapi",
+        "address": "950 Hondo Rd, Lantana, TX 76226",
+        "data_id": "0x864dcd1e083ae33d:0xb3aefc5ad9804595",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 2,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "a month ago",
+            "text": "Unfortunately, I don’t own a pool in Lantana, TX — because if I did, I would be a lifelong customer of Clearly Perfect Pool Service.\n\nMy dog, Bruno, was staying at my girlfriend’s house and managed to get out. Thankfully, Brett, a technician with Clearly Perfect Pool Service, found him. Bruno had my phone number on his tag, and Brett took the time to call me and personally return him.\n\nHe was incredibly friendly and truly went above and beyond to help reunite us with our dog. That kind of character and customer care says everything about the people Clearly Perfect Pool Service hires.\n\nHuge thanks to Brett and the Clearly Perfect Pool Service team!",
+            "author": "Steve Kneller",
+            "rating": 5
+          },
+          {
+            "date": "9 months ago",
+            "text": "We've been extremely pleased with the service and tremendous expertise Kraig and the Clearly Perfect Pool Service team have provided - dealing with complex issues and providing excellent options to keep our pool clean, healthy and well-maintained. Their level of experience and knowledge is awesome, and very, very different from their competitors.",
+            "author": "Geoff Jenkins",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": null,
+        "pages_fetched": 1,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "NO_REVIEWS",
+        "location_searched": "Denton, TX",
+        "search_confidence": 0.6199999999999999,
+        "serper_fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:37:09.026Z",
+      "data": {
+        "name": "Clearly Perfect Pool Service",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 800-2123",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "950 Hondo Rd, Lantana, TX 76226",
+        "reviews": [],
+        "website": "http://www.clearlyperfectpoolservice.com/",
+        "maps_url": "https://www.google.com/maps/search/Clearly%20Perfect%20Pool%20Service%20Denton%2C%20TX",
+        "categories": [
+          "Swimming pool"
+        ],
+        "review_count": null
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:37:11.134Z",
+      "data": {
+        "email": "contact@clearlyperfectpoolservice.com",
+        "error": null,
+        "source": "homepage"
+      }
+    },
+    "website_warranty": {
+      "status": "error",
+      "fetched_at": "2026-02-13T04:37:11.353Z",
+      "data": null
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:37:16.363Z",
+      "data": {
+        "found": true,
+        "rating": 4.5,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/clearly-perfect-pool-service-lantana",
+        "review_count": 46
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:37:20.249Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Clearly Perfect Pool Service\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:37:42.344Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T04:37:28Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Clearly%20Perfect%20Pool%20Service%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=h6qOadHgOtntptQPj6LoiA8\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T04:37:37Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Clearly%20Perfect%20Pool%20Service%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=kaqOaaL4E5LcptQP7urf6AU\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Clearly Perfect Pool Service",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:37:42.999Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T04:37:43.000Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:37:56.930Z",
+      "data": {
+        "cost": 0.0007498400000000001,
+        "summary": "The contractor has a long, established history with strong accreditation (BBB A+). The primary concern is the extremely low review count on Google (2) which seems inconsistent with a 36-year-old business, though one review is highly detailed and authentic. The substantial Yelp presence (46 reviews, 4.5 stars) lends credibility. There is no evidence of review manipulation, but the data is sparse on some platforms.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-13T04:37:56.930Z",
+        "fake_signals": [
+          "Very low review volume on Google (2 reviews) for a 36-year-old business",
+          "One Google review is about a dog rescue, not pool service"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 4.5,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "NO_EVIDENCE",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Long business history (36 years)",
+          "BBB A+ rating and accreditation since 2006",
+          "Yelp shows substantial review count (46) with a realistic 4.5 rating",
+          "One Google review contains specific names (Brett, Kraig) and details of service expertise"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are consistently high across Google (5.0), Yelp (4.5), and BBB (A+). The lack of negative reviews on Google is notable but not inherently suspicious given the small sample size and the company's long-standing reputation."
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:16:24.648Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Clearly Perfect Pool Service",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Clearly Perfect Pool Service",
+        "searched_at": "2026-02-13T07:14:55.181699",
+        "total_records": 0
+      }
+    }
+  }
+}

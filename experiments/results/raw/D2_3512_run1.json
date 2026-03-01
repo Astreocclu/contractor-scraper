@@ -1,0 +1,68 @@
+{
+  "variation": "D2",
+  "contractor_id": 3512,
+  "contractor_name": "1-Tom-Plumber",
+  "archetype": "new_promising",
+  "expected_score": 75,
+  "run": 1,
+  "timestamp": "2026-01-20T19:20:49.394Z",
+  "success": true,
+  "trust_score": 86,
+  "risk_level": "LOW",
+  "reasoning": "Mixed council: DeepSeek=88, Claude=78, Gemini=92, Avg=86",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 88,
+      "risk_level": "LOW",
+      "reasoning": "This contractor demonstrates exceptional customer service quality with overwhelmingly positive reviews across multiple platforms, particularly Google (5.0/5.0 with 290 reviews) and Yelp (4.9/5.0 with 354 reviews). The detailed, authentic reviews consistently praise specific technicians (Scott, David) for professionalism, emergency responsiveness, and fair pricing. While the business appears to be a franchise with some employee satisfaction concerns (Glassdoor 3.0/5.0), the customer-facing performance is outstanding with no legal red flags, regulatory issues, or significant complaints found. The only consistent critique is higher pricing, which is typical for emergency/quality plumbing services.",
+      "key_factors": [
+        "Exceptional customer reviews with high volume and authenticity",
+        "24/7 emergency service with rapid response times",
+        "No legal, regulatory, or complaint red flags found",
+        "Specific technician praise indicating quality workmanship"
+      ],
+      "red_flags": [
+        "Higher pricing mentioned in some reviews",
+        "Moderate employee satisfaction scores (Glassdoor 3.0/5.0)"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 78,
+      "risk_level": "LOW",
+      "reasoning": "1-Tom-Plumber demonstrates strong operational performance with exceptional customer reviews (5.0 Google, 4.9 Yelp) from 290+ verified customers praising specific technicians like Scott and David for professional, timely service. The company operates 24/7 emergency services with consistent positive feedback about responsiveness and quality work. While there are no significant legal issues or regulatory violations found, the primary concern is higher-than-average pricing mentioned in reviews, and employee satisfaction appears modest at 3.0/5 on Glassdoor. The business appears legitimate and well-established with a strong web presence and operational infrastructure.",
+      "key_factors": [
+        "Exceptionally high customer satisfaction with 290+ authentic Google reviews",
+        "Consistent praise for specific employees and professional service quality",
+        "24/7 emergency service capability with proven responsiveness"
+      ],
+      "red_flags": [
+        "Higher pricing compared to competitors as noted in customer reviews",
+        "Modest employee satisfaction rating (3.0/5) on Glassdoor"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 92,
+      "risk_level": "LOW",
+      "reasoning": "1-Tom-Plumber demonstrates a strong commitment to customer satisfaction, evidenced by overwhelmingly positive reviews on Google Maps and Yelp. The reviews highlight prompt service, knowledgeable technicians, and a willingness to go above and beyond. While some reviews mention higher pricing, this is often associated with emergency services and quality workmanship. The company's proactive engagement on social media and focus on water damage restoration further contribute to a positive overall assessment.",
+      "key_factors": [
+        "Exceptional customer reviews",
+        "24/7 emergency service",
+        "Water damage restoration expertise"
+      ],
+      "red_flags": [
+        "Higher pricing mentioned in some reviews"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Higher pricing mentioned in some reviews",
+    "Moderate employee satisfaction scores (Glassdoor 3.0/5.0)",
+    "Higher pricing compared to competitors as noted in customer reviews",
+    "Modest employee satisfaction rating (3.0/5) on Glassdoor"
+  ],
+  "cost_usd": 0.10432170249999999,
+  "duration_ms": 9738
+}

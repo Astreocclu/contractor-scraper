@@ -1,0 +1,903 @@
+{
+  "contractor_id": 591,
+  "business_name": "Primo Pool Services",
+  "city": "Cedar Hill",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-07T13:25:45.591Z",
+  "sources": {
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:40:00.106Z",
+      "data": {
+        "query": "site:yelp.com \"Primo Pool Services\" \"Cedar Hill, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps": {
+      "status": "success",
+      "fetched_at": "2025-12-05T18:22:06.909Z",
+      "data": {
+        "found": true,
+        "rating": 2.9,
+        "status": null,
+        "review_count": 17,
+        "business_name": null
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:51.897Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:52.524Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:40:41.085Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:40:43.512Z",
+      "data": {
+        "query": "Primo Pool Services Cedar Hill site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 9, 2019",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-diving-into-pool-parties-and-more-things-to-do-2/210701/",
+            "title": "Dog About Town: Diving Into Pool Parties and More Things ...",
+            "snippet": "... Cedar Hill State Park. 1570 FM1382, Cedar Hill, 972-291-3900Pioneer Plaza: Young and Griffin streets, DallasRafter J Cowboy Church: Their ...",
+            "position": 1
+          },
+          {
+            "date": "Apr 12, 2019",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2019/04/12/dog-about-town-sniffing-out-treats-and-the-easter-bunny-and-more-things-to-do/",
+            "title": "Dog About Town: Sniffing out treats and the Easter Bunny ...",
+            "snippet": "BK has details on egg hunts, Easter photos and other events, along with an updated list of dog-friendly patios, stores and attractions.",
+            "position": 2
+          },
+          {
+            "date": "Oct 24, 2013",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2013/10/25/dog-about-town-trick-or-treating-for-a-good-cause-and-more-things-to-do-with-your-pooch/",
+            "title": "Dog About Town: Trick-or-treating for a good cause and ...",
+            "snippet": "The lineup includes costume contests and other games, treats and adoptions. 5922 Cedar Springs Road. $10 per person, free for kids under 13. 214 ...",
+            "position": 3
+          },
+          {
+            "date": "Apr 28, 2017",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-playdates-for-the-books-and-more-things-to-do/18712/",
+            "title": "Dog About Town: Playdates for the Books and More Things ...",
+            "snippet": "This year's Dog Bowl, from 1 to 5 p.m. Sunday at the Cotton Bowl in Fair Park, will also feature off-leash playing and splashing in kiddie pools ...",
+            "position": 4
+          },
+          {
+            "date": "Mar 30, 2018",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-sniff-and-strut-with-your-pooch-this-weekend/65227/",
+            "title": "Dog About Town: Sniff and Strut With Your Pooch This ...",
+            "snippet": "Belt Line Road, Cedar Hill, 469-454-8632La Calle Doce: 415 W. 12th ... services like a bone-shaped dog pool (complete with fire hydrant ...",
+            "position": 5
+          },
+          {
+            "date": "Mar 16, 2018",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-celebrating-st-pats-and-more-pooch-friendly-fun/220145/",
+            "title": "Dog About Town: Celebrating St. Pat's and More Pooch- ...",
+            "snippet": "... Cedar Hill State Park. 1570 FM1382, Cedar Hill, 972-291-3900Pioneer Plaza: Young and Griffin streets, DallasRafter J Cowboy Church: Their ...",
+            "position": 6
+          },
+          {
+            "date": "Oct 20, 2017",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-costume-party-hopping-and-more-things-to-do/43528/",
+            "title": "Dog About Town: Costume Party Hopping and More ...",
+            "snippet": "Belt Line Road, Cedar Hill, 469-454-8632La Calle Doce: 415 W. 12th ... services like a bone-shaped dog pool (complete with fire hydrant ...",
+            "position": 7
+          },
+          {
+            "date": "Jan 12, 2018",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-raising-a-brew-to-the-new-year-and-more-things-to-do/70832/",
+            "title": "Dog About Town: Raising a Brew to the New Year and ...",
+            "snippet": "Dallas Pets Alive's Brew Tour will kick offfrom 2 to 5 p.m. Saturday inside Community Beer Co., 1530 Inspiration Drive.",
+            "position": 8
+          },
+          {
+            "date": "Jul 21, 2017",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-chilling-out-and-more-things-to-do-with-your-pooch/31424/",
+            "title": "Dog About Town: Chilling Out and More Things to Do With ...",
+            "snippet": "Dog Days of Summer, from 11 am to 1 pm Saturday in Highland Village, will feature adoptions, a pet parade, vendors, agility show, photo booth, caricature ...",
+            "position": 9
+          },
+          {
+            "date": "Mar 10, 2017",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-dog-about-town-st-patrsquos-parties-and-more-things-to-do/57458/",
+            "title": "Dog About Town: St. Pat's Parties and More Things to Do",
+            "snippet": "Belt Line Road, Cedar Hill, 469-454-8632La Calle Doce: 415 W. 12th ... services like a bone-shaped dog pool (complete with fire hydrant ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:40:55.629Z",
+      "data": "Primo Pool Services Cedar Hill review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 0:19 0:19 Now playing Why Is Important Have a Pool Technician | JMC Pools JMC Pools | Design. Build. Escape. JMC Pools | Design. Build. Escape. • • 92 views 2 years ago JMC Pools | Design. Build. Escape. JMC Pools | Design. Build. Escape. Pool care goes beyond just chlorine! Our pool expert breaks down what you need to know to maintain the perfect balance in your ... Pool care goes beyond just chlorine! Our pool expert breaks down what you need to know to maintain the perfect balance in your ... From the video description SHORTS SHORTS Now playing Love your job? How much can a pool tech make? Pool Crew AU Pool Crew AU • • 5.5K views 3 years ago Pool Crew AU Pool Crew AU First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... From the video description 17:24 17:24 Now playing Pool Care for Beginners- How to clean and maintain your pool- Filmed in 4k Fix It With Jake Fix It With Jake • • 505K views 6 years ago Fix It With Jake Fix It With Jake Pool Test Strips: https://amzn.to/44YyNT8 Pentair Pump Basket: https://amzn.to/2YEXSnI Polaris Black Robot: ... Pool Test Strips: https://amzn.to/44YyNT8 Pentair Pump Basket: https://amzn.to/2YEXSnI Polaris Black Robot: ... From the video description 4K 8 chapters Intro | Cleaning | Skimmer | Filter | Circulation | Equipment | Chemistry | Salt 8 auto-generated chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Cleaning Cleaning 1:07 Cleaning 1:07 Skimmer Skimmer 3:31 Skimmer 3:31 Filter Filter 6:12 Filter 6:12 Circulation Circulation 7:25 Circulation 7:25 Equipment Equipment 9:26 Equipment 9:26 Chemistry Chemistry 13:00 Chemistry 13:00 18:39 18:39 Now playing The Surprisingly Simple Business of Pool Cleaning Codie Sanchez Codie Sanchez • • 120K views 3 years ago Codie Sanchez Codie Sanchez Want to learn how to buy a business? (Free Consult): https://contrarianthinking.biz/youtubefam Learn Main Street ways to make ... Want to learn how to buy a business? (Free Consult): https://contrarianthinking.biz/youtubefam Learn Main Street ways to make ... From the video description 4K 3:58 3:58 Now playing How Much Does Pool Service Cost? | Pool Maintenance Prices? Premier Pools & Spas and Premier Pool Service Premier Pools & Spas and Premier Pool Service • • 6K views 3 years ago Premier Pools & Spas and Premier Pool Service Premier Pools & Spas and Premier Pool Service How much does pool service cost? Our own Brian Porter of Premier Pool Service goes into detail the costs associated with pool ... How much does pool service cost? Our own Brian Porter of Premier Pool Service goes into detail the costs associated with pool ... From the video description 4K 4 chapters How much does pool service cost? | Basic Pool Service Costs | Premium Pool Service Costs | Pool Opening & Pool Closing Costs 4 chapters in this video 4 chapters How much does pool service cost? How much does pool service cost? 0:00 How much does pool service cost? 0:00 Basic Pool Service Costs Basic Pool Service Costs 0:17 Basic Pool Service Costs 0:17 Premium Pool Service Costs Premium Pool Service Costs 1:38 Premium Pool Service Costs 1:38 Pool Opening & Pool Closing Costs Pool Opening & Pool Closing Costs 3:18 Pool Opening & Pool Closing Costs 3:18 SHORTS SHORTS Now playing Is Pool PHOSPHATE REMOVER a Scam? ☠️ Swim University Swim University • • 15K views 1 year ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description 12:51 12:51 Now playing Why Do Pool Cleaning Businesses Fail? | Don't Miss the 8th Reason! Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner • • 22K views 3 years ago Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... From the video description 8 chapters 8 Reasons Pool Cleaning Businesses Fail? | Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset | Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly | Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly | Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer | Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast | Reason 6 - Pool Cleaning Businesses Fail – Poor Communication | Reason 7 - Pool Cleaning Businesses Fail – Not Paying their Taxes 8 chapters in this video 8 chapters 8 Reasons Pool Cleaning Businesses Fail? 8 Reasons Pool Cleaning Businesses Fail? 0:00 8 Reasons Pool Cleaning Businesses Fail? 0:00 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.6M views 4 years ago Life With Evan Life With Evan SHORTS SHORTS Now playing Pool service. Addressing the disrespect and lack of appreciation from some clients #shorts How To Swimming Pool How To Swimming Pool • • 2.7K views 3 years ago How To Swimming Pool How To Swimming Pool The Deep End Podcast https://pod.co/the-deep-end @turfsupradio www.turfsupradio.com @bookkeeping-beer-bs @poolwerxusa ... The Deep End Podcast https://pod.co/the-deep-end @turfsupradio www.turfsupradio.com @bookkeeping-beer-bs @poolwerxusa ... From the video description SHORTS SHORTS Now playing Outstanding review of our Claro Pool maintenance service #youtubeshorts #shorts claropool claropool • • 1.4K views 3 years ago claropool claropool This week, we share a lovely review from our dear client Dawn Rashid; she has been our client for 14 years. Isn't she the best and ... This week, we share a lovely review from our dear client Dawn Rashid; she has been our client for 14 years. Isn't she the best and ... From the video description SHORTS SHORTS Now playing #POV Day in the Life of a Pool Technician Pool Crew AU Pool Crew AU • • 22K views 3 years ago Pool Crew AU Pool Crew AU Pool Crew AU we want to help more people with their pools . Share & subscribe. SUBSCRIBE NOW! Pool Crew AU we want to help more people with their pools . Share & subscribe. SUBSCRIBE NOW! From the video description People also watched 5:06 5:06 Now playing How to start a pool cleaning business - paying techs Pool Rescuers Pool Rescuers • • 27K views 7 years ago Pool Rescuers Pool Rescuers Buy \"The Million Dollar Pool Man\" here http://amzn.to/2Cr8SXk How to start a pool cleaning business https://poolrescuers.com/ ... Buy \"The Million Dollar Pool Man\" here http://amzn.to/2Cr8SXk How to start a pool cleaning business https://poolrescuers.com/ ... From the video description 11:28 11:28 Now playing I sold my pool cleaning business Max Maher Max Maher • • 12K views 5 years ago Max Maher Max Maher Join FINOVA before it fills up: https://pro.finova.finance Get 2 FREE Stocks Valued Between $12-$1400 when you deposit $100 ... Join FINOVA before it fills up: https://pro.finova.finance Get 2 FREE Stocks Valued Between $12-$1400 when you deposit $100 ... From the video description 9 chapters Intro | Starting out | Starting the business | Picking up customers | Selling the business | The hardest part | The sale | The sale process | Outro 9 auto-generated chapters in this video 9 chapters Intro Intro 0:00 Intro 0:00 Starting out Starting out 0:42 Starting out 0:42 Starting the business Starting the business 1:44 Starting the business 1:44 Picking up customers Picking up customers 2:15 Picking up customers 2:15 Selling the business Selling the business 3:48 Selling the business 3:48 The hardest part The hardest part 6:00 The hardest part 6:00 The sale The sale 6:52 The sale 6:52 31:45 31:45 Now playing Most Underrated Service Business?! (Makes $851K/Year) UpFlip UpFlip • • 143K views 5 months ago UpFlip UpFlip Head to https://Hostinger.com/upflip and build your business website in minutes with Hostinger's AI Builder. From corporate ... Head to https://Hostinger.com/upflip and build your business website in minutes with Hostinger's AI Builder. From corporate ... From the video description 4K CC 39 chapters Start | Howdy, Texas! | An operation one man CAN do | How often, really? | Services offered | Third time’s a charm | The call that changed it all | Startup costs | Funding the capital | Solid support system | But, why choose ASP? | First customer, locked in! | Prep before you leap | Fan blitz | Knock on doors, don’t be shy! | Revenue | Seeing the “unknown” | Non-negotiable equipment | Winning marketing moves | Convert them to customers (every time!) | Know your numbers | A day in the life of a franchisee | Business owners “never” unplug | All about legacy | Tile supplies | Overcoming early challenges | Effective systems | Getting hands on deck | Pricing strategy | Managing stress | Book recommendation | Leadership style | Family dynamics (that work!) | There’s freedom in franchising | What success really means | Just go for it! | Good for most, but not for all | Biggest franchise myth busted! | Outro 39 chapters in this video 39 chapters Start Start 0:00 Start 0:00 Howdy, Texas! Howdy, Texas! 0:33 Howdy, Texas! 0:33 An operation one man CAN do An operation one man CAN do 0:46 An operation one man CAN do 0:46 How often, really? How often, really? 1:09 How often, really? 1:09 Services offered Services offered 2:02 Services offered 2:02 Third time’s a charm Third time’s a charm 3:22 Third time’s a charm 3:22 The call that changed it all The call that changed it all 3:59 The call that changed it all 3:59 12:17 12:17 Now playing Should I Buy or Build a Pool Route? Max Maher Max Maher • • 21K views 6 years ago Max Maher Max Maher Subscribe for a profitable day: https://bit.ly/2HdKrSI Get emailed to be notified of new posts and exclusive content. No sales. Subscribe for a profitable day: https://bit.ly/2HdKrSI Get emailed to be notified of new posts and exclusive content. No sales. From the video description 4 moments Is It Better To Build or To Buy a Pool Route | Are You Sure You Want To Get into the Pool Industry | The Roi on Buying a Route | Meet with Multiple Sellers 4 auto-generated moments in this video 4 moments Is It Better To Build or To Buy a Pool Route Is It Better To Build or To Buy a Pool Route 0:05 Is It Better To Build or To Buy a Pool Route 0:05 Are You Sure You Want To Get into the Pool Industry Are You Sure You Want To Get into the Pool Industry 0:29 Are You Sure You Want To Get into the Pool Industry 0:29 The Roi on Buying a Route The Roi on Buying a Route 2:13 The Roi on Buying a Route 2:13 Meet with Multiple Sellers Meet with Multiple Sellers 6:10 Meet with Multiple Sellers 6:10 + 6 more SHORTS SHORTS Now playing Understanding Houston Pool Maintenance: Price Breakdown & Factors Moving to Houston Moving to Houston • • 1.1K views 2 years ago Moving to Houston Moving to Houston The cost of maintaining a pool in Houston can range from $80-$150 per month, depending on factors, such as pool size, condition ... The cost of maintaining a pool in Houston can range from $80-$150 per month, depending on factors, such as pool size, condition ... From the video description SHORTS SHORTS Now playing I tried the $4k/month pool cleaning side hustle… Finance Unfolded Finance Unfolded • • 31K views 2 years ago Finance Unfolded Finance Unfolded SHORTS SHORTS Now playing Save Time with Weekly Pool Maintenance, Hobert Pools & Spas Hobert Pools Hobert Pools • • 332 views 4 years ago Hobert Pools Hobert Pools Dallas Pool Equipment Repairs and Upgrades to Save You Money Faulty pool equipment means throwing away money on ... Dallas Pool Equipment Repairs and Upgrades to Save You Money Faulty pool equipment means throwing away money on ... From the video description SHORTS SHORTS Now playing Pool cleaning step by step - pool maintenance 🧽✅🧑🏻‍🔧 Dunota Pools, Central Florida Dunota Pools Dunota Pools • • 109K views 2 years ago Dunota Pools Dunota Pools SHORTS SHORTS Now playing This ONE Thing Kills Pool Algae (and It's Not Algaecide) Swim University Swim University • • 295K views 2 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description SHORTS SHORTS Now playing #pool care 101 #poolmaintenance for beginners #poolcleaning That Backyard Life HWGAC That Backyard Life HWGAC • • 46K views 3 years ago That Backyard Life HWGAC That Backyard Life HWGAC Balance is key, when testing with Frog system test strips, I'm checking the PH levels the FREE CHLORINE & Acidity /Alkaline ... Balance is key, when testing with Frog system test strips, I'm checking the PH levels the FREE CHLORINE & Acidity /Alkaline ... From the video description SHORTS SHORTS Now playing POOL CHEMICALS Chorbie Chorbie • • 1.7K views 2 years ago Chorbie Chorbie What chemicals do we use to treat pools ? Nate is breaking it down for us today! What chemicals do we use to treat pools ? Nate is breaking it down for us today! From the video description 6:16 6:16 Now playing Open Your Own Pool & Keep it Clean All Season - EASY TIPS Silver Cymbal Silver Cymbal • • 1.2M views 4 years ago Silver Cymbal Silver Cymbal You can spend upwards of $500 to have your pool opened! See how I open my pool for $10 & share tricks to have crystal clear ... You can spend upwards of $500 to have your pool opened! See how I open my pool for $10 & share tricks to have crystal clear ... From the video description 4K 8 chapters Intro | Remove Pool Cover | Rinse Pool Cover | Winterization | Power On | Results | Day 2 Results | Day 3 Results 8 auto-generated chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Remove Pool Cover Remove Pool Cover 0:31 Remove Pool Cover 0:31 Rinse Pool Cover Rinse Pool Cover 1:12 Rinse Pool Cover 1:12 Winterization Winterization 1:26 Winterization 1:26 Power On Power On 2:34 Power On 2:34 Results Results 4:27 Results 4:27 Day 2 Results Day 2 Results 4:40 Day 2 Results 4:40 SHORTS SHORTS Now playing Getting rid of algae in your pool . Simply use a copper pipe;) Gilla Leigh Home Design’s Gilla Leigh Home Design’s • • 388K views 3 years ago Gilla Leigh Home Design’s Gilla Leigh Home Design’s The Best way to get rid of algae in a pool or fountain ! Place a metal Pop in the skimmer basket . #algae # pool # cleaning ... The Best way to get rid of algae in a pool or fountain ! Place a metal Pop in the skimmer basket . #algae # pool # cleaning ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:54.879Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Primo Pool Services\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:54.249Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Primo Pool Services\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:41:11.547Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Primo%20Pool%20Services&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Primo% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Primo% 20Pool% 20Services&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Quick Search. Search By. Location; Facility Name/ID. Search by city, state, and/or zip code. Search. Search by facility name or ID Search. More Search Options.",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://echo.epa.gov/help/training",
+                "title": "ECHO Training"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Primo% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Primo% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Primo% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Primo% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "Nov 12, 2025",
+            "link": "https://www.epa.gov/frs",
+            "title": "Facility Registry Service (FRS) - EPA",
+            "snippet": "Search Data in FRS​​ Search for your location in the Facility Registry Service (FRS). Use your company name or address to search first.",
+            "position": 7,
+            "sitelinks": [
+              {
+                "link": "https://www.epa.gov/frs/frs-query",
+                "title": "FRS Query"
+              },
+              {
+                "link": "https://www.epa.gov/frs/geospatial-data-download-service",
+                "title": "Geospatial Data Download"
+              },
+              {
+                "link": "https://www.epa.gov/frs/frs-data-sources",
+                "title": "FRS Data Sources"
+              },
+              {
+                "link": "https://www.epa.gov/frs/frs-description",
+                "title": "FRS Description"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Primo% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= Primo% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= Primo% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter and is refreshed ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= Primo% 20Pool% 20Services&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:41:15.736Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:41:22.165Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:53.612Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Primo Pool Services\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:29.815Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Primo Pool Services",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:31.906Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Primo Pool Services",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:34.811Z",
+      "data": {
+        "query": "site:dentoncounty.gov Primo Pool Services",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:42:15.596Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-26T02:42:00Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Primo%20Pool%20Services%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=9_VNaYicNcfJp84PseDPuQ0\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-26T02:42:10Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Primo%20Pool%20Services%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=AfZNaY6WL43JwN4P9ujSgAE\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Primo Pool Services",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:42:16.213Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "PRIMO POOL SERVICES, INC.",
+        "taxpayer_number": "32089025228"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:42:16.214Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:41:45.895Z",
+      "data": {
+        "name": "Primo Pool Services",
+        "found": true,
+        "rating": 2.9,
+        "source": "serpapi",
+        "address": "671 Rosehill Ln, Cedar Hill, TX 75104",
+        "data_id": "0x864e8de4c7fbe76f:0x5345bab1f8e9ed14",
+        "reviews": [
+          {
+            "date": "4 months ago",
+            "text": "I had a great experience with these folks. I would definitely use them again. My pool had algae, they came and took care of things quickly and efficiently. The owner is very friendly and polite. He even texted a few days after the work was performed to follow-up and see how the pool was looking.",
+            "author": "Dana Horton",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Two weeks ago on a Saturday I called for pool cleaning services. I've spoken to Kieth and he was absolutely amazing on the phone and we had agreed upon his son Cassidy to come out on Thursday to come clean the pool. Thursday comes around and I call Kieth, to his surprise he thought Cassidy had already come by. So he calls him, and his son says he'll come by on Saturday (yesterday) and that he wouldn't do the service because there's a pecan tree hanging over the pool and it'll leave spots. Well, we don't have a tree over the pool let alone a pecan tree so I'm not sure where he went? If you're too busy to do pool services, or you want more money to do the job just say that.",
+            "author": "Sarah Briand",
+            "rating": 1
+          },
+          {
+            "date": "a year ago",
+            "text": "I’ve been using Primo for 25 years for all repairs. If you want it done right for a fair price call Primo. You won’t get any up sales for parts & labor that you really don’t need, they will tell you what’s wrong & fix it.",
+            "author": "Michael Bechdol",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Before I called Primo pool services, I called a few other pool service companies. Just to have them tell me they didn’t service my area or they were booked and to call back later. I finally called Primo PS and to my surprise it was a money savor and a down to earth humbling call for me. I spoke with Keith who from the beginning asked me to describe the problem as of course my terminology wway off on the equipment he was able to understand everything I was telling him. To this he told me to try out some things first. He told me this were things that they would try out first and as much as he wanted my money he didn’t want to just take it knowing it could be something I may be able to do. And if that didn’t work to give him a call back. Well me being of small stature was able to do some of the things he suggested and it worked. I’ve been struggling with a lot of minor things that have been needing fixing in my house, so it was definitely a blessing to save me money to put towards my electric bill this month. I’m still figuring my pool equipment out, so I will definitely be calling them back to use their service it will be well deserved.",
+            "author": "Judith Martinez",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Was scheduled for service and repair man never showed up. Called four times and still nothing. Don’t waste your time with this company\nVery very unprofessional. When called last time and told the company I was going with another company their response was “fine”.",
+            "author": "Mark Paynter",
+            "rating": 1
+          },
+          {
+            "date": "5 years ago",
+            "text": "I called this business to inquire about a one time cleaning and the person that answered the phone sounded annoyed. $100 an hour plus parts, he quoted me.  I asked what did that entail? He sounded offended that I wanted more detail. I told him it sounded as if he was having a bad day, so I'd take my business elsewhere.  No thank you. The lack of professionalism and common courtesy was appalling.  I wouldn't recomend this business to anyone , ever!!!!",
+            "author": "Donna D",
+            "rating": 1
+          },
+          {
+            "date": "4 years ago",
+            "text": "Keith was very professional, informative, and prompt. He saved us a lot of money and I would definitely use him again. He was very thorough as well!",
+            "author": "Michael Reeves",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "I Agree with all the other reviews that this man is very annoyed already from the fist time answering the phone to the very last word spoken. He said \" from the time I turn my truck on and start driving to you its Cha -Ching Cha - Ching from there\"!!!! I mean wow great explanation 👍 boy bye!!",
+            "author": "Samantha Meza",
+            "rating": 1
+          },
+          {
+            "date": "a year ago",
+            "text": "Amazing service can’t recommend enough❤️ Primo does our residential and rental property and they deliver excellent result. Will be coming back. Lola",
+            "author": "MiniLolly",
+            "rating": 5
+          },
+          {
+            "date": "Edited 2 years ago",
+            "text": "J.A is very rude started yelling, all because I was questioning the service and the pay.  Pool stayed green",
+            "author": "K and Q forlife",
+            "rating": 2
+          },
+          {
+            "date": "5 years ago",
+            "text": "Keith was awesome & he has great customer service 👌🏾",
+            "author": "Nicky Lindsey",
+            "rating": 5
+          },
+          {
+            "date": "14 years ago",
+            "text": "Bad pool service. Pool still not cleaned  properly after paying over $200. Can't swim and locate another pool service.",
+            "author": "G Lilly",
+            "rating": 1
+          },
+          {
+            "date": "7 years ago",
+            "text": "Awful customer service, rude from the time they answer the phone...why are they even in business???",
+            "author": "Artoo Jemerson",
+            "rating": 1
+          },
+          {
+            "date": "5 years ago",
+            "text": "Super BAD customer service. OUT OF BUSINESS!!!",
+            "author": "Lolis Idlibby",
+            "rating": 1
+          },
+          {
+            "date": "9 years ago",
+            "text": "Not very professional.",
+            "author": "roosevelt bowie",
+            "rating": 1
+          },
+          {
+            "date": "4 years ago",
+            "text": "Great guy...",
+            "author": "deric morgan",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Awesome!!!!",
+            "author": "Mac Callier",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "review_count": 17,
+        "pages_fetched": 2,
+        "review_source": "serpapi",
+        "escalation_reason": "NEGATIVE_SIGNAL_FOUND",
+        "serper_fraud_check": {
+          "reason": "NEGATIVE_SIGNAL_FOUND",
+          "signals": [
+            "NEGATIVE_SIGNAL_FOUND",
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:41:39.317Z",
+      "data": "Primo Pools: Home Page Top primopools972@gmail.com (469) 358-1800 --> Home Pool Services Pool Maintenance Pool Repair Gallery Contact Us Home Construction Maintenance Installation Contact Us --> Primo Pools Home Pool Services Pool Maintenance Pool Repair Gallery Contact Us --> Family Owned and Operated Welcome To Primo Pools Design and Construction Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Learn More Cleaning and Maintenance Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Learn More Installation and Repair Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Learn More --> Welcome To Primo Pools PROFESSIONAL POOL UPKEEP SERVICES Since 1991, Primo Pools in Cedar Hill, Texas, has been your best upkeep source for residential pools throughout the counties of Dallas and Ellis here in Texas. We have upheld the serenity of swimming for more local pools than we can count and that acts as a source of pride for us as a company. To that effect, we offer property/pool-specific upkeep options that are oriented towards extending the longevity and leisure of your swimming pool without the need for overly invasive repairs or costly pool replacement services. Contact us today to schedule a free estimate on any of the swimming pool upkeep services we provide for local swimming pools! POOL CLEANING AND MAINTENANCE Our weekly pool cleaning service and maintenance plans allow you to relax in your backyard oasis and swim worry-free in sparkling clear pool water, without the hassles that typically plague pool owners. Count on Primo Pools in Cedar Hill, Texas, to do what is necessary to keep your pool swim-ready, as well as conducting inspections and reporting potential issues to prevent break-downs and surprises. If something goes wrong with your pool, we will be able to diagnose and fix the problem, giving you the peace of mind that your pool will always be in top shape. Family-owned and operated. 24-Hour Emergency Service,. POOL INSTALLATION AND REPAIR Primo Pools has a full-time team of pool and spa repair personnel that work on your pool equipment and plumbing. We have the experience you need when it comes to accurately troubleshooting your pool’s lighting, plumbing, heating, or other functional problems. Our team of mobile pool mechanics is fully licensed, trained and certified to repair anything related to residential pools including; pool automation, pool timers, pool lights, pool heaters, pool filters, pool pumps, pool valves, your pool’s plumbing, pool skimmers, and drains, in-floor pool cleaners, automatic pool cleaners and robots, pool handrails, and pool safety devices. We do the work right — the first time. “Having the backyard of your dreams complete with a beautiful custom-designed swimming pool is only one phone call away. From creating the oasis in your very own home to the weekly maintenance needed to keep it looking its best, Primo Pools is there for you, in any season.” Primo Pools Why Choose Primo Pools What’s more fun than jumping into the pool on a hot day? We want you to have that feeling every time you step into your backyard to use your pool. We like to think we are in the business of fun. Primo Pools in Cedar Hill, Texas, has been providing residential pool service, maintenance, and repair since 1991. Family-owned and operated. Our owner is a pool man, plumber, electrician, and carpenter. With 30 years of experience in pools and 37 years as a master plumber, you could say we are literally obsessed with pools. Our love for pools and passion for providing good customer service led to the birth of Primo Pools. The difference between us and some other companies is that we are genuinely happy to be helping you with your pool. As well as being in the business of fun, we also consider ourselves pool nerds, we are always trying to learn more about the pool business and to be the best source of information on pools. We go above and beyond for all of our customers and guarantee that pool maintenance is headache-free. Our swimming pool cleaning and repair experts provide comprehensive pool maintenance. Trust us to check that the water level is high enough for the pump to operate correctly and check filter pressure and backwash when required. We clean the tile at the waterline and add algaecide if necessary. We brush the sides of the pool every time to keep your pool sparkling clean. We want to keep your pool as clean as if it were our own. You can count on our consultants to do what is necessary to keep your pool swim-ready, as well as conducting inspections and reporting potential issues to prevent break-downs and surprises. \"Choosing the right tools for the job, is second only to choosing the right people for the job!\" WE DELIVER PROJECTS ON TIME AND ON BUDGET GET A QUOTE Proudly Serving the Following Areas: Wortham, TX Corsicana, TX Ennis, TX Cedar Hill, TX Waco, TX Waxahachie, TX Hewitt, TX DeSoto, TX Midlothian, TX Glenn Heights, TX Lancaster, TX Duncanville, TX Proudly Serving the Following Areas: City, ST City, ST City, ST City, ST City, ST City, ST City, ST City, ST City, ST City, ST City, ST City, ST City, ST City, ST City, ST --> Proudly Serving The Following Counties & Cities In Minnesota, Iowa, Indiana, & Illinois Minnesota Counties Covered Fillmore County, Minnesota Mower County, Minnesota Waseca County, Minnesota Freeborn County, Minnesota Wright County, Minnesota Carver County, Minnesota Scott County, Minnesota Dakota County, Minnesota Rice County, Minnesota Olmstead County, Minnesota Houston County, Minnesota Winona County, Minnesota Dodge County, Minnesota Wabasha County, Minnesota Goodhue County, Minnesota Chisago County, Minnesota Ramsey County, Minnesota Hennepin County, Minnesota Washington County, Minnesota Anoka County, Minnesota Minnesota Cities Covered St. Cloud, MN Monticello, MN Princeton, MN Cambridge, MN Austin, MN St. Paul, MN Minnetonka, MN Bloomington, MN Rochester, MN Kasson, MN Winona, MN Lake, MN Redwing, MN Eagan, MN Owatonna, MN Albert Lea, MN Burnsville, MN Woodbury, MN Edina, MN Faribault, MN --> © 2025 Primo Pools Designed by --> Designed by -->"
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:41:40.163Z",
+      "data": {
+        "name": "Primo Pool Service",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:40:11.784Z",
+      "data": {
+        "found": true,
+        "rating": 4.2,
+        "status": null,
+        "review_count": 34,
+        "business_name": "Share Primo Pools"
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:53.211Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "primopools.net",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:40:37.178Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:41:30.923Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 8
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 9
+          },
+          {
+            "date": "Jun 3, 2024",
+            "link": "https://www.facebook.com/groups/BrevardJobsNetwork/posts/7948709071817959/",
+            "title": "Is LABORMAX a legitimate company and should I send them my ...",
+            "snippet": "There is so much fraud out right now. They are registered in Texas but not current https://mycpa.cpa.state.tx. us/coa/coaSearchBtn The entity's ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:57.712Z",
+      "data": {
+        "found": false,
+        "query": "\"Primo Pool Services\" Cedar Hill lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:55.452Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Primo Pool Services\" Cedar Hill",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:40:56.640Z",
+      "data": {
+        "query": "site:nextdoor.com Primo Pool Services Cedar Hill",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/neighborhood/theparkatcedarcrest--dallas--ga/",
+            "price": 250,
+            "title": "The Park at Cedarcrest, Dallas | Everything You Need to ...",
+            "snippet": "The Park at Cedarcrest is a peaceful, family-friendly neighborhood in Dallas, GA. Known for its well-maintained homes, community pool, and proximity to ...",
+            "currency": "$",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/suncountryresort--whitney--tx/",
+            "price": 400,
+            "title": "Sun Country Resort, Whitney | Everything You Need to Know",
+            "snippet": "It's a friendly community with a mix of permanent and vacation homes, offering amenities like a pool, golf course, and boat ramp for lake access. Where is this ...",
+            "currency": "$",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/city/council-bluffs--ia/",
+            "price": 100,
+            "title": "Council Bluffs, IA | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "Council Bluffs, IA, is a peaceful, family-friendly town known for its historic railroads and casinos. Nextdoor Neighbors appreciate its clean, tree-lined ...",
+            "currency": "$",
+            "position": 3
+          },
+          {
+            "link": "https://nextdoor.com/city/wichita--ks/",
+            "price": 10,
+            "title": "Wichita, KS | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "Nextdoor is the app for neighborhoodsWhether you're a longtime resident or new in town, Nextdoor is your source for local local advice, intel, and connections.",
+            "currency": "$",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:41:56.074Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Primo Pool Services\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:41:32.859Z",
+      "data": {
+        "query": "site:dallascounty.org Primo Pool Services civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "statutory",
+            "snippet": "(Equals Line 1b minus Line 4 plus Line 8.) Criminal Matters. Total Cases. Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:41:33.850Z",
+      "data": {
+        "query": "site:collincountytx.gov Primo Pool Services",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20Business.pdf",
+            "title": "Sorted by Business",
+            "snippet": "250922 Designer Pool Table Services LLC. 22,334 Timothy. Seaberg. Owner. 10050 Grumman Lane, McKinney TX 75071. My business services billiard ...",
+            "position": 1
+          },
+          {
+            "date": "Oct 2, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201221_2572/48414_2020%20Small%20Business%20Invoice%20Approved%20Payments.pdf",
+            "title": "48414_2020 Small Business Invoice Approved Payments.pdf",
+            "snippet": "Suite 150 Allen TX. 75013. Software Consulting Firm, we provide ERP consulting and implementation services mostly for manufacturing companies.",
+            "position": 2
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20City.pdf",
+            "title": "Sorted by City",
+            "snippet": "Suite 170, Allen, TX 75002. We are a chiropractic and physical rehab clinic located in Allen, TX which is in Collin County. We provide ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:41:51.103Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/primo-pool-service-cedar-hill",
+        "review_count": null
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T02:42:15.728Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Primo Pool Services",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-26T02:42:30.061Z",
+      "data": {
+        "cost": 0.0005149200000000001,
+        "summary": "The reviews show strong evidence of authentic customer experiences, both positive and negative. However, the stark rating discrepancy between the two Google listings is a significant red flag for potential review manipulation. The negative reviews describe a clear, credible pattern of operational failures (scheduling and communication).",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2025-12-26T02:42:30.061Z",
+        "fake_signals": [
+          "Significant rating discrepancy between two Google listings",
+          "Potential for review solicitation on higher-rated listing",
+          "Lack of reviews on other major platforms (Yelp, Angi, Houzz)"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 2.9,
+          "glassdoor": null,
+          "google_hq": 4.2
+        },
+        "authentic_signals": [
+          "Specific details in negative reviews (names, dates, excuses)",
+          "Long-term positive review mentions 25-year relationship",
+          "Varied writing styles and emotional authenticity in both positive and negative reviews"
+        ],
+        "fake_review_score": 40,
+        "complaint_patterns": [
+          "No-shows / Ghosting after scheduling",
+          "Poor communication / Unresponsiveness",
+          "Excuses to avoid service (e.g., fictitious tree)"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Major discrepancy between Google Maps Local (2.9★) and Google Maps HQ (4.2★) ratings for the same business. This suggests potential review manipulation, such as soliciting positive reviews for a different listing or suppressing negative ones."
+      }
+    }
+  }
+}

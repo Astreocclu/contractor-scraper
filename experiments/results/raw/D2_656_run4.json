@@ -1,0 +1,86 @@
+{
+  "variation": "D2",
+  "contractor_id": 656,
+  "contractor_name": "Bonnie & Clydes Pools and Spas",
+  "archetype": "established_sketchy",
+  "expected_score": 35,
+  "run": 4,
+  "timestamp": "2026-01-20T19:23:30.085Z",
+  "success": true,
+  "trust_score": 47,
+  "risk_level": "HIGH",
+  "reasoning": "Mixed council: DeepSeek=42, Claude=42, Gemini=58, Avg=47",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 42,
+      "risk_level": "HIGH",
+      "reasoning": "This contractor presents a classic case of a business with decent core retail operations but severe systemic problems with subcontractor management and customer service failures. While the store itself has many positive reviews for knowledgeable staff and repair services, the pattern of serious complaints about installation contractors, deceptive sales practices, and poor communication creates substantial risk for customers. The business appears established but operates with concerning inconsistency, where a customer's experience depends heavily on which employee they encounter and which subcontractor is assigned. The lack of formal business registration verification and multiple serious complaints about bait-and-switch tactics with used/damaged merchandise elevate the risk significantly.",
+      "key_factors": [
+        "Severe pattern of complaints about third-party installation contractors (Campbells, A&A, Allstar) with documented failures",
+        "Multiple allegations of deceptive sales practices including selling used/damaged floor models as new",
+        "Inconsistent customer service with reports of rude/condescending staff alongside positive experiences",
+        "Established business with 40+ years history but poor subcontractor oversight",
+        "No formal business registration found despite multiple store locations"
+      ],
+      "red_flags": [
+        "Serious complaint about selling used/damaged hot tub as new with alleged DTPA violations",
+        "Multiple reports of subcontractors abandoning jobs or performing shoddy work",
+        "Poor communication and follow-up on parts/repairs",
+        "No business registration found in official databases",
+        "Pattern of contradictory information from different employees"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 42,
+      "risk_level": "MEDIUM",
+      "reasoning": "This is an established family business operating for 40+ years with multiple locations, but shows concerning patterns around customer service consistency and problematic third-party contractors. While the core retail operations receive generally positive feedback, there are serious red flags including selling used/damaged products without disclosure, poor communication, and repeated issues with recommended installers who abandon jobs or perform substandard work. The business appears to have management accountability issues, with customers struggling to reach ownership when problems arise.",
+      "key_factors": [
+        "40+ years in business with multiple Texas locations showing stability",
+        "Mixed customer experience - positive for retail/supplies, negative for installations",
+        "Serious recent complaint about selling damaged floor model without disclosure",
+        "Pattern of problems with third-party installers they recommend",
+        "Management accessibility issues when customers need resolution"
+      ],
+      "red_flags": [
+        "Recent complaint alleging deceptive sales practices (selling used product as new)",
+        "Multiple complaints about recommended installers abandoning jobs or doing poor work",
+        "Customer reports of being blocked from speaking with ownership",
+        "Inconsistent customer service quality across locations and staff"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 58,
+      "risk_level": "MEDIUM",
+      "reasoning": "Bonnie & Clydes Pools and Spas has a mixed reputation. Google reviews show a 4.4 rating with a high volume of reviews, indicating a significant customer base. However, a concerning pattern emerges where negative reviews frequently cite issues with third-party installation contractors, suggesting a potential lack of oversight or quality control in that area. While the core store staff receives praise, the negative experiences with installers and some customer service inconsistencies raise concerns about overall service delivery.",
+      "key_factors": [
+        "Google review volume",
+        "Positive store staff feedback",
+        "Negative installer experiences"
+      ],
+      "red_flags": [
+        "Third-party installer complaints",
+        "Inconsistent customer service",
+        "Selling used floor model without disclosure"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Serious complaint about selling used/damaged hot tub as new with alleged DTPA violations",
+    "Multiple reports of subcontractors abandoning jobs or performing shoddy work",
+    "Poor communication and follow-up on parts/repairs",
+    "No business registration found in official databases",
+    "Pattern of contradictory information from different employees",
+    "Recent complaint alleging deceptive sales practices (selling used product as new)",
+    "Multiple complaints about recommended installers abandoning jobs or doing poor work",
+    "Customer reports of being blocked from speaking with ownership",
+    "Inconsistent customer service quality across locations and staff",
+    "Third-party installer complaints",
+    "Inconsistent customer service",
+    "Selling used floor model without disclosure"
+  ],
+  "cost_usd": 0.08589258375,
+  "duration_ms": 11716
+}

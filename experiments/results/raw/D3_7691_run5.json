@@ -1,0 +1,38 @@
+{
+  "variation": "D3",
+  "contractor_id": 7691,
+  "contractor_name": "Cowboy Hat Capital Foundation Repair Co",
+  "archetype": "known_bad",
+  "expected_score": 20,
+  "run": 5,
+  "timestamp": "2026-01-20T19:38:06.640Z",
+  "success": true,
+  "trust_score": 0,
+  "risk_level": "CRITICAL",
+  "reasoning": "Won 0/4 comparisons",
+  "comparisons": [
+    {
+      "vs": "1-Tom-Plumber",
+      "winner": "B",
+      "reasoning": "Contractor B (1-Tom-Plumber) has overwhelmingly positive, authentic reviews with specific details about employees and services, while Contractor A (Cowboy Hat Capital) has a fraudulent Google listing where all reviews are for auto repair work, not foundation repair, indicating a serious credibility issue."
+    },
+    {
+      "vs": "AC Repair Garland",
+      "winner": "B",
+      "reasoning": "Contractor B (AC Repair Garland) has significantly better credentials with authentic, detailed reviews from hundreds of customers, a professional website, and no major red flags. Contractor A (Cowboy Hat Capital Foundation Repair Co) has serious credibility issues including fraudulent Google reviews for auto repair instead of foundation work, multiple negative reviews describing poor workmanship, and being flagged as a 'known_bad' archetype."
+    },
+    {
+      "vs": "Bonnie & Clydes Pools and Spas",
+      "winner": "B",
+      "reasoning": "Contractor B is more trustworthy because it's an established business with authentic reviews that match its advertised services, while Contractor A appears to be a fraudulent or hijacked listing where all reviews are for auto repair work rather than foundation repair. Contractor B has a legitimate operational history with specific customer feedback, whereas Contractor A's entire review profile is misaligned with its claimed business."
+    },
+    {
+      "vs": "Splash Pools",
+      "winner": "B",
+      "reasoning": "Contractor B (Splash Pools) has overwhelmingly positive, authentic reviews across multiple platforms with specific project details and long-term customer relationships, while Contractor A (Cowboy Hat Capital) shows major red flags including fraudulent Google reviews for auto repair instead of foundation work and serious customer complaints about unprofessional service. Contractor B's consistent high ratings, BBB accreditation, and legitimate business presence make it clearly more trustworthy."
+    }
+  ],
+  "red_flags": [],
+  "cost_usd": 0.008,
+  "duration_ms": 29788
+}

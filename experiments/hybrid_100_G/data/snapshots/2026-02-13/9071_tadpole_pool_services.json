@@ -1,0 +1,898 @@
+{
+  "contractor_id": 9071,
+  "business_name": "Tadpole Pool Services",
+  "city": "Carrollton",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T08:27:38.958Z",
+  "sources": {
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:03:49.530Z",
+      "data": {
+        "cost": 0.00076216,
+        "summary": "Reviews appear authentic with clear patterns of both satisfaction and dissatisfaction. Long-term customers praise reliability and proactive service, while newer customers report communication issues and questionable repair practices. The Angi perfect rating is suspicious given the detailed negative experiences on Google.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-13T07:03:49.530Z",
+        "fake_signals": [
+          "Angi's perfect 5.0 with only 7 reviews contrasts sharply with Google's detailed mixed reviews"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "Not Rated",
+          "angi": 5,
+          "yelp": null,
+          "google": 3.6,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "MEDIUM",
+          "follow_through": "MIXED",
+          "negative_evidence": [
+            "Alleged misdiagnosis of heater to justify expensive replacement"
+          ],
+          "positive_evidence": [
+            "Proactive winterizing service mentioned by multiple customers"
+          ]
+        },
+        "authentic_signals": [
+          "Specific project details (winterizing, heater repair)",
+          "Long-term customer relationships mentioned (5-10 years)",
+          "Varied writing styles and specific complaints",
+          "Mix of praise and constructive criticism in 3-star review"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "Unreliable service/skipped visits",
+          "Poor communication",
+          "Questionable repair diagnosis/pricing"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Significant rating gap between Google (3.6) and Angi (5.0). Google reviews show mixed experiences, while Angi shows perfect score with few reviews."
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:01:00.792Z",
+      "data": {
+        "query": "site:yelp.com \"Tadpole Pool Services\" \"Carrollton, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/tadpole-pool-services-carrollton",
+            "title": "TADPOLE POOL SERVICES - Updated February 2026 - Yelp - Yelp",
+            "rating": 2.4,
+            "snippet": "More info about Tadpole Pool Services ; 4211 Charles St. Carrollton, TX 75010. Directions ; (972) 662-6014. Call Now ; Visit Website. http://tadpolepoolservice.com ...",
+            "position": 1,
+            "ratingCount": 8
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Service&find_loc=Carrollton%2C+TX",
+            "title": "TOP 10 BEST Pool Service in Carrollton, TX - Updated 2025",
+            "rating": 4.6,
+            "snippet": "... Carrollton, TX 75010. (972) 662-6014. I've had excellent service from Tadpole Pool Services. The technician arrives like clockwork. The only time they don't ...",
+            "position": 2,
+            "ratingCount": 666
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=Carrollton%2C+TX+75007",
+            "title": "THE BEST 10 POOL CLEANERS near CARROLLTON, TX 75007",
+            "rating": 4.2,
+            "snippet": "... Carrollton, TX 75007. Map. Trusted Pool Service Providers in Carrollton ... Tadpole Pool Services - Pool Cleaners near me - Carrollton, Texas. Tadpole ...",
+            "position": 3,
+            "ratingCount": 836
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=Carrollton%2C+TX+75010",
+            "title": "THE BEST 10 POOL CLEANERS near CARROLLTON, TX 75010",
+            "rating": 4.4,
+            "snippet": "... Tadpole Pool Services, North Texas Pool Service, Marcal's Pool, Pool ... Carrollton, TX 75010. Map. Pool Builders in Carrollton, Texas · Hot Tub Repair in ...",
+            "position": 4,
+            "ratingCount": 885
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=The+Colony%2C+TX+75056",
+            "title": "THE BEST 10 POOL CLEANERS near THE COLONY, TX 75056 - Yelp",
+            "rating": 4.2,
+            "snippet": "... Tadpole Pool Services, America's Swimming Pool - Dallas, ASP - America's ... Carrollton, TX 75006. (214) 888-2844. Free estimates. Family-owned & operated.",
+            "position": 5,
+            "ratingCount": 984
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=Dallas%2C+TX+75287",
+            "title": "THE BEST 10 Pool Cleaners near DALLAS, TX 75287 - Yelp",
+            "rating": 4.2,
+            "snippet": "... Tadpole Pool Services, Texas Pool Care, Liquidus Pool Services, Petri Pools ... Carrollton, TX home for over a year now. I have been pretty satisfied ...",
+            "position": 6,
+            "ratingCount": 812
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:03:04.423Z",
+      "data": {
+        "name": "Tadpole Pool Services",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 662-6014",
+        "rating": 3.6,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "4211 Charles St, Carrollton, TX 75010",
+        "reviews": [],
+        "website": "https://tadpolepoolservices.com/",
+        "maps_url": "https://www.google.com/maps/search/Tadpole%20Pool%20Services%20Carrollton%2C%20TX",
+        "categories": [
+          "Swimming pool repair service"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:03:13.932Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:02:39.935Z",
+      "data": {
+        "cid": "3933687399467936591",
+        "name": "Tadpole Pool Services",
+        "found": true,
+        "rating": 3.6,
+        "source": "serper",
+        "address": "4211 Charles St, Carrollton, TX 75010",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "4 months ago",
+            "text": "Asked for a quote to repair our pool heater. The quote they gave me was $6000 to replace because they told me it was not available anymore and could not get parts any longer. This was a lie as my pool heater (Less than five years old) was still available and all the parts to it. It ended up being a $12 repair because mice had eaten the copper wires inside. Buyer beware!!",
+            "author": "Mary Nancy Wiley",
+            "rating": 1
+          },
+          {
+            "date": "7 months ago",
+            "text": "Tadpole pools has been taking care of my pool for about 4 -5 years now.  They do a wonderful job of maintaining everything.  Their prices are fair.  Their communication with their customers needs improvement otherwise it would have been 5 stars.  But when the time comes that you need answers they came through for me.",
+            "author": "Randy Rekerdres",
+            "rating": 4
+          },
+          {
+            "date": "2 years ago",
+            "text": "This is what you get when you rely on Tadpole pools to take care of your swimming pool.\n\nWe bought a house recently and Tadpole was the pool company that had been taking care of the pool, so we thought we'd give them a try.   Unfortunately, they've been extremely unreliable and their support has been non-existent.\n\nWe've not seen our pool tech in two weeks and this is the result.  I've called their office and emailed their support team to let them know the pool wasn't looking good and was told \"your tech is a little behind\".  We were promised someone by the end of the week, yet nobody came and no phone call to explain what they planned to do.\n\nThey frequently just don't show up for scheduled maintenance days, don't communicate when they plan to make up service, etc.\nThis is the second time (and last) they've let our pool / hot tub get out or control.\n\nThere are a lot of good pool service companies in the DFW area, these guys don't seem to be one of them.  Save yourself some frustration and look elsewhere.",
+            "author": "Tobe Thompson",
+            "rating": 1
+          },
+          {
+            "date": "2 years ago",
+            "text": "Won't the impending doom.  I went to look at how to insulate my pool equipment.   Tadpole proactively did it for me.   They went as far as to put a cover on my faucet used\nFor autofill.   Good guys responsive to questions.",
+            "author": "justin ripp",
+            "rating": 5
+          },
+          {
+            "date": "11 months ago",
+            "text": "I've had nothing but great experience with Tadpole for years. They proactively winterize our equipment before hard freezes and have been hugely responsive even off-hours when we've had any issues. Prices for their services are also fair and competitive for the area.",
+            "author": "Ann Marie Navar",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Tadpole is fabulous. They've been servicing my pool for 5+ years.  The water is always perfect. Occasionally I will check the water with my own test kit, everything is where it should be. They arrive reliably once a week and they always close gates behind them.\n\nI really appreciate the fact they are excellent communicators, most of the time the phone is answered by a human. When I do leave a message I get a call back within one hour.\n\nPleasant and knowledgeable people.",
+            "author": "SatelliteGalaxy",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Our family has used tadpole pools for almost a decade and we are very pleased with their expertise and customer service.  The owner is ABSOLUTELY hands on and has always been extremely responsive and accessible.  He is involved at the state level with industry regulations and standards, and even donates time to water safety education in schools across the metroplex.  Our service technician is AMAZING.  I have his cell number and he always responds immediately, even on weekends...and has for years.  Their customer service from a repair/replacement standpoint is unparalleled.  Just yesterday our filter pump was making a funny noise.  I alerted our technician, who made a special same day house call and reported the issue to their service team, who showed up within 24 hours to diagnose and replace the part.  I could go on and on, but my experiences are always consistent and always exceed my expectations.  Thank you Tadpole Pools!",
+            "author": "Shelley Moore",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Tadpole pools service is single handily the best pool service. They always respond in minutes of my requests. They help with even the smallest things, and are very helpful and hardworking. We have used them for 8+ years!",
+            "author": "Winn M",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 15,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Carrollton, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:01:26.591Z",
+      "data": "Trustpilot Search Results Companies Pool Protection 27 Pool Services www.poolprotection27.com • 1 review 3.7 Pool pool.net • 636 reviews 4.4 Turkey Pool Villa www.turkey-pool-villa.com • 6 reviews 4.2 Tadpole Training tadpoletraining.com 0.0 swimming-pool-online.com www.swimming-pool-online.com • 2 reviews 2.9 Categories Pool Academy The best companies in the category 'Pool Academy' Swimming Pool The best companies in the category 'Swimming Pool' Pool Hall The best companies in the category 'Pool Hall' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (10000) Pool Protection 27 Pool Services www.poolprotection27.com 3.7 1 review United States Pool pool.net 4.4 636 reviews Edertalstr. 86, Mörlenbach, Germany Turkey Pool Villa www.turkey-pool-villa.com 4.2 6 reviews Tadpole Training tadpoletraining.com 0.0 0 reviews Lets Go Business Hub, 201, Hertford Road, Enfield, United Kingdom swimming-pool-online.com www.swimming-pool-online.com 2.9 2 reviews GO2 Property Services Limited go2.services 3.8 6 reviews United Kingdom NYCleaners www.cleaning-services-nyc.com 4.3 14 reviews United States Iot Pool iot-pool.com 4.2 437 reviews Portugal Paradies Pool www.paradies-pool.de 3.9 13 reviews Germany Fantastic Services fantasticservices.com 4.6 49,175 reviews 9 Temsford Close, North Harrow, London, United Kingdom Previous 1 2 3 4 1000 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Pool Hall Sports Pool Academy Sports Swimming Pool Sports Pool Cleaning Service Home Services Swimming Pool Contractor Construction & Manufacturing Outdoor Swimming Pool Hobbies & Crafts are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:01:33.626Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:01:37.107Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:01:39.200Z",
+      "data": {
+        "query": "Tadpole Pool Services Carrollton site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jul 31, 2024",
+            "link": "https://www.dallasnews.com/arts-entertainment/2024/07/31/9-summer-pool-parties-for-dogs-in-d-fw/",
+            "title": "9 summer pool parties for dogs in D-FW - The Dallas Morning News",
+            "snippet": "POOCH POOL PARTY: This swim day is strictly for the dogs; no humans will be allowed in the pool. $7 per dog and free for humans. Sept. 7 from 10 ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:03:16.853Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Tadpole Pool Services\" Carrollton",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:01:50.068Z",
+      "data": "Tadpole Pool Services Carrollton review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters SHORTS SHORTS Now playing Making money in the pool service business... srvcly srvcly • • 27K views 1 year ago srvcly srvcly In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... From the video description 2:58 2:58 Now playing New Complaints About Same Pool Company CBS TEXAS CBS TEXAS • • 106 views 9 years ago CBS TEXAS CBS TEXAS More customers called CBS 11 claiming they're owed thousands by a North Texas pool care company. More customers called CBS 11 claiming they're owed thousands by a North Texas pool care company. From the video description CC 17:24 17:24 Now playing Pool Care for Beginners- How to clean and maintain your pool- Filmed in 4k Fix It With Jake Fix It With Jake • • 510K views 6 years ago Fix It With Jake Fix It With Jake Pool Test Strips: https://amzn.to/44YyNT8 Pentair Pump Basket: https://amzn.to/2YEXSnI Polaris Black Robot: ... Pool Test Strips: https://amzn.to/44YyNT8 Pentair Pump Basket: https://amzn.to/2YEXSnI Polaris Black Robot: ... From the video description 4K 8 chapters Intro | Cleaning | Skimmer | Filter | Circulation | Equipment | Chemistry | Salt 8 auto-generated chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Cleaning Cleaning 1:07 Cleaning 1:07 Skimmer Skimmer 3:31 Skimmer 3:31 Filter Filter 6:12 Filter 6:12 Circulation Circulation 7:25 Circulation 7:25 Equipment Equipment 9:26 Equipment 9:26 Chemistry Chemistry 13:00 Chemistry 13:00 0:31 0:31 James Talarico for US Senate Vote by March 3rd Sponsored James Talarico James Talarico • • Vote by March 3rd Learn more 18:39 18:39 Now playing The Surprisingly Simple Business of Pool Cleaning Codie Sanchez Codie Sanchez • • 122K views 3 years ago Codie Sanchez Codie Sanchez Want to learn how to buy a business? (Free Consult): https://contrarianthinking.biz/youtubefam Learn Main Street ways to make ... Want to learn how to buy a business? (Free Consult): https://contrarianthinking.biz/youtubefam Learn Main Street ways to make ... From the video description 4K 5:00 5:00 Now playing How to Clean and Maintain Your Pool | Pool Care (2 of 3) Lowe's Home Improvement Lowe's Home Improvement • • 106K views 7 years ago Lowe's Home Improvement Lowe's Home Improvement Learn more about cleaning and maintaining your swimming pool here: ... Learn more about cleaning and maintaining your swimming pool here: ... From the video description 10 chapters Intro | Water Test | pH | Sanitizing | Shocking | Algae | Cleaning | Vacuuming | Bypassing the Filter | Outro 10 auto-generated chapters in this video 10 chapters Intro Intro 0:00 Intro 0:00 Water Test Water Test 0:25 Water Test 0:25 pH pH 0:41 pH 0:41 Sanitizing Sanitizing 0:57 Sanitizing 0:57 Shocking Shocking 1:07 Shocking 1:07 Algae Algae 1:18 Algae 1:18 Cleaning Cleaning 1:47 Cleaning 1:47 SHORTS SHORTS Now playing Pool Technician | $68,930 to clean pools and repair pool equipment 👨‍🔧 🌊 🏊‍♀️ 🤽‍♂️ bookandtable bookandtable • • 8.8K views 2 years ago bookandtable bookandtable Book&Table Inc. In-Person & Online Tutors Find a Tutor Today ▪️https://www.linktr.ee/bookandtable. ▫️TikTok: ... Book&Table Inc. In-Person & Online Tutors Find a Tutor Today ▪️https://www.linktr.ee/bookandtable. ▫️TikTok: ... From the video description 12:51 12:51 Now playing Why Do Pool Cleaning Businesses Fail? | Don't Miss the 8th Reason! Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner • • 22K views 3 years ago Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... From the video description 8 chapters 8 Reasons Pool Cleaning Businesses Fail? | Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset | Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly | Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly | Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer | Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast | Reason 6 - Pool Cleaning Businesses Fail – Poor Communication | Reason 7 - Pool Cleaning Businesses Fail – Not Paying their Taxes 8 chapters in this video 8 chapters 8 Reasons Pool Cleaning Businesses Fail? 8 Reasons Pool Cleaning Businesses Fail? 0:00 8 Reasons Pool Cleaning Businesses Fail? 0:00 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 SHORTS SHORTS Now playing My pool is full of toad tad poles!! #tadpoles Tory_Budgets Tory_Budgets • • 8.5K views 2 years ago Tory_Budgets Tory_Budgets 7:00 7:00 Now playing Pool Service Business - Understanding your service rates Pool Rescuers Pool Rescuers • • 15K views 6 years ago Pool Rescuers Pool Rescuers 0:00 What's up pool service pros my name is Ryan today I want to talk to you about understanding your service rates and why it's ... What's up pool service pros my name is Ryan today I want to talk to you about understanding your service rates and why it's ... Automatic captions 4K 2:41 2:41 Now playing A Mobile pool company owner facing 14 counts of theft by deception FOX10 News FOX10 News • • 1K views 3 years ago FOX10 News FOX10 News A Mobile pool company owner facing 14 counts of theft by deception For more Local News from WALA: https://www.fox10tv.com/ ... A Mobile pool company owner facing 14 counts of theft by deception For more Local News from WALA: https://www.fox10tv.com/ ... From the video description SHORTS SHORTS Now playing Can We Save Our Pool? Fish and Tadpoles Everywhere! Here's the Deal Audits Here's the Deal Audits • • 14K views 1 year ago Here's the Deal Audits Here's the Deal Audits Our pool has taken a wild turn, becoming a home for fish and tadpoles ! Join us as we explore the unexpected aquatic life and ... Our pool has taken a wild turn, becoming a home for fish and tadpoles ! Join us as we explore the unexpected aquatic life and ... From the video description 0:31 More Money in Your Pocket: Get Free Oil Changes for Life on Any New or Used Vehicle. New or used, your oil changes are on us for life. Put more money back in your pocket. Sponsored Longhorn Nissan People also watched 5:53 5:53 Now playing This is How Professionals Find Pool Leaks Caliber Pool Pro Caliber Pool Pro • • 469 views 4 weeks ago Caliber Pool Pro Caliber Pool Pro Join Colin from Caliber Pool Pro as he performs expert leak detection on a vinyl pool in Toms River, New Jersey. We show how to ... Join Colin from Caliber Pool Pro as he performs expert leak detection on a vinyl pool in Toms River, New Jersey. We show how to ... From the video description 4K 19:41 19:41 Now playing Pool Pro Pricing Guide: Are You Charging Enough? Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL • • 341 views 2 weeks ago Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL Prices are shifting, chemicals are spiking, and margins get squeezed fastest when your billing model hides the true cost of service . Prices are shifting, chemicals are spiking, and margins get squeezed fastest when your billing model hides the true cost of service . From the video description 15:46 15:46 Now playing PUMPED or PLAYED: Service Scams That Flush Your Money Away TrustDALE TV TrustDALE TV • • 72 views 3 days ago TrustDALE TV TrustDALE TV It's not a subject anyone loves to talk about, but to get scammed by a septic company really STINKS! In this episode of the Trust ... It's not a subject anyone loves to talk about, but to get scammed by a septic company really STINKS! In this episode of the Trust ... From the video description New 4K 9:04 9:04 Now playing Secard Pools Reviews - Very Disappointed (Part 1) @ Pissed Consumer Interview PissedConsumer PissedConsumer • • 4.5K views 7 years ago PissedConsumer PissedConsumer Secard Pools and Spas review : \"Our sales person Vince, came out gave an estimate on a vinyl liner replacement. He saw that we ... Secard Pools and Spas review : \"Our sales person Vince, came out gave an estimate on a vinyl liner replacement. He saw that we ... From the video description + 6 more SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.7M views 4 years ago Life With Evan Life With Evan 2:45 2:45 Now playing In-floor Pool Cleaning System Troubleshooting Pool Chasers Pool Chasers • • 59K views 6 years ago Pool Chasers Pool Chasers In-floor Pool Cleaning System Troubleshooting Our friends Scott Bushey and Greg Huber with A&A Manufacturing explain that ... In-floor Pool Cleaning System Troubleshooting Our friends Scott Bushey and Greg Huber with A&A Manufacturing explain that ... From the video description 4K 4 moments Physical Issue with the Cleaning Head | The Water Valve | Check Pressure | Open Return Lines 4 auto-generated moments in this video 4 moments Physical Issue with the Cleaning Head Physical Issue with the Cleaning Head 0:22 Physical Issue with the Cleaning Head 0:22 The Water Valve The Water Valve 0:48 The Water Valve 0:48 Check Pressure Check Pressure 1:24 Check Pressure 1:24 Open Return Lines Open Return Lines 1:35 Open Return Lines 1:35 2:07 2:07 Now playing Florida pool company accused of scamming 600 families FOX 35 Orlando FOX 35 Orlando • • 3.9K views 3 years ago FOX 35 Orlando FOX 35 Orlando Some families say they hired Legacy Pools to build a pool from them, but the owner allegedly ran off with the money before filing ... Some families say they hired Legacy Pools to build a pool from them, but the owner allegedly ran off with the money before filing ... From the video description CC 10:06 10:06 Now playing Are You Charging Enough? Stop Undervaluing Your Pool Service! Chlorine King Pool Service Chlorine King Pool Service • • 3.4K views 4 years ago Chlorine King Pool Service Chlorine King Pool Service How To Price Pool Cleaning Service #poolstartup #businesscoaching #chlorineking Are you pricing your pool service the right ... How To Price Pool Cleaning Service #poolstartup #businesscoaching #chlorineking Are you pricing your pool service the right ... From the video description 4K 13 chapters Intro & Channel Info | Sponsor & App Promotion | Main Topic: Pool Service Pricing | The Wrong Question: “What Should I Charge?” | Why Industry Advice Often Fails | The Right Question: Know Your Break-Even Point | Real Expense Calculation Examples | Buffering for Business Stability | Quarterly Re-Evaluation & Cost Adjustments | Stop Asking Flat Rate Pricing | Staff, Growth & Sustainable Business | Final Thoughts & Takeaways | Outro 13 chapters in this video 13 chapters Intro & Channel Info Intro & Channel Info 0:00 Intro & Channel Info 0:00 Sponsor & App Promotion Sponsor & App Promotion 0:22 Sponsor & App Promotion 0:22 Main Topic: Pool Service Pricing Main Topic: Pool Service Pricing 0:51 Main Topic: Pool Service Pricing 0:51 The Wrong Question: “What Should I Charge?” The Wrong Question: “What Should I Charge?” 1:47 The Wrong Question: “What Should I Charge?” 1:47 Why Industry Advice Often Fails Why Industry Advice Often Fails 2:50 Why Industry Advice Often Fails 2:50 The Right Question: Know Your Break-Even Point The Right Question: Know Your Break-Even Point 3:55 The Right Question: Know Your Break-Even Point 3:55 Real Expense Calculation Examples Real Expense Calculation Examples 5:00 Real Expense Calculation Examples 5:00 SHORTS SHORTS Now playing Pool cleaning step by step - pool maintenance 🧽✅🧑🏻‍🔧 Dunota Pools, Central Florida Dunota Pools Dunota Pools • • 123K views 2 years ago Dunota Pools Dunota Pools 5:58 5:58 Now playing The State of Pool Service in 2026 | What Every Pool Pro Needs to Know! #poolservice Chlorine King Pool Service Chlorine King Pool Service • • 2.5K views 2 weeks ago Chlorine King Pool Service Chlorine King Pool Service The State of Pool Service in 2026 | What Every Pool Pro Needs to Know #PoolService, #PoolServiceIndustry, ... The State of Pool Service in 2026 | What Every Pool Pro Needs to Know #PoolService, #PoolServiceIndustry, ... From the video description 4K 9 chapters Introduction | Check out the \"Pool Deck\" by Skimmer | The big picture: confidence is up | Smarter growth, not chaos | Labor reality - but done right | Customer expectations are higher - and that's a good thing | Technology is no longer optional | Final takeaway: This industry is leveling up | Closing, disclaimer & endscreen 9 chapters in this video 9 chapters Introduction Introduction 0:00 Introduction 0:00 Check out the \"Pool Deck\" by Skimmer Check out the \"Pool Deck\" by Skimmer 0:26 Check out the \"Pool Deck\" by Skimmer 0:26 The big picture: confidence is up The big picture: confidence is up 1:01 The big picture: confidence is up 1:01 Smarter growth, not chaos Smarter growth, not chaos 1:30 Smarter growth, not chaos 1:30 Labor reality - but done right Labor reality - but done right 2:24 Labor reality - but done right 2:24 Customer expectations are higher - and that's a good thing Customer expectations are higher - and that's a good thing 3:09 Customer expectations are higher - and that's a good thing 3:09 Technology is no longer optional Technology is no longer optional 3:49 Technology is no longer optional 3:49 SHORTS SHORTS Now playing Cost of Pool Ownership | Budgeting for Pool Maintenance and Operations Splash Pools and Construction, Inc. Splash Pools and Construction, Inc. • • 4.1K views 1 year ago Splash Pools and Construction, Inc. Splash Pools and Construction, Inc. Thinking about building a pool ? Let's talk costs! From sparkling clean water to keeping it swim-ready year-round, you'll need to ... Thinking about building a pool ? Let's talk costs! From sparkling clean water to keeping it swim-ready year-round, you'll need to ... From the video description 4:08 4:08 Now playing Pool Company Threatens $3,500 Fine, Voids Customer Warranty Over Negative Review CBS TEXAS CBS TEXAS • • 18K views 7 years ago CBS TEXAS CBS TEXAS A North Texas company is trying to fine a local couple $3500 and void their warranty for writing a negative review . When the ... A North Texas company is trying to fine a local couple $3500 and void their warranty for writing a negative review . When the ... From the video description CC 3:14 3:14 Now playing 69 complaints filed against Maryland pool company that left customers with unfinished pools WUSA9 WUSA9 • • 677 views 2 years ago WUSA9 WUSA9 Dozens of customers tell WUSA9 they were forced to pay tens of thousands of dollars to complete pool projects left unfinished by ... Dozens of customers tell WUSA9 they were forced to pay tens of thousands of dollars to complete pool projects left unfinished by ... From the video description CC Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:01:51.581Z",
+      "data": {
+        "query": "site:nextdoor.com Tadpole Pool Services Carrollton",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/tadpole-pool-services-carrollton-tx/",
+            "title": "Tadpole Pool Services - Carrollton, TX - Nextdoor",
+            "snippet": "Pool service. We need a pool pump fixed or replaced and the estimates we are getting are outrageously high. I know pool chemicals are out of sight in price, but ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:03:16.158Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Tadpole Pool Services\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:02:08.937Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Tadpole%20Pool%20Services&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Tadpole% 20Pool% 20Services&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Tadpole% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Tadpole% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Tadpole% 20Pool% 20Services&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Tadpole% 20Pool% 20Services&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:02:12.079Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:02:16.920Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:03:14.636Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Tadpole Pool Services\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:02:23.727Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Tadpole Pool Services",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:02:24.843Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number must be from 6 to 10 digits.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 6
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 7
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "Get listed on the below websites https://www.tdlr.texas. gov ... asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 8
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 9
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "Fresh concerns over huge fossil fuel auction in DRC after government signs first gas production sharing agreements · [1] https://mycpa.cpa.state.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:02:25.902Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Tadpole Pool Services",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:02:26.909Z",
+      "data": {
+        "query": "site:dallascounty.org Tadpole Pool Services civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:02:28.044Z",
+      "data": {
+        "query": "site:collincountytx.gov Tadpole Pool Services",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:02:29.010Z",
+      "data": {
+        "query": "site:dentoncounty.gov Tadpole Pool Services",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:02:38.455Z",
+      "data": {
+        "name": "TadPole Pools Service",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "875-9012242",
+        "rating": "Not Rated",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/carrollton/profile/pool-service/tadpole-pools-service-0875-90122420",
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:03:04.416Z",
+      "data": {
+        "name": "Tadpole Pool Services",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 662-6014",
+        "rating": 3.6,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "4211 Charles St, Carrollton, TX 75010",
+        "reviews": [],
+        "website": "https://tadpolepoolservices.com/",
+        "maps_url": "https://www.google.com/maps/search/Tadpole%20Pool%20Services%20Carrollton%2C%20TX",
+        "categories": [
+          "Swimming pool repair service"
+        ],
+        "review_count": null
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:03:05.469Z",
+      "data": {
+        "email": "tadpolepoolservices@gmail.com",
+        "error": null,
+        "source": "homepage"
+      }
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:03:07.537Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "https://tadpolepoolservices.com/",
+        "analyzed_pages": [
+          {
+            "url": "https://tadpolepoolservices.com/",
+            "type": "homepage",
+            "title": "Tadpole Pool Services"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:03:12.521Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/tadpole-pool-services-carrollton",
+        "review_count": null
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:03:13.263Z",
+      "data": {
+        "url": "https://www.angi.com/companylist/us/tx/carrollton/tadpole-pool-services-reviews-2017998.htm",
+        "found": true,
+        "title": "TADPOLE POOL SERVICES Reviews - Carrollton, TX | Angi",
+        "rating": 5,
+        "source": "serper_angi",
+        "confidence": "high",
+        "review_count": 7
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:03:15.430Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Tadpole Pool Services\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:03:17.577Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Tadpole Pool Services\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:03:18.130Z",
+      "data": {
+        "found": true,
+        "query": "\"Tadpole Pool Services\" Carrollton lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.idcrawl.com/sam-hooker",
+            "title": "Sam Hooker's Instagram, Twitter & Facebook on IDCrawl",
+            "snippet": "Operations Manager at Tadpole Pool Services, LLC. Sam Hooker - LinkedIn. Sam Hooker. Governance, Risk, and Compliance at Stanley1913. Sam Hooker - LinkedIn. Sam ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:03:35.451Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T07:03:21Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Tadpole%20Pool%20Services%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=ucyOaaDsFrG6qtsP3ZO2mQU\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T07:03:31Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Tadpole%20Pool%20Services%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=wsyOae2CJYGrqtsPq5Dk8QE\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Tadpole Pool Services",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:03:36.134Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "TADPOLE POOL SERVICES, LLC",
+        "taxpayer_number": "32037088062"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T07:03:36.136Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-13T08:05:30.350Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 3,
+            "MECH_LIEN": 1
+          },
+          "active_liens": 1,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 4,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "COMPTON PATRICIA K",
+                "grantor": "TADPOLE POOL SERVICES",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TADPOLE POOL SERVICES",
+                    "COMPTON PATRICIA K",
+                    "RELEASE",
+                    "3/25/2015",
+                    "20150325000326130",
+                    "--/--/--",
+                    "Subdivision- Name: TRANQUILITY FARMS FAIRVIEW 2006/46 Lot: 4 Block: C, Reference - 2006 / 46"
+                  ],
+                  "search_term": "Tadpole Pool Services",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2015-03-25",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "20150325000326130"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "DACUS JILL",
+                "grantor": "TADPOLE POOL SERVICES",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TADPOLE POOL SERVICES",
+                    "DACUS JILL",
+                    "RELEASE",
+                    "11/20/2015",
+                    "20151120001463140",
+                    "--/--/--",
+                    "Subdivision- Name: PRESTON SPRINGS 2A PLANO H/389 Lot: 22 Block: D, Reference - H / 389"
+                  ],
+                  "search_term": "Tadpole Pool Services",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2015-11-20",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "20151120001463140"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "COMPTON WILLIAM M",
+                "grantor": "TADPOLE POOL SERVICES",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TADPOLE POOL SERVICES",
+                    "COMPTON WILLIAM M",
+                    "LIEN",
+                    "8/27/2013",
+                    "20130827001209630",
+                    "--/--/--",
+                    "Subdivision- Name: TRANQUILITY FARMS FAIRVIEW 2006/46 Lot: 4 Block: C, Reference - 2006 / 46"
+                  ],
+                  "search_term": "Tadpole Pool Services",
+                  "doc_type_raw": "LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2013-08-27",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20130827001209630"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "COMPTON PATRICIA K",
+                "grantor": "TADPOLE POOL SERVICES",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TADPOLE POOL SERVICES",
+                    "COMPTON PATRICIA K",
+                    "RELEASE",
+                    "2/26/2015",
+                    "20150226000208900",
+                    "--/--/--",
+                    "Subdivision- Name: TRANQUILITY FARMS FAIRVIEW 2006/46 Lot: 4 Block: C, Reference - 2006 / 46"
+                  ],
+                  "search_term": "Tadpole Pool Services",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2015-02-26",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "20150226000208900"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 old lien(s) against contractor (>7 years ago)"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 1,
+          "human_summary": "CAUTION: 1 lien(s) filed AGAINST Tadpole Pool Services (potential payment issues)",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 1,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 1
+        },
+        "owner_name": null,
+        "search_term": "Tadpole Pool Services",
+        "searched_at": "2026-02-13T08:04:20.806725",
+        "total_records": 4
+      }
+    }
+  }
+}

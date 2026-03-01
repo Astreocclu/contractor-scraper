@@ -1,0 +1,1100 @@
+{
+  "contractor_id": 8967,
+  "business_name": "Park's Pools",
+  "city": "Mesquite",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T08:27:38.749Z",
+  "sources": {
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:27:27.896Z",
+      "data": {
+        "cost": 0.00060802,
+        "summary": "The review data is highly suspect. A reported 4.7 Google rating with 25 reviews is claimed, but the provided raw data shows zero reviews for the local listing and only one anonymous, content-less review for HQ. The Yelp search result contains a specific complaint about being ignored after a problem, which aligns with common contractor red flags. The lack of presence on Angi, Houzz, and other review sites for a pool contractor is unusual. The evidence strongly suggests review manipulation or severe data inconsistency.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-13T06:27:27.896Z",
+        "fake_signals": [
+          "Reported review count (25) does not match sampled data (0)",
+          "Lack of any detailed review content provided",
+          "No reviews found on major contractor platforms (Angi, Houzz)",
+          "Yelp snippet suggests unresolved customer issue"
+        ],
+        "recommendation": "DO_NOT_TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 4.7,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "MEDIUM",
+          "follow_through": "NEGATIVE",
+          "negative_evidence": [
+            "Yelp snippet indicates company ignored messages after a problem arose, forcing customer to fix it themselves"
+          ],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "BBB A+ rating exists",
+          "Company has a founding date and phone number"
+        ],
+        "fake_review_score": 85,
+        "complaint_patterns": [
+          "Ignoring customer messages after payment/deposit",
+          "Customer forced to correct work themselves"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "The provided Google rating of 4.7 with 25 reviews cannot be verified against the raw data, which shows 0 reviews for the local listing and only 1 review for HQ. The Yelp search result snippet contains a negative customer complaint, but no rating is available. This inconsistency between reported and actual review data is a major red flag."
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:23:37.557Z",
+      "data": {
+        "query": "site:yelp.com \"Park's Pools\" \"Mesquite, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Coping&find_loc=Palestine%2C+TX",
+            "title": "THE BEST 10 Pool Coping in Palestine, TX - Yelp",
+            "rating": 4.3,
+            "snippet": "Mesquite, TX 75150. (214) 924-8483. On their website: pool coping. Fast ... After correcting this myself when Park's pools started ignoring my messages ...",
+            "position": 1,
+            "ratingCount": 108
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:26:39.793Z",
+      "data": {
+        "name": "Park's Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(254) 317-2618",
+        "rating": 4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "11600 Lake June Rd",
+        "reviews": [
+          {
+            "date": "10 months ago",
+            "text": "",
+            "rating": 4,
+            "source": "google_maps",
+            "reviewer_name": "Josie Gubler"
+          }
+        ],
+        "website": "https://parkspoolstexas.com/",
+        "maps_url": "https://www.google.com/maps/search/Park's+Pools+Mesquite,+TX/@32.8134074,-97.5714798,10z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:26:49.119Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:26:49.886Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:24:28.287Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:24:31.877Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:26:56.948Z",
+      "data": {
+        "found": false,
+        "query": "\"Park's Pools\" Mesquite lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:24:21.223Z",
+      "data": "Trustpilot Search Results Companies Park Cameras www.parkcameras.com • 18K reviews 4.9 The Pools www.thepools.com • 1.2K reviews 4.3 Petz Park petzpark.com.au • 10K reviews 4.8 Scandinavian Park forudbestilling.scandinavian-park.com • 18 reviews 2.7 Siam Park tickets.siampark.net • 8 reviews 3.0 Categories Photo Shop The best companies in the category 'Photo Shop' Camera Store The best companies in the category 'Camera Store' Electronics Company The best companies in the category 'Electronics Company' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (4315) Park Cameras www.parkcameras.com 4.9 17,547 reviews York Road, Victoria Business Park, , Burgess Hill,, United Kingdom The Pools www.thepools.com 4.3 1,248 reviews United Kingdom Petz Park petzpark.com.au 4.8 10,079 reviews A1/35-39 Bourke Rd, Alexandria, Australia Scandinavian Park forudbestilling.scandinavian-park.com 2.7 18 reviews Siam Park tickets.siampark.net 3.0 8 reviews United States Q-Park Danmark A/S www.q-park.dk 2.2 1,984 reviews Denmark S sterkado.nl 2.1 16 reviews Jaap Bijzerweg 19, Woerden, Netherlands s snatched.no 3.2 87 reviews Nigeria Q-Park Nederland q-park.nl 4.0 24,684 reviews Stationsplein 12E, Maastricht, Netherlands Park&Control park-control.de 1.1 1,366 reviews Germany Previous 1 2 3 4 432 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Photo Shop Electronics & Technology Camera Store Electronics & Technology Electronics Company Electronics & Technology Photo Lab Electronics & Technology Binoculars Store Electronics & Technology Telescope Store Electronics & Technology are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:24:34.727Z",
+      "data": {
+        "query": "Park's Pools Mesquite site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallasnews.com/news/2013/07/11/teen-night-at-pool-part-of-mesquite-parks-and-recreation-department-s-new-programs/",
+            "title": "Teen night at pool part of Mesquite Parks and Recreation ...",
+            "snippet": "This is the first of two teen nights at the pool with the next one set for Aug. 12. There will be music, food and contests. Cost is $5 per person.",
+            "position": 1
+          },
+          {
+            "date": "Jul 13, 2023",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2023/07/13/splash-pads-and-water-parks-offer-some-relief-from-the-heat-in-dallas-fort-worth/",
+            "title": "Splash pads and water parks offer some relief from the heat in ...",
+            "snippet": "Celebration Park's large sprayground has water jets, raining buckets, misters and other kid-friendly water features. 701 N. Angel Parkway.",
+            "position": 2
+          },
+          {
+            "date": "May 19, 2022",
+            "link": "https://www.dallasnews.com/news/2022/05/19/mesquite-boosts-lifeguard-pay-changes-pool-hours-amid-lifeguard-shortage/",
+            "title": "Mesquite boosts lifeguard pay, changes pool hours amid lifeguard ...",
+            "snippet": "The City Lake Aquatic Center will be open to the public Thursdays through Sundays from noon to 7 p.m. The Vanston and Town East pools will be ...",
+            "position": 3
+          },
+          {
+            "date": "Aug 1, 2024",
+            "link": "https://www.wfaa.com/article/news/local/dallas-county/dallas-will-keep-community-pools-open-cut-hours-as-budget-cuts-hit-city-departments/287-8247e4c2-1190-420a-868e-1eb1396d1f17",
+            "title": "Dallas. Texas, will keep community pools open | wfaa.com",
+            "snippet": "Instead, the park board instructed staff to reduce hours at the pools under consideration for closure -- only opening them three days a week ...",
+            "position": 4
+          },
+          {
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/terry-mackey-obituary?id=22496650",
+            "title": "Terry Mackey Obituary (2011) - Dallas, TX",
+            "snippet": "Terry Lee Mackey passed away March 16, 2011 at age 50. He graduated from UT Austin and then enjoyed a successful career in the waterpark industry.",
+            "position": 5
+          },
+          {
+            "link": "https://www.dallasnews.com/news/2020/05/20/mesquite-to-reopen-certain-park-facilities-friday-requesting-residents-practice-social-distancing/",
+            "title": "Mesquite to reopen certain park facilities Friday, requesting ...",
+            "snippet": "Other city services, such as libraries, will continue to be closed and the city has yet to announce its plans for summer camps and swimming pools.",
+            "position": 6
+          },
+          {
+            "date": "Nov 12, 2025",
+            "link": "https://www.wfaa.com/article/news/community/dallas-texas-bahama-beach-waterpark-upgrades/287-a83270fb-c134-495b-85bb-7b46bc5817e2",
+            "title": "'I feel like they care' | Dallas park upgrade makes waves for residents",
+            "snippet": "Dallas unveiled a $2.5M project to upgrade Bahama Beach Waterpark, aiming to boost the local economy and improve community facilities by 2026.",
+            "position": 7
+          },
+          {
+            "date": "Jul 6, 2013",
+            "link": "https://www.nbcdfw.com/news/local/mesquite-boy-drowns-in-joe-pool-lake/2093746/",
+            "title": "Mesquite Boy Drowns In Joe Pool Lake - NBC 5 Dallas-Fort Worth",
+            "snippet": "A 7-year-old Mesquite boy drowned Saturday night while swimming in Joe Pool Lake. Ivan Salinas was swimming with his mother when she saw him ...",
+            "position": 8
+          },
+          {
+            "date": "Jun 21, 2018",
+            "link": "https://www.nbcdfw.com/news/local/garland-considers-blocking-popular-swimming-area/2104906/",
+            "title": "Garland Considers Blocking Popular Swimming Area",
+            "snippet": "That is why they made the decision to close the park for the holiday. A temporary fence will be installed to block the water the week before, ...",
+            "position": 9
+          },
+          {
+            "date": "Aug 6, 2021",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2021/08/06/dogs-have-their-day-at-summer-ending-pool-parties/",
+            "title": "Dogs can dive in and splash around at these summer-ending pool ...",
+            "snippet": "Area pools and water parks will end the swim season with splash parties for you and your four-legged friend. Dogs can splash around in the water.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:26:54.467Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Park's Pools\" Mesquite",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:24:47.647Z",
+      "data": "Park's Pools Mesquite review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 2:12 2:12 Now playing A look at Mesquite Groves Aquatic Center ABC15 Arizona ABC15 Arizona • • 1.2K views 1 year ago ABC15 Arizona ABC15 Arizona There are more than 100 community pools , water parks , and splash pads with water fountains, fun features, and slides to keep ... There are more than 100 community pools , water parks , and splash pads with water fountains, fun features, and slides to keep ... From the video description CC SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description SHORTS SHORTS Now playing Easy way to keep the pool clean! #summer #pool #tips Jeff & Lauren Show Jeff & Lauren Show • • 335K views 8 months ago Jeff & Lauren Show Jeff & Lauren Show Easy way to keep the pool clean! Tennis balls absorb oils and residue from the pool ! # pool #poolparty #summer ... Easy way to keep the pool clean! Tennis balls absorb oils and residue from the pool ! # pool #poolparty #summer ... From the video description SHORTS SHORTS Now playing This pool looks incredible 😧 | #shorts SportsNation SportsNation • • 8.6M views 3 years ago SportsNation SportsNation This pool looks incredible | #shorts (via @rikkicarman) This pool looks incredible | #shorts (via @rikkicarman) From the video description SHORTS SHORTS Now playing How to choose the right color for your pool! 🌴 #luxuryhome #pool #pooldesign #backyard Foxterra Design Foxterra Design • • 406K views 1 year ago Foxterra Design Foxterra Design 0:00 How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... Automatic captions 0:41 0:41 Now playing Mesquite Groves Aquatic Center Aerial Tour Chandler Aquatics Chandler Aquatics • • 74K views 10 years ago Chandler Aquatics Chandler Aquatics Mesquite Groves Aquatic Center, 5901 S Hillcrest Dr., is Chandler's newest facility and opened in July 2008. The facility boasts a ... Mesquite Groves Aquatic Center, 5901 S Hillcrest Dr., is Chandler's newest facility and opened in July 2008. The facility boasts a ... From the video description SHORTS SHORTS Now playing Age 50+, Bottom of 20ft Deep Swimming Pool 🔥 #swimmingtips #swimming #swim Swimming By Sanuj Swimming By Sanuj • • 1.3M views 1 year ago Swimming By Sanuj Swimming By Sanuj Beginners Swimming Tips in Hindi, How To Swim Hindi, how to Float In Hindi, swimming technique in Hindi, swimming swimming ... Beginners Swimming Tips in Hindi, How To Swim Hindi, how to Float In Hindi, swimming technique in Hindi, swimming swimming ... From the video description SHORTS SHORTS Now playing 2 Pools, Golf Discounts, And 1600 Sqft Of Living Space - Vacation Everyday! Mesquite Lifestyle with Norma Sachar Mesquite Lifestyle with Norma Sachar • • 147 views 2 years ago Mesquite Lifestyle with Norma Sachar Mesquite Lifestyle with Norma Sachar Townhome For Sale. Sunset Greens is a popular gated golf course community in Mesquite NV. The lush landscape feels as ... Townhome For Sale. Sunset Greens is a popular gated golf course community in Mesquite NV. The lush landscape feels as ... From the video description SHORTS SHORTS Now playing Can you fit a pool in a SMALL BACKYARD? Calimingo Calimingo • • 1.2M views 3 years ago Calimingo Calimingo 4K SHORTS SHORTS Now playing Inside the Deepest Swimming Pool of the City 🔥 #learnswimming #swimming #swim Swimming By Sanuj Swimming By Sanuj • • 8.1M views 1 year ago Swimming By Sanuj Swimming By Sanuj Girl Vs Boy Swimming Practice, Fast Swimming Tips for Beginners, Kicking Race, तैरना सीखें ▻ Join Video Analysis ... Girl Vs Boy Swimming Practice, Fast Swimming Tips for Beginners, Kicking Race, तैरना सीखें ▻ Join Video Analysis ... From the video description SHORTS SHORTS Now playing Is this an in-ground or above-ground pool? 👀#luxuryhome #backyard #luxurypools #abovegroundpools Foxterra Design Foxterra Design • • 847K views 1 year ago Foxterra Design Foxterra Design SHORTS SHORTS Now playing A very dirty indoor pool 🤢 #satisfying thep00lguy ML thep00lguy ML • • 700K views 1 year ago thep00lguy ML thep00lguy ML People also watched 12:17 12:17 Now playing FULL TRANSFORMATION OF THE SWAMP POOL thep00lguy ML thep00lguy ML • • 4.3M views 1 year ago thep00lguy ML thep00lguy ML PAID PROMOTION! Finally the swamp pool is now finished and ready for the customers to use! Let me know what you think in the ... PAID PROMOTION! Finally the swamp pool is now finished and ready for the customers to use! Let me know what you think in the ... From the video description 4K 5 chapters Intro | Emptying | Pool Liner | Pool Robot | Pool Cleaner 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Emptying Emptying 0:21 Emptying 0:21 Pool Liner Pool Liner 4:30 Pool Liner 4:30 Pool Robot Pool Robot 6:29 Pool Robot 6:29 Pool Cleaner Pool Cleaner 9:26 Pool Cleaner 9:26 21:42 21:42 Now playing 25 Meter (SCM) Backyard Lap Pool Construction Timelapse Backyard_Lap_Pool Backyard_Lap_Pool • • 25M views 5 years ago Backyard_Lap_Pool Backyard_Lap_Pool Construction of 25 Meter, two lane lap pool . 85K gallons. Best viewed on TV in 1080P. Video is geared towards the pool ... Construction of 25 Meter, two lane lap pool . 85K gallons. Best viewed on TV in 1080P. Video is geared towards the pool ... From the video description 3:11 3:11 Now playing The Bucket Test mypoolleaks mypoolleaks • • 70K views 15 years ago mypoolleaks mypoolleaks Swimming pool bucket test to help measure water loss due to evaporation or a leak. Swimming pool bucket test to help measure water loss due to evaporation or a leak. From the video description Summary Learn how a simple bucket test determines if pool water loss is due to evaporation or leaks. A 5-gallon bucket, tape, and pencil are used to measure water level changes over 24 hours. External factors like rain and pets that could skew results are also discussed. AI-generated video summary Quality and accuracy may vary. Summary Learn how a simple bucket test determines if pool water loss is due to evaporation or leaks. A 5-gallon bucket, tape, and pencil are used to measure water level changes over 24 hours. External factors like rain and pets that could skew results are also discussed. 3:52 3:52 Now playing How To Choose The Best Waterline Tile For Your Pool | California Pools & Landscape California Pools & Landscape California Pools & Landscape • • 61K views 5 years ago California Pools & Landscape California Pools & Landscape Waterline tile on a pool is most likely something that you haven't had to ever think about before. It's such a small detail but since ... Waterline tile on a pool is most likely something that you haven't had to ever think about before. It's such a small detail but since ... From the video description 3 moments Waterline Tile | How Do You Choose a Pool Tile | How Do You Stay on Budget When Choosing a Pool Tile 3 auto-generated moments in this video 3 moments Waterline Tile Waterline Tile 0:37 Waterline Tile 0:37 How Do You Choose a Pool Tile How Do You Choose a Pool Tile 1:56 How Do You Choose a Pool Tile 1:56 How Do You Stay on Budget When Choosing a Pool Tile How Do You Stay on Budget When Choosing a Pool Tile 2:34 How Do You Stay on Budget When Choosing a Pool Tile 2:34 + 6 more SHORTS SHORTS Now playing Amazing way to say goodbye to your swimming pool Joy Hits Joy Hits • • 58M views 5 months ago Joy Hits Joy Hits 0:00 Look this family found the funniest way to say goodbye to their old swimming pool On their last day while everyone was splashing ... Look this family found the funniest way to say goodbye to their old swimming pool On their last day while everyone was splashing ... Automatic captions SHORTS SHORTS Now playing The WORST swim spot ever 🏚️ #abandoned #urbex #viral #abandonedplaces LordExplores LordExplores • • 73K views 1 year ago LordExplores LordExplores 0:41 0:41 Now playing Mesquite Groves Aquatic Center City of Chandler, Arizona (Official) City of Chandler, Arizona (Official) • • 321 views 7 years ago City of Chandler, Arizona (Official) City of Chandler, Arizona (Official) Mesquite Groves Aquatic Center, 5901 S Hillcrest Dr., is Chandler's newest facility and opened in July 2008. The facility boasts a ... Mesquite Groves Aquatic Center, 5901 S Hillcrest Dr., is Chandler's newest facility and opened in July 2008. The facility boasts a ... From the video description SHORTS SHORTS Now playing Secret Pool Illusion Stokes Twins Stokes Twins • • 68M views 5 months ago Stokes Twins Stokes Twins Subscribe. Subscribe. From the video description SHORTS SHORTS Now playing The pools are full off still water #urbex #abandoned #explore #stillwater Explore With Ben Explore With Ben • • 39K views 6 months ago Explore With Ben Explore With Ben SHORTS SHORTS Now playing Best Pool Water Hair Flip EBB Super Star EBB Super Star • • 29M views 7 months ago EBB Super Star EBB Super Star Send Fan Mail Here: PO Box: 26152 Federal Way WA, 98023 If you want to be a sponsor or work with us, please email us at ... Send Fan Mail Here: PO Box: 26152 Federal Way WA, 98023 If you want to be a sponsor or work with us, please email us at ... From the video description SHORTS SHORTS Now playing Son and Dad at the swimming pool 😳 Part 1 #swimming #waterpark #sonanddad watermagic family watermagic family • • 217M views 1 year ago watermagic family watermagic family watermagic family is always searching for best water parks , swimming pools , slip'n'slide, cliff diving, free diving, water jumps, ... watermagic family is always searching for best water parks , swimming pools , slip'n'slide, cliff diving, free diving, water jumps, ... From the video description 4K SHORTS SHORTS Now playing Baby Dives Into Swimming Pool At 16 Months Of Age #babyswimming #learning #education #amazing Baby Swim Baby Swim • • 403M views 2 years ago Baby Swim Baby Swim Baby Dives Into Swimming Pool at 16 Months of age. Lulu has had two swimming lessons a week since 4 months of age. Baby Dives Into Swimming Pool at 16 Months of age. Lulu has had two swimming lessons a week since 4 months of age. From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:24:48.972Z",
+      "data": {
+        "query": "site:nextdoor.com Park's Pools Mesquite",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/city/post/417094114/",
+            "title": "There are plenty of opportunities to stay active during back-to-school ...",
+            "snippet": "Go for a jog at a Mesquite Park, stop for a swim at Vanston Pool or work out at a Mesquite recreation center. Let's Get Fit, Mesquite!",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/mesquitehighland--mesquite--tx/",
+            "title": "Mesquite Highland, Mesquite | Everything You Need to Know",
+            "snippet": "Known for its well-kept homes and peaceful atmosphere, it's a great place for families. The community is close to local schools, parks, and shopping centers, ...",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/townecentrevillage--mesquite--tx/",
+            "title": "Towne Centre Village, Mesquite | Everything You Need to Know",
+            "snippet": "It's a friendly community with a pool, fitness center, and it's conveniently close to Town East Mall and several dining options. Where is this data from?",
+            "position": 3
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/mesquiteranch--tucson--az/",
+            "title": "Mesquite Ranch, Tucson | Everything You Need to Know",
+            "snippet": "Known for its two community pools, parks, and walking trails, it's a peaceful place with a mix of young families and retirees. It's close to schools and ...",
+            "position": 4
+          },
+          {
+            "link": "https://nextdoor.com/marketplace/mesquite--tx/free/sports-and-outdoors/",
+            "title": "Free Finds in Mesquite, TX | For Sale & Free — Nextdoor",
+            "snippet": "Free Finds near the neighborhood in Mesquite, TX. Find items in For Sale & Free on Nextdoor - all listings are local.",
+            "position": 5
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/mesquitetx--weslaco--tx/",
+            "title": "Mesquite TX, Weslaco | Everything You Need to Know - Nextdoor",
+            "snippet": "Mesquite TX is a quiet, residential neighborhood in Weslaco, Texas. Known for its family-friendly atmosphere, it's a mix of single-family homes and ...",
+            "position": 6
+          },
+          {
+            "link": "https://nextdoor.com/city/mesquite--tx/",
+            "title": "Mesquite, TX | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "Mesquite, Texas is a peaceful, family-friendly city known for its rodeo culture and abundant parks. Nextdoor Neighbors appreciate its cleanliness and the ...",
+            "position": 7
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/mesquiteriver--tucson--az/",
+            "title": "Mesquite River, Tucson | Everything You Need to Know - Nextdoor",
+            "snippet": "Mesquite River is a peaceful Tucson neighborhood known for its scenic desert landscapes and close-knit community. It's a mix of families and retirees, ...",
+            "position": 8
+          },
+          {
+            "date": "Jan 30, 2024",
+            "link": "https://nextdoor.com/agency-post/tx/mesquite/city-of-mesquite-1/the-new-mesquite-natatorium-at-dallas-college-eastfield-campus-3737-motley-will-be-open-to-the-public-starting-on-feb-316908346/",
+            "title": "The new Mesquite Natatorium at Dallas College - Nextdoor",
+            "snippet": "Is the pool heated? ... C. Yes, ma'am, it is! ... Nice. Hope the public has access. ... K. It says open to the public in the post.",
+            "position": 9
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/falconslair--mesquite--tx/",
+            "title": "Falcons Lair, Mesquite | Everything You Need to Know",
+            "snippet": "Falcons Lair is a peaceful, family-friendly neighborhood in Mesquite, TX. Known for its well-kept homes, good schools, and community spirit, ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:26:53.074Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Park's Pools\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Parks-Pools/salaries/Pool+Technician",
+            "title": "Pool Technician Salaries in the United States for Parks Pools ...",
+            "snippet": "Average Parks Pools Pool Technician hourly pay in the United States is approximately $27.39, which is 43% above the national average. Salary estimated from 2 ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:26:52.272Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Park's Pools\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:25:05.002Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Park's%20Pools&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Park's% 20Pools&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Park's% 20Pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Park's% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Park's% 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Park's% 20Pools&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:25:08.945Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:25:15.514Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:25:23.653Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Park's Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 19, 2026",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2026/kp-0505.pdf",
+            "title": "[PDF] Attorney General Opinion No. KP-0505",
+            "snippet": "This moral imperative preexists any political or legal document. Still, the concept is engrained within each of the sovereign charters under ...",
+            "position": 1
+          },
+          {
+            "date": "Jan 30, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/First%20Assistant%20Brent%20Webster%20Congressional%20Testimony%20-%20FINAL.pdf",
+            "title": "[PDF] Written Testimony Before the House of Representatives Judiciary ...",
+            "snippet": "Federal lawyers sent Attorney General Paxton vague letters seemingly threatening retribution if he essentially did not bend the knee and throw ...",
+            "position": 2
+          },
+          {
+            "date": "Dec 20, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Final%20Allergan%20Global%20Agreement%20and%20Exhibits%20(12-20-22).pdf",
+            "title": "[PDF] ALLERGAN PUBLIC GLOBAL OPIOID SETTLEMENT AGREEMENT",
+            "snippet": "“Affiliated Company(ies)” means (1) when used with respect to AbbVie Inc. (“AbbVie”) all of the entities listed in Exhibit J-1; ...",
+            "position": 3
+          },
+          {
+            "date": "Apr 20, 2002",
+            "link": "https://www2.texasattorneygeneral.gov/files/agency/2002hb1200iii.pdf",
+            "title": "[PDF] Final Version - Section III.wpd",
+            "snippet": "funding pools – the single county pool and the multi-county pool. LGEDF grants are available only. Page 76. Survey of Tax Incentive and ...",
+            "position": 4
+          },
+          {
+            "date": "Jan 10, 2018",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/press/Order_Denying_PI_-_English_v._Trump_-_1.10.2018.pdf",
+            "title": "[PDF] Case 1:17-cv-02534-TJK Document 47 Filed 01/10/18 Page 1 of 46",
+            "snippet": "“notwithstanding” clause. 5 U.S.C. § 3345(a)(2). But such “notwithstanding” clauses do not necessarily mean that the conflict is a difficult ...",
+            "position": 5
+          },
+          {
+            "date": "Nov 14, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. WALMART SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. I. Definitions.",
+            "position": 6
+          },
+          {
+            "date": "Feb 4, 2026",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/press/Darling-Petition.pdf",
+            "title": "[PDF] STATE OF TEXAS, Plaintiff, v. DARLING INGREDIENTS, INC ...",
+            "snippet": "State of Texas v. Darling Ingredients, Inc. State of Texas's Original Petition and Application for Injunctive Relief.",
+            "position": 7
+          },
+          {
+            "date": "Dec 9, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/2022-12-09%20CVS%20Global%20Settlement%20Agreement%20with%20Exhibits%20(003).pdf",
+            "title": "[PDF] CVS SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. CVS SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. Page. I. Definitions.",
+            "position": 8
+          },
+          {
+            "date": "Oct 7, 1974",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1974/H-0413.pdf",
+            "title": "[PDF] TFEEA~TORNEYGENERAL - Texas Attorney General",
+            "snippet": "centers, athletic fields, swimming pools, and other park and recreational facilities located on property now owned or subsequently acquired ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/opinions/categories/1006",
+            "title": "Amusements - Texas Attorney General",
+            "snippet": "Participants in traditional fantasy sports leagues may avail themselves of a statutory defense to prosecution under Penal Code subsection 47.02(b) when play is ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:25:24.761Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 2
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 3
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 5
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 7
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:25:25.920Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Park's Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:25:27.111Z",
+      "data": {
+        "query": "site:dallascounty.org Park's Pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2003/GeneralFund.PDF",
+            "title": "[PDF] GENERAL FUND - Dallas County",
+            "snippet": "The County's General Fund, along with several smaller funds of similar character, is the primary budgetary mechanism for controlling expenditures in support of ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY1991ACFR.pdf",
+            "title": "[PDF] ·c ~~~~~==~~~~ - Dallas County",
+            "snippet": "TexPool which is a public funds investment pool created by the Texas State Treasurer and run by the ... Facilities and Park and Open Space projects. The County ...",
+            "position": 2
+          },
+          {
+            "date": "Dec 31, 2013",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2013ACFR.pdf",
+            "title": "[PDF] comprehensive annual financial report - Dallas County",
+            "snippet": "Local Government Code 114.025 and 115.045, requires issuance of an annual financial report and an annual independent audit of all matters ...",
+            "position": 3
+          },
+          {
+            "date": "Mar 31, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2019ACFR.pdf",
+            "title": "[PDF] dallas county, texas comprehensive annual financial report for the ...",
+            "snippet": "The County invests in two external investment pools. Investments held by TexPool Prime and TexPool have 37 and 28 weighted average maturity ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2014ACFR.pdf",
+            "title": "[PDF] COMPREHENSIVE ANNUAL FINANCIAL REPORT ... - Dallas County",
+            "snippet": "FINANCIAL SECTION. Independent Auditors' Report. 9. Management's Discussion and Analysis (Unaudited). 13. Basic Financial Statements:.",
+            "position": 5
+          },
+          {
+            "link": "https://www.dallascounty.org/departments/HR/comp.php",
+            "title": "Human Resources | Pay and Compensation - Dallas County",
+            "snippet": "A total compensation package that includes competitive salaries, a full complement of benefits and employee work/life support services.",
+            "position": 6
+          },
+          {
+            "date": "Mar 27, 2019",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2018-ACFR.pdf",
+            "title": "[PDF] dallas county, texas comprehensive annual financial report for the ...",
+            "snippet": "The County's basic financial statements have been audited by Deloitte & Touche, LLP. The goal of the independent audit was to provide reasonable ...",
+            "position": 7
+          },
+          {
+            "date": "Oct 1, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2017ACFR.pdf",
+            "title": "[PDF] comprehensive annual financial report - Dallas County",
+            "snippet": "The County invests in two external investment pools. Investments held by Tex Pool Prime and Tex. Pool have weighted average maturity days of ...",
+            "position": 8
+          },
+          {
+            "date": "Mar 29, 2017",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2016ACFR.pdf",
+            "title": "[PDF] comprehensive annual financial report - Dallas County",
+            "snippet": "Local Government Code 114.025 and 115.045, requires issuance of an annual financial report and an annual independent audit of all matters ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 31, 2012",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2012ACFR.pdf",
+            "title": "[PDF] COMPREHENSIVE ANNUAL FINANCIAL REpORT - Dallas County",
+            "snippet": "Pursuant to those requirements, we hereby release the comprehensive annual financial report of the County of Dallas for the liscal year ended ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:25:28.682Z",
+      "data": {
+        "query": "site:collincountytx.gov Park's Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Myers-Park/pole-barn",
+            "title": "Pole Barn - Myers Park and Event Center - Collin County",
+            "snippet": "The Pole Barn is the perfect spot for a casual summer afternoon BBQ gathering such as reunions, cookouts, parties or a whimsical fall evening soirée.",
+            "position": 1
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living",
+            "title": "Business and Living Home - Collin County",
+            "snippet": "The official county government website for Collin County to find government documents and services, and contact county elected officials, ...",
+            "position": 2
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2023/CC/20230807_2870/54414_2023%2007%2013%20Planning%20Board%20Recommendations%20Presentationv3.pdf",
+            "title": "[PDF] Planning Board Recommendations - Collin County",
+            "snippet": "Recommended $22,450,000 for Parks and Open Space (including $2,450,000 for Myers Park) ... pools are summoned. Juvenile Justice facilities ... Myers Park is a 158 ...",
+            "position": 3
+          },
+          {
+            "date": "Nov 21, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200210_2440/47963_16154_Home%20Depot%20USA%2C%20Inc.%20DBA%20Home%20Depot%20Pro%20Inst._11-21-19.pdf",
+            "title": "[PDF] serial 16154 rfp maintenance, repair, operating supplies, industrial ...",
+            "snippet": "10 CATEGORY 10: POOL SUPPLIES. Pool chemicals, tools, timers, pump/motor units, vacuum equipment, patio furniture, parts, and all ancillary ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Anna.pdf",
+            "title": "[PDF] Parks Open Space Trails Recreation Master Plan - Collin County",
+            "snippet": "+ Recreational pool – A pool with a zero-depth entry and play structure, lazy river, two to three lap lanes, slide and other interactive amenities. This pool ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.collincountytx.gov/",
+            "title": "Collin County",
+            "snippet": "The official county government website for Collin County to find government documents and services, and contact county elected officials, ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Princeton.pdf",
+            "title": "[PDF] The City of Princeton Parks & Trails Master Plan - Collin County",
+            "snippet": "These spaces often contain amenities such as pools, sport courts, splash pads, playgrounds, clubhouses, and restrooms. These parks are paid for by the ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Celina.pdf",
+            "title": "[PDF] 2020 Parks and Recreation Master Plan - Celina, TX - Collin County",
+            "snippet": "Competition Lap Pool. Community Event. Weigh/Cardio Area. Sprayground. Classroom/Party Rooms. Aerobics/ Dance Room. Outdoor Water Park. Indoor Playground.",
+            "position": 8
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_McKinney.pdf",
+            "title": "[PDF] master plan - parks recreation open space - Collin County",
+            "snippet": "Indoor/Outdoor Pool. Ninja Warrior Course. Fitness Area. Playroom. Page 70. McKINNEY PARKS MASTER PLAN | 70. Old Settler's Aquatic Center. Amenities ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.collincountytx.gov/Tax-Assessor/motor-vehicle-services",
+            "title": "Tax Assessor: Motor Vehicle Services - Collin County",
+            "snippet": "Ways to renew your vehicle registration: You may register in person at any of the Tax Assessor Office locations listed below or any participating grocery store.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:25:30.688Z",
+      "data": {
+        "query": "site:dentoncounty.gov Park's Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1696/Heat-Safety-Outside-Brochure-PDF",
+            "title": "[PDF] Summer time is - Denton County",
+            "snippet": "Summer time is here!! The kids are out of school and it's time to hit the pool, go camping, ride bikes, or visit the nearest amusement park.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1369/Safety-Plan-PDF",
+            "title": "[PDF] Safety Plan Rules - Denton County",
+            "snippet": "During the time these Orders are in effect, do not visit a public pool or public park unless you obtain prior permission of the Probation Officer or the ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dentoncounty.gov/1037/Water-Works-Park",
+            "title": "Water Works Park - Denton, TX",
+            "snippet": "Water Works Park in North Texas offers four giant slides, two toddler slides, one giant indoor slide, a lazy river, children's play pool, sand volleyball,",
+            "position": 3
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1610/North-Central-Texas-Council-of-Governments-NCTCOG-Dirty-Dozen-Pollution-Prevention-Tips-PDF",
+            "title": "[PDF] “The Dirty Dozen” 12 Tips to Prevent Storm Water Pollution",
+            "snippet": "Don't pump your pool water into the storm drain – pool chemicals can be hazardous to our creek habitats. Whenever possible. Don't mess with Texas! Throw ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 8, 1999",
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1630/TXR040000-Fact-Sheet-PDF",
+            "title": "[PDF] Fact Sheet and Executive Director's Preliminary Decision",
+            "snippet": "I. Summary. The Texas Commission on Environmental Quality (TCEQ) is proposing to amend and renew the TPDES general permit for Phase II ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.dentoncounty.gov/1012/Roanoke-Parks-Recreation",
+            "title": "City Parks | Roanoke, TX - Official Website",
+            "snippet": "Briarwyck Park · Adult Softball Field · Little League Baseball Field · Playground Equipment · Restrooms · Soccer Field · Swimming Pool with Slides and Play Features ...",
+            "position": 6
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=115_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "SWIMMING POOL, 09/07/2021, 740127, Approved, 09/03/2021, LOPEZ, CINTHYA ... MUSTANG RV PARK AND STORAGE, 9495 FM 1385, A1329A I WALTERS, TR 26C, 22.711 ...",
+            "position": 7
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=309_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "MEDALIAN POOLS, 1005 FRISCO HILLS BLVD, FRISCO HILLS PHASE 2B BLK 36 LOT 14, SWIMMING POOL, 01/03/2018, 679502, Approved, 01/02/2018, KING, ANTONIO & STEPHANIE ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "Park's | Show results with:Park's"
+            }
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=15_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "13515 GRANITE PARK RD, BIG SKY ESTATES PHASE 1 BLK A LOT 21, HOUSE, 05/01/2023 ... FOR HOUSE ONLY; GUEST HOUSE & POOL MUST BE PERMIT SEPARATELY, Approved ...",
+            "position": 9
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=427_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "PREMIER POOLS, 200 EQUESTRIAN RD, STEEPLECHASE NORTH ADDITION PHASE 1 BLK B LOT 4, SWIMMING POOL, 02/04/2016, 565002, Approved, 02/02/2016, DUNCAN, MATTHEW & ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:25:36.258Z",
+      "data": {
+        "name": "Park's Pools LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(254) 317-2618",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/whitehouse/profile/pool-contractors/parks-pools-llc-1075-28148082",
+        "review_count": null,
+        "founding_date": "02/24/2022",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 3,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:26:00.411Z",
+      "data": {
+        "cid": "10815157654535290561",
+        "name": "Park Forest Pool Association (private)",
+        "found": true,
+        "rating": 4.7,
+        "source": "serper",
+        "address": "11629 Sonnet Dr, Dallas, TX 75234",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 0,
+          "target_reviews": 100
+        },
+        "reviews": [],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        },
+        "review_count": 25,
+        "review_source": "serper",
+        "serpapi_error": null,
+        "search_variant": "new_fallback",
+        "collection_cost": 0.182
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:26:39.775Z",
+      "data": {
+        "name": "Park's Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(254) 317-2618",
+        "rating": 4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "11600 Lake June Rd",
+        "reviews": [
+          {
+            "date": "10 months ago",
+            "text": "",
+            "rating": 4,
+            "source": "google_maps",
+            "reviewer_name": "Josie Gubler"
+          }
+        ],
+        "website": "https://parkspoolstexas.com/",
+        "maps_url": "https://www.google.com/maps/search/Park's+Pools+Mesquite,+TX/@32.8134074,-97.5714798,10z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "website": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:26:41.058Z",
+      "data": {
+        "email": null,
+        "error": null,
+        "source": null
+      }
+    },
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:26:43.261Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": true,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "https://parkspoolstexas.com/",
+            "type": "workmanship",
+            "snippet": "rience, our skilled team is committed to precision, durability, and exceptional craftsmanship in every project. From excavation and placement to plumbing and finishing, we h"
+          }
+        ],
+        "durations": [
+          "three years"
+        ],
+        "confidence": "MODERATE",
+        "source_url": "https://parkspoolstexas.com/",
+        "analyzed_pages": [
+          {
+            "url": "https://parkspoolstexas.com/",
+            "type": "homepage",
+            "title": "Parks Pools Texas"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:26:48.368Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:26:50.885Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Park's Pools\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.PoolInstallations.124508666.html",
+            "title": "Park's Pools Reviews - Whitehouse, TX | HomeAdvisor",
+            "snippet": "How is Park's Pools overall rated? Park's Pools is currently rated 1.0 overall out of 5. What days is Park's Pools open? Monday: 8:00 AM - 5:00 PM Tuesday ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/review/124508666",
+            "title": "Untitled",
+            "snippet": "Park's Pools. 14588 State Highway 110, Whitehouse, TX. *Indicates required fields. How would you rate this pro? *. Did you hire this pro? *."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:26:55.224Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Park's Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:27:16.017Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T06:27:00Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Park%27s%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=NMSOadiLCrezqtsPiNyz4Qc\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T06:27:11Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Park%27s%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=PsSOabfyC7CkqtsPlvvMsAE\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Park's Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:27:16.695Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "PARK'S POOLS LLC",
+        "taxpayer_number": "32083372881"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T06:27:16.701Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:17:52.511Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Park's Pools",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Park's Pools",
+        "searched_at": "2026-02-13T07:16:23.255593",
+        "total_records": 0
+      }
+    }
+  }
+}

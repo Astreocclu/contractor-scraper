@@ -1,0 +1,859 @@
+{
+  "contractor_id": 21,
+  "business_name": "American Patio Enclosures",
+  "city": "Dallas",
+  "state": "TX",
+  "verticals": [
+    "pool",
+    "patio-covers"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-12T20:25:23.879Z",
+  "sources": {
+    "google_maps": {
+      "status": "success",
+      "fetched_at": "2025-12-05T17:30:57.844Z",
+      "data": {
+        "found": true,
+        "rating": 5,
+        "status": "open",
+        "review_count": 32,
+        "business_name": null
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:08:01.205Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:08:37.009Z",
+      "data": {
+        "url": "https://www.angi.com/companylist/us/tx/addison/patio-enclosures-dallas-reviews-1.htm",
+        "name": "American Patio Enclosures",
+        "site": "angi.com",
+        "error": null,
+        "found": true,
+        "rating": null,
+        "source": "serp_angi",
+        "confidence": "unknown",
+        "matched_name": null,
+        "review_count": null
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:06:07.658Z",
+      "data": {
+        "query": "site:yelp.com \"American Patio Enclosures\" \"Dallas, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Patio+Enclosure&find_loc=Dallas%2C+TX",
+            "title": "TOP 10 BEST Patio Enclosure in Dallas, TX - Updated 2025",
+            "rating": 4.5,
+            "snippet": "These are some highly rated businesses for patio coverings in Dallas, TX: American Patio Enclosures (5/5). American Solar Screens (5/5). Outdoor Living of ...",
+            "position": 1,
+            "ratingCount": 719
+          },
+          {
+            "link": "https://www.m.yelp.com/search?find_desc=Patio+Coverings&find_loc=Downtown%2C+Dallas%2C+TX",
+            "title": "TOP 10 BEST Patio Coverings near Downtown, Dallas, TX",
+            "snippet": "Top 10 Best Patio Coverings in Dallas, TX - Last Updated October 2025 - Yelp - Reformed Outdoor Structures, MRZ Contracting, American Patio Enclosures, ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Sunroom+Contractor&find_loc=Dallas%2C+TX",
+            "title": "Top 10 Best Sunroom Contractor Near Dallas, Texas",
+            "rating": 4.2,
+            "snippet": "... American Patio Enclosures, Moore Construction, Expo Home Improvement, A&A ... Dallas, TX · Oak Lawn, Dallas, TX. Frequently Asked Questions and Answers.",
+            "position": 3,
+            "ratingCount": 1128
+          },
+          {
+            "link": "https://www.m.yelp.com/search?find_desc=Patio+Enclosures&find_loc=Lucas%2C+TX",
+            "title": "TOP 10 BEST Patio Enclosures near Lucas, TX - Updated 2025",
+            "snippet": "... American Patio Enclosures, Double T Screened ... Dallas tx . Our goal is to ensure we meet tight ... American Patio Enclosures. 5.0 (3 reviews). Patio ...",
+            "position": 4
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Landscaping&find_near=american-patio-enclosures-southlake",
+            "title": "Best Landscaping near American Patio Enclosures in Southlake ...",
+            "snippet": "Reviews on Landscaping near American Patio Enclosures ... Best Landscaping near American Patio Enclosures in Southlake, TX ... Dallas, TX 75227. Yelp Guaranteed.",
+            "position": 5
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Sunroom+Contractor&find_loc=Justin%2C+TX",
+            "title": "TOP 10 BEST Sunroom Contractor near Justin, TX",
+            "rating": 3.9,
+            "snippet": "... American Patio Enclosures, Masterpiece Sunrooms, Red White and Roofing ... Dallas, TX · Downtown, Fort Worth, TX · Far West, Fort Worth, TX · North Dallas ...",
+            "position": 6,
+            "ratingCount": 640
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Electricians&find_near=american-patio-enclosures-southlake",
+            "title": "Best Electricians near American Patio Enclosures in Southlake, TX",
+            "snippet": "Best Electricians near American Patio Enclosures in Southlake, TX ... Dallas, TX 75226. Yelp Guaranteed. 7 years in business. Certified professionals.",
+            "position": 7
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Nurseries+%26+Gardening&find_near=american-patio-enclosures-southlake",
+            "title": "Best Nurseries & Gardening near American Patio Enclosures in ...",
+            "snippet": "Reviews on Nurseries & Gardening near American Patio Enclosures ... American Patio Enclosures in Southlake, TX ... Dallas,Tx. 75228. See all reviews. All \"Nurseries ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Sunroom+Contractor&find_loc=Plano%2C+TX",
+            "title": "Top 10 Best Sunroom Contractor Near Plano, Texas",
+            "rating": 4.3,
+            "snippet": "... American Patio Enclosures, Expo Home Improvement, Rezcomm Professional ... Dallas, TX · Uptown, Dallas, TX. Frequently Asked Questions and Answers. What ...",
+            "position": 9,
+            "ratingCount": 1133
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=gazebo%2Fpergola+installation&find_loc=Celina%2C+TX+75009",
+            "title": "Best gazebo/pergola installation near Celina, TX 75009",
+            "rating": 4.4,
+            "snippet": "... American Patio Enclosures, Drop Tine Construction, Four Rivers Pools ... Patio Coverings in Oak Lawn, Dallas, TX. Frequently Asked Questions and Answers.",
+            "position": 10,
+            "ratingCount": 444
+          }
+        ]
+      }
+    },
+    "houzz": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:08:42.244Z",
+      "data": {
+        "url": "https://www.houzz.com/professionals/decks-and-patios/dallas-tx-us-probr0-bo~t_11830~r_4684888",
+        "name": "American Patio Enclosures",
+        "site": "houzz.com",
+        "error": null,
+        "found": true,
+        "rating": null,
+        "source": "serp_houzz",
+        "confidence": "unknown",
+        "matched_name": null,
+        "review_count": 7
+      }
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:06:49.498Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:06:52.116Z",
+      "data": {
+        "query": "American Patio Enclosures Dallas site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Apr 22, 2019",
+            "link": "https://www.dallasnews.com/business/real-estate/2019/04/22/california-building-products-firm-is-moving-its-head-office-and-manufacturing-to-north-texas/",
+            "title": "California building products firm is moving its head office ...",
+            "snippet": "A fast-growing California company that produces a popular line of folding patio doors is relocating to North Texas.",
+            "position": 1
+          },
+          {
+            "date": "Aug 29, 2024",
+            "link": "https://www.dallasnews.com/abode/2024/08/29/keep-your-patio-furniture-pristine-with-these-simple-tips/",
+            "title": "Keep your patio furniture pristine with these simple tips",
+            "snippet": "But Presseisen says outdoor furniture covers provide the best protection. “We recommend Treasure Garden products. They're waterproof and very ...",
+            "position": 2
+          },
+          {
+            "date": "Dec 4, 2017",
+            "link": "https://interactives.dallasnews.com/2017/the-move/review.html",
+            "title": "The News goes back to the future",
+            "snippet": "The newly completed Dallas Morning News building is part of a broader regeneration of the area around Main Street Garden.",
+            "position": 3
+          },
+          {
+            "date": "Nov 13, 2025",
+            "link": "https://www.star-telegram.com/news/business/article312908554.html",
+            "title": "Keith Lee spotlights Drew's Place in west Fort Worth TX",
+            "snippet": "Drew's Place, located at 5701 Curzon Ave., is owned and operated by Drew and Stephanie Thomas and their daughter, Krystal. It was recently ...",
+            "position": 4
+          },
+          {
+            "date": "Mar 12, 2024",
+            "link": "https://www.dallasnews.com/abode/2024/03/12/an-expert-guide-to-creating-a-patio-space-youll-actually-use/",
+            "title": "An expert guide to creating a patio you'll actually use",
+            "snippet": "Dallas tastemaker and entertaining expert Kimberly Schlegel Whitman recommends choosing lightweight chairs or other multifunctional patio pieces ...",
+            "position": 5
+          },
+          {
+            "date": "Nov 4, 2016",
+            "link": "https://interactives.dallasnews.com/2016/west-dallas-stories/",
+            "title": "Will this West Dallas neighborhood be the latest to gentrify?",
+            "snippet": "These are the West Side stories of those inspiring, instigating and fighting change. Their personal stories reflect the complexities of gentrification.",
+            "position": 6
+          },
+          {
+            "date": "Jan 9, 2017",
+            "link": "https://www.star-telegram.com/entertainment/living/food-drink/article125457434.html",
+            "title": "Dining review: Dot's Hop House and Cocktail Patio in Dallas",
+            "snippet": "When you have a sprawling outdoor space as patio-perfect as Dot's Hop House and Cocktail Courtyard — 10,000 square feet of benches, tables, ...",
+            "position": 7
+          },
+          {
+            "date": "Apr 25, 2023",
+            "link": "https://www.dallasnews.com/business/real-estate/2023/04/25/jonas-woods-firm-adds-another-downtown-dallas-tower-to-its-growing-portfolio/",
+            "title": "Jonas Woods' firm adds another downtown Dallas tower to ...",
+            "snippet": "The 22-story St. Paul Place office tower at Ross Avenue and St. Paul overlooks the city's Arts District.",
+            "position": 8
+          },
+          {
+            "date": "Sep 17, 2019",
+            "link": "https://www.dallasnews.com/business/real-estate/2019/09/17/first-look-renovation-of-downtown-dallas-historic-cabana-hotel-is-moving-ahead/",
+            "title": "First look: Renovation of downtown Dallas' historic Cabana ...",
+            "snippet": "Developers redoing a historic downtown Dallas hotel have finished demolition and are ready to start reconstruction of the high-rise.",
+            "position": 9
+          },
+          {
+            "date": "May 21, 2014",
+            "link": "https://www.wfaa.com/article/sports/high-school/eagle-stadium-underneath-the-cracks/287-304672224",
+            "title": "Eagle Stadium: Underneath the cracks",
+            "snippet": "Although the concrete concourse appears to be a big patio, much of it covers offices underneath. And supporting the patio are joists beams which ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:07:09.893Z",
+      "data": "American Patio Enclosures Dallas review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Driving safely or driving less could help you save on Auto Insurance Drive your way and save with USAA SafePilot® or USAA SafePilot Miles™ Sponsored USAA Watch Get quote Patio Enclosures Patio Enclosures @PatioEnclosures • 1.53K subscribers Patio Enclosures offers quality sunrooms , solariums, screen rooms, screened porches, SoftWall Finishing Systems, awnings, ... Subscribe Shorts Patio Enclosures | Stunning Transformations: Before and After Patio Enclosures Projects 1.2K views The new patio enclosure 103 views Patio Enclosure 282 views retractable patio enclosures 110 views ✅ \"Custom Patio Enclosure with Solar Screens | Dayton TX Outdoor Living | AOLE USA\" 264 views Show more Show less Learn more The Average Walk-In Shower Cost in 2025 The Days Of Expensive Tiled Showers Are Over. Here's What Comes Next. Sponsored KOHLER Safe Showers 0:16 0:16 Now playing Patio Enclosures | Imagine Your Perfect Enclosed Room - Transform Your Outdoor Space Patio Enclosures Patio Enclosures • • 2.3M views 2 years ago Patio Enclosures Patio Enclosures Discover how Patio Enclosures can transform your outdoor space into your favorite room with these before and after ... Discover how Patio Enclosures can transform your outdoor space into your favorite room with these before and after ... From the video description CC 0:16 0:16 Now playing Patio Enclosures | Customer Testimonials - Sunroom Reviews Patio Enclosures Patio Enclosures • • 278 views 2 years ago Patio Enclosures Patio Enclosures 94% of customers would recommend Patio Enclosures ... Now that's Happy Customers! We take great pride in manufacturing and ... 94% of customers would recommend Patio Enclosures ... Now that's Happy Customers! We take great pride in manufacturing and ... From the video description CC Learn more Buy 2 windows & get 2 free The most wanted windows on the market in 2025 Sponsored 1 Day Window Replacement 1:14 1:14 Now playing Patio Enclosures | A Pleasure to Work With - A Great Customer Experience Patio Enclosures Patio Enclosures • • 862 views 2 years ago Patio Enclosures Patio Enclosures Joanne was pleased to share her experience working with the Patio Enclosures ' team. The entire process, from the initial meeting ... Joanne was pleased to share her experience working with the Patio Enclosures ' team. The entire process, from the initial meeting ... From the video description CC Shorts Patio Enclosure 282 views retractable patio enclosures 110 views ✅ \"Custom Patio Enclosure with Solar Screens | Dayton TX Outdoor Living | AOLE USA\" 264 views Patio enclosures builder in Austin Texas 31 views Patio Enclosures 11' Sunroom. 288 views Show more Show less 1:19 1:19 Now playing Schedule Your Free In-Home Cost Estimate with Patio Enclosures Patio Enclosures Patio Enclosures • • 26K views 8 years ago Patio Enclosures Patio Enclosures Are you considering enclosing your existing porch or maybe even building a new sunroom addition on your home. Scheduling an ... Are you considering enclosing your existing porch or maybe even building a new sunroom addition on your home. Scheduling an ... From the video description 3 moments We'll listen to your needs and vision for the space | Every room we construct is custom designed | We'll make recommendations, show you similar projects 3 auto-generated moments in this video 3 moments We'll listen to your needs and vision for the space We'll listen to your needs and vision for the space 0:33 We'll listen to your needs and vision for the space 0:33 Every room we construct is custom designed Every room we construct is custom designed 0:39 Every room we construct is custom designed 0:39 We'll make recommendations, show you similar projects We'll make recommendations, show you similar projects 0:51 We'll make recommendations, show you similar projects 0:51 2:53 2:53 Now playing Patio Enclosures (Showroom Tour) HGExpo HGExpo • • 299 views 12 years ago HGExpo HGExpo Welcome to the Patio Enclosures breathtaking Macedonia showroom! Take a look at the five different full-sized sunrooms options, ... Welcome to the Patio Enclosures breathtaking Macedonia showroom! Take a look at the five different full-sized sunrooms options, ... From the video description 0:54 0:54 Now playing Patio Enclosures - The Best of Both Worlds: Windows & Screens - Enjoy Nature all Year Long Patio Enclosures Patio Enclosures • • 1.2M views 2 years ago Patio Enclosures Patio Enclosures Patio Enclosures custom rooms are a great way to enjoy the outdoors all year long. They provide protection from the elements and ... Patio Enclosures custom rooms are a great way to enjoy the outdoors all year long. They provide protection from the elements and ... From the video description CC Visit site Save up to $550 a year on Car Insurance Car Insurance $19 Full Coverage Approved Sponsored Car Insurance Dealz Info SHORTS SHORTS Now playing Installing a Screened Patio Enclosure | Fort Worth Patio Upgrade Green Nation General Contracting Green Nation General Contracting • • 2.1K views 2 months ago Green Nation General Contracting Green Nation General Contracting Watch our crew in action as we install a beautiful aluminum screened enclosure , turning this patio into a comfortable outdoor ... Watch our crew in action as we install a beautiful aluminum screened enclosure , turning this patio into a comfortable outdoor ... From the video description 1:31 1:31 Now playing Porch & Patio Enclosure System Valley City Supply Valley City Supply • • 436 views 11 months ago Valley City Supply Valley City Supply Our Porch & Patio Enclosure System will transform your favorite space into a showplace! The beauty of our Porch & Patio ... Our Porch & Patio Enclosure System will transform your favorite space into a showplace! The beauty of our Porch & Patio ... From the video description 6:24 6:24 Now playing AVOID \"Patio enclosure\" sunroom.. just run keep searching for another COMPANY It's Esha It's Esha • • 20K views 4 years ago It's Esha It's Esha Patio enclosure received a \"D\" .. materials are good but everything else is horrible and a hassle. Patio enclosure received a \"D\" .. materials are good but everything else is horrible and a hassle. From the video description 0:30 0:30 Now playing Patio Enclosure Contractor/ Planet Home Remodel Review PlanetHomeRemodeling PlanetHomeRemodeling • • 109 views 14 years ago PlanetHomeRemodeling PlanetHomeRemodeling SHORTS SHORTS Now playing Florida Sunrooms and Patio Enclosures Designed for Year-Round Comfort Lifestyle Remodeling Lifestyle Remodeling • • 1.8K views 8 months ago Lifestyle Remodeling Lifestyle Remodeling Add space, light, and comfort to your home with a custom sunroom or patio enclosure from Lifestyle Remodeling. Built for beauty ... Add space, light, and comfort to your home with a custom sunroom or patio enclosure from Lifestyle Remodeling. Built for beauty ... From the video description Learn more Eye-Popping Cost To Install A Metal Roof Metal shingle roofs last 50+ years, require zero upkeep and resist 120mph winds Sponsored Metal Roof Nation People also watched 12:16 12:16 Now playing 3 Remodel Rip-Offs Matt Risinger Matt Risinger • • 924K views 5 years ago Matt Risinger Matt Risinger On the Build Show today Matt will reveal three typical remodel / home improvement upgrades that are a total rip. At best they are a ... On the Build Show today Matt will reveal three typical remodel / home improvement upgrades that are a total rip. At best they are a ... From the video description 4 chapters Intro | Powered attic ventilators | Solar attic fans | Window Replacement 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Powered attic ventilators Powered attic ventilators 0:35 Powered attic ventilators 0:35 Solar attic fans Solar attic fans 3:10 Solar attic fans 3:10 Window Replacement Window Replacement 8:48 Window Replacement 8:48 10:13 10:13 Now playing DIY - Converting a Pergola/Patio to a living room PT1 scope and planning Home on the Tools Home on the Tools • • 18K views 2 years ago Home on the Tools Home on the Tools Hi Everyone Follow along as I convert my pergola into a large living room. Walls, roof, flooring and demolition work, all will be ... Hi Everyone Follow along as I convert my pergola into a large living room. Walls, roof, flooring and demolition work, all will be ... From the video description 4K Summary The video follows a homeowner as they plan to convert their pergola into a living room. They discuss the steps involved, including roofing, walls, flooring, and demolition. The homeowner also shares their experience with obtaining building permits and using a drawing app to create plans. AI-generated video summary Quality and accuracy may vary. Summary The video follows a homeowner as they plan to convert their pergola into a living room. They discuss the steps involved, including roofing, walls, flooring, and demolition. The homeowner also shares their experience with obtaining building permits and using a drawing app to create plans. 4:43 4:43 Now playing Is Having a Sunroom Really Worth it? | Real Estate FAQ's | Maiga Homes Sarah Maiga Sarah Maiga • • 28K views 3 years ago Sarah Maiga Sarah Maiga I will cover: What Is A Sunroom? 3 Season & 4 Season Rooms Pros & Cons of Adding a Sunroom Materials & Labor ... I will cover: What Is A Sunroom? 3 Season & 4 Season Rooms Pros & Cons of Adding a Sunroom Materials & Labor ... From the video description 4:48 4:48 Now playing convert covered porch to sunroom to use all four seasons OG4 The ProCut The ProCut • • 200K views 5 years ago The ProCut The ProCut https://paypal.me/TheProCut?country.x=US&locale.x=en_US part 2 https://youtu.be/5yC2d9VEEjI This video is the first in a ... https://paypal.me/TheProCut?country.x=US&locale.x=en_US part 2 https://youtu.be/5yC2d9VEEjI This video is the first in a ... From the video description + 6 more SHORTS SHORTS Now playing Four Season Patio Enclosure Sunroom Baivilla Baivilla • • 44K views 8 months ago Baivilla Baivilla Bring the Outdoors In — All Year Long Discover the Four Season Patio Enclosure Sunroom — a beautiful, functional space that ... Bring the Outdoors In — All Year Long Discover the Four Season Patio Enclosure Sunroom — a beautiful, functional space that ... From the video description SHORTS SHORTS Now playing Patio Enclosures | Customer Reviews - Discover Why Customers Love Their Sunroom Patio Enclosures Patio Enclosures • • 216K views 2 years ago Patio Enclosures Patio Enclosures At Patio Enclosures , our customers tell us that our sunrooms have become their favorite room in the home, but don't take our word ... At Patio Enclosures , our customers tell us that our sunrooms have become their favorite room in the home, but don't take our word ... From the video description CC SHORTS SHORTS Now playing Patio Enclosures | Discover Why 94% of Our Customers Recommend Patio Enclosures Sunrooms Patio Enclosures Patio Enclosures • • 9.2K views 2 years ago Patio Enclosures Patio Enclosures Through the years, Patio Enclosures has received numerous positive testimonials from satisfied customers who have praised us ... Through the years, Patio Enclosures has received numerous positive testimonials from satisfied customers who have praised us ... From the video description CC SHORTS SHORTS Now playing Patio Enclosures | Transform Your Outdoor Space - Get More Enjoyment from Your Home Patio Enclosures Patio Enclosures • • 11K views 2 years ago Patio Enclosures Patio Enclosures Discover how Patio Enclosures can transform your outdoor space into your favorite room with these before and after ... Discover how Patio Enclosures can transform your outdoor space into your favorite room with these before and after ... From the video description CC SHORTS SHORTS Now playing Our patio enclosures & sunrooms can bring families together. Call us today at (817) 904-8554! American Eagle Builders American Eagle Builders • • 15 views 1 year ago American Eagle Builders American Eagle Builders funny #dfw # america #home #dfwhomes # american #jobsearch #dallasfortworth # dallas #americaneaglebuilders #renovation ... funny #dfw # america #home #dfwhomes # american #jobsearch #dallasfortworth # dallas #americaneaglebuilders #renovation ... From the video description 3:06 3:06 Now playing Patio Enclosures - Glass & Screens...It's all in the details. Patio Enclosures Patio Enclosures • • 151K views 12 years ago Patio Enclosures Patio Enclosures It's All in the Details - Bob Zielinski walks you through of the small, minute details of each Patio Enclosures room. Learn the ... It's All in the Details - Bob Zielinski walks you through of the small, minute details of each Patio Enclosures room. Learn the ... From the video description 3 moments How Do You Clean Your Screens | Lock and Handle Sets | What Makes Patio Enclosures Different from Everybody Else 3 auto-generated moments in this video 3 moments How Do You Clean Your Screens How Do You Clean Your Screens 1:23 How Do You Clean Your Screens 1:23 Lock and Handle Sets Lock and Handle Sets 1:47 Lock and Handle Sets 1:47 What Makes Patio Enclosures Different from Everybody Else What Makes Patio Enclosures Different from Everybody Else 2:21 What Makes Patio Enclosures Different from Everybody Else 2:21 SHORTS SHORTS Now playing All season patio enclosure Security Shutter & Screens - Dallas, TX Security Shutter & Screens - Dallas, TX • • 220 views 5 years ago Security Shutter & Screens - Dallas, TX Security Shutter & Screens - Dallas, TX Motorized shades with 190mph wind resistance. Motorized shades with 190mph wind resistance. From the video description 0:26 0:26 Now playing Patio Enclosures | Discover Why Our Customers Rave About Our Sunrooms Patio Enclosures Patio Enclosures • • 611K views 2 years ago Patio Enclosures Patio Enclosures Patio Enclosures is a leading provider of custom-built sunrooms , screen rooms, and enclosures for patios, porches, and decks. Patio Enclosures is a leading provider of custom-built sunrooms , screen rooms, and enclosures for patios, porches, and decks. From the video description CC 0:55 0:55 Now playing Sliding Patio Enclosure by Azure Outdoor Living Azure Outdoor Living Azure Outdoor Living • • 2.6K views 3 years ago Azure Outdoor Living Azure Outdoor Living Innovative Sliding Patio Enclosure Why not take the opportunity to enjoy your garden and all it has to offer without worrying about ... Innovative Sliding Patio Enclosure Why not take the opportunity to enjoy your garden and all it has to offer without worrying about ... From the video description 4K Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:07:11.204Z",
+      "data": {
+        "query": "site:nextdoor.com American Patio Enclosures Dallas",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/neighborhood/southlakeblvd--southlake--tx/",
+            "price": 200,
+            "title": "Southlake Blvd, Southlake | Everything You Need to Know",
+            "snippet": "American Patio Enclosures · Pigtails & Crewcuts Southlake · Highland Nail Salon. Hear from locals on Nextdoor. Continue with Google. Continue with Apple.",
+            "currency": "$",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:07:52.409Z",
+      "data": {
+        "query": "site:collincountytx.gov American Patio Enclosures",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jul 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210716_2662/33858_RTC%20Packet%2007-08-2021.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "The RTC meeting on July 8, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:08:43.388Z",
+      "data": {
+        "error": "No SERPER_API_KEY",
+        "found": false
+      }
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:08:43.392Z",
+      "data": {
+        "error": "No SERPER_API_KEY",
+        "found": false
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:08:43.390Z",
+      "data": {
+        "error": "No SERPER_API_KEY",
+        "found": false
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:07:32.295Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:07:38.804Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:07:47.333Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov American Patio Enclosures",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:07:48.420Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Comptroller's Office Updates Webfile It's faster and more convenient to find and manage your tax information online. Learn more.",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:07:51.302Z",
+      "data": {
+        "query": "site:dallascounty.org American Patio Enclosures civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:08:43.369Z",
+      "data": {
+        "error": "No SERPER_API_KEY",
+        "found": false
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:08:43.370Z",
+      "data": {
+        "error": "No SERPER_API_KEY",
+        "found": false
+      }
+    },
+    "tdlr": {
+      "status": "not_found",
+      "fetched_at": "2025-12-05T17:32:06.159Z",
+      "data": {
+        "error": "Waiting for selector `input[name=\"SearchTerm\"], input[id=\"SearchTerm\"], input[type=\"text\"]` failed: Waiting failed: 10000ms exceeded",
+        "found": false,
+        "licenses": [],
+        "search_term": "American Patio Enclosures"
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:09:02.845Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:67e3:462:b973:bd30\nTime: 2025-12-13T20:08:46Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22American%20Patio%20Enclosures%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=zcc9afnuNrO3wN4P78D9qAI\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:67e3:462:b973:bd30\nTime: 2025-12-13T20:08:57Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22American%20Patio%20Enclosures%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=2Mc9acvBKM23wN4PxuaXiQQ\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "Failed to execute 'querySelectorAll' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.\nre (pptr:internal:3:12826)\nIe (pptr:internal:3:13100)\npptr:evaluateHandle;PQueryHandler.queryOne%20(%2Fhome%2Freid%2Ftesthome%2Fcontractor-auditor%2Fnode_modules%2Fpuppeteer-core%2Flib%2Fcjs%2Fpuppeteer%2Fcommon%2FQueryHandler.js%3A130%3A73):2:16",
+            "county": "collin"
+          }
+        ],
+        "business_name": "American Patio Enclosures",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:10:34.466Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:10:34.477Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:06:17.717Z",
+      "data": {
+        "found": true,
+        "rating": 5,
+        "status": "closed",
+        "review_count": 32,
+        "business_name": "See photos American Patio Enclosures"
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:07:57.464Z",
+      "data": "American Patio Enclosures - American Patio Enclosures Home Cover & Enclosures Glass Enclosures Insulated Roofs Louvered Pergolas Patio Covers Screen Enclosures Solar Screens Retractable Screens Color Options Frame Colors Fabric Colors Additional Services Swing Patio Doors Sliding Barn Door Chair Rail & Kick Plate Dog Doors More About Us Post a Review Gallery Blog Contact Us Get a Quote (817) 393-2208 Home Cover & Enclosures Glass Enclosures Insulated Roofs Louvered Pergolas Patio Covers Screen Enclosures Solar Screens Retractable Screens Color Options Frame Colors Fabric Colors Additional Services Swing Patio Doors Sliding Barn Door Chair Rail & Kick Plate Dog Doors More About Us Post a Review Gallery Blog Contact Us Get a Quote 817-605-8881 American Patio Enclosures Patio Covers & Enclosures Residential & Commercial services serving the Dallas/Ft Worth TX Area! Get a Quote Call Us Now! We Are A Family Owned & Operated Patio Builder Welcome to American Patio Enclosures, your go-to choice among the best patio enclosure companies. As a family-owned and operated patio builder, we are dedicated to providing high-quality patio enclosure services at reasonable costs for both residential and commercial properties in the Dallas/Fort Worth area. Our screen room frames feature .048” extruded 2x2 aluminum, available in four colors: White, Tan, Champagne, and Bronze—our most popular option. Below, explore some of the patio enclosure services we proudly offer: If you are in the market for a patio or patio enclosure in Dallas, Fort Worth, then contact us today and receive a Free Consultation. Our Services If you're searching for patio cover builders near you, look no further! Contact us today for a free consultation on your patio or patio enclosure in Fort Worth. SCREEN ENCLOSURES Button PATIO COVERS Button RETRACTABLE SCREENS Button LOUVERED PERGOLAS Button Why choose us We are committed on providing top quality patio enclosure services at a reasonable cost for both residential and commercial properties here in the Dallas/Fort Worth Texas area. Our mainframe for our screen rooms come in a .048″ extruded 2×2 aluminum, available in four colors (White, Tan, Champagne, and Bronze, our most popular.) Below are just a few of the patio enclosure services that we offer to both homeowners and business owners alike. Get a Quote Metal Frame Colors Learn More Screen Fabric Colors Learn More Need a Patio Covered or Enclosed? At American Patio Enclosures, we understand that enhancing your outdoor space is a significant investment. That’s why we offer flexible financing options for homeowners. With our tailored plans, you can start your patio enclosure project without stretching your budget, ensuring a seamless path to your dream outdoor retreat. Get a Quote What our customers are saying \"Amazing experience with American Patio Enclosures! I can’t recommend them enough from communication to delivering an awesome product. We are extremely pleased with our patio and it has surpassed all of our hopes and expectations. If you are looking to screen in your patio then look no further, this company is the best!\" - Patrick Quin \"We had a patio enclosure installed a few weeks ago. It is a game changer we feel like we have a new room, its cooler, it blocks the glare on the TV screen. We also had a dog door installed which is great. The installers Justin and Chris did a fabulous job installing it. I am out there at least twice a day I would give 6 stars if I could, get an enclosure you will LOVE it!\" - Eric Johnson \"They did a fabulous job! Be wise if the shape of my roof and the beams on the patio cover, I wasn't sure if they would be able to cover it all, but they did! I even had a pet door installed. They were very easy to work with, and got the job done in 2 days!\" - Julie J Fixed Permanent Enclosure Click Here Louvered Pergolas Click Here Patio Covers Click Here Our Recent Projects Our expert team at American Patio Enclosures is ready to help you design customized patio enclosures using high-quality materials, ensuring you can enjoy your outdoor space in style and comfort, shielded from the elements year-round. Contact us today for a quote for starting your next patio project. View Full Gallery Looking For Ideas On How To Create More Shade? Our expert team at American Patio Enclosures is ready to help you design customized patio enclosures using high-quality materials, ensuring you can enjoy your outdoor space in style and comfort, shielded from the elements year-round. Contact us today for a quote for starting your next patio project. Get a Quote Call Us Now! Home | Privacy Policy | Terms & Conditions | Contact | Blog Currently Serving the Dallas, Fort Worth Texas area i.e. Allen , Arlington , Aubrey , Carrollton , Celina , Decatur , Denison , Denton , Flower Mound , Frisco , Garland , Grand Prairie , Grapevine , Gunter , Highland Village , Irving , Keller , Krum , Lewisville , Little Elm , McKinney , Melissa , Mesquite , Plano , Ponder , Prosper , Princeton , Richardson , Rockwall , Rowlett , Sachse , Southlake , The Colony , Van Alstyne ©2025 American Patio Enclosures I All Rights Reserved. Share by:"
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:08:25.740Z",
+      "data": {
+        "name": "American Patio Enclosures",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": null,
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "755 Davis Blvd, Southlake, TX 76092",
+        "reviews": [],
+        "website": "https://americanpatioenclosure.com/",
+        "maps_url": "https://www.google.com/maps/search/American%20Patio%20Enclosures%20Dallas%2C%20TX",
+        "categories": [
+          "Patio enclosure supplier"
+        ],
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:06:45.942Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:07:27.833Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=American%20Patio%20Enclosures&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "ECHO will be unavailable on Friday December 12 from 5 to 7 pm EST for scheduled maintenance. Skip to main content. U.S. flag.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20Patio% 20Enclosures&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Search Media Program · Geographic Location · Community · Facility Characteristics · Enforcement and Compliance · Environmental Conditions · Pollutant.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= 20Patio% 20Enclosures&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "Enforcement and Compliance History Online | US EPA",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://echo.epa.gov/help/training",
+                "title": "ECHO Training"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= 20Patio% 20Enclosures&State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= 20Patio% 20Enclosures&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Patio% 20Enclosures&State= TX"
+            }
+          },
+          {
+            "date": "Feb 12, 2025",
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter ...",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= 20Patio% 20Enclosures&State= TX"
+            }
+          },
+          {
+            "date": "Aug 7, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= 20Patio% 20Enclosures&State= TX"
+            }
+          },
+          {
+            "date": "Aug 26, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs - EPA ECHO",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= 20Patio% 20Enclosures&State= TX"
+            }
+          },
+          {
+            "date": "Jun 13, 2025",
+            "link": "https://www.epa.gov/frs/frs-query",
+            "title": "FRS Query | US EPA",
+            "snippet": "This Query Form allows you to specify a facility by using any combination of facility name, geographic location, facility industrial classification, affiliated ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= 20Patio% 20Enclosures&State="
+            }
+          },
+          {
+            "date": "Feb 12, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+            "title": "Search Results Help | ECHO | US EPA",
+            "snippet": "The search results page allows you to interact with the data and information presented. The results page can be customized to your preferred view.",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= 20Patio% 20Enclosures&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:07:50.258Z",
+      "data": {
+        "query": "site:apps.tarrantcounty.com American Patio Enclosures",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:07:53.527Z",
+      "data": {
+        "query": "site:dentoncounty.gov American Patio Enclosures",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:08:31.216Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/american-patio-enclosures-southlake",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:08:43.366Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "americanpatioenclosure.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-13T20:08:43.378Z",
+      "data": {
+        "error": "No SERPER_API_KEY",
+        "found": false
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-13T20:10:43.237Z",
+      "data": {
+        "cost": 0.0005889800000000001,
+        "summary": "The contractor has perfect 5.0 ratings on Google and Yelp, but no actual review text was provided in the data to assess authenticity. The lack of detailed customer feedback prevents a deep analysis of writing styles, specific complaints, or emotional authenticity. The high ratings are consistent, but the absence of review content is a significant limitation.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2025-12-13T20:10:43.236Z",
+        "fake_signals": [
+          "No review text provided for analysis",
+          "Insufficient data to assess authenticity of content"
+        ],
+        "recommendation": "INSUFFICIENT_DATA",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": 5,
+          "google": 5,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Consistently high ratings across platforms",
+          "Business appears in relevant local search results"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are consistently high (5.0) on both Google and Yelp where data is available. BBB data was not found, and other platforms lack rating data."
+      }
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-12T19:07:17.552Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "MECH_LIEN": 1
+          },
+          "active_liens": 1,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 1,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "PATIO ENCLOSURES INC",
+                "grantor": "PATIO ENCLOSURES INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PATIO ENCLOSURES INC",
+                    "PATIO ENCLOSURES INC",
+                    "MECHANICS LIEN",
+                    "7/10/2003",
+                    "D203248361",
+                    "OPR/16910/161",
+                    "HURST, Subdivision: SHERI PK, Lot: 17, Block: 2"
+                  ],
+                  "search_term": "American Patio Enclosures",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-07-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203248361"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 lien(s) with unclear direction"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 1,
+          "human_summary": "UNCLEAR: 1 lien(s) found but direction undetermined (needs manual review)",
+          "liens_unclear": 1,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "American Patio Enclosures",
+        "searched_at": "2026-02-12T19:05:48.939643",
+        "total_records": 1
+      }
+    }
+  }
+}

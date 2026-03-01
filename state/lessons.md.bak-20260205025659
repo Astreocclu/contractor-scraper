@@ -1,0 +1,29 @@
+# Lessons Learned - Auditor Agent
+
+This file grows over time. Read it EVERY session. NEVER repeat these mistakes.
+
+---
+
+## 2025-12-15: Never use Google Places API
+**What happened:** Accidentally ran Google Places scraper, incurred $300 charge
+**Why it happened:** Didn't check which API was being called for review scraping
+**Prevention:** Removed Google Places API key from .env, added warning to CLAUDE.md
+**Status:** NEVER AGAIN
+
+---
+
+## 2025-12-20: Liens filed BY contractor are not red flags
+**What happened:** Marked contractor as high-risk because of liens, but they were liens filed BY the contractor (as GRANTEE), not against them
+**Why it happened:** Didn't distinguish between GRANTEE (filed by) and GRANTOR (filed against)
+**Prevention:** Updated lien analysis prompt to explicitly check direction
+**Status:** NEVER AGAIN
+
+---
+
+*Add new lessons as they occur.*
+
+## 2026-01-31: Provide full command blocks
+**What happened:** Gave users "go do X" instead of complete copy/paste commands.
+**Why it happened:** Assumed the user could translate steps into commands on their machine.
+**Prevention:** Always provide full command blocks for any user-executed steps (especially cross-host).
+**Status:** NEVER AGAIN

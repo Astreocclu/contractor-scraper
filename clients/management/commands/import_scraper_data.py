@@ -2,8 +2,8 @@
 Django management command to import data from the Scraper project's SQLite database.
 
 Usage:
-    python manage.py import_scraper_data --db /home/astre/command-center/testhome/permit-scraper/data/leads.db
-    python manage.py import_scraper_data --db /home/astre/command-center/testhome/permit-scraper/data/leads.db --dry-run
+    python manage.py import_scraper_data --db /home/astre/command-center/src/greenlit/collections/data/permits.db
+    python manage.py import_scraper_data --db /home/astre/command-center/src/greenlit/collections/data/permits.db --dry-run
 """
 
 import sqlite3
@@ -24,7 +24,7 @@ class Command(BaseCommand):
         parser.add_argument(
             '--db',
             type=str,
-            default='/home/astre/command-center/testhome/permit-scraper/data/leads.db',
+            default='/home/astre/command-center/src/greenlit/collections/data/permits.db',
             help='Path to Scraper SQLite database'
         )
         parser.add_argument(

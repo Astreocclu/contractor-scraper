@@ -1,0 +1,912 @@
+{
+  "contractor_id": 638,
+  "business_name": "Texas Screens Unlimited",
+  "city": "Denton",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-07T13:25:46.032Z",
+  "sources": {
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:09:37.446Z",
+      "data": {
+        "query": "site:collincountytx.gov Texas Screens Unlimited",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2011/CC/20110613_1191/33716_Packet_for_Bid_05204-11.pdf",
+            "title": "Solicitation 05204-11 Software & Implementation for Public ...",
+            "snippet": "Prices bid/proposed shall only be considered if they are provided in the appropriate space(s) on the Collin County bid form(s).",
+            "position": 1
+          },
+          {
+            "date": "Jul 29, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250728_3116/58382_Solicitation%20Packet.pdf",
+            "title": "Collin County, TX REQUEST FOR PROPOSAL 2025-082 ...",
+            "snippet": "By order of the Commissioners Court of Collin County, Texas sealed proposals will be received for 2025-082. Asset Management and Capital ...",
+            "position": 2
+          },
+          {
+            "date": "Dec 13, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2022/CC/20220124_2720/51491_Collin%20County%2C%20TX%20-%20Proposal%2012.13.2021.pdf",
+            "title": "PROPOSAL TO PROVIDE INMATE COMMUNICATION ...",
+            "snippet": "Using the tablets, inmates will be able to access a variety of self-service features at no cost, such as commissary ordering, grievance ...",
+            "position": 3
+          },
+          {
+            "date": "May 20, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200622_2494/48561_Collin%20County%20TX%20-%20ICS%20Contract%20Amendment%20for%20VVS%20-%20Revised.pdf",
+            "title": "The VisitorTM Video Visitation System",
+            "snippet": "The vPhone is a corrections grade, IP-based station equipped with a hardened touch screen monitor, high definition camera, and Linux-based ...",
+            "position": 4
+          },
+          {
+            "date": "Jan 23, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240122_2910/55286_Bid%20Packet.pdf",
+            "title": "2023-400 CSCD Case Management Software",
+            "snippet": "Section 2252.908 of the Texas Government Code requires a business entity entering into certain contracts with a governmental entity to file with ...",
+            "position": 5
+          },
+          {
+            "date": "Mar 3, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2018/CC/20181203_2265/45790_Memoradum%20for%20Sheriff%27s%20App.pdf",
+            "title": "Collin County Sheriffs Office",
+            "snippet": "Unlimited log in credentials for admlnirtrators. •. Unlimited receipt, response, and storage of text and web tips. •. Unlimited alerts. •.",
+            "position": 6
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2017/CC/20170619_2057/43289_Addendum%20No%201-%20EEMS.pdf",
+            "title": "COLLIN COUNTY",
+            "snippet": "accordance with Vernon's Texas ... screens, and functions within screens are available to that specific user. ... including unlimited telephone support, remote ...",
+            "position": 7
+          },
+          {
+            "date": "Jul 9, 2010",
+            "link": "https://eagenda.collincountytx.gov/docs/2010/CC/20100913_1081/31890_Morgan%20Kai.pdf",
+            "title": "Morgan Kai Group Inc",
+            "snippet": "10 Ability to assess risks by audit entity. C. F. 11 Ability to link specific risks and to a project/audit step.",
+            "position": 8
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210315_2611/33858_agenda-packet-mar.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "Trinity Metro gave all riders free bus passes unlimited (in order to limit contact with the bus ... Yet in recent years, Texas leaders have adopted a split-screen ...",
+            "position": 9
+          },
+          {
+            "date": "Aug 4, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200803_2518/48797_08%20FY%202021%20NOT%20Recommended%20Department%20Requests%20-%200001%20General%20Fund.pdf",
+            "title": "FY 2021 Department Requests - NOT Recommended",
+            "snippet": "The enterprise version provides our AppDev team unlimited public and collaborative repositories, 50GB worth of package space, elevated security, ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:09:38.407Z",
+      "data": {
+        "query": "site:dentoncounty.gov Texas Screens Unlimited",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:10:26.754Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Texas Screens Unlimited",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:10:27.316Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:10:27.331Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:10:39.069Z",
+      "data": {
+        "cost": 0.0007897400000000001,
+        "summary": "The reviews appear to be from real customers but are extremely sparse for a long-standing business. The single negative complaint pattern from Yelp (ghosting after estimate) is concerning but unverified due to lack of full review text. The overwhelmingly positive but generic Google reviews, coupled with very low volume, suggest a business that does not actively solicit reviews rather than a fake review operation.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-01-10T00:10:39.069Z",
+        "fake_signals": [
+          "Very low review volume (6) for a business operating 8+ years",
+          "All positive reviews are generic and lack specific project details",
+          "Positive reviews clustered in similar time periods (5-8 years ago)"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "platform_ratings": {
+          "bbb": "Not Rated",
+          "yelp": null,
+          "google": 4.3,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Positive reviews mention owner names (Brad, Andrea)",
+          "Reviews span several years",
+          "No evidence of review manipulation (e.g., same-day posting)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "Potential ghosting after estimate (from Yelp snippet)"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Insufficient data from other platforms to detect a meaningful discrepancy. Google rating is based on a very small sample."
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:06:42.348Z",
+      "data": {
+        "query": "site:yelp.com \"Texas Screens Unlimited\" \"Denton, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/texas-screens-unlimited-denton-2",
+            "title": "TEXAS SCREENS UNLIMITED - Updated December 2025",
+            "rating": 1,
+            "snippet": "Map · 1308 Teasley Ln. Ste 211. Denton, TX 76205 · (940) 488-4980. Call Now · Payment methods. Does Texas Screens Unlimited take credit cards? Yes, Texas Screens ...",
+            "position": 1,
+            "ratingCount": 1
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Window+Screen+Repair&find_loc=Denton%2C+TX",
+            "title": "TOP 10 BEST Window Screen Repair in Denton, TX",
+            "rating": 4.2,
+            "snippet": "... Denton, TX 76205. (940) 488-4980. Really disappointed in Texas Screens Unlimited. I called and scheduled an estimate. The guy came out to measure and verbally ...",
+            "position": 2,
+            "ratingCount": 1413
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Mobile+Window+Screen+Repair&find_loc=Lewisville%2C+TX",
+            "title": "TOP 10 BEST Mobile Window Screen Repair in Lewisville, ...",
+            "rating": 4.5,
+            "snippet": "... Texas Screens Unlimited, Omar Handyman Services, Handy Andy Fix-It Service ... Denton, TX · Euless, TX · Farmers Branch, TX · Flower Mound, TX · Frisco, TX.",
+            "position": 3,
+            "ratingCount": 1227
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=windowsinstallation&find_loc=Denton%2C+TX",
+            "title": "THE BEST 10 Windows Installation in DENTON, TX",
+            "rating": 4.1,
+            "snippet": "... Denton, TX 76205. (940) 488-4980. Really disappointed in Texas Screens Unlimited. I called and scheduled an estimate. The guy came out to measure and verbally ...",
+            "position": 4,
+            "ratingCount": 1856
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Screen+Repair&find_loc=Flower+Mound%2C+TX",
+            "title": "Top 10 Best Screen Repair Near Flower Mound, Texas",
+            "rating": 4.3,
+            "snippet": "Texas Screens Unlimited - Screen Repair near me - Flower Mound, Texas. Texas ... iPhone Battery Replacement Denton TX · cell phone repair denton tx. See ...",
+            "position": 5,
+            "ratingCount": 1993
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=solarinstallation&find_loc=Denton%2C+TX",
+            "title": "THE BEST 10 SOLAR INSTALLATION in DENTON, TX",
+            "rating": 4,
+            "snippet": "... Denton, TX 76205. (940) 488-4980. Really disappointed in Texas Screens Unlimited. I called and scheduled an estimate. The guy came out to measure and verbally ...",
+            "position": 6,
+            "ratingCount": 810
+          }
+        ]
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:10:05.650Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Texas Screens Unlimited\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:07:12.969Z",
+      "data": {
+        "found": true,
+        "rating": 4.3,
+        "status": "closed",
+        "review_count": 6,
+        "business_name": "Get app Texas Screens Unlimited"
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:09:58.853Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:09:59.569Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:07:56.817Z",
+      "data": "Trustpilot Search Results Companies Sunwise Screens sunwise-screens.be • 12 reviews 3.5 Unlimited Remit unlimitedremit.com • 2 reviews 2.9 Texas A/S www.texas.dk • 26K reviews 4.8 Unlimited unlimitedplay.fr • 17 reviews 3.0 Laitovo Screens laitovoscreens.com • 3 reviews 3.0 Categories Electronics Store The best companies in the category 'Electronics Store' Computer and Accessories Store The best companies in the category 'Computer and Accessories Store' Money Transfer Service The best companies in the category 'Money Transfer Service' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (585) Sunwise Screens sunwise-screens.be 3.5 12 reviews Belgium Unlimited Remit unlimitedremit.com 2.9 2 reviews 10685-B Hazelhurst Dr 18459, Houston, United States Texas A/S www.texas.dk 4.8 25,598 reviews Knullen 22, Odense s, Denmark Unlimited unlimitedplay.fr 3.0 17 reviews France Laitovo Screens laitovoscreens.com 3.0 3 reviews 428 Willow Street, Stoughton, United States Unlimited Vacation Club unlimitedvacationclub.com 1.5 195 reviews Sunset Drive 9450, Miami, United States Sports Unlimited www.sportsunlimitedinc.com 3.9 3,304 reviews 346 Godshall Drive, Harleysville, United States Refurbished Screens www.refurbishedscreens.co.uk 4.5 16 reviews Unit 12-13 Shorade Business Estate, New St, Cannock, United Kingdom Screens Refurbished screensrefurbished.co.uk 3.6 31 reviews 2 Mercaston Road, Derby, United Kingdom Luxury Screens www.luxuryscreens.co.uk 4.7 1,221 reviews Havelock Street, Dewsbury, Dewsbury, West Yorkshire, United Kingdom Previous 1 2 3 4 59 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Electronics Store Electronics & Technology Computer and Accessories Store Electronics & Technology Money Transfer Service Money & Insurance Garden Center Home & Garden Hi-fi shop Electronics & Technology Auto Body Parts Supplier Vehicles & Transportation are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it Share your thoughts on upcoming features & be in a chance to win 200$! Click the link below to take our 10 min survey & tell us what to build next https://trustpilotresearch.qualtrics.com/jfe/form/SV_8eTG61Snwo9I3k2 Next"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:08:05.862Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:08:10.550Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:08:13.926Z",
+      "data": {
+        "query": "Texas Screens Unlimited Denton site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Nov 19, 2025",
+            "link": "https://www.star-telegram.com/news/local/education/article312953604.html",
+            "title": "North Texas Children's Health report links kids' poor mental ...",
+            "snippet": "Too much screen time and exposure to social media were pinpointed as culprits of poor health outcomes in children. Children's Health President ...",
+            "position": 1
+          },
+          {
+            "date": "Aug 9, 2024",
+            "link": "https://www.star-telegram.com/news/politics-government/article290928529.html",
+            "title": "Tarrant County has a new tool for residents to verify ballots",
+            "snippet": "A new platform produced by civic technology company Civera will allow people to search online for images of ballots, and compare them to the voter record ...",
+            "position": 2
+          },
+          {
+            "date": "Aug 4, 2017",
+            "link": "http://www.star-telegram.com/news/business/article165421727.html",
+            "title": "Cinepolis luxury movie theater opens Saturday in Euless",
+            "snippet": "The grand opening of Cinépolis Euless is scheduled for noon Saturday, featuring first-run movies such as “Dunkirk” and “Atomic Blonde.”",
+            "position": 3
+          },
+          {
+            "date": "Feb 8, 2023",
+            "link": "https://www.star-telegram.com/entertainment/article272219758.html",
+            "title": "Watch a movie in North Texas without paying new AMC ...",
+            "snippet": "Denton- 3220 Town Center Trail, Denton Marcus. Denton Movie Tavern- 916 W. University Drive, Denton. Get unlimited digital access #ReadLocal ...",
+            "position": 4
+          },
+          {
+            "date": "Jan 27, 2025",
+            "link": "https://www.star-telegram.com/news/local/fort-worth/article299247399.html",
+            "title": "Movie Tavern Bedford to close after 21 years of cinema",
+            "snippet": "Movie Tavern Bedford announced late Sunday that it's closing for good at 8:30 pm on Friday, Jan. 31. The 10-screen movie theater is located at 2204 Airport ...",
+            "position": 5
+          },
+          {
+            "date": "Aug 20, 2025",
+            "link": "https://www.star-telegram.com/news/politics-government/state-politics/article311772553.html",
+            "title": "Texas House approves redistricted congressional map ...",
+            "snippet": "Texas House lawmakers on Wednesday approved a new congressional map that positions Republicans to pick up five seats in Congress. The map was ...",
+            "position": 6
+          },
+          {
+            "date": "Nov 4, 2025",
+            "link": "https://www.star-telegram.com/news/politics-government/state-politics/article312775413.html",
+            "title": "What does Proposition 5 on the TX ballot actually mean?",
+            "snippet": "This constitutional amendment allows the Texas Legislature to exempt animal feed that's being sold from property taxes.",
+            "position": 7
+          },
+          {
+            "date": "Nov 1, 2025",
+            "link": "https://www.star-telegram.com/news/politics-government/state-politics/article312739303.html",
+            "title": "Nov. 2025 Election: Early voting turnout in Tarrant County",
+            "snippet": "The 2025 local runoff election will take place on June 7. The in-person early voting period started Oct. 20 and ended Friday. Polls are open on ...",
+            "position": 8
+          },
+          {
+            "date": "May 26, 2020",
+            "link": "https://www.star-telegram.com/news/local/fort-worth/article242988971.html",
+            "title": "With graduations at Texas Motor Speedway, Class of 2020 ...",
+            "snippet": "Northwest ISD seniors take their turn to receive diplomas at TMS, the site of 31 high school ceremonies this year.",
+            "position": 9
+          },
+          {
+            "date": "Oct 5, 2018",
+            "link": "https://www.star-telegram.com/sports/dfwvarsity/prep-football/article219531915.html",
+            "title": "Denton Guyer vs. Southlake Carroll",
+            "snippet": "Denton Guyer gave Riley Dodge a few extra seconds to think about a last-second decision in a tie game. Dodge initially sent Joe McFadden out ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:10:04.487Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Texas Screens Unlimited\" Denton",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:08:39.982Z",
+      "data": "Texas Screens Unlimited Denton review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 0:47 0:47 Now playing Outdoor Screens in Denton, TX Longhorn - Screens Shades Shutters Longhorn - Screens Shades Shutters • • 11 views 5 years ago Longhorn - Screens Shades Shutters Longhorn - Screens Shades Shutters Motorized retractable patio screens make a patio more enjoyable throughout the year. These screens can block sun, reduce the ... Motorized retractable patio screens make a patio more enjoyable throughout the year. These screens can block sun, reduce the ... From the video description SHORTS SHORTS Now playing Better, Cheaper, Easier Window Screens??? (Flexscreen vs Ultravue) Carolina Hollow Carolina Hollow • • 4.6K views 1 year ago Carolina Hollow Carolina Hollow Does it live up to the Shark Tank hype? Screen visibility, cost, installation, ordering, & customer service. Nope I'm not an affiliate ... Does it live up to the Shark Tank hype? Screen visibility, cost, installation, ordering, & customer service. Nope I'm not an affiliate ... From the video description 6:17 6:17 Now playing A Security Screen Like You've Never Seen The Window Experts The Window Experts • • 22K views 3 years ago The Window Experts The Window Experts If you're thinking, “I wish you guys were in my area,” I've got you covered. JeffsList.com is my free list of window companies I ... If you're thinking, “I wish you guys were in my area,” I've got you covered. JeffsList.com is my free list of window companies I ... From the video description 3 chapters Intro | Security Screen | Other Applications 3 auto-generated chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 Security Screen Security Screen 0:13 Security Screen 0:13 Other Applications Other Applications 3:50 Other Applications 3:50 1:37 1:37 Now playing Motorized patio screens Security Shutter & Screens - Dallas, TX Security Shutter & Screens - Dallas, TX • • 8.4K views 2 years ago Security Shutter & Screens - Dallas, TX Security Shutter & Screens - Dallas, TX 0:00 Today we just finished up four electric retractable screens we'll show you them in a minute this is a black powder coat with a dark ... Today we just finished up four electric retractable screens we'll show you them in a minute this is a black powder coat with a dark ... Automatic captions 0:34 0:34 Now playing Screens Unlimited Solar Window Screens Company Screens Unlimited Screens Unlimited • • 49 views 7 years ago Screens Unlimited Screens Unlimited Screens Unlimited is Arizona's most trusted window and door screen company with the best service, the best technicians, and the ... Screens Unlimited is Arizona's most trusted window and door screen company with the best service, the best technicians, and the ... From the video description 2:10 2:10 Now playing Concerns arise over rezoning for mixed property use in Denton neighborhood WFAA WFAA • • 1.3K views 4 years ago WFAA WFAA Ruthie Vermillion, a longtime Denton resident, is part of the one of the families raising questions about what's happening on her ... Ruthie Vermillion, a longtime Denton resident, is part of the one of the families raising questions about what's happening on her ... From the video description CC SHORTS SHORTS Now playing Mirage 3500 Patio Retractable Screen Simply Screens Simply Screens • • 45K views 1 year ago Simply Screens Simply Screens Mirage 3500 Large Retractable screens . Mirage 3500 Large Retractable screens . From the video description 7:08 7:08 Now playing Pros and Cons of Denton, TX | What Is Denton Living REALLY Like in 2024? | Best DFW Suburb? The DFW Homeowner The DFW Homeowner • • 6.2K views 1 year ago The DFW Homeowner The DFW Homeowner DFW Homebuyer Class - https://www.dfwhomebuyerclass.com Save THOUSANDS on your next home purchase! Let's dig into the ... DFW Homebuyer Class - https://www.dfwhomebuyerclass.com Save THOUSANDS on your next home purchase! Let's dig into the ... From the video description 9 chapters Introduction of Living in the City of Denton: Pros and Cons | Where is Denton? | Pro #1 Things To Do | Pro #2 Schools | Pro #3 Cost of Living | Con #1 Traffic | Con #2 Weather | Con #3 Location | Final Thoughts 9 chapters in this video 9 chapters Introduction of Living in the City of Denton: Pros and Cons Introduction of Living in the City of Denton: Pros and Cons 0:00 Introduction of Living in the City of Denton: Pros and Cons 0:00 Where is Denton? Where is Denton? 0:21 Where is Denton? 0:21 Pro #1 Things To Do Pro #1 Things To Do 0:39 Pro #1 Things To Do 0:39 Pro #2 Schools Pro #2 Schools 1:07 Pro #2 Schools 1:07 Pro #3 Cost of Living Pro #3 Cost of Living 1:35 Pro #3 Cost of Living 1:35 Con #1 Traffic Con #1 Traffic 2:56 Con #1 Traffic 2:56 Con #2 Weather Con #2 Weather 4:51 Con #2 Weather 4:51 SHORTS SHORTS Now playing Window Screens that don’t suck to remove… Builder Brigade Builder Brigade • • 97K views 2 months ago Builder Brigade Builder Brigade Avoid home building mistakes... With my Home Building Checklist at BuilderBrigade.com These windows from Sierra Pacific ... Avoid home building mistakes... With my Home Building Checklist at BuilderBrigade.com These windows from Sierra Pacific ... From the video description 7:41 7:41 Now playing World's Strongest Retractable Screen | MagnaTrack Defender The Window Experts The Window Experts • • 14K views 2 years ago The Window Experts The Window Experts If you're thinking, “I wish you guys were in my area,” I've got you covered. JeffsList.com is my free list of window companies I ... If you're thinking, “I wish you guys were in my area,” I've got you covered. JeffsList.com is my free list of window companies I ... From the video description 4K 8 chapters Intro | Who is Magnatrack | Defender Hurricane Screen | Magnatrack rail system | Use cases | Aesthetics | Durability test | Outro 8 chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Who is Magnatrack Who is Magnatrack 0:25 Who is Magnatrack 0:25 Defender Hurricane Screen Defender Hurricane Screen 1:20 Defender Hurricane Screen 1:20 Magnatrack rail system Magnatrack rail system 1:50 Magnatrack rail system 1:50 Use cases Use cases 3:23 Use cases 3:23 Aesthetics Aesthetics 4:56 Aesthetics 4:56 Durability test Durability test 6:14 Durability test 6:14 SHORTS SHORTS Now playing $200 Screen Vs $1900 Screen Den Defenders Den Defenders • • 29K views 2 years ago Den Defenders Den Defenders The Crimsafe Ultimate Security Screen Door provides discreet style and superior security. Crimsafe Ultimate's incredible strength ... The Crimsafe Ultimate Security Screen Door provides discreet style and superior security. Crimsafe Ultimate's incredible strength ... From the video description People also watched 6:41 6:41 Now playing If You’re Thinking of Buying Cheap Blinds off Amazon- Please Watch This First! The Funny Carpenter The Funny Carpenter • • 176K views 2 years ago The Funny Carpenter The Funny Carpenter The blinds tested in this video: https://amzn.to/49bnhqw Cellular Light Filtering Blinds: https://amzn.to/3MfXOSY Cellular Blinds ... The blinds tested in this video: https://amzn.to/49bnhqw Cellular Light Filtering Blinds: https://amzn.to/3MfXOSY Cellular Blinds ... From the video description 4K 3 chapters Intro | Installation | Testing 3 auto-generated chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 Installation Installation 1:00 Installation 1:00 Testing Testing 3:13 Testing 3:13 4:45 4:45 Now playing Scottsdale renter fined $4,000 for leaving negative reviews about property 12 News 12 News • • 1.2M views 6 months ago 12 News 12 News Adrian Paull had a nightmare experience moving into a Scottsdale condo. He shared it online, only to be slapped with a $2000 ... Adrian Paull had a nightmare experience moving into a Scottsdale condo. He shared it online, only to be slapped with a $2000 ... From the video description CC 8:13 8:13 Now playing What makes a Security Screen Door PREMIUM? Den Defenders Den Defenders • • 9.3K views 2 years ago Den Defenders Den Defenders Our Lead Security Advisor Eli walks you through what separates our security screen doors from the rest! #dendefenders #security ... Our Lead Security Advisor Eli walks you through what separates our security screen doors from the rest! #dendefenders #security ... From the video description 5 chapters Viewguard Security Door | Titan Premium Security Door | Crimsafe Security Door | Sliding Security Door | Crimsafe Window Screens 5 chapters in this video 5 chapters Viewguard Security Door Viewguard Security Door 0:00 Viewguard Security Door 0:00 Titan Premium Security Door Titan Premium Security Door 2:42 Titan Premium Security Door 2:42 Crimsafe Security Door Crimsafe Security Door 3:50 Crimsafe Security Door 3:50 Sliding Security Door Sliding Security Door 5:00 Sliding Security Door 5:00 Crimsafe Window Screens Crimsafe Window Screens 7:06 Crimsafe Window Screens 7:06 21:35 21:35 Now playing How I Built A DIY Screened In Patio Full Exterior Build Builders Blueprint Builders Blueprint • • 4M views 1 year ago Builders Blueprint Builders Blueprint In this video we show you the step by step process on our backyard renovation. Be sure to stay tuned for part two of the remodel. In this video we show you the step by step process on our backyard renovation. Be sure to stay tuned for part two of the remodel. From the video description + 6 more SHORTS SHORTS Now playing Hidden Dangers Behind Solar Screens Every Buyer Must Know Home Inspector Dan | Phoenix, Arizona Home Inspector Dan | Phoenix, Arizona • • 2.3K views 5 months ago Home Inspector Dan | Phoenix, Arizona Home Inspector Dan | Phoenix, Arizona During this inspection, I found a dual-pane window with a broken outer pane, completely hidden behind a solar screen . It's easy to ... During this inspection, I found a dual-pane window with a broken outer pane, completely hidden behind a solar screen . It's easy to ... From the video description 5:02 5:02 Now playing How to Hand Wash with soap Window Screens Denton TX. Leonardo Cleaning LLC Leonardo Cleaning LLC • • 12 views 2 years ago Leonardo Cleaning LLC Leonardo Cleaning LLC How to Hand Wash with soap Window Screens Denton TX . We spray out proprietary soap onto the Window Screen , then hand ... How to Hand Wash with soap Window Screens Denton TX . We spray out proprietary soap onto the Window Screen , then hand ... From the video description 4K SHORTS SHORTS Now playing How to Dry Window Screens after Hand Washing/Rincing them Denton TX. Leonardo Cleaning LLC Leonardo Cleaning LLC • • 103 views 2 years ago Leonardo Cleaning LLC Leonardo Cleaning LLC How to Dry Window Screens after Hand Washing/Rincing them Denton TX . . How to Dry Window Screens after Hand Washing/Rincing them Denton TX . . From the video description 4:44 4:44 Now playing Longhorn Solar Screens, solar screen gallery, Dallas TX, Denton TX, Ft Worth, TX Christy Christy • • 2.2K views 13 years ago Christy Christy Gallery of completed solar screen projects. D/FW, Longhorn Solar Screens , solar screen gallery, Dallas TX , Denton TX , Ft Worth, ... Gallery of completed solar screen projects. D/FW, Longhorn Solar Screens , solar screen gallery, Dallas TX , Denton TX , Ft Worth, ... From the video description SHORTS SHORTS Now playing What are the top benefits of a security screen door? Den Defenders Den Defenders • • 15K views 2 years ago Den Defenders Den Defenders Whether you want to let fresh air into your home or keep intruders out, you can have it all with the Viewguard Security Screen Door ... Whether you want to let fresh air into your home or keep intruders out, you can have it all with the Viewguard Security Screen Door ... From the video description SHORTS SHORTS Now playing Retractable sun and moon curtains and gauze window screens, do not take up space#qiangning Insect screen door Insect screen door • • 13K views 4 months ago Insect screen door Insect screen door SHORTS SHORTS Now playing 🚫 No more Ugly Window Screens… Builder Brigade Builder Brigade • • 281K views 9 months ago Builder Brigade Builder Brigade Get more Home Building ideas and tips in my Checklist. Get it at BuilderBrigade.com @PellaWindows make windows with ... Get more Home Building ideas and tips in my Checklist. Get it at BuilderBrigade.com @PellaWindows make windows with ... From the video description SHORTS SHORTS Now playing How to Repair Window Screen 2021 Gadgets and Hacks Gadgets and Hacks • • 130K views 4 years ago Gadgets and Hacks Gadgets and Hacks Just cut a little patio window screen repair tape and you don't need to replace the whole window screen . More cost saving and ... Just cut a little patio window screen repair tape and you don't need to replace the whole window screen . More cost saving and ... From the video description SHORTS SHORTS Now playing Window Screen Repair Kit From Home Depot Is A Good Deal! #howto #tutorials #window #screen #repair Dave Doc DIY Dave Doc DIY • • 142K views 8 months ago Dave Doc DIY Dave Doc DIY 0:00 This window screen repair kit from Home Depot for 17 bucks is a good deal i'm going to show you what you can do with it now ... This window screen repair kit from Home Depot for 17 bucks is a good deal i'm going to show you what you can do with it now ... Automatic captions Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:08:42.049Z",
+      "data": {
+        "query": "site:nextdoor.com Texas Screens Unlimited Denton",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:10:02.909Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Texas Screens Unlimited\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:10:01.948Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Texas Screens Unlimited\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:09:03.275Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Texas%20Screens%20Unlimited&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Quick Search. Search By. Location; Facility Name/ID. Search by city, state, and/or zip code. Search. Search by facility name or ID Search. More Search Options.",
+            "position": 3
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 5
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "An official website of the United States government. Facility Searches » Facility Search Case Search Help Corporate Compliance Screener Help ...",
+            "position": 7
+          },
+          {
+            "date": "Dec 3, 2024",
+            "link": "https://echo.epa.gov/resources/general-info/tool-guide",
+            "title": "ECHO Tool Guide",
+            "snippet": "Use the facility search form to select criteria enter the facility name or ID into the Search By \"Facility Name/ID\" search box.",
+            "position": 8
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services",
+            "snippet": "Users can choose to view all facilities or tailor the view to facilities regulated under the Clean Air Act, Clean Water Act, or Resource ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:09:09.436Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porch.com/terms-and-conditions/#hah-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:09:18.920Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:09:32.277Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Texas Screens Unlimited",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 18, 2017",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/epress/final_State_AG_comments_re_FCC_petition.pdf",
+            "title": "Petition for Declaratory Ruling Rega",
+            "snippet": "In certain advertisements, Spectrum-TWC depicted the frustrations users commonly faced with a spotty and unreliable connection in an effort to ...",
+            "position": 1
+          },
+          {
+            "date": "Nov 15, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Age%20Verification%20SCOTUS%20Brief%20Nov%2018.pdf",
+            "title": "Brief for Respondent",
+            "snippet": "Texas, Texas Secures Settlement with Operator of Major Pornography Website, Ensuring. Compliance with Texas Law (Apr. 26, 2024) ...",
+            "position": 2
+          },
+          {
+            "date": "Aug 5, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Google%20Search%20Engine%20Monopoly%20Ruling.pdf",
+            "title": "Case 1:20-cv-03010-APM Document 1033 Filed 08/05/24 ...",
+            "snippet": "MEMORANDUM OPINION. Case 1:20-cv-03010-APM Document 1033 Filed 08/05/24 Page 1 of 286. Page 2. i. TABLE OF CONTENTS. INTRODUCTION.",
+            "position": 3
+          },
+          {
+            "date": "Jul 27, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/executive-management/Complaint%20with%20States%207-27%20TO%20FILE.pdf",
+            "title": "in the united states district court",
+            "snippet": "Such devices range in complexity and style, from a simple device designed to adapt from a firearm barrel to a plastic soda bottle, to a ...",
+            "position": 4
+          },
+          {
+            "date": "May 30, 2008",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2008/ga0633.pdf",
+            "title": "May 30,2008 The Honorable Vicki Truitt Opinion No. GA- ...",
+            "snippet": "You tell us that \"Texas educational institutions offering 403(b) plans often obtain the services of third party administrators (TPAs) to assist ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/request-files/request/2011/RQ0939GA.pdf",
+            "title": "RQ-O'l3'1-GR",
+            "snippet": "Voter approval ofHJR 3 would ensure that Texas lawmakers' . remedy takes effect. Unlimited noneconomic damages tum the justice system into a \"lottery.",
+            "position": 6
+          },
+          {
+            "date": "Nov 5, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/images/Petition%20for%20Review%20(to%20file)%20(1).pdf",
+            "title": "In the United States Court of Appeals for the Fifth Circuit",
+            "snippet": "... Austin, Texas 78711-2548. Tel.: (512) 936-1700. Fax: (512) 474-2697. Judd E. Stone II. Solicitor General. Lanora C. Pettit. Principal Deputy ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 13, 2013",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Annunciation%20House%20TI%20Motion.pdf",
+            "title": "CAUSE NO: 2024-DCV-0616 ANNUNCIATION HOUSE, ...",
+            "snippet": "(1) Documents sufficient to show all Referrals within the relevant time period;. (2) Documents sufficient to show all services that ...",
+            "position": 8
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:09:33.438Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 8
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 9
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:09:34.480Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Texas Screens Unlimited",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:09:35.852Z",
+      "data": {
+        "query": "site:dallascounty.org Texas Screens Unlimited civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 5, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/bidtabs/2016/2016-003-6540RFPPsychologicalScreeningContract.pdf",
+            "title": "COURT ORDER 2016-0036",
+            "snippet": "THIS AGREEMENT (\"Agreement\") for Psychological Screening and Counseling of. Law Enforcement Personnel is entered into between Dallas County, ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2016/FY2016_ApprovedBudget.pdf",
+            "title": "FY2016",
+            "snippet": "The mission of the Elections Department is to conduct reliable elections and accurately maintain voter registration records for Dallas County's citizen; uphold ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2018/2018%20-%2004.pdf",
+            "title": "ACOT, FACT, BHSC, Legislative Committee, PD Mental Hea",
+            "snippet": "Carol Lucky, CEO of North Texas Behavioral Health Authority (NTBHA), stated that as of March 1st NTBHA is no longer contracting with Green Oaks.",
+            "position": 3
+          },
+          {
+            "date": "May 7, 2019",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/bidtabs/2018/BidTab/2018-048-6741.E-CommerceSolutions.pdf",
+            "title": "COURT ORDER 2019-0458",
+            "snippet": "LEGAL IMPACT: Dallas County District Attorney's Office-Civil Division has reviewed all documentation and has approved the contract to form.",
+            "position": 4
+          },
+          {
+            "date": "Aug 15, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2014/FY2014_ApprovedBudget.pdf",
+            "title": "FY2014",
+            "snippet": "The Commissioners Court during the FY2014 budget process focused on identifying several key areas for additional staffing with the majority of ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/human-resources/benefits/open-enrollment/enrollment-guides/oe25-py26/active-new/Dallas-OE-Guide.pdf",
+            "title": "Employee Benefits Guide",
+            "snippet": "Who is an eligible dependent? Your dependent can be enrolled in a plan only if they are an eligible dependent residing in the. United States.",
+            "position": 6
+          },
+          {
+            "date": "Aug 15, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2015/FY15_ApprovedBudget.pdf",
+            "title": "FY2015",
+            "snippet": "The property tax is the largest single source of revenue for the County, comprising approximately 64% of all revenues. The amount received by ...",
+            "position": 7
+          },
+          {
+            "date": "Feb 21, 2012",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/cjab/meetings/2012/BailBondTaskForceReport-Packet.pdf",
+            "title": "Dallas County Bail Bond Task Force",
+            "snippet": "Background. Dallas County created a task force to perform a comprehensive review of the bail bond forfeiture processes and practices within ...",
+            "position": 8
+          },
+          {
+            "date": "Aug 15, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2013/FY2013ApprovedBudget.pdf",
+            "title": "FY2013",
+            "snippet": "The County Auditor is constitutionally required to estimate revenue for the upcoming fiscal year, and the. Adopted Budget must balance within ...",
+            "position": 9
+          },
+          {
+            "date": "Sep 19, 2017",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2018/FY2018_ApprovedBudget_Complete.pdf",
+            "title": "FY2018",
+            "snippet": "FY20 18 General Fund Expenditures of $526.3 million represent a $3 million increase over the. $523.3 million expenditure projection for FY2017.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:09:45.368Z",
+      "data": {
+        "name": "Texas Screens Unlimited",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(940) 488-4980",
+        "rating": "Not Rated",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/denton/profile/door-screens/texas-screens-unlimited-0875-90924174",
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:09:47.491Z",
+      "data": {
+        "cid": "17514079808657936765",
+        "name": "Texas Screens Unlimited",
+        "found": true,
+        "rating": 4.3,
+        "source": "serper",
+        "address": "1519 San Antone Ln, Lewisville, TX 75077",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 6,
+          "target_reviews": 6
+        },
+        "reviews": [
+          {
+            "date": "5 years ago",
+            "text": "Brad and Andrea are amazing. They provided guidance and recommendations as well as complete information on the entire process and expectations. They delivered the screens and installed them within just a couple weeks of my order. Their service is top notch!!! I recommend them 100%.",
+            "author": "Wendy Parks",
+            "rating": 5
+          },
+          {
+            "date": "8 years ago",
+            "text": "If you need screens, I highly recommend Texas Screens Unlimited. They were very helpful, prompt, courteous, and reasonably priced. The new screens make the house look so much better. Thank you for making this home repair easy!",
+            "author": "Michele Studer",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "What a wonderful experience doing business with Texas Screens Unlimited. The screens are a perfect match and fit. I highly recommend using this business and will use them again given the chance . Thank you so much!",
+            "author": "Joseph Allen",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Best experience with any business I have ever dealt with. Incredible detailed work with professional results. Friendly folks.",
+            "author": "Teresa Hayduk",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Great, friendly, timely service!  Will use them again in the future!",
+            "author": "Nancy Hill",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "",
+            "author": "Pete Chavez",
+            "rating": 1
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "review_count": 6,
+        "review_source": "serper",
+        "collection_cost": 0.002
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:09:57.085Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/texas-screens-unlimited-denton-2",
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:10:00.480Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Texas Screens Unlimited\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-01-10T00:10:06.718Z",
+      "data": {
+        "found": true,
+        "query": "\"Texas Screens Unlimited\" Denton lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/denton/profile/door-screens/texas-screens-unlimited-0875-90924174",
+            "title": "Texas Screens Unlimited | BBB Business Profile",
+            "snippet": "Texas Screens Unlimited is NOT a BBB Accredited Business. To become accredited, a business must agree to BBB Standards for Trust and pass BBB's vetting process."
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=windowsinstallation&find_loc=Lantana,+TX+76226",
+            "title": "Lantana, TX 76226 - Windows Installation",
+            "snippet": "... (972) 221-3495. Photos of ABC Window Repair. Texas Screens Unlimited - Windows Installation near me - Lantana, Texas. Texas Screens Unlimited. 0.0. Windows ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-10T00:10:26.461Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-10T00:10:10Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Texas%20Screens%20Unlimited%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=4ZhhabXHE7-7p84PuaGT4Qg\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-10T00:10:20Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Texas%20Screens%20Unlimited%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=65hhadTnOqPLp84PkZOSqAw\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Texas Screens Unlimited",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

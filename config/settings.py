@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-key-change-me')
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.254']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.254', 'trustedhearthandhome.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'contractors',
     'clients',
+    'faith_alpha',
 ]
 
 MIDDLEWARE = [
@@ -43,6 +44,11 @@ CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:4001',
     'http://192.168.1.254:4000',
     'http://192.168.1.254:4001',
+    'https://trustedhearthandhome.com',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://trustedhearthandhome.com',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -105,3 +111,5 @@ SIMPLE_JWT = {
 DEEPSEEK_API_KEY = os.environ.get('DEEPSEEK_API_KEY')
 YELP_API_KEY = os.environ.get('YELP_API_KEY')
 SERPAPI_KEY = os.environ.get('SERPAPI_KEY')  # For future use
+FEC_API_KEY = os.environ.get('FEC_API_KEY')
+LDA_API_KEY = os.environ.get('LDA_API_KEY')

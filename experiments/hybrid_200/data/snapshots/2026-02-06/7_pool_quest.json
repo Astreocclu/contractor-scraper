@@ -1,0 +1,2186 @@
+{
+  "contractor_id": 7,
+  "business_name": "Pool Quest",
+  "city": "Fort Worth",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T15:51:56.735Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:33:05.323Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "ABS_JUDG": 2,
+            "REL_LIEN": 5,
+            "MECH_LIEN": 34
+          },
+          "active_liens": 36,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 1,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "POOL QUEST",
+                "grantor": "RANDALL BRUCE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "RANDALL BRUCE",
+                    "POOL QUEST",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "2/18/2003",
+                    "20030218000304960",
+                    "LAND/5359/177",
+                    "Subdivision- Name: WILLOW POND FRISCO M/247 Lot: 12 Block: D, Reference - M / 247"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2003-02-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20030218000304960"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 12,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "POOL QUEST",
+                "grantor": "STRICKLAND DAVID S",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "STRICKLAND DAVID S",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "3/11/2003",
+                    "2003022341631",
+                    "ALL/2003047/8978",
+                    "DALLAS",
+                    "Subdivision- Name: TERRY HGTS Lot: 9 CBLK: 4582, CITY: DALLAS,, Reference - 1788 / 425"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2003-03-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2003022341631"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "PARADISE SWIMMING POOL C",
+                "grantor": "QUEST ANN L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "QUEST ANN L",
+                    "PARADISE SWIMMING POOL C",
+                    "MECHANICS LIEN",
+                    "7/19/1979",
+                    "1979014103051",
+                    "ALL/79141/831",
+                    "DALLAS",
+                    "Subdivision- Name: NETHERLANDS Lot: 8 Block: B CBLK: 5507, CITY: DALLAS,"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1979-07-19",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1979014103051"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "JOE POOL MARINA",
+                "grantor": "HAZARDOUS WASTE EXPERTS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HAZARDOUS WASTE EXPERTS",
+                    "JOE POOL MARINA",
+                    "ABSTRACT OF JUDGMENT",
+                    "9/17/2018",
+                    "201800248718",
+                    "--/--/--",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "ABSTRACT OF JUDGMENT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2018-09-17",
+                "document_type": "ABS_JUDG",
+                "recording_date": null,
+                "instrument_number": "201800248718"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "EAGLE NATIONAL STEEL LTD",
+                "grantor": "MARINE QUEST JOE POOL INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MARINE QUEST JOE POOL INC",
+                    "EAGLE NATIONAL STEEL LTD",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "9/9/2010",
+                    "201000231846",
+                    "--/--/--",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-09-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000231846"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "POOL QUEST LLC",
+                "grantor": "MAURITZEN BLAKE STEWART",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MAURITZEN BLAKE STEWART",
+                    "POOL QUEST LLC",
+                    "MECHANICS LIEN",
+                    "10/22/2019",
+                    "201900283003",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: CREST MEADOW ESTATES FOURTH INSTALLMENT Lot: 8 Block: K CBLK: 7288,, Reference - 68213 / 1871"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2019-10-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "201900283003"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "POOL QUEST LLC",
+                "grantor": "DAVIS GRETA ANN",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DAVIS GRETA ANN",
+                    "POOL QUEST LLC",
+                    "MECHANICS LIEN",
+                    "11/14/2019",
+                    "201900307409",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: JJ PEARCE SECTION TWO Lot: 22 Block: 19, Reference - 76230 / 2284"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2019-11-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "201900307409"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "MARINE QUEST JOE POOL INC",
+                "grantor": "EAGLE NATIONAL STEEL LTD",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EAGLE NATIONAL STEEL LTD",
+                    "MARINE QUEST JOE POOL INC",
+                    "RELEASE",
+                    "1/14/2011",
+                    "201100012346",
+                    "--/--/--",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2011-01-14",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201100012346"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "MARINE QUEST JOE POOL INC",
+                "grantor": "JP MORGAN CHASE BANK",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "JP MORGAN CHASE BANK",
+                    "MARINE QUEST JOE POOL INC",
+                    "RELEASE",
+                    "1/14/2011",
+                    "201100012347",
+                    "--/--/--",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2011-01-14",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201100012347"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "POOL QUEST CUSTOM GUNITE POOLS & SPAS",
+                "grantor": "SEARIGHT AMY J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SEARIGHT AMY J",
+                    "POOL QUEST CUSTOM GUNITE POOLS & SPAS",
+                    "MECHANICS LIEN",
+                    "5/13/2015",
+                    "201500122119",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHLAKE WOODLANDS EAST PHASE II Lot: 20 Block: 5, Reference - 83112 / 4208"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-05-13",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500122119"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "POOL QUEST LLC",
+                "grantor": "OBANION LINDA S",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "OBANION LINDA S",
+                    "POOL QUEST LLC",
+                    "MECHANICS LIEN",
+                    "5/28/2015",
+                    "201500136466",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: LAKE RIDGE SECTION 2 Lot: 53, Reference - 95157 / 974"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2015-05-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "201500136466"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "POOL QUEST LLC DBA",
+                "grantor": "CHAU RONNIE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CHAU RONNIE",
+                    "POOL QUEST LLC DBA",
+                    "MECHANICS LIEN",
+                    "12/7/2006",
+                    "200600450598",
+                    "--/--/--",
+                    "GRAND PRAIRIE",
+                    "Subdivision- Name: HIGH HAWK AT MARTINS MEADOW Lot: 32 Block: 20, Reference - 3560897 / 2005"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2006-12-07",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "200600450598"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "MARINE QUEST ENTERPRISES LLC",
+                "grantor": "ALL PRO ELECTRICAL SERVICES LLC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ALL PRO ELECTRICAL SERVICES LLC",
+                    "MARINE QUEST ENTERPRISES LLC",
+                    "ABSTRACT OF JUDGMENT",
+                    "3/6/2019",
+                    "201900055864",
+                    "--/--/--",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "ABSTRACT OF JUDGMENT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2019-03-06",
+                "document_type": "ABS_JUDG",
+                "recording_date": null,
+                "instrument_number": "201900055864"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 28,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "RODRIGUEZ WILFREDO",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "RODRIGUEZ WILFREDO",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "3/15/2001",
+                    "D201055777",
+                    "OPR/14776/57",
+                    "MANSFIELD, Subdivision: WALNUT CRK VAL, Lot: 19, Block: 46"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2001-03-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D201055777"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "GENT SHIRLEY",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "GENT SHIRLEY",
+                    "RELEASE",
+                    "9/18/2009",
+                    "D209250360",
+                    "--/--/--",
+                    "KLR, Subdivision: CHASE OAKS, Lot: 2, Block: D"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2009-09-18",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D209250360"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "WINGATE GREGORY R",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WINGATE GREGORY R",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "5/14/2009",
+                    "D209128963",
+                    "--/--/--",
+                    "MNFLD, Subdivision: ARBORS OF CREEKWOOD, Lot: 39, Block: 1"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2009-05-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D209128963"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "SOMERLOTT HOWARD",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SOMERLOTT HOWARD",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "4/2/2003",
+                    "D203114575",
+                    "OPR/16546/254",
+                    "FORT WORTH, Subdivision: VINEYARDS AT HERITAGE, Lot: 45, Block: 17"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-04-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203114575"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "MURPHY ARTHUR P JR",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MURPHY ARTHUR P JR",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "4/6/2009",
+                    "D209091015",
+                    "--/--/--",
+                    "FT W, Subdivision: LAKES OF RIVER TRS, Lot: 7, Block: 9"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2009-04-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D209091015"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "IWERSEN STEVEN S",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "IWERSEN STEVEN S",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "6/29/2005",
+                    "D205184619",
+                    "--/--/--",
+                    "FT W, Subdivision: HARBOUR VIEW ESTS, Lot: 29, Block: 6"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2005-06-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D205184619"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "GRANTOR",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GRANTOR",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "8/6/2008",
+                    "D208306996",
+                    "--/--/--",
+                    "FT W, Subdivision: SENDERA RANCH, Lot: 21, Block: 22"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2008-08-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D208306996"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "HOBBS CRAIG S",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HOBBS CRAIG S",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "2/27/2009",
+                    "D209053218",
+                    "--/--/--",
+                    "BNBRK, Subdivision: WHITESTONE HTS, Lot: 19, Block: 6"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2009-02-27",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D209053218"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "NOWELL WESLEY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "NOWELL WESLEY",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "10/4/2003",
+                    "D203373505",
+                    "OPR/17272/255",
+                    "NONE, Subdivision: DEERFIELD, Lot: 3, Block: 5"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-10-04",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203373505"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "LASS CLINTON L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "LASS CLINTON L",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "12/11/2002",
+                    "D202354483",
+                    "OPR/16204/133",
+                    "KELLER, Subdivision: PARK, Lot: 10, Block: 3"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2002-12-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D202354483"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "ZAELIT GARY J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ZAELIT GARY J",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "8/12/2003",
+                    "D203295368",
+                    "OPR/17055/158",
+                    "KELLER, Subdivision: WILLIS COVES, Lot: 14, Block: C"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-08-12",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203295368"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "PELUZZO VENTURA M JR",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PELUZZO VENTURA M JR",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "10/2/2003",
+                    "D203371742",
+                    "OPR/17268/42",
+                    "KELLER, Subdivision: WILLIS COVES, Lot: 15, Block: C"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-10-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203371742"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "ADAMS DONALD A",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ADAMS DONALD A",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "2/10/2004",
+                    "D204042710",
+                    "--/--/--",
+                    "N/A"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2004-02-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D204042710"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "4/18/2011",
+                    "D211090513",
+                    "--/--/--",
+                    "MNFLD, Subdivision: WALNUT CRK VAL, Lot: 4, Block: 91"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2011-04-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D211090513"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "IWERSEN STEVEN S",
+                "grantor": "POOL QUEST LLC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST LLC",
+                    "IWERSEN STEVEN S",
+                    "RELEASE",
+                    "8/29/2012",
+                    "D212212576",
+                    "--/--/--",
+                    "FT W, Subdivision: EAGLE RIDGE, Lot: 28, Block: 1"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2012-08-29",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D212212576"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "8/4/2017",
+                    "D217179041",
+                    "--/--/--",
+                    "FT W, Subdivision: CREEKWOOD, Lot: 19, Block: 19"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2017-08-04",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D217179041"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "9/18/2013",
+                    "D213246456",
+                    "--/--/--",
+                    "MNFLD, Subdivision: VISTA NATL, Lot: 14, Block: 4"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2013-09-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D213246456"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST LLC",
+                "grantor": "POOL QUEST LLC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST LLC",
+                    "POOL QUEST LLC",
+                    "MECHANICS LIEN",
+                    "6/29/2020",
+                    "D220151347",
+                    "--/--/--",
+                    "Subdivision: VAN ZANDT FARMS AT FOSSIL CREEK, Lot: 2, Block: 2"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2020-06-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D220151347"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "4/16/2013",
+                    "D213095932",
+                    "--/--/--",
+                    "Subdivision: VAN ZANDT FARMS AT FOSSIL CRK, Lot: 7, Block: 1"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2013-04-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D213095932"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "FILLMORE ANDRE",
+                "grantor": "POOL QUEST LLC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST LLC",
+                    "FILLMORE ANDRE",
+                    "RELEASE",
+                    "5/1/2020",
+                    "D220099088",
+                    "--/--/--",
+                    "FORT WORTH, Subdivision: LAKES OF RIVER TRAILS SOUTH, Lot: 16, Block: 4"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2020-05-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D220099088"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "6/4/2020",
+                    "D220128440",
+                    "--/--/--",
+                    "FORT WORTH, Subdivision: LAKE VISTA RANCH, Lot: 18, Block: G"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2020-06-04",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D220128440"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "9/15/2003",
+                    "D203340966",
+                    "OPR/17188/266",
+                    "ARL, Subdivision: BAY CLUB, Lot: 3R, Block: 5"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-09-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203340966"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "4/23/2018",
+                    "D218085591",
+                    "--/--/--",
+                    "FORT WORTH, Subdivision: TALON HILL, Lot: 2, Block: I"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2018-04-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D218085591"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST LLC",
+                "grantor": "BARNES DALLAS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BARNES DALLAS",
+                    "POOL QUEST LLC",
+                    "MECHANICS LIEN",
+                    "3/22/2004",
+                    "D204086054",
+                    "--/--/--",
+                    "FT W, Subdivision: ARCADIA PK, Lot: 27, Block: 14"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2004-03-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D204086054"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST LLC",
+                "grantor": "VAN DYCK ELIZABETH A",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "VAN DYCK ELIZABETH A",
+                    "POOL QUEST LLC",
+                    "MECHANICS LIEN",
+                    "9/20/2011",
+                    "D211227858",
+                    "--/--/--",
+                    "Subdivision: LA CANTERA W, Lot: 33, Block: 3"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2011-09-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D211227858"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "7/17/2012",
+                    "D212171605",
+                    "--/--/--",
+                    "FT W, Subdivision: COLUMBUS HTS, Lot: 36, Block: 19"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2012-07-17",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D212171605"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "11/6/2017",
+                    "D217257943",
+                    "--/--/--",
+                    "HALTOM CITY, Subdivision: DIAMOND OAKS NORTH, Lot: 7, Block: 7"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2017-11-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D217257943"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "POOL QUEST",
+                "grantor": "POOL QUEST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "POOL QUEST",
+                    "POOL QUEST",
+                    "MECHANICS LIEN",
+                    "2/22/2013",
+                    "D213045544",
+                    "--/--/--",
+                    "KLR, Subdivision: CHAPELWOOD ESTS, Lot: 9, Block: A"
+                  ],
+                  "search_term": "Pool Quest",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2013-02-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D213045544"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "2 old lien(s) against contractor (>7 years ago)",
+            "22 lien(s) filed BY contractor (collecting payment - neutral)",
+            "12 lien(s) with unclear direction"
+          ],
+          "score": 8,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 36,
+          "human_summary": "CAUTION: 2 lien(s) filed AGAINST Pool Quest (potential payment issues)",
+          "liens_unclear": 12,
+          "liens_by_count": 22,
+          "resolved_liens": 0,
+          "liens_against_count": 2,
+          "liens_by_contractor": 22,
+          "total_against_amount": 0,
+          "liens_against_contractor": 2
+        },
+        "owner_name": null,
+        "search_term": "Pool Quest",
+        "searched_at": "2025-12-22T06:31:50.141074",
+        "total_records": 41
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:31:31.243Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "serper_angi"
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:31:31.247Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "serper_houzz"
+      }
+    },
+    "google_maps": {
+      "status": "success",
+      "fetched_at": "2025-12-05T16:09:03.986Z",
+      "data": "Pool Quest - Google Maps  Search  Close  Collapse side panel   Saved  Recents  Get app  See photos Pool Quest 4.4 (78) Swimming pool contractor Overview Reviews About  Directions  Save  Nearby  Send to phone  Share  5501 I-20, Fort Worth, TX 76119   Open · Closes 5 PM  Friday 8 AM–5 PM  Saturday Closed  Sunday Closed  Monday 8 AM–5 PM  Tuesday 8 AM–5 PM  Wednesday 8 AM–5 PM  Thursday 8 AM–5 PM  Suggest new hours  pool-quest.com   pool-quest.com    (817) 590-8108    MQC7+5F Fort Worth, Texas    Suggest an edit Photos & videos All Inside Videos By owner   Add photos & videos Review summary   Reviews are automatically processed to detect inappropriate content like fake reviews and spam. We may take down reviews that are flagged in order to comply with Google policies or legal obligations. 5 4 3 2 1 4.4 78 reviews \" Quality and building process was the main reason we choose Pool-Quest .\" \"He listened to our requests and maximized the space in our backyard .\" \"We have a small yard but the design and work quality is superb.\"  Write a review Reviews  Search reviews   Sort  All design 26 company 19 backyard 13 quality 11 project manager 10 questions 9 communication 9 job 7 video 5 engineer 2 +6 Cheryl Perez 8 reviews · 8 photos       5 months ago We had a wonderful experience with Pool Quest. The communication was great with our designer, the office staff and our project manager. You'll enjoy working with Pool Quest's staff - they work hard so you can have the pool of your dreams. … More +5  Like  Share Response from the owner 4 months ago Thank you for this kind review! We're absolutely thrilled to hear about your wonderful experience with Pool Quest, especially being a returning customer. That truly means a lot to us. … More Leigh 7 reviews       3 months ago Review for Pool Quest: Exceptional Service and Expertise, Kevin Strong is a Standout Representative! … More  Like  Share Response from the owner 3 months ago Thanks so much for this incredible review! We're thrilled to hear that you had such a great experience with Pool Quest. Delivering on our promises and providing top notch craftsmanship are our top priorities. … More Audrey Evans 5 reviews · 2 photos       a year ago Pool Quest, hands down THE best company for your new pool build. From the sales staff - Matthew, to scheduling - Gina and Kim- to the project manager, Randy - they have their A-game on point and really put the customer first. Literally took … More  Like 1  Share Response from the owner a year ago Thank you so much for your kind words and for choosing Pool Quest for your pool build! We're thrilled to hear that you had such a positive experience with our team. … More More reviews (75) People also search for Fort Worth Pool 4.6 (22) Swimming pool contractor TXPool 4.9 (25) Swimming pool contractor Texas Tropics Swimming Pools 4.7 (20) Swimming pool repair service Paul Miller Custom Pools 4.4 (40) Swimming pool contractor Water Wizard Custom Pools LLC 4.4 (99) Swimming pool contractor  Web results About this data Get the most out of Google Maps Sign in  Collapse side panel  Collapse side panel"
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:30.807Z",
+      "data": {
+        "name": "Pool Quest, L.L.C.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": null,
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:31:32.370Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "indeed"
+      }
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:29:34.323Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:29:36.718Z",
+      "data": {
+        "query": "Pool Quest Fort Worth site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://games.star-telegram.com/all-games",
+            "title": "Your Favorite Free Online Games | From Fort Worth ...",
+            "snippet": "Instantly play your favorite free online games including card games, puzzles, brain games & dozens of others, brought to you by Fort Worth Star-Telegram.Read more",
+            "position": 1
+          },
+          {
+            "date": "Aug 5, 2012",
+            "link": "https://www.nbcdfw.com/news/sports/mary-killman-hits-the-pool-for-synchoronized-swimming/2090492/",
+            "title": "Mary Killman Hits the Pool for Synchronized Swimming",
+            "snippet": "McKinney's Mary Killman and duet partner Mariya Koroleva competed in the first of three synchronizes swimming events in 3 days.",
+            "position": 2
+          },
+          {
+            "date": "Apr 23, 2014",
+            "link": "https://www.nbcdfw.com/news/sports/michael-phelps-announce-return-swimming-end-retirement-olympics-gold-medalist/129074/",
+            "title": "Michael Phelps Announces Return to Competitive Swimming",
+            "snippet": "Phelps will resume his career starting Thursday at the Arena Grand Prix. He will swim the 100-meter butterfly, an event in which he holds the world record.Read more",
+            "position": 3
+          },
+          {
+            "date": "Jul 24, 2021",
+            "link": "https://www.nbcdfw.com/news/sports/tokyo-summer-olympics/5-to-watch/5-to-watch-first-medals-in-swimming-2-olympic-sports-debut-and-the-goat-and-team-usa-begin-the-quest-for-gold/2691206/",
+            "title": "5 to Watch: First Medals in Swimming, 2 Olympic Sports ...",
+            "snippet": "Here's a look at what to watch during the Tokyo Olympics on Saturday night and Sunday morning.",
+            "position": 4
+          },
+          {
+            "date": "Jul 29, 2021",
+            "link": "https://www.nbcdfw.com/news/sports/tokyo-summer-olympics/5-to-watch/5-to-watch-track-field-begins-and-more-swimming-medals-plus-rowing-soccer-and-basketball/2698631/",
+            "title": "5 to Watch: Track & Field Begins; More Swimming Medals",
+            "snippet": "Big names in swimming return to the pool in a quest for more medals and rowing finals get underway, plus women's basketball and soccer.Read more",
+            "position": 5
+          },
+          {
+            "link": "https://www.nbcdfw.com/tag/swimming/",
+            "title": "Tag: swimming – NBC 5 Dallas-Fort Worth",
+            "snippet": "Olympic champion Ariarne Titmus shocks fans with retirement from elite swimming · What are the Enhanced Games? · Katie Ledecky wins seventh consecutive world ...Read more",
+            "position": 6
+          },
+          {
+            "date": "Sep 23, 2021",
+            "link": "https://www.nbcdfw.com/news/sports/olympic-swimmer-elizabeth-beisel-hits-the-ocean-to-honor-her-father/2749604/",
+            "title": "Olympic Swimmer Elizabeth Beisel Hits the Ocean ... - NBC 5",
+            "snippet": "From Rhode Island to Block Island, Olympic medalist braves 10-plus miles of Atlantic Ocean waters to pay tribute to deceased father ...Read more",
+            "position": 7
+          },
+          {
+            "date": "Dec 11, 2025",
+            "link": "https://www.dallasnews.com/news/national/2025/12/11/man-accused-of-killing-charlie-kirk-appears-in-court-as-judge-weighs-media-access/",
+            "title": "Man accused of killing Charlie Kirk appears in court as ...",
+            "snippet": "Prosecutors have charged Tyler Robinson with aggravated murder in the Sept. 10 shooting of the conservative activist on the Utah Valley ...Read more",
+            "position": 8
+          },
+          {
+            "link": "https://www.nbcdfw.com/tag/volleyball/",
+            "title": "Tag: volleyball",
+            "snippet": "Team USA women's volleyball advanced to the gold medal match after defeating Brazil in a five-set semifinal. USA will have a chance to defend its title ...Read more",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:29:48.331Z",
+      "data": "Pool Quest Fort Worth review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 2:37 2:37 Now playing Welcome to Pool Quest! Pool-Quest Pool-Quest • • 150 views 11 years ago Pool-Quest Pool-Quest Pool Quest is the leader in luxury custom engineered pools in Fort Worth and the DFW area. We provide a range of elite pool and ... Pool Quest is the leader in luxury custom engineered pools in Fort Worth and the DFW area. We provide a range of elite pool and ... From the video description SHORTS SHORTS Now playing DO NOT DO THESE 5 things when going to Great Wolf Lodge #hosted #familyvacation #travelvlog LeanneLee LeanneLee • • 303K views 11 months ago LeanneLee LeanneLee Follow me on social media! INSTAGRAM- www.instagram.com/lifewithleannelee TIKTOK - www.tiktok.com/@lifewithleannelee ... Follow me on social media! INSTAGRAM- www.instagram.com/lifewithleannelee TIKTOK - www.tiktok.com/@lifewithleannelee ... From the video description 2:00 2:00 Now playing A shortage of pool options in Fort Worth CBS TEXAS CBS TEXAS • • 392 views 2 years ago CBS TEXAS CBS TEXAS Marine Park Pool is currently the only city-run public pool in all of Fort Worth . The lack of options in the city has some people ... Marine Park Pool is currently the only city-run public pool in all of Fort Worth . The lack of options in the city has some people ... From the video description CC 0:16 0:16 The 2025 Nissan Armada A full-size SUV built to take a beating…and then some. This is the 2025 Nissan Armada. Sponsored Nissan USA Nissan USA • • A full-size SUV built to take a beating…and then some. This is the 2025 Nissan Armada. Learn more SHORTS SHORTS Now playing 2 Finds in 3 Minutes?! My Fastest Treasure Hunt Ever! ⏱️✨PART 1️⃣ Subscribe ❤️ #beachfinds Treasure Huntress Seaside Treasure Huntress Seaside • • 468K views 8 months ago Treasure Huntress Seaside Treasure Huntress Seaside I spent the whole day walking along the beach with my metal detector and found exactly what you'd expect on a busy shoreline! I spent the whole day walking along the beach with my metal detector and found exactly what you'd expect on a busy shoreline! From the video description SHORTS SHORTS Now playing Come say “no” with us at a timeshare presentation Marissa Lyda Marissa Lyda • • 160K views 2 years ago Marissa Lyda Marissa Lyda The Little Entrepreneur – The Lincoln Wish List Sales Event Share a little light this holiday season during the Lincoln Wish List Sales Event. Sponsored Lincoln Watch Learn more SHORTS SHORTS Now playing Is Chuck E Cheese Worth It? 🐭🧀 Anderson Nguyen Anderson Nguyen • • 1.8M views 8 months ago Anderson Nguyen Anderson Nguyen 0:04 ... found out that there's one near me I only needed to drive past the cemetery to get there but is Chuck-E-Cheese worth it I ordered ... ... found out that there's one near me I only needed to drive past the cemetery to get there but is Chuck-E-Cheese worth it I ordered ... Automatic captions 11:20 11:20 Now playing Should You Buy An Above Ground Pool? Review and Costs DoItYourselfDad DoItYourselfDad • • 444K views 5 years ago DoItYourselfDad DoItYourselfDad We go through the pro's and cons of an above ground pool , things you'll need to enjoy it and how much an above ground pool ... We go through the pro's and cons of an above ground pool , things you'll need to enjoy it and how much an above ground pool ... From the video description 14 chapters Intro | Pros and Cons | Ladders and Steps | Smaller Pools | Filtration | Maintenance | Solar Covers | Cheap Pool | Ground Level | Installation Costs | Pool Costs | Pool Accessories | The Bargain Approach | Outro 14 auto-generated chapters in this video 14 chapters Intro Intro 0:00 Intro 0:00 Pros and Cons Pros and Cons 0:22 Pros and Cons 0:22 Ladders and Steps Ladders and Steps 2:15 Ladders and Steps 2:15 Smaller Pools Smaller Pools 3:32 Smaller Pools 3:32 Filtration Filtration 4:12 Filtration 4:12 Maintenance Maintenance 4:54 Maintenance 4:54 Solar Covers Solar Covers 5:55 Solar Covers 5:55 SHORTS SHORTS Now playing How To Make A Jello Pool 🤔 Zack D. Films Zack D. Films • • 30M views 4 months ago Zack D. Films Zack D. Films 4K SHORTS SHORTS Now playing The Most Insane Room In The World (@brotherjianscraftlife) #shorts Glimz Glimz • • 102M views 1 year ago Glimz Glimz viral #trending this place in Florida has the most insane escape room I have ever seen in my life! one of the most fun places in the ... viral #trending this place in Florida has the most insane escape room I have ever seen in my life! one of the most fun places in the ... From the video description SHORTS SHORTS Now playing Great Wolf Lodge Grapevine Code Brown #dallas #indoorwaterpark #gwl #poop Ahoy Mommy! Ahoy Mommy! • • 15M views 2 years ago Ahoy Mommy! Ahoy Mommy! Sheraton – Goodnight Room The World's Gathering Place Sponsored Sheraton Watch Learn more SHORTS SHORTS Now playing Best arcade game Nicole Skirts Nicole Skirts • • 469K views 1 year ago Nicole Skirts Nicole Skirts People also watched 6:31:59 6:31:59 Now playing 【Full Movie】先婚後愛！女明星被誤診絕症，為求生與億萬總裁簽訂隱婚協議，兩人假戲真假成為戀人！#徐开骋 #奈何boss要娶我1 GF全球热映 GF全球热映 • • 13K views 1 day ago GF全球热映 GF全球热映 欢迎订阅GF全球热映 https://reurl.cc/G4DX2v ⭐更多精彩剧集推荐⭐ 【短剧合集Movie】点击观看 https://reurl.cc/NNZxXn 【三更 ... 欢迎订阅GF全球热映 https://reurl.cc/G4DX2v ⭐更多精彩剧集推荐⭐ 【短剧合集Movie】点击观看 https://reurl.cc/NNZxXn 【三更 ... From the video description New CC 11:39 11:39 Now playing Bestway Power Steel Rectangular Frame Pool Set 6,71 x 3,66 x 1,32m Unboxing and Review! Time-Lapse BEST REVIEWS BEST REVIEWS • • 2.2M views 5 years ago BEST REVIEWS BEST REVIEWS All the products featured in the video can be found here: https://amzn.to/3FpaEdN AliExpress: ... All the products featured in the video can be found here: https://amzn.to/3FpaEdN AliExpress: ... From the video description CC 1:46 1:46 Now playing Buy a day pass to get into Arizona resort pools ABC15 Arizona ABC15 Arizona • • 778 views 7 years ago ABC15 Arizona ABC15 Arizona You don't need to stay at a hotel to use the pool ...buy a day pass. You don't need to stay at a hotel to use the pool ...buy a day pass. From the video description 8:41 8:41 Now playing தளபதி Fan's மன்னிக்கவும்😂Football Prank ⚽ #prank #trendingvideo #billushow Billu Show28 Billu Show28 • • 16K views 1 day ago Billu Show28 Billu Show28 New + 6 more 2:03 2:03 Now playing Obanion Family Pool (Pool-Quest Design) Pool Quest Pool Quest • • 269 views 10 years ago Pool Quest Pool Quest Pool Quest is a custom pool builder, installer, and designer located in Fort Worth , Texas. We offer a wide range of pool , spa, and ... Pool Quest is a custom pool builder, installer, and designer located in Fort Worth , Texas. We offer a wide range of pool , spa, and ... From the video description SHORTS SHORTS Now playing Why Fiberglass Pools are Going Out of Style Blu H2O Pools Blu H2O Pools • • 23K views 2 years ago Blu H2O Pools Blu H2O Pools SHORTS SHORTS Now playing INTEX ultra frame pool 975 cm 488 cm 132 cm order now 0551650185 Above ground pool Above ground pool • • 189K views 1 year ago Above ground pool Above ground pool SHORTS SHORTS Now playing 📦 Medical courier work can be a solid side hustle, but here’s the real deal: 💰 Starting pay? Side Hustle Review Side Hustle Review • • 58K views 10 months ago Side Hustle Review Side Hustle Review Medical courier work can be a solid side hustle, but here's the real deal: Starting pay? $10-$20/hr, sometimes per-mile pay ... Medical courier work can be a solid side hustle, but here's the real deal: Starting pay? $10-$20/hr, sometimes per-mile pay ... From the video description SHORTS SHORTS Now playing I Bought The Cheapest Water Park On Amazon Claw Quest Claw Quest • • 5.1M views 3 years ago Claw Quest Claw Quest Instagram - https://www.instagram.com/clawquest/ TikTok - https://www.tiktok.com/@clawquest?sou... Twitter ... Instagram - https://www.instagram.com/clawquest/ TikTok - https://www.tiktok.com/@clawquest?sou... Twitter ... From the video description 9:38 9:38 Now playing Great Wolf Lodge On A Budget | Watch Before Going NoFate247 NoFate247 • • 65K views 2 years ago NoFate247 NoFate247 Is Great Wolf Lodge a scam? How do you save money at Great Wolf Lodge? Watch this video as I break it all down for you Shop ... Is Great Wolf Lodge a scam? How do you save money at Great Wolf Lodge? Watch this video as I break it all down for you Shop ... From the video description 4K Summary This video reviews Great Wolf Lodge, focusing on its value for families on a budget. The reviewer highlights the early check-in option, allowing access to the pool before the room is ready, and discusses the pros and cons of various attractions, including the water slides, the Magic Quest Realm, and the arcade. AI-generated video summary Quality and accuracy may vary. Summary This video reviews Great Wolf Lodge, focusing on its value for families on a budget. The reviewer highlights the early check-in option, allowing access to the pool before the room is ready, and discusses the pros and cons of various attractions, including the water slides, the Magic Quest Realm, and the arcade. SHORTS SHORTS Now playing Dude Perfect Exposed 🫣 Dude Perfect Dude Perfect • • 34M views 6 months ago Dude Perfect Dude Perfect CC SHORTS SHORTS Now playing The only way Simonis 860 hr should be installed #billiards #pooltable #imsuperbad Arthur Loya Arthur Loya • • 93K views 2 years ago Arthur Loya Arthur Loya SHORTS SHORTS Now playing Could A Trampoline Catch You From A Plane? 😳 Zack D. Films Zack D. Films • • 39M views 6 months ago Zack D. Films Zack D. Films 4K Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "tdlr": {
+      "status": "not_found",
+      "fetched_at": "2025-12-05T16:09:51.104Z",
+      "data": {
+        "error": "Waiting for selector `input[name=\"SearchTerm\"], input[id=\"SearchTerm\"], input[type=\"text\"]` failed: Waiting failed: 10000ms exceeded",
+        "found": false,
+        "licenses": [],
+        "search_term": "Pool Quest"
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:29.794Z",
+      "data": "Custom Pools Fort Worth TX | Pool Construction - Pool Quest (817) 590-8108 &#9776; --> Custom Engineered Luxury Pools & Spas Residential & Commercial Request A Quote Most Recognized Builder of Swimming Pools & Outdoor Living in DFW With over 25 years of experience building custom pools and spas, we offer luxurious custom solutions for all backyards. Pool Quest is a custom pool builder, installer, and designer located in Fort Worth, Texas. We offer luxurious custom solutions for all backyards. Our team of experienced designers paired with a licensed structural engineer will bring your backyard dreams to reality. We’ll provide endless enjoyment and memories for you and your family for many year to come. If you want an experienced pool builder who can guide you through the design and build process, Pool Quest is the builder for you! Residential Pool Services Maximize the value of your home with a customized oasis in your backyard. Get a quote today and let Pool Quest bring you vision to life. Get A Quote Commercial Pool Services Our expertise extends to building high-quality commercial pools to meet safety regulations and your unique design requests. Get a quote here for your custom commercial pool. Get A Quote Service and Repair Pool & Spa Construction At Pool Quest, we take pride in helping all of our clients achieve their backyard dream. We have been constructing unique and quality swimming pools in the Fort Worth area for more than 45 years. We have a team of experts on staff, including a state registered professional engineer, to help with every step of the process. Our Pool Quest team have personal hands on experience with every aspect of the construction process, which will enable us to provide you with an up-to-date, functional, and stylish swimming pool. We take part in each individual step of the process to ensure each and every detail is executed properly and to your standards. We are committed to providing you with a custom swimming pool that will last you a lifetime. When building your new Dallas swimming pool, our one and only purpose and goal is to design you a dream pool that will both fit in with your needs and add an extra pop to your backyard. Each of our custom swimming pools is built to suit your specific needs, expectations, and personal style. We offer a wide array of design options and special features, allowing you to have a hand in creating the pool of your dreams. Pool Features When designing a new swimming pool in Dallas, Texas, we understand the importance of having unique and fun water features that will give you enjoyment each and every day. From waterfalls and fountains to diving boards and slides, our team of professionals are here to help you create the perfect swimming pool. We also offer numerous lighting options that will illuminate your pool and make you the envy of your Arlington neighborhood! Work We Stand By When working on the new construction of a swimming pool, our Pool Quest team is fully committed and prides itself on providing our clients with the perfect pool. We do not believe in cutting corners or using cheap methods to get to the end result quicker; we believe in quality and dedication. Our company is rooted in the belief that we can give all of our clients the swimming pool and outdoor environment they have always wanted. We can work with any budget and are here to help you with a full swimming pool renovation or brand-new construction or a pool. We work with varying yard sizes and would love to sit down and discuss your design ideas and hopes for your new swimming pool in Fort Worth, Texas. We understand that deciding to have a new swimming pool constructed is a big step, which is why we believe in working with our clients one-on-one to ensure we are all on the same page and are able to deliver the best possible swimming pool for you and your loved ones. Pool Quest offers highly customized pool construction solutions to the Dallas, Fort Worth and Arlington region. Our experienced engineers guarantee premium finishing on all pool construction projects. We have more than 45 years of experience in swimming pool engineering which makes our services second to none. Get in touch with us today for a free consultation to build your dream pool. Outdoor Living Your home is much larger than you may think, especially when you include the outdoor living space. Our team of professionals at Pool Quest are here to help you create an innovative, inviting, and comfortable outdoor living space that will be perfect for entertainment and relaxation. If you are looking to turn your Fort Worth swimming pool into the perfect spot for a barbecue, dinner party, or calm evening at home with your family, you’ve come to the right place. From modern outdoor kitchens to cozy fireplaces and seating that you’ll love, our team of designers and engineers will work together to provide you with the backyard of your dreams. Whether you are interested in installing a spacious patio, built-in fire pit, outdoor kitchen area equipped with a food prep area, or space for entertainment, we are committed to offer superior customer service and professionalism to each of our clients. Our Model We understand that a home is a place for your family, and that the function of each room (indoors or outside) is determined by how the family uses the room. If you are looking for an outdoor living space that will give you and your loved ones additional space in a modern, stylish manner, we can help. Cooking outdoors is a favorite past time amongst many people, so why not do it in style? We offer state-of-the-art, custom designs that are sure to take your breath away. Whether you are longing for a space where friends and family can kick back and watch the game while soaking up the beauty of your backyard, or if you are interested in a small nook with a beautiful fireplace for cool evenings, we are here to meet your needs and wants. You will be able to host any event outside with full access to the grill, refrigerator, bar, and food station, making it so you never miss a moment while playing host or hostess! Enjoy the beautiful Texas evenings with a custom construction that you will fall in love with time and time again. We understand that each family has different needs, which is why we pride ourselves in working with each of our clients individually to create their dream outdoor living space. When summertime hits you can forget cooking inside over the hot stove, head on outside and enjoy the fresh breeze and inviting atmosphere, all while preparing dinner or drinks for your friends and family! Pool Quest specializes in the construction of a wide variety of outdoor projects. We have successfully served clients in Fort Worth, Arlington and Dallas region. Outdoor construction with premium finishing requires experienced engineers who have done hands-on work in the industry. The experts we employ at Pool Quest makes it their mission to build projects that exceed your expectations. Contact us today for further details and a free consultation. Remodeling / Renovation When your existing swimming pools needs a facelift, our team of professionals are here to do the job. The leader in pool renovations and remodels in the Dallas-Fort Worth area, our Pool Quest team is committed to giving you the pool of your dreams. Using state-of-the-art three-dimensional software, our designers are able to help you visualize what your new swimming pool and backyard can look like. Whether you need a complete overhaul or are just looking for a bit of cosmetic work, we can help turn your aging pool into something the rest of the neighborhood will envy. We are proud to say that we have a team of seasoned designers, engineers, and pool construction and technology experts that make it their job to give your Fort Worth swimming pool the makeover it needs. Let Pool Quest’s team work with you to come up with modern, trendy, and comfortable design and landscaping ideas that you will love from here on out. Creative design couple with state-of-the-art updates will give you a more attractive and functional swimming pool, and it will also save you money and time. Our goal is to provide you the swimming pool you’ve always wanted without breaking the bank. We also understand the importance of comfort and safety, and will work to design a custom swimming pool that will give you your very own backyard resort, without all the hassle. Features In addition to giving your current swimming pool a complete overhaul, we offer numerous custom features that will allow you to have an even bigger hand in creating your perfect swimming pool. The features we offer include: Custom tile selections Custom stone Custom decking Fountains Waterfalls And much more! Here at Pool Quest we believe in value, quality, and 100% satisfaction for all of our clients. There is no renovation or remodel that is too big or too small for our well-crafted team of designers and engineers to take on. We will come out and inspect your pool and then work with you one-on-one to go over your many options and design a customer swimming pool you’ll love. Building a swimming pool with renovations and modernizations may include: Design changes to shape, depth, and style Slides, diving boards, and swim jets Jacuzzis, pools with waterfalls, modern lighting Resurfacing You can count on our Pool Quest team to listen to your needs and desires and then work our magic to come up with a design you will love, and that will meet all your requirements. Regardless of the size of project or budget, we are here to help turn your current Arlington swimming pool into one you will actually want to enjoy! If you or someone you know is looking for a company which has extensive experience in remodeling and renovating pools, get in touch with us and we will provide you with a free quote. We have served clients in cities like Dallas, Fort Worth and Arlington. If our services are required outside the jurisdictions of those cities, we can definitely go that extra mile and deliver for you. Arbors / Pergolas If you are looking to add some style to your backyard, but aren’t interested in a messy, expensive project, we have just the thing. By providing a wonderful team of designers, experts, and engineers in place we help you come up with the perfect design for your backyard that will give it an extra bit of style. Adding a new patio roof, overhead, or arbor/pergola is a fun and modern way to spice up your home’s back and front yard spaces. One of the benefits of these architectural elements is that they can accentuate your outside area without undergoing a complete renovation. Arbors and pergolas give your home a flair while increasing your home’s level of enjoyment, who can argue with that? The installation of a pergola or arbor will draw your friends and family in, while giving you space to relax and enjoy every single day. Whether you’re just moving into a new home and are interested in a custom design with your own style in mind, or if you are just looking to add something new and exciting to your existing home, we are here to help. Our team of experts specialize in patio roof, pergola, arbor installation and design. Our commitment is to work with each individual client to ensure the job gets done right. We understand the importance of having an outdoor living space at your Fort Worth home that you be able to enjoy, regardless of the time of year or day. Features A new outdoor structure will serve as both an aesthetically appealing and functional architectural feature for your home. For example, we can work with you to design and install a solid patio roof that will provide your deck with shelter from harsh weather conditions, and a shaded area from the Texas heat! These types of structures are a great aid in cooling a patio without taking away all the natural light. Arbors and pergolas will also serve as a striking focal point that will draw your guests in, all while providing plenty of shade during those hot summer days. Whether you are looking for filtered light shining through an open air arbor or a full weatherproof patio that will enable you to enjoy the outdoors regardless of the weather, we can help build you the perfect structure. We also provide modern outdoor lighting for your Fort Worth home that will perfectly compliment whichever structure you choose, adding value and curb appeal to your home with every step. Pool Quest has catered to clients living in Dallas, Fort Worth and Arlington. Some of our customers live further away from these cities but we make sure to be able to fulfill their requests too. For more information on our arbor and pergola offerings, or any other outdoor structure, please feel free to contact our friendly Pool Quest team today! Decking Pool Quest is a leading North Texas pool company that offers a wide range of services. From new pool decking installs to removal and replacement. Our team of experts is here to meet all your needs. We offer expert services with brick, concrete, pavers, wood, tile, natural stone, and more. Committed to working with you one-on-one, we strive to come up with a beautifully designed and well-crafted deck that will perfectly compliment your pool. Adding a deck to the area surrounding your outdoor pool is a great way to encourage entertainment. It will serve as the ideal spot for relaxing, sunbathing, and so much more. Regardless of the type of pool you choose to install, our team of professionals will be able to come up with the perfect decking design to fit all your needs. Whether you are looking for a modern touch or a country vibe, we offer a multitude of design options and materials that will help us perfectly execute your dream. As a Fort-Worth-Dallas company with 45+ years of experience, we will be able to leave you with the decorative touch you are looking for without skimping on the engineering. All of our pool decking options are designed to provide your friends and family with a safe spot to relax and cool down during the hot summer months. All of our products are slip-resistant, heat-reflective and durable. New Installs and Replacement Decking Whether you have recently had a pool installed backyard or if you are finally interested in upgrading an existing deck, our Pool Quest team is here to help with each and every step. Adding a decking area around your pool is a great way to enhance the area and give you space you will love to relax in regardless of the time of the day. We pride ourselves on pool decks that are representative of our clients’ tastes, and therefore will work with you to specifically design a deck that will bring your vision to life. Our professional craftsmen are skilled in all aspects of outdoor living spaces, giving them advantage over others in the industry. They will work to help you design and install a pool deck, patio, or retaining walls that will perfectly compliment your tastes and existing structures. We have worked on projects in cities like Dallas, Fort Worth and Arlington. Although these are the main cities we have operated in, we do offer our services to clients outside this region too. Materials Pool Quest is the leading pool company in the North Texas area and is well-equipped to help you with the design and installation of a pool deck. Take a look at some of the options of pool decking materials that we offer: Concrete Spray-On Coatings Pavers Natural Stone Brick Wood Tile Rubber If you have any questions regarding the materials we use, our consultation process, or pricing, please feel free to contact us today so we can get started! Landscaping Trained and experienced in landscape design, installation, and maintenance on existing landscaping, our team of landscape experts will work with you to create a beautiful design for your outdoor space. Our Pool Quest team has more than 45 years of experience servicing residents in the Fort Worth-Dallas area. We understand the climate, soil, and Texas temperament, which allows us to come up with the perfect design for you and your Arlington yard. We understand what grows best in Texas, and we are proud to say we use plants, shrubs, flowers, and grasses that are native to the area. When designing landscapes in the Dallas area, we understand that everyone has a different idea of what their yard should look like. This is why we are committed to working with each and every client to come up with a design that is in-line with their needs and wants. Our Pool Quest team is also well-trained in the various natural elements that may affect Texas landscapes. For example, we understand that rain and adverse weather conditions can cause drainage issues for many Fort Worth homeowners. This is why we take into consideration how drainage will affect your landscape and come up with a design that will help ensure you do not experience any flooding or standing water issues. What We Offer Our exclusive landscape design and services model allows us to work closely with homeowners to create a space that is perfect for their yard now and in the future. We present our clients with detailed plans and go over each and every detail, allowing them to see exactly how they will be able to enjoy their landscape for many years to come. Because our Pool Quest team are Texas natives themselves, we are able to provide better guidance and suggestions for plants and flowers that will thrive in the Texas climate. Whether you are interested in the installation of a new landscape or are needing to give an existing space a facelift, our fantastic team of experts will be there for each step of the process. We will work together to consider all the necessary provisions and adjustments required for a successful garden and yard, leaving you with a space you will be able to enjoy for many years to come. Our Services We offer the following landscape services to Arlington residents and homeowners in the surrounding area: Landscape Design Landscape Consultation Horticulture Services Tree Planting Soil Preparation & Amendment Landscape Remodeling New Landscape Installation New Lawns Landscape Lighting Hydro-mulching Hard-scaping Arbors Decks Stone Work Fountains If you have any questions regarding our landscape services, background, or pricing, please feel free to contact us today so we can help you get started on your dream yard. January 22, 2024 --> We would like to thank Pool Quest Designer Kevin Strong, for his patience and professionalism on making our dream pool possible. Also for providing great costumer service and we appreciate the follow ... read more We would like to thank Pool Quest Designer Kevin Strong, for his patience and professionalism on making our dream pool possible. Also for providing great costumer service and we appreciate the follow up calls after our pool was completed. Juana Isip January 22, 2024 --> Our pool journey started right before Covid hit in 2020. Kevin Strong designed the perfect pool for us at the time. But then with the world in such uncertainty, we decided to wait. Fat forward to 2022... read more Our pool journey started right before Covid hit in 2020. Kevin Strong designed the perfect pool for us at the time. But then with the world in such uncertainty, we decided to wait. Fat forward to 2022. We went in again to see Kevin. Talked about the pool and tweaked the design. Again, we decided to wait. When 2023 came around, we pulled the bandaid off. Kevin was so gracious when we asked for a completely different design. Now we were ready. From Kevin, Randy, Geoff, Walter, Ethan, Gina, Kim and ALL of the crews who had a part in building our pool, we will be forever grateful we chose Pool Quest. It is exactly what we wanted. A timeless classic that will give all of our family many years of enjoyment. I wouldn’t change a thing. Easiest company and best people we’ve ever had the pleasure of working with. Trust me when we say, you will be blessed choosing Pool Quest for all of your outdoor projects. Next year on to the outdoor kitchen! Tina Rogers January 22, 2024 --> If you are looking for a trusted, professional Pool Company to build the backyard of your dreams...look no further. In today's construction world, the word \"painful\" is a common description when on... read more If you are looking for a trusted, professional Pool Company to build the backyard of your dreams...look no further. In today's construction world, the word \"painful\" is a common description when one decides to build a backyard pool. Pool Quest is the exact opposite. From the initial project site meeting with a salesperson (Nick is the best, ask for him!), to concept, to project management (Randy & Kim are the best too!), to project quality checks, to completion; this company cares. There is something to be said about a company that is family owned by an Engineer and the next generation (another Engineer) is present to continue the ongoing excellence. Please reach out to us if you want to know more about this company. We would love to share our experience with you. We could not be more happy with our INVESTMENT and would highly recommend this professional company for your backyard transformation. -the Halversons Jeff Halverson January 22, 2024 --> From the moment we met James (Pool-Quest designer) we felt we were in great hands. He introduced and educated us on Pool-Quest, how the company, their process, the number of pools the built (limited t... read more From the moment we met James (Pool-Quest designer) we felt we were in great hands. He introduced and educated us on Pool-Quest, how the company, their process, the number of pools the built (limited to focus on quality, craftsmanship and accurate scheduling). From there is was on to design. This was our first pool so we had a lot of questions. With each step of the design James educated us on each component, design options and costs. We had a few 3D rendering and video meetings that incorporated our home, yard and surrounding area. Intentionally incorporated to help us see our vision. Once we started (from dig to swimming) we were advised by the Pool-Quest team daily. The process was flawless. Yes we had a few days of delay, but that was due to extreme heat. Pool-Quest makes sure their builders are not working in conditions that are not safe. Their entire project management team are honest, helpful and offered suggestion during the build that furthered our vision. When we were quoted 12-14 weeks our friends thought we were nuts. From permitting, dig, build, re-routing all irrigation, added electrical, pergola and the outdoor kitchen we were on target! Everyone has big delays, re-work and problems. Not us. From HOA to City permitting and our first swim they met the mark. I would highly recommend Pool-Quest to anyone who is looking for a high-quality well designed and managed experience. We could not be more happy. Scott Comroe May 1, 2023 --> Wow!!! Pool Quest went above and beyond to make our pool beautiful and exactly what we have dreamed of. They transformed our backyard into an Oasis escape from the rest of the world. The people at Po... read more Wow!!! Pool Quest went above and beyond to make our pool beautiful and exactly what we have dreamed of. They transformed our backyard into an Oasis escape from the rest of the world. The people at Pool Quest made a difference for us. From Nick McDaniel who helped us with our design and navigating all the obstacles that stood in the way of our dream pool to Kyle the project manager and Randy our landscape designer and all the workers who helped in this project. My wife and I are over the Moon excited and thrilled to have such a beautiful pool to escape to and share with our family and friends. Thanks again Pool Quest!! Craig Parr May 1, 2023 --> Pool-Quest created a kitchen and dining area for our backyard. From contract signature to project completion Pool-Quest did everything they said they would. Handshakes in the business world are unfort... read more Pool-Quest created a kitchen and dining area for our backyard. From contract signature to project completion Pool-Quest did everything they said they would. Handshakes in the business world are unfortunately a thing of the past but not with Pool-Quest. If they shake on it, consider it done. The level of detail with our project couldn’t be greater. Down to the last stone in place, plants being planted in just the right place, etc. Ethan Meek creates a 3D graphical video of what you are wanting to build and if you see in in the video you will see it in your project. AMAZING, AMAZING contractor Pool Quest. YOU WILL NOT BE DISAPPOINTED!! Mike Fitzpatrick May 1, 2023 --> My family had simply an amazing experience with this company. From the owners showing up for the initial walk-through and stepping us through our desires and concerns to project managers to the office... read more My family had simply an amazing experience with this company. From the owners showing up for the initial walk-through and stepping us through our desires and concerns to project managers to the office manager - each gets a 5-star. One of the best overall companies I have ever dealt with. They worked with us on every detail to build us a beautiful pool and kept us well within our budget with NO surprises. They were upfront about any potential issues and kept me abreast of everything each step of the way. 5 Stars to Walter, Ethan, Rudy, and Suzie - if you are looking into getting a pool, I can not recommend Pool Quest enough. Travis Flowers May 1, 2023 --> Completely Blown Away! I'm a very particular person with a strong desire for things to be done the right way- the FIRST time. that's exactly what I got from these guys! I needed to get a mock design p... read more Completely Blown Away! I'm a very particular person with a strong desire for things to be done the right way- the FIRST time. that's exactly what I got from these guys! I needed to get a mock design put together so I could make my decisions about the layout. After all, a pool is a semi-permanent purchase. I did my usual shopping around with other companies to see who could offer the best work. It became apparent which company was more suited for the kind of job I wanted to be done. The mock-up was incredible! It had my house in the design, and my backyard was spot on with my current setup. A couple of other companies did a good job getting us a design sketched up, but it was placed on a generic template of a backyard. Pool Quest will definitely continue to get my recommendations. Thank you all for your honesty and professionalism. Mark Moses May 1, 2023 --> We hired Pool Quest to install our pool last spring. Ethan and Walter had several meetings with us to ensure they would design our pool to match what we were planning on spending. They helped with man... read more We hired Pool Quest to install our pool last spring. Ethan and Walter had several meetings with us to ensure they would design our pool to match what we were planning on spending. They helped with many explanations, designs and suggestions to ensure the process would be smooth and to our liking. They also answered our many calls for questions. As first time pool owners we were overwhelmed with the beautiful quality and workmanship provided. We absolutely love our pool! I highly recommend Pool Quest for your pool. You will not be disappointed!! Gina Gscheidle May 1, 2023 --> What a great experience. From the beginning, Kevin help us design the pool we wanted and fine-tune the details. The project was ahead of schedule and Kim was a rock star orchestrating this behind the ... read more What a great experience. From the beginning, Kevin help us design the pool we wanted and fine-tune the details. The project was ahead of schedule and Kim was a rock star orchestrating this behind the scenes. It took five weeks since they started to complete and I was always kept informed of what was next and when. The owner Walter and son Ethan were over a couple of times making sure things were right at excavation and concrete pouring. There were two items that caught my attention during the project and they were addressed quickly. I will absolutely recommend pool quest for your pool project. Charlie Jim May 1, 2023 --> I hired Pool-Quest to build my pool and it is the most beautiful custom pool I have ever seen. Walter and Ethan inspected my yard and proposed the perfect size pool for the space. They recommended t... read more I hired Pool-Quest to build my pool and it is the most beautiful custom pool I have ever seen. Walter and Ethan inspected my yard and proposed the perfect size pool for the space. They recommended the pebble as an upgrade because of all of the trees in my yard. Walter was the only contractor to suggest the pebble. Now that I have it, I cannot imagine having anything less. Susie and Adriana kept me informed of each step of the construction and Rudy was always onsite very early in the morning to meet with the specific crew for the day. I am so happy I went with Pool-Quest. Jen May 1, 2023 --> Top Knotch professionals! They provided me with excellent designs for my new pool. The office demo was great! The work on the pool was outstanding and it fit my budget. This company knows how to build... read more Top Knotch professionals! They provided me with excellent designs for my new pool. The office demo was great! The work on the pool was outstanding and it fit my budget. This company knows how to build a pool with quality in mind. Nick the salesman and Derick the project manager are highly qualified to meet all your request. D.B.H. May 1, 2023 --> By far, the design by Pool Quest beat out all the rest in quality and efficiency. We have a small yard but the design and work quality is superb. We have gotten so many compliments on the functionalit... read more By far, the design by Pool Quest beat out all the rest in quality and efficiency. We have a small yard but the design and work quality is superb. We have gotten so many compliments on the functionality and look of our pool. No issues on timeline and any delays with construction were all weather related. Highly recommend, and if you want the best pool, go with PoolQuest! Liz Spurgeon May 1, 2023 --> Awesome experience with Pool-Quest! After speaking with several companies, it was obvious that they were the most qualified company to build my pool. Walter's engineering background and expertise play... read more Awesome experience with Pool-Quest! After speaking with several companies, it was obvious that they were the most qualified company to build my pool. Walter's engineering background and expertise played a large role in our final decision. Construction process was smooth and our kids love the new pool! Thanks Pool-Quest team! Ashley Melo May 1, 2023 --> The whole Pool Quest team was excellent! We were so happy with the whole process! Their team was responsive and excellent with communication - we'd highly recommend them.... read more The whole Pool Quest team was excellent! We were so happy with the whole process! Their team was responsive and excellent with communication - we'd highly recommend them. Fore DTX May 1, 2023 --> My wife and I spent the better part of a year researching who we were going to go under contract with to build our pool. We selected Pool Quest because we felt they were the right-sized business and t... read more My wife and I spent the better part of a year researching who we were going to go under contract with to build our pool. We selected Pool Quest because we felt they were the right-sized business and that we would receive timely responses and timely work. We had heard nothing but horror stories from friends and family regarding their pool projects and the companies they selected. The biggest difference in my mind between, the nightmare stories, was the size of the pool company. This may not be the biggest pool company in North Texas but they quoted us 16 weeks and we filled our pool during the 16th week. Not only was construction on time but the price was another deciding factor in choosing this company. We couldn't be happier with the pool, the experience working with Pool Quest, and working with the people at Pool Quest. Nick did a great job designing and Randy was a pleasure to work with on almost a daily basis during the project. I would highly recommend this company for your pool project. Chris and Charity Moody May 1, 2023 --> Nicholas McDaniel created an awesome design for our freeform pool. He listened to our requests and maximized the space in our backyard. Derek Shires was the project manager and kept us in the know at... read more Nicholas McDaniel created an awesome design for our freeform pool. He listened to our requests and maximized the space in our backyard. Derek Shires was the project manager and kept us in the know at all times. He was very knowledgeable and there were very few delays. He made sure the pool was exactly to specs. The pool looks amazing! I would definitely recommend Pool Quest. Alexander Pagen May 1, 2023 --> We chose Pool Quest for our backyard renovations, including gutting a 20+ year old pool, landscaping, drainage, re-pouring all new concrete, and new equipment. Overall, they were top-notch to deal wi... read more We chose Pool Quest for our backyard renovations, including gutting a 20+ year old pool, landscaping, drainage, re-pouring all new concrete, and new equipment. Overall, they were top-notch to deal with. Ethan and Walter came out from Ft. Worth to Dallas to evaluate our situation, had a professional design ready in 2 weeks, and sent us a YouTube video of the design. They were professional, and Randy (on-site) was regularly at our house and stayed in constant communication with us. The job took longer than expected due to weather (tornadoes, then cold, then rain), but that's to be expected in Texas in the Fall/Winter. Highly recommend Pool-Quest if you want a quality job completed without feeling like you're being sold to non-stop. Blake Mauritzen May 1, 2023 --> Pool Quest built our pool at the end of 2019, I have waited to put this review up to make sure they continued with the great service we received during the process and it has. Pool quest has been resp... read more Pool Quest built our pool at the end of 2019, I have waited to put this review up to make sure they continued with the great service we received during the process and it has. Pool quest has been responsive and taken care of us. Kevin designed our pool, we could not have picked a better person to help us with the design. He listened and brought our dreams to life.Derek was the our Project lead, he keep us informed every step of the way and resolved every issue we had. Both Kevin and Derek have gone above and beyond to ensure we would be happy with every thing. We had two small problems with the pool after it was completed and Pool Quest (Derek) came out without delay and fixed the issues. Dewayne Dixon May 1, 2023 --> Highly recommended! Quality and building process was the main reason we choose Pool-Quest. On excavation day, Walter (Owner), his son, Derick, and the whole crew were triple checking everything. Nich... read more Highly recommended! Quality and building process was the main reason we choose Pool-Quest. On excavation day, Walter (Owner), his son, Derick, and the whole crew were triple checking everything. Nicholas and his great design expertise sealed the deal. From start to finish, the communication was excellent and exceeded our expectations. Derick, Project Manager and a Army Veteran, took care of any issues or concerns we had during the building process. Our family will enjoy the pool for many many years. Thank you Derick, Nicholas, and the rest team at Pool-Quest! Ed D May 1, 2023 --> I recently had the pleasure of working with Pool-Quest to transform my backyard into the oasis of my dreams, and I couldn't be happier with the results. From start to finish, the team at Pool-Quest wa... read more I recently had the pleasure of working with Pool-Quest to transform my backyard into the oasis of my dreams, and I couldn't be happier with the results. From start to finish, the team at Pool-Quest was professional, knowledgeable, and dedicated to making my vision a reality. Throughout the design process, the team listened carefully to my ideas and provided thoughtful suggestions that ultimately enhanced the final product. They were patient and understanding as I worked through various design iterations, and they always put my needs and desires first. The construction process was equally impressive. The crew was efficient, respectful, and worked diligently to ensure that the project was completed on time and within budget. They communicated with me regularly to provide updates on the progress, and they always made sure to answer any questions or concerns I had. The final product is absolutely stunning. The attention to detail and quality of workmanship is evident in every aspect of the pool and surrounding landscaping. I have received countless compliments from friends and family, and I have even had strangers stop to admire the beauty of my backyard oasis. Overall, I highly recommend Pool-Quest to anyone looking to transform their backyard into a beautiful and functional outdoor living space. They exceeded my expectations in every way, and I will continue to sing their praises for years to come. Thank you, Pool-Quest, for making my backyard dreams a reality! Thomas Legar May 1, 2023 --> We used Pool Quest for our 2022 build. I had initially set up appointments with 3 reputable companies. My initial appointment with Pool Quest designer Kevin S. was informative and extremely professi... read more We used Pool Quest for our 2022 build. I had initially set up appointments with 3 reputable companies. My initial appointment with Pool Quest designer Kevin S. was informative and extremely professional. I can’t say the same about the other companies I met with. We later met with Kevin in the design studio and were very impressed with the design he came up with as well as the presentation. This was a huge help in being able to visualize the project and see the different options available. We decided to then move forward with Pool Quest for an in-ground pool, stone fireplace, stamped concrete patio extension, and pergola. At this time our project manager was Jeff Walsh. He has been amazing from start to finish! We were always kept informed step by step the entire way. Our construction site was managed expertly and always left tidy at the end of the day. Even when the project was completed and the cold weather moved in, Jeff reached out to make sure we had everything winterized properly to avoid any damage. Being new pool owners, this type of customer service is invaluable. If we move and need another pool project, I wouldn’t hesitate to use Pool Quest again. Dan Courson May 1, 2023 --> Pool Quest was AMAZING, starting with Nicholas coming to our home upon inquiry to the finished product!! The company has excellent scheduling processes, as when one part of the job was complete, the ... read more Pool Quest was AMAZING, starting with Nicholas coming to our home upon inquiry to the finished product!! The company has excellent scheduling processes, as when one part of the job was complete, the next crew was out the following day to start the next project/phase. It was like clockwork. Every single person we interacted with, from Nicholas in sales, to Kim and Gina in the office; Randy heading up the project and the contractors on the ground doing the work - every single person was exceptional. If you're looking for a quality product and phenomenal service, I highly recommend contacting Pool Quest for your install. End result: our pool looks absolutely beautiful and we will get years of enjoyment out of it. We could not have asked for a better experience. Amy Weber March 21, 2023 --> I recently had the pleasure of working with Pool Quest to build a pool in my backyard, and I cannot recommend them highly enough. From start to finish, the entire process was professional, efficient, ... read more I recently had the pleasure of working with Pool Quest to build a pool in my backyard, and I cannot recommend them highly enough. From start to finish, the entire process was professional, efficient, and stress-free. First and foremost, the quality of the work was outstanding. The team at Pool Quest clearly takes pride in their craft and made sure that every detail was perfect. The pool itself is beautiful and exactly what I had envisioned. The materials used were top-notch and I can tell that this pool will last for years to come. The customer service was also excellent. From my first interaction with Kevin Strong to the final walkthrough with the project manager, everyone was friendly, knowledgeable, and responsive. They were always available to answer my questions, address any concerns, and make sure that I was happy with the progress of the project. The project was completed on time and within budget, which was impressive given the scope of the work. The crew was always punctual and respectful of my property, and they made sure to clean up thoroughly at the end of each day. In short, I am extremely happy with my experience with Pool Quest. They exceeded my expectations in every way and I would recommend them to anyone looking for a pool-building company. Thank you for creating my dream backyard oasis! Andrea Vinet (Andy) March 21, 2023 --> We used Pool Quest for our 2022 build. I had initially set up appointments with 3 reputable companies. My initial appointment with Pool Quest designer Kevin S. was informative and extremely profession... read more We used Pool Quest for our 2022 build. I had initially set up appointments with 3 reputable companies. My initial appointment with Pool Quest designer Kevin S. was informative and extremely professional. I can’t say the same about the other companies I met with. Dan Courson March 1, 2023 --> Our Pool Quest experience was phenomenal, We met with Nick and explained what we were wanting and he came up with a great design he even gave us some great suggestions! Once we agreed on the design an... read more Our Pool Quest experience was phenomenal, We met with Nick and explained what we were wanting and he came up with a great design he even gave us some great suggestions! Once we agreed on the design and signed the contract we began the process and I was very impressed with how smoothly everything went, and appreciated all of the communication between us, the office and Jeff. Everyone with Pool Quest who had hands on building our backyard oasis were professional, and always available for questions. This was our 2nd pool build and the experience was 100 times better than we had with the 1st builder. If your looking for quality, professionalism and timeliness of project completion go with Pool Quest, you won’t be disappointed! PJ March 1, 2023 --> After reviewing Pool Quest's credentials and insurance history, we made the decision to hire Pool Quest to build our pool. The process from the design stage, construction, and to the very end was extr... read more After reviewing Pool Quest's credentials and insurance history, we made the decision to hire Pool Quest to build our pool. The process from the design stage, construction, and to the very end was extremely professional, pleasant, and built as promised. There were some hiccups along the way which is common when it comes to construction, but they were on point throughout it all. Even the owner came to evaluate the construction stages and final product. We will definitely hire them again if we ever move to another house that doesn't have a pool. I highly recommend their service. Kimberly Vo March 1, 2023 --> Professional sales staff! Wonderful owner. They finished constructing our pool in 6 weeks. Quality pool construction! HIGHLY HIGHLY RECOMMENDED ! ... read more Professional sales staff! Wonderful owner. They finished constructing our pool in 6 weeks. Quality pool construction! HIGHLY HIGHLY RECOMMENDED ! Joy Mae Our Amazing Projects At Pool Quest, we’ve built thousands of pools since 1995 and have some of the highest industry and customer ratings in the nation. View All Projects Why choose us? FAMILY OWNED AND OPERATED FOR 35+ YEARS OWNED AND OPERATED BY A LICENSED STRUCTURAL ENGINEER Contact Us Let us create your perfect swimming pool, hot tub or spa! Δ 5501 E. Interstate 20, Fort Worth, TX 76119 info@pool-quest.com (817) 590-8108 What We Do Pool & Spa Construction Outdoor Living Remodeling / Renovation © 2025. Pool Quest, Pool Builder in Dallas / Fort Worth. Designed and Developed by ARYU Advertising Get a quote Δ Menu Services Gallery Testimonials Our Process Materials Financing About Meet The Team Contact Us Login Services Arbors / Pergolas Commercial Decking Drainage & Irrigation Landscaping Outdoor Living Pool & Spa Construction Remodeling / Renovation Materials Equipment Surface Material Tile"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:31:32.362Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "homeadvisor"
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:19.358Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Pool Quest",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 30, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/20201230_States%20Original%20Petition.pdf",
+            "title": "STATE OF TEXAS, Plaintiff, v. CITY OF AUSTIN, ...",
+            "snippet": "Garner have stated that it is a “false notion that the quest in statutory interpretation is to do justice,” since when a judge deviates from ...Read more",
+            "position": 1
+          },
+          {
+            "date": "Jun 1, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/general-oag/Agency-Strategic-Plan-FY25-29.pdf",
+            "title": "Agency Strategic Plan Fiscal Years 2025-2029",
+            "snippet": "The OAG has ongoing programs that serve to enhance the recruitment of employees. In addition, the OAG continues to implement the following ...Read more",
+            "position": 2
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1947/V-0131.pdf",
+            "title": "R-222 April 8, 1947 Hon. Charles A. Tosch County Audit or ...",
+            "snippet": "The bill's title read, “An Act to prohibit book-making and pool-selling.' The body of the bill only partially prohlb,Ited and reg- ulated such pract Ice. The ...Read more",
+            "position": 3
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/Texas%20v.%20California%20-%20filed.pdf",
+            "title": "In the Supreme Court of the United States",
+            "snippet": "That furthers. H.B. 3859's goal of ensuring the largest possible pool of service providers in Texas without limiting a single child's access to necessary ...Read more",
+            "position": 4
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1941/gm2943.pdf",
+            "title": "OFFICE OF T#E.AnORNEY GENERAL OFTEXAS AUSTIN ...",
+            "snippet": "\"Any of various games of billiards played on a pool table with, usually, flftcen,,objeot balls marked or plain, and a quo ball. Tie Court of,.Z~titiI:rr?!Read more",
+            "position": 5
+          },
+          {
+            "date": "Nov 12, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/images/TAC%20-%20Redacted%20Version%20(public).pdf",
+            "title": "Case 1:21-md-03010-PKC Document 176 Filed 11/12/ ...",
+            "snippet": "Google developed three different versions of Bernanke, each of which varied how the program accumulated money in a Bernanke pool and spent those ...Read more",
+            "position": 6
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1960/ww-0914.pdf",
+            "title": "TEXEAITORNEY GENERAL",
+            "snippet": "me following inquiry Is made in your opinion re- quest to this office: ... for any formal hearing by your office on these questlone, ... Pool, Jr. Marvin Ii. Brown, ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1939/O-0575.pdf",
+            "title": "This opinion holds: - 1. The employment by the Banking ...",
+            "snippet": "pool, joint venture or other incorporated organi- zation, group or institute. An employer may a persón aating in a judicial capacity or in behalf of another ...Read more",
+            "position": 8
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1945/gs6894.pdf",
+            "title": "OF TEXAS Honorable John H. Winters Executive\"Dlrector State ...",
+            "snippet": "Honorable John H. Winters. Executive\"Dlrector. State Department of Public Welfare. Austin 3, Texas. Dear Sir: Opinion No. O-6894.",
+            "position": 9
+          },
+          {
+            "date": "Feb 3, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/States%20Brief%20in%20Opposition%20%20(19-840_19-941)%20(002).pdf",
+            "title": "Brief in Opposition",
+            "snippet": "As a result, petitioners' re- quest for review of respondents' standing amounts to nothing more than a fact-bound dispute over the scope of.Read more",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:30:21.466Z",
+      "data": {
+        "query": "site:apps.tarrantcounty.com Pool Quest",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:22.962Z",
+      "data": {
+        "query": "site:dallascounty.org Pool Quest civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 24, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2015/JB_Packet_082415.pdf",
+            "title": "z:\"=~\"",
+            "snippet": "... civil lawsuit or crimina! proceeding, the. Grantee shall notify the Department within five (5) cale-ndar days of receiving notice if the ...Read more",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2002/general_fund_62-368.PDF",
+            "title": "GENERAL FUND",
+            "snippet": "The Civil District Masters are two individuals appointed by the 13 Civil District Court judges. ... 2 Quest. Doc Examiner (GM). 3 GC/MS Chemist (GM). 3 Trace ...Read more",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2003/GeneralFund.PDF",
+            "title": "GENERAL FUND",
+            "snippet": "The mission of the Civil District Masters is to assist the Civil District judges by hearing motions, pleas and other civil matters in a fair and equitable ...Read more",
+            "position": 3
+          },
+          {
+            "date": "Jan 6, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2016/JB_Packet_012516_withOrders.pdf",
+            "title": "Ptl 4",
+            "snippet": "that the violation of a civil right caused or resulted. from such Damages, Claims Expenses or. Claim. D. alleging, based upon, arising out of ...Read more",
+            "position": 4
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/May-2025-CC-combined.pdf",
+            "title": "statutory",
+            "snippet": "(Equals Line 1b minus Line 4 plus Line 8.) Criminal Matters. Total Cases. Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL ...Read more",
+            "position": 5
+          },
+          {
+            "date": "Feb 23, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2015/JB_Packet_022715_withoutOrders.pdf",
+            "title": "JB_Packet_022715_withoutOrders.pdf",
+            "snippet": "... civil rights training and review the training material once a year with all staff and volunteers that are involved in the distribution or ...Read more",
+            "position": 6
+          },
+          {
+            "date": "Jan 27, 2014",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2014/JBP_2014Jan27_ngSignedOrders.pdf",
+            "title": "COUt+l Y CLErtK",
+            "snippet": "Contractor to administrative penalties, criminal penalties, civil penalties or other civil actions. D. Contractor shall be solely ...Read more",
+            "position": 7
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:23.921Z",
+      "data": {
+        "query": "site:collincountytx.gov Pool Quest",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jul 28, 2025",
+            "link": "https://www.collincountytx.gov/Public-Information/Lists/News/Attachments/357/22_June_30.2025%20Legal%20Notice%20Publication%20Pg.%205_6.pdf",
+            "title": "22_June_30.2025 Legal Notice Publication Pg. 5_6.pdf",
+            "snippet": "Billiard Pool Table by. LEGACY BILLIARS, full size 8 feet 2 ... The Paxton campaign did not respond to an emailed re- quest for comment.Read more",
+            "position": 1
+          },
+          {
+            "date": "Nov 21, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200210_2440/47963_16154_Home%20Depot%20USA%2C%20Inc.%20DBA%20Home%20Depot%20Pro%20Inst._11-21-19.pdf",
+            "title": "serial 16154 rfp maintenance, repair, operating supplies, ...",
+            "snippet": "10 CATEGORY 10: POOL SUPPLIES. Pool chemicals, tools, timers, pump/motor units, vacuum equipment, patio furniture, parts, and all ancillary ...Read more",
+            "position": 2
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250623_3102/58182_FY2025%20Disbursements%20for%206.23.25%20Court.pdf",
+            "title": "2025 COUNTY AUDITOR APPROVED DISBURSEMENTS",
+            "snippet": "FOR COURT DATE: JUNE 23, 2025. THE ATTACHED CLAIMS AGAINST COLLIN COUNTY FOR THE. PERIOD ENDING: JUNE 17, 2025. ARE HEREBY APPROVED IN ACCORDANCE WITH LOCAL.",
+            "position": 3
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20Business.pdf",
+            "title": "Sorted by Business",
+            "snippet": "We provide Fencing, pool renovations, pergolas, outdoor kitchens and living spaces along with pool servicing ... dba Summit Quest. 25,000 ...Read more",
+            "position": 4
+          },
+          {
+            "date": "Dec 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210816_2672/50383_RTC%20Packet%2008-12-2021.pdf",
+            "title": "AGENDA Regional Transportation Council Thursday, ...",
+            "snippet": "pool, features about 280 luxury units in 18 stories. Parking will take up another eight stories starting at the ground level. Another ...Read more",
+            "position": 5
+          },
+          {
+            "date": "Dec 9, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/HCF/20191209_2422/47678_FY2020%20FY2021%20TB%20State%20Budget%20Templates%20w%20Travel%20Policy.pdf",
+            "title": "Kerri McGhee, CTCM",
+            "snippet": "A motor pool vehicle may be available for employees who prefer not to use their personal vehicle. Please refer to the Vehicle Usage and Take ...Read more",
+            "position": 6
+          },
+          {
+            "date": "Oct 2, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201221_2572/48414_2020%20Small%20Business%20Invoice%20Approved%20Payments.pdf",
+            "title": "48414_2020 Small Business Invoice Approved Payments.pdf",
+            "snippet": "We have an indoor facility with a heated pool, allowing us to provide a life skill through out the year. #4. 251417 AEOS Talent Acquisition, Inc ...Read more",
+            "position": 7
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20City.pdf",
+            "title": "Sorted by City",
+            "snippet": "dba Summit Quest ... 250222 Fire House Pool Care LLC. 5,000 Prosper. Brian. Stroven. Owner. 991 Willowgate Dr., Prosper, TX 75078. Pool cleaning ...Read more",
+            "position": 8
+          },
+          {
+            "date": "Jan 13, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250113_3042/57241_FY2025%20Disbursements%20for%201.13.25%20Court.pdf",
+            "title": "2025 COUNTY AUDITOR APPROVED DISBURSEMENTS",
+            "snippet": "FOR COURT DATE: JANUARY 13, 2025. THE ATTACHED CLAIMS AGAINST COLLIN COUNTY FOR THE. PERIOD ENDING: JANUARY 7, 2025.Read more",
+            "position": 9
+          },
+          {
+            "date": "Oct 12, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201012_2540/49226_FY2021%20Disbursements%20for%2010.12.2020%20Court.pdf",
+            "title": "2021 COUNTY AUDITOR APPROVED DISBURSEMENTS",
+            "snippet": "FOR COURT DATE: OCTOBER 12, 2020. THE ATTACHED CLAIMS AGAINST COLLIN COUNTY FOR THE. PERIOD ENDING: OCTOBER 6, 2020.Read more",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:25.516Z",
+      "data": {
+        "query": "site:dentoncounty.gov Pool Quest",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/155/April-2014-Vendor-Check-Register-PDF",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "QUEST DIAGNOSTICS, INC. $175.34. 20140401. QUESTCARE MEDICAL SERVICES ... W2005/FARGO HOTELS (POOL C). $19.55. 20140401. WACKER,DAVID-ATTORNEY. $350.00.Read more",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=89_50",
+            "title": "Dev Permit Report",
+            "snippet": "OLD MH REMOVED. WILL ALSO REMOVE THE VACANT (2ND) MH ON THE LOT. Approved, 02/07/2022, QUEST TRUST CO FBO JAVIER A LUEVANO IRA ...Read more",
+            "position": 2
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=239",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "QUEST DIAGNOSTICS INC. $14.53. 20110222. QUEST DIAGNOSTICS INC. $22.22. 20110201. QUEST DIAGNOSTICS, INC. $58.08. Page 26. Denton County Accounts Payable Check ...Read more",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:07.140Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:12.667Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:33:05.924Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "POOL QUEST, L.L.C.",
+        "taxpayer_number": "32001687154"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:33:05.927Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:58.555Z",
+      "data": {
+        "name": "Pool Quest",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 590-8108",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "5501 I-20, Fort Worth, TX 76119",
+        "reviews": [],
+        "website": "http://www.pool-quest.com/",
+        "maps_url": "https://www.google.com/maps/search/Pool%20Quest%20Dallas%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:31:31.238Z",
+      "data": {
+        "found": true,
+        "rating": 4.3,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/pool-quest-fort-worth",
+        "review_count": 6
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:31:32.357Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "pool-quest.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:29:30.805Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:31:25.882Z",
+      "data": {
+        "name": "Pool Quest",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 590-8108",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "5501 I-20, Fort Worth, TX 76119",
+        "reviews": [],
+        "website": "http://www.pool-quest.com/",
+        "maps_url": "https://www.google.com/maps/search/Pool%20Quest%20Fort%20Worth%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:31:25.887Z",
+      "data": {
+        "name": "Pool Quest",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 590-8108",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "5501 I-20, Fort Worth, TX 76119",
+        "reviews": [],
+        "website": "http://www.pool-quest.com/",
+        "maps_url": "https://www.google.com/maps/search/Pool%20Quest%20Fort%20Worth%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:20.352Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 2
+          },
+          {
+            "date": "Jun 29, 2023",
+            "link": "https://assets.comptroller.texas.gov/ch313/1621/01621-772-2023-0810-MCA-021902-Bryan.pdf",
+            "title": "[PDF] Texas Comptroller of Public Accounts",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 06/29/2023 10:12:46. This page is valid for most ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 4
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 5
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 6
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 7
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Information on this site is obtained from the most recent Public Information Report (PIR) processed by the Secretary of State (SOS).",
+            "position": 8
+          },
+          {
+            "date": "Jun 3, 2024",
+            "link": "https://www.facebook.com/groups/BrevardJobsNetwork/posts/7948709071817959/",
+            "title": "Is LABORMAX a legitimate company and should I send them my ...",
+            "snippet": "There is so much fraud out right now. They are registered in Texas but not current https://mycpa.cpa.state.tx. us/coa/coaSearchBtn The entity's ...",
+            "position": 9
+          },
+          {
+            "date": "Jul 5, 2023",
+            "link": "https://assets.comptroller.texas.gov/ch313/1620/01620-772-2023-0810-MCA-246911-Taylor.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "900 DALLAS, TX 75201.. Page 6. 7/5/23, 11:43 AM. Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:31:32.366Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "glassdoor"
+      }
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:31:32.381Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "google_news"
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:33:15.381Z",
+      "data": {
+        "cost": 0.0004893,
+        "summary": "Ratings appear consistent, but no review content was provided to assess authenticity. The lack of visible complaints and consistent ratings are positive, but the absence of review text prevents a deep authenticity check.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2025-12-22T12:33:15.381Z",
+        "fake_signals": [
+          "No review text available for analysis",
+          "Insufficient data to assess authenticity"
+        ],
+        "recommendation": "INSUFFICIENT_DATA",
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 4.3,
+          "google": 4.4,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Ratings are consistent across platforms",
+          "BBB A+ rating suggests good complaint handling"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are consistent across Google and Yelp. BBB rating is high but lacks complaint data for context."
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:31:32.373Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "reddit"
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:28:59.336Z",
+      "data": {
+        "query": "site:yelp.com \"Pool Quest\" \"Fort Worth, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/pool-quest-fort-worth",
+            "title": "POOL QUEST - Updated December 2025 - Yelp",
+            "rating": 4.3,
+            "snippet": "5501 E Interstate 20. Fort Worth, TX 76119. South East. Directions ; (817) 590-8108. Call Now ; Visit Website. http://pool-quest.com/.Read more",
+            "position": 1,
+            "ratingCount": 6
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Contractor&find_loc=Fort+Worth%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Contractor in Fort Worth, TX",
+            "rating": 3.9,
+            "snippet": "... Pool Quest, Dfw Sterling Pools, Poseidon Custom Pools, Puryear Custom Pools ... Fort Worth, TX. Map. Pool Builders in Fort Worth, Texas · Pool Installation ...Read more",
+            "position": 2,
+            "sitelinks": [
+              {
+                "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Contractor&find_loc=Fort+Worth,+TX#:~:text=Swimming%20Pool%20ContractorFort%20Worth%2C%20TX,Installation%20in%20Fort%20Worth%2C%20Texas",
+                "title": "Read more"
+              }
+            ],
+            "ratingCount": 1050
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Heating+System+Installation&find_loc=Fort+Worth%2C+TX",
+            "title": "TOP 10 BEST Pool Heating System Installation in Fort ...",
+            "rating": 3.4,
+            "snippet": "... Pool Quest, Dr Pool Leak Detection, COR Design, Elevated Pool Remodeling ... Fort Worth, TX · Engraving in Fort Worth, TX. Filters. Free price estimates ...Read more",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://www.yelp.com/search?find_desc=Pool+Heating+System+Installation&find_loc=Fort+Worth,+TX#:~:text=Apartments%20in%20Fort%20Worth%2C%20TX,%26%20Hot%20Tub%20Service%20pros",
+                "title": "Read more"
+              }
+            ],
+            "ratingCount": 141
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Outdoor+Pool&find_loc=Forest+Hill%2C+TX",
+            "title": "Best Outdoor Pool near Far South, Forest Hill, TX",
+            "snippet": "... Pool Quest, Texas Best Fiberglass Pools, Sands ... Fort Worth, TX 76137 ... 5200 Hemphill St, Fort Worth, TX 76115. (817) 926-6214. On their website:.",
+            "position": 4
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Forest+Hill%2C+TX",
+            "title": "Best Swimming Pool Builders near Far South, Forest Hill, TX",
+            "snippet": "Texas Best Fiberglass Pools · 18.3 mi · Fort Worth, TX 76244. (682) 205-0708 ; Pool Quest · 1.8 mi · 5501 E Interstate 20, Fort Worth, TX 76119. (817) 590-8108 ; Ruby ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.yelp.com/biz/fort-worth-pool-fort-worth",
+            "title": "FORT WORTH POOL - Updated December 2025 - Yelp",
+            "rating": 3,
+            "snippet": "4100 Stadium Dr. Fort Worth, TX 76133. Southside. Directions ; (817) 662-0999. Call Now ; Visit Website. https://www.fortworthpool.com ...Read more",
+            "position": 6,
+            "ratingCount": 2
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool&find_near=discount-depot-fort-worth",
+            "title": "Best Pool near Discount Depot in Fort Worth, TX",
+            "rating": 4.1,
+            "snippet": "... Pool Quest, Poolcare Pool Serv, Fort Worth Pool, Sigma Swim Fort Worth South ... Fort Worth, TX · Taxidermy in Fort Worth, TX. Filters. Yelp · Home Services ...Read more",
+            "position": 7,
+            "ratingCount": 589
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Outdoor+Fountains&find_loc=Forest+Hill%2C+TX",
+            "title": "Best Outdoor Fountains near Far South, Forest Hill, TX",
+            "snippet": "... Pool Quest, Blue Water Pools, Fort Worth Lighting ... Fort Worth, TX 76131. Locally owned & operated ... Fort Worth Tx areas. Lonestar Landscape ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pools&find_loc=Mansfield%2C+TX+76063",
+            "title": "TOP 10 BEST Pools near Mansfield, TX 76063",
+            "rating": 4.1,
+            "snippet": "... Pool Quest, Pool Pros DFW, Mr. Ed's Pool Service, Atlas Pools, Splash Pools ... Arlington Heights, Fort Worth, TX · Bishop Arts District, Dallas, TX.Read more",
+            "position": 9,
+            "sitelinks": [
+              {
+                "link": "https://www.yelp.com/search?find_desc=Pools&find_loc=Mansfield,+TX+76063#:~:text=Arlington%20Heights%2C%20Fort%20Worth%2C%20TX,Bishop%20Arts%20District%2C%20Dallas%2C%20TX",
+                "title": "Read more"
+              }
+            ],
+            "ratingCount": 847
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Slide+Installation&find_loc=Mansfield%2C+TX",
+            "title": "TOP 10 BEST Slide Installation near Mansfield, TX - Updated 2025",
+            "snippet": "... Pool Quest, PMC Electric, Ntx Exterior Services ... Fort Worth, TX 76123. (817) 876-9874. Certified ... From the business: Pool Quest is a family owned and operated ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:30:03.354Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Pool%20Quest&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Pool% 20Quest&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Pool% 20Quest&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Quick Search. Search By. Location; Facility Name/ID. Search by city, state, and/or zip code. Search. Search by facility name or ID Search. More Search Options.",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://echo.epa.gov/help/training",
+                "title": "ECHO Training"
+              }
+            ],
+            "attributes": {
+              "Missing": "search_type= Name&Name= Pool% 20Quest&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "search_type= Name&Name= Pool% 20Quest&State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 5,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Pool% 20Quest&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Pool% 20Quest&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Pool% 20Quest&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 8,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Pool% 20Quest&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Pool% 20Quest&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+            "title": "Search Results Help | ECHO | US EPA",
+            "snippet": "The search results page allows you to interact with the data and information presented. The results page can be customized to your preferred view.",
+            "position": 10,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Pool% 20Quest&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2025-12-22T12:29:49.563Z",
+      "data": {
+        "query": "site:nextdoor.com Pool Quest Fort Worth",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/pool-quest-fort-worth-tx-1/",
+            "title": "Pool Quest - Fort Worth, TX",
+            "snippet": "Pool Quest in Fort Worth, TX. Have you ever dreamed of relaxing with your family in your own private pool but felt you couldn't afford one?",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/pages/pool-quest-fort-worth-tx/",
+            "title": "Pool Quest - Fort Worth, TX",
+            "snippet": "Pool cleaner · Pool repair service. Fave. Message. Call. Recommend. Fort Worth, TX. info@pool-quest.com · pool-quest.com. Recommendations. L. L. J.. 3 May 21.",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/pages/anthonys-services-arlington-tx/",
+            "title": "Anthony's Services - Arlington, TX",
+            "snippet": "Pool QuestFort Worth, TX. 8. Nearby Neighborhoods. Arlington, TX. Pleasant Ridge Green OaksArborgateWoodbineShelby and StonebriarTrail Oak CtWoodland Park.",
+            "position": 3
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/downtowncypress--cypress--tx/",
+            "price": 25,
+            "title": "Downtown Cypress, Cypress | Everything You Need to Know",
+            "snippet": "Downtown Cypress is a friendly neighborhood in Cypress, TX, known for its family-oriented vibe. It's a mix of residential and commercial areas, ...",
+            "currency": "US$",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:31:32.377Z",
+      "data": {
+        "error": "Cannot find module 'node-fetch'\nRequire stack:\n- /home/reid/command-center/testhome/contractor-auditor/services/collection_service.js\n- /home/reid/command-center/testhome/contractor-auditor/bin/batch_collect.js",
+        "found": false,
+        "source": "osha"
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T12:31:49.985Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:c98f:d45e:7347:4fa0\nTime: 2025-12-22T12:31:35Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Pool%20Quest%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=JjpJadCBKKndwN4Pgb2GyAw\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:c98f:d45e:7347:4fa0\nTime: 2025-12-22T12:31:44Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Pool%20Quest%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=MDpJaea3BNC3wN4Pqf6ZyQs\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Pool Quest",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

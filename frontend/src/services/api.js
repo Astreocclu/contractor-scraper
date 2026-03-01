@@ -160,4 +160,31 @@ export const contractorApi = {
   },
 }
 
+export const faithApi = {
+  getCompanies: async (params = {}) => {
+    const response = await api.get('/faith/companies/', { params })
+    return response.data
+  },
+
+  getCompany: async (ticker) => {
+    const response = await api.get(`/faith/companies/${ticker}/`)
+    return response.data
+  },
+
+  getStats: async () => {
+    const response = await api.get('/faith/companies/stats/')
+    return response.data
+  },
+
+  getPortfolio: async (payload = {}) => {
+    const response = await api.post('/faith/companies/portfolio/', payload)
+    return response.data
+  },
+
+  rescoreCompany: async (ticker, payload = {}) => {
+    const response = await api.post(`/faith/companies/${ticker}/rescore/`, payload)
+    return response.data
+  },
+}
+
 export default api

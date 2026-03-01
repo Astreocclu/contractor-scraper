@@ -1,0 +1,1054 @@
+{
+  "contractor_id": 774,
+  "business_name": "Steve Hawkins Builders",
+  "city": "Crowley",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T15:51:56.728Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-04T04:00:57.697Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "MECH_LIEN": 1
+          },
+          "active_liens": 1,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 1,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "STEVE HAWKINS CUSTOM HOMES",
+                "grantor": "TEXAS APPLIANCE & BUILDERS SUPPLY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS APPLIANCE & BUILDERS SUPPLY",
+                    "STEVE HAWKINS CUSTOM HOMES",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "2/19/2010",
+                    "D210037399",
+                    "--/--/--",
+                    "Subdivision: MAYFAIR S, Lot: 1, Block: 4"
+                  ],
+                  "search_term": "Steve Hawkins Builders",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2010-02-19",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D210037399"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 lien(s) filed BY contractor (collecting payment - neutral)"
+          ],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 1,
+          "human_summary": "OK: 1 liens filed BY Steve Hawkins Builders to collect payment (normal business, no penalty)",
+          "liens_unclear": 0,
+          "liens_by_count": 1,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 1,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Steve Hawkins Builders",
+        "searched_at": "2026-02-04T03:59:28.228344",
+        "total_records": 1
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:48:46.127Z",
+      "data": {
+        "query": "site:yelp.com \"Steve Hawkins Builders\" \"Crowley, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:50:35.960Z",
+      "data": {
+        "cid": "13424116771945181807",
+        "name": "Steve Hawkins Custom Homes",
+        "found": true,
+        "rating": 4,
+        "source": "serper",
+        "address": "7201 Hawkins View Dr Ste 101, Fort Worth, TX 76132",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "a month ago",
+            "text": "I recently purchased a home with the help of Laura Weaver with Steve Hawkins Custom Homes, and the experience was outstanding from start to finish. Laura’s professionalism, clear communication, and genuine dedication made the entire process smooth and enjoyable. I’m truly grateful for her support and would happily recommend Laura to anyone looking to purchase a home.",
+            "author": "Anthony Nguyen",
+            "rating": 5
+          },
+          {
+            "date": "6 months ago",
+            "text": "If I could give 10 stars I would.\nSteve has demonstrated over and over that he is a man of integrity, keeps his word and follows through to see that we were taken care of. We purchased a new 4 bedroom home from him with Matt and his team worked diligently to get us through the process to get all our financing done and  close in 15 days and on the day we needed to be able to move in right away.\nGreat communication and helping us through all the steps with ease.\nWhere do you see that happen?\nWhen I say it seemed sweat-less and stress free, that’s an understatement.\nI would recommend and do recommend anyone looking to get into a new home, look no further.\nWe love our new home inside and out. The extra wide driveway so our car doors aren’t hitting each other is nice.  We love the features and quality put into the construction, especially the materials for energy efficiency which I know will make a big difference with Texas heat.\nSteve still calls in to check on us and to see if there’s anything we need.\nAgain where do you see that happen?\nThank you Steve and to all your team.\nWhat a BLESSING you are.",
+            "author": "Scott Tripp",
+            "rating": 5
+          },
+          {
+            "date": "Edited 2 years ago",
+            "text": "Welcome Home???\nThe view from my back porch the day after closing.  These photos represent how I felt working with Hawkins Homes during this build. Not only did I have to clean my home (inside and out), but I had to pick trash out of the yard and mow it, too.  What should have been a happy day reminded me of all the work I needed to do to move into my \"brand new home.\"\n\nIf you are not in a hurry to move; if you don't have standards; or you like being lied to...then you will not mind this builder.  Otherwise, BUYER BEWARE!\n\nAfter the sales pitch, this build was a struggle from start to finish.",
+            "author": "Nikita Watts",
+            "rating": 1
+          },
+          {
+            "date": "3 years ago",
+            "text": "Worst home building experience ever...  Our first impression was that this company cared, but once we brought up things promised to us, and they realized they could get a boat load more money if we backed out, it was all downhill from there...  We've been in the house for about 4 months, and we've had multiple issues, but since this one is fresh I though I'd share (I was afraid to complain about the other issues until the 1 year warranty period ended, but I now realize we won't be getting any support so why not start now).  So according to GC, the attached pictures reflect a proper draining property...  Funny that no other neighbors around us are having this issue.  Love this company!  My advice to anyone looking to build a home, choose anyone else and run far far away from the Hawkins.",
+            "author": "Ryan Peterson",
+            "rating": 1
+          },
+          {
+            "date": "6 years ago",
+            "text": "We have built five custom homes with Hawkins Custom Homes.  Each has been of superior quality.  Their crews are detailed, polite, and timely.  They work together with the homeowner to achieve exactly what they want. This is a family run business who truly cares about the quality and workmanship they put out. We just can't say enough, other than hopefully they will be building our next home!",
+            "author": "Blessings Candles",
+            "rating": 5
+          },
+          {
+            "date": "10 months ago",
+            "text": "Working with Laura at Steve Hawkins Custom Homes has been tremendous! She made my home building process smooth. Laura paid close attention to detail and responded immediately to any requests and inquiries. From selections to coordinating vendors, Laura was there every step of the way. It is with high regard that I recommend Laura, Jay, and Steve Custom Homes.",
+            "author": "Shannon Fletcher",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Initially we thought Steve Hawkins homes was going to be the best experience ever. Unfortunately they were not immune to the stereo types of dealing with home builders. We have tried for a year and half to get several warranty items fixed but to no avail. Doug has been full of I’m sorry’s with no results. Tried calling to speak with Laura, Steve, and anybody else but never a call back. Oh and numerous issues durning the actual build as well. This company masquerades as a family wholesome company, but it’s clear their main value is money first service never. Be cautious of this builder, they will promise a lot but deliver very little.",
+            "author": "Michael Escobar",
+            "rating": 1
+          },
+          {
+            "date": "a year ago",
+            "text": "I had the pleasure of showing my buyers a few Steve Hawkins Custom Homes and my buyers fell in love with one.  It was new construction and there were a few things that needed to be finished prior to closing.  Laura Weaver with Steve Hawkins Custom Homes was so easy to work with and was prompt in taking care of our calls, emails and concerns.  She was on the ball.  My job as a Realtor is to get my buyers to the closing table as stress free as possible and to ensure it is a pleasant experience for all.  This one had ZERO stress or concerns and I contribute that to the professionals involved.  I love to partner with professionals who love their jobs like I love mine.\nThank you Laura Weaver and Steve Hawkins Custom Homes.",
+            "author": "Peggy Villagomez",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "review_count": 33,
+        "review_source": "serper",
+        "search_variant": "new_fallback",
+        "collection_cost": 0.002
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:51:10.475Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:51:11.094Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:51:11.333Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "stevehawkinshomes.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:49:26.562Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:49:30.111Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:51:15.751Z",
+      "data": {
+        "found": false,
+        "query": "\"Steve Hawkins Builders\" Crowley lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:49:32.328Z",
+      "data": {
+        "query": "Steve Hawkins Builders Crowley site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.star-telegram.com/homes/article27415489.html",
+            "title": "Mira Vista, Realtors | Crowley",
+            "snippet": "On a beautiful country lot, with gorgeous views and wide-open spaces sits the home at 2312 Builder Road in Crowley ... Steve Hawkins 2012 model home with $25000 ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:51:14.298Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Steve Hawkins Builders\" Crowley",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:49:43.973Z",
+      "data": "Steve Hawkins Builders Crowley review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters America’s #1 Pergola is 30% Off. Windproof, Modern & Built to Last. Ends Jan 29. Rated 4.8/5 stars. The Pro+ is on clearance. Free shipping included. Sponsored Hansø Home Watch Visit site 41:11 41:11 Now playing Why New Home Builders Are Under Fire? Builder Truths, Forward Commitments, & Real Talk Mark Jones Mark Jones • • 4.6K views 3 months ago Mark Jones Mark Jones In this episode of Key Factors Podcast – Real Estate AF, host Mark Jones sits down with Tommy Fryer, Division Leader at ... In this episode of Key Factors Podcast – Real Estate AF, host Mark Jones sits down with Tommy Fryer, Division Leader at ... From the video description SHORTS SHORTS Now playing This home builder has a serious problem... 😳 Builder Brigade Builder Brigade • • 2.1M views 3 years ago Builder Brigade Builder Brigade SUBSCRIBE to be a smarter homeowner ✓The Ultimate Home Building Checklist✓ www.BuilderBrigade .com/Social ... SUBSCRIBE to be a smarter homeowner ✓The Ultimate Home Building Checklist✓ www.BuilderBrigade .com/Social ... From the video description See how Axon’s AI growth engine helps DTC brands reach better customers and scale faster. Scale smarter with automated optimization that removes daily campaign workload. Sponsored Axon by AppLovin Watch Learn more 9:31 9:31 Now playing House of cards crumbling for custom home builder Rob Wolchek-Investigative News Reporter Rob Wolchek-Investigative News Reporter • • 1.6M views 5 years ago Rob Wolchek-Investigative News Reporter Rob Wolchek-Investigative News Reporter For some reason, people hated this guy. Maybe because he was causing his customers havoc as they had their homes ... For some reason, people hated this guy. Maybe because he was causing his customers havoc as they had their homes ... From the video description 7:16 7:16 Now playing How To Avoid Houston's \"Terrible\" Home Builders! Houston Suburbs Houston Suburbs • • 26K views 3 years ago Houston Suburbs Houston Suburbs Work with me : https://zfrmz.com/dfMNtz4KmdVbN6XncAlW BROWSE GUIDES AND BLOGS: ➡️ lifeincypresstx.com. Work with me : https://zfrmz.com/dfMNtz4KmdVbN6XncAlW BROWSE GUIDES AND BLOGS: ➡️ lifeincypresstx.com. From the video description Grow your savings with a high-yield rate plus convenient access to your money Open a high-yield account in minutes and start earning. Sponsored Marcus Savings Watch Learn more 12:53 12:53 Now playing The Worst Home Builders In Florida - Who To Steer Clear Of! Lisa McBride- Sarasota Neighborhood Experts Lisa McBride- Sarasota Neighborhood Experts • • 25K views 1 year ago Lisa McBride- Sarasota Neighborhood Experts Lisa McBride- Sarasota Neighborhood Experts Who To Steer Clear Of! Which Home Builders in Florida should you avoid? Today we discuss the good and bad home builders ... Who To Steer Clear Of! Which Home Builders in Florida should you avoid? Today we discuss the good and bad home builders ... From the video description 4K 5 chapters Intro | Entry Level Builders. What to Expect | Standard Builders, Largest Group of Builders, Inspections | Semi Luxury Builders, Home Warranties | Luxury Builders, What Is Written in Contracts that all buyers need to know. 5 chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Entry Level Builders. What to Expect Entry Level Builders. What to Expect 0:46 Entry Level Builders. What to Expect 0:46 Standard Builders, Largest Group of Builders, Inspections Standard Builders, Largest Group of Builders, Inspections 4:35 Standard Builders, Largest Group of Builders, Inspections 4:35 Semi Luxury Builders, Home Warranties Semi Luxury Builders, Home Warranties 7:34 Semi Luxury Builders, Home Warranties 7:34 Luxury Builders, What Is Written in Contracts that all buyers need to know. Luxury Builders, What Is Written in Contracts that all buyers need to know. 10:04 Luxury Builders, What Is Written in Contracts that all buyers need to know. 10:04 SHORTS SHORTS Now playing 7 Home features you gotta consider for your next house 🏠... Builder Brigade Builder Brigade • • 150K views 3 years ago Builder Brigade Builder Brigade Subscribe right now for more home building tips (for homeowners) You only get one chance to get it right!!!! ✓ The Ultimate Home ... Subscribe right now for more home building tips (for homeowners) You only get one chance to get it right!!!! ✓ The Ultimate Home ... From the video description SHORTS SHORTS Now playing Why I Black List KB Homes #homeinspection #arizona #newbuild #newconstruction CyFy CyFy • • 842K views 3 years ago CyFy CyFy SHORTS SHORTS Now playing New Construction Home Inspection gold.star.inspections gold.star.inspections • • 456K views 3 years ago gold.star.inspections gold.star.inspections Episode 13 Part 1 of \"That Ain't Right\" #thataintright #homeinspection #viral #newconstruction #newbuild. Episode 13 Part 1 of \"That Ain't Right\" #thataintright #homeinspection #viral #newconstruction #newbuild. From the video description 10:03 10:03 Now playing The Truth About HOME INSPECTION REPORTS! What They Leave Out...(Homebuyers SHOULD WATCH This Video!) The Honest Carpenter The Honest Carpenter • • 247K views 3 years ago The Honest Carpenter The Honest Carpenter Check Out Our FREE GUIDE: *25 Must-Have Carpentry Tools...Under $25 Each!* https://www.thehonestcarpenter.com/ AFFILIATE ... Check Out Our FREE GUIDE: *25 Must-Have Carpentry Tools...Under $25 Each!* https://www.thehonestcarpenter.com/ AFFILIATE ... From the video description 16 chapters Intro | HOME INSPECTORS ARE NOT NECESSARILY CONSTRUCTION EXPERTS! | NOT THE CASE ANYMORE! | AMERICAN SOCIETY OF HOME INSPECTORS (ASHI) | IS THIS A BIG DEAL? | LICENSING REQUIREMENTS | THAT'S NOT THIER JOB! | IDENTIFYING/ DOCUMENTING VISIBLE FLAWS | THEY'RE NOT FURNITURE MOVERS! | THINGS WILL GET MISSED ON YOUR REPORT | COULD NOT INSPECT NORTHEAST ATTIC CORNER... | NOT EVERYTHING ON A REPORT IS EQUAL | MAJOR FLAWS | HAVE A QUALIFIED CONTRACTOR INSPECT AND REPAIR... | THAT'S UNACCEPTABLE! | COMMENT BELOW! 16 auto-generated chapters in this video 16 chapters Intro Intro 0:00 Intro 0:00 HOME INSPECTORS ARE NOT NECESSARILY CONSTRUCTION EXPERTS! HOME INSPECTORS ARE NOT NECESSARILY CONSTRUCTION EXPERTS! 1:22 HOME INSPECTORS ARE NOT NECESSARILY CONSTRUCTION EXPERTS! 1:22 NOT THE CASE ANYMORE! NOT THE CASE ANYMORE! 1:46 NOT THE CASE ANYMORE! 1:46 AMERICAN SOCIETY OF HOME INSPECTORS (ASHI) AMERICAN SOCIETY OF HOME INSPECTORS (ASHI) 2:01 AMERICAN SOCIETY OF HOME INSPECTORS (ASHI) 2:01 IS THIS A BIG DEAL? IS THIS A BIG DEAL? 2:08 IS THIS A BIG DEAL? 2:08 LICENSING REQUIREMENTS LICENSING REQUIREMENTS 2:21 LICENSING REQUIREMENTS 2:21 THAT'S NOT THIER JOB! THAT'S NOT THIER JOB! 2:43 THAT'S NOT THIER JOB! 2:43 GDPR still SOCs without Delve No time for 200-hour compliance projects? AI automates SOC 2 in weeks. Sponsored Delve Watch Book now SHORTS SHORTS Now playing Builder Says Inspections Void Warranty CyFy CyFy • • 347K views 2 years ago CyFy CyFy I think I should show up to inspections with a chainsaw arm #home #newhome #homeinspection # builder #contractor ... I think I should show up to inspections with a chainsaw arm #home #newhome #homeinspection # builder #contractor ... From the video description SHORTS SHORTS Now playing Integrated housing for easy construction process- Good tools and machinery make work easy Crafts people Crafts people • • 4.4M views 3 years ago Crafts people Crafts people People also watched 12:58 12:58 Now playing 🚨LARGEST US HOMEBUILDER D.R. HORTON FACES CLASS ACTION LAWSUIT FOR “SUPPRESSING” MONTHLY PAYMENTS Ox Talks Ox Talks • • 57K views 1 month ago Ox Talks Ox Talks Potentially leading to hundreds of millions in damages and shattering any remaining confidence in the housing market, this is ... Potentially leading to hundreds of millions in damages and shattering any remaining confidence in the housing market, this is ... From the video description 24:13 24:13 Now playing NEVER Buy a Home From These Builders Jackie Baker Jackie Baker • • 468K views 9 months ago Jackie Baker Jackie Baker I am seeing a little too frequently these headlines about homeowners having major problems with their brand new homes built by ... I am seeing a little too frequently these headlines about homeowners having major problems with their brand new homes built by ... From the video description Summary This video examines troubling news stories about major home builders. Jackie Baker shares real-life examples of homeowners facing significant problems with new construction. The presenter offers advice on protecting yourself when buying a new home. AI-generated video summary Quality and accuracy may vary. Summary This video examines troubling news stories about major home builders. Jackie Baker shares real-life examples of homeowners facing significant problems with new construction. The presenter offers advice on protecting yourself when buying a new home. 28:54 28:54 Now playing He Bought A Clayton Home And Instantly Regretted It Kristina Smallhorn Kristina Smallhorn • • 674K views 1 year ago Kristina Smallhorn Kristina Smallhorn David Revils bought a brand new Clayton manufactured home in 2023, hoping for an affordable housing solution. However, his ... David Revils bought a brand new Clayton manufactured home in 2023, hoping for an affordable housing solution. However, his ... From the video description 10 chapters Intro | CrossMod | Financing | Interest Rates | Land Prep | Contract | Home Inspector | Warranty | Regulation | Texas Manufacturing Housing 10 auto-generated chapters in this video 10 chapters Intro Intro 0:00 Intro 0:00 CrossMod CrossMod 1:30 CrossMod 1:30 Financing Financing 2:40 Financing 2:40 Interest Rates Interest Rates 5:14 Interest Rates 5:14 Land Prep Land Prep 10:08 Land Prep 10:08 Contract Contract 12:45 Contract 12:45 Home Inspector Home Inspector 16:47 Home Inspector 16:47 13:40 13:40 Now playing The WORST contractor SCAM I've seen! Stanley \"Dirt Monkey\" Genadek Stanley \"Dirt Monkey\" Genadek • • 3M views 3 years ago Stanley \"Dirt Monkey\" Genadek Stanley \"Dirt Monkey\" Genadek The General Contractor (GC) scammed the customer, The Excavator, the Concrete Contractor, the lumber yard and BANK all at ... The General Contractor (GC) scammed the customer, The Excavator, the Concrete Contractor, the lumber yard and BANK all at ... From the video description 4K + 6 more 2:10 2:10 Now playing Couple suing Louisville-area home builder after paying for a house that was never built WDRB News - Official WDRB News - Official • • 566 views 4 years ago WDRB News - Official WDRB News - Official A local home builder was sued after a couple living in South Carolina paid the company more than $100000 for a home that was ... A local home builder was sued after a couple living in South Carolina paid the company more than $100000 for a home that was ... From the video description 6:05 6:05 Now playing Home Builders I’d Avoid in 2026 (And Why) Houston Suburbs Houston Suburbs • • 463 views 2 weeks ago Houston Suburbs Houston Suburbs New construction is dominating the Houston suburbs, and for a lot of buyers, it makes sense. In this video I explain the types of ... New construction is dominating the Houston suburbs, and for a lot of buyers, it makes sense. In this video I explain the types of ... From the video description Best Luxury Infrared Saunas The ultimate home sauna for wellness, detox, and longevity—designed for your home. Sponsored Sun Home Saunas Watch Visit site SHORTS SHORTS Now playing How To Build A House ALONE! #shorts #construction #tools #DIY #motivation The Excellent Laborer The Excellent Laborer • • 585K views 4 years ago The Excellent Laborer The Excellent Laborer This video shows how to build a house alone using wall jacks! https://amzn.to/3tmjX7v. This video shows how to build a house alone using wall jacks! https://amzn.to/3tmjX7v. From the video description SHORTS SHORTS Now playing Top 4 Worst Home Builders for new construction homes that you need to stay away from! Mr.Mortgage101 Mr.Mortgage101 • • 8.1K views 6 months ago Mr.Mortgage101 Mr.Mortgage101 These Are the TOP 4 Worst Home Builders in the U.S. (According to Online Reviews). Thinking about buying a new construction ... These Are the TOP 4 Worst Home Builders in the U.S. (According to Online Reviews). Thinking about buying a new construction ... From the video description 4K 3:35 3:35 Now playing Phoenix-area inspector reveals newly built homes have obvious defects Arizona’s Family (3TV / CBS 5) Arizona’s Family (3TV / CBS 5) • • 566K views 2 years ago Arizona’s Family (3TV / CBS 5) Arizona’s Family (3TV / CBS 5) Cy Porter is a home inspector who says he finds more red flags in newly built homes than in older homes that are for sale. Cy Porter is a home inspector who says he finds more red flags in newly built homes than in older homes that are for sale. From the video description CC SHORTS SHORTS Now playing Self-building our own home! #building Mason Dixon Acres Mason Dixon Acres • • 259K views 2 years ago Mason Dixon Acres Mason Dixon Acres Planning a build, addition, or remodel? We are releasing something big in 2026 exactly for you. Sign up to be the first to know ... Planning a build, addition, or remodel? We are releasing something big in 2026 exactly for you. Sign up to be the first to know ... From the video description SHORTS SHORTS Now playing How much it costs to build a 3 bedroom 2 bath house - Part 2 Niko's Property Show Niko's Property Show • • 1M views 3 years ago Niko's Property Show Niko's Property Show 10:19 10:19 Now playing New Construction Design Center Tips: Don’t Waste Your Money on These Coral Hoyt Coral Hoyt • • 383K views 5 years ago Coral Hoyt Coral Hoyt Save yourself tons of money and watch this video if you are thinking about building a new home or are in the process. These new ... Save yourself tons of money and watch this video if you are thinking about building a new home or are in the process. These new ... From the video description 7 chapters Intro | Paint | Flooring | Granite | Light Fixtures | Appliances | Elevations 7 auto-generated chapters in this video 7 chapters Intro Intro 0:00 Intro 0:00 Paint Paint 1:15 Paint 1:15 Flooring Flooring 2:35 Flooring 2:35 Granite Granite 5:41 Granite 5:41 Light Fixtures Light Fixtures 6:41 Light Fixtures 6:41 Appliances Appliances 8:22 Appliances 8:22 Elevations Elevations 8:58 Elevations 8:58 SHORTS SHORTS Now playing What is a HERS rating? Steve Becht explains CreekStone Homes CreekStone Homes • • 170 views 7 years ago CreekStone Homes CreekStone Homes Why is the HERS rating on your new home important? Watch as Steve Becht of CreekStone Homes explains. We are your source ... Why is the HERS rating on your new home important? Watch as Steve Becht of CreekStone Homes explains. We are your source ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:49:45.006Z",
+      "data": {
+        "query": "site:nextdoor.com Steve Hawkins Builders Crowley",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:51:13.648Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Steve Hawkins Builders\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:51:12.922Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Steve Hawkins Builders\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:49:57.753Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Steve%20Hawkins%20Builders&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Steve% 20Hawkins% 20Builders&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Search Options. Cross Program. All Media Programs Facility Search · Analyze Trends · Track Performance · EPA/State Dashboards (Air, Wastewater, ...",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Steve% 20Hawkins% 20Builders&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Steve% 20Hawkins% 20Builders&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:50:01.467Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:50:06.377Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:50:12.924Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Steve Hawkins Builders",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Nov 14, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement.pdf",
+            "title": "WALMART SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. WALMART SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. I. Definitions.",
+            "position": 1
+          },
+          {
+            "date": "Dec 9, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/2022-12-09%20CVS%20Global%20Settlement%20Agreement%20with%20Exhibits%20(003).pdf",
+            "title": "CVS SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. CVS SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. Page. I. Definitions.",
+            "position": 2
+          },
+          {
+            "date": "Mar 9, 2019",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2019/Press/LittleSistersBrief.pdf",
+            "title": "In the United States Court of Appeals for the Ninth Circuit",
+            "snippet": "The district court's error sprung from its conclusion that the agency's prior accommodation—requiring some, but not all, religious ob- jectors ...",
+            "position": 3
+          },
+          {
+            "date": "by S PETER",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/19-431-454_Amici%20Brief.pdf",
+            "title": "20200309124348472_19-431-454_Amici Brief",
+            "snippet": "The Third Circuit compounded its error by conclud- ing that the agency's prior accommodation—requiring some, but not all, religious objectors to ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 6, 2018",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2018/Press/Amicus%20Brief.pdf",
+            "title": "In the Supreme Court of the United States",
+            "snippet": "So long as an agency acts within its realm of authority, its decision to alter a policy determination—or even re- verse course—is not subject to ...",
+            "position": 5
+          },
+          {
+            "date": "Dec 31, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/Austin%20--%20Rule%2029.3%20Mtn.pdf",
+            "title": "In the Court of Appeals for the Third Judicial District Austin, ...",
+            "snippet": "To the Honorable Third Court of Appeals: Pursuant to Rule 29.3, the State of Texas, by and through Attorney General Ken.",
+            "position": 6
+          },
+          {
+            "date": "Sep 30, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/Distributors%20Texas%20Settlement%20Agreement%20Distributors%20TXAG%20Executed.pdf",
+            "title": "DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT",
+            "snippet": "TABLE OF CONTENTS. DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT ........................................................ 1.",
+            "position": 7
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:50:13.917Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 6
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Comptroller.Texas.Gov is the website for the Texas Comptroller of Public Accounts.",
+            "position": 7,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 8
+          },
+          {
+            "date": "Jan 10, 2022",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=25587&ItemID=16931",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 01/10/2022 09:59:31. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:50:14.996Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Steve Hawkins Builders",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:50:15.887Z",
+      "data": {
+        "query": "site:dallascounty.org Steve Hawkins Builders civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "statutory",
+            "snippet": "(Equals Line 1b minus Line 4 plus Line 8.) Criminal Matters. Total Cases. Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:50:16.723Z",
+      "data": {
+        "query": "site:collincountytx.gov Steve Hawkins Builders",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/Technically%20Preferred%20Alignment%20Seg.%205.pdf",
+            "title": "Technically Preferred Alignment",
+            "snippet": "STEVE. STEVEN LONNIE. 630. COOPER MCCLOUD. JOE. REAL. CITY. DARLA. FRITSCHE. KENNET ... JACK HAWKINS. GARY. BAILEY JEANN FOSTER. VICKE MCDONALD. C. MARTY. PRATHER.",
+            "position": 1
+          },
+          {
+            "date": "Dec 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210816_2672/50383_RTC%20Packet%2008-12-2021.pdf",
+            "title": "AGENDA Regional Transportation Council Thursday, ...",
+            "snippet": "The RTC meeting on August 12, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 2
+          },
+          {
+            "link": "https://apps.collincountytx.gov/ossf/",
+            "title": "AEROBIC_SYSTEM_LIST.HTML",
+            "snippet": "Collin County PAGE 1 requires that maintenance be performed 3 times per year - every 120 - 130 days. Reports are due to Development Services within 14 days of ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:50:17.718Z",
+      "data": {
+        "query": "site:dentoncounty.gov Steve Hawkins Builders",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:50:20.615Z",
+      "data": "Custom Home Builder in Fort Worth | Steve Hawkins Homes Skip to primary navigation Skip to main content Custom Homes Communities Design Your Home Floorplans Available Homes About Us Our Process Design Studio What Sets Us Apart Commercial Land Gallery Contact Menu Custom Homes Submenu Communities Design Your Home Floorplans Available Homes About Us Submenu Our Process Design Studio What Sets Us Apart Commercial Land Gallery Contact A house you can call home. Home is where the heart is— it’s a place that your family can grow with and you can grow old in. At Steve Hawkins Homes, we believe in creating customized homes built to last for years to come. Unlike other big builders, we take special care in constructing your dream home while providing you with a relaxed, top-quality experience that exceeds your expectations. Build Your Dream Home Welcome to the neighboorhood. When building a new home, choosing a location is key. With eight communities to choose from across the greater Fort Worth area, including Benbrook, Aledo, Godley, and Crowley—you will surely find a place you love. Our neighborhoods have been selected with you in mind—each offers nearby shopping and amenities, quality schools, easy access to highways, and much more. view our communities Where we build Communties Quick Move-ins Available Homes Custom Homes View Floorplans We have owned over 10 homes in the Dallas Fort Worth Area, and this has got to be one of our top favorites. The build process was fantastic, and they were so helpful in answering questions and making changes. The quality of the home and materials is top notch. We are very pleased. — JOHN I love the amount of detail they put into their homes and appreciate the customer service even more. The personal experience I've gotten from using Steve Hawkins is incomparable! — ASHLEY My experience with Steve Hawkins Custom Homes has been outstanding. They build a QUALITY home and have QUALITY sub-contractors that were very helpful, which is a rare find in the price range they build. The best part about my experience has been with the people that work there. Everyone is helpful, patient, and caring in what can be a stressful process. I would recommend them to anyone. — MATT We have owned over 10 homes in the Dallas Fort Worth Area, and this has got to be one of our top favorites. The build process was fantastic, and they were so helpful in answering questions and making changes. The quality of the home and materials is top notch. We are very pleased. — JOHN I love the amount of detail they put into their homes and appreciate the customer service even more. The personal experience I've gotten from using Steve Hawkins is incomparable! — ASHLEY 1 2 3 Start your building your home today. Email us Call (817) 737-4446 Communities Aledo Expand Woodland Meadows Benbrook Expand Whitestone Heights Whitestone Ranch Whitestone Crest Crowley Expand Mayfair Estates Fort Worth Expand Woodland Springs Godley Expand Coyote Crossing Additional Resources Land Development Commercial Services Get Social Google icon Facebook icon © 2026 Steve Hawkins Homes | Fort Worth Custom Home Builder | Commercial. All Rights Reserved."
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:50:26.548Z",
+      "data": {
+        "name": "Steve Hawkins Custom Homes",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 737-4446",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/fort-worth/profile/home-builders/steve-hawkins-custom-homes-0825-87010014",
+        "review_count": null,
+        "founding_date": "06/09/1981",
+        "complaint_count": null,
+        "accredited_since": "4/12/2019",
+        "years_in_business": 44,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:51:04.886Z",
+      "data": {
+        "name": "Steve Hawkins Builders",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 297-0919",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "2309 Builder Rd",
+        "reviews": [
+          {
+            "date": "a month ago",
+            "text": "I recently purchased a home with the help of Laura Weaver with Steve Hawkins Custom Homes, and the experience was outstanding from start to finish. Laura’s professionalism, clear communication, and genuine dedication made the entire process smooth and enjoyable. I’m truly grateful for her support and would happily recommend Laura to anyone looking to purchase a home.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anthony Nguyen"
+          },
+          {
+            "date": "6 months ago",
+            "text": "If I could give 10 stars I would.\nSteve has demonstrated over and over that he is a man of integrity, keeps his word and follows through to see that we were taken care of. We purchased a new 4 bedroom home from him with Matt and his team worked diligently to get us through the process to get all our financing done and  close in 15 days and on the day we needed to be able to move in right away.\nGreat communication and helping us through all the steps with ease.\nWhere do you see that happen?\nWhen ",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Scott Tripp"
+          },
+          {
+            "date": "2 years ago",
+            "text": "Welcome Home???\nThe view from my back porch the day after closing.  These photos represent how I felt working with Hawkins Homes during this build. Not only did I have to clean my home (inside and out), but I had to pick trash out of the yard and mow it, too.  What should have been a happy day reminded me of all the work I needed to do to move into my \"brand new home.\"\n\nIf you are not in a hurry to move; if you don't have standards; or you like being lied to...then you will not mind this builder",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Nikita Watts"
+          },
+          {
+            "date": "3 years ago",
+            "text": "Worst home building experience ever...  Our first impression was that this company cared, but once we brought up things promised to us, and they realized they could get a boat load more money if we backed out, it was all downhill from there...  We've been in the house for about 4 months, and we've had multiple issues, but since this one is fresh I though I'd share (I was afraid to complain about the other issues until the 1 year warranty period ended, but I now realize we won't be getting any su",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Ryan Peterson"
+          },
+          {
+            "date": "6 years ago",
+            "text": "We have built five custom homes with Hawkins Custom Homes.  Each has been of superior quality.  Their crews are detailed, polite, and timely.  They work together with the homeowner to achieve exactly what they want. This is a family run business who truly cares about the quality and workmanship they put out. We just can't say enough, other than hopefully they will be building our next home!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Blessings Candles"
+          },
+          {
+            "date": "10 months ago",
+            "text": "Working with Laura at Steve Hawkins Custom Homes has been tremendous! She made my home building process smooth. Laura paid close attention to detail and responded immediately to any requests and inquiries. From selections to coordinating vendors, Laura was there every step of the way. It is with high regard that I recommend Laura, Jay, and Steve Custom Homes.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Shannon Fletcher"
+          },
+          {
+            "date": "a year ago",
+            "text": "Initially we thought Steve Hawkins homes was going to be the best experience ever. Unfortunately they were not immune to the stereo types of dealing with home builders. We have tried for a year and half to get several warranty items fixed but to no avail. Doug has been full of I’m sorry’s with no results. Tried calling to speak with Laura, Steve, and anybody else but never a call back. Oh and numerous issues durning the actual build as well. This company masquerades as a family wholesome company",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Michael Escobar"
+          },
+          {
+            "date": "a year ago",
+            "text": "I had the pleasure of showing my buyers a few Steve Hawkins Custom Homes and my buyers fell in love with one.  It was new construction and there were a few things that needed to be finished prior to closing.  Laura Weaver with Steve Hawkins Custom Homes was so easy to work with and was prompt in taking care of our calls, emails and concerns.  She was on the ball.  My job as a Realtor is to get my buyers to the closing table as stress free as possible and to ensure it is a pleasant experience for",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Peggy Villagomez"
+          },
+          {
+            "date": "2 years ago",
+            "text": "We purchased a home from the Steve Hawkins team in spring of 2023 and it has been the most wonderful experience. From our first appointment with the sales team, all the way through to closing, they have treated us with kindness, respect, and generosity. We purchased one of their stunning models and requested some modifications to the home before we purchased it (adding sprinklers, a fence, added a double oven, and some interior work, etc) and they gave us a fair price, worked quickly, and stayed",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Christina Sandra"
+          },
+          {
+            "date": "2 years ago",
+            "text": "Six months ago, I bought a house from Steve Hawkins Custom Homes. This good experience began with Mr. Joel Hawkins who showed me several homes without being pushy. He was always respectful and knowledgeable and found answers when I needed them.\n\nUnfortunately, a mishap took place on a Sunday ten days after I took ownership of the house. An internet company was digging around my house for cable lines that caused the sewer pipe to burst. Immediately, Hawkins responded to my situation: Mr. Duke was",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Jamal Zakhary"
+          },
+          {
+            "date": "8 months ago",
+            "text": "Our company has been working alongside Steve hawking for quite a while and it’s been an absolute pleasure. They always ensure every job detail is on par ensuring great home builds definitely recommend them!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Bryan Adame"
+          },
+          {
+            "date": "2 years ago",
+            "text": "I built my first home with Steve Hawkins and I absolutely love it! There comes some challenges when building a home no matter what builder you choose. It's just inevitable to say the least. However, Steve Hawkins and his team were great in making things right when things weren't correct. Keep in mind, my wife and I built this home right after the pandemic, which caused some delays with the supply chain. All in all, the quality of the home is top notch, and everyone who has been to our house love",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Noel Nacpil"
+          },
+          {
+            "date": "2 years ago",
+            "text": "We have had a terrible experience since purchasing our Steve Hawkins home. We purchased a spec home that was nearing being finished so I cannot comment on the initial build process. We learned after signing our contract that Steve Hawkins's children actually build under his name now, under 3 different entities. It seems as though the quality and experience may vary depending on which child of his you are building with. Communication has been terrible throughout the process. We added a fence thin",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Lindsey Lambarth"
+          },
+          {
+            "date": "a year ago",
+            "text": "Worst builder I have ever used. This is our 4th house we have custom built.  They lie, NO CUSTOMER INTERACTION, Poor construction manager who gets mad when you see poor construction & they never fix, they have some good suppliers, poor plumbing supplier: told me he cant install a shower fixture because its not standard.  What?? This is supposed to be a custom home!  If you dont choose products from their showroom, you pay big time!!  Their cost allotments for kitchen appliances, lights, trim, fl",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Audrey Wright"
+          },
+          {
+            "date": "a year ago",
+            "text": "Great service from start to finish. It was a pleasure to work with Laura from Steve Hawkins homes!  The house is beautiful, and Jay has been great.  I am lucky to have had the opportunity to work with Steve Hawkins Homes and move into this beautiful home.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Scott"
+          },
+          {
+            "date": "7 years ago",
+            "text": "DO NOT BUY A HOUSE FROM THESE PEOPLE!!!!!\nMy mother bought a house from Hawkins almost four years ago and the company still has not addressed all of the problems identified immediately after she moved into the house. Since moving into the house additional problems have developed.\n\nHawkins had to repair sewer lines between my mom's house and the neighbors.  The lines ran along a slope across the back of both houses.  After the repairs Hawkins just left bare dirt which caused drainage and erosion ",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Cindy DiGesualdo"
+          },
+          {
+            "date": "9 years ago",
+            "text": "I cannot recommend Steve Hawkins Customs Homes highly enough. This family owned business has helped build family and individuals dream homes and I have loved everything they've done for me and my family. I love the amount of detail they put into their homes and appreciate the customer service even more. The personal experience I've gotten from using Steve Hawkins is incomparable! Thanks Steve and team!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Ashley Hall"
+          },
+          {
+            "date": "2 years ago",
+            "text": "We have lived in our Steve Hawkins home for 18 years and we LOVE it! It is made well and has stood the test of time! This is where we raised our children and have our home business. This house has taken care of us and it just feels like a big hug! I hope others get this same security and safe haven that we have! God bless!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Rachael Richards"
+          },
+          {
+            "date": "2 years ago",
+            "text": "A&C Cabinets, INC has worked with Steve Hawkins Homes for forty years. The home building and cabinet industry has seen many ups and downs throughout the years. One thing has remained the same through those years and that is the efficiency, quality, care and customer service that Steve Hawkins Homes has provided to its homeowners and to A&C Cabinets.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "AC Cabinets"
+          },
+          {
+            "date": "11 years ago",
+            "text": "We have owned over 10 homes in the Dallas Fort Worth Area, and this has got to be one of our top favorites. The build process was fantastic, and they were so helpful in answering questions and making changes. The quality of the home and materials is top notch. We are very pleased.\n\nBuilding a home can be stressful, but the Hawkins company took care of every concern and issue that came up during the building and afterwards.\n\nI would highly recommend them to anyone.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "John Milam"
+          }
+        ],
+        "website": "https://stevehawkinshomes.com/",
+        "maps_url": "https://www.google.com/maps/search/Steve%20Hawkins%20Builders%20Crowley%2C%20TX",
+        "categories": [
+          "Construction company"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:51:04.889Z",
+      "data": {
+        "name": "Steve Hawkins Builders",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 297-0919",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "2309 Builder Rd",
+        "reviews": [
+          {
+            "date": "a month ago",
+            "text": "I recently purchased a home with the help of Laura Weaver with Steve Hawkins Custom Homes, and the experience was outstanding from start to finish. Laura’s professionalism, clear communication, and genuine dedication made the entire process smooth and enjoyable. I’m truly grateful for her support and would happily recommend Laura to anyone looking to purchase a home.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anthony Nguyen"
+          },
+          {
+            "date": "6 months ago",
+            "text": "If I could give 10 stars I would.\nSteve has demonstrated over and over that he is a man of integrity, keeps his word and follows through to see that we were taken care of. We purchased a new 4 bedroom home from him with Matt and his team worked diligently to get us through the process to get all our financing done and  close in 15 days and on the day we needed to be able to move in right away.\nGreat communication and helping us through all the steps with ease.\nWhere do you see that happen?\nWhen ",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Scott Tripp"
+          },
+          {
+            "date": "2 years ago",
+            "text": "Welcome Home???\nThe view from my back porch the day after closing.  These photos represent how I felt working with Hawkins Homes during this build. Not only did I have to clean my home (inside and out), but I had to pick trash out of the yard and mow it, too.  What should have been a happy day reminded me of all the work I needed to do to move into my \"brand new home.\"\n\nIf you are not in a hurry to move; if you don't have standards; or you like being lied to...then you will not mind this builder",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Nikita Watts"
+          },
+          {
+            "date": "3 years ago",
+            "text": "Worst home building experience ever...  Our first impression was that this company cared, but once we brought up things promised to us, and they realized they could get a boat load more money if we backed out, it was all downhill from there...  We've been in the house for about 4 months, and we've had multiple issues, but since this one is fresh I though I'd share (I was afraid to complain about the other issues until the 1 year warranty period ended, but I now realize we won't be getting any su",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Ryan Peterson"
+          },
+          {
+            "date": "6 years ago",
+            "text": "We have built five custom homes with Hawkins Custom Homes.  Each has been of superior quality.  Their crews are detailed, polite, and timely.  They work together with the homeowner to achieve exactly what they want. This is a family run business who truly cares about the quality and workmanship they put out. We just can't say enough, other than hopefully they will be building our next home!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Blessings Candles"
+          },
+          {
+            "date": "10 months ago",
+            "text": "Working with Laura at Steve Hawkins Custom Homes has been tremendous! She made my home building process smooth. Laura paid close attention to detail and responded immediately to any requests and inquiries. From selections to coordinating vendors, Laura was there every step of the way. It is with high regard that I recommend Laura, Jay, and Steve Custom Homes.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Shannon Fletcher"
+          },
+          {
+            "date": "a year ago",
+            "text": "Initially we thought Steve Hawkins homes was going to be the best experience ever. Unfortunately they were not immune to the stereo types of dealing with home builders. We have tried for a year and half to get several warranty items fixed but to no avail. Doug has been full of I’m sorry’s with no results. Tried calling to speak with Laura, Steve, and anybody else but never a call back. Oh and numerous issues durning the actual build as well. This company masquerades as a family wholesome company",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Michael Escobar"
+          },
+          {
+            "date": "a year ago",
+            "text": "I had the pleasure of showing my buyers a few Steve Hawkins Custom Homes and my buyers fell in love with one.  It was new construction and there were a few things that needed to be finished prior to closing.  Laura Weaver with Steve Hawkins Custom Homes was so easy to work with and was prompt in taking care of our calls, emails and concerns.  She was on the ball.  My job as a Realtor is to get my buyers to the closing table as stress free as possible and to ensure it is a pleasant experience for",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Peggy Villagomez"
+          },
+          {
+            "date": "2 years ago",
+            "text": "We purchased a home from the Steve Hawkins team in spring of 2023 and it has been the most wonderful experience. From our first appointment with the sales team, all the way through to closing, they have treated us with kindness, respect, and generosity. We purchased one of their stunning models and requested some modifications to the home before we purchased it (adding sprinklers, a fence, added a double oven, and some interior work, etc) and they gave us a fair price, worked quickly, and stayed",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Christina Sandra"
+          },
+          {
+            "date": "2 years ago",
+            "text": "Six months ago, I bought a house from Steve Hawkins Custom Homes. This good experience began with Mr. Joel Hawkins who showed me several homes without being pushy. He was always respectful and knowledgeable and found answers when I needed them.\n\nUnfortunately, a mishap took place on a Sunday ten days after I took ownership of the house. An internet company was digging around my house for cable lines that caused the sewer pipe to burst. Immediately, Hawkins responded to my situation: Mr. Duke was",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Jamal Zakhary"
+          },
+          {
+            "date": "8 months ago",
+            "text": "Our company has been working alongside Steve hawking for quite a while and it’s been an absolute pleasure. They always ensure every job detail is on par ensuring great home builds definitely recommend them!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Bryan Adame"
+          },
+          {
+            "date": "2 years ago",
+            "text": "I built my first home with Steve Hawkins and I absolutely love it! There comes some challenges when building a home no matter what builder you choose. It's just inevitable to say the least. However, Steve Hawkins and his team were great in making things right when things weren't correct. Keep in mind, my wife and I built this home right after the pandemic, which caused some delays with the supply chain. All in all, the quality of the home is top notch, and everyone who has been to our house love",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Noel Nacpil"
+          },
+          {
+            "date": "2 years ago",
+            "text": "We have had a terrible experience since purchasing our Steve Hawkins home. We purchased a spec home that was nearing being finished so I cannot comment on the initial build process. We learned after signing our contract that Steve Hawkins's children actually build under his name now, under 3 different entities. It seems as though the quality and experience may vary depending on which child of his you are building with. Communication has been terrible throughout the process. We added a fence thin",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Lindsey Lambarth"
+          },
+          {
+            "date": "a year ago",
+            "text": "Worst builder I have ever used. This is our 4th house we have custom built.  They lie, NO CUSTOMER INTERACTION, Poor construction manager who gets mad when you see poor construction & they never fix, they have some good suppliers, poor plumbing supplier: told me he cant install a shower fixture because its not standard.  What?? This is supposed to be a custom home!  If you dont choose products from their showroom, you pay big time!!  Their cost allotments for kitchen appliances, lights, trim, fl",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Audrey Wright"
+          },
+          {
+            "date": "a year ago",
+            "text": "Great service from start to finish. It was a pleasure to work with Laura from Steve Hawkins homes!  The house is beautiful, and Jay has been great.  I am lucky to have had the opportunity to work with Steve Hawkins Homes and move into this beautiful home.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Scott"
+          },
+          {
+            "date": "7 years ago",
+            "text": "DO NOT BUY A HOUSE FROM THESE PEOPLE!!!!!\nMy mother bought a house from Hawkins almost four years ago and the company still has not addressed all of the problems identified immediately after she moved into the house. Since moving into the house additional problems have developed.\n\nHawkins had to repair sewer lines between my mom's house and the neighbors.  The lines ran along a slope across the back of both houses.  After the repairs Hawkins just left bare dirt which caused drainage and erosion ",
+            "rating": 1,
+            "source": "google_maps",
+            "reviewer_name": "Cindy DiGesualdo"
+          },
+          {
+            "date": "9 years ago",
+            "text": "I cannot recommend Steve Hawkins Customs Homes highly enough. This family owned business has helped build family and individuals dream homes and I have loved everything they've done for me and my family. I love the amount of detail they put into their homes and appreciate the customer service even more. The personal experience I've gotten from using Steve Hawkins is incomparable! Thanks Steve and team!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Ashley Hall"
+          },
+          {
+            "date": "2 years ago",
+            "text": "We have lived in our Steve Hawkins home for 18 years and we LOVE it! It is made well and has stood the test of time! This is where we raised our children and have our home business. This house has taken care of us and it just feels like a big hug! I hope others get this same security and safe haven that we have! God bless!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Rachael Richards"
+          },
+          {
+            "date": "2 years ago",
+            "text": "A&C Cabinets, INC has worked with Steve Hawkins Homes for forty years. The home building and cabinet industry has seen many ups and downs throughout the years. One thing has remained the same through those years and that is the efficiency, quality, care and customer service that Steve Hawkins Homes has provided to its homeowners and to A&C Cabinets.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "AC Cabinets"
+          },
+          {
+            "date": "11 years ago",
+            "text": "We have owned over 10 homes in the Dallas Fort Worth Area, and this has got to be one of our top favorites. The build process was fantastic, and they were so helpful in answering questions and making changes. The quality of the home and materials is top notch. We are very pleased.\n\nBuilding a home can be stressful, but the Hawkins company took care of every concern and issue that came up during the building and afterwards.\n\nI would highly recommend them to anyone.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "John Milam"
+          }
+        ],
+        "website": "https://stevehawkinshomes.com/",
+        "maps_url": "https://www.google.com/maps/search/Steve%20Hawkins%20Builders%20Crowley%2C%20TX",
+        "categories": [
+          "Construction company"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:51:09.817Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/steve-hawkins-custom-homes-crowley-2",
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:51:12.086Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Steve Hawkins Builders\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:51:14.866Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Steve Hawkins Builders\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:51:33.214Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-31T10:51:18Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Steve%20Hawkins%20Builders%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=pd59aaffOfLlwN4P98iPoQ4\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-31T10:51:27Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Steve%20Hawkins%20Builders%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=r959acLtDJDR6-APwYuH6Qc\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Steve Hawkins Builders",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:53:03.477Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:53:03.483Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:53:18.086Z",
+      "data": {
+        "cost": 0.00082544,
+        "summary": "The reviews present a mixed but concerning picture. There is strong evidence of authentic negative experiences detailing consistent post-sale and warranty issues. The positive reviews show some authentic signals but are undermined by the duplication of text across profiles, suggesting possible review manipulation or solicitation. The complete absence of mid-range (3-4 star) reviews is atypical and polarizing.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-01-31T10:53:18.086Z",
+        "fake_signals": [
+          "Identical 5-star reviews posted on both Google profiles (Local and HQ) by different names/Anonymous",
+          "Generic, corporate-sounding praise in multiple 5-star reviews",
+          "Lack of 3-4 star reviews creates a polarized rating distribution"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 4,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Negative reviews contain specific, credible details (names like Doug, Laura, Steve; warranty periods; trash in yard)",
+          "Positive reviews mention specific staff (Laura, Matt, Joel, Jay) and project details (4-bedroom home, modifications)",
+          "Company has been in business for 44 years, suggesting a real operational history",
+          "BBB A+ rating with accreditation since 2019 indicates complaint resolution"
+        ],
+        "fake_review_score": 40,
+        "complaint_patterns": [
+          "Poor post-closing cleanup/trash left",
+          "Unresponsive to warranty requests",
+          "Communication breakdowns",
+          "Quality issues during build",
+          "Misleading promises"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Limited platform data available. Google rating is moderate, BBB rating is high, but no contradictory low ratings from other major platforms."
+      }
+    }
+  }
+}

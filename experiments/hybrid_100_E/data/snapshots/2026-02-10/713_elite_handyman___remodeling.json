@@ -1,0 +1,1238 @@
+{
+  "contractor_id": 713,
+  "business_name": "Elite Handyman & Remodeling",
+  "city": "Lancaster",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-10T23:16:54.970Z",
+  "sources": {
+    "website": {
+      "status": "error",
+      "fetched_at": "2026-01-31T05:36:02.018Z",
+      "data": {
+        "email": null,
+        "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.elitehandymanremodeling.com/\nCall log:\n\u001b[2m  - navigating to \"http://www.elitehandymanremodeling.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+        "source": null
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:32:46.745Z",
+      "data": {
+        "query": "site:yelp.com \"Elite Handyman & Remodeling\" \"Lancaster, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?cflt=handyman&find_loc=Lancaster%2C+TX",
+            "title": "THE BEST 10 HANDYMAN in LANCASTER, TX",
+            "rating": 4.7,
+            "snippet": "These are the best handyman who offer door repair in Lancaster, TX: Handy Services · Dallas Handyman · Skillman Pro · Elite Handyman & Remodeling · Fixer - ...",
+            "position": 1,
+            "ratingCount": 681
+          },
+          {
+            "link": "https://www.yelp.com/biz/handy-husbands-dallas-lancaster",
+            "title": "HANDY HUSBANDS DALLAS - Updated January 2026",
+            "snippet": "Elite Handyman & Remodeling did the job in FIVE (5) days. Finished...no ... Related Searches in Lancaster, TX. Affordable Bathroom Remodel Options in ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=handyman&find_loc=Lancaster%2C%20TX%2075134&start=20",
+            "title": "THE BEST 10 HANDYMAN near LANCASTER, TX 75134",
+            "snippet": "... Lancaster, TX ... Lancaster, TX · Engraving in Lancaster, TX. Filters. Free price estimates from local Handymen ... Elite Handyman & Remodeling - Handyman near me ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Cheap+General+Contractor&find_loc=Lancaster%2C+TX",
+            "title": "THE BEST 10 Cheap General Contractor in Lancaster, TX",
+            "snippet": "Top 10 Best Cheap General Contractor in Lancaster, TX - Last Updated December 2025 - Yelp - Jamestudio Construction, Medroof, Elite Handyman & Remodeling, ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=handyman&find_loc=Duncanville%2C+TX+75137",
+            "title": "THE BEST 10 HANDYMAN near DUNCANVILLE, TX 75137",
+            "rating": 4.6,
+            "snippet": "Best Handyman in Duncanville, TX - Last Updated January 2026 - Kings Handyman Services, Jay The Handyman Can, Elite Handyman & Remodeling ... Lancaster, TX ...",
+            "position": 5,
+            "ratingCount": 727
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Builders&find_loc=Lancaster%2C+TX",
+            "title": "TOP 10 BEST Builders in Lancaster, TX - Updated 2026",
+            "rating": 4.6,
+            "snippet": "... Elite Handyman & Remodeling, G Brothers Restoration & Home Remodeling ... Lancaster, TX. Map. Basement Remodel in Lancaster, Texas · Deck Builder in ...",
+            "position": 6,
+            "ratingCount": 526
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Handyman&find_loc=Ovilla%2C+TX",
+            "title": "Handyman Ovilla, TX - Last Updated January 2026",
+            "rating": 4.8,
+            "snippet": "... Elite Handyman & Remodeling, Kings Handyman Services, Luksa Lawn Care ... Lancaster, TX 75146. From the business: Evening and Saturdays Only with flat ...",
+            "position": 7,
+            "ratingCount": 369
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=handyman&find_loc=Hutchins%2C+TX",
+            "title": "THE BEST 10 Handyman near HUTCHINS, TX",
+            "rating": 4.6,
+            "snippet": "... Elite Handyman & Remodeling, Professional Handyman services, Type23 Home ... Lancaster, TX 75146. From the business: Evening and Saturdays Only with ...",
+            "position": 8,
+            "ratingCount": 581
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Drywall&find_loc=Lancaster%2C+TX",
+            "title": "THE BEST 10 Drywall in Lancaster, TX - Updated 2026",
+            "snippet": "... Elite Handyman & Remodeling, Pedro Hernandez ... Lancaster, TX. Map. Experienced Framing Contractor ... Lancaster, TX · Kitchen Supplies in Lancaster, TX.",
+            "position": 9
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Outdoor+Tile+Installation&find_loc=Lancaster%2C+TX",
+            "title": "TOP 10 BEST Outdoor Tile Installation in Lancaster, TX",
+            "snippet": "... Lancaster, TX. Map. Squeaky Floor Repair in ... Lancaster, TX · Millwork in Lancaster, TX · Puppies for Sale ... Elite Handyman & Remodeling - Outdoor Tile ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:35:36.622Z",
+      "data": {
+        "name": "Elite Handyman & Remodeling",
+        "found": true,
+        "rating": 4.9,
+        "source": "serpapi",
+        "address": "1431 Shields Ave, Cedar Hill, TX 75104",
+        "data_id": "0x864e8f2c4fab6b2b:0xf5710a0014709a1a",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 85,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "3 months ago",
+            "text": "We had an excellent experience working with Sam from Elite Pro Remodeling! He handled our foundation repair, level 4 wall finish, and full house painting — and the results are outstanding. The foundation was leveled perfectly, and the walls and paint look smooth and professional. Sam was punctual, detail-oriented, and made sure every step was done right. Our home looks amazing thanks to his hard work and skill. Highly recommend Sam and the Elite Pro Remodeling team for any foundation or painting projects — top-quality work and great service!",
+            "author": "Jorge Fleites",
+            "rating": 5
+          },
+          {
+            "date": "a week ago",
+            "text": "The employees were highly professional and did great work.  The project turned out great.  The job was late getting started as the crew was running an hour outside their window for arriving due to an delay with an earlier job.",
+            "author": "Brian Irvin",
+            "rating": 4
+          },
+          {
+            "date": "4 months ago",
+            "text": "Elite Handyman did an amazing job on my property! They are fast, responsive, and care a lot about the quality of what you do. This is a company that cares a lot about treating their clients well. I worked with Emmanuel and Jesse. Both are amazing to work with and will make sure everything goes smoothly and you are happy as a client. Amazing company!",
+            "author": "IA Reviews",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "My pier & beam home was built in 1935. We discovered a leak at the kitchen sink drain in the exterior wall. It leaked for years until the floor sank down. This caused years of water damage to occurr without my wife and I knowing about it.\n\nFloor tiles had to be removed without damage. Four (4) floor joise had to be removed and replaced. The exterior wall at the base had to be rebuilt along with the bottom plate.\n\nMy Home Depot cabinets..3 of then were ruined. Particle board just crumbled...it was a mess.\n\nLucky for me I called Emanuel with Elite Handyman Service & Remodeling. His Top Knotch employees Angel, Ricardo and Juan showed up and flat out got after it for five days. Holy Cow removing the old floor joise and replacing with new ones was a job.\n\nRegarding....Angel the Lead Tehc,. wow ! ..he is a Master Tradesman and can do anything.\n\nNow I need three matching cabinets built asap!!!!\n\nElite in order to expedite the job (thank u) called \"The Tools Handyman\" owned by Mr. Guillermo Ruiz. He was on my driveway unless than 24 hours. Cabinets were built on the spot with real wood. We were able to save the faces of the damaged cabinets and used them They turned out excellent. True craftsmanship. Thank you Sir.\n\nGranit countertops with sink were removed and replaced without damage. Copper soldering..cast iron repairs...all .done...Holy Cow\n\nAlso had an attic access door installed !!!\n\nThe scope of the job was huge with allot of unknowns. Elite Handyman & Remodeling did the job in FIVE (5) days. Finished...no leaks....My wife and I are Extremely pleased with their work.\n\nEverything in five days....very pleased obviously but I can't help it. Would recommend their Service to anyone. Thanks Elite !!!!",
+            "author": "Buck Reynolds",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Elite Handyman team was great. The\nservice was done on time. They did\ngreat caulking over the nail holes in\nwall. I was well pleased with their\nservice. They were very professional\nand knowledgeable. I will highly\nrecommend the Elite Handyman team\nto friends and relatives.\n\nDee A.",
+            "author": "Dee",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "The crew from Elite Handyman & Remodeling did a great job replacing and painting the chimney siding. They were on time, very professional, & cleaned up at completion of the job. Thanks guys!",
+            "author": "Jerry Porter",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Very happy with the work done. From the start, communication was really easy.  he listened and made sure we were on the same page about everything. The quality of the work itself was excellent. Everything was done neatly, solidly, and exactly as discussed",
+            "author": "Cameron Brown",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "Technicians were timely and friendly. Knowledgeable about my stairlift issue. Repair was quick. Already found additional projects to use this company for.  Highly recommended for your handyman jobs.",
+            "author": "Juanita Price",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "I cannot speak more highly of our experience with Elite Handyman & Remodeling - If you’re looking for a one-stop shop, look no further. After obtaining bids from multiple vendors for a COMPLETE renovation of the master bathroom, I went with Emmanuel because he seemed the most clear, transparent, and fairly priced while still being reasonable. He also helped me work through cost options so I could stay in budget. They did everything from demo, rerouting plumbing, drawing new electrical lines, drywall, tile/grout, shower pan/drain slope, and all related install. Communication was consistent throughout the process, we knew what was happening when. As for workmanship, the pictures speak for themselves.\n\nI am painfully OCD and take special note of tiling and grout work. Jovani’s tile job and overall install of the project is perfectly precise, the time spent achieving exact measurements and placement is evident. We LOVE the finished product and have more projects in the pipeline we will use Emmanuel’s team for!",
+            "author": "Callie Barfield",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "Prompt, professional and thorough.  Job was completed on time and under the original estimate.  I will definitely use Elite Handyman & Remodeling again and would recommend them!",
+            "author": "Jennifer Owen",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "The team worked hard and made sure a challenging job was done right. Excellent communication throughout, kept the work area clean so we could go about our day. Very professional work.",
+            "author": "JC",
+            "rating": 5
+          },
+          {
+            "date": "6 months ago",
+            "text": "Why four stars and not five? I'll explain. We had four basic things done, mount TV on brick fireplace, hang picture, Fix drywall and paint in 2 bathrooms. The picture was hung with ease; centered, beautiful. They fixed the drywall in both bathrooms. They did a terrific job--they being Jeremy, Jesse and Brevan. Painting and drywall look really good--as good or better than original!\nWhen they finished mounting the TV, which they centered well, Jeremy told me I'd have to find a thinner plug for my Fire Stick because that plug was too thick and would not fit. Here's the thing--now I have to go problem solve this myself, then have the wife help me lift off and on the TV. They should have measured to mount it so the plug would fit. So I am not pleased with having my wife have to do some heavy lifting as well as extra time spent. Hence the 4-stars. Would I use them again? Probably. I'd just oversee more maybe....\n...Contractor reached out after this review. Response was very professional and above and beyond. Much appreciate responsiveness and quality of response.",
+            "author": "Martin Brook",
+            "rating": 4
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "Cannot say enough good things about this business! They do things right, are kind and diligent, pricing is appropriate to the work they do. They have done work at my house several times now and have always been consistently excellent. 10/10, highly recommend!",
+            "author": "Patty Lewis",
+            "rating": 5
+          },
+          {
+            "date": "11 months ago",
+            "text": "We are a very satisfied customer!  The team was very responsive and provided a comprehensive estimate, schedule, and stuck to it!  We completed our garage remodel in about three days with paint, cabinets, and reorganization.  Great job and will work with Elite again!",
+            "author": "Pierce Ables",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Elite installed laminate wood flooring for me in a small detached den. The job was done with good quality and expertly. I was grateful to Elite to agree to take this job - I had a hard time finding a residential small flooring job contractor in Dallas.\n\nPersonally, I wouldn't likely use Elite in the future because of high cost. The labor for the job was $2.5k-$3k what I remember, and the job took less than 8-10 hours by one worker. This seemed higher than the per hour and per square foot standards I saw online. Additionally, I was quoted $8k for a separate related job to install a French drain to stop outside water from entering the floor. I requested a quote from another company which then installed the French drain for me for $2k (with no water issues since).\n\nI wasn't going to submit this review because it would not be 5 stars. I'd gotten what I hired, and I would just look for lower-price alternatives next time. I posted this review because I keep getting repeated emails and text from Elite asking me to submit feedback. I don't wish to be contacted.",
+            "author": "Darina Janovova",
+            "rating": 3
+          },
+          {
+            "date": "11 months ago",
+            "text": "EH&R did a wonderful job replacing a hallway attic door in the ceiling!  Great seal now and they were nice and efficient. Completely cleaned up afterwards. I am very happy with their work and will use them again.",
+            "author": "Matt Gorden",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Jay was in time, professional, communications were fluid and helpful. Joy was very knowledgeable.",
+            "author": "Penni Jeter",
+            "rating": 5
+          },
+          {
+            "date": "10 months ago",
+            "text": "I've known Emmanuel for a very long time. Approx 20 yrs. He is dependable, fair, prompt, polite, etc. Never had any problem he couldn't either solve or say 'no', you need an electrician or a plumber. Or whatever. The work he and his helpers do is first class. I strongly recommend Elite Handymen.",
+            "author": "Morgan F Bilbo",
+            "rating": 5
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "I was very impressed with Emmanuel and his crew at Elite Handyman and Remodeling. It is very difficult to find skilled, honest, reliable workmen these days, but these guys were tops. We needed some painting indoor and out, as well as sheetrock repair in one room and minor wall corner repair in another. In addition, he sent me an electrician who was also fantastic. Their prices were very reasonable in fact Emannuel had originally estimated three men to do the job but when he arrived, he said it would only take two. They worked almost all day and Emmauel without my asking reduced his original quote by one third (unheard of). They will be making some outdoor door installs for items I ordered which will include staining, sealing, and mounting with hardware. I will be using these guys for all my repairs and remodels in the future. Highly recommended and I am very particular.",
+            "author": "LARRY SHAPIRO",
+            "rating": 5
+          },
+          {
+            "date": "Edited 2 months ago",
+            "text": "We've had the pleasure of working with Elite Handyman & Remodeling on five different projects now, and they have consistently exceeded our expectations each time. Their team is incredibly professional, always maintaining a high standard of work and demonstrating great attention to detail.\n\nOne of the standout qualities of Elite Handyman is their ability to work within our budget without compromising on quality. They listen to our needs and provide cost-effective solutions, which has been a huge relief for us. Their transparency and honesty about costs have built a trust that is rare to find.\n\nPunctuality and adherence to the schedule are also hallmarks of their service. They have never missed an appointment and always complete the projects within the promised timeframe. This reliability has made our renovation experiences smooth and stress-free.\n\nOverall, Elite Handyman is simply the best to work with. Their professionalism, dedication, and commitment to customer satisfaction set them apart. We will undoubtedly continue to rely on their excellent services for future projects. Highly recommended!",
+            "author": "Tyler Piluzza",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Very courteous and professional. Angel did a great job building my shed.",
+            "author": "David Womack",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Overall the experience was OK.. they brought way more people than I had anticipated for the small amount of items I had asked them to address.  There was also the miss on their part for replacing the weather stripping on the bottom of my door (e.g. they replaced the part around the door, but not at the bottom).  I was also frustrated with the fact that they were going to charge me to fix something that they didn't fix correctly in a prior visit (e.g. the moulding around my attic ladder).",
+            "author": "Scott Miller",
+            "rating": 3
+          },
+          {
+            "date": "a year ago",
+            "text": "Emmanuel and team replaced a bathroom light/vent for us.  Did a great job…very professional and was on time!  Will definitely use Elite again for future needs!",
+            "author": "Brad Mitchell",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Emanuel and his team are the best! They offer professional handyman services with old-fashioned pride in their work and attention to detail. They gave me a thirty minute arrival window and showed up exactly on time. They are also just super nice people to do business with. Worth every penny and I would hire them again in a minute.",
+            "author": "Norvell Whitaker",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I reached out to Emmanuel with pictures describing the job to be done. He asked a couple of questions and submitted a bid. We scheduled a date about 10 days out. Prior to arrival he reminded me to ensure that I have the right parts, paint etc\nHe showed up with his Handyman Joshua and completed the work. The price was fair (not cheap) for the quality of work done.  I had Emmanuel bid on a couple of extra pieces of work. He scoped it, priced it fairly and was able to finish those on the same visit.\nThey cleaned up after themselves and did a good job.",
+            "author": "Rahul Gujral",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Great workmanship and very reasonable.  Their crews were great to work with.",
+            "author": "Hardy Haberman",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We loved working with Elite! They did such a great job for us on multiple projects and even went out of their way to take care of things for us that was not what we originally hired them for. We cannot speak highly enough about their team! Thank you again! Will definitely work with them in the future!",
+            "author": "Asha Adams",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Best handyman services we have received to date. Friendly, knowledgeable, trustworthy, reliable, and extremely professional. The price was fair as well, especially for the quality of work and the expertise which were both top notch. We will definitely use their services again.",
+            "author": "Mackenzie T",
+            "rating": 5
+          },
+          {
+            "date": "Edited 5 months ago",
+            "text": "Jesse came by to assess drywall and cabinet repairs for an estimate and did a thorough job of what needed to be done and providing a time frame.",
+            "author": "Mike Emmons",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Elite Handyman and Remodeling truly stands out in the field of home improvement. Their work was top-notch, reflecting a high level of craftsmanship and attention to detail.  The overall experience was smooth, and the results exceeded my expectations. I'm certainly looking forward to using their services again for future projects. Their expertise makes them a go-to choice for anyone seeking quality remodeling or handyman services.",
+            "author": "Michael Draper",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Probably the first contractor I’d fully recommend. Had wall constructed, other wall taken down, wood floors installed, doors installed, and other misc. work included. Consultation was easy and clear, communication was quick (they had a great operations system with reminders), itemized list made sense and felt reasonable, results were top notch, and overall price was extremely fair. They took care of everything while I was busy with work and life in general. I’ll be using Elite again door any future projects.",
+            "author": "Zachary Klinsky",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "They adjusted the doors to the shed. I still needed work on the rest but I will need to make another appointment",
+            "author": "Marjorie Caldwell",
+            "rating": 4
+          },
+          {
+            "date": "2 years ago",
+            "text": "Oh my gosh, I can’t recommend them highly enough!! We had a project that required a variety of skills that we kept putting off because I didn’t have time to source multiple people. A friend recommended Emmanuel and his team. He replied right away, and his crew had the entire project finished within days. I’ve recommended him to other friends and they rave about his work too.",
+            "author": "Whitney Brown",
+            "rating": 5
+          },
+          {
+            "date": "Edited 2 years ago",
+            "text": "We had several small jobs that needed to be done in our bathrooms. Emmanuel was so responsive to our initial request, responding immediately and quickly providing an estimate and appointment time. He and his crew were so professional and neat. They arrived right on time and did an excellent job in a very timely manner. We will definitely use them again!\n\nUPDATE: Emmanuel and his wonderful crew just finished adding a small deck to our back porch. Once again, their work exceeded our expectations! The little extra touches on the railing really made our deck special. Once again, communication was excellent.\n\nUPDATE 2: Emmanuel and his crew installed a new vent in our small bathroom. Once again, the communication was exemplary. Emmanuel provided a time window in advance. We were notified when the crew was on the way (they were right on time). The work was finished quickly, professionally, and thoroughly. They vacuumed and Swiffered the floor! Where else can you find service like that?! We cannot recommend them more.",
+            "author": "Caroline Burks",
+            "rating": 5
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "Emmanuel and his helper were on time, made a plan for how to install my new mantle and fireplace screen, and made sure we were happy with the results. We will absolutely use Elite Handyman and Remodeling again!!",
+            "author": "Julie Southward",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Elite did great -- they were organized, on time and had good skills. Thanks!!",
+            "author": "Marcia Fort",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "These guys did a great job residing, sealing, and painting one side of my house.  Used them again for another small job too. So far I have liked their work (and communication) and have plans for them in the future for another update.",
+            "author": "R L",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "We hired Elite Handyman to install new shades in our Downtown Dallas condo. Everything went smoothly. The owner, Emmanuel, listened to our requirements carefully. He provided proof of insurance – which is a must for working in a downtown highrise. He corresponded with me via text and email beforehand so we could arrange for parking and other details. Finally, when he arrived, he had no issues parking and getting in our building. Hanging the curtains went smoothly and the quality of work was top notch. Overall, I highly recommend this handyman company.",
+            "author": "Eisaiah Engel",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Great team!  They had a long list of things we needed done such as changing out light fixtures, adding some cedar porch columns, etc.  They were courteous, professional and detailed in the work.  Highest recommendation!",
+            "author": "Kelly Griffith",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Easy to schedule. Very professional and considerate crew. Kept area clean. My job is two step (will require drying time and return to reinstall floor and toilet after minor leak), so not finished yet, but so far so good.",
+            "author": "Karen Wiese",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Emmanuel and his team are outstanding.  We have asked them to do projects big and small for us on several occasions and, every time, their work is done at the highest quality, efficiently, cost effectively, and professionally.  Everyone is friendly and easy to work with.  I cannot endorse them highly enough.",
+            "author": "Jeffrey Kahn",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Immanuel's crews are amazing!! I had them first come out to repair drywall and baseboards in a challenging spot in our garage. It was a flawless job and the crew was very professional. We had them back out for a 4 day interior job, including painting ceilings, walls, trim, and doors, as well as a bathroom remodel. They completely removed our old tile shower and pan, added a new custom partial wall, then water proofed the inside of the shower to prep it for a cultured marble company. I previously hired a random home depot \"professional\" who got paint on my wood floors when he did the baseboards, left streaks on my doors and trim, and did not do any caulking at all. Imagine my surprise and relief when the Elite Handyman crew showed up and spent the entire first day meticulously prepping for paint!! All flooring was covered with multiple layers for protection, holes were filled in, cracks and corners were caulked, etc. I have had 2 different crews here for the jobs and both were clean, respectful, professional, and very skilled. 11/10 recommend!!!",
+            "author": "Rachel Phillips",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "I initially requested the team do what's needed to repair one ceiling surface, which included removing wallpaper, skimming and painting to a smooth flat finish. I ended up doing a second ceiling and the quality of their work really changed the freshness of the rooms. They also patched drywall in two bathrooms and performed other tasks on my initial punchlist.\n\nThe team, led by Emmanuel, was very responsive on potential 'scope' increases, on time, and came in under the initial estimate provided. I would recommend them even for larger projects and will be calling them again.",
+            "author": "Anita Pancholy",
+            "rating": 5
+          },
+          {
+            "date": "11 months ago",
+            "text": "professional.  took their time to make sure job was done right.  explained everything so i could understand.  this built trust.  really, the bottom line is, they got the job done and pricing was reasonable.",
+            "author": "eric cadena",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Elite repaired drywall and installed a new sink and faucet (replaced valves and trap). They finished sooner than the estimated time and did an excellent job. We'd hire them again for future jobs.",
+            "author": "Marnie Suttie",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Manny and his crew were professional and excellent in their service, and topnotch when it came to workmanship. I've never had a better experience working with a contractor. Thanks again, guys!",
+            "author": "Nick Jones",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Elite Handyman & Remodeling does fantastic work! They’ve done quiet a bit of work at a place I used to work at, from all aspects of jobs too, and it’s always top-notch quality done the right  way. If you need any type of work done, I would not hesitate to reach out them, you won’t be disappointed.",
+            "author": "Charles Allen",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Emmanuel and his crew did a great job on my challenging project. He was very responsive and punctual. They cleaned up and all were so diligent in their work. I highly recommend this business.",
+            "author": "Karen Arzola",
+            "rating": 5
+          },
+          {
+            "date": "7 months ago",
+            "text": "Super happy with the work they did for me!! The process was seamless and they did very quality work!",
+            "author": "Amy Matthews",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Emmanuel's team repaired a water damaged ceiling for my home. They were very professional and the results were seamless. Highly recommend!",
+            "author": "Chris Chau",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "They did a great job. Very Professional. The work was performed as expected without issue. Pricing was very fair for the amount of work that was required. Will hire again!",
+            "author": "Paws Effect",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Called Elite Handyman after being told we needed new baseboards. Very prompt and did a fantastic job. We will use them for other projects in the future!",
+            "author": "Gotcha8402",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Easy and quick communication. Angel did a great good",
+            "author": "Marisa Boonnak",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Elite was very responsive and the quality of their work on our bath remodel was excellent.  We are very happy with the result.",
+            "author": "S Worrell",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Had a great experience with these guys for an appliance install. Gave me a fair quote, showed up on time, installed it exactly how I wanted it, and left behind zero mess. Will use these guys again. Thanks",
+            "author": "Brody Nutt",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "They went above and beyond for our project. Great scheduling, listened to my requests, cleaned up wonderfully when done. Definitely will use them again for our next project.",
+            "author": "Paige Heitkamp",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "These guys are some of the best workers you can ever get their very meticulous, and have great interest in the value of the work they do I strongly recommend them for anything that you might need; very courteous and very professional",
+            "author": "Freddie America",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "Fair pricing, friendly and good work!",
+            "author": "Sandra Curry",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Workmanship, professionalism, and friendliness have always been evident over the many jobs I have hired Elite to do.",
+            "author": "Mark Titus",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "Great experience, they were very professional",
+            "author": "Larry McClure",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Elite is the best. Their work is top notch, their pricing is fair and I trust them with all our household needs.",
+            "author": "Nick Kennedy",
+            "rating": 5
+          },
+          {
+            "date": "7 months ago",
+            "text": "I recommend Elite handyman & Remodeling. Beto did an amazing job.",
+            "author": "Ana Reyes",
+            "rating": 4
+          },
+          {
+            "date": "2 months ago",
+            "text": "Excellent work. Very professional",
+            "author": "Paula",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Fast and responsive! Nate did an outstanding job installing baby gates at our house.",
+            "author": "Marisa Abel",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Quickly scheduled a service date and executed with quality.",
+            "author": "Flavio Costa",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Repaired cracks and holes in drywall. Fantastic attention to detail. Great work. Craftsmen, not just workers.",
+            "author": "Ben King",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "These guys are all amazing. They can do anything. I have looked a very long time for a handyman who is dependable, on time, knowledgeable & honest. Now I have found them. I highly recommend!",
+            "author": "Samantha E",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Elite has done a few repairs for me and they was done properly, quickly, and courteously. I highly recommenced them.",
+            "author": "Steve Melton",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "On time and did a great job. No hassels at all. Will use again.",
+            "author": "John J Booth",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Great experience with Emmanuel and crew !!! On time and very responsible. I would recommend them! Overall a wonderful experience!! Thank you!",
+            "author": "Suzy Filardo",
+            "rating": 5
+          },
+          {
+            "date": "Edited a year ago",
+            "text": "So glad to find this company. Will definitely use them again.",
+            "author": "Sandy Sandbote",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Emmanuel the owner, is a very unprofessional man. I wouldn’t give him my business and money as he is a scammer!! Beware!!",
+            "author": "Monique",
+            "rating": 1
+          },
+          {
+            "date": "2 years ago",
+            "text": "A great company that does excellent work in a timely manner!",
+            "author": "Jake Harvell",
+            "rating": 5
+          },
+          {
+            "date": "a week ago",
+            "text": "",
+            "author": "Geoffrey Pendery",
+            "rating": 5
+          },
+          {
+            "date": "7 months ago",
+            "text": "",
+            "author": "Believe Faith",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "",
+            "author": "Dani Aboujaoude",
+            "rating": 5
+          },
+          {
+            "date": "9 months ago",
+            "text": "",
+            "author": "William McCaddon",
+            "rating": 5
+          },
+          {
+            "date": "9 months ago",
+            "text": "",
+            "author": "Roger Beggs",
+            "rating": 5
+          },
+          {
+            "date": "11 months ago",
+            "text": "",
+            "author": "Ethan Metcalf",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "",
+            "author": "Arthur Rood",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "",
+            "author": "Robert Sherman",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "",
+            "author": "Rodney Boone",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "",
+            "author": "J P",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "",
+            "author": "Andy Millikan",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "",
+            "author": "Mike Jackson",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": 89,
+        "pages_fetched": 9,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "HIGH_VOLUME (89 reviews)",
+        "location_searched": "Lancaster, TX",
+        "search_confidence": 0.6799999999999999,
+        "serper_fraud_check": {
+          "reason": "CLEAN",
+          "signals": [],
+          "escalate": false,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:36:07.849Z",
+      "data": {
+        "url": "https://www.angi.com/companylist/us/tx/lancaster/insulation.htm",
+        "found": true,
+        "title": "Top 10 Best Insulation pros in Lancaster, TX",
+        "rating": 4.5,
+        "source": "serper_angi",
+        "confidence": "high",
+        "review_count": 133
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:36:08.445Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:36:09.394Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "elitehandymanremodeling.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:33:45.984Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:33:50.152Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:33:52.718Z",
+      "data": {
+        "query": "Elite Handyman & Remodeling Lancaster site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:36:12.020Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Elite Handyman & Remodeling\" Lancaster",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:34:13.646Z",
+      "data": "Elite Handyman & Remodeling Lancaster review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Channels Filters Search filters 11:15 11:15 Now playing Joist Review & Tutorial from a $100K+ Handyman Business Owner Small Biz DIY 2025 Small Biz DIY 2025 • • 1.4K views 8 months ago Small Biz DIY 2025 Small Biz DIY 2025 Are you a new handyman or service business owner looking for a simple, affordable way to send professional invoices and ... Are you a new handyman or service business owner looking for a simple, affordable way to send professional invoices and ... From the video description Elite Handyman & Construction LLC Elite Handyman & Construction LLC @elitehandymanconstructionl5142 • 1 subscriber Elite Handyman & Construction LLC Home Improvements DIY Handyman Service Jackson Ms. Subscribe 1:52 1:52 Now playing The Best Software For Handyman Businesses | Jobber Review From Best Handyman Boston Jobber Jobber • • 5.6K views 3 years ago Jobber Jobber Jobber customer Ryaan Tuttle | Best Handyman Boston | Boston, MA Want to know what Jobber is? Or how Jobber can help your ... Jobber customer Ryaan Tuttle | Best Handyman Boston | Boston, MA Want to know what Jobber is? Or how Jobber can help your ... From the video description CC 7 chapters From a mess of confusion to getting paid right away | Meet Ryaan Tuttle | Why he chose Jobber over other software | The moment he knew Jobber was working for him | Jobber has the best customer service on earth | Business is growing because of Jobber | Why you need Jobber now 7 chapters in this video 7 chapters From a mess of confusion to getting paid right away From a mess of confusion to getting paid right away 0:00 From a mess of confusion to getting paid right away 0:00 Meet Ryaan Tuttle Meet Ryaan Tuttle 0:18 Meet Ryaan Tuttle 0:18 Why he chose Jobber over other software Why he chose Jobber over other software 0:33 Why he chose Jobber over other software 0:33 The moment he knew Jobber was working for him The moment he knew Jobber was working for him 0:44 The moment he knew Jobber was working for him 0:44 Jobber has the best customer service on earth Jobber has the best customer service on earth 1:02 Jobber has the best customer service on earth 1:02 Business is growing because of Jobber Business is growing because of Jobber 1:15 Business is growing because of Jobber 1:15 Why you need Jobber now Why you need Jobber now 1:30 Why you need Jobber now 1:30 11:55 11:55 Now playing Home Depot Made a Mistake — How They Handled It Matters Tool Review Zone Tool Review Zone • • 14K views 3 days ago Tool Review Zone Tool Review Zone Something happened at Home Depot that sparked a huge debate in the tool community. Did they handle it the right way? Something happened at Home Depot that sparked a huge debate in the tool community. Did they handle it the right way? From the video description New 4K Summary Home Depot's response to a recent incident involving a content creator is examined. The video details the events and corporate reaction, including an apology and policy clarification. A discussion about filming policies and employee training follows. AI-generated video summary Quality and accuracy may vary. Summary Home Depot's response to a recent incident involving a content creator is examined. The video details the events and corporate reaction, including an apology and policy clarification. A discussion about filming policies and employee training follows. Handyman & Remodeling EB Handyman & Remodeling EB @HandymanRemodelingEB • 17 subscribers Company specializing in interior and exterior remodeling of homes and offices. Subscribe 8:57 8:57 Now playing The Best And Most Cost Effective Estimating Software For the Handyman The Handyman Journey The Handyman Journey • • 7K views 2 years ago The Handyman Journey The Handyman Journey The Best And Most Cost Effective Estimating Software For the Handyman Markate is the #1 estimating software for handymen ... The Best And Most Cost Effective Estimating Software For the Handyman Markate is the #1 estimating software for handymen ... From the video description 8 chapters Intro | Markate is the best handyman estimating software on the market today | Markate is the most affordable estimating software on the market today | Markate is adaptable and scalable for different size businesses and needs | Markate has great automated communication as an estimating software | What the customers experience looks like with Markate | Markate can do automated postcards to follow up with your handyman clients | Outro 8 chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Markate is the best handyman estimating software on the market today Markate is the best handyman estimating software on the market today 0:41 Markate is the best handyman estimating software on the market today 0:41 Markate is the most affordable estimating software on the market today Markate is the most affordable estimating software on the market today 1:09 Markate is the most affordable estimating software on the market today 1:09 Markate is adaptable and scalable for different size businesses and needs Markate is adaptable and scalable for different size businesses and needs 2:16 Markate is adaptable and scalable for different size businesses and needs 2:16 Markate has great automated communication as an estimating software Markate has great automated communication as an estimating software 3:42 Markate has great automated communication as an estimating software 3:42 What the customers experience looks like with Markate What the customers experience looks like with Markate 4:56 What the customers experience looks like with Markate 4:56 Markate can do automated postcards to follow up with your handyman clients Markate can do automated postcards to follow up with your handyman clients 7:28 Markate can do automated postcards to follow up with your handyman clients 7:28 12:18 12:18 Now playing The 10 BEST REMODELING TOOLS under $20. These Budget Friendly Tools are a Must Have for Remodeling! CR Carpentry & Remodeling CR Carpentry & Remodeling • • 7.2K views 1 year ago CR Carpentry & Remodeling CR Carpentry & Remodeling Remodeling is expensive- but your tools don't have to be. In this video, we explore ten amazing home improvement essentials ... Remodeling is expensive- but your tools don't have to be. In this video, we explore ten amazing home improvement essentials ... From the video description 4K Summary This video showcases 10 essential remodeling tools under $20, each with a specific purpose and benefit. The presenter highlights the practicality and affordability of these tools, emphasizing their usefulness for both professional and DIY projects. The video also includes a bonus item, floor spacers, which are crucial for achieving a perfect flooring installation. AI-generated video summary Quality and accuracy may vary. Summary This video showcases 10 essential remodeling tools under $20, each with a specific purpose and benefit. The presenter highlights the practicality and affordability of these tools, emphasizing their usefulness for both professional and DIY projects. The video also includes a bonus item, floor spacers, which are crucial for achieving a perfect flooring installation. RodsEliteHandyman RodsEliteHandyman @RodsEliteHandyman • 3 subscribers My name is Rod. I am the owner of Elite Handyman here in my home town. I am a licensed general building contractor and I do ... Subscribe 10:06 10:06 Now playing Top Apps For Contractors and Handymen! #business #construction #service Renovations and Repair Renovations and Repair • • 4.1K views 1 year ago Renovations and Repair Renovations and Repair Top apps for us contractors and handyman . Some are obvious and some may not be. For me, a lot of these apps are a must for my ... Top apps for us contractors and handyman . Some are obvious and some may not be. For me, a lot of these apps are a must for my ... From the video description 10 chapters Intro | Gmail | Social Media | Supply Store | Jobber | Calculator | CompanyCam | Payment App | Next Door | Google Calendar 10 auto-generated chapters in this video 10 chapters Intro Intro 0:00 Intro 0:00 Gmail Gmail 0:25 Gmail 0:25 Social Media Social Media 1:15 Social Media 1:15 Supply Store Supply Store 2:10 Supply Store 2:10 Jobber Jobber 3:27 Jobber 3:27 Calculator Calculator 5:03 Calculator 5:03 CompanyCam CompanyCam 5:30 CompanyCam 5:30 9:26 9:26 Now playing 5 Best Apps to Run Your Handyman Business in 2025 The Handy Manual The Handy Manual • • 29K views 7 months ago The Handy Manual The Handy Manual Get My Full Tech Stack—every digital tool I use to run my handyman business, all in one place ... Get My Full Tech Stack—every digital tool I use to run my handyman business, all in one place ... From the video description 4K 8 chapters Intro | App #1: Housecall Pro – The All-In-One Field Manager | App #2: Gmail – Smart Inbox Tricks You’re Probably Not Using | Special Offer – Grab My Full Tech Stack for Handyman Pros | App #3: Jotform – Streamline Client Intake | App #4: Qapital – Automate Savings for Better Money MGMT | App #5: ChatGPT – Automate Quotes, Emails & More with AI | Final Thoughts 8 chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 App #1: Housecall Pro – The All-In-One Field Manager App #1: Housecall Pro – The All-In-One Field Manager 0:18 App #1: Housecall Pro – The All-In-One Field Manager 0:18 App #2: Gmail – Smart Inbox Tricks You’re Probably Not Using App #2: Gmail – Smart Inbox Tricks You’re Probably Not Using 2:09 App #2: Gmail – Smart Inbox Tricks You’re Probably Not Using 2:09 Special Offer – Grab My Full Tech Stack for Handyman Pros Special Offer – Grab My Full Tech Stack for Handyman Pros 3:21 Special Offer – Grab My Full Tech Stack for Handyman Pros 3:21 App #3: Jotform – Streamline Client Intake App #3: Jotform – Streamline Client Intake 3:37 App #3: Jotform – Streamline Client Intake 3:37 App #4: Qapital – Automate Savings for Better Money MGMT App #4: Qapital – Automate Savings for Better Money MGMT 4:48 App #4: Qapital – Automate Savings for Better Money MGMT 4:48 App #5: ChatGPT – Automate Quotes, Emails & More with AI App #5: ChatGPT – Automate Quotes, Emails & More with AI 6:32 App #5: ChatGPT – Automate Quotes, Emails & More with AI 6:32 SHORTS SHORTS Now playing Charging $75 per Hour As A Handyman #shorts Construction Business Expert Construction Business Expert • • 141K views 3 years ago Construction Business Expert Construction Business Expert Charging $75 per Hour As A Handyman #shorts The School of Construction Selling Online Course: ... Charging $75 per Hour As A Handyman #shorts The School of Construction Selling Online Course: ... From the video description 4 moments TO DO 150 GRANDA YEAR. | FOR DRIVE TIME | VEHICLE EXPENSE MARKETING | AND YOU'RE WORKING 40 HOURS 4 auto-generated moments in this video 4 moments TO DO 150 GRANDA YEAR. TO DO 150 GRANDA YEAR. 0:15 TO DO 150 GRANDA YEAR. 0:15 FOR DRIVE TIME FOR DRIVE TIME 0:22 FOR DRIVE TIME 0:22 VEHICLE EXPENSE MARKETING VEHICLE EXPENSE MARKETING 0:30 VEHICLE EXPENSE MARKETING 0:30 AND YOU'RE WORKING 40 HOURS AND YOU'RE WORKING 40 HOURS 0:37 AND YOU'RE WORKING 40 HOURS 0:37 People also watched 13:40 13:40 Now playing The WORST contractor SCAM I've seen! Stanley \"Dirt Monkey\" Genadek Stanley \"Dirt Monkey\" Genadek • • 3M views 3 years ago Stanley \"Dirt Monkey\" Genadek Stanley \"Dirt Monkey\" Genadek The General Contractor (GC) scammed the customer, The Excavator, the Concrete Contractor, the lumber yard and BANK all at ... The General Contractor (GC) scammed the customer, The Excavator, the Concrete Contractor, the lumber yard and BANK all at ... From the video description 4K 11:27 11:27 Now playing Hiring a Contractor for Home Renovation? 5 Red Flags to WATCH OUT for! Millennial Mike Millennial Mike • • 29K views 5 years ago Millennial Mike Millennial Mike Are you considering hiring a contractor for home reonovation? Here's how you are gonna save MONEY, HEADACHE and ... Are you considering hiring a contractor for home reonovation? Here's how you are gonna save MONEY, HEADACHE and ... From the video description 4K Summary Based on years of experience, Millennial Mike shares five red flags to watch out for when hiring a contractor. The video details warning signs related to pricing, payment methods, and online presence. Avoid costly mistakes by learning how to spot a potentially unreliable contractor. AI-generated video summary Quality and accuracy may vary. Summary Based on years of experience, Millennial Mike shares five red flags to watch out for when hiring a contractor. The video details warning signs related to pricing, payment methods, and online presence. Avoid costly mistakes by learning how to spot a potentially unreliable contractor. 28:34 28:34 Now playing I just can't work for angry customers. Had to quit this one!! Bondo Built Bondo Built • • 6M views 3 years ago Bondo Built Bondo Built Its nice that you have so much work that you can pick and choose who you want to work for. If its not a good fit then you can got ... Its nice that you have so much work that you can pick and choose who you want to work for. If its not a good fit then you can got ... From the video description Summary Bondo Built pours a 6-inch thick concrete floor with radiant heating in a pole barn. The crew navigates challenges, including unusually deep lift post holes dug by the homeowner. Innovative solutions are implemented to ensure the concrete pour's success despite the unexpected issues. AI-generated video summary Quality and accuracy may vary. Summary Bondo Built pours a 6-inch thick concrete floor with radiant heating in a pole barn. The crew navigates challenges, including unusually deep lift post holes dug by the homeowner. Innovative solutions are implemented to ensure the concrete pour's success despite the unexpected issues. 8:38 8:38 Now playing 5 WAYS CONTRACTORS CHEAT THEIR CLIENTS! (Don't Let This Happen!! HOMEOWNERS SHOULD WATCH...) The Honest Carpenter The Honest Carpenter • • 514K views 5 years ago The Honest Carpenter The Honest Carpenter Check Out Our FREE GUIDE: *25 Must-Have Carpentry Tools...Under $25 Each!* https://www.thehonestcarpenter.com/ NEED ... Check Out Our FREE GUIDE: *25 Must-Have Carpentry Tools...Under $25 Each!* https://www.thehonestcarpenter.com/ NEED ... From the video description + 6 more SHORTS SHORTS Now playing BREAKING NEWS: Best Handyman in Lakeland, FL? 🏠 #Shorts Best Lakeland Handyman - Lakeland FL Best Lakeland Handyman - Lakeland FL • • No views 11 hours ago Best Lakeland Handyman - Lakeland FL Best Lakeland Handyman - Lakeland FL Breaking News from the Channel 7 news desk! Okay, maybe not quite - but we really are the Best Lakeland Handyman ! Whether ... Breaking News from the Channel 7 news desk! Okay, maybe not quite - but we really are the Best Lakeland Handyman ! Whether ... From the video description New 6:14 6:14 Now playing Should Contractors Use Home Advisor, Angie's List, Thumbtack and Houzz? Home Advisor Review FeedbackWrench FeedbackWrench • • 16K views 6 years ago FeedbackWrench FeedbackWrench Should businesses, contractors , and construction companies use Home Advisor, Thumbtack, Houzz, and other third party ... Should businesses, contractors , and construction companies use Home Advisor, Thumbtack, Houzz, and other third party ... From the video description 4 chapters Intro | Should Contractors Use Home Advisor | Better Business Bureau | Conclusion 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Should Contractors Use Home Advisor Should Contractors Use Home Advisor 0:35 Should Contractors Use Home Advisor 0:35 Better Business Bureau Better Business Bureau 2:35 Better Business Bureau 2:35 Conclusion Conclusion 5:05 Conclusion 5:05 6:56 6:56 Now playing Handyman Business vs. General Contractor Construction Business Expert Construction Business Expert • • 133K views 4 years ago Construction Business Expert Construction Business Expert Get the first 2 modules of our Small Business Academy FREE: ... Get the first 2 modules of our Small Business Academy FREE: ... From the video description 4K CC 6 chapters Intro | Customer Perspective | Client Perspective | Personal Skill Sets | Start Leveling Up | General Contractor vs Handyman 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Customer Perspective Customer Perspective 1:00 Customer Perspective 1:00 Client Perspective Client Perspective 1:30 Client Perspective 1:30 Personal Skill Sets Personal Skill Sets 2:00 Personal Skill Sets 2:00 Start Leveling Up Start Leveling Up 3:40 Start Leveling Up 3:40 General Contractor vs Handyman General Contractor vs Handyman 4:25 General Contractor vs Handyman 4:25 13:06 13:06 Now playing Customer Scammed By Contractor | Handyman To The Rescue | THE HANDYMAN | The Handyman The Handyman • • 86K views 3 years ago The Handyman The Handyman Download Vikings: War of Clans ➡️ https://clcr.me/TheHandyman_Vikings22 and become a hero of exciting events in the world ... Download Vikings: War of Clans ➡️ https://clcr.me/TheHandyman_Vikings22 and become a hero of exciting events in the world ... From the video description SHORTS SHORTS Now playing CHEAP Tool Accessory Makes Home Reno 1000% EASIER! VCG Construction VCG Construction • • 631K views 1 year ago VCG Construction VCG Construction howto #diy #vcgconstruction #drywall #homerenovation Join this channel to get access to perks: ... howto #diy #vcgconstruction #drywall #homerenovation Join this channel to get access to perks: ... From the video description 4K SHORTS SHORTS Now playing Handyman vs Unlicensed Contractor Understanding the Key Differences Contractor License School Contractor License School • • 3.2K views 1 year ago Contractor License School Contractor License School Give us a call for more information regarding getting your Contractors License! (800)-659-1207. Give us a call for more information regarding getting your Contractors License! (800)-659-1207. From the video description 11:06 11:06 Now playing A Guide to Hiring the BEST Contractor | What to Know Home RenoVision DIY Home RenoVision DIY • • 143K views 5 years ago Home RenoVision DIY Home RenoVision DIY Are you looking to hire a contractor? Want to make sure you hire an experienced person, who will get the job done right? Are you looking to hire a contractor? Want to make sure you hire an experienced person, who will get the job done right? From the video description 5 chapters Intro Summary | Rules of Engagement | Referrals | Manage Your Expectations | Final Thoughts 5 auto-generated chapters in this video 5 chapters Intro Summary Intro Summary 0:00 Intro Summary 0:00 Rules of Engagement Rules of Engagement 0:35 Rules of Engagement 0:35 Referrals Referrals 4:35 Referrals 4:35 Manage Your Expectations Manage Your Expectations 7:00 Manage Your Expectations 7:00 Final Thoughts Final Thoughts 8:40 Final Thoughts 8:40 4:39 4:39 Now playing Handyman Services Pricing Guide: What to Charge for Top Services Handyman Masterclass Handyman Masterclass • • 5.3K views 2 years ago Handyman Masterclass Handyman Masterclass Welcome back, everyone! Curious about how to price your handyman services? You're in luck. In this video, we're diving deep ... Welcome back, everyone! Curious about how to price your handyman services? You're in luck. In this video, we're diving deep ... From the video description 11 chapters Intro | Drywall Repair | Plumbing | Carpentry | Electrical | Painting | Landscaping | Flooring | Assembly | Cleaning | Conclusion 11 auto-generated chapters in this video 11 chapters Intro Intro 0:00 Intro 0:00 Drywall Repair Drywall Repair 0:34 Drywall Repair 0:34 Plumbing Plumbing 0:58 Plumbing 0:58 Carpentry Carpentry 1:16 Carpentry 1:16 Electrical Electrical 1:36 Electrical 1:36 Painting Painting 1:56 Painting 1:56 Landscaping Landscaping 2:14 Landscaping 2:14 1:22 1:22 Now playing Kitchen & Living Room Remodel Elite Remodeling Elite Remodeling • • 338 views 14 years ago Elite Remodeling Elite Remodeling Gayle Hargrove is a treasured Elite Remodeling client who did a full house remodel starting with a full kitchen update. Gayle Hargrove is a treasured Elite Remodeling client who did a full house remodel starting with a full kitchen update. From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:34:14.785Z",
+      "data": {
+        "query": "site:nextdoor.com Elite Handyman & Remodeling Lancaster",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/city/knoxville--tn/",
+            "price": 25,
+            "title": "Knoxville, TN | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "Knoxville, TN, is a friendly, family-oriented city known for its vibrant arts scene and proximity to the Great Smoky Mountains.",
+            "currency": "US$",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:36:11.558Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Elite Handyman & Remodeling\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:36:10.775Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Elite Handyman & Remodeling\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:36:12.427Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Elite Handyman & Remodeling\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:34:32.088Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Elite%20Handyman%20%26%20Remodeling&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Elite% 20Handyman% 26% 20Remodeling&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Home · Facilities · Facility Search – Enforcement and Compliance Data · Facility Search Results ...",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Elite% 20Handyman% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Quick Search. Search By. Location; Facility Name/ID. Search by city, state, and/or zip code. Search. Search by facility name or ID Search. More Search Options.",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Elite% 20Handyman% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Elite% 20Handyman% 20% 26% 20Remodeling&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:34:35.985Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:34:45.892Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:34:58.302Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Elite Handyman & Remodeling",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:34:59.311Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:35:00.293Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Elite Handyman & Remodeling",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:35:01.332Z",
+      "data": {
+        "query": "site:dallascounty.org Elite Handyman & Remodeling civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:35:02.450Z",
+      "data": {
+        "query": "site:collincountytx.gov Elite Handyman & Remodeling",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:35:04.590Z",
+      "data": {
+        "query": "site:dentoncounty.gov Elite Handyman & Remodeling",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:35:16.072Z",
+      "data": {
+        "name": "Elite Handyman and Remodeling, LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(469) 517-8333",
+        "rating": "Not Rated",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/cedar-hill/profile/remodeling/elite-handyman-and-remodeling-llc-0875-91122886",
+        "review_count": null,
+        "founding_date": "01/01/2013",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 13,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:36:01.488Z",
+      "data": {
+        "name": "Elite Handyman & Remodeling",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 285-7939",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "1431 Shields Ave, Cedar Hill, TX 75104",
+        "reviews": [],
+        "website": "http://www.elitehandymanremodeling.com/",
+        "maps_url": "https://www.google.com/maps/search/Elite%20Handyman%20%26%20Remodeling%20Lancaster%2C%20TX",
+        "categories": [
+          "General contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:36:01.491Z",
+      "data": {
+        "name": "Elite Handyman & Remodeling",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 285-7939",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "1431 Shields Ave, Cedar Hill, TX 75104",
+        "reviews": [],
+        "website": "http://www.elitehandymanremodeling.com/",
+        "maps_url": "https://www.google.com/maps/search/Elite%20Handyman%20%26%20Remodeling%20Lancaster%2C%20TX",
+        "categories": [
+          "General contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:36:07.119Z",
+      "data": {
+        "found": true,
+        "rating": 4.9,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/elite-handyman-and-remodeling-dallas-3",
+        "review_count": 138
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:36:10.099Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Elite Handyman & Remodeling\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:36:12.952Z",
+      "data": {
+        "found": true,
+        "query": "\"Elite Handyman & Remodeling\" Lancaster lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/d-and-j-builders-surplus-lancaster-2",
+            "title": "D&J BUILDERS SURPLUS - Updated January 2026",
+            "snippet": "Closet Doors in Lancaster, Texas · Apartments in Lancaster, Texas. Show more. Browse Articles. Articles by date ... Photo of Elite Handyman & Remodeling. Elite ..."
+          },
+          {
+            "link": "https://www.angi.com/companylist/us/tx/lancaster/plumbing.htm?page=7",
+            "title": "Top 10 Best Plumbers in Lancaster, TX",
+            "snippet": "Elite Handyman & Remodeling exists to provide the muscle and 'know how' from years of experience to help home owners and business' find solutions for all ..."
+          },
+          {
+            "link": "https://www.yelp.com/biz/texas-reconstructors-lancaster",
+            "title": "Texas Reconstructors - contractors - Updated January 2026",
+            "snippet": "TEXAS RECONSTRUCTORS, 3230 Danieldale Rd, Lancaster, TX 75134 ... Photo of Elite Handyman & Remodeling. Elite Handyman & Remodeling. 34 reviews. Lakewood."
+          },
+          {
+            "link": "https://www.angi.com/companylist/us/tx/dallas/drain-cleaning.htm?page=13",
+            "title": "Top 10 Best Drain cleaners in Dallas, TX",
+            "snippet": "Elite Handyman & Remodeling exists to provide the muscle and 'know how' from years of experience to help home owners and business' find solutions for all ..."
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=contractors&find_loc=Lancaster%2C+TX",
+            "title": "Top 10 Best General Contractors Near Lancaster, Texas",
+            "snippet": "Elite Handyman & Remodeling - General Contractors near me - Lancaster, Texas ... complaint with the State of Texas and the Dallas County Theft by Check complaint."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:36:31.133Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-31T05:36:15Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Elite%20Handyman%20%26%20Remodeling%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=z5R9aayiCve5mtkPzqj1oQ8\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-31T05:36:25Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Elite%20Handyman%20%26%20Remodeling%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=2ZR9afqFDvvOp84Pq_PvkQU\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Elite Handyman & Remodeling",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:38:02.679Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T05:38:02.687Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-01-31T05:38:13.850Z",
+      "data": {
+        "cost": 0.0007649600000000001,
+        "summary": "Reviews appear overwhelmingly authentic. The high ratings are supported by detailed, varied customer experiences. The few lower-rated reviews provide specific, credible feedback on cost and minor execution issues, which is normal for a real business. There is no evidence of review manipulation.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-01-31T05:38:13.850Z",
+        "fake_signals": [
+          "One isolated, vague 1-star review from 4 years ago with no details"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": "Not Rated",
+          "angi": 4.5,
+          "yelp": 4.9,
+          "google": 4.9,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Specific project details (foundation repair, pier & beam, laminate flooring, bathroom remodels)",
+          "Varied writing styles and perspectives",
+          "Mix of 5-star praise and constructive 3-4 star feedback",
+          "Mention of specific crew names (Sam, Emmanuel, Jesse, Jeremy, Brevan)",
+          "Emotional authenticity in detailed stories (e.g., water damage narrative)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "High cost/pricing concerns",
+          "Minor scheduling/communication delays",
+          "Missed small details on multi-item jobs"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are highly consistent across Google, Yelp, and Angi, all indicating excellent service. BBB has no rating or complaints, which is neutral."
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-04T01:49:38.511Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Elite Handyman & Remodeling",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Elite Handyman & Remodeling",
+        "searched_at": "2026-02-04T01:48:09.144513",
+        "total_records": 0
+      }
+    }
+  }
+}

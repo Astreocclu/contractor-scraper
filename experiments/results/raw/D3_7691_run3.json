@@ -1,0 +1,38 @@
+{
+  "variation": "D3",
+  "contractor_id": 7691,
+  "contractor_name": "Cowboy Hat Capital Foundation Repair Co",
+  "archetype": "known_bad",
+  "expected_score": 20,
+  "run": 3,
+  "timestamp": "2026-01-20T19:32:59.837Z",
+  "success": true,
+  "trust_score": 0,
+  "risk_level": "CRITICAL",
+  "reasoning": "Won 0/4 comparisons",
+  "comparisons": [
+    {
+      "vs": "1-Tom-Plumber",
+      "winner": "B",
+      "reasoning": "Contractor B (1-Tom-Plumber) has overwhelmingly positive, authentic reviews with specific details about employees and services, while Contractor A's Google listing appears fraudulent with reviews for auto repair instead of foundation repair and serious customer complaints about unprofessional service."
+    },
+    {
+      "vs": "AC Repair Garland",
+      "winner": "B",
+      "reasoning": "Contractor B (AC Repair Garland) has significantly better credentials with authentic, detailed reviews from actual HVAC customers, a 4.7 Google rating from 635 reviews, and no evidence of fraudulent business listings. Contractor A (Cowboy Hat Capital Foundation Repair Co) shows major red flags including a review analysis indicating the Google Maps listing is likely fraudulent or hijacked (all reviews are for auto repair, not foundation repair), and it's labeled as a 'known_bad' archetype."
+    },
+    {
+      "vs": "Bonnie & Clydes Pools and Spas",
+      "winner": "B",
+      "reasoning": "Contractor B (Bonnie & Clydes) is more trustworthy because it appears to be a legitimate, established business with authentic reviews that match its advertised services, while Contractor A shows strong evidence of being a fraudulent or hijacked business listing with reviews for auto repair instead of foundation repair. Contractor B has a higher overall rating (4.4 vs 3.8) and far more reviews (170 vs 26), indicating a more established presence."
+    },
+    {
+      "vs": "Splash Pools",
+      "winner": "B",
+      "reasoning": "Contractor B (Splash Pools) has consistently excellent reviews across multiple platforms (4.8 Google, 5.0 Yelp, A+ BBB) with authentic, detailed customer testimonials describing successful pool projects. Contractor A (Cowboy Hat Capital) has major red flags including a 'known_bad' archetype, fraudulent Google reviews for auto repair instead of foundation work, and polarized ratings with serious customer complaints about unprofessional service."
+    }
+  ],
+  "red_flags": [],
+  "cost_usd": 0.008,
+  "duration_ms": 30494
+}

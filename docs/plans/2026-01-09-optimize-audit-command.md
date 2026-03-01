@@ -510,7 +510,7 @@ Expected: JSON with results array, hit_rate calculated
 
 **Step 3: Verify the command is recognized**
 
-The `/optimize-audit` command should now be available in Claude Code when run from the contractor-auditor directory.
+The `/optimize-audit` command should now be available in Claude Code when run from the auditor directory.
 
 **Step 4: Final commit**
 

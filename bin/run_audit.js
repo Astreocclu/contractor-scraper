@@ -37,14 +37,20 @@ Options:
   --city "City"       City (default: Dallas)
   --state "XX"        State (default: TX)
   --dry-run           Don't save results to database
-  --skip-collection   Skip data collection, use cached data only
+  --skip-collection   ⚠️  WARNING: Only use if user EXPLICITLY requests!
+                      Skips collection and uses STALE cached data.
+                      This means new scraper fields (founding_date, etc.)
+                      won't be available. NEVER use for batch audits or
+                      when testing new features.
   --collect-only      Only run collection, skip audit agent
   --strict            Enable strict scoring constraints:
                       - Require 25+ reviews for RECOMMENDED (80+)
                       - Require verified registration for 85+
                       - Cap at 75 if critical data gaps exist
-  --mode <mode>       Audit mode: 'standard' (default) or 'dialectic'
-                      Dialectic uses three-persona adversarial analysis
+  --mode <mode>       Audit mode: standard, dialectic, or council
+                      - standard: single-LLM audit
+                      - dialectic: single-LLM playing three personas
+                      - council: real multi-LLM with GPT/Gemini/DeepSeek + Claude judge
   --deep              Enable deep investigation (iterative fraud detection)
   --investigation-mode   Deep investigation mode: minimal|standard|full (default: standard)
   --list              List recent audits
@@ -56,6 +62,7 @@ Examples:
   node run_audit.js --id 29 --dry-run
   node run_audit.js --id 29 --collect-only
   node run_audit.js --id 29 --mode dialectic
+  node run_audit.js --id 1524 --mode council --deep
   node run_audit.js --id 1524 --deep
   node run_audit.js --id 1524 --deep --investigation-mode full
   node run_audit.js --list
@@ -119,9 +126,9 @@ async function main() {
   };
 
   // Validate mode
-  const validModes = ['standard', 'dialectic'];
+  const validModes = ['standard', 'dialectic', 'council'];
   if (!validModes.includes(options.mode)) {
-    console.error(`\x1b[31mERROR: Invalid audit mode '${options.mode}'. Must be 'standard' or 'dialectic'\x1b[0m`);
+    console.error(`\x1b[31mERROR: Invalid audit mode '${options.mode}'. Must be 'standard', 'dialectic', or 'council'\x1b[0m`);
     process.exit(1);
   }
 

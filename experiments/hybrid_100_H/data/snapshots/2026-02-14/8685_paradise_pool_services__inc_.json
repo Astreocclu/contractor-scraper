@@ -1,0 +1,840 @@
+{
+  "contractor_id": 8685,
+  "business_name": "Paradise Pool Services, Inc.",
+  "city": "Plano",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-14T18:35:55.101Z",
+  "sources": {
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-14T10:45:34.891Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:45:44.842Z",
+      "data": {
+        "cost": 0.0006770400000000001,
+        "summary": "The business appears to be a long-established, legitimate company. The Google reviews are detailed and authentic-feeling. The major rating discrepancy (Google 5.0 vs Yelp 2.3) is a red flag, but the extremely low review counts on both platforms (3 each) prevent a strong conclusion about systematic review manipulation. The lack of visible negative review content makes analysis incomplete.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-14T10:45:44.842Z",
+        "fake_signals": [
+          "Very low review volume on all platforms",
+          "No negative reviews visible in Google sample"
+        ],
+        "recommendation": "CAUTION_LOW_DATA",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 2.3,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [
+            "warranty"
+          ],
+          "confidence": "LOW",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Review mentions home warranty company contracted them and process was handled well"
+          ]
+        },
+        "authentic_signals": [
+          "Google reviews contain specific details (names like Jim, dates like 2/17/21, project types like pump replacement)",
+          "Varied writing styles and specific scenarios in Google reviews",
+          "BBB A+ rating with 23 years in business suggests legitimacy"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "Unclear from provided data; Yelp low score implies issues but content not shown"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Significant discrepancy between Google (5.0) and Yelp (2.3) ratings. Google reviews are all 5-star with specific, positive details. Yelp's 2.3 rating suggests negative experiences not reflected on Google, but the low review count (3) on each platform makes a definitive pattern difficult to establish."
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:35:32.077Z",
+      "data": {
+        "query": "site:yelp.com \"Paradise Pool Services, Inc.\" \"Plano, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:13.769Z",
+      "data": {
+        "query": "Paradise Pool Services, Inc. Plano site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05&type=video",
+            "title": "[XML] sitemap.xml - NBC 5 Dallas-Fort Worth",
+            "snippet": "... Inc.</video:tag><video:tag>Red Cross</video:tag></video:video></url><url> ... Plano will close as a developer works to demolish parts of the old mall to ...",
+            "position": 1
+          },
+          {
+            "date": "Sep 11, 2015",
+            "link": "https://www.dallasnews.com/business/2015/09/11/for-dallas-newest-billionaire-early-failure-set-stage-for-success/",
+            "title": "For Dallas' newest billionaire, early failure set stage for success",
+            "snippet": "Tom Dundon, former CEO of Santander Consumer, is starting his own investment firm, just bought a landmark downtown office building, ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05",
+            "title": "[XML] https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05",
+            "snippet": "... Inc.</video:tag><video:tag>Red Cross</video:tag></video:video></url><url> ... Plano will close as a developer works to demolish parts of the old mall to ...",
+            "position": 3
+          },
+          {
+            "date": "Dec 8, 2017",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2017/12/08/dog-about-town-shopping-sipping-and-more-pooch-friendly-fun/",
+            "title": "Dog About Town: Shopping, sipping and more pooch-friendly fun",
+            "snippet": "Petland in Plano from 1 to 3 p.m. Saturday. Other pets are welcome too. In case you have concerns about Petland: This location is privately ...",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:37:14.735Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Paradise Pool Services, Inc.\" Plano",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:37:08.812Z",
+      "data": {
+        "url": "https://www.angi.com/companylist/us/tx/plano/paradise-pool-services-inc-reviews-2174651.htm",
+        "found": true,
+        "title": "Paradise Pool Services Inc Reviews - Plano, TX | Angi",
+        "rating": 4.5,
+        "source": "serper_angi",
+        "confidence": "high",
+        "review_count": 6
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:37:09.689Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [
+          {
+            "link": "https://www.houzz.com/professionals/spa-and-pool-maintenance/sherman-tx-us-project-type-pool-liner-replacement-probr1-bo~t_28351~r_4728328~sv_29428?fi=15",
+            "title": "Best 15 Pool Liner Replacement Companies in Sherman, TX | Houzz",
+            "snippet": "Paradise Pool Services, Inc. is a Pool Service and Maintenance Company serving Plano, Allen, McKinney, Frisco and surrounding communities. We... Read More."
+          },
+          {
+            "link": "https://www.houzz.com/professionals/spa-and-pool-maintenance/denison-tx-us-project-type-pool-liner-replacement-probr1-bo~t_28351~r_4685892~sv_29428",
+            "title": "Best 15 Pool Liner Replacement Companies in Denison, TX | Houzz",
+            "snippet": "Paradise Pool Services, Inc. is a Pool Service and Maintenance Company serving Plano, Allen, McKinney, Frisco and surrounding communities. We... Read More."
+          }
+        ],
+        "result_count": 2,
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:07.810Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:11.395Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:24.685Z",
+      "data": "Paradise Pool Services, Inc. Plano review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 0:54 0:54 Now playing Paradise Pool Service Paradise Pool Service Paradise Pool Service • • 210 views 5 years ago Paradise Pool Service Paradise Pool Service Paradise Pool Service is your professional pool maintenance company in the Fairfax, VA area. Paradise Pool Service is full ... Paradise Pool Service is your professional pool maintenance company in the Fairfax, VA area. Paradise Pool Service is full ... From the video description Paradise Pool Service Paradise Pool Service @paradisepoolservice9101 • Pool Cleaning Service. Subscribe 7:00 7:00 Now playing Pool Service Business - Understanding your service rates Pool Rescuers Pool Rescuers • • 15K views 6 years ago Pool Rescuers Pool Rescuers 0:00 What's up pool service pros my name is Ryan today I want to talk to you about understanding your service rates and why it's ... What's up pool service pros my name is Ryan today I want to talk to you about understanding your service rates and why it's ... Automatic captions 4K 2:07 2:07 Now playing Florida pool company accused of scamming 600 families FOX 35 Orlando FOX 35 Orlando • • 3.9K views 3 years ago FOX 35 Orlando FOX 35 Orlando Some families say they hired Legacy Pools to build a pool from them, but the owner allegedly ran off with the money before filing ... Some families say they hired Legacy Pools to build a pool from them, but the owner allegedly ran off with the money before filing ... From the video description CC 18:39 18:39 Now playing The Surprisingly Simple Business of Pool Cleaning Codie Sanchez Codie Sanchez • • 122K views 3 years ago Codie Sanchez Codie Sanchez Want to learn how to buy a business? (Free Consult): https://contrarianthinking.biz/youtubefam Learn Main Street ways to make ... Want to learn how to buy a business? (Free Consult): https://contrarianthinking.biz/youtubefam Learn Main Street ways to make ... From the video description 4K 1:00 1:00 Now playing Paradise Pool and Spa Whiteboard Video Paradise Pools Paradise Pools • • 616 views 10 years ago Paradise Pools Paradise Pools Paradise Pool and Spa – servicing the South Bay area of Los Angeles for regular maintenance , repair and construction. Paradise Pool and Spa – servicing the South Bay area of Los Angeles for regular maintenance , repair and construction. From the video description 2:30 2:30 Now playing Complaints against Paradise Pools of St. Augustine News4JAX The Local Station News4JAX The Local Station • • 122 views 7 years ago News4JAX The Local Station News4JAX The Local Station People are coming forward to file complaints against the president of Paradise Pools of St. Augustine, who's accused of swindling ... People are coming forward to file complaints against the president of Paradise Pools of St. Augustine, who's accused of swindling ... From the video description CC SHORTS SHORTS Now playing Building A Pool Costs HOW Much?? | The Honest Truth About Pool Costs Maggie McGaugh Maggie McGaugh • • 36K views 3 years ago Maggie McGaugh Maggie McGaugh Did I mention our pool company didn't allow loans? Did I mention our pool company didn't allow loans? From the video description 3:47 3:47 Now playing Pool company tells customers it plans to file for bankruptcy; 60 pools unfinished WFLA News Channel 8 WFLA News Channel 8 • • 1.7K views 2 years ago WFLA News Channel 8 WFLA News Channel 8 Pool company tells customers it plans to file for bankruptcy; 60 pools unfinished. Pool company tells customers it plans to file for bankruptcy; 60 pools unfinished. From the video description CC 7:54 7:54 Now playing How To Start a Pool Service Business ($277K/year) Nate Jones Nate Jones • • 25K views 2 years ago Nate Jones Nate Jones There is a MASSIVE NEED for a Pool Service Business because most Pool Owners do not want to clean their own pools. There is a MASSIVE NEED for a Pool Service Business because most Pool Owners do not want to clean their own pools. From the video description 17:24 17:24 Now playing Pool Care for Beginners- How to clean and maintain your pool- Filmed in 4k Fix It With Jake Fix It With Jake • • 510K views 6 years ago Fix It With Jake Fix It With Jake Pool Test Strips: https://amzn.to/44YyNT8 Pentair Pump Basket: https://amzn.to/2YEXSnI Polaris Black Robot: ... Pool Test Strips: https://amzn.to/44YyNT8 Pentair Pump Basket: https://amzn.to/2YEXSnI Polaris Black Robot: ... From the video description 4K 8 chapters Intro | Cleaning | Skimmer | Filter | Circulation | Equipment | Chemistry | Salt 8 auto-generated chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Cleaning Cleaning 1:07 Cleaning 1:07 Skimmer Skimmer 3:31 Skimmer 3:31 Filter Filter 6:12 Filter 6:12 Circulation Circulation 7:25 Circulation 7:25 Equipment Equipment 9:26 Equipment 9:26 Chemistry Chemistry 13:00 Chemistry 13:00 People also watched 31:45 31:45 Now playing Most Underrated Service Business?! (Makes $851K/Year) UpFlip UpFlip • • 149K views 7 months ago UpFlip UpFlip Head to https://Hostinger.com/upflip and build your business website in minutes with Hostinger's AI Builder. From corporate ... Head to https://Hostinger.com/upflip and build your business website in minutes with Hostinger's AI Builder. From corporate ... From the video description 4K CC 39 chapters Start | Howdy, Texas! | An operation one man CAN do | How often, really? | Services offered | Third time’s a charm | The call that changed it all | Startup costs | Funding the capital | Solid support system | But, why choose ASP? | First customer, locked in! | Prep before you leap | Fan blitz | Knock on doors, don’t be shy! | Revenue | Seeing the “unknown” | Non-negotiable equipment | Winning marketing moves | Convert them to customers (every time!) | Know your numbers | A day in the life of a franchisee | Business owners “never” unplug | All about legacy | Tile supplies | Overcoming early challenges | Effective systems | Getting hands on deck | Pricing strategy | Managing stress | Book recommendation | Leadership style | Family dynamics (that work!) | There’s freedom in franchising | What success really means | Just go for it! | Good for most, but not for all | Biggest franchise myth busted! | Outro 39 chapters in this video 39 chapters Start Start 0:00 Start 0:00 Howdy, Texas! Howdy, Texas! 0:33 Howdy, Texas! 0:33 An operation one man CAN do An operation one man CAN do 0:46 An operation one man CAN do 0:46 How often, really? How often, really? 1:09 How often, really? 1:09 Services offered Services offered 2:02 Services offered 2:02 Third time’s a charm Third time’s a charm 3:22 Third time’s a charm 3:22 The call that changed it all The call that changed it all 3:59 The call that changed it all 3:59 26:47 26:47 Now playing Maintenance Cost? // Utilities Spike Up? $$ // Is It Worth Building A Pool? Norma Vargas Norma Vargas • • 23K views 3 years ago Norma Vargas Norma Vargas Hey guys!! Thanks so much for watching todays video where I am sharing our own personal experience and cost of owning a pool ... Hey guys!! Thanks so much for watching todays video where I am sharing our own personal experience and cost of owning a pool ... From the video description 12:26 12:26 Now playing Florida Home Buyers BLINDSIDED By TREMENDOUS Cost To Own Jerry Pinkas Jerry Pinkas • • 3.6M views 2 years ago Jerry Pinkas Jerry Pinkas After moving to Florida, many people have regret and unfortunately suffer the pitfalls that are costly! Some ultimately lose their life ... After moving to Florida, many people have regret and unfortunately suffer the pitfalls that are costly! Some ultimately lose their life ... From the video description 9 chapters Intro | Overview | Warning | Facts | Financial Ruin | Homeowners Insurance | Property Taxes | FixerUpper Houses | Limited Options 9 auto-generated chapters in this video 9 chapters Intro Intro 0:00 Intro 0:00 Overview Overview 0:09 Overview 0:09 Warning Warning 1:03 Warning 1:03 Facts Facts 1:40 Facts 1:40 Financial Ruin Financial Ruin 3:00 Financial Ruin 3:00 Homeowners Insurance Homeowners Insurance 5:10 Homeowners Insurance 5:10 Property Taxes Property Taxes 5:37 Property Taxes 5:37 29:21 29:21 Now playing How to Start a Pool Cleaning Business - Part 1 Are You Sure You Want To Clean Pools?!? In Your Pool Business In Your Pool Business • • 34K views 5 years ago In Your Pool Business In Your Pool Business So you think you want to be a pool cleaning business owner? In this video we talk about what traits you might want to have to be ... So you think you want to be a pool cleaning business owner? In this video we talk about what traits you might want to have to be ... From the video description + 6 more 0:34 0:34 Now playing Paradise Pools & Spas NJ - Reviews - Brick, NJ Pool Service Reviews Best In Brick Best In Brick • • 247 views 11 years ago Best In Brick Best In Brick Reviewed Paradise Pools & Spas NJ is a top reviewed Pool Service in Brick, NJ. This video shows some of the ... Reviewed Paradise Pools & Spas NJ is a top reviewed Pool Service in Brick, NJ. This video shows some of the ... From the video description 2:09 2:09 Now playing Valley pool company has license revoked after ABC15 report ABC15 Arizona ABC15 Arizona • • 2.3K views 2 years ago ABC15 Arizona ABC15 Arizona After sharing their stories, nearly a dozen Let Joe Know viewers reached out about similar experiences with Lakeside Pools . After sharing their stories, nearly a dozen Let Joe Know viewers reached out about similar experiences with Lakeside Pools . From the video description CC Paradise Pool and Spa Paradise Pool and Spa @paradisepoolandspa533 • 8 subscribers We are a fully insured and licensed swimming pool company in the state of Texas. Paradise Pools 16815 Donwick Dr, Conroe, ... Subscribe 4:08 4:08 Now playing Pool Company Threatens $3,500 Fine, Voids Customer Warranty Over Negative Review CBS TEXAS CBS TEXAS • • 18K views 7 years ago CBS TEXAS CBS TEXAS A North Texas company is trying to fine a local couple $3500 and void their warranty for writing a negative review . When the ... A North Texas company is trying to fine a local couple $3500 and void their warranty for writing a negative review . When the ... From the video description CC 3:45 3:45 Now playing Orlando pool company faces lawsuits, complaints over claims of unfinished projects FOX 35 Orlando FOX 35 Orlando • • 2.4K views 5 months ago FOX 35 Orlando FOX 35 Orlando Another Central Florida pool company is facing complaints from frustrated homeowners who say they paid thousands of dollars ... Another Central Florida pool company is facing complaints from frustrated homeowners who say they paid thousands of dollars ... From the video description CC 2:56 2:56 Now playing Mobile DA's office receives complaints about pool company - NBC 15 WPMI NBC 15 NBC 15 • • 730 views 3 years ago NBC 15 NBC 15 The Mobile County District Attorney's Office is now looking into multiple complaints it has received from unhappy customers of ... The Mobile County District Attorney's Office is now looking into multiple complaints it has received from unhappy customers of ... From the video description CC SHORTS SHORTS Now playing This pool looks incredible 😧 | #shorts SportsNation SportsNation • • 8.6M views 3 years ago SportsNation SportsNation This pool looks incredible | #shorts (via @rikkicarman) This pool looks incredible | #shorts (via @rikkicarman) From the video description SHORTS SHORTS Now playing Making money in the pool service business... srvcly srvcly • • 27K views 1 year ago srvcly srvcly In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... From the video description 3:50 3:50 Now playing Home Paradise Pools owner pleads 'not guilty' to misapplication of construction funds WMBB News 13 WMBB News 13 • • 620 views 11 months ago WMBB News 13 WMBB News 13 In January 2024, Panama City residents Thomas & Jill Woods wanted to build a pool in their backyard. They considered Home ... In January 2024, Panama City residents Thomas & Jill Woods wanted to build a pool in their backyard. They considered Home ... From the video description CC Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:26.571Z",
+      "data": {
+        "query": "site:nextdoor.com Paradise Pool Services, Inc. Plano",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/ask-neighbors/plano--tx/i-am-looking-for-recommendations-for-a-pool-servicing-company--DCCd-wWF-S8-/",
+            "title": "I am looking for recommendations for a pool servicing company ...",
+            "snippet": "PLANO. I am looking for recommendations for a pool ... Contact David Dixon with \" Mercedes Pool Services \" at 469-366-3556. ... Paradise pools 214-6356113 … Good on ...",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/pages/gold-medal-pools-frisco-tx/",
+            "title": "Gold Medal Pools - Frisco, TX - Nextdoor",
+            "snippet": "Gold Medal Pools is one of the largest in the industry, employing more than 300 professionals and works on projects ranging from custom residential pools to ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:37:13.834Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Paradise Pool Services, Inc.\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:39.295Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Paradise%20Pool%20Services%2C%20Inc.&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20Pool% 20Services% 20Inc."
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Paradise% 20Pool% 20Services% 2C% 20Inc. TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Paradise% 20Pool% 20Services% 2C% 20Inc. TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "Enforcement and Compliance History Online | US EPA",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= 20Pool% 20Services% 2C% 20Inc."
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Pool% 20Services% 2C% 20Inc. TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= 20Pool% 20Services% 2C% 20Inc. TX"
+            }
+          },
+          {
+            "link": "https://www.epa.gov/frs",
+            "title": "Facility Registry Service (FRS) - EPA",
+            "snippet": "Search a Single Facility or Location. Are you asking questions about a business? Search FRS data with the Enforcement and Compliance History Online website.",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= Paradise% 20Pool% 20Services% 20Inc. &State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= 20Pool% 20Services% 20Inc. TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:43.188Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:49.305Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:59.242Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 4
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased to exist in its state or ...",
+            "position": 8
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:37:00.884Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Paradise Pool Services, Inc.",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:37:03.250Z",
+      "data": {
+        "query": "site:collincountytx.gov Paradise Pool Services, Inc.",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210816_2672/50383_RTC%20Packet%2008-12-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, August 12 ...",
+            "snippet": "The RTC meeting on August 12, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 1
+          },
+          {
+            "date": "Sep 19, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/CC/20191007_2393/38983_2019-09-COMPLETE-Agenda.pdf",
+            "title": "[PDF] North Central Texas Council of Governments TO - Collin County",
+            "snippet": "WHEREAS, NCTCOG currently contracts with Service Master Quality Cleaning Services to clean ten (10) of the eleven. (11) workforce centers with a ...",
+            "position": 2
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210412_2620/33858_agenda-packet-apr.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on April 8, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:37:04.289Z",
+      "data": {
+        "query": "site:dentoncounty.gov Paradise Pool Services, Inc.",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:37:07.645Z",
+      "data": {
+        "name": "Paradise Pool Services, Inc.",
+        "found": true,
+        "rating": 5,
+        "source": "serpapi",
+        "address": "3948 Legacy Dr # 106, Plano, TX 75023",
+        "data_id": "0x864c22b58b050095:0x476a1ff6d37e07b0",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 3,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "3 years ago",
+            "text": "My home warranty company contracted Paradise Pools to replace my pump and fix a small leak. Jim was on top of things from the beginning. He walked me through each step of the process from the warranty company, to ordering the parts, the scheduling, and the repair. He took care of it all with zero effort on my part. Jim would even call to update me long after closing, so I know he puts his customers first. My pool is now running as it should with no leaks, so I have no doubt the repairs were just as quality as the service. I would recommend Jim and team to anyone! My only regret is they only do repairs in my area or they would be maintaining my pool for me as well!",
+            "author": "Philip Tripp",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Jim with Paradise Pool Services helped me on one of the worst winter days in 100 years. On 2/17/21, he was ONLY pool service to return my call in my emergency to come and fix a broken hose near my pool pump manifold.  He also helped me when no other pool company would or could help on a broken pipe connection was stuck in my spinner basket. This man went above and beyond and I will not forget what he did for me. I would recommend him for any pool servive needs! TY",
+            "author": "David Hooper",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "They replaced pool timer that was not working.  They did an excellent job of getting the correct parts and fixing at a reasonable price.  Nice to have pool timer working again!",
+            "author": "Plano Tex",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": 3,
+        "pages_fetched": 1,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "NO_REVIEWS",
+        "location_searched": "Plano, TX",
+        "search_confidence": 0.7249999999999999,
+        "serper_fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:37:08.121Z",
+      "data": {
+        "found": true,
+        "rating": 2.3,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/paradise-pool-services-plano",
+        "review_count": 3
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:37:10.574Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Paradise Pool Services, Inc.\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.ParadisePoolServices.15582645.html",
+            "title": "Paradise Pool Services, Inc. Reviews - Plano, TX | HomeAdvisor",
+            "snippet": "See reviews for Paradise Pool Services, Inc. in Plano, TX at 3948 Legacy Drive, Suite, 06 211 from Angi members or join today to leave your own review."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:37:13.141Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Paradise Pool Services, Inc.\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-14T18:00:35.130Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "ABS_JUDG": 1,
+            "STATE_TAX_LIEN": 1
+          },
+          "active_liens": 2,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 2,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "NORRIS DON",
+                "grantor": "PARADISE POOL SERVICES INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PARADISE POOL SERVICES INC",
+                    "NORRIS DON",
+                    "ABSTRACT OF JUDGMENT",
+                    "1/12/2011",
+                    "20110112000052280",
+                    "--/--/--",
+                    "SEE INSTRUMENT"
+                  ],
+                  "search_term": "Paradise Pool Services, Inc.",
+                  "doc_type_raw": "ABSTRACT OF JUDGMENT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2011-01-12",
+                "document_type": "ABS_JUDG",
+                "recording_date": null,
+                "instrument_number": "20110112000052280"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "PARADISE POOL SERVICES INC",
+                "grantor": "TEXAS STATE OF",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE OF",
+                    "PARADISE POOL SERVICES INC",
+                    "STATE TAX LIEN",
+                    "8/20/2009",
+                    "20090820001049490",
+                    "--/--/--",
+                    "SEE INSTRUMENT"
+                  ],
+                  "search_term": "Paradise Pool Services, Inc.",
+                  "doc_type_raw": "STATE TAX LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2009-08-20",
+                "document_type": "STATE_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "20090820001049490"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 old lien(s) against contractor (>7 years ago)",
+            "1 lien(s) filed BY contractor (collecting payment - neutral)"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 2,
+          "human_summary": "CAUTION: 1 lien(s) filed AGAINST Paradise Pool Services, Inc. (potential payment issues)",
+          "liens_unclear": 0,
+          "liens_by_count": 1,
+          "resolved_liens": 0,
+          "liens_against_count": 1,
+          "liens_by_contractor": 1,
+          "total_against_amount": 0,
+          "liens_against_contractor": 1
+        },
+        "owner_name": null,
+        "search_term": "Paradise Pool Services, Inc.",
+        "searched_at": "2026-02-14T17:57:48.142766",
+        "total_records": 2
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:45:34.889Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "PARADISE POOL SERVICES, INC.",
+        "taxpayer_number": "12632125089"
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:37:16.273Z",
+      "data": {
+        "found": true,
+        "query": "\"Paradise Pool Services, Inc.\" Plano lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://collintimes.com/94-professional-licenses-set-to-expire-during-may-in-plano/",
+            "title": "94 professional licenses set to expire during May in Plano - Collin ...",
+            "snippet": "Paradise Pool Services, Inc. 269, 3948 Legacy Drive, 2020-05-26. Cosmetology esthetician/manicure salon, Regal Nails Salon & Spa, 770122, 1700 Dalelas Parkway ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:37:07.890Z",
+      "data": {
+        "name": "Paradise Pool Services, Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(214) 403-8532",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "3948 Legacy Dr # 106, Plano, TX 75023",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Paradise%20Pool%20Services%2C%20Inc.%20Plano%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:02.807Z",
+      "data": "Trustpilot Search Results Companies Pool Paradise pool-paradise.de • 15 reviews 2.8 Concept Paradise-france www.concept-paradise-france.net • 103 reviews 1.3 Pool Protection 27 Pool Services www.poolprotection27.com • 1 review 3.7 Pool pool.net • 636 reviews 4.4 Paradise Shisha www.paradise-shisha.de • 219 reviews 4.5 Categories Swimming Pool The best companies in the category 'Swimming Pool' Outdoor Swimming Pool The best companies in the category 'Outdoor Swimming Pool' Pool Academy The best companies in the category 'Pool Academy' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (10000) Pool Paradise pool-paradise.de 2.8 15 reviews Auf dem Bruch 6, Wassenberg, Germany Concept Paradise-france www.concept-paradise-france.net 1.3 103 reviews Pool Protection 27 Pool Services www.poolprotection27.com 3.7 1 review United States Pool pool.net 4.4 636 reviews Edertalstr. 86, Mörlenbach, Germany Paradise Shisha www.paradise-shisha.de 4.5 219 reviews Germany Club Paradise clubparadise.co.uk 4.1 26 reviews United Kingdom Pet Paradise petparadise.com 1.9 5,079 reviews United States Hobbii hobbii.com 4.7 33,206 reviews Denmark Sonos Inc. www.sonos.com 3.5 7,647 reviews https://support.sonos.com/en-us/contact, United States swimming-pool-online.com www.swimming-pool-online.com 2.9 2 reviews Previous 1 2 3 4 1000 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Swimming Pool Sports Outdoor Swimming Pool Hobbies & Crafts Pool Academy Sports Pool Hall Sports Legal Services Legal Services & Government Swimming Pool Supply Store Construction & Manufacturing are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:37:15.667Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Paradise Pool Services, Inc.\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:36:57.890Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Paradise Pool Services, Inc.",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Nov 14, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. WALMART SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. I. Definitions.",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT | NJ.gov",
+            "snippet": "babies; expand services for better continuum of care with infant-need dyad; and expand long-term treatment and services for medical monitoring of NAS babies.",
+            "position": 2
+          },
+          {
+            "date": "Dec 9, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/2022-12-09%20CVS%20Global%20Settlement%20Agreement%20with%20Exhibits%20(003).pdf",
+            "title": "[PDF] CVS SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. CVS SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. Page. I. Definitions.",
+            "position": 3
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Global%20Opioid%20Settlement%20Files/Final%20Distributor%20Settlement%20Agreement.pdf",
+            "title": "[PDF] DISTRIBUTOR SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. DISTRIBUTOR SETTLEMENT. AGREEMENT. Page 2. i. Table of Contents. Page. I.",
+            "position": 4
+          },
+          {
+            "date": "Sep 30, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/Distributors%20Texas%20Settlement%20Agreement%20Distributors%20TXAG%20Executed.pdf",
+            "title": "[PDF] DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT",
+            "snippet": "This Distributors' Texas Settlement Agreement (“Agreement”) sets forth the terms and conditions of a settlement agreement between and among the ...",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:37:02.052Z",
+      "data": {
+        "query": "site:dallascounty.org Paradise Pool Services, Inc. civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/May-2025-CC-combined.pdf",
+            "title": "[PDF] statutory - Dallas County",
+            "snippet": "... Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL SECTION. Injury or Damage. CASES ON DOCKET. 455. Other. Eminent. Domain. Tax ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:37:04.532Z",
+      "data": {
+        "name": "Paradise Pool Services, Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(214) 403-8532",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/plano/profile/pool-service/paradise-pool-services-inc-0875-90135558",
+        "review_count": null,
+        "founding_date": "01/01/2003",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 23,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:37:07.888Z",
+      "data": {
+        "name": "Paradise Pool Services, Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(214) 403-8532",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "3948 Legacy Dr # 106, Plano, TX 75023",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Paradise%20Pool%20Services%2C%20Inc.%20Plano%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:37:34.369Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T10:37:20Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Paradise%20Pool%20Services%2C%20Inc.%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=YFCQabfYDqqrw8cPtJ2L8Q8\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T10:37:30Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Paradise%20Pool%20Services%2C%20Inc.%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=alCQaZHzEqDbptQPytT1sQE\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Paradise Pool Services, Inc.",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

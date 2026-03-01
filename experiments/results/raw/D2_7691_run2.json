@@ -1,0 +1,78 @@
+{
+  "variation": "D2",
+  "contractor_id": 7691,
+  "contractor_name": "Cowboy Hat Capital Foundation Repair Co",
+  "archetype": "known_bad",
+  "expected_score": 20,
+  "run": 2,
+  "timestamp": "2026-01-20T19:22:31.532Z",
+  "success": true,
+  "trust_score": 12,
+  "risk_level": "CRITICAL",
+  "reasoning": "Mixed council: DeepSeek=15, Claude=15, Gemini=5, Avg=12",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 15,
+      "risk_level": "CRITICAL",
+      "reasoning": "This contractor presents multiple severe red flags that indicate it is not a legitimate foundation repair business. The Google Maps listing appears to be fraudulent or hijacked, with all reviews referencing auto repair work rather than foundation services. The business has no presence on reputable contractor platforms like BBB, Angi, or HomeAdvisor, and the archetype is explicitly labeled as 'known_bad.' The combination of misaligned reviews, lack of legitimate business presence, and the 'known_bad' classification creates an extremely high-risk profile.",
+      "key_factors": [
+        "Google Maps listing appears fraudulent/hijacked with auto repair reviews",
+        "Business archetype labeled as 'known_bad'",
+        "Complete absence from legitimate contractor platforms (BBB, Angi, etc.)"
+      ],
+      "red_flags": [
+        "Reviews describe auto repair work, not foundation repair",
+        "No legitimate business presence on contractor platforms",
+        "Archetype indicates known problematic history",
+        "Possible fake business listing or identity theft"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 15,
+      "risk_level": "CRITICAL",
+      "reasoning": "This contractor presents severe authenticity issues that indicate potential fraud. The Google Maps listing shows a foundation repair company but all reviews are for an auto repair shop, suggesting a hijacked or fraudulent business profile. The negative reviews describe serious service failures including taking customer money and parts without performing work. Combined with no legitimate business presence on any other platforms and the complete business category mismatch, this appears to be a deceptive operation.",
+      "key_factors": [
+        "Business listing fraudulently represents services (foundation repair vs auto repair)",
+        "Multiple credible complaints about taking payment without performing work",
+        "Complete absence from legitimate business directories and licensing platforms"
+      ],
+      "red_flags": [
+        "All reviews are for different business type than advertised",
+        "Reviews describe taking customer money/parts without service delivery",
+        "No verification of actual foundation repair business existence"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 5,
+      "risk_level": "CRITICAL",
+      "reasoning": "This contractor presents an extremely high risk. The Google Maps listing is highly suspect, showing reviews for an auto repair shop despite the business being listed as a foundation repair company. The review analysis confirms this discrepancy and highlights serious complaints of fraudulent behavior, including taking money and parts without performing the agreed-upon services. The lack of presence on reputable platforms like BBB, Yelp, and Angi further exacerbates the concerns, suggesting a lack of transparency and accountability.",
+      "key_factors": [
+        "Review Discrepancy",
+        "Negative Review Content",
+        "Lack of Platform Presence"
+      ],
+      "red_flags": [
+        "Mismatched Business Category and Reviews",
+        "Serious Customer Complaints",
+        "No BBB or Yelp Presence"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Reviews describe auto repair work, not foundation repair",
+    "No legitimate business presence on contractor platforms",
+    "Archetype indicates known problematic history",
+    "Possible fake business listing or identity theft",
+    "All reviews are for different business type than advertised",
+    "Reviews describe taking customer money/parts without service delivery",
+    "No verification of actual foundation repair business existence",
+    "Mismatched Business Category and Reviews",
+    "Serious Customer Complaints",
+    "No BBB or Yelp Presence"
+  ],
+  "cost_usd": 0.05621841875,
+  "duration_ms": 8505
+}

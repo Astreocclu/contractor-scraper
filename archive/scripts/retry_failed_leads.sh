@@ -1,12 +1,12 @@
 #!/bin/bash
 # Retry failed leads cron script
-# Run daily: 0 6 * * * /home/astre/command-center/testhome/contractor-auditor/archive/scripts/retry_failed_leads.sh
+# Run daily: 0 6 * * * /home/astre/command-center/src/greenlit/auditor/archive/scripts/retry_failed_leads.sh
 #
 # This script re-processes leads that failed scoring due to API timeouts or errors.
 
 set -e
 
-cd /home/astre/command-center/testhome/contractor-auditor
+cd /home/astre/command-center/src/greenlit/auditor
 source venv/bin/activate
 set -a && . ./.env && set +a
 

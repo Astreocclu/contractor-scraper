@@ -1,0 +1,44 @@
+{
+  "data_quality": {
+    "total_permits": 3889,
+    "after_cleaning": 1366,
+    "unique_contractor_names": 1070,
+    "contractors_with_scores": 1127,
+    "contractors_matched_to_permits": 13,
+    "match_rate_pct": "1.2"
+  },
+  "hypotheses": {
+    "H1_permit_presence": {
+      "matched_mean": "65.2",
+      "unmatched_mean": "65.6",
+      "n_matched": 13,
+      "n_unmatched": 1114
+    },
+    "H2_city_volume": {
+      "r": -0.156,
+      "p": 0.3554,
+      "n": 37
+    },
+    "H3_pool_density": {
+      "r": -0.316,
+      "p": 0.1515,
+      "n": 22
+    },
+    "H4_property_values": {
+      "r": -0.064,
+      "p": 0.7147,
+      "n": 35
+    },
+    "H5_type_diversity": {
+      "r": 0.207,
+      "p": 0.2187,
+      "n": 37
+    },
+    "H6_recent_activity": {
+      "r": -0.047,
+      "p": 0.7821,
+      "n": 37
+    }
+  },
+  "verdict": "WEAK: No significant correlations at city level. Current permit data has minimal predictive power on contractor quality."
+}

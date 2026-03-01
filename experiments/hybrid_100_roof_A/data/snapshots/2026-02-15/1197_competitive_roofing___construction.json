@@ -1,0 +1,1017 @@
+{
+  "contractor_id": 1197,
+  "business_name": "Competitive Roofing & Construction",
+  "city": "Coppell",
+  "state": "TX",
+  "verticals": [
+    "roofing"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-15T21:10:09.898Z",
+  "sources": {
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:55:28.972Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": true,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "https://www.competitiveroofingdfw.com/",
+            "type": "workmanship",
+            "snippet": "EEN COMPROMISED. ROOF REPLACEMENTS OUR ROOFING EXPERTS ARE DEDICATED TO QUALITY WORKMANSHIP AND USE ONLY THE BEST ROOFING MATERIALS. WE WILL TREAT YOUR HOME AS IF IT'S OUR"
+          },
+          {
+            "url": "https://www.competitiveroofingdfw.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "Full-Service Roofing & General Contracting You Can Count On FREE INSPECTIONS • INSURED • A+ BBB Accredited Business CALL US TODAY: 817-454-2113 SERVICES STORM DAMAGE"
+          }
+        ],
+        "durations": [],
+        "confidence": "WEAK",
+        "source_url": "https://www.competitiveroofingdfw.com/",
+        "analyzed_pages": [
+          {
+            "url": "https://www.competitiveroofingdfw.com/",
+            "type": "homepage",
+            "title": "Best Roofing Company in Coppell TX"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": true
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:55:36.049Z",
+      "data": {
+        "query": "site:yelp.com \"Competitive Roofing & Construction\" \"Coppell, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?cflt=gutterservices&find_loc=Coppell%2C+TX+75019",
+            "title": "THE BEST 10 Gutter Services near COPPELL, TX 75019 - Yelp",
+            "rating": 4.8,
+            "snippet": "... Competitive Roofing & Construction, K&B Exteriors, Legacy Exteriors ... Coppell, TX 75019. Map. French Drain Installation in Coppell, Texas · Rain Barrel ...",
+            "position": 1,
+            "ratingCount": 1312
+          }
+        ]
+      }
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:56:31.654Z",
+      "data": {
+        "query": "site:nextdoor.com Competitive Roofing & Construction Coppell",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:58:03.574Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Competitive Roofing & Construction\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:50.448Z",
+      "data": {
+        "name": "Competitive Roofing & Construction",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 454-2113",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "309 Clear Haven, Coppell, TX 75019",
+        "reviews": [],
+        "website": "https://www.competitiveroofingdfw.com/",
+        "maps_url": "https://www.google.com/maps/search/Competitive%20Roofing%20%26%20Construction%20Coppell%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:56.189Z",
+      "data": {
+        "found": true,
+        "rating": 4.8,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": 49
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:58:00.872Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Competitive Roofing & Construction\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:58:02.019Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Competitive Roofing & Construction\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:58:05.930Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Competitive Roofing & Construction\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:57:57.288Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:57:58.994Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:57:59.856Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "competitiveroofingdfw.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:56:11.772Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:56:15.853Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:58:07.028Z",
+      "data": {
+        "found": true,
+        "query": "\"Competitive Roofing & Construction\" Coppell lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/coppell/profile/roofing-contractors/competitive-roofing-construction-0875-91346998",
+            "title": "Competitive Roofing & Construction | BBB Business Profile",
+            "snippet": "Competitive Roofing & Construction is BBB Accredited. BBB accredited business seal. This business has committed to upholding the BBB Standards for Trust."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/coppell/category/roofing-contractors",
+            "title": "Roofing Contractors near Coppell, TX | Better Business Bureau",
+            "snippet": "Coppell, TX 75019-4055. Get a Quote · Competitive Roofing & Construction. Roofing Contractors, General Contractor, Gutters ... BBB Rating: A+ Service Area ..."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/coppell/category/general-contractor/accredited",
+            "title": "BBB Accredited General Contractor near Coppell, TX",
+            "snippet": "Competitive Roofing & Construction. Roofing Contractors, General Contractor ... File a Complaint · Military & Veteran Resources · File an Auto Warranty ..."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/coppell/category/residential-general-contractor",
+            "title": "Residential General Contractor near Coppell, TX - BBB",
+            "snippet": "(214) 717-0110. 1203 Crestside Dr STE 230, Coppell, TX 75019-4979. Get a Quote · Competitive Roofing & Construction. Roofing Contractors, General Contractor ..."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/north-branch/category/fence-repair",
+            "title": "Fence Repair near North Branch, TX | Better Business Bureau",
+            "snippet": "Competitive Roofing & Construction. Roofing Contractors, General Contractor ... Coppell, TX. Accredited Business. (817) 454-2113. 309 Clear Haven Dr, Coppell, TX ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:56:19.552Z",
+      "data": {
+        "query": "Competitive Roofing & Construction Coppell site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=01",
+            "title": "[XML] https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=01 - NBC 5",
+            "snippet": "... Roofing and Construction has been sentenced to 8 years in prison for conning homeowners. This comes after a series of NBC 5 Responds reports by Samantha ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2017&mm=02",
+            "title": "[XML] sitemap.xml - NBC 5 Dallas-Fort Worth",
+            "snippet": "... competitive when Aaron Paul and Gucci Mane team up against Keri Russell and 2 Chainz in the game \"Password.\"</video:description><video:player_loc ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallasnews.com/arts-entertainment/travel/2011/10/02/volunteer-for-special-projects-through-forest-service-program/",
+            "title": "Volunteer for special projects through Forest Service program",
+            "snippet": "Not only do you get to lay your hands on history, in the process doing things you've never done before (like roofing) ... Coppell ... Keeping you informed on traffic ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:58:04.579Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Competitive Roofing & Construction\" Coppell",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:56:30.508Z",
+      "data": "Competitive Roofing & Construction Coppell review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Competitive Roofing & Construction Competitive Roofing & Construction @competitiveroofingconstruc3392 • 1 subscriber Competitive Roofing & Construction is your trusted local roofing contractor serving Coppell TX and the DFW metroplex. Our motto ... Subscribe Shorts New One Take Customer Reviews Volume 1.0 No views New Roof Install for a Customer in Coppell, TX #roofing #resultsroofing #construction #drone 48 views Competitive Roofing Material Pricing! Next Day Delivery!#roofingcontractor #materialesdeconstruccion 278 views Crushing all the competition, literally!! #roofing #shorts #shortsfeed #construction 1.9K views New Roof for a Customer in Coppell, TX #roofing #homeimprovement #roofingcontractorsdallastx 372 views GAF CERTIFIED. Only 5% of roofing contractors are GAF certified. ELITE COMPANY! #roofer #arizona 898 views Best Choice Roofing Complaint 1.2K views Roofing Contractors - BEST REPORT 6K views The big question \"How much is this going to cost?\" 603 views Choose wisely. ❤ #Choice #Roofing #Remodeling #Kansas #Missouri #Contractor #Construction 106 views Show more Show less 0:07 0:07 Now playing Your trusted local roofer in Coppell TX Competitive Roofing & Construction Competitive Roofing & Construction • • 2 views 2 years ago Competitive Roofing & Construction Competitive Roofing & Construction Owens Corning TruDefinition Duration Shingles in Driftwood Color. Owens Corning TruDefinition Duration Shingles in Driftwood Color. From the video description 3:46 3:46 Now playing 🏠 The Truth About Roofing in Texas: What Every Homeowner Needs to Know Cool Roofs Cool Roofs • • 143 views 8 months ago Cool Roofs Cool Roofs If you're a Texas homeowner needing a new roof , this video is a must-watch. Roofing is the least regulated trade in Texas ... If you're a Texas homeowner needing a new roof , this video is a must-watch. Roofing is the least regulated trade in Texas ... From the video description 9:49 9:49 Now playing Roofing Insulation is getting RIDICULOUS! IRE did not disappoint Matt Risinger Matt Risinger • • 247K views 1 day ago Matt Risinger Matt Risinger Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... From the video description New Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. AI-generated video summary Quality and accuracy may vary. Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. CoppellRoofing CoppellRoofing @CoppellRoofing • We're a Coppell commercial roofing company specializing in commercial roof repair, roof installation, and re- roofing . We are a ... Subscribe 0:49 0:49 Now playing Coppell Texas Roofing TechChicken TechChicken • • 1 view 6 years ago TechChicken TechChicken Coppell Texas Roofing Coppell Texas Roofing Coppell Texas Roofing https://www.youtube.com/watch?v= ... Coppell Texas Roofing Coppell Texas Roofing Coppell Texas Roofing https://www.youtube.com/watch?v= ... From the video description 2:26 2:26 Now playing Roofing company that sued Vancouver couple after bad review goes offline KGW News KGW News • • 118K views 4 years ago KGW News KGW News The owner of Executive Roof Services said he has received a slew of one-star reviews after the company's lawsuit against a ... The owner of Executive Roof Services said he has received a slew of one-star reviews after the company's lawsuit against a ... From the video description CC 9:25 9:25 Now playing What's the REAL Difference Between Roofing Synthetic Underlayments? Roofing Insights Roofing Insights • • 3.8K views 9 months ago Roofing Insights Roofing Insights The best deals on underlayment: bemdirect.com Have a question? Text me: 612-558-4881 Connect with Dmitry: ... The best deals on underlayment: bemdirect.com Have a question? Text me: 612-558-4881 Connect with Dmitry: ... From the video description 0:44 0:44 Now playing Coppell Roofing Contractor - (214) 646-1100 Best Dallas Roofs Best Dallas Roofs • • 5 views 11 years ago Best Dallas Roofs Best Dallas Roofs Best Dallas Roofs (214) 646-1100 http://www.bestdallasroofs.com Individuals in Coppell who owns a house or company which ... Best Dallas Roofs (214) 646-1100 http://www.bestdallasroofs.com Individuals in Coppell who owns a house or company which ... From the video description 0:11 0:11 Now playing Roofing Contractor Coppell | (214) 295-5500 | Accent Roofing Accent Roofing & Construction Accent Roofing & Construction • • 10 views 11 years ago Accent Roofing & Construction Accent Roofing & Construction Roofing Contractor Coppell Accent Roofing: http://accentroofing.com/ Premier Roofing Contractor Dallas Accent Roofing ... Roofing Contractor Coppell Accent Roofing: http://accentroofing.com/ Premier Roofing Contractor Dallas Accent Roofing ... From the video description 6:43 6:43 Now playing GAF HDZ Invited to Duration VS IKO Dynasty Roofing Shingles Pull test Roofing Insights Roofing Insights • • 79K views 6 years ago Roofing Insights Roofing Insights Roof Shingles: OC Duration VS IKO Dynasty roofing pull test We have Invited GAF to participate in shingle comparison. Comment ... Roof Shingles: OC Duration VS IKO Dynasty roofing pull test We have Invited GAF to participate in shingle comparison. Comment ... From the video description CC 4 moments NAIL ZONE \"PERFORMANCE CHALLENGE\" | THE NEXT DAY WE WENT TO PICK UP SOME IKO DYNASTY SHINGLES... | TEST #1 | TEST #2 4 auto-generated moments in this video 4 moments NAIL ZONE \"PERFORMANCE CHALLENGE\" NAIL ZONE \"PERFORMANCE CHALLENGE\" 0:24 NAIL ZONE \"PERFORMANCE CHALLENGE\" 0:24 THE NEXT DAY WE WENT TO PICK UP SOME IKO DYNASTY SHINGLES... THE NEXT DAY WE WENT TO PICK UP SOME IKO DYNASTY SHINGLES... 0:52 THE NEXT DAY WE WENT TO PICK UP SOME IKO DYNASTY SHINGLES... 0:52 TEST #1 TEST #1 2:40 TEST #1 2:40 TEST #2 TEST #2 3:42 TEST #2 3:42 1:04 1:04 Now playing Roofing Contractors Coppell |Coppell Roofing Contractors|817-673-3058 Top Line Roofing Top Line Roofing • • 23 views 13 years ago Top Line Roofing Top Line Roofing www.fortworthroofingcompany.biz | Top Line Roofing & Construction | 817-673-3058 Coppell's Most Trusted Roofing Contractor ... www.fortworthroofingcompany.biz | Top Line Roofing & Construction | 817-673-3058 Coppell's Most Trusted Roofing Contractor ... From the video description 3D People also watched 7:15 7:15 Now playing Do Roofing Shingle Brands Matter? You Won't Believe the Shocking Stats Roofing Insights Roofing Insights • • 28K views 3 years ago Roofing Insights Roofing Insights CONSULT directly with Dmitry Lipinskiy https://dmitrylipinskiy.com/ ROOFERS : grow your business https:// roofing -school.com ... CONSULT directly with Dmitry Lipinskiy https://dmitrylipinskiy.com/ ROOFERS : grow your business https:// roofing -school.com ... From the video description 13:33 13:33 Now playing Public Adjuster: 99% Roofs are Insurance Claims | Roofing Insights Roofing Insights Roofing Insights • • 10K views 5 years ago Roofing Insights Roofing Insights Public Adjuster: 99% Roofs are Insurance Claims | Roofing Insights. Bo Williamson from Noble Public Adjusters Says that 99% of ... Public Adjuster: 99% Roofs are Insurance Claims | Roofing Insights. Bo Williamson from Noble Public Adjusters Says that 99% of ... From the video description CC 9 chapters Intro | Advice for contractors | Dmitry pushes back | Most jobs are insurance jobs | Public adjuster's role | Liability of insurer versus manufacturer | How many claims can insurance cover? | Contractors should do mostly insurance claims | Roofing Insights Directory 9 chapters in this video 9 chapters Intro Intro 0:00 Intro 0:00 Advice for contractors Advice for contractors 0:31 Advice for contractors 0:31 Dmitry pushes back Dmitry pushes back 1:48 Dmitry pushes back 1:48 Most jobs are insurance jobs Most jobs are insurance jobs 3:05 Most jobs are insurance jobs 3:05 Public adjuster's role Public adjuster's role 4:51 Public adjuster's role 4:51 Liability of insurer versus manufacturer Liability of insurer versus manufacturer 6:28 Liability of insurer versus manufacturer 6:28 How many claims can insurance cover? How many claims can insurance cover? 8:02 How many claims can insurance cover? 8:02 11:59 11:59 Now playing Couple Sued for Giving Bad Review to Roofers Steve Lehto Steve Lehto • • 87K views 4 years ago Steve Lehto Steve Lehto The suit seeks $112000 in damages - for two reviews. http://www.lehtoslaw.com. The suit seeks $112000 in damages - for two reviews. http://www.lehtoslaw.com. From the video description 4 chapters Intro | Couple Sued | Story | The Damages 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Couple Sued Couple Sued 0:26 Couple Sued 0:26 Story Story 4:22 Story 4:22 The Damages The Damages 9:02 The Damages 9:02 26:38 26:38 Now playing 2024 Roofing Shingle Guide: Ultimate Review by Roofers Roofing Insights Roofing Insights • • 47K views 1 year ago Roofing Insights Roofing Insights Full shingle guide & ratings here: https://roofinginsights.com/best- roofing -shingles-2024/ My recommended Roofing Contractors: ... Full shingle guide & ratings here: https://roofinginsights.com/best- roofing -shingles-2024/ My recommended Roofing Contractors: ... From the video description 11 chapters Intro | 9 years of roofing shingle testing | Roof shingles rating system | 91 points | 89 points | Story of Tamko | 92 points | 93 points | 94 and 95 points | 96 points | 97 points 11 chapters in this video 11 chapters Intro Intro 0:00 Intro 0:00 9 years of roofing shingle testing 9 years of roofing shingle testing 0:47 9 years of roofing shingle testing 0:47 Roof shingles rating system Roof shingles rating system 4:12 Roof shingles rating system 4:12 91 points 91 points 7:25 91 points 7:25 89 points 89 points 9:42 89 points 9:42 Story of Tamko Story of Tamko 11:08 Story of Tamko 11:08 92 points 92 points 13:57 92 points 13:57 + 6 more 2:13 2:13 Now playing Customers complain about unfinished roofing work; employee explains WLFITV WLFITV • • 66 views 9 years ago WLFITV WLFITV A Lafayette woman is warning people about a company called Reliable Roofing . She claims the small business charged her ... A Lafayette woman is warning people about a company called Reliable Roofing . She claims the small business charged her ... From the video description 1:04 1:04 Now playing Alpha Exteriors and Construction: Top-Rated Roof Replacement Contractor in Coppell, TX Alpha Exteriors and Construction Alpha Exteriors and Construction • • 2 views 8 months ago Alpha Exteriors and Construction Alpha Exteriors and Construction Your home is more than just a building—it's your sanctuary. At Alpha Exteriors and Construction , we understand the responsibility ... Your home is more than just a building—it's your sanctuary. At Alpha Exteriors and Construction , we understand the responsibility ... From the video description 1:18 1:18 Now playing Roofing Coppell TX - Triple Crown Roofing in Coppell TX TexasRoofingCompany TexasRoofingCompany • • 5.9K views 13 years ago TexasRoofingCompany TexasRoofingCompany Roofing Coppell TX http://www.triplecrownusa.com Triple Crown Construction has been associated with the restoration industry ... Roofing Coppell TX http://www.triplecrownusa.com Triple Crown Construction has been associated with the restoration industry ... From the video description CC 30:10 30:10 Now playing Shingle Olympics - Chicago Contractor (Reliance Roof Troop) Ranks 12 Shingles From Worst To Best Reliance Roof Troop Reliance Roof Troop • • 108K views 2 years ago Reliance Roof Troop Reliance Roof Troop Need a new roof ? Watch this revealing video before choosing shingles! Local roofer Daniel Wagenmaker tested 12 top-selling ... Need a new roof ? Watch this revealing video before choosing shingles! Local roofer Daniel Wagenmaker tested 12 top-selling ... From the video description 9 chapters Intro | Nailing Zone | Sealant | Weight | Impact Resistance | Asphalt Grade | Thickness | Granule Loss | Final Results 9 auto-generated chapters in this video 9 chapters Intro Intro 0:00 Intro 0:00 Nailing Zone Nailing Zone 1:35 Nailing Zone 1:35 Sealant Sealant 6:10 Sealant 6:10 Weight Weight 11:35 Weight 11:35 Impact Resistance Impact Resistance 13:52 Impact Resistance 13:52 Asphalt Grade Asphalt Grade 18:18 Asphalt Grade 18:18 Thickness Thickness 21:13 Thickness 21:13 0:38 0:38 Now playing Slate Roofing Coppell Top Line Roofing Top Line Roofing • • 16 views 13 years ago Top Line Roofing Top Line Roofing www.fortworthroofingcompany.biz Slate Roofing Coppell | Coppell Slate Roofing Installation . Contact Top Line Roofing to replace ... www.fortworthroofingcompany.biz Slate Roofing Coppell | Coppell Slate Roofing Installation . Contact Top Line Roofing to replace ... From the video description 0:25 0:25 Now playing Designer Roof Install In Coppell, Texas! Results Roofing Results Roofing Results Roofing • • 19 views 3 years ago Results Roofing Results Roofing Follow us on Social Media Facebook: https://www.facebook.com/ResultsRoofing Instagram: ... Follow us on Social Media Facebook: https://www.facebook.com/ResultsRoofing Instagram: ... From the video description 0:43 0:43 Now playing Coppell Roofing - Call (214) 646-1100 for a free estimate Best Dallas Roofs Best Dallas Roofs • • 13 views 12 years ago Best Dallas Roofs Best Dallas Roofs Need a roofing contractor in Coppell ? Call us today at (214) 646-1100 for a free estimate over the phone! Call us now - (214) ... Need a roofing contractor in Coppell ? Call us today at (214) 646-1100 for a free estimate over the phone! Call us now - (214) ... From the video description 1:59 1:59 Now playing O.W. Grun Roofing and Construction Co. v. Cope Case Brief Summary | Law Case Explained Quimbee Quimbee • • 222 views 4 years ago Quimbee Quimbee Get more case briefs explained with Quimbee. Quimbee has over 16300 case briefs (and counting) keyed to 223 casebooks ... Get more case briefs explained with Quimbee. Quimbee has over 16300 case briefs (and counting) keyed to 223 casebooks ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:56:45.040Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Competitive%20Roofing%20%26%20Construction&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 26% 20Construction&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= 20Roofing% 20% 26% 20Construction&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "Enforcement and Compliance History Online | US EPA",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= 20Roofing% 20% 26% 20Construction&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= 20Roofing% 20% 26% 20Construction&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:56:48.946Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:56:55.096Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:03.268Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Competitive Roofing & Construction",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 28, 2026",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Petition_6.pdf",
+            "title": "[PDF] Petition and Application for Temporary and Permanent Injunctive ...",
+            "snippet": "Bexar County, Texas; Bexar. County Commissioners Court;. Peter Sakai, in his official capacity as. Bexar County Judge; Rebeca Clay-.",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1995/dm0347.pdf",
+            "title": "[PDF] QiXfice of tlyz !&tornep @eneral %btate of fEexae",
+            "snippet": "You have asked whether a school district that chooses to request bids for the purchase of property insurance must comply with the competitive bidding ...",
+            "position": 2
+          },
+          {
+            "link": "https://www2.texasattorneygeneral.gov/opinions/openrecords/50abbott/orl/2011/pdf/or201111667.pdf",
+            "title": "[PDF] August 12,2011 GREG ABBOTT Mr. Humberto Aguilera For San ...",
+            "snippet": "Superior Roofing & Construction Company. 16103 University Oak. San Antonio, Texas 78249. Mr. Claude Elliot. Topside Contracting. 703 Cupples. San Antonio, Texas ...",
+            "position": 3
+          },
+          {
+            "date": "Mar 8, 2022",
+            "link": "https://www2.texasattorneygeneral.gov/opinions/openrecords/51paxton/orl/2022/pdf/or202206868.pdf",
+            "title": "[PDF] KEN PAXTON",
+            "snippet": "The Dallas Independent School District (the “district”) received a request for information pertaining to five specified request for ...",
+            "position": 4
+          },
+          {
+            "link": "https://www2.texasattorneygeneral.gov/opinions/openrecords/50abbott/orl/2010/pdf/or201012174.pdf",
+            "title": "[PDF] GREG ABBOTT August 11,2010 Mr. Miguel A. Saldafia Walsh ...",
+            "snippet": "Bougambilias Construction, L.L.C.; Jearel Adams Construction, Inc.; Owen Roofing;. SAMCOR; and United Roofing & Sheetmetal, Inc. Accordingly, you state, and ...",
+            "position": 5
+          },
+          {
+            "link": "https://www2.texasattorneygeneral.gov/opinions/openrecords/49cornyn/orl/2000/htm/or200004755.htm",
+            "title": "Cornyn Open Records Letter Ruling <P>December 19, 2000",
+            "snippet": "Dear Ms. Herrmann: You ask whether certain information is subject to required public disclosure under chapter 552 of the Government Code. Your request was ...",
+            "position": 6
+          },
+          {
+            "link": "https://www2.texasattorneygeneral.gov/opinions/openrecords/50abbott/orl/2014/pdf/or201411958.pdf",
+            "title": "[PDF] July 11, 2014 Mr. R. Brooks Moore Managing Counsel, Governance ...",
+            "snippet": "Texas A&M University (the \"university\") received a request for nine categories of information pertaining to roof replacement projects at the university.",
+            "position": 7
+          },
+          {
+            "date": "Mar 22, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/files/Google%20Motion%20to%20Dismiss.pdf",
+            "title": "[PDF] Case 1:21-md-03010-PKC Document 264 Filed 03/22/22 Page 1 of 70",
+            "snippet": "When an innovation called header bidding began counteracting the effects of Google's anticompetitive conduct in the ad server and exchange ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1992/dm0113.pdf",
+            "title": "[PDF] @Rice of toe !ZUtornep @enera &ate of P5exae - Texas Attorney ...",
+            "snippet": "may not condition the award of a construction contract subject to competitive bidding on the basis of the four additional criteria described above. We begin ...",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:04.271Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller of Public Accounts",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Comptroller.Texas.Gov is the website for the Texas Comptroller of Public Accounts.",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://www.sos.state.tx.us/search.shtml?dropXSL=&pr=default&prox=page&rorder=500&rprox=500&rdfreq=500&rwfreq=500&rlead=500&sufs=0&order=r&rdepth=0&query=CERTIFICATE+OF+ACCOUNT+STATUS",
+            "title": "Current Search Results - the Texas Secretary of State",
+            "snippet": "If you've been asked to obtain a “certificate of good standing,” the first step is to determine what type of certificate is being requested.",
+            "position": 4,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 5
+          },
+          {
+            "link": "https://comptroller.texas.gov/taxes/franchise/coas-instructions.php",
+            "title": "Franchise Tax Account Status",
+            "snippet": "Use our online search to find a taxpayer's Franchise Tax Account Status. The \"Franchise Tax Account Status,\" previously referred to as \"Good Standing,\" ...",
+            "position": 6,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Franchise Search Results. 心. Franchise Tax Account Status. As of 09/13/2021 14:10:44 ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 7
+          },
+          {
+            "date": "Jan 10, 2022",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=25587&ItemID=16931",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 01/10/2022 09:59:31.",
+            "position": 8
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:57:05.653Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Competitive Roofing & Construction",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:07.024Z",
+      "data": {
+        "query": "site:dallascounty.org Competitive Roofing & Construction civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 12, 2022",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet%202026-009-7094.pdf",
+            "title": "[PDF] Notice - Dallas County",
+            "snippet": "Location. Dallas County, Texas. Job Location. Health and Human Services Building,. 2377 North Stemmons Freeway Dallas, Texas United States ...",
+            "position": 1
+          },
+          {
+            "date": "Sep 20, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/Purchasing-Manual-Revised-2022.pdf",
+            "title": "[PDF] DALLAS COUNTY PURCHASING MANUAL",
+            "snippet": "This document is intended to be a general guideline for Dallas County employees addressing purchasing requirements and general operating ...",
+            "position": 2
+          },
+          {
+            "date": "Nov 20, 2023",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/human-resources/chapters82-86/Chapter86-DallasCountyCode-11202023.pdf",
+            "title": "[PDF] The Dallas County Administrative Code contains the employment ...",
+            "snippet": "The Dallas County Administrative Code contains the employment policies and procedures for Dallas County. It is not to be.",
+            "position": 3
+          },
+          {
+            "date": "Oct 4, 2023",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2024/FY2024-Adopted-Budget.pdf",
+            "title": "[PDF] Dallas County FY2024 Budget Adoption",
+            "snippet": "Be it resolved and ordered that the Dallas County Commissioners Court does hereby adopt the. FY2024 proposed budget for Dallas County for ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2004/FY04approvedbudgetfulltext.pdf",
+            "title": "[PDF] APPROVED BUDGET - Dallas County",
+            "snippet": "Texas county government is generally an extension of state government, focusing on the judicial system, health and welfare service delivery, law enforcement ...",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:08.262Z",
+      "data": {
+        "query": "site:collincountytx.gov Competitive Roofing & Construction",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Apr 27, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210426_2626/50130_Bid%20Packet_2021-202.pdf",
+            "title": "[PDF] Construction, Roof Replacement, Collin County 900 Building ...",
+            "snippet": "Representatives of the Contractor and roofing subcontractor shall meet with Collin County. Project Administrator, Collin County representatives ...",
+            "position": 1
+          },
+          {
+            "date": "Nov 21, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200210_2440/47963_16154_Home%20Depot%20USA%2C%20Inc.%20DBA%20Home%20Depot%20Pro%20Inst._11-21-19.pdf",
+            "title": "[PDF] serial 16154 rfp maintenance, repair, operating supplies, industrial ...",
+            "snippet": "This insurance shall include interests of COUNTY, CONTRACTOR, and all subcontractors and sub‐subcontractors in the work during the life of the ...",
+            "position": 2
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250915_3134/58685_964%20-%2058685.pdf",
+            "title": "[PDF] On Monday, August 11, 2025, the Commissioners Court of Collin ...",
+            "snippet": "Al-58491 Emergency Services for Roofing Repairs and Maintenance (Coop Contract No. 2025-338) to. RL National Roofing Partners, LLC d/b/a K-Post Company ...",
+            "position": 3
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/print_all.cfm?seq=3164&reloaded=true&id=",
+            "title": "Agenda - Collin County",
+            "snippet": "Emergency Services for Roofing Repairs and Maintenance (Coop Contract No. 2025-338) to RL National Roofing Partners, LLC d/b/a K-Post Company through Omnia ...",
+            "position": 4
+          },
+          {
+            "date": "May 13, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250512_3089/57972_Solicitation%20Packet-IFB%202025-081.pdf",
+            "title": "[PDF] Collin County, TX INVITATION FOR BID 2025-081 COLLIN ...",
+            "snippet": "SCOPE OF WORK INCLUDES all materials, labor, equipment and services to produce or be incorporated in such construction.",
+            "position": 5
+          },
+          {
+            "date": "Jan 14, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250113_3042/57293_2025-002%20Bid%20packet%20debris_removal_emergency_work-2024-12-19-14-58-25.pdf",
+            "title": "[PDF] Collin County, TX REQUEST FOR PROPOSAL 2025-002 DEBRIS ...",
+            "snippet": "INTRODUCTION. 2. SPECIAL CONDITIONS AND SCOPE OF WORK. 3. INSURANCE REQUIREMENTS. 4. EVALUATION CRITERIA AND SCORING.",
+            "position": 6
+          },
+          {
+            "date": "Nov 1, 2023",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240122_2910/55299_Addendum%20No.%206%20Packet.pdf",
+            "title": "[PDF] COLLIN COUNTY",
+            "snippet": "... construction on the construction project to comply with the project labor agreement;. (2) allow the offeror and all subcontractors to compete ...",
+            "position": 7
+          },
+          {
+            "date": "Jul 28, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250728_3116/58408_TEFRA%20Certificate%20Minutes.pdf",
+            "title": "[PDF] I, the undersigned, hereby certify in connection with ... - Collin County",
+            "snippet": "Competitive Sealed. Proposal(s) will be re- ceived via the City of. Dallas' solicitation website at https://dal lascityhall.bonfirehub. com ...",
+            "position": 8
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/print_agenda.cfm?seq=3164&reloaded=true&id=",
+            "title": "Printed Agenda",
+            "snippet": "Professional Services, Waterproofing and Roofing Consultant (Contract No. 2023-324) with Drytec Moisture Protection Technology Consultants, Inc. to extend the ...",
+            "position": 9
+          },
+          {
+            "date": "Feb 5, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240205_2912/55388_Pages%20from%20ProjMan-Vol1of2-CollinCountyHC%2CP%2CMEFacilities_CSP%20Full%2001.24.pdf",
+            "title": "[PDF] Collin County Healthcare, Parking, and Medical Examiner Facilities ...",
+            "snippet": "Polyvinyl-Chloride (PVC) Roofing ... and Delivery Procedures for Construction Projects, Subchapter D, Competitive Sealed Proposal Method.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:09.625Z",
+      "data": {
+        "query": "site:dentoncounty.gov Competitive Roofing & Construction",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 2, 2019",
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/975/Order-Transferring-Cases-from-the-16th-Judicial-District-Court-to-the-462nd-Judicial-District-Court-PDF",
+            "title": "[PDF] Order Transferring Cases from the 16th Judicial District Court to the ...",
+            "snippet": "Roofing, MK Custom Roofing, Inc.,. Aruna J. Patel, Jayesh R. Patel, Beazer. Homes, Beazer Homes Texas, L. P.,. Beazer Homes USA, Inc., Beazer.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/461/Texas-State-Fireworks-Rules-PDF",
+            "title": "[PDF] Texas Occupations Code Chapter 2154 Regulation of Fireworks ...",
+            "snippet": "(a) The commissioner may not adopt rules restricting advertising or competitive bidding by a license or permit holder under this chapter except to prohibit ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:13.605Z",
+      "data": "Best Roofing Company in Coppell TX Search this site Embedded Files Skip to main content Skip to navigation Best Roofing Company in Coppell TX Home Services About Testimonials Contact Best Roofing Company in Coppell TX Home Services About Testimonials Contact More Home Services About Testimonials Contact COMPETITIVE ROOFING & CONSTRUCTION Coppell TX Roof Repairs & Replacements You Can Trust Full-Service Roofing & General Contracting You Can Count On FREE INSPECTIONS • INSURED • A+ BBB Accredited Business CALL US TODAY: 817-454-2113 SERVICES STORM DAMAGE INSPECTIONS MAJOR WEATHER EVENTS HIT DFW EVERY YEAR. WE OFFER FREE INSPECTIONS TO DETERMINE IF YOUR HOME HAS BEEN COMPROMISED. ROOF REPLACEMENTS OUR ROOFING EXPERTS ARE DEDICATED TO QUALITY WORKMANSHIP AND USE ONLY THE BEST ROOFING MATERIALS. WE WILL TREAT YOUR HOME AS IF IT'S OUR OWN ! ROOF REPAIRS OUR ROOFING EXPERTS WILL COMPLETE THE NECESSARY REPAIRS TO PROTECT YOUR HOME FROM THE ELEMENTS. GUTTERS GUTTERS & GUTTER GUARDS FENCES NEW FENCE BUILDS & FENCE REPAIRS PATIOS & PERGOLAS OUTDOOR LIVING SERVING COPPELL TX AND THE DFW METROPLEX CALL US TODAY: 817-454-2113 LOCATION 309 CLEAR HAVEN COPPELL, TX 75019 SERVING COPPELL TX AND THE DFW METROPLEX BUSINESS HOURS MONDAY - S ATURDAY 8 AM - 6 PM SUNDAY - CLOSED Copyright © 202 6 Competitive Roofing & Construction. All Rights Reserved. Page updated Google Sites Report abuse"
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:18.472Z",
+      "data": {
+        "name": "Competitive Roofing & Construction",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 454-2113",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/coppell/profile/roofing-contractors/competitive-roofing-construction-0875-91346998",
+        "review_count": null,
+        "founding_date": "01/06/2010",
+        "complaint_count": null,
+        "accredited_since": "10/14/2024",
+        "years_in_business": 16,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:28.755Z",
+      "data": {
+        "name": "Competitive Roofing & Construction",
+        "found": true,
+        "rating": 5,
+        "source": "serpapi",
+        "address": "309 Clear Haven, Coppell, TX 75019",
+        "data_id": "0x864c2f982365e1bb:0xd15beb0b8bb30f02",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 18,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "a month ago",
+            "text": "Craig and his team were professional, responsive, and thorough in repairing roof damage from recent windstorms. The quality of their work was excellent. I’ve already recommended Competitive Roofing & Construction and will gladly continue to do so.",
+            "author": "Roy Wood",
+            "rating": 5
+          },
+          {
+            "date": "10 months ago",
+            "text": "5 Stars – Highly Recommend!\n\nCraig and his team at Competitive Roofing & Construction are outstanding! He is incredibly trustworthy, reliable, and offers very reasonable pricing. After the recent storm ripped several shingles off our roof, Craig responded quickly—knowing rain was on the way—and was able to fix everything on short notice to prevent any potential leaks.\n\nWhat really stood out was how thorough and patient he was throughout the entire process. He walked us through the details, took the time to explain everything clearly, and even worked directly with our insurance adjuster to make sure everything was handled smoothly.\n\nI strongly recommend Craig and his company for any roofing needs. You’ll be in good hands!",
+            "author": "Ray Gun",
+            "rating": 5
+          },
+          {
+            "date": "9 months ago",
+            "text": "I had a great experience with Competitive Roofing when I asked them to inspect and repair a leak around my water heater exhaust. Craig's crew quickly identified the issue and were able to repair it the same day at a fair price. They even matched the shingles so well that I can barely tell any work was done! I’ll definitely be recommending them to friends and family for any future roofing needs.",
+            "author": "Thomas Morgan",
+            "rating": 5
+          },
+          {
+            "date": "9 months ago",
+            "text": "Thanks guys from Competitive Roofing for taking good care of our replacement pergola. They suggested improvements to make it last longer in the future. Also painted the deck",
+            "author": "Chad Pursley",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "Craig has been to my house three times. The first time was with a different company but the last two times was with his company that that he runs now. I needed a new roof wind turbine installed and he provided me a reasonable quote. I knew other companies can’t beat his rate so I didn’t bother getting quotes from other companies. He and his employee came out and got it installed in a little over an hour. From the street, it looked perfect aligned and was spinning. He won’t upsale you or sell you anything that isn’t needed. If you want an honest company that does good work and won’t rip you off, call Competitive Roofing. No. I get no compensation from writing this review.",
+            "author": "H Ton",
+            "rating": 5
+          },
+          {
+            "date": "10 months ago",
+            "text": "Craig & team were responsive, professional and thorough with their work to replace several (more than I knew about) roofing tiles that we lost during the recent windstorms.  I've already recommended Competitive Roofing & Construction to friends and will continue to do so.  This is a great, local company!",
+            "author": "Andrew Chambers",
+            "rating": 5
+          },
+          {
+            "date": "11 months ago",
+            "text": "Craig and his team came out to do a same day roof inspection after a huge storm. Turns out there was some damage but thankfully it was minimal.  It was repaired quickly and at a reasonable price. I appreciate Craig’s honesty and transparency, which you don’t see often. Communication was great! I would definitely consider CRC again in the future!  Thanks again!",
+            "author": "Richard Quach",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Craig was real friendly and helpful, did a wonderful job, and had very reasonable prices. Highly recommend!",
+            "author": "Andrew Sikes",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "After a recent hail storm we were worried about damage to our roof.  We had a number of “storm chasers” knock on our door but avoided all of them.\nWhen I contacted Craig about an inspection and possibly replacing our roof, he was very quick to respond.  He called me to discuss my concerns in detail and quickly arranged for someone to come look at our roof.  His team member arrived and introduced himself and I’m glad he did or we never would have known he was here.  He was so quiet we didn’t hear him on the roof.  Craig called within minutes to explain that our roof did not need to be replaced and was in good shape.  He even explained the type of shingles we have.\nWe great appreciated Craig’s honesty and the time he took to explain how to go about a replacement in the future if necessary.  I have already recommended Craig and his team to my family in the area and would recommend them to anyone else in need of a roofer.",
+            "author": "Deanna Webb",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Craig and his team are fantastic!\nWe were on a time crunch and worried about getting our roof done before the house closed.\nCraig was openly communicating with me as we went through the process of trying to get our insurance claim.\nHe got us on the schedule very quickly and they were able to knock everything out before we closed.\nHe is extremely professional and very great to work with!\nI would highly recommend him to anyone who is needing any work done!",
+            "author": "Jenni Kiggins",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "So happy I found CRC and Craig. He was able to get someone out same day to check the damage and give a quote, and on top of that was able to repair it for under the other quotes I was given (I had other people saying we should go through insurance and replace the entire roof). They were out early the next morning and finished the repair in about an hour. Craig and his team were professional and glad to provide more information when I had questions about things the other roofers had said. 11 out of 10. Will keep them on speed dial for any other issues. Thanks Craig!",
+            "author": "Carter Bailey",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "We had a leak by a chimney that caused damage to our drywall and mantle. Craig’s crew were very professional. I received pictures before the work, and also the steps of the work completed. They went above and beyond to ensure my leak was fixed. I have not had a roofer before that was as thorough. I highly recommend Competitive Roofing and Construction!",
+            "author": "Mary Head",
+            "rating": 5
+          },
+          {
+            "date": "6 months ago",
+            "text": "Craig was prompt and competed the job in a timely manner! Great service! Thank you",
+            "author": "Josh and Karen Coe",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Outstanding service and product!  Craig is very professional and takes pride in his work.  We recommend Competitive Roofing & Construction to anyone needing work on their roof.  They also did our guttering!",
+            "author": "Jackie Townsend",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Hands down, the best roofing company I have used to date.  They were fast, worked with my insurance and made them pay way more than they offered at first to make sure the job was done right.  I have replaced my roof a few times over the years and this was the best company I have ever used. Always on time and made sure all work was completed fully.  I will always recommend them to everyone from now on!",
+            "author": "Brendan Haller",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "My wife and I needed someone to replace our roof due to hail damage. With so many roofing companies out there, you want to find the right person for the job. Thankfully we were referred to Competitive Roofing by our neighbor and we couldn't be happier with our choice. Always available when needed, job was completed the right way and very friendly. My wife and I both are 100% satisfied.",
+            "author": "Clint Connally",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "Craig responded quickly to my phone message. He addressed the issues we had same day and did great work!!",
+            "author": "Brian Nelson",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Craig helped us with repairs on our roof. He was quick and fair priced. we will be using him again if we need for any roofing needs.",
+            "author": "chloe B",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": null,
+        "pages_fetched": 3,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "default",
+        "escalation_reason": "NO_REVIEWS",
+        "location_searched": "Dallas, TX",
+        "search_confidence": 0.7249999999999999,
+        "serper_fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:57:50.442Z",
+      "data": {
+        "name": "Competitive Roofing & Construction",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 454-2113",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "309 Clear Haven, Coppell, TX 75019",
+        "reviews": [],
+        "website": "https://www.competitiveroofingdfw.com/",
+        "maps_url": "https://www.google.com/maps/search/Competitive%20Roofing%20%26%20Construction%20Coppell%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:58:25.259Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T14:58:05Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Competitive%20Roofing%20%26%20Construction%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=_d6RadKIAb2sptQP0tXtOA\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T14:58:15Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Competitive%20Roofing%20%26%20Construction%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=B9-RaYqLAciGptQPh7qY4Qc\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Competitive Roofing & Construction",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T14:59:54.789Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Competitive Roofing & Construction",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Competitive Roofing & Construction",
+        "searched_at": "2026-02-15T14:58:25.390546",
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-15T14:59:55.297Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "COMPETITIVE ROOFING & CONSTRUCTION INC.",
+        "taxpayer_number": "32040968342"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-15T14:59:55.304Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:00:03.222Z",
+      "data": {
+        "cost": 0.0006231400000000001,
+        "summary": "Reviews appear highly authentic with specific details, varied writing styles, and consistent high ratings. The low Google review count is a minor concern but content suggests genuine customer experiences. No complaint patterns detected.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-15T15:00:03.222Z",
+        "fake_signals": [
+          "Low review volume on Google (18) for a 16-year-old company",
+          "All sampled Google reviews are 5-star"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 4.8,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "MEDIUM",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Repairs completed quickly to prevent leaks",
+            "Quality work with matched shingles",
+            "Follow-up work done for same customer"
+          ]
+        },
+        "authentic_signals": [
+          "Specific project details (windstorm repairs, water heater exhaust, pergola, roof turbine)",
+          "Varied writing styles and lengths",
+          "Mention of specific crew/owner (Craig)",
+          "Reasonable timelines and pricing mentioned",
+          "Mix of recent and older reviews (2 years to 1 month)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are consistently high across Google (5.0), Yelp (4.8), and BBB (A+). No major discrepancies."
+      }
+    }
+  }
+}

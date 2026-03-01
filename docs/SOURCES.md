@@ -1,6 +1,6 @@
 # Contractor Auditor - Data Sources Reference
 
-**Updated:** 2026-01-09
+**Updated:** 2026-02-18
 
 ---
 
@@ -17,6 +17,8 @@
 
 **BANNED:** `GOOGLE_PLACES_API_KEY` - caused $300 overcharge. Use Playwright scraping instead.
 
+**Python scrapers:** Collection uses `venv/bin/python` by default if present. Override with `PYTHON_SCRAPER` env var.
+
 ---
 
 ## Tier 1: Reviews (24h cache)
@@ -25,9 +27,14 @@
 |--------|--------|------|--------|
 | Google Maps (local) | Serper API | `collection_service.js` | Working |
 | Google Maps (HQ) | Serper API | `collection_service.js` | Working |
-| BBB | Python httpx | `scrapers/bbb.py` | Working |
-| Yelp | Yahoo Search bypass | `scrapers/yelp.py` | Working |
-| Trustpilot | Direct URL check | `scrapers/trustpilot.py` | Working |
+| Google Maps (listed address) | Playwright scraper | `scrapers/google_maps.py` | Working (venv python) |
+| Google Maps reviews (tiered) | Serper → SerpAPI fallback | `scrapers/google_reviews_tiered.py` | Working |
+| Google Reviews remediation (primary lane) | DataForSEO Business Data API | `services/dataforseo_service.js`, `services/collection_service.js` | Working |
+| BBB (primary) | Serper API + parser | `collection_service.js` | Working |
+| BBB (detail fallback) | Python + BeautifulSoup | `scrapers/bbb.py` | Working (venv python) |
+| Yelp (primary) | Serper API | `collection_service.js` | Working |
+| Yelp (Yahoo fallback) | Playwright scraper | `scrapers/yelp.py` | Working (venv python) |
+| Trustpilot (primary) | Direct URL check (Python) | `scrapers/trustpilot.py` | Working (venv python) |
 | Angi | Serper rating extraction | `collection_service.js` | Working |
 | Houzz | Serper rating extraction | `collection_service.js` | Working |
 
@@ -75,19 +82,28 @@
 | Source | Method | Status |
 |--------|--------|--------|
 | TX Franchise Tax | API | Working |
-| TX AG Complaints | Puppeteer | Unknown |
-| TX SOS Search | Puppeteer | Unknown |
+| TX AG Complaints | Serper API | Working |
+| TX SOS Search | Serper API | Working |
+| OpenCorporates | API (no key) | Working |
 | TDLR | Removed | N/A - unreliable |
 
 ---
 
 ## Tier 7: Courts (7d cache)
 
+**Launch focus counties (DFW):** Denton, Collin, Tarrant, Dallas
+
 | Source | Method | File | Status |
 |--------|--------|------|--------|
-| Tarrant County Liens | Playwright | `scrapers/county_liens/tarrant.py` | Working (48 records) |
-| Collin County Liens | Playwright | `scrapers/county_liens/collin.py` | Working (50 records) |
-| Dallas County Liens | Playwright | `scrapers/county_liens/dallas.py` | Working (942 records) |
+| Court records (generic) | Playwright (JS) | `scrapers/court_scraper.js` | Working |
+| Tarrant Court | Serper API | `collection_service.js` | Working |
+| Dallas Court | Serper API | `collection_service.js` | Working |
+| Collin Court | Serper API | `collection_service.js` | Working |
+| Denton Court | Serper API | `collection_service.js` | Working |
+| Tarrant County Liens | Playwright | `scrapers/county_liens/tarrant.py` | Working (venv python) |
+| Collin County Liens | Playwright | `scrapers/county_liens/collin.py` | Working (venv python) |
+| Dallas County Liens | Playwright | `scrapers/county_liens/dallas.py` | Working (venv python) |
+| Denton County Liens | Playwright | `scrapers/county_liens/denton.py` | Working (venv python) |
 | CourtListener | API | `services/api_sources.js` | Working (federal only) |
 
 **Note:** County portals at `*.tx.publicsearch.us` (updated Dec 2025)
@@ -108,8 +124,10 @@
 
 | Scraper | File | Method | Recommendation |
 |---------|------|--------|----------------|
+| dataforseo_service.js | `services/` | DataForSEO Google Reviews API | **Primary remediation lane** |
 | google_reviews_serper.py | `scrapers/` | Serper /places + /reviews | **Recommended** - 100% success |
 | google_reviews_tiered.py | `scrapers/` | Serper → SerpAPI fallback | Good backup |
+| apify_service.js | `services/` | Apify Google Maps Reviews Scraper | Fallback lane (guarded) |
 | google_maps_browseruse.py | `scrapers/` | browser-use + Gemini | Slower, robust |
 | google_maps_claude_vision.py | `scrapers/` | Playwright + Claude Vision | Most robust, expensive |
 | outscraper_reviews.py | `scrapers/` | Outscraper API | $3/1000 reviews |

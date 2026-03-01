@@ -1,0 +1,579 @@
+{
+  "contractor_id": 522,
+  "business_name": "Lasso Works Cedar",
+  "city": "Denton",
+  "state": "TX",
+  "verticals": [
+    "pool",
+    "patio-covers",
+    "motorized-shades"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T15:51:56.587Z",
+  "sources": {
+    "osha": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:05:12.364Z",
+      "data": {
+        "query": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=Lasso%20Works%20Cedar&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.osha.gov/ords/imis/establishment.html",
+            "title": "Establishment Search | Occupational Safety and Health ... - OSHA",
+            "snippet": "Use our establishment search to locate OSHA enforcement inspections by establishment name. You can also search by a specific inspection number or inspections ...",
+            "position": 1,
+            "sitelinks": [
+              {
+                "link": "https://www.osha.gov/help/establishment-search",
+                "title": "Establishment Search Help"
+              },
+              {
+                "link": "https://www.osha.gov/ords/imis/inspectionnr.html",
+                "title": "Inspection Information Search"
+              },
+              {
+                "link": "https://www.osha.gov/help/search-basics",
+                "title": "Search Basics"
+              }
+            ],
+            "attributes": {
+              "Missing": "p_logger= Lasso% 20Works% 20Cedar&State="
+            }
+          },
+          {
+            "link": "http://www.osha.gov/help/establishment-search",
+            "title": "Establishment Search Help | Occupational Safety and ... - OSHA",
+            "snippet": "The Establishment Search page enables searching the OSHA Integrated Management Information System (IMIS) enforcement database by establishment name.",
+            "position": 2,
+            "attributes": {
+              "Missing": "p_logger= Lasso% 20Works% 20Cedar&State= TX"
+            }
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/inspectionnr.html",
+            "title": "Inspection Information Search | Occupational Safety and ... - OSHA",
+            "snippet": "Use this Inspection Information Search to search for an inspection when the Activity NRs, are known. Enter Nrs below.",
+            "position": 3,
+            "attributes": {
+              "Missing": "p_logger= 1&establishment= Lasso% 20Works% 20Cedar&State= TX"
+            }
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search",
+            "title": "Industry Search Results Page | Occupational Safety and Health ...",
+            "snippet": "Industry Search Results. Note: Inspections which are known to be incomplete will have the identifying Activity Nr shown in italic.",
+            "position": 4,
+            "attributes": {
+              "Missing": "p_logger= Lasso% 20Cedar&State="
+            }
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/establishment.search?establishment=baker",
+            "title": "Establishment Search Results | Occupational Safety and ... - OSHA",
+            "snippet": "Establishment Search Results. Note: Inspections which are known to be incomplete will have the identifying Activity Nr shown in italic.",
+            "position": 5,
+            "attributes": {
+              "Missing": "p_logger= Lasso% 20Works% 20Cedar&State="
+            }
+          },
+          {
+            "link": "http://www.osha.gov/",
+            "title": "OSHA",
+            "snippet": "Establishment Search · Fatality Reports · File a Complaint · Freedom of Information Act (FOIA) · Publications · Safety and Health Topics Pages · Videos.",
+            "position": 6,
+            "sitelinks": [
+              {
+                "link": "https://www.osha.gov/laws-regs",
+                "title": "Laws and Regulations"
+              },
+              {
+                "link": "https://www.osha.gov/aboutosha",
+                "title": "About OSHA"
+              },
+              {
+                "link": "https://www.osha.gov/contactus",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://www.osha.gov/training",
+                "title": "Training"
+              }
+            ],
+            "attributes": {
+              "Missing": "ords/ imis/ p_logger= 1&establishment= Lasso% 20Cedar&State="
+            }
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:03:07.712Z",
+      "data": {
+        "email": null,
+        "error": null,
+        "source": null
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:03:13.471Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "accredited": false,
+        "raw_matches": [],
+        "complaint_count": null,
+        "locations_count": 0,
+        "years_in_business": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:03:20.439Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "status": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:03:14.654Z",
+      "data": {
+        "query": "site:yelp.com \"Lasso Works Cedar\" \"Denton, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/lasso-works-cedar-denton",
+            "title": "LASSO WORKS CEDAR - Updated December 2025",
+            "rating": 5,
+            "snippet": "More info about Lasso Works Cedar ; 9074 Teasley Ln. Denton, TX 76210. Directions ; (940) 395-1560. Call Now ; Visit Website. http://www.lassoworkscedar.com.",
+            "position": 1,
+            "ratingCount": 1
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=patiocoverings&find_loc=Denton%2C+TX",
+            "title": "THE BEST 10 PATIO COVERINGS in DENTON, TX",
+            "rating": 4.3,
+            "snippet": "... Lasso Works Cedar, Griffin Fence And Construction, Texas Patios & Concrete ... Denton, TX · Personalized Gifts in Denton, TX. Filters. Yelp · Home Services ...",
+            "position": 2,
+            "ratingCount": 939
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=masonry_concrete&find_loc=Lewisville%2C+TX&start=80",
+            "title": "THE BEST 10 MASONRY/CONCRETE in LEWISVILLE, TX",
+            "snippet": "... Lasso Works Cedar - Masonry/Concrete near me ... Denton, TX 76210. (940) 395-1560. On their website ... Lasso Works Cedar specializes in custom outdoor ...",
+            "position": 3
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Metal+Carports&find_loc=Corinth%2C+TX",
+            "title": "TOP 10 BEST Metal Carports near Corinth, TX - Updated 2025",
+            "snippet": "... Lasso Works Cedar, Capital Welding Works ... 812 Haynes St, Denton, TX 76201. Specializing in ... 705 Juno Ln, Denton, TX 76209. I'm Very Reliable And ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Patio&find_loc=Lantana%2C+TX",
+            "title": "TOP 10 BEST Patio near Lantana, TX - Updated 2025",
+            "snippet": "... Lasso Works Cedar, Over the Top Window Fashions ... Denton, TX 76201. This is a placeholder. On their ... Denton, TX 76210. (940) 395-1560. This is a ...",
+            "position": 5
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Patio+Coverings&find_loc=Flower+Mound%2C+TX&start=60",
+            "title": "TOP 10 BEST Patio Coverings in Flower Mound, TX",
+            "snippet": "... Denton, TX 76209. I'm Very Reliable And Take My ... Lasso Works Cedar - Patio Coverings near me ... Denton, TX 76210. (940) 395-1560. We are absolutely ...",
+            "position": 6
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Rock+and+Gravel&find_loc=Corinth%2C+TX",
+            "title": "TOP 10 BEST Rock and Gravel near Corinth, TX",
+            "rating": 4.3,
+            "snippet": "... Lasso Works Cedar, AtticFoil Radiant Barrier, Montoya Outdoor Solutions ... Denton, TX 76210. (682) 716-7788. I feel like my lawn was treated with ...",
+            "position": 7,
+            "ratingCount": 332
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Patio&find_loc=Bartonville%2C+TX",
+            "title": "TOP 10 BEST Patio near Bartonville, TX - Updated 2025",
+            "snippet": "... Lasso Works Cedar, Bridlewood Bar & Grill ... Denton, TX 76210. (940) 395-1560. This is a ... Lasso Works Cedar specializes in custom outdoor patio ...",
+            "position": 8
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:03:26.377Z",
+      "data": {
+        "found": true,
+        "rating": 5,
+        "status": null,
+        "review_count": 27,
+        "business_name": "Lasso Works Cedar"
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:03:31.732Z",
+      "data": "Search | Angi ___ Pro Directory House House Plumbing Roofing Heating & A/C Handymen Electrical Housecleaning Kitchen & Bath Interior Painting Yard Lawn & Yard Landscaping Lawn & Yard Work Tree Service Fencing Lawn Fertilization Deck Maintenance Mulch & Topsoil Lawn Irrigation Health Health & Wellness Dentistry Family Medicine Internal Medicine Pediatrics Obstetrics & Gynecology Optometry Dermatology Chiropractic Care More Auto Service Auto Body Work Classic Cars Veterinarians Animal Boarding Moving Hair Salons Appliance Repair Search Results: Distance: Any 0.5 Miles 1 Mile 5 Miles 10 Miles 25 Miles 50 Miles Any Begins With: All 0 1 2 3 4 5 6 7 8 9 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Angi Certified Super Service Award Offers Discount Reset All Filters pseudo text pseudo text 5.0 ( 123 ) pseudo text pseudo text pseudo text pseudo text Request a Quote Offers Coupon Serves Super Service Award pseudo text pseudo text 5.0 ( 123 ) pseudo text pseudo text pseudo text pseudo text Request a Quote Offers Coupon Serves Super Service Award 3 5.0 ( 123 ) pseudo text Angi Certified Super Service Award Offers Coupon pseudo text pseudo text pseudo text pseudo text Angi Certified Super Service Award Offers Coupon Request a Quote 5.0 ( 123 ) pseudo text Angi Certified Super Service Award Offers Coupon pseudo text pseudo text pseudo text pseudo text Angi Certified Super Service Award Offers Coupon Request a Quote 5.0 ( 123 ) pseudo text Angi Certified Super Service Award Offers Coupon pseudo text pseudo text pseudo text pseudo text Angi Certified Super Service Award Offers Coupon Request a Quote Helpful Topics What keeps reviews honest? How are companies displayed? What is Angi’s background check policy? New York Houston Chicago Indianapolis Boston Atlanta Cincinnati Los Angeles Dallas Pittsburgh Minneapolis Las Vegas San Antonio Tampa Sign up for free project cost information Sign up Download the app Find local businesses Services near me Register your business Business center Solution center Project cost center FAQs Angi Key membership Financing How it works Who we are Careers Press Economics & research Investor relations Contact us Happiness guarantee Terms of Use Privacy Policy California Privacy Accessibility Tools Sitemap © Copyright 1995- 2025 , Angi. All Rights Reserved. Find Pros for your Project Enter a category and zip code to search for local pros. Search Do Not Sell or Share My Personal Data When you visit our website, we store cookies on your browser to collect information. The information collected might relate to you, your preferences or your device, and is mostly used to make the site work as you expect it to and to provide a more personalized web experience. However, you can choose not to allow certain types of cookies, which may impact your experience of the site and the services we are able to offer. Click on the different category headings to find out more and change our default settings according to your preference. You cannot opt-out of our First Party Strictly Necessary Cookies as they are deployed in order to ensure the proper functioning of our website (such as prompting the cookie banner and remembering your settings, to log into your account, to redirect you when you log out, etc.). For more information about the First and Third Party Cookies used please follow this link. Allow All Manage Consent Preferences Strictly Necessary Cookies Always Active These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Opt Out of Sale of Sharing/Targeted Advertising Opt Out of Sale of Sharing/Targeted Advertising As a California consumer, you have the right to opt-out from the sale or sharing of your personal information at any time across business platform, services, businesses and devices. You can opt-out of the sale and sharing of your personal information by using this toggle switch. As a Virginia, Utah, Colorado and Connecticut consumer, you have the right to opt-out from the sale of your personal data and the processing of your personal data for targeted advertising. You can opt-out of the sale of your personal data and targeted advertising by using this toggle switch. For more information on your rights as a United States consumer see our privacy notice. Performance Cookies Switch Label label These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Social Media Cookies Switch Label label These cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies you may not be able to use or see these sharing tools. Targeting Cookies Switch Label label These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Back Button Cookie List Search Icon Filter Icon Clear checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Confirm My Choices"
+    },
+    "houzz": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:03:41.672Z",
+      "data": "Search - Photos & Ideas | Houzz skip to main content Find Pros All Professionals Design Architects & Building Designers Kitchen & Bathroom Designers Interior Designers & Decorators Design-Build Firms Lighting Designers & Suppliers Remodeling Kitchen & Bathroom Remodelers General Contractors Home Builders Tile & Stone Contractors Countertop Contractors Home Additions & Extension Companies Stair & Railing Contractors Home Remodeling Companies Renovation Carpenters Custom Cabinet Companies Flooring Contractors Custom Closet Designers Basement Remodeling Companies Glass & Shower Door Contractors General Contractors Outdoor Landscape Architects & Designers Landscape Contractors Deck & Patio Builders Fence Contractors Driveway & Paving Contractors Swimming Pool Builders Stone & Concrete Contractors ADU Contractors Services Painters Roofing & Gutter Contractors Professional Organizers Home Stagers Window Contractors Furniture Stores More Cabinet Repair Companies Home Restoration Companies Bathroom Remodelers Outdoor Lighting Specialists Modular Home Contractors Equal Housing Opportunity NMLS 1717824 Ready to renovate, but need financing? Learn More Paid Ad Disclosures Software Project Planning 3D Floor Plans Takeoffs Selections CRM Mood Boards Who We Serve New Construction Remodeling Interior Design Architecture All Industries Financial Management Estimates Proposals Change Orders Invoicing Online Payments Financial Reports Resources Pro Success Stories Blog Help Center Training Webinars Project Management Schedule Task Management Daily Logs Time & Expense Tracking Client Dashboard AI Tools Integrations Mobile App Expert Support All-In-One Platform for Construction and Design See Pricing Schedule a Demo Talk to Sales: (888) 316-4595 My builder uses Houzz Pro to plan the timeline and give detailed estimates and daily updates with photos of progress, and provide invoices at pre-agreed key points in the build. This made the whole experience much more efficient and stress-free. Steve W. Client of Cribbs Construction Learn More Ideas Kitchen & Dining Kitchen Dining Room Pantry Great Room Breakfast Nook Living Living Room Family Room Sunroom Bed & Bath Bathroom Powder Room Bedroom Storage & Closet Baby & Kids Utility Laundry Garage Mudroom Outdoor Landscape Patio Deck Pool Backyard Porch Exterior Outdoor Kitchen Front Yard Driveway Poolhouse Bar & Wine Home Bar Wine Cellar More Rooms Game Room Home Office Basement Craft Library Gym Popular Design Ideas Kitchen Backsplash Firepit Fireplace Deck Railing Pergola Privacy Fence Small Closet Stories and Guides Popular Stories Renovation Cost Guides Fence Installation Cost Guide Window Installation Cost Guide Discussions Get Advice Design Dilemmas Before & After Houzz TV Houzz Research Equal Housing Opportunity NMLS 1717824 Ready to renovate, but need financing? Learn More Paid Ad Disclosures Shop Furniture Bedroom Furniture Kitchen & Dining Furniture Living Room Furniture Bath Bath Tubs Bathroom Fixtures Bathroom Vanities Bathroom Vanity Mirrors Bathroom Vanity Lighting Home Decor Decorative Accents Mirrors Rugs Living Room Accent Chairs Area Rugs Living Room Tables Sofas and Sectionals Kitchen & Dining Bar Stools Dining Chairs Dining Tables Bedroom Beds Dressers Nightstands Lighting Ceiling Fans Ceiling Lighting Lamps Chandeliers Pendant Lights Wall Lighting Outdoor Fire Pits Outdoor Lighting Patio Furniture Cancel Sign In Join as a Pro History of Houzz Search results for \"Search\" in Home Design Ideas Photos Pros Stories Discussions All Filters (1) Style Contemporary Modern Traditional Mid-Century Modern Farmhouse Transitional Industrial Scandinavian Rustic Coastal Eclectic Southwestern Tropical Craftsman Asian Victorian Mediterranean French Country Shabby-Chic Style Size Compact (602) Medium (2,195) Large (1,844) Expansive (232) Color Red (67) Orange (109) Wood Tones (128) Yellow (69) Green (523) Turquoise (177) Blue (362) Violet (24) Pink (28) Black (541) Gray (954) White (2,141) Beige (1,038) Brown (2,064) $ $$ $$$ $$$$ Refine by: Budget $ (193) $$ (879) $$$ (1,746) $$$$ (574) Sort by: Relevance Relevance Newly Featured All Time Popular Latest Activity 1 - 20 of 10,360 photos \"search\" Item 1 of 1 Save Photo Spanish delight Professional Design Consultants Example of a tuscan wooden metal railing staircase design in Other with tile risers Save Photo Minnesota Mountain Modern City Homes, LLC Inspiration for a mid-sized contemporary kids' white tile and ceramic tile ceramic tile, multicolored floor and single-sink walk-in shower remodel in Minneapolis with flat-panel cabinets, light wood cabinets, a wall-mount toilet, white walls, a drop-in sink, marble countertops, white countertops and a floating vanity Save Photo 2015 Kosair House C3 Studio, LLC Inspiration for a mid-sized transitional galley light wood floor kitchen remodel in Louisville with an undermount sink, white cabinets, stainless steel appliances, an island and recessed-panel cabinets Save Photo Kitchen & Bathroom Remodel- San Francisco Ferguson Bath, Kitchen & Lighting Gallery Small minimalist 3/4 beige tile corner shower photo in San Francisco with an integrated sink, flat-panel cabinets, medium tone wood cabinets, solid surface countertops, a two-piece toilet, beige walls and a hinged shower door Save Photo Farm House Kitchen and Bathroom Renovation NYKB Example of a transitional master white tile gray floor bathroom design in New York with recessed-panel cabinets, gray cabinets, white walls, an undermount sink and a hinged shower door Save Photo Contemporary Kitchen Example of a trendy kitchen design in Miami Save Photo Cliff Road Sophie Metz Design Jonathan Raith Inc. - Builder Sam Oberter - Photography Bedroom - mid-sized transitional master carpeted bedroom idea in Boston with white walls Save Photo Sponsored Dallas, TX Authorized Dealer Le Belle Maison Interiors Inc. Average rating: 5 out of 5 stars 68 Reviews Texas' Upscale Interior Designer & Decorators | 18 x Best of Houzz! Save Photo Contemporary Outdoor Living Area Savvy Design Group Michael Jacob Inspiration for a contemporary backyard concrete patio fountain remodel in St Louis with a roof extension Save Photo Addition for a Suburban Home User Photography: Megan Chaffin Transitional dark wood floor and brown floor laundry room photo in Chicago with a farmhouse sink, shaker cabinets, gray cabinets, beige walls and beige countertops Save Photo Historic Estate Favreau Design Inspiration for a victorian formal living room remodel in San Francisco with blue walls and a standard fireplace Save Photo Coastal Casual User Lori Hamilton Kitchen - coastal kitchen idea in Miami with an island Save Photo Crystal Bay Retreat Alexander Design Group, Inc. Eat-in kitchen - contemporary medium tone wood floor and brown floor eat-in kitchen idea in Minneapolis with an undermount sink, flat-panel cabinets, quartz countertops, white backsplash, an island and white countertops Save Photo BlueBird Ridge Construction LLC Example of a mid-century modern bathroom design in Minneapolis Save Photo Sponsored Dallas-Fort Worth, TX Rachael Elise Design Average rating: 5 out of 5 stars 35 Reviews DFW Based, Personalized Interior Design & Remodeling Firm Save Photo Montana Ski House Brooks and Falotico Associates, Inc. Gordon Gregory Example of a mid-sized mountain style galley slate floor and brown floor enclosed kitchen design in New York with an undermount sink, medium tone wood cabinets, stainless steel countertops, metallic backsplash, shaker cabinets, stainless steel appliances and an island Save Photo Elegant Townhome in Pasadena Charmean Neithart Interiors Erika Bierman Photography www.erikabiermanphotography.com Elegant entry hall photo in Los Angeles with white walls Save Photo McLean, Virginia - Contemporary - Kitchen Design Jennifer Gilmer Kitchen & Bath McLean, Virginia Modern Kitchen design by #JenniferGilmer See more designs on www.gilmerkitchens.com Example of a mid-sized trendy galley dark wood floor eat-in kitchen design in DC Metro with light wood cabinets, metallic backsplash, metal backsplash, stainless steel appliances, an island, an integrated sink, flat-panel cabinets and granite countertops Save Photo Class Romantic Ranch KBG Design Example of a mid-sized transitional single-wall gray floor and porcelain tile dedicated laundry room design in San Francisco with an utility sink, shaker cabinets, white cabinets, white walls, a side-by-side washer/dryer and white countertops Save Photo Coastal Farmhouse Bathroom Nestorations Coastal meets modern farmhouse in this North County bathroom remodel. Example of a transitional bathroom design in San Diego Save Photo Guest Bathroom Remodel (Kekic) Mariano & Co., LLC Inspiration for a small transitional 3/4 white tile and subway tile porcelain tile, single-sink and multicolored floor bathroom remodel in Phoenix with shaker cabinets, blue cabinets, gray walls, an undermount sink, quartz countertops, white countertops and a built-in vanity Save Photo Teenage Girl's Bedroom Hollub Homes Hollub Homes | Interior design by Helene Hollub | Ken Hayden Photography Example of a trendy girl carpeted kids' room design in Miami with white walls 1 1 2 3 4 5 6 7 8 9 Next Page United States Select country United States United Kingdom Australia Deutschland France Россия 日本 Italia España Danmark Sverige Ireland Singapore New Zealand India ABOUT CAREERS MOBILE APPS PROFESSIONALS BUTTONS FOR BRANDS Privacy Terms © 2025 Houzz Inc."
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:05:02.711Z",
+      "data": "Not Found | Indeed.com Skip to main content Home Company reviews Find salaries Sign in Sign in Employers / Post Job 1 new update Home Company reviews Find salaries Employers Create your resume Resume services Change country 🇺🇸 United States Help Start of main content We can't find this page But we can help you find a job Search company Search jobs Need more help? Get support Hiring Lab Career advice Browse jobs Browse companies Salaries Indeed Events Work at Indeed Countries About Help ESG at Indeed © 2025 Indeed Your Privacy Choices Accessibility at Indeed Privacy Center and Ad Choices Terms"
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:05:11.120Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "review_count": null,
+        "salary_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:03:47.450Z",
+      "data": "Trustpilot Search Results Companies Lasso getlasso.co • 90 reviews 3.3 Cedar Tree www.cedartreeinsurance.com • 7.7K reviews 4.6 Lasso lassogear.com 0.0 Rise Works www.riseworks.io • 5.1K reviews 4.5 The Lasso thelasso.com • 8 reviews 4.3 Categories Iron Works The best companies in the category 'Iron Works' Water Works The best companies in the category 'Water Works' Water Works Equipment Supplier The best companies in the category 'Water Works Equipment Supplier' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (487) Lasso getlasso.co 3.3 90 reviews United States Cedar Tree www.cedartreeinsurance.com 4.6 7,666 reviews United Kingdom Lasso lassogear.com 0.0 0 reviews Rise Works www.riseworks.io 4.5 5,107 reviews United States Lasso Inc. lassocheckout.com 3.7 1 review United States The Lasso thelasso.com 4.3 8 reviews United States Protein Works theproteinworks.com 4.7 45,385 reviews Protein Works, PW Campus, 33 Speke Boulevard, Speke, United Kingdom Beauty Works beautyworksonline.com 4.6 7,164 reviews United Kingdom Lasso X lassox.com 4.6 68 reviews Toldbodgade 37B, København K, Denmark Cedar cedar.com 0.0 0 reviews Previous 1 2 3 4 49 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Iron Works Construction & Manufacturing Water Works Utilities Water Works Equipment Supplier Construction & Manufacturing Software Company Electronics & Technology Fence Contractor Construction & Manufacturing Travel Insurance Company Money & Insurance are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2025 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:03:52.831Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:03:56.777Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:04:09.657Z",
+      "data": {
+        "query": "Lasso Works Cedar Denton lawsuit OR complaint",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Oct 30, 2024",
+            "link": "https://www.bbb.org/us/tx/denton/profile/patio-contractor/lasso-works-cedar-0875-91138574/customer-reviews",
+            "title": "Lasso Works Cedar | BBB Reviews | Better Business Bureau",
+            "snippet": "View BBB customer reviews of Lasso Works Cedar. Leave a review and share your experience with the BBB and Lasso Works Cedar.",
+            "position": 1
+          },
+          {
+            "date": "Oct 15, 2025",
+            "link": "https://www.consumerfinance.gov/complaint/",
+            "title": "Submit a complaint | Consumer Financial Protection Bureau",
+            "snippet": "Find information and tools to submit a consumer complaint to the Consumer Financial Protection Bureau.",
+            "position": 2
+          },
+          {
+            "link": "https://www.ftc.gov/media/71268",
+            "title": "File A Complaint | Federal Trade Commission",
+            "snippet": "The official website of the Federal Trade Commission, protecting America’s consumers for over 100 years.",
+            "position": 3
+          },
+          {
+            "link": "https://consumerprotection.texasattorneygeneral.gov/consumercomplaintportal/s/",
+            "title": "Consumer Complaint Portal - Texas Attorney General",
+            "snippet": "Consumer Complaint Portal Welcome to the Texas Attorney General's Consumer Complaint Portal Here you can learn how to file complaints. Click the FAQ link below to learn more about each type of complaint or select 'Start a New Complaint' to get started.",
+            "position": 4
+          },
+          {
+            "link": "https://www.complaintsboard.com/",
+            "title": "Complaints Board - Resolving consumer complaints since 2004",
+            "snippet": "Complaints, reviews and helpful information regarding allegedly unethical companies and bad business practices.",
+            "position": 5
+          },
+          {
+            "date": "Nov 13, 2025",
+            "link": "https://www.usa.gov/company-product-service-complaints",
+            "title": "How to file a complaint about a company’s products or ...",
+            "snippet": "Learn how to file a complaint about a product or service. Or get consumer or legal help to resolve your complaint.",
+            "position": 6
+          },
+          {
+            "link": "https://www.uslegalforms.com/complaints/",
+            "title": "Legal Complaint Forms 2025 | US Legal Forms",
+            "snippet": "Complaint Forms The complaint outlines the alleged facts of the case and the basis for which a legal remedy is sought. If you are looking for a Complaint Letter about a product, service, company or service we offer Complaint Letter Writing Services. Learn More!",
+            "position": 7
+          }
+        ]
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:04:41.241Z",
+      "data": {
+        "query": "Lasso Works Cedar Denton site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 27, 2025",
+            "link": "https://www.fox4news.com/news/tree-paralyzes-dallas-mom-property-owner-works-texas-trees-foundation",
+            "title": "Tree paralyzes Dallas mom, property owner works for Texas ...",
+            "snippet": "A tree falls and paralyzes Dallas mom while driving A Dallas woman was left paralyzed after a large tree belonging to a tree foundation chairman fell on her car.",
+            "position": 1
+          },
+          {
+            "date": "Sep 12, 2025",
+            "link": "https://www.nbcdfw.com/news/local/mom-paralyzed-crushed-tree-sues-dallas-property-owner/3917775/",
+            "title": "Texas mom sues after tree falls on SUV leaving her paralyzed ...",
+            "snippet": "Learn about the legal quest a paralyzed mom is on after a tree fell on her vehicle in a Dallas neighborhood.",
+            "position": 2
+          },
+          {
+            "date": "Sep 15, 2025",
+            "link": "https://www.fox4news.com/news/negligence-alleged-lawsuit-after-tree-falls-car-paralyzing-driver",
+            "title": "Negligence alleged in lawsuit after tree falls on car ...",
+            "snippet": "A lawsuit has been filed against a homeowner, alleging his negligence caused a tree to fall on a car, severely injuring the driver who is now paralyzed.",
+            "position": 3
+          },
+          {
+            "date": "Dec 20, 2024",
+            "link": "https://www.wfaa.com/article/news/local/dallas-county/viral-dallas-christmas-light-display-deloache-avenue-preston-hollow/287-1478edff-c33c-4a39-babb-d8155d752125",
+            "title": "Christmas light display on Deloache Avenue in Dallas goes ...",
+            "snippet": "Dallas police in North Texas have worked on traffic control in the home's Preston Hollow neighborhood on Deloache Avenue.",
+            "position": 4
+          },
+          {
+            "link": "https://www.wfaa.com/local/",
+            "title": "Dallas Local News | Dallas's source for Local News, Sports ...",
+            "snippet": "Dallas local news from WFAA in Dallas, Texas",
+            "position": 5
+          },
+          {
+            "link": "https://www.nbcdfw.com/news/local/",
+            "title": "Local – NBC 5 Dallas-Fort Worth",
+            "snippet": "The latest news from around North Texas.",
+            "position": 6
+          },
+          {
+            "link": "https://www.nbcdfw.com/news/local/texas-news/",
+            "title": "Texas News – NBC 5 Dallas-Fort Worth",
+            "snippet": "The founder of a subprime auto lender led a seven-year campaign to defraud its largest lenders out of nearly a billion dollars, authorities say.",
+            "position": 7
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:04:45.447Z",
+      "data": "Lasso Works Cedar Denton - Reddit Search! Skip to main content Lasso Works Cedar Denton - Reddit Search! Open menu Open navigation Go to Reddit Home Get App Get the Reddit app Log In Log in to Reddit Expand user menu Open settings menu All Posts Communities Comments Media People back forward Relevance Relevance Hot Top New Comment count All time All time Past year Past month Past week Today Past hour What’s your favorite secret/underground spots around Denton? r/Denton r/Denton The Official Subreddit for Denton, Texas 114K Members 154 Online · 2y ago What’s your favorite secret/underground spots around Denton? clear creek if u like nature, i lived in denton for so long and only learned about clear creek my last few years there. 22 votes · 45 comments Process Lasso massively improved my gameplay experience. r/Competitiveoverwatch r/Competitiveoverwatch A place for in-depth discussions of Competitive Overwatch™ (the team-based shooter from Blizzard Entertainment). Find detailed discussion of meta, esports and events as well as guides, advice, and tips that go beyond the basics. 350K Members 221 Online · 3y ago Process Lasso massively improved my gameplay experience. But process lasso allows you to save the configs, whereas task manager yeets your settings out each time you restart OW. 33 votes · 28 comments Cheap/ Free things to do? r/Denton r/Denton The Official Subreddit for Denton, Texas 114K Members 154 Online · 1y ago Cheap/ Free things to do? There are a multitude of free events in Octobers here in Denton. You just missed Jazzfest last weekend but there's Geezerpalooza this weekend and the Day of the Dead festival at the end of the month. 11 votes · 16 comments Best places to study/work in denton? r/Denton r/Denton The Official Subreddit for Denton, Texas 114K Members 154 Online · 1y ago Best places to study/work in denton? TWU has free wi-fi. It's a public university, so you're able to sit and work in buildings like the library or student union. 29 votes · 33 comments Hi! We’re moving to Denton next month and wanted to know the best places to go (food, shopping, etc) and places to avoid/tips r/Denton r/Denton The Official Subreddit for Denton, Texas 114K Members 154 Online · 4y ago Hi! We’re moving to Denton next month and wanted to know the best places to go (food, shopping, etc) and places to avoid/tips Make sure you check out Recycled. It's the crowning jewel of Denton IMO. 27 votes · 64 comments What would be a good restaurant to work at? r/Denton r/Denton The Official Subreddit for Denton, Texas 114K Members 154 Online · 4y ago What would be a good restaurant to work at? I had a couple friends living in Denton who commuted out to the airports for bartending, maybe a 30 or 45 min drive depending on which airport but they’d get $300-500 depending on the night most nights 11 votes · 44 comments Looking for rec: Good workspace place r/Denton r/Denton The Official Subreddit for Denton, Texas 114K Members 154 Online · 2mo ago Looking for rec: Good workspace place 1 vote · 5 comments Communities DentonClassifieds r/DentonClassifieds For people to buy/sell/trade in the city of Denton, TX. 6.3K members · 4 online Denton r/Denton The Official Subreddit for Denton, Texas 114K members · 154 online Dallas r/Dallas /r/Dallas is a home for discussion and content related to the Dallas/Fort Worth Metroplex. We strive to be a friendly and welcoming community to all of our users whether they are longtime residents of DFW, newcomers, curious redditors, or just visiting. 488K members · 401 online cedarpoint r/cedarpoint Get to the Point! 37K members · 81 online cedarrapids r/cedarrapids Cedar Rapids, Iowa, USA discussion 29K members · 38 online See more communities People CedarWorks132 u/CedarWorks132 20 karma Lasso_ u/Lasso_ 1.7K karma See more people Reddit Rules Privacy Policy User Agreement Your Privacy Choices Accessibility Reddit, Inc. © 2025. All rights reserved. Expand Navigation Collapse Navigation &nbsp; &nbsp; &nbsp; &nbsp; RESOURCES About Reddit Advertise Developer Platform Reddit Pro BETA Help Blog Careers Press Communities Best of Reddit Reddit Rules Privacy Policy User Agreement Your Privacy Choices Accessibility Reddit, Inc. © 2025. All rights reserved."
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:04:53.304Z",
+      "data": "Lasso Works Cedar Denton review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters SHORTS SHORTS Now playing Fall Pergola Lasso Works Cedar Lasso Works Cedar • • 21 views 1 year ago Lasso Works Cedar Lasso Works Cedar Unlock Your Ultimate Outdoor Living Experience Immerse yourself in a world of serenity and tranquility right in your backyard, this ... Unlock Your Ultimate Outdoor Living Experience Immerse yourself in a world of serenity and tranquility right in your backyard, this ... From the video description SHORTS SHORTS Now playing Custom Cedar Patio Covers in Denton TX The JBN Group Outdoor Living Experts The JBN Group The JBN Group • • 22 views 5 months ago The JBN Group The JBN Group Transform Your Backyard with Custom Cedar Patio Covers in Denton , TX | The JBN Group Looking to upgrade your outdoor living ... Transform Your Backyard with Custom Cedar Patio Covers in Denton , TX | The JBN Group Looking to upgrade your outdoor living ... From the video description SHORTS SHORTS Now playing Did you hear it? 🤣 #mistakes #whoops #funny #skit #scary #waterpark Splashway Waterpark & Campgrounds Splashway Waterpark & Campgrounds • • 25M views 2 years ago Splashway Waterpark & Campgrounds Splashway Waterpark & Campgrounds 3:35 3:35 Now playing Phoenix-area inspector reveals newly built homes have obvious defects Arizona’s Family (3TV / CBS 5) Arizona’s Family (3TV / CBS 5) • • 563K views 2 years ago Arizona’s Family (3TV / CBS 5) Arizona’s Family (3TV / CBS 5) Cy Porter is a home inspector who says he finds more red flags in newly built homes than in older homes that are for sale. Cy Porter is a home inspector who says he finds more red flags in newly built homes than in older homes that are for sale. From the video description CC 1:56 1:56 Now playing Home Inspector Seattle WA Explains Patio Cover | (425) 207-3688 | CALL US! Property Inspector, LLC Property Inspector, LLC • • 984K views 14 years ago Property Inspector, LLC Property Inspector, LLC https://www.youtube.com/watch?v=ObwG9asbZbI http://www.propertyinspectorllc.com | Seattle Home Inspector | Property ... https://www.youtube.com/watch?v=ObwG9asbZbI http://www.propertyinspectorllc.com | Seattle Home Inspector | Property ... From the video description 4 chapters Intro | Patio Cover | Ledger Board | Beam Size 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Patio Cover Patio Cover 0:10 Patio Cover 0:10 Ledger Board Ledger Board 0:45 Ledger Board 0:45 Beam Size Beam Size 1:17 Beam Size 1:17 2:46 2:46 Now playing Complaints grow after door & window company closes FOX 13 Tampa Bay FOX 13 Tampa Bay • • 15K views 1 year ago FOX 13 Tampa Bay FOX 13 Tampa Bay Customers in Manatee, Sarasota and Charlotte counties say they're out thousands of dollars after Sash & Sill suddenly shut down ... Customers in Manatee, Sarasota and Charlotte counties say they're out thousands of dollars after Sash & Sill suddenly shut down ... From the video description CC SHORTS SHORTS Now playing Going to middle school.... lilee🤣👊 lilee🤣👊 • • 29M views 2 years ago lilee🤣👊 lilee🤣👊 moving on to middle school. moving on to middle school. From the video description 3:44 3:44 Now playing DFW Cedar Constructions Business Review in Rowlett, TX Dallas Ronald Hanson Ronald Hanson • • 24 views 14 years ago Ronald Hanson Ronald Hanson Dallas cedar supply, Dallas Cedar Supply, Dallas Cedar Supply fence, Dallas Cedar Deck supply, Cedar Fence, Cedar Deck, ... Dallas cedar supply, Dallas Cedar Supply, Dallas Cedar Supply fence, Dallas Cedar Deck supply, Cedar Fence, Cedar Deck, ... From the video description CC 1:36 1:36 Now playing HJ Cedar Patio Covers and Stamped Concrete HJ Cedar Patio Covers and Stamped Concrete HJ Cedar Patio Covers and Stamped Concrete • • 117 views 6 years ago HJ Cedar Patio Covers and Stamped Concrete HJ Cedar Patio Covers and Stamped Concrete Service: Cedar Patio Covers Pergolas Gazebos Stamped Concrete Stain Concrete Stone Work Tile Installation Remodeling and ... Service: Cedar Patio Covers Pergolas Gazebos Stamped Concrete Stain Concrete Stone Work Tile Installation Remodeling and ... From the video description 4:02 4:02 Now playing What Our Customers Have to Say | Affordable Patio Affordable Patio Affordable Patio • • 106 views 2 years ago Affordable Patio Affordable Patio In this heartfelt customer testimonial video, we bring you the firsthand experience of one of our valued clients. Listen as they share ... In this heartfelt customer testimonial video, we bring you the firsthand experience of one of our valued clients. Listen as they share ... From the video description 4:26 4:26 Now playing Lawn Companies Hate Me for Sharing This - Lazy Person's Lawn Guide Silver Cymbal Silver Cymbal • • 235K views 1 year ago Silver Cymbal Silver Cymbal Getting a GREAT lawn is easy if you know what to do right NOW in Spring. Your window is closing fast so ACT NOW & enjoy an ... Getting a GREAT lawn is easy if you know what to do right NOW in Spring. Your window is closing fast so ACT NOW & enjoy an ... From the video description 4K Summary This DIY lawn care guide reveals a four-step spring process for achieving a lush lawn. Learn how low mowing and dethatching remove debris, preparing the lawn for fertilization. The video also demonstrates a unique fertilizer blending nitrogen, biosolids, and iron for optimal results. AI-generated video summary Quality and accuracy may vary. Summary This DIY lawn care guide reveals a four-step spring process for achieving a lush lawn. Learn how low mowing and dethatching remove debris, preparing the lawn for fertilization. The video also demonstrates a unique fertilizer blending nitrogen, biosolids, and iron for optimal results. 3:10 3:10 Now playing Live Oak homeowner sues fencing contractor, claims ‘terrible’ work drained retirement funds KSAT 12 KSAT 12 • • 855 views 2 months ago KSAT 12 KSAT 12 A Live Oak homeowner is accusing a contractor hired to repair floodwater damage to a fence of ruining their chances to retire after ... A Live Oak homeowner is accusing a contractor hired to repair floodwater damage to a fence of ruining their chances to retire after ... From the video description CC People also watched 13:40 13:40 Now playing The WORST contractor SCAM I've seen! Stanley \"Dirt Monkey\" Genadek Stanley \"Dirt Monkey\" Genadek • • 2.9M views 3 years ago Stanley \"Dirt Monkey\" Genadek Stanley \"Dirt Monkey\" Genadek The General Contractor (GC) scammed the customer, The Excavator, the Concrete Contractor, the lumber yard and BANK all at ... The General Contractor (GC) scammed the customer, The Excavator, the Concrete Contractor, the lumber yard and BANK all at ... From the video description 4K 4:26 4:26 Now playing Class action lawsuit filed against DR Horton builders KLFY News 10 KLFY News 10 • • 1M views 3 years ago KLFY News 10 KLFY News 10 Tuesday. Tuesday. From the video description CC 2:13 2:13 Now playing Home Inspector Seattle Talks About Bad Deck Roof Cover | (425) 207-3688 | CALL US! Property Inspector, LLC Property Inspector, LLC • • 143K views 13 years ago Property Inspector, LLC Property Inspector, LLC https://www.youtube.com/watch?v=Dos_eMqM9ro http://www.propertyinspectorllc.com | Seattle Home Inspector | Property ... https://www.youtube.com/watch?v=Dos_eMqM9ro http://www.propertyinspectorllc.com | Seattle Home Inspector | Property ... From the video description 4 chapters Intro | Deck Roof Cover | Roof Support | Outro 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Deck Roof Cover Deck Roof Cover 0:20 Deck Roof Cover 0:20 Roof Support Roof Support 1:15 Roof Support 1:15 Outro Outro 1:45 Outro 1:45 14:00 14:00 Now playing Huge Changes are Leaving Customers Furious! What's Really Going on at The Home Depot and Lowes DIY with Dave DIY with Dave • • 780K views 4 months ago DIY with Dave DIY with Dave Thanks to Aviron for sponsoring today's video! They have their best prices of the year on right now and you can get an additional ... Thanks to Aviron for sponsoring today's video! They have their best prices of the year on right now and you can get an additional ... From the video description + 6 more 12:29 12:29 Now playing Fence Contractors Hate Me For Showing This SWI Fence SWI Fence • • 87K views 1 year ago SWI Fence SWI Fence Interested in an SWI Fence franchise opportunity? https://bit.ly/SWIFenceFranchise Are all vinyl privacy fences the same? Interested in an SWI Fence franchise opportunity? https://bit.ly/SWIFenceFranchise Are all vinyl privacy fences the same? From the video description 4K 5 chapters Materials | Proportions | Installation | Material & Accessories | Dirty Little Secret 5 chapters in this video 5 chapters Materials Materials 0:00 Materials 0:00 Proportions Proportions 2:41 Proportions 2:41 Installation Installation 3:31 Installation 3:31 Material & Accessories Material & Accessories 7:12 Material & Accessories 7:12 Dirty Little Secret Dirty Little Secret 9:07 Dirty Little Secret 9:07 3:20 3:20 Now playing Colorado families suing after contractor allegedly took deposits then closed business Denver7 Denver7 • • 2K views 3 years ago Denver7 Denver7 A contractor in Colorado is facing several lawsuits after customers claim they paid money for services that were never delivered. A contractor in Colorado is facing several lawsuits after customers claim they paid money for services that were never delivered. From the video description CC SHORTS SHORTS Now playing 26x12 modern cedar SkyPoly Pergola on SkyLift Roof Risers Cover Your Pergola Cover Your Pergola • • 142K views 2 years ago Cover Your Pergola Cover Your Pergola 0:00 Hi guys we are done in Plano check it out here 26 foot wide 12 foot extended modern cedar pergola on skylifts boom set it up off ... Hi guys we are done in Plano check it out here 26 foot wide 12 foot extended modern cedar pergola on skylifts boom set it up off ... Automatic captions 4:12 4:12 Now playing ENC homeowners warn of landscaper they say is scamming customers WITN-TV WITN-TV • • 65 views 5 months ago WITN-TV WITN-TV ENC homeowners warn of landscaper they say is scamming customers For more Local News from WITN: https://www.witn.com/ ... ENC homeowners warn of landscaper they say is scamming customers For more Local News from WITN: https://www.witn.com/ ... From the video description CC 4:25 4:25 Now playing Patio Kits Direct Customer Reviews Lake Elsinore Ca Premier Local Media Premier Local Media • • 147 views 2 years ago Premier Local Media Premier Local Media 1:33 1:33 Now playing Protect Your Deck with Desert Sun Patios Desert Sun Patios Desert Sun Patios • • 11K views 2 years ago Desert Sun Patios Desert Sun Patios Visit https://desertsunpatios.com and see how we can protect your deck! From sun rooms and screen rooms, to patio covers, ... Visit https://desertsunpatios.com and see how we can protect your deck! From sun rooms and screen rooms, to patio covers, ... From the video description 0:59 0:59 Now playing Custom Patio Covers in Dallas | Elevated Exteriors Outdoor Living Elevated Exteriors Elevated Exteriors • • 4 views 2 months ago Elevated Exteriors Elevated Exteriors Transform your backyard into a personal paradise with Elevated Exteriors DFW, your trusted experts in custom outdoor living ... Transform your backyard into a personal paradise with Elevated Exteriors DFW, your trusted experts in custom outdoor living ... From the video description 4K SHORTS SHORTS Now playing Clean Outdoor Work in Denton, TX | Patio & Hardscape Craftsmanship Holistic Outdoor Holistic Outdoor • • 1.2K views 2 weeks ago Holistic Outdoor Holistic Outdoor Here's a quick look at the clean, durable outdoor work we complete for homeowners in Denton , Texas. From patios to walkways ... Here's a quick look at the clean, durable outdoor work we complete for homeowners in Denton , Texas. From patios to walkways ... From the video description 4K Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:04:59.082Z",
+      "data": {
+        "query": "site:nextdoor.com Lasso Works Cedar Denton",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/lasso-works-cedar-shady-shores-tx/",
+            "title": "Lasso Works Cedar - Denton, TX",
+            "snippet": "We recently used Lasso Works Cedar for a patio cover. They did an outstanding job. They do carports also. Call Daniel Crumpton 940-395-1560.",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/pages/the-shine-guys-avery-tx/",
+            "title": "The Shine Guys",
+            "snippet": "Serving the Denton and surrounding areas, The Shine Guys are your one-stop-shop for all things exterior - from power washing, to window cleaning, ...",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/pages/canon-custom-construction-denton-tx/",
+            "title": "Canon Custom Construction - Denton, TX",
+            "snippet": "We are a father and son, Denton based, company that specialize in home remodeling and restoration. ... Lasso Works CedarDenton, TX. 15. Awards. an award shape.",
+            "position": 3
+          },
+          {
+            "link": "https://nextdoor.com/pages/heeler-wood-care-argyle-tx/",
+            "title": "Heeler Wood Care - Argyle, TX",
+            "snippet": "The company also offers staining services for fences and other wooden ... Lasso Works CedarDenton, TX. 15 · Pedro RojoDenton, TX. 20 · Landscape Investments ...",
+            "position": 4
+          },
+          {
+            "link": "https://nextdoor.com/pages/get-it-out-paintless-dent-hail-repair-corinth-tx-1/",
+            "title": "Get It Out Paintless Dent & Hail Repair - Corinth, TX",
+            "snippet": "Hello neighbors and surrounding communities we are a paintless dent and hail repair mobile onsite service and with over 22 years of experience.",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:05:13.352Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Lasso%20Works%20Cedar&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Lasso% 20Works% 20Cedar&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Lasso% 20Cedar&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://echo.epa.gov/help/training",
+                "title": "ECHO Training"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Lasso% 20Works% 20Cedar&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Lasso% 20Works% 20Cedar&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Lasso% 20Works% 20Cedar&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Lasso% 20Cedar&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= Lasso% 20Works% 20Cedar&State= TX"
+            }
+          },
+          {
+            "date": "Jun 26, 2025",
+            "link": "https://echo.epa.gov/help/reports/detailed-facility-report-help",
+            "title": "Detailed Facility Report Help | ECHO | US EPA",
+            "snippet": "The Detailed Facility Report is an interactive report that allows you to quickly find data of interest. Data are organized into six primary categories.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= Lasso% 20Works% 20Cedar&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter and is refreshed ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= Lasso% 20Works% 20Cedar&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= Lasso% 20Works% 20Cedar&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:05:17.601Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:05:23.941Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:05:30.707Z",
+      "data": "404 Page Not Found | HomeAdvisor HomeAdvisor ___ Join as a Pro Log In Sign Up Interior Exterior Lawn & Garden More Articles & Advice Join as a Pro Interior Exterior Lawn & Garden More Articles & Advice Post a job Log In Sign Up Find a pro Appliances Carpet & Upholstery Cleaning Handyman Services Drywall & Plaster Electrical Flooring Heating & Furnace Systems Cleaning & Maid Services Painting Plumbing Additions & Remodeling View all Research & plan How Much Does It Cost to Paint the Interior of a House in 2025? How Much Does an Average Bathroom Remodel Cost in 2024? How Much Does Carpet Cleaning Cost? How Much Does Flooring Installation Cost in 2025? View all Find a pro Concrete Doors Paving Painting Garage & Garage Doors Gutters Architects & Engineers Brick & Stone Roofing Siding Windows View all Research & plan How Much Does Roof Repair Cost in 2025? How Much Does Siding Repair Cost in 2025? How Much Does Window Repair Cost? How Much Does Fence Installation Cost in 2025? View all Find a pro Decks Fences Architects & Engineers Landscaping Lawn & Garden Care Awnings Swimming Pools Tree Service View all Research & plan How Much Does Lawn Care and Mowing Cost? How Much Does It Cost to Trim or Remove Bushes, Shrubs, and Hedges? How Much Does Landscaping Cost in 2025? How Much Does Fill Dirt Cost in 2024? View all Find a pro Foundations Handymen Services Waste Material Removal Moving Pest Control Power Washing Septic Tanks & Wells View all Research & plan How Much Are Handyperson Hourly Rates? How Much Does It Cost To Hire An Electrician? How Much Does A Plumber Cost? [2023 Data] How Much Does a Home Exterminator Cost in 2025? View all Research & plan Appliances Foundations Additions & Remodeling Fireplaces & Chimneys Cleaning Handyman Electrical Flooring Furniture Garage Heating & Cooling Home Building Siding Interior Design & Decor Safety & Security Moving Pest Control Plumbing Roofing Organizing Project Cost Center View all Featured articles How Much Does Roof Repair Cost in 2025? How Much Does a Home Exterminator Cost in 2025? How Much Does Fill Dirt Cost in 2024? How Much Are Handyperson Hourly Rates? View all articles Hmm, we can't find the page you're looking for. Start a new search or go to the homepage to get back on track. Search Hire a Handyman Install a Garbage Disposal Install or Repair a Dishwasher Repair or Partially Replace Wood or Fiber-Cement Siding Repair Gutters View all results Popular projects near you Cleaning Services Handyperson Services Plumbing Services Additions & Remodeling Lawn & Garden Care Painting Services Moving Services Electrical Services Knowledge is priceless - so our cost guides are free. Sign up to get free project cost info in your inbox. Sign me up Get our Angi-powered app Download the app Homeowner services Find local businesses Services near me For service pros Register your business Business center Resources Solution center Project cost center FAQs Financing About us How it works Who we are Careers Press Investor relations Contact us Happiness guarantee Affiliate partners Terms of Use | Privacy Policy Accessibility Tools | Accessibility Tools | Do Not Sell or Share My Personal Information © Copyright 1995-2025, Angi. All Rights Reserved. Do Not Sell or Share My Personal Data When you visit our website, we store cookies on your browser to collect information. The information collected might relate to you, your preferences or your device, and is mostly used to make the site work as you expect it to and to provide a more personalized web experience. However, you can choose not to allow certain types of cookies, which may impact your experience of the site and the services we are able to offer. Click on the different category headings to find out more and change our default settings according to your preference. You cannot opt-out of our First Party Strictly Necessary Cookies as they are deployed in order to ensure the proper functioning of our website (such as prompting the cookie banner and remembering your settings, to log into your account, to redirect you when you log out, etc.). For more information about the First and Third Party Cookies used please follow this link. Allow All Manage Consent Preferences Strictly Necessary Cookies Always Active These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information. Opt Out of Sale of Sharing/Targeted Advertising Opt Out of Sale of Sharing/Targeted Advertising As a California consumer, you have the right to opt-out from the sale or sharing of your personal information at any time across business platform, services, businesses and devices. You can opt-out of the sale and sharing of your personal information by using this toggle switch. As a Virginia, Utah, Colorado and Connecticut consumer, you have the right to opt-out from the sale of your personal data and the processing of your personal data for targeted advertising. You can opt-out of the sale of your personal data and targeted advertising by using this toggle switch. For more information on your rights as a United States consumer see our privacy notice. Performance Cookies Switch Label label These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance. Social Media Cookies Switch Label label These cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies you may not be able to use or see these sharing tools. Targeting Cookies Switch Label label These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. Back Button Cookie List Search Icon Filter Icon Clear checkbox label label Apply Cancel Consent Leg.Interest checkbox label label checkbox label label checkbox label label Confirm My Choices"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:05:33.360Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Lasso Works Cedar",
+        "source": "serper",
+        "results": []
+      }
+    }
+  }
+}

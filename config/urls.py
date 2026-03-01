@@ -46,6 +46,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('contractors.urls')),
     path('api/clients/', include('clients.urls')),
+    path('api/faith/', include('faith_alpha.urls')),
     # Auth endpoints
     path('api/auth/login/', TokenObtainPairView.as_view(), name='token_obtain'),
     path('api/auth/refresh/', TokenRefreshView.as_view(), name='token_refresh'),

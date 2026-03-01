@@ -129,10 +129,27 @@ The Review Analyzer has evaluated reviews for authenticity AND complaint pattern
 3. High review volume is positive, BUT complaint_patterns override volume.
 A contractor with 500 reviews but patterns showing "took deposit and disappeared" or "threatened legal action" should score LOWER, not higher.
 
+## WARRANTY & GUARANTEE ANALYSIS (HIGH PRIORITY)
+Use the website warranty/guarantee signals and review analysis to evaluate:
+- Is there an explicit guarantee or warranty offered? (YES/NO/UNKNOWN)
+- What type? (workmanship, materials, satisfaction, timeline)
+- Duration/terms if stated
+- Evidence of honoring guarantees (reviews, BBB complaint responses)
+- Evidence of NOT honoring guarantees (reviews/complaints)
+- Note: insurance/bonding mentions are related but NOT a warranty by themselves
+
 ## OUTPUT FORMAT
 After your investigation, respond with ONLY this JSON:
 {
   "trust_score": <0-100>,
+  "guarantee_analysis": {
+    "explicit_guarantee_offered": "<YES|NO|UNKNOWN>",
+    "types": ["<workmanship|materials|satisfaction|timeline>"],
+    "duration_terms": ["<1-year labor>", "<lifetime materials>"],
+    "honoring_evidence": ["<evidence of honoring guarantees>"],
+    "non_honoring_evidence": ["<evidence of not honoring guarantees>"],
+    "confidence_rating": "<STRONG|MODERATE|WEAK|NONE_FOUND>"
+  },
   "reasoning": "<Your investigative findings. What's the story? What did you find? Be specific.>",
   "red_flags": [
     {"severity": "<CRITICAL|HIGH|MEDIUM|LOW>", "category": "<category>", "description": "<what you found>", "evidence": "<which source showed this>"}
@@ -226,6 +243,14 @@ Before finalizing, ask yourself: "Will this score enable a homeowner to make an 
 YOUR OUTPUT must be JSON:
 {
   "final_trust_score": <0-100>,
+  "guarantee_analysis": {
+    "explicit_guarantee_offered": "<YES|NO|UNKNOWN>",
+    "types": ["<workmanship|materials|satisfaction|timeline>"],
+    "duration_terms": ["<1-year labor>", "<lifetime materials>"],
+    "honoring_evidence": ["<evidence of honoring guarantees>"],
+    "non_honoring_evidence": ["<evidence of not honoring guarantees>"],
+    "confidence_rating": "<STRONG|MODERATE|WEAK|NONE_FOUND>"
+  },
   "final_assessment_confidence": <0-100>,
   "final_data_confidence": <0-100>,
   "agreements": ["<Point both analysts agreed on>"],
@@ -328,6 +353,14 @@ Synthesize their perspectives. Where they agree, that's strong signal. Where the
 Respond with json only:
 {
   "final_score": <0-100>,
+  "guarantee_analysis": {
+    "explicit_guarantee_offered": "<YES|NO|UNKNOWN>",
+    "types": ["<workmanship|materials|satisfaction|timeline>"],
+    "duration_terms": ["<1-year labor>", "<lifetime materials>"],
+    "honoring_evidence": ["<evidence of honoring guarantees>"],
+    "non_honoring_evidence": ["<evidence of not honoring guarantees>"],
+    "confidence_rating": "<STRONG|MODERATE|WEAK|NONE_FOUND>"
+  },
   "confidence": "HIGH/MEDIUM/LOW",
   "council_agreed_on": "<what all three saw>",
   "council_diverged_on": "<disagreements and how you resolved>",
@@ -367,6 +400,76 @@ function getConfidence(result) {
   return 'LOW';
 }
 
+function normalizeGuaranteeAnalysis(analysis) {
+  const fallback = {
+    explicit_guarantee_offered: 'UNKNOWN',
+    types: [],
+    duration_terms: [],
+    honoring_evidence: [],
+    non_honoring_evidence: [],
+    confidence_rating: 'NONE_FOUND'
+  };
+
+  if (!analysis || typeof analysis !== 'object') return fallback;
+
+  const normalized = { ...fallback };
+
+  const explicit = analysis.explicit_guarantee_offered ?? analysis.explicit_guarantee ?? analysis.explicit;
+  if (explicit === true) normalized.explicit_guarantee_offered = 'YES';
+  else if (explicit === false) normalized.explicit_guarantee_offered = 'NO';
+  else if (typeof explicit === 'string') normalized.explicit_guarantee_offered = explicit.toUpperCase();
+
+  const confidence = analysis.confidence_rating ?? analysis.guarantee_confidence ?? analysis.confidence;
+  if (typeof confidence === 'string') normalized.confidence_rating = confidence.toUpperCase();
+
+  const types = analysis.types ?? analysis.type;
+  if (Array.isArray(types)) normalized.types = types;
+  else if (typeof types === 'string') normalized.types = [types];
+
+  const duration = analysis.duration_terms ?? analysis.duration ?? analysis.terms;
+  if (Array.isArray(duration)) normalized.duration_terms = duration;
+  else if (typeof duration === 'string') normalized.duration_terms = [duration];
+
+  const honoring = analysis.honoring_evidence ?? analysis.honored_evidence ?? analysis.follow_through_evidence;
+  if (Array.isArray(honoring)) normalized.honoring_evidence = honoring;
+  else if (typeof honoring === 'string') normalized.honoring_evidence = [honoring];
+
+  const nonHonoring = analysis.non_honoring_evidence ?? analysis.not_honored_evidence ?? analysis.negative_evidence;
+  if (Array.isArray(nonHonoring)) normalized.non_honoring_evidence = nonHonoring;
+  else if (typeof nonHonoring === 'string') normalized.non_honoring_evidence = [nonHonoring];
+
+  return normalized;
+}
+
+function formatGuaranteeAnalysis(analysis) {
+  const ga = normalizeGuaranteeAnalysis(analysis);
+  let output = '';
+  output += `  Explicit guarantee offered: ${ga.explicit_guarantee_offered}\n`;
+  output += `  Confidence rating: ${ga.confidence_rating}\n`;
+  output += `  Types: ${ga.types.length ? ga.types.join(', ') : 'None found'}\n`;
+  output += `  Duration/terms: ${ga.duration_terms.length ? ga.duration_terms.join(', ') : 'Not stated'}\n`;
+
+  if (ga.honoring_evidence.length > 0) {
+    output += `  Honoring evidence:\n`;
+    for (const item of ga.honoring_evidence.slice(0, 5)) {
+      output += `    - ${item}\n`;
+    }
+  } else {
+    output += `  Honoring evidence: None found\n`;
+  }
+
+  if (ga.non_honoring_evidence.length > 0) {
+    output += `  Non-honoring evidence:\n`;
+    for (const item of ga.non_honoring_evidence.slice(0, 5)) {
+      output += `    - ${item}\n`;
+    }
+  } else {
+    output += `  Non-honoring evidence: None found\n`;
+  }
+
+  return output.trimEnd();
+}
+
 /**
  * Format result for display
  */
@@ -379,7 +482,12 @@ function formatDisplayOutput(result) {
   AUDIT RESULTS
 ════════════════════════════════════════════════════════════
 
-  VERDICT:    ${verdict}
+  TRUST SCORE: ${result.trust_score}/100
+
+--- GUARANTEE ANALYSIS ---
+${formatGuaranteeAnalysis(result.guarantee_analysis)}
+
+  FINAL RECOMMENDATION: ${verdict}
   CONFIDENCE: ${confidence}
 
 --- WHAT WE VERIFIED ---`;
@@ -580,6 +688,9 @@ Website: ${this.contractor.website || 'Not provided'}
     }
     result.trust_score = Math.max(0, Math.min(100, result.trust_score));
 
+    // Normalize guarantee analysis
+    result.guarantee_analysis = normalizeGuaranteeAnalysis(result.guarantee_analysis);
+
     // Derive verdict and confidence
     const verdict = getVerdict(result.trust_score);
     const confidence = getConfidence(result);
@@ -604,9 +715,9 @@ Website: ${this.contractor.website || 'Not provided'}
     await this.db.run(`
       INSERT INTO audit_records (
         contractor_id, audit_version, trust_score, risk_level, recommendation,
-        reasoning_trace, red_flags, positive_signals, gaps_identified,
+        reasoning_trace, red_flags, positive_signals, gaps_identified, guarantee_analysis,
         sources_used, collection_rounds, total_cost, created_at, finalized_at
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `, [
       this.contractorId,
       3,  // audit_version V3 with new output format
@@ -617,6 +728,7 @@ Website: ${this.contractor.website || 'Not provided'}
       JSON.stringify(result.red_flags || []),
       JSON.stringify(result.verified_items || []),
       JSON.stringify(result.unverified_items || []),
+      JSON.stringify(result.guarantee_analysis || {}),
       JSON.stringify([]),
       0,
       this.totalCost,
@@ -980,6 +1092,8 @@ Now synthesize these two perspectives and produce your final assessment.`;
     const assessmentConf = synthesis?.final_assessment_confidence ?? 50;
     const confidence = assessmentConf >= 70 ? 'HIGH' : assessmentConf >= 40 ? 'MEDIUM' : 'LOW';
 
+    const guaranteeAnalysis = normalizeGuaranteeAnalysis(synthesis?.guarantee_analysis);
+
     // Add legal disclaimers for trust score
     const disclaimer = TRUST_SCORE_DISCLAIMER;
     const disclaimer_short = TRUST_SCORE_DISCLAIMER_SHORT;
@@ -1024,9 +1138,9 @@ Now synthesize these two perspectives and produce your final assessment.`;
     await this.db.run(`
       INSERT INTO audit_records (
         contractor_id, audit_version, trust_score, risk_level, recommendation,
-        reasoning_trace, red_flags, positive_signals, gaps_identified,
+        reasoning_trace, red_flags, positive_signals, gaps_identified, guarantee_analysis,
         sources_used, collection_rounds, total_cost, created_at, finalized_at
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `, [
       this.contractorId,
       4,  // audit_version V4 dialectic
@@ -1037,6 +1151,7 @@ Now synthesize these two perspectives and produce your final assessment.`;
       JSON.stringify(synthesis.red_flags || []),
       JSON.stringify(synthesis.verified_positives || []),
       JSON.stringify(synthesis.unverified_items || []),
+      JSON.stringify(guaranteeAnalysis),
       JSON.stringify([]),
       0,
       this.totalCost,
@@ -1059,6 +1174,7 @@ Now synthesize these two perspectives and produce your final assessment.`;
       red_flags: synthesis.red_flags || [],
       verified_items: synthesis.verified_positives || [],
       unverified_items: synthesis.unverified_items || [],
+      guarantee_analysis: guaranteeAnalysis,
       total_cost: this.totalCost,
       disclaimer,
       disclaimer_short,
@@ -1092,9 +1208,13 @@ Now synthesize these two perspectives and produce your final assessment.`;
   DIALECTIC AUDIT RESULTS (V4)
 ================================================================================
 
-  FINAL VERDICT:    ${result.verdict}
-  CONFIDENCE:       ${result.confidence}
   TRUST SCORE:      ${result.trust_score}/100
+
+--- GUARANTEE ANALYSIS ---
+${formatGuaranteeAnalysis(result.guarantee_analysis)}
+
+  FINAL RECOMMENDATION: ${result.verdict}
+  CONFIDENCE:       ${result.confidence}
 
 --- PERSONA ANALYSIS ---
   Consumer Advocate (skeptical): ${advocate?.trust_score ?? 'N/A'}/100
@@ -1410,6 +1530,7 @@ class CouncilAuditAgent {
         confidence: 'LOW',
         warning: 'Only one council member responded',
         council_responses: this.councilResponses,
+        guarantee_analysis: normalizeGuaranteeAnalysis(null),
         total_cost: this.totalCost,
         disclaimer,
         disclaimer_short
@@ -1437,6 +1558,7 @@ class CouncilAuditAgent {
       judge_result: judgeResult.result,
       judge_model: judgeResult.model,
       final_score: judgeResult.result.final_score,
+      guarantee_analysis: normalizeGuaranteeAnalysis(judgeResult.result.guarantee_analysis),
       confidence: judgeResult.result.confidence,
       council_agreed_on: judgeResult.result.council_agreed_on,
       council_diverged_on: judgeResult.result.council_diverged_on,
@@ -1461,9 +1583,13 @@ class CouncilAuditAgent {
   COUNCIL AUDIT RESULTS (V5)
 ════════════════════════════════════════════════════════════
 
-  VERDICT:    ${verdict}
-  CONFIDENCE: ${result.confidence}
   TRUST SCORE: ${result.final_score}/100
+
+--- GUARANTEE ANALYSIS ---
+${formatGuaranteeAnalysis(result.guarantee_analysis)}
+
+  FINAL RECOMMENDATION: ${verdict}
+  CONFIDENCE: ${result.confidence}
   JUDGE MODEL: ${result.judge_model}
 
 --- COUNCIL SCORES ---
@@ -1506,9 +1632,9 @@ ${result.reasoning || 'No reasoning provided'}`;
     await this.db.run(`
       INSERT INTO audit_records (
         contractor_id, audit_version, trust_score, risk_level, recommendation,
-        reasoning_trace, red_flags, positive_signals, gaps_identified,
+        reasoning_trace, red_flags, positive_signals, gaps_identified, guarantee_analysis,
         sources_used, collection_rounds, total_cost, created_at, finalized_at
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `, [
       this.contractorId,
       5,  // Version 5 = council mode
@@ -1519,6 +1645,7 @@ ${result.reasoning || 'No reasoning provided'}`;
       JSON.stringify([]),  // red_flags populated from council responses if needed
       JSON.stringify([]),
       JSON.stringify([]),
+      JSON.stringify(result.guarantee_analysis || {}),
       JSON.stringify(['council']),
       0,
       result.total_cost,

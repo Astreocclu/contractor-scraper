@@ -1,0 +1,1764 @@
+{
+  "contractor_id": 766,
+  "business_name": "J Reynolds & Co., Inc.",
+  "city": "Saginaw",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-08T03:23:39.652Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-04T03:45:01.306Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 7,
+            "MECH_LIEN": 13,
+            "STATE_TAX_LIEN": 2
+          },
+          "active_liens": 15,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 4,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CANYON CREEK ROOF CO INC",
+                "grantor": "REYNOLDS LISA J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "REYNOLDS LISA J",
+                    "CANYON CREEK ROOF CO INC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "5/10/1996",
+                    "19960510000387900",
+                    "LAND/--/--",
+                    "Subdivision- Name: HOMESTEAD #2 PLANO C/440 Lot: 11 Block: D, Reference - C / 440"
+                  ],
+                  "search_term": "J Reynolds & Co., Inc.",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1996-05-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19960510000387900"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "GENTRY ELECTRIC CO",
+                "grantor": "REYNOLDS KELLY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "REYNOLDS KELLY",
+                    "GENTRY ELECTRIC CO",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "8/4/1975",
+                    "19750804000147710",
+                    "ML/55/19",
+                    "Subdivision- Name: SEIS LAGOS 1 9/24 Lot: 12 Block: J, Reference - 9 / 24"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1975-08-04",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19750804000147710"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "GENTRY ELECTRIC CO",
+                "grantor": "REYNOLDS KELLY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "REYNOLDS KELLY",
+                    "GENTRY ELECTRIC CO",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "8/25/1975",
+                    "19750825000165750",
+                    "ML/55/185",
+                    "Subdivision- Name: SEIS LAGOS 1 9/24 Lot: 12 Block: J, Reference - 9 / 24"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1975-08-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19750825000165750"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "PHH MORTGAGE SERVICES CO",
+                "grantor": "FAHEY DEBORAH J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "FAHEY DEBORAH J",
+                    "PHH MORTGAGE SERVICES CO",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "12/29/2000",
+                    "20001229001405100",
+                    "LAND/4824/2215",
+                    "Subdivision- Name: WOODS OF COUNTRY RIDGE #1 MELI J/730 Lot: 5, Reference - J / 730"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2000-12-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20001229001405100"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 18,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "J REYNOLDS & CO INC",
+                "grantor": "TEXAS STATE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE",
+                    "J REYNOLDS & CO INC",
+                    "STATE TAX LIEN - PROPERTY",
+                    "8/13/2012",
+                    "D212197283",
+                    "--/--/--",
+                    ""
+                  ],
+                  "search_term": "J Reynolds & Co., Inc.",
+                  "doc_type_raw": "STATE TAX LIEN - PROPERTY"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2012-08-13",
+                "document_type": "STATE_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "D212197283"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "J. REYNOLDS & CO., INC.",
+                "grantor": "TEXAS STATE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE",
+                    "J. REYNOLDS & CO., INC.",
+                    "STATE TAX LIEN - PROPERTY",
+                    "10/12/2017",
+                    "D217237397",
+                    "--/--/--",
+                    ""
+                  ],
+                  "search_term": "J Reynolds & Co., Inc.",
+                  "doc_type_raw": "STATE TAX LIEN - PROPERTY"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2017-10-12",
+                "document_type": "STATE_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "D217237397"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "J REYNOLDS & CO INC",
+                "grantor": "TEXAS STATE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE",
+                    "J REYNOLDS & CO INC",
+                    "RELEASE OF STATE TAX LIEN",
+                    "9/7/2012",
+                    "D212219942",
+                    "--/--/--",
+                    ""
+                  ],
+                  "search_term": "J Reynolds & Co., Inc.",
+                  "doc_type_raw": "RELEASE OF STATE TAX LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2012-09-07",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D212219942"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "J REYNOLDS & CO INC",
+                "grantor": "TEXAS STATE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE",
+                    "J REYNOLDS & CO INC",
+                    "RELEASE OF STATE TAX LIEN",
+                    "1/14/2021",
+                    "D221011066",
+                    "OPR/--/--",
+                    ""
+                  ],
+                  "search_term": "J Reynolds & Co., Inc.",
+                  "doc_type_raw": "RELEASE OF STATE TAX LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-01-14",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221011066"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WM CAMERON & CO INC",
+                "grantor": "GLEGHORN J V",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GLEGHORN J V",
+                    "WM CAMERON & CO INC",
+                    "MECHANICS LIEN",
+                    "9/16/1949",
+                    "D149034811",
+                    "OPR/210/125",
+                    "FT W, Subdivision: MORGAN HTS, Lot: 9, Block: 45"
+                  ],
+                  "search_term": "J Reynolds & Co., Inc.",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1949-09-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D149034811"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "SIMS & ABSHIRE CO INC",
+                "grantor": "SIMS & ABSHIRE CO INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SIMS & ABSHIRE CO INC",
+                    "SIMS & ABSHIRE CO INC",
+                    "MECHANICS LIEN",
+                    "11/25/1996",
+                    "D196231494",
+                    "OPR/12590/102",
+                    "NONE, Subdivision: PT A J LOTT SURV"
+                  ],
+                  "search_term": "J Reynolds & Co., Inc.",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1996-11-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D196231494"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "FIRST UNITED BANK & TRUST CO",
+                "grantor": "GONZALES REBEKKA J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GONZALES REBEKKA J",
+                    "FIRST UNITED BANK & TRUST CO",
+                    "MECHANICS LIEN",
+                    "10/1/2015",
+                    "D215222272",
+                    "--/--/--",
+                    "N R H, Subdivision: THORNBRIDGE E, Lot: 18, Block: 10"
+                  ],
+                  "search_term": "J Reynolds & Co., Inc.",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2015-10-01",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D215222272"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "MONTGOMERY WARD & CO",
+                "grantor": "REYNOLDS ALMA J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "REYNOLDS ALMA J",
+                    "MONTGOMERY WARD & CO",
+                    "MECHANICS LIEN",
+                    "7/6/1965",
+                    "D165048334",
+                    "OPR/479/21",
+                    "FT W, Subdivision: RICHLAND HILLS, Lot: 2, Block: 66"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1965-07-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D165048334"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "REYNOLDS LEVA J",
+                "grantor": "PULASKI BANK & TRUST CO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PULASKI BANK & TRUST CO",
+                    "REYNOLDS LEVA J",
+                    "RELEASE",
+                    "9/26/1994",
+                    "D194214138",
+                    "OPR/11738/869",
+                    "FORT WORTH, Subdivision: SKYLINE TERR, Lot: 4, Block: 3"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1994-09-26",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D194214138"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "REYNOLDS J G JR",
+                "grantor": "WESTERN & SOUTHERN LIFE INS CO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WESTERN & SOUTHERN LIFE INS CO",
+                    "REYNOLDS J G JR",
+                    "RELEASE",
+                    "7/8/1954",
+                    "D154037689",
+                    "OPR/2732/88",
+                    "FT W, Subdivision: RICHLAND HILLS, Lot: 30, Block: 1"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1954-07-08",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D154037689"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "REYNOLDS DARLA J",
+                "grantor": "STATE STREET BANK & TRUST CO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "STATE STREET BANK & TRUST CO",
+                    "REYNOLDS DARLA J",
+                    "RELEASE",
+                    "10/3/1997",
+                    "D197184552",
+                    "OPR/12931/372",
+                    "NONE, Subdivision: VOL 7914 PG 1842"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1997-10-03",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D197184552"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "REYNOLDS RONALD J & JANA",
+                "grantor": "FIDELITY UN L I CO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "FIDELITY UN L I CO",
+                    "REYNOLDS RONALD J & JANA",
+                    "RELEASE",
+                    "12/26/1973",
+                    "D173152342",
+                    "OPR/5573/972",
+                    "EULS, Subdivision: MIDWAY PARK, Lot: 8R, Block: 39"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1973-12-26",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D173152342"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "REYNOLDS J R FIXTURE CO",
+                "grantor": "REYNOLDS J R FIXTURE CO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "REYNOLDS J R FIXTURE CO",
+                    "REYNOLDS J R FIXTURE CO",
+                    "MECHANICS LIEN",
+                    "3/26/1981",
+                    "D181021786",
+                    "OPR/7094/360",
+                    "Subdivision: PT W H HUDSON SURV"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1981-03-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D181021786"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CASTLEBERRY LUMBER & INV CO",
+                "grantor": "PARKER L J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PARKER L J",
+                    "CASTLEBERRY LUMBER & INV CO",
+                    "MECHANICS LIEN",
+                    "1/5/1961",
+                    "D161000858",
+                    "OPR/412/682",
+                    "Subdivision: WESTLAND, Lot: 5, Block: 11"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1961-01-05",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D161000858"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "ANDREWS PAVING & CONSTRUCTION",
+                "grantor": "REYNOLDS ASPHALT & CONSTRUCTION CO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "REYNOLDS ASPHALT & CONSTRUCTION CO",
+                    "ANDREWS PAVING & CONSTRUCTION",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "2/14/2006",
+                    "D206044241",
+                    "--/--/--",
+                    "ARL, Subdivision: J HYDEN, Lot: 12"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2006-02-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D206044241"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "NATION J J",
+                "grantor": "UNION BANK & TRUST CO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "UNION BANK & TRUST CO",
+                    "NATION J J",
+                    "RELEASE",
+                    "5/6/1952",
+                    "D152023745",
+                    "OPR/2428/364",
+                    "Subdivision: PT W D REYNOLDS SURV"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1952-05-06",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D152023745"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "J W CONST CO",
+                "grantor": "J W CONST CO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "J W CONST CO",
+                    "J W CONST CO",
+                    "MECHANICS LIEN",
+                    "4/29/1981",
+                    "D181030535",
+                    "OPR/7111/576",
+                    "FT W, Subdivision: VIEW PK, Lot: 19, Block: 15"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1981-04-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D181030535"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "J W CONST CO",
+                "grantor": "J W CONST CO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "J W CONST CO",
+                    "J W CONST CO",
+                    "MECHANICS LIEN",
+                    "3/19/1981",
+                    "D181019860",
+                    "OPR/7090/1311",
+                    "ARL, Subdivision: STONERIDGE, Lot: 25, Block: 28"
+                  ],
+                  "search_term": "J REYNOLDS & CO.",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1981-03-19",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D181019860"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "9 old lien(s) against contractor (>7 years ago)",
+            "2 lien(s) filed BY contractor (collecting payment - neutral)",
+            "4 lien(s) with unclear direction"
+          ],
+          "score": 8,
+          "max_score": 10,
+          "risk_level": "SEVERE",
+          "active_liens": 15,
+          "human_summary": "WARNING: 9 liens filed AGAINST J Reynolds & Co., Inc. (contractor didn't pay suppliers/subs)",
+          "liens_unclear": 4,
+          "liens_by_count": 2,
+          "resolved_liens": 0,
+          "liens_against_count": 9,
+          "liens_by_contractor": 2,
+          "total_against_amount": 0,
+          "liens_against_contractor": 9
+        },
+        "owner_name": null,
+        "search_term": "J Reynolds & Co., Inc.",
+        "searched_at": "2026-02-04T03:38:36.881359",
+        "total_records": 22
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:09:40.487Z",
+      "data": {
+        "query": "site:yelp.com \"J Reynolds & Co., Inc.\" \"Saginaw, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/j-reynolds-saginaw",
+            "title": "J REYNOLDS - Roofing",
+            "snippet": "Specialties: If you are seeking commercial roofing services in North Texas, it may benefit you to contact J Reynolds & Co., Inc. The ... Saginaw, TX · Home ...",
+            "position": 1
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=High+Rise+Apartments&find_loc=Saginaw%2C+TX",
+            "title": "Best High Rise Apartments near Far Northwest, Saginaw, TX",
+            "snippet": "Top 10 Best High Rise Apartments in Saginaw, TX ... Best High Rise Apartments near Far Northwest, Saginaw, TX ... J Reynolds & Co., Inc. The team has more than a ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:45.681Z",
+      "data": {
+        "name": "J Reynolds & Co., Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 306-9596",
+        "rating": 4.2,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "369 Sansom Blvd, Saginaw, TX 76179",
+        "reviews": [],
+        "website": "http://www.jreynolds.com/",
+        "maps_url": "https://www.google.com/maps/search/J%20Reynolds%20%26%20Co.%2C%20Inc.%20Saginaw%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:11:51.907Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:11:52.536Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:11:53.338Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "jreynolds.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:10:16.914Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:10:20.404Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:10:22.741Z",
+      "data": {
+        "query": "J Reynolds & Co., Inc. Saginaw site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/ronald-kubik-obituary?pid=undefined",
+            "title": "Find an Obituary - Legacy.com",
+            "snippet": "Browse our complete collection of obituaries and death notices. Start your search now to find information quickly.",
+            "position": 1
+          },
+          {
+            "link": "https://obits.dallasnews.com/obituaries/search?affiliateId=883",
+            "title": "Search for Obituaries - Saginaw News on MLive.com",
+            "snippet": "Search obituaries and memoriams from Saginaw News on MLive.com on Legacy.com.",
+            "position": 2
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05",
+            "title": "sitemap.xml",
+            "snippet": "... Co-Champs Thrilled to Share Title</video:title><video:description>Sohum Sukhatankar, Abhijay Kodali and Rohan Raja, all co-champions of this year's Scripps ...",
+            "position": 3
+          },
+          {
+            "link": "https://obits.dallasnews.com/obituaries/search",
+            "title": "Search for Obituaries - Legacy.com",
+            "snippet": "Richard Jay Allen obituary, Saginaw Michigan. Richard Jay Allen. Published 10/01/2025. Richard J. Allen Saginaw, Michigan Beloved husband ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05&type=video",
+            "title": "sitemap.xml",
+            "snippet": "... Co-Champs Thrilled to Share Title</video:title><video:description>Sohum Sukhatankar, Abhijay Kodali and Rohan Raja, all co-champions of this year's Scripps ...",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:10:33.529Z",
+      "data": "J Reynolds & Co., Inc. Saginaw review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Channels Filters Search filters The Reynolds Company The Reynolds Company @TheReynoldsCompany • 1.56K subscribers The Reynolds Company is a wholesale distributor of electrical supplies with 19 locations across Texas and Louisiana, with ... Subscribe Reynolds American Inc. Reynolds American Inc. @reynoldsamericaninc.184 • 184 subscribers Reynolds , a member of the BAT Group, is leading the transformation of the tobacco industry. Subscribe 1:00 1:00 Now playing Saginaw Odyssey House Review - Saginaw, MI RehabReviews.com RehabReviews.com • • 382 views 6 years ago RehabReviews.com RehabReviews.com To read the full review : https://rehabreviews.com/ saginaw -odyssey-house- review / Saginaw Odyssey House is a solid substance ... To read the full review : https://rehabreviews.com/ saginaw -odyssey-house- review / Saginaw Odyssey House is a solid substance ... From the video description 9 moments Saginaw Odyssey House operates a long-term residential substance abuse treatment | program for women in Saginaw, Michigan. | The facility has space for 30 women, with priority given to pregnant women and women with children. | All treatment is tailored toward women's needs | including groups that address topics such as domestic violence and sexual trauma. | The program requires clients to attend group, individual, and family sessions on a weekly basis. | After completing the residential program | women are offered referrals to the Flint Odyssey House outpatient program. | In addition to treatment, Saginaw Odyssey House offers recreational activities 9 auto-generated moments in this video 9 moments Saginaw Odyssey House operates a long-term residential substance abuse treatment Saginaw Odyssey House operates a long-term residential substance abuse treatment 0:08 Saginaw Odyssey House operates a long-term residential substance abuse treatment 0:08 program for women in Saginaw, Michigan. program for women in Saginaw, Michigan. 0:13 program for women in Saginaw, Michigan. 0:13 The facility has space for 30 women, with priority given to pregnant women and women with children. The facility has space for 30 women, with priority given to pregnant women and women with children. 0:16 The facility has space for 30 women, with priority given to pregnant women and women with children. 0:16 All treatment is tailored toward women's needs All treatment is tailored toward women's needs 0:21 All treatment is tailored toward women's needs 0:21 including groups that address topics such as domestic violence and sexual trauma. including groups that address topics such as domestic violence and sexual trauma. 0:24 including groups that address topics such as domestic violence and sexual trauma. 0:24 The program requires clients to attend group, individual, and family sessions on a weekly basis. The program requires clients to attend group, individual, and family sessions on a weekly basis. 0:36 The program requires clients to attend group, individual, and family sessions on a weekly basis. 0:36 After completing the residential program After completing the residential program 0:41 After completing the residential program 0:41 Sign up MIT Artificial Intelligence course How will you lead in a changing world? Harness AI as a tool for innovative transformation. Sponsored MIT Sloan + MIT CSAIL 8:41 8:41 Now playing Rapscallions Review! - Levi's Food and Spirits Rapscallions Report! Rapscallions Report! • • 217 views 13 years ago Rapscallions Report! Rapscallions Report! Welcome to the first episode of Rapscallions Review ! For the premiere, we went to Levi's Food and Spirits in Saginaw , MI. We had ... Welcome to the first episode of Rapscallions Review ! For the premiere, we went to Levi's Food and Spirits in Saginaw , MI. We had ... From the video description 9 chapters Intro | Food Environment | Drinks | Food | Appetizers | Fries | Rating | Price | Final Thoughts 9 auto-generated chapters in this video 9 chapters Intro Intro 0:00 Intro 0:00 Food Environment Food Environment 1:37 Food Environment 1:37 Drinks Drinks 2:18 Drinks 2:18 Food Food 2:59 Food 2:59 Appetizers Appetizers 3:30 Appetizers 3:30 Fries Fries 5:07 Fries 5:07 Rating Rating 5:56 Rating 5:56 0:53 0:53 Now playing The History of Reynolds and Reynolds Reynolds and Reynolds Careers Reynolds and Reynolds Careers • • 4.2K views 12 years ago Reynolds and Reynolds Careers Reynolds and Reynolds Careers Reynolds and Reynolds was the first company to offer accounting systems exclusively to dealers in the automotive industry in the ... Reynolds and Reynolds was the first company to offer accounting systems exclusively to dealers in the automotive industry in the ... From the video description Axon by AppLovin | AI-powered Advertising Platform Axon targets the right users and shows them the ad most likely to drive a conversion Sponsored Axon Watch Learn more Reynolds and Reynolds Reynolds and Reynolds @reyreychannel • 2.08K subscribers Reynolds and Reynolds helps automobile dealerships improve operational excellence and redefine the customer experience by ... Subscribe 0:44 0:44 Now playing Best Saginaw Mi Auto Mechanic Review Online Review Machine 1 Online Review Machine 1 • • 7.4K views 11 years ago Online Review Machine 1 Online Review Machine 1 Best Saginaw Mi Auto Mechanic Review Great video about finding the best auto mechanic in Saginaw MI Find everything you ... Best Saginaw Mi Auto Mechanic Review Great video about finding the best auto mechanic in Saginaw MI Find everything you ... From the video description 0:24 0:24 Now playing Best Saginaw MI Auto Mechanic Review DS1 Donny Sherrill Donny Sherrill • • 10 views 11 years ago Donny Sherrill Donny Sherrill Best Saginaw MI Auto Mechanic Review DS1 Looking for a GREAT Auto Mechanic in Saginaw MI? What are your auto care ... Best Saginaw MI Auto Mechanic Review DS1 Looking for a GREAT Auto Mechanic in Saginaw MI? What are your auto care ... From the video description 0:31 0:31 Now playing Mid Michigan Roofing Reviews | Saginaw 5 Star Review Showcase | Brianna Robinson The Whole Town's Talking The Whole Town's Talking • • 1 view 2 years ago The Whole Town's Talking The Whole Town's Talking (989) 793-5834 Mid Michigan Roofing Saginaw reviews 5 Star Rating: \"He built the pavilion at MSU college of business. Favorite ... (989) 793-5834 Mid Michigan Roofing Saginaw reviews 5 Star Rating: \"He built the pavilion at MSU college of business. Favorite ... From the video description 0:59 0:59 Now playing \"A Shell of its Former Self\" Droning the Bay Area Droning the Bay Area • • 826 views 9 years ago Droning the Bay Area Droning the Bay Area Grey Iron Saginaw Metal Castings Operations Saginaw MI. Grey Iron Saginaw Metal Castings Operations Saginaw MI. From the video description Visit site New Passport Online Get Your Passport Delivered to Your Door—Apply in minutes, renew online & avoid long lines Sponsored GOV+ 3:15 3:15 Now playing Menu Pulse reviews Retro Rocks in Saginaw, Michigan Menu Pulse Menu Pulse • • 135 views 7 years ago Menu Pulse Menu Pulse Did you know about the amazing menu at @Retro Rocks? We visited to sample their unique cuisine, and we were not ... Did you know about the amazing menu at @Retro Rocks? We visited to sample their unique cuisine, and we were not ... From the video description 0:31 0:31 Now playing Best Saginaw MI Auto Mechanic Review EPIV1 Online Review Machine 1 Online Review Machine 1 • • 16 views 11 years ago Online Review Machine 1 Online Review Machine 1 Best Saginaw MI Auto Mechanic Review EPIV1 Looking for a GREAT Auto Mechanic in Saginaw MI? What are your auto care ... Best Saginaw MI Auto Mechanic Review EPIV1 Looking for a GREAT Auto Mechanic in Saginaw MI? What are your auto care ... From the video description People also watched 2:22 2:22 Now playing Rockford manufacturer invests $10M as part of long-term growth plan WIFR TV WIFR TV • • 82 views 6 months ago WIFR TV WIFR TV Rockford manufacturer invests $10M as part of long-term growth plan For more Local News from WIFR: https://www.wifr.com/ For ... Rockford manufacturer invests $10M as part of long-term growth plan For more Local News from WIFR: https://www.wifr.com/ For ... From the video description CC 3:17 3:17 Now playing SCARIEST MYSTERY IN SAGINAW MICHIGAN Tyann Krapohl Tyann Krapohl • • 19K views 11 years ago Tyann Krapohl Tyann Krapohl On my way to an old friend I had a terrible feeling I had to stop. When I got out of the car I seen this due to the snow I had to go ... On my way to an old friend I had a terrible feeling I had to stop. When I got out of the car I seen this due to the snow I had to go ... From the video description 3:38 3:38 Now playing Breakfast restaurants: Saginaw, MI | Bringer Inn | Fuzzys | Tony’s | 2023 Just A Girl From Michigan Just A Girl From Michigan • • 850 views 3 years ago Just A Girl From Michigan Just A Girl From Michigan 1st place: Bringer Inn, 2nd place: Fuzzys and 3rd place: Tony's. Watch as I show MY favorite breakfast places in Saginaw ! 1st place: Bringer Inn, 2nd place: Fuzzys and 3rd place: Tony's. Watch as I show MY favorite breakfast places in Saginaw ! From the video description 3:58 3:58 Now playing Drury inn & suites Frankenmuth Michigan Starfish Adventures Starfish Adventures • • 907 views 3 years ago Starfish Adventures Starfish Adventures Made with Film Maker https://play.google.com/store/apps/details?id=com.cerdillac.filmmaker. Made with Film Maker https://play.google.com/store/apps/details?id=com.cerdillac.filmmaker. From the video description + 6 more 2:34 2:34 Now playing Interview with Saginaw Heritage Head Coach Steven Reynolds The D Zone The D Zone • • 4 views 3 weeks ago The D Zone The D Zone Saginaw Heritage Head Coach Steven Reynolds spoke with The D Zone after dealing Clarkston their only loss of the year. Saginaw Heritage Head Coach Steven Reynolds spoke with The D Zone after dealing Clarkston their only loss of the year. From the video description 4:00 4:00 Now playing Home2 Suites By Hilton Saginaw, Mi Review - Saginaw , United States of America WowHotelReviews Gamma WowHotelReviews Gamma • • 73 views 2 years ago WowHotelReviews Gamma WowHotelReviews Gamma Home2 Suites By Hilton Saginaw , Mi Book Now: ... Home2 Suites By Hilton Saginaw , Mi Book Now: ... From the video description Microwave for 80 seconds, Non-GMO Gluten Free Vegan Authentic Japanese short-grain rice, available on Amazon. Save 10% RISAIRIS10 Sponsored IRIS Rice Watch Shop now 2:36 2:36 Now playing PIZZA REVIEW TIME 🍕 - Milano's Pizza (Saginaw, MI) Pizza Review Time Pizza Review Time • • 912 views 3 years ago Pizza Review Time Pizza Review Time Subscribe: https://www.youtube.com/c/PizzaReviewTime ▶️ Merch: https://pizzareviewtime.myspreadshop.com/men?q=D1 ... Subscribe: https://www.youtube.com/c/PizzaReviewTime ▶️ Merch: https://pizzareviewtime.myspreadshop.com/men?q=D1 ... From the video description 4K 0:44 0:44 Now playing Best Saginaw MI Auto Mechanic Review NO 2 Tim Jones Tim Jones • • 10 views 11 years ago Tim Jones Tim Jones Best Saginaw MI Auto Mechanic Review NO 2 Are you looking for a GREAT Auto Mechanic in Saginaw MI? Do you have any auto ... Best Saginaw MI Auto Mechanic Review NO 2 Are you looking for a GREAT Auto Mechanic in Saginaw MI? Do you have any auto ... From the video description 3:13 3:13 Now playing Reynolds Packaging is Growing and Succeeding WBD Inc. WBD Inc. • • 381 views 4 years ago WBD Inc. WBD Inc. Reynolds Packaging owner Lisa Reynolds discusses where her business started, where it is now and her hopes for the future. Reynolds Packaging owner Lisa Reynolds discusses where her business started, where it is now and her hopes for the future. From the video description 1:13 1:13 Now playing Saginaw Control & Engineering Brand Overview GalcoTV GalcoTV • • 282 views 2 years ago GalcoTV GalcoTV Galco is proud to announce that we now have an in-stock selection of NEMA rated enclosures options from Saginaw Control ... Galco is proud to announce that we now have an in-stock selection of NEMA rated enclosures options from Saginaw Control ... From the video description 1:13 1:13 Now playing Reynolds Slices 570 Jobs WXII 12 News WXII 12 News • • 289 views 17 years ago WXII 12 News WXII 12 News Reynolds American Inc ., the nation's second-largest tobacco company , announced Tuesday that as many as 570 jobs are being ... Reynolds American Inc ., the nation's second-largest tobacco company , announced Tuesday that as many as 570 jobs are being ... From the video description 1:47 1:47 Now playing Layoffs Possible At Reynolds American WXII 12 News WXII 12 News • • 548 views 17 years ago WXII 12 News WXII 12 News Company officials at Reynolds American announced Tuesday that the company is planning to reanalyze how it does business. Company officials at Reynolds American announced Tuesday that the company is planning to reanalyze how it does business. From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:10:34.679Z",
+      "data": {
+        "query": "site:nextdoor.com J Reynolds & Co., Inc. Saginaw",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:10:45.912Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=J%20Reynolds%20%26%20Co.%2C%20Inc.&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20Reynolds% 26% 20Co.% 20Inc."
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Search Options. Cross Program. All Media Programs Facility Search · Analyze Trends · Track Performance · EPA/State Dashboards (Air, Wastewater, ...",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= J% 20Reynolds% 20% 26% 20Co.% 2C% 20Inc. TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= J% 20Reynolds% 20% 26% 20Co.% 2C% 20Inc. TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= J% 20% 26% 20Co.% 2C% 20Inc. TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Co.% 20Inc. TX"
+            }
+          },
+          {
+            "date": "Nov 12, 2025",
+            "link": "https://www.epa.gov/frs",
+            "title": "Facility Registry Service (FRS) - EPA",
+            "snippet": "Search FRS data with the Enforcement and Compliance History Online website. Includes the locations permits and compliance items on file. Search ...",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= J% 20Reynolds% 20% 26% 20Co.% 20Inc. &State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= J% 20% 26% 20Co.% 2C% 20Inc. TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search",
+            "title": "Enforcement Case Search | ECHO | US EPA",
+            "snippet": "Enforcement Case Search · Case Identifiers · Facility Location · Case Attributes · Case Milestones and Dates · Enforcement Case Outcomes/Settlements.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= J% 20Reynolds% 20% 26% 20Co.% 20Inc. TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= J% 20Reynolds% 20% 26% 20Co.% 2C% 20Inc. TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:10:49.507Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:10:54.010Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:00.586Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov J Reynolds & Co., Inc.",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 28, 2019",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2019/Press/20190128_2214.0_Mtn%20to%20Enforce%20Settlement%20Agreement.pdf",
+            "title": "20190128_2214.0_Mtn to Enforce Settlement Agreement.pdf",
+            "snippet": "Reynolds Tobacco Company. (“Reynolds”) in 2015. Reynolds assigned the ... Company, Inc.; Philip Morris; Reynolds; and the United States ...",
+            "position": 1
+          },
+          {
+            "date": "Feb 25, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/Enforcement%20Action_Mem.%20Op.%20and%20Order.pdf",
+            "title": "Case 5:96-cv-00091-JRG Document 2362 Filed 02/25/20 ...",
+            "snippet": "The Texas Settlement framework largely functioned as anticipated for seventeen years. However, in 2015, one of the settling manufacturers—R.J. ...",
+            "position": 2
+          },
+          {
+            "date": "Aug 15, 2025",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Response.pdf",
+            "title": "Case 1:25-cv-01153-ADA Document 13-1 Filed 08/15/ ...",
+            "snippet": "The stated purpose of the Act is to “prevent fraud and deceit by requiring proxy advisory firms to make certain disclosures when their proxy ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/press/51_File-Stamped_Mot._and_Br._of_Texas_et_al._Chamber_v._CFPB.pdf",
+            "title": "in the united states district court",
+            "snippet": "Dean Witter. Reynolds, Inc., 537 U.S. 79, 83 (2002) (citation omitted). Case 3:17-cv-02670-D Document 51 Filed 10/26/17 Page 2 of 6 PageID 663. Page 3. 2. 3 ...",
+            "position": 4
+          },
+          {
+            "date": "Nov 28, 2017",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/press/English_-_DCt_Texas_amicus_brief_11_28_2017.pdf",
+            "title": "Case 1:17-cv-02534-TJK Document 11-1 Filed 11/28/ ...",
+            "snippet": "Most recently, the Supreme Court declared in Free Enterprise Fund that the five members of the Public Company Accounting Oversight Board are in-.",
+            "position": 5
+          },
+          {
+            "date": "Dec 18, 2017",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/press/40-1_Br._of_Texas_et_al_12.18.2017_(File-Stamped)%20(1).pdf",
+            "title": "In the United States District Court",
+            "snippet": "Most recently, the Supreme Court declared in Free Enterprise Fund that the five members of the Public Company Accounting Oversight Board are in-.",
+            "position": 6
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Global%20Opioid%20Settlement%20Files/Final%20Distributor%20Settlement%20Agreement.pdf",
+            "title": "DISTRIBUTOR SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. DISTRIBUTOR SETTLEMENT. AGREEMENT. Page 2. i. Table of Contents. Page. I.",
+            "position": 7
+          },
+          {
+            "date": "Dec 8, 2014",
+            "link": "https://www2.texasattorneygeneral.gov/opinions/openrecords/50abbott/orl/2014/pdf/or201422185.pdf",
+            "title": "December 8, 2014 Ms. E. Barry Gaines Legal Counsel ...",
+            "snippet": "The Harris County Appraisal District (the \"district\") received a request for the district's. \"agent file\" containing at least account number ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/executive-management/Final%20Jingrong%20with%20ND-c1.pdf",
+            "title": "In the Supreme Court of the United States",
+            "snippet": "Reynolds, 98 U.S. at 162 (explaining that the Court looks to “the history of the times in the midst of which the provision was adopted” to determine the meaning ...",
+            "position": 9
+          },
+          {
+            "date": "Aug 8, 2025",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Quo%20Warranto%20SCOTX%20Filed.pdf",
+            "title": "In the Supreme Court of Texas",
+            "snippet": "And in so doing, a minority of one House of the Legislature has held hostage the entire “leg- islative power” of the State, denying to the ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:01.697Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 3
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 4
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "date": "Jan 10, 2026",
+            "link": "https://www.facebook.com/groups/1494427604106723/posts/4294122614137194/",
+            "title": "Anyone looking to verify these fake LLC You can search on the ...",
+            "snippet": "Anyone looking to verify these fake LLC You can search on the Texas comptroller account page Type their LLC name correctly and you can see ...",
+            "position": 7
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 8
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 9
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn and Texas Tax Code, Sec. 171.2515. [2] https://statutes.capitol.texas.gov/Docs/TX/htm/TX ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:11:02.561Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com J Reynolds & Co., Inc.",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:03.580Z",
+      "data": {
+        "query": "site:dallascounty.org J Reynolds & Co., Inc. civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/government/courts-livestream/civil-district/district-courts-docket-information.php",
+            "title": "District Courts Docket Information",
+            "snippet": "District Courts Daily Docket. Party Name, Floor/Court, Time, Case Number. 0NE 2014 LAND ROVER RANGE ROV, 3:00PM, DC-24-21255.",
+            "position": 1
+          },
+          {
+            "date": "Apr 13, 2023",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2023/2023-04.pdf",
+            "title": "2023-04.pdf",
+            "snippet": "HB 1219-Reynolds-Amends Texas Health and Safety Code, Title 9, Subtitle A to add Chapter 769 to require the group homes to perform criminal ...",
+            "position": 2
+          },
+          {
+            "date": "Jun 13, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2024/June%20Packet.pdf",
+            "title": "11:00am In-Person & Virtual Meetings via Mic",
+            "snippet": "Commissioner Price welcomed everyone and announced that the meeting was being recorded and those who continued in attendance were consenting to ...",
+            "position": 3
+          },
+          {
+            "date": "Mar 11, 2021",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2021/2021-03.pdf",
+            "title": "11:00am Virtual Meeting via Microsoft Teams",
+            "snippet": "HB 78-Reynolds-Establishes a mental health diversion pilot project for Ft. Bend County. Current Status: H Corrections Committee. HB 128 ...",
+            "position": 4
+          },
+          {
+            "date": "Mar 9, 2023",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2023/2023-03.pdf",
+            "title": "Dallas County Behavioral Health Leadership Team ...",
+            "snippet": "HB 1644-Romero-Directs the Texas Health and Human Services Commission to study mental health professionals or mental health response teams ...",
+            "position": 5
+          },
+          {
+            "date": "Jun 10, 2021",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2021/2021-06.pdf",
+            "title": "2021-06.pdf",
+            "snippet": "Also training and treatment of opioid addiction, medical detoxification, relapse prevention, counseling, recovery support, diversion control, ...",
+            "position": 6
+          },
+          {
+            "date": "Sep 24, 2018",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2018/JB_Packet_092418.pdf",
+            "title": "agenda",
+            "snippet": "Griffiths stated the facility program is designed for both adjudicated male and female juvenile offenders who are between the ages of 11 and 18 ...",
+            "position": 7
+          },
+          {
+            "date": "by GCT Daniel",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHHW/2023/August%202023%20HWG%20Meeting%20Packet.pdf",
+            "title": "August 23, 2023, 10:00-11:30am",
+            "snippet": "Provides immunity from civil or criminal liability or disciplinary measures for good-faith action or failure to act. • Amends Texas Government ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "statutory",
+            "snippet": "P.O. Box 12066. Austin, Texas 78711. (512) 463-1625. Fax: (512) 463-1648. THE ATTACHED REPORT IS A TRUE AND ACCURATE REFLECTION OF THE RECORDS OF. THE COURTS OF ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.dallascounty.org/government/courts-livestream/county-civil-docket-information.php",
+            "title": "Daily Docket Information",
+            "snippet": "County Civil Docket Information.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:04.729Z",
+      "data": {
+        "query": "site:collincountytx.gov J Reynolds & Co., Inc.",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200810_2512/48829_Contract%20Data_IFB%202020-132.pdf",
+            "title": "COLLIN COUNTY",
+            "snippet": "J Reynolds & Co., Inc. (Non-responsive). Merit Roofing Systems, Inc. Nations ... Shoemake Holdings, Inc. DBA Premiere Roofing. Progressive Services, Inc ...",
+            "position": 1
+          },
+          {
+            "date": "5 days ago",
+            "link": "https://eagenda.collincountytx.gov/docs/2026/CC/20260126_3169/59449_01_Collin%20County%20Commissioners%20Court%20Meeting%20Minutes%2012.8.2025.pdf",
+            "title": "State of Texas § Court Order Collin County § 2026-xxx-01- ...",
+            "snippet": "1. AI-59247 Amendment to Tyler Jury Services Agreement (Contract No. 01318-09) with Tyler. Technologies Inc. to provide various changes to the ...",
+            "position": 2
+          },
+          {
+            "date": "Jan 12, 2026",
+            "link": "https://eagenda.collincountytx.gov/docs/2026/CC/20260112_3167/59438_Defendant%20Collin%20County%27s%20Brief%20in%20Opposition.pdf",
+            "title": "Defendants Collin County Commissioners Court; ...",
+            "snippet": "entity subject to suit. Collin County is the proper party defendant in any effort to control the actions of the. Commissioners Court.",
+            "position": 3
+          },
+          {
+            "date": "Feb 12, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240311_2926/55636_285%20-%2055636.pdf",
+            "title": "State of Texas Collin County Commissioners Court ...",
+            "snippet": "On Monday, February 12, 2024, the Commissioners Court of Collin County, Texas, met in Regular Session in the Commissioners Courtroom, ...",
+            "position": 4
+          },
+          {
+            "date": "Aug 19, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240819_2995/56470_800%20-%2056470.pdf",
+            "title": "Court Order",
+            "snippet": "Reynolds has repeatedly asked the Court to use hand-counted, hand-marked ballots as a means to preserve the voter's intent in the upcoming.",
+            "position": 5
+          },
+          {
+            "date": "Aug 19, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20241007_3009/56782_1073%20-%2056782.pdf",
+            "title": "On Monday, August 19, 2024, the Commissioners Court of ...",
+            "snippet": "Bob Hall, Texas Senator, shared his thoughts on improving election integrity. Among his suggestions to accomplish this were switching to ...",
+            "position": 6
+          },
+          {
+            "date": "Jun 27, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240701_2978/38983_20240627%20NCTCOG%20Executive%20Board%20Meeting.pdf",
+            "title": "North Central Texas Council of Governments TO",
+            "snippet": "The NCTCOG Executive Board meeting is posted as a videoconference meeting. The presiding officer shall be present at the physical location, ...",
+            "position": 7
+          },
+          {
+            "date": "Jul 1, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240722_2988/56278_671%20-%2056278.pdf",
+            "title": "On Monday, July 1, 2024, the Commissioners Court of ...",
+            "snippet": "Due to the timing of the COVID-19 pandemic, the project was paused in its early stages to allow for adjustments to improve the efficiency of ...",
+            "position": 8
+          },
+          {
+            "date": "Feb 27, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240401_2932/55728_Ratcliff%20PCO%20%23%2093%20-%20Added%20Data%20Drops%20%28BSW%20SIGNED%29.pdf",
+            "title": "PCO 93",
+            "snippet": "for Computer Network System. MAKE THE CONNECTION TODAY. ACI Corporate Office 2015 McKenzie Drive, Suite 120 Carrollton, TX 75006 (972) 988-3080 ...",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:05.942Z",
+      "data": {
+        "query": "site:dentoncounty.gov J Reynolds & Co., Inc.",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/278/July-2012-Vendor-Check-Register-PDF",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20120724. 4M YOUTH SERVICES, INC. $11,997.85. 20120710. 911 ETC, INC. $692.10. 20120724. A-1 PORTA PRIVY. $471.60.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=224",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20090407. 4IMPRINT. $548.21. 20090414. 4M YOUTH SERVICES, INC. $14,241.11. 20090407. A-1 PORTA PRIVY. $315.00.",
+            "position": 2
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=607_50",
+            "title": "Dev Permit Report",
+            "snippet": "Dev Permit Report. Permit ID, Applicant Name, Applicant Company, Property Situs Address, Property Legal Description, PermitType, Date Approved ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=217",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20100907. 2010 NAE4-HA CONFERENCE. $200.00. 20100914. 4M YOUTH SERVICES, INC. $7,031.17. 20100921. 911 ETC, INC.",
+            "position": 4
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=302",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20150113. 911 ETC, INC. $692.10. 20150120. A-1 PORTA PRIVY. $173.36. 20150127. AAA DENTON FIRE & SAFETY.",
+            "position": 5
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/172/April-2013-Vendor-Check-Register-PDF",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20130416. SAM HOUSTON STATE UNIV. $235.00. 20130416. 2L CONSTRUCTION, LLC. $85,405.50. 20130430. 4IMPRINT.",
+            "position": 6
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=231_50",
+            "title": "Dev Permit Report",
+            "snippet": "Dev Permit Report ; 20191493, DINEY ZANE, AMERICAN LEGEND HOMES ; 20191492, DINEY ZANE, AMERICAN LEGEND HOMES ; 20191491, LUCILA FIERROS, ALPHA OMEGA WATER WELL ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/286/September-2012-Vendor-Check-Register-PDF",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20120918. 4M YOUTH SERVICES, INC. $16,618.00. 20120911. 911 ETC, INC. $692.10. 20120904. A-1 PORTA PRIVY.",
+            "position": 8
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=244",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20080722. BEST WESTERN ATRIUM NORTH. $172.50. 20080701. 132.97. $132.97. 20080722. 4M YOUTH SERVICES, INC.",
+            "position": 9
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=227",
+            "title": "Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20080812. 4IMPRINT. $1,073.24. 20080812. 4M YOUTH SERVICES, INC. $7,015.00. 20080812. 911 ETC, INC. $689.10.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:09.634Z",
+      "data": "Could not find your craft/ folder. Please ensure that $craftPath is set correctly in /home/jreynolds2549/public_html/index.php"
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:15.214Z",
+      "data": {
+        "name": "J Reynolds & Co., Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 381-2549",
+        "rating": "Not Rated",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/saginaw/profile/roofing-contractors/j-reynolds-co-inc-0825-235967479",
+        "review_count": null,
+        "founding_date": "02/01/2002",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 24,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:20.740Z",
+      "data": {
+        "name": "J Reynolds & Co., Inc.",
+        "found": true,
+        "rating": 4.2,
+        "source": "serpapi",
+        "address": "369 Sansom Blvd, Saginaw, TX 76179",
+        "data_id": "0x864e75fdd9121b87:0xb4f3530f24fc676c",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 18,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "7 years ago",
+            "text": "GREAT company. Awesome leadership from the office personnel to the dedicated field guys. The craftsmanship and quality far exceeded my expectations. I could not be more impressed with J. Reynolds. Their commitment to their employees and customers is outstanding. They are true leaders in the industry.",
+            "author": "Cameron",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "I have learned from my experience!! DO NOT LET THEM GET YOU",
+            "author": "Brannon Burroughs",
+            "rating": 1
+          },
+          {
+            "date": "6 years ago",
+            "text": "exelente  compania, servicio profesional  para techos comerciales",
+            "author": "Jorge Raymundo",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Por qué no atienden bien",
+            "author": "Juan Suarez",
+            "rating": 1
+          },
+          {
+            "date": "7 years ago",
+            "text": "Excelente",
+            "author": "Ricardo Garcia",
+            "rating": 5
+          },
+          {
+            "date": "Edited 8 years ago",
+            "text": "👍👍👍👍👍",
+            "author": "Silvia Arambula",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "",
+            "author": "Jessica Meyer",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "",
+            "author": "Luis Lopez",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "",
+            "author": "Felipe Vasquez",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "",
+            "author": "Federico Garrido",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "",
+            "author": "Gustavo Aguilera",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "",
+            "author": "Tfreddy Torres",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "",
+            "author": "Krag",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "",
+            "author": "Sandra Rocha",
+            "rating": 4
+          },
+          {
+            "date": "6 years ago",
+            "text": "",
+            "author": "Manuel Barraza",
+            "rating": 5
+          },
+          {
+            "date": "8 years ago",
+            "text": "",
+            "author": "Brittany Worley",
+            "rating": 1
+          },
+          {
+            "date": "8 years ago",
+            "text": "",
+            "author": "Antonio Contreras",
+            "rating": 3
+          },
+          {
+            "date": "8 years ago",
+            "text": "",
+            "author": "Silvia Arambula",
+            "rating": 4
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": 20,
+        "pages_fetched": 2,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "default",
+        "escalation_reason": "MULTIPLE_SUSPICIOUS_SIGNALS",
+        "location_searched": "Dallas, TX",
+        "search_confidence": 0.7249999999999999,
+        "serper_fraud_check": {
+          "reason": "MULTIPLE_SUSPICIOUS_SIGNALS",
+          "signals": [
+            "MANY_SHORT_REVIEWS",
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": true,
+          "confidence": "MEDIUM"
+        }
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:45.679Z",
+      "data": {
+        "name": "J Reynolds & Co., Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 306-9596",
+        "rating": 4.2,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "369 Sansom Blvd, Saginaw, TX 76179",
+        "reviews": [],
+        "website": "http://www.jreynolds.com/",
+        "maps_url": "https://www.google.com/maps/search/J%20Reynolds%20%26%20Co.%2C%20Inc.%20Saginaw%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:11:50.749Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:11:53.978Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"J Reynolds & Co., Inc.\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:54.611Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"J Reynolds & Co., Inc.\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/job-listing/chief-commercial-roofing-estimator-j-reynolds-and-co-inc-JV_IC1161591_KO0,34_KE35,56.htm?jl=1009667705289",
+            "title": "Chief Commercial Roofing Estimator",
+            "snippet": "Job expiredThis job from Mar 10, 2025 is no longer available for applications. J Reynolds & Co., Inc. ... Conversations @J Reynolds & Co., Inc. Kick off the ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:55.246Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"J Reynolds & Co., Inc.\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/J-Reynolds-&-Co.,-Inc",
+            "title": "J Reynolds & Co., Inc Careers and Employment",
+            "snippet": "Find out what works well at J Reynolds & Co., Inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/J-Reynolds-&-Co.,-Inc/reviews",
+            "title": "Working at J Reynolds & Co., Inc: 4 Reviews",
+            "snippet": "Reviews from J Reynolds & Co., Inc employees about J Reynolds & Co., Inc culture, salaries, benefits, work-life balance, management, job security, and more."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/J-Reynolds-&-Co.,-Inc/locations",
+            "title": "All J Reynolds & Co., Inc office locations",
+            "snippet": "Browse J Reynolds & Co., Inc office locations. J Reynolds & Co., Inc locations by state. 3.0. Texas. 3.0 out of 5 stars. J Reynolds & Co., Inc locations by city."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/J-Reynolds-&-Co.,-Inc/reviews?ftopic=mgmt",
+            "title": "J Reynolds & Co., Inc Management reviews",
+            "snippet": "J Reynolds & Co., Inc Management reviews · September 15, 2022. Decent place to work for starting out. Heavy equipment operator · June 3, 2019. Lots of hours and ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/J-Reynolds-&-Co.,-Inc/interviews",
+            "title": "Interviewing at J Reynolds & Co., Inc",
+            "snippet": "Prepare yourself for your interview at J Reynolds & Co., Inc by browsing Interview questions and processes from real candidates."
+          }
+        ],
+        "result_count": 8
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:11:55.785Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"J Reynolds & Co., Inc.\" Saginaw",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:56.407Z",
+      "data": {
+        "found": true,
+        "query": "site:osha.gov \"J Reynolds & Co., Inc.\"",
+        "source": "osha",
+        "results": [
+          {
+            "link": "https://www.osha.gov/ords/imis/accidentsearch.accident_inspection?line_item=1&id=11213270247273",
+            "title": "Injury Line: J Reynolds & Co., Inc.",
+            "snippet": "Injury Line: J Reynolds & Co., Inc. ; Source of Injury ; Event Type, Fall(From Elevation) ; Environmental Factor ; Human Factor ; Occupation, Roofers."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/accidentsearch.accident_detail?id=129352.015",
+            "title": "Accident Report Detail | Occupational Safety and Health ...",
+            "snippet": "J Reynolds & Co., Inc. Abstract: At 11:41 a.m. on September 4, 2020, an employee working as a roofer for a roofing contractor was working on a crew ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search?sic=&naics=&state=CA&officetype=&office=&startmonth=03&startday=29&startyear=2017&endmonth=&endday=29&endyear=&scope=&fedagncode=&owner=&p_start=28700&p_finish=28720&p_sort=estab_name&p_desc=ASC&p_direction=Next&p_show=20",
+            "title": "Industry Search Results Page | Occupational Safety and Health ...",
+            "snippet": "J Reynolds & Co., Inc. 28724, 1675917.015, 06/06/2023, 0950625, CA, Accident, Partial, 484110, 6, J Rivas & Sons Transport Inc. 28725, 1774380.015, 09/05/2024 ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search?sic=&naics=23&state=All&officetype=&office=All&startmonth=01&startday=01&startyear=2019&endmonth=12&endday=31&endyear=2019&scope=&fedagncode=&owner=&p_start=&p_finish=0&p_sort=&p_desc=DESC&p_direction=Next&p_show=10000",
+            "title": "Industry Search Results Page | Occupational Safety and ...",
+            "snippet": "... J Reynolds & Co., Inc. 2483, 1446796.015, 11/21/2019, 0522500, OH, Planned, Partial, 238130, 1, Rojas Brothers Construction Llc. 2484 ..."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:11:56.982Z",
+      "data": {
+        "found": true,
+        "query": "\"J Reynolds & Co., Inc.\" Saginaw lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.tips-usa.com/assets/Vendorspdf/211001_CONTRACT_JOC_J_Reynolds_and_CO.pdf",
+            "title": "TIPS VENDOR AGREEMENT (JOC)",
+            "snippet": "J Reynolds & Co., Inc. is authorized to install SOPREMA roofing and obtain a SOPREMA warranty upon successful completion of the specified ..."
+          },
+          {
+            "link": "https://www.hcde-texas.org/cms/lib/TX50000649/Centricity/shared/board%20documents/2020/5-20-2020-Board-Meeting-Agenda-Final-2.pdf",
+            "title": "5-20-2020-Board-Meeting-Agenda-Final-2. ...",
+            "snippet": "For the purpose of considering discipline of a public school child or children or to hear a complaint ... J Reynolds & Co., Inc. Saginaw, TX. 01/ ..."
+          },
+          {
+            "link": "https://cms9files.revize.com/templetx/archive/city%20council/2009/11-05-09%20CC%20Agenda%20Packet.pdf",
+            "title": "MEETING OF THE TEMPLE CITY COUNCIL",
+            "snippet": "CONTRACT WITH J. REYNOLDS & CO., INC., OF SAGINAW,. TEXAS, TO REPLACE THE LIBRARY ROOF, IN THE AMOUNT. OF $197,000; REJECTING ALL BIDS RECEIVED FOR THE RE ..."
+          },
+          {
+            "link": "https://tips-usa.com/assets/Vendorspdf/181101_Job_Order_Contracting_JOC_Contract_J_Reynolds_and_CO_Inc.pdf",
+            "title": "TIPS VENDOR AGREEMENT",
+            "snippet": "BASF Corporation Construction Chemicals recognizes J Reynolds & Co. Inc, Saginaw, Texas as a “Qualified Applicator” because of their ..."
+          },
+          {
+            "link": "https://resources.finalsite.net/images/v1710786430/escnjus/dnqomswinxtyzfsle2le/11PartB-TechnicalSpecifications-WTI.pdf",
+            "title": "Roofing and Building Envelope Services AEPA IFB #021-D",
+            "snippet": "... J Reynolds & Co., Inc. 369 Sansom Blvd. Saginaw. Texas. 76179. Kyle Crawford. 817-306-7477. TX. J. R. Jones Roofing. 5511 Mitchelldale Street. Houston. Texas."
+          }
+        ],
+        "result_count": 8
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:12:19.503Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-31T10:11:59Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22J%20Reynolds%20%26%20Co.%2C%20Inc.%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=b9V9aejqDN3Tp84P7O_ikAU\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-31T10:12:14Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22J%20Reynolds%20%26%20Co.%2C%20Inc.%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=fdV9aa7sLuvIwN4Pi_fvmAg\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "J Reynolds & Co., Inc.",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:17:19.700Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:17:19.703Z",
+      "data": {
+        "error": "API error: 403",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:17:31.705Z",
+      "data": {
+        "cost": 0.00054012,
+        "summary": "The review profile is concerning. While the company appears to have been in business for many years, the Google reviews lack substance. Most 5-star reviews are empty or extremely brief (e.g., 'Excelente', '👍'), offering no specific details about projects, crew, or outcomes. The negative reviews, though also brief, carry a strong emotional warning. The complete absence of detailed, narrative-driven positive reviews from recent years is a significant red flag. The data suggests possible review padding with low-quality positive feedback.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-01-31T10:17:31.705Z",
+        "fake_signals": [
+          "High proportion of empty or extremely brief 5-star reviews",
+          "Lack of specific project details in positive reviews",
+          "Several 5-star reviews from 5-8 years ago with no recent detail",
+          "Positive reviews feel generic and lack authentic customer narrative"
+        ],
+        "recommendation": "EXERCISE_CAUTION",
+        "platform_ratings": {
+          "bbb": "Not Rated",
+          "yelp": null,
+          "google": 4.2,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Some reviews from several years ago suggest longevity",
+          "Negative reviews contain emotional language (e.g., 'DO NOT LET THEM GET YOU')"
+        ],
+        "fake_review_score": 65,
+        "complaint_patterns": [
+          "Vague but negative warnings",
+          "Poor customer service"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Insufficient data across platforms to detect meaningful discrepancies. Only Google has reviews."
+      }
+    }
+  }
+}

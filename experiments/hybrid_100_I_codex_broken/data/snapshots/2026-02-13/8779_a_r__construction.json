@@ -1,0 +1,1631 @@
+{
+  "contractor_id": 8779,
+  "business_name": "A.R. Construction",
+  "city": "Frisco",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T08:27:38.712Z",
+  "sources": {
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:37:15.459Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:37:16.584Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:37:35.117Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 5,
+            "MECH_LIEN": 8,
+            "STATE_TAX_LIEN": 2
+          },
+          "active_liens": 10,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 4,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "MCELYEA & ONEAL CONSTRUCTION CO",
+                "grantor": "BARE A R",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BARE A R",
+                    "MCELYEA & ONEAL CONSTRUCTION CO",
+                    "RELEASE",
+                    "10/13/1965",
+                    "19651013066201940",
+                    "--/0662/0194",
+                    "Survey-"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1965-10-13",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "19651013066201940"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "STREETER CARVEY A",
+                "grantor": "PERDUE CONSTRUCTION INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PERDUE CONSTRUCTION INC",
+                    "STREETER CARVEY A",
+                    "LIEN",
+                    "12/14/1995",
+                    "19951214000935180",
+                    "LAND/--/--",
+                    "Subdivision- Name: ALLEN BUSINESS CENTRE TCT A R I/544, Reference - I / 544"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1995-12-14",
+                "has_release": true,
+                "release_date": "1997-01-21",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "days_to_release": 404,
+                "instrument_number": "19951214000935180"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "STREETER CARVEY A",
+                "grantor": "PERDUE CONSTRUCTION",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PERDUE CONSTRUCTION",
+                    "STREETER CARVEY A",
+                    "RELEASE",
+                    "1/21/1997",
+                    "19970121000050580",
+                    "LAND/--/--",
+                    "Subdivision- Name: ALLEN BUSINESS CENTRE TCT A R I/544, Reference - I / 544"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1997-01-21",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "19970121000050580"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "PERDUE CONSTRUCTION CORP",
+                "grantor": "STREETER CARVEY A",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "STREETER CARVEY A",
+                    "PERDUE CONSTRUCTION CORP",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "4/17/1995",
+                    "19950417000254300",
+                    "LAND/--/--",
+                    "Subdivision- Name: ALLEN BUSINESS CENTRE TCT A R I/544 Lot: A2, Reference - I / 544"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1995-04-17",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19950417000254300"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 11,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "TEXAS STATE OF",
+                "grantor": "ROJAS A R CONSTRUCTION INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ROJAS A R CONSTRUCTION INC",
+                    "TEXAS STATE OF",
+                    "STATE TAX LIEN",
+                    "9/22/2020",
+                    "202000257720",
+                    "--/--/--",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "STATE TAX LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2020-09-22",
+                "document_type": "STATE_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "202000257720"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "TEXAS STATE OF",
+                "grantor": "ROJAS A R CONSTRUCTION INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ROJAS A R CONSTRUCTION INC",
+                    "TEXAS STATE OF",
+                    "STATE TAX LIEN",
+                    "8/20/2021",
+                    "202100249390",
+                    "--/--/--",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "STATE TAX LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2021-08-20",
+                "document_type": "STATE_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "202100249390"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "ROJAS A R CONSTRUCTION INC",
+                "grantor": "TEXAS STATE OF",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE OF",
+                    "ROJAS A R CONSTRUCTION INC",
+                    "RELEASE OF STATE TAX LIEN",
+                    "10/20/2021",
+                    "202100313130",
+                    "--/--/--",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "RELEASE OF STATE TAX LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2021-10-20",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "202100313130"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "A R DOMINGUEZ CONSTRUCTION",
+                "grantor": "ALTA CONSTRUCTION SERVICES INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ALTA CONSTRUCTION SERVICES INC",
+                    "A R DOMINGUEZ CONSTRUCTION",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "10/10/2007",
+                    "20070365615",
+                    "--/--/--",
+                    "DALLAS",
+                    "Subdivision- Block: 2 CBLK: 6987, CITY: DALLAS,"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2007-10-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20070365615"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "S T A R CONCRETE PUMPING CO INC",
+                "grantor": "GUTIERREZ CONSTRUCTION",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GUTIERREZ CONSTRUCTION",
+                    "S T A R CONCRETE PUMPING CO INC",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "4/13/2007",
+                    "20070134007",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: LAKE RIDGE Lot: 248"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2007-04-13",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20070134007"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "S T A R CONCRETE PUMPING CO INC",
+                "grantor": "GUTIERREZ CONSTRUCTION",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GUTIERREZ CONSTRUCTION",
+                    "S T A R CONCRETE PUMPING CO INC",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "4/13/2007",
+                    "20070134008",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: LAKE RIDGE Lot: 419"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2007-04-13",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20070134008"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "UNKNOWN",
+                "grantor": "A R DOMINGUEZ CONSTRUCTION DBA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A R DOMINGUEZ CONSTRUCTION DBA",
+                    "UNKNOWN",
+                    "RELEASE",
+                    "3/13/2008",
+                    "20080082572",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: SPHINX AT REESE COURT Lot: 1B Block: 1 CBLK: 3747,"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2008-03-13",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "20080082572"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "UNKNOWN",
+                "grantor": "A R DOMINGUEZ CONSTRUCTION DBA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A R DOMINGUEZ CONSTRUCTION DBA",
+                    "UNKNOWN",
+                    "RELEASE",
+                    "3/13/2008",
+                    "20080082577",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: SPHINX AT LUXAR Lot: 1 Block: 2 CBLK: 6987,"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2008-03-13",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "20080082577"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "FERRELL DWAYNE AGENT",
+                "grantor": "BENGE ARCADIAN CONSTRUCTION",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BENGE ARCADIAN CONSTRUCTION",
+                    "FERRELL DWAYNE AGENT",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "2/13/2009",
+                    "200900042859",
+                    "--/--/--",
+                    "DALLAS SURVEY",
+                    "A R MURRAY NO 918"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2009-02-13",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "200900042859"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "A R DOMINGUEZ CONSTRUCTION DBA",
+                "grantor": "ALTA CONSTRUCTION SERVICES INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ALTA CONSTRUCTION SERVICES INC",
+                    "A R DOMINGUEZ CONSTRUCTION DBA",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "10/10/2007",
+                    "20070365614",
+                    "--/--/--",
+                    "DALLAS",
+                    "Subdivision- Name: SPHINX AT REESE COURT Lot: 1B Block: 1 CBLK: 3747, CITY: DALLAS,"
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2007-10-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20070365614"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "LEGENDS CONSTRUCTION DBA",
+                "grantor": "WOLFORD AMERICA INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WOLFORD AMERICA INC",
+                    "LEGENDS CONSTRUCTION DBA",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "4/20/2007",
+                    "20070142932",
+                    "--/--/--",
+                    "DALLAS",
+                    "A R MURRAY SURVEY A-918 ...."
+                  ],
+                  "search_term": "A.R. Construction",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2007-04-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20070142932"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "2 lien(s) AGAINST contractor",
+            "3 old lien(s) against contractor (>7 years ago)",
+            "2 lien(s) filed BY contractor (collecting payment - neutral)",
+            "2 lien(s) with unclear direction"
+          ],
+          "score": 6,
+          "max_score": 10,
+          "risk_level": "SEVERE",
+          "active_liens": 9,
+          "human_summary": "WARNING: 5 liens filed AGAINST A.R. Construction (contractor didn't pay suppliers/subs)",
+          "liens_unclear": 2,
+          "liens_by_count": 2,
+          "resolved_liens": 1,
+          "liens_against_count": 5,
+          "liens_by_contractor": 2,
+          "total_against_amount": 0,
+          "liens_against_contractor": 5
+        },
+        "owner_name": null,
+        "search_term": "A.R. Construction",
+        "searched_at": "2026-02-13T07:36:25.059510",
+        "total_records": 15
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:37:09.779Z",
+      "data": {
+        "name": "A.R. Construction",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(682) 521-7763",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2026 GoogleUnited StatesTermsPrivacySend Product Feedback",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/A.R.%20Construction%20Frisco%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:35:08.653Z",
+      "data": {
+        "query": "site:yelp.com \"A.R. Construction\" \"Frisco, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Concrete&find_loc=Caddo+Mills%2C+TX+75135",
+            "title": "TOP 10 BEST Concrete near Caddo Mills, TX 75135 - Yelp",
+            "rating": 4.2,
+            "snippet": "... AR construction - Concrete near me - Caddo Mills, Texas. AR construction. 0.0 ... Frisco, TX...read more · See all reviews. Photos. See all. Response time. 10 ...",
+            "position": 1,
+            "ratingCount": 124
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Concrete&find_loc=Farmersville%2C+TX+75442",
+            "title": "TOP 10 BEST Concrete near Farmersville, TX 75442 - Yelp",
+            "rating": 4.4,
+            "snippet": "... Frisco, TX...read more · See all reviews. Photos. See all. Response time. 10 mins ... AR construction - Concrete near me - Farmersville, Texas. AR ...",
+            "position": 2,
+            "ratingCount": 259
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Patio+Coverings&find_loc=Caddo+Mills%2C+TX",
+            "title": "Best Patio Coverings near Caddo Mills, TX - Yelp",
+            "rating": 4.2,
+            "snippet": "... AR construction - Patio Coverings near me - Caddo Mills, Texas. AR ... Frisco, TX 75034. (940) 580-0922. Photos. New build. Before. Before.",
+            "position": 3,
+            "ratingCount": 386
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Concrete&find_loc=Greenville%2C+TX",
+            "title": "THE BEST 10 Concrete in Greenville, TX - Quality & Affordability - Yelp",
+            "rating": 4.2,
+            "snippet": "... Frisco, TX...read more · See all reviews. Photos. See all. Response time. 10 mins ... AR construction - Concrete near me - Greenville, Texas. AR construction.",
+            "position": 4,
+            "ratingCount": 154
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=masonry_concrete&find_loc=Caddo+Mills%2C+TX%2C+USA",
+            "title": "THE BEST 10 MASONRY/CONCRETE near CADDO MILLS, TX - Yelp",
+            "rating": 4.4,
+            "snippet": "... AR construction, CNC Concrete, ReNew Pressure Washing, American Fence ... Frisco, TXread more · See all reviews. Photos. See all. Response time. 10 mins.",
+            "position": 5,
+            "ratingCount": 182
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Driveway+Construction&find_loc=Caddo+Mills%2C+TX",
+            "title": "TOP 10 BEST Driveway Construction near Caddo Mills, TX - Yelp",
+            "rating": 4.3,
+            "snippet": "... AR construction, T X Steele, Hook & Ladder Fencing & Iron Works, Diamond ... Frisco, TXread more · See all reviews. See all. Response time. 10 mins. Response ...",
+            "position": 6,
+            "ratingCount": 119
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Patio+Coverings&find_loc=Greenville%2C+TX",
+            "title": "Top 10 Best Patio Coverings Near Greenville, Texas - Yelp",
+            "rating": 4.5,
+            "snippet": "... AR construction - Patio Coverings near me - Greenville, Texas. AR ... Frisco, TX 75034. (940) 580-0922. Photos. New build. Before. Before.",
+            "position": 7,
+            "ratingCount": 384
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Stamped+Concrete+Installation&find_loc=Caddo+Mills%2C+TX",
+            "title": "Best Stamped Concrete Installation near Caddo Mills, TX - Yelp",
+            "rating": 4.5,
+            "snippet": "... AR construction, Blue Backyard Pool & Outdoor Living, Golden Lone Star ... Frisco, TXread more · See all reviews. See all. Response time. 10 mins. Response ...",
+            "position": 8,
+            "ratingCount": 134
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Awnings&find_loc=Greenville%2C+TX",
+            "title": "TOP 10 BEST Awnings in Greenville, TX - Updated 2026 - Yelp",
+            "rating": 4.3,
+            "snippet": "... AR construction - Awnings near me - Greenville, Texas. AR construction. 0.0 ... Frisco, TX 75034. (940) 580-0922. From the business: At Top Tier RW, we ...",
+            "position": 9,
+            "ratingCount": 187
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=foundationrepair&find_loc=Hunt+County%2C+TX",
+            "title": "THE BEST 10 FOUNDATION REPAIR in HUNT COUNTY, TX - Yelp",
+            "rating": 4.4,
+            "snippet": "... Frisco, TX 75035. (214) 537-9407. After inspecting the house including the ... AR construction - Foundation Repair near me - Hunt County, Texas. AR ...",
+            "position": 10,
+            "ratingCount": 1022
+          }
+        ]
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:35:37.963Z",
+      "data": "Trustpilot Search Results Companies A.R. Design Group www.ardesigngroup.com 0.0 A.R. Kennel arkennel.it • 18 reviews 4.5 A.R. Cosmetici www.arcosmetici.it • 38 reviews 3.9 Idr Construction idrconstructioninc.com • 3 reviews 2.8 AXE Construction axeconstruction.co.uk • 7 reviews 4.3 Categories Construction Company The best companies in the category 'Construction Company' Construction & Manufacturing The best companies in the category 'Construction & Manufacturing' Construction Services The best companies in the category 'Construction Services' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (1565) A.R. Design Group www.ardesigngroup.com 0.0 0 reviews West Broad Street 929, Falls Church, United States A.R. Kennel arkennel.it 4.5 18 reviews Via Nazionale 66, Ranzanico, Italy A.R. Cosmetici www.arcosmetici.it 3.9 38 reviews Via Colonnello Scarano, 72, Massafra, Italy Idr Construction idrconstructioninc.com 2.8 3 reviews Boston, Boston, United States AXE Construction axeconstruction.co.uk 4.3 7 reviews 41B tooting Bec Gardens, Streatham, London, United Kingdom AWJ Construction awjconstruction.co.uk 4.5 14 reviews United Kingdom constructiongear.com constructiongear.com 4.0 4,001 reviews 1000 Westinghouse Drive, Suite 1, New Stanton, United States mw-construction-landscapes.ueniweb.com mw-construction-landscapes.ueniweb.com 2.4 6 reviews United States First Construction Equipment first-construction-equipment.co.uk 3.2 1 review United Kingdom Stmb Construction Chalets Bois www.stmb-construction-chalets-bois.com 3.2 1 review Previous 1 2 3 4 157 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Construction Company Construction & Manufacturing Construction & Manufacturing Construction & Manufacturing Interior Construction Contractor Construction & Manufacturing Construction Services Construction & Manufacturing Machine Construction Construction & Manufacturing Construction Equipment Supplier Construction & Manufacturing are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:35:41.660Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:35:44.951Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:35:48.638Z",
+      "data": {
+        "query": "A.R. Construction Frisco site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "8 days ago",
+            "link": "https://www.dallasnews.com/news/texas/2026/02/05/buc-ees-responds-to-rumor-accusing-founder-of-donating-to-ice/",
+            "title": "Buc-ee's responds to rumor accusing founder of donating to ICE",
+            "snippet": "The online rumor that Buc-ee's founder and CEO Arch “Beaver” Aplin III donated money to U.S. Immigration and Customs Enforcement is false, ...",
+            "position": 1
+          },
+          {
+            "date": "Oct 28, 2025",
+            "link": "https://www.dallasnews.com/business/real-estate/2025/10/28/collin-county-suburb-could-land-dallas-stars-with-billion-dollar-stadium/",
+            "title": "Collin County suburb could land Dallas Stars with billion-dollar ...",
+            "snippet": "The Dallas Stars are considering a new $1 billion arena in Plano at the Shops at Willow Bend Mall site — a move that could see the hockey ...",
+            "position": 2
+          },
+          {
+            "date": "May 13, 2017",
+            "link": "https://www.dallasnews.com/news/2017/05/13/worker-falls-40-feet-from-scaffolding-at-frisco-construction-site/",
+            "title": "Worker falls 40 feet from scaffolding at Frisco construction site",
+            "snippet": "The victim fell off scaffolding at an apartment complex being built at John Hickman Parkway and Frisco Green Avenue, KXAS-TV (NBC5) reports. The ...",
+            "position": 3
+          },
+          {
+            "date": "Jul 27, 2016",
+            "link": "https://www.dallasnews.com/business/local-companies/2016/07/27/omni-frisco-dallas-cowboys-hope-draw-to-the-star-comes-from-five-points/",
+            "title": "Omni Frisco, Dallas Cowboys hope draw to The Star comes from five ...",
+            "snippet": "The Omni, with 262,000 square feet of space, will be among the last portions of the Star to open for public consumption. Construction began in ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 19, 2015",
+            "link": "https://www.nbcdfw.com/news/local/construction-could-start-in-2017-on-wind-transmission-line/2009933/",
+            "title": "Construction Could Start in 2017 On Wind Transmission Line",
+            "snippet": "Clean Line officials say about $7 billion will be invested in the project, boosting economies in both Oklahoma and Arkansas. \"Several hundred ...",
+            "position": 5
+          },
+          {
+            "date": "3 days ago",
+            "link": "https://www.dallasnews.com/sports/mavericks/2026/02/10/spud-webb-nba-slam-dunk-contest-win-40th-anniversary-wilmer-hutchins-dallas/",
+            "title": "Reliving Spud Webb's gravity-defying slam dunk contest 40 years ...",
+            "snippet": "Spud Webb, the pride of Wilmer-Hutchins, wowed the sports world when he won the dunk contest in 1986 as a 5-7 guard.",
+            "position": 6
+          },
+          {
+            "link": "https://www.dallasnews.com/news/2019/08/15/rig-s-trailer-crushes-truck-driver-at-frisco-construction-site/",
+            "title": "Rig's trailer crushes truck driver at Frisco construction site",
+            "snippet": "A 63-year-old truck driver died Wednesday at a construction site in Frisco when the truck's trailer overturned onto its cab, firefighters say. The incident ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 1, 2017",
+            "link": "http://www.star-telegram.com/sports/nfl/dallas-cowboys/article164708327.html",
+            "title": "Jerry Jones gave Texas more than the Cowboys. Don't forget ...",
+            "snippet": "AT&T Stadium and The Ford Center at The Star in Frisco each cost Jerry Jones more than $1 billion to build.",
+            "position": 8
+          },
+          {
+            "date": "May 16, 2017",
+            "link": "https://www.nbcdfw.com/news/local/grand-prairie-mayor-on-business-boom-its-our-time-to-shine/21520/",
+            "title": "Grand Prairie Mayor on Business Boom: 'It's Our Time to Shine'",
+            "snippet": "Jensen spoke with excitement this week while he watched the ongoing construction of the EPIC facilities, at Texas 161 and Arkansas Lane.",
+            "position": 9
+          },
+          {
+            "link": "https://www.dallasnews.com/news/2015/01/15/frisco-community-development-corp-to-discuss-projects-tonight/?outputType=amp",
+            "title": "Frisco Community Development Corp. to discuss projects tonight",
+            "snippet": "The Frisco Community Development Corp. will hold public hearings Thursday on two upcoming projects. Its first project involves improvements at Dr Pepper ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:37:20.446Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"A.R. Construction\" Frisco",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:36:00.867Z",
+      "data": "A.R. Construction Frisco review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You History History All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Visit site How Much Does a New Roof Cost If your roof is 15+ years old, the cost of roof replacement might surprise you. Sponsored HomeBuddy 2:03 2:03 Now playing Main Street construction in Frisco puts businesses at risk WFAA WFAA • • 1.5K views 6 months ago WFAA WFAA People can't get to businesses on Main Street. People can't get to businesses on Main Street. From the video description CC 0:33 0:33 Now playing Moore Construction Co Review Frisco TX Best Roof Repair Experts Best Roof Repair Experts • • 31 views 9 years ago Best Roof Repair Experts Best Roof Repair Experts Moore Construction Co Review Frisco TX ... Moore Construction Co Review Frisco TX ... From the video description Sundt Construction is Hiring, Apply Today Competitive pay, benefits and training & development opportunities Sponsored Sundt Construction Watch Visit site Shorts Frisco TX - New Construction Under $700K + #shorts #newconstructionhomes #realestatesale 160 views Frisco Main Street traffic update #frisco18hourdistrict #friscoraildistrict #kimleyhornmesa 173 views New Construction Homes in Dallas | Fields of Frisco, Huntington Homes #realestate #movingtodallas 1.5K views New Roof Going Up in Frisco, TX 294 views Frisco Luxury Homes - New Construction ￼ 51 views Show more Show less SHORTS SHORTS Now playing Blocked from building apartments in Frisco, Irving, Plano, Arlington or Grand Prairie, Texas? Sam Hooper Sam Hooper • • 1.4K views 3 months ago Sam Hooper Sam Hooper Learn more 15-Year HELOAN: check with no credit hit Find out how much cash you could access with a HELOAN – no affect to your credit score. Sponsored Rocket Mortgage 2:16 2:16 Now playing Frisco construction frustrates downtown businesses CBS TEXAS CBS TEXAS • • 2.3K views 5 months ago CBS TEXAS CBS TEXAS Small business owners in downtown Frisco are struggling as ongoing road closures and construction disrupt access and foot ... Small business owners in downtown Frisco are struggling as ongoing road closures and construction disrupt access and foot ... From the video description CC SHORTS SHORTS Now playing Foundation Repair in Frisco Texas by Dallas Fort Worth Foundation Repair Dallas Fort Worth Foundation Repair Dallas Fort Worth Foundation Repair • • 1.3K views 7 months ago Dallas Fort Worth Foundation Repair Dallas Fort Worth Foundation Repair Installing Concrete Pressed Piers in Frisco Tx. Hitting bedrock at 13-15 feet. Call us at 972.961.4100 or visit the website at ... Installing Concrete Pressed Piers in Frisco Tx. Hitting bedrock at 13-15 feet. Call us at 972.961.4100 or visit the website at ... From the video description Shorts Luxury New Construction Southgate Home in Frisco, Texas #shorts 1.7K views Million Dollar Homes In Frisco TX | New Construction Homes In Frisco TX | Frisco Texas Homes | Texas 75 views New Construction Tip for Frisco TX Buyers 🏡 Save Big With This Move! #shorts #livinginfriscotexas 190 views Landscaping contractor in Frisco Texas 34 views Concrete service frisco area landscaping ##backyard #suscribeteanuestrocanal #construction 717 views Show more Show less 1:19 1:19 Now playing Code 3 Construction Frisco Wonderful 5 Star Review by Vanguard Vascular & Vein, PLLC Steve Goodin Steve Goodin • • 181 views 7 years ago Steve Goodin Steve Goodin http://www.code3construction.com/ (469) 210-0420 Code 3 Construction Frisco reviews Excellent Rating Code 3 impressed us ... http://www.code3construction.com/ (469) 210-0420 Code 3 Construction Frisco reviews Excellent Rating Code 3 impressed us ... From the video description 17:28 17:28 Now playing Best AFFORDABLE New Construction Homes Near FRISCO TX | Get in EARLY! Tom's Texas Realty Tom's Texas Realty • • 14K views 1 year ago Tom's Texas Realty Tom's Texas Realty Frisco is on fire right now, with a booming real estate market that's catching everyone's attention. But let's face it, the prices in ... Frisco is on fire right now, with a booming real estate market that's catching everyone's attention. But let's face it, the prices in ... From the video description 8 chapters Intro | Wilson Creek | Cross Creek Meadows | Trophy Homes | Mosaic Homes | Master Plan Communities | High Density Housing | Conclusion 8 auto-generated chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Wilson Creek Wilson Creek 1:02 Wilson Creek 1:02 Cross Creek Meadows Cross Creek Meadows 4:29 Cross Creek Meadows 4:29 Trophy Homes Trophy Homes 5:29 Trophy Homes 5:29 Mosaic Homes Mosaic Homes 7:19 Mosaic Homes 7:19 Master Plan Communities Master Plan Communities 10:12 Master Plan Communities 10:12 High Density Housing High Density Housing 11:23 High Density Housing 11:23 Learn more Learn anytime, anywhere. Build confident irrigation teams that identify and fix issues before they become problems. Sponsored Rain Bird SHORTS SHORTS Now playing Located in Frisco TX, #newbuild #hometour The Rockwells The Rockwells • • 805 views 1 year ago The Rockwells The Rockwells New Construction in Frisco , Texas New Homes Priced $1.2M's - $1.4M's+ Comment 'BUILD' to work with me on finding your ... New Construction in Frisco , Texas New Homes Priced $1.2M's - $1.4M's+ Comment 'BUILD' to work with me on finding your ... From the video description 1:19 1:19 Now playing Affordable New Build In Frisco TX | New Construction Homes In Frisco TX | Frisco TX New Homes Health&wealthadvocate Health&wealthadvocate • • 621 views 2 years ago Health&wealthadvocate Health&wealthadvocate Are you looking to move to Frisco TX? Are you considering Fields Development Frisco as your new home? In this video, I'll share ... Are you looking to move to Frisco TX? Are you considering Fields Development Frisco as your new home? In this video, I'll share ... From the video description People also watched 12:27 12:27 Now playing The Ugly Truth: Why People Are Leaving Frisco Home in Dallas Texas Home in Dallas Texas • • 72K views 2 years ago Home in Dallas Texas Home in Dallas Texas The VERDICT is in and people are leaving Frisco . But why? In this video, we reveal five HIDDEN reasons why people are packing ... The VERDICT is in and people are leaving Frisco . But why? In this video, we reveal five HIDDEN reasons why people are packing ... From the video description 4K 5 chapters Cost of Living | Traffic | Tourist Trap | More to Offer | Todays Homeowners 5 auto-generated chapters in this video 5 chapters Cost of Living Cost of Living 0:00 Cost of Living 0:00 Traffic Traffic 2:57 Traffic 2:57 Tourist Trap Tourist Trap 5:22 Tourist Trap 5:22 More to Offer More to Offer 7:25 More to Offer 7:25 Todays Homeowners Todays Homeowners 11:22 Todays Homeowners 11:22 16:19 16:19 Now playing EdgeStone At Legacy Community, Frisco,TX - Frisco ISD Drivethrough Suresh Revuru Realtor Suresh Revuru Realtor • • 610 views 3 years ago Suresh Revuru Realtor Suresh Revuru Realtor Edgestone at Legacy have more than 660 plots across 307 acres of master-planned community in West Frisco within Frisco ISD ... Edgestone at Legacy have more than 660 plots across 307 acres of master-planned community in West Frisco within Frisco ISD ... From the video description 10:41 10:41 Now playing Frisco Texas Homes for Sale Living In Frisco TX Living In Frisco TX • • 850 views 3 years ago Living In Frisco TX Living In Frisco TX If you're considering a move to Frisco and want to know more about homes for sale here and what to expect with the market, this ... If you're considering a move to Frisco and want to know more about homes for sale here and what to expect with the market, this ... From the video description 1:45 1:45 Now playing Fields Frisco: Tour the 2,500 Acre Master Planned Community with CashBack & Keys Local Realty Agency Mid-Cities Local Realty Agency Mid-Cities • • 797 views 5 months ago Local Realty Agency Mid-Cities Local Realty Agency Mid-Cities Welcome to Fields in Frisco , Texas—a 2500-acre master-planned community blending luxury homes, nature, and convenience. Welcome to Fields in Frisco , Texas—a 2500-acre master-planned community blending luxury homes, nature, and convenience. From the video description + 6 more 18:37 18:37 Now playing Touring The Fields Frisco TX 🚗 Update New Construction Homes, Brookside, East Village & Fields West DFW Family Home Guide DFW Family Home Guide • • 2K views 3 months ago DFW Family Home Guide DFW Family Home Guide The Fields in Frisco , TX | Brookside • East Village • Fields West • The Preserve The Fields in Frisco is where luxury meets lifestyle ... The Fields in Frisco , TX | Brookside • East Village • Fields West • The Preserve The Fields in Frisco is where luxury meets lifestyle ... From the video description 4K CC 14 chapters Why “The Fields” is the buzz (and affordability under $600K) | Brookside South overview & featured builders | Inventory, incentives & community amenities | Brookside North update (John R. Landon Homes) | Pricing, connectivity & shared amenities | East Village + proximity to Universal Studios | Townhomes overview (~2,000 sq ft, primary down) | The Enclave (35′ lots | mid-$500s) | The Manor (41′ lots | low-$600s) | Classic Series (50′/60′ lots | low-$800s) | Fields West luxury urban village (55 acres | 70 % leased) | Retail & lifestyle expansion (~350K sq ft + 1,200 residences) | The Preserve custom homes (233 sites | PGA adjacent) | Wrap-up & how to get in before the holidays 14 chapters in this video 14 chapters Why “The Fields” is the buzz (and affordability under $600K) Why “The Fields” is the buzz (and affordability under $600K) 0:00 Why “The Fields” is the buzz (and affordability under $600K) 0:00 Brookside South overview & featured builders Brookside South overview & featured builders 0:58 Brookside South overview & featured builders 0:58 Inventory, incentives & community amenities Inventory, incentives & community amenities 3:05 Inventory, incentives & community amenities 3:05 Brookside North update (John R. Landon Homes) Brookside North update (John R. Landon Homes) 5:45 Brookside North update (John R. Landon Homes) 5:45 Pricing, connectivity & shared amenities Pricing, connectivity & shared amenities 6:19 Pricing, connectivity & shared amenities 6:19 East Village + proximity to Universal Studios East Village + proximity to Universal Studios 8:57 East Village + proximity to Universal Studios 8:57 Townhomes overview (~2,000 sq ft, primary down) Townhomes overview (~2,000 sq ft, primary down) 10:10 Townhomes overview (~2,000 sq ft, primary down) 10:10 28:00 28:00 Now playing Toll Brothers Hillman Model Home Tour | Frisco, TX New Construction Texas New Construction Homes & Savings Texas New Construction Homes & Savings • • No views 13 hours ago Texas New Construction Homes & Savings Texas New Construction Homes & Savings Save When You Buy A New Construction Home: https://www.NewHomeSavingsGuide.com/ Call or Text for More Info ... Save When You Buy A New Construction Home: https://www.NewHomeSavingsGuide.com/ Call or Text for More Info ... From the video description New 4K Contact us Your Time. Well Spent. Freedom to Fly on Your Time. Book Instantly with Sentient Jet—By App, Call, or Text. Sponsored Sentient Jet SHORTS SHORTS Now playing Frisco TX Real Estate - New Construction Under $700K + Troy Sage DFW Real Estate Differently Troy Sage DFW Real Estate Differently • • 181 views 3 years ago Troy Sage DFW Real Estate Differently Troy Sage DFW Real Estate Differently You move to FRISCO Texas and live your dream life in your dream home” New homes | New Construction | New life $680k + ... You move to FRISCO Texas and live your dream life in your dream home” New homes | New Construction | New life $680k + ... From the video description 4:17 4:17 Now playing Live Like a KING in This Brand New Construction Frisco, TX Home! Ben Wegmann Ben Wegmann • • 29K views 5 years ago Ben Wegmann Ben Wegmann Full details on home at end of video. For all of your real estate needs: Ben@RogersHealy.com. Full details on home at end of video. For all of your real estate needs: Ben@RogersHealy.com. From the video description 17 moments WELCOME TO FRISCO, TX | OPEN SPACE (OFFICE, SEATING AREA, ETC.) | DINING SPACE | SOARING CEILINGS | COFFEE BAR | CHEF'S KITCHEN | PANTRY | MASTER BEDROOM | DOWNSTAIRS GUEST BED & BATH | LAUNDRY AREA | BACKYARD | SECOND LEVEL | GAME SPACE | MEDIA SPACE | BEDROOM #3 | BEDROOM #4 | 2 CAR GARAGE 17 auto-generated moments in this video 17 moments WELCOME TO FRISCO, TX WELCOME TO FRISCO, TX 0:01 WELCOME TO FRISCO, TX 0:01 OPEN SPACE (OFFICE, SEATING AREA, ETC.) OPEN SPACE (OFFICE, SEATING AREA, ETC.) 0:19 OPEN SPACE (OFFICE, SEATING AREA, ETC.) 0:19 DINING SPACE DINING SPACE 0:30 DINING SPACE 0:30 SOARING CEILINGS SOARING CEILINGS 0:43 SOARING CEILINGS 0:43 COFFEE BAR COFFEE BAR 0:56 COFFEE BAR 0:56 CHEF'S KITCHEN CHEF'S KITCHEN 1:01 CHEF'S KITCHEN 1:01 PANTRY PANTRY 1:21 PANTRY 1:21 SHORTS SHORTS Now playing Mckinney Texas Frisco Texas Best Home Builder ShermanTXHomeBuilder ShermanTXHomeBuilder • • 50 views 6 months ago ShermanTXHomeBuilder ShermanTXHomeBuilder Call for your free consultation with best custom home builder in Mckinney TX and Frisco TX. Call for your free consultation with best custom home builder in Mckinney TX and Frisco TX. From the video description SHORTS SHORTS Now playing Frisco/Plano TX, USA #travel #city #dallas #freeway #construction #views #frisco #friscotexas #plano First Generation Millionaires First Generation Millionaires • • 8.4K views 2 years ago First Generation Millionaires First Generation Millionaires Frisco /Plano Texas, USA Bird's eye view over fast growing city @FirstGenerationMillionaires1 #travel #city #dallas #texas ... Frisco /Plano Texas, USA Bird's eye view over fast growing city @FirstGenerationMillionaires1 #travel #city #dallas #texas ... From the video description SHORTS SHORTS Now playing Custom Homes being built in The Preserve in Frisco, TX DAPA.DANIEL DAPA.DANIEL • • 461 views 8 months ago DAPA.DANIEL DAPA.DANIEL SHORTS SHORTS Now playing $355K Affordable Modern House Tour In Texas! NavaRealtyGroup NavaRealtyGroup • • 391K views 1 year ago NavaRealtyGroup NavaRealtyGroup 1:00:04 1:00:04 Now playing Top 8 NEW Construction Neighborhoods in Frisco TX, McKinney TX, Celina TX and Prosper TX Life in Dallas Fort Worth Life in Dallas Fort Worth • • 10K views 9 months ago Life in Dallas Fort Worth Life in Dallas Fort Worth Text me a question, and I'll respond with a video: 214-903-4794 ... Text me a question, and I'll respond with a video: 214-903-4794 ... From the video description CC SHORTS SHORTS Now playing Modern Luxury New Construction at Fields in Frisco, Texas!🤩 #shorts Alex P. Maloney Alex P. Maloney • • 1.9K views 2 years ago Alex P. Maloney Alex P. Maloney Looking to invest in Real Estate? I am the Texas Real Estate Agent you've been looking for! I have the latest real estate news, ... Looking to invest in Real Estate? I am the Texas Real Estate Agent you've been looking for! I have the latest real estate news, ... From the video description SHORTS SHORTS Now playing 🚨1 More Reason to Avoid Moving to Frisco Texas! #friscorealtor #dallastx #shorts Mike Harrison - Moving to Dallas Texas Guide Mike Harrison - Moving to Dallas Texas Guide • • 12K views 2 years ago Mike Harrison - Moving to Dallas Texas Guide Mike Harrison - Moving to Dallas Texas Guide Please see one of our newest listings: \"Inside an $800K Luxury Cabin in Broken Bow Oklahoma\" ... Please see one of our newest listings: \"Inside an $800K Luxury Cabin in Broken Bow Oklahoma\" ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:36:02.748Z",
+      "data": {
+        "query": "site:nextdoor.com A.R. Construction Frisco",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/ask-neighbors/frisco--tx/please-recommend-a-plumber--pF3_RFmnpJn3/",
+            "title": "Please recommend a plumber. - Frisco, TX - Nextdoor",
+            "snippet": "A. R.. 1d. License plumber here. Send me a photo. I'll send you a quote but depending on faucet style anywhere from 200 to 300 parts and labor 972.793.4911. 1.",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/agency-post/ar/benton/benton-county/the-benton-county-road-department-will-close-down-a-portion-of-frisco-cemetery-road-for-construction-on-friday-february-17th-257805863/",
+            "title": "The Benton County Road Department will close down a portion of ...",
+            "snippet": "The closure will last for approximately 4 hours starting at 8 am. All construction is pending weather or other delays. Please heed all signage in the area.",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/pages/five-star-quality-services-llc-toronto-oh/",
+            "title": "Five Star Quality Services LLC - Lowell, AR - Nextdoor",
+            "snippet": "We are accompany with 30+ years experience in construction and floor covering. We specialise and hassle and headache free service with the supreme quality ...",
+            "position": 3
+          },
+          {
+            "link": "https://us.nextdoor.com/neighborhood/greenspointofprosper--prosper--tx/",
+            "title": "Greenspoint of Prosper, Prosper | Everything You Need to Know",
+            "snippet": "Greenspoint of Prosper is a peaceful, family-friendly neighborhood in Prosper, Texas. Known for its well-maintained homes, excellent schools, and community ...",
+            "position": 4
+          },
+          {
+            "date": "Jan 13, 2021",
+            "link": "https://nextdoor.com/agency-post/tx/collin-county/collin-county-commissioners/collin-county-citizens-appointed-to-boards-and-commissions-173644819/",
+            "title": "Collin County Citizens Appointed to Boards and Commissions",
+            "snippet": "I'm pleased to announce the appointment of several Collin County citizens to serve on various volunteer boards and commissions.",
+            "position": 5
+          },
+          {
+            "link": "https://nextdoor.com/for_sale_and_free/e59d0864-efee-4d2e-bc89-65cab0cc6fe4/",
+            "title": "5 Bedroom 4 Bathroom House In Frisco With Great Amenities",
+            "snippet": "5 Bedroom 4 Bathroom House In Frisco With Great Amenities near the Centerton neighborhood in Centerton, AR ... Free Construction Materials Free • Centerton ...",
+            "position": 6
+          },
+          {
+            "link": "https://nextdoor.com/city/malden--mo/",
+            "title": "Malden, MO | News, Crime, Lost Pets, Free Stuff - Nextdoor",
+            "snippet": "Malden, MO is a peaceful, small town known for its quiet charm. Nextdoor Neighbors appreciate the abundant nature and beautiful trees that surround the area.",
+            "position": 7
+          },
+          {
+            "link": "https://api.us.nextdoor.com/city/cape-carteret--nc/",
+            "title": "Cape Carteret, NC | News, Crime, Lost Pets, Free Stuff - Nextdoor",
+            "snippet": "Cape Carteret, NC, is a peaceful, family-friendly town known for its beautiful waterfront views and close-knit community. Nextdoor Neighbors appreciate the ...",
+            "position": 8
+          },
+          {
+            "link": "https://nextdoor.com/resources/crime-and-safety/salida--co/",
+            "title": "Salida, CO crime rates and safety statistics - Nextdoor",
+            "snippet": "Salida, CO has a significantly lower overall crime rate (12.64) compared to the national average (33.37), with its violent crime rate (2.63) and property crime ...",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:36:17.716Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=A.R.%20Construction&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:36:21.034Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:36:25.870Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:36:32.078Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov A.R. Construction",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/executive-management/Final%20Jingrong%20with%20ND-c1.pdf",
+            "title": "[PDF] In the Supreme Court of the United States - Texas Attorney General",
+            "snippet": "This construction compels victims of religious violence to prove their activity was religious enough, and it enmeshes courts in deciding what constitutes ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1939/O-1585.pdf",
+            "title": "[PDF] Honorable George 3. COX, Page 5 Ta'ailure to dimlay ceriiificate ...",
+            "snippet": "There are oerteiu delini-;e rules of' statutory oon- struction, and other equally imil::ar rules &overning the interoretatloa or 0rMnal statutes to whioh we ...",
+            "position": 2
+          },
+          {
+            "date": "May 15, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/FILED%20-%20Brief%20of%20West%20Virginia%20Texas%20Alabama%20Alaska%20Arkansas%20Georgia%20Indiana%20Kansas%20Kentucky%20Louisiana%20Missouri%20Nebraska%20North%20Dakota%20Ohio%20Oklahoma%20South%20Carolina%20Sout.pdf",
+            "title": "[PDF] Case: 20-35412, 05/15/2020, ID: 11693078, DktEntry",
+            "snippet": "Without a stay, no entity in any part of the country can rely on NWP-12 for construction of new oil and gas pipelines, even ones that do not ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 19, 2026",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2026/kp-0505.pdf",
+            "title": "[PDF] Attorney General Opinion No. KP-0505",
+            "snippet": "The city of Richmond, Virginia had adopted an ordinance requiring prime contractors on city projects to subcontract at least thirty percent of ...",
+            "position": 4
+          },
+          {
+            "date": "Apr 29, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/Multistate%20Amicus%20(M0370292xCECC6)-c1.pdf",
+            "title": "[PDF] In the Supreme Court of the United States - Texas Attorney General",
+            "snippet": "Respect for the States' construction of their own laws is evident in numerous doctrines guiding federal courts' review. Seven circuits apply.",
+            "position": 5
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1950/V-1071.pdf",
+            "title": "[PDF] Juue 9, Hon. oene Mad&ill Mstrlct Attorney payygm s Dear Sir",
+            "snippet": "And we believe such a construction Is tithin the apparent Intent of the Legislature in enacting it. \"You are therefore respectfully advised that it is our ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1948/pd0549.pdf",
+            "title": "[PDF] \"\"\"\"\"\"\"\" Ar'rORFiEy GENER&L OF TEXAS 3tFvaaL.a opln+xI lo. v-549 ...",
+            "snippet": "To hold otherwise would Zmply the stage of construction to be material in a ques- tion of whether or not an unlicensed person is en- gaging in or working at ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT | NJ.gov",
+            "snippet": "Construction. None of the Parties and no Participating Subdivision shall be considered to be the drafter of this Agreement or of any of its provisions for ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/1947/pd0382.pdf",
+            "title": "[PDF] GENERAL R-739 September 1.8, 1947 Hon. C. D. Wright County ...",
+            "snippet": "Dear Sir: We refer to your letter of recent date where- in you request an opinion from this office on whether under 9. B. 252, Acts 1947, 50th Legislature,.",
+            "position": 9
+          },
+          {
+            "date": "Jun 25, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/FERC-States-Request-for-Rehearing-Filed.pdf",
+            "title": "[PDF] Building for the Future Through Electric ) Regional Transmission ...",
+            "snippet": "Each project approved for construction should be economic and meet the required benefits-to- costs ratio on a stand-alone basis. This ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:36:33.029Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 2
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 3
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 5
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 6
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 8
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Information on this site is obtained from the most recent Public Information Report (PIR) processed by the Secretary of State (SOS).",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:36:34.082Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com A.R. Construction",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:36:35.107Z",
+      "data": {
+        "query": "site:dallascounty.org A.R. Construction civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 8, 2026",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet-2026-008-7093.pdf",
+            "title": "[PDF] RFP Project Based Vouchers for Permanent Supportive Housing",
+            "snippet": "Location. Dallas County, Texas. Purchase Type. Duration:15 years. Description. Dallas County is requesting proposals from property owners ...",
+            "position": 1
+          },
+          {
+            "date": "Sep 10, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/comcrt/county-code/DallasCountyCode-09102024.pdf",
+            "title": "[PDF] Dallas County Code",
+            "snippet": "- Definitions and rules of construction. (a) In the construction of this Code and of all orders and resolutions adopted by the county ...",
+            "position": 2
+          },
+          {
+            "date": "Jun 11, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2015/2015-06.pdf",
+            "title": "[PDF] I. Welcome and Call to Order II. Review - Dallas County",
+            "snippet": "construction plans, site preparation and related activities to support the future construction of mental health hospital facilities to ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 22, 2026",
+            "link": "https://dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet%202026-011-7096.pdf",
+            "title": "[PDF] Notice - Dallas County",
+            "snippet": "In the best interest of the Dallas County, any Proposer who is currently involved, either directly or indirectly, with any litigation against or ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/Training/COA-Mapping-Published.xlsx",
+            "title": "[XLS] Fund Mapping - Dallas County",
+            "snippet": "Civil Court Reporter Fees, 45540, Civil Court Reporter Fees. 774, 45545, Civil court Construction Fees, 45545, Civil court Construction Fees. 775, 45550, Civil ...",
+            "position": 5
+          },
+          {
+            "date": "Aug 12, 2022",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet%202026-009-7094.pdf",
+            "title": "[PDF] Notice - Dallas County",
+            "snippet": "CONTRACTOR SHALL NOTIFY ARCHITECT IN WRITING OF ANY DISCREPANCIES, OMISSIONS, AND/OR. INCONSISTENCIES IN THE CONTRACT DOCUMENTS IN A TIMELY ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "[PDF] April-2025-County-Clerk-Courts-Combined.pdf",
+            "snippet": "... Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL ... CONSTRUCTION, JAMES R. THOMAS CONSTRUCTION. COMPANY, F&G CARPENTRY INC.",
+            "position": 7
+          },
+          {
+            "date": "Oct 1, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2017ACFR.pdf",
+            "title": "[PDF] comprehensive annual financial report - Dallas County",
+            "snippet": "construction and maintenance of roads and bridges, either independently or in cooperation with other entities; administration of public ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.dallascounty.org/departments/plandev/dchc/markers.php",
+            "title": "Historical Commission - Marker List",
+            "snippet": "The link below is to an Excel file which contains information on all Dallas County Historical Markers, including the marker text and location.",
+            "position": 9
+          },
+          {
+            "date": "Oct 1, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/research-statistics/annual-reports/AR-2023-web-version-20241001.pdf",
+            "title": "[PDF] Annual Report 2023 | Dallas County Juvenile Department",
+            "snippet": "160 Civil District. Court. County Judge. Clay Jenkins. Judge. Amber ... Construction. 6. 3 (50%). 0 (0%). 3 (50%). 6. Culinary. 16. 14 (88%). 2 ( ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:36:36.247Z",
+      "data": {
+        "query": "site:collincountytx.gov A.R. Construction",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Sep 28, 2020",
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/CollinCountyRoadwayStandards09-28-2020.pdf",
+            "title": "[PDF] COLLIN COUNTY ROADWAY STANDARDS",
+            "snippet": "AR and CR pavement types are acceptable for use in construction of Rural. Residential Roadways, RR. 4. CR pavement type is acceptable for use ...",
+            "position": 1
+          },
+          {
+            "date": "Mar 18, 2013",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200615_2490/48549_OCFO_2014Financial_Guide.pdf",
+            "title": "[PDF] OCFO 2014 Financial Guide - Office of Justice Programs",
+            "snippet": "The Office of Justice Programs (OJP) provides Federal leadership in developing the nation's capacity to prevent and control.",
+            "position": 2
+          },
+          {
+            "date": "Nov 4, 2024",
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/Collin%20County%20Floodplain%20Regulations_11-4-2024.pdf",
+            "title": "[PDF] COLLIN COUNTY FLOODPLAIN MANAGEMENT ...",
+            "snippet": "DEVELOPMENT – all land modification activity, including the grading or construction of buildings, roadways, parking lots and/or other impervious ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Celina.pdf",
+            "title": "[PDF] 2020 Parks and Recreation Master Plan - Celina, TX - Collin County",
+            "snippet": "Durable materials such as stone, metal and concrete should be used in the construction of park buildings whenever possible. Stand- ing seam metal roofs are ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.collincountytx.gov/Government/Human-Resources/Documents/Employee%20Handbook.pdf",
+            "title": "[PDF] Collin County Employee Handbook",
+            "snippet": "We believe our employees and officials are the county's most important asset. They are responsible for providing the quality services that make the county a ...",
+            "position": 5
+          },
+          {
+            "date": "Dec 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210816_2672/50383_RTC%20Packet%2008-12-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, August 12 ...",
+            "snippet": "The RTC meeting on August 12, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 6
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2023/CC/20230814_2873/54438_HB04559F.pdf",
+            "title": "[PDF] 88(R) HB 4559 - Texas Legislature Online",
+            "snippet": "the construction or expansion of a convention center facility;. (17)AAa ... county that borders Arkansas and Louisiana;. (10)AAa county that has a ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.collincountytx.gov/Government/Budget/Documents/FY%202026%20Proposed%20Budget.pdf",
+            "title": "[PDF] Proposed Budget 2026 - Collin County",
+            "snippet": "Honorable Judge and Commissioners: I am pleased to present the Proposed Budget for FY 2026 for Collin County. This budget is submitted in accordance with ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Regional%20Trail%20Master%20Plan.pdf",
+            "title": "[PDF] Collin County Regional Trails Master Plan",
+            "snippet": "construction costs were reviewed against local and national trail construction costs and the estimate has been reduced to $800,000 per mile for basic trail.",
+            "position": 9
+          },
+          {
+            "date": "Aug 5, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250804_3121/58414_2025-270%20Solicitation%20Packet.pdf",
+            "title": "[PDF] Collin County, TX REQUEST FOR PROPOSAL 2025-270 REAL ...",
+            "snippet": "Population influxes in states like Texas and Florida boost demand for office spaces, retail outlets, and residential developments, leading to ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:36:37.428Z",
+      "data": {
+        "query": "site:dentoncounty.gov A.R. Construction",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/11499/TDEM-Residential-Safe-Room-Handbook_06-01-2017",
+            "title": "[PDF] Texas Residential Safe Room Rebate Program ... - Denton County",
+            "snippet": "This handbook is an overview of the Texas Residential Safe Room Rebate Program. The program is an eligible project available through two of the Federal ...",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=35_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "Dev Permit Report ; 20223926, KYLE VRLA, FIRST STEP HOMES, 3411 FM 720 LOT 245, TORO PEREZOSO ESTANCIA ADDITION BLK A LOT 1 ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=224",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CONTECH CONSTRUCTION PRODUCTS. $3,695.76. 20090421. CONTECH CONSTRUCTION PRODUCTS. $2,017.80. 20090421. CONTINENTIAL EQUIPMENT CO. $58.74. 20090421. COOK, GARY.",
+            "position": 3
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=96_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "DDM CONSTRUCTION CORP, 11300 HILLTOP RD, ARELOEGBE WORLD EVANGELISM ADDITION BLK A LOT 1, EXCAVATION, 03/07/2022, 656766, CONSTRUCTION YARD PENDING ENGINEERING ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.dentoncounty.gov/formcenter/Contact-Forms-4/Public-Facilities-Construction-Managemen-111",
+            "title": "Form Center • Public Facilities / Construction Management -",
+            "snippet": "By signing in or creating an account, some fields will auto-populate with your information. Public Facilities / Construction Management - Contact Form.",
+            "position": 5
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=103_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "Dev Permit Report ; 20214094, ALEX GATES, HIGHLAND HOMES, 1264 STARLIGHT AVE, A0730A WM LUMPKINS, TR 23(SEE 565238 FOR W17), 43.6216 ACRES ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1638/Illicit-Discharge-PDF",
+            "title": "[PDF] Illicit Discharge Detection and Elimination - Denton County",
+            "snippet": "Arkansas Sanitarian Uses Infrared Technology to ... construction phase can prevent the illegal connection of wastewater sources during new construction.",
+            "position": 7
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/website/historicalmarkers/PDFs/Gregory-Road-Bridgeat-Duck-Creek.pdf",
+            "title": "[PDF] Gregory Road Bridge at Duck Creek - Denton County",
+            "snippet": "It appears likely, given its construction date, that the Gregory Road Bridge was a project of the Austin Bridge Company. The Gregory Road Bridge originally ...",
+            "position": 8
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=239_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "Dev Permit Report ; 20191093, WILLIAM & PAULA MOORE, WHITWORTH CONSTRUCTION ; 20191092, RYAN SEIDEL ; 20191091, GARRETT THOMPSON, HIGHLAND HOMES ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1620/Environmental-Protection-Agency-EPA-Solution-to-Pollution-PDF",
+            "title": "[PDF] Make Your Home the Solution to Stormwater Pollution Brochure",
+            "snippet": "Before beginning an outdoor project, locate the nearest storm drains and protect them from debris and other materials. • Sweep up and properly dispose of ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:36:38.297Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:36:42.767Z",
+      "data": {
+        "name": "ARL Construction Company",
+        "found": true,
+        "rating": 3,
+        "source": "serpapi",
+        "address": "15715 Durango Dr, Frisco, TX 75035",
+        "data_id": "0x864c156ca43ceb7f:0x5bd29d2716d9f3ce",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 2,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "5 years ago",
+            "text": "I run a construction business and have always had a hard time finding quality guys to represent me. Anthony has been in the game a long time and does amazing work. I’ve thrown many different things at him and he has always impressed my customers. He makes me look very good and I highly recommend him!",
+            "author": "Texas Fireman",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Unreliable and  deceitful. Will not complete your job. Once you pay him, he disappears. Do not let  sentiments make you hire this man. Read the reviews he has and trust me, it is all true. I wish I did. Steals jobs from his former employer.",
+            "author": "Nneka Godwin",
+            "rating": 1
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": 2,
+        "pages_fetched": 1,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "NO_REVIEWS",
+        "location_searched": "Frisco, TX",
+        "search_confidence": 0.7062499999999999,
+        "serper_fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:37:09.777Z",
+      "data": {
+        "name": "A.R. Construction",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(682) 521-7763",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2026 GoogleUnited StatesTermsPrivacySend Product Feedback",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/A.R.%20Construction%20Frisco%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:37:17.054Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [
+          {
+            "link": "https://www.houzz.com/professionals/general-contractor/mckinney-tx-us-project-type-trim-work-probr1-bo~t_11786~r_4710178~sv_29522?fi=180",
+            "title": "Best 15 Trim Work Contractors in McKinney, TX - Houzz",
+            "snippet": "... TX 75068. AR Construction LLC. Who We Are American Roofing Is Distinguished By ... Frisco, TX 75034. Copperhead property Services. We are a up and coming ..."
+          },
+          {
+            "link": "https://www.houzz.com/professionals/general-contractor/wylie-tx-us-project-type-drywall-installation-probr1-bo~t_11786~r_4743275~sv_29265?fi=330",
+            "title": "Best 15 Drywall Installers in Wylie, TX | Houzz",
+            "snippet": "Dallas, TX · AR Construction LLC ... 6817 pine ln, Frisco, TX 75034."
+          },
+          {
+            "link": "https://www.houzz.com/professionals/general-contractor/little-elm-tx-us-project-type-skylight-installation-probr1-bo~t_11786~r_4706736~sv_29466?fi=75",
+            "title": "Best 15 Skylight Installers in Little Elm, TX | Houzz",
+            "snippet": "... Irving, TX 75063 · Complex Construction. Send Message. 6817 pine ln, Frisco, TX 75034 · AR Construction LLC. Who ..."
+          }
+        ],
+        "result_count": 4,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:37:17.690Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"A.R. Construction\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.AmericatruckingINC.73399076.html",
+            "title": "AR Construction Reviews - Melissa, TX | HomeAdvisor",
+            "snippet": "See reviews for AR Construction in Melissa, TX at 228 Fieldstone Drive from Angi members or join today to leave your own review."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.arresidentialcommercial.158856469.html",
+            "title": "AR Residential & Commercial Construction - Allen, TX - HomeAdvisor",
+            "snippet": "AR Construction did a fantastic job on project! Exceeded every expectation! Alejandro above and beyond! Would recommend highly! Thanks again! Keller B. Nov ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.ARConstruciton.17078469.html",
+            "title": "AR Construciton Reviews - Smithville, NC | HomeAdvisor",
+            "snippet": "AR Construction prides itself on being the number one home improvement company in the area. We service both residential and commercial properties."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.turciosgeneral.69397357.html",
+            "title": "A R Construction, LLC Reviews - Germantown, MD | HomeAdvisor",
+            "snippet": "See reviews for A R Construction, LLC in Germantown, MD at 11004 Cross Laurel Dr. from Angi members or join today to leave your own review."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.RWHContracting.76116543.html",
+            "title": "AR Construction Service, Inc. Reviews - Ashburn, VA | HomeAdvisor",
+            "snippet": "See reviews for AR Construction Service, Inc. in Ashburn, VA at 42651 Frontier Drive from Angi members or join today to leave your own review."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:37:18.336Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"A.R. Construction\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-A-R-Construction-LLC-EI_IE7948139.11,31.htm",
+            "title": "Working at A. R. Construction - Glassdoor",
+            "snippet": "See what employees say it's like to work at A. R. Construction. Salaries, reviews, and more - all posted by employees working at A. R. Construction."
+          },
+          {
+            "link": "https://www.glassdoor.com/Reviews/A-R-Construction-Reviews-E4673534.htm",
+            "title": "A.R. Construction Reviews (5): Pros & Cons of Working ... - Glassdoor",
+            "snippet": "5 A.R. Construction reviews. A free inside look at company reviews and salaries posted anonymously by employees."
+          },
+          {
+            "link": "https://www.glassdoor.com/Salary/Platinum-Roofing-AR-Construction-Superintendent-Sheridan-Salaries-EJI_IE9033779.0,19_KO20,47_IL.48,56_IC1143205.htm",
+            "title": "Platinum Roofing (AR) Construction Superintendent Salaries in ...",
+            "snippet": "Total salary range for Platinum Roofing (AR) Construction Superintendent in Sheridan. United States. All years of experience. Total Pay. $86K. -. $125K /yr ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/job-listing/journeyman-a-and-r-foods-inc-JV_IC1146849_KO0,10_KE11,28.htm?jl=1010003643531",
+            "title": "Ar Construction Services Inc hiring Journeyman Job in Paramount, CA",
+            "snippet": "Conversations @Ar Construction Services Inc. Kick off the conversation by asking about salaries, interviews or anything else @Ar Construction Services Inc."
+          },
+          {
+            "link": "https://www.glassdoor.com/Job/luxury-accounting-jobs-SRCH_KO0,17.htm",
+            "title": "1,073 Luxury accounting jobs in United States | Glassdoor",
+            "snippet": "People who searched for jobs in United States also searched for tax and accounting staff, staff accountant ar, construction accounting, store bookkeeper ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:37:19.185Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"A.R. Construction\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/A-R-Construction",
+            "title": "A R Construction Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at A R Construction from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Ar-Construction",
+            "title": "Ar construction Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at Ar construction from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Ar-Construction/reviews?fcountry=ALL",
+            "title": "Working at Ar construction: Employee Reviews",
+            "snippet": "Reviews from Ar construction employees about Ar construction culture, salaries, benefits, work-life balance, management, job security, and more."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/A.r.-Construction/reviews",
+            "title": "Working at A.R. CONSTRUCTION: Employee Reviews | Indeed.com",
+            "snippet": "Reviews from A.R. CONSTRUCTION employees about A.R. CONSTRUCTION culture, salaries, benefits, work-life balance, management, job security, and more."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Ar-Construction-Services",
+            "title": "AR Construction SERVICES Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at AR Construction SERVICES from the people who know best. Get the inside scoop on jobs, salaries, top office locations, ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "osha": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:37:21.759Z",
+      "data": {
+        "found": true,
+        "query": "site:osha.gov \"A.R. Construction\"",
+        "source": "osha",
+        "results": [
+          {
+            "link": "https://edit.osha.gov/ords/imis/establishment.inspection_detail?id=312647613",
+            "title": "Inspection Detail | Occupational Safety and Health Administration ...",
+            "snippet": "Inspection: 312647613 - A R Construction Inc ... 1846 Wilma Dr. Clarkston, WA 99403. Mailing Address: Po Box 881, Lewiston, ID 83501. Union Status: NonUnion. SIC ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/establishment.violation_detail?id=302618293&citation_id=01004",
+            "title": "A.R. Construction | Occupational Safety and Health Administration ...",
+            "snippet": "An official website of the United States government. Here's how you know. Dot gov. The .gov means it's official. Federal government websites often end ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/establishment.violation_detail?id=1566515.015&citation_id=01001",
+            "title": "Wa317966645 - A-R Construction & Fab Llc | Occupational Safety ...",
+            "snippet": "Violation Detail ; Penalty, L: State Settlement, 04/01/2022, $450.00, 12/01/2021 ; Penalty, C: Contested, 02/11/2022, $600.00, 12/01/2021 ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/establishment.violation_detail?id=312880131&citation_id=01001A",
+            "title": "Alecio Rodriguez Dba A.R. Construction | Occupational Safety and ...",
+            "snippet": "An official website of the United States government. Here's how you know. Dot gov. The .gov means it's official. Federal government websites often end ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/industry.search?sic=&naics=&state=All&officetype=&office=&startmonth=&startday=&startyear=&endmonth=&endday=&endyear=&scope=&fedagncode=&owner=&p_start=&p_finish=15480&p_sort=site_state&p_desc=ASC&p_direction=Next&p_show=20",
+            "title": "Industry Search Results Page | Occupational Safety and Health ...",
+            "snippet": "1797539.015, 01/14/2025, 0950641, CA, Complaint, Partial, 236220, Ar Construction. 15488, 1846239.015, 08/25/2025, 0950611, CA, Complaint, Partial, 424330 ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:37:23.164Z",
+      "data": {
+        "found": true,
+        "query": "\"A.R. Construction\" Frisco lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://arizent.brightspotcdn.com/b8/bc/f7b52b094de4ab83693476b1d795/bb-061025.pdf",
+            "title": "[PDF] MSRB Rescinds Minute Trade Reporting Model",
+            "snippet": "6/10 - City of Frisco (TX) - TX. 6/10 - Board of ... AR Construction. *3,310. 11 am C. First Sec ... a lawsuit in 2023 seeking to derail what is now a ..."
+          },
+          {
+            "link": "https://www.facebook.com/groups/569546850078738/posts/2343590902674315/",
+            "title": "Tradesmen: foundation, framers, plumbers, electricians needed",
+            "snippet": "A R CONSTRUCTION ▻ Bay Area Contractors & Home Remodel Vendors. 50w · Public · Hi I'm looking for trades for new home project located at ..."
+          },
+          {
+            "link": "https://www.nvcontractorsboard.com/wp-content/uploads/2023/09/01-20-22-Board-Meeting-Agenda.pdf",
+            "title": "[PDF] PUBLIC NOTICE - Nevada State Contractors Board",
+            "snippet": "A R CONSTRUCTION LLC. LAS VEGAS, NV. 0088712; JOSE MANUEL AVILA-RIOS ... PENDING RESOLUTION OF OPEN COMPLAINT ON RELATED LICENSE # 48844."
+          },
+          {
+            "link": "https://publicdocuments.fortworthtexas.gov/CSODOCS/DocView.aspx?id=251306&dbid=0&repo=city-secretary",
+            "title": "Untitled",
+            "snippet": "... Frisco, TX 75a33 SURETY: Travelers Cas alt and Sure Com an of Amerlca BY: _'1 ... ar construction industry ar trade meanuag are used in the Contiract ..."
+          },
+          {
+            "link": "https://www.sos.mo.gov/CMSImages/AdRules/moreg/2020/v45n19Oct1/v45n19f.pdf",
+            "title": "[PDF] Construction Transient Employers - Missouri Secretary of State",
+            "snippet": "AR CONSTRUCTION LLC. PO BOX 1171. HOOKER. OK. 73945-1171. ARACREBS1 LLC ... 15 CSR 30-100.005 Notary Complaint Process ."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:37:40.973Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T06:37:26Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22A.R.%20Construction%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=psaOacj-F-izmtkP7uLP4Aw\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T06:37:36Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22A.R.%20Construction%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=r8aOab_2JM6wqtsPqcv0uAY\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "A.R. Construction",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:37:41.654Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "A.R. CONSTRUCTION, INC.",
+        "taxpayer_number": "17429906864"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T06:37:41.655Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:37:52.793Z",
+      "data": {
+        "cost": 0.00086408,
+        "summary": "Reviews show strong evidence of problematic business practices. The company has minimal review presence with a concerning negative review alleging theft of payment and failure to complete work. The positive review appears to be from a business partner rather than a typical customer. Multiple platform listings show 0.0 ratings with no actual reviews, suggesting the business may not have legitimate customer feedback.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-13T06:37:52.793Z",
+        "fake_signals": [
+          "Claimed 5.0 HQ rating with null reviews",
+          "Only 2 total Google reviews over 5+ years",
+          "Yelp listings show 0.0 rating with no reviews",
+          "Lack of specific project details in positive review",
+          "Positive review reads like a business referral rather than customer experience"
+        ],
+        "recommendation": "DISTRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": 0,
+          "google": 3,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "HIGH",
+          "follow_through": "NEGATIVE",
+          "negative_evidence": [
+            "Allegations of not completing work after payment"
+          ],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Negative review contains specific, credible allegations",
+          "Time gap between reviews (5 years vs 4 years)",
+          "Emotional authenticity in negative review"
+        ],
+        "fake_review_score": 85,
+        "complaint_patterns": [
+          "Failure to complete work after payment",
+          "Ghosting/disappearing after deposit",
+          "Deceitful/unreliable behavior",
+          "Allegations of stealing jobs from former employer"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Extreme discrepancy between claimed HQ rating (5.0) and actual local rating (3.0). Yelp shows 0.0 rating with no reviews, indicating a lack of established presence. The company appears to be listed on multiple platforms but has no substantive reviews."
+      }
+    }
+  }
+}

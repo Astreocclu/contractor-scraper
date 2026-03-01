@@ -1,0 +1,38 @@
+{
+  "variation": "C2",
+  "contractor_id": 7691,
+  "contractor_name": "Cowboy Hat Capital Foundation Repair Co",
+  "archetype": "known_bad",
+  "expected_score": 20,
+  "run": 1,
+  "timestamp": "2026-01-20T19:10:06.307Z",
+  "success": true,
+  "trust_score": 5,
+  "risk_level": "CRITICAL",
+  "reasoning": "This contractor presents multiple severe red flags indicating potential fraud. The Google Maps listing shows reviews exclusively for auto repair services despite the business name claiming to be foundation repair, suggesting a hijacked or fake listing. The lack of any legitimate business registration, licenses, or authentic foundation repair reviews combined with the service/review mismatch creates an extremely high-risk situation for potential customers.",
+  "red_flags": [
+    "Google Maps listing appears fraudulent - all reviews for different business type",
+    "No business registration found in Texas databases",
+    "Complete absence from all professional contractor platforms",
+    "No verifiable foundation repair work history or credentials"
+  ],
+  "raw_response": {
+    "trust_score": 5,
+    "risk_level": "CRITICAL",
+    "reasoning": "This contractor presents multiple severe red flags indicating potential fraud. The Google Maps listing shows reviews exclusively for auto repair services despite the business name claiming to be foundation repair, suggesting a hijacked or fake listing. The lack of any legitimate business registration, licenses, or authentic foundation repair reviews combined with the service/review mismatch creates an extremely high-risk situation for potential customers.",
+    "key_factors": [
+      "Complete service category mismatch - foundation repair company with only auto mechanic reviews",
+      "No legitimate business registration or licensing found anywhere",
+      "Fraudulent or hijacked Google Maps listing detected",
+      "Zero authentic foundation repair customer feedback or history"
+    ],
+    "red_flags": [
+      "Google Maps listing appears fraudulent - all reviews for different business type",
+      "No business registration found in Texas databases",
+      "Complete absence from all professional contractor platforms",
+      "No verifiable foundation repair work history or credentials"
+    ]
+  },
+  "cost_usd": 0.05214075000000001,
+  "duration_ms": 8234
+}

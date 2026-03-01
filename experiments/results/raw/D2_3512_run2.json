@@ -1,0 +1,68 @@
+{
+  "variation": "D2",
+  "contractor_id": 3512,
+  "contractor_name": "1-Tom-Plumber",
+  "archetype": "new_promising",
+  "expected_score": 75,
+  "run": 2,
+  "timestamp": "2026-01-20T19:21:59.457Z",
+  "success": true,
+  "trust_score": 88,
+  "risk_level": "LOW",
+  "reasoning": "Mixed council: DeepSeek=88, Claude=85, Gemini=92, Avg=88",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 88,
+      "risk_level": "LOW",
+      "reasoning": "1-Tom-Plumber demonstrates exceptional customer service quality with overwhelmingly positive reviews across multiple platforms, particularly Google (5.0/5 with 290 reviews) and Yelp (4.9/5 with 354 reviews). The company shows strong operational professionalism with 24/7 emergency response, transparent communication, and specific employee recognition (Scott, David, etc.) in detailed customer testimonials. While the business appears to be a franchise operation with some corporate structure, the local team's performance is consistently praised for reliability, expertise, and fair dealing. The absence of legal issues, complaints, or regulatory violations further supports trustworthiness.",
+      "key_factors": [
+        "Exceptional customer reviews with high volume and specificity",
+        "24/7 emergency service with consistent positive feedback",
+        "No legal/regulatory issues or complaints found"
+      ],
+      "red_flags": [
+        "Higher pricing mentioned in some reviews (common for emergency service)",
+        "Limited BBB presence (not necessarily negative)"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 85,
+      "risk_level": "LOW",
+      "reasoning": "1-Tom-Plumber demonstrates exceptional customer service quality with 290 perfect 5-star Google reviews and 354 reviews averaging 4.9 on Yelp, featuring detailed, authentic feedback mentioning specific technicians and scenarios. The company operates 24/7 emergency services with consistently praised responsiveness, professionalism, and technical expertise. While pricing is noted as higher than competitors, customers consistently express satisfaction with the value received for emergency and quality service. The business appears well-established with strong online presence and no significant legal issues or complaints found.",
+      "key_factors": [
+        "Exceptional customer reviews (5.0 Google, 4.9 Yelp) with high volume and authentic detail",
+        "Consistent praise for specific technicians (Scott, David) and emergency responsiveness",
+        "Professional website with clear service offerings and transparent business practices"
+      ],
+      "red_flags": [
+        "Higher pricing compared to competitors as noted in multiple reviews",
+        "Lower employee satisfaction (3.0 Glassdoor rating) may indicate internal challenges"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 92,
+      "risk_level": "LOW",
+      "reasoning": "1-Tom-Plumber demonstrates a strong commitment to customer satisfaction, evidenced by overwhelmingly positive reviews on Google Maps and Yelp. The reviews highlight prompt service, knowledgeable technicians, and a willingness to go above and beyond. While some reviews mention higher pricing, this is often associated with emergency services and quality workmanship. The company's proactive engagement on social media and focus on water damage restoration further contribute to a positive overall assessment.",
+      "key_factors": [
+        "Exceptional customer reviews",
+        "24/7 emergency service",
+        "Water damage restoration expertise"
+      ],
+      "red_flags": [
+        "Higher pricing mentioned in some reviews"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Higher pricing mentioned in some reviews (common for emergency service)",
+    "Limited BBB presence (not necessarily negative)",
+    "Higher pricing compared to competitors as noted in multiple reviews",
+    "Lower employee satisfaction (3.0 Glassdoor rating) may indicate internal challenges",
+    "Higher pricing mentioned in some reviews"
+  ],
+  "cost_usd": 0.1044484425,
+  "duration_ms": 9609
+}

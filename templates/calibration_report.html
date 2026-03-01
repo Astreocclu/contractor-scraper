@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contractor Trust Audit - {{contractorName}}</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: #fff;
+        }
+
+        h1, h2, h3 {
+            color: #1a365d;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            border-bottom: 3px solid #2b6cb0;
+            padding-bottom: 0.3em;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            border-bottom: 2px solid #4299e1;
+            padding-bottom: 0.2em;
+            margin-top: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.1em;
+            color: #2c5282;
+        }
+
+        /* Header Section */
+        .header {
+            margin-bottom: 2em;
+        }
+
+        .header-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+            margin-top: 1em;
+            background: #f7fafc;
+            padding: 1em;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .header-item {
+            display: flex;
+            gap: 0.5em;
+        }
+
+        .header-label {
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        .header-value {
+            color: #1a202c;
+        }
+
+        /* Score Box */
+        .score-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            font-size: 2em;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .score-high {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+        }
+
+        .score-medium {
+            background: linear-gradient(135deg, #dd6b20, #c05621);
+        }
+
+        .score-low {
+            background: linear-gradient(135deg, #e53e3e, #c53030);
+        }
+
+        /* Verdict Section */
+        .verdict-container {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.5em;
+            align-items: start;
+            margin: 1em 0;
+            padding: 1em;
+            background: #f7fafc;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .verdict-details {
+            display: grid;
+            gap: 0.75em;
+        }
+
+        .verdict-row {
+            display: flex;
+            gap: 0.5em;
+        }
+
+        .verdict-label {
+            font-weight: 600;
+            color: #4a5568;
+            min-width: 120px;
+        }
+
+        .verdict-value {
+            color: #1a202c;
+        }
+
+        .summary-text {
+            margin-top: 1em;
+            padding: 1em;
+            background: #fff;
+            border-left: 4px solid #4299e1;
+            font-style: italic;
+        }
+
+        /* Persona Cards */
+        .persona-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+            margin: 1em 0;
+        }
+
+        .persona-card {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1em;
+        }
+
+        .persona-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75em;
+            padding-bottom: 0.5em;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .persona-name {
+            font-weight: 600;
+            color: #2c5282;
+        }
+
+        .persona-score {
+            font-size: 1.2em;
+            font-weight: 700;
+            padding: 0.2em 0.5em;
+            border-radius: 4px;
+        }
+
+        .persona-score.score-high {
+            color: #276749;
+            background: #c6f6d5;
+        }
+
+        .persona-score.score-medium {
+            color: #9c4221;
+            background: #feebc8;
+        }
+
+        .persona-score.score-low {
+            color: #9b2c2c;
+            background: #fed7d7;
+        }
+
+        .persona-confidence {
+            font-size: 0.85em;
+            color: #718096;
+            margin-bottom: 0.5em;
+        }
+
+        .persona-section {
+            margin-top: 0.75em;
+        }
+
+        .persona-section-label {
+            font-weight: 600;
+            font-size: 0.85em;
+            color: #4a5568;
+            margin-bottom: 0.25em;
+        }
+
+        .persona-section-content {
+            font-size: 0.9em;
+            color: #2d3748;
+        }
+
+        /* Red Flags */
+        .red-flags-container {
+            margin: 1em 0;
+        }
+
+        .red-flag {
+            display: flex;
+            gap: 1em;
+            padding: 0.75em 1em;
+            margin-bottom: 0.5em;
+            border-radius: 6px;
+            border-left: 4px solid;
+        }
+
+        .red-flag.CRITICAL {
+            background: #fff5f5;
+            border-left-color: #c53030;
+        }
+
+        .red-flag.HIGH {
+            background: #fffaf0;
+            border-left-color: #dd6b20;
+        }
+
+        .red-flag.MEDIUM {
+            background: #fffff0;
+            border-left-color: #d69e2e;
+        }
+
+        .red-flag.LOW {
+            background: #f0fff4;
+            border-left-color: #38a169;
+        }
+
+        .red-flag-severity {
+            font-weight: 700;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            min-width: 70px;
+        }
+
+        .red-flag.CRITICAL .red-flag-severity { color: #c53030; }
+        .red-flag.HIGH .red-flag-severity { color: #dd6b20; }
+        .red-flag.MEDIUM .red-flag-severity { color: #d69e2e; }
+        .red-flag.LOW .red-flag-severity { color: #38a169; }
+
+        .red-flag-text {
+            flex: 1;
+            color: #2d3748;
+        }
+
+        .no-red-flags {
+            padding: 1em;
+            background: #f0fff4;
+            border-radius: 6px;
+            color: #276749;
+            font-style: italic;
+        }
+
+        /* Worksheet Section */
+        .worksheet {
+            margin: 1em 0;
+        }
+
+        .worksheet-field {
+            margin-bottom: 1.5em;
+        }
+
+        .worksheet-label {
+            font-weight: 600;
+            color: #2c5282;
+            margin-bottom: 0.5em;
+            display: block;
+        }
+
+        .worksheet-input {
+            width: 100%;
+            min-height: 2em;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            padding: 0.5em;
+            background: #fff;
+        }
+
+        .worksheet-input.large {
+            min-height: 4em;
+        }
+
+        .worksheet-input.small {
+            width: 120px;
+            min-height: 1.5em;
+        }
+
+        .worksheet-row {
+            display: flex;
+            gap: 2em;
+            margin-bottom: 1em;
+        }
+
+        .worksheet-row .worksheet-field {
+            margin-bottom: 0;
+        }
+
+        /* Raw Data Section */
+        .raw-data-container {
+            margin: 1em 0;
+        }
+
+        .raw-data-source {
+            margin-bottom: 1.5em;
+        }
+
+        .raw-data-source-name {
+            font-weight: 600;
+            color: #2c5282;
+            margin-bottom: 0.5em;
+            padding: 0.5em;
+            background: #edf2f7;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .raw-data-content {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 0.85em;
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 1em;
+            border-radius: 0 0 4px 4px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        /* Page Breaks */
+        .page-break {
+            page-break-before: always;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+
+            .worksheet-input {
+                border: 1px solid #333;
+            }
+
+            .raw-data-content {
+                max-height: none;
+                overflow-y: visible;
+            }
+        }
+
+        /* Agreement/Disagreement Analysis */
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+            margin: 1em 0;
+        }
+
+        .analysis-box {
+            padding: 1em;
+            border-radius: 6px;
+        }
+
+        .analysis-box.agreements {
+            background: #f0fff4;
+            border: 1px solid #9ae6b4;
+        }
+
+        .analysis-box.disagreements {
+            background: #fff5f5;
+            border: 1px solid #feb2b2;
+        }
+
+        .analysis-title {
+            font-weight: 600;
+            margin-bottom: 0.5em;
+        }
+
+        .analysis-box.agreements .analysis-title {
+            color: #276749;
+        }
+
+        .analysis-box.disagreements .analysis-title {
+            color: #c53030;
+        }
+
+        .analysis-content {
+            font-size: 0.9em;
+            color: #2d3748;
+        }
+    </style>
+</head>
+<body>
+    <!-- Section: Header -->
+    <div class="header">
+        <h1>Contractor Trust Audit Report</h1>
+        <div class="header-grid">
+            <div class="header-item">
+                <span class="header-label">Contractor:</span>
+                <span class="header-value">{{contractorName}}</span>
+            </div>
+            <div class="header-item">
+                <span class="header-label">Location:</span>
+                <span class="header-value">{{city}}, {{state}}</span>
+            </div>
+            <div class="header-item">
+                <span class="header-label">Contractor ID:</span>
+                <span class="header-value">{{contractorId}}</span>
+            </div>
+            <div class="header-item">
+                <span class="header-label">Audit Date:</span>
+                <span class="header-value">{{auditDate}}</span>
+            </div>
+            <div class="header-item">
+                <span class="header-label">Category:</span>
+                <span class="header-value">{{category}}</span>
+            </div>
+            <div class="header-item">
+                <span class="header-label">Google Reviews:</span>
+                <span class="header-value">{{googleReviewCount}}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1: Council Verdict -->
+    <h2>Section 1: Council Verdict</h2>
+    <div class="verdict-container">
+        <div class="score-box {{scoreClass}}">{{finalScore}}</div>
+        <div class="verdict-details">
+            <div class="verdict-row">
+                <span class="verdict-label">Risk Level:</span>
+                <span class="verdict-value">{{riskLevel}}</span>
+            </div>
+            <div class="verdict-row">
+                <span class="verdict-label">Recommendation:</span>
+                <span class="verdict-value">{{recommendation}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="summary-text">{{summary}}</div>
+
+    <!-- Section 2: Three Persona Analysis -->
+    <h2>Section 2: Three Persona Analysis</h2>
+    <div class="persona-grid">
+        <!-- Consumer Advocate -->
+        <div class="persona-card">
+            <div class="persona-header">
+                <span class="persona-name">Consumer Advocate</span>
+                <span class="persona-score {{advocateScoreClass}}">{{advocateScore}}</span>
+            </div>
+            <div class="persona-confidence">Confidence: {{advocateConfidence}}</div>
+            <div class="persona-section">
+                <div class="persona-section-label">Reasoning:</div>
+                <div class="persona-section-content">{{advocateReasoning}}</div>
+            </div>
+            <div class="persona-section">
+                <div class="persona-section-label">Key Concerns:</div>
+                <div class="persona-section-content">{{advocateConcerns}}</div>
+            </div>
+        </div>
+
+        <!-- Fair Arbiter -->
+        <div class="persona-card">
+            <div class="persona-header">
+                <span class="persona-name">Fair Arbiter</span>
+                <span class="persona-score {{arbiterScoreClass}}">{{arbiterScore}}</span>
+            </div>
+            <div class="persona-confidence">Confidence: {{arbiterConfidence}}</div>
+            <div class="persona-section">
+                <div class="persona-section-label">Reasoning:</div>
+                <div class="persona-section-content">{{arbiterReasoning}}</div>
+            </div>
+            <div class="persona-section">
+                <div class="persona-section-label">Positive Factors:</div>
+                <div class="persona-section-content">{{arbiterPositives}}</div>
+            </div>
+        </div>
+
+        <!-- Synthesizer -->
+        <div class="persona-card">
+            <div class="persona-header">
+                <span class="persona-name">Synthesizer</span>
+                <span class="persona-score {{synthesizerScoreClass}}">{{synthesizerScore}}</span>
+            </div>
+            <div class="persona-section">
+                <div class="persona-section-label">Reasoning:</div>
+                <div class="persona-section-content">{{synthesizerReasoning}}</div>
+            </div>
+            <div class="persona-section">
+                <div class="persona-section-label">Stronger Case:</div>
+                <div class="persona-section-content">{{strongerCase}}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="analysis-grid">
+        <div class="analysis-box agreements">
+            <div class="analysis-title">Points of Agreement</div>
+            <div class="analysis-content">{{agreements}}</div>
+        </div>
+        <div class="analysis-box disagreements">
+            <div class="analysis-title">Points of Disagreement</div>
+            <div class="analysis-content">{{disagreements}}</div>
+        </div>
+    </div>
+
+    <!-- Section 3: Red Flags -->
+    <h2>Section 3: Red Flags</h2>
+    <div class="red-flags-container">
+        {{#if redFlags}}
+        {{#each redFlags}}
+        <div class="red-flag {{severity}}">
+            <span class="red-flag-severity">{{severity}}</span>
+            <span class="red-flag-text">{{text}}</span>
+        </div>
+        {{/each}}
+        {{else}}
+        <div class="no-red-flags">No red flags identified during audit.</div>
+        {{/if}}
+    </div>
+
+    <!-- Section 4: Human Annotator Worksheet (Page Break) -->
+    <div class="page-break"></div>
+    <h2>Section 4: Human Annotator Worksheet</h2>
+    <p style="margin-bottom: 1em; color: #4a5568; font-style: italic;">
+        Please review the audit data above and provide your independent assessment.
+    </p>
+
+    <div class="worksheet">
+        <div class="worksheet-row">
+            <div class="worksheet-field">
+                <label class="worksheet-label">Your Trust Score (0-100):</label>
+                <div class="worksheet-input small"></div>
+            </div>
+            <div class="worksheet-field">
+                <label class="worksheet-label">Your Confidence (Low/Medium/High):</label>
+                <div class="worksheet-input small"></div>
+            </div>
+        </div>
+
+        <div class="worksheet-field">
+            <label class="worksheet-label">Do you agree with the Council's verdict? (Yes/No/Partially)</label>
+            <div class="worksheet-input"></div>
+        </div>
+
+        <div class="worksheet-field">
+            <label class="worksheet-label">If you disagree, explain why:</label>
+            <div class="worksheet-input large"></div>
+        </div>
+
+        <div class="worksheet-field">
+            <label class="worksheet-label">Which persona's assessment was most accurate? (Advocate/Arbiter/Synthesizer)</label>
+            <div class="worksheet-input"></div>
+        </div>
+
+        <div class="worksheet-field">
+            <label class="worksheet-label">What did the Council miss?</label>
+            <div class="worksheet-input large"></div>
+        </div>
+
+        <div class="worksheet-field">
+            <label class="worksheet-label">What did the Council over-weight?</label>
+            <div class="worksheet-input large"></div>
+        </div>
+
+        <div class="worksheet-field">
+            <label class="worksheet-label">Additional Notes:</label>
+            <div class="worksheet-input large"></div>
+        </div>
+    </div>
+
+    <!-- Section 5: Raw Data Appendix (Page Break) -->
+    <div class="page-break"></div>
+    <h2>Section 5: Raw Data Appendix</h2>
+    <p style="margin-bottom: 1em; color: #4a5568; font-style: italic;">
+        Complete scraped data used for this audit. Review for any signals the LLM may have missed.
+    </p>
+
+    <div class="raw-data-container">
+        {{#each rawDataSources}}
+        <div class="raw-data-source">
+            <div class="raw-data-source-name">{{name}}</div>
+            <div class="raw-data-content">{{content}}</div>
+        </div>
+        {{/each}}
+    </div>
+
+</body>
+</html>

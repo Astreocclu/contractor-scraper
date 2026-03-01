@@ -1,0 +1,828 @@
+{
+  "contractor_id": 1010,
+  "business_name": "R2 Roof Guys",
+  "city": "Garland",
+  "state": "TX",
+  "verticals": [
+    "roofing"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-15T21:10:09.674Z",
+  "sources": {
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:47:53.106Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": true,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "https://www.r2roofguys.com/",
+            "type": "workmanship",
+            "snippet": "is to go above and beyond customer expectations and provide the best quality of workmanship as well as customer care both before and after a project. Roof Repair & Mainten"
+          },
+          {
+            "url": "https://www.r2roofguys.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "ometimes a complete new roof is the best option. We will work with you and your insurance to make sure all damage is properly assessed and estimated. Chimney caps & cric"
+          }
+        ],
+        "durations": [
+          "30 Year"
+        ],
+        "confidence": "MODERATE",
+        "source_url": "https://www.r2roofguys.com/",
+        "analyzed_pages": [
+          {
+            "url": "https://www.r2roofguys.com/",
+            "type": "homepage",
+            "title": "R2 Roof Guys | Professional Roofing Services"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": true
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:48:00.325Z",
+      "data": {
+        "query": "site:yelp.com \"R2 Roof Guys\" \"Garland, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://m.yelp.com/search?find_desc=Handyman&find_near=r2-roof-guys-roofing-contractor-roof-repair-residential-and-co-garland",
+            "title": "Best Handyman near R2 Roof Guys - Roofing Contractor, Roof ...",
+            "snippet": "Handyman near R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co in Garland, TX ; Sincere Contracting · General Contractors · Decks & Railing.",
+            "position": 1
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=General+Contractors&find_near=r2-roof-guys-roofing-contractor-roof-repair-residential-and-co-garland",
+            "title": "Best General Contractors near R2 Roof Guys - Roofing Contractor ...",
+            "snippet": "Best General Contractors near R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co in Garland, TX ; Residential Roofing Services · Roofing. 0.0 mi ...",
+            "position": 2
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Roofing&find_loc=Garland%2C+TX",
+            "title": "TOP 10 BEST Roofing in Garland, TX - Updated 2026 - Yelp",
+            "rating": 4.5,
+            "snippet": "... Garland, TX. Map. Windows Installation in Garland, Texas · Construction in ... R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co - Roofing ...",
+            "position": 3,
+            "ratingCount": 715
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Roof+Repair&find_loc=Garland%2C+TX",
+            "title": "TOP 10 BEST Roof Repair in Garland, TX - Updated 2026 - Yelp",
+            "rating": 4.5,
+            "snippet": "... Garland, TX. Map. Fascia Board Repair in Garland, Texas · Mold Remediation in ... R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co - Roof ...",
+            "position": 4,
+            "ratingCount": 945
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Residential+Roofing+Contractors&find_loc=Garland%2C+TX",
+            "title": "TOP 10 BEST Residential Roofing Contractors in Garland, TX ... - Yelp",
+            "snippet": "... R2 Roof Guys - Roofing Contractor, Roof Repair ... Garland, TX. Map. Siding Replacement in Garland ... Garland, TX · Closet Design in Garland, TX · Custom ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Roofing&find_loc=Sachse%2C+TX+75048",
+            "title": "TOP 10 BEST Roofing near Sachse, TX 75048 - Updated 2026 - Yelp",
+            "rating": 4.4,
+            "snippet": "... Garland, TX 75043. Yelp Guaranteed. On their website: roofing. We can get ... R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co - Roofing ...",
+            "position": 6,
+            "ratingCount": 831
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Roof+Installation&find_loc=Garland%2C+TX+75044",
+            "title": "TOP 10 BEST Roof Installation near Garland, TX 75044 - Yelp",
+            "rating": 4.3,
+            "snippet": "... Garland, TX · Home Improvement in Garland, TX. Filters. Free price estimates ... R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co - Roof ...",
+            "position": 7,
+            "ratingCount": 927
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=pool+electrician&find_loc=Garland%2C+TX+75040",
+            "title": "TOP 10 BEST Pool Electrician near Garland, TX 75040 - Yelp",
+            "rating": 4.1,
+            "snippet": "... R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co - pool ... pool electrician Near Me. Garland, TX 75040. Best pool electrician near Garland, TX ...",
+            "position": 8,
+            "ratingCount": 2214
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Holiday+Decorating+Services&find_loc=Rowlett%2C+TX",
+            "title": "THE BEST 10 Holiday Decorating Services in Rowlett, TX - Yelp",
+            "rating": 4.3,
+            "snippet": "... R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co - Holiday ... Garland, TX · McKinney, TX · Mesquite, TX · Plano, TX · Richardson, TX · Rockwall ...",
+            "position": 9,
+            "ratingCount": 640
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Repair&find_loc=Garland%2C+TX+75040",
+            "title": "TOP 10 BEST Pool Repair near Garland, TX 75040 - Yelp",
+            "rating": 4.3,
+            "snippet": "... Garland, TX 75040. Map. Above Ground Pool Installation in Garland, Texas · Pool ... R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co - Pool ...",
+            "position": 10,
+            "ratingCount": 870
+          }
+        ]
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:50:14.191Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:50:14.842Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:50:15.685Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "r2roofguys.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:48:36.334Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:48:40.429Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:48:43.071Z",
+      "data": {
+        "query": "R2 Roof Guys Garland site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:50:20.524Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"R2 Roof Guys\" Garland",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:48:54.709Z",
+      "data": "R2 Roof Guys Garland review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 0:35 0:35 Now playing Garland Roofers R2 Roof Guys T: 214-405-4396 ​EMERGENCY SERVICE 24/7 BrandStoryNews BrandStoryNews • • 26 views 6 years ago BrandStoryNews BrandStoryNews Garland Roofers R2 Roof Guys T: 214-405-4396 R2 Roof guys - R2 Roofing Guys is an outstanding roofing contractor in Garland , ... Garland Roofers R2 Roof Guys T: 214-405-4396 R2 Roof guys - R2 Roofing Guys is an outstanding roofing contractor in Garland , ... From the video description SHORTS SHORTS Now playing Exteriors Plus - Aluminum ABC Product Exteriors Plus LLC Exteriors Plus LLC • • 1 view 4 months ago Exteriors Plus LLC Exteriors Plus LLC Exteriors Plus Roofing , Siding & Windows 12481 Rhode Island Ave Savage, MN 55378, United States 952-345-3408 ... Exteriors Plus Roofing , Siding & Windows 12481 Rhode Island Ave Savage, MN 55378, United States 952-345-3408 ... From the video description The Garland Roofers The Garland Roofers @thegarlandroofers9332 • The Garland Roofers is the company to call for affordable, reliable roofing in Garland , TX. We ensure durable roof repairs or new ... Subscribe SHORTS SHORTS Now playing Exteriors Plus - Roof Transformation Exteriors Plus LLC Exteriors Plus LLC • • No views 4 months ago Exteriors Plus LLC Exteriors Plus LLC Exteriors Plus Roofing , Siding & Windows 12481 Rhode Island Ave Savage, MN 55378, United States 952-345-3408 ... Exteriors Plus Roofing , Siding & Windows 12481 Rhode Island Ave Savage, MN 55378, United States 952-345-3408 ... From the video description Shorts Customer of GARLAND ROOFING Contractor Talks About Rainy Day Restoration, Roofing & Repairs 159 views 400$ roof repair scam #constructionfails #roofingfail 11K views Real reviews, real satisfaction! - ERS 35 views Roof Repair Kildare #roofer #roofing #roof #roofrepair #roofreplacement #roofingcontractor #roofers 764 views Roofing en garland tx 19 views Bosses React to Roofers 1.7K views CLIENT Roof Review #shorts #roofing #repair 1.9K views Top 10 Best Roofers in Rancho PalosVerdes, CA 424-507-ROOF 14 views #ThrowbackThursday Get Professional & Safe Roof Repair with Guardian 145 views Bad roof at a good price! 4.1K views Show more Show less People also watched 16:02 16:02 Now playing How to find a roof leak that does not have obvious roof damage & Repair cost Grand Roofing Inc. Grand Roofing Inc. • • 21K views 1 year ago Grand Roofing Inc. Grand Roofing Inc. How to find a roof leak when there is no obvious damage or missing shingles. If your roof is about 52 ten years old and starts to ... How to find a roof leak when there is no obvious damage or missing shingles. If your roof is about 52 ten years old and starts to ... From the video description Summary This video focuses on identifying and repairing roof leaks that don't have obvious damage. The presenter shows how to find leaks by examining shingle installation, looking for soft spots, and checking for signs of water damage. They also discuss the cost of repairs and the factors that influence pricing. AI-generated video summary Quality and accuracy may vary. Summary This video focuses on identifying and repairing roof leaks that don't have obvious damage. The presenter shows how to find leaks by examining shingle installation, looking for soft spots, and checking for signs of water damage. They also discuss the cost of repairs and the factors that influence pricing. 3:37 3:37 Now playing Insurance Adjuster says roof is repairable. 😂 See how this inspection is ignored & denied? Chicago Roofer Chicago Roofer • • 1.5M views 3 years ago Chicago Roofer Chicago Roofer Met with an insurance adjuster for a wind claim . top insure company in Illinois. Adjuster from this company insists the roof is ... Met with an insurance adjuster for a wind claim . top insure company in Illinois. Adjuster from this company insists the roof is ... From the video description Summary An insurance adjuster deems a roof repairable, despite a roofer's on-site demonstration of significant damage. The roofer meticulously documents the irreparable condition using a customer's phone. This video showcases the conflict between the adjuster's assessment and the reality of the roof's condition. AI-generated video summary Quality and accuracy may vary. Summary An insurance adjuster deems a roof repairable, despite a roofer's on-site demonstration of significant damage. The roofer meticulously documents the irreparable condition using a customer's phone. This video showcases the conflict between the adjuster's assessment and the reality of the roof's condition. 9:49 9:49 Now playing Roofing Insulation is getting RIDICULOUS! IRE did not disappoint Matt Risinger Matt Risinger • • 227K views 1 day ago Matt Risinger Matt Risinger Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... From the video description New Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. AI-generated video summary Quality and accuracy may vary. Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. 8:39 8:39 Now playing Ladder Safety | How to Climb on a Roof Without Getting Hurt! Digital Roofing Innovations Digital Roofing Innovations • • 704K views 5 years ago Digital Roofing Innovations Digital Roofing Innovations Why are we doing this video? Well, many of our videos are geared towards and roofing salesmen who are new to the industry so ... Why are we doing this video? Well, many of our videos are geared towards and roofing salesmen who are new to the industry so ... From the video description 6 chapters Intro | The Ladder | Ladder Placement | Gloves | Climbing Up | Outro 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 The Ladder The Ladder 0:57 The Ladder 0:57 Ladder Placement Ladder Placement 2:20 Ladder Placement 2:20 Gloves Gloves 4:12 Gloves 4:12 Climbing Up Climbing Up 5:16 Climbing Up 5:16 Outro Outro 7:40 Outro 7:40 + 6 more Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:48:56.043Z",
+      "data": {
+        "query": "site:nextdoor.com R2 Roof Guys Garland",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:50:22.111Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"R2 Roof Guys\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:49:09.227Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=R2%20Roof%20Guys&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= R2% 20Roof% 20Guys&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= R2% 20Roof% 20Guys&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "Enforcement and Compliance History Online | US EPA",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= R2% 20Roof% 20Guys&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= R2% 20Roof% 20Guys&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= R2% 20Roof% 20Guys&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= R2% 20Roof% 20Guys&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:49:13.408Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:49:19.486Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:49:27.530Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov R2 Roof Guys",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:49:28.562Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not ...",
+            "position": 2
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 3
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Franchise Search Results. 心. Franchise Tax Account Status. As of 09/13/2021 14:10:44 ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 4
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26.",
+            "position": 7
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/395/00395-772-2023-0803-MCA-214901-Rio%20Grande.pdf",
+            "title": "[PDF] Texas Comptroller of Public Accounts",
+            "snippet": "7TH STREET SUITE 620 AUSTIN, TX 78701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 10. 6/22/23, 12:34 PM. OF THE. OFFICE C. TEXAS. Franchise ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 17, 2025",
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "Franchise Tax Account Status Search Results.pdf(93501 bytes ). Signature ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:49:29.683Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com R2 Roof Guys",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:49:30.832Z",
+      "data": {
+        "query": "site:dallascounty.org R2 Roof Guys civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:49:32.006Z",
+      "data": {
+        "query": "site:collincountytx.gov R2 Roof Guys",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:49:33.207Z",
+      "data": {
+        "query": "site:dentoncounty.gov R2 Roof Guys",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:49:36.473Z",
+      "data": "R2 Roof Guys | Professional Roofing Services Home About Us Reviews Services Roof Repairs & Maintenance Roof Replacement Chimney Caps & Crickets Aluminum Gutters Roof Ventilation Skylights Exterior Christmas Lights Contact Us Call Now (214) 405-4396 Home About Us Reviews Services Roof Repairs & Maintenance Roof Replacement Chimney Caps & Crickets Aluminum Gutters Roof Ventilation Skylights Exterior Christmas Lights Contact Us Call Now (214) 405-4396 QUALITY - INTEGRITY - EXPERTISE keeping your family Protected Since 1991 Schedule your estimate today! Personal and Professional Roofing Services R2 Roof Guys, LLC is a local family owned roofing business that has proudly served as your trusted roofing in North Texas since 1991. Our mission is to go above and beyond customer expectations and provide the best quality of workmanship as well as customer care both before and after a project. Roof Repair & Maintenance R2 Roof Guys provides all manor of roof repair. From replacing missing shingles to major overhauls. We can find and fix minor damage before it becomes a major issue. Roof ventilation Roof ventilation is important to maintain energy efficiency and to prevent attic damage. Contact R2 Roof Guys if you believe your ventilation is not working properly. Roof replacement Sometimes a complete new roof is the best option. We will work with you and your insurance to make sure all damage is properly assessed and estimated. Chimney caps & crickets Chimney caps and crickets are essential to help prevent water damage. R2 Roof Guys can inspect your current installation to determine if further repair is needed. Serving North Texas for Over 30 Year As a locally owned and operated company, we fully understand the unpredictable and unique problems that North Texas weather can bring. R2 Roof Guys has competitive pricing with first class service. We will not leave a job unless our customers are completely satisfied and we will be available for any future needs. We proudly serve areas in North Texas including: Dallas Garland Rowlett Rockwall Lavon Plano Allen Carrollton Richardson Frisco Parker Murphy Lucas Farmersville Keller Irving Mesquite McKinney Royse City Wylie Sachse Richardson Grapevine Grand Prairie Back to Top 675 Town Square Blvd, Unit 255, Garland, TX 75040, USA (214) 405-4396 r2roofguys@gmail.com Business hours We are available to help you 24 hours a day, seven days a week for any roofing needs including emergency services Text Friendly Roofer (214) 405-4396"
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:49:41.136Z",
+      "data": {
+        "name": "R2 Roof Guys",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(214) 405-4396",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/garland/profile/roofing-contractors/r2-roof-guys-0875-90924203",
+        "review_count": null,
+        "founding_date": "04/18/2018",
+        "complaint_count": null,
+        "accredited_since": "4/8/2019",
+        "years_in_business": 7,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:49:46.061Z",
+      "data": {
+        "cid": "16837202405349821722",
+        "name": "R2 Roof Guys",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "675 Town Square Blvd Unit 255, Garland, TX 75040",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "7 months ago",
+            "text": "R2 Roof Guys replaced my patio cover roof recently.  Richard did a fabulous job!!  It’s way better than it was originally!!  He completed it quickly and his pricing was more than fair.  I would definitely use him again!",
+            "author": "Lariann Bowen",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We had roofing gutters and paint done. I must say we’re very pleased with everything  the time and precision of each project . The time it took was only 3 or four days tops,  that is working days. We had to do this project and work around the rain. Everything still went according to the plan Richard laid out. Richard is a great communicator, he kept us informed as to when the roofers / painters Gutters would be installed. Roberto and his painters were incredible as well.  I can’t fail to mention the gutter installers , they made the installation seem so effortless. These people know how to get done very professional, clean was just awesome!\nI highly recommend R2 Roof Guys!",
+            "author": "Amos Mason",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I contacted Richard about a leak in my roof on a Sunday, and he showed up promptly on Monday to assess my roof. We received his estimate that same night and his crew showed up at 7am on a Thursday the following week to begin work.\n\nUpon removing the shingles from the roof, Richard informed me that the decking and rafters were not laid correctly, and gave me the option to redo them all correctly or just replace the new shingles over the improperly laid decking and rafters. I told him to redo them all correctly.\n\nThe crew set off to completely rebuild that part of my roof while Richard came back periodically throughout the day to check on the work.\n\nAll the work was completed by 5pm that same day, and Richard sent me photos of the completed roof from different angles, the chimney flashing as well as photos of the decking and rafters before they laid the shingles.\n\nThe new roof looks well done and the crew also cleaned up very nicely. Richard and his team were very professional, and everything was explained very clearly to me. If I didn't understand anything, Richard would show it to me.\n\nI am very satisfied with the new roof and my interaction with Richard and his team.",
+            "author": "Jane Martin",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "I had an outstanding experience with R2 Roof Guys! From the moment I contacted them for a quote to the completion of the roofing project, their service was top-notch. The team was professional, efficient, and extremely knowledgeable. They guided me through the entire process, helping me choose the right materials and providing a competitive quote.\n\nThe quality of their work truly exceeded my expectations. The new roof looks fantastic, and I can already tell it will stand the test of time. Not only did they complete the project on time, but they also cleaned up thoroughly afterward, leaving my property spotless.\n\nWhat sets R2 Roof Guys apart is their commitment to customer satisfaction. They were always responsive to my questions and concerns, making me feel valued as a customer. Their attention to detail and dedication to delivering a superior roofing solution is commendable.\n\nI highly recommend R2 Roof Guys to anyone in need of roofing services. They are a trustworthy and reliable company that delivers exceptional results. Thank you, R2 Roof Guys, for transforming my home with a beautiful and durable roof!",
+            "author": "Michael Martinez",
+            "rating": 5
+          },
+          {
+            "date": "6 months ago",
+            "text": "R2 roofing made the entire process of getting a new roof as easy and hassle free as possible. I found them extremely reasonable and attentive to details and were flexible working around my schedule.",
+            "author": "Christopher Rivers",
+            "rating": 5
+          },
+          {
+            "date": "9 months ago",
+            "text": "Richard and his crew are fantastic!!! We had a really bad storm out in Josephine and he came out the very next day with his team and replaced shingles that I lost in the storm. I would recommend him to anyone looking for an excellent roofer.",
+            "author": "Darren",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Richard and his team did an amazing job with our roof replacement. He was upfront and honest and very helpful with the entire process. This was the first time we have had to go through this process, and Richard was nothing but helpful with all of our questions. He is very knowledgeable, helpful, and easy to work with. I would recommend him to anyone needing roof work.",
+            "author": "Debra Gilliland",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Wonderful service!  Last year they replaced my roof and installed gutters. The entire process beginning to end was easy and quick!  Richard does a great job communicating. This year when I needed to replace my fence I knew exactly who to call and was not disappointed. They did a great job and were done in two days. I cannot recommend them enough. You will not be disappointed!",
+            "author": "Laura M",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 61,
+        "review_source": "tiered_validated",
+        "serpapi_error": null,
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "location_searched": "Garland, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:50:07.770Z",
+      "data": {
+        "name": "R2 Roof Guys",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(214) 405-4396",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "675 Town Square Blvd Unit 255, Garland, TX 75040",
+        "reviews": [],
+        "website": "https://www.r2roofguys.com/",
+        "maps_url": "https://www.google.com/maps/search/R2%20Roof%20Guys%20Garland%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:50:07.776Z",
+      "data": {
+        "name": "R2 Roof Guys",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(214) 405-4396",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "open",
+        "address": "675 Town Square Blvd Unit 255, Garland, TX 75040",
+        "reviews": [],
+        "website": "https://www.r2roofguys.com/",
+        "maps_url": "https://www.google.com/maps/search/R2%20Roof%20Guys%20Garland%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:50:12.718Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/r2-roof-guys-roofing-contractor-roof-repair-residential-and-co-garland",
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:50:16.319Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"R2 Roof Guys\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:50:18.111Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"R2 Roof Guys\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:50:19.102Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"R2 Roof Guys\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:50:23.182Z",
+      "data": {
+        "found": true,
+        "query": "\"R2 Roof Guys\" Garland lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/garland-texas-roofing-company-professional-roofing-contractors-wa-501176",
+            "title": "Garland Texas Roofing Company - Professional Roofing ...",
+            "snippet": "Let R2 Roof Guys help you with all your roofing needs. We are reputable, experienced, and will answer all your questions to make sure you can make an informed ..."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/garland/category/roofing-contractors",
+            "title": "Roofing Contractors near Garland, TX",
+            "snippet": "Garland, TX 75040-3559. Get a Quote · R2 Roof Guys. Roofing Contractors. BBB Rating: A+. Accredited Business. (214) 405-4396. 675 Town Square ..."
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Roofing&find_loc=Garland%2C+TX",
+            "title": "TOP 10 BEST Roofing in Garland, TX - Updated 2026 - Yelp",
+            "snippet": "... R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co - Roofing near. R2 Roof Guys - Roofing Contractor, Roof Repair, Residential & Co."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:50:41.065Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T07:50:20Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22R2%20Roof%20Guys%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=vHqRaerxE_C7mtkPkO6_2QI\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T07:50:30Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22R2%20Roof%20Guys%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=xnqRaf3BCs2pqtsPrP744AU\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "R2 Roof Guys",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T07:52:10.247Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for R2 Roof Guys",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "R2 Roof Guys",
+        "searched_at": "2026-02-15T07:50:41.201128",
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:52:10.829Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "R2 ROOF GUYS, LLC",
+        "taxpayer_number": "32066891030"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-15T07:52:10.835Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-15T07:52:19.406Z",
+      "data": {
+        "cost": 0.00072324,
+        "summary": "The reviews appear largely authentic with specific, varied customer experiences. The perfect 5.0 rating with only 61 reviews over 7 years is slightly unusual but not definitive proof of manipulation. The lack of any negative reviews in the sample and absence of warranty mentions are minor concerns, but the detailed positive reviews are credible.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-15T07:52:19.405Z",
+        "fake_signals": [
+          "All sampled reviews are 5-star",
+          "Some reviews lack specific project details (e.g., Michael Martinez, Christopher Rivers)",
+          "Low total review count (61) for a 7-year-old business"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "NO_EVIDENCE",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Specific details in most reviews (patio cover, gutters, painters named Roberto, decking/rafter issues)",
+          "Varied writing styles and perspectives",
+          "Mentions of specific timelines and weather challenges",
+          "Owner (Richard) is consistently named and praised for communication"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "No contradictory ratings found. Google shows perfect 5.0, BBB shows A+ with accreditation. Yelp and other platforms show no reviews or ratings to compare."
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "variation": "A1",
+  "contractor_id": 5744,
+  "contractor_name": "AC Repair Garland",
+  "archetype": "middle_tier",
+  "expected_score": 50,
+  "run": 2,
+  "timestamp": "2026-01-20T18:50:07.363Z",
+  "success": true,
+  "trust_score": 65,
+  "risk_level": "MEDIUM",
+  "reasoning": "The contractor has strong online reputation with authentic Google reviews (4.7/5, 635 reviews) and no BBB complaints, but lacks verified licensing/insurance documentation and shows business identity inconsistencies. While review analysis indicates authenticity and no major legal/financial issues were found, the business appears to operate under multiple names with potential hijacked listings, and the website shows service expansion beyond HVAC into plumbing/electrical without clear licensing evidence.",
+  "red_flags": [
+    "Business name inconsistency (AC Repair Garland vs. Garland Heating & Air Conditioning)",
+    "Potential hijacked Google listing with different business name",
+    "No verified state license or insurance documentation",
+    "Website claims multiple trades (HVAC, plumbing, electrical) without clear licensing evidence"
+  ],
+  "raw_response": {
+    "trust_score": 65,
+    "risk_level": "MEDIUM",
+    "category_scores": {
+      "license": 10,
+      "reputation": 20,
+      "legal": 20,
+      "stability": 10,
+      "red_flag_deduction": 5
+    },
+    "reasoning": "The contractor has strong online reputation with authentic Google reviews (4.7/5, 635 reviews) and no BBB complaints, but lacks verified licensing/insurance documentation and shows business identity inconsistencies. While review analysis indicates authenticity and no major legal/financial issues were found, the business appears to operate under multiple names with potential hijacked listings, and the website shows service expansion beyond HVAC into plumbing/electrical without clear licensing evidence.",
+    "red_flags": [
+      "Business name inconsistency (AC Repair Garland vs. Garland Heating & Air Conditioning)",
+      "Potential hijacked Google listing with different business name",
+      "No verified state license or insurance documentation",
+      "Website claims multiple trades (HVAC, plumbing, electrical) without clear licensing evidence"
+    ]
+  },
+  "cost_usd": 0.004615274999999999,
+  "duration_ms": 9421
+}

@@ -294,7 +294,28 @@ function checkReviewPresence(contractor, rawData) {
         sourcesMissing.push(sourceName);
         continue;
       }
+
+      // Check for reviews in multiple formats:
+      // 1. Standard format: { found: true, review_count: N, rating: X }
+      // 2. Serper format: { results: [{ rating: X, ratingCount: N }] }
+      let hasReviews = false;
+
+      // Standard format
       if (parsed.found && (parsed.review_count > 0 || parsed.rating)) {
+        hasReviews = true;
+      }
+
+      // Serper results array format (used by Yelp, etc.)
+      if (parsed.results && Array.isArray(parsed.results)) {
+        const resultWithReviews = parsed.results.find(r =>
+          (r.ratingCount && r.ratingCount > 0) || (r.rating && r.rating > 0)
+        );
+        if (resultWithReviews) {
+          hasReviews = true;
+        }
+      }
+
+      if (hasReviews) {
         sourcesWithReviews.push(sourceName);
       } else {
         sourcesMissing.push(sourceName);
@@ -366,17 +387,13 @@ function runRuleChecks(contractor, rawData) {
     );
   }
 
-  // 3. Permit ground truth check
-  const permitFlags = checkPermitGroundTruth(contractor, rawData);
-  results.flags.push(...permitFlags);
-  results.summary.permits = { flags: permitFlags.length, details: permitFlags };
-
-  // Add permit suggested queries
-  for (const flag of permitFlags) {
-    if (flag.suggested_queries) {
-      results.suggested_queries.push(...flag.suggested_queries);
-    }
-  }
+  // 3. Permit ground truth check - DISABLED
+  // BuildZoom data is incomplete - many cities not covered, permits under different names
+  // Re-enable once we have our own permit scraping integrated
+  // const permitFlags = checkPermitGroundTruth(contractor, rawData);
+  // results.flags.push(...permitFlags);
+  // results.summary.permits = { flags: permitFlags.length, details: permitFlags };
+  results.summary.permits = { flags: 0, details: [], disabled: true };
 
   // 4. Review presence check
   const reviewFlags = checkReviewPresence(contractor, rawData);

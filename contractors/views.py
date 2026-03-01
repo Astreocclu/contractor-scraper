@@ -9,7 +9,7 @@ import threading
 import uuid
 import ctypes
 
-from .models import Vertical, Contractor, PASS_THRESHOLD
+from .models import Vertical, Contractor, ContractorVerticalRating, PASS_THRESHOLD
 from .serializers import VerticalSerializer, ContractorListSerializer, ContractorDetailSerializer
 
 # Track running tasks and their threads
@@ -48,6 +48,14 @@ class ContractorViewSet(viewsets.ReadOnlyModelViewSet):
             if city:
                 qs = qs.filter(city__iexact=city)
 
+            # Search by business name or city (partial match)
+            search = self.request.query_params.get('search')
+            if search:
+                qs = qs.filter(
+                    Q(business_name__icontains=search) |
+                    Q(city__icontains=search)
+                )
+
         return qs.order_by('-trust_score')
 
     @action(detail=False)
@@ -81,6 +89,56 @@ class ContractorViewSet(viewsets.ReadOnlyModelViewSet):
         qs = Contractor.objects.filter(is_active=True, passes_threshold=True)
         qs = qs.order_by('-trust_score')[:10]
         return Response(ContractorListSerializer(qs, many=True).data)
+
+
+class LeaderboardView(APIView):
+    def get(self, request):
+        vertical_slug = request.query_params.get('vertical')
+        if not vertical_slug:
+            return Response({'error': 'vertical parameter is required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            vertical = Vertical.objects.get(slug=vertical_slug, is_active=True)
+        except Vertical.DoesNotExist:
+            return Response({'error': 'vertical not found'}, status=status.HTTP_404_NOT_FOUND)
+
+        qs = ContractorVerticalRating.objects.filter(
+            vertical=vertical,
+            contractor__is_active=True,
+        ).select_related('contractor')
+
+        city = request.query_params.get('city')
+        if city:
+            qs = qs.filter(contractor__city__iexact=city)
+
+        qs = qs.order_by('-rating_adj', '-rating')
+
+        results = []
+        for idx, rating in enumerate(qs, start=1):
+            contractor = rating.contractor
+            results.append({
+                'rank': idx,
+                'contractor_id': contractor.id,
+                'contractor_slug': contractor.slug,
+                'business_name': contractor.business_name,
+                'city': contractor.city,
+                'state': contractor.state,
+                'rating': rating.rating,
+                'rating_adj': rating.rating_adj,
+                'uncertainty': rating.uncertainty,
+                'comparisons_count': rating.comparisons_count,
+                'status': rating.status,
+                'last_compared_at': rating.last_compared_at,
+                'last_audited_at': contractor.last_audited_at,
+                'passes_threshold': contractor.passes_threshold,
+                'evidence_tags': [],
+            })
+
+        return Response({
+            'vertical': vertical.slug,
+            'count': len(results),
+            'results': results,
+        })
 
 
 def run_command_in_thread(task_id, command, **kwargs):

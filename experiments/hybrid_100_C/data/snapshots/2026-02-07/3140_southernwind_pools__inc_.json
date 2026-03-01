@@ -1,0 +1,713 @@
+{
+  "contractor_id": 3140,
+  "business_name": "Southernwind Pools, Inc.",
+  "city": "Allen",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-07T13:25:46.253Z",
+  "sources": {
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:06:39.393Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "http://www.southernwindpools.com/",
+        "analyzed_pages": [
+          {
+            "url": "http://www.southernwindpools.com/",
+            "type": "homepage",
+            "title": "North Dallas Swimming Pool Builders | McKinney Custom Pools & Renovations"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:06:45.989Z",
+      "data": {
+        "query": "site:yelp.com \"Southernwind Pools, Inc.\" \"Allen, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:08:55.805Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:12.681Z",
+      "data": {
+        "query": "site:dentoncounty.gov Southernwind Pools, Inc.",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=309_50",
+            "title": "Dev Permit Report",
+            "snippet": "SOUTHERNWIND POOLS, 616 SUNDROP DR, FRISCO HILLS PHASE 3B BLK 16 LOT 13, SWIMMING POOL, 01/04/2018, 647275, Approved, 01/03/2018, MCCLUSKY, ROBERT T & ANGELA E ...",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=48_50",
+            "title": "Dev Permit Report",
+            "snippet": "SOUTHERNWIND POOLS, 1604 EMMA PEARL, PALOMA CREEK SOUTH PHASE 11A BLK D LOT 2, SWIMMING POOL, 10/03/2022, 700562, Approved, 09/30/2022, BEAL, JEREMY A & VILORIA ...",
+            "position": 2
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=56_50",
+            "title": "Dev Permit Report",
+            "snippet": "SOUTHERNWIND POOLS, 724 MARIETTA LN, MARIETTA VILLAGE AT SAVANNAH PHASE 9A BLK 64 LOT 15, SWIMMING POOL, 08/04/2022, 631299, Approved, 08/01/2022, JOHNSTON, ...",
+            "position": 3
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=88_50",
+            "title": "Dev Permit Report",
+            "snippet": "SOUTHERNWIND POOLS, 10586 BUCANEER POINT, WYNNWOOD HAVEN ESTATES BLK A LOT 47, SWIMMING POOL, 02/14/2022, 46200, POOL MUST BE OUT OF THE COE FLOWAGE EASEMENT.",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:21.401Z",
+      "data": {
+        "name": "Southernwind Pools, Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(972) 783-4090",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/mckinney/profile/pool-contractors/southernwind-pools-inc-0875-4004177",
+        "review_count": null,
+        "founding_date": "02/01/1983",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 43,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:23.231Z",
+      "data": {
+        "cid": "3649683820786931659",
+        "name": "Southernwind Pools, Inc.",
+        "found": true,
+        "rating": 4.5,
+        "source": "serper",
+        "address": "2230 Bush Dr, McKinney, TX 75070",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "2 months ago",
+            "text": "We just finished our second pool build with Southernwind Pools, and once again, they exceeded our expectations! After moving out to the country, we weren’t sure if they would take on our project, and we are so grateful they did.\n\nFrom start to finish, the entire process was incredibly smooth—honestly even more streamlined than our first build with them back in 2019. The process was professionally done from start to finish. The pool build was completed in under seven weeks, which was such a pleasant surprise.\n\nThe design phase with Clay was just as impressive. He truly listened to our wants and must-haves and turned them into a design that fits our family and our property perfectly. Never hesitated to make small changes (after we had time to overthink things) until it was perfect.\n\nJohn managed the project and did an outstanding job. His communication was clear, consistent, and timely, and he kept the scheduling of all the trades moving without a hitch.\n\nWe couldn’t be happier with our experience and highly recommend Southernwind Pools to anyone considering a build—whether it’s your first time or your second!",
+            "author": "Jennifer Corwin",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "Our experience with Southernwind Pools, and especially Clay Wager, has been nothing short of exceptional. We recently completed a major backyard renovation in Dallas with a large pool, outdoor living area, and outdoor kitchen. Southernwind managed the project with the expertise you’d expect from a large, experienced company, but with the relationships you’d expect from a small, family-owned business. Our project designer, Clay Wager, did much more than design our project. He worked with us to create what we wanted and needed as a family. As first-time pool owners, he both listened and provided expert advice. Additionally, he was present for us throughout the entire project. When we noticed a chip in a tile, he was the one we called and quickly had it fixed under the outstanding warranty Southerwind provides. Any large construction project is going to have its glitches along the way, but I’m glad we had Clay to move the process along. Perhaps most importantly, we believe the project is now perfect. After using it for a summer, it was exactly what we wanted, and all our guests have been highly impressed with it. The project took a while to complete, but Southernwind completed our backyard within budget and with minimal inconvenience to our family. I would highly recommend Southernwind Pools to anyone looking to renovate their backyard.",
+            "author": "Christopher Salinas",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "This is the second time we have used Southernwind to build a pool and we had a wonderful experience again! Southernwind focuses on building less pools than many of the pool builders in DFW, but each one of their pools is custom and high quality. This was one of our requirements for a builder. We worked with Clay on design and David was our project manager. Clay provided the unique design we were looking for to make our backyard stand out. Once the project was handed over to David he built the whole thing in 8 weeks from dig to plaster! One thing that really stands out to me is how well they communicate throughout each stage of the project. Communication was one of my main requirements and they exceeded my expectations. Overall I would highly recommend Southernwind for any pool project.",
+            "author": "David Vinson",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "Great options for the homeowner to choose between stone, counters, turf, etc. They ensured final punch list was completed to our liking and approval. Finished project looks great and now we've extended our living area outside.",
+            "author": "Bill Hubble",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "We had an amazing experience with Southernwind Pools from start to finish. Adam was our designer, and he created the most beautiful pool for our backyard. He really listened to what was important to us and designed a pool that not only met—but exceeded—our expectations. Our backyard is absolutely stunning now!\nIf we ever move within the Dallas area, there's no question—we will 100% work with Adam and Southernwind Pools again. In fact, some of our neighbors also used Adam and Southernwind, and their backyard looks incredible too!\nAdam also connected us with fantastic landscaping contacts, and we couldn't be happier with the results. Charlie was our project manager and did a great job keeping everything on track. He was consistently checking in and always available to answer questions or explain details.\nBoth Adam and Charlie were professional, responsive, and a pleasure to work with. We truly couldn’t have asked for a better experience or a more perfect pool. We love it!",
+            "author": "Dallas McCutchan",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I can't say enough great things about our experience with Southernwind Pools. We absolutely LOVE our dream back yard!!! You can get a very basic pool from any of the big name companies around here, but my husband and I wanted something modern and unique. Our designer Clay Wager had an incredible eye for design and helped completely transform what we thought was possible in our yard. We do not plan to move, but if we ever did, there's no doubt in my mind we'd be calling up Clay and team to design any future pools/outdoor spaces.",
+            "author": "Jennifer Cortez",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Great experience with Clay and the entire crew at Southernwind Pools.  They were easy to communicate with and stayed on schedule.  I highly recommend Southernwind Pools.",
+            "author": "Lisa Day",
+            "rating": 5
+          },
+          {
+            "date": "7 months ago",
+            "text": "We couldn’t be happier with our new pool.  The Southernwind team was professional, communicative, and easy to work with.  The final result exceeded our expectations.  Our backyard has already become a favorite spot for our family.  Highly recommend to anyone considering building a pool!",
+            "author": "Robby Markose",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 104,
+        "review_source": "tiered_validated",
+        "serpapi_error": "SERPAPI_API_KEY not set",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "location_searched": "Allen, TX",
+        "search_confidence": 0.6799999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:49.424Z",
+      "data": {
+        "name": "Southernwind Pools, Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 783-4090",
+        "rating": 4.5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2230 Bush Dr, McKinney, TX 75070",
+        "reviews": [],
+        "website": "http://www.southernwindpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Southernwind%20Pools%2C%20Inc.%20Allen%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:49.426Z",
+      "data": {
+        "name": "Southernwind Pools, Inc.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 783-4090",
+        "rating": 4.5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2230 Bush Dr, McKinney, TX 75070",
+        "reviews": [],
+        "website": "http://www.southernwindpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Southernwind%20Pools%2C%20Inc.%20Allen%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:54.712Z",
+      "data": {
+        "found": true,
+        "rating": 3.6,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/southernwind-pools-mckinney",
+        "review_count": 30
+      }
+    },
+    "houzz": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:56.370Z",
+      "data": {
+        "url": "https://www.houzz.com/professionals/swimming-pool-builders/southernwind-pools-inc-pfvwus-pf~1199827004",
+        "found": true,
+        "title": "SOUTHERNWIND POOLS INC. - Project Photos & Reviews",
+        "rating": 4.8,
+        "source": "serper_houzz",
+        "confidence": "high",
+        "review_count": 36
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:08:57.169Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "southernwindpools.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:07:52.005Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Southernwind%20Pools%2C%20Inc.&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:07:55.542Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:07:59.747Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:08:07.239Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Southernwind Pools, Inc.",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:08.248Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 2
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 3
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Mar 15, 2024",
+            "link": "https://www.facebook.com/groups/chelanvalleystrong/posts/1098065754741305/",
+            "title": "How to check the license status of a local contractor in Chelan?",
+            "snippet": "The website is very easy to use - you can just search by name of company, or find the tab to search by a name, and there are many types of ...",
+            "position": 6
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 8
+          },
+          {
+            "date": "Mar 31, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21435&ItemID=15140",
+            "title": "[PDF] Texas Franchise Tax No Tax Due Report",
+            "snippet": "Registered Office Street Address 2709 LESLIE LN SAN MARCOS, TX 78666 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 2. TX2020 05 ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Information on this site is obtained from the most recent Public Information Report (PIR) processed by the Secretary of State (SOS).",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:08:09.353Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Southernwind Pools, Inc.",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:08:10.513Z",
+      "data": {
+        "query": "site:dallascounty.org Southernwind Pools, Inc. civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:08:11.553Z",
+      "data": {
+        "query": "site:collincountytx.gov Southernwind Pools, Inc.",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:57.626Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Southernwind Pools, Inc.\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/sp/southernwind-pools",
+            "title": "Southernwind Pools, Inc. Reviews - McKinney, TX",
+            "snippet": "See reviews for Southernwind Pools, Inc. in McKinney, TX at 2230 Bush Drive, Suite 1 from Angi members or join today to leave your own review."
+          },
+          {
+            "link": "https://www.homeadvisor.com/review/12323794",
+            "title": "Southernwind Pools, Inc.",
+            "snippet": "Southernwind Pools, Inc. 2230 Bush Drive, Suite 1, McKinney, TX. *Indicates required fields. How would you rate this pro? *. Did you hire this pro? *."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:09:00.549Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Southernwind Pools, Inc.\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:16.218Z",
+      "data": "North Dallas Swimming Pool Builders | McKinney Custom Pools & Renovations New Pools Portfolio Financing 10 Steps to the Perfect Pool Renovations Service Our Story Overview Our Team Ten Reasons Certifications Served Area Reviews Contact Us Join the Team 972 783 4090 Schedule A Consult Schedule A Consult GET STARTED New Pools Portfolio Financing 10 Steps to the Perfect Pool Renovations Renovation Consultation Service Maintenance Repair Filter Clean Green to Clean Renovation Service or Repair Request Our Story Overview Our Team Ten Reasons Certifications Served Area Reviews Contact Us Contact Us New Pool Consultation Swimming Pool Renovation Pool Maintenance Pool Repair Join Our Team New Pool Consultation Swimming Pool Renovation Pool Maintenance Pool Repair Join Our Team Request a Consultation Request a Consultation 972 783 4090 Jump Right In Our Services Include New Pools Renovations Service Click on pic to View Past Projects See Our Full Portfolio… About Us Our Story About Southernwind Pools Southernwind Pools was founded by John Versfelt in Dallas Texas in 1983. Now located in an elegant showroom in McKinney Texas , Southernwind Pools has gained a reputation with homeowners and home builders alike as a premier provider of high-quality, high-value swimming pools. Their emphasis has always been on: Spectacular designs Strict adherence to quality construction standards Exceeding expectations without exceeding the budget Read More President of Southernwind Pools John Versfelt Over 4 Decades of North Texas Swimming Pool Expertise... Our founder, John Versfelt, is approaching 5 decades of hands-on experience working with North Texas homeowners to transform their homes and their lives with the backyard of their dreams. So while you are encouraged to work with our design team experts on ideas for your backyard, you are also welcome to have a conversation with our founder, if you like. You can reach John directly on his mobile here: (214) 535-6711 . Meet Our Team John Versfelt owner / ceo Adam Johnson Sr. Designer / Dir. of Operations Sarah Campbell Service Administrator Meet the whole team... Download the FREE “10 Steps to the PERFECT Pool” Report Download Now Request a Consultation Company This field is for validation purposes and should be left unchanged. First Name (Required) First Last Name Last Email (Required) Phone (Required) Address (Required) Street Address City Alabama Alaska American Samoa Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Guam Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Northern Mariana Islands Ohio Oklahoma Oregon Pennsylvania Puerto Rico Rhode Island South Carolina South Dakota Tennessee Texas Utah U.S. Virgin Islands Vermont Virginia Washington West Virginia Wisconsin Wyoming Armed Forces Americas Armed Forces Europe Armed Forces Pacific State ZIP Code Comments/Questions How did you hear about us? Call-In Internet Research Referral Repeat Customer Social Media Vehicle Signage Walk-In/Drive-By Yard Sign Other This field is hidden when viewing the form Post Tags Separate tags with commas Download the Free “10 Steps to the PERFECT Pool” Report. Download Home New Pools Renovations Service Our Story Contact Us 972 783 4090 © 2026 Southernwind Pools Inc. | 2230 Bush Drive, McKinney TX 75070 | Privacy Policy | Site Map First Name * Last Name Email * Phone Street Address * City State Zip * How long has the pool been green? Feel Free To Enter Additional Information Send × First Name * Last Name Email * Phone Street Address * City State Zip * When was the last time you had your filter cleaned? Feel Free To Enter Additional Information Send × First Name * Last Name Email * Phone Street Address * City State Zip * Who currently maintains your pool? Feel Free To Enter Additional Information Send × First Name * Last Name Email * Phone Street Address * City State Zip * Is the pool currently operational? Yes No Feel Free To Enter Additional Information Send × Automated page speed optimizations for fast site performance"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:07:20.193Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:07:23.868Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:07:26.525Z",
+      "data": {
+        "query": "Southernwind Pools, Inc. Allen site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:08:59.787Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Southernwind Pools, Inc.\" Allen",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:07:38.733Z",
+      "data": "Southernwind Pools, Inc. Allen review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 0:57 0:57 Now playing Southernwind Pools Reviews Southernwind Pools, Inc. Southernwind Pools, Inc. • • 221 views 5 years ago Southernwind Pools, Inc. Southernwind Pools, Inc. Homeowners consistently rave about their experience working with Southernwind Pools , and how pleased they are with the ... Homeowners consistently rave about their experience working with Southernwind Pools , and how pleased they are with the ... From the video description 5:30 5:30 Now playing About Southernwind Pools Brett Abbott Brett Abbott • • 1.7K views 15 years ago Brett Abbott Brett Abbott Meet the owner, See the latest designs, and learn about today's modern, maintenance-free swimming pools . Meet the owner, See the latest designs, and learn about today's modern, maintenance-free swimming pools . From the video description 2:36 2:36 Now playing A&A How It Works Southernwind Pools, Inc. Southernwind Pools, Inc. • • 31 views 7 years ago Southernwind Pools, Inc. Southernwind Pools, Inc. 0:02 Owning a pool should be easy a source of joy and relaxation for you and your family a mas intelligent pool systems clean and ... Owning a pool should be easy a source of joy and relaxation for you and your family a mas intelligent pool systems clean and ... Automatic captions 0:31 Get a Minimum $5,000 for Your Trade at Longhorn Nissan. We Take Anything and Everything! Don't settle for less. Longhorn Nissan gives you a $5,000 minimum on any trade-in! Sponsored Longhorn Nissan Southernwind Pools, Inc. Southernwind Pools, Inc. @Southernwindpools • 23 subscribers Subscribe 1:25 1:25 Now playing Southernwind Pools John Versfelt John Versfelt • • 221 views 11 years ago John Versfelt John Versfelt Brief video of Southernwind Pools done by SmartShoot Inc . Brief video of Southernwind Pools done by SmartShoot Inc . From the video description 0:16 0:16 The 2025 Nissan Armada A full-size SUV built to take a beating…and then some. This is the 2025 Nissan Armada. Sponsored Nissan USA Nissan USA • • A full-size SUV built to take a beating…and then some. This is the 2025 Nissan Armada. Learn more 9:35 9:35 Now playing Southernwind Pools: Dallas, TX Pool and Spa Design chili356 chili356 • • 636 views 16 years ago chili356 chili356 Southernwind Pools was founded in Dallas Texas by John Versfelt in 1983. Over the last 25 years, Southernwind Pools has ... Southernwind Pools was founded in Dallas Texas by John Versfelt in 1983. Over the last 25 years, Southernwind Pools has ... From the video description 0:58 0:58 Now playing Southernwind Pools Southernwind Pools, Inc. Southernwind Pools, Inc. • • 137 views 7 years ago Southernwind Pools, Inc. Southernwind Pools, Inc. Shorts Southernwind Pools 1 34 views Southernwind Pools 18 18 views Southernwind Pools 5 10 views Southernwind Pools 16 17 views Southernwind Pools 32 25 views Show more Show less SHORTS SHORTS Now playing Southernwind Pools 3 John Versfelt John Versfelt • • 9 views 11 years ago John Versfelt John Versfelt People also watched 4:28 4:28 Now playing winterization of your swimming pool Joshua White, Contractor Pool Pros On The Go Joshua White, Contractor Pool Pros On The Go • • 8.5K views 2 years ago Joshua White, Contractor Pool Pros On The Go Joshua White, Contractor Pool Pros On The Go how to winterize your pool with drains in the floor. how to winterize your pool with drains in the floor. From the video description 6:53 6:53 Now playing How to Close an Inground Pool Using the Cyclone Blower WoodBob WoodBob • • 13K views 2 years ago WoodBob WoodBob I close my pool from start to finish. Lid Modification Video https://youtu.be/K6rOpxivtzQ Cyclone Blower ... I close my pool from start to finish. Lid Modification Video https://youtu.be/K6rOpxivtzQ Cyclone Blower ... From the video description 1:53 1:53 Now playing 10 Steps to the Perfect Pool Southernwind Pools, Inc. Southernwind Pools, Inc. • • 397 views 5 years ago Southernwind Pools, Inc. Southernwind Pools, Inc. This report was written specifically for you, the homeowner, to help you make the best possible decisions about buying a new ... This report was written specifically for you, the homeowner, to help you make the best possible decisions about buying a new ... From the video description 0:41 0:41 Now playing Southernwind Pools 30 John Versfelt John Versfelt • • 27 views 11 years ago John Versfelt John Versfelt + 6 more 0:48 0:48 Now playing Southernwind Pools 28 John Versfelt John Versfelt • • 72 views 11 years ago John Versfelt John Versfelt 0:21 0:21 Now playing Luxury Backyard Swimming Pools Southernwind Pools, Inc. Southernwind Pools, Inc. • • 968 views 5 years ago Southernwind Pools, Inc. Southernwind Pools, Inc. Take your backyard to the next level with a drop-dead-georgous pool at a great value! Southernwind Pools is a Top 50 Builder by ... Take your backyard to the next level with a drop-dead-georgous pool at a great value! Southernwind Pools is a Top 50 Builder by ... From the video description 5:22 5:22 Now playing John Versfelt Southernwind Pools, Inc. Southernwind Pools, Inc. • • 208 views 7 years ago Southernwind Pools, Inc. Southernwind Pools, Inc. SHORTS SHORTS Now playing Southernwind Pools 4 John Versfelt John Versfelt • • 10 views 11 years ago John Versfelt John Versfelt 0:53 0:53 Now playing Dallas TX Pool Builder, Southernwind Pools, Client Testimonial sharronswan sharronswan • • 369 views 17 years ago sharronswan sharronswan Southern Wind Pools is an award winning pool builder located in Dallas Texas. We provide pool and spa design, building and ... Southern Wind Pools is an award winning pool builder located in Dallas Texas. We provide pool and spa design, building and ... From the video description 0:36 0:36 Now playing Southernwind Pools 27 John Versfelt John Versfelt • • 56 views 11 years ago John Versfelt John Versfelt SHORTS SHORTS Now playing Southernwind Pools 13 John Versfelt John Versfelt • • 9 views 11 years ago John Versfelt John Versfelt SHORTS SHORTS Now playing Southernwind Pools 31 John Versfelt John Versfelt • • 30 views 11 years ago John Versfelt John Versfelt SHORTS SHORTS Now playing Southernwind Pools 7 John Versfelt John Versfelt • • 8 views 11 years ago John Versfelt John Versfelt 0:27 0:27 Now playing North Texas Swimming Pool Builder | Custom Pool Designs - Southernwind Pools | Swimming Pool Renovations & Maintenance sharronswan sharronswan • • 497 views 17 years ago sharronswan sharronswan North Texas swimming pool builder, Southernwind Pools , has provided custom new pools construction, pool repair, and ongoing ... North Texas swimming pool builder, Southernwind Pools , has provided custom new pools construction, pool repair, and ongoing ... From the video description 0:30 0:30 Now playing Southernwind Pools 20 John Versfelt John Versfelt • • 20 views 11 years ago John Versfelt John Versfelt 1:04 1:04 Now playing Adam Johnson Southernwind Pools, Inc. Southernwind Pools, Inc. • • 47 views 7 years ago Southernwind Pools, Inc. Southernwind Pools, Inc. SHORTS SHORTS Now playing Southernwind Pools 9 John Versfelt John Versfelt • • 20 views 11 years ago John Versfelt John Versfelt Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:07:39.833Z",
+      "data": {
+        "query": "site:nextdoor.com Southernwind Pools, Inc. Allen",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:08:58.841Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Southernwind Pools, Inc.\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:08:58.268Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Southernwind Pools, Inc.\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:09:01.260Z",
+      "data": {
+        "found": true,
+        "query": "\"Southernwind Pools, Inc.\" Allen lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.dallaspoolsandspas.com/about/",
+            "title": "North Dallas Pool Company | New Construction ...",
+            "snippet": "Reliable Complaint Handling Procedures. Examples of services provided by the BBB ... © 2025 Southernwind Pools Inc. | 2230 Bush Drive, McKinney TX 75070 ..."
+          },
+          {
+            "link": "https://reviews.birdeye.com/sears-garage-door-installation-and-repair-169048389359089",
+            "title": "Sears Garage Door Installation and Repair - Contractors in Allen, TX",
+            "snippet": "Southernwind Pools, Inc. 103 reviews. 2230 Bush Drive; 3.1 miles from this business. Advance Pools - TX. 13 reviews. 2202 Farm to Market Road 546; 4.6 miles ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:09:19.087Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-05T03:09:04Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Southernwind%20Pools%2C%20Inc.%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=zwmEaarnHNvfp84PwMWN-Ac\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-05T03:09:13Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Southernwind%20Pools%2C%20Inc.%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=2AmEaa7iN-rjwN4PzJGYsAg\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Southernwind Pools, Inc.",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:09:39.824Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "SOUTHERNWIND POOLS, INC.",
+        "taxpayer_number": "32000357940"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:09:39.827Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:09:55.163Z",
+      "data": {
+        "cost": 0.00062706,
+        "summary": "The provided Google reviews appear authentic and detailed, with specific names and project stories. The company has a long history (43 years) and an A+ BBB rating. The primary concern is the rating discrepancy with Yelp, but the sampled content shows strong signals of genuine customer experiences. No major red flags like ghosting or deposit issues are present in the sample.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-05T03:09:55.163Z",
+        "fake_signals": [
+          "All sampled Google reviews are 5-star, creating a potentially skewed positive sample.",
+          "Some reviews are very brief and generic (e.g., 'Great experience...')."
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 3.6,
+          "google": 4.5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "UNKNOWN",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "No explicit warranty mentions in sample, but positive reviews imply satisfaction with final product."
+          ]
+        },
+        "authentic_signals": [
+          "Multiple reviews mention specific designers/project managers (Clay Wager, Adam, David).",
+          "Reviews contain specific project details (second pool build, outdoor kitchen, under seven weeks).",
+          "Varied writing styles and lengths.",
+          "Mentions of repeat customers and neighbor referrals add credibility."
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "No specific complaint patterns found in provided sample. Yelp's lower rating suggests potential issues not captured in the Google sample."
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Moderate discrepancy between Google (4.5) and Yelp (3.6) ratings. This is common as Yelp often attracts more critical reviews and has different filtering algorithms. The BBB A+ rating indicates good complaint handling, not service quality."
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-06T02:38:57.582Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Southernwind Pools, Inc.",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Southernwind Pools, Inc.",
+        "searched_at": "2026-02-06T02:38:17.643600",
+        "total_records": 0
+      }
+    }
+  }
+}

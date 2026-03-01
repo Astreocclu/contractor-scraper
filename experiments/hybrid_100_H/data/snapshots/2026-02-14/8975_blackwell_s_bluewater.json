@@ -1,0 +1,904 @@
+{
+  "contractor_id": 8975,
+  "business_name": "Blackwell's Bluewater",
+  "city": "Mesquite",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-14T18:35:55.193Z",
+  "sources": {
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:44:13.778Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:43:35.906Z",
+      "data": {
+        "name": "Blackwell's Bluewater",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 367-1700",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/fort-worth/profile/pool-service/blackwells-bluewater-0825-235979376",
+        "review_count": null,
+        "founding_date": "02/24/2011",
+        "complaint_count": null,
+        "accredited_since": "5/7/2015",
+        "years_in_business": 14,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:44:16.012Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Blackwell's Bluewater\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-Blackwell-s-Bluewater-EI_IE2156985.11,32.htm",
+            "title": "Working at Blackwell's Bluewater - Glassdoor",
+            "snippet": "See what employees say it's like to work at Blackwell's Bluewater. Salaries, reviews, and more - all posted by employees working at Blackwell's Bluewater."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:46:06.939Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 2,
+            "FED_TAX_LIEN": 1,
+            "STATE_TAX_LIEN": 2
+          },
+          "active_liens": 3,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 5,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLACKWELL'S BLUEWATER LLC",
+                "grantor": "TEXAS STATE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE",
+                    "BLACKWELL'S BLUEWATER LLC",
+                    "STATE TAX LIEN - PROPERTY",
+                    "1/21/2021",
+                    "D221018246",
+                    "OPR/--/--",
+                    ""
+                  ],
+                  "search_term": "Blackwell's Bluewater",
+                  "doc_type_raw": "STATE TAX LIEN - PROPERTY"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-01-21",
+                "document_type": "STATE_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221018246"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLACKWELL'S BLUEWATER LLC",
+                "grantor": "TEXAS STATE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE",
+                    "BLACKWELL'S BLUEWATER LLC",
+                    "RELEASE OF STATE TAX LIEN",
+                    "3/29/2023",
+                    "D223051891",
+                    "OPR/--/--",
+                    ""
+                  ],
+                  "search_term": "Blackwell's Bluewater",
+                  "doc_type_raw": "RELEASE OF STATE TAX LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-03-29",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223051891"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLACKWELL'S BLUEWATER CONSTRUCTION",
+                "grantor": "U S A INTERNAL REVENUE SERVICE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "U S A INTERNAL REVENUE SERVICE",
+                    "BLACKWELL'S BLUEWATER CONSTRUCTION",
+                    "FEDERAL TAX LIEN ON REAL PROPERTY",
+                    "10/23/2020",
+                    "D220274541",
+                    "--/--/--",
+                    ""
+                  ],
+                  "search_term": "Blackwell's Bluewater",
+                  "doc_type_raw": "FEDERAL TAX LIEN ON REAL PROPERTY"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2020-10-23",
+                "document_type": "FED_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "D220274541"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLACKWELL'S BLUEWATER LLC",
+                "grantor": "TEXAS STATE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE",
+                    "BLACKWELL'S BLUEWATER LLC",
+                    "STATE TAX LIEN - PROPERTY",
+                    "2/13/2023",
+                    "D223022903",
+                    "OPR/--/--",
+                    ""
+                  ],
+                  "search_term": "Blackwell's Bluewater",
+                  "doc_type_raw": "STATE TAX LIEN - PROPERTY"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-02-13",
+                "document_type": "STATE_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223022903"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLACKWELL'S BLUEWATER LLC",
+                "grantor": "TEXAS STATE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS STATE",
+                    "BLACKWELL'S BLUEWATER LLC",
+                    "RELEASE OF STATE TAX LIEN",
+                    "11/15/2021",
+                    "D221334309",
+                    "OPR/--/--",
+                    ""
+                  ],
+                  "search_term": "Blackwell's Bluewater",
+                  "doc_type_raw": "RELEASE OF STATE TAX LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-11-15",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221334309"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "3 lien(s) filed BY contractor (collecting payment - neutral)"
+          ],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 3,
+          "human_summary": "OK: 3 liens filed BY Blackwell's Bluewater to collect payment (normal business, no penalty)",
+          "liens_unclear": 0,
+          "liens_by_count": 3,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 3,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Blackwell's Bluewater",
+        "searched_at": "2026-02-11T02:44:37.126625",
+        "total_records": 5
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:46:07.393Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "BLACKWELL'S BLUEWATER, LLC",
+        "taxpayer_number": "32058903793"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-11T02:46:07.401Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:46:21.895Z",
+      "data": {
+        "cost": 0.00080962,
+        "summary": "Reviews show mixed authenticity. Negative reviews on Google are detailed and credible, citing specific issues with salesmanship and project management. Positive reviews are older (5-7 years) and less detailed recently. The high Yelp rating is suspicious without supporting review text. The business appears to have service quality and professionalism issues based on complaint patterns.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-11T02:46:21.895Z",
+        "fake_signals": [
+          "Multiple 5-star reviews from 6-7 years ago with no recent positive detail",
+          "Yelp rating high but no review text provided to assess authenticity",
+          "Limited recent review volume (only 17 on Google)"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 4.7,
+          "google": 3.8,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "UNKNOWN",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Specific negative complaints with details (salesman name, subcontractor issues)",
+          "Varied writing styles in reviews",
+          "Positive reviews mention specific employees (Jarod, Jeremy) and project types (kitchen remodel, tile work)"
+        ],
+        "fake_review_score": 35,
+        "complaint_patterns": [
+          "Unprofessional/argumentative sales behavior",
+          "Poor supervision of subcontractors",
+          "Inadequate cleanup",
+          "Rude/unprofessional conduct"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Significant rating gap between Google (3.8) and Yelp (4.7). Google reviews show specific negative complaints, while Yelp rating is high but lacks review content for verification."
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:41:57.069Z",
+      "data": {
+        "query": "site:yelp.com \"Blackwell's Bluewater\" \"Mesquite, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Contractors&find_loc=Burleson%2C+TX",
+            "title": "THE BEST 10 Pool Contractors near Burleson, TX - Yelp",
+            "rating": 3.4,
+            "snippet": "... Blackwell's Bluewater - Pool Contractors near me - Burleson, Texas ... Mesquite, TX 75181. (469) 954-2531. They repaired my pool this year and they did a ...",
+            "position": 1,
+            "ratingCount": 674
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Supplies&find_loc=Wichita+Falls%2C+TX",
+            "title": "TOP 10 BEST Pool Supplies in Wichita Falls, TX - Updated 2026 - Yelp",
+            "rating": 3.7,
+            "snippet": "1331 Us-80, Ste 106 Mesquite, TX 75150. (214) 454-6071. Diana understood our ... Blackwell's Bluewater - Pool Supplies near me - Wichita Falls, Texas. 54 ...",
+            "position": 2,
+            "ratingCount": 999
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=poolcleaners&find_loc=Joshua%2C+TX",
+            "title": "THE BEST 10 POOL CLEANERS near JOSHUA, TX - Yelp",
+            "rating": 3.6,
+            "snippet": "... Blackwell's Bluewater, G&D Pool's, The Mastic Guy, Vicencio Pool Plumbing ... Mesquite, TX 75150. (214) 924-8483. Fast friendly and great job fixing my ...",
+            "position": 3,
+            "ratingCount": 355
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Inground+Pool+Cleaning&find_loc=Alvarado%2C+TX+76009",
+            "title": "TOP 10 BEST Inground Pool Cleaning near Alvarado, TX 76009 - Yelp",
+            "rating": 3.6,
+            "snippet": "... Blackwell's Bluewater, Poolwerx - Forest Lane, Ko-Vac Pools, Pets N Pools ... Mesquite, TX 75150. (214) 924-8483. Fast friendly and great job fixing my ...",
+            "position": 4,
+            "ratingCount": 301
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Filter+Cleaning+%26+Replacement&find_loc=Lake+Highlands%2C+Dallas%2C+TX+75231",
+            "title": "Best Filter Cleaning & Replacement near Dallas, TX 75231 - Yelp",
+            "rating": 3.4,
+            "snippet": "... Blackwell's Bluewater, DFW Pool Service, Gtl Pool Service. ... Mesquite, TX 75149. (469) 426-9432. On their website: heating service. The very nice guy who ...",
+            "position": 5,
+            "ratingCount": 587
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=fireplace&find_loc=W+Lovers+Ln%2C+Dallas%2C+TX+75225",
+            "title": "THE BEST 10 Fireplace Services near W LOVERS LN, DALLAS, TX ...",
+            "rating": 3.8,
+            "snippet": "... Blackwell's Bluewater. ... 2909 Hillside Dr, Mesquite, TX 75149. (800) 243-0027. From the business: Hubbs Installation specializes in tv installation, tv ...",
+            "position": 6,
+            "ratingCount": 547
+          }
+        ]
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:42:26.709Z",
+      "data": "Trustpilot Search Results Companies Bluewater www.bluewater.co.uk • 37 reviews 3.1 Bluewater Lending bluewaterlending.co • 24 reviews 3.8 Blackwell Energy blackwellenergy.ie 0.0 Bluewater Dog bluewater.dog 0.0 Blackwell Grace blackwellgrace.com • 1 review 3.7 Categories Travel Agency The best companies in the category 'Travel Agency' Alternative Financial Service The best companies in the category 'Alternative Financial Service' Solar Energy Contractor The best companies in the category 'Solar Energy Contractor' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (3436) Bluewater www.bluewater.co.uk 3.1 37 reviews Bluewater Lending bluewaterlending.co 3.8 24 reviews 402 West Broadway Suite #400, San Diego, United States Blackwell Energy blackwellenergy.ie 0.0 0 reviews Unit 54, Premier Business Park, Ballycoolin Road, , Dublin 11, Ireland Bluewater Dog bluewater.dog 0.0 0 reviews United States Blackwell Grace blackwellgrace.com 3.7 1 review 40 Basinghall St, London, United Kingdom Blackwell Global blackwellglobal.com 3.2 42 reviews 107 Cheapside, London, United Kingdom Slee Blackwell www.sleeblackwell.co.uk 3.1 51 reviews United Kingdom Bluewater Group bluewatergroup.com 4.1 20 reviews Danderydsgatan 11, Stockholm, Sweden BlueWater Express bluewater-express.com 3.0 2 reviews United States Bluewater KBB bluewaterkbb.co.uk 4.5 16 reviews 3/7 Stratford Road, Shirley, Solihull, United Kingdom Previous 1 2 3 4 344 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) SEO Service Business Services Plumber Home Services Travel Agency Travel & Vacation Alternative Financial Service Money & Insurance Solar Energy Contractor Construction & Manufacturing Solar Energy Company Utilities are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:42:31.789Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:42:35.445Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:42:38.735Z",
+      "data": {
+        "query": "Blackwell's Bluewater Mesquite site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:44:17.369Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Blackwell's Bluewater\" Mesquite",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:42:49.718Z",
+      "data": "Blackwell's Bluewater Mesquite review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Under 4 min 4 - 20 min Over 20 min Filters Search filters 1:56:49 1:56:49 Now playing Episode- 1 Jeremy Blackwell with Blackwells Bluewater, Jon Sayah and Ben Parra with Lights Fantastic Remodel Revolution Remodel Revolution • • 36 views 7 years ago Remodel Revolution Remodel Revolution Jeremy Blackwell with @ Blackwells Bluewater answers the questions everyone is asking .How much does pool repair cost? Jeremy Blackwell with @ Blackwells Bluewater answers the questions everyone is asking .How much does pool repair cost? From the video description 11 moments Green Tip of the Day | Task Board | Mortgage Calculator by Quicken Loans | Home Design 3d | Deco Seal | Mini Pebble | How Thick Is the Shell of a Pool | Led Lighting | Outside Lighting | Night Sky Lighting | Pathway Lighting 11 auto-generated moments in this video 11 moments Green Tip of the Day Green Tip of the Day 5:52 Green Tip of the Day 5:52 Task Board Task Board 7:08 Task Board 7:08 Mortgage Calculator by Quicken Loans Mortgage Calculator by Quicken Loans 8:10 Mortgage Calculator by Quicken Loans 8:10 Home Design 3d Home Design 3d 9:21 Home Design 3d 9:21 Deco Seal Deco Seal 31:53 Deco Seal 31:53 Mini Pebble Mini Pebble 40:23 Mini Pebble 40:23 How Thick Is the Shell of a Pool How Thick Is the Shell of a Pool 42:05 How Thick Is the Shell of a Pool 42:05 1:56:49 1:56:49 Now playing Jeremy Blackwell with Blackwells Bluewater, Jon Sayah and Ben Parra with Lights Fantastic . Alex Guthrie Alex Guthrie • • 18 views 7 years ago Alex Guthrie Alex Guthrie Fantastic show featuring discussions about pool repair and maitenance with @Jeremy Blackwell @ Blackwells Bluewater , LED ... Fantastic show featuring discussions about pool repair and maitenance with @Jeremy Blackwell @ Blackwells Bluewater , LED ... From the video description 1:46 1:46 Now playing Builder responds to WFAA report with visit—tensions over repairs remain WFAA WFAA • • 2.7K views 6 months ago WFAA WFAA The founder of Bloomfield Homes met with a Midlothian homeowner after a WFAA report, agreeing to some repairs and standing ... The founder of Bloomfield Homes met with a Midlothian homeowner after a WFAA report, agreeing to some repairs and standing ... From the video description CC 2:09 2:09 Now playing Scam or not a scam? Service Line Warranty protection letters hit mailboxes ABC15 Arizona ABC15 Arizona • • 2.7K views 1 year ago ABC15 Arizona ABC15 Arizona The letter from American Water Resources states: \"Water service line repairs are typically not covered by standard homeowners' ... The letter from American Water Resources states: \"Water service line repairs are typically not covered by standard homeowners' ... From the video description CC 12:38 12:38 Now playing I Investigated The WORST RATED Golf Course In Dallas Texas Josh Mayer Josh Mayer • • 174K views 2 years ago Josh Mayer Josh Mayer RhoBack 15% OFF: https://bit.ly/3KHozQd More Worst Rated Courses: I Played The WORST RATED Golf Course In Kansas ... RhoBack 15% OFF: https://bit.ly/3KHozQd More Worst Rated Courses: I Played The WORST RATED Golf Course In Kansas ... From the video description 4K Summary This video documents a round of golf at a Dallas course notorious for its two-star Yelp rating. The golfer explores the course, including a temporary clubhouse replacing one destroyed by lightning. Expect views of varied hole conditions and the golfer's commentary. AI-generated video summary Quality and accuracy may vary. Summary This video documents a round of golf at a Dallas course notorious for its two-star Yelp rating. The golfer explores the course, including a temporary clubhouse replacing one destroyed by lightning. Expect views of varied hole conditions and the golfer's commentary. 3:14 3:14 Now playing Meter locked after water illegally turned back on at Blossom Apartments WLBT 3 On Your Side WLBT 3 On Your Side • • 7.1K views 6 months ago WLBT 3 On Your Side WLBT 3 On Your Side Meter locked after water illegally turned back on at Blossom Apartments For more Local News from WLBT: https://www.wlbt.com/ ... Meter locked after water illegally turned back on at Blossom Apartments For more Local News from WLBT: https://www.wlbt.com/ ... From the video description CC 0:42 0:42 Now playing Brunswick Co. files lawsuit against contracting company over Northwest Water Treatment Plant dela... WECT News 6 WECT News 6 • • 130 views 6 months ago WECT News 6 WECT News 6 According to the lawsuit, Oscar Renda Contracting, Inc. (ORC) breached its contract with the county For more Local News from ... According to the lawsuit, Oscar Renda Contracting, Inc. (ORC) breached its contract with the county For more Local News from ... From the video description CC 18:38 18:38 Now playing WORST and BEST Home Builders in TEXAS! Dana Pollard | Texas Luxury Dana Pollard | Texas Luxury • • 37K views 1 year ago Dana Pollard | Texas Luxury Dana Pollard | Texas Luxury Dream Home Questionnaire: https://texasdreamplace.com/ Thinking about moving to Texas? Get step-by-step guidance with a ... Dream Home Questionnaire: https://texasdreamplace.com/ Thinking about moving to Texas? Get step-by-step guidance with a ... From the video description 4K 19 chapters Intro | Grand Homes | Coventry Homes | History Maker Homes | Brightland Homes - Gehan | Riverside Builders | GFO Homes | Bloomfield | KHOV | Tri Pointe Homes | Highland Homes | American Legend Homes | Pacesetter Homes | Shaddock Homes | Normandy Homes | Trophy Signature Homes | First Texas Homes | Chesmar Homes | Everything Ranked 19 chapters in this video 19 chapters Intro Intro 0:00 Intro 0:00 Grand Homes Grand Homes 0:05 Grand Homes 0:05 Coventry Homes Coventry Homes 1:16 Coventry Homes 1:16 History Maker Homes History Maker Homes 2:15 History Maker Homes 2:15 Brightland Homes - Gehan Brightland Homes - Gehan 3:18 Brightland Homes - Gehan 3:18 Riverside Builders Riverside Builders 4:19 Riverside Builders 4:19 GFO Homes GFO Homes 5:59 GFO Homes 5:59 12:26 12:26 Now playing Problems With The SB326 Balcony Bill Leave HOAs At Risk William Leys Waterproofing Consultants LLC William Leys Waterproofing Consultants LLC • • 316 views 1 year ago William Leys Waterproofing Consultants LLC William Leys Waterproofing Consultants LLC Sb326 is also known as the balcony bill. This bill, as well as SB721, were written in response to the tragedy in Berkeley in June of ... Sb326 is also known as the balcony bill. This bill, as well as SB721, were written in response to the tragedy in Berkeley in June of ... From the video description 16:08 16:08 Now playing 9 Major Projects That Will Change Bluffton SC Forever Moving to Bluffton South Carolina Moving to Bluffton South Carolina • • 25K views 1 month ago Moving to Bluffton South Carolina Moving to Bluffton South Carolina Discover the 9 major developments that will transform Bluffton, SC in the coming years, from new communities to massive ... Discover the 9 major developments that will transform Bluffton, SC in the coming years, from new communities to massive ... From the video description Summary Discover nine transformative projects exceeding $2 billion, reshaping Bluffton, SC by 2030. This video details new hospitals, highway expansions, and thousands of homes, impacting property values. Explore Carolina Station, South Point, and infrastructure upgrades influencing the region's future. AI-generated video summary Quality and accuracy may vary. Summary Discover nine transformative projects exceeding $2 billion, reshaping Bluffton, SC by 2030. This video details new hospitals, highway expansions, and thousands of homes, impacting property values. Explore Carolina Station, South Point, and infrastructure upgrades influencing the region's future. Bluewater Property Management LLC Bluewater Property Management LLC @bluewaterpropertymanagemen7265 • 9 subscribers Subscribe 0:58 0:58 Now playing Bluegrass chemical agent plant talks future plans WTVQ WTVQ • • 1.2K views 7 months ago WTVQ WTVQ THE BLUE GRASS CHEMICAL AGENT-DESTRUCTION PILOT PLANT IS SPEAKING OUT ON THEIR PLANS TO CLOSE AND ... THE BLUE GRASS CHEMICAL AGENT-DESTRUCTION PILOT PLANT IS SPEAKING OUT ON THEIR PLANS TO CLOSE AND ... From the video description People also watched 2:32 2:32 Now playing American Water Resources Reviews - Is Legit or a Scam? Sigma Tech 💻 Sigma Tech 💻 • • 275 views 4 months ago Sigma Tech 💻 Sigma Tech 💻 American Water Resources Reviews - Is Legit or a Scam? American Water Resources review . Is American Water Resources a ... American Water Resources Reviews - Is Legit or a Scam? American Water Resources review . Is American Water Resources a ... From the video description 21:59 21:59 Now playing WORST and BEST Home Builders in America RANKED! Dana Pollard | Texas Luxury Dana Pollard | Texas Luxury • • 452K views 1 year ago Dana Pollard | Texas Luxury Dana Pollard | Texas Luxury Fill out the Dream Home Questionnaire to get started on finding your dream home: https://texasdreamplace.com/ New construction ... Fill out the Dream Home Questionnaire to get started on finding your dream home: https://texasdreamplace.com/ New construction ... From the video description 20 chapters Intro | DR Horton | Lennar | David Weekly | Ashton Woods | Perry Homes | Meritage Homes | Beazer | Pulte | Drees | Century Community | Tri Pointe | M/I Homes | KB | LGI | Toll Brothers | William Ryan | Taylor Morrison | Highland | Everything Ranked 20 chapters in this video 20 chapters Intro Intro 0:00 Intro 0:00 DR Horton DR Horton 0:38 DR Horton 0:38 Lennar Lennar 2:13 Lennar 2:13 David Weekly David Weekly 3:05 David Weekly 3:05 Ashton Woods Ashton Woods 4:12 Ashton Woods 4:12 Perry Homes Perry Homes 4:55 Perry Homes 4:55 Meritage Homes Meritage Homes 7:02 Meritage Homes 7:02 30:22 30:22 Now playing Best Deals Close to Rockwall? | Highland Homes in Sonoma Verde | Amazing Layouts and Features DFW New Build Pros DFW New Build Pros • • 567 views 3 months ago DFW New Build Pros DFW New Build Pros Step inside and explore these gorgeous two-story Highland Homes in Sonoma Verde! In this tour, you'll see a stunning model ... Step inside and explore these gorgeous two-story Highland Homes in Sonoma Verde! In this tour, you'll see a stunning model ... From the video description 45 chapters Intro — Touring Model + 3 Inventory Homes (all two-story) | Sheffield Model Starts (office, big entry/catwalk) | Powder Bath Nearby + Sales Center Garage Note | Next-Gen Suite (bed/bath/closet, double 8’ doors) | Under-Stairs/Coat Closet & Great Room Reveal | Utility/Garage Hall & Extra Storage | Kitchen Tour (huge island, uppers w/lights, double oven, corner pantry) | Extended Patio & Backyard | Upstairs First, Primary Later (tease) | Split Landing Upstairs (two kid zones) | Bedroom 1 Up (great size/closet) | Jack-and-Jill Variant + Kids’ Loft/Landing | Bedroom 3 Up | Media Room Placement Near Primary (separated) | True Dark Media + Closet | Primary Bedroom (bay window) | Primary Bath (full-height tile, “look-at-your-wife” window, big closet) | Transition to Inventories & Amenities (pricing later) | Where We Are — McClendon-Chisholm (Rockwall ISD), Sonoma Verde | 70’ Lots Backing Greenbelt: Foxlay, then Telford; 3rd = 5-bed deal | Foxlay: Porch, Office, Next-Gen Suite (down) | 3-Car Tandem Garage (use ideas) | Mud/Utility, Powder, Closet | Front Media Room (pros/cons) | Open Living/Kitchen (appliance station, lit uppers) | Massive Extended Patio + No Rear Neighbors | Foxlay Primary (bay) + Bath (window between mirrors), Large Closet | Upstairs Split: Game, Bath, Bedrooms | Separated Guest Area + Odd Bath Hall | Secondary Bedroom Up | Telford Plan Intro (also 70’ lot, greenbelt) | Similar Front (office/next-gen/media); Utility/Tandem Entry Difference | Soaring Living, Curved Stairs; Kitchen w/Inset Fridge, Tons of Storage | 20’ Patio Cover; Primary Bath Arch w/Full-Height Tile | Upstairs Layout (ensuites both sides) | Why This Upstairs Flows Better | Amenities Tour (club rental, resort pool, courts, fields, dog parks, future elementary) | Stanley Plan (60’ lot, bigger house, lower price) | Stanley Downstairs: Closer Next-Gen, Office, Powder, Front Media | Huge Main Area (cutouts, two-story windows, rail overlook) | Kitchen (island off-wall sink, double oven, dual pantries), Mud + Tandem Entry | Upstairs Long Game Room; Beds/Baths; Flex/Bonus Nook | Downstairs Back Patio Full-Width; Primary Suite; Closet | Back at Model — Taxes/HOA/Prices (PID ~1.99% total tax; HOA ~$800/yr) | Pricing Recap: Foxlay $685k; Telford $724k; Stanley $615k (5bd); Area perks & CTA 45 chapters in this video 45 chapters Intro — Touring Model + 3 Inventory Homes (all two-story) Intro — Touring Model + 3 Inventory Homes (all two-story) 0:00 Intro — Touring Model + 3 Inventory Homes (all two-story) 0:00 Sheffield Model Starts (office, big entry/catwalk) Sheffield Model Starts (office, big entry/catwalk) 0:18 Sheffield Model Starts (office, big entry/catwalk) 0:18 Powder Bath Nearby + Sales Center Garage Note Powder Bath Nearby + Sales Center Garage Note 0:35 Powder Bath Nearby + Sales Center Garage Note 0:35 Next-Gen Suite (bed/bath/closet, double 8’ doors) Next-Gen Suite (bed/bath/closet, double 8’ doors) 1:11 Next-Gen Suite (bed/bath/closet, double 8’ doors) 1:11 Under-Stairs/Coat Closet & Great Room Reveal Under-Stairs/Coat Closet & Great Room Reveal 1:52 Under-Stairs/Coat Closet & Great Room Reveal 1:52 Utility/Garage Hall & Extra Storage Utility/Garage Hall & Extra Storage 2:20 Utility/Garage Hall & Extra Storage 2:20 Kitchen Tour (huge island, uppers w/lights, double oven, corner pantry) Kitchen Tour (huge island, uppers w/lights, double oven, corner pantry) 2:33 Kitchen Tour (huge island, uppers w/lights, double oven, corner pantry) 2:33 2:09 2:09 Now playing Pine Bluff residents concerned after recent business closures KARK 4 News KARK 4 News • • 654 views 4 months ago KARK 4 News KARK 4 News The goal for several years in Pine Bluff has always started with revitalization and resources. City leaders are working to bring in ... The goal for several years in Pine Bluff has always started with revitalization and resources. City leaders are working to bring in ... From the video description CC + 6 more 24:13 24:13 Now playing NEVER Buy a Home From These Builders Jackie Baker Jackie Baker • • 472K views 10 months ago Jackie Baker Jackie Baker I am seeing a little too frequently these headlines about homeowners having major problems with their brand new homes built by ... I am seeing a little too frequently these headlines about homeowners having major problems with their brand new homes built by ... From the video description Summary This video examines troubling news stories about major home builders. Jackie Baker shares real-life examples of homeowners facing significant problems with new construction. The presenter offers advice on protecting yourself when buying a new home. AI-generated video summary Quality and accuracy may vary. Summary This video examines troubling news stories about major home builders. Jackie Baker shares real-life examples of homeowners facing significant problems with new construction. The presenter offers advice on protecting yourself when buying a new home. Now playing US House Floor Proceedings (Tuesday, February 10, 2026) US House Clerk US House Clerk • • 531 watching US House Clerk US House Clerk U.S. House of Representatives Floor Proceedings on Tuesday, February 10, 2026. U.S. House of Representatives Floor Proceedings on Tuesday, February 10, 2026. From the video description LIVE New Alex Guthrie Alex Guthrie @alexguthrie7260 • 3 subscribers Subscribe Now playing BLP Campaign Climax 2026, Bay Street (Feb 10, 2026) BLP News BLP News • • 10K watching BLP News BLP News BLP Campaign Climax 2026, Bay Street (Feb 10, 2026) BLP Campaign Climax 2026, Bay Street (Feb 10, 2026) From the video description LIVE New 1:31 1:31 Now playing Formal complaint filed against Aqua Texas for using 'illegal groundwater supply' KVUE KVUE • • 652 views 1 year ago KVUE KVUE The complaint alleges the company serves its customers with an illegal groundwater supply. Read more: ... The complaint alleges the company serves its customers with an illegal groundwater supply. Read more: ... From the video description CC 3 chapters Intro | Aqua overpumping | New complaint 3 auto-generated chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 Aqua overpumping Aqua overpumping 0:10 Aqua overpumping 0:10 New complaint New complaint 1:02 New complaint 1:02 22:38 22:38 Now playing I couldn't BELIEVE these new builds near Greenville SC Aubree Lewis Aubree Lewis • • 1.7K views 3 months ago Aubree Lewis Aubree Lewis Thinking about buying or selling Greenville, SC Real Estate? Reach out anytime! I'd love to help! Reach out to us here: ... Thinking about buying or selling Greenville, SC Real Estate? Reach out anytime! I'd love to help! Reach out to us here: ... From the video description 4K CC 11 chapters New construction community | Hometour #1 | Aubree's favorite part | Customization & Design | Biggest Mistake When Buying New Construction | Hometour #2 | A FREE Resource | A fun bathroom | Inspections & Quality assurance | A special incentive just for YOU! | Prices Revealed 11 chapters in this video 11 chapters New construction community New construction community 0:00 New construction community 0:00 Hometour #1 Hometour #1 0:45 Hometour #1 0:45 Aubree's favorite part Aubree's favorite part 3:53 Aubree's favorite part 3:53 Customization & Design Customization & Design 5:15 Customization & Design 5:15 Biggest Mistake When Buying New Construction Biggest Mistake When Buying New Construction 8:33 Biggest Mistake When Buying New Construction 8:33 Hometour #2 Hometour #2 10:15 Hometour #2 10:15 A FREE Resource A FREE Resource 13:50 A FREE Resource 13:50 SHORTS SHORTS Now playing Property owners speak out against proposed $28M water rights deal near Calallen KIII 3 News KIII 3 News • • No views 7 hours ago KIII 3 News KIII 3 News Michael Gibson reports outside City Hall as property owners voice concerns over proposed $28M water rights deal near Hwy 624. Michael Gibson reports outside City Hall as property owners voice concerns over proposed $28M water rights deal near Hwy 624. From the video description New CC 0:30 0:30 Now playing Warning posted, rescinded for Meadow Bridge water customers following clerical error WOAY TV WOAY TV • • 27 views 10 months ago WOAY TV WOAY TV FOLLOW US ON FACEBOOK AND TWITTER: https://facebook.com/WOAYNewsWatch https://twitter.com/WOAYNewsWatch. FOLLOW US ON FACEBOOK AND TWITTER: https://facebook.com/WOAYNewsWatch https://twitter.com/WOAYNewsWatch. From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:42:50.828Z",
+      "data": {
+        "query": "site:nextdoor.com Blackwell's Bluewater Mesquite",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:44:16.601Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Blackwell's Bluewater\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Blackwell's-Bluewater",
+            "title": "Blackwell's Bluewater Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at Blackwell's Bluewater from the people who know best. Get the inside scoop on jobs, salaries, top office locations, ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:44:18.162Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Blackwell's Bluewater\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:43:06.448Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Blackwell's%20Bluewater&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:43:10.788Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:43:16.933Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:44:15.242Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Blackwell's Bluewater\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:43:23.896Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Blackwell's Bluewater",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:43:25.027Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 6
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 7
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 8
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Taxable Entity Search. David Herrera and Oscar Alvarez. 2 reactions. 󱎖. Are they ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:43:26.186Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Blackwell's Bluewater",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:43:27.711Z",
+      "data": {
+        "query": "site:dallascounty.org Blackwell's Bluewater civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:43:28.772Z",
+      "data": {
+        "query": "site:collincountytx.gov Blackwell's Bluewater",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:43:29.907Z",
+      "data": {
+        "query": "site:dentoncounty.gov Blackwell's Bluewater",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:43:37.855Z",
+      "data": {
+        "cid": "7107793902536451510",
+        "name": "Blackwell's Bluewater",
+        "found": true,
+        "rating": 3.8,
+        "source": "serper",
+        "address": "6424 Lake Oaks Cir, Fort Worth, TX 76108",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "6 months ago",
+            "text": "I can't say enough great things about Blackwell's and the service we received from their tech Jarod! He had amazing patience and was diligent in troubleshooting my issue with my pool's heater and totally went above-and-beyond to insure that my unit was working perfectly when he left. Blackwell's cares about their customers and that's hard to find these days.",
+            "author": "Chuck Kelly",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "Jeremy and his team have done an amazing job from the start to finish. We selected this company due to the thoroughness of the quoting process and a complete outline of completion dates and payment schedules.\n\nHe was very easy to work with and allowed my wife to have our pool remodeled into her dream. The quality and commitment to excellence are well noted and we will be using him going forward for ALL of our renovation and remodel needs.",
+            "author": "Aaron Esparza",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Blackwell's Bluewater recently managed a remodel on our kitchen in our church and they did a fantastic and professional job at every turn. Our kitchen looks more beautiful than we ever could have imagined.  Thank you for a great job.",
+            "author": "Aaron Powell",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Jeremy Blackwell was our salesman and the most unprofessional contractor we have ever experienced.  Argumentative, disrespectful, and lack of supervision of his sub-contractors tops our list.  Buyer beware of this wolf in sheep's clothing!!\nPool design was good, Construction we would give a grade of C, and clean up was horrible!\nWe would not recommend Blackwell’s Bluewater pool construction.",
+            "author": "Matt Pitts",
+            "rating": 1
+          },
+          {
+            "date": "6 years ago",
+            "text": "Thumbs up to these guys👍  I have to say they did an amazing job! I couldn’t  be happier with the work and the guys that showed up every morning, bright and early to work with the best of attitudes.\nThank you.",
+            "author": "Jennifer Hutton",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "They have done a lot of tile and coping work for me in the past. The crews show up when they are supposed, do a quality job, and clean up after themselves.",
+            "author": "Corey Nichols",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "made the problem worse and my son watched one of their trucks run 2 red lights while out the other day. horribly rude and sketchy people!!!!!!!!!",
+            "author": "Jenny Gomes",
+            "rating": 1
+          },
+          {
+            "date": "7 years ago",
+            "text": "Friendly, reliable, and honest service!  Our pool always looks amazing, thanks to Blackwell's Bluewater!",
+            "author": "M Spurrier",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 17,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Mesquite, TX",
+        "search_confidence": 0.6799999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:44:04.351Z",
+      "data": {
+        "name": "Blackwell's Bluewater",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 367-1700",
+        "rating": 3.8,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "6424 Lake Oaks Cir, Fort Worth, TX 76108",
+        "reviews": [],
+        "website": "http://www.blackwellsbluewater.com/",
+        "maps_url": "https://www.google.com/maps/search/Blackwell%27s%20Bluewater%20Mesquite%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:44:04.358Z",
+      "data": {
+        "name": "Blackwell's Bluewater",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 367-1700",
+        "rating": 3.8,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "6424 Lake Oaks Cir, Fort Worth, TX 76108",
+        "reviews": [],
+        "website": "http://www.blackwellsbluewater.com/",
+        "maps_url": "https://www.google.com/maps/search/Blackwell%27s%20Bluewater%20Mesquite%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "website": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:44:05.791Z",
+      "data": {
+        "email": null,
+        "error": null,
+        "source": null
+      }
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:44:07.844Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "http://www.blackwellsbluewater.com/",
+        "analyzed_pages": [
+          {
+            "url": "http://www.blackwellsbluewater.com/",
+            "type": "homepage",
+            "title": "HOME | mysite"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:44:12.787Z",
+      "data": {
+        "found": true,
+        "rating": 4.7,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/blackwells-bluewater-fort-worth-2",
+        "review_count": 19
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:44:14.304Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [
+          {
+            "link": "https://www.houzz.com/professionals/decks-and-patios/dallas-tx-us-project-type-patio-construction-probr1-bo~t_11830~r_4684888~sv_29413?fi=45",
+            "title": "Best 15 Patio Construction Companies in Dallas, TX | Houzz",
+            "snippet": "... TX 75072. Blackwell's Bluewater. Send Message. 404 N. Cherry Lane, White Settlement, TX 76131. Angler Remodeling and Exteriors. Complete indoor and outdoor ..."
+          },
+          {
+            "link": "https://www.houzz.com/professionals/pools-and-spas/grapevine-tx-us-probr0-bo~t_11795~r_4694568?fi=165",
+            "title": "Best 15 Swimming Pool Designers & Installers in Grapevine, TX",
+            "snippet": "... TX 75023 · Blackwell's Bluewater. Blackwell's Bluewater is a pool maintenance and outdoor living construction company, located in White Settlement Texas. We ..."
+          },
+          {
+            "link": "https://www.houzz.com/professionals/decks-and-patios/bedford-tx-us-probr0-bo~t_11830~r_4673094?fi=75",
+            "title": "Best 15 Deck Builders & Contractors in Bedford, TX | Houzz",
+            "snippet": "... TX 76051 · Blackwell's Bluewater. Send Message. 404 N. Cherry Lane, White Settlement, TX 76131 · Custom Construction Solutions. Often, homeowners are unsure ..."
+          }
+        ],
+        "result_count": 6,
+        "review_count": null
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-11T02:44:19.008Z",
+      "data": {
+        "found": true,
+        "query": "\"Blackwell's Bluewater\" Mesquite lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/iredell/category/pool-service",
+            "title": "Pool Service near Iredell, TX | Better Business Bureau",
+            "snippet": "Blackwell's Bluewater. Pool Service, Concrete Contractors, Pool Contractors ... BBB Rating: A+ Service Area. Serving the following areas: Tarrant County, TX."
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Contractors&find_loc=Burleson%2C+TX",
+            "title": "THE BEST 10 Pool Contractors near Burleson, TX - Yelp",
+            "snippet": "... , trash not taken. No call back or work completed. Blackwell's Bluewater - Pool Contractors near me - Burleson, Texas. Blackwell's Bluewater. 3.0 (4 reviews)."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/edgecliff-village/category/pool-repair",
+            "title": "Pool Repair near Edgecliff Village, TX | Better Business Bureau",
+            "snippet": "Blackwell's Bluewater. Pool Service, Concrete Contractors, Pool Contractors ... BBB Rating: A+ Service Area. Serving the following areas: Tarrant County, TX."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/aledo/category/concrete-contractors",
+            "title": "Concrete Contractors near Aledo, TX | Better Business Bureau",
+            "snippet": "Blackwell's Bluewater. Pool Service, Concrete Contractors, Pool Contractors ... BBB Rating: A+ Service Area. Serving the following areas: Tarrant County, TX."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-11T02:44:36.993Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-11T02:44:21Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Blackwell%27s%20Bluewater%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=Be2LacnCAfXKp84Pi72b4AI\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-11T02:44:31Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Blackwell%27s%20Bluewater%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=Du2Laa21M4OPp84P7Oq5-A4\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Blackwell's Bluewater",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

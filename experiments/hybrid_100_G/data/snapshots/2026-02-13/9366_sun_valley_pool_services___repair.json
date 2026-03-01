@@ -1,0 +1,804 @@
+{
+  "contractor_id": 9366,
+  "business_name": "Sun Valley Pool Services & Repair",
+  "city": "Euless",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T08:27:38.859Z",
+  "sources": {
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:33.331Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T04:34:33.337Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:34:48.475Z",
+      "data": {
+        "cost": 0.0006223000000000001,
+        "summary": "The review landscape is sparse and concerning. The company has very few reviews on Google, with the most recent (4 years old) detailing a serious communication failure. The positive Yelp rating is based on more reviews but cannot be evaluated for content. The lack of recent positive feedback, combined with a specific, credible complaint pattern of ghosting after initial contact, suggests potential operational or customer service issues. The reviews that exist appear authentic, but the overall picture is incomplete and leans negative due to the specific complaint and lack of countervailing detailed positive experiences.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-13T04:34:48.475Z",
+        "fake_signals": [
+          "Extremely low review volume on primary platforms (Google)",
+          "Single generic 5-star review on Google from 9 years ago",
+          "Lack of recent detailed positive reviews to counter complaints"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "Not Rated",
+          "yelp": 4.1,
+          "google": 3,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "NO_EVIDENCE",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Specific complaint details (Pam's name, free estimate process)",
+          "Emotionally authentic negative review expressing frustration",
+          "Yelp rating based on a more substantial review count (13)"
+        ],
+        "fake_review_score": 65,
+        "complaint_patterns": [
+          "Unresponsive after initial contact",
+          "Failure to return calls/voicemails",
+          "Communication breakdowns"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Significant discrepancy between Google (3.0) and Yelp (4.1) ratings. Google has only 3 reviews with negative feedback on communication, while Yelp has 13 reviews and a higher average. The low volume on Google makes the rating less reliable and highlights a potential platform-specific issue or sampling bias."
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:25.829Z",
+      "data": {
+        "query": "site:dentoncounty.gov Sun Valley Pool Services & Repair",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/155/April-2014-Vendor-Check-Register-PDF",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "SUN BADGE COMPANY. $537.50. 20140408. SUNGARD PUBLIC SECTOR, INC. $520.00. 20140422. SUNSOURCE HYDRAULIC. $1,096.00. 20140422. SUPPLY SANITATION SYSTEMS.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:31.137Z",
+      "data": {
+        "name": "Sun Valley Pool Service, LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 358-9102",
+        "rating": "Not Rated",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/arlington/profile/pool-service/sun-valley-pool-service-llc-0825-83030012",
+        "review_count": null,
+        "founding_date": "01/01/1981",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 45,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:55.429Z",
+      "data": {
+        "query": "site:nextdoor.com Sun Valley Pool Services & Repair Euless",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/sun-valley-pool-services-repair/",
+            "title": "Sun Valley Pool Services & Repair - Euless, TX - Nextdoor",
+            "snippet": "Sun Valley Pool Service, Arlington. Good service, dependable. When we lost power, they were still able to service our pool with their generator powered ...",
+            "position": 1
+          },
+          {
+            "link": "https://us.nextdoor.com/pages/sun-valley-pool-service-and-repair-euless-tx/",
+            "title": "Sun Valley Pool Service and Repair - Euless, TX - Nextdoor",
+            "snippet": "Sun Valley Pool Company 817-358-9102 Been with them for many years! Mention our name :) ...",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/city/fort-worth--tx/",
+            "title": "Fort Worth, TX | News, Crime, Lost Pets, Free Stuff - Nextdoor",
+            "snippet": "Pool Cleaner in Fort Worth · Appliance Repair Service in Fort Worth · Nanny in Fort Worth · Fence Builder in Fort Worth. See more. Hear from locals on Nextdoor.",
+            "position": 3,
+            "attributes": {
+              "Missing": "Euless | Show results with:Euless"
+            }
+          }
+        ]
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:32:00.387Z",
+      "data": {
+        "query": "site:yelp.com \"Sun Valley Pool Services & Repair\" \"Euless, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:08.202Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:09.015Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:31.221Z",
+      "data": "Trustpilot Search Results Companies Sun Valley sun-valley.com • 2 reviews 3.2 Sun Valley Saunas sunvalleysaunas.com • 322 reviews 4.6 FMG Repair Services fmgrepairservices.co.uk • 2.3K reviews 4.3 CE Repair Services cerepair.nl • 923 reviews 2.4 SUN-CHAUFFAGE sun-chauffage.com • 4.6K reviews 4.2 Categories Repair & Services The best companies in the category 'Repair & Services' Swimming Pool Repair Service The best companies in the category 'Swimming Pool Repair Service' Swimming Pool The best companies in the category 'Swimming Pool' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (10000) Sun Valley sun-valley.com 3.2 2 reviews United States Sun Valley Saunas sunvalleysaunas.com 4.6 322 reviews 400 Sun Valley Road, Suite G, Ketchum, ID, United States FMG Repair Services fmgrepairservices.co.uk 4.3 2,311 reviews Pinesgate, Lower Bristol Road, Bath, United Kingdom CE Repair Services cerepair.nl 2.4 923 reviews Netherlands SUN-CHAUFFAGE sun-chauffage.com 4.2 4,618 reviews 300 route de Certines, Montagnat, France Pool Protection 27 Pool Services www.poolprotection27.com 3.7 1 review United States Pool pool.net 4.4 636 reviews Edertalstr. 86, Mörlenbach, Germany SUN sun.io 3.7 1 review Sun Valley Caregivers svc11000.com 0.0 0 reviews 11000 Randall St #E, Sun Valley, United States Sun Valley Resort sunvalley.com 0.0 0 reviews Sun Valley Road 1, Sun Valley, United States Previous 1 2 3 4 1000 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Repair & Services Electronics & Technology Swimming Pool Repair Service Home & Garden Swimming Pool Contractor Construction & Manufacturing Swimming Pool Sports Pool Academy Sports Pool Hall Sports are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:35.878Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:39.664Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:42.187Z",
+      "data": {
+        "query": "Sun Valley Pool Services & Repair Euless site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2017&mm=06",
+            "title": "[XML] sitemap.xml - NBC 5 Dallas-Fort Worth",
+            "snippet": "... Sun Is The Farthest?</video:title><video:description>NBC 5's Weather Expert Rick Mitchell explains why when the earth is farthest away from the sun, that ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2024&mm=06",
+            "title": "[XML] sitemap.xml - NBC 5 Dallas-Fort Worth",
+            "snippet": "... repair.jpg?quality=85&strip=all&fit=1920%2C1080</image:loc></image:image></url><url><loc>https://www.nbcdfw.com/video-weather/nbc-5-forecast-more ...",
+            "position": 2
+          },
+          {
+            "date": "Dec 3, 2016",
+            "link": "https://interactives.dallasnews.com/2016/pearl-harbor/",
+            "title": "The North Texans of Pearl Harbor",
+            "snippet": "More than 2,400 people died during the surprise attack at Pearl Harbor. Their names are listed below. Pearl Harbor. U.S.S. Arizona survivor ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:54.101Z",
+      "data": "Sun Valley Pool Services & Repair Euless review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You Filters Search filters 0:55 0:55 Now playing Euless Pool Service 682-558-0624 - A Brighter Pool Service look2video look2video • • 55 views 13 years ago look2video look2video Euless Pool Service 682-558-0624 -- A Brighter Pool Service has been serving Texas residents for over 14 years. Your swimming ... Euless Pool Service 682-558-0624 -- A Brighter Pool Service has been serving Texas residents for over 14 years. Your swimming ... From the video description 2:09 2:09 Now playing Valley pool company has license revoked after ABC15 report ABC15 Arizona ABC15 Arizona • • 2.3K views 2 years ago ABC15 Arizona ABC15 Arizona After sharing their stories, nearly a dozen Let Joe Know viewers reached out about similar experiences with Lakeside Pools . After sharing their stories, nearly a dozen Let Joe Know viewers reached out about similar experiences with Lakeside Pools . From the video description CC SHORTS SHORTS Now playing Sun valley pool Charles Foster Charles Foster • • 59 views 6 years ago Charles Foster Charles Foster Learn more Mil caminos por explorar Con la nueva Nissan Pathfinder V6 no hay camino que se le resista. Sponsored Nissan 2:31 2:31 Now playing Leave the Pool Maintenance to the Experts APPROVED HOME PROS APPROVED HOME PROS • • 220 views 6 years ago APPROVED HOME PROS APPROVED HOME PROS Pool cleaning is a routine part of pool maintenance but when you don't know the basics or how often to clean it, your pool can ... Pool cleaning is a routine part of pool maintenance but when you don't know the basics or how often to clean it, your pool can ... From the video description CC SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.7M views 4 years ago Life With Evan Life With Evan Visit site How Much Does a New Roof Cost If your roof is 15+ years old, the cost of roof replacement might surprise you. Sponsored HomeBuddy 26:37 26:37 Now playing Sydney Pool Services..The Documentary Dean Tirkot Dean Tirkot • • 381K views 14 years ago Dean Tirkot Dean Tirkot Sydney Pool Services the documentary is about group of pool riding skateboarders and their friend's artistic exploration within the ... Sydney Pool Services the documentary is about group of pool riding skateboarders and their friend's artistic exploration within the ... From the video description 4:08 4:08 Now playing Pool Company Threatens $3,500 Fine, Voids Customer Warranty Over Negative Review CBS TEXAS CBS TEXAS • • 18K views 7 years ago CBS TEXAS CBS TEXAS A North Texas company is trying to fine a local couple $3500 and void their warranty for writing a negative review . When the ... A North Texas company is trying to fine a local couple $3500 and void their warranty for writing a negative review . When the ... From the video description CC SHORTS SHORTS Now playing THE TRUTH ABOUT POOL SERVICE #poolservice #homes #backyard #homeimprovement #upgrades Calixpert Pools Calixpert Pools • • 527 views 11 months ago Calixpert Pools Calixpert Pools If you love your pool Watch this video. If you love your pool Watch this video. From the video description 1:29 1:29 Now playing Rising Sun Pool Customer Review | Service and In Store Water Testing Chemicals | Call 919-851-9700 Rising Sun Pools & Spas Rising Sun Pools & Spas • • 203 views 7 years ago Rising Sun Pools & Spas Rising Sun Pools & Spas http://RisingSunPools.com Call 919-851-9700 if you are looking for honest Rising Sun Pools reviews then watch this video. http://RisingSunPools.com Call 919-851-9700 if you are looking for honest Rising Sun Pools reviews then watch this video. From the video description 1:18 1:18 Now playing Pool Service Allblueinc Allblueinc • • 170 views 15 years ago Allblueinc Allblueinc All Blue Pool & Spa Care is a Sacramento established company specializing in Pool Care & Equipment Repair . All Blue Pool & Spa Care is a Sacramento established company specializing in Pool Care & Equipment Repair . From the video description Apply now Now Hiring Agents Serve your country while earning a competitive salary and benefits with USBP. Apply today. Sponsored CBP 12:51 12:51 Now playing Why Do Pool Cleaning Businesses Fail? | Don't Miss the 8th Reason! Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner • • 22K views 3 years ago Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... From the video description 8 chapters 8 Reasons Pool Cleaning Businesses Fail? | Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset | Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly | Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly | Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer | Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast | Reason 6 - Pool Cleaning Businesses Fail – Poor Communication | Reason 7 - Pool Cleaning Businesses Fail – Not Paying their Taxes 8 chapters in this video 8 chapters 8 Reasons Pool Cleaning Businesses Fail? 8 Reasons Pool Cleaning Businesses Fail? 0:00 8 Reasons Pool Cleaning Businesses Fail? 0:00 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 SHORTS SHORTS Now playing Pool cleaning step by step - pool maintenance 🧽✅🧑🏻‍🔧 Dunota Pools, Central Florida Dunota Pools Dunota Pools • • 123K views 2 years ago Dunota Pools Dunota Pools People also watched 3:05 3:05 Now playing How to start a pool service business - How to hire techs Pool Rescuers Pool Rescuers • • 5.7K views 7 years ago Pool Rescuers Pool Rescuers How to start a pool service business - How to hire techs How to start a pool service business. In this video Ryan with Pool ... How to start a pool service business - How to hire techs How to start a pool service business. In this video Ryan with Pool ... From the video description 0:19 0:19 Now playing Ukhanyo \"dance off\" janoc003 janoc003 • • 774 views 12 years ago janoc003 janoc003 showing off his moves. showing off his moves. From the video description 0:27 0:27 Now playing Expert Solutions For Your Pool Service Navarre FL Splash Pools - Navarre & Gulf Breeze Pool Service Splash Pools - Navarre & Gulf Breeze Pool Service • • 380 views 2 years ago Splash Pools - Navarre & Gulf Breeze Pool Service Splash Pools - Navarre & Gulf Breeze Pool Service As a full service , family owned and operated business, we understand that every customer is unique and therefore every pool or ... As a full service , family owned and operated business, we understand that every customer is unique and therefore every pool or ... From the video description 4:08 4:08 Now playing 5 Pool Maintenance Tips - iPools AZ Scottsdale 480-495-2334 True Method True Method • • 21K views 12 years ago True Method True Method In this video http://ipoolsaz.com in Scottsdale, AZ will share 5 easy steps to a crystal clear ready to swim pool. Need Pools Service ... In this video http://ipoolsaz.com in Scottsdale, AZ will share 5 easy steps to a crystal clear ready to swim pool. Need Pools Service ... From the video description 7 moments iPools AZ Roger Neill Owner Operator | 5 Easy Steps to a Clean Pool | NET IPools AZ | Check Skimmer Basket IPools AZ | Brush IPools AZ | Check Motor Basket IPools AZ | Chemical Testing 7 auto-generated moments in this video 7 moments iPools AZ Roger Neill Owner Operator iPools AZ Roger Neill Owner Operator 0:01 iPools AZ Roger Neill Owner Operator 0:01 5 Easy Steps to a Clean Pool 5 Easy Steps to a Clean Pool 0:05 5 Easy Steps to a Clean Pool 0:05 NET IPools AZ NET IPools AZ 0:14 NET IPools AZ 0:14 Check Skimmer Basket IPools AZ Check Skimmer Basket IPools AZ 0:44 Check Skimmer Basket IPools AZ 0:44 Brush IPools AZ Brush IPools AZ 1:01 Brush IPools AZ 1:01 Check Motor Basket IPools AZ Check Motor Basket IPools AZ 1:38 Check Motor Basket IPools AZ 1:38 Chemical Testing Chemical Testing 2:52 Chemical Testing 2:52 + 6 more 7:00 7:00 Now playing Pool Service Business - Understanding your service rates Pool Rescuers Pool Rescuers • • 15K views 6 years ago Pool Rescuers Pool Rescuers 0:00 What's up pool service pros my name is Ryan today I want to talk to you about understanding your service rates and why it's ... What's up pool service pros my name is Ryan today I want to talk to you about understanding your service rates and why it's ... Automatic captions 4K SHORTS SHORTS Now playing Love your job? How much can a pool tech make? Pool Crew AU Pool Crew AU • • 6.2K views 3 years ago Pool Crew AU Pool Crew AU First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... From the video description 1:22 Real Contractors Tell Their Story Being an Electrician Is Way More Creative Than You Think | Karly The Sparky X CompanyCam Sponsored CompanyCam Learn more 6:32 6:32 Now playing How to Maintain and Service A Swimming Pool: A Step By Step Guide Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL • • 360K views 9 years ago Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL In this video I go over the Step by Step procedure I take when I service a swimming pool . This is a basic video guide on how to ... In this video I go over the Step by Step procedure I take when I service a swimming pool . This is a basic video guide on how to ... From the video description 33 moments Color Q Pro 7 | Purity Pool Red Baron Leaf Rake | T Dula Service Cart | Remington Solar Sun Shock | Taylor K-2006 FAS-DPD Kit | 5-Way Test Kit | Color Q Pro 7 | Pocket Pro Salinity Tester #9531600 by Hach | How To Clean Out Your Pool Pump Basket | Pump Lid O-ring, Pool Pump not priming Part 3 | Intermatic Pool Timer, tips & troubleshooting | Basic Training Part 3 (A) Salt Water Systems Overview | Pool Equipment Overview for beginners Part 1 of 2 | D.E. Filter Tips, Tricks & Troubleshooting | How to Clean Your Pool Skimmer Basket | Basic Training Part 1: Skimming & Brushing | Skimlite 9000 Dually Series Three Piece Pool Pole | Purity Pool TSQC Tile Scrubber with Quick Connect | Pentair R201276 Pro Vac #214 Commercial Vac Head | Hayward W530 Large Capacity Leaf Canister | Basic Training Part 2 (A): Vacuuming the Pool | Basic Training Part 2 (B): Vacuuming the Spa | Power Vac PV2100 Portable Pool Vacuum Cleaner | SweepEase® AquaDynamic 18\" Pool Brush – Review | Nitrile Coated Work Gloves by Wells Lamont | BBB method - Using Bleach, Baking Soda & Borax | Liquid Chlorine Pool Sanitizer | Muriatic Acid, pH Down | Borax to Raise the pH in your Pool - How much Borax to Add | Baking Soda to Raise your Swimming Pool's Alkalinity | Kem-Tek Super Shock Quick, Trichlor Shock | Trichlor 3\" Tablets | Algae in a pool & How to Treat and Prevent It 33 moments in this video 33 moments Color Q Pro 7 Color Q Pro 7 0:03 Color Q Pro 7 0:03 Purity Pool Red Baron Leaf Rake Purity Pool Red Baron Leaf Rake 0:07 Purity Pool Red Baron Leaf Rake 0:07 T Dula Service Cart T Dula Service Cart 0:14 T Dula Service Cart 0:14 Remington Solar Sun Shock Remington Solar Sun Shock 0:20 Remington Solar Sun Shock 0:20 Taylor K-2006 FAS-DPD Kit Taylor K-2006 FAS-DPD Kit 0:35 Taylor K-2006 FAS-DPD Kit 0:35 5-Way Test Kit 5-Way Test Kit 0:38 5-Way Test Kit 0:38 Color Q Pro 7 Color Q Pro 7 0:43 Color Q Pro 7 0:43 SHORTS SHORTS Now playing Pool service. Addressing the disrespect and lack of appreciation from some clients #shorts How To Swimming Pool How To Swimming Pool • • 2.8K views 3 years ago How To Swimming Pool How To Swimming Pool The Deep End Podcast https://pod.co/the-deep-end @turfsupradio www.turfsupradio.com @bookkeeping-beer-bs @poolwerxusa ... The Deep End Podcast https://pod.co/the-deep-end @turfsupradio www.turfsupradio.com @bookkeeping-beer-bs @poolwerxusa ... From the video description SHORTS SHORTS Now playing Arizona Pool Service - Cleaning Your Swimming Pool Filter Nick masse Nick masse • • 1.6K views 13 years ago Nick masse Nick masse Filter Cleans The swimming pool filter catches all the dirt and grime from your pool and it sticks in your filter. Your clean pool water ... Filter Cleans The swimming pool filter catches all the dirt and grime from your pool and it sticks in your filter. Your clean pool water ... From the video description SHORTS SHORTS Now playing Veteran Pool Service - Expert Care for Crystal Clear Pools Veteran Pool Service Veteran Pool Service • • 327 views 3 months ago Veteran Pool Service Veteran Pool Service Veteran Pool Service's 20+ years of expertise keeps my pool crystal clear and hassle-free—cheers to stress-free pool care ! Veteran Pool Service's 20+ years of expertise keeps my pool crystal clear and hassle-free—cheers to stress-free pool care ! From the video description SHORTS SHORTS Now playing Making money in the pool service business... srvcly srvcly • • 27K views 1 year ago srvcly srvcly In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... From the video description SHORTS SHORTS Now playing #POV Day in the Life of a Pool Technician Pool Crew AU Pool Crew AU • • 22K views 3 years ago Pool Crew AU Pool Crew AU Pool Crew AU we want to help more people with their pools . Share & subscribe. SUBSCRIBE NOW! Pool Crew AU we want to help more people with their pools . Share & subscribe. SUBSCRIBE NOW! From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:11.358Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Sun Valley Pool Services & Repair\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:04.999Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Sun%20Valley%20Pool%20Services%20%26%20Repair&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Sun% 20Valley% 20Pool% 20Services% 26% 20Repair&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Sun% 20Valley% 20Pool% 20Services% 20% 26% 20Repair&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Sun% 20Valley% 20Pool% 20Services% 20% 26% 20Repair&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Sun% 20Valley% 20Pool% 20Services% 20% 26% 20Repair&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Sun% 20Valley% 20Pool% 20Services% 20% 26% 20Repair&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:08.478Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:14.154Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:20.408Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Sun Valley Pool Services & Repair",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 5, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Google%20Search%20Engine%20Monopoly%20Ruling.pdf",
+            "title": "[PDF] Case 1:20-cv-03010-APM Document 1033 Filed 08/05/24 Page 1 of ...",
+            "snippet": "MEMORANDUM OPINION. Case 1:20-cv-03010-APM Document 1033 Filed 08/05/24 Page 1 of 286. Page 2. i. TABLE OF CONTENTS. INTRODUCTION.",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/press/regional_haze.pdf",
+            "title": "[PDF] In the United States Court of Appeals for the Fifth Circuit",
+            "snippet": "Certificate of Interested Persons. No. 16-60118. State of Texas, Texas Commission on Environmental. Quality, and Public Utility Commission of Texas,.",
+            "position": 2
+          },
+          {
+            "date": "Sep 30, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/Distributors%20Texas%20Settlement%20Agreement%20Distributors%20TXAG%20Executed.pdf",
+            "title": "[PDF] DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT",
+            "snippet": "TABLE OF CONTENTS. DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT ........................................................ 1.",
+            "position": 3
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Global%20Opioid%20Settlement%20Files/Final%20Distributor%20Settlement%20Agreement.pdf",
+            "title": "[PDF] DISTRIBUTOR SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. DISTRIBUTOR SETTLEMENT. AGREEMENT. Page 2. i. Table of Contents. Page. I.",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:21.552Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 2
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 4
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Taxable Entity Search. David Herrera and Oscar Alvarez. 2 reactions. 󱎖. Are they ...",
+            "position": 7
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 8
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn and Texas Tax Code, Sec. 171.2515. [2] https://statutes.capitol.texas.gov/Docs/TX/htm/TX ...",
+            "position": 9
+          },
+          {
+            "date": "Jul 1, 2020",
+            "link": "https://campaignlegal.org/sites/default/files/2020-07/07-14-20%20BLM%20Oil%20Relief%20Research%20Findings.pdf",
+            "title": "[PDF] clc research draws connection between campaign finance system ...",
+            "snippet": "... TEXAS COMPTROLLER OF PUBLIC ACCOUNTS. (2019), https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited July 10, 2020) (search for “C L ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:33:22.649Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Sun Valley Pool Services & Repair",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:23.692Z",
+      "data": {
+        "query": "site:dallascounty.org Sun Valley Pool Services & Repair civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/May-2025-CC-combined.pdf",
+            "title": "[PDF] statutory - Dallas County",
+            "snippet": "... Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL SECTION. Injury or Damage. CASES ON DOCKET. 455. Other. Eminent. Domain. Tax ...",
+            "position": 1
+          },
+          {
+            "date": "Aug 15, 2016",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2012/FY2012ApprovedBudget.pdf",
+            "title": "[PDF] FY2012 - Dallas County",
+            "snippet": "establishments, foster homes, day care centers, and swimming pools ... Resources/Civil Service – Employment Services & Training/Staff Development.",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "[PDF] A 21st Century Mosaic - Dallas County",
+            "snippet": "Dallas County features a number of lakes that are reservoirs for municipal water and recreational use. These include Lake Ray Hubbard, Lake North, Joe Pool, ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:24.762Z",
+      "data": {
+        "query": "site:collincountytx.gov Sun Valley Pool Services & Repair",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Nov 11, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20211115_2703/33858_RTC%20Packet%2011-11-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, November 11 ...",
+            "snippet": "The RTC meeting on November 11, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 1
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20Business.pdf",
+            "title": "[PDF] Sorted by Business - Collin County",
+            "snippet": "250222 Fire House Pool Care LLC. 5,000 Brian. Stroven. Owner. 991 Willowgate Dr., Prosper, TX 75078. Pool cleaning service and pool equipment ...",
+            "position": 2
+          },
+          {
+            "link": "https://apps.collincountytx.gov/ossf/",
+            "title": "AEROBIC_SYSTEM_LIST.HTML - Collin County",
+            "snippet": "Collin County PAGE 1 requires that maintenance be performed 3 times per year - every 120 - 130 days. Reports are due to Development Services within 14 days of ...",
+            "position": 3
+          },
+          {
+            "date": "Oct 2, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/cc/20201214_2575/48414_2020%20small%20business%20invoice%20approved%20payments.pdf",
+            "title": "[PDF] 2020 10 02 Invoice data extracts.csv - Collin County",
+            "snippet": "Pool cleaning service and pool equipment repair. #4. 251611 FunAsia Entertainment LLC. 25000. 0. 16950 Saumil. Thakkar. Partner. 6850 TPC Dr, ...",
+            "position": 4
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210315_2611/33858_agenda-packet-mar.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL Thursday ...",
+            "snippet": "The RTC meeting on March 11, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so by calling ...",
+            "position": 5
+          },
+          {
+            "date": "Nov 12, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201116_2558/33858_RTC%20Packet%2011-12-2020.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on November 12, 2020, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 6
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20City.pdf",
+            "title": "[PDF] Sorted by City - Collin County",
+            "snippet": "Pool cleaning service and pool equipment repair. 251494 HAM & Cheese Events LLC (DBA Seas the. Day Charters and Tours). 25,000 Prosper. Hope.",
+            "position": 7
+          },
+          {
+            "date": "Aug 12, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210920_2680/33858_RTC%20Packet%2009-09-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, September 9 ...",
+            "snippet": "The RTC Business meeting on September 9, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to ...",
+            "position": 8
+          },
+          {
+            "date": "Oct 8, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201012_2540/33858_agenda-packet-oct.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL Thursday ...",
+            "snippet": "The RTC meeting on October 8, 2020, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:36.367Z",
+      "data": {
+        "name": "Sun Valley Pool Services & Repair",
+        "found": true,
+        "rating": 3,
+        "source": "serpapi",
+        "address": "911 Cresthaven Dr, Euless, TX 76040",
+        "data_id": "0x864e7e3100c9b94f:0xcb2f2005a06b7ee8",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 3,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "4 years ago",
+            "text": "i called and Pam was great, she helped me with my initial call and free estimate but after that i have not been able to get in contact with anyone. they are not answering their calls nor returning voice messages. i find this very unprofessional. i wanted to continue my business with them but if they cant return a call i cant expect professional services on a weekly basis.",
+            "author": "Annette Martinez",
+            "rating": 2
+          },
+          {
+            "date": "9 years ago",
+            "text": "They do excellent work and are very reasonable.",
+            "author": "burt bricker",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "",
+            "author": "Pablo",
+            "rating": 2
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": null,
+        "pages_fetched": 1,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "MULTIPLE_SUSPICIOUS_SIGNALS",
+        "location_searched": "Euless, TX",
+        "search_confidence": 0.7249999999999999,
+        "serper_fraud_check": {
+          "reason": "MULTIPLE_SUSPICIOUS_SIGNALS",
+          "signals": [
+            "MANY_SHORT_REVIEWS",
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": true,
+          "confidence": "MEDIUM"
+        }
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:34:00.765Z",
+      "data": {
+        "name": "Sun Valley Pool Services & Repair",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 358-9102",
+        "rating": 3,
+        "source": "google_maps",
+        "status": "open",
+        "address": "911 Cresthaven Dr, Euless, TX 76040",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Sun%20Valley%20Pool%20Services%20%26%20Repair%20Euless%2C%20TX",
+        "categories": [
+          "Swimming pool repair service"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:34:00.767Z",
+      "data": {
+        "name": "Sun Valley Pool Services & Repair",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 358-9102",
+        "rating": 3,
+        "source": "google_maps",
+        "status": "open",
+        "address": "911 Cresthaven Dr, Euless, TX 76040",
+        "reviews": [],
+        "website": null,
+        "maps_url": "https://www.google.com/maps/search/Sun%20Valley%20Pool%20Services%20%26%20Repair%20Euless%2C%20TX",
+        "categories": [
+          "Swimming pool repair service"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:34:07.350Z",
+      "data": {
+        "found": true,
+        "rating": 4.1,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/sun-valley-pool-service-arlington",
+        "review_count": 13
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:09.733Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Sun Valley Pool Services & Repair\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:10.580Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Sun Valley Pool Services & Repair\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:12.931Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Sun Valley Pool Services & Repair\" Euless",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:13.543Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Sun Valley Pool Services & Repair\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:14.436Z",
+      "data": {
+        "found": false,
+        "query": "\"Sun Valley Pool Services & Repair\" Euless lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:32.657Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T04:34:18Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Sun%20Valley%20Pool%20Services%20%26%20Repair%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=yamOabLiKP_sptQP09H02Ag\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T04:34:27Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Sun%20Valley%20Pool%20Services%20%26%20Repair%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=06mOaZuOHc61ptQPupLb6Qs\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Sun Valley Pool Services & Repair",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:14:55.046Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Sun Valley Pool Services & Repair",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Sun Valley Pool Services & Repair",
+        "searched_at": "2026-02-13T07:13:25.980360",
+        "total_records": 0
+      }
+    }
+  }
+}

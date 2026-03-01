@@ -1,0 +1,1035 @@
+{
+  "contractor_id": 1021,
+  "business_name": "Texas Vets Roofing",
+  "city": "Mesquite",
+  "state": "TX",
+  "verticals": [
+    "roofing"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-15T21:10:09.906Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:17:36.416Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 1,
+            "MECH_LIEN": 3
+          },
+          "active_liens": 3,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 3,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "SMITH SYSTEM MANUFACTURING CO",
+                "grantor": "TEXAS VETS ROOFING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS VETS ROOFING",
+                    "SMITH SYSTEM MANUFACTURING CO",
+                    "RELEASE",
+                    "7/11/2018",
+                    "20180711000861800",
+                    "--/--/--",
+                    "Subdivision- Name: CARTER CRAFT PLANO B/231 Lot: 1 Block: A, Reference - B / 231"
+                  ],
+                  "search_term": "Texas Vets Roofing",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2018-07-11",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "20180711000861800"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "SMITH SYSTEM MANUFACTURING CO",
+                "grantor": "TEXAS VETS ROOFING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS VETS ROOFING",
+                    "SMITH SYSTEM MANUFACTURING CO",
+                    "LIEN",
+                    "4/6/2017",
+                    "20170406000440510",
+                    "--/--/--",
+                    "Subdivision- Name: CARTER CRAFT PLANO B/231 Lot: 1 Block: A, Reference - B / 231"
+                  ],
+                  "search_term": "Texas Vets Roofing",
+                  "doc_type_raw": "LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2017-04-06",
+                "has_release": true,
+                "release_date": "2018-07-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "days_to_release": 461,
+                "instrument_number": "20170406000440510"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "PPF AMLI PARKWOOD BOULEVARD LLC",
+                "grantor": "TEXAS VETS ROOFING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TEXAS VETS ROOFING",
+                    "PPF AMLI PARKWOOD BOULEVARD LLC",
+                    "LIEN",
+                    "4/6/2017",
+                    "20170406000441360",
+                    "--/--/--",
+                    "Subdivision- Name: FRISCO SPORTS COMPLEX P/148 Lot: 1 Block: D, Reference - P / 148"
+                  ],
+                  "search_term": "Texas Vets Roofing",
+                  "doc_type_raw": "LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2017-04-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20170406000441360"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 1,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "TEXAS VETS ROOFING INC",
+                "grantor": "LASTELICK TIFFANY K",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "LASTELICK TIFFANY K",
+                    "TEXAS VETS ROOFING INC",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "1/27/2020",
+                    "202000024404",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: WALNUT GARDEN Lot: 7A Block: 8 CBLK: 6426,, Reference - - / 201000078435"
+                  ],
+                  "search_term": "Texas Vets Roofing",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2020-01-27",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "202000024404"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 old lien(s) against contractor (>7 years ago)",
+            "1 lien(s) filed BY contractor (collecting payment - neutral)"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 2,
+          "human_summary": "CAUTION: 1 lien(s) filed AGAINST Texas Vets Roofing (potential payment issues)",
+          "liens_unclear": 0,
+          "liens_by_count": 1,
+          "resolved_liens": 1,
+          "liens_against_count": 1,
+          "liens_by_contractor": 1,
+          "total_against_amount": 0,
+          "liens_against_contractor": 1
+        },
+        "owner_name": null,
+        "search_term": "Texas Vets Roofing",
+        "searched_at": "2026-02-15T15:16:27.097790",
+        "total_records": 4
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:17:36.972Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "TEXAS VETS ROOFING, INC.",
+        "taxpayer_number": "32065554712"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-15T15:17:36.979Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:17:44.990Z",
+      "data": {
+        "cost": 0.00065912,
+        "summary": "The contractor has strong institutional signals (long history, BBB A+, high review count) but a definitive authenticity assessment is impossible without analyzing the content of the 474 Google reviews. The provided Yelp snippets are positive but stylistically extreme. No complaint patterns or warranty signals are visible in the provided data.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-15T15:17:44.990Z",
+        "fake_signals": [
+          "No raw review text provided for authenticity analysis",
+          "Yelp snippets contain overly enthusiastic language (e.g., 'LOVE LOVE LOVE LOVE') which can be a red flag, but context is limited"
+        ],
+        "recommendation": "INCONCLUSIVE_WITHOUT_REVIEW_CONTENT",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 4.9,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "UNKNOWN",
+          "negative_evidence": [],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Long-standing business (13 years)",
+          "BBB A+ rating and accreditation since 2015",
+          "High volume of Google reviews (474) suggests established customer base",
+          "Yelp snippets reference specific events (hail storms in McKinney)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "No contradictory ratings found. Google rating is high, BBB rating is excellent, and no negative platform data is present. Yelp snippets are positive but lack a formal rating."
+      }
+    },
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:13:35.260Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": true,
+          "satisfaction": true,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "http://www.texasvetsroofing.com/",
+            "type": "explicit",
+            "snippet": "MIT TEXAS ROOFING COMPANY Free Roof Inspections Licensed & Insured Satisfaction Guaranteed Financing Available GIVE US A CALL TODAY! 972-288-7663 RESIDENTIAL ROOFING We"
+          },
+          {
+            "url": "http://www.texasvetsroofing.com/",
+            "type": "workmanship",
+            "snippet": "ients with full transparency on each project, outstanding communication, expert workmanship and exceptional overall customer service. LEARN MORE COMMERCIAL ROOFING The Tex"
+          },
+          {
+            "url": "http://www.texasvetsroofing.com/",
+            "type": "workmanship",
+            "snippet": "Roofing , we were founded with a simple but powerful mission: to bring quality craftsmanship and outstanding customer service to an industry where these values are often ov"
+          },
+          {
+            "url": "http://www.texasvetsroofing.com/",
+            "type": "satisfaction",
+            "snippet": "r Message SUBMIT TEXAS ROOFING COMPANY Free Roof Inspections Licensed & Insured Satisfaction Guaranteed Financing Available GIVE US A CALL TODAY! 972-288-7663 RESIDENTIAL ROOFING We h"
+          },
+          {
+            "url": "http://www.texasvetsroofing.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "ent Other Message SUBMIT TEXAS ROOFING COMPANY Free Roof Inspections Licensed & Insured Satisfaction Guaranteed Financing Available GIVE US A CALL TODAY! 972-288-7663"
+          },
+          {
+            "url": "http://www.texasvetsroofing.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "ews to perform the work. They gave me an initial assessment and met me when the insurance claims agent showed up to point our the problems that were present. Mark C. For"
+          },
+          {
+            "url": "http://www.texasvetsroofing.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "ews to perform the work. They gave me an initial assessment and met me when the insurance claims agent showed up to point our the problems that were present. Mark C. For"
+          }
+        ],
+        "durations": [],
+        "confidence": "MODERATE",
+        "source_url": "http://www.texasvetsroofing.com/",
+        "analyzed_pages": [
+          {
+            "url": "http://www.texasvetsroofing.com/",
+            "type": "homepage",
+            "title": "Texas Vets Roofing | Texas Roofing Company | Roof Inspections"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": true,
+        "insurance_bonding_mentions": true
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:13:42.066Z",
+      "data": {
+        "query": "site:yelp.com \"Texas Vets Roofing\" \"Mesquite, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/texas-vets-roofing-mesquite",
+            "title": "TEXAS VETS ROOFING - Updated February 2026 - Yelp",
+            "rating": 4.6,
+            "snippet": "More info about Texas Vets Roofing ; 818 Dalworth Dr. Ste A. Mesquite, TX 75149. Directions ; (972) 288-7663. Call Now ; Visit Website. http://www.texasvetsroofing ...",
+            "position": 1,
+            "ratingCount": 10
+          },
+          {
+            "link": "https://www.yelp.com/biz/texas-vets-roofing-mesquite-2",
+            "title": "TEXAS VETS ROOFING - Updated February 2026 - Phone Number",
+            "snippet": "More info about Texas Vets Roofing ; 818 Dalworth Dr. Ste A. Mesquite, TX 75149. Directions ; (972) 288-7663. Call Now ; Visit Website. https://www.",
+            "position": 2
+          },
+          {
+            "link": "https://www.yelp.com/biz/texas-vets-roofing-mesquite?start=5",
+            "title": "TEXAS VETS ROOFING - Updated January 2026 - Yelp",
+            "rating": 4.6,
+            "snippet": "TEXAS VETS ROOFING, 818 Dalworth Dr, Ste A, Mesquite, TX 75149, 11 Photos, (972) 288-7663, Mon - 8:00 am - 5:00 pm, Tue - 8:00 am - 5:00 pm, ...",
+            "position": 3,
+            "ratingCount": 10
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Roofing+Contractor&find_loc=Mesquite%2C+TX",
+            "title": "TOP 10 BEST Roofing Contractor in Mesquite, TX - Yelp",
+            "rating": 4.7,
+            "snippet": "... Mesquite, TX 75149. (972) 288-7663. On their website: roofing contractor. We LOVE LOVE LOVE LOVE TEXAS VETS ROOFING! Oh my goodness! I wish everything in life ...",
+            "position": 4,
+            "ratingCount": 957
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Roofing+Companies&find_loc=Mesquite%2C+TX",
+            "title": "THE BEST 10 Roofing Companies in Mesquite, TX - Yelp",
+            "rating": 4.6,
+            "snippet": "... Mesquite, TX 75149. (972) 288-7663. On their website: roofing companies. Texas Vets Roofing is the best roofing company we've ever worked with! After the hail ...",
+            "position": 5,
+            "ratingCount": 860
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Roof+Leak+Repair&find_loc=Mesquite%2C+TX",
+            "title": "TOP 10 BEST Roof Leak Repair in Mesquite, TX - Updated 2026 ...",
+            "snippet": "... Mesquite, TX 75149. (972) 288-7663. We LOVE LOVE LOVE LOVE TEXAS VETS ROOFING! Oh my goodness! I wish everything in life was so easy and such a positive ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Roofing&find_loc=Mesquite%2C+TX",
+            "title": "TOP 10 BEST Roofing in Mesquite, TX - Updated 2026 - Yelp",
+            "rating": 4.5,
+            "snippet": "Top 10 Best Roofing Near Mesquite, Texas ; Texas Vets Roofing · 1.7 mi · 818 Dalworth Dr, Ste A Mesquite, TX 75149. (972) 288-7663 ; Dwell Roofing & Exteriors · 18.9 ...",
+            "position": 7,
+            "ratingCount": 534
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Roof+Installation&find_loc=Mesquite%2C+TX",
+            "title": "TOP 10 BEST Roof Installation in Mesquite, TX - Updated 2026 - Yelp",
+            "rating": 4.7,
+            "snippet": "... Mesquite, TX. Map. Roofing Companies in Mesquite, Texas · Gutters and ... Texas Vets Roofing - Roof Installation near me - Mesquite, Texas. Texas Vets ...",
+            "position": 8,
+            "ratingCount": 848
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Contractors&find_loc=Mesquite%2C+TX",
+            "title": "TOP 10 BEST Contractors in Mesquite, TX - Updated 2026 - Yelp",
+            "rating": 4.5,
+            "snippet": "... Mesquite, TX · Heating & Air Conditioning in Mesquite, TX. Filters. Free price ... Texas Vets Roofing - Contractors near me - Mesquite, Texas. Texas Vets ...",
+            "position": 9,
+            "ratingCount": 709
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Roofing&find_loc=Mesquite%2C+TX+75149",
+            "title": "TOP 10 BEST Roofing near Mesquite, TX 75149 - Updated 2025 ...",
+            "snippet": "... Mesquite, TX 75149. (972) 288-7663. Texas Vets Roofing is the best roofing company we've ever worked with! After the hail storms came through McKinney this ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:54.607Z",
+      "data": {
+        "name": "Texas Vets Roofing",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 288-7663",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "open",
+        "address": "818 Dalworth Dr A, Mesquite, TX 75149",
+        "reviews": [],
+        "website": "http://www.texasvetsroofing.com/",
+        "maps_url": "https://www.google.com/maps/search/Texas%20Vets%20Roofing%20Mesquite%2C%20TX",
+        "categories": [
+          "Contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:14:52.225Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Texas%20Vets%20Roofing&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:14:56.264Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:02.347Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:16:03.656Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Texas Vets Roofing\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:15:06.283Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Texas Vets Roofing",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:14:19.344Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:14:23.483Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:16:09.099Z",
+      "data": {
+        "found": true,
+        "query": "\"Texas Vets Roofing\" Mesquite lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/mesquite/profile/roofing-contractors/texas-vets-roofing-inc-0875-90470936",
+            "title": "Texas Vets Roofing, INC. | BBB Business Profile",
+            "snippet": "Texas Vets Roofing, INC. 818 Dalworth Dr STE A. Mesquite, TX 75149-4171. Get Directions. View Service Area close. Serving the following areas: Collin County, TX ..."
+          },
+          {
+            "link": "https://www.yelp.com/biz/roofix-roofing-mesquite",
+            "title": "ROOFIX ROOFING - 4111 US-80, Mesquite, Texas - Phone Number",
+            "snippet": "Texas Vets Roofing. (10 reviews). Closed until 8:00 AM tomorrow. Texas ... He provided a detailed inspection report along with a comprehensive breakdown of the ..."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/mesquite/category/roofing-contractors/accredited",
+            "title": "BBB Accredited Roofing Contractors near Mesquite, TX",
+            "snippet": "Texas Vets Roofing, INC. Roofing Contractors, Gutters, Metal Roofing Contractors ... · (972) 288-7663 ; 360 Innovations Roofing & Construction. Roofing ..."
+          },
+          {
+            "link": "https://zeta.creativecirclecdn.com/hood/files/20230822-150829-Year%20in%20Review_2021-12-31.pdf",
+            "title": "[PDF] Riding the year with optimism",
+            "snippet": "U.S. Navy veteran David Hanes re- ceives quite a present for Veterans. Day: a free new roof provided by. Texas Vets Roofing. A broken leg ..."
+          },
+          {
+            "link": "https://www.yelp.com/biz/wolfman-contracting-mesquite",
+            "title": "WOLFMAN CONTRACTING - Updated February 2026 - Roofing - Yelp",
+            "snippet": "... Complaint in to BBB the company is lying and still refusing to pay me for the ... Texas Vets Roofing. (10 reviews). Closed today. Texas Vets Roofing just ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:14:26.047Z",
+      "data": {
+        "query": "Texas Vets Roofing Mesquite site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Mar 11, 2021",
+            "link": "https://www.dallasnews.com/news/inspired/2021/03/11/a-disabled-navy-veterans-roof-was-crumbling-then-a-mesquite-company-with-a-heart-for-service-stepped-in/",
+            "title": "A disabled Navy veteran's roof was crumbling — then a Mesquite ...",
+            "snippet": "When Kay Ward, a disabled U.S. Navy veteran, learned about Texas Vets Roofing, a Mesquite-based company that gives away free roofs to veterans ...",
+            "position": 1
+          },
+          {
+            "date": "Mar 17, 2021",
+            "link": "https://www.dallasnews.com/news/crime/2021/03/17/forney-teacher-arrested-in-high-speed-crash-that-killed-mesquite-teen/",
+            "title": "Forney teacher arrested in high-speed crash that killed Mesquite teen",
+            "snippet": "When Kay Ward, a disabled U.S. Navy veteran, learned about Texas Vets Roofing,. A disabled Navy veteran's roof was crumbling — then a ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=01",
+            "title": "[XML] https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=01 - NBC 5",
+            "snippet": "... texas-classrooms-but-what-version/10027/</loc><lastmod>2019-01-31T12:26:31+ ... mesquite-without-phone-money-or-meds/145/</loc><lastmod>2019-01-25T23 ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.dallasnews.com/arc/outboundfeeds/sitemap3/2021-03-11/?outputType=xml",
+            "title": "[XML] https://www.dallasnews.com/arc/outboundfeeds/sitemap3/2021-03 ...",
+            "snippet": "... texas-blackouts-senate-probes-need-to-prepare ... mesquite-company-with-a-heart-for-service-stepped ... Vets Roofing, a Mesquite-based company that ...",
+            "position": 4
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:16:07.636Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Texas Vets Roofing\" Mesquite",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:14:37.221Z",
+      "data": "Texas Vets Roofing Mesquite review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 0:37 0:37 Now playing Texas Vets Roofing: Expert Roof Repair & Replacement in Mesquite, McKinney & More daniel rannigan daniel rannigan • • No views 7 days ago daniel rannigan daniel rannigan Welcome to Texas Vets Roofing ! We're excited to show you how we're making a big difference for homes and businesses in ... Welcome to Texas Vets Roofing ! We're excited to show you how we're making a big difference for homes and businesses in ... From the video description Texas Vets Roofing Texas Vets Roofing @texasvetsroofing3884 • 13 subscribers All things ROOFING ! From inside the best roofing company in the DFW! Subscribe 0:36 0:36 Now playing Texas Vets Roofing: Expert Roof Repair & Replacement in Mesquite-McKinney daniel rannigan daniel rannigan • • 2 views 4 months ago daniel rannigan daniel rannigan Welcome to Texas Vets Roofing ! Serving the Mesquite , Prosper, McKinney, Allen, and Highland Park communities, we've got ... Welcome to Texas Vets Roofing ! Serving the Mesquite , Prosper, McKinney, Allen, and Highland Park communities, we've got ... From the video description 0:16 0:16 Now playing Texas Vets Roofing | Home Services, Maintenance & Construction, Roofing | Mesquite TX Spark SMB Spark SMB • • 1.2K views 5 years ago Spark SMB Spark SMB Texas Vets Roofing has an impeccable reputation. Plus, a portion of profits from every job goes to roofing Veterans in need. Texas Vets Roofing has an impeccable reputation. Plus, a portion of profits from every job goes to roofing Veterans in need. From the video description 1:26 1:26 Now playing Texas Vets Roofing alternative Commercial Roofs of Texas Offers Roof Saving Tip for Mesquite, TX DFW Commercial RoofSavers of Texas Commercial RoofSavers of Texas • • 4 views 3 years ago Commercial RoofSavers of Texas Commercial RoofSavers of Texas https://youtu.be/FVq_dy11644 - Texas Vets Roofing alternative Commercial Roofs of Texas Offers Roof Saving Tip for Mesquite , ... https://youtu.be/FVq_dy11644 - Texas Vets Roofing alternative Commercial Roofs of Texas Offers Roof Saving Tip for Mesquite , ... From the video description 8:35 8:35 Now playing How To Pick A Good Roofing Company - WATCH THIS BEFORE YOU CALL A ROOFER! Texas Vets Roofing Texas Vets Roofing • • 79 views 5 years ago Texas Vets Roofing Texas Vets Roofing If you live in the DFW and surrounding areas, than picking a roofer is simple, Texas Vets Roofing is the obvious choice! But for the ... If you live in the DFW and surrounding areas, than picking a roofer is simple, Texas Vets Roofing is the obvious choice! But for the ... From the video description 5 moments Ask for Examples of Their Past Work | Price Is Not the Only Thing That Matters | Price Point | Ask What Happens if You Are Not Satisfied with the Work | Unplanned Repairs 5 auto-generated moments in this video 5 moments Ask for Examples of Their Past Work Ask for Examples of Their Past Work 2:37 Ask for Examples of Their Past Work 2:37 Price Is Not the Only Thing That Matters Price Is Not the Only Thing That Matters 3:35 Price Is Not the Only Thing That Matters 3:35 Price Point Price Point 3:41 Price Point 3:41 Ask What Happens if You Are Not Satisfied with the Work Ask What Happens if You Are Not Satisfied with the Work 6:39 Ask What Happens if You Are Not Satisfied with the Work 6:39 Unplanned Repairs Unplanned Repairs 7:17 Unplanned Repairs 7:17 Shorts Daniel from Texas Vets Roofing talks about our Residential Roofing Manual 49 views ￼ Customer review #friscotx #roofing #roofingcontractornearme 145 views Need Roof Repair, Replacement, or a Professional Roof Inspection? 1.1K views New Brownsville, Tx 📍This is your reminder! A free inspection costs $0. A roof replacement does. 795 views Call the experts today! #shorts 2.5K views Show more Show less 6:31 6:31 Now playing How to find hail damage on roof Texas Vets Roofing Texas Vets Roofing • • 162 views 5 years ago Texas Vets Roofing Texas Vets Roofing Come along and learn how to spot hail and identify damage that will help a customer get their roof paid for by insurance! Come along and learn how to spot hail and identify damage that will help a customer get their roof paid for by insurance! From the video description 4 chapters Intro | Collateral Damage | Roof Collateral Damage | Test Square 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Collateral Damage Collateral Damage 0:23 Collateral Damage 0:23 Roof Collateral Damage Roof Collateral Damage 3:54 Roof Collateral Damage 3:54 Test Square Test Square 5:32 Test Square 5:32 3:12 3:12 Now playing Texas Vets Review Ignite Results Ignite Results • • 41 views 3 years ago Ignite Results Ignite Results Scale through building culture and creating onboarding processes. Get Your Free “Mastering The Hiring Process” Training ... Scale through building culture and creating onboarding processes. Get Your Free “Mastering The Hiring Process” Training ... From the video description 3 moments Ray Rannigan | Jumpstart Sales in 1st Week | Recruit Like-Minded Employees 3 auto-generated moments in this video 3 moments Ray Rannigan Ray Rannigan 0:00 Ray Rannigan 0:00 Jumpstart Sales in 1st Week Jumpstart Sales in 1st Week 1:25 Jumpstart Sales in 1st Week 1:25 Recruit Like-Minded Employees Recruit Like-Minded Employees 2:20 Recruit Like-Minded Employees 2:20 0:52 0:52 Now playing Texas Vets Roofing Paradise Claims Paradise Claims • • 87 views 5 years ago Paradise Claims Paradise Claims Texas Vets Roofing CEO Ray Rannigan talks about her company and the work they do to help veterans in need within their ... Texas Vets Roofing CEO Ray Rannigan talks about her company and the work they do to help veterans in need within their ... From the video description Shorts A $500 repair today could save you $5,000 next year #shorts 1.3K views May Roofing - Residential Roof Replacement in Bossier City #bossier #bossiercity #shreveport #benton 397 views Commercial & Residential Roofing Company: Roof Repair - Texarkana, TX. 334 views CLIENT Roof Review #shorts #roofing #repair 1.9K views Roof Replacement & Roof Repair Services in Augusta Pines, Spring TX | Free Roof Inspections. 324 views Show more Show less 3:23 3:23 Now playing We gave a Roof to a Veteran in Need Texas Vets Roofing Texas Vets Roofing • • 83 views 5 years ago Texas Vets Roofing Texas Vets Roofing Kay Ward - Jan 2021 Roof 4 vets giveaway, by Texas Vets Roofing . For more info call 972-288-9070. Kay Ward - Jan 2021 Roof 4 vets giveaway, by Texas Vets Roofing . For more info call 972-288-9070. From the video description People also watched 14:11 14:11 Now playing Revealed: The Most Common Roofing Scams Homestead Roofing, Inc Homestead Roofing, Inc • • 56K views 2 years ago Homestead Roofing, Inc Homestead Roofing, Inc In this video, we're sharing important roofing advice and exposing common roofing scams that homeowners should be aware of ... In this video, we're sharing important roofing advice and exposing common roofing scams that homeowners should be aware of ... From the video description 11 chapters Introduction | Free upgrades | Roof vandalization | Insurance kickbacks | Not paying workers/suppliers | Exaggerating scope | Pressuring You | Legal action | Bad work | Paying your deductible | Take your money and run 11 chapters in this video 11 chapters Introduction Introduction 0:00 Introduction 0:00 Free upgrades Free upgrades 0:47 Free upgrades 0:47 Roof vandalization Roof vandalization 1:54 Roof vandalization 1:54 Insurance kickbacks Insurance kickbacks 4:01 Insurance kickbacks 4:01 Not paying workers/suppliers Not paying workers/suppliers 5:21 Not paying workers/suppliers 5:21 Exaggerating scope Exaggerating scope 6:12 Exaggerating scope 6:12 Pressuring You Pressuring You 7:36 Pressuring You 7:36 16:05 16:05 Now playing Questions Roofers Ask That You Should NEVER Answer! Homestead Roofing, Inc Homestead Roofing, Inc • • 81K views 3 years ago Homestead Roofing, Inc Homestead Roofing, Inc When you're hiring a roofer , there are some questions they may ask that you should never answer. In this video, I'll give you the ... When you're hiring a roofer , there are some questions they may ask that you should never answer. In this video, I'll give you the ... From the video description CC 8 chapters Introduction | In the neighborhood - Can I inspect your roof? | Can I get your Insurance paperwork? | Can I get you to Sign today? | Let me call my manager... | Do you want to file the claim now? | Will you sign this paper? | ZERO OBLIGATION 8 chapters in this video 8 chapters Introduction Introduction 0:00 Introduction 0:00 In the neighborhood - Can I inspect your roof? In the neighborhood - Can I inspect your roof? 0:21 In the neighborhood - Can I inspect your roof? 0:21 Can I get your Insurance paperwork? Can I get your Insurance paperwork? 2:21 Can I get your Insurance paperwork? 2:21 Can I get you to Sign today? Can I get you to Sign today? 7:19 Can I get you to Sign today? 7:19 Let me call my manager... Let me call my manager... 8:36 Let me call my manager... 8:36 Do you want to file the claim now? Do you want to file the claim now? 12:00 Do you want to file the claim now? 12:00 Will you sign this paper? Will you sign this paper? 14:07 Will you sign this paper? 14:07 2:03 2:03 Now playing Adjuster w/ State Farm Refuses to Perform Inspection Nashville Roofer Nashville Roofer • • 289K views 2 years ago Nashville Roofer Nashville Roofer Adjuster w/ State Farm refusing to inspect the home. This is one of the many encounters with him. Adjuster w/ State Farm refusing to inspect the home. This is one of the many encounters with him. From the video description 3:37 3:37 Now playing Insurance Adjuster says roof is repairable. 😂 See how this inspection is ignored & denied? Chicago Roofer Chicago Roofer • • 1.5M views 3 years ago Chicago Roofer Chicago Roofer Met with an insurance adjuster for a wind claim . top insure company in Illinois. Adjuster from this company insists the roof is ... Met with an insurance adjuster for a wind claim . top insure company in Illinois. Adjuster from this company insists the roof is ... From the video description Summary An insurance adjuster deems a roof repairable, despite a roofer's on-site demonstration of significant damage. The roofer meticulously documents the irreparable condition using a customer's phone. This video showcases the conflict between the adjuster's assessment and the reality of the roof's condition. AI-generated video summary Quality and accuracy may vary. Summary An insurance adjuster deems a roof repairable, despite a roofer's on-site demonstration of significant damage. The roofer meticulously documents the irreparable condition using a customer's phone. This video showcases the conflict between the adjuster's assessment and the reality of the roof's condition. + 6 more 0:55 0:55 Now playing CMAC Roofing: Your Texas Roofing Experts! CMAC CMAC • • 68 views 1 year ago CMAC CMAC CMAC Roofing : Your Dallas-Fort Worth Roofing Experts! Get a complimentary estimate today by visiting our website: ... CMAC Roofing : Your Dallas-Fort Worth Roofing Experts! Get a complimentary estimate today by visiting our website: ... From the video description 4:24 4:24 Now playing Texas Vet Roofing Spotlight Roof4Vets Roof4Vets • • 191 views 4 years ago Roof4Vets Roof4Vets David Hanes, a Navy Veteran , gets a free roof ! David Hanes, a Navy Veteran , gets a free roof ! From the video description 0:52 0:52 Now playing Texas Vets Roofing De La Cruz Visuals LLC De La Cruz Visuals LLC • • 41 views 4 years ago De La Cruz Visuals LLC De La Cruz Visuals LLC 1:02 1:02 Now playing Texas Vets Roofing - International Torch Awards for Ethics Winners Better Business Bureau Better Business Bureau • • 361 views 4 years ago Better Business Bureau Better Business Bureau Texas Vets Roofing , a local roofing company based out of Mesquite , TX , won the BBB Serving North Central Texas Torch Award ... Texas Vets Roofing , a local roofing company based out of Mesquite , TX , won the BBB Serving North Central Texas Torch Award ... From the video description 3 chapters Intro | Thank You | Conclusion 3 auto-generated chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 Thank You Thank You 0:25 Thank You 0:25 Conclusion Conclusion 0:40 Conclusion 0:40 0:37 0:37 Now playing Roof 4 Vets Install Paradise Claims Paradise Claims • • 10 views 3 years ago Paradise Claims Paradise Claims We finished up the install on Navy Veteran Luther Polks home. He was so excited that he woke up at 3am to wait on the crew! We finished up the install on Navy Veteran Luther Polks home. He was so excited that he woke up at 3am to wait on the crew! From the video description 3 chapters Intro | Sponsor | Outro 3 auto-generated chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 Sponsor Sponsor 0:10 Sponsor 0:10 Outro Outro 0:20 Outro 0:20 SHORTS SHORTS Now playing Can You REALLY Rejuvenate a 20-Year-Old Roof? Here’s What They’re Not Telling You 😬 Texas Roof Damage Texas Roof Damage • • 36K views 10 months ago Texas Roof Damage Texas Roof Damage Rejuvenate your roof instead of replacing it”? That's the pitch. They sprayed a 17-year-old roof and claimed it looked “like new”… Rejuvenate your roof instead of replacing it”? That's the pitch. They sprayed a 17-year-old roof and claimed it looked “like new”… From the video description 4K 4:18 4:18 Now playing Customer Story: Trey Marsh Texas Vets Roofing Texas Vets Roofing • • 51 views 5 years ago Texas Vets Roofing Texas Vets Roofing Trey Marsh, US Army Veteran , shares his experience with Texas Vets Roofing . Trey Marsh, US Army Veteran , shares his experience with Texas Vets Roofing . From the video description 0:55 0:55 Now playing Asphalt shingle replacement with F Wave Birchwood Blend by Texas Vets Roofing in Dallas, TX F Wave Roofing F Wave Roofing • • 90 views 3 years ago F Wave Roofing F Wave Roofing daniel rannigan daniel rannigan @danielrannigan774 • Subscribe SHORTS SHORTS Now playing Did you know your roof could last a lifetime? #shorts BlackTree Roofing BlackTree Roofing • • 129 views 5 months ago BlackTree Roofing BlackTree Roofing Did you know your roof could last a lifetime? We built with the Quality that Lasts! Free inspection: +1(757)290-8177 ... Did you know your roof could last a lifetime? We built with the Quality that Lasts! Free inspection: +1(757)290-8177 ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:14:38.519Z",
+      "data": {
+        "query": "site:nextdoor.com Texas Vets Roofing Mesquite",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/texas-vets-roofing-mesquite-tx/",
+            "title": "Texas Vets Roofing - Nextdoor",
+            "snippet": "Texas Vets Roofing is a Neighborhood Favorite in 2 neighborhoods. In Mesquite: Valley Creek. In Garland: Waterford Estates. It also won in 2022 and 2024 ...",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/pages/texas-vets-roofing-forney-tx/",
+            "title": "Texas Vets Roofing - Mesquite, TX - Nextdoor",
+            "snippet": "I LOVE my new roof by TexasVets Roofing. They will walk you through the process and on it until it is done. (972) 288-7663 BTW....they are Local, ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:16:06.852Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Texas Vets Roofing\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Texas-Vets-Roofing",
+            "title": "Texas Vets Roofing Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at Texas Vets Roofing from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:07.513Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not ...",
+            "position": 2
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Franchise Search Results. 心. Franchise Tax Account Status. As of 09/13/2021 14:10:44 ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 3
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 7
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26.",
+            "position": 8
+          },
+          {
+            "date": "Apr 17, 2025",
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "Franchise Tax Account Status Search Results.pdf(93501 bytes ). Signature ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Franchise Search Results. 1/1.. Franchise Tax Account Status. As of : 12 ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/2. Public ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:15:08.607Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Texas Vets Roofing",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:09.997Z",
+      "data": {
+        "query": "site:dallascounty.org Texas Vets Roofing civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2023/FY2023-Proposed-Budget.pdf",
+            "title": "[PDF] FY2023 Proposed Budget 1 - Dallas County",
+            "snippet": "This table show the actual expenditures for FY 2020 and FY 2021, the adopted FY 2022 Budget, actual expenditures through July 2022, and the proposed budget for ...",
+            "position": 1
+          },
+          {
+            "date": "Oct 4, 2023",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2024/FY2024-Adopted-Budget.pdf",
+            "title": "[PDF] Dallas County FY2024 Budget Adoption",
+            "snippet": "Dallas County Commissioners Court does hereby adopt the FY2024 proposed budget for Dallas County ・ estimated cost $371,000 Done in ・ ...",
+            "position": 2
+          },
+          {
+            "date": "Nov 20, 2023",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/human-resources/chapters82-86/Chapter86-DallasCountyCode-11202023.pdf",
+            "title": "[PDF] The Dallas County Administrative Code contains the employment ...",
+            "snippet": "The Dallas County Administrative Code contains the employment policies and procedures for Dallas County.",
+            "position": 3
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/Training/COA-Mapping-Published.xlsx",
+            "title": "[XLS] Fund Mapping - Dallas County",
+            "snippet": "Transportation Traffic Offenses /State fee $30. State of Texas $20 FTA. Judicial Salaries - County Civil 21253. Filling fee for Judicial support on civil suits ...",
+            "position": 4
+          },
+          {
+            "date": "Mar 1, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/obe-forms/Budget_Revision_Form_BR.xlsx",
+            "title": "[XLS] Budget Revision Form - Dallas County",
+            "snippet": "State of Texas $20 FTA. Judicial Salaries - County Civil. Filling fee for Judicial support on civil suits in. Fire Marshal Inspection Fee 31020 ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2003/CapitalImprovements.PDF",
+            "title": "[PDF] CAPITAL IMPROVEMENT PLAN - Dallas County",
+            "snippet": "Examples of these projects include roof replacement and HVAC upgrades. Civil Courts System Replacement",
+            "position": 6
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2022/FY2022-BudgetBookDetail-OnlineVersion-Adopted-FINAL.pdf",
+            "title": "[PDF] Dallas County Fiscal Year 2021-2022 Budget Cover Page",
+            "snippet": "This proposed budget is fiscally responsible and addresses the current and pressing needs in providing government services.",
+            "position": 7
+          },
+          {
+            "date": "Mar 12, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2020/2020-03.pdf",
+            "title": "[PDF] Dallas County Behavioral Health Leadership Team Thursday, March ...",
+            "snippet": "Doug Denton answered stating that the roofing sustained the enormous amount of rain that has emerged. He also provided information on the ...",
+            "position": 8
+          },
+          {
+            "date": "Feb 13, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2020/2020-02.pdf",
+            "title": "[PDF] Dallas County Behavioral Health Leadership Team Thursday ...",
+            "snippet": "The office was awarded the Texas Indigent Defense grant to help expand their mental health department and will be adding three social workers ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2004/FY04approvedbudgetfulltext.pdf",
+            "title": "[PDF] APPROVED BUDGET - Dallas County",
+            "snippet": "Texas county government is generally an extension of state government, focusing on the judicial system, health and welfare service delivery, law enforcement ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:11.888Z",
+      "data": {
+        "query": "site:collincountytx.gov Texas Vets Roofing",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Oct 12, 2017",
+            "link": "https://eagenda.collincountytx.gov/docs/2018/CC/20180108_2137/44248_Attachment%20B-Pre-bid%20Sign-in%20Sheet_10-12-17.pdf",
+            "title": "[PDF] collin county",
+            "snippet": "Texas Vets Routing 8174129752. RICK MONROE MONROE ROCKING 972-6446644. Barry Johnson Roof Master DFW 469-346-8989. ROB EDWARDS. Miguel Taverns.",
+            "position": 1
+          },
+          {
+            "date": "Jul 28, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250728_3116/58408_TEFRA%20Certificate%20Minutes.pdf",
+            "title": "[PDF] I, the undersigned, hereby certify in connection with ... - Collin County",
+            "snippet": "The Refinanced Projects are located (i) at 1935 Medical District Drive,. Dallas, Texas 75235, and adjacent buildings located at 5060 ...",
+            "position": 2
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210913_2677/50816_Certificate%20-%20Fully%20Executed.pdf",
+            "title": "[PDF] the state of texas - Collin County",
+            "snippet": "Roof Replacement. COMTETOVAI on of var rozfing. Remodeling menda Ask nout zur Vets & Ser. Discals Ask Tai ROY. ||frame Bee, cheme met Ther.",
+            "position": 3
+          },
+          {
+            "date": "Sep 14, 2022",
+            "link": "https://eagenda.collincountytx.gov/docs/2022/CC/20221003_2791/52987_BSWH%202022%20-%20Certificate%20of%20Hearing%20Officer%20%28EXECUTED%29.pdf",
+            "title": "[PDF] Certificate of Hearing Officer BSWH 2022 - Collin County",
+            "snippet": "Public comments and requests must be submitted either electronically at www14.tceq.texas.gov/epic/eComment/, or in writing to the Texas.",
+            "position": 4
+          },
+          {
+            "date": "Jul 27, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210913_2677/50816_BSWH%202019A%20-%20Certificate%20of%20Public%20Hearing%20%28EXECUTED%20w%20Exhibits%29.pdf",
+            "title": "[PDF] Best Cash Offer For Your House! - Collin County",
+            "snippet": "Leaks,. Missing Shingles. Roof Turbines,. Gutter Cleaning. 19 years of exper. Greg: 972-849-1845. Warner Roofing Company. All Types of Roofing!!",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:13.255Z",
+      "data": {
+        "query": "site:dentoncounty.gov Texas Vets Roofing",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=310",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20150609. 911 ETC, INC. $692.10. 20150602. A-1 PORTA PRIVY. $168.00. 20150609. A-1 PORTA PRIVY. $682.72. 20150623.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:21.047Z",
+      "data": "Texas Vets Roofing | Texas Roofing Company | Roof Inspections Skip to content Instagram Facebook-f Twitter Youtube 972-288-7663 HOME RESIDENTIAL COMMERCIAL METAL ROOFING ABOUT ABOUT US PROJECT GALLERY BLOG ROOF 4 VETS CONTACT APPLY FOR FINANCING HERE HOME RESIDENTIAL COMMERCIAL METAL ROOFING ABOUT ABOUT US PROJECT GALLERY BLOG ROOF 4 VETS CONTACT APPLY FOR FINANCING HERE REQUEST SERVICE Name Email Phone Number Address Choose One Choose One Residential - Roof Inspection Residential - Roof Repair Residential - Roof Replacement Commercial - Roof Inspection Commercial - Roof Repair Commercial - Roof Replacement Other Message SUBMIT TEXAS ROOFING COMPANY Free Roof Inspections Licensed & Insured Satisfaction Guaranteed Financing Available GIVE US A CALL TODAY! 972-288-7663 RESIDENTIAL ROOFING We have worked hard to earn and retain our A+ rating with the Better Business Bureau, and we are dedicated to providing our clients with full transparency on each project, outstanding communication, expert workmanship and exceptional overall customer service. LEARN MORE COMMERCIAL ROOFING The Texas Vets crew has the expertise, tools and quality products to attend to them with precision and skill. We specialize in all aspects of commercial roofing, from roof repair to roof replacement and roof restoration, and we back up our work every step of the way! LEARN MORE FREE ROOF INSPECTIONS Contact us today to schedule a free, no-obligation roof inspection. We will send one of our knowledgeable technicians to your home to thoroughly inspect your roof and to identify any problems or areas of need. It’s quick, easy and free! Give us a call today! LEARN MORE Our Roofing Services Roof Repair Texas is vulnerable to year-round hard weather conditions, causing frequent damage to your home and reducing the life span of your roof. We are ready to help with any roof repair! LEARN MORE Roof Replacement Whether your residential roof has sustained damage due a storm or other event or it has simply exceeded its life expectancy, the Texas Vets team is here to replace it expertly and efficiently! LEARN MORE Commercial Roofing Whether it be roof replacement or repair, Texas Vets Roofing is one of the best commercial roofing contractors in Greater Dallas-Fort Worth, Austin, and Houston TX! LEARN MORE Free Roof Inspections Texas Vets Roofing is here to help with our free, no obligation, roofing inspection for homes throughout Dallas-Fort Worth, Austin, and Houston TX! LEARN MORE GIVE US A CALL TODAY! 972-288-7663 Roofing Service Areas Dallas, TX Prosper, TX Waxahachie, TX McKinney, TX Frisco, TX Allen, TX Crandall, TX Balch Springs, TX Desoto, TX Duncanville, TX Forney, TX Heath, TX Hutchins, TX Kaufman, TX Lancaster, TX Lawson, TX Mesquite, TX Rockwall, TX Rowlett, TX Seagoville, TX Terrell, TX Wylie, TX And More! Texas Vets' Story Choose Texas Vets Roofing — Experience the Difference Integrity, Commitment & Community Make At Texas Vets Roofing , we were founded with a simple but powerful mission: to bring quality craftsmanship and outstanding customer service to an industry where these values are often overlooked. Since February 2012 , we have proudly served homeowners and businesses across the great state of Texas, providing exceptional roofing and general construction services. Our reputation is built on a foundation of integrity, hard work, and dedication to excellence . Every project we take on reflects our commitment to delivering lasting solutions and superior customer experiences. When you choose Texas Vets Roofing, you’re not just hiring a contractor—you’re partnering with a team that cares about your property, your satisfaction, and your community. Let us help protect what matters most. LEARN MORE Roofing Certifications & Associations Supported by Nationwide Group The Choice Roof Contractor Group is an association of commercial roofing companies who help keep each other accountable. We found Texas Vets Roofing on the BBB website and Toby came out the day we called even though he was under-the-weather. His crew was incredible and professional, and we couldn't have been more pleased! Ron Van V. Fort Worth, TX I just had my mother's roof and patio cover replaced by Texas Vets Roofing and they did an excellent job. They had very capable crews to perform the work. They gave me an initial assessment and met me when the insurance claims agent showed up to point our the problems that were present. Mark C. Fort Worth, TX You guys are awesome! This was a rush job and became more complicated as we worked. Toby is a very compassionate, considerate and patriotic man that saw our need and did not hesitate to act on his convictions. Thank you and bless you! Jenna B. Fort Worth, TX You cannot ask for a better contractor than Toby and his team! These folks are top-notch. Toby says that he's in this to make long-term customers and he made one with me. He and his team do great quality work at a great price. Eric E. Fort Worth, TX We found Texas Vets Roofing on the BBB website and Toby came out the day we called even though he was under-the-weather. His crew was incredible and professional, and we couldn't have been more pleased! Ron Van V. Fort Worth, TX I just had my mother's roof and patio cover replaced by Texas Vets Roofing and they did an excellent job. They had very capable crews to perform the work. They gave me an initial assessment and met me when the insurance claims agent showed up to point our the problems that were present. Mark C. Fort Worth, TX 972-288-7663 Instagram Facebook-f Twitter Youtube Leave a Google Review Texas Vets Roofing is not a Public Insurance Adjuster and is not providing or offering to provide public adjusting services to its customers. As such, nothing you may read on this website or in any of our other materials should be construed as a promise to negotiate your claim. The information and services provided by Texas Vets Roofing are limited to evaluating and discussing damage, repair scope and pricing, and then, once approved, making those repairs to the property. 818 Dalworth Dr. #A, Mesquite, TX 75149 © 2025 Texas Vets Roofing. All Rights Reserved. Privacy Policy Cookie Policy"
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:27.503Z",
+      "data": {
+        "name": "Texas Vets Roofing, INC.",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(972) 288-7663",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/mesquite/profile/roofing-contractors/texas-vets-roofing-inc-0875-90470936",
+        "review_count": null,
+        "founding_date": "09/18/2012",
+        "complaint_count": null,
+        "accredited_since": "6/8/2015",
+        "years_in_business": 13,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:32.109Z",
+      "data": {
+        "cid": "7574770833192513437",
+        "name": "Texas Vets Roofing",
+        "found": true,
+        "rating": 4.9,
+        "source": "serper",
+        "address": "818 Dalworth Dr A, Mesquite, TX 75149",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 0,
+          "target_reviews": 100
+        },
+        "reviews": [],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 474,
+        "review_source": "tiered_validated",
+        "serpapi_error": null,
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "location_searched": "Mesquite, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:54.600Z",
+      "data": {
+        "name": "Texas Vets Roofing",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 288-7663",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "open",
+        "address": "818 Dalworth Dr A, Mesquite, TX 75149",
+        "reviews": [],
+        "website": "http://www.texasvetsroofing.com/",
+        "maps_url": "https://www.google.com/maps/search/Texas%20Vets%20Roofing%20Mesquite%2C%20TX",
+        "categories": [
+          "Contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:15:59.555Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/texas-vets-roofing-mesquite?override_cta=Get+pricing+%26+availability",
+        "review_count": null
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:16:00.817Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [
+          {
+            "link": "https://www.angi.com/companylist/us/tx/hutchins/texas-vets-roofing-and-remodeling-reviews-9149579.htm",
+            "title": "Texas Vets Roofing & Remodeling Reviews - Mesquite, TX | Angi",
+            "snippet": "See reviews for Texas Vets Roofing & Remodeling in Mesquite, TX at 818 DALWORTH DR from Angi members or join today to leave your own review."
+          },
+          {
+            "link": "https://www.angi.com/companylist/us/tx/mesquite/texas-vets-roofing-reviews-11089425.htm",
+            "title": "Texas Vets Roofing Reviews - Mesquite, TX | Angi",
+            "snippet": "See reviews for Texas Vets Roofing in Mesquite, TX at from Angi members or join today to leave your own review."
+          }
+        ],
+        "result_count": 2,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:16:01.765Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:16:02.670Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "texasvetsroofing.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:16:06.128Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Texas Vets Roofing\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:16:08.485Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Texas Vets Roofing\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:16:26.964Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T15:16:07Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Texas%20Vets%20Roofing%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=N-ORad_GBq6JptQP1I2Y4A8\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T15:16:17Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Texas%20Vets%20Roofing%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=QOORaYLePNWW5OMPrPWvgQ4\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Texas Vets Roofing",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

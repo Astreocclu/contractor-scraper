@@ -1,0 +1,838 @@
+{
+  "contractor_id": 71,
+  "business_name": "DeckMasters",
+  "city": "Arlington",
+  "state": "TX",
+  "verticals": [
+    "pool",
+    "patio-covers",
+    "motorized-shades",
+    "outdoor-living"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T15:51:56.709Z",
+  "sources": {
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:09:36.919Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov DeckMasters",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:10:31.197Z",
+      "data": {
+        "found": true,
+        "query": "\"DeckMasters\" Arlington lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/wv/cascade/category/composite-decking",
+            "title": "Composite Decking near Cascade, WV",
+            "snippet": "Deckmasters Technologies Inc. Deck Builder, Patios and Decks, Deck Repair ... BBB Rating: A+ Service Area. Serving the following areas: Allegheny County, PA ..."
+          },
+          {
+            "link": "http://pgpost.com/files/49256824.pdf",
+            "title": "Legal Pages 3-15-07",
+            "snippet": "marYLaND DeCkmaSterS,. INC. a mD ForFeIteD. CorPoratIoN. SerVe: 10710 ... arLINGtoN, Va. 22207. aND. WILLIam L. WaLDe, truStee. SerVe: 4600 ..."
+          },
+          {
+            "link": "https://mhl.org/sites/default/files/newspapers/ATM-2010-08-19.pdf",
+            "title": "Next stop: Groceries",
+            "snippet": "DECKMASTERS, decks, additions, siding, windows, doors, rot repair. 603-898-9494 mydeckmasters.com. HAGGAR CONSTRUCTION. All your home ..."
+          },
+          {
+            "link": "https://www.newspapers.com/newspage/1131042216/",
+            "title": "The Forum from Fargo, North Dakota • 29",
+            "snippet": "residential remodeling, $6,000 Deckmasters, 2101 28th Ave. residential remodeling, $12,000 Don Engebretson Construction 4126 S. Timberline Drive ..."
+          },
+          {
+            "link": "https://www.columbus.gov/files/sharedassets/city/v/1/building-and-zoning/licensed-contractors-by-business-name-may23.pdf",
+            "title": "ACTIVE LICENSED CONTRACTORS BY BUSINESS NAME",
+            "snippet": "... DECKMASTERS INC. HIC General. JOHN STARK. 5582 PLANTATION ROAD SUNBURY, OH 43074. 6145782698. DEDICATED ELECTRIC LLC. Electrical Cont. JAMES ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:09:49.289Z",
+      "data": {
+        "name": "Deckmasters",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 461-9661",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/pantego/profile/patios-and-decks/deckmasters-0825-235958783",
+        "review_count": null,
+        "founding_date": "11/06/1997",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 28,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:18.134Z",
+      "data": {
+        "query": "site:yelp.com \"DeckMasters\" \"Arlington, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/deckmasters-arlington-2",
+            "title": "DECKMASTERS - Arlington, Texas",
+            "rating": 3.2,
+            "snippet": "DECKMASTERS, 3644 W Pioneer Pkwy, Arlington, TX 76013, 19 Photos, (817) 461-9661, Mon - 7:00 am - 11:30 pm, Tue - 7:00 am - 11:30 pm, Wed - 7:00 am - 11:30 ...",
+            "position": 1,
+            "ratingCount": 9
+          },
+          {
+            "link": "https://www.yelp.com/biz/deckmasters-arlington",
+            "title": "DECKMASTERS - Updated January 2026 - 364 W Pioneer ...",
+            "snippet": "More info about Deckmasters. Map. 364 W Pioneer Pkwy. Arlington, TX 76010. Directions. (817) 461-9661. Call Now. Hours. What time does Deckmasters open?",
+            "position": 2
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Deck+Repair&find_loc=Arlington%2C+TX",
+            "title": "TOP 10 BEST Deck Repair in Arlington, TX - Updated 2026",
+            "rating": 4.4,
+            "snippet": "Top 10 Best Deck Repair in Arlington, TX - Last Updated December 2025 - Yelp - Enhanced Fence, Jr's Fencing, Excalibur Fence and Decks, DeckMasters, ...",
+            "position": 3,
+            "ratingCount": 1081
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Deck+Builder&find_loc=Arlington%2C+TX",
+            "title": "TOP 10 BEST Deck Builder in Arlington, TX - Updated 2026",
+            "snippet": "Top 10 Best Deck Builder in Arlington, TX - Last Updated December 2025 - Yelp - Enhanced Fence, Jr's Fencing, Reformed Outdoor Structures, DeckMasters, ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=decksrailing&find_loc=Arlington%2C+TX",
+            "title": "THE BEST 10 DECKS & RAILING in ARLINGTON, TX",
+            "rating": 4.2,
+            "snippet": "Best Decks & Railing in Arlington, TX - Last Updated January 2026 - Enhanced Fence, Jr's Fencing, DeckMasters, Williams Carpentry, Reformed Outdoor ...",
+            "position": 5,
+            "ratingCount": 849
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Deck+Contractor&find_loc=Arlington%2C+TX",
+            "title": "TOP 10 BEST Deck Contractor in Arlington, TX",
+            "rating": 4.2,
+            "snippet": "Top 10 Best Deck Contractor in Arlington, TX - Last Updated December 2025 - Yelp - Enhanced Fence, Jr's Fencing, DeckMasters, Reformed Outdoor Structures, ...",
+            "position": 6,
+            "ratingCount": 415
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Things+to+Do&find_near=deckmasters-arlington-2",
+            "title": "Best Things to Do near DeckMasters in Arlington, TX",
+            "snippet": "Best Things to Do near DeckMasters in Arlington, TX ; 1. Game Show Battle Rooms - Dallas · (63 reviews). Team Building Activities · Trivia Hosts · Escape Games ; 2 ...",
+            "position": 7
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=patiocoverings&find_loc=arlington%2C+tx",
+            "title": "THE BEST 10 PATIO COVERINGS in ARLINGTON, TX",
+            "rating": 4.3,
+            "snippet": "... DeckMasters, TBL Contractors, Greenview Landscaping, Affordable Dfw ... arlington, tx. Map. Concrete Repair in Arlington, Texas · Outdoor Living in ...",
+            "position": 8,
+            "ratingCount": 765
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Patio+Coverings&find_loc=Arlington%2C+TX",
+            "title": "THE BEST 10 Patio Coverings in Arlington, TX",
+            "rating": 4.4,
+            "snippet": "... DeckMasters, Reformed Outdoor Structures, Greenview Landscaping, MRZ ... Arlington, TX. Map. Vinyl Fencing in Arlington, Texas · Sunroom Contractor in ...",
+            "position": 9,
+            "ratingCount": 711
+          }
+        ]
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:10:25.004Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:10:25.626Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:50.694Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:09:51.103Z",
+      "data": {
+        "cid": "15178095804613748160",
+        "name": "DeckMasters",
+        "found": true,
+        "rating": 4.4,
+        "source": "serper",
+        "address": "3644 W Pioneer Pkwy, Arlington, TX 76013",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "Edited 4 weeks ago",
+            "text": "5 Stars: Absolute Perfection! A Masterpiece of Design and Execution.\n\nI couldn't be happier with my new composite patio deck, which was designed and installed by the incredible team at DeckMasters. From the initial concept to the final installation, everything went exactly as planned.\n\nThe design phase was fantastic. Blake took our vision and elevated it, presenting my wife and I with a stunning chevron pattern for the floor that completely transformed the look of our yard.\n\nThe execution was just as impressive. Eric and Robert managed the project flawlessly, ensuring every step of the installation was on schedule and perfectly to spec. And Marco is truly a master of carpentry—watching him install the deck was amazing! The entire structure came together with the precision of a puzzle, fitted together to perfection.\n\nThe entire process was smooth, finished on time, and completely stress-free. I am extremely grateful for the professionalism and expertise demonstrated by every single person on the DeckMasters team. Highly recommend!",
+            "author": "QuietOne",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "My child bride and I enjoyed being in the backyard more than just about any other place on earth.  Though we had only a poured concrete patio (that came with the house) and a table and chairs set with adjustable umbrella, we had talked for years about adding an actual covered deck for the nirvana of a totally weatherproof way of being outside.\n\nAs a retirement gift to ourselves, we decided to pursue the backyard project of our dreams.  I researched deck and cover building companies on Google and Deck Masters came up at or near the top.  I made the call and we scheduled an appointment.  Blake came out and we spent some time going over exactly what we wanted, and how we were going to use it.  He asked questions, offered suggestions, went over all the options, and figured a price.\n\nHonestly, the price was higher than we had planned on.  But figuring the use we were sure we would get out of it, and the years we plan on being in our home, we could justify the cost as an investment rather than an expense.  We pulled the trigger and scheduled some other needed improvements and updates in order to kill a few birds with one stone.\n\nThe hardest part was waiting.  Blake said it would be about six weeks.  We scheduled all the other aspects of the project in a sequential order that made sense so we’d be ready when the deck builders showed up.\n\nSo much for the best laid plans.  Due to weather, other projects, and the home improvement gods laughing at our efforts, we had crews stacked on top of each other.  Nobody complained and everyone played well with others.  The Deck Master crew was great.  They were craftsmen who knew what they were doing, took their time, and followed through with exactly what we wanted.\n\nWe’d been told it would take ten days to two weeks and the job was completed in half that time.  Eric checked on the job during construction and addressed any questions or concerns we may have had during the process.  It matched exactly the vision we had for the backyard when completed.\n\nWe couldn’t be happier with the end result, and recommend Deck Masters for whatever project you might be considering to give your home the outdoor space you might be dreaming of.",
+            "author": "Robin Wetterling",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Beautiful work. Great team to work with.\nBlake Stewart took my ideas, and brought them to life. Eric Snyder oversaw the construction, and kept us informed about details all the way through project completion. Couldn’t be happier with the results. Took an ubiquitous 10x10 cement slab, and turned it into a beautiful space to enjoy, and entertain friends and family.",
+            "author": "Jamie Bain",
+            "rating": 5
+          },
+          {
+            "date": "Edited 3 months ago",
+            "text": "We are thrilled with our new, badly needed, patio cover! It is beautiful and really improved the amount of shade in our backyard. I got several bids before we chose DeckMasters.",
+            "author": "Terry Martin",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Here’s our story on DeckMasters. We 1st used them for a pergola 22 years ago and we needed to replace it after several hail storms. We called 2 places. When Blake came to see us he could have (and perhaps should have) upsold us, but he didn’t.  When Robert came to remove the old structure he asked me “why don’t you put up a covered structure it would give you more usage?”I told him it would cost too much! But he convinced me and we got a quote. It was hard to ignore the quote so we went for it. During construction there were two times when we were unhappy. Eric not only took the time to explain but instead of nickeling and diming us took care of them.  Our total experience with them was great and now we have a covered cedar area that is awesome!  These guys stand behind what they do, they want customers to leave with a great experience. They walk the talk. My wife Sabrina is one of the top 1% of Realtors in the DFW area and DeckMasters is on her list of contractors that actually deliver and “walk the talk.” Thank you!",
+            "author": "Anicetus Fernando",
+            "rating": 5
+          },
+          {
+            "date": "11 months ago",
+            "text": "My daughter had DeckMasters redo her deck and patio. They did such a great job that we had them do ours even though we live an hour away.\nBlake came down , measured and discussed what we would like. He asked us all kinds of questions and gave us a quote on the spot. Eric was project manager and did a great job of communicating with us on progress and any potential changes to the plan. The concrete crew and carpenters were very respectful of our property and cleaned up daily.\nWe are thinking of a gazebo in the future, I will call only DeckMasters!",
+            "author": "Aussie Dad",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Our extended back patio looks amazing!! Eric and his team did a phenomenal job. Highly recommend!",
+            "author": "Stephanie Wolf",
+            "rating": 5
+          },
+          {
+            "date": "10 months ago",
+            "text": "After 15 years in our house we finally added a patio cover! We have a fully functional outdoor living space & cannot be more thrilled! With the sun setting in our backyard we never thought we'd be able to enjoy it, but we do now!! An extra bonus, it will save on our electric bill. Pictures do not do it justice. It is ABSOLUTELY beautiful!!",
+            "author": "Kristi Porter",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 68,
+        "review_source": "tiered_validated",
+        "serpapi_error": "SERPAPI_API_KEY not set",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "location_searched": "Arlington, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:08:56.694Z",
+      "data": {
+        "query": "DeckMasters Arlington site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:10:28.941Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"DeckMasters\" Arlington",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:09:08.663Z",
+      "data": "DeckMasters Arlington review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You History History All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters ARLINGTON DECKS BUILDER ARLINGTON DECKS BUILDER @arlingtondecksbuilder4579 • If you are looking for a customized deck that matches up to your aesthetic, space, and budget, you can rely on Arlington Decks ... Subscribe 1:06 1:06 Now playing Deck IT Increases Sustainable Composite Deck Installs in Arlington Deck It Deck It • • No views 4 days ago Deck It Deck It Deck It is expanding sustainable composite deck installation services for residential and commercial properties in Arlington , ... Deck It is expanding sustainable composite deck installation services for residential and commercial properties in Arlington , ... From the video description New 0:21 0:21 Now playing Arlington Decks & Patio Covers ARLINGTON DECKS BUILDER ARLINGTON DECKS BUILDER • • 7 views 5 years ago ARLINGTON DECKS BUILDER ARLINGTON DECKS BUILDER DeckBuildersinArlingtonTexas Arlington Decks & Patio Covers in Arlington are who to call when you need a custom-built deck. DeckBuildersinArlingtonTexas Arlington Decks & Patio Covers in Arlington are who to call when you need a custom-built deck. From the video description SHORTS SHORTS Now playing MtG DeckMasters 2001 DownTimeProductions DownTimeProductions • • 567 views 4 years ago DownTimeProductions DownTimeProductions I show my Magic the Gathering cards for DeckMasters 2001. Tik Tok followers figured this out! #mtg #magicthegathering ... I show my Magic the Gathering cards for DeckMasters 2001. Tik Tok followers figured this out! #mtg #magicthegathering ... From the video description SHORTS SHORTS Now playing WTF is Deckmasters? #Short PleasantKenobi PleasantKenobi • • 38K views 3 years ago PleasantKenobi PleasantKenobi Deckmasters 2001 - a battle of the minds, or just a cheap reprint of Necro? You decide. #MTG #MagicTheGathering This channel ... Deckmasters 2001 - a battle of the minds, or just a cheap reprint of Necro? You decide. #MTG #MagicTheGathering This channel ... From the video description 3:25 3:25 Now playing New complaints arise against Deck Daddy WMAR-2 News WMAR-2 News • • 136 views 11 years ago WMAR-2 News WMAR-2 News The CEO of a deck construction, improvement company says customers got their money back. At least one customer says that's ... The CEO of a deck construction, improvement company says customers got their money back. At least one customer says that's ... From the video description 1:17 1:17 If you’re new to the trades, watch this. If you’re new to the trades, watch this. Sponsored CompanyCam CompanyCam • • If you’re new to the trades, watch this. Learn more 4:06 4:06 Now playing DeckMaster Fine Decks Video Testimonial - Natalie and Craig DeckmasterFineDecks DeckmasterFineDecks • • 200 views 8 years ago DeckmasterFineDecks DeckmasterFineDecks A video testimonial for DeckMaster Fine Decks contractor Weston Leavens. DeckMaster built this deck with ThermalWood ... A video testimonial for DeckMaster Fine Decks contractor Weston Leavens. DeckMaster built this deck with ThermalWood ... From the video description 1:48 1:48 Now playing Franklin and Sons DeckMasters shcbm shcbm • • 68 views 14 years ago shcbm shcbm TulsaDecks.com 918-745-0985 Franklin and Sons DeckMasters custom decks. TulsaDecks.com 918-745-0985 Franklin and Sons DeckMasters custom decks. From the video description 8:21 8:21 Now playing The History of MAGIC THE GATHERING | Deckmaster 2001, An Early Pair of Duel Decks The Dracovin Empire The Dracovin Empire • • 969 views 8 years ago The Dracovin Empire The Dracovin Empire Greetings, Welcome to the Dracovin Empire. Please enjoy this video and many of my other informative videos on a wide variety of ... Greetings, Welcome to the Dracovin Empire. Please enjoy this video and many of my other informative videos on a wide variety of ... From the video description 4 chapters Intro | Deckmaster 2001 | Cards | Outro 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Deckmaster 2001 Deckmaster 2001 0:25 Deckmaster 2001 0:25 Cards Cards 2:38 Cards 2:38 Outro Outro 6:27 Outro 6:27 SHORTS SHORTS Now playing Testing how hot different brands of decking get on a sunny day Cascade Fence & Deck Cascade Fence & Deck • • 58K views 2 years ago Cascade Fence & Deck Cascade Fence & Deck SHORTS SHORTS Now playing Deck was not permitted prior to listing #integrityairatl #milliondollarinspector #inspectormelvin Integrity Air and Home Inspection Integrity Air and Home Inspection • • 37K views 2 years ago Integrity Air and Home Inspection Integrity Air and Home Inspection 0:15 0:15 You can unleash the power of all-new Fever Rackets in loads of modes. Available 2/12. Only for the Nintendo Switch 2 system. Sponsored Play Nintendo Play Nintendo • • Available 2/12. Only for the Nintendo Switch 2 system. Learn more Now playing 🔴 Live - SHOCKER!...Framber Valdez Signs With The Tigers! Jim Riley | BALLCAP Sports Jim Riley | BALLCAP Sports • • 1.1K watching Jim Riley | BALLCAP Sports Jim Riley | BALLCAP Sports frambervaldez #detroittigers #mlb. frambervaldez #detroittigers #mlb. From the video description LIVE New People also watched 5:30 5:30 Now playing Why Buy TIMBERTECH? // Deck Shop Shorts The Ultimate Deck Shop The Ultimate Deck Shop • • 55K views 5 years ago The Ultimate Deck Shop The Ultimate Deck Shop Shane attempts to speed through the GIGANTIC line up from Timbertech. For more info check out the ULTIMATE DECK ... Shane attempts to speed through the GIGANTIC line up from Timbertech. For more info check out the ULTIMATE DECK ... From the video description 7 chapters Intro | TimberTech Edge | TimberTech Edge Plus | TimberTech Pro | TimberTech Pro Reserve | TimberTech Legacy | TimberTech Azek 7 chapters in this video 7 chapters Intro Intro 0:00 Intro 0:00 TimberTech Edge TimberTech Edge 0:38 TimberTech Edge 0:38 TimberTech Edge Plus TimberTech Edge Plus 1:20 TimberTech Edge Plus 1:20 TimberTech Pro TimberTech Pro 1:50 TimberTech Pro 1:50 TimberTech Pro Reserve TimberTech Pro Reserve 3:05 TimberTech Pro Reserve 3:05 TimberTech Legacy TimberTech Legacy 3:36 TimberTech Legacy 3:36 TimberTech Azek TimberTech Azek 4:06 TimberTech Azek 4:06 5:56 5:56 Now playing Zeitreise | Deckmasters 2001 - Garfield vs Finkel ausgepackt | Magic: The Gathering MagicBlogsDe MagicBlogsDe • • 772 views 5 years ago MagicBlogsDe MagicBlogsDe Wir werfen wieder die Zeitmaschine an und springen fast 20 Jahre zurück! Ich zeige euch die Deckmasters 2001 Box Garfield vs ... Wir werfen wieder die Zeitmaschine an und springen fast 20 Jahre zurück! Ich zeige euch die Deckmasters 2001 Box Garfield vs ... From the video description 0:34 0:34 Now playing Azek, by TimberTech - Arbor Collection, Mountain Redwood Deck Masters of Canada Building Supplies Deck Masters of Canada Building Supplies • • 163 views 5 years ago Deck Masters of Canada Building Supplies Deck Masters of Canada Building Supplies A close up look at TimberTech Azek PVC deck board Arbor collection, Mountain Redwood. A high-performance, eco-friendly ... A close up look at TimberTech Azek PVC deck board Arbor collection, Mountain Redwood. A high-performance, eco-friendly ... From the video description 1:57 1:57 Now playing TAMKO Evergrain Decking arrowheadbuilding (Arrowhead Building Supply) arrowheadbuilding (Arrowhead Building Supply) • • 491 views 12 years ago arrowheadbuilding (Arrowhead Building Supply) arrowheadbuilding (Arrowhead Building Supply) TAMKO Evergrain Decking. Available at Arrowhead Building Supply: St. Peters, MO; Belleville, IL; Pevely, MO; Springfield, MO; ... TAMKO Evergrain Decking. Available at Arrowhead Building Supply: St. Peters, MO; Belleville, IL; Pevely, MO; Springfield, MO; ... From the video description + 6 more 2:00 2:00 Now playing Deckmaster Fine Decks, Inc. Diamond Certified Video Profile Diamond Certified Resource Diamond Certified Resource • • 898 views 14 years ago Diamond Certified Resource Diamond Certified Resource For more information, contact them at (707) 902-3955 Deckmaster Fine Decks, Inc. designs and builds decks to blend with the ... For more information, contact them at (707) 902-3955 Deckmaster Fine Decks, Inc. designs and builds decks to blend with the ... From the video description 2:04 2:04 Now playing Don't Waste Your Money: What to buy when building a deck WXYZ-TV Detroit | Channel 7 WXYZ-TV Detroit | Channel 7 • • 317 views 6 years ago WXYZ-TV Detroit | Channel 7 WXYZ-TV Detroit | Channel 7 Don't Waste Your Money: What to buy when building a deck. Don't Waste Your Money: What to buy when building a deck. From the video description 10:12 10:12 Now playing Magic The Gathering Deckmasters Garfield vs Finkel 2001 - Rarity of foils and box?? NerdAndProudOfIt NerdAndProudOfIt • • 589 views 2 years ago NerdAndProudOfIt NerdAndProudOfIt Hey folks! Today we're gonna talk about the Deckmaster box. It truly is an awesome product ! :) Please check out my Patreon page ... Hey folks! Today we're gonna talk about the Deckmaster box. It truly is an awesome product ! :) Please check out my Patreon page ... From the video description SHORTS SHORTS Now playing The Fastest and Cheapest Way to Build a Deck or Patio in 2023! Arko Floors Arko Floors • • 1.2M views 2 years ago Arko Floors Arko Floors The Fastest and Cheapest Way to Build a Deck or Patio in 2023! #shorts. The Fastest and Cheapest Way to Build a Deck or Patio in 2023! #shorts. From the video description 4:44 4:44 Now playing How To Build A Deck - Masters Hardware Sharpimagetv Sharpimagetv • • 515 views 13 years ago Sharpimagetv Sharpimagetv SHORTS SHORTS Now playing Hear from a top Atlanta deck builder about price versus quality. DecksAndMore DecksAndMore • • 736 views 4 months ago DecksAndMore DecksAndMore https://decksandmore.biz Decks And More is one of the top deck builders in Atlanta. One numerous local and national award ... https://decksandmore.biz Decks And More is one of the top deck builders in Atlanta. One numerous local and national award ... From the video description SHORTS SHORTS Now playing Deck Pressure Washing services in Arlington, MA | Soft/Pressure washing #pressurewashing OneGuard Pressure Washing OneGuard Pressure Washing • • 1.3K views 8 months ago OneGuard Pressure Washing OneGuard Pressure Washing Deck Pressure Washing in Arlington , MA OneGuard Pressure Washing | Your Exterior Cleaning Guys We recently completed a ... Deck Pressure Washing in Arlington , MA OneGuard Pressure Washing | Your Exterior Cleaning Guys We recently completed a ... From the video description SHORTS SHORTS Now playing Composite Decks Go Build Stuff Go Build Stuff • • 6.4M views 2 years ago Go Build Stuff Go Build Stuff installing a Breaker board is the way to go! installing a Breaker board is the way to go! From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:10:27.890Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"DeckMasters\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-DeckMasters-EI_IE1817816.11,22.htm",
+            "title": "Working at DeckMasters",
+            "snippet": "Glassdoor gives you an inside look at what it's like to work at DeckMasters, including salaries, reviews, office photos, and more. This is the DeckMasters ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-DECKMASTERS-LLC-EI_IE4772284.11,26.htm",
+            "title": "Working at DECKMASTERS",
+            "snippet": "See what employees say it's like to work at DECKMASTERS. Salaries, reviews, and more - all posted by employees working at DECKMASTERS."
+          },
+          {
+            "link": "https://www.glassdoor.com/Reviews/DECKMASTERS-Reviews-E4772284.htm",
+            "title": "DECKMASTERS Reviews (1): Pros & Cons of Working At ...",
+            "snippet": "How satisfied are employees working at DECKMASTERS? -100% of DECKMASTERS employees would recommend working there to a friend based on Glassdoor reviews."
+          },
+          {
+            "link": "https://www.glassdoor.com/Salary/DECKMASTERS-Salaries-E4772284.htm",
+            "title": "How Much Does DECKMASTERS Pay in 2025? (2 Salaries)",
+            "snippet": "Explore how much DECKMASTERS employees make through salaries, wages, tips, bonuses, stock, commissions and more. Search by job title and location."
+          },
+          {
+            "link": "https://www.glassdoor.com/Reviews/Employee-Review-DECKMASTERS-RVW88509086.htm",
+            "title": "DECKMASTERS - Great place!!",
+            "snippet": "Great place!! - General Laborer DECKMASTERS Employee Review. See All Reviews (1). 4.0. Jun 23, 2024. General laborer. Current employee. Boulder, CO."
+          }
+        ],
+        "result_count": 8
+      }
+    },
+    "osha": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:10:29.733Z",
+      "data": {
+        "found": true,
+        "query": "site:osha.gov \"DeckMasters\"",
+        "source": "osha",
+        "results": [
+          {
+            "link": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1080504.015",
+            "title": "Inspection Detail | Occupational Safety and Health ...",
+            "snippet": "Deckmasters Technologies 5261-5301 Royalwood Road Cleveland, OH 44133. Mailing Address: 18362 North Salem Row, Strongsville, OH 44136. Union Status: NonUnion."
+          },
+          {
+            "link": "https://www.osha.gov/pls/imis/establishment.search?establishment=&state=OH&officetype=all&office=522300&sitezip=100000&startmonth=09&startday=08&startyear=2014&endmonth=09&endday=15&endyear=2019&p_case=all&p_start=3360&p_finish=3380&p_sort=12&p_desc=DESC&p_direction=Next&p_show=20&p_violations_exist=both",
+            "title": "Establishment Search Results | Occupational Safety and ...",
+            "snippet": "0522300, OH, Prog Related, Partial, 236118, 3, Deckmasters Technologies. 3395, 1081449.015, 07/28/2015, 0522300, OH, Planned, Partial ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/establishment.search?establishment=&state=OH&officetype=all&office=522300&sitezip=100000&startmonth=07&startday=26&startyear=2015&endmonth=08&endday=02&endyear=2020&p_case=all&p_sort=12&p_desc=ASC&p_violations_exist=both",
+            "title": "Establishment Search Results | Occupational Safety and Health ...",
+            "snippet": "0522300, OH, Prog Related, Partial, 236118, 3, Deckmasters Technologies. 3, 1081449.015, 07/28/2015, 0522300, OH, Planned, Partial, 238160 ..."
+          },
+          {
+            "link": "https://www.osha.gov/ords/imis/establishment.search?establishment=&state=all&officetype=all&office=522300&sitezip=100000&startmonth=02&startday=26&startyear=2012&endmonth=03&endday=05&endyear=2017&p_case=all&p_violations_exist=both&p_start=&p_finish=2960&p_sort=4&p_desc=DESC&p_direction=Next&p_show=20",
+            "title": "Establishment Search Results | Occupational Safety and ...",
+            "snippet": "Deerfield Construction Company, Inc. 2974, 1080504.015, 07/28/2015, 0522300, OH, Prog Related, Partial, 236118, 3, Deckmasters Technologies."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:09:22.540Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=DeckMasters&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:09:26.119Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:09:30.408Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:10:27.191Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"DeckMasters\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.DECKMASTERSSCREENED.17759843.html",
+            "title": "Deckmasters Reviews - Fargo, ND",
+            "snippet": "See reviews for Deckmasters in Fargo, ND at 5507 53RD Ave. SW from Angi members or join today to leave your own review."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.DeckmastersofSouth.92025311.html",
+            "title": "Deckmasters of South Florida Reviews - Coconut Creek, FL",
+            "snippet": "Deckmasters of South Florida, deck builders in Fort Lauderdale and Miami, create masterpieces for your outdoor living space. Decks, docks, boardwalks ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.DeckmasterFineDecks.2325079.html",
+            "title": "Deckmaster Fine Decks, Inc. Reviews - Sebastopol, CA",
+            "snippet": "They helped us make decisions regarding the material and design and were very helpful in obtaining the permits required. We would recommend Deckmasters without ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.DeckmastersEastPGH.19610079.html",
+            "title": "Deckmasters- East PGH Reviews - North Versailles, PA",
+            "snippet": "Deckmasters- East PGH is a great company. We pride ourselves on a lifetime warranty on product and workmanship because we know we are going to do it right ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.DeckMasters.135193602.html",
+            "title": "Deck Masters Reviews - La Vergne, TN",
+            "snippet": "Very professional & dedicated deck builder! Deck Masters are my first choice for all future decking needs! Craig F. May 2023."
+          }
+        ],
+        "result_count": 9
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:09:39.196Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com DeckMasters",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:09:40.933Z",
+      "data": {
+        "query": "site:dallascounty.org DeckMasters civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:09:41.954Z",
+      "data": {
+        "query": "site:collincountytx.gov DeckMasters",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:09:43.389Z",
+      "data": {
+        "query": "site:dentoncounty.gov DeckMasters",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:10:48.874Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-05T03:10:34Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22DeckMasters%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=KQqEabv4G5nFp84P_MDOuQM\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-05T03:10:43Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22DeckMasters%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=MgqEaZ7UMqWup84PmLzAkQ4\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "DeckMasters",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:11:09.560Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "DECKMASTERS OF DALLAS INC",
+        "taxpayer_number": "32002779406"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:11:09.562Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:10:17.959Z",
+      "data": {
+        "name": "DeckMasters",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 461-9661",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "open",
+        "address": "3644 W Pioneer Pkwy, Arlington, TX 76013",
+        "reviews": [],
+        "website": "http://deckandpatiocovers.com/?utm_source=Google&utm_medium=Organic&utm_campaign=Ad+Pages",
+        "maps_url": "https://www.google.com/maps/search/DeckMasters%20Arlington%2C%20TX",
+        "categories": [
+          "Deck builder"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:10:23.357Z",
+      "data": {
+        "found": true,
+        "rating": 3.2,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/deckmasters-arlington-2",
+        "review_count": 9
+      }
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:09:10.034Z",
+      "data": {
+        "query": "site:nextdoor.com DeckMasters Arlington",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/deck-masters-plano-tx/",
+            "title": "Deck Masters - Pantego, TX",
+            "snippet": "Deck Masters is a Neighborhood Favorite in 3 neighborhoods. In Arlington: La Frontera. In Pantego: Arlington Heights. In Grand Prairie: Sherwood Estates. It ...",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/pages/odd-jobs-by-olivia-arlington-tx/",
+            "title": "Odd Jobs By Olivia",
+            "snippet": "Hello! My name is Olivia and I am 14 looking for odd jobs to do for money. Similar Businesses.",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "error",
+      "fetched_at": "2026-02-05T03:09:44.147Z",
+      "data": null
+    },
+    "website_warranty": {
+      "status": "error",
+      "fetched_at": "2026-02-05T03:08:11.521Z",
+      "data": null
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:10:26.356Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "deckandpatiocovers.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:08:54.276Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:09:38.130Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://security.app.cpa.state.tx.us/",
+            "title": "Page Unavailable - Comptroller.Texas.Gov",
+            "snippet": "The webpage you are trying to access is temporarily out of service. We are either working to address the issue or conducting routine maintenance, ...",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 7
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 9
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:10:17.962Z",
+      "data": {
+        "name": "DeckMasters",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 461-9661",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "open",
+        "address": "3644 W Pioneer Pkwy, Arlington, TX 76013",
+        "reviews": [],
+        "website": "http://deckandpatiocovers.com/?utm_source=Google&utm_medium=Organic&utm_campaign=Ad+Pages",
+        "maps_url": "https://www.google.com/maps/search/DeckMasters%20Arlington%2C%20TX",
+        "categories": [
+          "Deck builder"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:10:28.466Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"DeckMasters\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/deckmasters",
+            "title": "Deckmasters Careers and Employment",
+            "snippet": "Find out what works well at Deckmasters from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Two-Seasons-Services-Deckmasters/salaries",
+            "title": "How much does Two Seasons Services/ Deckmasters pay?",
+            "snippet": "See Two Seasons Services/ Deckmasters salaries collected directly from employees and jobs on Indeed."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Housesavers-Deckmasters/salaries",
+            "title": "How much does Housesavers Deckmasters pay?",
+            "snippet": "See Housesavers Deckmasters salaries collected directly from employees and jobs on Indeed. Salary estimated from 3 past and present job postings on Indeed."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:11:24.451Z",
+      "data": {
+        "cost": 0.0007819000000000001,
+        "summary": "The provided Google reviews appear authentic and detailed, but the analysis is limited by a strategic sample that excludes all negative and neutral reviews. The substantial rating discrepancy with Yelp (3.2) indicates the full picture of customer experience is not represented. The long business history and specific details in positive reviews are strong authentic signals.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-05T03:11:24.451Z",
+        "fake_signals": [
+          "Google sample shows only 5-star reviews, no negative or mixed reviews provided",
+          "Some Google reviews use overly enthusiastic, generic language (e.g., 'Absolute Perfection! A Masterpiece')"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 3.2,
+          "google": 4.4,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Customer returned after 22 years for a replacement, indicating long-term satisfaction"
+          ]
+        },
+        "authentic_signals": [
+          "Specific employee names mentioned (Blake, Eric, Robert)",
+          "Detailed project descriptions (chevron pattern, replacing old pergola, converting concrete slab)",
+          "Varied writing styles and personal stories (retirement gift, daughter's referral)",
+          "Company has been in business for 28 years"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Significant rating gap between Google (4.4) and Yelp (3.2). Google reviews are uniformly positive (5-star sample), while Yelp's lower rating suggests a mix of experiences not captured in the provided Google sample."
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-06T02:31:12.001Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for DeckMasters",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "DeckMasters",
+        "searched_at": "2026-02-06T02:30:58.053851",
+        "total_records": 0
+      }
+    }
+  }
+}

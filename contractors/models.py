@@ -14,6 +14,17 @@ TIER_CHOICES = [
     ('unranked', 'Unranked'),  # <50
 ]
 
+LEADERBOARD_STATUS_CHOICES = [
+    ('PROVISIONAL', 'Provisional'),
+    ('RANKED', 'Ranked'),
+    ('STALE', 'Stale'),
+]
+
+PAIRWISE_STATUS_CHOICES = [
+    ('PENDING', 'Pending'),
+    ('COMPLETED', 'Completed'),
+]
+
 
 class Vertical(models.Model):
     name = models.CharField(max_length=100)
@@ -125,6 +136,68 @@ class Contractor(models.Model):
         return "Passes" if self.passes_threshold else "Does Not Pass"
 
 
+class ContractorVerticalRating(models.Model):
+    contractor = models.ForeignKey(Contractor, on_delete=models.CASCADE, related_name='vertical_ratings')
+    vertical = models.ForeignKey(Vertical, on_delete=models.CASCADE, related_name='contractor_ratings')
+    rating = models.FloatField(default=1500)
+    rating_adj = models.FloatField(default=1500)
+    uncertainty = models.FloatField(default=350)
+    comparisons_count = models.IntegerField(default=0)
+    status = models.CharField(max_length=20, choices=LEADERBOARD_STATUS_CHOICES, default='PROVISIONAL')
+    last_compared_at = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        unique_together = [['contractor', 'vertical']]
+
+    def __str__(self):
+        return f"{self.contractor.business_name} / {self.vertical.slug} ({self.rating_adj:.1f})"
+
+
+class PairwiseComparison(models.Model):
+    vertical = models.ForeignKey(Vertical, on_delete=models.CASCADE, related_name='pairwise_comparisons')
+    contractor_a = models.ForeignKey(Contractor, on_delete=models.CASCADE, related_name='pairwise_a')
+    contractor_b = models.ForeignKey(Contractor, on_delete=models.CASCADE, related_name='pairwise_b')
+    winner = models.ForeignKey(
+        Contractor,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='pairwise_wins'
+    )
+    confidence = models.IntegerField(default=50)
+    s_winner = models.FloatField(null=True, blank=True)
+    expected_a = models.FloatField(null=True, blank=True)
+    expected_b = models.FloatField(null=True, blank=True)
+    delta_a = models.FloatField(null=True, blank=True)
+    delta_b = models.FloatField(null=True, blank=True)
+    model_version = models.TextField(blank=True)
+    status = models.CharField(max_length=20, choices=PAIRWISE_STATUS_CHOICES, default='PENDING')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.vertical.slug}: {self.contractor_a.business_name} vs {self.contractor_b.business_name}"
+
+
+class RatingHistory(models.Model):
+    contractor_vertical_rating = models.ForeignKey(
+        ContractorVerticalRating,
+        on_delete=models.CASCADE,
+        related_name='history'
+    )
+    rating = models.FloatField()
+    rating_adj = models.FloatField()
+    uncertainty = models.FloatField()
+    comparisons_count = models.IntegerField()
+    source_comparison = models.ForeignKey(
+        PairwiseComparison,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='rating_history'
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+
+
 # Risk level choices for forensic audits
 RISK_LEVEL_CHOICES = [
     ('CRITICAL', 'Critical'),
@@ -153,6 +226,14 @@ SEVERITY_CHOICES = [
     ('MODERATE', 'Moderate'),
     ('MINOR', 'Minor'),
 ]
+
+
+class EvidenceEvent(models.Model):
+    contractor = models.ForeignKey(Contractor, on_delete=models.CASCADE, related_name='evidence_events')
+    vertical = models.ForeignKey(Vertical, on_delete=models.CASCADE, related_name='evidence_events')
+    event_type = models.CharField(max_length=100)
+    severity = models.CharField(max_length=20, choices=SEVERITY_CHOICES, default='MODERATE')
+    created_at = models.DateTimeField(auto_now_add=True)
 
 
 class ContractorAudit(models.Model):
@@ -272,6 +353,7 @@ class AuditRecord(models.Model):
     red_flags = models.JSONField(default=list, blank=True)
     positive_signals = models.JSONField(default=list, blank=True)
     gaps_identified = models.JSONField(default=list, blank=True)
+    guarantee_analysis = models.JSONField(default=dict, blank=True)
     sources_used = models.JSONField(default=list, blank=True)
     collection_rounds = models.IntegerField(default=0)
     total_cost = models.FloatField(default=0.0)

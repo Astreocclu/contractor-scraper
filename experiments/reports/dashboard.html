@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audit Experiment Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 20px; background: #f5f5f5; }
+    .header { background: #2c3e50; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+    .header h1 { margin: 0; }
+    .winner { background: #27ae60; color: white; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; }
+    .card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .card h3 { margin-top: 0; color: #2c3e50; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 8px; text-align: left; border-bottom: 1px solid #eee; }
+    th { background: #ecf0f1; }
+    .pass { color: #27ae60; font-weight: bold; }
+    .fail { color: #e74c3c; font-weight: bold; }
+    .chart-container { height: 300px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Audit Experiment Matrix Results</h1>
+    <p>12 variations × 5 contractors × 5 runs = 300 total audits</p>
+  </div>
+
+  <div class="winner">
+    <h2>🏆 Winner: A2</h2>
+    <p>Rank Consistency: 100% |
+       Variance: 0.0 |
+       Separation: 77 pts</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Leaderboard</h3>
+      <table>
+        <tr><th>Rank</th><th>Variation</th><th>Rank %</th><th>Var</th><th>Sep</th></tr>
+        
+          <tr>
+            <td>1</td>
+            <td>A2</td>
+            <td>100%</td>
+            <td>0.0</td>
+            <td>77</td>
+          </tr>
+        
+          <tr>
+            <td>2</td>
+            <td>A3</td>
+            <td>100%</td>
+            <td>0.0</td>
+            <td>70</td>
+          </tr>
+        
+          <tr>
+            <td>3</td>
+            <td>B1</td>
+            <td>100%</td>
+            <td>0.0</td>
+            <td>65</td>
+          </tr>
+        
+          <tr>
+            <td>4</td>
+            <td>B3</td>
+            <td>100%</td>
+            <td>0.0</td>
+            <td>77</td>
+          </tr>
+        
+          <tr>
+            <td>5</td>
+            <td>D3</td>
+            <td>100%</td>
+            <td>0.0</td>
+            <td>100</td>
+          </tr>
+        
+          <tr>
+            <td>6</td>
+            <td>A1</td>
+            <td>100%</td>
+            <td>0.6</td>
+            <td>65</td>
+          </tr>
+        
+          <tr>
+            <td>7</td>
+            <td>D2</td>
+            <td>100%</td>
+            <td>0.6</td>
+            <td>76</td>
+          </tr>
+        
+          <tr>
+            <td>8</td>
+            <td>D1</td>
+            <td>100%</td>
+            <td>0.6</td>
+            <td>65</td>
+          </tr>
+        
+          <tr>
+            <td>9</td>
+            <td>C1</td>
+            <td>100%</td>
+            <td>2.3</td>
+            <td>67</td>
+          </tr>
+        
+          <tr>
+            <td>10</td>
+            <td>C2</td>
+            <td>100%</td>
+            <td>3.0</td>
+            <td>79</td>
+          </tr>
+        
+          <tr>
+            <td>11</td>
+            <td>C3</td>
+            <td>100%</td>
+            <td>4.1</td>
+            <td>71</td>
+          </tr>
+        
+          <tr>
+            <td>12</td>
+            <td>B2</td>
+            <td>0%</td>
+            <td>0.0</td>
+            <td>0</td>
+          </tr>
+        
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>Rank Consistency Comparison</h3>
+      <div class="chart-container">
+        <canvas id="rankChart"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Score Variance Comparison</h3>
+      <div class="chart-container">
+        <canvas id="varianceChart"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Pass/Fail Summary</h3>
+      <table>
+        <tr><th>Variation</th><th>Rank</th><th>Variance</th><th>Separation</th></tr>
+        
+          <tr>
+            <td>A2</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>A3</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>B1</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>B3</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>D3</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>A1</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>D2</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>D1</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>C1</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>C2</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>C3</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        
+          <tr>
+            <td>B2</td>
+            <td class="fail">FAIL</td>
+            <td class="fail">FAIL</td>
+            <td class="fail">FAIL</td>
+          </tr>
+        
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const variations = ["A2","A3","B1","B3","D3","A1","D2","D1","C1","C2","C3","B2"];
+    const rankData = [100,100,100,100,100,100,100,100,100,100,100,0];
+    const varianceData = [0,0,0,0,0,0.56,0.570366271009146,0.6062177826491071,2.2904729991650936,2.993235537619708,4.054630982410734,0];
+
+    new Chart(document.getElementById('rankChart'), {
+      type: 'bar',
+      data: {
+        labels: variations,
+        datasets: [{
+          label: 'Rank Consistency %',
+          data: rankData,
+          backgroundColor: rankData.map(v => v >= 100 ? '#27ae60' : '#e74c3c')
+        }]
+      },
+      options: { scales: { y: { beginAtZero: true, max: 100 } } }
+    });
+
+    new Chart(document.getElementById('varianceChart'), {
+      type: 'bar',
+      data: {
+        labels: variations,
+        datasets: [{
+          label: 'Score Variance',
+          data: varianceData,
+          backgroundColor: varianceData.map(v => v < 5 ? '#27ae60' : '#e74c3c')
+        }]
+      },
+      options: { scales: { y: { beginAtZero: true } } }
+    });
+  </script>
+</body>
+</html>

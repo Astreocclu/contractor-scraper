@@ -1,0 +1,786 @@
+{
+  "contractor_id": 628,
+  "business_name": "Pool Ninja DFW",
+  "city": "Mesquite",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T15:51:56.705Z",
+  "sources": {
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:31:38.588Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:24.882Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Pool Ninja DFW",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:55.510Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-26T04:32:40Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Pool%20Ninja%20DFW%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=5w9OaYCHMN6up84P7Zv7sAI\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-26T04:32:50Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Pool%20Ninja%20DFW%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=8Q9OaZfjKu6rp84PgIr0iQY\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Pool Ninja DFW",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:30.076Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:30:49.685Z",
+      "data": {
+        "query": "site:yelp.com \"Pool Ninja DFW\" \"Mesquite, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/pool-ninja-dfw-mesquite",
+            "title": "POOL NINJA DFW - Updated December 2025 - Yelp",
+            "rating": 5,
+            "snippet": "POOL NINJA DFW, Mesquite, TX 75150, 4 Photos, (214) 387-1441, Mon - 8:00 am - 6:00 pm, Tue - 8:00 am - 6:00 pm, Wed - 8:00 am - 6:00 pm, ...",
+            "position": 1,
+            "ratingCount": 1
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=Mesquite%2C+TX",
+            "title": "THE BEST 10 POOL CLEANERS in MESQUITE, TX",
+            "rating": 3.8,
+            "snippet": "Pool Ninja DFW (5/5). What are some businesses with a large number of reviews for pool cleaners in Mesquite, TX? These are some businesses with a large ...",
+            "position": 2,
+            "ratingCount": 774
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=poolcleaners&find_loc=Dallas%2C+TX&start=50",
+            "title": "THE BEST 10 POOL CLEANERS in DALLAS, TX - Updated 2025",
+            "snippet": "Best Pool Cleaners in Dallas, TX - Last Updated September 2025 - Native Pool Service, Cool Pool People, Pool Ninja DFW ... Mesquite, TX 75150. (214) 387-1441. We ...",
+            "position": 3
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool&find_near=your-cbd-store-mesquite-mesquite-2",
+            "title": "Best Pool near Your CBD Store - Mesquite in Mesquite, TX",
+            "snippet": "... Mesquite, TX 75150. (972) 488-9622. Pool Ninja DFW - Pool near me - Mesquite, Texas. Pool Ninja DFW. 5.0 (1 review). 0.2 mi•. This is a placeholder. Mesquite, ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=Gun+Barrel+City%2C+TX+75156",
+            "title": "THE BEST 10 POOL CLEANERS near GUN BARREL CITY ...",
+            "rating": 3.2,
+            "snippet": "Pool Ninja DFW. 5.0 (1 review). Pool Cleaners · Hot Tub & Pool. Closed today. Mesquite, TX 75150 ... Pool Ninja DFW, came to be! The Pool Ninja wants to provide ...",
+            "position": 5,
+            "ratingCount": 61
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool&find_near=indio-products-mesquite-4",
+            "title": "Best Pool near Indio Products in Mesquite, TX",
+            "rating": 4.1,
+            "snippet": "... Pool Ninja DFW, Cue Sport Billiards, J Murphy's Club, The Pool Wash, KayCee ... Mesquite, TX · Taxidermy in Mesquite, TX. Filters. Yelp · Home Services · Pool ...",
+            "position": 6,
+            "ratingCount": 566
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Private+Hot+Tub+Rental&find_loc=Mesquite%2C+TX",
+            "title": "TOP 10 BEST Private Hot Tub Rental in Mesquite, TX",
+            "rating": 4.1,
+            "snippet": "These are some highly rated private hot tub rental in Mesquite, TX: Tex Mex Pool Care (5/5). Aqua Architects (5/5). Pool Ninja DFW (5/5). Southern Hospitality ...",
+            "position": 7,
+            "ratingCount": 2505
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=homecleaning&find_loc=Towne+Crossing+Blvd%2C+Mesquite%2C+TX+75150",
+            "title": "THE BEST 10 HOME CLEANING near TOWNE CROSSING ...",
+            "rating": 4.8,
+            "snippet": "... Pool Ninja DFW, Lunas cleaning services, SJL Commercial Cleaning Services ... Mesquite, TX · Baking Supplies in Mesquite, TX. Filters. Free price estimates ...",
+            "position": 8,
+            "ratingCount": 48
+          },
+          {
+            "link": "https://m.yelp.com/biz/aquastromgh-mesquite",
+            "title": "AQUASTROMGH - Updated October 2025 - Request a Quote",
+            "snippet": "Mesquite, TX · Home Services · Pool Cleaners. Aquastromgh ... Mesquite, TX 75150. Directions. (469) 920-7060. Call ... Photo of Pool Ninja DFW. Pool Ninja DFW. 1 ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pond+Supplies&find_loc=Mesquite%2C+TX",
+            "title": "TOP 10 BEST Pond Supplies in Mesquite, TX - Updated 2025",
+            "rating": 3.9,
+            "snippet": "Bunches (5/5). Pool Ninja DFW (5/5). What are some businesses with a large number of reviews for local fish stores in Mesquite, TX? These are some businesses ...",
+            "position": 10,
+            "ratingCount": 896
+          }
+        ]
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:32:07.433Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Pool%20Ninja%20DFW&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Pool% 20Ninja% 20DFW&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Pool% 20Ninja% 20DFW&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://echo.epa.gov/help/training",
+                "title": "ECHO Training"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Pool% 20Ninja% 20DFW&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Pool% 20Ninja% 20DFW&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Pool% 20Ninja% 20DFW&State= TX"
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs | ECHO | US EPA",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Pool% 20Ninja% 20DFW&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= Pool% 20Ninja% 20DFW&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= Pool% 20Ninja% 20DFW&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter and is refreshed ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= Pool% 20Ninja% 20DFW&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= Pool% 20Ninja% 20DFW&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:31:00.406Z",
+      "data": {
+        "found": true,
+        "rating": 5,
+        "status": "closed",
+        "review_count": 1,
+        "business_name": "Share Pool Ninja DFW"
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:32.826Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:33.378Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:32:11.282Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:32:17.568Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:33.911Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Pool Ninja DFW\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:32:25.969Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 9
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:26.978Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Pool Ninja DFW",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:27.864Z",
+      "data": {
+        "query": "site:dallascounty.org Pool Ninja DFW civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:32:28.886Z",
+      "data": {
+        "query": "site:collincountytx.gov Pool Ninja DFW",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_McKinney.pdf",
+            "title": "master plan - parks recreation open space",
+            "snippet": "Through balanced parks and open space development, a visionary network of parks, facilities, and natural resources, McKinney will continue to be set apart as a ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:29.812Z",
+      "data": {
+        "query": "site:dentoncounty.gov Pool Ninja DFW",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:31:29.874Z",
+      "data": "Trustpilot Search Results Companies Rail Ninja rail.ninja • 8.1K reviews 4.0 Pool pool.net • 637 reviews 4.3 Ninja Kitchen DE ninjakitchen.de • 20K reviews 4.6 Ninja Casino www.ninjacasino.com • 49 reviews 1.9 Ninja Kitchen ninjakitchen.com • 582 reviews 1.5 Categories Pool Academy The best companies in the category 'Pool Academy' Swimming Pool The best companies in the category 'Swimming Pool' Pool Hall The best companies in the category 'Pool Hall' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (505) Rail Ninja rail.ninja 4.0 8,096 reviews UNIT G 15/F TAL BUILDING 49 AUSTIN ROAD, Kowloon City, Hong Kong Pool pool.net 4.3 637 reviews Edertalstr. 86, Mörlenbach, Germany Ninja Kitchen DE ninjakitchen.de 4.6 20,096 reviews 3150 Century Way, Leeds, United Kingdom Ninja Casino www.ninjacasino.com 1.9 49 reviews Malta Ninja Kitchen ninjakitchen.com 1.5 582 reviews United Kingdom Formación Ninja formacion.ninja 4.7 726 reviews Spain Ninja Kitchen FR ninjakitchen.fr 4.3 9,581 reviews 3150 Century Way, Leeds, United Kingdom Ninja ninja.ro 3.2 1 review Romania Dfw Limos dfw-limos.com 3.7 1 review United States DFW Security dfwsecurity.com 3.5 90 reviews 2533 E Loop 820 N, Fort Worth, United States Previous 1 2 3 4 51 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Pool Academy Sports Swimming Pool Sports Pool Hall Sports Swimming Pool Supply Store Construction & Manufacturing Swimming Pool Contractor Construction & Manufacturing Pool Billard Club Sports are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2025 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:31:34.510Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:32:37.625Z",
+      "data": {
+        "found": true,
+        "query": "\"Pool Ninja DFW\" Mesquite lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://m.yelp.com/search?cflt=poolcleaners&find_loc=Dallas%2C+TX&start=50",
+            "title": "THE BEST 10 POOL CLEANERS in DALLAS, TX - Updated 2025",
+            "snippet": "Best Pool Cleaners in Dallas, TX - Last Updated September 2025 - Native Pool Service, Cool Pool People, Pool Ninja DFW, Texas Pool and Spa, Meyer's Pool ..."
+          },
+          {
+            "link": "https://www.mapquest.com/us/texas/leslies-pool-supplies-569980420",
+            "title": "Leslie's Pool Supplies",
+            "snippet": "This complaint is for the rude temporary fill in guy who has all the ... Pool Ninja DFW. Educational aids and electronic training materials. Pool Ninja ..."
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Supplies&find_loc=Mesquite%2C+TX",
+            "title": "TOP 10 BEST Pool Supplies in Mesquite, TX - Updated 2025",
+            "snippet": "Pool Ninja DFW - Pool Supplies near me - Mesquite, Texas. 31. Pool Ninja DFW. 5.0 ... scam. He provided logical demonstrations on how nothing they said made ..."
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Lowes&find_loc=Commerce+St%2C+Rowlett%2C+TX+75088",
+            "title": "Lowes Commerce St, Rowlett, TX 75088",
+            "snippet": "Pool Ninja DFW - Lowes near me - Rowlett, Texas. 63. Pool Ninja DFW. 5.0 (1 review). Pool Cleaners · Hot Tub & Pool. 7.0 mi•. This is a placeholder. Mesquite, ..."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:31:40.724Z",
+      "data": {
+        "query": "Pool Ninja DFW Mesquite site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 10, 2024",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2024/01/10/kids-can-stay-warm-at-these-indoor-play-places-around-dallas-fort-worth/",
+            "title": "Kids can stay warm at these indoor play places around ...",
+            "snippet": "Here are 20 indoor places where children can jump, play and learn in temperature-controlled comfort year-round.",
+            "position": 1
+          },
+          {
+            "date": "Apr 21, 2013",
+            "link": "https://www.dallasnews.com/news/2013/04/21/summer-fun-returns-to-lewisville-the-colony-flower-mound/",
+            "title": "Summer fun returns to Lewisville, The Colony, Flower Mound",
+            "snippet": "When: June 17-20, 1-3 p.m.. Cost: $95/ $105. Description: Students will practice empty-hand techniques, as well as use kid-safe ninja weapons ...",
+            "position": 2
+          },
+          {
+            "date": "Aug 14, 2015",
+            "link": "https://www.dallasnews.com/sports/mavericks/2015/08/14/10-things-you-might-not-know-about-javale-mcgee-including-his-teenage-mutant-ninja-turtle-music-video-appearance/",
+            "title": "10 things to know about Mavs C JaVale McGee, including ...",
+            "snippet": "McGee last suited up for the Mavs during the 2015-16 season. He played just 34 games (two starts) in his first season with the mid-rebuild Mavericks.",
+            "position": 3
+          },
+          {
+            "date": "Aug 7, 2018",
+            "link": "https://www.dallasnews.com/high-school-sports/2018/08/07/highly-successful-volleyball-coach-leaves-plano-west-will-help-open-ninja-nation-in-frisco/",
+            "title": "Highly successful volleyball coach leaves Plano West, will ...",
+            "snippet": "Brittany Rodriguez said Tuesday that she resigned as Plano West's coach on Friday and is leaving coaching after more than 400 career wins.",
+            "position": 4
+          },
+          {
+            "date": "May 22, 2019",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2019/05/22/summer-camp-guide-more-than-100-camps-and-classes-for-kids-in-dallas-fort-worth/",
+            "title": "Summer camp guide: more than 100 camps and classes ...",
+            "snippet": "Each spring, Guide rounds up day camps and classes to help parents plan a super summer for the kids while they are out of school.",
+            "position": 5
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=03",
+            "title": "sitemap.xml",
+            "snippet": "... mesquite-man-charged-with-capital-murder-in-death-of-2-year-old-girl/140958 ... pool-2-1.jpg?fit=1024%2C683</image:loc></image:image></url><url><loc> ...",
+            "position": 6
+          },
+          {
+            "date": "Jul 30, 2014",
+            "link": "https://www.dallasnews.com/sitemap/2014/july/30/",
+            "title": "sitemap - 2014 - july",
+            "snippet": "Dallas police looking for 'serial cigarette' robbers who've hit a handful of convenience stores in July. by Robert Wilonsky.",
+            "position": 7
+          },
+          {
+            "date": "Jun 15, 2018",
+            "link": "https://www.dallasnews.com/arts-entertainment/holidays/2018/06/15/where-to-watch-2018-fourth-of-july-fireworks-in-dallas-fort-worth/",
+            "title": "Where to watch 2018 Fourth of July fireworks in Dallas-Fort ...",
+            "snippet": "There will be a Ninja Challenge through an obstacle course and a chance to meet local competitors from American Ninja Warrior and the \"Are You ...",
+            "position": 8
+          },
+          {
+            "date": "Mar 31, 2021",
+            "link": "https://www.dallasnews.com/sports/dallas-empire/2021/03/31/crimsix-dallas-empire-rethinking-search-and-destroy-prior-to-2nd-call-of-duty-league-major/",
+            "title": "'Crimsix', Dallas Empire rethinking search and destroy prior ...",
+            "snippet": "The Dallas Empire team in the Call of Duty League won the championship last year. They are located at Envy Gaming Headquarters in Dallas, Monday ...",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:36.475Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Pool Ninja DFW\" Mesquite",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:31:52.850Z",
+      "data": "Pool Ninja DFW Mesquite review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters SHORTS SHORTS Now playing Learnin' to backflip at Mesquite Aquatic Center Nathan Nathan • • 37 views 1 year ago Nathan Nathan SHORTS SHORTS Now playing From Dirt to Dream: Texas Pool Ninja Builds a Stunning Fiberglass Pool in 30 Days Texas Pool Ninja Dreamscapes Texas Pool Ninja Dreamscapes • • 10 views 3 months ago Texas Pool Ninja Dreamscapes Texas Pool Ninja Dreamscapes What's up guys — Texas Pool Ninja here! In this video, we take you behind the scenes of a full fiberglass pool installation, ... What's up guys — Texas Pool Ninja here! In this video, we take you behind the scenes of a full fiberglass pool installation, ... From the video description 1:26 1:26 Now playing Pool Ninja DFW Promotional ELAR Fun Room ELAR Fun Room • • 46 views 4 years ago ELAR Fun Room ELAR Fun Room Mrs. Lickteig just having fun doing a voice over for a swimming pool company! Pool Ninja DFW is the best for swimming pool ... Mrs. Lickteig just having fun doing a voice over for a swimming pool company! Pool Ninja DFW is the best for swimming pool ... From the video description SHORTS SHORTS Now playing #pool #familyfunnight #Mesquite #nv #shortvideo #fypyoutube 7/25/2024 Natlyn Vlog Natlyn Vlog • • 507 views 1 year ago Natlyn Vlog Natlyn Vlog SHORTS SHORTS Now playing Aubrey’s ninja pool trick #followme #likeandsubscribe #pool #ninja #sunfun Aubrey’s Silly Adventures Aubrey’s Silly Adventures • • 183 views 2 years ago Aubrey’s Silly Adventures Aubrey’s Silly Adventures SHORTS SHORTS Now playing Ninja Pool clip, Acqua Plus 2024 Ninja-Pool Ninja-Pool • • 48 views 1 year ago Ninja-Pool Ninja-Pool Ninja Pool obstacles over water, Acqua Plus water park, Crete. Ninja Pool obstacles over water, Acqua Plus water park, Crete. From the video description SHORTS SHORTS Now playing 75149 home with pool! Mesquite Texas homes #realestate Dallas Texas DFW Realtor, Brittany Realzola Dallas Texas DFW Realtor, Brittany Realzola • • 93 views 8 months ago Dallas Texas DFW Realtor, Brittany Realzola Dallas Texas DFW Realtor, Brittany Realzola 213 Skylark ST, Mesquite , TX 75149 Backyard Oasis in Mesquite , Texas : Affordable Luxury Living! The property features a pool , ... 213 Skylark ST, Mesquite , TX 75149 Backyard Oasis in Mesquite , Texas : Affordable Luxury Living! The property features a pool , ... From the video description SHORTS SHORTS Now playing Acqua Plus End of season party, Crete 2023 Ninja-Pool Ninja-Pool • • 41 views 2 years ago Ninja-Pool Ninja-Pool SHORTS SHORTS Now playing Foundations matter — in life and in pools. Texas Pool Ninja Dreamscapes Texas Pool Ninja Dreamscapes • • 255 views 5 months ago Texas Pool Ninja Dreamscapes Texas Pool Ninja Dreamscapes SHORTS SHORTS Now playing Ninja Pool over the ground clip, Acqua Plus 2024 Ninja-Pool Ninja-Pool • • 18 views 1 year ago Ninja-Pool Ninja-Pool obstacle over water, inspired by obstace races like Spartan or TV obstacle oriented such as Ninja Warrior. obstacle over water, inspired by obstace races like Spartan or TV obstacle oriented such as Ninja Warrior. From the video description SHORTS SHORTS Now playing ⚠️ WARNING for Texas Pool Buyers: Don’t Get Burned by Cheap Pool Shells! Texas Pool Ninja Dreamscapes Texas Pool Ninja Dreamscapes • • 115 views 4 months ago Texas Pool Ninja Dreamscapes Texas Pool Ninja Dreamscapes Texas homeowners — not all fiberglass pools are created equal. We're issuing this urgent warning because a growing number of ... Texas homeowners — not all fiberglass pools are created equal. We're issuing this urgent warning because a growing number of ... From the video description 4K People also watched 3:57 3:57 Now playing Crystal Clear Pool Water, the secret that pool stores don't want you to know!! FIX THIS FIRST... Next Level DIY Next Level DIY • • 1M views 2 years ago Next Level DIY Next Level DIY Stop wasting money on expensive pool chemicals. Perfect pool water can be easy and cheap to obtain. Testing your water is ... Stop wasting money on expensive pool chemicals. Perfect pool water can be easy and cheap to obtain. Testing your water is ... From the video description 6 chapters Intro | Balancing your water | Testing your water | Raising your alkalinity | Adding baking soda | Outro 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Balancing your water Balancing your water 0:43 Balancing your water 0:43 Testing your water Testing your water 1:01 Testing your water 1:01 Raising your alkalinity Raising your alkalinity 2:17 Raising your alkalinity 2:17 Adding baking soda Adding baking soda 2:55 Adding baking soda 2:55 Outro Outro 3:25 Outro 3:25 6:17 6:17 Now playing Top 5 MISTAKES When Vacuuming Your Pool! Hallmark Pool Supplies Hallmark Pool Supplies • • 653K views 2 years ago Hallmark Pool Supplies Hallmark Pool Supplies HAVE A QUESTION FOR MARK? ⏪ Book a 1 on 1 phone session / virtual service call with Mark today! HAVE A QUESTION FOR MARK? ⏪ Book a 1 on 1 phone session / virtual service call with Mark today! From the video description 6 chapters Intro | Mistake 1 | Mistake 2 | Mistake 3 | Mistake 4 | Mistake 5 6 chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Mistake 1 Mistake 1 0:22 Mistake 1 0:22 Mistake 2 Mistake 2 1:16 Mistake 2 1:16 Mistake 3 Mistake 3 2:26 Mistake 3 2:26 Mistake 4 Mistake 4 4:10 Mistake 4 4:10 Mistake 5 Mistake 5 5:15 Mistake 5 5:15 0:17 0:17 Now playing Shoulder Flip Jacob Brown Jacob Brown • • 393 views 6 years ago Jacob Brown Jacob Brown jacobanddebbieacro.com. jacobanddebbieacro.com. From the video description 4K 0:11 0:11 Now playing Backflip Off Shoulder Jacob Brown Jacob Brown • • 839 views 6 years ago Jacob Brown Jacob Brown Backflip Off Shoulder. Learned this one from Micki and Jeremy. Backflip Off Shoulder. Learned this one from Micki and Jeremy. From the video description 4K + 6 more SHORTS SHORTS Now playing My dad was trying to get a good picture by a hotel roof top pool! #ninja #bts #fun #pool Connor’s Craziness Connor’s Craziness • • 14K views 3 years ago Connor’s Craziness Connor’s Craziness SHORTS SHORTS Now playing The Pool Ninja! 😂 SFVerity SFVerity • • 6.6K views 2 years ago SFVerity SFVerity 'Escape Velocity' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au #wholesome #hearttouching #heart ... 'Escape Velocity' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au #wholesome #hearttouching #heart ... From the video description SHORTS SHORTS Now playing New Custom Pool build in Mesquite TX by Elitepoolsandlandscaping.com Elite Pools and Patio Covers Elite Pools and Patio Covers • • 38 views 5 years ago Elite Pools and Patio Covers Elite Pools and Patio Covers Lagoon Style pool being dug today in Mesquite Tx # pool #outdoorliving #pooldesign. Lagoon Style pool being dug today in Mesquite Tx # pool #outdoorliving #pooldesign. From the video description SHORTS SHORTS Now playing cool cool swimming pool #nature #automobile #z900 #ninja #z900wheelie #rider #love #duke #pleasesubs Him Rider 200 Him Rider 200 • • 1K views 1 year ago Him Rider 200 Him Rider 200 SHORTS SHORTS Now playing former swimming pool, abandoned for parking #strongtowns #yimby #texas #dallas Strong Towns Mesquite, TX Strong Towns Mesquite, TX • • 983 views 5 months ago Strong Towns Mesquite, TX Strong Towns Mesquite, TX SHORTS SHORTS Now playing Pool Ninja Travel With Us G&J Travel With Us G&J • • 5.2K views 2 years ago Travel With Us G&J Travel With Us G&J SHORTS SHORTS Now playing Ninja Pool Tony Dizant Tony Dizant • • 15K views 2 years ago Tony Dizant Tony Dizant Space Rocker of the Planet Earth || Tony Dizant - #spacerockeroftheplanetearthtonydizant. Space Rocker of the Planet Earth || Tony Dizant - #spacerockeroftheplanetearthtonydizant. From the video description SHORTS SHORTS Now playing Pool cleaning work #pools #poolcleaning #Vlog Teresa Thompson Teresa Thompson • • 1.4K views 3 months ago Teresa Thompson Teresa Thompson Pool Cleaning Work # pools #poolcleaning #Vlog #fyp #highlandbros #fok. Pool Cleaning Work # pools #poolcleaning #Vlog #fyp #highlandbros #fok. From the video description SHORTS SHORTS Now playing Casablanca hotel swimming pool in Mesquite Nevada||PinkosTv||#shorts PinkosTv PinkosTv • • 1K views 2 years ago PinkosTv PinkosTv Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:31:53.896Z",
+      "data": {
+        "query": "site:nextdoor.com Pool Ninja DFW Mesquite",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:35.949Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Pool Ninja DFW\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:35.471Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Pool Ninja DFW\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:37.091Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Pool Ninja DFW\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:32:31.692Z",
+      "data": {
+        "cid": "12967249650615808181",
+        "name": "Pool Ninja DFW",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "709 Via Altos, Mesquite, TX 75150",
+        "reviews": [
+          {
+            "date": "4 years ago",
+            "text": "Pool Ninja DFW helped me when I moved into a new home with a very green pool. They cleared it up without draining it. Quickly and for a very reasonable price thank you!!",
+            "author": "Shannon Buffernugget",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "review_count": 1,
+        "review_source": "serper"
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:32:32.077Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/pool-ninja-dfw-mesquite",
+        "review_count": null
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:55.646Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Pool Ninja DFW",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:56.167Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-26T04:32:56.173Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-26T04:33:08.868Z",
+      "data": {
+        "cost": 0.00065226,
+        "summary": "The review landscape is highly suspicious due to near-total absence of reviews across all platforms. The single 4-year-old Google review, while positive, is insufficient to establish credibility for an active service business. The business appears in numerous Yelp search listings but has zero Yelp reviews, which is a major red flag. The pattern suggests either a very new/inactive business or potential review manipulation to hide a poor reputation.",
+        "confidence": "HIGH",
+        "analyzed_at": "2025-12-26T04:33:08.868Z",
+        "fake_signals": [
+          "Extremely low review volume (1 review) for an established service business",
+          "Single review is 4 years old with no recent activity",
+          "No reviews on any other major platform (Yelp, Angi, Houzz, Trustpilot)",
+          "Business appears in many Yelp search results but has no actual Yelp reviews",
+          "Review content is generic and lacks specific crew names, detailed timelines, or unique project identifiers"
+        ],
+        "recommendation": "DO_NOT_TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Review mentions a specific problem (green pool) and outcome (cleared without draining)",
+          "Review expresses genuine gratitude and mentions reasonable pricing"
+        ],
+        "fake_review_score": 85,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only one platform (Google) has a rating, and it is a perfect 5.0. There is no data from other platforms to compare for discrepancy."
+      }
+    }
+  }
+}

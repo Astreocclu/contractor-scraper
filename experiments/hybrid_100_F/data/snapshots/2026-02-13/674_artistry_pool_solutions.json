@@ -1,0 +1,784 @@
+{
+  "contractor_id": 674,
+  "business_name": "Artistry Pool Solutions",
+  "city": "Benbrook",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T02:36:37.725Z",
+  "sources": {
+    "website": {
+      "status": "error",
+      "fetched_at": "2026-01-07T19:57:42.820Z",
+      "data": null
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:57:43.721Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:51.364Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/artistry-pool-solutions-benbrook",
+        "review_count": null
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:55:59.157Z",
+      "data": {
+        "query": "site:yelp.com \"Artistry Pool Solutions\" \"Benbrook, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/artistry-pool-solutions-benbrook",
+            "title": "ARTISTRY POOL SOLUTIONS - Updated December 2025",
+            "rating": 5,
+            "snippet": "More info about Artistry Pool Solutions ; Benbrook, TX 76126. Wedgwood. Directions ; (817) 825-8706. Call Now ; Visit Website. http://www.artistrypoolsolutions.com.",
+            "position": 1,
+            "ratingCount": 1
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Cleaners&find_loc=Benbrook%2C+TX",
+            "title": "TOP 10 BEST Pool Cleaners near Benbrook, TX",
+            "rating": 4.2,
+            "snippet": "These are some highly rated businesses for pool cleaners near Benbrook, TX: Atlas Pools (5/5). Near Southside Pools (5/5). Artistry Pool Solutions (5/5).",
+            "position": 2,
+            "ratingCount": 397
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Hot+Tub+%26+Pool&find_loc=Benbrook%2C+TX",
+            "title": "TOP 10 BEST Hot Tub & Pool near Benbrook, TX - Updated 2025",
+            "snippet": "... Artistry Pool Solutions, Pool Pros DFW, JR Spas ... Fall Festivals in Benbrook, TX · Medical Supplies in Benbrook, TX. Filters ... Best Hot Tub & Pool near Benbrook ...",
+            "position": 3
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Supply+Store&find_loc=Benbrook%2C+TX",
+            "title": "TOP 10 BEST Pool Supply Store near Benbrook, TX",
+            "snippet": "... Artistry Pool Solutions, Aquaman Pools, Aloha ... Pumpkin Farm in Benbrook, TX · Indian Clothing Stores in Benbrook, TX. Filters ... Best Pool Supply Store near ...",
+            "position": 4
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Hot+Tub+Installation&find_loc=Benbrook%2C+TX",
+            "title": "TOP 10 BEST Hot Tub Installation near Benbrook, TX",
+            "snippet": "... Artistry Pool Solutions, PMC Electric, Elevated ... Furnace Repair in Benbrook, TX · Leaf Removal in Benbrook, TX · Notaries in Benbrook, TX. Filters ... Best Hot ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Cleaners&find_loc=Cleburne%2C+TX",
+            "title": "THE BEST 10 Pool Cleaners in Cleburne, TX",
+            "rating": 4.1,
+            "snippet": "Artistry Pool Solutions - Pool Cleaners near me - Cleburne, Texas. Artistry Pool Solutions. 5.0 (1 review). Pool & Hot Tub Service · Pool Cleaners. Benbrook, TX ...",
+            "position": 6,
+            "ratingCount": 120
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=pool+resurfacing&find_loc=Arlington%2C+TX&start=80",
+            "title": "TOP 10 BEST Pool Resurfacing in Arlington, TX",
+            "rating": 3.2,
+            "snippet": "... Artistry Pool Solutions - pool resurfacing near me - Arlington, Texas ... Benbrook, TX 76126. (817) 825-8706. On their website: pool resurfacing. Mike and ...",
+            "position": 7,
+            "ratingCount": 446
+          },
+          {
+            "link": "https://www.yelp.com/biz/cherry-pool-service-benbrook",
+            "title": "CHERRY POOL SERVICE - Updated January 2026",
+            "rating": 5,
+            "snippet": "BEST of Benbrook, TX Things to Do near Cherry Pool Service · BEST of Benbrook ... Photo of Artistry Pool Solutions. Artistry Pool Solutions. 1 review.",
+            "position": 8,
+            "ratingCount": 1
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Cleaners&find_loc=Mineral+Wells%2C+TX",
+            "title": "TOP 10 BEST Pool Cleaners near Mineral Wells, TX",
+            "rating": 3.4,
+            "snippet": "Artistry Pool Solutions - Pool Cleaners near me - Mineral Wells, Texas ... Benbrook, TX 76126. (817) 825-8706. Mike and his team are amazing. Open and honest ...",
+            "position": 9,
+            "ratingCount": 70
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:45.884Z",
+      "data": {
+        "cid": "12081181270898878395",
+        "name": "Artistry Pool Solutions",
+        "found": true,
+        "rating": 4.7,
+        "source": "serper",
+        "address": "7500 W Vickery Blvd, Fort Worth, TX 76116",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "a year ago",
+            "text": "It took a year in between visits for us to decide to resurface our pool, but Mike Cunningham was patient and the utmost professional. He was courteous and kind in his interactions with us, and his team was prompt, professional, and did a beautiful job!\n\nIn less than a week, we have an even more gorgeous pool than before!\n\nThanks Mike!",
+            "author": "Kelly Christenson",
+            "rating": 5
+          },
+          {
+            "date": "7 months ago",
+            "text": "Professional from start to finish. Re-plastered, replaced pool and spa lights, heater, chlorinator and mastic. Added smart controls. Good communication during the many weather events during the process. The pool looks great!",
+            "author": "Barry Jaecks",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We asked Artistry Pools to resurface our 20 year old pool. They also replaced the tile, keeping the coping as it was still in great shape.  They did a wonderful job and even picked out the tile as we could not decide.  The guys that came out to do the work were courteous and worked in a timely manner.  We couldn’t be more pleased with Mike and his team.",
+            "author": "HDCA Ex-Officio",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Mike did an outstanding job renovating our pool! We wanted a handrail so that I could get into the pool by myself (I have mobility issues and do much of my physical therapy exercises in the pool). We also decided to change the tile since so many had fallen off following the deep freeze a few years ago. Mike suggested that since the pool had to be drained to replace tile, we might want to consider resurfacing. We agreed and are so glad we did! Our pool has never looked better! We are extremely pleased with the work Mike and Artistry Pool Solutions did. Mike is easy to work with and makes sure everything is done well. We highly recommend Artistry Pool Solutions for any of your pool needs.",
+            "author": "Karen Arrington",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Artistry Pool Solutions remodeled our pool and did a fantastic job. Mike Cunningham (company owner) had great design ideas and was outstanding in communicating with us throughout the process. The total remodel was completed on schedule and for what we felt was a very reasonable price. We love the new look and highly recommend this company.",
+            "author": "Jason",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We had our pool resurfaced, by (what I thought) a reputable company out of Grapevine and were having issues with formations of \"stalactites\" in our pool, starting after year 1.  They told me it was out of warranty and was an organic issue and refused to come look at it, so I scoured the internet for recommendations to get a second opinion.  That's when I found Artistry Pool.  Mike came out to take a look and let me know unfortunately, the only way to get rid of them would be to resurface again.  There was no way of knowing what the underlying issue was.  This was directly after snowmageddon and I told him, I just can't, it's only been a few years since re-plaster and we just had to replace all the pool equipment because of the freeze.   While here, he checked all of the recently installed equipment to make sure everything was working properly, even though he didn't do the work.  He said we could probably get a few more years out of the pool, but would just need to watch it.  When I asked what I owed him for the visit, he said nothing, we do what we can to help.  That's when I knew this was going to be my pool company for life!  Since then, Artistry Pool, has done a few small repairs and after 8 years of formations continuing to grow in the pool, we decided it was time to have it resurfaced.  I emailed Mike, he came out and gave an updated quote.  He worked with us on timing, as we had some travel plans.  Our pool pump motor had just starting making a noise, and upon initial review, Mike said the bearings were bad.  Pump would still work in that condition, so our call to replace or not.  We replaced the pump and he suggested a re-route of a pipe as we no longer used the salt cell.  Pool flows better than ever.  His crew had to spend extra time to correct the delamination from the poor job the previous company did.  Reasonable cost increase.  Our water pressure was low and it took longer to fill the pool than we thought.  He rearranged his schedule over the holiday to accommodate the pool start-up chemicals.  He is a wealth of knowledge and provided us with recommendations on general pool health and answered every single question we had.  He is competent, communicative, professional and most importantly an honest human being.\nOur pool looks beautiful and we are so happy with the results.   Highly recommend Artistry Pool Solutions!",
+            "author": "Amy Brown",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Mike Cunningham and Artistry Pool Solutions did an outstanding job putting together our pool renovations.  From the stone work on coping to tile to the final plaster work, all was done in a professional and efficient manner.  Mike handled everything in a manner that assured us the work would result in a job that was beyond our expectations.  Was very pleased all work and clean up after the job.  We be going back to Mike for any future pool or equipment work or repairs.  GREAT COMPANEY!",
+            "author": "MDL",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "THESE GUYS ARE AMAZING!!\nWe had huge issues with our pool chemicals! It was horrendous and I could not get it back. It would turn green every week! We had a big pool party and needed it fixed asap!! THEY DID IT IN JUST IN TIME!! Have used them for monthly service ever since and will never do it myself again! We had a awesome pool all summer!",
+            "author": "TeamLocos1",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "review_count": 20,
+        "review_source": "serper",
+        "collection_cost": 0.002
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:56:13.059Z",
+      "data": {
+        "found": true,
+        "rating": 4.7,
+        "status": null,
+        "review_count": 20,
+        "business_name": "See photos Artistry Pool Solutions"
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:52.408Z",
+      "data": {
+        "url": "https://www.angi.com/companylist/us/tx/benbrook/artistry-pool-solutions-reviews-1.htm",
+        "found": true,
+        "title": "Artistry Pool Solutions Reviews - Fort Worth, TX",
+        "rating": 4.7,
+        "source": "serper_angi",
+        "confidence": "high",
+        "review_count": 84
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:57:52.916Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:57:53.764Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "artistrypoolsolutions.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:56:41.562Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:56:45.477Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:56:47.824Z",
+      "data": {
+        "query": "Artistry Pool Solutions Benbrook site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:57:56.713Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Artistry Pool Solutions\" Benbrook",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:00.234Z",
+      "data": "Artistry Pool Solutions Benbrook review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 3:57 3:57 Now playing Crystal Clear Pool Water, the secret that pool stores don't want you to know!! FIX THIS FIRST... Next Level DIY Next Level DIY • • 1M views 2 years ago Next Level DIY Next Level DIY Stop wasting money on expensive pool chemicals . Perfect pool water can be easy and cheap to obtain. Testing your water is ... Stop wasting money on expensive pool chemicals . Perfect pool water can be easy and cheap to obtain. Testing your water is ... From the video description 6 chapters Intro | Balancing your water | Testing your water | Raising your alkalinity | Adding baking soda | Outro 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Balancing your water Balancing your water 0:43 Balancing your water 0:43 Testing your water Testing your water 1:01 Testing your water 1:01 Raising your alkalinity Raising your alkalinity 2:17 Raising your alkalinity 2:17 Adding baking soda Adding baking soda 2:55 Adding baking soda 2:55 Outro Outro 3:25 Outro 3:25 4:23 4:23 Now playing 6 POOL CHEMICALS to Stop Buying Right Now Swim University Swim University • • 124K views 2 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 8 chapters Stop Buying These Pool Chemicals | 1. Alkalinity Increaser | 2. pH Increaser | 3. pH Decreaser | 4. Chlorine Stabilizer | 5. Calcium Hardness | 6. Phosphate Remover | How to Stop Buying Chlorine 8 chapters in this video 8 chapters Stop Buying These Pool Chemicals Stop Buying These Pool Chemicals 0:00 Stop Buying These Pool Chemicals 0:00 1. Alkalinity Increaser 1. Alkalinity Increaser 0:37 1. Alkalinity Increaser 0:37 2. pH Increaser 2. pH Increaser 1:05 2. pH Increaser 1:05 3. pH Decreaser 3. pH Decreaser 1:51 3. pH Decreaser 1:51 4. Chlorine Stabilizer 4. Chlorine Stabilizer 2:27 4. Chlorine Stabilizer 2:27 5. Calcium Hardness 5. Calcium Hardness 2:48 5. Calcium Hardness 2:48 6. Phosphate Remover 6. Phosphate Remover 3:04 6. Phosphate Remover 3:04 Shorts An honest review: @primatepooltools 1.5K views Best Pool Cleaning Video! 1.6M views Watch as Dye Does the Trick 393K views Fiberglass swimming pools are dug/set in one day. #fiberglasspools #modernpoolbuild #excavation 1.4M views How to choose the right color for your pool! 🌴 #luxuryhome #pool #pooldesign #backyard 388K views Why Fiberglass Pools are Going Out of Style 23K views Pool Technician | $68,930 to clean pools and repair pool equipment 👨‍🔧 🌊 🏊‍♀️ 🤽‍♂️ 8K views Satisfying mini pebble plaster application. Pool plastering at its finest 😮‍💨👌 1M views Making money in the pool service business... 25K views Pool Cleaning Tips 101: Netting, Vacuuming, Chemicals #poolcleaning 38K views Show more Show less 7:00 7:00 Now playing Pool Service Business - Understanding your service rates Pool Rescuers Pool Rescuers • • 15K views 5 years ago Pool Rescuers Pool Rescuers 0:00 What's up pool service pros my name is Ryan today I want to talk to you about understanding your service rates and why it's ... What's up pool service pros my name is Ryan today I want to talk to you about understanding your service rates and why it's ... Automatic captions 4K 1:31 1:31 Now playing Pool Company Won't Honor Warranty Due To Bad Review CBS TEXAS CBS TEXAS • • 415 views 7 years ago CBS TEXAS CBS TEXAS The homeowners called Consumer Justice to try to get results. The homeowners called Consumer Justice to try to get results. From the video description CC 12:51 12:51 Now playing Why Do Pool Cleaning Businesses Fail? | Don't Miss the 8th Reason! Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner • • 22K views 3 years ago Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... From the video description 8 chapters 8 Reasons Pool Cleaning Businesses Fail? | Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset | Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly | Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly | Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer | Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast | Reason 6 - Pool Cleaning Businesses Fail – Poor Communication | Reason 7 - Pool Cleaning Businesses Fail – Not Paying their Taxes 8 chapters in this video 8 chapters 8 Reasons Pool Cleaning Businesses Fail? 8 Reasons Pool Cleaning Businesses Fail? 0:00 8 Reasons Pool Cleaning Businesses Fail? 0:00 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 2:36 2:36 Now playing Fiberglass Pools Are CHEAP! Top 4 Fiberglass Pools Myths Exposed! Pool-ology Pool-ology • • 25K views 1 year ago Pool-ology Pool-ology Think fiberglass pools are cheap, low quality, and won't last? Think again! We're busting the top 4 myths about fiberglass pools ... Think fiberglass pools are cheap, low quality, and won't last? Think again! We're busting the top 4 myths about fiberglass pools ... From the video description 4K Summary This video debunks common misconceptions about fiberglass pools, such as the idea that they are cheap, low quality, and won't last. The video explores four myths, including the idea that fiberglass pool surfaces bubble and blister, and that they look cheap. It also addresses the misconception that fiberglass pools can't be customized and that they often float or pop out of the ground. AI-generated video summary Quality and accuracy may vary. Summary This video debunks common misconceptions about fiberglass pools, such as the idea that they are cheap, low quality, and won't last. The video explores four myths, including the idea that fiberglass pool surfaces bubble and blister, and that they look cheap. It also addresses the misconception that fiberglass pools can't be customized and that they often float or pop out of the ground. 9:35 9:35 Now playing How I Keep My Pool Crystal Clear (Pool Stores HATE This) Rudie 2.0 Rudie 2.0 • • 74K views 6 months ago Rudie 2.0 Rudie 2.0 Want a pool so clear it looks fake? I've got you. In this video, I walk you through how I maintain my Intex XR 18-foot above-ground ... Want a pool so clear it looks fake? I've got you. In this video, I walk you through how I maintain my Intex XR 18-foot above-ground ... From the video description 3:49 3:49 Now playing Swimming Pool Surface Types Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL • • 2.8K views 1 year ago Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL Pool Surface Types: There are a number of pool surface types you can chose from. Standard white plaster, Colored plaster, ... Pool Surface Types: There are a number of pool surface types you can chose from. Standard white plaster, Colored plaster, ... From the video description 4K 16:12 16:12 Now playing CHEMICAL FREE POOL, safe, no salt? Little maintenance, not a gimmick it works! #820 Pool Ionizer The Kelley's Country Life The Kelley's Country Life • • 118K views 2 years ago The Kelley's Country Life The Kelley's Country Life A chemical free or no salt pool seems almost impossible, I have been running mine for months with no issues through the heat of ... A chemical free or no salt pool seems almost impossible, I have been running mine for months with no issues through the heat of ... From the video description CC 17:24 17:24 Now playing Pool Care for Beginners- How to clean and maintain your pool- Filmed in 4k Fix It With Jake Fix It With Jake • • 507K views 6 years ago Fix It With Jake Fix It With Jake Pool Test Strips: https://amzn.to/44YyNT8 Pentair Pump Basket: https://amzn.to/2YEXSnI Polaris Black Robot: ... Pool Test Strips: https://amzn.to/44YyNT8 Pentair Pump Basket: https://amzn.to/2YEXSnI Polaris Black Robot: ... From the video description 4K 8 chapters Intro | Cleaning | Skimmer | Filter | Circulation | Equipment | Chemistry | Salt 8 auto-generated chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Cleaning Cleaning 1:07 Cleaning 1:07 Skimmer Skimmer 3:31 Skimmer 3:31 Filter Filter 6:12 Filter 6:12 Circulation Circulation 7:25 Circulation 7:25 Equipment Equipment 9:26 Equipment 9:26 Chemistry Chemistry 13:00 Chemistry 13:00 5:37 5:37 Now playing SALT WATER vs. CHLORINE POOL: Which One Is Better? Swim University Swim University • • 151K views 3 years ago Swim University Swim University The Salt Water Pool Cheat Sheet (Free): https://swimu.com/saltwater The Pool Care Handbook: https://swimu.com/book The Pool ... The Salt Water Pool Cheat Sheet (Free): https://swimu.com/saltwater The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 5 chapters Introduction to Salt Water vs. Chlorine Pools | What is a Salt Water Pool? | Benefits of a Salt Water Pool | Downsides to a Salt Water Pool | Is a Salt Water Pool Worth It? 5 chapters in this video 5 chapters Introduction to Salt Water vs. Chlorine Pools Introduction to Salt Water vs. Chlorine Pools 0:00 Introduction to Salt Water vs. Chlorine Pools 0:00 What is a Salt Water Pool? What is a Salt Water Pool? 0:48 What is a Salt Water Pool? 0:48 Benefits of a Salt Water Pool Benefits of a Salt Water Pool 1:27 Benefits of a Salt Water Pool 1:27 Downsides to a Salt Water Pool Downsides to a Salt Water Pool 2:48 Downsides to a Salt Water Pool 2:48 Is a Salt Water Pool Worth It? Is a Salt Water Pool Worth It? 4:36 Is a Salt Water Pool Worth It? 4:36 People also watched 8:35 8:35 Now playing How to paint and renew your swimming pool ( this DIY video is less than 10 minutes long). Team USA Team USA • • 129K views 4 years ago Team USA Team USA Helping you create your masterpiece. Serving San Diego County since 1999. For free quotes please text daVinci to ... Helping you create your masterpiece. Serving San Diego County since 1999. For free quotes please text daVinci to ... From the video description 4K 3:48 3:48 Now playing Replastering my Swimming Pool - What it Cost and How Long it Took #pool #swimmingpool Scott's Smart Home Scott's Smart Home • • 9.9K views 7 months ago Scott's Smart Home Scott's Smart Home In this video I take you through end to end my recent pool replastering project. How long did it take to get the plaster redone and ... In this video I take you through end to end my recent pool replastering project. How long did it take to get the plaster redone and ... From the video description 4K Summary This video documents a complete swimming pool replastering project, detailing each step of the renovation. The process includes draining, demolition, deck work, tile replacement, and finally, plastering. Viewers will see the entire nine-day transformation. AI-generated video summary Quality and accuracy may vary. Summary This video documents a complete swimming pool replastering project, detailing each step of the renovation. The process includes draining, demolition, deck work, tile replacement, and finally, plastering. Viewers will see the entire nine-day transformation. 25:22 25:22 Now playing unfinished 1980's pool thep00lguy ML thep00lguy ML • • 5.7M views 4 years ago thep00lguy ML thep00lguy ML this is quite an interesting one here with this pool they started to build it during the 80's and I've since learnt the owner was doing it ... this is quite an interesting one here with this pool they started to build it during the 80's and I've since learnt the owner was doing it ... From the video description 4K Summary This video follows the restoration of an unfinished pool from the 1980s. The pool was abandoned mid-construction and left in a state of disrepair. The video documents the process of cleaning, painting, and plumbing the pool, culminating in the filling and testing of the system. AI-generated video summary Quality and accuracy may vary. Summary This video follows the restoration of an unfinished pool from the 1980s. The pool was abandoned mid-construction and left in a state of disrepair. The video documents the process of cleaning, painting, and plumbing the pool, culminating in the filling and testing of the system. 8:06 8:06 Now playing What Are The Most Common Leaks In Pools? Swimming Pool Steve Swimming Pool Steve • • 59K views 1 year ago Swimming Pool Steve Swimming Pool Steve From https://www.swimimingpoolsteve.com/pages/leak-detection.html this video talks about the three most common leak sources ... From https://www.swimimingpoolsteve.com/pages/leak-detection.html this video talks about the three most common leak sources ... From the video description 10 chapters Introduction to common pool leaks | Pool lights are a very common leak source | How to repair leaking pool light with butyl tape | Return lines leaking from a hinge point | How to prevent return pipe sheering at pool wall | Pool skimmers leak in many different ways | Why do pool skimmers leak? | How to start finding a pool leak with a bucket test? | Bucket test part two | Conclusion and referral to www.swimmingpoolsteve.com 10 chapters in this video 10 chapters Introduction to common pool leaks Introduction to common pool leaks 0:00 Introduction to common pool leaks 0:00 Pool lights are a very common leak source Pool lights are a very common leak source 0:20 Pool lights are a very common leak source 0:20 How to repair leaking pool light with butyl tape How to repair leaking pool light with butyl tape 2:15 How to repair leaking pool light with butyl tape 2:15 Return lines leaking from a hinge point Return lines leaking from a hinge point 2:40 Return lines leaking from a hinge point 2:40 How to prevent return pipe sheering at pool wall How to prevent return pipe sheering at pool wall 4:10 How to prevent return pipe sheering at pool wall 4:10 Pool skimmers leak in many different ways Pool skimmers leak in many different ways 5:02 Pool skimmers leak in many different ways 5:02 Why do pool skimmers leak? Why do pool skimmers leak? 5:22 Why do pool skimmers leak? 5:22 + 6 more Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:01.273Z",
+      "data": {
+        "query": "site:nextdoor.com Artistry Pool Solutions Benbrook",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/benbrook-clear-pool-services-benbrook-tx/",
+            "title": "Benbrook Clear Pool Services - Benbrook, TX - Nextdoor",
+            "snippet": "Stewart Pools · 22 ; Blue Planet Pool Service · 6 ; Artistry Pool Solutions · 41 ; Stewart Swimming Pool Management · 2 ; LRS pool & spa service. 2.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:57:56.023Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Artistry Pool Solutions\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:57:57.744Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Artistry Pool Solutions\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:16.566Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Artistry%20Pool%20Solutions&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Artistry% 20Pool%"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Artistry% 20Pool% 20 TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Quick Search. Search By. Location; Facility Name/ID. Search by city, state, and/or zip code. Search. Search by facility name or ID Search. More Search Options.",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Artistry% 20Pool% 20 TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Artistry% 20Pool% 20 TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Artistry% 20Pool% 20 TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Artistry% 20Pool% TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= Artistry% 20Pool% 20 TX"
+            }
+          },
+          {
+            "date": "Dec 3, 2024",
+            "link": "https://echo.epa.gov/resources/general-info/tool-guide",
+            "title": "ECHO Tool Guide | ECHO | US EPA",
+            "snippet": "Select search criteria using the Wastewater/Stormwater/Biosolids Facility Search, or use the \"Quick Search” on the ECHO home page and enter the ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= Artistry% 20Pool% 20 TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= Artistry% 20Pool% 20 TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= Artistry% 20Pool% TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:21.310Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2026 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:28.125Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:57:36.223Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Artistry Pool Solutions",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:37.243Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.sos.state.tx.us/search.shtml?dropXSL=&pr=default&prox=page&rorder=500&rprox=500&rdfreq=500&rwfreq=500&rlead=500&sufs=0&order=r&rdepth=0&query=CERTIFICATE+OF+ACCOUNT+STATUS",
+            "title": "Current Search Results - the Texas Secretary of State",
+            "snippet": "If you've been asked to obtain a “certificate of good standing,” the first step is to determine what type of certificate is being requested.",
+            "position": 8,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 9
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:57:38.364Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Artistry Pool Solutions",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:39.251Z",
+      "data": {
+        "query": "site:dallascounty.org Artistry Pool Solutions civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "[PDF] A 21st Century Mosaic - Dallas County",
+            "snippet": "Dallas County features a number of lakes that are reservoirs for municipal water and recreational use. These include Lake Ray Hubbard, Lake North, Joe Pool, ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:40.605Z",
+      "data": {
+        "query": "site:collincountytx.gov Artistry Pool Solutions",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210517_2636/33858_agenda-packet-may.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL Thursday, May ...",
+            "snippet": "The Regional Transportation. Council (RTC) previously approved funding to support vanpool services. Each transit agency operates their vanpool ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:57:41.627Z",
+      "data": {
+        "query": "site:dentoncounty.gov Artistry Pool Solutions",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:54.701Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Artistry Pool Solutions\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.ArtistryPoolSolutions.25157541.html",
+            "title": "Artistry Pool Solutions Reviews - Fort Worth, TX",
+            "snippet": "Artistry Pool Solutions performs weekly cleaning and maintenance on my in-ground pool and also completes repairs, as needed. I tried several pool maintenance ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/review/25157541",
+            "title": "7500 W. Vickery Blvd., Fort Worth, TX",
+            "snippet": "Artistry Pool Solutions. 7500 W. Vickery Blvd., Fort Worth, TX. *Indicates required fields. How would you rate this pro? *. Did you hire this pro? *."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Fort_Worth.TX.-12070.html",
+            "title": "Find Pool builders and installers in Fort Worth",
+            "snippet": "With over 20 years experience in the pool industry, we at Artistry Pool Solutions take pride in the quality of our work and exceeding our customer's ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Burleson.TX.-12070.html",
+            "title": "Get matched with top pool builders and installers in Burleson, TX",
+            "snippet": "Artistry Pool Solutions. 4.66(. 84. ) •Approved Pro. Artistry Pool ... With over 20 years experience in the pool industry, we at Artistry Pool Solutions ..."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:57:55.391Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Artistry Pool Solutions\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:57:58.977Z",
+      "data": {
+        "found": true,
+        "query": "\"Artistry Pool Solutions\" Benbrook lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://benbrooklife.com/neighbors-weigh-in-on-pool-service-picks/",
+            "title": "Neighbors Weigh In on Pool Service Picks.",
+            "snippet": "A few popular mentions included Artistry Pool Solutions, a smaller ... Benbrook Residents Urged to Be Cautious Following Alleged Cleaning Scam."
+          },
+          {
+            "link": "https://houstonrepublic.com/five-professional-licenses-set-to-expire-during-q1-in-benbrook/",
+            "title": "Five professional licenses set to expire during Q1 in Benbrook",
+            "snippet": "Five professional licenses set to expire during Q1 in Benbrook ; Appliance installation contractor, Artistry Pool Solutions, 396 ; Electrical contractor, Titan ..."
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Leak+Detection&find_loc=Benbrook%2C+TX",
+            "title": "Best Pool Leak Detection near Benbrook, TX",
+            "snippet": "... Artistry Pool Solutions, Aloha Pool Service, True Blue Leak Detection ... scam. He provided logical demonstrations on how nothing they said made sense ..."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:58:17.104Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T19:58:01Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Artistry%20Pool%20Solutions%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=ybpeaY7lDJS3wN4P_YH3kQY\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T19:58:11Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Artistry%20Pool%20Solutions%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=0rpeaZeVO8-Hp84PqqKZgQU\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Artistry Pool Solutions",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:58:17.258Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Artistry Pool Solutions",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:58:17.809Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:58:17.810Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:58:29.139Z",
+      "data": {
+        "cost": 0.00097132,
+        "summary": "The reviews for Artistry Pool Solutions appear highly authentic. They are detailed, mention specific projects and personnel, and reflect genuine customer experiences. The lack of negative reviews in the sample and moderate review volume are not strong indicators of manipulation, but rather suggest a smaller, well-regarded local contractor.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-01-07T19:58:29.139Z",
+        "fake_signals": [
+          "Limited review volume on primary platforms (20-84 reviews)",
+          "No negative reviews in the provided sample"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": 5,
+          "google": 4.7,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Reviews contain specific project details (resurfacing, tile replacement, equipment upgrades)",
+          "Mention of owner's name (Mike Cunningham) and crew",
+          "Varied writing styles and specific customer situations (mobility issues, previous contractor problems)",
+          "Owner responses are professional and thankful"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "No significant complaint patterns found in the provided data"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are consistently high across Google (4.7), Angi (4.7), and Yelp (5.0). The Yelp rating is based on a single review, which is not a significant discrepancy."
+      }
+    }
+  }
+}

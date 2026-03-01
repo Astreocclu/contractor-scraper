@@ -1,0 +1,46 @@
+{
+  "variation": "D1",
+  "contractor_id": 8958,
+  "contractor_name": "Splash Pools",
+  "archetype": "gold_standard",
+  "expected_score": 78,
+  "run": 1,
+  "timestamp": "2026-01-20T19:17:12.449Z",
+  "success": true,
+  "trust_score": 85,
+  "risk_level": "LOW",
+  "reasoning": "DeepSeek: 85, Gemini adjusted to: 85. Confirmed - no adjustment needed",
+  "red_flags": [
+    "Incomplete license/insurance verification",
+    "Limited business registration details",
+    "Some platform discrepancies in review counts"
+  ],
+  "cascade_trace": {
+    "deepseek": {
+      "trust_score": 85,
+      "risk_level": "LOW",
+      "category_scores": {
+        "license": 15,
+        "reputation": 23,
+        "legal": 22,
+        "stability": 13,
+        "red_flag_deduction": 12
+      },
+      "reasoning": "Splash Pools demonstrates strong operational performance with excellent Google reviews (4.8/5), BBB A+ rating, and no detected legal issues or liens. Minor deductions apply for limited business verification data and the absence of comprehensive license/insurance confirmation, but overall patterns indicate a reliable contractor with authentic customer satisfaction.",
+      "red_flags": [
+        "Incomplete license/insurance verification",
+        "Limited business registration details",
+        "Some platform discrepancies in review counts"
+      ]
+    },
+    "gemini": {
+      "original_score": 85,
+      "adjusted_score": 85,
+      "adjustment_reason": "Confirmed - no adjustment needed",
+      "final_trust_score": 85,
+      "risk_level": "LOW"
+    }
+  },
+  "cost_usd": 0.00547576125,
+  "duration_ms": 8277
+}

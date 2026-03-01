@@ -1,0 +1,647 @@
+{
+  "contractor_id": 2430,
+  "business_name": "DLV Roofing Dallas LLC",
+  "city": "Dallas",
+  "state": "TX",
+  "verticals": [
+    "roofing"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-15T21:10:09.868Z",
+  "sources": {
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:12:56.042Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:11:23.157Z",
+      "data": {
+        "query": "site:yelp.com \"DLV Roofing Dallas LLC\" \"Dallas, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:12:59.086Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:21:25.033Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "DLV ROOFING DALLAS LLC",
+        "taxpayer_number": "32083612591"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-15T18:21:25.039Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:21:34.847Z",
+      "data": {
+        "cost": 0.0007378,
+        "summary": "The Google reviews show significant red flags for potential inauthenticity. The positive reviews are clustered in time, repetitive in language, and heavily focused on one individual (Chad). The single negative review is detailed and credible, describing a failure to fix the stated problem. The extremely high rating with very few total reviews is suspicious. While there are some authentic signals, the pattern leans toward possible review manipulation or selective solicitation.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-15T18:21:34.847Z",
+        "fake_signals": [
+          "Multiple 5-star reviews posted same month (3 months ago)",
+          "Repetitive, generic praise across reviews (e.g., 'A+ in professionalism', 'first-rate customer service')",
+          "Lack of specific project details in many 5-star reviews",
+          "Owner/manager name (Chad) mentioned in nearly every positive review, creating a 'personality cult' pattern",
+          "Very low total review count (26) for a 4.9 rating, suggesting possible review solicitation"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 4.9,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "UNKNOWN",
+          "negative_evidence": [
+            "Negative review implies work did not fix the leak, suggesting potential warranty/guarantee issue"
+          ],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "One detailed negative review with specific timeline and problem description",
+          "Some positive reviews mention specific individuals (Darwin, Anthony) and long-term relationships (10 years)"
+        ],
+        "fake_review_score": 65,
+        "complaint_patterns": [
+          "Work not solving the stated problem",
+          "Focus on upsell/other work instead of requested repair"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only Google reviews found. No other platform ratings to compare."
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:13:01.530Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"DLV Roofing Dallas LLC\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:12:49.460Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov DLV Roofing Dallas LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:11:58.169Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:12:02.430Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:12:05.293Z",
+      "data": {
+        "query": "DLV Roofing Dallas LLC Dallas site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:13:03.917Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"DLV Roofing Dallas LLC\" Dallas",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:12:15.979Z",
+      "data": "DLV Roofing Dallas LLC Dallas review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Channels Filters Search filters 1:15 1:15 Now playing All Available Roofing LLC Reviews | Dallas 5 Star Review Showcase | Gayla D. The Whole Town's Talking The Whole Town's Talking • • No views 2 years ago The Whole Town's Talking The Whole Town's Talking http://www.allavailableroofingtx.com/ (469) 547-1498 all available roofing LLC Dallas reviews New Rating: \"All Available Roofing ... http://www.allavailableroofingtx.com/ (469) 547-1498 all available roofing LLC Dallas reviews New Rating: \"All Available Roofing ... From the video description DLV Roofing Houston, LLC DLV Roofing Houston, LLC @DLVRoofing • 15 subscribers Subscribe Shorts Attic Fail EXPOSED 🚨 (Hidden Roofing Shortcut) 17 views Vote for us, for best roofing company in #dfw #dfwfavorites #roofing #dallas #fortworth 194 views Roofer in Dallas | Win Back Business After Denied Insurance Claims with Stormlex 526 views #roofing #dallas #workout 933 views Dallas Texas best shinglers #Roofing✅🥵🔥🔥 2.3K views Roof Install 🏡🪜✅ #dfw #dallasroofing #dallas #viral #trending #video #roofershelper #shorts #short 12K views Roofing dallas 1.5K views How Bad Roofers Get Away With It 🚨 (Inspectors Never Look) #roofing #diy #cypresstx 1.4K views Calahan Roofing Company in Dallas Fort Worth/North Texas 6 views Commercial Roofing in Dallas 2.3K views Show more Show less 0:31 0:31 Now playing DLV Roofing and Exteriors Reviews | Charleston 5 Star Review Showcase | Hunter Greear The Whole Town's Talking The Whole Town's Talking • • 272 views 2 years ago The Whole Town's Talking The Whole Town's Talking https://www.dlvroofingcharleston.com (843) 724-3477 DLV Roofing and Exteriors Charleston reviews New Rating: \"Scheduled my ... https://www.dlvroofingcharleston.com (843) 724-3477 DLV Roofing and Exteriors Charleston reviews New Rating: \"Scheduled my ... From the video description 1:03 1:03 Now playing Baker Roofing & Construction, Inc Reviews | Dallas 5-Star Review Feature | Sanjay Pamurthy The Whole Town's Talking The Whole Town's Talking • • 2 views 2 years ago The Whole Town's Talking The Whole Town's Talking Baker Roofing & Construction, Inc 4307 Delmar Ave Dallas TX 75206 Your satisfaction means the world to us! Thank you for your ... Baker Roofing & Construction, Inc 4307 Delmar Ave Dallas TX 75206 Your satisfaction means the world to us! Thank you for your ... From the video description 7:11 7:11 Now playing Website Analysis Video for DLV Roofing Dallas Zukor Marketing Zukor Marketing • • No views 6 months ago Zukor Marketing Zukor Marketing Website Analysis Video for DLV Roofing Dallas . For next steps please contact Jeff Nicodemus at Zukor Marketing. (210) 610-0113 ... Website Analysis Video for DLV Roofing Dallas . For next steps please contact Jeff Nicodemus at Zukor Marketing. (210) 610-0113 ... From the video description Shorts Dallas Commercial Roofing Contractors 11 views #viral #roofing #dallas #roofinglife 339 views We will always fight for what’s right! 😡 #dfw #dallasroofing #dallas #roofershelper 680 views #resultsroofing #dallastx #realestate When you choose the best roofing company in Dallas 5 views Almost dropped by insurance ➡️ brand-new roof paid by insurance. #roofing #dallas #dfwroofer 75 views New roof incoming! #roofing #dallas #construction #texas #roofrepair 19 views Results Roofing🏡🪜🔨 #dfw #viralreels #dallas #dallasroofing #roofershelper #roofing #viral #video 11K views Commercial Flat Roofing of Dallas 56 views Roofing Dallas. 843 views Make sure you hail repair company has 5 ⭐️⭐️⭐️⭐️⭐️ reviews #dfw #dallas #pdr #shorts #viral #trend 65 views Show more Show less 1:06 1:06 Now playing Results Roofing Dallas Texas Fun Fact About Your Roofer Results Roofing Results Roofing • • 227 views 4 years ago Results Roofing Results Roofing Meet David from Results Roofing . He tells us one fun fact about him and one reason you should hire him as your roofing ... Meet David from Results Roofing . He tells us one fun fact about him and one reason you should hire him as your roofing ... From the video description 27:46 27:46 Now playing FIRST DAY In Roofing Sales: Zero To Hero [Dallas, TX Edition] Lee Haight Lee Haight • • 16K views 1 year ago Lee Haight Lee Haight Learn from 5 Skydiamond Elite Contractors on how they quadrupled their business. (No Door Knocking Or Cold Calling) CLICK ... Learn from 5 Skydiamond Elite Contractors on how they quadrupled their business. (No Door Knocking Or Cold Calling) CLICK ... From the video description Summary Follow along as roofing sales trainees in Dallas, TX, learn advanced techniques from experienced contractors. This video shows practical, real-world sales approaches, focusing on handling homeowner objections and maximizing insurance claims. Witness diverse scenarios and strategies to secure roofing contracts. AI-generated video summary Quality and accuracy may vary. Summary Follow along as roofing sales trainees in Dallas, TX, learn advanced techniques from experienced contractors. This video shows practical, real-world sales approaches, focusing on handling homeowner objections and maximizing insurance claims. Witness diverse scenarios and strategies to secure roofing contracts. 0:54 0:54 Now playing Roofing Dallas - (214) 444-9352 - www.RoofingGiant.com Roofing Dallas (Roofing Giant) Roofing Dallas (Roofing Giant) • • 5.8K views 13 years ago Roofing Dallas (Roofing Giant) Roofing Dallas (Roofing Giant) ... roofer roofing contractor Dallas Dallas roofing contractor Dallas roofing contractors roofing company Dallas roofing Dallas TX ... ... roofer roofing contractor Dallas Dallas roofing contractor Dallas roofing contractors roofing company Dallas roofing Dallas TX ... From the video description 0:31 0:31 Now playing Kemendo Roofing and Construction Co Reviews | Dallas 5-Star Review Showcase | Adrienne Wagner The Whole Town's Talking The Whole Town's Talking • • 8 views 2 years ago The Whole Town's Talking The Whole Town's Talking Kemendo Roofing and Construction Co 4069 Amherst Ave Dallas TX 75225-7004 Your satisfaction means the world to us! Kemendo Roofing and Construction Co 4069 Amherst Ave Dallas TX 75225-7004 Your satisfaction means the world to us! From the video description Dallas - Fort Worth Roofing Company Dallas - Fort Worth Roofing Company @dallas-fortworthroofingcom3820 • Platinum Contracting LLC is a DFW full-service roofing company that provides residential and commercial roofing needs such as ... Subscribe Dallas Roofing Company Dallas Roofing Company @dallasroofingcompany4209 • Subscribe 1:42 1:42 Now playing Accent Roofing Construction - Top 10 Best Dallas Roofers Near Me Business Directory Near Me Business Directory • • 437 views 4 years ago Near Me Business Directory Near Me Business Directory Visit https://nearme.vip/top-10/best- roofers -in- dallas -texas/ Accent Roofing & Construction 4516 Lovers Ln #146, Dallas, TX 75225 ... Visit https://nearme.vip/top-10/best- roofers -in- dallas -texas/ Accent Roofing & Construction 4516 Lovers Ln #146, Dallas, TX 75225 ... From the video description People also watched 12:42 12:42 Now playing Don’t Buy Here: Why Dallas Suburbs are Being Abandoned! Dee Walton, Dallas-Fort Worth Living Dee Walton, Dallas-Fort Worth Living • • 941 views 8 days ago Dee Walton, Dallas-Fort Worth Living Dee Walton, Dallas-Fort Worth Living Download Your FREE Dallas Fort-Worth Relocation Guide Here!❇️ https://deewalton.com/free-guide-access Thinking about ... Download Your FREE Dallas Fort-Worth Relocation Guide Here!❇️ https://deewalton.com/free-guide-access Thinking about ... From the video description 4K 6 chapters The Suburb Hype vs Reality | The Biggest Shock After Moving | Costs Buyers Didn’t Expect | Who Regrets It Most | Red Flags Before You Buy | How Smart Buyers Avoid This 6 chapters in this video 6 chapters The Suburb Hype vs Reality The Suburb Hype vs Reality 0:00 The Suburb Hype vs Reality 0:00 The Biggest Shock After Moving The Biggest Shock After Moving 1:40 The Biggest Shock After Moving 1:40 Costs Buyers Didn’t Expect Costs Buyers Didn’t Expect 3:20 Costs Buyers Didn’t Expect 3:20 Who Regrets It Most Who Regrets It Most 5:00 Who Regrets It Most 5:00 Red Flags Before You Buy Red Flags Before You Buy 6:30 Red Flags Before You Buy 6:30 How Smart Buyers Avoid This How Smart Buyers Avoid This 8:00 How Smart Buyers Avoid This 8:00 19:27 19:27 Now playing Day In The Life Of A Roofing Sales Guy (Sold 3M+ Last Year) Hailco Sales Hailco Sales • • 19K views 10 months ago Hailco Sales Hailco Sales Apply for Mentorship↓ https://form.typeform.com/to/afI76E0G What does it really look like to close deals and run the day like a $3 ... Apply for Mentorship↓ https://form.typeform.com/to/afI76E0G What does it really look like to close deals and run the day like a $3 ... From the video description 4K 22:48 22:48 Now playing Roofing Sales: A Day in the Life Of $3.5M+ Rep Tanner Sewell Hailco Sales Hailco Sales • • 8.4K views 9 months ago Hailco Sales Hailco Sales Apply for Mentorship↓ https://form.typeform.com/to/afI76E0G Follow Tanner as he reveals what a $3.5M closer ACTUALLY does ... Apply for Mentorship↓ https://form.typeform.com/to/afI76E0G Follow Tanner as he reveals what a $3.5M closer ACTUALLY does ... From the video description 4K 20:25 20:25 Now playing Lee Haight - Roofer Vs. Insurance Adjuster: Large Loss Standoff #leehaight #skydiamonds Lee Haight Lee Haight • • 574K views 4 years ago Lee Haight Lee Haight 2025 update! Join the 100 Roofs Challenge https://vg.rrcausa.com/100-roof-challenge-2025 Every contractor I know hates ... 2025 update! Join the 100 Roofs Challenge https://vg.rrcausa.com/100-roof-challenge-2025 Every contractor I know hates ... From the video description + 6 more 2:23 2:23 Now playing Roofing Giant Dallas TX - REVIEWS - Roofing Contractors Dallas, TX Reviews Dallas Local Business Network Dallas Local Business Network • • 55 views 10 years ago Dallas Local Business Network Dallas Local Business Network Reviewed Roofing Giant is one of the most reviewed roofing contractors in Dallas, TX . This video showcases just a ... Reviewed Roofing Giant is one of the most reviewed roofing contractors in Dallas, TX . This video showcases just a ... From the video description 0:35 0:35 Now playing Dallas Roofing - Call 972 669 2700 FREE Roofing Quotes!! canyoncreekroofing canyoncreekroofing • • 6.1K views 13 years ago canyoncreekroofing canyoncreekroofing Call (972) 669-2700 NOW! Dallas Roofing - Call 972 669 2700 FREE Roofing Quotes!! Are you looking for the BEST Dallas ... Call (972) 669-2700 NOW! Dallas Roofing - Call 972 669 2700 FREE Roofing Quotes!! Are you looking for the BEST Dallas ... From the video description 0:31 0:31 Now playing Copper Nail Roofing Reviews | Dallas 5 Star Review Showcase | Douglas White The Whole Town's Talking The Whole Town's Talking • • 2 views 2 years ago The Whole Town's Talking The Whole Town's Talking http://coppernailroofing.com/ (214) 751-6500 Copper Nail Roofing Dallas reviews New Rating: \"Bobby Little and the whole team ... http://coppernailroofing.com/ (214) 751-6500 Copper Nail Roofing Dallas reviews New Rating: \"Bobby Little and the whole team ... From the video description 1:58 1:58 Now playing Roofing contractors Dallas|Hoffman family testimonial for Roofing Giant|Roofing contractors Dallas Roofing Dallas (Roofing Giant) Roofing Dallas (Roofing Giant) • • 13K views 13 years ago Roofing Dallas (Roofing Giant) Roofing Dallas (Roofing Giant) For area residents who need roofing in Dallas TX , the friendly and knowledgeable staff at Roofing Giant is ready, willing and able ... For area residents who need roofing in Dallas TX , the friendly and knowledgeable staff at Roofing Giant is ready, willing and able ... From the video description CC 0:30 0:30 Now playing best affordable local 24 hour emergency Dallas roofing company and roof repair Bestdallasroofingcompany Bestdallasroofingcompany • • 158 views 11 years ago Bestdallasroofingcompany Bestdallasroofingcompany We Are A Local Roofing In Dallas, TX And Ready To Help You With Your Residential And Commercial Roofing Dallas Needs. We Are A Local Roofing In Dallas, TX And Ready To Help You With Your Residential And Commercial Roofing Dallas Needs. From the video description CC 0:31 0:31 Now playing Dallas Commercial Roofing Co. Reviews | Dallas Five Star Review Showcase | Fay Williams The Whole Town's Talking The Whole Town's Talking • • 1 view 2 years ago The Whole Town's Talking The Whole Town's Talking Dallas Commercial Roofing Co. 11453 Newkirk St #1226 Dallas TX 75229 Your satisfaction means the world to us! Thank you for ... Dallas Commercial Roofing Co. 11453 Newkirk St #1226 Dallas TX 75229 Your satisfaction means the world to us! Thank you for ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:12:17.255Z",
+      "data": {
+        "query": "site:nextdoor.com DLV Roofing Dallas LLC Dallas",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:13:05.102Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"DLV Roofing Dallas LLC\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:12:31.874Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=DLV%20Roofing%20Dallas%20LLC&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= DLV% 20Dallas% 20LLC&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= DLV% 20Roofing% 20Dallas% 20LLC&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Search by facility name or ID ... Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= DLV% 20Roofing% 20Dallas% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search Map, All Facilities, Corporate Compliance Screener, ECHO Notify Air, Air Facility Search Map, Air Facilities, ECHO Clean Air Tracking Tool ( ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= DLV% 20Roofing% 20Dallas% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= DLV% 20Roofing% 20Dallas% 20LLC&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:12:35.841Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:12:41.725Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:12:51.829Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com DLV Roofing Dallas LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:12:53.233Z",
+      "data": {
+        "query": "site:dallascounty.org DLV Roofing Dallas LLC civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:12:54.526Z",
+      "data": {
+        "query": "site:collincountytx.gov DLV Roofing Dallas LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:12:55.800Z",
+      "data": {
+        "query": "site:dentoncounty.gov DLV Roofing Dallas LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:12:57.962Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/dlv-roofing-dallas-dallas-2",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:12:59.954Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:13:02.174Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"DLV Roofing Dallas LLC\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:13:03.169Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"DLV Roofing Dallas LLC\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T18:13:24.290Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T18:13:05Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22DLV%20Roofing%20Dallas%20LLC%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=sAySae7SHsmGptQP_7GhkAY\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T18:13:15Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22DLV%20Roofing%20Dallas%20LLC%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=ugySacHaF-CdptQP_sLGuQs\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "DLV Roofing Dallas LLC",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:11:33.512Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "status": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:11:53.266Z",
+      "data": "Trustpilot Search Results Companies DLV dlv.de 0.0 DLV Shop dlvshop.com • 84 reviews 4.9 Newman Roofing, LLC newmanroofingcompany.com • 54 reviews 4.3 EA Roofing LLC earoofingllc.com • 1 review 3.7 GovAssist LLC govassist.com • 11K reviews 4.3 Categories Roofing Contractor The best companies in the category 'Roofing Contractor' Roofing Supply Store The best companies in the category 'Roofing Supply Store' Game Store The best companies in the category 'Game Store' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (9332) DLV dlv.de 0.0 0 reviews Germany DLV Shop dlvshop.com 4.9 84 reviews United States Newman Roofing, LLC newmanroofingcompany.com 4.3 54 reviews 220 N Columbus St, Sunbury, United States EA Roofing LLC earoofingllc.com 3.7 1 review United States GovAssist LLC govassist.com 4.3 10,854 reviews 1629 K St., Suite 300, Washington, United States Dallas Novelty dallasnovelty.com 3.2 1 review Dallas Cowboys dallascowboys.com 2.8 4 reviews Legends Way 1, Arlington, United States Dallas Golf dallasgolf.com 3.7 1 review Dallas Maids dallasmaids.com 4.8 70 reviews 2606 Manor Way, Dallas, United States NovaaLab LLC novaalab.com 4.4 3,861 reviews 2810 N Church St PMB 94922, Wilmington, United States Previous 1 2 3 4 934 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Roofing Contractor Construction & Manufacturing Roofing Supply Store Construction & Manufacturing Marketing Agency Business Services Game Store Events & Entertainment Gaming service Provider Events & Entertainment Construction & Manufacturing Construction & Manufacturing are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:13:06.154Z",
+      "data": {
+        "found": true,
+        "query": "\"DLV Roofing Dallas LLC\" Dallas lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.trustindex.io/reviews/dlvroofing.com",
+            "title": "DLV Roofing Austin Reviews 2025 | Trustindex.io - Trustindex.io",
+            "snippet": "I hired DLV Roofing Dallas, LLC ... Unfortunately, when it finally rained, the roof leaked at exactly the same spot as my original complaint."
+          },
+          {
+            "link": "https://businessrate.com/report/12525781?geoSerial=27675727&categorySerial=16104",
+            "title": "DLV Roofing Dallas LLC - BusinessRate",
+            "snippet": "I hired DLV Roofing Dallas, LLC to repair a persistent leak over a small area of my entryway—the metal roof over a 4x4 foot section that is separate from ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:12:50.520Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller of Public Accounts",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Comptroller.Texas.Gov is the website for the Texas Comptroller of Public Accounts.",
+            "position": 3
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Franchise Search Results. 心. Franchise Tax Account Status. As of 09/13/2021 14:10:44 ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07.",
+            "position": 6
+          },
+          {
+            "link": "https://www.sos.state.tx.us/search.shtml?dropXSL=&pr=default&prox=page&rorder=500&rprox=500&rdfreq=500&rwfreq=500&rlead=500&sufs=0&order=r&rdepth=0&query=CERTIFICATE+OF+ACCOUNT+STATUS",
+            "title": "Current Search Results - the Texas Secretary of State",
+            "snippet": "If you've been asked to obtain a “certificate of good standing,” the first step is to determine what type of certificate is being requested.",
+            "position": 7
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 8
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "Search TDLR Then look up the business to see if it's still active. Get ... asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 9
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non-profits):",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-15T18:12:57.725Z",
+      "data": {
+        "cid": "7447278708188096906",
+        "name": "DLV Roofing Dallas LLC",
+        "found": true,
+        "rating": 4.9,
+        "source": "serper",
+        "address": "2947 Blystone Ln, Dallas, TX 75220",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "2 months ago",
+            "text": "I hired DLV Roofing Dallas, LLC to repair a persistent leak over a small area of my entryway—the metal roof over a 4x4 foot section that is separate from the main roof. Despite clear communication about the specific leak, the company ended up focusing on other potential issues, changing all the screws to larger rubber ones and sealing a few spots. All of this was done during the dry season, so I had to wait until the first rain to see any results.\n\nUnfortunately, when it finally rained, the roof leaked at exactly the same spot as my original complaint. DLV sent someone out again to reseal more areas. Still, after a few months and another heavy rain, the leak returned in the very same spot. Over two years, I have paid nearly $9,000 for repeated visits to address this 4x4 area, but the fundamental problem remains unsolved.\n\nIt feels like seeing a doctor for an eye problem and having your leg treated while your vision remains unchanged. To make matters worse, DLV Roofing has stopped responding to my emails and texts altogether. The roof leak for which I initially contacted them still persists, with no resolution or ongoing support. I cannot recommend this company based on my experience—two years, multiple visits, and a significant financial investment later, I am left with the same issue I started with and no answers from the business.\n\nP.S: the second picture around the chimney, i flew my drone to check their work, i have no other way to get up there.",
+            "author": "Vishal Bagchi",
+            "rating": 2
+          },
+          {
+            "date": "3 months ago",
+            "text": "Chad Mitchell is an A+ in professionalism and knowledge of the roofing industry.  Chad and his entourage were amazing and nothing beats the first-rate customer service!  They took care of my family from day 1!  Chad was such a pleasure to work with.  We had issues with our insurance inspectors estimates and Chad’s team promptly showed them their faults.  Our roof, trim and gutters were replaced and looks fantastic!  I highly recommend DLV Roofing to anyone in need of roofing services as they are reliable, skilled, and genuinely customer-focused!  We highly recommend them to anyone!!",
+            "author": "Eddie G",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "I recently had my entire roof replaced by DLV Roofing, and couldn’t be happier with the results. Our project manager, Chad Mitchell, receives an A+ in professionalism and knowledge of the roofing industry. He was present and available throughout the entire process, making sure we always knew what to expect. Communication was excellent from the initial inspection to the final walk through. The crew was courteous and punctual, arriving on time each day, working efficiently and showing great respect for my home and property. They protected our landscaping, maintaining a clean work area every day. As a result, they we were able to finish the project in two days.\nThe new roof looks fantastic! Chad recommended the Certain Teed Climate Flex Class 4 shingle because of its high quality and impact resistant materials. This provided us with the peace of mind knowing it was installed with precision and care. I highly recommend DLV Roofing to anyone seeking a reliable and quality roofing company that will deliver top-tier workmanship using premium materials.",
+            "author": "Patty Ilaoa DeMent",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Chad and Darwin were amazing. Very friends, efficient, and super-fast response to request for appointment. They reviewed previous work in advance and provided answers quickly! They went above and beyond to ensure I had what I needed to address the issue and inspect previous work. Would highly recommend.",
+            "author": "Nancy Rodill",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Anthony has always been honest and taken care of me for the past 10 years. He’s my go to on any roof issues. They strive to be the best and match your competitors. Nothing beats the first rate customer service! They took care of my family from day 1! Their quick communication and completion of the job was top notch as well!",
+            "author": "Kelly Hutchins",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "Chad and his team were awesome!! Would highly recommend them. Worked around our crazy schedule and was honest and up front about the plan.",
+            "author": "Tammy Oliver",
+            "rating": 5
+          },
+          {
+            "date": "6 months ago",
+            "text": "Chad and his team with DLV roofing go above and beyond to make sure the job is done right. Very communicative and excellent customer service. Highly recommended A++++++",
+            "author": "MARK LUCAS",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Chad with Dlv roofing was fantastic. Great customer service, everything was addressed immediately. Will def use them again.",
+            "author": "Jennifer Rangel",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 26,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Dallas, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T20:41:52.885Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for DLV Roofing Dallas LLC",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "DLV Roofing Dallas LLC",
+        "searched_at": "2026-02-15T20:34:57.269617",
+        "total_records": 0
+      }
+    }
+  }
+}

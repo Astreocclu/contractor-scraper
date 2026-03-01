@@ -1,0 +1,48 @@
+{
+  "variation": "D1",
+  "contractor_id": 5744,
+  "contractor_name": "AC Repair Garland",
+  "archetype": "middle_tier",
+  "expected_score": 50,
+  "run": 4,
+  "timestamp": "2026-01-20T19:19:21.708Z",
+  "success": true,
+  "trust_score": 65,
+  "risk_level": "MEDIUM",
+  "reasoning": "DeepSeek: 65, Gemini adjusted to: 65. Confirmed - no adjustment needed",
+  "red_flags": [
+    "No verified state license or registration found",
+    "Business name/address inconsistencies across sources",
+    "Multiple negative reviews about high/unclear pricing and communication issues",
+    "Potential hijacked or duplicate Google listings"
+  ],
+  "cascade_trace": {
+    "deepseek": {
+      "trust_score": 65,
+      "risk_level": "MEDIUM",
+      "category_scores": {
+        "license": 10,
+        "reputation": 20,
+        "legal": 20,
+        "stability": 10,
+        "red_flag_deduction": 5
+      },
+      "reasoning": "The contractor has strong online reputation with authentic Google reviews (4.7 rating, 635 reviews) and no BBB complaints, but lacks verified licensing/registration data and shows business identity inconsistencies. While review analysis indicates authenticity, there are concerning patterns in negative reviews about pricing and communication, and the business appears to have multiple Google listings with different names/addresses.",
+      "red_flags": [
+        "No verified state license or registration found",
+        "Business name/address inconsistencies across sources",
+        "Multiple negative reviews about high/unclear pricing and communication issues",
+        "Potential hijacked or duplicate Google listings"
+      ]
+    },
+    "gemini": {
+      "original_score": 65,
+      "adjusted_score": 65,
+      "adjustment_reason": "Confirmed - no adjustment needed",
+      "final_trust_score": 65,
+      "risk_level": "MEDIUM"
+    }
+  },
+  "cost_usd": 0.00870532875,
+  "duration_ms": 16168
+}

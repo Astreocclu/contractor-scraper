@@ -1,0 +1,83 @@
+{
+  "variation": "D2",
+  "contractor_id": 5744,
+  "contractor_name": "AC Repair Garland",
+  "archetype": "middle_tier",
+  "expected_score": 50,
+  "run": 4,
+  "timestamp": "2026-01-20T19:23:18.368Z",
+  "success": true,
+  "trust_score": 56,
+  "risk_level": "MEDIUM",
+  "reasoning": "Mixed council: DeepSeek=72, Claude=25, Gemini=72, Avg=56",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 72,
+      "risk_level": "MEDIUM",
+      "reasoning": "This contractor presents a mixed profile with strong positive signals but concerning negative patterns. The Google reviews show a high volume (635 reviews) with a 4.7 average rating, featuring numerous detailed positive testimonials praising specific technicians and quality work. However, several serious negative reviews allege unethical practices including deceptive pricing, aggressive upselling, poor installation quality, and communication issues. The business appears to be operating under multiple names (AC Repair Garland vs. Garland Heating & Air Conditioning) which creates confusion. While many customers report excellent experiences, the severity of the negative complaints—including allegations of shoddy installation work that failed inspection—raises significant concerns about consistency and ethics.",
+      "key_factors": [
+        "High volume of detailed positive Google reviews (4.7/5 with 635 reviews)",
+        "Serious negative complaints about pricing transparency and installation quality",
+        "Business name confusion between AC Repair Garland and Garland Heating & Air Conditioning",
+        "No BBB accreditation or complaints found",
+        "Multiple specific technician names praised consistently in reviews"
+      ],
+      "red_flags": [
+        "Multiple customers allege deceptive pricing and hidden fees",
+        "Serious installation quality complaints including units placed on bricks instead of proper pads",
+        "Aggressive upselling/replacement pressure reported by several customers",
+        "Business name inconsistency creates confusion about identity"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 25,
+      "risk_level": "HIGH",
+      "reasoning": "This appears to be a website-only operation with no verifiable business registration, licenses, or legitimate business presence. The Google Maps data shows a completely different company (Garland Heating & Air Conditioning) at a different address, suggesting identity confusion or potential misrepresentation. The website makes broad service claims across multiple trades (HVAC, plumbing, electrical) without any licensing verification. Multiple serious complaints describe unprofessional installations, safety violations, and potential fraud patterns.",
+      "key_factors": [
+        "No verifiable business registration or licensing found",
+        "Google Maps shows different company entirely at different address",
+        "Website-only presence with no legitimate business verification",
+        "Multiple serious installation and safety violation complaints"
+      ],
+      "red_flags": [
+        "Business identity mismatch between website and Google Maps listing",
+        "Claims to operate across multiple licensed trades without verification",
+        "No business registration found in Texas franchise tax or SOS records",
+        "Serious safety violations described in reviews (improper installations on bricks vs pads)"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 72,
+      "risk_level": "MEDIUM",
+      "reasoning": "AC Repair Garland presents a mixed picture. The high volume of positive Google reviews, often mentioning specific technicians and detailed experiences, suggests a generally reliable service. However, complaint patterns regarding pricing transparency and occasional upselling raise concerns. The lack of BBB accreditation and the presence of negative reviews detailing high-pressure sales tactics warrant a cautious approach.",
+      "key_factors": [
+        "High volume of positive Google reviews",
+        "Complaint patterns regarding pricing",
+        "Lack of BBB accreditation"
+      ],
+      "red_flags": [
+        "Pricing complaints",
+        "Upselling concerns",
+        "No BBB accreditation"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Multiple customers allege deceptive pricing and hidden fees",
+    "Serious installation quality complaints including units placed on bricks instead of proper pads",
+    "Aggressive upselling/replacement pressure reported by several customers",
+    "Business name inconsistency creates confusion about identity",
+    "Business identity mismatch between website and Google Maps listing",
+    "Claims to operate across multiple licensed trades without verification",
+    "No business registration found in Texas franchise tax or SOS records",
+    "Serious safety violations described in reviews (improper installations on bricks vs pads)",
+    "Pricing complaints",
+    "Upselling concerns",
+    "No BBB accreditation"
+  ],
+  "cost_usd": 0.11080252875,
+  "duration_ms": 11582
+}

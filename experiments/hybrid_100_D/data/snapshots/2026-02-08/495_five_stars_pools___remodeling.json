@@ -1,0 +1,751 @@
+{
+  "contractor_id": 495,
+  "business_name": "Five Stars Pools & Remodeling",
+  "city": "Rockwall",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-08T03:23:39.605Z",
+  "sources": {
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:44.275Z",
+      "data": {
+        "query": "site:dentoncounty.gov Five Stars Pools & Remodeling",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/website/HistoricalMarkers/PDFs/ARGYLE.pdf",
+            "title": "Argyle, Texas",
+            "snippet": "Those citizens who were not serving in the military and who did not move to the city commuted by bus or car pools to the higher paying jobs at the war plants.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:24:53.577Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:25:00.023Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Five Stars Pools & Remodeling\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:25:01.424Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Five Stars Pools & Remodeling\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:25:00.680Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Five Stars Pools & Remodeling\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "website": {
+      "status": "error",
+      "fetched_at": "2025-12-24T22:24:48.426Z",
+      "data": {
+        "email": null,
+        "error": "page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.yourfivestarpools.com/contacts.html\nCall log:\n\u001b[2m  - navigating to \"https://www.yourfivestarpools.com/contacts.html\", waiting until \"domcontentloaded\"\u001b[22m\n",
+        "source": null
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:46.094Z",
+      "data": {
+        "name": "Five Star Pools & Remodeling",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:23:11.701Z",
+      "data": {
+        "query": "site:yelp.com \"Five Stars Pools & Remodeling\" \"Rockwall, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:47.723Z",
+      "data": {
+        "cid": "1856856557671777047",
+        "name": "Five Stars Pools & Remodeling",
+        "error": null,
+        "found": true,
+        "phone": "(469) 774-3800",
+        "rating": 3.7,
+        "source": "serper_google",
+        "address": "101 E Bourn St, Rockwall, TX 75087",
+        "reviews": [
+          {
+            "id": "ChZDSUhNMG9nS0VJQ0FnSUQ2cUtmQlZREAE",
+            "date": "4 years ago",
+            "text": "They remodeled our pool and we're loving it. Jennifer in the office was excellent on the financial side of things. Victor was very helpful, knowledgeable and attentive to our needs and concerns. He jumped through hoops like a pro! We have new plaster, tile and coping on the spa.\nThey added umbrella sleeves on the deck. Loving my tan! Scheduling was tuff, with many factors outside our control, originally planned for June start, they actually started in August and finished in 3 weeks.",
+            "likes": 1,
+            "author": "Douglas deMarco",
+            "rating": 5
+          },
+          {
+            "id": "ChZDSUhNMG9nS0VJQ0FnSUN1bHV1bEpREAE",
+            "date": "3 years ago",
+            "text": "Five Star Pools turned out 20+ year old pool into one that looked brand new. Top notch workmanship from the crews and their work ethic was outstanding. Victor and Will were very helpful and kept us informed throughout the process. We are so happy with the outcome.",
+            "likes": null,
+            "author": "LeAnn Estep",
+            "rating": 5
+          },
+          {
+            "id": "ChdDSUhNMG9nS0VJQ0FnSUMzamY3THdnRRAB",
+            "date": "a year ago",
+            "text": "I have hired several different pool companies, and the water always looked murky and was dirty. I gave the guys at five star a shot, and  last week I voiced some concerns and issues I was having they came out and found there was a tear in the filter already, and one of the valves was not closing all the way their attention to detail has our pool looking better than it ever has.",
+            "likes": null,
+            "author": "Bryan Graves",
+            "rating": 5
+          },
+          {
+            "id": "ChZDSUhNMG9nS0VJQ0FnSUN6dXZDdmN3EAE",
+            "date": "a year ago",
+            "text": "This company does a terrible job servicing pools and has caused damage to my property. I have contacted them multiple times to cancel and they ignore my contact and continue to charge my credit card for service they are not performing. DO NOT TRUST THESE PEOPLE WITH YOUR PROPERTY OR CREDIT CARD!",
+            "likes": 2,
+            "author": "Michele Flores",
+            "rating": 1
+          },
+          {
+            "id": "ChdDSUhNMG9nS0VJQ0FnTURvMTkzaWt3RRAB",
+            "date": "Edited 3 months ago",
+            "text": "Update: 2025 summertime.  These liars didn't fix a problem,  just blocked off 2 pool jets and charged me for repairs of a \"leak\" that was never there. And Will, called me, said \"oh we found a second leak\" (of course I was oot and he couldn't send me photos or proof) and said we can just cap off the jet if you want. I said Absolutely NOT, (THAT MEANS NO). TOLD HIM I want ALL the pool jets to be working. Then in July, when I got my pool running ( by hiring another pool company) I realized they had blocked off 2 jets. I tried to reach out, but guess who changed his phone number?\n\nMinus 20 score!! They are now are WJPool, or some version....please, don't use this liar cheating company. Any combination of will johnson and pools, run away. Thief's and liar's 10000%, especially Will.\n\nI could rate them minus 5 star pools, that's what it would be. I've waited  months (yes months) for them to complete a job they had been paid to do, and they left a mess. Trash left behind, broken pieces of concrete,  rebar blue rubber gloves and a trash bucket.  That's minor compared to all the other complaints!! Guys name is Will J. Suppose to own this shady operation,  who really knows.  They lie, cheat, steal from you. Full of excuses, no work ethics. Don't show up or communicate why they didn't bother to be at a set/confirmed appointment. Why would I continue to work with them you may be asking,  because they did a leak detection and already got paid! Leak detection is expensive so I didn't want to hire some other company to re-do what had been done. My mistake. Typical Will, dont show up on confirmed appointment dates, then show up announced, pretend like he or his crew actually work, then leave, (oh and left the gate open and my 2 German Shepherd dogs got out) then deny that was them that left a gate open.... well, I wasn't home. 5-star pool staff, including Will, were on my property, my neighbor notified me my dogs were out. Hmmm, just another lie from Will. They didn't fix the problems they'd been paid to do. It took me 8 weeks to get them out here to finally finish this spring!! Daily calls to ask why they weren't here, text messages to Will directly,  He Never Replied!!! Because he'd been paid, why does he care.  My fault on paying him before I returned home from my work trip. Do NOT USE THIS COMPANY FOR ANY REASON!!! They've even changed their name because of the crap work & negative reviews. They are now operating under WPS (Wills Pool Supply) RUN, do not walk, they are not reliable.  Awful company and don't do good quality work. Will lied to me more than once.  He started this project in September 2024. That gives you perspective how Awful they are! Today 29APR25, the pool still isn't running right, water leaking after they supposedly repaired 4 leaks. Cheaters liars thieves. The BBB will be notified as well. I'm a senior citizen and I would say an easier target for this type of company to abuse. Even though I tried to hold them accountable,  it wasn't enough.   RUN. DON'T TRUST or hire them. I cannot say enough negativity about this company.  Disgusting company and owner.",
+            "likes": null,
+            "author": "Charla Tambourine",
+            "rating": 1
+          },
+          {
+            "id": "ChZDSUhNMG9nS0VQMm1pdmUtMi1PR0l3EAE",
+            "date": "6 months ago",
+            "text": "What a great experience we had with Will and his team.  Great service,  very prompt and extremely knowledgeable.  We appreciate all you guys do and will continue using this company for as long as I own a pool.",
+            "likes": null,
+            "author": "Chip & Trish Moore",
+            "rating": 5
+          },
+          {
+            "id": "ChdDSUhNMG9nS0VJQ0FnSURGcHBPMzZnRRAB",
+            "date": "Edited 2 years ago",
+            "text": "Will @ Five Star worked with us on resurfacing my 17-year old pool.  Great quality and service, craftsmanship; was detailed and met our expectations. Pool looks great again!  Communication on this job was great and crews kept to the construction schedule.  5 stars for sure.\n\nAfter the resurfacing work, I needed a new computer.  The issue was identified and Will worked a lot of options before settling on a new computer being needed.  There were some other tech/personnel issues that caused the work to be delayed longer than needed.  Once getting the right attention, Will was able to come out and get me back up and running again.  Due to the personnel issues and that individual not communicating with me, I cannot give 5 stars right now but a solid 4-4.5 for sure.  I will use Will again for any maintenance issues I have in the future since I believe the personnel issues have been worked out for this company.  Overall, I recommend.",
+            "likes": null,
+            "author": "Jeff Phillips",
+            "rating": 4
+          },
+          {
+            "id": "ChdDSUhNMG9nS0VJQ0FnSURCa29fQjVnRRAB",
+            "date": "2 years ago",
+            "text": "From the owner to the office staff to the pool techs.  They are always on point and the best customer service.  Repair estimates and monthly service prices are fair and competitive.  Also very responsive in emergency situations which is most important to me.   Thank you Five Star Pools for providing five star service each and every time.",
+            "likes": null,
+            "author": "Trish",
+            "rating": 5
+          }
+        ],
+        "website": "https://www.yourfivestarpools.com/contacts.html",
+        "category": "Swimming pool contractor",
+        "review_count": 21,
+        "review_source": "serper_google"
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:23:22.600Z",
+      "data": {
+        "found": true,
+        "rating": 3.7,
+        "status": null,
+        "review_count": 21,
+        "business_name": "Directions Five Stars Pools & Remodeling"
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:24:57.398Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:24:58.116Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:25:02.552Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Five Stars Pools & Remodeling\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:24:59.142Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "yourfivestarpools.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:23:47.034Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:23:50.981Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:25:03.261Z",
+      "data": {
+        "found": true,
+        "query": "\"Five Stars Pools & Remodeling\" Rockwall lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "http://www.yourfivestarpools.com/",
+            "title": "Five Stars Pools & Remodeling LLC - Home",
+            "snippet": "101 E. Bourn St. ​Rockwall, Texas 75087. Store hours Tue-Sat 11am-5pm. Office Hours M/F 9am-5pm. Store Ph:# 469-774-3800. Sales/Estimates - Option 1."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:23:53.214Z",
+      "data": {
+        "query": "Five Stars Pools & Remodeling Rockwall site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:25:01.976Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Five Stars Pools & Remodeling\" Rockwall",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:04.342Z",
+      "data": "Five Stars Pools & Remodeling Rockwall review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Shorts Grotto Repair #shorts #Pools #pool #remodel #repair #service #home #Rockwall #texas 3.2K views Mr. Young's review of our company 851 views Swimming Pool Gunite Application #pool #homedesign 4.5K views Brandon walks you through one of our latest custom pools in Rockwall, Texas! #rockwall #dfwpools 293 views 7 million dollar pool house on the river #pool #poolcleaning #5starpools #poolhomes #realestate 609 views Show more Show less SHORTS SHORTS Now playing Five Star Pavers And Pool Remodeling Five Star Pavers And Pool Remodeling Five Star Pavers And Pool Remodeling • • 61 views 7 years ago Five Star Pavers And Pool Remodeling Five Star Pavers And Pool Remodeling Check us out at fivestarpaversandpoolremodels.com. Check us out at fivestarpaversandpoolremodels.com. From the video description 1:51 1:51 Now playing Customer 5 Star Review! - Pool Remodeling Project (Kaya Family) JM Pools & Lounges JM Pools & Lounges • • 16 views 2 years ago JM Pools & Lounges JM Pools & Lounges Another great pool remodeling project completed! Check out this review with our loved customers and compare the results and ... Another great pool remodeling project completed! Check out this review with our loved customers and compare the results and ... From the video description 4K 1:46 1:46 Now playing Five Star Pavers And Pool Remodeling Five Star Pavers And Pool Remodeling Five Star Pavers And Pool Remodeling • • 196 views 7 years ago Five Star Pavers And Pool Remodeling Five Star Pavers And Pool Remodeling Fivestarpaversandpoolremodels.com We provide top quality installs and service. Fivestarpaversandpoolremodels.com We provide top quality installs and service. From the video description Shorts 7 million dollar pool house on the river #pool #poolcleaning #5starpools #poolhomes #realestate 609 views New and Modern Custom Swimming Pool Build In Dallas, Texas - Pool Stop Custom Pools 266 views Enjoy Expert POOL REMODELING & REPAIR by Orange County Pools & Spas #poolrenovation 888-714-6277 34 views The Villa's on Lovers Lane gets a pool refresh! 398 views Finishing up here in Rockwall, Texas! ☀️🌴 #dfwpoolbuilder #pool #patiocover #rockwalltx 2K views Show more Show less 2:27 2:27 Now playing Customer 5 Star Review! - Pool Remodeling Project (Maria Orozco) JM Pools & Lounges JM Pools & Lounges • • 11 views 2 years ago JM Pools & Lounges JM Pools & Lounges Another great pool remodeling project completed! Check out this review with our loved customers and compare the results and ... Another great pool remodeling project completed! Check out this review with our loved customers and compare the results and ... From the video description SHORTS SHORTS Now playing 6sec SQ What if your backyard could rival a five star resort Selah Pools Selah Pools • • 1 view 1 year ago Selah Pools Selah Pools SHORTS SHORTS Now playing Shooting Gunite #pool #poolbuilder #Rockwall #texas #pools #construction Graves Pools & Outdoor Living Graves Pools & Outdoor Living • • 7K views 10 months ago Graves Pools & Outdoor Living Graves Pools & Outdoor Living 0:55 0:55 Now playing Five Star Pavers and Pool Remodeling finish pool and deck remodel Michael Ziccardi Michael Ziccardi • • 186 views 7 years ago Michael Ziccardi Michael Ziccardi Fivestarpaversandpoolremodels.com Check out our finished work! Fivestarpaversandpoolremodels.com Check out our finished work! From the video description SHORTS SHORTS Now playing Before & After Pool Remodeling….. #pool #beautifulpools #poolhomes #beforeandafter Macbet Pools INC. Macbet Pools INC. • • 4.5K views 2 years ago Macbet Pools INC. Macbet Pools INC. People also watched 17:09 17:09 Now playing \"Expert\" Advice: DIY Pool Plastering? bdp garage bdp garage • • 30K views 2 years ago bdp garage bdp garage Some helpful information on things you need to consider when deciding on whether you can replaster your own pool . Visit my ... Some helpful information on things you need to consider when deciding on whether you can replaster your own pool . Visit my ... From the video description 4K Summary Learn the crucial steps and costs involved in DIY pool replastering. This video details material expenses, including plaster, tile, and bond coat, plus essential equipment considerations. Explore the pros and cons of tackling this project yourself versus hiring a professional. AI-generated video summary Quality and accuracy may vary. Summary Learn the crucial steps and costs involved in DIY pool replastering. This video details material expenses, including plaster, tile, and bond coat, plus essential equipment considerations. Explore the pros and cons of tackling this project yourself versus hiring a professional. 5:21 5:21 Now playing What Pool Contractor\\Builders will NEVER show you WetScapes Fiberglass Pools WetScapes Fiberglass Pools • • 93K views 1 year ago WetScapes Fiberglass Pools WetScapes Fiberglass Pools hello y'all. I want to show you what pool builders and contractors will never show you. Everything on a pool build is super ... hello y'all. I want to show you what pool builders and contractors will never show you. Everything on a pool build is super ... From the video description 4K CC Summary This video provides a behind-the-scenes look at the construction of a fiberglass pool, highlighting details that are often overlooked. The video focuses on the importance of meticulous preparation and execution, including the use of specific materials and techniques to ensure a high-quality, long-lasting pool. AI-generated video summary Quality and accuracy may vary. Summary This video provides a behind-the-scenes look at the construction of a fiberglass pool, highlighting details that are often overlooked. The video focuses on the importance of meticulous preparation and execution, including the use of specific materials and techniques to ensure a high-quality, long-lasting pool. 3:48 3:48 Now playing Replastering my Swimming Pool - What it Cost and How Long it Took #pool #swimmingpool Scott's Smart Home Scott's Smart Home • • 9.2K views 6 months ago Scott's Smart Home Scott's Smart Home In this video I take you through end to end my recent pool replastering project. How long did it take to get the plaster redone and ... In this video I take you through end to end my recent pool replastering project. How long did it take to get the plaster redone and ... From the video description 4K Summary This video documents a complete swimming pool replastering project, detailing each step of the renovation. The process includes draining, demolition, deck work, tile replacement, and finally, plastering. Viewers will see the entire nine-day transformation. AI-generated video summary Quality and accuracy may vary. Summary This video documents a complete swimming pool replastering project, detailing each step of the renovation. The process includes draining, demolition, deck work, tile replacement, and finally, plastering. Viewers will see the entire nine-day transformation. 4:54 4:54 Now playing $6,000 POOL MAKEOVER || Home Improvement Carole Robinson Carole Robinson • • 47K views 5 years ago Carole Robinson Carole Robinson Hi guys, We did a $6000 pool makeover || home improvement this year. To save extra money on this pool makeover, we kept our ... Hi guys, We did a $6000 pool makeover || home improvement this year. To save extra money on this pool makeover, we kept our ... From the video description 4 moments DRAINING THE POOL | CHIP IT OUT AND CLEAN THE TILES | RECOAT THE POOL | REFILLING THE POOL 4 auto-generated moments in this video 4 moments DRAINING THE POOL DRAINING THE POOL 1:02 DRAINING THE POOL 1:02 CHIP IT OUT AND CLEAN THE TILES CHIP IT OUT AND CLEAN THE TILES 1:29 CHIP IT OUT AND CLEAN THE TILES 1:29 RECOAT THE POOL RECOAT THE POOL 2:03 RECOAT THE POOL 2:03 REFILLING THE POOL REFILLING THE POOL 3:33 REFILLING THE POOL 3:33 + 6 more SHORTS SHORTS Now playing INSANE Pool Remodel Before and After #shorts JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. • • 8.6K views 3 years ago JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. SHORTS SHORTS Now playing Ted Barrett pool remodel testimonial Above & Beyond Pool Remodeling Above & Beyond Pool Remodeling • • 421 views 3 months ago Above & Beyond Pool Remodeling Above & Beyond Pool Remodeling Ted Barrett Pool remodel testimonial ✨ Experience unparalleled craftsmanship and customer satisfaction with Above & Beyond ... Ted Barrett Pool remodel testimonial ✨ Experience unparalleled craftsmanship and customer satisfaction with Above & Beyond ... From the video description SHORTS SHORTS Now playing How to choose the right color for your pool! 🌴 #luxuryhome #pool #pooldesign #backyard Foxterra Design Foxterra Design • • 380K views 1 year ago Foxterra Design Foxterra Design 0:00 How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... Automatic captions SHORTS SHORTS Now playing New Pool Completed #shorts #poolbuilder #Rockwall #jfnd #texas #pools #home #builder #poolsbygraves Graves Pools & Outdoor Living Graves Pools & Outdoor Living • • 1.5K views 7 months ago Graves Pools & Outdoor Living Graves Pools & Outdoor Living SHORTS SHORTS Now playing Swimming pool renovation, before and after - Pereira Construction Pereira Construction Pereira Construction • • 8.9K views 2 years ago Pereira Construction Pereira Construction This # swimming # pool #renovation was completed a little while back. The #travertine #pavers were #recycled, the deck was ... This # swimming # pool #renovation was completed a little while back. The #travertine #pavers were #recycled, the deck was ... From the video description SHORTS SHORTS Now playing Tile & Coping Repair #shorts #poolbuilder #remodel #tile #pools #construction #home #rockwall #new Graves Pools & Outdoor Living Graves Pools & Outdoor Living • • 1.4K views 7 months ago Graves Pools & Outdoor Living Graves Pools & Outdoor Living SHORTS SHORTS Now playing Can you fit a pool in a SMALL BACKYARD? Calimingo Calimingo • • 1.2M views 3 years ago Calimingo Calimingo 4K SHORTS SHORTS Now playing Pool Remodeling #poolremodel #pool Blackstone Blackstone • • 2.5K views 2 years ago Blackstone Blackstone SHORTS SHORTS Now playing Amazing POOL Renovation by our team! #pooldesign #renovation #beforeandafter #homeimprovement Go Home Builders Go Home Builders • • 7.9K views 3 years ago Go Home Builders Go Home Builders SHORTS SHORTS Now playing Mrs. Eagers review on her beautiful pool remodel in Mesa, Arizona Above & Beyond Pool Remodeling Above & Beyond Pool Remodeling • • 525 views 10 months ago Above & Beyond Pool Remodeling Above & Beyond Pool Remodeling SHORTS SHORTS Now playing Pool Remodeling Specialist #maranathapools #viralvideo #miami #pools #foryou Maranatha Pools Maranatha Pools • • 196 views 2 years ago Maranatha Pools Maranatha Pools SHORTS SHORTS Now playing Custom Pools, Spas, Remodeling & Outdoor Living | Arizona’s Backyard Experts Keywize Pools Keywize Pools • • 60 views 5 months ago Keywize Pools Keywize Pools Keywize Pools offers everything you need to elevate your backyard. Our services include: – Custom Pool Design and Builds ... Keywize Pools offers everything you need to elevate your backyard. Our services include: – Custom Pool Design and Builds ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:05.402Z",
+      "data": {
+        "query": "site:nextdoor.com Five Stars Pools & Remodeling Rockwall",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/five-stars-pools/",
+            "title": "Five Stars Pools & Remodeling - Rockwall, TX",
+            "snippet": "Five Stars Pools & Remodeling. 101 East Bourn Street. Rockwall. TX. 75087. US. 469-774-3800. Yourfivestarpools@gmail.com. https://www.yourfivestarpools.com/ ...",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/pages/five-star-pools-remodeling-rockwall-tx/",
+            "title": "Five Star Pools & Remodeling - Rockwall, TX",
+            "snippet": "Five Star Pools & Remodeling in Rockwall, TX. Connect with neighborhood businesses on Nextdoor.",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/pages/jb-pools-and-outdoor-management-rockwall-tx/",
+            "title": "Jb pools and outdoor management",
+            "snippet": "We provide professional pool cleaning, repairs, renovations, and maintenance for homeowners across DFW. ... In Rockwall: Lake Meadows, Quail Creek, Park ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:21.027Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Five%20Stars%20Pools%20%26%20Remodeling&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20Stars% 20Pools% 26% 20Remodeling&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= 20Stars% 20Pools% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://enviro.epa.gov/facts/tri/ef-facilities/",
+                "title": "TRI Facility Report"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= 20Stars% 20Pools% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search Map, All Facilities, Corporate Compliance Screener, ECHO Notify Air, Air Facility Search Map, Air Facilities, ECHO Clean Air Tracking Tool ( ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= 20Stars% 20Pools% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Stars% 20Pools% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= 20Stars% 20Pools% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= 20Stars% 20Pools% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "Users can choose to view all facilities or tailor the view to facilities regulated under the Clean Air Act, Clean Water Act, or Resource Conservation and ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= 20Stars% 20Pools% 20% 26% 20Remodeling&State= TX"
+            }
+          },
+          {
+            "date": "Jun 13, 2025",
+            "link": "https://www.epa.gov/frs/frs-query",
+            "title": "FRS Query | US EPA",
+            "snippet": "This Query Form allows you to specify a facility by using any combination of facility name, geographic location, facility industrial classification, affiliated ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= 20Stars% 20Pools% 26% 20Remodeling&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= 20Stars% 20Pools% 26% 20Remodeling&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:25.009Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:31.234Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:38.843Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Five Stars Pools & Remodeling",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Apr 20, 2002",
+            "link": "https://www2.texasattorneygeneral.gov/files/agency/2002hb1200iii.pdf",
+            "title": "Final Version - Section III.wpd",
+            "snippet": "funding pools – the single county pool and the multi-county pool. LGEDF grants are available only. Page 76. Survey of Tax Incentive and ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:39.916Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Our electronic services — including tools to file and pay Texas taxes — are available 24/7. Search from the Texas State Library",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn# Information on this site is obtained from the most recent Public Information Report (PIR) ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "This page is valid for most business transactions https://mycpa.cpa.state.tx.us/coa/coaSearchBtn# 1/1",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn https://mycpa.cpa.state.tx.us/ ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. This page is valid for most business transactions. ACTIVE State of Formation",
+            "position": 7
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn# Franchise Tax Account Status As. ACTIVE State of Formation TX SOS Registration Status ...",
+            "position": 9
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:24:41.019Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Five Stars Pools & Remodeling",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:42.101Z",
+      "data": {
+        "query": "site:dallascounty.org Five Stars Pools & Remodeling civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Sep 10, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/comcrt/county-code/DallasCountyCode-09102024.pdf",
+            "title": "Dallas County Code",
+            "snippet": "- Definitions and rules of construction. (a) In the construction of this Code and of all orders and resolutions adopted by the county ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/May-2025-CC-combined.pdf",
+            "title": "statutory",
+            "snippet": "... 0. 0. 16. 14. 0. 1. 4. 0. 0. 0. 0. 0. 2. 0. 0. 1. 0. 0. 0. 0. 5. 5. 0. 0. 1. 0. 0. 0. 0. 19. 0. 0. 4. 0. 0. 0. 0. 5. 0. 0. 0. 1. 0. 0. 0. 0. 2. CIVIL SECTION.",
+            "position": 2
+          },
+          {
+            "date": "Feb 13, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2020/2020-02.pdf",
+            "title": "Dallas County Behavioral Health Leadership Team ...",
+            "snippet": "remodeling existing homes or new construction of single or multi-family homes. ... ▫ No new UC pools have been approved, existing pools ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:24:43.039Z",
+      "data": {
+        "query": "site:collincountytx.gov Five Stars Pools & Remodeling",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Mar 16, 2015",
+            "link": "https://eagenda.collincountytx.gov/docs/2015/CC/20150316_1720/39623_Certificate%20of%20Public%20Hearing%20-%20signed%20RLD.pdf",
+            "title": "certificate of public hearing",
+            "snippet": "At the time for the commencement of the hearing, I publicly requested comments, either orally or in writing, on the facilities to be financed or ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:25:20.776Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-24T22:25:05Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Five%20Stars%20Pools%20%26%20Remodeling%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=QWhMaZOoGoDbptQPiKKXkQI\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2025-12-24T22:25:15Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Five%20Stars%20Pools%20%26%20Remodeling%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=SmhMaYTvMqCww8cPjv3ZqAY\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Five Stars Pools & Remodeling",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:25:21.626Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-24T22:25:21.631Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-24T22:25:33.249Z",
+      "data": {
+        "cost": 0.0005187,
+        "summary": "The reviews present a polarized and concerning picture. Positive reviews are detailed and authentic-feeling, citing specific staff and project outcomes. However, the negative reviews are severe, alleging ongoing fraudulent charges, ignored cancellation requests, property damage, and intentionally poor repairs. The low total review count (21) and lack of presence on other platforms makes pattern analysis difficult but increases the weight of each individual complaint. The BBB profile, while lacking detail, does not show accreditation or a rating, which is a neutral to slightly negative signal. The content of the negative reviews is highly specific and damning.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2025-12-24T22:25:33.249Z",
+        "fake_signals": [
+          "Low review volume (21) for an established contractor",
+          "Lack of reviews on other major platforms (Yelp, Houzz, Angi)",
+          "Potential for review manipulation is unclear due to low volume"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 3.7,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Specific details in positive reviews (names: Jennifer, Victor, Will; project types: remodel, plaster, tile)",
+          "Emotional authenticity in negative reviews (specific accusations of fraud, damage, ignored cancellation requests)",
+          "Varied writing styles and perspectives"
+        ],
+        "fake_review_score": 40,
+        "complaint_patterns": [
+          "Billing/charges for unperformed service",
+          "Poor communication/ghosting",
+          "Substandard or incomplete repairs",
+          "Property damage"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only one primary rating source (Google) is available. BBB data is incomplete and shows no rating or complaints."
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "variation": "D2",
+  "contractor_id": 5744,
+  "contractor_name": "AC Repair Garland",
+  "archetype": "middle_tier",
+  "expected_score": 50,
+  "run": 2,
+  "timestamp": "2026-01-20T19:22:10.515Z",
+  "success": true,
+  "trust_score": 56,
+  "risk_level": "MEDIUM",
+  "reasoning": "Mixed council: DeepSeek=72, Claude=25, Gemini=72, Avg=56",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 72,
+      "risk_level": "MEDIUM",
+      "reasoning": "This contractor presents a mixed profile with strong positive signals but concerning negative patterns. The Google reviews show a high volume of detailed, authentic positive feedback (4.7 rating with 635 reviews) praising specific technicians and quality work, suggesting genuine customer satisfaction. However, the negative reviews reveal serious recurring issues: multiple customers report high/unclear pricing, alleged upselling pressure for unnecessary replacements, and communication/scheduling problems. The absence of BBB accreditation and limited presence on other review platforms reduces transparency, while the business appears to operate under multiple names (AC Repair Garland vs. Garland Heating & Air Conditioning), creating potential confusion.",
+      "key_factors": [
+        "High volume of authentic positive Google reviews praising technician quality",
+        "Recurring complaints about pricing transparency and alleged upselling",
+        "Mixed business identity with multiple names and addresses",
+        "Strong technician-specific praise but management/communication issues"
+      ],
+      "red_flags": [
+        "Multiple customers report high/unclear pricing and alleged pressure for unnecessary replacements",
+        "Business operates under different names (AC Repair Garland vs. Garland Heating & Air Conditioning)",
+        "No BBB accreditation and limited presence on other review platforms",
+        "Negative reviews describe specific installation quality issues and poor communication"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 25,
+      "risk_level": "HIGH",
+      "reasoning": "This contractor presents significant confusion and authenticity concerns. The website claims to be 'AC Repair Garland' serving Allen TX since 2015, but Google Maps data shows a completely different established business - 'Garland Heating & Air Conditioning' with 635 reviews and 4.7 rating at a different address. The website contractor has minimal online presence (only 14 reviews, 4.6 rating) and lacks proper business registration verification. Most concerning is the complete identity mismatch between what appears to be website misrepresentation and the actual established business data being pulled.",
+      "key_factors": [
+        "Business identity confusion - website claims don't match Google Maps data",
+        "Minimal legitimate online presence for claimed business",
+        "Lack of verifiable business registration or licensing information"
+      ],
+      "red_flags": [
+        "Website appears to misrepresent established business identity",
+        "No BBB accreditation or complaint history available",
+        "Generic website content with possible false 'since 2015' claims"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 72,
+      "risk_level": "MEDIUM",
+      "reasoning": "AC Repair Garland presents a mixed picture. The high volume of positive Google reviews, often mentioning specific technicians and detailed experiences, suggests a generally reliable service. However, complaint patterns regarding pricing transparency and occasional upselling raise concerns. The lack of BBB accreditation and the presence of negative reviews detailing high-pressure sales tactics warrant a cautious approach.",
+      "key_factors": [
+        "High volume of positive Google reviews",
+        "Complaint patterns regarding pricing",
+        "Lack of BBB accreditation"
+      ],
+      "red_flags": [
+        "Pricing complaints",
+        "Upselling concerns",
+        "No BBB accreditation"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Multiple customers report high/unclear pricing and alleged pressure for unnecessary replacements",
+    "Business operates under different names (AC Repair Garland vs. Garland Heating & Air Conditioning)",
+    "No BBB accreditation and limited presence on other review platforms",
+    "Negative reviews describe specific installation quality issues and poor communication",
+    "Website appears to misrepresent established business identity",
+    "No BBB accreditation or complaint history available",
+    "Generic website content with possible false 'since 2015' claims",
+    "Pricing complaints",
+    "Upselling concerns",
+    "No BBB accreditation"
+  ],
+  "cost_usd": 0.11018928875,
+  "duration_ms": 11057
+}

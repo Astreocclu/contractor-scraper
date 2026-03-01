@@ -1,0 +1,2340 @@
+{
+  "contractor_id": 8978,
+  "business_name": "Blue Diamond Pools",
+  "city": "Mesquite",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-14T18:35:55.196Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:09:01.636Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "ABS_JUDG": 1,
+            "MECH_LIEN": 46,
+            "STATE_TAX_LIEN": 1
+          },
+          "active_liens": 48,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 2,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "PLANO BLUE HAVEN POOLS",
+                "grantor": "DIAMOND MARK",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND MARK",
+                    "PLANO BLUE HAVEN POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "7/24/1987",
+                    "19870724000500381",
+                    "LAND/2675/856",
+                    "Subdivision- Name: HUNTERS GLEN #8 PLANO D/1 Lot: 70, Reference - D / 1"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1987-07-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19870724000500381"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "ROBINSON DIANE M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ROBINSON DIANE M",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "6/25/1990",
+                    "19900625000325480",
+                    "LAND/3299/822",
+                    "Subdivision- Name: HUNTERS GLEN #3 PLANO 11/82 Lot: 6 Block: 2, Reference - 11 / 82"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1990-06-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19900625000325480"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 5,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "DIAMOND BRUCE S",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BRUCE S",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN",
+                    "6/19/1975",
+                    "1975003069021",
+                    "ALL/75121/967",
+                    "N/A",
+                    "9 13/8188 PRSTNWD 6"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1975-06-19",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1975003069021"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "ACUFF CATHY M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ACUFF CATHY M",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "4/28/1988",
+                    "1988008318041",
+                    "ALL/88083/2063",
+                    "DALLAS",
+                    "Subdivision- Name: JAN MAR 4 Lot: 4 Block: 12 CBLK: 7347, CITY: DALLAS,, Reference - 28 / 121"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1988-04-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1988008318041"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "LANGDON BETSY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "LANGDON BETSY",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "2/23/1971",
+                    "197100030864",
+                    "ALL/71037/1922",
+                    "N/A",
+                    "28 F/6434 WBSTR GRV"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1971-02-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "197100030864"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "CO MET STEEL INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CO MET STEEL INC",
+                    "BLUE DIAMOND POOLS",
+                    "ABSTRACT OF JUDGMENT",
+                    "7/8/1975",
+                    "197500317137",
+                    "ALL/75132/1867",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "ABSTRACT OF JUDGMENT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1975-07-08",
+                "document_type": "ABS_JUDG",
+                "recording_date": null,
+                "instrument_number": "197500317137"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "TEXAS STATE",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "TEXAS STATE",
+                    "STATE TAX LIEN",
+                    "4/11/1974",
+                    "197400060309",
+                    "ALL/74072/2204",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "STATE TAX LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1974-04-11",
+                "document_type": "STATE_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "197400060309"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 41,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "8/25/1986",
+                    "D186372941",
+                    "OPR/8662/641",
+                    "EVMN, Subdivision: CHAMBERS CRK, Lot: 1, Block: 16"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1986-08-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D186372941"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "9/19/1986",
+                    "D186381898",
+                    "OPR/8691/240",
+                    "ARL, Subdivision: WEBB BRITTON ESTS, Lot: 21, Block: 5"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1986-09-19",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D186381898"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "MORGAN BEVERLY J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MORGAN BEVERLY J",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "9/4/1987",
+                    "D187387493",
+                    "OPR/9060/407",
+                    "BDFRD, Subdivision: MAYFAIR HILLS, Lot: 56, Block: 8"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-09-04",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187387493"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "8/25/1987",
+                    "D187031451",
+                    "OPR/9045/1882",
+                    "SAG, Subdivision: RANCHO N, Lot: 13, Block: 37"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-08-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187031451"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "8/25/1986",
+                    "D186372947",
+                    "OPR/8662/659",
+                    "FT W, Subdivision: WOODMONT PL, Lot: 4, Block: 1"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1986-08-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D186372947"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLIUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLIUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "9/23/1987",
+                    "D187594369",
+                    "OPR/9075/2172",
+                    "FT W, Subdivision: RIDGMAR, Lot: 4, Block: 12"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-09-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187594369"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "7/10/2003",
+                    "D203248533",
+                    "OPR/16910/333",
+                    "NONE, Subdivision: PT PICKNEY CALDWELL SURV"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-07-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203248533"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "1/15/1987",
+                    "D187305525",
+                    "OPR/8815/7",
+                    "ARL, Subdivision: PLAZA TERR, Lot: 26B, Block: 15"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-01-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187305525"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS INC",
+                "grantor": "DIAMOND BLUE POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS INC",
+                    "DIAMOND BLUE POOLS INC",
+                    "MECHANICS LIEN",
+                    "9/22/1987",
+                    "D187035511",
+                    "OPR/9074/2108",
+                    "EULS, Subdivision: TIMBER RIDGE, Lot: 21, Block: 5"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-09-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187035511"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "7/9/1987",
+                    "D187025296",
+                    "OPR/9002/478",
+                    "EULS, Subdivision: MIDWAY PK, Lot: 18R, Block: 39"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-07-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187025296"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS INC",
+                "grantor": "DIAMOND BLUE POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS INC",
+                    "DIAMOND BLUE POOLS INC",
+                    "MECHANICS LIEN",
+                    "8/26/1986",
+                    "D186584795",
+                    "OPR/8665/127",
+                    "ARL, Subdivision: L 3R HARMONY"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1986-08-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D186584795"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "4/30/1987",
+                    "D187014671",
+                    "OPR/8927/1381",
+                    "ARL, Subdivision: MOSS SHADOW, Lot: 31, Block: 2"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-04-30",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187014671"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BERNEY JASON E",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BERNEY JASON E",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "3/2/2007",
+                    "D207075053",
+                    "--/--/--",
+                    "G P, Subdivision: MIRA LAGOS #F 1A, Lot: 21, Block: G"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2007-03-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D207075053"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "9/21/1987",
+                    "D187035308",
+                    "OPR/9073/565",
+                    "MNFLD, Subdivision: WALNUT CRK VAL, Lot: 3, Block: 13"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-09-21",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187035308"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS INC",
+                "grantor": "DIAMOND BLUE POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS INC",
+                    "DIAMOND BLUE POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/9/1987",
+                    "D187335202",
+                    "OPR/8904/2286",
+                    "ARL, Subdivision: ARBOR VAL, Lot: 1, Block: H"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-04-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187335202"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS INC",
+                "grantor": "DIAMOND BLUE POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS INC",
+                    "DIAMOND BLUE POOLS INC",
+                    "MECHANICS LIEN",
+                    "9/10/1986",
+                    "D186035112",
+                    "OPR/8680/902",
+                    "WTGA, Subdivision: GREENFIELD VIL, Lot: 11, Block: 9"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1986-09-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D186035112"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS INC",
+                "grantor": "DIAMOND BLUE POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS INC",
+                    "DIAMOND BLUE POOLS INC",
+                    "MECHANICS LIEN",
+                    "7/1/1986",
+                    "D186353860",
+                    "OPR/8598/1000",
+                    "FT W, Subdivision: MEADOW CRK, Lot: 22, Block: 34"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1986-07-01",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D186353860"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "11/23/1987",
+                    "D187413619",
+                    "OPR/9128/1309",
+                    "Subdivision: LAKE COUN ESTS, Lot: 4, Block: 17"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-11-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187413619"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "6/10/1987",
+                    "D187355941",
+                    "OPR/8972/1263",
+                    "BRLSN, Subdivision: TIMBER RIDGE, Lot: 2, Block: 14"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-06-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187355941"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "6/22/1987",
+                    "D187360549",
+                    "OPR/8984/1212",
+                    "FT W, Subdivision: LAKELAND, Lot: 8, Block: 2"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-06-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187360549"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "5/3/2016",
+                    "D216092817",
+                    "--/--/--",
+                    "ARL, Subdivision: SOUTHWIND, Lot: 36, Block: F"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2016-05-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D216092817"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "8/8/2016",
+                    "D216179502",
+                    "--/--/--",
+                    "ARL, Subdivision: WILDWOOD ESTS, Lot: 15, Block: B"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2016-08-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D216179502"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "3/12/2021",
+                    "D221066521",
+                    "OPR/--/--",
+                    "GRAND PRAIRIE, Subdivision: BELLE VISTA AT MIRA LAGOS, Lot: 10, Block: B"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-03-12",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221066521"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "10/5/2015",
+                    "D215225042",
+                    "--/--/--",
+                    "ARL, Subdivision: WILDWOOD ESTS, Lot: 24, Block: D"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2015-10-05",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D215225042"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "8/5/2005",
+                    "D205229217",
+                    "--/--/--",
+                    "HASLET, Subdivision: ASHMORE FARMS, Lot: 19, Block: 4"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2005-08-05",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D205229217"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "DIAMOND BLUE POOLS",
+                "grantor": "DIAMOND BLUE POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DIAMOND BLUE POOLS",
+                    "DIAMOND BLUE POOLS",
+                    "MECHANICS LIEN",
+                    "2/1/1988",
+                    "D188308216",
+                    "OPR/9181/314",
+                    "BNBRK, Subdivision: BROOKS MOORELAND, Lot: 39, Block: 10"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1988-02-01",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D188308216"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "4/5/2021",
+                    "D221090038",
+                    "OPR/--/--",
+                    "FORT WORTH, Subdivision: PRYAMID ACRES NO 2, Lot: 51, Block: 18"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-04-05",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221090038"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "8/5/2002",
+                    "D202214299",
+                    "OPR/15866/329",
+                    "KELLER, Subdivision: QUAIL VAL ESTS, Lot: 2, Block: 7"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2002-08-05",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D202214299"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "BLUE HAVEN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE HAVEN POOLS",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN",
+                    "6/1/1981",
+                    "D181312411",
+                    "OPR/7127/2100",
+                    "Subdivision: DIAMOND HILLS, Lot: 6R, Block: 4"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1981-06-01",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D181312411"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "12/23/2019",
+                    "D219294282",
+                    "--/--/--",
+                    "ARLINGTON, Subdivision: HILLSIDE TERRACE, Lot: 5R, Block: 1"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2019-12-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D219294282"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "BLUE HAVEN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE HAVEN POOLS",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN",
+                    "4/11/1984",
+                    "D184335864",
+                    "OPR/7797/1007",
+                    "Subdivision: DIAMOND LOCH, Lot: 21, Block: 6"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1984-04-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D184335864"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "5/8/2007",
+                    "D207159099",
+                    "--/--/--",
+                    "FT W, Subdivision: PARK GLEN, Lot: 16, Block: 18"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2007-05-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D207159099"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "BLUE HAVEN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE HAVEN POOLS",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN",
+                    "7/26/1984",
+                    "D184372159",
+                    "OPR/7901/1955",
+                    "Subdivision: DIAMOND LOCH, Lot: 3, Block: 6"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1984-07-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D184372159"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "5/2/2016",
+                    "D216090644",
+                    "--/--/--",
+                    "ARL, Subdivision: WILDWOOD ESTS, Lot: 45, Block: A"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2016-05-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D216090644"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "BLUE HAVEN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE HAVEN POOLS",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN",
+                    "3/23/1983",
+                    "D183323001",
+                    "OPR/7470/2171",
+                    "Subdivision: DIAMOND LOCH, Lot: 8A, Block: 3"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1983-03-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D183323001"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE HAWAIIAN POOLS",
+                "grantor": "BLUE HAWAIIAN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE HAWAIIAN POOLS",
+                    "BLUE HAWAIIAN POOLS",
+                    "MECHANICS LIEN",
+                    "7/17/1984",
+                    "D184027893",
+                    "OPR/7892/1881",
+                    "Subdivision: DIAMOND OAKS E, Lot: 7, Block: 8"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1984-07-17",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D184027893"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "BLUE HAVEN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE HAVEN POOLS",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN",
+                    "5/29/1984",
+                    "D184352573",
+                    "OPR/7842/521",
+                    "Subdivision: DIAMOND OAKS CC, Lot: 19, Block: 11"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1984-05-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D184352573"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE TEX POOLS",
+                "grantor": "BLUE TEX POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE TEX POOLS",
+                    "BLUE TEX POOLS",
+                    "MECHANICS LIEN",
+                    "1/26/1984",
+                    "D184308262",
+                    "OPR/7727/2115",
+                    "Subdivision: DIAMOND LOCH N, Lot: 2, Block: 2"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1984-01-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D184308262"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "BLUE HAVEN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE HAVEN POOLS",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN",
+                    "9/11/1986",
+                    "D186378309",
+                    "OPR/8681/1968",
+                    "SO LK, Subdivision: DIAMOND CIR ESTS, Lot: 1R, Block: 4"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1986-09-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D186378309"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS",
+                "grantor": "BLUE DIAMOND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS",
+                    "BLUE DIAMOND POOLS",
+                    "MECHANICS LIEN",
+                    "11/8/2001",
+                    "D201276649",
+                    "OPR/15249/9",
+                    "BURLESON, Subdivision: ALSBURY MDWS, Lot: 31, Block: 7"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2001-11-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D201276649"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE DIAMOND POOLS DOING BUSINESS AS",
+                "grantor": "BLUE DIAMOND POOLS DOING BUSINESS AS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE DIAMOND POOLS DOING BUSINESS AS",
+                    "BLUE DIAMOND POOLS DOING BUSINESS AS",
+                    "MECHANICS LIEN",
+                    "3/10/2021",
+                    "D221064176",
+                    "OPR/--/--",
+                    "FORT WORTH, Subdivision: WEDGEWOOD, Lot: 7, Block: 103"
+                  ],
+                  "search_term": "Blue Diamond Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2021-03-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D221064176"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 old lien(s) against contractor (>7 years ago)",
+            "6 lien(s) filed BY contractor (collecting payment - neutral)",
+            "41 lien(s) with unclear direction"
+          ],
+          "score": 8,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 48,
+          "human_summary": "CAUTION: 1 lien(s) filed AGAINST Blue Diamond Pools (potential payment issues)",
+          "liens_unclear": 41,
+          "liens_by_count": 6,
+          "resolved_liens": 0,
+          "liens_against_count": 1,
+          "liens_by_contractor": 6,
+          "total_against_amount": 0,
+          "liens_against_contractor": 1
+        },
+        "owner_name": null,
+        "search_term": "Blue Diamond Pools",
+        "searched_at": "2026-02-14T08:07:48.966491",
+        "total_records": 48
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:09:02.116Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "BLUE DIAMOND POOLS INC",
+        "taxpayer_number": "32003598383"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-14T08:09:02.123Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:09:12.217Z",
+      "data": {
+        "cost": 0.0008769600000000001,
+        "summary": "The Google reviews appear largely authentic, with detailed, emotional stories from customers rescued from other builders. The perfect 5.0 rating with no critical reviews in the sample is a minor red flag, but the content suggests a contractor who excels at communication and problem-solving, earning strong loyalty. The lack of ratings on other platforms limits a full cross-platform analysis.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-14T08:09:12.217Z",
+        "fake_signals": [
+          "All sampled Google reviews are 5-star",
+          "Multiple reviews praise the same two owners (Kim and Brandon) with similar phrasing",
+          "Lack of any critical reviews in the sample"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "Not Rated",
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "MEDIUM",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Reviews mention owners being available for questions years after installation",
+            "Owner rectified imperfections during build without customer noticing"
+          ]
+        },
+        "authentic_signals": [
+          "Reviews contain specific project details (e.g., plaster replacement, half-built pool rescue)",
+          "Varied writing styles and lengths",
+          "Emotional authenticity in stories of being scammed by previous builders",
+          "Mention of specific crew interactions and follow-up support"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Insufficient data for comparison. Google shows a perfect 5.0, but Yelp and BBB lack ratings. No contradictory ratings found."
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:07:27.722Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Blue Diamond Pools\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:05:37.357Z",
+      "data": "Blue Diamond Pools Mesquite review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Channels Filters Search filters Blue Diamond Pools Blue Diamond Pools @bluediamondpools1423 • 8 subscribers Blue Diamond Pools & Landscaping are builders and designers of Concrete, Vinyl & Fiberglass Inground Pools. Including full ... Subscribe Blue Diamond Pools Blue Diamond Pools @bluediamondpools5569 • 12 subscribers Subscribe BlueDiamond Pools BlueDiamond Pools @BlueDiamondPoolsON • 8 subscribers Blue Diamond Pools and Landscaping offers creative and unique pool installations and landscape designs for resort and ... Subscribe 1:09 1:09 Now playing Blue Diamond Pools - BACKYARD RESORT! Blue Diamond Pools Blue Diamond Pools • • 229 views 1 year ago Blue Diamond Pools Blue Diamond Pools Located in the heart of Barrie, this modern design proves that you can elevate your backyard from “suburban living” to “resort ... Located in the heart of Barrie, this modern design proves that you can elevate your backyard from “suburban living” to “resort ... From the video description 4K 3:00 3:00 Now playing Diamond Brite Pool Plaster Review | Catherine Arensberg Catherine Arensberg Catherine Arensberg • • 41K views 3 years ago Catherine Arensberg Catherine Arensberg It's been a whole YEAR since we had our gunite pool replastered, and it's taken us this long to work out all the bumps in the road ... It's been a whole YEAR since we had our gunite pool replastered, and it's taken us this long to work out all the bumps in the road ... From the video description Summary The video shares a homeowner's experience with Diamond Brite pool plaster, a year after installation. They discuss the challenges they faced, including unexpected staining and difficulty maintaining the pool's chemical balance. The homeowner provides insights and advice for those considering Diamond Brite, emphasizing the importance of thorough research and communication with pool installers. AI-generated video summary Quality and accuracy may vary. Summary The video shares a homeowner's experience with Diamond Brite pool plaster, a year after installation. They discuss the challenges they faced, including unexpected staining and difficulty maintaining the pool's chemical balance. The homeowner provides insights and advice for those considering Diamond Brite, emphasizing the importance of thorough research and communication with pool installers. SHORTS SHORTS Now playing How to choose the right color for your pool! 🌴 #luxuryhome #pool #pooldesign #backyard Foxterra Design Foxterra Design • • 406K views 1 year ago Foxterra Design Foxterra Design 0:00 How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... Automatic captions SHORTS SHORTS Now playing Having a hard time choosing your pool color? 🌴 Check out this option! #plaster #pool #pooldesign Foxterra Design Foxterra Design • • 75K views 3 years ago Foxterra Design Foxterra Design 0:43 0:43 Now playing Blue Diamond Pool Design Inc., St Cloud, FL Dex Media Videos Dex Media Videos • • 655 views 15 years ago Dex Media Videos Dex Media Videos Blue Diamond Pool Design Inc. http://www.superpages.com/bp/St-Cloud-FL/ Blue - Diamond - Pool -Design-Inc-L2129063143.htm St ... Blue Diamond Pool Design Inc. http://www.superpages.com/bp/St-Cloud-FL/ Blue - Diamond - Pool -Design-Inc-L2129063143.htm St ... From the video description SHORTS SHORTS Now playing Easy way to keep the pool clean! #summer #pool #tips Jeff & Lauren Show Jeff & Lauren Show • • 336K views 8 months ago Jeff & Lauren Show Jeff & Lauren Show Easy way to keep the pool clean! Tennis balls absorb oils and residue from the pool ! # pool #poolparty #summer ... Easy way to keep the pool clean! Tennis balls absorb oils and residue from the pool ! # pool #poolparty #summer ... From the video description 0:11 0:11 Now playing Blue Diamond Pools BlueDiamond Pools BlueDiamond Pools • • 339 views 12 years ago BlueDiamond Pools BlueDiamond Pools SHORTS SHORTS Now playing Trick Dive into Rooftop Swimming Pool at Hotel #shorts Underwater Tori Underwater Tori • • 14M views 1 year ago Underwater Tori Underwater Tori SHORTS SHORTS Now playing This pool looks incredible 😧 | #shorts SportsNation SportsNation • • 8.6M views 3 years ago SportsNation SportsNation This pool looks incredible | #shorts (via @rikkicarman) This pool looks incredible | #shorts (via @rikkicarman) From the video description People also watched 5:43 5:43 Now playing How much does it cost to replaster a pool? bjyachts bjyachts • • 160K views 7 years ago bjyachts bjyachts Had my pool re-plastered. Found a way to save lots of $. Not trying to blast any pool builders or discredit them. There are lots of ... Had my pool re-plastered. Found a way to save lots of $. Not trying to blast any pool builders or discredit them. There are lots of ... From the video description Summary The speaker shares their experience replastering their pool, highlighting the cost difference between hiring a pool company and a subcontractor. They detail the process, including the time it took and the materials used, and emphasize the importance of finding a reliable subcontractor. AI-generated video summary Quality and accuracy may vary. Summary The speaker shares their experience replastering their pool, highlighting the cost difference between hiring a pool company and a subcontractor. They detail the process, including the time it took and the materials used, and emphasize the importance of finding a reliable subcontractor. 5:34 5:34 Now playing How to Choose Pool Plaster Color | Catherine Arensberg Catherine Arensberg Catherine Arensberg • • 59K views 4 years ago Catherine Arensberg Catherine Arensberg Along with all the decisions we are making while renovating our exterior living spaces, pool plaster color has been one of the ... Along with all the decisions we are making while renovating our exterior living spaces, pool plaster color has been one of the ... From the video description Summary The video follows a homeowner as they choose the plaster color for their gunite pool. They discuss the importance of considering how the color will look in shallow areas and how different colors affect water temperature. The homeowner shares their thought process and considerations, including texture and safety for children. AI-generated video summary Quality and accuracy may vary. Summary The video follows a homeowner as they choose the plaster color for their gunite pool. They discuss the importance of considering how the color will look in shallow areas and how different colors affect water temperature. The homeowner shares their thought process and considerations, including texture and safety for children. 10:17 10:17 Now playing Plaster Pool Renovation to Pebble Tec - Extended Version Number 1 Digital Number 1 Digital • • 991K views 4 years ago Number 1 Digital Number 1 Digital THANK YOU FOR SUBSCRIBING! This version of the conversion of an old plaster surface into a new Pebble Tec surface includes ... THANK YOU FOR SUBSCRIBING! This version of the conversion of an old plaster surface into a new Pebble Tec surface includes ... From the video description 4K 6 chapters Demolition and Tile Removal | Installation of New Tile | Initial Pressure Washing | Bond Coat Application | Pebble Tec Application | Acid Wash & Final Cleaning 6 chapters in this video 6 chapters Demolition and Tile Removal Demolition and Tile Removal 0:00 Demolition and Tile Removal 0:00 Installation of New Tile Installation of New Tile 1:16 Installation of New Tile 1:16 Initial Pressure Washing Initial Pressure Washing 1:52 Initial Pressure Washing 1:52 Bond Coat Application Bond Coat Application 2:40 Bond Coat Application 2:40 Pebble Tec Application Pebble Tec Application 3:23 Pebble Tec Application 3:23 Acid Wash & Final Cleaning Acid Wash & Final Cleaning 8:24 Acid Wash & Final Cleaning 8:24 13:57 13:57 Now playing Finishing Pool Build. Mini pebble plaster application! Beautiful outcome Sierra Pool Co. Sierra Pool Co. • • 150K views 3 years ago Sierra Pool Co. Sierra Pool Co. The last step of the swimming pool construction process is plaster! In this case mini pebble by NPT. This one came out beautiful! The last step of the swimming pool construction process is plaster! In this case mini pebble by NPT. This one came out beautiful! From the video description 4K 4 chapters Intro | Pool Plastering | Safety Feature | Outro 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Pool Plastering Pool Plastering 0:14 Pool Plastering 0:14 Safety Feature Safety Feature 4:20 Safety Feature 4:20 Outro Outro 13:43 Outro 13:43 + 6 more SHORTS SHORTS Now playing 12 Year Old Bobbing In 13 Feet Deep Swimming Pool | Morning Dive Experience Morning Dive Morning Dive • • 4.4M views 2 years ago Morning Dive Morning Dive Whatever age, it is important to build strong water confidence!! Learning underwater breath control can be a calming and relaxing ... Whatever age, it is important to build strong water confidence!! Learning underwater breath control can be a calming and relaxing ... From the video description 4K SHORTS SHORTS Now playing Summer Blue Diamond Brite Pool Finish DG Pool Supply DG Pool Supply • • 7.3K views 5 years ago DG Pool Supply DG Pool Supply Summer Blue Diamond brite Pool Finish For More Information : https://dgpoolsupplyandservice.com/ diamond -brite- pool -finish/ Summer Blue Diamond brite Pool Finish For More Information : https://dgpoolsupplyandservice.com/ diamond -brite- pool -finish/ From the video description SHORTS SHORTS Now playing Can you fit a pool in a SMALL BACKYARD? Calimingo Calimingo • • 1.2M views 3 years ago Calimingo Calimingo 4K SHORTS SHORTS Now playing Gunite Pool Plaster Diamond Brite Tahoe Blue Part 6 D Monzo D Monzo • • 70K views 4 years ago D Monzo D Monzo SHORTS SHORTS Now playing Blue Quartz Diamond Brite Pool Finish DG Pool Supply DG Pool Supply • • 9.7K views 5 years ago DG Pool Supply DG Pool Supply Blue Quartz Diamond Brite Pool Finish For More Details: https://dgpoolsupplyandservice.com/ diamond -brite- blue -quartz/ Blue Quartz Diamond Brite Pool Finish For More Details: https://dgpoolsupplyandservice.com/ diamond -brite- blue -quartz/ From the video description SHORTS SHORTS Now playing Fiberglass swimming pools are dug/set in one day. #fiberglasspools #modernpoolbuild #excavation CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP • • 1.4M views 2 years ago CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP SHORTS SHORTS Now playing Inside the Deepest Swimming Pool of the City 🔥 #learnswimming #swimming #swim Swimming By Sanuj Swimming By Sanuj • • 8.1M views 1 year ago Swimming By Sanuj Swimming By Sanuj Girl Vs Boy Swimming Practice, Fast Swimming Tips for Beginners, Kicking Race, तैरना सीखें ▻ Join Video Analysis ... Girl Vs Boy Swimming Practice, Fast Swimming Tips for Beginners, Kicking Race, तैरना सीखें ▻ Join Video Analysis ... From the video description SHORTS SHORTS Now playing Is this an in-ground or above-ground pool? 👀#luxuryhome #backyard #luxurypools #abovegroundpools Foxterra Design Foxterra Design • • 848K views 1 year ago Foxterra Design Foxterra Design Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:05:38.496Z",
+      "data": {
+        "query": "site:nextdoor.com Blue Diamond Pools Mesquite",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/city/tucson--az/",
+            "title": "Tucson, AZ | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "Tucson, Arizona is a vibrant desert city known for its rich history and stunning natural beauty. Nextdoor Neighbors appreciate its clean, peaceful environment.",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/city/phoenix--az/",
+            "title": "Phoenix, AZ | News, Crime, Lost Pets, Free Stuff",
+            "snippet": "The top reasons Nextdoor Neighbors love Phoenix are: clean, dog friendly, family friendly, friendly, neighbors, peaceful, quiet, safe, walkability, and walking.",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/for_sale_and_free/6957e9c2-4b13-4c02-a9c7-6be7052e2962/",
+            "title": "Mesquite Dining Room Table For $4,000 In Green Valley, AZ | For ...",
+            "snippet": "Mesquite dining room table near the Canoa Northwest neighborhood in Green Valley, AZ. Find items in For Sale & Free on Nextdoor - all listings are local.",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:07:30.343Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Blue Diamond Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:04:37.707Z",
+      "data": {
+        "query": "site:yelp.com \"Blue Diamond Pools\" \"Mesquite, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Midlothian%2C+TX+76065",
+            "title": "Best Swimming Pool Builders near Midlothian, TX 76065 - Yelp",
+            "rating": 3.5,
+            "snippet": "204 N Galloway Ave, Mesquite, TX 75149. (972) 288-7537. On their website ... Blue Diamond Pools (5/5). Blu H2O Pools (5/5). Aqua Architects (5/5). What are ...",
+            "position": 1,
+            "ratingCount": 341
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Builder&find_loc=Mansfield%2C+TX",
+            "title": "TOP 10 BEST Pool Builder near Mansfield, TX - Updated 2026 - Yelp",
+            "rating": 4,
+            "snippet": "... Blue Diamond Pools - Pool Builder near me - Mansfield, Texas. Blue Diamond ... Mesquite, TX 75181. (469) 954-2531. They repaired my pool this year and ...",
+            "position": 2,
+            "ratingCount": 584
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Builders&find_loc=Midlothian%2C+TX",
+            "title": "TOP 10 BEST Pool Builders near Midlothian, TX - Updated 2026 - Yelp",
+            "rating": 3.4,
+            "snippet": "... Blue Diamond Pools - Pool Builders near me - Midlothian, Texas. Blue Diamond ... Mesquite, TX 75149. (972) 288-7537. But if I need help with anything like ...",
+            "position": 3,
+            "ratingCount": 312
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=hottubandpool&find_loc=Midlothian%2C+TX",
+            "title": "THE BEST 10 HOT TUB & POOL near MIDLOTHIAN, TX - Yelp",
+            "rating": 3.9,
+            "snippet": "... Blue Diamond Pools, Barker Family Contracting, Pool Leak Locator, Swift ... Mesquite, TX 75150. (972) 270-3502. In addition, Frank answered several of my ...",
+            "position": 4,
+            "ratingCount": 385
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolservice&find_near=no-problem-custom-pools-and-outdoor-living-midlothian",
+            "title": "The Best 10 Pool & Hot Tub Service near No Problem ... - Yelp",
+            "rating": 3.9,
+            "snippet": "... Mesquite, TX 75150. (972) 270-3502. I would, indeed, recommend Frank, and ... Firewater Pools and Backyards (5/5). Blue Diamond Pools (5/5). What are some ...",
+            "position": 5,
+            "ratingCount": 373
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Builder&find_loc=Burleson%2C+TX",
+            "title": "TOP 10 BEST Pool Builder near Burleson, TX - Updated 2026 - Yelp",
+            "rating": 3.6,
+            "snippet": "... Blue Diamond Pools - Pool Builder near me - Burleson, Texas. Blue Diamond ... Mesquite, TX 75181. (469) 954-2531. They repaired my pool this year and they ...",
+            "position": 6,
+            "ratingCount": 652
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Cleaners&find_loc=Midlothian%2C+TX",
+            "title": "TOP 10 BEST Pool Cleaners near Midlothian, TX - Yelp",
+            "rating": 3.8,
+            "snippet": "... Blue Diamond Pools - Pool Cleaners near me - Midlothian, Texas. Blue Diamond ... Mesquite, TX 75150. (214) 924-8483. Fast friendly and great job fixing my ...",
+            "position": 7,
+            "ratingCount": 260
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Hot+Tub+%26+Pool&find_loc=Ovilla%2C+TX",
+            "title": "TOP 10 BEST Hot Tub & Pool near Ovilla, TX - Updated 2026 - Yelp",
+            "rating": 4.1,
+            "snippet": "Mesquite, TX 75150. (972) 270-3502. In addition, Frank answered several ... Blue Diamond Pools (5/5). What are some hot tub & pool with a large number of ...",
+            "position": 8,
+            "ratingCount": 312
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Above+Ground+Pool+Installation&find_loc=Midlothian%2C+TX+76065",
+            "title": "Best Above Ground Pool Installation near Midlothian, TX 76065 - Yelp",
+            "rating": 3.4,
+            "snippet": "Mesquite, TX 75150. (469) 679-3314. TLC has gone above and beyond with ... Blue Diamond Pools (5/5). Blue Balance Texas (5/5). Aqua Architects (5/5). R.O ...",
+            "position": 9,
+            "ratingCount": 1400
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool&find_loc=Red+Oak%2C+TX",
+            "title": "TOP 10 BEST Pool near Red Oak, TX - Updated 2026 - Yelp",
+            "rating": 4.2,
+            "snippet": "... Blue Diamond Pools - Pool near me - Red Oak, Texas. Blue Diamond Pools. 5.0 (4 ... Mesquite, TX · Midlothian, TX · Ovilla, TX · Waxahachie, TX. Show more.",
+            "position": 10,
+            "ratingCount": 306
+          }
+        ]
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:05:53.515Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Blue%20Diamond%20Pools&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:05:57.528Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:06:03.620Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:07:24.596Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:07:25.838Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:05:11.736Z",
+      "data": "Trustpilot Search Results Companies Blue World Pools www.blueworldpools.com • 4.2K reviews 4.4 Blue Haven Pools bluehaven.com.au • 123 reviews 3.8 Blue Diamond Growers www.bluediamond.com • 2 reviews 3.0 Blue Diamond Products www.blue-diamond-products.co.uk • 14 reviews 2.8 Blue Diamond Webs bluediamondwebs.com • 5 reviews 4.1 Categories Diamond Dealer The best companies in the category 'Diamond Dealer' Diamond Buyer The best companies in the category 'Diamond Buyer' Day Spa The best companies in the category 'Day Spa' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (1696) Blue World Pools www.blueworldpools.com 4.4 4,171 reviews United States Blue Haven Pools bluehaven.com.au 3.8 123 reviews 1/68 Hume Hwy, Lansvale, United States Blue Diamond Products www.blue-diamond-products.co.uk 2.8 14 reviews United Kingdom Blue Diamond Growers www.bluediamond.com 3.0 2 reviews Blue Diamond Webs bluediamondwebs.com 4.1 5 reviews United States Blue Cube Pools www.bluecubepools.co.uk 4.3 11 reviews Mill Road 103, Sharnbrook, United Kingdom Blue Diamond Wellbeing bluediamondwellbeing.co.uk 4.3 9 reviews 32 Quorn Close, Loughborough, Leicestershire, United Kingdom Blue Fountain Pools bluefountainpools.com 3.2 1 review South Grand Avenue 1151, Glendora, United States Blue Diamond Group bluediamondfm.com 3.7 1 review Port Saeed, Deira, Dubai, UAE, Dubai, U.A.E. The Pools www.thepools.com 4.3 1,251 reviews United Kingdom Previous 1 2 3 4 170 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Diamond Dealer Shopping & Fashion Diamond Buyer Shopping & Fashion Garden Center Home & Garden Jewelry Store Shopping & Fashion Day Spa Beauty & Well-being Furniture Store Home & Garden are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:05:17.738Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:05:21.942Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:07:31.200Z",
+      "data": {
+        "found": true,
+        "query": "\"Blue Diamond Pools\" Mesquite lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Contractors&find_loc=Burleson%2C+TX",
+            "title": "THE BEST 10 Pool Contractors near Burleson, TX - Yelp",
+            "snippet": "... See all reviews. Photos. See all. Request quote & availability. Blue Diamond Pools - Pool Contractors near me - Burleson, Texas. Blue Diamond Pools. 5.0 (4 ..."
+          },
+          {
+            "link": "https://www.pacermonitor.com/public/filings/DQARWXCY/Mountain_Express_Oil_Company_and__txsbke-23-90147__0125.0.pdf",
+            "title": "Mountain_Express_Oil_Compan...",
+            "snippet": "... Mesquite 3055A Balch Springs 4290 South Beltline Road Mesquite 3055A Balch ... Blue Diamond Pools LLC 6585 Hwy 431 Ste. D Owens Cross Ro 555SE Ly Nails ..."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/saint-jo/category/whirlpool-bathtubs",
+            "title": "Bathtubs near Saint Jo, TX | Better Business Bureau",
+            "snippet": "Blue Diamond Pools & Spas. Pool Contractors, Patios and Decks, Deck Builder ... BBB Rating: A+ Service Area. Serving the following areas: OK. not BBB ..."
+          },
+          {
+            "link": "https://m.yelp.com/search?cflt=decksrailing&find_loc=Red+Oak%2C+TX",
+            "title": "THE BEST 10 DECKS & RAILING near RED OAK, TX - Yelp",
+            "snippet": "... Red Oak, TX 75154. (469) 226-8638. Get pricing & availability. Blue Diamond Pools - Decks & Railing near me - Red Oak, Texas. Blue Diamond Pools. 5.0 ..."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:05:25.102Z",
+      "data": {
+        "query": "Blue Diamond Pools Mesquite site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2013&mm=10",
+            "title": "[XML] https://www.nbcdfw.com/sitemap.xml?yyyy=2013&mm=10",
+            "snippet": "... Diamond Bracelet</video:title><video:description>Jeweler Sues DeMarcus Ware ... Blue Star</video:category></video:video></url><url><loc>https://www ...",
+            "position": 1
+          },
+          {
+            "date": "Aug 7, 2014",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2014/08/08/dog-about-town-painting-playing-and-more-things-to-do-with-your-pooch/",
+            "title": "Dog About Town: Painting, playing and more things to do with your ...",
+            "snippet": "You and your pooch can unleash your artistic talents during the “Pupcasso Painting Class” at 3 p.m. Sunday at Homegrown Hounds Dog Deli and ...",
+            "position": 2
+          },
+          {
+            "date": "Apr 25, 2017",
+            "link": "https://interactives.dallasnews.com/2017/abt/ch2.html",
+            "title": "My Aryan Princess: A place in the family - The Dallas Morning News",
+            "snippet": "Crash, shooting pool last year in Tyler, was paid by police to pass along information about fellow gang members.",
+            "position": 3
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2017&mm=06",
+            "title": "[XML] sitemap.xml - NBC 5 Dallas-Fort Worth",
+            "snippet": "... Blue Star</video:category><video:tag>Cole Beasley</video:tag><video:tag> ... Pools for a mile, surviving the ordeal with only minor scratches.</video ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2013/09/06/dog-about-town-a-wave-of-pool-parties-and-more-things-to-do-with-your-pooch/",
+            "title": "Dog About Town: A wave of pool parties and more things to do with ...",
+            "snippet": "The doggy swim season is at its peak this weekend, with pool parties throughout the area. Most include games, music and vendors along with the splashing.",
+            "position": 5
+          },
+          {
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2012/08/10/dog-about-town-diving-into-the-swim-days-and-more-dog-friendly-things-to-do-in-the-dallas-area/",
+            "title": "Dog About Town: Diving into the swim days and more dog-friendly ...",
+            "snippet": "B.K. has details on Mesquite's Doggie Splash Day and other events, along with an updated list of dog-friendly patios, stores and attractions.",
+            "position": 6
+          },
+          {
+            "date": "Mar 27, 2017",
+            "link": "https://www.dallasnews.com/arts-entertainment/travel/2017/03/27/go-beyond-golf-courses-in-tucson-and-check-out-the-thriving-arts-and-culture-scene/",
+            "title": "Go beyond golf courses in Tucson and check out the thriving arts ...",
+            "snippet": "But some of it is malted instead over mesquite for a nice, smoky taste that's quite distinct, yet still resembles Scotch. \"I've discovered that ...",
+            "position": 7
+          },
+          {
+            "date": "Oct 10, 2013",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2013/10/11/dog-about-town-walking-under-the-trees-and-in-the-pumpkin-patch-and-more-things-to-do-with-your-pooch/",
+            "title": "Dog About Town: Walking under the trees and in the pumpkin patch ...",
+            "snippet": "The festivities, from 8 a.m. to 1:30 p.m., also include a costume contest and other games, vendors, blessings, door prizes and a silent auction.",
+            "position": 8
+          },
+          {
+            "date": "Feb 2, 2018",
+            "link": "https://interactives.dallasnews.com/2018/standoff/",
+            "title": "Standoff: How the Dallas SWAT team cornered and killed the July 7 ...",
+            "snippet": "A small group of elite cops had to gear up and get the shooter. This is the first full account of what happened inside El Centro College that night.",
+            "position": 9
+          },
+          {
+            "date": "Jun 15, 2012",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2012/06/15/dog-about-town-partying-like-a-royal-and-more-things-to-do/",
+            "title": "Dog About Town: Partying like a royal and more things to do",
+            "snippet": "Attendees are welcome to bring blankets and lawn chairs, and there will be pools for pooches to cool off in. Free. soundsoflewisville.com ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:07:29.610Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Blue Diamond Pools\" Mesquite",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:06:11.420Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Blue Diamond Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT | NJ.gov",
+            "snippet": "... Pool, while paragraph 3.b represents allocation based on a proportional share of the Separate. State Fee Pools. In other words, for the National Fee Pool ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Global%20Opioid%20Settlement%20Files/Final%20Distributor%20Settlement%20Agreement.pdf",
+            "title": "[PDF] DISTRIBUTOR SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. DISTRIBUTOR SETTLEMENT. AGREEMENT. Page 2. i. Table of Contents. Page. I.",
+            "position": 2
+          },
+          {
+            "date": "Sep 30, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/Distributors%20Texas%20Settlement%20Agreement%20Distributors%20TXAG%20Executed.pdf",
+            "title": "[PDF] DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT",
+            "snippet": "Committee shall exchange pools of recommended candidates to serve as the Monitor. The pools shall each contain the names of three (3) ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:06:12.293Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 2
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 3
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 7
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 8
+          },
+          {
+            "date": "Jan 10, 2022",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=25587&ItemID=16931",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 01/10/2022 09:59:31. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:06:13.420Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Blue Diamond Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:06:14.866Z",
+      "data": {
+        "query": "site:dallascounty.org Blue Diamond Pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "[PDF] A 21st Century Mosaic - Dallas County",
+            "snippet": "Dallas County features a number of lakes that are reservoirs for municipal water and recreational use. These include Lake Ray Hubbard, Lake North, Joe Pool, ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:06:15.838Z",
+      "data": {
+        "query": "site:collincountytx.gov Blue Diamond Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Mar 16, 2015",
+            "link": "https://eagenda.collincountytx.gov/docs/2015/CC/20150316_1720/39623_Certificate%20of%20Public%20Hearing%20-%20signed%20RLD.pdf",
+            "title": "[PDF] Certificate of Public Hearing - Collin County",
+            "snippet": "BLUE eyes. Color carrier. Short square.cobby bodies. 940-368-6059. Lic ... Find your Diamond In the. Rough in our Jewelry &. Stones Section ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:06:17.018Z",
+      "data": {
+        "query": "site:dentoncounty.gov Blue Diamond Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:06:21.456Z",
+      "data": {
+        "name": "Blue Diamond Pools by George",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "6327307867",
+        "rating": "Not Rated",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/belton/profile/pool-contractors/blue-diamond-pools-by-george-0825-49825",
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:06:29.240Z",
+      "data": {
+        "name": "Blue Diamond Pools",
+        "found": true,
+        "rating": 5,
+        "source": "serpapi",
+        "address": "661 E Main St #200-166, Midlothian, TX 76065",
+        "data_id": "0x864ef3da7421e0f1:0x3ed90082523c5d",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 18,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "a month ago",
+            "text": "Choosing Blue Diamonds Pool was one of the best decisions we made. From the initial consultation to the final walkthrough, Kim and Brandon were transparent, organized, and professional. They explained each step clearly, kept us informed, and followed through on every commitment. The quality of their work truly shows—our pool looks amazing and functions perfectly. It’s rare to find a contractor you can genuinely trust, and Blue Diamonds Pool exceeded our expectations in every way.\nThanks Kim and Brandon !!!",
+            "author": "Kenny Le",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "You will not find a better pool building company than Blue Diamond pools. Brandon and Kim have exceeded all of my expectations. I appreciated the up front information and the fact there was never any hidden expenses or \"I forgot to mention\" fees. I knew exactly what my total cost was going to be up front. Each crew was respectful to our home/property and worked efficiently. Kim's attention to detail and communication is top notch. Even after the pool was complete, they took time out of their busy schedule to make sure I understood the science behind all the chemicals to keep my pool looking beautiful and the basics to keep my pump running flawlessly for years. I love our new pool it is exactly what I wanted. I could not have asked for a better experience.",
+            "author": "Lynnley Burks",
+            "rating": 5
+          },
+          {
+            "date": "11 months ago",
+            "text": "We picked Blue Diamond Pools for our project and could no be happier with the outcome! Brandon and Kim are very attentive and communicate exceptionally well. Even better than that, our pool turned out exactly how we wanted it. They found small imperfections (things that I didn't even notice) through the build and immediately rectified it. They were in our corner and wanted us to have an awesome product when everything was done. If you pick them, you will be happy with your pool!",
+            "author": "Eric Neff",
+            "rating": 5
+          },
+          {
+            "date": "Edited 7 months ago",
+            "text": "It’s nearly impossible to find a trustworthy pool builder around here—and we definitely learned that the hard way. Our first pool company ghosted us. The second company built half a pool and then vanished with our money. They scammed us (and many others) out of over $25,000. What we were left with was a swampy, half-built pool wasteland that sat untouched for almost 3 years.\n\nEnter Blue Diamond Pools, and everything changed.\n\nWe got quotes from multiple companies, some of which were DOUBLE what Blue Diamond quoted us. But not only were they more affordable—they were also the most professional, responsive, and reliable company we encountered out of the six we spoke with.\n\nThe difference between them and our past experience was night and day. What took Merlux months to (barely) do, Blue Diamond completed in just TWO WEEKS. The entire process was smooth, stress-free, and handled with clear, consistent communication. After everything we went through, working with them felt like a breath of fresh air.\n\nThe final result? Absolutely gorgeous. Better than anything I imagined when we first started this journey.\n\nThey were incredibly thorough and even made sure we knew how to care for the pool before they finished. Even now, they’re just a phone call or text away if I have any questions—and I do, often! 😅\n\nAfter a nightmare experience, we finally have a backyard oasis, and peace of mind, thanks to Blue Diamond Pools. I cannot recommend them enough.\n\n* ignore the overgrown garden, we haven't done much to it since the \"wasteland phase\". We'll get to it. 😉\n* I included before pictures so you can see the incredible work that was done.",
+            "author": "Sarah Fisher",
+            "rating": 5
+          },
+          {
+            "date": "6 months ago",
+            "text": "A Lifesaver in Pool Construction!\n\nAfter a nightmare experience with a previous pool company that left us high and dry mid-construction, my husband and I were completely discouraged. Then Blue Diamond Pools came into our lives like a breath of fresh air! From our first interaction, their honesty, communication, engagement, and fairness were simply outstanding.\n\nWe had several frustrating hiccups from the previous builder, but Kim and Brandon at Blue Diamond handled everything calmly and methodically. They truly went above and beyond to make the rest of the pool building experience as smooth as possible. We couldn't recommend Blue Diamond Pools enough – we just wish we had gone with them from the very beginning! They are simply the best.",
+            "author": "Ashley Brathwaite",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "When it comes to picking a pool builder Blue Diamond is the obvious choice.  We had a friend refer us to Brandon and Kim and after our first meeting with them we knew we wanted to have them build our pool.  The process from day one was a breeze. We didn't have one single problem  during the whole build. Brandon, Kim, and Morgan were always so quick to respond with any questions or concerns we might have had. They let us know when the decking was being poured so we could have our kids hands stamped in the concrete. It was taking too long to harden so we were only able to do their hands and not the date. We came back to the house two days later and saw that they had put the date under the hand prints for us. That was such a special thing that they didn't have to do but did it because they care and knew we wanted to have it there. We have been in our new home for 2 months now and are enjoying the long summer days we get to spend in the pool! Blue Diamond pools is a great company and I would recommend them to all my family and friends.",
+            "author": "Scott Everitt",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Brandon and Kim were amazing to work with. They made the process much less stressful and their team made my exact vision of my backyard oasis a reality and even improved it with some great suggestions. Their team was top notch and even though it's been two years since installation, we know that we can reach out to them for any questions.",
+            "author": "Robin Moser",
+            "rating": 5
+          },
+          {
+            "date": "6 months ago",
+            "text": "Kim and Brandon with Blue Diamond Pool are 1st class folks and can build you a 1st class quality pool! We would highly recommend them. Thanks Kim/Brandon!",
+            "author": "Kris Roebuck",
+            "rating": 5
+          },
+          {
+            "date": "11 months ago",
+            "text": "Blue Diamond recently replaced my plaster on my pool and I am extremely happy with the outcome and the Brandon and Kim are great to deal with.  They are always available for any questions and in my case additional tips on chemicals and equipment.  I highly recommend Blue Diamond Pools!!",
+            "author": "Lonny Coffey",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "We are so glad we went with Blue Diamond for our pool build. Brandon and Kim were a dream to work with- always communicative, helpful, and involved. Brandon was at our house every time work was being done to ensure it was done well and to our liking. Whenever there were options on how to do something he would give us all the information (pros and cons) and support whatever decision we made. Kim kept us informed every step of the way and worked with us on figuring out what worked in our budget. The crews they used did great work and were always friendly. Our pool build was by far the easiest, most stress free project we’ve done and it turned out beautifully! Blue Diamond exceeded our expectations and we highly recommend them to anyone.",
+            "author": "Courtney Gross",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "I absolutely love Blue Diamond Pools. Kim and Brandon are reliable, honest, and operate with integrity. They have always taken the time to answer any questions and instruct me how to operate my pool equipment... even coming over in freezing weather to patiently teach me how to winterize my pool. As a woman it can be difficult to find companies that I can truly trust. I am so grateful to have met such a great human beings with a great pool company.",
+            "author": "Arine Derfler Ramon",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "My family and I chose blue diamond pools for our project and the entire process couldn’t have been any better.  Brandon and Kim were a pleasure to work with and the finished product is incredible. From design, construction, and follow up, there is no better pool builder than Blue Diamond Pools. They are honest, ethical, and overall just great people. Our family loves our Blue Diamond Pool and any chance I get, I will recommend Blue Diamond Pools.",
+            "author": "Cody Durham",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "I recently had the pleasure of working with Kim and Brandon at Blue Diamond Pools to build an in-ground swimming pool in our backyard.  I can confidently say that it was a truly exceptional experience from start to finish. From the initial consultation to the final touches, Kim, Brandon and team displayed unparalleled professionalism, expertise, and dedication, making them a stand-out pool contractor in the industry.\n\nOutstanding Communication: Right from the beginning Kim and Brandon demonstrated excellent communication skills. They actively listened to our ideas and concerns, providing valuable insights and suggestions to turn our vision into a reality. Throughout the project, they kept us well-informed about the progress, and any changes or challenges that arose were promptly discussed and addressed.\n\nTop-Notch Workmanship: The craftsmanship and attention to detail exhibited by Blue Diamond are truly commendable. The pool they constructed exceeded our expectations in every aspect. The materials used were of the highest quality, and their skilled team executed every stage of the construction with precision and care.\n\nImpeccable Customer Service: Throughout the process, we felt like a valued client. Kim and Brandon were always approachable, friendly, and eager to address any questions or concerns we had. They went above and beyond to ensure that we were satisfied at every step.\n\nIn conclusion, I cannot praise Kim, Brandon and Blue Diamond Pools enough for their exceptional service and professionalism. Our new pool is a testament to their expertise and dedication. If you are looking for a reliable, skilled, and customer-focused pool contractor, I wholeheartedly recommend Blue Diamond Pools.    Without hesitation we give them a well-deserved five-star rating!\n\nMarty & Julie\nKennedale, TX",
+            "author": "Martin Buckley",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "After much research, and interviewing numerous pool builders, it was without any doubt who was going to build our pool.  Brandon and Kim form Blue Diamond were not only very personable and down to earth, but they were extremely straight forward, no pressure, and came in well below the cost of every other builder we spoke with.\n\nCommunication was never an issue, we were always apprised of where we were and what was next.  Even with an incredibly rainy spring and early summer, they were able to get the job done with little delay as possible.\n\nWe absolutely LOVE the end result.  The pool came out absolutely perfect - even better than we ever imagined.  We were able to get more decking, upgraded equipment, and additional features that the other builders either didn't  offer, or if they did, were extremely expensive.\n\nThank you Blue Diamond Pools, for making our new homes backyard, our personal oasis!\n\nIf you are looking to build a pool, refinish, upgrade, anything...  do yourself a favor and give Kim and Brandon a call - you won't be disappointed!",
+            "author": "Tom Sadin",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Had my pool built by Blue Diamond Pools by Brandon, and Kim. Me and my wife couldn’t be happier, the pool came out perfect, fair pricing, and great communication. Just remember… things don’t happen over night, and be patient. It took with rain delays almost 4 months. But is 100% worth it for an honest company and honest man. Brandon, and his company will make it correctly and done right. I wouldn’t choose anyone else.\n\nThanks again Brandon!\n~Tim",
+            "author": "Tim DFW",
+            "rating": 5
+          },
+          {
+            "date": "4 years ago",
+            "text": "Brandon, Kim and Morgan were so great to work with. I cannot speak highly enough about our experience with Blue Diamond Pools. We have a smaller backyard, and they worked with us to design something that fit our yard and budget. We ended up with an amazing pool with a spa and Baja shelf. It was our first time doing this type of major project, and they walked us through everything and have continued to be a resource when we have questions. Their knowledge of design, materials, systems, etc was above and beyond.",
+            "author": "Jennifer Wilson",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "My husband and I recently moved to the Midlothian area.  We are first time pool owners and to say we were intimidated to care for a pool is an understatement.   We called on the staff of Blue Diamond Pools and  Brandon and Kim were gracious enough to come to our residence to give my husband a period of instruction on the operation and general maintenance of the pool.  Brandon walked my husband through taking apart and cleaning the filters and back washing the system, maintaining the proper chemicals, how and when to shock the pool (and trust me it was completely necessary) and just the normal operation of a pool.  Blue Diamond Pools are friendly, professional and very knowledgeable.  Being the system was and older model was not a problem for Brandon.  He navigated through the system which made me feel comfortable using it.  We definitely will continue using Blue Diamond Pools for all our pool needs.",
+            "author": "Louise Odom",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "Blue diamond pools took care of our resurfacing needs. First time pool owner and was unsure who to go to. Was also skeptical about using home advisor but after getting a call Brandon at Blue diamond pools and how prompt they reached out an sent in a quote. We had our pool resurfaced in a weeks time. Professional and well done job for great price. Strongly recommend these guys if your  in search for any remodel jobs in DFW area.\nThanks again Brandon and crew.",
+            "author": "Luis Marquez",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": 42,
+        "pages_fetched": 3,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "NEGATIVE_SIGNAL_FOUND",
+        "location_searched": "Mesquite, TX",
+        "search_confidence": 0.6199999999999999,
+        "serper_fraud_check": {
+          "reason": "NEGATIVE_SIGNAL_FOUND",
+          "signals": [
+            "ALL_PERFECT_SCORES",
+            "NEGATIVE_SIGNAL_FOUND"
+          ],
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:07:14.225Z",
+      "data": {
+        "name": "Blue Diamond Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 821-1786",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "661 E Main St #200-166",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Swimming pool contractor · 661 E Main St #200-166 Closed · Opens 9 AM Mon · (817) 821-1786",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Public swimming pool ·  · 200 Parkview St Seasonal outdoor swimming pool & slides Closed · Opens 12 PM · (972) 285-5277",
+            "rating": 4,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": "https://sites.google.com/view/bluediamondpools/home?authuser=0",
+        "maps_url": "https://www.google.com/maps/search/Blue%20Diamond%20Pools%20Mesquite%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:07:14.243Z",
+      "data": {
+        "name": "Blue Diamond Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 821-1786",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "661 E Main St #200-166",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Swimming pool contractor · 661 E Main St #200-166 Closed · Opens 9 AM Mon · (817) 821-1786",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Public swimming pool ·  · 200 Parkview St Seasonal outdoor swimming pool & slides Closed · Opens 12 PM · (972) 285-5277",
+            "rating": 4,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": "https://sites.google.com/view/bluediamondpools/home?authuser=0",
+        "maps_url": "https://www.google.com/maps/search/Blue%20Diamond%20Pools%20Mesquite%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:07:16.137Z",
+      "data": {
+        "email": "mybluediamondpools@gmail.com",
+        "error": null,
+        "source": "contact_page"
+      }
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:07:18.517Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "https://sites.google.com/view/bluediamondpools/home?authuser=0",
+        "analyzed_pages": [
+          {
+            "url": "https://sites.google.com/view/bluediamondpools/home?authuser=0",
+            "type": "homepage",
+            "title": "Blue Diamond Pools Midlothian"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:07:23.425Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:07:26.642Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Blue Diamond Pools\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.BlueDiamondPools.56176001.html",
+            "title": "Blue Diamond Pools Reviews - Birdsborough, PA | HomeAdvisor",
+            "snippet": "Blue Diamond Pools specializes in water features that bring elegance to a new level. Create intriguing designs with spas, fountains and rocks, ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.BlueDiamondPoolsInc.82128564.html",
+            "title": "Blue Diamond Pools Inc Reviews - Redding, CA | HomeAdvisor",
+            "snippet": "Here at Blue Diamond Pools, I pride myself on my professionalism, as well as my ability to complete every job to the homeowner's total satisfaction."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.BlueDiamondPoolsSpasInc.83646596.html",
+            "title": "Blue Diamond Pools & Spas, Inc. Reviews - Palm Beach Gardens, FL",
+            "snippet": "See reviews for Blue Diamond Pools & Spas, Inc. in Palm Beach Gardens, FL at 9787 Daisy Avenue from Angi members or join today to leave your own review."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.BlueDiamondPools.61651158.html",
+            "title": "Blue Diamond Pools of Volusia, LLC - Edgewater, FL - HomeAdvisor",
+            "snippet": "See reviews for Blue Diamond Pools of Volusia, LLC in Edgewater, FL at 2130 Victory Palm Dr from Angi members or join today to leave your own review."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.BlueDiamondPoolsLLC.63982268.html",
+            "title": "Blue Diamond Pools, LLC Reviews - Croswell, MI | HomeAdvisor",
+            "snippet": "Blue Diamond Pools, LLC, is a leader in providing our customers with the highest quality products and craftsmanship in an honest, efficient, and professional ..."
+          }
+        ],
+        "result_count": 9
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-14T08:07:28.408Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Blue Diamond Pools\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Blue-Diamond-Pools/reviews",
+            "title": "Working at Blue Diamond Pools: Employee Reviews | Indeed.com",
+            "snippet": "Reviews from Blue Diamond Pools employees about Blue Diamond Pools culture, salaries, benefits, work-life balance, management, job security, and more."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Blue-Diamond-Pools/reviews?ftopic=paybenefits",
+            "title": "Blue Diamond Pools Pay and benefits reviews - Indeed",
+            "snippet": "Blue Diamond Pools Pay and benefits reviews. Overall rating. 3.9. Based on 7 reviews."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Blue-Diamond-Pools",
+            "title": "Blue Diamond Pools Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at Blue Diamond Pools from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Blue-Diamond-Pools/salaries/Pool-Technician/jobseekerHeader",
+            "title": "Pool Technician Salaries in the United States for Blue Diamond Pools",
+            "snippet": "Average Blue Diamond Pools Pool Technician hourly pay in the United States is approximately $17.99, which is 6% below the national average. Salary estimated ..."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Blue-Diamond-Pools/salaries/Pool-Technician/Louisville-TN",
+            "title": "Pool Technician Salaries in Louisville, TN for Blue Diamond Pools",
+            "snippet": "Average Blue Diamond Pools Pool Technician hourly pay in Louisville is approximately $16.66, which is 13% below the national average. Salary estimated from 7 ..."
+          }
+        ],
+        "result_count": 5
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T08:07:48.832Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T08:07:35Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Blue%20Diamond%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=Ry2QaaOyBaK2qtsP2rOpsAo\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T08:07:45Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Blue%20Diamond%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=UC2QacnILYOlqtsPkpO4sQQ\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Blue Diamond Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

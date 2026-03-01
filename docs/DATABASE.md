@@ -76,7 +76,7 @@ Lien search results from Texas counties.
 |--------|------|-------------|
 | id | INTEGER | Primary key |
 | contractor_id | INTEGER | FK to contractor |
-| county | VARCHAR | 'tarrant', 'collin', 'dallas' |
+| county | VARCHAR | 'tarrant', 'collin', 'dallas', 'denton' |
 | liens_by_contractor | INTEGER | Liens filed BY contractor (positive) |
 | liens_against_contractor | INTEGER | Liens filed AGAINST contractor (negative) |
 | raw_results | JSONB | Full search results |

@@ -1,0 +1,100 @@
+{
+  "variation": "C1",
+  "generated_at": "2026-01-20T19:09:32.350Z",
+  "metrics": {
+    "rank_consistency": 1,
+    "avg_variance": 2.2904729991650936,
+    "separation": 67,
+    "avg_duration_ms": 5745.6,
+    "avg_cost_usd": 0.07706805
+  },
+  "contractor_results": {
+    "656": {
+      "name": "Bonnie & Clydes Pools and Spas",
+      "archetype": "established_sketchy",
+      "expected": 35,
+      "scores": [
+        37,
+        35,
+        42,
+        43,
+        37
+      ],
+      "avg": 38.8,
+      "variance": 3.1,
+      "avg_duration_ms": 6029,
+      "avg_cost": 0.07683899999999999
+    },
+    "3512": {
+      "name": "1-Tom-Plumber",
+      "archetype": "new_promising",
+      "expected": 75,
+      "scores": [
+        75,
+        78,
+        75,
+        78,
+        78
+      ],
+      "avg": 76.8,
+      "variance": 1.5,
+      "avg_duration_ms": 5797,
+      "avg_cost": 0.09440549999999999
+    },
+    "5744": {
+      "name": "AC Repair Garland",
+      "archetype": "middle_tier",
+      "expected": 50,
+      "scores": [
+        52,
+        48,
+        52,
+        52,
+        48
+      ],
+      "avg": 50.4,
+      "variance": 2,
+      "avg_duration_ms": 6175,
+      "avg_cost": 0.10006575
+    },
+    "7691": {
+      "name": "Cowboy Hat Capital Foundation Repair Co",
+      "archetype": "known_bad",
+      "expected": 20,
+      "scores": [
+        15,
+        15,
+        15,
+        5,
+        5
+      ],
+      "avg": 11,
+      "variance": 4.9,
+      "avg_duration_ms": 5546,
+      "avg_cost": 0.0507495
+    },
+    "8958": {
+      "name": "Splash Pools",
+      "archetype": "gold_standard",
+      "expected": 78,
+      "scores": [
+        78,
+        78,
+        78,
+        78,
+        78
+      ],
+      "avg": 78,
+      "variance": 0,
+      "avg_duration_ms": 5181,
+      "avg_cost": 0.0632805
+    }
+  },
+  "pass_fail": {
+    "rank_consistency": "PASS",
+    "variance": "PASS",
+    "separation": "PASS",
+    "speed": true,
+    "cost": true
+  }
+}

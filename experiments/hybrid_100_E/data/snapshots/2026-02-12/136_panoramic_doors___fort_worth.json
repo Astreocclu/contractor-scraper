@@ -1,0 +1,780 @@
+{
+  "contractor_id": 136,
+  "business_name": "Panoramic Doors - Fort Worth",
+  "city": "Arlington",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-12T20:25:23.945Z",
+  "sources": {
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:44:55.855Z",
+      "data": {
+        "query": "site:yelp.com \"Panoramic Doors - Fort Worth\" \"Arlington, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:48.773Z",
+      "data": {
+        "name": "Panoramic Doors - Fort Worth",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 952-3500",
+        "rating": 4.5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "15050 Frye Rd, Fort Worth, TX 76155",
+        "reviews": [],
+        "website": "https://panoramicdoors.com/",
+        "maps_url": "https://www.google.com/maps/search/Panoramic%20Doors%20-%20Fort%20Worth%20Arlington%2C%20TX",
+        "categories": [
+          "Door manufacturer"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:46:55.126Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:46:55.848Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:56.888Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "domain": "panoramicdoors.com",
+        "rating": 0,
+        "source": "trustpilot",
+        "profile_url": "https://www.trustpilot.com/review/panoramicdoors.com",
+        "trust_score": null,
+        "review_count": 0,
+        "business_name": "Panoramicdoors"
+      }
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:45:29.752Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:21.947Z",
+      "data": {
+        "cid": "13158763657294135314",
+        "name": "Panoramic Doors - Fort Worth",
+        "found": true,
+        "rating": 4.5,
+        "source": "serper",
+        "address": "15050 Frye Rd, Fort Worth, TX 76155",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "Edited 2 months ago",
+            "text": "Im a certified installer for sliding glass and bifolding doors here in Texas my company is called \"Patio Door Pro\" and Panoramic doors are my favorite door on the market for large sliding glass doors, they can accommodate what I need quickly and offer the larger sized panels that my customers desire. Ive never had an issue with the installation process though(its important to know what your doing on these particular style doors to prevent issues). Also love that they are built right here in Texas. If you want American quality and a unique door go with Panoramic! I highly recommend working with Chris Shaia or John Russell from the sales team when ordering doors, they have both been great to work with on these projects!",
+            "author": "William Gerky",
+            "rating": 5
+          },
+          {
+            "date": "2 weeks ago",
+            "text": "I recently had an excellent experience with the warranty team at Panoramic Doors. We’ve had our 16’ vinyl doors since 2022, but the main entrance recently began dragging and falling out of alignment.\nEven though I didn't have the original invoice from my builder, my Case Manager, Amrie Jackson, worked with me to verify my purchase using my original builder’s quote. The company flew a technician, Alex, all the way from California to Alabama to perform the service.\nAlex was fantastic—he realigned the entire system and showed me how to perform basic maintenance. The doors now move more smoothly than the day we moved in!\nIt’s rare to find a company that stands by their product like this. Highly recommended for their professionalism and stellar communication.",
+            "author": "Rob Montgomery",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "We love Panoramic Doors and their windows too!   We are so pleased to have one as a display in our showroom and it looks and operates like a dream.  We have already started installing them on Hilton Head Island and can’t wait to do more.   Great product!",
+            "author": "Richard Barron",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Panoramic Doors has killer product quality and amazing customer service. They tackled my one issue fast, sending two technicians, Ricky Rivera and Alex Rubio , to nail the fix. Their hands-on work and deep product knowledge blew me away. Huge thanks also to Amrie Jackson, who streamlined everything from my first call, going above and beyond to ensure I was thrilled-it left me seriously impressed.",
+            "author": "George G",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "We love the versatility of our panoramic door. Our experience with the team was outstanding. I highly recommend to anyone building or remodeling. It is light weight and easy to use unlike other doors we tried.",
+            "author": "Dianna Lee",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "I love the doors and my sales guy John was great .  The only reason I didn't give 5 stars was the contractor for the install process was not very good. A lot of mistakes were made and I had to keep calling them back.  The contractor didn't show up one time during the job. Only afterwards when we complained. Once we told our sales guy John, he was amazing and made sure that the contractor got all of the work completed.",
+            "author": "Kelly Nelson",
+            "rating": 4
+          },
+          {
+            "date": "2 months ago",
+            "text": "Panoramic doors are the absolute best. If you’re looking for the ability to bring the outdoors into your living space, you can’t go wrong with a panoramic door.\nAs a professional remodel company, panoramic doors gives me the ability to offer my customers a quality, high end door, to enhance the Lake views from their patios and decks.\nIf you get the chance to work with Kolton, you’ll love the knowledge and professionalism. From my first call Kolton, walked me through answering any questions to design. I have purchased multiple panoramic doors from Kolton now and the experience is amazing.",
+            "author": "David Carter",
+            "rating": 5
+          },
+          {
+            "date": "7 months ago",
+            "text": "We could not be happier with our Panoramic Doors! We purchased them in 2021 and are local to their showroom. Ours are 10 feet high X 12 feet wide. We opted against the retractable screen because we were afraid our dogs would ruin it. Installation is a separate fee and I recommend going with one of their preferred installers because they are trained in how to install this door system. Our doors face southeast and do not get a lot of direct sun. They are also protected from rain by a large patio cover. That said, we love our doors and the unique stacking system - guests are super impressed when they see it. See my before and after pics.",
+            "author": "Linda D",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 115,
+        "review_source": "tiered_validated",
+        "serpapi_error": "SERPAPI_API_KEY not set",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "location_searched": "Arlington, TX",
+        "search_confidence": 0.6799999999999999
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:45:32.291Z",
+      "data": {
+        "query": "Panoramic Doors - Fort Worth Arlington site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "http://www.star-telegram.com/homes/article210334754.html",
+            "title": "Ebby Halliday Realtors | Arlington",
+            "snippet": "Adjacent to the entry, the circular drawing room features a towering 23-foot tall ceiling with sweeping panoramic windows. The room's marble faced fireplace ...",
+            "position": 1
+          },
+          {
+            "date": "Feb 19, 2023",
+            "link": "https://www.nbcdfw.com/news/business/money-report/the-most-expensive-home-in-the-caribbean-just-listed-for-200-million-take-a-look-inside/3198372/",
+            "title": "The Most Expensive Home in the Caribbean Just Listed for ...",
+            "snippet": "\"It is a place where doors are not locked and no one bats an eye when you arrive at dinner barefoot.\" The view from above the estate's 80-ft ...",
+            "position": 2
+          },
+          {
+            "date": "Jul 23, 2025",
+            "link": "https://www.dallasnews.com/abode/2025/07/23/hidden-speakeasy-and-rooftop-garden-stun-in-updated-1920s-tudor-for-sale-in-kessler-park/",
+            "title": "Hidden speakeasy and rooftop garden stun in updated ...",
+            "snippet": "Panoramic doors in the primary open up to a terrace that features a seating area,. Doors in the primary fully open to a terrace that features ...",
+            "position": 3
+          },
+          {
+            "date": "Jun 19, 2019",
+            "link": "https://www.nbcdfw.com/news/local/developers-of-historic-baker-hotel-reveal-65m-restoration-plans/233066/",
+            "title": "Developers of Historic Baker Hotel Reveal $65M ...",
+            "snippet": "On Thursday, a $65 million restoration project will begin to bring this piece of Texas history back to life.",
+            "position": 4
+          },
+          {
+            "date": "Mar 1, 2018",
+            "link": "https://www.nbcdfw.com/news/national-international/are-bulletproof-classroom-shelters-the-answer-to-gun-violence/2059711/",
+            "title": "Are Bulletproof Classroom Shelters the Answer to Gun ...",
+            "snippet": "The customizable steel enclosures built by Shelter-in-Place are outfitted with panoramic view cameras, a circulation system and backup power.",
+            "position": 5
+          },
+          {
+            "link": "https://www.star-telegram.com/homes/article6701775.html",
+            "title": "Ebby Halliday Realtors | River Oaks",
+            "snippet": "Great detail was given in the design and construction of this home to take advantage of the panoramic views overlooking the treetops with water views.",
+            "position": 6
+          },
+          {
+            "link": "https://www.star-telegram.com/homes/article26971918.html",
+            "title": "Ebby Halliday Realtors | Alvarado",
+            "snippet": "Windows across the back of the home offer a panoramic view of the private stocked pond. A centered water feature creates an atmosphere like no other from the ...",
+            "position": 7
+          },
+          {
+            "date": "Dec 7, 2023",
+            "link": "https://www.dallasnews.com/arts-entertainment/holidays/2023/12/07/neighborhoods-in-north-texas-are-decked-out-for-the-holidays/",
+            "title": "Neighborhoods in North Texas are decked out for the ...",
+            "snippet": "A must-see for holiday lights aficionados, the Interlochen lakefront neighborhood in northwest Arlington has drawn huge crowds for more than 45 ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 6, 2020",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2020/04/06/family-fun-goes-virtual/",
+            "title": "North Texas zoos, planetariums and more are keeping ...",
+            "snippet": "Planetarium at the University of Texas at Arlington: Learn to find constellations and stay up-to-date on the Dallas-Fort Worth night sky thanks ...",
+            "position": 9
+          },
+          {
+            "date": "Jul 17, 2025",
+            "link": "https://www.dallasnews.com/business/2025/07/17/crescent-bets-on-uptown-golden-era-with-new-31-story-luxury-building/",
+            "title": "Crescent bets on Uptown's 'golden age' with new 31-story ...",
+            "snippet": "The Fort Worth-based real estate giant already owns two hotels and more than 1 million square feet of office space in the hip neighborhood.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:46:59.724Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Panoramic Doors - Fort Worth\" Arlington",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:45:43.087Z",
+      "data": "Panoramic Doors - Fort Worth Arlington review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You History History All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Shorts Why Panoramic Doors™ Are Perfect for Midwest Homes | Custom Made & Weather Ready 3K views Before and After Remodel with Panoramic Doors | Indoor Outdoor Living 167K views Not All Panoramic Doors Are Huge | 2 Panel Door Demo 128K views Panoramic Doors Florida | Impact-Rated Sliding Glass Doors Made in the USA 907 views Panoramic Doors Before and After | Stunning Home Transformation 1K views Show more Show less SHORTS SHORTS Now playing See the Difference | Panoramic Doors Before and After Panoramic Doors™ Panoramic Doors™ • • 5.1K views 2 years ago Panoramic Doors™ Panoramic Doors™ See the stunning before and after transformation of homes with Panoramic Doors ™. Our patented Slide-Pivot-Stack design turns ... See the stunning before and after transformation of homes with Panoramic Doors ™. Our patented Slide-Pivot-Stack design turns ... From the video description 0:55 0:55 Now playing LaCantina Doors VS Panoramic Doors: What's the Difference? Cabana Concepts Cabana Concepts • • 5.2K views 1 year ago Cabana Concepts Cabana Concepts In this video, we dive into the nuances of rolling and hinge systems between LaCantina Doors and Panoramic Doors . In this video, we dive into the nuances of rolling and hinge systems between LaCantina Doors and Panoramic Doors . From the video description Motivation is nice. Saving hundreds is nicer. Some quotes inspire. This one also pays off. Sponsored Progressive Watch Learn more Shorts 3 Panel vs 4 Panel Panoramic Doors | Which Is Right for You? 11K views Panoramic Doors are Perfect for Florida 1K views Why Panoramic Doors Are a Midwest Game-Changer | Indoor-Outdoor Living 1.3K views Retractable Screens by Panoramic Doors | Cover 16ft or 32ft Openings 5K views Flag Door System by Panoramic Doors | American-Made Innovation 10K views Show more Show less Panoramic Doors™ Panoramic Doors™ @Panoramic-Doors • 1.13K subscribers Inside. Out. Experience the perfect blend of luxury, innovation, and seamless indoor-outdoor living. Panoramic Doors are ... Subscribe 0:31 Get a Minimum $5,000 for Your Trade at Longhorn Nissan. We Take Anything and Everything! Don't settle for less. Longhorn Nissan gives you a $5,000 minimum on any trade-in! Sponsored Longhorn Nissan SHORTS SHORTS Now playing Exploring Homes Featuring Multiple Sets of Panoramic Doors™ Panoramic Doors™ Panoramic Doors™ • • 625 views 1 year ago Panoramic Doors™ Panoramic Doors™ Step inside and explore homes with multiple sets of Panoramic Doors ™. Our patented Slide-Pivot-Stack design allows ... Step inside and explore homes with multiple sets of Panoramic Doors ™. Our patented Slide-Pivot-Stack design allows ... From the video description SHORTS SHORTS Now playing Panoramic Doors vs Bi-Fold Doors | The Game-Changer for Indoor Outdoor Living Panoramic Doors™ Panoramic Doors™ • • 6.4K views 1 year ago Panoramic Doors™ Panoramic Doors™ Not all doors are created equal. In this video, we compare innovative Panoramic Doors ™ to traditional bi-fold doors and show why ... Not all doors are created equal. In this video, we compare innovative Panoramic Doors ™ to traditional bi-fold doors and show why ... From the video description SHORTS SHORTS Now playing Panoramic Doors in Kingsmen Homes | Modern Luxury Design Panoramic Doors™ Panoramic Doors™ • • 1K views 1 year ago Panoramic Doors™ Panoramic Doors™ See how Kingsmen Homes partners with Panoramic Doors ™ to create luxury homes with seamless indoor-outdoor living. See how Kingsmen Homes partners with Panoramic Doors ™ to create luxury homes with seamless indoor-outdoor living. From the video description SHORTS SHORTS Now playing Panoramic Doors in Action | Demo of Sliding, Pivot, and Stack Design Panoramic Doors™ Panoramic Doors™ • • 2.1K views 5 months ago Panoramic Doors™ Panoramic Doors™ Watch Panoramic Doors in action with a live demo of the Slide-Pivot-Stack design that combines sliding, pivoting, and stacking ... Watch Panoramic Doors in action with a live demo of the Slide-Pivot-Stack design that combines sliding, pivoting, and stacking ... From the video description People also watched 9:47 9:47 Now playing 1040 Eldorado Ave, Clearwater, FL The Thorn Collection with Coldwell Banker Realty The Thorn Collection with Coldwell Banker Realty • • 184 views 4 days ago The Thorn Collection with Coldwell Banker Realty The Thorn Collection with Coldwell Banker Realty See the Property Website! https://1040EldoradoAve.com/ :: Martha Thorn - The Thorn Collection - Coldwell Banker ... See the Property Website! https://1040EldoradoAve.com/ :: Martha Thorn - The Thorn Collection - Coldwell Banker ... From the video description New 2:33 2:33 Now playing How Panoramic Doors Work | Door and Retractable Screen Demonstration Panoramic Doors™ Panoramic Doors™ • • 5.4K views 1 year ago Panoramic Doors™ Panoramic Doors™ See Panoramic Doors in action as we demonstrate both the patented Slide-Pivot-Stack door system and the innovative retractable ... See Panoramic Doors in action as we demonstrate both the patented Slide-Pivot-Stack door system and the innovative retractable ... From the video description 0:53 0:53 Now playing Panoramic Doors in Action | From Closed Walls to Seamless Indoor-Outdoor Living Panoramic Doors™ Panoramic Doors™ • • 1.6K views 2 years ago Panoramic Doors™ Panoramic Doors™ Watch how Panoramic Doors ' Slide-Pivot-Stack system transforms traditional closed walls into wide, open spaces filled with ... Watch how Panoramic Doors ' Slide-Pivot-Stack system transforms traditional closed walls into wide, open spaces filled with ... From the video description 4K 1:01 1:01 Now playing How to use panoramic doors LOJIC iNDUSTRIES LOJIC iNDUSTRIES • • 790 views 1 year ago LOJIC iNDUSTRIES LOJIC iNDUSTRIES Abraham Feld shows us the hidden gem of a hideaway bug screen for panoramic door systems and deck areas. How to use the ... Abraham Feld shows us the hidden gem of a hideaway bug screen for panoramic door systems and deck areas. How to use the ... From the video description + 6 more SHORTS SHORTS Now playing Panoramic Doors Retractable Screen | Full Demo Panoramic Doors™ Panoramic Doors™ • • 1.4K views 1 year ago Panoramic Doors™ Panoramic Doors™ See the Panoramic Doors ™ Retractable Screen in action. Designed to let fresh air in while keeping bugs out, our retractable ... See the Panoramic Doors ™ Retractable Screen in action. Designed to let fresh air in while keeping bugs out, our retractable ... From the video description 4 chapters Intro | Retractable Screen | Easy to operate | Durability 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 Retractable Screen Retractable Screen 0:10 Retractable Screen 0:10 Easy to operate Easy to operate 0:25 Easy to operate 0:25 Durability Durability 0:40 Durability 0:40 SHORTS SHORTS Now playing Panoramic Doors at IBS 2025 | Innovative Sliding Glass Wall Systems Panoramic Doors™ Panoramic Doors™ • • 18K views 6 months ago Panoramic Doors™ Panoramic Doors™ See Panoramic Doors at IBS 2025. Explore our hinge-free Slide-Pivot-Stack system delivering seamless indoor-outdoor living and ... See Panoramic Doors at IBS 2025. Explore our hinge-free Slide-Pivot-Stack system delivering seamless indoor-outdoor living and ... From the video description SHORTS SHORTS Now playing Before and After Remodel with Panoramic Doors Installed Panoramic Doors™ Panoramic Doors™ • • 6.5K views 2 years ago Panoramic Doors™ Panoramic Doors™ See the before and after transformation when Panoramic Doors ™ are installed. Our patented Slide-Pivot-Stack design replaces ... See the before and after transformation when Panoramic Doors ™ are installed. Our patented Slide-Pivot-Stack design replaces ... From the video description 1:37 1:37 Now playing Panoramic Doors Panoramic Doors USA Panoramic Doors USA • • 509K views 11 years ago Panoramic Doors USA Panoramic Doors USA Panoramic Doors brings an innovative approach to folding patio doors. By utilizing the patented Magnaline System Hardware we ... Panoramic Doors brings an innovative approach to folding patio doors. By utilizing the patented Magnaline System Hardware we ... From the video description SHORTS SHORTS Now playing How Panoramic Doors Elevate Hosting | Seamless Indoor-Outdoor Living Panoramic Doors™ Panoramic Doors™ • • 2.5K views 6 months ago Panoramic Doors™ Panoramic Doors™ See how Panoramic Doors make hosting effortless with seamless indoor-outdoor flow, wide openings, and modern design built ... See how Panoramic Doors make hosting effortless with seamless indoor-outdoor flow, wide openings, and modern design built ... From the video description SHORTS SHORTS Now playing Panoramic Doors Demo with Whitney | Customer Favorites Panoramic Doors™ Panoramic Doors™ • • 1.2K views 1 year ago Panoramic Doors™ Panoramic Doors™ Watch as Whitney demos Panoramic Doors ™ and shows why customers love them. Our patented Slide-Pivot-Stack design makes ... Watch as Whitney demos Panoramic Doors ™ and shows why customers love them. Our patented Slide-Pivot-Stack design makes ... From the video description 4 chapters Intro | How to open | Lock | Open 4 auto-generated chapters in this video 4 chapters Intro Intro 0:00 Intro 0:00 How to open How to open 0:07 How to open 0:07 Lock Lock 0:23 Lock 0:23 Open Open 0:38 Open 0:38 SHORTS SHORTS Now playing Panoramic Doors Free Retractable Screen Offer | Limited Time Panoramic Doors™ Panoramic Doors™ • • 3K views 1 year ago Panoramic Doors™ Panoramic Doors™ For a limited time, Panoramic Doors ™ is offering a FREE retractable screen with the purchase of a full-price door system. For a limited time, Panoramic Doors ™ is offering a FREE retractable screen with the purchase of a full-price door system. From the video description SHORTS SHORTS Now playing What Are Panoramic Doors? | Changing Views with Open Concept Design Panoramic Doors™ Panoramic Doors™ • • 6K views 5 months ago Panoramic Doors™ Panoramic Doors™ See how Panoramic Doors transform walls into sweeping views and seamless indoor-outdoor living with the patented ... See how Panoramic Doors transform walls into sweeping views and seamless indoor-outdoor living with the patented ... From the video description 16:17 16:17 Now playing How Panoramic Doors Sells Luxury Direct to Homeowners | Autumn Whisenhunt, Panoramic Doors Paradigm Paradigm • • 43 views 3 months ago Paradigm Paradigm We explore how a small luxury door manufacturer wins direct-to-consumer by pairing data-driven outreach with handcrafted ... We explore how a small luxury door manufacturer wins direct-to-consumer by pairing data-driven outreach with handcrafted ... From the video description 4K Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:59.118Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Panoramic Doors - Fort Worth\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Panoramic-Doors/locations/TX/Fort%20Worth",
+            "title": "Panoramic Doors careers in Fort Worth, TX",
+            "snippet": "Panoramic Doors Fort Worth, TX employee reviews ; Quality Inspector in Fort Worth, TX. 3.0. on September 4, 2025 ; Director, Service & Warranty in Fort Worth, TX."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:47:00.652Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Panoramic Doors - Fort Worth\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:45:55.704Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Panoramic%20Doors%20-%20Fort%20Worth&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Panoramic% 20Doors% 20 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Panoramic% 20Doors% 20Fort% 20Worth&State="
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Search by facility name or ID ... Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Panoramic% 20Doors% 20 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search Map, All Facilities, Corporate Compliance Screener, ECHO Notify Air, Air Facility Search Map, Air Facilities, ECHO Clean Air Tracking Tool ( ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Panoramic% 20Doors% 20 20Fort% 20Worth&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Panoramic% 20Doors% 20 20Fort% 20Worth&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:45:59.108Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:03.210Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:46:57.956Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Panoramic Doors - Fort Worth\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:46:09.818Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Panoramic Doors - Fort Worth",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:10.989Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 2
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "date": "Jan 10, 2026",
+            "link": "https://www.facebook.com/groups/1494427604106723/posts/4294122614137194/",
+            "title": "Anyone looking to verify these fake LLC You can search on the ...",
+            "snippet": "Anyone looking to verify these fake LLC You can search on the Texas comptroller account page Type their LLC name correctly and you can see ...",
+            "position": 7
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 8
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn and Texas Tax Code, Sec. 171.2515. [2] https://statutes.capitol.texas.gov/Docs/TX/htm/TX ...",
+            "position": 9
+          },
+          {
+            "link": "https://unitedwaydallas.org/wp-content/uploads/2024/04/Wright-Law-Confirmed.pdf",
+            "title": "[PDF] Wright-Law-Confirmed.pdf - United Way of Metropolitan Dallas",
+            "snippet": "Based in Dallas, Texas. Ability to travel extensively. Page 9. 2/26/24, 2:35 PM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:46:12.253Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Panoramic Doors - Fort Worth",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:13.382Z",
+      "data": {
+        "query": "site:dallascounty.org Panoramic Doors - Fort Worth civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Sep 10, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/comcrt/county-code/DallasCountyCode-09102024.pdf",
+            "title": "Dallas County Code",
+            "snippet": "Chapter 1 – General Provisions. Chapter 2 – Administration. Chapter 6 – Animals. Chapter 10 – Business. Chapter 14 – Civil Emergencies.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "Jan Almon, narrative Mary Ann Sherman, photography",
+            "snippet": "Known for the scenic beauty of the rolling hills, Cedar Hill is a premier city, a unique and distinctive place, within the Dallas-Fort Worth. Metroplex. Located ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/courts/probate/mental-health/texas-mental-health-resource-guide-01242020.pdf",
+            "title": "Texas Mental Health Resource Guide",
+            "snippet": "Those suffering with mental health issues, intellectual disabilities, and substance use disorders are among the most underserved members of our society.",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:46:14.438Z",
+      "data": {
+        "query": "site:collincountytx.gov Panoramic Doors - Fort Worth",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:46:15.512Z",
+      "data": {
+        "query": "site:dentoncounty.gov Panoramic Doors - Fort Worth",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:47:01.249Z",
+      "data": {
+        "cases": [],
+        "errors": [
+          {
+            "error": "Connection closed.",
+            "county": "tarrant"
+          },
+          {
+            "error": "Connection closed.",
+            "county": "dallas"
+          },
+          {
+            "error": "Connection closed.",
+            "county": "collin"
+          },
+          {
+            "error": "Connection closed.",
+            "county": "denton"
+          }
+        ],
+        "business_name": "Panoramic Doors - Fort Worth",
+        "courts_checked": [],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2025-12-09T03:17:38.876Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-09T03:17:38.877Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:45:26.206Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:44:47.781Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "https://www.panoramicdoors.com/?utm_source=google&utm_medium=organic&utm_campaign=GBP",
+        "analyzed_pages": [
+          {
+            "url": "https://www.panoramicdoors.com/?utm_source=google&utm_medium=organic&utm_campaign=GBP",
+            "type": "homepage",
+            "title": "403 - Forbidden"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:47:01.244Z",
+      "data": {
+        "found": true,
+        "query": "\"Panoramic Doors - Fort Worth\" Arlington lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://m.yelp.ca/biz/panoramic-doors-fort-worth",
+            "title": "PANORAMIC DOORS - 15050 Frye Rd, Fort Worth, Texas",
+            "snippet": "... lawsuit and let the court's wisdom decide if the company is responsible for righting this wrong. This last go-around and having both the Service Manager as ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:45:44.329Z",
+      "data": {
+        "query": "site:nextdoor.com Panoramic Doors - Fort Worth Arlington",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/neighborhood/lakecountrytx1--fort-worth--tx/",
+            "price": 20,
+            "title": "Lake Country, Fort Worth | Everything You Need to Know",
+            "snippet": "Lake Country is a peaceful neighborhood in Fort Worth, TX, known for its scenic lake views and family-friendly atmosphere. It's a mix of quiet residential ...",
+            "currency": "US$",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/resources/crime-and-safety/longview--tx/",
+            "title": "Longview, TX crime rates and safety statistics",
+            "snippet": "Longview, TX has a higher overall crime rate (42.17) compared to the national average (33.37), with both violent and property crime rates also exceeding ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:19.015Z",
+      "data": "403 - Forbidden bg_error_lines circle_dots 403 - Forbidden Access to this page is forbidden. clouds_shape"
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T03:46:19.869Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:48.770Z",
+      "data": {
+        "name": "Panoramic Doors - Fort Worth",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 952-3500",
+        "rating": 4.5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "15050 Frye Rd, Fort Worth, TX 76155",
+        "reviews": [],
+        "website": "https://panoramicdoors.com/",
+        "maps_url": "https://www.google.com/maps/search/Panoramic%20Doors%20-%20Fort%20Worth%20Arlington%2C%20TX",
+        "categories": [
+          "Door manufacturer"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:54.201Z",
+      "data": {
+        "found": true,
+        "rating": 4.5,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/panoramic-doors-fort-worth",
+        "review_count": 61
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-05T03:46:58.559Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Panoramic Doors - Fort Worth\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Salary/Panoramic-Doors-Fort-Worth-Salaries-EI_IE1306262.0,15_IL.16,26_IC1139993.htm",
+            "title": "Panoramic Doors Salaries in Fort Worth",
+            "snippet": "Explore how much Panoramic Doors employees make through salaries, wages, tips, bonuses, stock, commissions and more. Search by job title and location."
+          },
+          {
+            "link": "https://www.glassdoor.com/Interview/Panoramic-Doors-Interview-Questions-E1306262.htm",
+            "title": "Panoramic Doors Interview Experience & Questions (2026)",
+            "snippet": "I interviewed at Panoramic Doors (Fort Worth, TX) in Aug 2020. Interview. It was very professional. They brought out the Facilities Manager ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-12T19:34:10.721Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Panoramic Doors - Fort Worth",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Panoramic Doors - Fort Worth",
+        "searched_at": "2026-02-12T19:32:41.488286",
+        "total_records": 0
+      }
+    }
+  }
+}

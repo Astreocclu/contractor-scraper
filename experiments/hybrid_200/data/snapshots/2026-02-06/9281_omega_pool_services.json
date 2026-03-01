@@ -1,0 +1,863 @@
+{
+  "contractor_id": 9281,
+  "business_name": "Omega Pool Services",
+  "city": "Bedford",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T15:51:56.770Z",
+  "sources": {
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:09.088Z",
+      "data": {
+        "query": "site:dallascounty.org Omega Pool Services civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Feb 23, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2015/JB_Packet_022715_withoutOrders.pdf",
+            "title": "JB_Packet_022715_withoutOrders.pdf",
+            "snippet": "... civil immigration purposes, immigrant services agencies. The facility shall enable reasonable communication between residents and these ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:10.085Z",
+      "data": {
+        "query": "site:collincountytx.gov Omega Pool Services",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Nov 12, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201116_2558/33858_RTC%20Packet%2011-12-2020.pdf",
+            "title": "AGENDA REGIONAL TRANSPORTATION COUNCIL ...",
+            "snippet": "The RTC meeting on November 12, 2020, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:11.029Z",
+      "data": {
+        "query": "site:dentoncounty.gov Omega Pool Services",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=34_50",
+            "title": "Dev Permit Report",
+            "snippet": "BACK BUILDING. Note : Controlling the drainage is the responsibility of the property owner and any damage caused to adjacent property owners could result in ...",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=56_50",
+            "title": "Dev Permit Report",
+            "snippet": "COUNTRY LIVING POOLS, 15117 FISHTRAP RD, A0730A WM LUMPKINS, TR 48A,49B, 6.0 ACRES, SWIMMING POOL, 08/04/2022, 178560, APARTMENT SWIMMING POOL, Approved, 08/01/ ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:05:11.766Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:03:48.021Z",
+      "data": {
+        "query": "site:yelp.com \"Omega Pool Services\" \"Bedford, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Hurst%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Builders in Hurst, TX",
+            "rating": 4.3,
+            "snippet": "... Omega Pool Services - Swimming Pool Builders near me - Hurst, Texas. Omega ... Bedford, TX 76022. (817) 715-3821. On their website: swimming pool. Juan and ...",
+            "position": 1,
+            "ratingCount": 1476
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=Bedford%2C+TX&start=50",
+            "title": "THE BEST 10 POOL CLEANERS in BEDFORD, TX",
+            "rating": 3.9,
+            "snippet": "... Omega Pool Services, Christal Clear Pools, Chorbie, Water Wizards Landscape ... Bedford, TX · Vet Clinic in Bedford, TX. Filters. Yelp · Home Services · Pool ...",
+            "position": 2,
+            "ratingCount": 796
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Cleaners&find_loc=Hurst%2C+TX",
+            "title": "TOP 10 BEST Pool Cleaners in Hurst, TX - Updated 2026",
+            "rating": 4.3,
+            "snippet": "... Omega Pool Services, Dallas Fort Worth Pool Renovations, Panther City Pools ... Bedford, TX 76021. (682) 391-9707. Cole was awesome - quick to respond ...",
+            "position": 3,
+            "ratingCount": 640
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Inground+Pool+Installation&find_loc=Hurst%2C+TX",
+            "title": "TOP 10 BEST Inground Pool Installation in Hurst, TX",
+            "rating": 4.4,
+            "snippet": "... Omega Pool Services, AquaMedic, Sonora Desert Pools, Pool Defenders, Lucent ... Bedford, TX 76021. (682) 391-9707. Cole was awesome - quick to respond ...",
+            "position": 4,
+            "ratingCount": 709
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Draining&find_loc=Hurst%2C+TX",
+            "title": "TOP 10 BEST Pool Draining in Hurst, TX - Updated 2026",
+            "rating": 4.3,
+            "snippet": "... Omega Pool Services, Pinch A Penny Pool Patio Spa, Pool Defenders, Greg's ... Bedford, TX 76021. (682) 391-9707. Cole was awesome - quick to respond ...",
+            "position": 5,
+            "ratingCount": 1001
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Hot+Tub+Rental&find_loc=Hurst%2C+TX",
+            "title": "TOP 10 BEST Hot Tub Rental in Hurst, TX - Updated 2026",
+            "snippet": "... Omega Pool Services, Sparkling Clean Pool Service ... Bedford, TX 76021. (682) 445-4825. Well, my super ... Bedford, TX 76021. (817) 905-7343. Our pool ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Hot+Tub+Repair&find_loc=Hurst%2C+TX",
+            "title": "TOP 10 BEST Hot Tub Repair in Hurst, TX - Updated 2026",
+            "rating": 4.3,
+            "snippet": "... Omega Pool Services, Natural Water Environments, Poseidon Custom Pools ... Bedford, TX 76021. (682) 391-9707. On their website: jacuzzi. Cole was awesome ...",
+            "position": 7,
+            "ratingCount": 625
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Angie%27s+List&find_loc=Euless%2C+TX",
+            "title": "TOP 10 BEST Angie's List in Euless, TX - Updated 2026",
+            "rating": 4.3,
+            "snippet": "... Omega Pool Services, IntegriBuilt Roofing, Mercer Tree Service, Haul It Off ... Bedford, TX · Carrollton, TX · Colleyville, TX · Dallas, TX · Farmers Branch ...",
+            "position": 8,
+            "ratingCount": 3417
+          }
+        ]
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:40.428Z",
+      "data": {
+        "name": "Omega Pool Services",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 612-4827",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "500 Grapevine Hwy #106, Hurst, TX 76054",
+        "reviews": [],
+        "website": "http://omegapoolservices.com/",
+        "maps_url": "https://www.google.com/maps/search/Omega%20Pool%20Services%20Bedford%2C%20TX",
+        "categories": [
+          "Pool cleaning service"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:05:49.753Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:04:13.346Z",
+      "data": "Trustpilot Search Results Companies Omega omega.best • 19 reviews 2.1 Omega omega.com • 3 reviews 2.8 Pool Protection 27 Pool Services www.poolprotection27.com • 1 review 3.7 Pool pool.net • 636 reviews 4.4 Omega Rental Cars omegarentalcars.com • 28K reviews 4.7 Categories Pool Academy The best companies in the category 'Pool Academy' Swimming Pool The best companies in the category 'Swimming Pool' Pool Hall The best companies in the category 'Pool Hall' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (10000) Omega omega.com 2.8 3 reviews ONE OMEGA DRIVE, STAMFORD, United States Omega omega.best 2.1 19 reviews Pool Protection 27 Pool Services www.poolprotection27.com 3.7 1 review United States Pool pool.net 4.4 636 reviews Edertalstr. 86, Mörlenbach, Germany Omega Rental Cars omegarentalcars.com 4.7 28,461 reviews 75 Beach Rd, Auckland, New Zealand Omega omg.one 4.3 55 reviews Butterwick, London, United Kingdom Omega omegabuild.com 3.8 2 reviews Alswear Old Road, South Molton, United Kingdom POOL Total www.pooltotal.com 4.1 47 reviews Große Heide 3, Minden, Germany Turkey Pool Villa www.turkey-pool-villa.com 4.2 6 reviews Omega DataCube omegadatacube.com 2.5 5 reviews United States Previous 1 2 3 4 1000 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Pool Academy Sports Swimming Pool Sports Pool Hall Sports Swimming Pool Supply Store Construction & Manufacturing Pool Cleaning Service Home Services Public Swimming Pool Events & Entertainment are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:04:20.413Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:04:23.933Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:55.465Z",
+      "data": {
+        "found": true,
+        "query": "\"Omega Pool Services\" Bedford lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Repair&find_loc=Hurst%2C+TX",
+            "title": "THE BEST 10 Pool Repair in Hurst, TX",
+            "snippet": "... Omega Pool Services, Leak Professionals, Lagoon Pool Plastering, AquaMedic ... Bedford and Euless alike. It doesn't tend to be particularly busy, so ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:04:26.180Z",
+      "data": {
+        "query": "Omega Pool Services Bedford site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Oct 16, 2015",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2015/10/16/dog-about-town-costume-party-hopping-and-more-things-to-do/",
+            "title": "Dog About Town: Costume party hopping and more things ...",
+            "snippet": "B.K. has details on pre-Halloween festivities and other events, along with an updated list of dog-friendly patios, stores and attractions.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:05:53.371Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Omega Pool Services\" Bedford",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:04:36.490Z",
+      "data": "Omega Pool Services Bedford review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You Filters Search filters SHORTS SHORTS Now playing Love your job? How much can a pool tech make? Pool Crew AU Pool Crew AU • • 6.1K views 3 years ago Pool Crew AU Pool Crew AU First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... From the video description 3:14 3:14 Now playing 69 complaints filed against Maryland pool company that left customers with unfinished pools WUSA9 WUSA9 • • 673 views 2 years ago WUSA9 WUSA9 Dozens of customers tell WUSA9 they were forced to pay tens of thousands of dollars to complete pool projects left unfinished by ... Dozens of customers tell WUSA9 they were forced to pay tens of thousands of dollars to complete pool projects left unfinished by ... From the video description CC 4:08 4:08 Now playing Pool Company Threatens $3,500 Fine, Voids Customer Warranty Over Negative Review CBS TEXAS CBS TEXAS • • 18K views 7 years ago CBS TEXAS CBS TEXAS A North Texas company is trying to fine a local couple $3500 and void their warranty for writing a negative review . When the ... A North Texas company is trying to fine a local couple $3500 and void their warranty for writing a negative review . When the ... From the video description CC 3:18 3:18 Now playing Pool Care Company Swimming In Complaints CBS TEXAS CBS TEXAS • • 775 views 9 years ago CBS TEXAS CBS TEXAS A Consumer Justice warning before you jump into a contract with a pool care company. A Consumer Justice warning before you jump into a contract with a pool care company. From the video description CC 2:58 2:58 Now playing New Complaints About Same Pool Company CBS TEXAS CBS TEXAS • • 106 views 9 years ago CBS TEXAS CBS TEXAS More customers called CBS 11 claiming they're owed thousands by a North Texas pool care company. More customers called CBS 11 claiming they're owed thousands by a North Texas pool care company. From the video description CC 26:37 26:37 Now playing Sydney Pool Services..The Documentary Dean Tirkot Dean Tirkot • • 381K views 14 years ago Dean Tirkot Dean Tirkot Sydney Pool Services the documentary is about group of pool riding skateboarders and their friend's artistic exploration within the ... Sydney Pool Services the documentary is about group of pool riding skateboarders and their friend's artistic exploration within the ... From the video description 3:39 3:39 Now playing Florida Attorney General says Olympus Pools complaints are under \"active review\" WFLA News Channel 8 WFLA News Channel 8 • • 25K views 4 years ago WFLA News Channel 8 WFLA News Channel 8 Local News. Local News. From the video description CC 5 moments KEITH CATE | SHANNON BEHNKEN | CHARLOTTE SPENCER | ASHLEY MOODY FLORIDA ATTORNEY GENERAL | POOL PROBLEMS 5 auto-generated moments in this video 5 moments KEITH CATE KEITH CATE 0:02 KEITH CATE 0:02 SHANNON BEHNKEN SHANNON BEHNKEN 0:29 SHANNON BEHNKEN 0:29 CHARLOTTE SPENCER CHARLOTTE SPENCER 1:12 CHARLOTTE SPENCER 1:12 ASHLEY MOODY FLORIDA ATTORNEY GENERAL ASHLEY MOODY FLORIDA ATTORNEY GENERAL 1:48 ASHLEY MOODY FLORIDA ATTORNEY GENERAL 1:48 POOL PROBLEMS POOL PROBLEMS 1:54 POOL PROBLEMS 1:54 2:52 2:52 Now playing Pool company accused of ripping off customers lacks local licenses WFLA News Channel 8 WFLA News Channel 8 • • 105 views 6 years ago WFLA News Channel 8 WFLA News Channel 8 Pool company accused of ripping off customers lacks local licenses. Pool company accused of ripping off customers lacks local licenses. From the video description CC 1:31 1:31 Now playing Pool Company Won't Honor Warranty Due To Bad Review CBS TEXAS CBS TEXAS • • 416 views 7 years ago CBS TEXAS CBS TEXAS The homeowners called Consumer Justice to try to get results. The homeowners called Consumer Justice to try to get results. From the video description CC 3:00 3:00 Now playing Don't Get Scammed By A Pool Service Company | Consumer Alert Clean Pool & Spa - Ultimate Swimming Pool Care Guide Clean Pool & Spa - Ultimate Swimming Pool Care Guide • • 2.2K views 6 years ago Clean Pool & Spa - Ultimate Swimming Pool Care Guide Clean Pool & Spa - Ultimate Swimming Pool Care Guide Don't Get Scammed By A Pool Service Company SECURE WEBSITE RESOURCES: ... Don't Get Scammed By A Pool Service Company SECURE WEBSITE RESOURCES: ... From the video description 6 chapters Intro | Paying for chemicals that werent used | Selling you used parts | Not showing up at all | Equipment replacement | Damage 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Paying for chemicals that werent used Paying for chemicals that werent used 0:26 Paying for chemicals that werent used 0:26 Selling you used parts Selling you used parts 0:45 Selling you used parts 0:45 Not showing up at all Not showing up at all 1:06 Not showing up at all 1:06 Equipment replacement Equipment replacement 1:28 Equipment replacement 1:28 Damage Damage 2:20 Damage 2:20 12:51 12:51 Now playing Why Do Pool Cleaning Businesses Fail? | Don't Miss the 8th Reason! Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner • • 22K views 3 years ago Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... From the video description 8 chapters 8 Reasons Pool Cleaning Businesses Fail? | Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset | Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly | Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly | Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer | Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast | Reason 6 - Pool Cleaning Businesses Fail – Poor Communication | Reason 7 - Pool Cleaning Businesses Fail – Not Paying their Taxes 8 chapters in this video 8 chapters 8 Reasons Pool Cleaning Businesses Fail? 8 Reasons Pool Cleaning Businesses Fail? 0:00 8 Reasons Pool Cleaning Businesses Fail? 0:00 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 3:38 3:38 Now playing Hillsborough customers of defunct pool company want accountability WFLA News Channel 8 WFLA News Channel 8 • • 2.2K views 3 years ago WFLA News Channel 8 WFLA News Channel 8 Hillsborough customers of defunct pool company want accountability. Hillsborough customers of defunct pool company want accountability. From the video description CC People also watched 18:27 18:27 Now playing The Truth About “Budget” Pool Customers Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL • • 212 views 1 day ago Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL Ever had a client say, “If it's not broken, don't fix it,” while you stare at a rusted filter and a pump on life support? We've been there. Ever had a client say, “If it's not broken, don't fix it,” while you stare at a rusted filter and a pump on life support? We've been there. From the video description New 9:29 9:29 Now playing Replacement Pool Pump Mistakes - 3 Most Common Problems Swimming Pool Steve Swimming Pool Steve • • 368 views 11 hours ago Swimming Pool Steve Swimming Pool Steve Consult with Steve about your pool : https://www.swimmingpoolsteve.com/pages/ask-steve.html Swimming pool pump sizing ... Consult with Steve about your pool : https://www.swimmingpoolsteve.com/pages/ask-steve.html Swimming pool pump sizing ... From the video description New 7 chapters Pool pump replacement mistakes | 3 reasons why picking the right pool pump is important | Avoid buying a pool pump that is over-sized | Compare pumps based on flow rate not horsepower | port sizes for your pump matters for efficiency | Variable speed pumps require direct drive 220/230 volts | What is the difference between medium head and high head pool pumps 7 chapters in this video 7 chapters Pool pump replacement mistakes Pool pump replacement mistakes 0:00 Pool pump replacement mistakes 0:00 3 reasons why picking the right pool pump is important 3 reasons why picking the right pool pump is important 0:30 3 reasons why picking the right pool pump is important 0:30 Avoid buying a pool pump that is over-sized Avoid buying a pool pump that is over-sized 1:10 Avoid buying a pool pump that is over-sized 1:10 Compare pumps based on flow rate not horsepower Compare pumps based on flow rate not horsepower 3:25 Compare pumps based on flow rate not horsepower 3:25 port sizes for your pump matters for efficiency port sizes for your pump matters for efficiency 4:30 port sizes for your pump matters for efficiency 4:30 Variable speed pumps require direct drive 220/230 volts Variable speed pumps require direct drive 220/230 volts 5:30 Variable speed pumps require direct drive 220/230 volts 5:30 What is the difference between medium head and high head pool pumps What is the difference between medium head and high head pool pumps 6:20 What is the difference between medium head and high head pool pumps 6:20 2:13 2:13 Now playing Customers file complaints on pool contractors Tampa Bay 28 Tampa Bay 28 • • 196 views 15 years ago Tampa Bay 28 Tampa Bay 28 State investigators are looking into an abandoned contracting job for a backyard pool that's been neglected since February. State investigators are looking into an abandoned contracting job for a backyard pool that's been neglected since February. From the video description 8:42 8:42 Now playing Salt Water Pool Maintenance for Beginners Swim University Swim University • • 342K views 2 years ago Swim University Swim University The Salt Water Pool Cheat Sheet (Free): https://swimu.com/saltwater The Pool Care Handbook: https://swimu.com/book The Pool ... The Salt Water Pool Cheat Sheet (Free): https://swimu.com/saltwater The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 9 chapters Introduction to Salt Water Pool Maintenance | The 7 Keys to Salt Water Pool Maintenance | 1. Add the Right Amount of Salt | 2. Test and Balance Your Water Once a Week, Especially Your pH | 3. Set Up Your Circulation | 4. Prevent Erosion and Calcium Buildup | 5. Check Your Salt Cell Every 3 Months | 6. Shock Your Pool Regularly | 7. Clean Your Surfaces Once a Week 9 chapters in this video 9 chapters Introduction to Salt Water Pool Maintenance Introduction to Salt Water Pool Maintenance 0:00 Introduction to Salt Water Pool Maintenance 0:00 The 7 Keys to Salt Water Pool Maintenance The 7 Keys to Salt Water Pool Maintenance 0:43 The 7 Keys to Salt Water Pool Maintenance 0:43 1. Add the Right Amount of Salt 1. Add the Right Amount of Salt 1:28 1. Add the Right Amount of Salt 1:28 2. Test and Balance Your Water Once a Week, Especially Your pH 2. Test and Balance Your Water Once a Week, Especially Your pH 2:44 2. Test and Balance Your Water Once a Week, Especially Your pH 2:44 3. Set Up Your Circulation 3. Set Up Your Circulation 5:01 3. Set Up Your Circulation 5:01 4. Prevent Erosion and Calcium Buildup 4. Prevent Erosion and Calcium Buildup 5:34 4. Prevent Erosion and Calcium Buildup 5:34 5. Check Your Salt Cell Every 3 Months 5. Check Your Salt Cell Every 3 Months 6:35 5. Check Your Salt Cell Every 3 Months 6:35 + 6 more 2:48 2:48 Now playing South Florida pool company operator ordered by state regulators to forfeit his license WPLG Local 10 WPLG Local 10 • • 2.3K views 3 years ago WPLG Local 10 WPLG Local 10 According to the Florida Department of Business and Professional Regulation, nearly 40 cases against Sunshine Pools and ... According to the Florida Department of Business and Professional Regulation, nearly 40 cases against Sunshine Pools and ... From the video description CC 2:07 2:07 Now playing Florida pool company accused of scamming 600 families FOX 35 Orlando FOX 35 Orlando • • 3.9K views 2 years ago FOX 35 Orlando FOX 35 Orlando Some families say they hired Legacy Pools to build a pool from them, but the owner allegedly ran off with the money before filing ... Some families say they hired Legacy Pools to build a pool from them, but the owner allegedly ran off with the money before filing ... From the video description CC 4:58 4:58 Now playing Customers complain about pool company, turn to I-TEAM for help News4JAX The Local Station News4JAX The Local Station • • 56 views 7 years ago News4JAX The Local Station News4JAX The Local Station Several homeowners are hoping the I-TEAM can help them get their money back from a local pool company after one paid them ... Several homeowners are hoping the I-TEAM can help them get their money back from a local pool company after one paid them ... From the video description CC SHORTS SHORTS Now playing Pool Technician | $68,930 to clean pools and repair pool equipment 👨‍🔧 🌊 🏊‍♀️ 🤽‍♂️ bookandtable bookandtable • • 8.6K views 2 years ago bookandtable bookandtable Book&Table Inc. In-Person & Online Tutors Find a Tutor Today ▪️https://www.linktr.ee/bookandtable. ▫️TikTok: ... Book&Table Inc. In-Person & Online Tutors Find a Tutor Today ▪️https://www.linktr.ee/bookandtable. ▫️TikTok: ... From the video description SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.6M views 4 years ago Life With Evan Life With Evan 1:28 1:28 Now playing Meet the Franchisee: Puddle Pool Services Canadian Franchise Association Canadian Franchise Association • • 727 views 2 years ago Canadian Franchise Association Canadian Franchise Association Kalana Sembakuttige is a Puddle Pool Services franchisee servicing the Etobicoke and North York neighbourhoods of Toronto. Kalana Sembakuttige is a Puddle Pool Services franchisee servicing the Etobicoke and North York neighbourhoods of Toronto. From the video description 4:15 4:15 Now playing 11 Common POOL MAINTENANCE Mistakes Swim University Swim University • • 619K views 7 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 12 chapters Introduction to Pool Maintenance Mistakes | 1. Adding Shock Directly To Water | 2. Not Brushing Your Pool | 3. Using Robotic Pool Cleaner With Algae | 4. Ignoring pH and Alkalinity Levels | 5. Backwashing Too Often | 6. Adding Shock Through The Skimmer | 7. Shocking Pool During The Day | 8. Not Leveraging Calcium Hardness | 9. Running Filter Less Than 8 Hours A Day | 10. Not Testing Your Water Weekly | 11. Wearing Street Clothes In Pool 12 chapters in this video 12 chapters Introduction to Pool Maintenance Mistakes Introduction to Pool Maintenance Mistakes 0:00 Introduction to Pool Maintenance Mistakes 0:00 1. Adding Shock Directly To Water 1. Adding Shock Directly To Water 0:13 1. Adding Shock Directly To Water 0:13 2. Not Brushing Your Pool 2. Not Brushing Your Pool 0:34 2. Not Brushing Your Pool 0:34 3. Using Robotic Pool Cleaner With Algae 3. Using Robotic Pool Cleaner With Algae 0:53 3. Using Robotic Pool Cleaner With Algae 0:53 4. Ignoring pH and Alkalinity Levels 4. Ignoring pH and Alkalinity Levels 1:13 4. Ignoring pH and Alkalinity Levels 1:13 5. Backwashing Too Often 5. Backwashing Too Often 1:32 5. Backwashing Too Often 1:32 6. Adding Shock Through The Skimmer 6. Adding Shock Through The Skimmer 1:52 6. Adding Shock Through The Skimmer 1:52 5:40 5:40 Now playing Imperial Bedford Silver Mist Pool Table So Cal Pool Tables So Cal Pool Tables • • 2.6K views 6 years ago So Cal Pool Tables So Cal Pool Tables One of a kind Imperial Bedford Pool Table. This model is also available in Chestnut Finish and both finishes are available in 7ft ... One of a kind Imperial Bedford Pool Table. This model is also available in Chestnut Finish and both finishes are available in 7ft ... From the video description 5 moments Top-Quality Metal Frame | Rustic Look Leather Pockets | Matching Accessory Kits | Also Sell Matching Benches | Interlocking Mechanism 5 auto-generated moments in this video 5 moments Top-Quality Metal Frame Top-Quality Metal Frame 0:14 Top-Quality Metal Frame 0:14 Rustic Look Leather Pockets Rustic Look Leather Pockets 0:43 Rustic Look Leather Pockets 0:43 Matching Accessory Kits Matching Accessory Kits 1:30 Matching Accessory Kits 1:30 Also Sell Matching Benches Also Sell Matching Benches 1:52 Also Sell Matching Benches 1:52 Interlocking Mechanism Interlocking Mechanism 3:12 Interlocking Mechanism 3:12 Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:04:37.619Z",
+      "data": {
+        "query": "site:nextdoor.com Omega Pool Services Bedford",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:05:52.427Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Omega Pool Services\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:05:54.405Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Omega Pool Services\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:04:50.466Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Omega%20Pool%20Services&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 1
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 2
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Quick Search. Search By. Location; Facility Name/ID. Search by city, state, and/or zip code. Search. Search by facility name or ID Search. More Search Options.",
+            "position": 3
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 6
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search",
+            "title": "Enforcement Case Search",
+            "snippet": "Enforcement Case Search · Case Identifiers · Facility Location · Case Attributes · Case Milestones and Dates · Enforcement Case Outcomes/Settlements.",
+            "position": 7
+          },
+          {
+            "link": "https://www.epa.gov/frs",
+            "title": "Facility Registry Service (FRS)",
+            "snippet": "Search Data in FRS​​ Search for your location in the Facility Registry Service (FRS). Use your company name or address to search first.",
+            "position": 8
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:04:53.723Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:04:58.548Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:05:51.144Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Omega Pool Services\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:05.448Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Omega Pool Services",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 5, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Google%20Search%20Engine%20Monopoly%20Ruling.pdf",
+            "title": "Case 1:20-cv-03010-APM Document 1033 Filed 08/05/24 ...",
+            "snippet": "MEMORANDUM OPINION. Case 1:20-cv-03010-APM Document 1033 Filed 08/05/24 Page 1 of 286. Page 2. i. TABLE OF CONTENTS. INTRODUCTION.",
+            "position": 1
+          },
+          {
+            "date": "by N MONTANA",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/child-support/FINAL.pdf",
+            "title": "PETITION FOR REVIEW",
+            "snippet": "In accordance with 42 U.S.C. § 7607(b)(1), Federal Rule of Appellate Procedure. 15, and D.C. Circuit Rule 15(a)(1), Petitioners the States ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:06.477Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://security.app.cpa.state.tx.us/",
+            "title": "Page Unavailable - Comptroller.Texas.Gov",
+            "snippet": "The webpage you are trying to access is temporarily out of service. We are either working to address the issue or conducting routine maintenance, ...",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 7
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 9
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:05:07.955Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Omega Pool Services",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:13.845Z",
+      "data": {
+        "cid": "2432668385197828219",
+        "name": "Omega Pool Services",
+        "found": true,
+        "rating": 4.4,
+        "source": "serper",
+        "address": "500 Grapevine Hwy #106, Hurst, TX 76054",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "3 months ago",
+            "text": "Called for a repair and first guy shows up and lied the entire the visit. I still have never seen a repair because there wasn't one. Second guy, Ronnie, said many complaints of 15 because 1st guy, now I find the general mgr. Ronnie cleaned filter yet said he would return. I asked him when he said just back wash. 😂 . I spoke with owner and she said I sign agreement...bs I signed use of credit card when repair done. Was never a repair !\nNow the scammers want to sue. This outfit are liars beside being complete scammers. Beware !!!\nFirst guy also dumped several rocks in pool. Ronnie removed them and removed robot skimmer which was left in pool fof three days and ruin.",
+            "author": "Mikey Mike",
+            "rating": 1
+          },
+          {
+            "date": "10 months ago",
+            "text": "I recently hired Omega Pool Services to clean and maintain my pool, and I couldn't be happier with their work. The team was punctual, professional, and very knowledgeable about pool care. Micah love helped me out a lot and he’s the best employee there!They went above and beyond to ensure my pool was in top condition, explaining everything they were doing along the way. The pricing was reasonable, and the quality of service was outstanding. I highly recommend Omega Pool Services to anyone looking for reliable and thorough pool maintenance!",
+            "author": "Lane Love",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We’ve been very happy with Matt, Zach and the other team members of Omega Pool Services! Each time they service the pool they are communicative about what was performed and how long before we can reenter the pool. There have been a few times we had questions on and they were prompt to respond and even come out when we needed them to!",
+            "author": "Alyssa Slayton",
+            "rating": 5
+          },
+          {
+            "date": "10 months ago",
+            "text": "As a new pool owner, we have been blessed to have Ronnie as our pool service technician.  He has proactively identified and assisted us with matters before they became issues that we might not have otherwise identified.  I really appreciate and am thankful for the level of care and service he provides.  Thank you, Ronnie!",
+            "author": "Blake Wilson",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Hello all, I can't say enough great things about Matt and Omega Pool. We were introduced to Matt through our pool builder Selah. Matt is an expert in chemical, since this is our first pool, we always depend on him on how to operate the filter system. Along with Matt assistant . Our pool always looks great. When something comes up, he's quick to let us know and provide options. Great guy and great service!",
+            "author": "Tu Do",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Mark with Omega Pool Services has been unbelievable to work with.  He is very knowledgeable about pool care, and how to address different issues.  Beyond that, he doesn't just correct the issue, he explains to you what the issue is, why it's an issue, and how you can address it in the future.  We couldn't have hoped for a better experience during pool start up and chemical balancing than working with Mark.  He's professional, friendly, and personable.",
+            "author": "S R",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I can't say enough great things about Mark and Omega Pool.  We were introduced to Mark through our pool builder and it was a no-brainer to keep using him and Omega.  Our pool always looks great.  When something comes up, he's quick to let us know and provide options.  There have been several times he's gone above and beyond- when the Polaris broke between visits and I texted to confirm I was buying the right replacement, when we had an algae issue and when he found $100 in the skimmer which he promptly brought to our attention when he could've kept it.  Great guy and great service!",
+            "author": "Jay F",
+            "rating": 5
+          },
+          {
+            "date": "10 months ago",
+            "text": "After several pool companies could not perform as expected, Micah contacted me about pool service.    I have been so pleased and our pool has never looked better.  Thanks Micah and Omega.",
+            "author": "VERA BENNETT",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "NEGATIVE_SIGNAL_FOUND",
+          "signals": [
+            "NEGATIVE_SIGNAL_FOUND",
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": true,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 21,
+        "review_source": "tiered_validated",
+        "serpapi_error": "SERPAPI_API_KEY not set",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "location_searched": "Bedford, TX",
+        "search_confidence": 0.6799999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:40.421Z",
+      "data": {
+        "name": "Omega Pool Services",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 612-4827",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "500 Grapevine Hwy #106, Hurst, TX 76054",
+        "reviews": [],
+        "website": "http://omegapoolservices.com/",
+        "maps_url": "https://www.google.com/maps/search/Omega%20Pool%20Services%20Bedford%2C%20TX",
+        "categories": [
+          "Pool cleaning service"
+        ],
+        "review_count": null
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:41.571Z",
+      "data": {
+        "email": "info@omegapoolservices.com",
+        "error": null,
+        "source": "homepage"
+      }
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:05:43.680Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "http://omegapoolservices.com/",
+        "analyzed_pages": [
+          {
+            "url": "http://omegapoolservices.com/",
+            "type": "homepage",
+            "title": "Omega Pool Services | Custom Pool Care in Dallas, TX"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:48.893Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/omega-pool-services-hurst?adjust_creative=yahoo",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:05:50.618Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:05:51.751Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Omega Pool Services\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/job-listing/pool-technician-omega-pool-services-JV_IC1140004_KO0,15_KE16,35.htm?jl=1009841055240",
+            "title": "Omega Pool Services hiring Pool Technician Job in Hurst, TX",
+            "snippet": "Job expiredThis job from Aug 11, 2025 is no longer available for applications. Omega Pool Services ... Conversations @Omega Pool Services. Kick off the ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/Job/pool-cleaning-jobs-SRCH_IC1140039_KO0,13.htm",
+            "title": "98 pool cleaning Jobs in North Richland Hills, TX, January 2026",
+            "snippet": "Omega Pool Services. Pool Technician. Hurst, TX. Easy Apply. Remove debris ... Employee reviews at Omega Pool ServicesOmega Pool Services Overview. Poolwerx ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/Job/fort-worth-pool-cleaning-jobs-SRCH_IL.0,10_IC1139993_KO11,24.htm",
+            "title": "67 pool cleaning Jobs in Fort Worth, TX, January 2026",
+            "snippet": "Omega Pool Services. Pool Technician. Hurst, TX. Easy Apply. Remove debris ... Employee reviews at Omega Pool ServicesOmega Pool Services Overview. Prestige ..."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:06:12.620Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-05T04:05:58Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Omega%20Pool%20Services%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=JReEaZ3UKIOBqtsP66X-2Ao\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-05T04:06:07Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Omega%20Pool%20Services%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=LheEaaSfN5u5qtsPp8C96Ao\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Omega Pool Services",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-06T02:45:32.047Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Omega Pool Services",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Omega Pool Services",
+        "searched_at": "2026-02-06T02:45:18.689165",
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:06:33.066Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "OMEGA POOL SERVICES LLC",
+        "taxpayer_number": "32069462250"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-02-05T04:06:33.074Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-05T04:06:45.925Z",
+      "data": {
+        "cost": 0.0008309,
+        "summary": "The reviews present a polarized picture. The 5-star reviews are detailed and name specific employees, which lends authenticity, but the pattern is similar. The single 1-star review is highly specific and alleges serious misconduct, including dishonesty and legal threats, which is a significant red flag. The extremely low review count makes patterns hard to confirm. The business appears to have good employee-customer relationships but may have serious issues with repair fulfillment and conflict resolution.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-05T04:06:45.925Z",
+        "fake_signals": [
+          "Multiple 5-star reviews mention different employees by name in a similar, complimentary pattern",
+          "Low total review volume (8) for a service business",
+          "No 3-4 star reviews, creating a polarized rating distribution"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 4.4,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "NEGATIVE",
+          "negative_evidence": [
+            "Allegation of refusing to perform a paid repair and threatening to sue"
+          ],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Specific employee names and project details in positive reviews",
+          "Varied writing styles and specific scenarios described",
+          "The 1-star review contains specific, emotional allegations (names, sequence of events, legal threat)"
+        ],
+        "fake_review_score": 35,
+        "complaint_patterns": [
+          "Alleged dishonesty/lying by technicians",
+          "Failure to perform paid repairs",
+          "Threats of legal action from owner"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Insufficient rating data across platforms to detect discrepancies. Only Google has a rating."
+      }
+    }
+  }
+}

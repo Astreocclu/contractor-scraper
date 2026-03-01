@@ -1,0 +1,70 @@
+{
+  "variation": "D2",
+  "contractor_id": 8958,
+  "contractor_name": "Splash Pools",
+  "archetype": "gold_standard",
+  "expected_score": 78,
+  "run": 5,
+  "timestamp": "2026-01-20T19:24:21.206Z",
+  "success": true,
+  "trust_score": 87,
+  "risk_level": "LOW",
+  "reasoning": "Mixed council: DeepSeek=92, Claude=82, Gemini=88, Avg=87",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 92,
+      "risk_level": "LOW",
+      "reasoning": "Splash Pools demonstrates exceptional performance across multiple trust indicators. The company maintains a perfect 5.0 rating on Yelp and a 4.8 rating on Google Maps with 31 reviews, all of which appear authentic and detailed. The business holds an A+ BBB accreditation with no complaints, and review analysis confirms genuine customer experiences with specific project details and long-term satisfaction. No legal issues, liens, or regulatory violations were found across extensive searches. The only minor concern is the lack of a strong social media presence, but this is outweighed by overwhelming positive evidence.",
+      "key_factors": [
+        "Perfect 5.0 Yelp rating and 4.8 Google rating with authentic, detailed reviews",
+        "A+ BBB accreditation with zero complaints",
+        "No legal issues, liens, or regulatory violations found across extensive searches",
+        "Multi-year customer relationships and repeat business mentioned in reviews"
+      ],
+      "red_flags": [
+        "Limited social media presence (Facebook page not found)"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 82,
+      "risk_level": "LOW",
+      "reasoning": "Splash Pools demonstrates strong credibility with consistently excellent customer reviews across multiple platforms (4.8/5 on Google, 5/5 on Yelp, A+ BBB rating). The reviews are authentic and detailed, mentioning specific crew members, project timelines, and long-term customer relationships. The company is properly registered in Texas, has no significant legal issues or regulatory violations, and shows evidence of quality workmanship through customer testimonials spanning multiple years.",
+      "key_factors": [
+        "Excellent and authentic customer reviews across all major platforms",
+        "Proper business registration and tax compliance in Texas",
+        "No significant legal issues, court cases, or regulatory violations found",
+        "Evidence of long-term customer relationships and repeat business"
+      ],
+      "red_flags": [
+        "Limited online presence beyond review platforms",
+        "Some location confusion between Mesquite and Midlothian addresses"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 88,
+      "risk_level": "LOW",
+      "reasoning": "Splash Pools demonstrates a strong track record based on available data. Google Maps reviews are overwhelmingly positive, mentioning specific employees and project details, suggesting authenticity. The BBB rating is A+ and they are accredited. While some court record searches returned errors, the overall picture indicates a reliable contractor with a commitment to customer satisfaction. The review analysis further supports the authenticity of positive feedback.",
+      "key_factors": [
+        "Positive Google Maps reviews",
+        "Accredited BBB with A+ rating",
+        "Authentic review analysis"
+      ],
+      "red_flags": [
+        "Angi rating slightly lower than other platforms",
+        "Some court record searches returned errors"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Limited social media presence (Facebook page not found)",
+    "Limited online presence beyond review platforms",
+    "Some location confusion between Mesquite and Midlothian addresses",
+    "Angi rating slightly lower than other platforms",
+    "Some court record searches returned errors"
+  ],
+  "cost_usd": 0.07031375250000002,
+  "duration_ms": 9007
+}

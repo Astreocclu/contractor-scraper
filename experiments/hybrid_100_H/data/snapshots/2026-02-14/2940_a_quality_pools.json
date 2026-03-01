@@ -1,0 +1,1844 @@
+{
+  "contractor_id": 2940,
+  "business_name": "A-Quality Pools",
+  "city": "Fort Worth",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-14T18:35:55.004Z",
+  "sources": {
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:18.407Z",
+      "data": "One moment, please... Loader Please wait while your request is being verified..."
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:00:49.183Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 1,
+            "MECH_LIEN": 19
+          },
+          "active_liens": 19,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 20,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS",
+                "grantor": "WENGERT PAMELA E",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WENGERT PAMELA E",
+                    "A-QUALITY POOLS",
+                    "MECHANICS LIEN",
+                    "4/28/1998",
+                    "D198088488",
+                    "OPR/13189/148",
+                    "SAGINAW, Subdivision: 465 EDWARDS DR"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1998-04-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D198088488"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "EAGLE POOL PLUMBING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EAGLE POOL PLUMBING",
+                    "A-QUALITY POOLS INC",
+                    "RELEASE",
+                    "3/20/1997",
+                    "D197048800",
+                    "OPR/12706/1396",
+                    "HURST, Subdivision: 7140 PRECINCT LINE RD"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1997-03-20",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D197048800"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "HOELSCHER PEGGY S",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HOELSCHER PEGGY S",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "6/17/1998",
+                    "D198133178",
+                    "OPR/13271/238",
+                    "N RICH HLS, Subdivision: RICHLAND TERR, Lot: 8, Block: 44"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1998-06-17",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D198133178"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "RYDER THOMAS L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "RYDER THOMAS L",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "7/14/1998",
+                    "D198156221",
+                    "OPR/13314/241",
+                    "KELLER, Subdivision: BLOOMFIELD AT HIDDEN LKS, Lot: 1, Block: E"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1998-07-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D198156221"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "11/7/2003",
+                    "D203417143",
+                    "OPR/17376/353",
+                    "FORT WORTH, Subdivision: EASTERN HILLS, Lot: 5, Block: H"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-11-07",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203417143"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "9/6/2005",
+                    "D205263613",
+                    "--/--/--",
+                    "Subdivision: HILLSBOROUGH, Lot: 5, Block: A"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2005-09-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D205263613"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "6/18/2001",
+                    "D201138772",
+                    "OPR/14955/232",
+                    "AZLE, Subdivision: 1001 JARVIS LN"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2001-06-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D201138772"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "7/20/2000",
+                    "D200159070",
+                    "OPR/14436/440",
+                    "KENNEDALE, Subdivision: RACEWAY ESTS, Lot: 4"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2000-07-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D200159070"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "7/12/2000",
+                    "D200152166",
+                    "OPR/14425/286",
+                    "ARL, Subdivision: MARTHA VINEYARD, Lot: 6, Block: 4"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2000-07-12",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D200152166"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS",
+                "grantor": "A-QUALITY POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS",
+                    "A-QUALITY POOLS",
+                    "MECHANICS LIEN",
+                    "6/24/1998",
+                    "D198139749",
+                    "OPR/13282/509",
+                    "ARL, Subdivision: TURF CLUB ESTS, Lot: 35R, Block: 16"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1998-06-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D198139749"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/26/2000",
+                    "D200087367",
+                    "OPR/14313/507",
+                    "BEDFORD, Subdivision: BRIDLE BEND, Lot: 1, Block: 1"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2000-04-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D200087367"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "8/28/2000",
+                    "D200191880",
+                    "OPR/14493/200",
+                    "HURST, Subdivision: HAVEN, Lot: 10, Block: F"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2000-08-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D200191880"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS CONSTRUCTION INC",
+                "grantor": "A-QUALITY POOLS CONSTRUCTION",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS CONSTRUCTION",
+                    "A-QUALITY POOLS CONSTRUCTION INC",
+                    "MECHANICS LIEN",
+                    "8/3/1995",
+                    "D195133241",
+                    "OPR/12049/2204",
+                    "N RICH HLS, Subdivision: LONDONDERRY, Lot: 38, Block: 3"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1995-08-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D195133241"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS",
+                "grantor": "A-QUALITY POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS",
+                    "A-QUALITY POOLS",
+                    "MECHANICS LIEN",
+                    "8/25/1999",
+                    "D199216286",
+                    "OPR/13977/656",
+                    "ARL, Subdivision: HILL VAL ESTS, Lot: 4, Block: 3"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1999-08-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D199216286"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "7/25/2000",
+                    "D200163092",
+                    "OPR/14443/152",
+                    "FORT WORTH, Subdivision: RIVERBEND ESTS, Lot: 9, Block: 12"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2000-07-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D200163092"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "9/18/2000",
+                    "D200210958",
+                    "OPR/14526/418",
+                    "N RICH HLS, Subdivision: HOLIDAY W, Lot: 12, Block: 22R"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2000-09-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D200210958"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "8/29/2000",
+                    "D200193189",
+                    "OPR/14495/419",
+                    "WATAUGA, Subdivision: ASTOR HTS, Lot: 12, Block: 7"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2000-08-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D200193189"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "11/11/1998",
+                    "D198263615",
+                    "OPR/13511/335",
+                    "N RICH HLS, Subdivision: OAK RIDGE ESTS, Lot: 10, Block: 1"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1998-11-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D198263615"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "6/17/1999",
+                    "D199155305",
+                    "OPR/13868/525",
+                    "HURST, Subdivision: CHISOLM PK ESTS, Lot: 12, Block: 3"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1999-06-17",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D199155305"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "A-QUALITY POOLS INC",
+                "grantor": "A-QUALITY POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "A-QUALITY POOLS INC",
+                    "A-QUALITY POOLS INC",
+                    "MECHANICS LIEN",
+                    "7/19/1999",
+                    "D199182267",
+                    "OPR/13917/387",
+                    "HURST, Subdivision: CHISOLM PK ESTS, Lot: 12, Block: 3"
+                  ],
+                  "search_term": "A-Quality Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1999-07-19",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D199182267"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "3 lien(s) filed BY contractor (collecting payment - neutral)",
+            "16 lien(s) with unclear direction"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 19,
+          "human_summary": "OK: 3 liens filed BY A-Quality Pools to collect payment (normal business, no penalty)",
+          "liens_unclear": 16,
+          "liens_by_count": 3,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 3,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "A-Quality Pools",
+        "searched_at": "2026-02-14T09:59:18.867375",
+        "total_records": 20
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:00:49.887Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "A-QUALITY POOLS, INC.",
+        "taxpayer_number": "32000300460"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-14T10:00:49.893Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:01:01.018Z",
+      "data": {
+        "cost": 0.00091714,
+        "summary": "Reviews show a mixed but authentic picture. The company has been in business for 51 years and has many positive reviews citing knowledgeable, helpful staff (Logan, Rick). However, there are consistent complaints about communication, responsiveness, and delays in service/repairs, particularly reflected in the lower Yelp rating. The BBB A+ rating with no visible complaints suggests they handle formal disputes adequately. The negative reviews contain specific, credible details.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-14T10:01:01.018Z",
+        "fake_signals": [
+          "Limited sample of Google reviews provided (8 total, strategic selection)",
+          "Some 5-star reviews are very brief and generic (e.g., 'prices are great')"
+        ],
+        "recommendation": "CAUTIOUS_TRUST",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 3.1,
+          "google": 4.3,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [
+            "warranty"
+          ],
+          "confidence": "MEDIUM",
+          "follow_through": "MIXED",
+          "negative_evidence": [
+            "Complaint about failure to inform of equipment issues leading to costly repairs",
+            "Long delay (3+ months) on a paid robot repair with poor communication"
+          ],
+          "positive_evidence": [
+            "Positive experience handling a Polaris warranty inquiry over the phone"
+          ]
+        },
+        "authentic_signals": [
+          "Specific employee names mentioned (Logan S, Rick, Braxton)",
+          "Detailed project descriptions (resurfacing, automation, warranty troubleshooting)",
+          "Varied writing styles and specific complaints with dates/timelines",
+          "Mix of praise for individuals and criticism of processes"
+        ],
+        "fake_review_score": 35,
+        "complaint_patterns": [
+          "Poor communication/unresponsiveness",
+          "Delays in service/repair",
+          "Issues with specific employees (e.g., Braxton)",
+          "Damaged goods on delivery"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Significant rating gap between Google (4.3) and Yelp (3.1). This suggests different customer segments or potential review management differences between platforms."
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:56:41.513Z",
+      "data": {
+        "query": "site:yelp.com \"A-Quality Pools\" \"Fort Worth, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Service&find_loc=Hurst%2C+TX",
+            "title": "TOP 10 BEST Pool Service in Hurst, TX - Updated 2026 - Yelp",
+            "rating": 4.4,
+            "snippet": "... A-Quality Pools - Pool Service near me - Hurst, Texas. A-Quality Pools. 3.3 ( ... Fort Worth, TX · Wedgwood, Fort Worth, TX. Frequently Asked Questions and ...",
+            "position": 1,
+            "ratingCount": 538
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Vinyl+Liner+Pool+Installation&find_loc=Fort+Worth%2C+TX",
+            "title": "Top 10 Best Vinyl Liner Pool Installation Near Fort Worth, Texas - Yelp",
+            "rating": 3.7,
+            "snippet": "These are some businesses with a large number of reviews for pool & hot tub service in Fort Worth, TX: A-Quality Pools (36 reviews). Authentic Plaster & Tile ( ...",
+            "position": 2,
+            "ratingCount": 91
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Supplies&find_loc=Throckmorton+Street%2C+Fort+Worth%2C+TX",
+            "title": "TOP 10 BEST Pool Supplies near Throckmorton St, Fort Worth, TX ...",
+            "snippet": "Best Pool Supplies near Throckmorton St, Fort Worth, TX · 1. PMC Electric · 2. Walls Pools · 3. Corley's Pool Pros · 4. A-Quality Pools · 5. Parker County Pools · 6.",
+            "position": 3
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Supplies&find_loc=Fort+Worth%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Supplies in Fort Worth, TX - Yelp",
+            "rating": 4,
+            "snippet": "This is a placeholder. 3510 N Grove St, Fort Worth, TX 76106. (817) 740-8722. A-Quality Pools - Swimming Pool Supplies near me - Fort Worth, Texas. 67. A- ...",
+            "position": 4,
+            "ratingCount": 971
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Service+And+Pool+Cleaning&find_loc=Hurst%2C+TX",
+            "title": "THE BEST 10 Pool Service and Pool Cleaning in Hurst, TX - Yelp",
+            "rating": 4.3,
+            "snippet": "... A-Quality Pools - Pool Service And Pool Cleaning near me - Hurst, Texas. A ... Fort Worth, TX · Downtown, Fort Worth, TX · Eastside, Fort Worth, TX · Far ...",
+            "position": 5,
+            "ratingCount": 616
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Cleaners&find_loc=North+Richland+Hills%2C+TX",
+            "title": "TOP 10 BEST Pool Cleaners in North Richland Hills, TX - Yelp",
+            "rating": 4.2,
+            "snippet": "... A-Quality Pools, Blue Balance, Tiki Time Pools, Poolwerx North Richland ... Fort Worth, TX · Downtown, Fort Worth, TX · Eastside, Fort Worth, TX · Far North ...",
+            "position": 6,
+            "ratingCount": 588
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Supply+Store&find_loc=Lake+Worth%2C+TX",
+            "title": "Best Pool Supply Store near Far West, Lake Worth, TX - Yelp",
+            "rating": 3.5,
+            "snippet": "... A-Quality Pools, Near Southside Pools, PMC Electric, Texas Pool Leak ... Fort Worth, TX · Far North, Fort Worth, TX · Far Northwest, Fort Worth, TX · Far ...",
+            "position": 7,
+            "ratingCount": 1022
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Custom+Pools&find_loc=Richland+Hills%2C+TX",
+            "title": "THE BEST 10 Custom Pools near Richland Hills, TX - Updated 2026 ...",
+            "snippet": "... A-Quality Pools, Tiki Time Pools, Falco Poolcraft ... Fort Worth, TX 76137. (214) 892-3245. Certified ... Fort Worth, TX 76244. (682) 499-2400. On their ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Resurfacing&find_loc=Downtown%2C+Fort+Worth%2C+TX+76102",
+            "title": "Best Pool Resurfacing near Downtown, Fort Worth, TX 76102 - Yelp",
+            "rating": 3.9,
+            "snippet": "... A-Quality Pools, Jayde Pool Plastering, Artistry Pool Solutions, A to Z Pool ... Fort Worth, TX 76102. Map. Quality Pool Coping Solutions in Fort Worth ...",
+            "position": 9,
+            "ratingCount": 825
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=Hurst%2C+TX",
+            "title": "THE BEST 10 POOL CLEANERS in HURST, TX - Updated 2026 - Yelp",
+            "rating": 4.2,
+            "snippet": "... A-Quality Pools, Blue Oasis Pool Service, Crystal Standard Pools, Falco ... Fort Worth, TX · Wedgwood, Fort Worth, TX. Frequently Asked Questions and Answers.",
+            "position": 10,
+            "ratingCount": 825
+          }
+        ]
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T09:58:54.890Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [
+          {
+            "link": "https://www.angi.com/sitemap-index/texas-pros/north-richland-hills",
+            "title": "Angi North Richland Hills, Texas Sitemaps | Angi - Angie's List",
+            "snippet": "A-Quality Pools Service Inc · A.L.P.S. SERVICES · A.N.T.T.S Pest Control · A1 SPAS AND POOLS OF TEXAS · Abels Window Service · ACE WINDOW CLEANING · Air Demand ..."
+          }
+        ],
+        "result_count": 1,
+        "review_count": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:27.319Z",
+      "data": {
+        "cid": "16512954665276852468",
+        "name": "A-Quality Pools",
+        "found": true,
+        "rating": 4.3,
+        "source": "serper",
+        "address": null,
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "6 months ago",
+            "text": "This is in response to the lack of attention Braxton one of ur pool cleaners has again failed to inform me of our actuators going out! Now 836 dollars later I’ve not only paid for a new Polaris, then a new pump, and all could have been told to me regarding Polaris and actuators! I would like to request someone else to clean my pool from this point on!",
+            "author": "Mary Lenz",
+            "rating": 2
+          },
+          {
+            "date": "7 months ago",
+            "text": "A-Quality did a great job handling my Polaris warranty inquiry, troubleshooting my Polaris low pressure issue and helping me isolate the problem to my booster supply pump for resolution. Took no more than 5 minutes over the phone. I’ve since scheduled the pool equipment repair service. Their customer service and support between their retail and pool service reps helped save me time and money chasing a Polaris solution unnecessarily. Thank y'all so much.",
+            "author": "Tom Sisoian",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "My experience with A-Quality pools has been anything but good. The sales person was very friendly but that is where it stopped.\nThe spa I purchased was in stock but yet could not be delivered for over a week because the installer was out of the office. You only have one person doing installs? Also told we can't deliver until we do a site inspection. It took them a week to come and do the site inspection, same guy is out of the office.\nThe spa is finally delivered. The front panel is cracked, the front latch is bent and broken, the back panel is damaged from the trailer they brought it on and two of the LED light housings are broken and I can't fill the tub!! Three weeks later I still don't have a functioning hot tub!! I have called no less that six times with zero results!!! lies on top of lies is all I get. They will not even tell me if the parts have been ordered or if they have when do they arrive. How long do I have to wait???\nRun away, fast. These people will take your money and leave you hanging.",
+            "author": "Scott Romine",
+            "rating": 1
+          },
+          {
+            "date": "a month ago",
+            "text": "AQuality Pools took their time to figure out what was wrong with my pool equipment after another company had said extra stuff needed replaced when it didn’t and saved me a lot of money.",
+            "author": "Andrew Andersen",
+            "rating": 5
+          },
+          {
+            "date": "7 months ago",
+            "text": "In working with Logan S I want to tell everyone this is the company to use. I’ve had my pool resurfaced, all electronics completely automated,  extremely knowledgeable Logan S will not let you down. THANK  YOU.",
+            "author": "Brian Carpenter",
+            "rating": 5
+          },
+          {
+            "date": "11 months ago",
+            "text": "I'm not sure what has happened to this place but it's definitely gone downhill. I dropped off my robot to be repaired Dec. 5th. I was told there were 8 others in front of mine and they should have it diagnosed by the end of the month. I paid the $75 fee and leave it there. I try to call mid Jan and no one answers, I leave a message, nothing, finally I stop by the store and I'm told they are just really backed up. Fast forward to now March, I call a few times to get an update and still no answer, I leave messages, and yet again, no one calls back.  Finally I stop by again to check on it. Once someone finally steps out from the back to help me, I'm told it's still waiting to be diagnosed. They've had my pool cleaner for 3 months and never even looked at it. I guess they can only work one at a time, what happened to \" we will know something by the end of Dec ?\". I will say that when I asked for my equipment back and a refund on the diagnostic fee they did not hesitate. By the frustration I could see on the employee's face, I could tell I'm not the only person bothered by their practices of late. Now I'm on the hunt for a new pool supply and repair store.",
+            "author": "Jayson Mathewson",
+            "rating": 1
+          },
+          {
+            "date": "a year ago",
+            "text": "I want to give a 10 star review for Rick.\nHe went above and beyond the line of duty helping me today.\nHe is professional, kind, caring and knows his business. Rick’s Follow up skills are awesome. Rick contacted me after I got home to make sure everything was ok.\nIf your looking for a good pool company with outstanding customer service and quality products, please give A Quality a try, you won’t use anyone else!\nThank you Rick!!",
+            "author": "Deanne Harvey",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "These folks are always ready to help you with issues with your pool, water ph chlorine issues, pump, filter and filter container.\n\nA-Quality Pools prices are great.\n\nThey have it all and I highly endorse these guys for whatever your pool needs are.",
+            "author": "Kurt Thiel",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 237,
+        "review_source": "tiered_validated",
+        "serpapi_error": null,
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "location_searched": "Fort Worth, TX",
+        "search_confidence": 0.6499999999999999
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:49.107Z",
+      "data": {
+        "name": "A-Quality Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 281-0781",
+        "rating": 4.3,
+        "source": "google_maps",
+        "status": "open",
+        "address": "8001 Blvd 26, North Richland Hills, TX 76180",
+        "reviews": [],
+        "website": "http://aqualitypools.com/",
+        "maps_url": "https://www.google.com/maps/search/A-Quality%20Pools%20Fort%20Worth%2C%20TX",
+        "categories": [
+          "Swimming pool supply store"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T09:58:56.453Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "aqualitypools.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T09:56:34.351Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "http://aqualitypools.com/",
+        "analyzed_pages": [
+          {
+            "url": "http://aqualitypools.com/",
+            "type": "homepage",
+            "title": "One moment, please..."
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:57:17.251Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:57:21.308Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:57:24.452Z",
+      "data": {
+        "query": "A-Quality Pools Fort Worth site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 24, 2024",
+            "link": "https://www.star-telegram.com/news/local/fort-worth/article288651780.html",
+            "title": "Ft Worth's Forest Park Pool reopens after $15 million update",
+            "snippet": "Fort Worth celebrated the reopening of its oldest public pool on Friday. It comes after a year-long $15 million renovation and an intense ...",
+            "position": 1
+          },
+          {
+            "date": "Nov 30, 2021",
+            "link": "https://www.dallasnews.com/business/local-companies/2021/11/30/two-dallas-fort-worth-pool-construction-companies-combine-into-one-of-nations-largest/",
+            "title": "Two Dallas-Fort Worth pool construction companies combine into ...",
+            "snippet": "Pullam Pools is a leading residential pool construction brand in the Fort Worth area and a Pool & Spa News top-50 builder for 19 consecutive ...",
+            "position": 2
+          },
+          {
+            "date": "Jun 23, 2025",
+            "link": "https://www.dallasnews.com/things-to-do/2025/06/23/waterparks-lakes-splash-pads-public-pools-free-dallas-fort-worth/",
+            "title": "Where to cool off this summer in Dallas-Fort Worth",
+            "snippet": "FOREST PARK POOL. One of Fort Worth's most historic pools, the Forest Park Pool has eight 50-meter lanes for people to practice their ...",
+            "position": 3
+          },
+          {
+            "date": "Jul 6, 2023",
+            "link": "https://www.fox4news.com/news/fort-worth-pool-supply-warehouse-fire-causes-concern",
+            "title": "Fort Worth pool supply warehouse fire causes concern",
+            "snippet": "A fire at a swimming pool supply warehouse prompted some air quality concerns in north Fort Worth. The fire broke out around 3 am Thursday.",
+            "position": 4
+          },
+          {
+            "date": "Oct 14, 2018",
+            "link": "https://www.wfaa.com/article/news/developers-break-ground-on-community-that-will-bring-2200-homes-to-dfw/287-604327743",
+            "title": "Developers break ground on community that will bring 2,200 homes ...",
+            "snippet": "A 750-acre, master-planned housing development is underway in northwest Fort Worth that will encompass 2,200 new homes when completed.",
+            "position": 5
+          },
+          {
+            "date": "Aug 21, 2025",
+            "link": "https://www.dallasnews.com/news/2025/08/21/dallas-plans-to-close-all-community-pools-over-the-next-three-years/",
+            "title": "Dallas could close all community pools over the next three years",
+            "snippet": "Dallas is considering closing all nine of its community pools over the next three years.",
+            "position": 6
+          },
+          {
+            "date": "Sep 28, 2018",
+            "link": "https://www.star-telegram.com/news/business/growth/article219074790.html",
+            "title": "Northstar project kicks off, aims for 2200 new homes in NWISD",
+            "snippet": "The Morningstar development includes an indoor amenity center, two pools, a splash pad, playground and soccer field — and eventually 2.5 miles ...",
+            "position": 7
+          },
+          {
+            "date": "Jul 19, 2017",
+            "link": "https://www.nbcdfw.com/news/national-international/cities-cleaning-up-polluted-rivers-swimming-charles-city-splash/2043959/",
+            "title": "Cities Are Cleaning Up Polluted Rivers to Make Way for Swimming",
+            "snippet": "They call it a \"swim park,\" which would include floating docks for swimmers to safely jump into the river without touching the hazardous bottom.",
+            "position": 8
+          },
+          {
+            "date": "May 2, 2025",
+            "link": "https://www.star-telegram.com/news/local/arlington/article305395771.html",
+            "title": "Arlington's newest and biggest recreation center is a hub for seniors",
+            "snippet": "“From fitness and aquatics to educational classes and social gatherings, ACTIV is designed to enrich every aspect of life for older adults,” ...",
+            "position": 9
+          },
+          {
+            "date": "Jun 19, 2019",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2019/06/19/here-are-the-best-water-parks-and-free-splash-pads-in-dallas-fort-worth/",
+            "title": "Here are the best water parks and free splash pads in Dallas-Fort ...",
+            "snippet": "APEX CENTRE Located in Gabe Nesbitt Park, the Apex Centre has four pools including an outside water park with slides, spray features and a ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T09:58:59.490Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"A-Quality Pools\" Fort Worth",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:57:35.837Z",
+      "data": "A-Quality Pools Fort Worth review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 2:13 2:13 Now playing Affordable Pool Builders Fort Worth The Expert Review Guide The Expert Review Guide • • 29 views 3 years ago The Expert Review Guide The Expert Review Guide Are you looking for information about Affordable Pool Builders Fort Worth ? https://ftworthpools.com Is it important for you to get the ... Are you looking for information about Affordable Pool Builders Fort Worth ? https://ftworthpools.com Is it important for you to get the ... From the video description 2:00 2:00 Now playing A shortage of pool options in Fort Worth CBS TEXAS CBS TEXAS • • 396 views 2 years ago CBS TEXAS CBS TEXAS Marine Park Pool is currently the only city-run public pool in all of Fort Worth . The lack of options in the city has some people ... Marine Park Pool is currently the only city-run public pool in all of Fort Worth . The lack of options in the city has some people ... From the video description CC 6:22 6:22 Now playing Everything You Need To Know Before Building A Pool! Josh Beberg Josh Beberg • • 220K views 3 years ago Josh Beberg Josh Beberg Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... From the video description 4K Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. AI-generated video summary Quality and accuracy may vary. Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. 18:56 18:56 Now playing How Much Does a Dallas Fort Worth Pool Cost? Farley Pool Designs Farley Pool Designs • • 25K views 10 years ago Farley Pool Designs Farley Pool Designs How Much does a Dallas Fort Worth Pool Cost? Pool Designer, Mike Farley, provides some information to help the gunite Pool ... How Much does a Dallas Fort Worth Pool Cost? Pool Designer, Mike Farley, provides some information to help the gunite Pool ... From the video description 3 moments Pool Math 101 Helping to Educate the Pool Consumer | Check Out Mike's Pool Tour Video Series | And \"What Is It?\" Video Series for Explanations of Pool Details 3 auto-generated moments in this video 3 moments Pool Math 101 Helping to Educate the Pool Consumer Pool Math 101 Helping to Educate the Pool Consumer 17:27 Pool Math 101 Helping to Educate the Pool Consumer 17:27 Check Out Mike's Pool Tour Video Series Check Out Mike's Pool Tour Video Series 17:55 Check Out Mike's Pool Tour Video Series 17:55 And \"What Is It?\" Video Series for Explanations of Pool Details And \"What Is It?\" Video Series for Explanations of Pool Details 18:02 And \"What Is It?\" Video Series for Explanations of Pool Details 18:02 2:03 2:03 Now playing Affordable Custom Pools Fort Worth - Tips for building a pool Business Review Guide Business Review Guide • • 12 views 4 years ago Business Review Guide Business Review Guide Looking for custom swimming pool builders in Fort Worth ? http://2link.us/ fortworth - pools Have you been searching for: - Fort Worth ... Looking for custom swimming pool builders in Fort Worth ? http://2link.us/ fortworth - pools Have you been searching for: - Fort Worth ... From the video description 2:45 2:45 Now playing Integrity Pools - About DFW's Best Pool Company - Hear Our Story! Integrity Pools Integrity Pools • • 59 views 4 months ago Integrity Pools Integrity Pools Integrity Pool provides expert pool design, installation, and maintenance services in the whole Dallas- Fort Worth Metroplex. Integrity Pool provides expert pool design, installation, and maintenance services in the whole Dallas- Fort Worth Metroplex. From the video description 3:22 3:22 Now playing What's the BEST Robotic Pool Cleaner? (Automatic Cleaner Review) Swim University Swim University • • 98K views 1 year ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 6 chapters What's the Best Automatic Pool Cleaner? | 3 Types of Automatic Pool Cleaners | 1. Robotic Pool Cleaners | 2. Pressure Side Pool Cleaners | 3. Suction Side Pool Cleaners | What to Look for in a Robotic Pool Cleaner 6 chapters in this video 6 chapters What's the Best Automatic Pool Cleaner? What's the Best Automatic Pool Cleaner? 0:00 What's the Best Automatic Pool Cleaner? 0:00 3 Types of Automatic Pool Cleaners 3 Types of Automatic Pool Cleaners 0:35 3 Types of Automatic Pool Cleaners 0:35 1. Robotic Pool Cleaners 1. Robotic Pool Cleaners 0:51 1. Robotic Pool Cleaners 0:51 2. Pressure Side Pool Cleaners 2. Pressure Side Pool Cleaners 1:33 2. Pressure Side Pool Cleaners 1:33 3. Suction Side Pool Cleaners 3. Suction Side Pool Cleaners 2:10 3. Suction Side Pool Cleaners 2:10 What to Look for in a Robotic Pool Cleaner What to Look for in a Robotic Pool Cleaner 2:52 What to Look for in a Robotic Pool Cleaner 2:52 0:51 0:51 Now playing Fort Worth Pool Service Company, Stewart Pools Stewart Pools Stewart Pools • • 2.1K views 5 years ago Stewart Pools Stewart Pools Stewart Pools has been servicing and maintaining backyard poolscapes and spas in Fort Worth and the surrounding areas since ... Stewart Pools has been servicing and maintaining backyard poolscapes and spas in Fort Worth and the surrounding areas since ... From the video description 0:57 0:57 Now playing 15 Ft Pool Customer Review | Semi In-Ground Tank Pool + Deck by StainlessSwim StainlessSwim Tank Pools StainlessSwim Tank Pools • • 66 views 2 months ago StainlessSwim Tank Pools StainlessSwim Tank Pools Thinking about a 15 ft swimming pool for your backyard? This real StainlessSwim customer review shows what it's like to install ... Thinking about a 15 ft swimming pool for your backyard? This real StainlessSwim customer review shows what it's like to install ... From the video description 0:44 0:44 Now playing 15 Ft Stock Semi In-Ground Tank Pool Transformation 🌊 | Real StainlessSwim Customer Review StainlessSwim Tank Pools StainlessSwim Tank Pools • • 67 views 2 months ago StainlessSwim Tank Pools StainlessSwim Tank Pools Thinking about a 15 ft stock tank pool for your backyard? Here's a real look at the experience from a Texas homeowner who ... Thinking about a 15 ft stock tank pool for your backyard? Here's a real look at the experience from a Texas homeowner who ... From the video description 8:33 8:33 Now playing What Is The Cheapest Inground Swimming Pool? River Pools River Pools • • 116K views 2 years ago River Pools River Pools If you're wondering what is the cheapest inground swimming pool , you've come to the right place. In this video we're going to ... If you're wondering what is the cheapest inground swimming pool , you've come to the right place. In this video we're going to ... From the video description CC 9 chapters Introduction | Base kit, base package, turn-key | Who can provide specific price numbers? | Vinyl Liner Pool Pricing | Fiberglass Pool Pricing | Concrete Pool Pricing | What is the lowest cost? | Pros and Cons of Vinyl Liner Pools | What is the Cheapest Inground Swimming Pool? 9 chapters in this video 9 chapters Introduction Introduction 0:00 Introduction 0:00 Base kit, base package, turn-key Base kit, base package, turn-key 0:43 Base kit, base package, turn-key 0:43 Who can provide specific price numbers? Who can provide specific price numbers? 1:26 Who can provide specific price numbers? 1:26 Vinyl Liner Pool Pricing Vinyl Liner Pool Pricing 1:39 Vinyl Liner Pool Pricing 1:39 Fiberglass Pool Pricing Fiberglass Pool Pricing 3:13 Fiberglass Pool Pricing 3:13 Concrete Pool Pricing Concrete Pool Pricing 4:17 Concrete Pool Pricing 4:17 What is the lowest cost? What is the lowest cost? 5:21 What is the lowest cost? 5:21 14:13 14:13 Now playing Your Pump Sucks | The Best Variable Speed Pool Pumps On The Market Triton Pools Triton Pools • • 16K views 1 year ago Triton Pools Triton Pools Looking for the best variable speed pool pump for your pool ? In this video, we break down the top 3 variable speed pool pumps ... Looking for the best variable speed pool pump for your pool ? In this video, we break down the top 3 variable speed pool pumps ... From the video description People also watched 34:09 34:09 Now playing Everything You Ever Wanted To Know About Building A Pool Johnny Hunkins Johnny Hunkins • • 2.3M views 9 years ago Johnny Hunkins Johnny Hunkins How much does a pool really cost? How long does it take? What are the stages involved? What can I expect? Who do I call? How much does a pool really cost? How long does it take? What are the stages involved? What can I expect? Who do I call? From the video description 13:54 13:54 Now playing Florida Pools - How We Built Ours With EASE in 2022 MrDowntownDelray MrDowntownDelray • • 40K views 3 years ago MrDowntownDelray MrDowntownDelray Florida Pools - How We Built Ours With EASE in 2022 My wife and I decided to build our pool in 2022. We interviewed 4 Florida ... Florida Pools - How We Built Ours With EASE in 2022 My wife and I decided to build our pool in 2022. We interviewed 4 Florida ... From the video description 11 chapters Backyard nightmare | Step 1 | Step 2 | Step 3 | Step 4 | Step 5 | Step 6 | Step 7 | Step 8 | Step 9 | Finished Product 11 chapters in this video 11 chapters Backyard nightmare Backyard nightmare 0:00 Backyard nightmare 0:00 Step 1 Step 1 1:15 Step 1 1:15 Step 2 Step 2 2:12 Step 2 2:12 Step 3 Step 3 2:44 Step 3 2:44 Step 4 Step 4 4:46 Step 4 4:46 Step 5 Step 5 5:45 Step 5 5:45 Step 6 Step 6 6:48 Step 6 6:48 13:28 13:28 Now playing Watch this before setting up ANY above ground pool! Mistakes to avoid Bellavana Bellavana • • 507K views 4 years ago Bellavana Bellavana I have learned all the lessons about setting up a pool the HARD WAY. Learn from my mistakes! Here I share my top tips for setting ... I have learned all the lessons about setting up a pool the HARD WAY. Learn from my mistakes! Here I share my top tips for setting ... From the video description 6 chapters Intro | Look at the pool | Chlorine | Tips | pavers | top rails 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Look at the pool Look at the pool 4:15 Look at the pool 4:15 Chlorine Chlorine 7:00 Chlorine 7:00 Tips Tips 7:43 Tips 7:43 pavers pavers 9:27 pavers 9:27 top rails top rails 11:05 top rails 11:05 3:31 3:31 Now playing Doughboy above ground pool, ￼In ground😁. Inground pool for cheap. goreyboggs goreyboggs • • 126K views 1 year ago goreyboggs goreyboggs I wanted to show everybody how I installed my doughboy pool in the ground. ￼if you have any questions, let me know. I wanted to show everybody how I installed my doughboy pool in the ground. ￼if you have any questions, let me know. From the video description Summary See how this Doughboy pool was installed partially in-ground for under $10,000! This DIY project showcases the pool's setup, including plumbing and electrical work, along with unique landscaping details. The creator details the process of integrating the pool into the existing yard. AI-generated video summary Quality and accuracy may vary. Summary See how this Doughboy pool was installed partially in-ground for under $10,000! This DIY project showcases the pool's setup, including plumbing and electrical work, along with unique landscaping details. The creator details the process of integrating the pool into the existing yard. + 6 more 0:55 0:55 Now playing 15 Ft Stock Tank Pool Review | Semi In-Ground Pool With Deck | StainlessSwim Testimonial 🌊 StainlessSwim Tank Pools StainlessSwim Tank Pools • • 112 views 2 months ago StainlessSwim Tank Pools StainlessSwim Tank Pools Thinking about a 15 ft stock tank pool for your backyard? Here's a real look at the experience from a Texas homeowner who ... Thinking about a 15 ft stock tank pool for your backyard? Here's a real look at the experience from a Texas homeowner who ... From the video description 14:27 14:27 Now playing Best Robotic Pool Cleaners: Ultimate Review & Guide for 2025 The Pool Nerd The Pool Nerd • • 151K views 1 year ago The Pool Nerd The Pool Nerd After testing 30+ robotic pool cleaners and with 5 years of experience, I break down the top pool robots, what to look for, and what ... After testing 30+ robotic pool cleaners and with 5 years of experience, I break down the top pool robots, what to look for, and what ... From the video description 4K 18 chapters Best Robotic Pool Cleaners | Avoid Cordless Models | Cordless Fire Risks | Key Features to Look For | Weekly Smart Timer | High Quality Filtration | Commercial Motors | Full Pool Coverage | Beware of Fake Reviews | Dolphin Premier | Dolphin Cayman | Dolphin Sigma | Dolphin Quantum | Dolphin Escape | Certified Open Box | Aquabot REVA | Blue Helix One | Final Verdict 18 chapters in this video 18 chapters Best Robotic Pool Cleaners Best Robotic Pool Cleaners 0:00 Best Robotic Pool Cleaners 0:00 Avoid Cordless Models Avoid Cordless Models 0:40 Avoid Cordless Models 0:40 Cordless Fire Risks Cordless Fire Risks 0:57 Cordless Fire Risks 0:57 Key Features to Look For Key Features to Look For 1:14 Key Features to Look For 1:14 Weekly Smart Timer Weekly Smart Timer 1:27 Weekly Smart Timer 1:27 High Quality Filtration High Quality Filtration 2:04 High Quality Filtration 2:04 Commercial Motors Commercial Motors 2:34 Commercial Motors 2:34 11:20 11:20 Now playing Should You Buy An Above Ground Pool? Review and Costs DoItYourselfDad DoItYourselfDad • • 446K views 5 years ago DoItYourselfDad DoItYourselfDad We go through the pro's and cons of an above ground pool , things you'll need to enjoy it and how much an above ground pool ... We go through the pro's and cons of an above ground pool , things you'll need to enjoy it and how much an above ground pool ... From the video description 14 chapters Intro | Pros and Cons | Ladders and Steps | Smaller Pools | Filtration | Maintenance | Solar Covers | Cheap Pool | Ground Level | Installation Costs | Pool Costs | Pool Accessories | The Bargain Approach | Outro 14 auto-generated chapters in this video 14 chapters Intro Intro 0:00 Intro 0:00 Pros and Cons Pros and Cons 0:22 Pros and Cons 0:22 Ladders and Steps Ladders and Steps 2:15 Ladders and Steps 2:15 Smaller Pools Smaller Pools 3:32 Smaller Pools 3:32 Filtration Filtration 4:12 Filtration 4:12 Maintenance Maintenance 4:54 Maintenance 4:54 Solar Covers Solar Covers 5:55 Solar Covers 5:55 0:25 0:25 Now playing Swimming Pool Service | Fort Worth, Texas AnjeliKlean AnjeliKlean • • 124 views 14 years ago AnjeliKlean AnjeliKlean To learn more, visit http://www.anjeli-klean.com - Anjeli-Klean Pool Services provides Pool Repairs & Pool Service in Fort Worth , ... To learn more, visit http://www.anjeli-klean.com - Anjeli-Klean Pool Services provides Pool Repairs & Pool Service in Fort Worth , ... From the video description 1:37 1:37 Now playing Swimming Pools Company (Companies), Pumps, Filters Fort Worth | Arlington | Southlake TX poolleakdetectionrep poolleakdetectionrep • • 1.8K views 13 years ago poolleakdetectionrep poolleakdetectionrep Swimming Pools Company (Companies), Pumps, Filters Fort Worth | Arlington | Southlake TX http://www.aquamaidpooltechs.com/ ... Swimming Pools Company (Companies), Pumps, Filters Fort Worth | Arlington | Southlake TX http://www.aquamaidpooltechs.com/ ... From the video description CC 7:59 7:59 Now playing Intex or Bestway Pool. Which Would I Buy Again? Dale's Backyard Dale's Backyard • • 273K views 2 years ago Dale's Backyard Dale's Backyard Intex 18ft Pool : https://amzn.to/3z5GQzX Warm it up! Solar cover: https://amzn.to/3JLir8O A few must have items Good vinyl ... Intex 18ft Pool : https://amzn.to/3z5GQzX Warm it up! Solar cover: https://amzn.to/3JLir8O A few must have items Good vinyl ... From the video description 6 moments Intex Pool in Different Sizes | Cost to the Pool | Setup | Much Better Leaf Filter | Nice Built-In Timer | Built-in Tie-Down Spots 6 auto-generated moments in this video 6 moments Intex Pool in Different Sizes Intex Pool in Different Sizes 1:47 Intex Pool in Different Sizes 1:47 Cost to the Pool Cost to the Pool 2:00 Cost to the Pool 2:00 Setup Setup 2:22 Setup 2:22 Much Better Leaf Filter Much Better Leaf Filter 5:09 Much Better Leaf Filter 5:09 Nice Built-In Timer Nice Built-In Timer 5:32 Nice Built-In Timer 5:32 Built-in Tie-Down Spots Built-in Tie-Down Spots 6:21 Built-in Tie-Down Spots 6:21 Michelle Drake, Design Consultant Michelle Drake, Design Consultant @goodtimespoolvibes • Michelle Drake, Designer and Outdoor Living Consultant with Farmhouse Pools . We build swimming pools west of Fort Worth , ... Subscribe 21:29 21:29 Now playing 2024 Ultimate POOL VACUUM Review || Beatbot, Aiper, Polaris, Seauto, Wybot, Lydsto The Hook Up The Hook Up • • 313K views 1 year ago The Hook Up The Hook Up Which battery powered pool vacuum is the best in 2024? Lets find out. 2025 Update Here: https://youtu.be/7tXViG3TyGM Best ... Which battery powered pool vacuum is the best in 2024? Lets find out. 2025 Update Here: https://youtu.be/7tXViG3TyGM Best ... From the video description 4K 11 chapters Introduction | Pool Coverage | Debris Pickup - Leaves | Debris Pickup - Sand and Silt | Filter Size and Type | Wall and Waterline Cleaning | Cleaning Totals | Robot Weight | Bin Design | Apps and Smart Features | Conclusions and Recommendations 11 chapters in this video 11 chapters Introduction Introduction 0:00 Introduction 0:00 Pool Coverage Pool Coverage 0:28 Pool Coverage 0:28 Debris Pickup - Leaves Debris Pickup - Leaves 7:19 Debris Pickup - Leaves 7:19 Debris Pickup - Sand and Silt Debris Pickup - Sand and Silt 8:50 Debris Pickup - Sand and Silt 8:50 Filter Size and Type Filter Size and Type 9:46 Filter Size and Type 9:46 Wall and Waterline Cleaning Wall and Waterline Cleaning 11:20 Wall and Waterline Cleaning 11:20 Cleaning Totals Cleaning Totals 12:42 Cleaning Totals 12:42 18:31 18:31 Now playing 2025 Ultimate POOL VACUUM Review || Dolphin, Aiper, Beatbot, Wybot, Poolmate, Seauto, and More The Hook Up The Hook Up • • 125K views 8 months ago The Hook Up The Hook Up Which battery powered pool vacuum is the best in 2025? The 2024 Champs are still on top. (Best Overall) Aiper Scuba S1 2025 ... Which battery powered pool vacuum is the best in 2025? The 2024 Champs are still on top. (Best Overall) Aiper Scuba S1 2025 ... From the video description 4K 12 chapters Introduction | Pool Coverage | Wall Cleaning | Leaf Pickup | Sand, Silt, and Rocks | Fine Particle Filtration | Total Cleaning Scores | Weight Testing | Filter Basket Cleaning | Warranty and Support | User Replaceable Parts | Conclusions and Recommendations 12 chapters in this video 12 chapters Introduction Introduction 0:00 Introduction 0:00 Pool Coverage Pool Coverage 0:26 Pool Coverage 0:26 Wall Cleaning Wall Cleaning 6:21 Wall Cleaning 6:21 Leaf Pickup Leaf Pickup 7:17 Leaf Pickup 7:17 Sand, Silt, and Rocks Sand, Silt, and Rocks 8:43 Sand, Silt, and Rocks 8:43 Fine Particle Filtration Fine Particle Filtration 9:42 Fine Particle Filtration 9:42 Total Cleaning Scores Total Cleaning Scores 10:55 Total Cleaning Scores 10:55 Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:57:37.403Z",
+      "data": {
+        "query": "site:nextdoor.com A-Quality Pools Fort Worth",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/a-quality-pools-north-richland-hills-tx/",
+            "title": "A-Quality Pools - North Richland Hills, TX - Nextdoor",
+            "snippet": "A-Quality Pools specializes in a number of services, including inground, gunite and vinyl liner pool renovations, equipment repairs, pool service, maintenance ...",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/pages/westside-pools-service-fort-worth-tx/",
+            "title": "Westside Pool & Services - Fort Worth, TX - Nextdoor",
+            "snippet": "Your premier custom pool builder in Fort Worth, serving Aledo, Benbrook, and the surrounding areas since 1979.",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/page/hamilton-pools-allen-tx",
+            "title": "Hamilton Pools - Nextdoor",
+            "snippet": "Hamilton Pools is a local business serving the Dallas - Ft. Worth Metroplex. When you choose Hamilton Pools you can count on high quality, professional work ...",
+            "position": 3
+          },
+          {
+            "link": "https://nextdoor.com/pages/blue-haven-pools-fort-worth-tx/",
+            "title": "Blue Haven Pools & Spas - Fort Worth, TX - Nextdoor",
+            "snippet": "Blue Haven Pools & Spas in Fort Worth, TX. Fort Worth swimming pool builder/contractor: new inground pools, spas, and major remodels with choice of standard ...",
+            "position": 4
+          },
+          {
+            "link": "https://nextdoor.com/pages/j-caldwell-custom-pools-fort-worth-tx/",
+            "title": "J Caldwell Custom Pools - Fort Worth, TX - Nextdoor",
+            "snippet": "They're great and very reputable. Their BBB rating is A+ and they've been in the business a long time. They build million dollar pools as well as the size you' ...",
+            "position": 5
+          },
+          {
+            "link": "https://nextdoor.com/pages/bennies-pool-and-spa-fort-worth-tx/",
+            "title": "Bennie's Pool & Spa, LLC - Fort Worth, TX - Nextdoor",
+            "snippet": "Prices you can afford, with quality you can trust. 10+ years experience in the pool industry and customer service.",
+            "position": 6
+          },
+          {
+            "link": "https://nextdoor.com/pages/selah-pools-fort-worth-tx/photos/",
+            "title": "Selah Pools - Nextdoor",
+            "snippet": "At Selah Pools, we provide high quality swimming pool services for owners of residential and commercial properties in Dallas & Fort Worth and Palm Beach, FL.",
+            "position": 7
+          },
+          {
+            "link": "https://nextdoor.com/pages/wavy-pools-fort-worth-tx/",
+            "title": "Wavy pools - Nextdoor",
+            "snippet": "... Your Future Pool Needs. We service all areas around Arlington and Fort Worth, including the Surrounding Areas! Call or Text. (972)900-8020. See more… 0:00. 2.",
+            "position": 8
+          },
+          {
+            "link": "https://nextdoor.com/pages/pool-scouts-of-north-fort-worth-fort-worth-tx/",
+            "title": "Pool Scouts of North Fort Worth - Nextdoor",
+            "snippet": "Our highly trained pool service experts are dedicated to maintaining crystal clear water and healthy swimming conditions so your pool is a happy place for you ...",
+            "position": 9
+          },
+          {
+            "link": "https://nextdoor.com/pages/jett-aquatics-renovations-fort-worth-tx/",
+            "title": "Jett Aquatics Renovations - Fort Worth, TX - Nextdoor",
+            "snippet": "JETT Aquatics | Fort Worth Pool Builder, Service and Outdoor Living See more… Fort Worth, TX. (817) 372-2771. Don't miss updates from your local businesses.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T09:59:00.406Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"A-Quality Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:57:51.775Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=A-Quality%20Pools&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search Map, All Facilities, Corporate Compliance Screener, ECHO Notify Air, Air Facility Search Map, Air Facilities, ECHO Clean Air Tracking Tool ( ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "Enforcement and Compliance History Online | US EPA",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State="
+            }
+          },
+          {
+            "date": "Aug 13, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help/facility-search-types",
+            "title": "Facility Search - Media Programs",
+            "snippet": "ECHO Facility Searches query a database of hundreds of thousands of facility records. There are five primary media program search types available.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          },
+          {
+            "link": "https://www.epa.gov/frs",
+            "title": "Facility Registry Service (FRS) - EPA",
+            "snippet": "Search a Single Facility or Location. Are you asking questions about a business? Search FRS data with the Enforcement and Compliance History Online website.",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:57:55.693Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:01.825Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:09.628Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov A-Quality Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 20, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Final%20Allergan%20Global%20Agreement%20and%20Exhibits%20(12-20-22).pdf",
+            "title": "[PDF] ALLERGAN PUBLIC GLOBAL OPIOID SETTLEMENT ...",
+            "snippet": "“Enforcement Committee” means a committee consisting of representatives of the. Settling States and of the Participating Subdivisions.",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT",
+            "snippet": "This Settlement Agreement, dated as of November 14, 2022 (the “Agreement”), sets forth the terms of settlement between and among the Settling States, Walmart, ...",
+            "position": 2
+          },
+          {
+            "date": "Apr 20, 2002",
+            "link": "https://www2.texasattorneygeneral.gov/files/agency/2002hb1200iii.pdf",
+            "title": "[PDF] Final Version - Section III.wpd",
+            "snippet": "The gross proceeds derived from the sale or sales of tangible personal property to a company which is actively engaged in the production of an ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 19, 2026",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2026/kp-0505.pdf",
+            "title": "[PDF] Attorney General Opinion No. KP-0505",
+            "snippet": "The worth of a person cannot be measured by race, sex, or any other immutable feature bestowed at birth—beyond the reach of individual choice.",
+            "position": 4
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/general-litigation",
+            "title": "General Litigation | Office of the Attorney General",
+            "snippet": "The division's civil litigation matters include employment litigation, whistleblower claims, tenure denials, claims of discrimination, student dismissals, libel ...",
+            "position": 5
+          },
+          {
+            "date": "Nov 12, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/images/TAC%20-%20Redacted%20Version%20(public).pdf",
+            "title": "[PDF] Case 1:21-md-03010-PKC Document 176 Filed 11/12/ ...",
+            "snippet": "Ad servers keep track of publishers' heterogeneous ad inventory and help them sell that inventory both directly and indirectly through exchanges ...",
+            "position": 6
+          },
+          {
+            "date": "Jul 3, 2023",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Ruling.pdf?utm_content=&utm_medium=email&utm_name=&utm_source=govdelivery&utm_term=",
+            "title": "[PDF] Supreme Court of the United States",
+            "snippet": "Through the carryover accounts, Reclamation earmarked certain accounting-based “pools” or “tranches” of water in the. Reservoir as exclusively ...",
+            "position": 7
+          },
+          {
+            "date": "Feb 4, 2026",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/press/Darling-Petition.pdf",
+            "title": "[PDF] STATE OF TEXAS, Plaintiff, v. DARLING INGREDIENTS, INC ...",
+            "snippet": "State of Texas v. Darling Ingredients, Inc. State of Texas's Original Petition and Application for Injunctive Relief.",
+            "position": 8
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/opinions/categories/1461",
+            "title": "Constitutional Law - Texas - | Office of the Attorney General",
+            "snippet": "A court would likely conclude that an individual regent may not be prohibited from obtaining access to records in the possession of the University.",
+            "position": 9
+          },
+          {
+            "date": "Feb 13, 2023",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/State%20Attorneys%20General%20FAR%20Comment%20Letter.pdf",
+            "title": "[PDF] February 13, 2023 Via Federal eRulemaking Portal Department of ...",
+            "snippet": "(1) Procuring and supplying property and nonpersonal services, and performing related functions including contracting, inspection, storage, ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:49.100Z",
+      "data": {
+        "name": "A-Quality Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 281-0781",
+        "rating": 4.3,
+        "source": "google_maps",
+        "status": "open",
+        "address": "8001 Blvd 26, North Richland Hills, TX 76180",
+        "reviews": [],
+        "website": "http://aqualitypools.com/",
+        "maps_url": "https://www.google.com/maps/search/A-Quality%20Pools%20Fort%20Worth%2C%20TX",
+        "categories": [
+          "Swimming pool supply store"
+        ],
+        "review_count": null
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:10.705Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number must be from 6 to 10 digits.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 3
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Comptroller.Texas.Gov is the website for the Texas Comptroller of Public Accounts.",
+            "position": 4,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 9
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T09:58:12.022Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com A-Quality Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:13.145Z",
+      "data": {
+        "query": "site:dallascounty.org A-Quality Pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Mar 31, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2019ACFR.pdf",
+            "title": "[PDF] dallas county, texas comprehensive annual financial report for the ...",
+            "snippet": "... pools equals the value of pool shares. The pools are subject to regulatory oversight by the Texas State Comptroller, although they are not ...",
+            "position": 1
+          },
+          {
+            "date": "Sep 23, 2025",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/courts/civil-district/134/134th-Policies-and-Procedures-09.23.2025.pdf",
+            "title": "[PDF] policies & procedures for the 134th district court - Dallas County",
+            "snippet": "Civil Cases are the cases in court that are not about breaking a criminal law. Some examples are cases about contracts, damage to property,.",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/district-clerk/SupplementalInstructionsForSRLs.pdf",
+            "title": "[PDF] Supplemental Instructions for Self-Represented (Pro Se) Litigants",
+            "snippet": "Civil Cases are the cases in court that are not about breaking a criminal law. Some examples are cases about contracts, damage to property, someone getting hurt ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 8, 2026",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet-2026-008-7093.pdf",
+            "title": "[PDF] RFP Project Based Vouchers for Permanent Supportive Housing",
+            "snippet": "Location. Dallas County, Texas. Purchase Type. Duration:15 years. Description. Dallas County is requesting proposals from property owners ...",
+            "position": 4
+          },
+          {
+            "date": "Jan 22, 2026",
+            "link": "https://dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet%202026-012-7097.pdf",
+            "title": "[PDF] Notice - Dallas County",
+            "snippet": "Event Type. Prebid Conference. Attendance. Recommended. Event date. 02/04/2026 10:00 AM CST. Location. Microsoft Teams. Event Note.",
+            "position": 5
+          },
+          {
+            "link": "https://www.dallascounty.org/departments/hr-new/employee-benefits/",
+            "title": "Human Resources | Employee Benefits - Dallas County",
+            "snippet": "This policy allows County employees to voluntarily donate their accrued sick and vacation leave to a shared pool, providing critical support to colleagues ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2018/2018%20-%2004.pdf",
+            "title": "[PDF] The following reports from BHLT Committees are included for your ...",
+            "snippet": "departments have begun collecting data and completing quality assurance actives to ensure ongoing accuracy of reporting. The Institute conducted a ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2009/3rdQuarter09PerfMeasure.pdf",
+            "title": "[PDF] DALLAS COUNTY PERFORMANCE MEASURE DATA",
+            "snippet": "Each Dallas County department (other than the Courts) is responsible for developing and defending performance indicators and submitting quarterly data for ...",
+            "position": 8
+          },
+          {
+            "date": "Dec 30, 2025",
+            "link": "https://www.dallascounty.org/departments/sheriff/wp-content/uploads/2026/01/TCJS-Approved-Operational-Plan-Inmate-Rules-Handbook-2025-December-30.pdf",
+            "title": "[PDF] INMATE HANDBOOK - Dallas County",
+            "snippet": "Violation of any of the following rules is considered a. MINOR infraction and the violator may receive from five. (5) to fifteen (15) days of ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/rwpc/planning-council-documents-policies/FY-2025-Standards-of-Care-Service-Delivery-Guidelines.pdf",
+            "title": "[PDF] FY 2025 Standards of Care and Service Delivery Guidelines",
+            "snippet": "As part of a routine review of the quality of client services or a complaint investigation, AA staff may review the events that led to a modification ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:14.207Z",
+      "data": {
+        "query": "site:collincountytx.gov A-Quality Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.collincountytx.gov/Services/Engineering/Development-Services/Documents/ESC-015_Septic_Maintenance.pdf",
+            "title": "[PDF] Septic System - On-Site Sewage Facilities (OSSF)",
+            "snippet": "To function properly, a septic system must be sur- rounded by good-quality, non-compacted soil. Follow these guidelines to protect your system: • Place markers ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.collincountytx.gov/Services/Engineering/storm-water-program",
+            "title": "Engineering Storm Water Program - Collin County",
+            "snippet": "The SWMP prepared by Collin County is a five-year program to reduce storm water pollution in the creeks and streams in the unincorporated, urbanized areas of ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.collincountytx.gov/Government/Budget/Documents/FY%202025%20Investment%20Policy.pdf",
+            "title": "[PDF] COLLIN COUNTY Investment Policy Fiscal Year 2025 I. Investment ...",
+            "snippet": "The County expressly allows money market mutual funds and eligible investment pools authorized by the. Commissioners Court to invest to the full extent ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/proposed-txr04-permit.pdf",
+            "title": "[PDF] Proposed TXR040000 - Collin County",
+            "snippet": "A permittee authorized under this general permit must pay an annual Water Quality fee of. $100.00 as authorized under TWC § 26.0291 and 30 TAC Chapter 205 ( ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Anna.pdf",
+            "title": "[PDF] Parks Open Space Trails Recreation Master Plan - Collin County",
+            "snippet": "+ Mechanical/Filter building – A building that houses the pools ... Skaters prefer the smooth concrete surfaces, seamless transitions and flexible designs that ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.collincountytx.gov/Services/Engineering/Fire-Marshal/LEPC/TierIIEnvironmentalFilings.pdf",
+            "title": "[PDF] Tier II Environmental Filings in unincorporated Collin County",
+            "snippet": "Below is a list of all Tier II Chemical Reports on file in Collin County's jurisdiction. Should you need to view a report's details, please go to our Public ...",
+            "position": 6
+          },
+          {
+            "date": "Mar 18, 2013",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200615_2490/48549_OCFO_2014Financial_Guide.pdf",
+            "title": "[PDF] OCFO 2014 Financial Guide - Office of Justice Programs",
+            "snippet": "• The Federal agencies will perform a data quality review and notify the prime recipients and the delegated subrecipients of any data ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.collincountytx.gov/Services/Engineering/Fire-Marshal/Documents/Tier%20II%20Environmental%20Filings.pdf",
+            "title": "[PDF] Tier II Environmental Filings in unincorporated Collin County",
+            "snippet": "Below is a list of all Tier II Chemical Reports on file in Collin County's jurisdiction. Should you need to view a report's details, please go to our.",
+            "position": 8
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Celina.pdf",
+            "title": "[PDF] 2020 Parks and Recreation Master Plan - Celina, TX - Collin County",
+            "snippet": "All fur- nishings should be of a high quality with durable, pow- der-coated finish. Buying multiple units of a single item often results in cost savings.",
+            "position": 9
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Executive%20Summary.pdf",
+            "title": "[PDF] Executive Summary - Collin County",
+            "snippet": "Functions include providing recreation, protecting natural and cultural resources, managing stormwater, reducing erosion, protecting drinking water quality,.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:15.408Z",
+      "data": {
+        "query": "site:dentoncounty.gov A-Quality Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/117/2020-Denton-County-Investment-Policy-PDF",
+            "title": "[PDF] DENTON COUNTY INVESTMENT POLICY",
+            "snippet": "An investment pool may invest its funds in money market mutual funds to the extent permitted by and consistent with this subchapter and the investment policies ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dentoncounty.gov/FAQ.aspx",
+            "title": "Frequently Asked Questions - CivicPlus.CMS.FAQ - Denton County",
+            "snippet": "Please contact Jury Services at 940-349-2230 or 972-434-8830. They will research their records and if additional payment is due notify our office.",
+            "position": 2
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1626/Public-Involvement-PDF",
+            "title": "[PDF] Public Involvement/Participation - Denton County",
+            "snippet": "Stream cleanup events are an effective way to improve habitat, water quality, and aesthetics. To maintain water quality, cleanup efforts must be recurring; a ...",
+            "position": 3
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=76_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "POOL ELECTRICAL MUST BE ELEVATED 2' ABOVE THE BFE OF 546' OR GREATER. Approved, 03/30/2022, HIGHGARDEN INVESTMENTS LLC, PRIVATE, No, No, Terri Crabtree, Yes, No ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1440/Septic-Permit-Application-Packet-PDF",
+            "title": "[PDF] of 2 - Denton County",
+            "snippet": "I hereby make application for an authorization to construct and operate a private sewage disposal system in Denton County, Texas. Authorization is hereby given ...",
+            "position": 5
+          },
+          {
+            "date": "Jul 23, 2019",
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1634/Current-Denton-County-SWMP-PDF",
+            "title": "[PDF] unincorporated urbanized areas - Denton County",
+            "snippet": "Classified Segment - A water body that is listed and described in Appendix A or Appendix C of the Texas Surface. Water Quality Standards, at 30 ...",
+            "position": 6
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:23.046Z",
+      "data": {
+        "name": "A-Quality Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 281-0781",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/north-richland-hills/profile/pool-contractors/a-quality-pools-0825-79010002",
+        "review_count": null,
+        "founding_date": "02/05/1975",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 51,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:54.095Z",
+      "data": {
+        "found": true,
+        "rating": 3.1,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/a-quality-pools-north-richland-hills",
+        "review_count": 34
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T09:58:55.495Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [
+          {
+            "link": "https://www.houzz.com/professionals/spa-and-pool-maintenance/fort-worth-tx-us-probr0-bo~t_28351~r_4691930",
+            "title": "Best 15 Swimming Pool Cleaners in Fort Worth, TX | Houzz",
+            "snippet": "... A- Quality Pools Service Inc. Swimming Pool Cleaners Near Fort Worth. Average rating: 5 out of 5 starsMarch 5, 2014. “I am a real estate agent who needs help ..."
+          },
+          {
+            "link": "https://www.houzz.com/professionals/spa-and-pool-maintenance/mckinney-tx-us-probr0-bo~t_28351~r_4710178",
+            "title": "Best 15 Swimming Pool Cleaners in McKinney, TX | Houzz",
+            "snippet": "Providing quality s... Read More. Send Message. FORT WORTH, TX 76112. A- Quality Pools Service Inc. Average rating: 5 out of 5 ..."
+          },
+          {
+            "link": "https://www.houzz.com/professionals/spa-and-pool-maintenance/flower-mound-tx-us-probr0-bo~t_28351~r_4691585",
+            "title": "Best 15 Swimming Pool Cleaners in Flower Mound, TX | Houzz",
+            "snippet": "PO Box 1272, Fort Worth, TX 76060 · Outdoor ... A- Quality Pools Service Inc. Average rating: 5 ... Fort Worth, TX · Ft Worth, TX · Arlington, TX · Plano ..."
+          }
+        ],
+        "result_count": 4,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:57.129Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"A-Quality Pools\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.AQualityPoolProducts.24806854.html",
+            "title": "A Quality Pool Products, Inc. Reviews - Canton, GA | HomeAdvisor",
+            "snippet": "A Quality Pools did a fantastic job, completed as they said they would, some over budget but that was expected as we changed and added some things. They ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:57.859Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"A-Quality Pools\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-A-Quality-Pools-Service-Inc-EI_IE5196336.11,38.htm",
+            "title": "Working at A-Quality Pools Service | Glassdoor",
+            "snippet": "Glassdoor gives you an inside look at what it's like to work at A-Quality Pools Service, including salaries, reviews, office photos, and more. This is the A- ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/job-listing/pool-cleaner-technician-a-quality-pools-JV_IC1140039_KO0,23_KE24,39.htm?jl=1009909215161",
+            "title": "A-QUALITY POOLS hiring Pool Cleaner Technician Job in North ...",
+            "snippet": "Job expiredThis job from Oct 16, 2025 is no longer available for applications. A-QUALITY POOLS. 5.0 ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/job-listing/pool-cleaner-technician-a-quality-pools-JV_IC1140039_KO0,23_KE24,39.htm?jl=1009814742215",
+            "title": "A-QUALITY POOLS hiring Pool Cleaner Technician Job in North ...",
+            "snippet": "Job expiredThis job from Jul 17, 2025 is no longer available for applications. A-QUALITY POOLS. 5.0 ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/Job/irving-pool-technician-jobs-SRCH_IL.0,6_IC1140006_KO7,22.htm",
+            "title": "48 pool technician Jobs in Irving, TX, January 2026 | Glassdoor",
+            "snippet": "Employee reviews at A-QUALITY POOLSA-QUALITY POOLS Overview. Pool Environments. 4.0. Pool Cleaner / Maintenance Professional. Plano, TX. $37K - $51K (Glassdoor ..."
+          },
+          {
+            "link": "https://www.glassdoor.com/Job/dallas-pool-technician-jobs-SRCH_IL.0,6_IC1139977_KO7,22.htm",
+            "title": "51 pool technician Jobs in Dallas, TX, February 2026 | Glassdoor",
+            "snippet": "Employee reviews at A-QUALITY POOLSA-QUALITY POOLS Overview. Robertson Pools. Residential Pool Cleaning Technician. Coppell, TX. Easy Apply. Applicant must have ..."
+          }
+        ],
+        "result_count": 6
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:58:58.471Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"A-Quality Pools\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/A--quality-Pools/faq",
+            "title": "Questions and Answers about A-Quality Pools | Indeed.com",
+            "snippet": "Find 4 questions and answers about working at A-Quality Pools. Learn about the interview process, employee benefits, company culture and more on Indeed."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/A--quality-Pools",
+            "title": "A-Quality Pools Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at A-Quality Pools from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/A--quality-Pools/faq/what-is-the-interview-process-like-at-a-quality-pools?quid=1fgaanfmm3kji000",
+            "title": "What is the interview process like at A-Quality Pools? | Indeed.com",
+            "snippet": "Find answers to 'What is the interview process like at A-Quality Pools?' from A-Quality Pools employees. Get answers to your biggest company questions on ..."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-14T09:59:01.046Z",
+      "data": {
+        "found": true,
+        "query": "\"A-Quality Pools\" Fort Worth lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.facebook.com/groups/637529959937311/posts/2211033685920256/",
+            "title": "How long to wait before posting negative review about pool ...",
+            "snippet": "I had the same problem with A Quality pools in Clinton. 2 yrs. Sean Gross. They probably already have a pile of bad reviews people dont check ..."
+          },
+          {
+            "link": "https://www.yelp.com/biz/puryear-custom-pools-fort-worth?start=40",
+            "title": "Puryear Custom Pools Photos - Yelp",
+            "snippet": "Fort Worth, TX 76131. Far North. Directions. (817) 306-5169. Call Now · Visit ... A-Quality Pools. 36 reviews. $$. Photo of Bonnie and Clyde's Pools and Spas ..."
+          },
+          {
+            "link": "https://www.facebook.com/groups/740146259387832/posts/25416645717977877/",
+            "title": "Benefits of choosing the guys next door pool service - Facebook",
+            "snippet": "No Complaints: We're proud to say we've never had a complaint. ... A-Quality Pools! A-Quality Pools is now offering ... Fort Worth, Northlake, Trophy Club & more!"
+          },
+          {
+            "link": "https://www.yelp.com/biz/aquamaid-pool-techs-fort-worth-2",
+            "title": "AQUAMAID POOL TECHS - CLOSED - Updated February 2026 - Yelp",
+            "snippet": "AQUAMAID POOL TECHS - CLOSED, 4615 Martin St, Fort Worth, TX 76119, 24 ... A-Quality Pools. A-Quality Pools. 36 reviews. $$. Photo of Sun-Ray Pools of Burleson."
+          },
+          {
+            "link": "https://www.yumpu.com/en/document/view/5020794/disciplinary-actions-continued-department-of-business-and-",
+            "title": "Disciplinary Actions, continued - Department of Business and ...",
+            "snippet": "A-Quality Pools, Inc.<br />. 7220 North Mobley Road<br />. Odessa, FL 33556<br />. PULLED<br />. Case #(s): 2005-049795<br />. Martin Grady H ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T09:59:18.732Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T09:59:05Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22A-Quality%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=aEeQaf_1PO6U5OMP2rmB4Qw\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T09:59:15Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22A-Quality%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=ckeQaY3hJ-PJptQPouetgQ4\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "A-Quality Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

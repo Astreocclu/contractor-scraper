@@ -1,0 +1,70 @@
+{
+  "variation": "D2",
+  "contractor_id": 8958,
+  "contractor_name": "Splash Pools",
+  "archetype": "gold_standard",
+  "expected_score": 78,
+  "run": 4,
+  "timestamp": "2026-01-20T19:23:40.609Z",
+  "success": true,
+  "trust_score": 88,
+  "risk_level": "LOW",
+  "reasoning": "Mixed council: DeepSeek=92, Claude=85, Gemini=88, Avg=88",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 92,
+      "risk_level": "LOW",
+      "reasoning": "Splash Pools demonstrates exceptional performance across multiple trust indicators, with consistently outstanding customer reviews, strong business credentials, and no significant legal or compliance issues. The contractor maintains a perfect 5.0 rating on Yelp and 4.8 on Google Maps with 31 reviews, all showing authentic, detailed feedback about quality work and excellent communication. The business holds an A+ BBB accreditation with no complaints, operates as a legally registered Texas entity, and shows no court records, liens, or regulatory violations. The only minor concern is the lack of presence on some review platforms, but this is outweighed by the overwhelming positive evidence.",
+      "key_factors": [
+        "Consistently perfect customer reviews across platforms",
+        "A+ BBB accreditation with zero complaints",
+        "No legal or regulatory issues found",
+        "Strong business registration and stability in Texas"
+      ],
+      "red_flags": [
+        "Limited presence on some review platforms (Houzz, Thumbtack, Facebook)"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 85,
+      "risk_level": "LOW",
+      "reasoning": "Splash Pools demonstrates strong performance across multiple credibility indicators with consistently high customer ratings (4.8 Google, 5.0 Yelp, A+ BBB) and authentic, detailed reviews mentioning specific project timelines and crew members. The business appears to be a legitimate second-generation pool builder with proper Texas franchise registration and no significant legal issues or complaints found across multiple court systems and regulatory databases. While there are some data collection limitations and minor platform discrepancies, the overall evidence strongly supports this as a trustworthy contractor.",
+      "key_factors": [
+        "Consistently high ratings across multiple platforms (4.8-5.0 stars)",
+        "Authentic, detailed customer reviews with specific project information and crew names",
+        "Clean legal record with no court cases, liens, or regulatory violations found",
+        "Proper business registration with Texas franchise tax system"
+      ],
+      "red_flags": [
+        "Limited online presence on some major contractor platforms (Houzz, Thumbtack)",
+        "Some data collection errors preventing complete verification of certain records"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 88,
+      "risk_level": "LOW",
+      "reasoning": "Splash Pools demonstrates a strong track record based on available data. Google reviews are overwhelmingly positive, mentioning specific employees and project details, suggesting authenticity. The BBB rating is A+ and they are accredited. While some court record searches returned errors, the overall picture indicates a reliable contractor with a commitment to customer satisfaction. The absence of significant red flags and the presence of positive testimonials contribute to a high level of trust.",
+      "key_factors": [
+        "Positive Google Reviews",
+        "Accredited BBB Rating",
+        "Authentic Review Analysis"
+      ],
+      "red_flags": [
+        "Angi rating slightly lower than other platforms",
+        "Some court record searches failed"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Limited presence on some review platforms (Houzz, Thumbtack, Facebook)",
+    "Limited online presence on some major contractor platforms (Houzz, Thumbtack)",
+    "Some data collection errors preventing complete verification of certain records",
+    "Angi rating slightly lower than other platforms",
+    "Some court record searches failed"
+  ],
+  "cost_usd": 0.07106108124999998,
+  "duration_ms": 8872
+}

@@ -1,0 +1,925 @@
+{
+  "contractor_id": 1145,
+  "business_name": "JCI Roofing Company",
+  "city": "Carrollton",
+  "state": "TX",
+  "verticals": [
+    "roofing"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-15T21:10:09.914Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:26:33.193Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "MECH_LIEN": 1
+          },
+          "active_liens": 1,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 1,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "JCI ROOFING COMPANY",
+                "grantor": "BARGAINER JILL M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BARGAINER JILL M",
+                    "JCI ROOFING COMPANY",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "8/23/2010",
+                    "20100823000876130",
+                    "--/--/--",
+                    "Subdivision- Name: ROBERTS, Z SY, Reference - S / 760"
+                  ],
+                  "search_term": "JCI Roofing Company",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2010-08-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20100823000876130"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 lien(s) filed BY contractor (collecting payment - neutral)"
+          ],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 1,
+          "human_summary": "OK: 1 liens filed BY JCI Roofing Company to collect payment (normal business, no penalty)",
+          "liens_unclear": 0,
+          "liens_by_count": 1,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 1,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "JCI Roofing Company",
+        "searched_at": "2026-02-15T15:25:24.345614",
+        "total_records": 1
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:26:33.648Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-15T15:26:33.649Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:26:42.379Z",
+      "data": {
+        "cost": 0.00074312,
+        "summary": "Reviews appear highly authentic and reflect a reputable, owner-operated business specializing in insurance-related roof repairs. The low volume of reviews over a long period (13 years) and consistent high ratings suggest genuine customer satisfaction rather than manipulation. No negative reviews or complaint patterns were found in the provided data.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-15T15:26:42.379Z",
+        "fake_signals": [
+          "Low total review volume (33 Google, 10 Yelp)",
+          "All sampled Google reviews are 5-star"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 4.7,
+          "google": 4.8,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "MEDIUM",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Owner returned to check roof after new hail storm (implied follow-up)"
+          ]
+        },
+        "authentic_signals": [
+          "Specific details: working with insurance adjusters, hail storm repairs, ridge cap repairs, owner's name (James)",
+          "Varied writing styles and perspectives",
+          "Mentions of timelines and specific crew actions",
+          "Emotionally authentic language expressing gratitude and relief"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are consistently high across Google (4.8), Yelp (4.7), and BBB (A+). No significant discrepancies."
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:25:06.136Z",
+      "data": {
+        "found": true,
+        "query": "\"JCI Roofing Company\" Carrollton lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/carrollton/category/roofing-contractors",
+            "title": "Roofing Contractors near Carrollton, TX | Better Business Bureau",
+            "snippet": "JCI Roofing Company. Roofing Contractors, Metal Roofing Contractors ... File a Complaint · Military & Veteran Resources · File an Auto Warranty Complaint ..."
+          },
+          {
+            "link": "https://www.yelp.com/biz/lifespan-roofing-and-construction-arlington",
+            "title": "LIFESPAN ROOFING AND CONSTRUCTION - Arlington, Texas - Yelp",
+            "snippet": "No shady \"take your insurance money and run\" scam. Just honest advice ... JCI Roofing Company. 10 reviews. Photo of Bold Roofing. Bold Roofing. 91 reviews."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/carrollton/category/metal-roofing-contractors",
+            "title": "Metal Roofing Contractors near Carrollton, TX | Better Business ...",
+            "snippet": "Tarrant County, TX. Accredited Business. (214) 502-6434. 2906 Creekside Ct, Carrollton, TX 75007-5047. Get a Quote · JCI Roofing Company."
+          },
+          {
+            "link": "https://www.yelp.ca/search?cflt=knifesharpening&find_loc=Carrollton%2C+TX+75007",
+            "title": "THE BEST 10 KNIFE SHARPENING near CARROLLTON, TX 75007",
+            "snippet": "JCI Roofing Company - Knife Sharpening near me - Carrollton, Texas. JCI ... The owner, Dustin is money hungry only and will scam you insurance company ..."
+          }
+        ],
+        "result_count": 4
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:20.699Z",
+      "data": "Roofing Contractors Carrollton | JCI Roofing Company Skip to content Home About Services Residential Roofing Commercial Roofing Residential Roof Repair Commercial Roof Repair Roof Replacement Commercial Roof Replacement Roof Insurance Claim Reroofing Areas We Serve Arlington, TX Dallas, TX Irving, TX Farmers Branch, TX Frisco, TX Fort Worth, TX Lewisville, TX Flower Mound, TX McKinney, TX Plano, TX Allen, TX Richardson, TX Recent Projects Gallery Home About Services Residential Roofing Commercial Roofing Residential Roof Repair Commercial Roof Repair Roof Replacement Commercial Roof Replacement Roof Insurance Claim Reroofing Areas We Serve Arlington, TX Dallas, TX Irving, TX Farmers Branch, TX Frisco, TX Fort Worth, TX Lewisville, TX Flower Mound, TX McKinney, TX Plano, TX Allen, TX Richardson, TX Recent Projects Gallery CONTACT 972.245.4025 Home About Services Residential Roofing Commercial Roofing Residential Roof Repair Commercial Roof Repair Roof Replacement Commercial Roof Replacement Roof Insurance Claim Reroofing Areas We Serve Arlington, TX Dallas, TX Irving, TX Farmers Branch, TX Frisco, TX Fort Worth, TX Lewisville, TX Flower Mound, TX McKinney, TX Plano, TX Allen, TX Richardson, TX Recent Projects Gallery Home About Services Residential Roofing Commercial Roofing Residential Roof Repair Commercial Roof Repair Roof Replacement Commercial Roof Replacement Roof Insurance Claim Reroofing Areas We Serve Arlington, TX Dallas, TX Irving, TX Farmers Branch, TX Frisco, TX Fort Worth, TX Lewisville, TX Flower Mound, TX McKinney, TX Plano, TX Allen, TX Richardson, TX Recent Projects Gallery CONTACT 972.245.4025 A Passion For Making Things Perfect. Get a free estimate now! Call Now Areas We serve Your Trusted Team of Roofing Contractors in Carrollton, TX JCI Roofing is a roofing company and full-service roofing contractor in Carrollton, TX, specializing in residential and commercial roofing services, such as roof repair and handling insurance claims. We have more than 20 years of experience and we are a locally owned and operated company that offers high-quality workmanship and repairs that will last for the life of your roof! Call us today for expert advice on your roof repairs and get a free estimate on your roofing needs. We are your go-to roofing company: More than 20 years of experience Locally owned and operated Fully licensed and insured High-quality workmanship Guaranteed repairs that last for the life of your roof Insurance claims assistance Residential Roofing Call JCI Roofing today for all your residential roofing needs in Carrollton, TX. Commercial Roofing At JCI Roofing we specialize in commercial roofing repairs and installations in Carrollton, TX. Residential Roof Repair Call us for professional residential roof repairs for your Carrollton, TX home. Work with a Leading Roofing Company Near You JCI Roofing Company was built around using quality materials and providing friendly customer service, satisfaction, and affordability. We proudly serve clients in Carrollton, TX, and the surrounding areas. We use only the best quality products and materials in the roofing industry. At JCI Roofing Company, our roofing solutions include installing Cooler, Quieter, and long-lasting Roofing Replacement. Call us today for a free estimate – we look forward to meeting all of your roofing needs. Our services include: Residential Roofing Commercial Roofing Residential Roof Repair Commercial Roof Repair Areas We serve We’re Your Go-To From residential roofing to commercial roofing, we are the roofers you can trust! As a roofing company in Carrollton, TX, we also serve clients in these areas: Dallas, TX Farmers Branch, TX Irving, TX Coppell, TX Lewisville, TX Flower Mound, TX Highland Village, TX Doubletree, TX …and many more! For more information about our roofing services, or to get a free estimate, call us at 972-245-4025. Call Now Contact JCI Roofing Company Today FULL NAME EMAIL ADDRESS PHONE MESSAGE Submit We Work With the Best Clients Positive: Professionalism , Punctuality , Quality , Responsiveness , Value The morning AFTER Thanksgiving, James came out , inspected and... read more Positive: Professionalism , Punctuality , Quality , Responsiveness , Value The morning AFTER Thanksgiving, James came out , inspected and made the repairs, no problem and very reasonable. Thank you JCI Roofing. read less Paula B. 10/24/2021 James did a wonderful job fixing many issues the other company didn't do or didn't get right on my home,... read more James did a wonderful job fixing many issues the other company didn't do or didn't get right on my home, along with a few other repairs I needed done. I would highly recommend him and his company. Thank you James for the great work you did on my house! read less Jamie E. 9/24/2021 I have used JCI Roofing several times. We have been getting a lot of rain, and my gutters needed repair.... read more I have used JCI Roofing several times. We have been getting a lot of rain, and my gutters needed repair. James evaluated what needed to be done and was very professional. I would recommend JCI Roofing. read less Kellyann 7/24/2021 We had a new roof within 2 days of meeting. Very good at explaining the insurance process. James... read more We had a new roof within 2 days of meeting. Very good at explaining the insurance process. James made it very easy for us. The roof looks great! read less James T. 12/16/2020 The morning AFTER Thanksgiving, James came out , inspected and made the repairs, no problem and very reasonable.Thank you JCI Roofing. Paula B. 12/16/2020 Positive: Professionalism , Punctuality , Quality , Responsiveness , Value James, owner, was very responsive in setting an appointment, evaluating... read more Positive: Professionalism , Punctuality , Quality , Responsiveness , Value James, owner, was very responsive in setting an appointment, evaluating the need, making recommendations and providing an estimate. The work was very professional and the materials high quality. I would not hesitate to recommend JCI Roofing. read less Bill S. 10/24/2020 I’m so grateful I found this company. James has done a couple of roofing jobs for me. He responded quickly... read more I’m so grateful I found this company. James has done a couple of roofing jobs for me. He responded quickly to my inquiries, was absolutely right in his his assessment of an insurance issue and got the problems taken care of in a timely manner. I would recommend his company to anyone with roofing issues. In fact, I gave his contact info to my realtor who needs reliable professionals to refer his clients to if they have issues to take care of before selling. I’m so grateful I found this company. James has done a couple of roofing jobs for me. He responded quickly to my inquiries, was absolutely right in his his assessment of an insurance issue and got the problems taken care of in a timely … More read less bette b. 10/24/2020 James is the #1 roofer in Texas! He truly cares about each client and every roof. From metal roofing to... read more James is the #1 roofer in Texas! He truly cares about each client and every roof. From metal roofing to shingles, he can help. With having hail damage you never know how bad your roof is. He works with you and your insurance company! A+++ read less Colorado W. 10/16/2020 Very good work and friendly workers. On time and reliable. Ted W. 9/22/2020 LOAD MORE Next Prev 1 2 3 4 Contact 972.245.4025 contact@jciroofing.com Mon - Sat: 8:00AM - 7:00PM Our Services Residential Roofing Commercial Roofing Residential Roof Repair Commercial Roof Repair Get Social Facebook-f Google Yelp Houzz Leave us a review Home Privacy Policy Terms of Use Sitemap Privacy Policy Terms of Use Sitemap"
+    },
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:22:29.363Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": true,
+          "materials": false,
+          "money_back": false,
+          "workmanship": true,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "https://www.jciroofing.com/",
+            "type": "explicit",
+            "snippet": "Locally owned and operated Fully licensed and insured High-quality workmanship Guaranteed repairs that last for the life of your roof Insurance claims assistance Reside"
+          },
+          {
+            "url": "https://www.jciroofing.com/",
+            "type": "workmanship",
+            "snippet": "rience and we are a locally owned and operated company that offers high-quality workmanship and repairs that will last for the life of your roof! Call us today for expert"
+          },
+          {
+            "url": "https://www.jciroofing.com/",
+            "type": "workmanship",
+            "snippet": "f experience Locally owned and operated Fully licensed and insured High-quality workmanship Guaranteed repairs that last for the life of your roof Insurance claims assista"
+          },
+          {
+            "url": "https://www.jciroofing.com/",
+            "type": "timeline",
+            "snippet": "any! A+++ read less Colorado W. 10/16/2020 Very good work and friendly workers. On time and reliable. Ted W. 9/22/2020 LOAD MORE Next Prev 1 2 3 4 Contact 972.245.4025"
+          },
+          {
+            "url": "https://www.jciroofing.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "More than 20 years of experience Locally owned and operated Fully licensed and insured High-quality workmanship Guaranteed repairs that last for the life of your roof"
+          },
+          {
+            "url": "https://www.jciroofing.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "Repair Commercial Roof Repair Roof Replacement Commercial Roof Replacement Roof Insurance Claim Reroofing Areas We Serve Arlington, TX Dallas, TX Irving, TX Farmers Bran"
+          },
+          {
+            "url": "https://www.jciroofing.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "Repair Commercial Roof Repair Roof Replacement Commercial Roof Replacement Roof Insurance Claim Reroofing Areas We Serve Arlington, TX Dallas, TX Irving, TX Farmers Bran"
+          }
+        ],
+        "durations": [
+          "20 years",
+          "2 days"
+        ],
+        "confidence": "MODERATE",
+        "source_url": "https://www.jciroofing.com/",
+        "analyzed_pages": [
+          {
+            "url": "https://www.jciroofing.com/",
+            "type": "homepage",
+            "title": "Roofing Contractors Carrollton | JCI Roofing Company"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": true,
+        "insurance_bonding_mentions": true
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:22:36.700Z",
+      "data": {
+        "query": "site:yelp.com \"JCI Roofing Company\" \"Carrollton, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/jci-roofing-company-carrollton-2",
+            "title": "JCI ROOFING COMPANY - Updated February 2026 - Yelp",
+            "rating": 4.7,
+            "snippet": "More info about JCI Roofing Company ; 3044 Old Denton. Rd 111. Carrollton, TX 75007. Directions ; (972) 245-4025. Call Now ; Visit Website. https://www.jciroofing.",
+            "position": 1,
+            "ratingCount": 10
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Roof+Leak+Repair&find_loc=Carrollton%2C+TX",
+            "title": "TOP 10 BEST Roof Leak Repair in Carrollton, TX - Yelp",
+            "rating": 4.7,
+            "snippet": "... Carrollton, TX. Map. Window Repair in Carrollton, Texas · Skylight Installation ... JCI Roofing Company - Roof Leak Repair near me - Carrollton, Texas. JCI ...",
+            "position": 2,
+            "ratingCount": 936
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Roofing&find_loc=Celeste%2C+TX",
+            "title": "TOP 10 BEST Roofing near Celeste, TX - Updated 2026 - Yelp",
+            "rating": 4.4,
+            "snippet": "... JCI Roofing Company - Roofing near me - Celeste, Texas. JCI Roofing Company ... Carrollton, TX 75007. (972) 245-4025. He helped us out with the insurance ...",
+            "position": 3,
+            "ratingCount": 248
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Metal+Roof+Repair&find_loc=Celeste%2C+TX",
+            "title": "TOP 10 BEST Metal Roof Repair near Celeste, TX - Updated 2026 ...",
+            "snippet": "... JCI Roofing Company, Absolute Seamless Gutters ... JCI Roofing Company - Metal Roof Repair near me - Celeste, Texas ... 3044 Old Denton, Rd 111 Carrollton, TX 75007.",
+            "position": 4
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Copper+Roof&find_loc=Arlington%2C+TX",
+            "title": "THE BEST 10 Copper Roof in Arlington, TX - Yelp",
+            "rating": 4.4,
+            "snippet": "... JCI Roofing Company - Copper Roof near me - Arlington, Texas. JCI Roofing ... Carrollton, TX · Cedar Hill, TX · Colleyville, TX · Dallas, TX · Duncanville, TX.",
+            "position": 5,
+            "ratingCount": 1588
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Bay+%26+Bow+Window+Installation+%26+Replacement&find_loc=Coppell%2C+TX",
+            "title": "Best Bay & Bow Window Installation & Replacement near Coppell, TX",
+            "rating": 4,
+            "snippet": "... Carrollton, TX 75006. Family-owned & operated. Locally owned & operated. 4 ... JCI Roofing Company - Bay & Bow Window Installation & Replacement near me ...",
+            "position": 6,
+            "ratingCount": 1133
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=fireprotection&find_loc=Krum%2C+TX+76249",
+            "title": "THE BEST 10 FIRE PROTECTION SERVICES near KRUM, TX 76249",
+            "rating": 4,
+            "snippet": "Carrollton, TX 75007. (469) 978-2888. I can't recommend John and JMAC enough ... JCI Roofing Company - Fire Protection Services near me - Krum, Texas. JCI ...",
+            "position": 7,
+            "ratingCount": 24
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Roofing&find_loc=Point%2C+TX",
+            "title": "TOP 10 BEST Roofing near Point, TX - Updated 2026 - Yelp",
+            "rating": 4.5,
+            "snippet": "... JCI Roofing Company, Ready Fab Construction, Sutton Roofing, Southern Charm ... Carrollton, TX 75007. (972) 245-4025. He helped us out with the insurance ...",
+            "position": 8,
+            "ratingCount": 219
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Sunroom+Contractors&find_loc=Little+Elm%2C+TX+75068",
+            "title": "Best Sunroom Contractors near Little Elm, TX 75068 - Yelp",
+            "rating": 3.8,
+            "snippet": "JCI Roofing Company - Sunroom Contractors near me - Little Elm, Texas. JCI ... Carrollton, TX 75010. (972) 632-0228. We had a major leak in our attic from ...",
+            "position": 9,
+            "ratingCount": 240
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Copper+Roof&find_loc=Double+Oak%2C+TX",
+            "title": "THE BEST 10 Copper Roof near Double Oak, TX - Updated 2026 ...",
+            "snippet": "... JCI Roofing Company, Sergeant Plumber, Buford ... JCI Roofing Company - Copper Roof near me - Double Oak, Texas ... 3044 Old Denton, Rd 111 Carrollton, TX 75007. ( ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:24:56.778Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:58.431Z",
+      "data": {
+        "url": "https://www.houzz.com/professionals/roofing-and-gutters/jci-roofing-company-pfvwus-pf~1478338683",
+        "found": true,
+        "title": "JCI ROOFING COMPANY - Project Photos & Reviews - Houzz",
+        "rating": 5,
+        "source": "serper_houzz",
+        "confidence": "high",
+        "review_count": 1
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:24:59.249Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "jciroofing.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:23:13.835Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:23:17.961Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:23:20.820Z",
+      "data": {
+        "query": "JCI Roofing Company Carrollton site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:25:03.692Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"JCI Roofing Company\" Carrollton",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:23:31.904Z",
+      "data": "JCI Roofing Company Carrollton review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters JC&C Roofing Company JC&C Roofing Company @JCCRoofingCompanyHouston • 36 subscribers A THREE BEST RATED ® Awarded Roofing Contractor of Houston . Since 2013 We have been known as the local roofers, we're ... Subscribe 1:00 1:00 Now playing The Cool Roofing Company Carrollton - Superb 5 Star Review Snellville Businesses Snellville Businesses • • 21 views 6 years ago Snellville Businesses Snellville Businesses www.TheCoolRoofingCompany.com (770) 599-5606 The Cool Roofing Company Carrollton reviews Excellent Review Prompt ... www.TheCoolRoofingCompany.com (770) 599-5606 The Cool Roofing Company Carrollton reviews Excellent Review Prompt ... From the video description Shorts How to hire the right roofing contractor #roof #roofer #roofing #roofingcontractor #yorkcountypa 1.8K views Is This Roofing Company the BEST for Your Home? 1.8K views New Roofing Contractor Performing Maintenance #diy 25K views Roof Repair with Braeden Groce 2.4K views What Happens When You Hire the Cheapest Roofer 1.1K views Show more Show less 5:46 5:46 Now playing Roof Repair Houston TX | Customer Review | Roof Leaks Repairs | JC&C Roofing Company JC&C Roofing Company JC&C Roofing Company • • 103 views 6 years ago JC&C Roofing Company JC&C Roofing Company www.myroofimprovement.com | 281-498-7663 | Houston's Top Roofer THERE IS NOT REQUIREMENT TO BE CALLED A ... www.myroofimprovement.com | 281-498-7663 | Houston's Top Roofer THERE IS NOT REQUIREMENT TO BE CALLED A ... From the video description 4K SHORTS SHORTS Now playing The Sketchiest Job Interview Ever Good Contractor Podcast Good Contractor Podcast • • 3.1K views 4 months ago Good Contractor Podcast Good Contractor Podcast The roofing company that recruited me had their office in a 2-bedroom apartment There were stoned druggies everywhere but ... The roofing company that recruited me had their office in a 2-bedroom apartment There were stoned druggies everywhere but ... From the video description Shorts Roofing Company Sacramento | Trust Cobex 2.7K views Roofer in California, Maryland – Picking a Roofing Company 1.2K views Best roofing company in Nj 883 views Best Roofing Company in Macomb County for Quality and Protection #roofingexperts #shorts 2.1K views Can You Handle Roofing Sales? Here's What It's Like… #roofing #construction #local #shorts #sales 1.2K views Show more Show less SHORTS SHORTS Now playing Top 5 things to know when choosing a Roofing Contractor! 🏠🛠🙋🏼. #shorts #dfw #roofer Performance Roofing, Inc. of DFW Performance Roofing, Inc. of DFW • • 590 views 3 years ago Performance Roofing, Inc. of DFW Performance Roofing, Inc. of DFW SHORTS SHORTS Now playing 👉For anyone hiring a roofing contractor | Questions to ask #shorts #roofing #propertymanagement Tony Bock Tony Bock • • 724 views 3 years ago Tony Bock Tony Bock 0:00 Here's some important questions that you should ask a spray foam roofing contractor that you're getting a bid from the most ... Here's some important questions that you should ask a spray foam roofing contractor that you're getting a bid from the most ... Automatic captions SHORTS SHORTS Now playing FREE Training for Roofing Contractors! Roofer Marketers Roofer Marketers • • 1.4K views 3 years ago Roofer Marketers Roofer Marketers Click here to register https://roofermarketers.com/2022-unconverted-leads-webinar # roofing #roofingcontractor # roofs ... Click here to register https://roofermarketers.com/2022-unconverted-leads-webinar # roofing #roofingcontractor # roofs ... From the video description SHORTS SHORTS Now playing Is Starting a Roofing Company theRight Move? W/ Amanda Veinott #roofingcompany #roofingcontractor Hook Agency Hook Agency • • 4.3K views 2 years ago Hook Agency Hook Agency SHORTS SHORTS Now playing How to Qualify a Roofing Company you may Work With Josh Steinberger Josh Steinberger • • 2.4K views 2 years ago Josh Steinberger Josh Steinberger 0:00 Some good qualifying questions if you're looking to hire somebody to work on your roof how long have you been in business ... Some good qualifying questions if you're looking to hire somebody to work on your roof how long have you been in business ... Automatic captions SHORTS SHORTS Now playing What Every Roofing Company Should Know About Cold Calling Ascend Digital Agency Ascend Digital Agency • • 2.3K views 1 year ago Ascend Digital Agency Ascend Digital Agency With Jay Bradley # roofingcompany #contractor #independentcontractor #businessowner #businessownership #coldcalling #sales ... With Jay Bradley # roofingcompany #contractor #independentcontractor #businessowner #businessownership #coldcalling #sales ... From the video description People also watched 3:37 3:37 Now playing Insurance Adjuster says roof is repairable. 😂 See how this inspection is ignored & denied? Chicago Roofer Chicago Roofer • • 1.5M views 3 years ago Chicago Roofer Chicago Roofer Met with an insurance adjuster for a wind claim . top insure company in Illinois. Adjuster from this company insists the roof is ... Met with an insurance adjuster for a wind claim . top insure company in Illinois. Adjuster from this company insists the roof is ... From the video description Summary An insurance adjuster deems a roof repairable, despite a roofer's on-site demonstration of significant damage. The roofer meticulously documents the irreparable condition using a customer's phone. This video showcases the conflict between the adjuster's assessment and the reality of the roof's condition. AI-generated video summary Quality and accuracy may vary. Summary An insurance adjuster deems a roof repairable, despite a roofer's on-site demonstration of significant damage. The roofer meticulously documents the irreparable condition using a customer's phone. This video showcases the conflict between the adjuster's assessment and the reality of the roof's condition. 14:11 14:11 Now playing Revealed: The Most Common Roofing Scams Homestead Roofing, Inc Homestead Roofing, Inc • • 56K views 2 years ago Homestead Roofing, Inc Homestead Roofing, Inc In this video, we're sharing important roofing advice and exposing common roofing scams that homeowners should be aware of ... In this video, we're sharing important roofing advice and exposing common roofing scams that homeowners should be aware of ... From the video description 11 chapters Introduction | Free upgrades | Roof vandalization | Insurance kickbacks | Not paying workers/suppliers | Exaggerating scope | Pressuring You | Legal action | Bad work | Paying your deductible | Take your money and run 11 chapters in this video 11 chapters Introduction Introduction 0:00 Introduction 0:00 Free upgrades Free upgrades 0:47 Free upgrades 0:47 Roof vandalization Roof vandalization 1:54 Roof vandalization 1:54 Insurance kickbacks Insurance kickbacks 4:01 Insurance kickbacks 4:01 Not paying workers/suppliers Not paying workers/suppliers 5:21 Not paying workers/suppliers 5:21 Exaggerating scope Exaggerating scope 6:12 Exaggerating scope 6:12 Pressuring You Pressuring You 7:36 Pressuring You 7:36 1:04:58 1:04:58 Now playing How to Start Your Own Roofing Business | The Roofer Show with John DeLaurier Dave Sullivan Dave Sullivan • • 545 views 1 year ago Dave Sullivan Dave Sullivan Connect with John DeLaurier and Peach State Roofing : https://peachstateroofing.com/ Set up a FREE strategy call with Dave and ... Connect with John DeLaurier and Peach State Roofing : https://peachstateroofing.com/ Set up a FREE strategy call with Dave and ... From the video description 16:05 16:05 Now playing Questions Roofers Ask That You Should NEVER Answer! Homestead Roofing, Inc Homestead Roofing, Inc • • 81K views 3 years ago Homestead Roofing, Inc Homestead Roofing, Inc When you're hiring a roofer , there are some questions they may ask that you should never answer. In this video, I'll give you the ... When you're hiring a roofer , there are some questions they may ask that you should never answer. In this video, I'll give you the ... From the video description CC 8 chapters Introduction | In the neighborhood - Can I inspect your roof? | Can I get your Insurance paperwork? | Can I get you to Sign today? | Let me call my manager... | Do you want to file the claim now? | Will you sign this paper? | ZERO OBLIGATION 8 chapters in this video 8 chapters Introduction Introduction 0:00 Introduction 0:00 In the neighborhood - Can I inspect your roof? In the neighborhood - Can I inspect your roof? 0:21 In the neighborhood - Can I inspect your roof? 0:21 Can I get your Insurance paperwork? Can I get your Insurance paperwork? 2:21 Can I get your Insurance paperwork? 2:21 Can I get you to Sign today? Can I get you to Sign today? 7:19 Can I get you to Sign today? 7:19 Let me call my manager... Let me call my manager... 8:36 Let me call my manager... 8:36 Do you want to file the claim now? Do you want to file the claim now? 12:00 Do you want to file the claim now? 12:00 Will you sign this paper? Will you sign this paper? 14:07 Will you sign this paper? 14:07 + 6 more SHORTS SHORTS Now playing 5 REASONS Why your Roofing Company is Falling Behind![TRAILER] Clientric Clientric • • 135 views 2 years ago Clientric Clientric In this video, we explore five common reasons why roofing companies can fall behind in today's competitive market. From poor ... In this video, we explore five common reasons why roofing companies can fall behind in today's competitive market. From poor ... From the video description SHORTS SHORTS Now playing Roofing company customer review, five star review for roofing project Grand Exteriors Grand Exteriors • • 102 views 2 years ago Grand Exteriors Grand Exteriors SHORTS SHORTS Now playing How to train your roofing crew #construction #contractor #roofing #tools American Contractor American Contractor • • 9.9K views 3 years ago American Contractor American Contractor 0:26 ... but it's the transition areas it's the roof wall intersects it's the flash points those finer pieces are really where a roof can go wrong. ... but it's the transition areas it's the roof wall intersects it's the flash points those finer pieces are really where a roof can go wrong. Automatic captions SHORTS SHORTS Now playing Reliable roofing company Bros.Roofing Kevin Bros.Roofing Kevin • • 196 views 4 years ago Bros.Roofing Kevin Bros.Roofing Kevin SHORTS SHORTS Now playing Starting a Roofing Company: First Thing I Would Do. Ascend Digital Agency Ascend Digital Agency • • 3.4K views 1 year ago Ascend Digital Agency Ascend Digital Agency roofing # contractor # roofingcompany #startup #businessowner #businessgrowth #roofingcontractor. roofing # contractor # roofingcompany #startup #businessowner #businessgrowth #roofingcontractor. From the video description SHORTS SHORTS Now playing \"Roofing Companies Near Me\" Making Mistakes - Part 1 Northern Michigan Waterfront Living | Sander Scott Northern Michigan Waterfront Living | Sander Scott • • 13K views 4 months ago Northern Michigan Waterfront Living | Sander Scott Northern Michigan Waterfront Living | Sander Scott You're paying good money for a new roof — don't let your roofer cut corners! In this short, I break down one of the most ... You're paying good money for a new roof — don't let your roofer cut corners! In this short, I break down one of the most ... From the video description Carrollton Tx Roofing Pro Carrollton Tx Roofing Pro @carrolltontxroofingpro1945 • 4 subscribers We are the best roofing company in Carrollton , TX. Whether it is little damage or a major one, we can get everything replaced and ... Subscribe SHORTS SHORTS Now playing What goes on your roof first during an installation #construction #roofing #contractor American Contractor American Contractor • • 46M views 3 years ago American Contractor American Contractor SHORTS SHORTS Now playing 🏠Roof Inspection In Orland Park! #roofer #roofingcompany #roofingcontractor #roofing #chicago #chi Global Exterior Experts Global Exterior Experts • • 13K views 1 year ago Global Exterior Experts Global Exterior Experts SHORTS SHORTS Now playing Avoiding the Pitfalls of Scaling a Roofing Company The Roofing Academy The Roofing Academy • • 172 views 3 years ago The Roofing Academy The Roofing Academy How can you avoid the pitfalls of scaling a roofing company ? Make sure you have the right systems, technology, people, and ... How can you avoid the pitfalls of scaling a roofing company ? Make sure you have the right systems, technology, people, and ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:23:33.363Z",
+      "data": {
+        "query": "site:nextdoor.com JCI Roofing Company Carrollton",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:25:02.634Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"JCI Roofing Company\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:25:01.710Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"JCI Roofing Company\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:25:05.181Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"JCI Roofing Company\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:23:49.914Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=JCI%20Roofing%20Company&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= JCI% 20Company&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= JCI% 20Roofing% 20Company&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "Enforcement and Compliance History Online | US EPA",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= JCI% 20Roofing% 20Company&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= JCI% 20Roofing% 20Company&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:23:53.821Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:23:59.975Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:25:00.098Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"JCI Roofing Company\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:24:07.999Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov JCI Roofing Company",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:09.182Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Comptroller.Texas.Gov is the website for the Texas Comptroller of Public Accounts.",
+            "position": 3
+          },
+          {
+            "link": "https://www.sos.state.tx.us/search.shtml?dropXSL=&pr=default&prox=page&rorder=500&rprox=500&rdfreq=500&rwfreq=500&rlead=500&sufs=0&order=r&rdepth=0&query=CERTIFICATE+OF+ACCOUNT+STATUS",
+            "title": "Current Search Results - the Texas Secretary of State",
+            "snippet": "If you've been asked to obtain a “certificate of good standing,” the first step is to determine what type of certificate is being requested.",
+            "position": 4
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07.",
+            "position": 7
+          },
+          {
+            "link": "https://hplarchives.lyrasistechnology.org/repositories/2/resources/1008",
+            "title": "Collection: T. D. Howe Construction Company Photographs",
+            "snippet": "Images in this collection suggest it operated until at least 1978. Sources: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (search ... African American History ...",
+            "position": 8
+          },
+          {
+            "date": "Feb 11, 2025",
+            "link": "https://www.facebook.com/groups/KirbyTX/posts/9233109076797002/",
+            "title": "Still looking for the owner of LoJax... Let's make it happen! - Facebook",
+            "snippet": "However, the LLC is registered to Michelle Barber. https://mycpa.cpa.state.tx. us/coa/coaSearchBtn https://www.bizapedia.com/tx ...",
+            "position": 9
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Franchise Search Results. 心. Franchise Tax Account Status. As of 09/13/2021 14:10:44 ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:24:10.232Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com JCI Roofing Company",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:11.474Z",
+      "data": {
+        "query": "site:dallascounty.org JCI Roofing Company civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "[PDF] statutory - Dallas County",
+            "snippet": "... Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL SECTION. Injury or Damage. CASES ON DOCKET. 454. Other. Eminent. Domain. Tax ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:12.871Z",
+      "data": {
+        "query": "site:collincountytx.gov JCI Roofing Company",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Aug 6, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/CC/20190805_2361/46934_Bid%20Packet.pdf",
+            "title": "[PDF] Collin County Public Works HVAC Replacement",
+            "snippet": "Roofing Supplier/Contractor shall approve roof penetration and ... Provide units as manufactured by Trane, Carrier, Daikin, JCI or Lennox.",
+            "position": 1
+          },
+          {
+            "date": "Jan 13, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250113_3042/57241_FY2025%20Disbursements%20for%201.13.25%20Court.pdf",
+            "title": "[PDF] 2025 COUNTY AUDITOR APPROVED DISBURSEMENTS",
+            "snippet": "FOR COURT DATE: JANUARY 13, 2025. THE ATTACHED CLAIMS AGAINST COLLIN COUNTY FOR THE. PERIOD ENDING: JANUARY 7, 2025.",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:14.028Z",
+      "data": {
+        "query": "site:dentoncounty.gov JCI Roofing Company",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=214",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $312.00. 20111018. CCD COUNSELING, PA. $93.00. 20111018. CCD COUNSELING, PA. $6,426.00. 20111004. CDW GOVERNMENT INC. $1,678.11. 20111011.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=329",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $1,792.50. 20181016. CCD COUNSELING, PA. $350.00. 20181009. CDW GOVERNMENT INC. $1,238.87. 20181023. CDW GOVERNMENT INC. $74.40. 20181030.",
+            "position": 2
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=309",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $1,212.00. 20180710. CBX HYDRAULICS, INC. $1,734.23 ... JOHNSON CONTROLS. $608.00. 20180724. JOSEPH F. ZELLMER, P.C.. $0.00. 20180717.",
+            "position": 3
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=240",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $197,000.00. 20080122. CCA ADULT HEALTH CENTER. $81.63 ... JOHNSON CONTROLS. $119.09. 20080103. JONES MCCLURE PUBLISHING. $76.95. 20080129.",
+            "position": 4
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=242",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20100126. 2L CONSTRUCTION, LLC. $31,273.50. 20100119. 4M YOUTH SERVICES, INC. $2,214.50. 20100112. 911 ETC, INC.",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:26.083Z",
+      "data": {
+        "name": "JCI Roofing Company",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(972) 245-4025",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/carrollton/profile/roofing-contractors/jci-roofing-company-0875-90012966",
+        "review_count": null,
+        "founding_date": "10/09/2003",
+        "complaint_count": null,
+        "accredited_since": "5/1/2004",
+        "years_in_business": 22,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:28.429Z",
+      "data": {
+        "cid": "15652550228354818235",
+        "name": "JCI Roofing Company",
+        "found": true,
+        "rating": 4.8,
+        "source": "serper",
+        "address": "3108 Old Denton Rd Apt 115, Carrollton, TX 75007",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "7 years ago",
+            "text": "James exceeded all expectations!  He worked with my claims adjuster to ensure that all our needed repairs were identified.  Then, his standards exceeded my hopes.  He stayed in touch and worked with our schedule to get all repairs completed.  We will recommend JCI Roofing to everyone.",
+            "author": "Teresa Durham",
+            "rating": 5
+          },
+          {
+            "date": "5 years ago",
+            "text": "I’m so grateful I found this company. James has done a couple of roofing jobs for me. He responded quickly to my inquiries, was absolutely right in his his assessment of an insurance issue and got the problems taken care of in a timely manner. I would recommend his company to anyone with roofing issues. In fact, I gave his contact info to my realtor who needs reliable professionals to refer his clients to if they have issues to take care of before selling.",
+            "author": "bette belanger",
+            "rating": 5
+          },
+          {
+            "date": "8 years ago",
+            "text": "I had a great experience working with James. It's nice to do business with a company where you can work directly with the owner. James handled a lot of the communication with my insurance company regarding payment and pricing. He took time to explain a type of repairs and adjustments he was making to my roof. I would highly recommend JCI Roofing if you need any type of roof repairs.",
+            "author": "Jeremiah Bridges",
+            "rating": 5
+          },
+          {
+            "date": "Edited 6 years ago",
+            "text": "The folks from JCI were awesome.  I called them after one of the big storms we had recently because i was certain i had roof damage.  I thought i was going to need a new roof.  James’ team came out the same day i called... inspected my roof and told me i did NOT need a new roof but instead a simple repair to the ridge... which they did right then.  I appreciated the fact that they were quick, priced well, and didn't sell me something i didn't need.  I give them my highest recommendation.",
+            "author": "PE",
+            "rating": 5
+          },
+          {
+            "date": "9 years ago",
+            "text": "I would very highly recommend JCI Roofing! James was very easy to work with. He and his crew got the shingle job done on my garage the day after I signed the agreement. Everything looks to be very high quality and we are very happy with it!",
+            "author": "Johnny Loewen",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "James and JCI Roofing did an outstanding job replacing our roof and patio cover after the hail storm. James is friendly, knowledgable and helpful with both the repair process and dealing with your insurance company. I can't recommend JCI enough to anyone who needs roofing work whether your insurance is involved or not. Honest and upfront pricing, no games, quick communication, all you could ask for as a customer.",
+            "author": "Zach Woosley",
+            "rating": 5
+          },
+          {
+            "date": "13 years ago",
+            "text": "We were having trouble getting what we should from the insurance company after a bad hail storm in Dallas. James came in and worked with the adjuster to insure we were getting everything we were supposed to get. he is polite, knowledgeable, and really seeks to help his customers. He and his men worked hard in July heat to get the roof done in two days. When they finished our yard looked better than when they started. We re very fond of James and thankful he was there in our time of need. If you want an HONEST roofer who cares, call JCI Roofing.",
+            "author": "Lauren Bristow",
+            "rating": 5
+          },
+          {
+            "date": "9 years ago",
+            "text": "We've not had the best of luck with other contractors for household work.  We knew nothing about roofs but James was recommended by some friends.  James came in, explained everything clearly, and worked with the insurance company to make sure we were getting everything we were supposed to get (our roof was pretty old before the hail storms). He and his men worked hard to get the roof done between forecast bad weather.  And then the new hail storm came. James still came out and checked out our roof again, and we were lucky that we weren't badly hit. We're very pleased with James and thankful that we found someone very reliable. If you want an HONEST roofer, we'd wholeheartedly recommend James and JCI Roofing.",
+            "author": "Timothy Whitehead",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 33,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Carrollton, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:50.873Z",
+      "data": {
+        "name": "JCI Roofing Company",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 245-4025",
+        "rating": 4.8,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "3108 Old Denton Rd Apt 115, Carrollton, TX 75007",
+        "reviews": [],
+        "website": "https://www.jciroofing.com/",
+        "maps_url": "https://www.google.com/maps/search/JCI%20Roofing%20Company%20Carrollton%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:50.875Z",
+      "data": {
+        "name": "JCI Roofing Company",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 245-4025",
+        "rating": 4.8,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "3108 Old Denton Rd Apt 115, Carrollton, TX 75007",
+        "reviews": [],
+        "website": "https://www.jciroofing.com/",
+        "maps_url": "https://www.google.com/maps/search/JCI%20Roofing%20Company%20Carrollton%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:24:55.910Z",
+      "data": {
+        "found": true,
+        "rating": 4.7,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/jci-roofing-company-carrollton-2?adjust_creative=yahoo",
+        "review_count": 10
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:25:24.215Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T15:25:04Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22JCI%20Roofing%20Company%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=UOWRaabWCbKjptQPqJTNmQ4\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T15:25:14Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22JCI%20Roofing%20Company%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=WuWRaZXkDdOqptQP35uv4Qw\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "JCI Roofing Company",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

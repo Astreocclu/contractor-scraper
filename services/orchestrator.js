@@ -7,7 +7,7 @@
 
 const db = require('./db_pg');
 const { CollectionService } = require('./collection_service');
-const { AuditAgent, DialecticAuditAgent } = require('./audit_agent');
+const { AuditAgent, DialecticAuditAgent, CouncilAuditAgent } = require('./audit_agent');
 const { runDeepInvestigation } = require('./deep_investigation');
 
 // Logging helpers
@@ -209,6 +209,9 @@ async function runForensicAudit(contractorInput, options = {}) {
     if (mode === 'dialectic') {
       log('\n🎭 Using DIALECTIC mode (three-persona analysis)');
       agent = new DialecticAuditAgent(db, contractorId, contractor);
+    } else if (mode === 'council') {
+      log('\n🏛️ Using COUNCIL mode (real multi-LLM dialectic)');
+      agent = new CouncilAuditAgent(db, contractorId, contractor);
     } else {
       agent = new AuditAgent(db, contractorId, contractor);
     }

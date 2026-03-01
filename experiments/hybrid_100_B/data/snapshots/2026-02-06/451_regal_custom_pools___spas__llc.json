@@ -1,0 +1,796 @@
+{
+  "contractor_id": 451,
+  "business_name": "Regal Custom Pools & Spas, LLC",
+  "city": "Irving",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T22:06:28.757Z",
+  "sources": {
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:33:16.494Z",
+      "data": {
+        "error": "Command timed out after 300000ms: python3 /home/reid/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Regal Custom Pools & Spas, LLC",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:26:24.379Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2025. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:27:54.494Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Regal Custom Pools & Spas, LLC\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:25:06.027Z",
+      "data": {
+        "query": "site:yelp.com \"Regal Custom Pools & Spas, LLC\" \"Irving, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?cflt=poolservice&find_loc=Lewisville%2C+TX",
+            "title": "Top 10 Best Pool & Hot Tub Service Near Lewisville, Texas",
+            "rating": 4.3,
+            "snippet": "... irving , TX 76155. Established in 2015. Certified professionals. 8 Portfolio ... Regal Custom Pools & Spas, LLC. See all. Leslie's Pool Supplies - Pool ...Read more",
+            "position": 1,
+            "sitelinks": [
+              {
+                "link": "https://www.yelp.com/search?cflt=poolservice&find_loc=Lewisville,+TX#:~:text=Established%20in%202015,8%20Portfolio%20projects&text=Leslie's%20Pool%20Supplies",
+                "title": "Read more"
+              }
+            ],
+            "ratingCount": 970
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=premier+pools+%26+spas&find_loc=Dallas%2C+TX",
+            "title": "Premier Pools & Spas Dallas, TX",
+            "rating": 3.3,
+            "snippet": "Regal Custom Pools & Spas, LLC. See all. First Class Pools & Spas ... Irving, TX · Lewisville, TX · Mansfield, TX · McKinney, TX · Mesquite, TX · Plano, TX.Read more",
+            "position": 2,
+            "sitelinks": [
+              {
+                "link": "https://m.yelp.com/search?find_desc=premier+pools+%26+spas&find_loc=Dallas,+TX#:~:text=First%20Class%20Pools%20%26%20Spas&text=Irving%2C%20TX,Lewisville%2C%20TX",
+                "title": "Read more"
+              }
+            ],
+            "ratingCount": 663
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Premier+Pools+%26+Spas&find_loc=Fort+Worth%2C+TX",
+            "title": "Premier Pools & Spas Fort Worth, TX",
+            "rating": 3.3,
+            "snippet": "Regal Custom Pools & Spas, LLC. See all. Crystal Clear Custom Pools - Premier ... Irving, TX · Keller, TX · Mansfield, TX · North Richland Hills, TX · Saginaw ...Read more",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://www.yelp.com/search?find_desc=Premier+Pools+%26+Spas&find_loc=Fort+Worth,+TX#:~:text=Crystal%20Clear%20Custom%20Pools&text=Show%20more",
+                "title": "Read more"
+              }
+            ],
+            "ratingCount": 531
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Salt+Water+Pool&find_loc=Lewisville%2C+TX",
+            "title": "TOP 10 BEST Salt Water Pool in Lewisville, TX",
+            "rating": 3.8,
+            "snippet": "Regal Custom Pools & Spas, LLC. See all. jj pools & patios - Salt Water ... Irving, TX · McKinney, TX · Plano, TX · Southlake, TX · The Colony, TX. Neighborhoods.Read more",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://www.yelp.com/search?find_desc=Salt+Water+Pool&find_loc=Lewisville,+TX#:~:text=jj%20pools%20%26%20patios&text=Irving%2C%20TX,Neighborhoods",
+                "title": "Read more"
+              }
+            ],
+            "ratingCount": 2455
+          }
+        ]
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:27:46.770Z",
+      "data": {
+        "url": null,
+        "name": "Regal Custom Pools & Spas, LLC",
+        "site": "angi.com",
+        "error": null,
+        "found": true,
+        "rating": null,
+        "source": "serp_angi",
+        "confidence": "unknown",
+        "matched_name": null,
+        "review_count": 972
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:27:54.037Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "regalpools.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:25:42.619Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2025 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:25:46.096Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2025"
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:27:56.943Z",
+      "data": {
+        "found": false,
+        "query": "\"Regal Custom Pools & Spas, LLC\" Irving lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:25:49.244Z",
+      "data": {
+        "query": "Regal Custom Pools & Spas, LLC Irving site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:26:01.570Z",
+      "data": "Regal Custom Pools & Spas, LLC Irving review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Shorts New Pool Plaster Issue⁉️❌🚫 #custom #construction #regalpoolshouston #plaster #pool #outdoors #yt No views New Lazy River Pool 💯 🤯🥶#yt#shorts #outdoors #custom #construction #regalpoolshouston#outdoors #ytshorts No views Emplaste Único de #pool #1😎💪 #custom #construction #outdoors #regalpoolshouston #yt #plaster 2.6K views New Big Structure😎, Big Problems🥴❌ #custom #construction #regalpoolshouston #outdoors #pool #yt 785 views Brushing Your Pool Matters‼️⚠️🚨#custom #construction #regalpoolshouston #outdoors #pool #yt #brush 627 views Show more Show less Shorts Team Work Makes The Dream Work PT1💯🤝 #custom #construction #regalpoolshouston #outdoors #yt #pool 751 views Pool Problems & Solutions PT1🥴🤯 #custom #construction #regalpoolshouston #outdoors #pool #yt 733 views Custom #pool Plaster A-1😎💪 #custom #construction #regalpoolshouston #outdoors #luxury #yt 2.4K views INSANE REBAR PROCESS‼️😎 #custom #construction #regalpoolshouston #pool #outdoors #yt #luxury #rebar 1.1K views The Beginning of the End‼️😢 #custom #construction #regalpoolshouston #outdoors #pool #yt #ytshorts 728 views Show more Show less People also watched 1:32 1:32 Now playing Houston Texas Swimming Pool Regal Pools Regal Pools • • 284 views 7 months ago Regal Pools Regal Pools Houston Texas Swimming Pool Swimming Pool Ready to transform your yard?? 🖥️ Book a free design consultation with our ... Houston Texas Swimming Pool Swimming Pool Ready to transform your yard?? 🖥️ Book a free design consultation with our ... From the video description 1:29 1:29 Now playing Design & Build: Pool, Patio, Pavilion, Fireplace, Landscape Lighting, and more - Property Showcase Absolute Landscapes Absolute Landscapes • • 592 views 2 years ago Absolute Landscapes Absolute Landscapes Join our owner, Matt Sabine, for a before & after overview of one of our design / build projects. Step out of your home onto ... Join our owner, Matt Sabine, for a before & after overview of one of our design / build projects. Step out of your home onto ... From the video description 4K 8:40 8:40 Now playing How to ACTUALLY FIND Leaks in Pool Liner - DON'T DYE YOUR WHOLE POOL!!! Neal O'Russa Neal O'Russa • • 414K views 4 years ago Neal O'Russa Neal O'Russa Get the leak detection kit here: https://amzn.to/3aa75Md This is the glue i use for patches: https://amzn.to/3Q8Zuhs Listen to end of ... Get the leak detection kit here: https://amzn.to/3aa75Md This is the glue i use for patches: https://amzn.to/3Q8Zuhs Listen to end of ... From the video description 3 moments Snorkel Goggles | The Liner Is Loose at the Corner | Do Not Dump a Gallon of Dye in Your Pool 3 auto-generated moments in this video 3 moments Snorkel Goggles Snorkel Goggles 0:28 Snorkel Goggles 0:28 The Liner Is Loose at the Corner The Liner Is Loose at the Corner 4:23 The Liner Is Loose at the Corner 4:23 Do Not Dump a Gallon of Dye in Your Pool Do Not Dump a Gallon of Dye in Your Pool 8:32 Do Not Dump a Gallon of Dye in Your Pool 8:32 5:47 5:47 Now playing 3 New Swimming Pool Upgrades You Should AVOID! Swimming Pool Steve Swimming Pool Steve • • 116K views 2 years ago Swimming Pool Steve Swimming Pool Steve From https://www.swimmingpoolsteve.com/pages/pool-plan.html this video talks about new swimming pool installations and which ... From https://www.swimmingpoolsteve.com/pages/pool-plan.html this video talks about new swimming pool installations and which ... From the video description Summary This video from Swimming Pool Steve reviews three common, costly swimming pool upgrades. The expert explains potential hidden costs and maintenance issues associated with each. Learn which upgrades might be best avoided for your new pool. AI-generated video summary Quality and accuracy may vary. Summary This video from Swimming Pool Steve reviews three common, costly swimming pool upgrades. The expert explains potential hidden costs and maintenance issues associated with each. Learn which upgrades might be best avoided for your new pool. + 6 more Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:26:16.359Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Regal%20Custom%20Pools%20%26%20Spas%2C%20LLC&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Regal% 20Custom% 20Pools% 26% 20Spas% 20LLC&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Regal% 20Custom% 20Pools% 20% 26% 20Spas% 2C% 20LLC&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search"
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              },
+              {
+                "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+                "title": "Search Results Help"
+              },
+              {
+                "link": "https://enviro.epa.gov/facts/tri/ef-facilities/",
+                "title": "TRI Facility Report"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Regal% 20Pools% 20% 26% 20Spas% 2C% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Regal% 20Custom% 20Pools% 20% 26% 20Spas% 2C% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Regal% 20Custom% 20Pools% 20% 26% 20Spas% 2C% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Regal% 20Custom% 20Pools% 20% 26% 20Spas% 2C% 20LLC&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= Regal% 20Pools% 20Spas% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search",
+            "title": "Enforcement Case Search | ECHO | US EPA",
+            "snippet": "Enforcement Case Search · Case Identifiers · Facility Location · Case Attributes · Case Milestones and Dates · Enforcement Case Outcomes/Settlements.",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= Regal% 20Custom% 20Pools% 20% 26% 20Spas% 20LLC&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:26:02.616Z",
+      "data": {
+        "query": "site:nextdoor.com Regal Custom Pools & Spas, LLC Irving",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:26:20.178Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2025 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents December Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2025 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:27:55.394Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Regal Custom Pools & Spas, LLC\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:26:31.191Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Regal Custom Pools & Spas, LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:27:54.903Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Regal Custom Pools & Spas, LLC\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:26:33.208Z",
+      "data": {
+        "query": "site:apps.tarrantcounty.com Regal Custom Pools & Spas, LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:26:34.254Z",
+      "data": {
+        "query": "site:dallascounty.org Regal Custom Pools & Spas, LLC civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:26:35.170Z",
+      "data": {
+        "query": "site:collincountytx.gov Regal Custom Pools & Spas, LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:26:36.072Z",
+      "data": {
+        "query": "site:dentoncounty.gov Regal Custom Pools & Spas, LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:26:40.956Z",
+      "data": "Pool Company in Plano, TX | Regal Custom Pools & Spas, LLC Skip to Content Pool Remodeling Services In North Texas FAQ Our Blog Reviews Call Us Today! 972-441-7335 Home About Us Why Choose Us FAQ Videos Pool Services Pool Repair Pool Pump Repair Pool Heater Repair Pool Filter Repair Pool Remodeling Pool Replastering Pool Maintenance Pool Cleaning Chemicals & Pricing Fountain Installation Fountain Cleaning & Repair Swimming Pool Electrical Leak Detection Pool Plumbing Systems Outdoor Living Spaces Hot Tub & Spa Installation Areas We Serve Carrollton Pool Remodeling Pool Maintenance Denton Flower Mound Frisco Pool Remodeling Pool Maintenance Irving Pool Remodeling Pool Maintenance Lewisville Highland Park Highland Village Lantana North Dallas Coppell The Colony Video gallery Photo Gallery Contact Us Close Search Home About Us Main Menu Why Choose Us FAQ Videos FAQ Pool Services Main Menu Pool Repair Pool Pump Repair Pool Heater Repair Pool Filter Repair Pool Remodeling Pool Replastering Pool Maintenance Pool Cleaning Chemicals & Pricing Fountain Installation Fountain Cleaning & Repair Swimming Pool Electrical Leak Detection Pool Plumbing Systems Outdoor Living Spaces Hot Tub & Spa Installation Areas We Serve Main Menu Carrollton Pool Remodeling Pool Maintenance Denton Flower Mound Frisco Pool Remodeling Pool Maintenance Irving Pool Remodeling Pool Maintenance Lewisville Highland Park Highland Village Lantana North Dallas Coppell The Colony Our Blog Video gallery Photo Gallery Reviews Contact Us Contact Us Call Us Today! Follow Us Top Family Values & Professional Service Guaranteed Creating Outdoor Experiences Like No Other Since 1977 With over 40 years of dedicated service, we stand as one of the oldest and most trusted names in the community. Choose Majestic Quality Pools for an experience that transcends the ordinary, leaving you with a poolside paradise beyond your wildest dreams. Request Service Pool Company in Plano, TX Majestic Quality Pools in North Texas Choose Regal Custom Pools & Spas, LLC for pool designs and solutions of the finest quality! We take pride in our reputation for excellence and the satisfaction we deliver to every customer, every time. Our pool service company in Plano will fulfill your pool cleaning , pool remodeling , pool plumbing , and pool maintenance needs with the utmost care and efficiency. Our services not only ensure the functionality of your pool but also enhance its aesthetic appeal. We work with top-quality materials and state-of-the-art techniques to create swimming pools that stand the test of time. Each project is tailored to meet our clients' unique vision, ensuring your pool becomes a stunning centerpiece in your outdoor living space. Give us a call at (972) 441-7335 or message us online to learn more about our pool services in Plano, TX. Proudly serving North Texas , Regal Custom Pools & Spas, LLC understands the local conditions and regulations that influence pool maintenance and enjoyment. Given Plano's unique climate with its warm summers and occasional cold spells, our team ensures that every pool is built or updated to withstand these conditions while providing year-round enjoyment. Our deep local knowledge allows us to anticipate challenges specific to the region, optimizing our services for the best results. Understanding Local Pool Regulations in Plano, TX In Plano, pool construction and maintenance must adhere to specific local codes and regulations to ensure safety and compliance. These regulations cover various aspects such as fencing, safety barriers, and drainage requirements, aimed at preventing accidents and promoting hygienic standards. At Regal Custom Pools & Spas, LLC, we are well-versed in all local compliance standards, ensuring your pool project meets requirements from inception to completion. We work closely with the local authorities, streamlining the permit process and alleviating any potential legal hurdles, so you can focus on enjoying your new pool seamlessly. Key Local Regulations: Safety Barriers: All pools must be enclosed by a fence at least four feet high, with locking gates to help prevent unauthorized access. Drainage Systems: Proper drainage should be incorporated to manage water runoff, protecting the surrounding landscape and helping to prevent flooding. Optimizing Your Pool's Performance in Plano's Climate Plano's climate presents unique challenges for maintaining the optimal performance of your pool. High temperatures and variable seasonal conditions require a strategic approach to pool maintenance. At Regal Custom Pools & Spas, LLC, our services are tailored to adapt to these climatic challenges effectively. We prioritize regular inspections and maintenance designed to help prevent common issues such as algae growth and equipment malfunctions. Elevate your pool's performance by considering environmentally friendly options like solar heating systems and automated covers that minimize energy use and water evaporation. These solutions not only enhance your pool's efficiency but also align with Plano's sustainability initiatives. With our guidance, you can transform your pool into a sustainable feature that integrates seamlessly with your outdoor environment while preserving natural resources and reducing costs. We strive to create an outdoor living experience beyond your wildest dreams, and our professionals are licensed to do just that in cities across Texas. Based in Plano, we extend our services to residences in Lewisville , Frisco , Irving , and the surrounding areas throughout North Texas. As one of the oldest pool companies in the area , our team has proudly served the community for more than 40 years. Give us a call at (972) 441-7335 or message us online to learn more about our pool services in Plano, TX. Why Regular Pool Maintenance Matters in Plano Given the hot and often unpredictable climate of Plano, regular pool maintenance is essential to keep your pool safe and enjoyable year-round. High temperatures can lead to a higher rate of evaporation, affecting your pool’s water levels and chemical balance. Regular cleaning and chemical checks prevent algae growth and ensure the water remains crystal clear. Moreover, routine inspections can identify minor issues before they become costly repairs , saving you time and money in the long run. At Regal Custom Pools & Spas, LLC, we offer customizable maintenance plans tailored to meet the unique needs of our clients. Our knowledgeable team understands the specific demands of pools in the Plano area, ensuring that your pool remains a luxurious oasis, regardless of the season. Consistent maintenance not only enhances the longevity of your pool but also ensures the safety and comfort of your family and guests. Key benefits of regular pool maintenance in Plano include: Improved water quality: Ongoing testing and treatment help maintain balanced water chemistry, which supports swimmer comfort and protects pool surfaces. Reduced repair costs: Catching worn seals, minor leaks, or equipment strain early can prevent more extensive damage to pumps, filters, and heaters. Enhanced safety and hygiene: Routine skimming, vacuuming, and brushing reduce debris and contaminants, supporting a clean and inviting swimming environment. Better system efficiency: Clean filters and properly calibrated equipment use less energy, which can help manage utility bills during hot North Texas summers. Choosing the Right Pool Service Company in Plano Selecting a pool service company is a significant decision, because the quality of ongoing care directly affects how long your pool will last and how much you enjoy it. Homeowners in Plano often balance cost, reliability, and communication when deciding who to trust with their backyard investment. When you work with a locally rooted team like Regal Custom Pools & Spas, LLC, you gain the benefit of decades of experience in North Texas soil conditions, water quality, and weather patterns, all of which influence how your pool should be maintained. As you compare options, look at more than just the initial quote. Ask whether the pool company offers clear maintenance plans, uses well-established suppliers, and has long-term relationships with customers in neighborhoods throughout Plano and nearby cities such as Frisco and Allen. It is also helpful to understand who will be on your property each visit and how they communicate about needed repairs, seasonal start-ups, and winter preparation. By choosing a company that provides transparent recommendations and consistent scheduling, you can feel more confident that your pool will be ready whenever your family wants to swim. Comprehensive Pool Remodeling & Design Services in Plano Transforming your existing pool to match your vision or starting from scratch with a new design can greatly enhance your outdoor space. At Regal Custom Pools & Spas, LLC, we provide comprehensive remodeling and design services that align with your lifestyle and aesthetic preferences. Whether it’s adding modern features like LED lighting or water features, updating the tiles and coping, or reconfiguring the layout for improved functionality, our team is equipped to bring your ideas to life. Utilizing advanced design tools and tapping into our network of skilled craftsmen, we ensure each remodeling project is executed with precision and care. We prioritize clear communication and collaboration, working closely with you from concept to completion to create a pool area that not only meets but exceeds your expectations. With our knowledge of local design trends and considerations, your revamped pool will seamlessly integrate with the beauty of the Plano landscape. Popular upgrades for Plano pool remodels include: Energy-efficient equipment: Modern variable-speed pumps, LED lights, and updated heaters can reduce energy consumption while improving performance. Updated surfaces and coping: New plaster, pebble finishes, or tile can refresh the look of your pool and better complement your patio and landscaping. Enhanced outdoor living: Integrated seating areas, tanning ledges, and water features can make your pool more functional for gatherings and relaxation. Improved accessibility: Steps, handrails, and gentle entries can make it easier and more comfortable for all ages to enjoy the water. Frequently Asked Questions About Pool Services in Plano, TX What Are the Benefits of Hiring a Local Pool Service Company? Hiring a local pool company such as Regal Custom Pools & Spas, LLC offers numerous benefits, including familiarity with the area’s specific pool needs and climate challenges. Local companies are more accessible for on-site consultations and enjoy established relationships with regional suppliers, ensuring the timely availability of required materials. The convenience of working with a nearby service provider facilitates better communication and service response times, enhancing overall customer satisfaction. Moreover, being based within the community allows us to provide services with a personal touch that national companies often cannot match. Regal Custom Pools & Spas, LLC is attuned to local trends and customer preferences, adapting our services to provide the most relevant solutions. We are committed to maintaining strong community ties by supporting local events and organizations, further enriching our connection with clients. How Often Should I Schedule Pool Maintenance? Scheduling regular pool maintenance depends on several factors, including usage, season, and local climate conditions. Typically, weekly maintenance is recommended during the warmer months to address increased usage and temperature-related chemical imbalances. During the off-season, bi-weekly or monthly check-ups may suffice to keep your pool in pristine condition. Regular maintenance not only preserves the aesthetic appeal of your pool but also extends its lifespan by preventing damage from unchecked wear and tear. To accommodate various lifestyles and needs, Regal Custom Pools & Spas, LLC offers flexible scheduling options. Whether you prefer self-managed maintenance with occasional professional checks or full-service care, we provide packages that fit your schedule and budget. By staying proactive, you can avoid unexpected issues while ensuring your pool remains a place of relaxation and enjoyment. What Are Common Pool Problems in Plano? In Plano, common pool problems include high evaporation rates due to heat, calcium buildup from hard water, and the potential for algae growth during humid conditions. These issues can be mitigated with routine cleaning and specialized chemical treatments. Another prevalent challenge is the wear and tear on pool equipment caused by the fluctuating climate. Pumps, filters, and heaters may need more frequent checks to ensure they operate efficiently. At Regal Custom Pools & Spas, LLC, our maintenance services are designed to preemptively address these concerns, allowing you to enjoy uninterrupted pool fun. Understanding and anticipating these local issues demonstrates our commitment to delivering dependable and informed service. Can I Remodel My Existing Pool? Yes, remodeling your existing pool is entirely possible and can dramatically improve its appearance and functionality. From updating the aesthetic elements like tiles and decking to adding modern features such as energy-efficient pumps or automated systems, remodeling breathes new life into old pools. At Regal Custom Pools & Spas, LLC, our team guides you through every step of the remodel, ensuring the process aligns with both your vision and budget. The benefits of remodeling extend beyond aesthetics. Improving energy efficiency can significantly lower utility costs, while advanced filtration systems can reduce maintenance demands. Our team can also incorporate eco-friendly features to promote sustainable pool ownership. By upgrading your pool’s infrastructure, you preserve its value and enhance your overall outdoor living experience. How Does the Local Climate Affect My Pool? The local climate in Plano can significantly affect pool maintenance requirements. Hotter months demand more frequent water level and chemical adjustments due to evaporation, while occasional storms necessitate debris removal and equipment checks. Understanding these climatic impacts is crucial in maintaining a clean and safe pool. Emphasizing regular maintenance amidst these conditions helps prevent unexpected failures that could disrupt your pool use. Regal Custom Pools & Spas, LLC takes into account long-term weather patterns in North Texas to offer informed recommendations for optimal maintenance schedules. Our goal is to ensure that your pool remains a reliable and inviting retreat, no matter what the weather brings. What Should I Consider When Planning a New Pool Installation? When planning a new pool installation in Plano, several factors must be considered to ensure success and satisfaction. Begin by evaluating your property's space to determine the best pool size and design that complements your outdoor living area. It is also essential to consider the type of pool that best fits your lifestyle, whether it's a saltwater pool for reduced maintenance or a traditional chlorine pool. How Can I Extend My Pool Season in Plano? Extending your pool season in Plano involves a few smart strategies designed to maximize usability beyond the warmer months. Consider installing a pool heater or solar blanket to maintain optimal water temperature even as the temperature drops. These systems can effectively lengthen the use of your pool, providing you more opportunity to enjoy it throughout the year. Additionally, adding windbreaks or enclosures can insulate your pool area, offering a more controlled environment that is less susceptible to abrupt weather changes. By integrating these enhancements, your swimming pool becomes more inviting during cooler days, allowing you to fully utilize your investment. At Regal Custom Pools & Spas, LLC, we provide advice and installation for all these features, ensuring your pool remains a focal point in your backyard year-round. Give us a call at (972) 441-7335 or message us online to learn more about our pool services in Plano, TX. Our Expert Services Leak Detection Outdoor Living Spaces Plumbing Systems Pool Cleaning Pool Electrical Pool Maintenance Pool Remodeling Pool Repair Pools Fit for Royalty Pool services of majestic quality. Our Services Dive Into Our Expertise Have questions? We have answers. FAQs Paradise at Home Outdoor living at it's best. Get A Quote Pool Perfection We service so you can enjoy! Free Remodeling Estimates Looking to make an update? Let's work together! Custom Pools Designs We can make your backyard vision a reality. 40+ Years of Experience In the business of beautiful pools since 1977. Family Owned & Operated One of the oldest family operated swimming pool business in Dallas. About Us Rave Reviews From Happy Customers \"As you know I manage and do quality control for a high-end construction company, I know quality work.\" After seeing the way you run your business and the fabulous job you did for me on my pool all I can say is Regal pools is the only company I will recommend to my friends and clients. - R. Szabo \"Words can’t explain how I appreciate the quick and professional service in which I received.\" After discussing my needs and then your plans to correct my problems I felt confident you were the company for the task at hand. - R. Phillips \"Our pool looks beautiful and we will enjoy it even more!\" Thanks Regal Pools, Our pool looks beautiful. - Bea & Dan S. \"It’s nice to know I can count on you!\" Thanks again for your great work. - Marnie H. \"I will strongly recommend you to our family and friends.\" I will strongly recommend you to our family and friends. - V. Gonzales \"You have been a great help to us on our pool!\" Thanks, Regal Pools. - T. & P. Sullivan \"He goes beyond to help you out.\" He is professional. He is very trustworthy. - Pam U. \"Regal Pools, Thanks for the excellent job you did for us on our pool remodel.\" You had the answers and flexibility to keep the project on track and in our budget. - B. Barton View All Reviews Pool Professionals We're Buying What You're Selling! If you are a pool professional looking to sell a current route. We are interested! Connect with our team to discuss further details. Get In Touch Have Pool Remodeling, Maintenance, or Cleaning Needs In North Texas? We Proudly Serve Collin County, Dallas County, and surrounding communities. Contact Us Today! First Name Please enter your first name. Last Name Please enter your last name. Phone Please enter your phone number. This isn't a valid phone number. Email Please enter your email address. This isn't a valid email address. Address Please enter your address Are you a new customer? Yes, I am a potential new customer No, I'm a current existing customer I'm neither. Please make a selection. How can we help you? Please enter a message. By submitting, you agree to receive text messages from Regal Custom Pools & Spas, LLC at the number provided, including those related to your inquiry, follow-ups, and review requests, via automated technology. Consent is not a condition of purchase. Msg & data rates may apply. Msg frequency may vary. Reply STOP to cancel or HELP for assistance. Acceptable Use Policy Send Message You Name It, We Service It Contact 972-441-7335 Serving the North Texas Area Lewisville, TX 75057 Map Links Home About Us FAQ Pool Services Contact Us Follow Us License #: TDLR 486​​ © 2025 All Rights Reserved. Site Map Privacy Policy Site Search Opens in new window PDF Download Word Download Excel Download PowerPoint Download Document Download close carousel"
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:26:44.951Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:27:34.530Z",
+      "data": {
+        "name": "Regal Custom Pools & Spas, LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 441-7335",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "405 State Hwy 121 Building A Suite A250, Lewisville, TX 75057",
+        "reviews": [],
+        "website": "https://www.regalpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Regal%20Custom%20Pools%20%26%20Spas%2C%20LLC%20Irving%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:27:40.717Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/regal-custom-pools-and-spas-lewisville-2",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:27:52.903Z",
+      "data": {
+        "url": null,
+        "name": "Regal Custom Pools & Spas, LLC",
+        "site": "houzz.com",
+        "error": null,
+        "found": true,
+        "rating": null,
+        "source": "serp_houzz",
+        "confidence": "unknown",
+        "matched_name": null,
+        "review_count": 972
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:28:16.479Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:c98f:d45e:7347:4fa0\nTime: 2025-12-22T05:28:00Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Regal%20Custom%20Pools%20%26%20Spas%2C%20LLC%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=39ZIadGmHvahw8cP5NzDqQg\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0:c98f:d45e:7347:4fa0\nTime: 2025-12-22T05:28:11Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Regal%20Custom%20Pools%20%26%20Spas%2C%20LLC%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=6tZIaafeDa6GptQPoISKQA\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "Failed to execute 'querySelectorAll' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.\nre (pptr:internal:3:12826)\nIe (pptr:internal:3:13100)\npptr:evaluateHandle;PQueryHandler.queryOne%20(%2Fhome%2Freid%2Fcommand-center%2Ftesthome%2Fcontractor-auditor%2Fnode_modules%2Fpuppeteer-core%2Flib%2Fcjs%2Fpuppeteer%2Fcommon%2FQueryHandler.js%3A130%3A73):2:16",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Regal Custom Pools & Spas, LLC",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:27:56.040Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Regal Custom Pools & Spas, LLC\" Irving",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:33:17.329Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "REGAL CUSTOM POOLS & SPAS, LLC",
+        "taxpayer_number": "32065757489"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:33:17.331Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:26:32.231Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "sitelinks": [
+              {
+                "link": "https://comptroller.texas.gov/taxes/sales/",
+                "title": "Sales and Use Tax"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/",
+                "title": "Contact Us"
+              },
+              {
+                "link": "https://comptroller.texas.gov/taxes/file-pay/",
+                "title": "File and Pay"
+              },
+              {
+                "link": "https://comptroller.texas.gov/about/contact/locations.php",
+                "title": "Locations and Hours"
+              }
+            ],
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 8
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Information on this site is obtained from the most recent Public Information Report (PIR) processed by the Secretary of State (SOS).",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:27:02.143Z",
+      "data": {
+        "name": "Regal Custom Pools & Spas, LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 441-7335",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "405 State Hwy 121 Building A Suite A250, Lewisville, TX 75057",
+        "reviews": [
+          {
+            "date": "4 months ago",
+            "text": "Regal Custom Pools designed a grotto for me to mesh with my existing pool, and built it to match the landscaping.  Not an easy task when the pool wasn't really built for a grotto.  They are a great company, and the owner is actively involved and honest as honest gets.  If you need any pool services or pool landscaping, I can't recommend them enough.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Keely Wilson"
+          },
+          {
+            "date": "6 months ago",
+            "text": "We wanted to remodel our pool and move the hot tub from the middle of the pool to the end.  The original hot was quite large and constricted the middle of the pool.  Deleting it and moving it to the end would open up the entire pool surface.  I reached out to a few pool remodeling companies and they all told me it couldn't be done.  Might as well start from scratch.  However, when Regal Custom Pools came out for our meeting, the owner Mike Gajewski told me his team could make our vision a realit",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Eric Robbins"
+          },
+          {
+            "date": "4 months ago",
+            "text": "Our pool was 20+ years old and was in need of full renovation. After new coping, tile, plaster and a redesign of the spa I barely recognize it. It’s so nice it makes me wish I had done it earlier. I would definitely use Regal again.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Todd Noell"
+          },
+          {
+            "date": "6 months ago",
+            "text": "Mike and his team are great to deal with. They handle all my pool maintenance and weekly chemicals. My pool is in great shape. Pool water always seems perfect. They handle any other maintenance or repairs quickly and they treat their customers great.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Paul Brandt"
+          },
+          {
+            "date": "6 months ago",
+            "text": "Mike and the team are the best pool company I have seen in the DFW area.   Highly  recommended.  Always going the extra mile for the customer.   His team is attentive, very knowledgeable, always there when we need them.    If there was 10 stars I would rate them that!!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "James Coffin"
+          },
+          {
+            "date": "6 months ago",
+            "text": "Regal Pool is a first call pool & spa service. I have recommended them to several of my close friend and the work they do is exceptional.\nHighly recommend them!!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Rick Bureau"
+          },
+          {
+            "date": "6 months ago",
+            "text": "We have used Regal for 4 years for regular maintenance, and last year had them resurface and install new tile and coping.  They have provided excellent service.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Paul Mineart"
+          },
+          {
+            "date": "4 months ago",
+            "text": "Have used Regal Custom Pools a couple of times. Great, fast reliable service for anything pool related",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Skoldy"
+          },
+          {
+            "date": "6 years ago",
+            "text": "Loved working with Mike and his crews.  Everyone was prompt, professional and did an amazing job remodeling my pool.  I'm delighted in the outcome and can hardly wait for warm weather to be able to fully enjoy it.  I will always recommend Regal Pools for any pool remodels or installations.\n\nThank you Mike & team - great job!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Susan Tompkins"
+          },
+          {
+            "date": "6 years ago",
+            "text": "We contracted Regal Pools to transform our older pool and backyard into a cool place for our grown kids.  We turned our dive pool into a sports pool, added a 9 foot wide by 14 inches deep swim shelf for our grand kids, resurfaced and extended our pool deck, added a stone coping and re plastered the pool with a beautiful dark blue plaster.  Regal's team is very efficient, very polite and very good at what they do.  We turned our pool area into an oasis and I couldn't be happier with the job they ",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Cindy Wright"
+          },
+          {
+            "date": "9 months ago",
+            "text": "Highly recommend using this company. They have helped me so much, especially Logan. He is the best and knows how to help with every problem I have! Wouldn’t use anyone else!!",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Madi Hodges"
+          },
+          {
+            "date": "6 years ago",
+            "text": "Unbelievable service. All the crews were on time everyday that they promised to show up. They committed to be finished in eight weeks and the finished two weeks ahead of schedule. For once I got a contractor that did what he committed to. It was pleasure working with Rega Pools.",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Donald Horvath"
+          }
+        ],
+        "website": "https://www.regalpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Regal%20Custom%20Pools%20%26%20Spas%2C%20LLC%20Dallas%2C%20TX",
+        "categories": [],
+        "review_count": 15
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:27:34.514Z",
+      "data": {
+        "name": "Regal Custom Pools & Spas, LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 441-7335",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "405 State Hwy 121 Building A Suite A250, Lewisville, TX 75057",
+        "reviews": [],
+        "website": "https://www.regalpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Regal%20Custom%20Pools%20%26%20Spas%2C%20LLC%20Irving%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2025-12-22T05:27:56.536Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Regal Custom Pools & Spas, LLC\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2025-12-22T05:33:28.105Z",
+      "data": {
+        "cost": 0.0005241600000000001,
+        "summary": "The reviews are highly authentic in content, detailing specific, complex projects and praising the owner's involvement. The lack of any critical feedback and the perfect 5.0 rating from a small sample (15 reviews) is a minor concern, but not indicative of manipulation. The reviews read like genuine, satisfied customers.",
+        "confidence": "HIGH",
+        "analyzed_at": "2025-12-22T05:33:28.105Z",
+        "fake_signals": [
+          "All reviews are 5-star with no critical feedback",
+          "Low total review count (15)"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Reviews contain specific project details (grotto addition, hot tub relocation, full renovation)",
+          "Mention of owner/crew by name (Mike Gajewski)",
+          "Varied writing styles and specific customer scenarios",
+          "Emotionally authentic language expressing satisfaction"
+        ],
+        "fake_review_score": 10,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only significant rating source is Google, which shows a perfect 5.0. No contradictory ratings from other platforms are present."
+      }
+    }
+  }
+}

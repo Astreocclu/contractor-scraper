@@ -1,5 +1,15 @@
 from django.contrib import admin
-from .models import Vertical, Contractor, ContractorAudit, RedFlag, AuditTimeline
+from .models import (
+    Vertical,
+    Contractor,
+    ContractorAudit,
+    RedFlag,
+    AuditTimeline,
+    ContractorVerticalRating,
+    PairwiseComparison,
+    RatingHistory,
+    EvidenceEvent,
+)
 
 
 @admin.register(Vertical)
@@ -126,3 +136,34 @@ class AuditTimelineAdmin(admin.ModelAdmin):
     def event_short(self, obj):
         return obj.event[:60] + '...' if len(obj.event) > 60 else obj.event
     event_short.short_description = 'Event'
+
+
+@admin.register(ContractorVerticalRating)
+class ContractorVerticalRatingAdmin(admin.ModelAdmin):
+    list_display = ['contractor', 'vertical', 'rating_adj', 'uncertainty', 'comparisons_count', 'status', 'last_compared_at']
+    list_filter = ['vertical', 'status']
+    search_fields = ['contractor__business_name', 'contractor__city']
+
+
+@admin.register(PairwiseComparison)
+class PairwiseComparisonAdmin(admin.ModelAdmin):
+    list_display = ['vertical', 'contractor_a', 'contractor_b', 'winner', 'status', 'confidence', 'created_at']
+    list_filter = ['vertical', 'status']
+    search_fields = ['contractor_a__business_name', 'contractor_b__business_name']
+    readonly_fields = ['created_at']
+
+
+@admin.register(RatingHistory)
+class RatingHistoryAdmin(admin.ModelAdmin):
+    list_display = ['contractor_vertical_rating', 'rating_adj', 'uncertainty', 'comparisons_count', 'created_at']
+    list_filter = ['created_at']
+    search_fields = ['contractor_vertical_rating__contractor__business_name']
+    readonly_fields = ['created_at']
+
+
+@admin.register(EvidenceEvent)
+class EvidenceEventAdmin(admin.ModelAdmin):
+    list_display = ['contractor', 'vertical', 'event_type', 'severity', 'created_at']
+    list_filter = ['vertical', 'severity']
+    search_fields = ['contractor__business_name', 'event_type']
+    readonly_fields = ['created_at']

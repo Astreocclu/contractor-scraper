@@ -1,0 +1,125 @@
+{
+  "base_file": "experiments/pairwise_ab_100x5_compact_v1.jsonl",
+  "doublecheck_file": "experiments/pairwise_ab_100x5_codex_doublecheck_v1.jsonl",
+  "comparable_rows": 279,
+  "agreements": 193,
+  "disagreements": 86,
+  "codex_doublecheck": {
+    "confirmed": 76,
+    "flipped": 10,
+    "unresolved": 0
+  },
+  "final_policy": "agreement => keep; disagreement => codex if confirmed by swapped-order pass, else use doublecheck mapped winner",
+  "final_winner_source_counts": {
+    "agreement_rows": 193,
+    "codex_confirmed_rows": 76,
+    "doublecheck_flip_rows": 10
+  },
+  "net_changes": {
+    "versus_deepseek": 76,
+    "versus_codex_original": 10
+  },
+  "unstable_cases": [
+    {
+      "repeat": 1,
+      "pair": [
+        603,
+        581
+      ],
+      "ds": "B",
+      "codex_orig": "A",
+      "codex_doublecheck": "B"
+    },
+    {
+      "repeat": 1,
+      "pair": [
+        512,
+        6
+      ],
+      "ds": "A",
+      "codex_orig": "B",
+      "codex_doublecheck": "A"
+    },
+    {
+      "repeat": 1,
+      "pair": [
+        3088,
+        3162
+      ],
+      "ds": "TIE",
+      "codex_orig": "A",
+      "codex_doublecheck": "TIE"
+    },
+    {
+      "repeat": 1,
+      "pair": [
+        138,
+        89
+      ],
+      "ds": "B",
+      "codex_orig": "A",
+      "codex_doublecheck": "B"
+    },
+    {
+      "repeat": 2,
+      "pair": [
+        660,
+        8859
+      ],
+      "ds": "A",
+      "codex_orig": "B",
+      "codex_doublecheck": "A"
+    },
+    {
+      "repeat": 2,
+      "pair": [
+        2945,
+        724
+      ],
+      "ds": "B",
+      "codex_orig": "A",
+      "codex_doublecheck": "B"
+    },
+    {
+      "repeat": 2,
+      "pair": [
+        576,
+        563
+      ],
+      "ds": "B",
+      "codex_orig": "A",
+      "codex_doublecheck": "B"
+    },
+    {
+      "repeat": 3,
+      "pair": [
+        3088,
+        3162
+      ],
+      "ds": "TIE",
+      "codex_orig": "A",
+      "codex_doublecheck": "TIE"
+    },
+    {
+      "repeat": 3,
+      "pair": [
+        660,
+        738
+      ],
+      "ds": "A",
+      "codex_orig": "B",
+      "codex_doublecheck": "A"
+    },
+    {
+      "repeat": 3,
+      "pair": [
+        746,
+        128
+      ],
+      "ds": "B",
+      "codex_orig": "A",
+      "codex_doublecheck": "B"
+    }
+  ],
+  "generated_at": "2026-02-12T16:26:25.683Z"
+}

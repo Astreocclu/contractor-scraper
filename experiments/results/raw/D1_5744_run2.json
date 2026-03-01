@@ -1,0 +1,46 @@
+{
+  "variation": "D1",
+  "contractor_id": 5744,
+  "contractor_name": "AC Repair Garland",
+  "archetype": "middle_tier",
+  "expected_score": 50,
+  "run": 2,
+  "timestamp": "2026-01-20T19:17:32.817Z",
+  "success": true,
+  "trust_score": 65,
+  "risk_level": "MEDIUM",
+  "reasoning": "DeepSeek: 65, Gemini adjusted to: 65. Confirmed - no adjustment needed",
+  "red_flags": [
+    "Business identity confusion: Website shows 'AC Repair Garland' with Allen address, Google Maps shows 'Garland Heating & Air Conditioning' with Garland address",
+    "No verified state license or insurance documentation",
+    "Multiple business names/addresses without clear corporate registration"
+  ],
+  "cascade_trace": {
+    "deepseek": {
+      "trust_score": 65,
+      "risk_level": "MEDIUM",
+      "category_scores": {
+        "license": 10,
+        "reputation": 20,
+        "legal": 20,
+        "stability": 10,
+        "red_flag_deduction": 5
+      },
+      "reasoning": "The contractor has strong online reputation with authentic Google reviews (4.7/5, 635 reviews) and no BBB complaints, but lacks verified licensing/insurance documentation and shows business identity confusion with multiple names/addresses. While review analysis indicates authenticity and no major legal issues found, the inconsistent business identity and unverified licensing create moderate risk.",
+      "red_flags": [
+        "Business identity confusion: Website shows 'AC Repair Garland' with Allen address, Google Maps shows 'Garland Heating & Air Conditioning' with Garland address",
+        "No verified state license or insurance documentation",
+        "Multiple business names/addresses without clear corporate registration"
+      ]
+    },
+    "gemini": {
+      "original_score": 65,
+      "adjusted_score": 65,
+      "adjustment_reason": "Confirmed - no adjustment needed",
+      "final_trust_score": 65,
+      "risk_level": "MEDIUM"
+    }
+  },
+  "cost_usd": 0.0087068475,
+  "duration_ms": 12204
+}

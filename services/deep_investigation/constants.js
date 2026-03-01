@@ -52,11 +52,60 @@ const LLM_CONFIG = {
   },
   gemini: {
     base_url: 'https://generativelanguage.googleapis.com/v1beta/models',
-    model: 'gemini-2.5-flash',
-    max_tokens: 4000,  // Increased from 2000 - Gemini was truncating JSON
+    model: 'gemini-3-pro-preview',  // BANNED: gemini-2.5-flash
+    max_tokens: 8192,
     temperature: 0.1
   }
   // Note: Claude config removed - using Gemini Evaluator as third tier
+};
+
+// Multi-LLM Council Configuration
+// Each model plays a specific persona in the dialectic
+const COUNCIL_CONFIG = {
+  // Consumer Advocate - skeptical, finds reasons NOT to trust
+  // GPT-5-nano with chain-of-thought prompting
+  consumer_advocate: {
+    enabled: true,
+    provider: 'azure',
+    model: 'gpt-5-nano',
+    deployment: 'gpt-5-nano',
+    use_cot: true,  // Chain of thought prompting
+    max_tokens: 4000
+  },
+  // Fair Arbiter - charitable, finds reasons TO trust
+  // Gemini 3 Pro with thinking enabled
+  fair_arbiter: {
+    enabled: true,
+    provider: 'gemini',
+    model: 'gemini-3-pro-preview',  // BANNED: gemini-2.5-flash
+    temperature: 0.7,
+    max_tokens: 4000,
+    thinking: true
+  },
+  // Independent Scorer - objective methodology scorer
+  // DeepSeek R1 (reasoner) - NO CoT prompting, NO system prompt
+  independent_scorer: {
+    enabled: true,
+    provider: 'deepseek',
+    model: 'deepseek-reasoner',  // R1 with built-in reasoning
+    max_tokens: 4000
+    // Note: R1 ignores temperature, uses internal reasoning
+  },
+  // Judge - synthesizes all perspectives
+  // Claude Haiku 4.5 with extended thinking
+  judge: {
+    enabled: true,
+    provider: 'claude',
+    model: 'claude-haiku-4-5-20251001',  // Correct model ID
+    max_tokens: 8000,
+    thinking: {
+      type: 'enabled',
+      budget_tokens: 4000
+    }
+  },
+  // Placeholders for future models
+  llama: { enabled: false, provider: 'together', model: 'llama-3.1-70b' },
+  mistral: { enabled: false, provider: 'mistral', model: 'mistral-large' }
 };
 
 // Flag severity levels
@@ -77,5 +126,6 @@ module.exports = {
   TIMELINE_CLAIM_PATTERNS,
   SERPER_CONFIG,
   LLM_CONFIG,
+  COUNCIL_CONFIG,
   SEVERITY
 };

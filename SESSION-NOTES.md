@@ -11,28 +11,28 @@
 ### Problem Identified
 CLAUDE.md documentation index was incomplete:
 - Missing `docs/plans/` directory
-- Missing `/home/reid/command-center/exports/` directory
+- Missing `/home/astre/command-center/exports/` directory
 - No instructions to check recent work first
 - Gemini startup prompt didn't include recent plans/exports
 
 ### Key Documents Found
 | Document | Location | Contents |
 |----------|----------|----------|
-| Variance session | `/home/reid/command-center/exports/2025-12-14-variance-session.md` | Temperature 0 fix, lien direction fix, full session transcript |
-| Standardize collection plan | `docs/plans/2025-12-13-standardize-collection-remove-websearch.md` | Plan to remove web search from DeepSeek agents |
+| Variance session | `/home/astre/command-center/exports/2025-12-14-variance-session.md` | Temperature 0 fix, lien direction fix, full session transcript |
+| Standardize collection plan | `docs/archive/plans/2025-12-13-standardize-collection-remove-websearch.md` | Plan to remove web search from DeepSeek agents |
 
 ### Fixes Applied
 Updated `CLAUDE.md`:
 
 1. **Documentation Index** - Added "Recent Work" section at top:
    - `docs/plans/` for implementation plans
-   - `/home/reid/command-center/exports/` for session exports
+   - `/home/astre/command-center/exports/` for session exports
    - Naming convention: `YYYY-MM-DD-description.md`
    - Commands to find recent docs by date
 
 2. **Startup Protocol** - Gemini now reads recent work FIRST:
    - `docs/plans/*.md`
-   - `/home/reid/command-center/exports/*.md`
+   - `/home/astre/command-center/exports/*.md`
    - `SESSION-NOTES.md`
    - Output item #1: "What was worked on in the last 48 hours"
 
@@ -43,7 +43,7 @@ Always check `docs/plans/` and `command-center/exports/` for recent work before 
 
 ## Session: 2025-12-14 - Variance & Lien Direction Fixes
 
-**Full session transcript:** `/home/reid/command-center/exports/2025-12-14-variance-session.md`
+**Full session transcript:** `/home/astre/command-center/exports/2025-12-14-variance-session.md`
 
 ### Summary
 | Fix | Before | After |
@@ -82,7 +82,7 @@ Always check `docs/plans/` and `command-center/exports/` for recent work before 
 
 **Phase 2: Implementation Plan via Gemini Collaboration**
 - Used `/geminiplan` for iterative planning (3 rounds to 95% confidence)
-- Created detailed plan: `docs/plans/2025-12-12-scale-to-1000-audits.md`
+- Created detailed plan: `docs/archive/plans/2025-12-12-scale-to-1000-audits.md`
 
 **Phase 3: Subagent-Driven Implementation (8 tasks completed)**
 
@@ -114,7 +114,7 @@ Always check `docs/plans/` and `command-center/exports/` for recent work before 
 - `services/cost_tracker.js` - API cost tracking (57 lines)
 - `services/rate_limiter.js` - Token bucket rate limiter (56 lines)
 - `batch_audit_runner.js` - Batch orchestration (395 lines)
-- `docs/plans/2025-12-12-scale-to-1000-audits.md` - Implementation plan
+- `docs/archive/plans/2025-12-12-scale-to-1000-audits.md` - Implementation plan
 
 **Modified Files:**
 - `services/audit_agent_v2.js` - Line 187: Changed threshold `<= 80` to `< 80`
@@ -168,12 +168,12 @@ Always check `docs/plans/` and `command-center/exports/` for recent work before 
 - `services/async_command.js` - Async subprocess wrapper
 - `services/review_analyzer.js` - DeepSeek review analysis with JSON fallback
 - `batch_progress.json` - State persistence file
-- `docs/plans/2025-12-12-scale-to-1000-audits.md` - Full implementation plan
+- `docs/archive/plans/2025-12-12-scale-to-1000-audits.md` - Full implementation plan
 
 ### Relevant Commands
 ```bash
 # Run batch audit (sequential)
-cd /home/reid/testhome/contractor-auditor
+cd /home/astre/command-center/src/greenlit/auditor
 export $(cat .env | grep -v "^#" | xargs)
 node batch_audit_runner.js --reset --limit 10
 
@@ -209,7 +209,7 @@ node run_audit.js --id 123
 
 **Phase 2: Tracerfy Integration (NEW)**
 - Created `scripts/tracerfy_enrich.py` - full skip tracing integration
-- Ported address normalization from permit-scraper's `score_leads.py`:
+- Ported address normalization from Collections' `score_leads.py`:
   - Extracts embedded city/state/zip from addresses
   - Standardizes street suffixes (Street→ST, Avenue→AVE)
   - Standardizes directionals (North→N, etc.)

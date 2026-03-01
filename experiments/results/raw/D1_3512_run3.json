@@ -1,0 +1,38 @@
+{
+  "variation": "D1",
+  "contractor_id": 3512,
+  "contractor_name": "1-Tom-Plumber",
+  "archetype": "new_promising",
+  "expected_score": 75,
+  "run": 3,
+  "timestamp": "2026-01-20T19:18:17.158Z",
+  "success": true,
+  "trust_score": 85,
+  "risk_level": "LOW",
+  "reasoning": "DeepSeek: 85, Gemini adjusted to: 85. Confirmed - no adjustment needed",
+  "red_flags": [],
+  "cascade_trace": {
+    "deepseek": {
+      "trust_score": 85,
+      "risk_level": "LOW",
+      "category_scores": {
+        "license": 15,
+        "reputation": 25,
+        "legal": 25,
+        "stability": 10,
+        "red_flag_deduction": 0
+      },
+      "reasoning": "1-Tom-Plumber demonstrates strong online reputation with authentic 5-star Google reviews and 4.9 Yelp rating, no legal/financial issues found, and claims proper licensing/insurance. Business stability is moderate with some franchise presence but limited local establishment history. No red flags for fake reviews or fraud detected.",
+      "red_flags": []
+    },
+    "gemini": {
+      "original_score": 85,
+      "adjusted_score": 85,
+      "adjustment_reason": "Confirmed - no adjustment needed",
+      "final_trust_score": 85,
+      "risk_level": "LOW"
+    }
+  },
+  "cost_usd": 0.00817821125,
+  "duration_ms": 8530
+}

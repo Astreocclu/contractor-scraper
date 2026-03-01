@@ -1,0 +1,37 @@
+{
+  "variation": "C1",
+  "contractor_id": 7691,
+  "contractor_name": "Cowboy Hat Capital Foundation Repair Co",
+  "archetype": "known_bad",
+  "expected_score": 20,
+  "run": 1,
+  "timestamp": "2026-01-20T19:07:31.623Z",
+  "success": true,
+  "trust_score": 15,
+  "risk_level": "CRITICAL",
+  "reasoning": "This appears to be a fraudulent or hijacked business listing where a foundation repair company profile displays reviews exclusively for auto repair services. The complete mismatch between the business name/category and all review content indicates a fake or compromised listing.",
+  "red_flags": [
+    "Hijacked or fake business listing - all reviews for different business type",
+    "No legitimate foundation repair reviews found",
+    "Significant service category/review content discrepancy"
+  ],
+  "raw_response": {
+    "trust_score": 15,
+    "risk_level": "CRITICAL",
+    "category_scores": {
+      "license": 0,
+      "reputation": 0,
+      "legal": 10,
+      "stability": 5,
+      "red_flag_deduction": 15
+    },
+    "reasoning": "This appears to be a fraudulent or hijacked business listing where a foundation repair company profile displays reviews exclusively for auto repair services. The complete mismatch between the business name/category and all review content indicates a fake or compromised listing.",
+    "red_flags": [
+      "Hijacked or fake business listing - all reviews for different business type",
+      "No legitimate foundation repair reviews found",
+      "Significant service category/review content discrepancy"
+    ]
+  },
+  "cost_usd": 0.0505005,
+  "duration_ms": 5131
+}

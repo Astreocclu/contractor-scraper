@@ -1,0 +1,39 @@
+{
+  "variation": "A1",
+  "contractor_id": 7691,
+  "contractor_name": "Cowboy Hat Capital Foundation Repair Co",
+  "archetype": "known_bad",
+  "expected_score": 20,
+  "run": 1,
+  "timestamp": "2026-01-20T18:49:43.670Z",
+  "success": true,
+  "trust_score": 20,
+  "risk_level": "CRITICAL",
+  "reasoning": "This contractor shows severe red flags including a likely fraudulent or hijacked Google Maps listing where all reviews are for auto repair work, not foundation repair. No business registration, licensing, or insurance verification exists, and the business appears to be operating under false pretenses with no legitimate online presence for foundation repair services.",
+  "red_flags": [
+    "Google Maps listing appears hijacked/fraudulent (reviews for auto repair, not foundation repair)",
+    "No business registration or licensing found",
+    "No legitimate foundation repair reviews or presence",
+    "Business name/service mismatch indicates potential scam operation"
+  ],
+  "raw_response": {
+    "trust_score": 20,
+    "risk_level": "CRITICAL",
+    "category_scores": {
+      "license": 0,
+      "reputation": 5,
+      "legal": 10,
+      "stability": 0,
+      "red_flag_deduction": 15
+    },
+    "reasoning": "This contractor shows severe red flags including a likely fraudulent or hijacked Google Maps listing where all reviews are for auto repair work, not foundation repair. No business registration, licensing, or insurance verification exists, and the business appears to be operating under false pretenses with no legitimate online presence for foundation repair services.",
+    "red_flags": [
+      "Google Maps listing appears hijacked/fraudulent (reviews for auto repair, not foundation repair)",
+      "No business registration or licensing found",
+      "No legitimate foundation repair reviews or presence",
+      "Business name/service mismatch indicates potential scam operation"
+    ]
+  },
+  "cost_usd": 0.002294215,
+  "duration_ms": 7150
+}

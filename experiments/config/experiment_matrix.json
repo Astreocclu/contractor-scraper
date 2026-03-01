@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "created": "2026-01-19",
+  "contractors": [
+    { "id": 8958, "name": "Splash Pools", "archetype": "gold_standard", "expected": 78 },
+    { "id": 7691, "name": "Cowboy Hat Capital", "archetype": "known_bad", "expected": 20 },
+    { "id": 5744, "name": "AC Repair Garland", "archetype": "middle_tier", "expected": 50 },
+    { "id": 3512, "name": "1-Tom-Plumber", "archetype": "new_promising", "expected": 75 },
+    { "id": 656, "name": "Bonnie & Clydes", "archetype": "established_sketchy", "expected": 35 }
+  ],
+  "variations": [
+    { "id": "A1", "model": "deepseek", "style": "rubric", "mode": "single", "description": "DeepSeek single agent with weighted rubric" },
+    { "id": "A2", "model": "deepseek", "style": "holistic", "mode": "single", "description": "DeepSeek single agent, no rubric" },
+    { "id": "A3", "model": "deepseek", "style": "philosophy", "mode": "single", "description": "DeepSeek as consumer advocate" },
+    { "id": "B1", "model": "deepseek", "style": "rubric", "mode": "council_median", "description": "3x DeepSeek with rubric, median" },
+    { "id": "B2", "model": "deepseek", "style": "dialectic", "mode": "dialectic", "description": "Dialectic 3-persona (existing)" },
+    { "id": "B3", "model": "deepseek", "style": "holistic", "mode": "council_average", "description": "3x DeepSeek holistic, average" },
+    { "id": "C1", "model": "claude", "style": "rubric", "mode": "single", "description": "Claude SDK with rubric" },
+    { "id": "C2", "model": "claude", "style": "holistic", "mode": "single", "description": "Claude SDK no rubric" },
+    { "id": "C3", "model": "claude", "style": "philosophy", "mode": "single", "description": "Claude as hiring advisor" },
+    { "id": "D1", "model": "cascade", "style": "rubric", "mode": "cascade", "description": "DeepSeek→Gemini review" },
+    { "id": "D2", "model": "mixed", "style": "holistic", "mode": "mixed_council", "description": "DeepSeek+Claude+Gemini" },
+    { "id": "D3", "model": "deepseek", "style": "pairwise", "mode": "head_to_head", "description": "Pairwise comparisons" }
+  ],
+  "runs_per_variation": 5,
+  "settings": {
+    "temperature": 0,
+    "seed": 42,
+    "parallel_contractors": true,
+    "sequential_variations": true
+  }
+}

@@ -1668,7 +1668,7 @@ git commit -m "feat: add --deep flag to CLI for deep investigation mode"
 
 Run:
 ```bash
-cd /home/astre/command-center/testhome/contractor-auditor
+cd /home/astre/command-center/src/greenlit/auditor
 source venv/bin/activate && set -a && . ./.env && set +a
 node bin/run_audit.js --id 1524 --deep --investigation-mode minimal
 ```

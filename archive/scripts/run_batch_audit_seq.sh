@@ -2,7 +2,7 @@
 # Sequential batch audit script - runs 1 audit at a time to avoid DB conflicts
 set -e
 
-cd /home/astre/command-center/testhome/contractor-auditor
+cd /home/astre/command-center/src/greenlit/auditor
 source venv/bin/activate
 set -a && source .env && set +a
 export DEEPSEEK_API_KEY

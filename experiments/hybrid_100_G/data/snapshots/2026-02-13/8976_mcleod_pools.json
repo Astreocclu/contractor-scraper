@@ -1,0 +1,1097 @@
+{
+  "contractor_id": 8976,
+  "business_name": "McLeod Pools",
+  "city": "Mesquite",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T08:27:38.803Z",
+  "sources": {
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:24.569Z",
+      "data": {
+        "found": false,
+        "query": "\"McLeod Pools\" Mesquite lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:18.002Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:21.780Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:13.882Z",
+      "data": {
+        "query": "site:dallascounty.org McLeod Pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "[PDF] April-2025-County-Clerk-Courts-Combined.pdf",
+            "snippet": "... Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL SECTION. Injury or Damage. CASES ON DOCKET. 454. Other. Eminent. Domain. Tax ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:14.915Z",
+      "data": {
+        "query": "site:collincountytx.gov McLeod Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.collincountytx.gov/ossf/",
+            "title": "AEROBIC_SYSTEM_LIST.HTML - Collin County",
+            "snippet": "Collin County PAGE 1 requires that maintenance be performed 3 times per year - every 120 - 130 days. Reports are due to Development Services within 14 days of ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:20:14.375Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "MECH_LIEN": 11
+          },
+          "active_liens": 11,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 7,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "RIVERBEND POOLS",
+                "grantor": "MCLEOD DARYL L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MCLEOD DARYL L",
+                    "RIVERBEND POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "2/20/2002",
+                    "20020220000261050",
+                    "LAND/5110/2789",
+                    "Subdivision- Name: RIDGEVIEW RANCH #7 PLANO L/337 Lot: 6 Block: W, Reference - L / 337"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2002-02-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20020220000261050"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "HOBERT POOLS & SPAS",
+                "grantor": "MCLEOD JULIE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MCLEOD JULIE",
+                    "HOBERT POOLS & SPAS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "5/6/2011",
+                    "20110506000471840",
+                    "--/--/--",
+                    "Subdivision- Name: RANCH PECAN GROVE LUCAS 2008/567 Lot: 8 Block: A, Reference - 2008 / 567"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2011-05-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20110506000471840"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "CLARITY POOLS",
+                "grantor": "MCLEOD DARYL L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MCLEOD DARYL L",
+                    "CLARITY POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "3/8/2006",
+                    "20060308000303160",
+                    "--/--/--",
+                    "Subdivision- Name: LAKES LA CIMA #2 PROSPER P/959 Lot: 3 Block: 3, Reference - P / 959"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2006-03-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20060308000303160"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "SANDLER POOLS",
+                "grantor": "MCLEOD JEANNE H",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MCLEOD JEANNE H",
+                    "SANDLER POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "3/15/2002",
+                    "20020315000391820",
+                    "LAND/5127/1792",
+                    "Subdivision- Name: CLOISTERS #3 PLANO 7/58 Lot: 12 Block: 11, Reference - 7 / 58"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2002-03-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20020315000391820"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "SANDLER POOLS",
+                "grantor": "MCLEOD JEANNE H",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MCLEOD JEANNE H",
+                    "SANDLER POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "5/14/2001",
+                    "20010514000558930",
+                    "LAND/4917/3196",
+                    "Subdivision- Name: CLOISTERS #3 PLANO 7/58 Lot: 12 Block: 11, Reference - 7 / 58"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2001-05-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20010514000558930"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "HOBERT POOLS INC",
+                "grantor": "MCLEOD MELISSA SUE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MCLEOD MELISSA SUE",
+                    "HOBERT POOLS INC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "8/22/2016",
+                    "20160822001101390",
+                    "--/--/--",
+                    "Subdivision- Name: GABLES NORTH HILL #2B MURPHY 2013/80 Lot: 23 Block: F, Reference - 2013 / 80"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2016-08-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20160822001101390"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "FOLEY POOLS LLC",
+                "grantor": "FOSMIRE EDWARD MCLEOD",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "FOSMIRE EDWARD MCLEOD",
+                    "FOLEY POOLS LLC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "2/25/2021",
+                    "20210225000368020",
+                    "--/--/--",
+                    "Subdivision- Name: LIBERTY #5 MELISSA 2019/88 Lot: 21 Block: B, Reference - 2019 / 88"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2021-02-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20210225000368020"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 4,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "ARTESIAN POOLS & SPAS",
+                "grantor": "ARTESIAN POOLS & SPAS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ARTESIAN POOLS & SPAS",
+                    "ARTESIAN POOLS & SPAS",
+                    "MECHANICS LIEN",
+                    "4/7/1986",
+                    "D186328573",
+                    "OPR/8509/1196",
+                    "G P, Subdivision: SHEFFIELD VIL, Lot: 8, Block: 5"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1986-04-07",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D186328573"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CHAPMAN POOLS",
+                "grantor": "CHAPMAN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CHAPMAN POOLS",
+                    "CHAPMAN POOLS",
+                    "MECHANICS LIEN",
+                    "2/4/2003",
+                    "D203045534",
+                    "OPR/16368/144",
+                    "ARL, Subdivision: SHADY VAL N, Lot: 24, Block: 1R"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-02-04",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203045534"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "ADVENTURE POOLS INC",
+                "grantor": "ADVENTURE POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ADVENTURE POOLS INC",
+                    "ADVENTURE POOLS INC",
+                    "MECHANICS LIEN",
+                    "6/1/2005",
+                    "D205154489",
+                    "--/--/--",
+                    "KLR, Subdivision: RETREAT AT HIDDEN LKS, Lot: 11, Block: A"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2005-06-01",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D205154489"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "ADVENTURE CUSTOM POOLS",
+                "grantor": "ADVENTURE CUSTOM POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ADVENTURE CUSTOM POOLS",
+                    "ADVENTURE CUSTOM POOLS",
+                    "MECHANICS LIEN",
+                    "4/10/2003",
+                    "D203128104",
+                    "OPR/16583/24",
+                    "GRPVNE, Subdivision: WINDING CRK ESTS, Lot: 2, Block: 11"
+                  ],
+                  "search_term": "McLeod Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-04-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203128104"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "11 lien(s) with unclear direction"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 11,
+          "human_summary": "UNCLEAR: 11 lien(s) found but direction undetermined (needs manual review)",
+          "liens_unclear": 11,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "McLeod Pools",
+        "searched_at": "2026-02-13T07:19:04.569363",
+        "total_records": 11
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:31:42.324Z",
+      "data": {
+        "query": "site:yelp.com \"McLeod Pools\" \"Mesquite, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:19.411Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:20.002Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:13.836Z",
+      "data": "Trustpilot Search Results Companies Atkinson McLeod atkinsonmcleod.com • 674 reviews 4.3 The Pools www.thepools.com • 1.2K reviews 4.3 Endless Pools www.endlesspools.com • 7 reviews 4.1 Pinnacle Pools pinnacle-pools.com • 3 reviews 2.8 Namco Pools namcopool.com • 782 reviews 3.6 Categories Real Estate Agents The best companies in the category 'Real Estate Agents' Lottery Vendor The best companies in the category 'Lottery Vendor' Online Casino or Bookmaker The best companies in the category 'Online Casino or Bookmaker' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (159) Atkinson McLeod atkinsonmcleod.com 4.3 674 reviews 45 Westferry Road, London, United Kingdom The Pools www.thepools.com 4.3 1,248 reviews United Kingdom Endless Pools www.endlesspools.com 4.1 7 reviews 1601 Dutton Mill Rd, Aston, United States Pinnacle Pools pinnacle-pools.com 2.8 3 reviews United States Namco Pools namcopool.com 3.6 782 reviews 30 Waterchase Dr, Rocky Hill, CT, United States INYO Pools www.inyopools.com 2.7 189 reviews United States Pools Plus poolhouston.com 2.6 10 reviews 5554 S Peek Rd #54, Katy, TX Showtime Pools www.showtimepoolmechanics.com 4.0 6 reviews 9461 Charleville Blvd., Beverly Hills, United States Gelid Pools gelidpools.com 3.8 2 reviews 312 W 2nd St Unit #A2746, casper, United States Pools Etc www.poolsinc.com 1.5 99 reviews 25 Walpole Park S Ste5, Walpole, United States Previous 1 2 3 4 16 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Real Estate Agents Money & Insurance Lottery Vendor Events & Entertainment Online Casino or Bookmaker Events & Entertainment Gambling Service Events & Entertainment Internet Marketing Service Business Services SEO Service Business Services are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:24.182Z",
+      "data": {
+        "query": "McLeod Pools Mesquite site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Feb 20, 2024",
+            "link": "https://www.dallasnews.com/high-school-sports/football/2024/02/20/lufkin-to-move-from-football-district-with-highland-park-red-oak-after-winning-uil-appeal/",
+            "title": "Lufkin to move from football district with Highland Park, Red Oak ...",
+            "snippet": "McLeod basketball was assigned to District 21-2A but requested placement in District 16-2A. The UIL voted to deny this appeal. Fruitvale ...",
+            "position": 1
+          },
+          {
+            "date": "May 9, 2024",
+            "link": "https://www.dallasnews.com/high-school-sports/other-sports/2024/05/09/2024-uil-tennis-regional-results-see-how-boys-and-girls-from-dallas-area-schools-fared/",
+            "title": "2024 UIL tennis regional results: See how boys and girls from Dallas ...",
+            "snippet": "2024 UIL tennis regional results: See how boys and girls from Dallas-area schools fared. See which Dallas-area players have a chance to head to state.",
+            "position": 2
+          },
+          {
+            "date": "May 4, 2023",
+            "link": "https://www.dallasnews.com/high-school-sports/soccer/2023/05/04/2023-dallas-area-all-district-boys-soccer-teams-district-award-winners-and-more/",
+            "title": "2023 Dallas-area all-district boys soccer teams",
+            "snippet": "District MVP: Estavan Aguirre, West Mesquite, F, Jr. Offensive MVP: Adrian Martinez, Bryan Adams, F, Jr. Midfielder of the Year: Adan Aguilar, ...",
+            "position": 3
+          },
+          {
+            "date": "Feb 18, 2023",
+            "link": "https://www.dallasnews.com/high-school-sports/other-sports/2023/02/18/uil-state-swim-meet-5a-frisco-schools-take-silver-in-team-standings-see-area-results/",
+            "title": "UIL state swim meet (5A): Frisco schools take silver in team standings",
+            "snippet": "Click here to view the Class 6A recap. AUSTIN — Two Frisco schools secured silver medal team finishes in the Class 5A finals on Saturday.",
+            "position": 4
+          },
+          {
+            "date": "Dec 6, 2010",
+            "link": "https://www.dallasnews.com/sports/2010/12/06/dallas-white-rock-marathon-women-s-results-from-1-1768-by-age/",
+            "title": "Dallas White Rock Marathon: Women's results from 1-1768, by age",
+            "snippet": "Dallas White Rock Marathon: Women's results from 1-1768, by age.",
+            "position": 5
+          },
+          {
+            "date": "Apr 11, 2023",
+            "link": "https://www.dallasnews.com/sports/other-sports/2023/04/11/2023-uil-tennis-regional-results-see-how-boys-and-girls-from-dallas-area-schools-fared/",
+            "title": "2023 UIL tennis regional results: See how boys and girls from Dallas ...",
+            "snippet": "This week marked the playing of the 2023 UIL team tennis regional meets. See a list of results below.",
+            "position": 6
+          },
+          {
+            "date": "Dec 3, 2016",
+            "link": "https://interactives.dallasnews.com/2016/pearl-harbor/",
+            "title": "The North Texans of Pearl Harbor",
+            "snippet": "He was 90 when he died of a heart attack at his home in Mesquite on Dec, 22, 2014, the 73rd anniversary of his enlistment. ... STANLEY A. MCLEOD ...",
+            "position": 7
+          },
+          {
+            "date": "Oct 30, 2025",
+            "link": "https://www.dallasnews.com/arc/outboundfeeds/sitemap3/2025-10-30/?outputType=xml",
+            "title": "[XML] https://www.dallasnews.com/arc/outboundfeeds/sitemap3/2025-10 ...",
+            "snippet": "... Mesquite and cities even further away dug through The Potato Man's trailer to fill buckets, baskets and boxes with his offerings.]]></image ...",
+            "position": 8
+          },
+          {
+            "link": "https://www.dallasnews.com/arc/outboundfeeds/sitemap3/2021-05-07/?outputType=xml",
+            "title": "[XML] https://www.dallasnews.com/arc/outboundfeeds/sitemap3/2021-05 ...",
+            "snippet": "... mesquite-airport-to-build-new-hangar-by-spring ... swimming pool area of the Palladium RedBird apartments. ... McCloud, a nominee for this year's district principal ...",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:22.980Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"McLeod Pools\" Mesquite",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:36.645Z",
+      "data": "McLeod Pools Mesquite review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Best Luxury Infrared Saunas The ultimate home sauna for wellness, detox, and longevity—designed for your home. Sponsored Sun Home Saunas Watch Visit site SHORTS SHORTS Now playing Mesquite pool Steven Rounds Steven Rounds • • 707 views 1 year ago Steven Rounds Steven Rounds How to use pool features. How to use pool features. From the video description SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description 0:31 0:31 James Talarico for US Senate Vote by March 3rd Sponsored James Talarico James Talarico • • Vote by March 3rd Learn more SHORTS SHORTS Now playing Easy way to keep the pool clean! #summer #pool #tips Jeff & Lauren Show Jeff & Lauren Show • • 335K views 8 months ago Jeff & Lauren Show Jeff & Lauren Show Easy way to keep the pool clean! Tennis balls absorb oils and residue from the pool ! # pool #poolparty #summer ... Easy way to keep the pool clean! Tennis balls absorb oils and residue from the pool ! # pool #poolparty #summer ... From the video description SHORTS SHORTS Now playing Jumping Through the Float Tube into the Swimming Pool Fun Trick #shorts Underwater Tori Underwater Tori • • 22M views 6 months ago Underwater Tori Underwater Tori Visit site How Much Does a New Roof Cost If your roof is 15+ years old, the cost of roof replacement might surprise you. Sponsored HomeBuddy SHORTS SHORTS Now playing How to choose the right color for your pool! 🌴 #luxuryhome #pool #pooldesign #backyard Foxterra Design Foxterra Design • • 406K views 1 year ago Foxterra Design Foxterra Design 0:00 How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... Automatic captions SHORTS SHORTS Now playing Can you fit a pool in a SMALL BACKYARD? Calimingo Calimingo • • 1.2M views 3 years ago Calimingo Calimingo 4K SHORTS SHORTS Now playing Lap Pool In A Small Backyard ➡️ Swimming Pool Design Ideas Southern Poolscapes Southern Poolscapes • • 9.9K views 5 months ago Southern Poolscapes Southern Poolscapes SHORTS SHORTS Now playing Why Fiberglass Pools are Going Out of Style Cameron Simmons Cameron Simmons • • 24K views 2 years ago Cameron Simmons Cameron Simmons SHORTS SHORTS Now playing Loving these inflatable sofa pools with built-in cooler 😱 LuxArts LuxArts • • 538K views 7 months ago LuxArts LuxArts SHORTS SHORTS Now playing This pool looks incredible 😧 | #shorts SportsNation SportsNation • • 8.6M views 3 years ago SportsNation SportsNation This pool looks incredible | #shorts (via @rikkicarman) This pool looks incredible | #shorts (via @rikkicarman) From the video description SHORTS SHORTS Now playing Fiberglass swimming pools are dug/set in one day. #fiberglasspools #modernpoolbuild #excavation CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP • • 1.4M views 2 years ago CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP SHORTS SHORTS Now playing Age 50+, Bottom of 20ft Deep Swimming Pool 🔥 #swimmingtips #swimming #swim Swimming By Sanuj Swimming By Sanuj • • 1.3M views 1 year ago Swimming By Sanuj Swimming By Sanuj Beginners Swimming Tips in Hindi, How To Swim Hindi, how to Float In Hindi, swimming technique in Hindi, swimming swimming ... Beginners Swimming Tips in Hindi, How To Swim Hindi, how to Float In Hindi, swimming technique in Hindi, swimming swimming ... From the video description People also watched 5:36 5:36 Now playing Pool Chlorine vs Pool Shock: What's the Difference? Poolonomics Poolonomics • • 69K views 2 years ago Poolonomics Poolonomics What's the difference between chlorine and shock? The answer is a lot simpler than most pool owners realize. Companion article: ... What's the difference between chlorine and shock? The answer is a lot simpler than most pool owners realize. Companion article: ... From the video description CC 6 chapters Introduction | How is Shock Different from Chlorine? | Why Would You Need That Much Chlorine? | Are They Really Just the Same Thing? | What About Non-Chlorine Shock? | Wrapping Up 6 chapters in this video 6 chapters Introduction Introduction 0:00 Introduction 0:00 How is Shock Different from Chlorine? How is Shock Different from Chlorine? 0:02 How is Shock Different from Chlorine? 0:02 Why Would You Need That Much Chlorine? Why Would You Need That Much Chlorine? 0:46 Why Would You Need That Much Chlorine? 0:46 Are They Really Just the Same Thing? Are They Really Just the Same Thing? 1:46 Are They Really Just the Same Thing? 1:46 What About Non-Chlorine Shock? What About Non-Chlorine Shock? 4:09 What About Non-Chlorine Shock? 4:09 Wrapping Up Wrapping Up 4:59 Wrapping Up 4:59 6:22 6:22 Now playing Everything You Need To Know Before Building A Pool! Josh Beberg Josh Beberg • • 220K views 3 years ago Josh Beberg Josh Beberg Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... From the video description 4K Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. AI-generated video summary Quality and accuracy may vary. Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. 9:39 9:39 Now playing How Does Swimming Pool Work? Engineering Motive Engineering Motive • • 556K views 3 years ago Engineering Motive Engineering Motive How Does Swimming Pool Work? Different Grades of Concrete and their Uses https://youtu.be/2a8yDZx87Ww Difference ... How Does Swimming Pool Work? Different Grades of Concrete and their Uses https://youtu.be/2a8yDZx87Ww Difference ... From the video description 14 chapters How Does Swimming Pool Work | Pour Concrete | Main drains | Skimmer | Components | Skimmer Basket | Pump | Water Filter | Sand Filter | DE Filter | Cartridge Filter | Chemical Feeder Heater | Balancing Returns | Conclusion 14 auto-generated chapters in this video 14 chapters How Does Swimming Pool Work How Does Swimming Pool Work 0:00 How Does Swimming Pool Work 0:00 Pour Concrete Pour Concrete 1:35 Pour Concrete 1:35 Main drains Main drains 1:58 Main drains 1:58 Skimmer Skimmer 2:19 Skimmer 2:19 Components Components 4:00 Components 4:00 Skimmer Basket Skimmer Basket 4:41 Skimmer Basket 4:41 Pump Pump 4:59 Pump 4:59 5:09 5:09 Now playing How An Abandoned Indoor Pool Is Deep Cleaned | Deep Cleaned | Insider Insider Insider • • 12M views 4 years ago Insider Insider Miles Laflin (@thep00lguyml) deep cleans the dirtiest pools in the UK. In this episode, he takes on an abandoned pool that hasn't ... Miles Laflin (@thep00lguyml) deep cleans the dirtiest pools in the UK. In this episode, he takes on an abandoned pool that hasn't ... From the video description Summary Watch an abandoned indoor pool get a deep clean. The pool, unused for five to six years, is filled with pond plants and algae. Miles demonstrates a thorough cleaning process, from emptying the pool to adding chemicals, revealing a hidden sea lion mosaic. AI-generated video summary Quality and accuracy may vary. Summary Watch an abandoned indoor pool get a deep clean. The pool, unused for five to six years, is filled with pond plants and algae. Miles demonstrates a thorough cleaning process, from emptying the pool to adding chemicals, revealing a hidden sea lion mosaic. + 6 more SHORTS SHORTS Now playing A very dirty indoor pool 🤢 #satisfying thep00lguy ML thep00lguy ML • • 700K views 1 year ago thep00lguy ML thep00lguy ML SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.7M views 4 years ago Life With Evan Life With Evan SHORTS SHORTS Now playing 21 Small Inground Pool Ideas for All Budgets; Part 1 of 6 River Pools River Pools • • 34K views 1 year ago River Pools River Pools Are you planning on having a small inground pool installed, and are you looking for ideas? In this video we'll offer 21 things to ... Are you planning on having a small inground pool installed, and are you looking for ideas? In this video we'll offer 21 things to ... From the video description 4K CC SHORTS SHORTS Now playing 2 Pools, Golf Discounts, And 1600 Sqft Of Living Space - Vacation Everyday! Mesquite Lifestyle with Norma Sachar Mesquite Lifestyle with Norma Sachar • • 147 views 2 years ago Mesquite Lifestyle with Norma Sachar Mesquite Lifestyle with Norma Sachar Townhome For Sale. Sunset Greens is a popular gated golf course community in Mesquite NV. The lush landscape feels as ... Townhome For Sale. Sunset Greens is a popular gated golf course community in Mesquite NV. The lush landscape feels as ... From the video description SHORTS SHORTS Now playing The pools are full off still water #urbex #abandoned #explore #stillwater Explore With Ben Explore With Ben • • 39K views 6 months ago Explore With Ben Explore With Ben 0:41 0:41 Now playing Mesquite Groves Aquatic Center Aerial Tour Chandler Aquatics Chandler Aquatics • • 74K views 10 years ago Chandler Aquatics Chandler Aquatics Mesquite Groves Aquatic Center, 5901 S Hillcrest Dr., is Chandler's newest facility and opened in July 2008. The facility boasts a ... Mesquite Groves Aquatic Center, 5901 S Hillcrest Dr., is Chandler's newest facility and opened in July 2008. The facility boasts a ... From the video description SHORTS SHORTS Now playing Inside the Deepest Swimming Pool of the City 🔥 #learnswimming #swimming #swim Swimming By Sanuj Swimming By Sanuj • • 8.1M views 1 year ago Swimming By Sanuj Swimming By Sanuj Girl Vs Boy Swimming Practice, Fast Swimming Tips for Beginners, Kicking Race, तैरना सीखें ▻ Join Video Analysis ... Girl Vs Boy Swimming Practice, Fast Swimming Tips for Beginners, Kicking Race, तैरना सीखें ▻ Join Video Analysis ... From the video description SHORTS SHORTS Now playing Don't be a fool, Fix your pool... Flex Seal Flex Seal • • 6.9M views 2 years ago Flex Seal Flex Seal 0:00 Don't be a fool get a pool working that hard and you ain't got a pool don't fall for the Trap see they want you to work so hard and ... Don't be a fool get a pool working that hard and you ain't got a pool don't fall for the Trap see they want you to work so hard and ... Automatic captions Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN Sun Home Saunas Reviews Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • Up next Live Upcoming Cancel Play Now Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:12"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:32:37.902Z",
+      "data": {
+        "query": "site:nextdoor.com McLeod Pools Mesquite",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:22.408Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"McLeod Pools\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:23.559Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"McLeod Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:32:54.853Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=McLeod%20Pools&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:32:58.081Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:03.234Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:10.113Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov McLeod Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 20, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Final%20Allergan%20Global%20Agreement%20and%20Exhibits%20(12-20-22).pdf",
+            "title": "[PDF] ALLERGAN PUBLIC GLOBAL OPIOID SETTLEMENT AGREEMENT",
+            "snippet": "“Affiliated Company(ies)” means (1) when used with respect to AbbVie Inc. (“AbbVie”) all of the entities listed in Exhibit J-1; ...",
+            "position": 1
+          },
+          {
+            "date": "Nov 14, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. WALMART SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. I. Definitions.",
+            "position": 2
+          },
+          {
+            "date": "Jun 17, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/executive-management/Internal%20Report.pdf",
+            "title": "[PDF] Report on the Investigation into Complaints Made and Actions ...",
+            "snippet": "On August 6, 2020, in response to a question from Penley about Referral #1, OAG Chief. Information Officer Tina McLeod provided the definition ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT | NJ.gov",
+            "snippet": "McLeod, County of, Minnesota. 1157. Meeker, County of, Minnesota. 1158. Morrison ... Pools. In other words, for the National Fee Pool described above in ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 9, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/2022-12-09%20CVS%20Global%20Settlement%20Agreement%20with%20Exhibits%20(003).pdf",
+            "title": "[PDF] CVS SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. CVS SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. Page. I. Definitions.",
+            "position": 5
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Global%20Opioid%20Settlement%20Files/Final%20Distributor%20Settlement%20Agreement.pdf",
+            "title": "[PDF] DISTRIBUTOR SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. DISTRIBUTOR SETTLEMENT. AGREEMENT. Page 2. i. Table of Contents. Page. I.",
+            "position": 6
+          },
+          {
+            "date": "Jun 17, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/OAG%20Amended%20Answer%20Filed.pdf",
+            "title": "[PDF] EXHIBIT 1-4 - Texas Attorney General",
+            "snippet": "e. all Plaintiffs' continued employment at OAG was untenable and inappropriate because all Plaintiffs were, as correctly described by the ...",
+            "position": 7
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:11.223Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 2
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 4
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Taxable Entity Search. David Herrera and Oscar Alvarez. 2 reactions. 󱎖. Are they ...",
+            "position": 7
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 8
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn and Texas Tax Code, Sec. 171.2515. [2] https://statutes.capitol.texas.gov/Docs/TX/htm/TX ...",
+            "position": 9
+          },
+          {
+            "link": "https://unitedwaydallas.org/wp-content/uploads/2024/04/Wright-Law-Confirmed.pdf",
+            "title": "[PDF] Wright-Law-Confirmed.pdf - United Way of Metropolitan Dallas",
+            "snippet": "Based in Dallas, Texas. Ability to travel extensively. Page 9. 2/26/24, 2:35 PM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:33:12.409Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com McLeod Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:16.188Z",
+      "data": {
+        "query": "site:dentoncounty.gov McLeod Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 12, 2017",
+            "link": "https://apps.dentoncounty.gov/website/historicalmarkers/PDFs/1848-Denton-County-Seat.pdf",
+            "title": "[PDF] 1848 Denton County Seat",
+            "snippet": "When a well was dug at the first Alton and no water found, this site was also deemed unacceptable as a county seat and the county seat location ...",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/website/HistoricalMarkers/PDFs/ARGYLE.pdf",
+            "title": "[PDF] Argyle, Texas - Denton County",
+            "snippet": "Those citizens who were not serving in the military and who did not move to the city commuted by bus or car pools to the higher paying jobs at the war plants.",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:21.746Z",
+      "data": {
+        "name": "McLeod Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(972) 623-7844",
+        "rating": "C-",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": true,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/dallas/profile/pool-contractors/mcleod-pools-0875-91351778",
+        "review_count": null,
+        "founding_date": "07/22/2024",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 1,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:33:26.993Z",
+      "data": {
+        "name": "McLeod Pools",
+        "found": true,
+        "rating": 4.7,
+        "source": "serpapi",
+        "address": null,
+        "data_id": "0x4a5497f39653a48f:0x8e15c719e85a2810",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "a month ago",
+            "text": "I want to warn others about my experience with McLeod Pools. I was charged $500 for a timer that didn’t need replacing, and the pool pump installed was lower HP than my previous pump, despite being told it would be comparable. Dylan has ignored my requests for any sort of resolution. I have contacted the BBB, and my next step would be small claims court. I stand behind the other negative remarks people have made against him.",
+            "author": "Rana Stamm",
+            "rating": 1
+          },
+          {
+            "date": "4 months ago",
+            "text": "Super impressed with this pool cleaning service! Dylan did an excellent job and made my pool look sparkly and inviting. Everything was handled quickly, professionally, and with great attention to detail. I’ll definitely be using this service again and highly recommend his services to anyone who wants their pool to look its best!",
+            "author": "Meghan Goucher",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "Great pool company and Dylan is very good with communicating about any items he may see with our pool. Thank you McLeod Pools for keeping our pool crystal blue all summer long.",
+            "author": "Uncle Bud",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "My family has used Dylan’s services for a few years now. He never disappoints. Our pool is immaculate",
+            "author": "payton sullivan",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "Dylan really knows what he’s doing. Super easy to book, always shows up on time, and my pool has never looked better. You can tell he actually cares and takes the time to do it right. Whether it’s just regular cleaning or fixing stuff, he’s got it handled. If you’re thinking about hiring someone for your pool, this is your sign, go with McLeod Pools.",
+            "author": "Sarah Shaikh",
+            "rating": 5
+          },
+          {
+            "date": "8 months ago",
+            "text": "From start to finish, our experience with Dylan has been nothing short of exceptional. Their team was professional, knowledgeable, and incredibly easy to work with. They took the time to understand our vision and brought it to life with precision and creativity.",
+            "author": "Chris Dillman",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "A buddy of mine recommended Dylan for maintenance to my pool, and I’m so glad I went with McLeod pools service. Dylan is great at what he does and got my pool ready for a special event in a timely manner. Will definitely be using McLeod’s pool services again😎",
+            "author": "Alex Garcia",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Very impressed with this company. Dylan is courteous and polite over the phone and in person. Strives to do what is best for your pool. I like that I get an update with photo of pool after each weekly visit. Never got that with previous company I used. I highly recommend McLeod Pools to anyone needing expert pool service.",
+            "author": "Dan Hall",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": null,
+        "pages_fetched": 2,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "NO_REVIEWS",
+        "location_searched": "Mesquite, TX",
+        "search_confidence": 0.6499999999999999,
+        "serper_fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:20.960Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"McLeod Pools\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:21.618Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"McLeod Pools\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:34:12.675Z",
+      "data": {
+        "name": "McLeod Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 623-7844",
+        "rating": 4.7,
+        "source": "google_maps",
+        "status": "open",
+        "address": "200 Parkview St",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Public swimming pool ·  · 200 Parkview St Seasonal outdoor swimming pool & slides Closed · Opens 12 PM Fri · (972) 285-5277",
+            "rating": 4,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": "https://www.mcleodpools.com/",
+        "maps_url": "https://www.google.com/maps/search/McLeod%20Pools%20Mesquite%2C%20TX",
+        "categories": [
+          "Pool cleaning service"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:34:12.782Z",
+      "data": {
+        "name": "McLeod Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 623-7844",
+        "rating": 4.7,
+        "source": "google_maps",
+        "status": "open",
+        "address": "200 Parkview St",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Public swimming pool ·  · 200 Parkview St Seasonal outdoor swimming pool & slides Closed · Opens 12 PM Fri · (972) 285-5277",
+            "rating": 4,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": "https://www.mcleodpools.com/",
+        "maps_url": "https://www.google.com/maps/search/McLeod%20Pools%20Mesquite%2C%20TX",
+        "categories": [
+          "Pool cleaning service"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "website": {
+      "status": "error",
+      "fetched_at": "2026-02-13T04:34:13.374Z",
+      "data": {
+        "email": null,
+        "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.mcleodpools.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.mcleodpools.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+        "source": null
+      }
+    },
+    "website_warranty": {
+      "status": "error",
+      "fetched_at": "2026-02-13T04:34:13.462Z",
+      "data": null
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:18.733Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:34:42.533Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T04:34:28Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22McLeod%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=06mOabGML_m1ptQPhceDoQw\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T04:34:38Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22McLeod%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=3amOaZDCIPKJptQP3Zac-Qs\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "McLeod Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:34:42.949Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "MCLEOD POOLS LLC",
+        "taxpayer_number": "32096052033"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T04:34:42.951Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:34:58.074Z",
+      "data": {
+        "cost": 0.00069594,
+        "summary": "The review profile is suspicious. The high Google rating is based on a small number of recent, generic 5-star reviews that conflict with the business's young age. A serious, detailed 1-star complaint alleges financial misconduct and ghosting, which aligns with the poor BBB rating. The positive reviews lack the specific detail and balanced feedback expected from real experiences.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-13T04:34:58.074Z",
+        "fake_signals": [
+          "Multiple 5-star reviews posted in same month (4 months ago) with similar generic praise",
+          "Reviews reference 'a few years' of service but business is only 1 year old per BBB",
+          "Lack of specific project details in positive reviews; heavy on generic adjectives",
+          "Low total review count (8) for a 4.7 rating, making score volatile"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "C-",
+          "yelp": null,
+          "google": 4.7,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "MEDIUM",
+          "follow_through": "NEGATIVE",
+          "negative_evidence": [
+            "Customer alleges being charged for unnecessary part and ignored when seeking resolution"
+          ],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Negative review provides specific details (timer, pump HP, $500)",
+          "Varied reviewer names and some minor stylistic differences",
+          "One positive review mentions a specific feature (photo updates)"
+        ],
+        "fake_review_score": 65,
+        "complaint_patterns": [
+          "Overcharging for unnecessary parts",
+          "Installing inferior equipment",
+          "Ignoring customer requests for resolution",
+          "Threats of legal action from customer"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "High Google rating (4.7) contrasts sharply with a poor BBB rating (C-) and a serious recent complaint alleging overcharging and ignoring the customer. The BBB profile shows the business is only 1 year old, which is inconsistent with reviews referencing 'a few years' of service."
+      }
+    }
+  }
+}

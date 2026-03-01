@@ -1,0 +1,1838 @@
+{
+  "contractor_id": 9234,
+  "business_name": "Weber Pools",
+  "city": "Grapevine",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T08:27:38.912Z",
+  "sources": {
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:25:44.786Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Weber Pools\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:25:47.580Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Weber Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:29.227Z",
+      "data": {
+        "query": "site:dentoncounty.gov Weber Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=140_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "BAWI POOLS AND OUTDOOR LIVING, 1221 LONE PINE DR, FRISCO RANCH PH 2A BLK G LOT 8, SWIMMING POOL, 04/19/2021, 272663, Approved, 04/13/2021, GONZALEZ, SERGIO ...",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=201_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "SWIMMING POOL ... HOBERT POOLS, 1108 BLUESTEM DR, SANDBROCK RANCH PHASE 3 BLK R LOT 53, SWIMMING POOL, 06/03/2020, 756177, Approved, 05/20/2020, WEBER, JEFF & ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=263",
+            "title": "[PDF] Precinct 1 Task Force Report - Denton County",
+            "snippet": "W.W. Weber. Description: Widen to 6 lane divide ... Contractor: W.W. Webber, LLC ... Other items of significance: Lake levels have dropped below normal pool.",
+            "position": 3
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=190_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "JOY POOLS, 6625 BELLE COTE CR, BELLE COTE PHASE 2 ADDITION BLK A LOT 7, SWIMMING POOL, 07/16/2020, 723468, POOL & PATIO COVER, Approved, 07/13/2020, BEIDLE, TIM ...",
+            "position": 4
+          },
+          {
+            "date": "Feb 9, 2010",
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=268",
+            "title": "[PDF] Precinct 1 Task Force Report - Denton County",
+            "snippet": "W.W. Weber. Description: Widen to 6 lane divide urban roadway. SCHEDULE. (approximate dates, subject to change without notice). Let Date.",
+            "position": 5
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=232_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "VENTURE CUSTOM POOLS, 609 TRENTON DR, MARIETTA VILLAGE AT SAVANNAH PHASE 9B BLK 56 LOT 87, SWIMMING POOL, 09/13/2019, 658382, Approved, 09/10/2019 ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=261",
+            "title": "[PDF] Precinct 1 Task Force Report - Denton County",
+            "snippet": "W.W. Weber. Description: Widen to 6 lane divide urban roadway. SCHEDULE. (approximate dates, subject to change without notice). Let Date. November 2007.",
+            "position": 7
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:37.639Z",
+      "data": {
+        "name": "Weber Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(817) 481-7665",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/grapevine/profile/pool-contractors/weber-pools-0825-235976792",
+        "review_count": null,
+        "founding_date": "09/13/2002",
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": 23,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:39.861Z",
+      "data": {
+        "name": "Weber Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 481-7665",
+        "rating": 3.9,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "1251 William D Tate Ave #151, Grapevine, TX 76051",
+        "reviews": [],
+        "website": "https://www.weberpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Weber%20Pools%20Grapevine%2C%20TX",
+        "categories": [
+          "Swimming pool repair service"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:39.863Z",
+      "data": {
+        "name": "Weber Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 481-7665",
+        "rating": 3.9,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "1251 William D Tate Ave #151, Grapevine, TX 76051",
+        "reviews": [],
+        "website": "https://www.weberpools.com/",
+        "maps_url": "https://www.google.com/maps/search/Weber%20Pools%20Grapevine%2C%20TX",
+        "categories": [
+          "Swimming pool repair service"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "website_warranty": {
+      "status": "error",
+      "fetched_at": "2026-02-13T04:23:54.546Z",
+      "data": null
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:40.145Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/weber-pools-grapevine",
+        "review_count": null
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:25:40.855Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [
+          {
+            "link": "https://www.angi.com/companylist/us/tx/grapevine",
+            "title": "Find a Pro for Your Next Home Project in Grapevine | Angi",
+            "snippet": "Weber Pools · Window Curtain Installs and More · Window Hero Southlake. Other Grapevine Pros. A I Sprinklers · Above & Beyond Landscaping · Attic Butlers ..."
+          }
+        ],
+        "result_count": 1,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:43.609Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Weber Pools\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.WeberPools.47692258.html",
+            "title": "Weber Pools Reviews - Grapevine, TX | HomeAdvisor",
+            "snippet": "Weber Pools, is a certified pool operator, specializing in commercial pool services. However, we provide services for both commercial and residential pools."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-13T07:10:23.992Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "MECH_LIEN": 31
+          },
+          "active_liens": 31,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 9,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "RAINBOW POOLS",
+                "grantor": "WEBER DAVID R",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER DAVID R",
+                    "RAINBOW POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "10/2/1986",
+                    "19861002000627071",
+                    "LAND/2471/298",
+                    "Subdivision- Name: FIVE FORTY FOUR PLACE #1 PLANO B/121 Lot: 3 Block: 9, Reference - B / 121"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1986-10-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19861002000627071"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "VENTURE CUSTOM POOLS",
+                "grantor": "WEBER LAURA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER LAURA",
+                    "VENTURE CUSTOM POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "10/25/2005",
+                    "20051025001504550",
+                    "LAND/6031/1167",
+                    "Subdivision- Name: COUNTRY RIDGE PH A WYL O/309 Lot: 16 Block: K, Reference - O / 309"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2005-10-25",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20051025001504550"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "RIVERBEND POOLS INC",
+                "grantor": "WEBER BARBARA V",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER BARBARA V",
+                    "RIVERBEND POOLS INC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "11/20/1991",
+                    "19911120000650810",
+                    "LAND/3830/200",
+                    "Subdivision- Name: PRESTON TRAILS FAIRWAYS 1 DALL C/270 Lot: 28 Block: L, Reference - C / 270"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1991-11-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19911120000650810"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "HAUK CUSTOM POOLS LLC",
+                "grantor": "WEBER BARBARA A",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER BARBARA A",
+                    "HAUK CUSTOM POOLS LLC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "8/19/2003",
+                    "20030819001635120",
+                    "LAND/5484/6289",
+                    "Subdivision- Name: WOODS SPRINGCREEK 5 RSON 37A/G K/880 Lot: 2 Block: A, Reference - K / 880"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2003-08-19",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20030819001635120"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "RIVERBEND SANDLER POOLS",
+                "grantor": "WEBER JOHN TRUETT",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER JOHN TRUETT",
+                    "RIVERBEND SANDLER POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "9/23/2003",
+                    "20030923001910370",
+                    "LAND/5508/471",
+                    "Subdivision- Name: LAKESIDE PRESTON #3A PLANO H/315 Lot: 6 Block: E, Reference - H / 315"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2003-09-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20030923001910370"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "SANDLER POOLS",
+                "grantor": "WEBER JENNY W",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER JENNY W",
+                    "SANDLER POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "10/23/2001",
+                    "20011023001342800",
+                    "LAND/5030/388",
+                    "Subdivision- Name: G R B PLANO F/684 Lot: 15 Block: P, Reference - F / 684"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2001-10-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20011023001342800"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "BLUE HAVEN POOLS NATIONA",
+                "grantor": "WEBER SHARON M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER SHARON M",
+                    "BLUE HAVEN POOLS NATIONA",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "8/2/1996",
+                    "19960802000655270",
+                    "LAND/--/--",
+                    "Subdivision- Name: VAN WINKLE, DAVID SY S/936 Lot: 16.8, Reference - S / 936"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1996-08-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19960802000655270"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "WEBER CUSTOM POOLS",
+                "grantor": "JOHNSON ANGELA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "JOHNSON ANGELA",
+                    "WEBER CUSTOM POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "5/20/2002",
+                    "20020520000723840",
+                    "LAND/5172/3345",
+                    "Subdivision- Name: WELLINGTON AT PRESTON MDWS 4 H/206 Lot: 11 Block: G, Reference - H / 206"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2002-05-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20020520000723840"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "FOLEY CUSTOM POOLS LANDSC",
+                "grantor": "WEBER HEATHER D",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER HEATHER D",
+                    "FOLEY CUSTOM POOLS LANDSC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "9/24/1997",
+                    "19970924000798860",
+                    "LAND/4004/34",
+                    "Subdivision- Name: HUNTINGDON GREEN #1 PLANO H/633 Lot: 4 Block: F, Reference - H / 633"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1997-09-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19970924000798860"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 15,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "SUNSET POOLS",
+                "grantor": "WEBER MARLENE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER MARLENE",
+                    "SUNSET POOLS",
+                    "MECHANICS LIEN",
+                    "1/9/1974",
+                    "1974000057261",
+                    "ALL/74006/1474",
+                    "N/A",
+                    "15 C RCHLD PK"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1974-01-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1974000057261"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "SUNSET POOLS",
+                "grantor": "WEBER MARLENE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER MARLENE",
+                    "SUNSET POOLS",
+                    "MECHANICS LIEN",
+                    "1/9/1974",
+                    "1974000057251",
+                    "ALL/74006/1472",
+                    "N/A",
+                    "RICH 15 C RCHLD PK"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1974-01-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1974000057251"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "DOLPHIN POOLS",
+                "grantor": "WEBER JOHN W",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER JOHN W",
+                    "DOLPHIN POOLS",
+                    "MECHANICS LIEN",
+                    "12/17/1975",
+                    "1975004144371",
+                    "ALL/75245/1228",
+                    "N/A",
+                    "6 D/6402 MDWY HL 3"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1975-12-17",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1975004144371"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "WEBER BEVERLY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER BEVERLY",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN",
+                    "5/9/1973",
+                    "1973005835331",
+                    "ALL/73092/1975",
+                    "N/A",
+                    "5 11/6407 MDWY HL 6"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1973-05-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1973005835331"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "WEBER BEVERELY",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER BEVERELY",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN",
+                    "4/2/1973",
+                    "1973005560861",
+                    "ALL/73065/2741",
+                    "N/A",
+                    "5 11/6407 MDWY HL 6"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1973-04-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1973005560861"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "BLUE FOUNTAIN POOLS",
+                "grantor": "WEBER DARRELL",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER DARRELL",
+                    "BLUE FOUNTAIN POOLS",
+                    "MECHANICS LIEN",
+                    "6/26/1984",
+                    "1984012684371",
+                    "ALL/84126/2203",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1984-06-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1984012684371"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "WEBER POOLS",
+                "grantor": "PENNER JAMIE L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PENNER JAMIE L",
+                    "WEBER POOLS",
+                    "MECHANICS LIEN",
+                    "3/28/1994",
+                    "1994005920231",
+                    "ALL/94059/4664",
+                    "COPPEL",
+                    "Subdivision- Name: COPL VLG Lot: 12 Block: B CITY: COPPEL,, Reference - 81249 / 1511"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1994-03-28",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1994005920231"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "SIERRA POOLS",
+                "grantor": "WEBER ROBERT C",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER ROBERT C",
+                    "SIERRA POOLS",
+                    "MECHANICS LIEN",
+                    "9/18/1975",
+                    "1975003610821",
+                    "ALL/75183/1597",
+                    "N/A",
+                    "MES 12 C SHND ES"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1975-09-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1975003610821"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "BLUE FOUNTAIN POOLS",
+                "grantor": "WEBER DARRELL",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER DARRELL",
+                    "BLUE FOUNTAIN POOLS",
+                    "MECHANICS LIEN",
+                    "3/31/1987",
+                    "1987006117311",
+                    "ALL/87061/5487",
+                    "DALLAS SURVEYS",
+                    "Subdivision- Name: HEATH Z CITY: DALLAS SURVEYS,, Reference - 562 / -"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1987-03-31",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1987006117311"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "ANTHONY POOLS",
+                "grantor": "WEBER KATHLEEN S",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER KATHLEEN S",
+                    "ANTHONY POOLS",
+                    "MECHANICS LIEN",
+                    "6/7/1990",
+                    "199001127386",
+                    "ALL/90112/2060",
+                    "COPPEL",
+                    "Subdivision- Name: COPPELL VLG Lot: 1 Block: C, Reference - 81249 / 1511"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1990-06-07",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "199001127386"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "SYLVAN POOLS TEX INC",
+                "grantor": "WEBER BOBBIE J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER BOBBIE J",
+                    "SYLVAN POOLS TEX INC",
+                    "MECHANICS LIEN",
+                    "3/23/1981",
+                    "1981005704511",
+                    "ALL/81057/1824",
+                    "RICHARDSON",
+                    "Subdivision- Name: CANYON CK 1 Lot: 17 Block: 6 CITY: RICHARDSON,, Reference - 47 / 179"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1981-03-23",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1981005704511"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "LA CASA POOLS INC",
+                "grantor": "WEBER DENNIS M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER DENNIS M",
+                    "LA CASA POOLS INC",
+                    "MECHANICS LIEN",
+                    "5/3/1983",
+                    "1983008839022",
+                    "ALL/83088/2608",
+                    "DALLAS",
+                    "Subdivision- Name: BRIAR RDG Lot: 22 Block: A CBLK: 8737, CITY: DALLAS,, Reference - C / 217"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1983-05-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1983008839022"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "WEBER CUSTOM POOLS",
+                "grantor": "MONIER AMY W",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MONIER AMY W",
+                    "WEBER CUSTOM POOLS",
+                    "MECHANICS LIEN",
+                    "1/19/2005",
+                    "2005032122971",
+                    "ALL/2005012/7346",
+                    "DALLAS",
+                    "Subdivision- Name: NORTHWD HME Lot: 6 Block: E CBLK: 7429, CITY: DALLAS,, Reference - 32 / 199"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2005-01-19",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2005032122971"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "WEBER CUSTOM POOLS",
+                "grantor": "HALE CHARLES C",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HALE CHARLES C",
+                    "WEBER CUSTOM POOLS",
+                    "MECHANICS LIEN",
+                    "5/6/2003",
+                    "2003023290311",
+                    "ALL/2003090/8411",
+                    "DALLAS ADDITION",
+                    "Subdivision- Name: IDLEWILD Lot: 22 Block: 20 CITY: DALLAS ADDITION,, Reference - 6 / 30"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2003-05-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2003023290311"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "BLUE HAVEN POOLS NATL IN",
+                "grantor": "WEBER JANICE L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER JANICE L",
+                    "BLUE HAVEN POOLS NATL IN",
+                    "MECHANICS LIEN",
+                    "3/11/1996",
+                    "1996005047891",
+                    "ALL/96050/4646",
+                    "DALLAS",
+                    "Subdivision- Name: HIGHLANDS Lot: 44 Block: 15 CBLK: 7486, CITY: DALLAS,, Reference - 78167 / 1284"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1996-03-11",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1996005047891"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 7,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "PULLIAM POOLS",
+                "grantor": "PULLIAM POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PULLIAM POOLS",
+                    "PULLIAM POOLS",
+                    "MECHANICS LIEN",
+                    "4/29/2003",
+                    "D203149962",
+                    "OPR/16639/402",
+                    "FORT WORTH, Subdivision: CRESTRIDGE, Lot: 12, Block: 6"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2003-04-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D203149962"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "GRECIAN POOLS",
+                "grantor": "GRECIAN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GRECIAN POOLS",
+                    "GRECIAN POOLS",
+                    "MECHANICS LIEN",
+                    "9/16/1975",
+                    "D175048236",
+                    "OPR/609/10",
+                    "ARL, Subdivision: WOODCANYON, Lot: 2, Block: 1"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1975-09-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D175048236"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "PULLIAM POOLS",
+                "grantor": "PULLIAM POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PULLIAM POOLS",
+                    "PULLIAM POOLS",
+                    "MECHANICS LIEN",
+                    "9/22/1992",
+                    "D192182740",
+                    "OPR/10782/242",
+                    "ARL, Subdivision: INTERLOCHEN ESTS, Lot: 36, Block: 3"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1992-09-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D192182740"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CLAFFEY POOLS",
+                "grantor": "CLAFFEY POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CLAFFEY POOLS",
+                    "CLAFFEY POOLS",
+                    "MECHANICS LIEN",
+                    "4/10/1997",
+                    "D197063303",
+                    "OPR/12731/66",
+                    "NONE, Subdivision: PT JOHN WHITMAN SURV"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1997-04-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D197063303"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BLUE HAVEN POOLS",
+                "grantor": "BLUE HAVEN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BLUE HAVEN POOLS",
+                    "BLUE HAVEN POOLS",
+                    "MECHANICS LIEN",
+                    "8/6/2009",
+                    "D209209901",
+                    "--/--/--",
+                    "FT W, Subdivision: VILLAGES OF WOODLAND SPGS W, Lot: 44, Block: 130"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2009-08-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D209209901"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "U S A POOLS",
+                "grantor": "U S A POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "U S A POOLS",
+                    "U S A POOLS",
+                    "MECHANICS LIEN",
+                    "7/29/1987",
+                    "D187576881",
+                    "OPR/9021/1089",
+                    "ARL, Subdivision: WOODLAND PK S #2, Lot: 46, Block: 19"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1987-07-29",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D187576881"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "WEBER CUSTOM POOLS",
+                "grantor": "WEBER CUSTOM POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WEBER CUSTOM POOLS",
+                    "WEBER CUSTOM POOLS",
+                    "MECHANICS LIEN",
+                    "5/8/2006",
+                    "D206136111",
+                    "--/--/--",
+                    "Subdivision: PT G B KNIGHT SURV"
+                  ],
+                  "search_term": "Weber Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2006-05-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D206136111"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "4 lien(s) filed BY contractor (collecting payment - neutral)",
+            "27 lien(s) with unclear direction"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 31,
+          "human_summary": "OK: 4 liens filed BY Weber Pools to collect payment (normal business, no penalty)",
+          "liens_unclear": 27,
+          "liens_by_count": 4,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 4,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Weber Pools",
+        "searched_at": "2026-02-13T07:09:12.420198",
+        "total_records": 31
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T04:26:06.146Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:26:21.287Z",
+      "data": {
+        "cost": 0.0007645400000000001,
+        "summary": "Reviews appear authentic but present a mixed and concerning picture. Positive reviews are detailed and cite long-term satisfaction, particularly for maintenance and remodeling. However, the negative reviews are severe, alleging neglect, property damage, and ghosting. The low total review count for a decades-old business is a red flag, and the polarized rating distribution suggests inconsistent service quality or potential issues with customer retention and resolution.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-13T04:26:21.287Z",
+        "fake_signals": [
+          "Low review volume (14 total) for a 23-year-old business is unusual",
+          "Google reviews show a polarized distribution (mostly 5-star and 1-star, no middle ground)"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 3.9,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "NEGATIVE",
+          "negative_evidence": [
+            "Refused to take accountability for damage caused during service (stained concrete)"
+          ],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "Specific, detailed project descriptions in positive reviews (e.g., 'remodeled pool with new tile, coping, plaster')",
+          "Long-term customer relationships mentioned (22 years, 10 years)",
+          "Negative reviews contain specific allegations with details (equipment failure, staining concrete, ghosting)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "Poor service quality/neglect",
+          "Unresponsiveness to communication",
+          "Damage to property and refusal to take accountability"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Limited review data across platforms. Google rating is moderate, BBB rating is high but based on business profile, not customer reviews. No significant discrepancy can be assessed due to lack of comparable review data."
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:25:41.963Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:24:38.711Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:24:42.721Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:24:46.483Z",
+      "data": {
+        "query": "Weber Pools Grapevine site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallasnews.com/topic/accidental-death/page/7/",
+            "title": "Accidental Death - The Dallas Morning News",
+            "snippet": "Suspect in violent Grapevine carjacking dies in Parker County crash · Police said Cesar Soto was involved in an accident Friday in Weatherford. By Tom Steele ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallasnews.com/topic/accidental-death/page/8/",
+            "title": "Accidental Death - The Dallas Morning News",
+            "snippet": "Bystanders were able to pull out two occupants, who were taken to Baylor hospital, but the driver and a front-seat passenger died at the scene, authorities say.",
+            "position": 2
+          },
+          {
+            "date": "Jul 11, 2023",
+            "link": "https://www.dallasnews.com/high-school-sports/football/2023/07/11/breaking-down-five-under-the-radar-recruits-in-the-class-of-2024/",
+            "title": "Breaking down five under-the-radar recruits in the Class of 2024",
+            "snippet": "The Dallas Morning News just finished a series in which we analyzed each position based on the players in our Area Top 100 recruiting ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 22, 2025",
+            "link": "https://www.dallasnews.com/high-school-sports/football/2025/01/22/dallas-area-2024-all-district-football-teams-see-mvps-other-awards-first-teams-and-more/",
+            "title": "Dallas-area 2024 all-district football teams: See MVPs, other awards ...",
+            "snippet": "Below are awards for every Dallas-area district following the 2024 football season. Don't see your district listed? Dallas-area coaches can email info to ...",
+            "position": 4
+          },
+          {
+            "date": "Mar 29, 2022",
+            "link": "https://www.dallasnews.com/arts-entertainment/2022/03/29/these-north-texas-students-are-getting-10000-grants-for-exemplary-artistic-talent/",
+            "title": "These North Texas students are getting $10,000 grants for ...",
+            "snippet": "The winning students will each receive the title of “Texas Young Master” and a grant of $10,000 to be disbursed over two years. The grant will ...",
+            "position": 5
+          },
+          {
+            "date": "May 4, 2023",
+            "link": "https://www.dallasnews.com/high-school-sports/football/2023/05/04/the-dallas-morning-news-2023-all-area-girls-soccer-season-awards-first-and-second-teams/",
+            "title": "The Dallas Morning News' 2023 all-area girls soccer: Season ...",
+            "snippet": "In its sixth trip to the UIL state tournament — all since 2015 — Grapevine won the first state title in program history by beating Frisco 1-0 in ...",
+            "position": 6
+          },
+          {
+            "date": "Oct 11, 2016",
+            "link": "https://www.dallasnews.com/arts-entertainment/2016/10/11/take-a-peek-inside-cattle-baron-s-ball-the-ultimate-big-money-texas-party/",
+            "title": "Take a peek inside Cattle Baron's Ball, the ultimate big-money ...",
+            "snippet": "The most famous charity gala in Dallas, the western-themed Cattle Baron's Ball, is expected to net $4 million this year.",
+            "position": 7
+          },
+          {
+            "date": "Dec 3, 2022",
+            "link": "https://www.star-telegram.com/sports/dfwvarsity/article269125242.html",
+            "title": "Fort Worth-area high school volleyball all-district awards",
+            "snippet": "Check out the all-district awards among Fort Worth-area teams, including superlatives, first team, second team and honorable mention.",
+            "position": 8
+          },
+          {
+            "link": "https://www.dallasnews.com/sitemap/2021/april/8/",
+            "title": "A sitemap for every Dallas Morning News article for the year 2021.",
+            "snippet": "Australian company eyes North Texas for wave pools. by Steve Brown · Grapevine hosting outdoor ballet this weekend with food trucks on site ... Weber y Nomaan ...",
+            "position": 9
+          },
+          {
+            "date": "Apr 12, 2016",
+            "link": "https://www.dallasnews.com/arts-entertainment/tv/2016/04/12/plano-gets-burned-in-first-episode-of-real-housewives-of-dallas/",
+            "title": "Plano gets burned in first episode of 'Real Housewives of Dallas'",
+            "snippet": "Real Housewives of Dallas on Bravo opened with quick cuts of our area and the first question pops up: Cows?! The first episode is clearly a setup.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:25:46.599Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Weber Pools\" Grapevine",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:24:57.589Z",
+      "data": "Weber Pools Grapevine review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You History History All Shorts Unwatched Videos Filters Search filters SHORTS SHORTS Now playing How to choose the right color for your pool! 🌴 #luxuryhome #pool #pooldesign #backyard Foxterra Design Foxterra Design • • 406K views 1 year ago Foxterra Design Foxterra Design 0:00 How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... How do I choose the right color for my pool well this is a loaded question with a long answer but I'm going to give you a quick ... Automatic captions SHORTS SHORTS Now playing Why they make pools 5FT deep… Tiny Tino Tiny Tino • • 48M views 2 years ago Tiny Tino Tiny Tino Tiny Tino Merch Drop: ... Tiny Tino Merch Drop: ... From the video description SHORTS SHORTS Now playing Why Fiberglass Pools are Going Out of Style Cameron Simmons Cameron Simmons • • 24K views 2 years ago Cameron Simmons Cameron Simmons 0:31 More Money in Your Pocket: Get Free Oil Changes for Life on Any New or Used Vehicle. New or used, your oil changes are on us for life. Put more money back in your pocket. Sponsored Longhorn Nissan SHORTS SHORTS Now playing Easy way to keep the pool clean! #summer #pool #tips Jeff & Lauren Show Jeff & Lauren Show • • 335K views 8 months ago Jeff & Lauren Show Jeff & Lauren Show Easy way to keep the pool clean! Tennis balls absorb oils and residue from the pool ! # pool #poolparty #summer ... Easy way to keep the pool clean! Tennis balls absorb oils and residue from the pool ! # pool #poolparty #summer ... From the video description SHORTS SHORTS Now playing Fiberglass swimming pools are dug/set in one day. #fiberglasspools #modernpoolbuild #excavation CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP • • 1.4M views 2 years ago CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP SHORTS SHORTS Now playing Pool Problems: Avoid This Costly Homeowner Regret! Mike Weber Mike Weber • • 978 views 8 months ago Mike Weber Mike Weber Discover why a new pool might be a homeowner's regret! We explore hidden costs, frequent repairs, and potential impact on ... Discover why a new pool might be a homeowner's regret! We explore hidden costs, frequent repairs, and potential impact on ... From the video description SHORTS SHORTS Now playing This pool looks incredible 😧 | #shorts SportsNation SportsNation • • 8.6M views 3 years ago SportsNation SportsNation This pool looks incredible | #shorts (via @rikkicarman) This pool looks incredible | #shorts (via @rikkicarman) From the video description SHORTS SHORTS Now playing You're Probably Hooking Your Pool Vacuum Up WRONG! Hallmark Pool Supplies Hallmark Pool Supplies • • 910K views 1 year ago Hallmark Pool Supplies Hallmark Pool Supplies Are you making this common mistake? ⏩ HAVE A QUESTION FOR MARK? ⏪ If you have a question you'd like answered or ... Are you making this common mistake? ⏩ HAVE A QUESTION FOR MARK? ⏪ If you have a question you'd like answered or ... From the video description SHORTS SHORTS Now playing Inground Pool Costs 2025 River Pools River Pools • • 36K views 11 months ago River Pools River Pools Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... Did you enjoy this video? Be sure to hit like and subscribe for more information and videos about our in-ground fiberglass ... From the video description 4K SHORTS SHORTS Now playing Jumping Through the Float Tube into the Swimming Pool Fun Trick #shorts Underwater Tori Underwater Tori • • 22M views 6 months ago Underwater Tori Underwater Tori SHORTS SHORTS Now playing Replace a pool light #pool #diy #shorts Rosco Reviews Rosco Reviews • • 316K views 2 years ago Rosco Reviews Rosco Reviews Full video here: Replace a Swimming Pool light Underwater Video https://youtu.be/ywq8LlHpNuA You can replace a pool light ... Full video here: Replace a Swimming Pool light Underwater Video https://youtu.be/ywq8LlHpNuA You can replace a pool light ... From the video description CC People also watched 7:55 7:55 Now playing What Is A Fiberglass Pool? Is It A Good Choice For Me? Meral's Palm Beaches Meral's Palm Beaches • • 18K views 4 years ago Meral's Palm Beaches Meral's Palm Beaches In this video, I will explain what is a fiberglass pool and what you should know about fiberglass pool by laying out the pros and ... In this video, I will explain what is a fiberglass pool and what you should know about fiberglass pool by laying out the pros and ... From the video description 12 chapters Introduction to video | Introduction to Meral Ibrahim, realtor | What is a fiberglass pool? | Pro #1. Quicker Installation | Pro #2. Less Maintenance | Pro #3. Appearance and Customization | Pro #4. No Sore Feet | Pro #5. Endurance and Durability | Pro #6. Environmental and Cost Friendly | Con #1. Installation Cost and Expertise | Con #2. Susceptible to Bulging | Con #3. Slippery Surface 12 chapters in this video 12 chapters Introduction to video Introduction to video 0:00 Introduction to video 0:00 Introduction to Meral Ibrahim, realtor Introduction to Meral Ibrahim, realtor 0:25 Introduction to Meral Ibrahim, realtor 0:25 What is a fiberglass pool? What is a fiberglass pool? 1:16 What is a fiberglass pool? 1:16 Pro #1. Quicker Installation Pro #1. Quicker Installation 1:52 Pro #1. Quicker Installation 1:52 Pro #2. Less Maintenance Pro #2. Less Maintenance 2:30 Pro #2. Less Maintenance 2:30 Pro #3. Appearance and Customization Pro #3. Appearance and Customization 3:15 Pro #3. Appearance and Customization 3:15 Pro #4. No Sore Feet Pro #4. No Sore Feet 4:04 Pro #4. No Sore Feet 4:04 6:22 6:22 Now playing Everything You Need To Know Before Building A Pool! Josh Beberg Josh Beberg • • 220K views 3 years ago Josh Beberg Josh Beberg Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... From the video description 4K Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. AI-generated video summary Quality and accuracy may vary. Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. 3:52 3:52 Now playing How To Choose The Best Waterline Tile For Your Pool | California Pools & Landscape California Pools & Landscape California Pools & Landscape • • 61K views 5 years ago California Pools & Landscape California Pools & Landscape Waterline tile on a pool is most likely something that you haven't had to ever think about before. It's such a small detail but since ... Waterline tile on a pool is most likely something that you haven't had to ever think about before. It's such a small detail but since ... From the video description 3 moments Waterline Tile | How Do You Choose a Pool Tile | How Do You Stay on Budget When Choosing a Pool Tile 3 auto-generated moments in this video 3 moments Waterline Tile Waterline Tile 0:37 Waterline Tile 0:37 How Do You Choose a Pool Tile How Do You Choose a Pool Tile 1:56 How Do You Choose a Pool Tile 1:56 How Do You Stay on Budget When Choosing a Pool Tile How Do You Stay on Budget When Choosing a Pool Tile 2:34 How Do You Stay on Budget When Choosing a Pool Tile 2:34 7:13 7:13 Now playing Fiberglass pool install timelapse: part 1 Adam Miller Adam Miller • • 9.9M views 6 years ago Adam Miller Adam Miller Part 2 of the installation: https://youtu.be/6ZLrtMf0Hc0 Final product: https://youtu.be/VYm-EjXsGN8. Part 2 of the installation: https://youtu.be/6ZLrtMf0Hc0 Final product: https://youtu.be/VYm-EjXsGN8. From the video description + 6 more SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.7M views 4 years ago Life With Evan Life With Evan SHORTS SHORTS Now playing Can you fit a pool in a SMALL BACKYARD? Calimingo Calimingo • • 1.2M views 3 years ago Calimingo Calimingo 4K SHORTS SHORTS Now playing Swimming Pool and Spa Plumbing and Rebar for John The Pool Expert John The Pool Expert • • 471K views 3 years ago John The Pool Expert John The Pool Expert underground pool and spa Plumbing. underground pool and spa Plumbing. From the video description SHORTS SHORTS Now playing What Happens If Something Falls off an Infinity Pool? earth with john earth with john • • 27M views 3 months ago earth with john earth with john SHORTS SHORTS Now playing Let me show you how to clean your inground pool No apologies you do you boo No apologies you do you boo • • 205 views 4 months ago No apologies you do you boo No apologies you do you boo Keep your inground pool sparkling clean—without paying for expensive pool services! In this quick DIY guide, we'll show you the ... Keep your inground pool sparkling clean—without paying for expensive pool services! In this quick DIY guide, we'll show you the ... From the video description SHORTS SHORTS Now playing How is swimming pool water cleaned? Interesting Knowledge Interesting Knowledge • • 25M views 6 months ago Interesting Knowledge Interesting Knowledge 0:00 You might be surprised to learn that most swimming pools can be cleaned without draining the water For example a pool that has ... You might be surprised to learn that most swimming pools can be cleaned without draining the water For example a pool that has ... Automatic captions SHORTS SHORTS Now playing Revealing the Future of Pool Cleaning: AIPER Scuba S1 Seb & Mich Review Seb & Mich Review • • 80K views 1 year ago Seb & Mich Review Seb & Mich Review Check Out Today's Price on AMAZON HERE: ▻▻▻ https://geni.us/g9xd (Amazon affiliate link for ) # # ______ DISCLOSURE: As ... Check Out Today's Price on AMAZON HERE: ▻▻▻ https://geni.us/g9xd (Amazon affiliate link for ) # # ______ DISCLOSURE: As ... From the video description 4K SHORTS SHORTS Now playing Pool Construction In Full Swing✨ #SwimmingPool #Construction #PoolBuild#DreamPool #ComingSoon Let Us Build Let Us Build • • 46K views 5 months ago Let Us Build Let Us Build SHORTS SHORTS Now playing Don't be a fool, Fix your pool... Flex Seal Flex Seal • • 6.9M views 2 years ago Flex Seal Flex Seal 0:00 Don't be a fool get a pool working that hard and you ain't got a pool don't fall for the Trap see they want you to work so hard and ... Don't be a fool get a pool working that hard and you ain't got a pool don't fall for the Trap see they want you to work so hard and ... Automatic captions Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:24:58.721Z",
+      "data": {
+        "query": "site:nextdoor.com Weber Pools Grapevine",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:39.563Z",
+      "data": {
+        "cid": "3520934362914258711",
+        "name": "Weber Pools",
+        "found": true,
+        "rating": 3.9,
+        "source": "serper",
+        "address": "1251 William D Tate Ave #151, Grapevine, TX 76051",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "7 years ago",
+            "text": "Finally... an honest review!\nThis particular pool company has the worst cleaning service!  I paid a premium weekly fee, but received very poor service for over 6 months!  I sent numerous emails, texts, and left several phone messages of concern.  All were unanswered until I sent a notice to discontinue service!\nTook water sample to local pool store.  Was explained that pool had constant algae growth due to lack of applied chemicals.   However, Weber pool said it was from leafs falling into the pool.  That statement proved that either; they don't know what they are doing, or they just collect a premium fee, and provide minimal service!  They prey on homeowners that have no experience or knowledge of cleaning their own pool, or working their own pool equipment.  Take the time to know how you pool system works, to avoid a potential service ripoff!\nI would NOT recommend Weber Pools!",
+            "author": "Giant Texan",
+            "rating": 1
+          },
+          {
+            "date": "6 years ago",
+            "text": "Weber Pools has maintained my pool for 22 years, with efficient and reliable service so that it is always clean and everything is in top working order.  Any issues they come immediately – I love that.  Weber also remodeled my pool with new tile, coping, plaster, jets and modern lighting. Especially valuable to me was their design creativity that resulted in a striking yet elegant and tasteful upgrade.  Weber also remodeled the pool decking and wood porch, for a one-stop integrated look that made the entire process easy and worthy of a magazine shoot.",
+            "author": "David McCombs",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Kevin at Weber has always been fantastic to work with. I used his company in the past when I managed HOAs and recently used him on our personal pool. He’s very professional, timely and performs great work. Highly recommend him to anyone!",
+            "author": "Claudia Glaubitz",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Five Star Plus.  We are a commercial HOA pool and Weber Pools has recovered it from a disastrous condition of the previous pool company. We had a severe black algae problem and we were always dealing with poor water quality. Now we get compliments on the cleanliness and water quality from all our homeowners that use the pool. Remington Park HOA.",
+            "author": "ATR 717",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "By far the best pool service around. We’ve tried numerous company’s from large to small. Weber shows up every week when scheduled and provides the best service and most importantly the best customer service! They are always willing to help me understand what they are doing and why they are doing it. Their prices are the best around which makes it even better. If your looking for a reputable, educated , and affordable pool service Weber is that company!",
+            "author": "Ray Mahar",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "I am a Weber customer now for about 10 years. Their service and customer satisfaction goals are always top notch. I am always comfortable with any decision or recommendation regarding my pool service. I switched to Kevin's business because of issues with another service and I am so  pleased that I did....no regrets!",
+            "author": "Linda Williams",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Keeps our pool crystal clear all year long. Great reliable service , always very friendly and always very professional.",
+            "author": "Karla Patella",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "My pool company subcontracted Kevin at Weber pools to do a reverse osmosis on my pool. He had some equipment failure that caused my pool to drain several feet of water and his hose leaked something on my concrete around the pool and it has permanently stained it. When this was brought to his attention by my pool company, he ghosted them. He took no accountability for the stain, the water that had to be replaced, or the incomplete job.",
+            "author": "Rob Lapporte",
+            "rating": 1
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 14,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "Grapevine, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:12.961Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:16.907Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:23.578Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Weber Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 19, 2026",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2026/kp-0505.pdf",
+            "title": "[PDF] Attorney General Opinion No. KP-0505",
+            "snippet": "This moral imperative preexists any political or legal document. Still, the concept is engrained within each of the sovereign charters under ...",
+            "position": 1
+          },
+          {
+            "date": "Dec 9, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/2022-12-09%20CVS%20Global%20Settlement%20Agreement%20with%20Exhibits%20(003).pdf",
+            "title": "[PDF] CVS SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. CVS SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. Page. I. Definitions.",
+            "position": 2
+          },
+          {
+            "date": "Nov 14, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. WALMART SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. I. Definitions.",
+            "position": 3
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT | NJ.gov",
+            "snippet": "Weber, County of, Utah. 2109. Bennington, Town of, Vermont. 2110. St. Albans ... Pools. In other words, for the National Fee Pool described above in ...",
+            "position": 4
+          },
+          {
+            "date": "Apr 9, 2008",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2008/ga0617.pdf",
+            "title": "[PDF] April 9, 2008 - Texas Attorney General",
+            "snippet": "You ask for an opinion on several issues concerning the permanent school fund.! In particular, you ask about the constitutionality ofNatural ...",
+            "position": 5
+          },
+          {
+            "date": "Jun 29, 2009",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2009/ga0724.pdf",
+            "title": "[PDF] The Honorable Jeff Wentworth Chair, Committee on Jurisprudence ...",
+            "snippet": "You ask whether a central appraisal district or a local taxing unit, such as a county, may contract to collect assessments imposed by a ...",
+            "position": 6
+          },
+          {
+            "date": "Jul 9, 2008",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2008/ga0643.pdf",
+            "title": "[PDF] ga0643.pdf - Texas Attorney General",
+            "snippet": "You ask whether the conduct ofa particular constable implicates the resign-to-run provisions of article XVI, section 65 of the Texas ...",
+            "position": 7
+          },
+          {
+            "date": "Jan 25, 2008",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2008/ga0599.pdf",
+            "title": "[PDF] January 25, 2008 Mr. Steve Pena, Presiding Officer Brazos River ...",
+            "snippet": "You explain that \"[t]he Brazos River Authority (the 'BRA') owns substantial property surrounding Possum Kingdom Lake, and much ofthat ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 8, 2009",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2009/ga0706.pdf",
+            "title": "[PDF] The Honorable Bill Moore Johnson County Attorney Guinn Justice ...",
+            "snippet": "You tell us that the Johnson County Commissioners Court, after following the bidding procedures in section 263.007, Local Government Code, ...",
+            "position": 9
+          },
+          {
+            "date": "Nov 24, 2009",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2009/ga0747.pdf",
+            "title": "[PDF] Opinion No. GA-0747 - Texas Attorney General",
+            "snippet": "opinion on \"the constitutionality of expending [D]istrict funds to pay a civil fine\" that is imposed upon the District pursuant to chapter ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:24.677Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 3
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 8
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:25:25.745Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Weber Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:25:26.916Z",
+      "data": {
+        "query": "site:dallascounty.org Weber Pools civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:28.095Z",
+      "data": {
+        "query": "site:collincountytx.gov Weber Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.collincountytx.gov/ossf/",
+            "title": "AEROBIC_SYSTEM_LIST.HTML - Collin County",
+            "snippet": "Collin County PAGE 1 requires that maintenance be performed 3 times per year - every 120 - 130 days. Reports are due to Development Services within 14 days of ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:26:05.750Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T04:25:51Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Weber%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=z6eOaavUGcanptQP9sG3-AI\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T04:26:01Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Weber%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=2KeOaZ6qKdntptQP6pLn6AI\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Weber Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:37.369Z",
+      "data": "Pool Company Dallas | Weber Pools, LLC We value your privacy We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. Customise Reject All Accept All Customise Consent Preferences We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below. The cookies that are categorised as \"Necessary\" are stored on your browser as they are essential for enabling the basic functionalities of the site. ... Show more Necessary Always Active Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data. No cookies to display. Functional Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features. No cookies to display. Analytics Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc. No cookies to display. Performance Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors. No cookies to display. Advertisement Advertisement cookies are used to provide visitors with customised advertisements based on the pages you visited previously and to analyse the effectiveness of the ad campaigns. No cookies to display. Reject All Save My Preferences Accept All 214-693-7005 Facebook YouTube Facebook YouTube Home About Us Puripool Inline RO Our Services Pool Service Pool Repair Pool Remodel Splash Pad Maintenance Residential Pools Commercial Pools Weekly Pool Service Options Basic Service Plan Gold Service Plan Platinum Service Plan Blog FAQ’s Contact Us Careers Select Page Home About Us Puripool Inline RO Our Services Pool Service Pool Repair Pool Remodel Splash Pad Maintenance Residential Pools Commercial Pools Weekly Pool Service Options Basic Service Plan Gold Service Plan Platinum Service Plan Blog FAQ’s Contact Us Careers Reliable Dallas Pool Company Experience the Weber Difference…A name you can trust Dallas’ humid subtropical climate makes it inviting to dip into a crystal clear pool. However, this climate also causes problems for swimming pools, such as pH imbalance, hard water, and algae growth. Getting your pool maintenance from a local pool company in Dallas can help keep these problems at bay, helping you get the most out of your man-made oasis. Through the Performance Pool Group and our other partnership agreements, Weber Pools, LLC has the resources to tackle any Dallas pool maintenance project in either a residential or commercial setting, as well as turn-key outdoor environments for our customers from start to finish: one bid; one foreman; and most importantly, one company standing behind the job. As a dependable pool company in Dallas, we hold all the required licenses, workman’s compensation and general liability insurance for your protection. Quality starts with the professional-grade materials and supplies we use. The highly motivated and well-trained staff at our Dallas pool company are dedicated to providing quality service for the large HOA pools as well as the small backyard pools, and it ends with a desire to make the customer happy. The Pool Company Dallas Prefers: What We Can Offer You Pool Cleaning: Keeping a pool clean is a weekly fight. With our Dallas pool cleaning service, you do not have to devote so much of your time to this nagging chore. We offer weekly packages that include netting, vacuuming, and brushing your pool, in addition to adjusting the chemical balance of the water to ensure it is safe and sanitary. Pool Maintenance: There is more to maintaining a pool than just cleaning it. Our Dallas pool company makes sure everything is accounted for. From cleaning and replacing filters to adjusting water levels, our team can ensure everything is running smoothly with your pool. Pool Repair : You will be happy that you have a relationship with Weber Pools when you end up needing pool repair in Dallas TX. Problems can emerge without warning. Many pool owners know how paralyzing a broken pump or heater can be. We can repair everything from your pump to chips in your pool deck. If you need repairs, then make sure you get in touch with our Dallas pool company today! Your Favorite Dallas Pool Company Weber Pools, LLC. has been operating in the DFW area and offering excellent pool service in Dallas TX for over 15 years. Our experienced staff has over 75 years of combined experience in delivering quality innovative services for our customers. We are a family-owned and operated member of the Performance Pool Group, a group of sister companies that allows us to take care of your pool needs from A-Z. Unlike other companies that just build something and leave, we want you to be a customer for life. The next time you have a backyard or pool give us a try and experience the difference we offer for quality and reliable Dallas pool service. There are no jobs too big or too small that our pool company in Dallas cannot handle. We offer various pool services, including remodels, repair, and maintenance, ensuring a transparent and quality service for homes and businesses in Dallas. Reach out to Weber Pools, LLC through the virtual form you can find on our Contact Us page or give us a call at 214-693-7005 for queries. Learn more about how our pool company in Dallas can service your pool today! Contact Us CAREERS ← Move left → Move right ↑ Move up ↓ Move down + Zoom in - Zoom out Home Jump left by 75% End Jump right by 75% Page Up Jump up by 75% Page Down Jump down by 75% Map Terrain Satellite Labels Map Data Map data ©2026 Google Map data ©2026 Google 20 m Click to toggle between metric and imperial units Terms Report a map error We proudly service Dallas, Dallas-Ft. Worth, Roanoke, Saginaw, Haslet, Grapevine, Plano, Colleyville, Southlake, Keller, Hurst, Bedford, Trophy Club, Euless, Frisco, Coppell, Valley Ranch, Irving, North Richland Hills, Argyle, and Castle Hills! Follow CALL 214-693-7005 Facebook YouTube Designed by Build Epic Consulting | Copyright © 2026 · Weber Pools, LLC. | Sitemap"
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:24:01.396Z",
+      "data": {
+        "query": "site:yelp.com \"Weber Pools\" \"Grapevine, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/weber-pools-grapevine",
+            "title": "WEBER POOLS - Updated January 2026 - General Contractors - Yelp",
+            "rating": 1,
+            "snippet": "WEBER POOLS, 1251 William D Tate Ave, Ste 151, Grapevine, TX 76051, 5 Photos, (817) 481-7665, Mon - 8:00 am - 5:00 pm, Tue - 8:00 am - 5:00 pm, Wed - 8:00 ...",
+            "position": 1,
+            "ratingCount": 2
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=hottubandpool&find_loc=Grapevine%2C+TX+76051",
+            "title": "THE BEST 10 HOT TUB & POOL near GRAPEVINE, TX 76051 - Yelp",
+            "rating": 4,
+            "snippet": "... Grapevine, TX 76051. Map. Water Fountains in Grapevine, Texas · Spa Installation ... Weber Pools!read more. From the business: Weber Pools is a full service ...",
+            "position": 2,
+            "ratingCount": 848
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Supplies&find_loc=Grapevine%2C+TX+76051",
+            "title": "TOP 10 BEST Pool Supplies near Grapevine, TX 76051 - Yelp",
+            "rating": 3.6,
+            "snippet": "... Weber Pools!read more. From the business: Weber Pools is a full service ... Pool Supplies Near Me. Grapevine, TX 76051. Best Pool Supplies near Grapevine, TX ...",
+            "position": 3,
+            "ratingCount": 1103
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Salt+Water+Pool&find_loc=Grapevine%2C+TX",
+            "title": "TOP 10 BEST Salt Water Pool near Grapevine, TX - Yelp",
+            "rating": 3.7,
+            "snippet": "... Grapevine, TX. Map. Above Ground Pool Installation in Grapevine, Texas ... Weber Pools - Salt Water Pool near me - Grapevine, Texas. Weber Pools. 1.0 (2 ...",
+            "position": 4,
+            "ratingCount": 1982
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Hot+Tubs+And+Spas&find_loc=Grapevine%2C+TX+76051",
+            "title": "TOP 10 BEST Hot Tubs and Spas near Grapevine, TX 76051 - Yelp",
+            "rating": 4.1,
+            "snippet": "... Grapevine, TX 76051. (682) 436-6182. On their website: relaxation. Request a Quote. Weber Pools - Hot Tubs And Spas near me - Grapevine, Texas. 19. Weber Pools.",
+            "position": 5,
+            "ratingCount": 1304
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Cleaners&find_loc=Grapevine%2C+TX",
+            "title": "TOP 10 BEST Pool Cleaners near Grapevine, TX - Yelp",
+            "rating": 4,
+            "snippet": "... Weber Pools, Diamond Pools, Texas Native Aquatics, Quality Pool Services ... Grapevine, TX · Post Offices in Grapevine, TX. Filters. Yelp · Home Services · Pool ...",
+            "position": 6,
+            "ratingCount": 775
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Supplies&find_loc=South+Main+Street%2C+Grapevine%2C+TX",
+            "title": "TOP 10 BEST Pool Supplies near S Main St, Grapevine, TX ... - Yelp",
+            "snippet": "... Weber Pools, Coleman Bright Ideas For Your Home ... Grapevine, TX ... Grapevine, TX · Ziplining in Grapevine, TX. Filters. Yelp · Home Services · Pool Supplies ...",
+            "position": 7
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Hot+Tub+%26+Pool&find_loc=Grapevine%2C+TX",
+            "title": "TOP 10 BEST Hot Tub & Pool near Grapevine, TX - Yelp",
+            "rating": 4,
+            "snippet": "... Weber Pools, McAndrew Hot Tubs, Sunny Day Pools, Leslie's Pool Supplies ... Grapevine, TX · Small Party Venue in Grapevine, TX. Filters. Free price ...",
+            "position": 8,
+            "ratingCount": 843
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=Grapevine%2C+TX+76051",
+            "title": "THE BEST 10 POOL CLEANERS near GRAPEVINE, TX 76051 - Yelp",
+            "rating": 4.2,
+            "snippet": "... Weber Pools, Sparkly Pool Services, Southern Star, Pool Love, Blue Shade ... Grapevine, TX 76051. Map. Pool Plastering in Grapevine, Texas · Swimming Pool ...",
+            "position": 9,
+            "ratingCount": 930
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Pool+Supply+Store&find_loc=SOUTHLAKE%2C+TX",
+            "title": "TOP 10 BEST Pool Supply Store near Southlake, TX - Updated 2026 ...",
+            "snippet": "... Weber Pools, Poolwerx Flower Mound, Coleman ... Grapevine, TX 76051. (817) 734-9230. The concrete ... Grapevine, TX 76051. (817) 481-7665. On their ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:25:43.020Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "weberpools.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:48.220Z",
+      "data": {
+        "found": true,
+        "query": "\"Weber Pools\" Grapevine lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://m.yelp.com/search?find_desc=Water+Stores&find_loc=Southlake%2C+TX",
+            "title": "TOP 10 BEST Water Stores near Southlake, TX - Updated 2026 - Yelp",
+            "snippet": "... Weber Pools, DICK'S Sporting Goods, Spring Creek Water, Glass Aquatics, Safe ... They scam people about their product this time. Order placed for ..."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T04:25:45.398Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Weber Pools\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:25:09.760Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Weber%20Pools&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Quick Search. Search By. Location; Facility Name/ID. Search by city, state, and/or zip code. Search. Search by facility name or ID Search. More Search Options.",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State="
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= 20Pools&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-13T04:26:06.143Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "WEBER POOLS LLC",
+        "taxpayer_number": "32077764069"
+      }
+    }
+  }
+}

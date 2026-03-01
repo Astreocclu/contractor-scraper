@@ -1,0 +1,50 @@
+{
+  "variation": "D1",
+  "contractor_id": 7691,
+  "contractor_name": "Cowboy Hat Capital Foundation Repair Co",
+  "archetype": "known_bad",
+  "expected_score": 20,
+  "run": 5,
+  "timestamp": "2026-01-20T19:20:31.062Z",
+  "success": true,
+  "trust_score": 20,
+  "risk_level": "CRITICAL",
+  "reasoning": "DeepSeek: 20, Gemini adjusted to: 20. Confirmed - no adjustment needed",
+  "red_flags": [
+    "Likely hijacked Google Maps listing (reviews for auto repair, business claims foundation repair)",
+    "No license, registration, or insurance verification found",
+    "Review analysis indicates fraudulent business listing",
+    "No legitimate foundation repair reviews found",
+    "Business name/service mismatch with actual reviews"
+  ],
+  "cascade_trace": {
+    "deepseek": {
+      "trust_score": 20,
+      "risk_level": "CRITICAL",
+      "category_scores": {
+        "license": 0,
+        "reputation": 5,
+        "legal": 10,
+        "stability": 5,
+        "red_flag_deduction": 15
+      },
+      "reasoning": "This contractor shows severe red flags including a likely hijacked Google Maps listing where all reviews are for auto repair rather than foundation work, indicating fraudulent activity. No license, insurance, or registration verification exists, and the business appears to be misrepresenting its services with no legitimate online presence for foundation repair. The archetype 'known_bad' and review analysis confirming fraudulent listing warrant the lowest possible score.",
+      "red_flags": [
+        "Likely hijacked Google Maps listing (reviews for auto repair, business claims foundation repair)",
+        "No license, registration, or insurance verification found",
+        "Review analysis indicates fraudulent business listing",
+        "No legitimate foundation repair reviews found",
+        "Business name/service mismatch with actual reviews"
+      ]
+    },
+    "gemini": {
+      "original_score": 20,
+      "adjusted_score": 20,
+      "adjustment_reason": "Confirmed - no adjustment needed",
+      "final_trust_score": 20,
+      "risk_level": "CRITICAL"
+    }
+  },
+  "cost_usd": 0.0043481275,
+  "duration_ms": 9781
+}

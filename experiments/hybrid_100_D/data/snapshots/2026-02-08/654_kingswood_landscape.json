@@ -1,0 +1,803 @@
+{
+  "contractor_id": 654,
+  "business_name": "Kingswood landscape",
+  "city": "Colleyville",
+  "state": "TX",
+  "verticals": [
+    "pool",
+    "outdoor-living"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-08T03:23:39.890Z",
+  "sources": {
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:19:01.333Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "kingswoodlandscape.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:17:01.359Z",
+      "data": {
+        "query": "site:yelp.com \"Kingswood landscape\" \"Colleyville, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/biz/kingswood-landscape-colleyville",
+            "title": "KINGSWOOD LANDSCAPE - Colleyville, Texas - Yelp",
+            "snippet": "Map · 6600 Colleyville Blvd. Colleyville, TX 76034. Directions · (972) 800-2290. Call Now · More Info. Hours · From the Business. Specialties. Kingswood Landscape ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=landscapearchitects&find_loc=Colleyville%2C+TX+76034",
+            "title": "Landscape Architects or Designers",
+            "rating": 4,
+            "snippet": "... Kingswood Landscape, AllScapes, Streamline Designs, Unique Landscaping ... Colleyville, TX · Urgent Care in Colleyville, TX. Filters. Free price estimates ...",
+            "position": 2,
+            "ratingCount": 337
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Landscaping+Supplies&find_loc=Colleyville%2C+TX",
+            "title": "Best Landscaping Supplies near Colleyville, TX - Yelp",
+            "rating": 4,
+            "snippet": "... Colleyville, TX 76034. (972) 800-2290. From the business: Kingswood Landscape is a Full-Service Design-and-Install Firm. We service the Dallas-Fort Worth ...",
+            "position": 3,
+            "ratingCount": 1048
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=artificialturf&find_loc=Euless%2C+TX",
+            "title": "THE BEST 10 ARTIFICIAL TURF in EULESS, TX",
+            "rating": 4.4,
+            "snippet": "... Kingswood Landscape, A-Affordable Grass, J Bell Holiday Lights, Riveras Star ... Colleyville, TX 76034. On their website: grass. Great business. I was ...",
+            "position": 4,
+            "ratingCount": 613
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Drainage+Installation&find_loc=Euless%2C+TX",
+            "title": "TOP 10 BEST Drainage Installation in Euless, TX",
+            "rating": 4.4,
+            "snippet": "... Kingswood Landscape, Landpride Lot Service, Elite Skid Steer Work, Southern ... Colleyville, TX · Coppell, TX · Dallas, TX · Farmers Branch, TX · Flower Mound ...",
+            "position": 5,
+            "ratingCount": 370
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Outdoor+Stairs+Design&find_loc=Flower+Mound%2C+TX",
+            "title": "TOP 10 BEST Outdoor Stairs Design in Flower Mound, TX",
+            "rating": 4.1,
+            "snippet": "... Kingswood Landscape, Truestone Pavers & Outdoor Living, DesignsByEclipse ... Colleyville, TX · Coppell, TX · Corinth, TX · Dallas, TX · Denton, TX · Euless, TX.",
+            "position": 6,
+            "ratingCount": 626
+          },
+          {
+            "link": "https://m.yelp.com/search?find_desc=Outdoor+Kitchen&find_loc=Colleyville%2C+TX",
+            "title": "TOP 10 BEST Outdoor Kitchen near Colleyville, TX",
+            "rating": 4.2,
+            "snippet": "6600 Colleyville Blvd, Colleyville, TX 76034. (972) 800-2290. From the business: Kingswood Landscape is a Full-Service Design-and-Install Firm. We service the ...",
+            "position": 7,
+            "ratingCount": 1829
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Artificial+Turf+Installation&find_loc=Keller%2C+TX+76248&start=60",
+            "title": "Best Artificial Turf Installation near Keller, TX 76248",
+            "rating": 4,
+            "snippet": "... Colleyville, TX 76034. (972) 800-2290. From the business: Kingswood Landscape is a Full-Service Design-and-Install Firm. We service the Dallas-Fort Worth ...",
+            "position": 8,
+            "ratingCount": 220
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Koi+Fish+Pond&find_loc=Dallas%2C+TX",
+            "title": "THE BEST 10 Koi Fish Pond in Dallas, TX",
+            "rating": 4,
+            "snippet": "6600 Colleyville Blvd, Colleyville, TX 76034. (972) 800-2290. From the business: Kingswood Landscape is a Full-Service Design-and-Install Firm. We service the ...",
+            "position": 9,
+            "ratingCount": 2059
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:53.250Z",
+      "data": {
+        "cid": "3908667371512474567",
+        "name": "Kingswood Landscape",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "6060 N Central Expy Suite 500, Dallas, TX 75206",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 7,
+          "target_reviews": 7
+        },
+        "reviews": [
+          {
+            "date": "2 months ago",
+            "text": "Choosing Kingswood Landscape was the best decision we’ve made for our property. Their design process felt collaborative yet guided by expertise, and the final result exceeded expectations. For anyone located in the North Dallas area, we highly recommend!",
+            "author": "Noah Barnard",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Kingswood delivered a seamless and stunning transformation of our backyard, handling everything from the pool and landscape architecture to lighting and surfacing with precision. As a new homeowner here in Dallas , I appreciated their clear communication and elevated design eye. The space feels timeless and refined, and the quality is evident in every detail. Highly recommend if you’re looking for a true luxury build experience!",
+            "author": "Clayton Taylor",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Kingswood handled our full landscape and hardscape scope in Preston Hollow, and the result speaks for itself. From design to installation, every element was thoughtfully executed—modern flatwork, clean plantings, and a lighting plan that highlights the home’s architecture beautifully. Their team was professional, communicative, and clearly takes pride in their craft. The entire exterior now feels cohesive, elevated, and tailored to the home. Couldn’t be more pleased with the experience or the finished product.",
+            "author": "Cade Darden",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "We trusted Kingswood Landscape with our outdoor remodel at our home in Park Cities, and they delivered at a level that’s rare to find. Every detail feels intentional and high-end, from the lighting to the stonework. I 10/10 recommend them to anyone looking for a complete package landscaper!",
+            "author": "David Butler",
+            "rating": 5
+          },
+          {
+            "date": "6 months ago",
+            "text": "Kingswood Landscape was a pleasure to work with from start to finish. Their team at Kingswood Studio brought our outdoor space to life with an elegant feel that flows seamlessly with our home. The Outdoor Living and Pool were beautifully done, and the details in the stonework and layout are exceptional. We love spending time out here, and it truly feels like an extension of our living space!",
+            "author": "Quinn Zavodnick",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "I’ve had only great experiences with Kingswood Landscape! They’re all so professional and do such great work. Highly recommend!",
+            "author": "Taryn Hart",
+            "rating": 5
+          },
+          {
+            "date": "4 weeks ago",
+            "text": "The best of the best in the landscaping game!! Get with these guys they know what they’re doing!",
+            "author": "Jared Newport",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "review_count": 7,
+        "review_source": "serper",
+        "collection_cost": 0.002
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:17:14.633Z",
+      "data": {
+        "found": true,
+        "rating": 4.9,
+        "status": "open",
+        "review_count": 122,
+        "business_name": "See photos Kingswood landscape"
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:18:59.573Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:19:00.461Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:17:41.198Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:17:45.226Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:17:47.421Z",
+      "data": {
+        "query": "Kingswood landscape Colleyville site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:19:04.707Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Kingswood landscape\" Colleyville",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:00.319Z",
+      "data": "Kingswood landscape Colleyville review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 4:24 4:24 Now playing Before Giving Your Landscaping Customers a Price to Trim Shrubs! Ask them This... Keith Kalfas Keith Kalfas • • 10K views 1 year ago Keith Kalfas Keith Kalfas Before Giving Your Landscaping Customers a Price to Trim Shrubs! Ask them This...it's very important to get clear on expectations ... Before Giving Your Landscaping Customers a Price to Trim Shrubs! Ask them This...it's very important to get clear on expectations ... From the video description 4K 3 chapters Intro | Ask them This | Depth of Trimming 3 auto-generated chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 Ask them This Ask them This 0:37 Ask them This 0:37 Depth of Trimming Depth of Trimming 1:27 Depth of Trimming 1:27 0:19 0:19 Now playing Colleyville denies zoning request in Cross Timbers Forest WFAA WFAA • • 131 views 2 years ago WFAA WFAA The developers could still file another request for the project. But for now, it's on hold. The developers could still file another request for the project. But for now, it's on hold. From the video description CC 7:58 7:58 Now playing Landscaping Mistakes That Lead To More Work! (Low Maintenance Landscape Tips) John & Bob's Smart Soil Solutions John & Bob's Smart Soil Solutions • • 311K views 2 years ago John & Bob's Smart Soil Solutions John & Bob's Smart Soil Solutions Take a tour of this low maintenance landscape that John installed over 7 years ago! Find out how the front and back yard upkeep ... Take a tour of this low maintenance landscape that John installed over 7 years ago! Find out how the front and back yard upkeep ... From the video description 4K 7 chapters Intro | Low Maintenance Landscape Tips | Design Yard To Be Low Maintenance | Limit The Amount Of Plants & Trees | Low Maintenance Backyard Design | Pick Plants That Don't Need Much Pruning | John & Bob's Products Are Easy To Use 7 auto-generated chapters in this video 7 chapters Intro Intro 0:00 Intro 0:00 Low Maintenance Landscape Tips Low Maintenance Landscape Tips 0:17 Low Maintenance Landscape Tips 0:17 Design Yard To Be Low Maintenance Design Yard To Be Low Maintenance 1:06 Design Yard To Be Low Maintenance 1:06 Limit The Amount Of Plants & Trees Limit The Amount Of Plants & Trees 1:55 Limit The Amount Of Plants & Trees 1:55 Low Maintenance Backyard Design Low Maintenance Backyard Design 3:39 Low Maintenance Backyard Design 3:39 Pick Plants That Don't Need Much Pruning Pick Plants That Don't Need Much Pruning 5:30 Pick Plants That Don't Need Much Pruning 5:30 John & Bob's Products Are Easy To Use John & Bob's Products Are Easy To Use 7:02 John & Bob's Products Are Easy To Use 7:02 7:34 7:34 Now playing $7M Landscaping Company Owner Reveals Genius Method for Closing Deals Keith Kalfas Keith Kalfas • • 45K views 2 years ago Keith Kalfas Keith Kalfas M Landscaping Company Owner Reveals Genius Method for Closing Deals Steve DHondt from PMS Brick Pavers in Michigan ... M Landscaping Company Owner Reveals Genius Method for Closing Deals Steve DHondt from PMS Brick Pavers in Michigan ... From the video description 4K 33:02 33:02 Now playing Running Landscaping Business I wish I knew this years ago... Keith Kalfas Keith Kalfas • • 7.6K views 9 months ago Keith Kalfas Keith Kalfas Running Landscaping Business I wish I knew this years ago. Starting a Landscaping Business? Watch This What's The REAL ... Running Landscaping Business I wish I knew this years ago. Starting a Landscaping Business? Watch This What's The REAL ... From the video description 1:49 1:49 Now playing Discover The Kingswood Rowland Homes Rowland Homes • • 156 views 5 months ago Rowland Homes Rowland Homes Take a tour of The Kingswood , a spacious 5 bedroom detached home. Take a tour of The Kingswood , a spacious 5 bedroom detached home. From the video description 8:09 8:09 Now playing Landscape Plants to Avoid and What to Use Instead Family Plot Garden Family Plot Garden • • 597 views 3 years ago Family Plot Garden Family Plot Garden There are many popular plants that should be avoided. UT Extension Horticulture Specialist Carol Reese talks about what some ... There are many popular plants that should be avoided. UT Extension Horticulture Specialist Carol Reese talks about what some ... From the video description CC 11:33 11:33 Now playing 7 Top Foundation Planting Mistakes (& How to Avoid Them) Pretty Purple Door Garden Design Pretty Purple Door Garden Design • • 167K views 1 year ago Pretty Purple Door Garden Design Pretty Purple Door Garden Design 70+ Landscape Design Mistakes: https://www.prettypurpledoor.com/ landscape -design-mistakes/ 👉️Curb Appeal Mistakes ... 70+ Landscape Design Mistakes: https://www.prettypurpledoor.com/ landscape -design-mistakes/ 👉️Curb Appeal Mistakes ... From the video description 8 chapters Intro | Foundation Planting Mistake 7 | Foundation Planting Mistake 6 | Foundation Planting Mistake 5 | Foundation Planting Mistake 4 | Foundation Planting Mistake 3 | Foundation Planting Mistake 2 | Foundation Planting Mistake 1 8 auto-generated chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Foundation Planting Mistake 7 Foundation Planting Mistake 7 0:27 Foundation Planting Mistake 7 0:27 Foundation Planting Mistake 6 Foundation Planting Mistake 6 1:24 Foundation Planting Mistake 6 1:24 Foundation Planting Mistake 5 Foundation Planting Mistake 5 2:42 Foundation Planting Mistake 5 2:42 Foundation Planting Mistake 4 Foundation Planting Mistake 4 4:16 Foundation Planting Mistake 4 4:16 Foundation Planting Mistake 3 Foundation Planting Mistake 3 6:41 Foundation Planting Mistake 3 6:41 Foundation Planting Mistake 2 Foundation Planting Mistake 2 8:37 Foundation Planting Mistake 2 8:37 6:02 6:02 Now playing How to Train Landscaping Employees - 4 Step System (This Actually Works) Keith Kalfas Keith Kalfas • • 7.5K views 2 years ago Keith Kalfas Keith Kalfas How to Train Landscaping Employees - 4 Step System The 16 Documents You MUST HAVE When Hiring Landscaping ... How to Train Landscaping Employees - 4 Step System The 16 Documents You MUST HAVE When Hiring Landscaping ... From the video description Summary This video teaches a four-step system for training new landscaping employees. The system involves having the new employee observe, then practice, then teach the skill, and finally teach someone else. The speaker claims this system can help new employees learn quickly and confidently. AI-generated video summary Quality and accuracy may vary. Summary This video teaches a four-step system for training new landscaping employees. The system involves having the new employee observe, then practice, then teach the skill, and finally teach someone else. The speaker claims this system can help new employees learn quickly and confidently. 15:23 15:23 Now playing $150,000 Landscaping Job in 20 Days..... Tigran Gertz Tigran Gertz • • 309K views 3 years ago Tigran Gertz Tigran Gertz Back by popular demand start to finish. How we completed a job for 150k. Once you build out your life you can achieve anything. Back by popular demand start to finish. How we completed a job for 150k. Once you build out your life you can achieve anything. From the video description 4K Summary This time-lapse documents a complete backyard landscaping overhaul, budgeted at $150,000, and finished in just 20 days. The project involved significant demolition and construction, requiring various equipment and a large crew. Tigran Gertz shares insights into managing labor costs and business profitability during this ambitious undertaking. AI-generated video summary Quality and accuracy may vary. Summary This time-lapse documents a complete backyard landscaping overhaul, budgeted at $150,000, and finished in just 20 days. The project involved significant demolition and construction, requiring various equipment and a large crew. Tigran Gertz shares insights into managing labor costs and business profitability during this ambitious undertaking. 1:50 1:50 Now playing Longview Convention Complex set to have new pavilion near memorial garden KLTV 7 KLTV 7 • • 16 views 4 months ago KLTV 7 KLTV 7 Longview Convention Complex plans to build new pavilion near memorial garden For more Local News from KLTV: ... Longview Convention Complex plans to build new pavilion near memorial garden For more Local News from KLTV: ... From the video description CC People also watched 8:25 8:25 Now playing 5 DIRT-CHEAP SOUTH CAROLINA FARMHOUSES With LAND | Hidden Gems Starting at $42K! Quiet Life Homes Quiet Life Homes • • 17K views 9 days ago Quiet Life Homes Quiet Life Homes Discover 5 incredible South Carolina farmhouses with land ALL UNDER $100K! From move-in ready properties to amazing land ... Discover 5 incredible South Carolina farmhouses with land ALL UNDER $100K! From move-in ready properties to amazing land ... From the video description Summary Discover five South Carolina farmhouses, starting at just $42,000! Properties range from move-in ready to fixer-uppers, offering land and varying levels of renovation needed. Explore rural South Carolina's charm, with options near beaches and major cities. AI-generated video summary Quality and accuracy may vary. Summary Discover five South Carolina farmhouses, starting at just $42,000! Properties range from move-in ready to fixer-uppers, offering land and varying levels of renovation needed. Explore rural South Carolina's charm, with options near beaches and major cities. 11:08 11:08 Now playing Get Updated on the Big Creek Greenway Renovations Forsyth County Government Forsyth County Government • • 310 views 1 month ago Forsyth County Government Forsyth County Government In this edition of On the Move, Parks & Recreation Director Kirk Franz discusses renovations coming to the Big Creek Greenway ... In this edition of On the Move, Parks & Recreation Director Kirk Franz discusses renovations coming to the Big Creek Greenway ... From the video description 13:19 13:19 Now playing What $500,000 in Landscaping Looks Like in California!! Tigran Gertz Tigran Gertz • • 837K views 3 years ago Tigran Gertz Tigran Gertz Not often do you see jobs like this. This one takes the prize for one of the nicest jobs we have ever done. All thanks to the ... Not often do you see jobs like this. This one takes the prize for one of the nicest jobs we have ever done. All thanks to the ... From the video description 4K Summary This video showcases a stunning California landscaping project, costing $500,000. The detailed breakdown includes pool, deck, plants, and more, highlighting the significant labor costs. A collaborative effort with a skilled designer and a communicative homeowner ensures a smooth process. AI-generated video summary Quality and accuracy may vary. Summary This video showcases a stunning California landscaping project, costing $500,000. The detailed breakdown includes pool, deck, plants, and more, highlighting the significant labor costs. A collaborative effort with a skilled designer and a communicative homeowner ensures a smooth process. 16:02 16:02 Now playing Disabled woman SHOCKED. Flower Bed MAKEOVER! OVERGROWN landscape before and after. it's HIS turf it's HIS turf • • 3.2M views 4 years ago it's HIS turf it's HIS turf lawncarenation #lawncarelife #lawncarebusiness We were blessed to be able to help this homeowner clean up their ... lawncarenation #lawncarelife #lawncarebusiness We were blessed to be able to help this homeowner clean up their ... From the video description + 6 more 15:58 15:58 Now playing $1,700 Landscaping Job - Property Walk, Details, Pricing Keith Kalfas Keith Kalfas • • 71K views 2 years ago Keith Kalfas Keith Kalfas Landscaping Job - Property Walk, Details, Pricing. In this video I do a property walk of a Landscaping project I just sold and I ... Landscaping Job - Property Walk, Details, Pricing. In this video I do a property walk of a Landscaping project I just sold and I ... From the video description 4K Summary This video details a $1700 landscaping job quote, breaking down the pricing. A property walkthrough shows the work involved, from shrub trimming and mulch removal to stone installation near a pool. The creator explains their rationale for each cost component, offering insights into landscaping business finances. AI-generated video summary Quality and accuracy may vary. Summary This video details a $1700 landscaping job quote, breaking down the pricing. A property walkthrough shows the work involved, from shrub trimming and mulch removal to stone installation near a pool. The creator explains their rationale for each cost component, offering insights into landscaping business finances. 12:18 12:18 Now playing Landscaping Mistakes that Lead to More Maintenance ~ Low Maintenance Landscape Design Tips Garden Project Academy Garden Project Academy • • 918K views 3 years ago Garden Project Academy Garden Project Academy Learn some common landscaping mistakes that lead to more maintenance, and how to avoid them. Are you starting a ... Learn some common landscaping mistakes that lead to more maintenance, and how to avoid them. Are you starting a ... From the video description 10 chapters Intro | Too Many Perennials and Annuals | Improperly Spacing Plants | FREE MINI COURSE: How to Choose The Perfect Plant To watch, click the link below this video! | Too Much Garden Space, Not Enough Useful Space | Not Properly Mulching | No Edging Strategy | Not Considering a \"Wild Zone\" | Too Much Lawn | Rock or Gravel 10 auto-generated chapters in this video 10 chapters Intro Intro 0:00 Intro 0:00 Too Many Perennials and Annuals Too Many Perennials and Annuals 1:28 Too Many Perennials and Annuals 1:28 Improperly Spacing Plants Improperly Spacing Plants 3:27 Improperly Spacing Plants 3:27 FREE MINI COURSE: How to Choose The Perfect Plant To watch, click the link below this video! FREE MINI COURSE: How to Choose The Perfect Plant To watch, click the link below this video! 5:31 FREE MINI COURSE: How to Choose The Perfect Plant To watch, click the link below this video! 5:31 Too Much Garden Space, Not Enough Useful Space Too Much Garden Space, Not Enough Useful Space 5:40 Too Much Garden Space, Not Enough Useful Space 5:40 Not Properly Mulching Not Properly Mulching 6:33 Not Properly Mulching 6:33 No Edging Strategy No Edging Strategy 7:47 No Edging Strategy 7:47 2:14 2:14 Now playing What is Woodland Gardening? | Ken Cox Glendoick Glendoick • • 40K views 7 years ago Glendoick Glendoick Woodland Gardening, with rhododendrons, camellias, magnolias, the latest book by Kenneth Cox. Woodland Gardening is ... Woodland Gardening, with rhododendrons, camellias, magnolias, the latest book by Kenneth Cox. Woodland Gardening is ... From the video description 5 chapters Intro | What is Woodland Gardening | The 3 Layers | The Aesthetic | Acid Soil 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 What is Woodland Gardening What is Woodland Gardening 0:17 What is Woodland Gardening 0:17 The 3 Layers The 3 Layers 0:35 The 3 Layers 0:35 The Aesthetic The Aesthetic 1:00 The Aesthetic 1:00 Acid Soil Acid Soil 1:14 Acid Soil 1:14 0:55 0:55 Now playing Quick look at Kingwood Center Gardens. If you haven’t gone yet, they’re still open! 6K Drone Footage Timeless Aerial Photography Timeless Aerial Photography • • 71 views 11 days ago Timeless Aerial Photography Timeless Aerial Photography Website: www.timelessaerialphotography.com Facebook: https://www.facebook.com/TimelessAerialPhotography/ Instagram: ... Website: www.timelessaerialphotography.com Facebook: https://www.facebook.com/TimelessAerialPhotography/ Instagram: ... From the video description 4K 2:05 2:05 Now playing 14 Kingswood Crescent - Dayna Cantin - Goodfellow Realty Goodfellow Realty Goodfellow Realty • • No views 2 hours ago Goodfellow Realty Goodfellow Realty Welcome to 14 Kingswood Crescent. A breathtaking, fully remodeled 3875 sq ft two-storey home set on a private 1.3-acre lot with ... Welcome to 14 Kingswood Crescent. A breathtaking, fully remodeled 3875 sq ft two-storey home set on a private 1.3-acre lot with ... From the video description New 11:38 11:38 Now playing How to Quote a $7,100 Landscaping Garden Bed Makeover | Prices & Costly Mistakes to AVOID Keith Kalfas Keith Kalfas • • 4K views 6 months ago Keith Kalfas Keith Kalfas How to Quote a $7100 Landscaping Garden Bed Makeover | Landscaping Prices Have you ever wondered how much to charge ... How to Quote a $7100 Landscaping Garden Bed Makeover | Landscaping Prices Have you ever wondered how much to charge ... From the video description 4K Summary Learn how to price a $7,100 landscaping makeover. This video details material costs, from shrub removal to stone installation, and crucial steps to avoid costly mistakes. The presenter emphasizes efficient processes and profit margins. AI-generated video summary Quality and accuracy may vary. Summary Learn how to price a $7,100 landscaping makeover. This video details material costs, from shrub removal to stone installation, and crucial steps to avoid costly mistakes. The presenter emphasizes efficient processes and profit margins. 22:09 22:09 Now playing 10 Low-Maintenance Foundation Shrubs You'll Love Gardening with Creekside Gardening with Creekside • • 163K views 1 year ago Gardening with Creekside Gardening with Creekside Shop Creekside's Online Store https://bit.ly/3sSRiut Sign up for our emails here! https://bit.ly/3uXq6MB Companies We ... Shop Creekside's Online Store https://bit.ly/3sSRiut Sign up for our emails here! https://bit.ly/3uXq6MB Companies We ... From the video description 4K CC 11 chapters Intro | Boxwood | Fire Chief | Mucho Gusto | Sunshine Legum | Diphyllum | Dragon Prince Cryptomeria | Laur Pedum | Purple Daydream | Jazz Hands Variegated | Florida Sunshine 11 auto-generated chapters in this video 11 chapters Intro Intro 0:00 Intro 0:00 Boxwood Boxwood 1:26 Boxwood 1:26 Fire Chief Fire Chief 3:03 Fire Chief 3:03 Mucho Gusto Mucho Gusto 4:28 Mucho Gusto 4:28 Sunshine Legum Sunshine Legum 6:11 Sunshine Legum 6:11 Diphyllum Diphyllum 10:11 Diphyllum 10:11 Dragon Prince Cryptomeria Dragon Prince Cryptomeria 11:44 Dragon Prince Cryptomeria 11:44 1:41 1:41 Now playing Kingswood Park Restoration Recap Ohio River Foundation Ohio River Foundation • • 120 views 5 years ago Ohio River Foundation Ohio River Foundation Kingswood Park Invasive Species Removal. Performed in July 2020 by Ohio River Foundation, residents of Deerfield Township, ... Kingswood Park Invasive Species Removal. Performed in July 2020 by Ohio River Foundation, residents of Deerfield Township, ... From the video description 11:30 11:30 Now playing How to Handle Cheap Customers in Landscaping Tigran Gertz Tigran Gertz • • 12K views 9 months ago Tigran Gertz Tigran Gertz In business, you're always going to run into difficult clients. it's inevitable. Ever since I started Applewood Landscaping , I've had to ... In business, you're always going to run into difficult clients. it's inevitable. Ever since I started Applewood Landscaping , I've had to ... From the video description 4K Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:01.521Z",
+      "data": {
+        "query": "site:nextdoor.com Kingswood landscape Colleyville",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/kingswood-landscape-colleyville-tx/",
+            "title": "Kingswood Landscape - Colleyville, TX - Nextdoor",
+            "snippet": "Kingswood Landscape. 6600 Colleyville Boulevard. Colleyville. TX. 76034. US. 32.90482. -97.14028. Landscape architect/designer. Landscape contractor. Driveway ...",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/kingswoodestates--north-richland-hills--tx/",
+            "title": "Kingswood Estates, North Richland Hills - Nextdoor",
+            "snippet": "Kingswood Estates is a peaceful, family-friendly neighborhood in North Richland Hills, TX. Known for its well-maintained homes, mature trees, and close-knit ...",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/colleyville-colleyville--colleyville--tx/",
+            "title": "Colleyville, Colleyville | Everything You Need to Know - Nextdoor",
+            "snippet": "Colleyville is a peaceful and well-maintained neighborhood in the USA, known for its beautiful, tree-lined streets. Nextdoor Neighbors love the area for its ...",
+            "position": 3
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/kingstonestatestx--colleyville--tx/",
+            "title": "Kingston Estates, Colleyville | Everything You Need to Know",
+            "snippet": "Kingston Estates is a peaceful, upscale neighborhood in Colleyville, TX, known for its large, well-maintained homes and tree-lined streets.",
+            "position": 4
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/thewoodsofcolleyville--colleyville--tx/",
+            "title": "The Woods Of Colleyville - Nextdoor",
+            "snippet": "The Woods of Colleyville is a peaceful, upscale neighborhood in Colleyville, Texas. Known for its large, beautiful homes, mature trees, and well-kept lawns, ...",
+            "position": 5
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/westmontdr--colleyville--tx/",
+            "title": "Westmont Dr, Colleyville | Everything You Need to Know - Nextdoor",
+            "snippet": "Westmont Dr is a peaceful, family-friendly neighborhood in Colleyville, TX, known for its spacious homes, well-kept lawns, and tree-lined streets ... Kingswood ...",
+            "position": 6
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/colleyvilleblvdwgladerd--colleyville--tx/",
+            "title": "Colleyville Blvd/W Glade Rd - Nextdoor",
+            "snippet": "Colleyville Blvd/W Glade Rd is a peaceful, family-friendly neighborhood in Colleyville, TX. Known for its well-kept homes, good schools, and local amenities ...",
+            "position": 7
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/colleyvilleheights--colleyville--tx/",
+            "title": "Colleyville Heights, Colleyville | Everything You Need to Know",
+            "snippet": "Colleyville Heights is a peaceful, family-friendly neighborhood in Colleyville, TX. Known for its well-kept homes, lush green spaces, and excellent schools, ...",
+            "position": 8
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/plymouthhillstx--colleyville--tx/",
+            "title": "Plymouth Hills, Colleyville | Everything You Need to Know - Nextdoor",
+            "snippet": "Plymouth Hills is a peaceful, family-friendly neighborhood in Colleyville, TX. Known for its spacious homes, lush greenery, and excellent schools, ...",
+            "position": 9
+          },
+          {
+            "link": "https://nextdoor.com/neighborhood/lowrie--colleyville--tx/",
+            "title": "Lowrie, Colleyville | Everything You Need to Know - Nextdoor",
+            "snippet": "Lowrie is a peaceful, family-friendly neighborhood in Colleyville, TX, known for its well-maintained homes and lush green spaces.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:19:04.013Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Kingswood landscape\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:19:05.959Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Kingswood landscape\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:16.540Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Kingswood%20landscape&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Kingswood% 20landscape&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Kingswood% 20landscape&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Kingswood% 20landscape&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "search_type= Name&Name= Kingswood% 20landscape&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 5,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Kingswood% 20landscape&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 6,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Kingswood% 20landscape&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 7,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Kingswood% 20landscape&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Kingswood% 20landscape&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Kingswood% 20landscape&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-results-help",
+            "title": "Search Results Help | ECHO | US EPA",
+            "snippet": "From the All Media Programs Facility Search, you can search both for EPA Registry IDs and Program System IDs by using the Facility ID Number box. You can ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "search_type= Name&Name= Kingswood% 20landscape&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:20.797Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2026 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:27.311Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:19:01.803Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Kingswood landscape\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:18:34.730Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Kingswood landscape",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:36.036Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 22, 2024",
+            "link": "https://www.uscis.gov/sites/default/files/err/B2%20-%20Aliens%20with%20Extraordinary%20Ability/Decisions_Issued_in_2024/AUG222024_01B2203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "... State of Texas has been. \"forfeited.\" See https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. On remand, the Director should issue a new RFE and ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This page is valid for most ...",
+            "position": 9
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:18:37.040Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Kingswood landscape",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:18:38.180Z",
+      "data": {
+        "query": "site:dallascounty.org Kingswood landscape civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:39.267Z",
+      "data": {
+        "query": "site:collincountytx.gov Kingswood landscape",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.collincountytx.gov/ossf/",
+            "title": "AEROBIC_SYSTEM_LIST.HTML - Collin County",
+            "snippet": "Collin County PAGE 1 requires that maintenance be performed 3 times per year - every 120 - 130 days. Reports are due to Development Services within 14 days of ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:18:40.349Z",
+      "data": {
+        "query": "site:dentoncounty.gov Kingswood landscape",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:49.821Z",
+      "data": "Luxury Landscape Architecture & Designers in TX - Kingswood Pages Home the Kingswood Collection Disciplines FAQs Contact Privacy Policy Terms of Use Landscape Services Landscape & Outdoor Living remodels New Home Construction Landscaping Landscape Design Artificial Turf Installation Hardscaping Privacy Policy Terms of Use Custom Pools Design & Build Kingswood Studio Kingswood Outdoors About Firm Meet The Team In The Press Testimonials Schedule Discovery call Schedule Discovery call Transform Your Outdoor Space Design-Build Excellence Spanning New Construction Home Installs, Estate Remodels, Landscape Design, And Fully Integrated Outdoor Living. Schedule Discovery call Signature Disciplines 600 + Jobs Completed 100 + 5-Star Google Reviews 50 + Years Of Experience $ 30 K Project Minimum Landscape & Outdoor Living Remodels Kingswood Landscape transforms existing outdoor spaces with smart structural planning, elite design, and timeless materials that enhance lifestyle and provide luxury outdoor living spaces. Learn more New Home Construction Landscaping Designing and building complete new home landscaping for luxury residences, seamlessly integrating architecture, landscape design and build, and lifestyle from the ground up. Learn more Landscape Design As a leading residential and commercial landscape architect, we design unique outdoor spaces that perfectly reflect your vision, combining architectural structure, custom landscape and design intent, and superior beauty. Learn more Artificial Turf Installation We provide premium, low-maintenance artificial turf installation built for sharp detailing, durability, and a natural look, perfect for luxury outdoor living spaces. Learn more Hardscaping No more searching for “landscape hardscape contractors near me” as we provide customized pool decks, patios, walks, and retaining walls that are designed for longevity, expert craftsmanship, and better outdoor living. This includes skilled hardscape design and installation as well as retaining wall construction. Learn more Custom Pools Kingswood Outdoors delivers custom swimming pool construction with architectural accuracy, combining form, function, and aesthetics to improve the outdoor living experience. Learn more Learn More Schedule Discovery call A Refined 5-Step Journey to Outdoor Excellence Kingswood does more than just landscape construction, we also redesign. Every outdoor space we work on is converted into a stylish addition to your home, created with vision, expertise, and intent. Here's how we bring that to life. Private Consultation 01 We begin with a personal, in-depth conversation to understand your goals, lifestyle, and space. Every great outdoor living remodel starts with listening. Receive Your Composed Proposal You bring the vision, and we carry it forward. With decades of experience, we provide creative direction, functional clarity, and architectural-forward luxury landscape design and build solutions through our proposals. 02 Design & Proposal Presentation If you are looking for a commercial and residential landscape architect near me? We present a detailed proposal with layouts, material suggestions, and a clear investment outline. 03 Build Planning & Scheduling Upon project approval, we secure your landscape construction timeline and begin preparations. From permitting to material logistics, every detail is coordinated by our expert project management teams. 04 Execution & Unveiling Our experts execute the vision with accuracy and care. The end result is a luxury outdoor living space that not only meets, but exceeds expectations. 05 The Kingswood Collection New Home Construction Landscaping in Southlake, TX View Project Luxury Outdoor Living Remodel in Preston Hollow, TX View Project Custom Design & Build in Frisco, TX View Project New Construction Home Build in Southlake, TX View Project New Home Construction Build in Park Cities, TX View Project New Home Build Project in Keller, Tx View Project The Kingswood Ethos We are a team of landscape architects and professionals who are passionate about creating intentional, timeless residences. We transform outdoor areas into home extensions by focusing on comprehensive landscape architecture and design services, long-lasting materials, and seamless functionality. Our approach is based on expertise, understanding, and an uncompromising dedication to excellence, ensuring that each project represents not only our standards but also the outdoor lifestyle that our clients want. Learn More Our Story: From Vision to Commitment At Kingswood Landscape, our ethos is grounded in a deep respect for design, detail, and the environments we help shape. What began as a commitment to intentional outdoor living has evolved into a full-service commercial & residential landscape design and build firm known for creating refined, enduring spaces. Every project reflects a belief in timeless craftsmanship, meaningful client relationships, and the power of outdoor environments to elevate how we live. 5 Star Rating Across All Platforms. We’re more than just a landscape company, we’re a full-service landscape design and build firm specializing in considered, enduring outdoor environments for residential and commercial clients. Every space we create is the result of intentional design, architectural fluency, and a deep understanding of how people truly live, often discovered by clients searching for “landscaping architect near me.” Our team balances aesthetic vision with spatial purpose, prioritizing clarity, quality, and client connection at every step. The result is more than a landscape, it’s a refined outdoor experience that enhances daily life and elevates the spirit of the home. Why Clients Choose Kingswood Our clients’ satisfaction is at the heart of everything we do, and why we’re counted among the “ top landscaping and the best hardscape companies near me ”. Hear how our craftsmanship, communication, and care have made a lasting impact on their outdoor spaces. Learn More “Kingswood Landscape was a pleasure to work with from start to finish. Their team at Kingswood Studio brought our outdoor space to life with an elegant feel that flows seamlessly with our home. The Outdoor Living and Pool were beautifully done, and the details in the stonework and layout are exceptional. We love spending time out here, and it truly feels like an extension of our living space!” Quinn Zavodnic Home owner “Working with Kingswood Landscape was a great experience from start to finish. The team was professional, responsive, and made the entire process easy and stress-free. The finished project exceeded our expectations and it looks incredible! I highly recommend them to anyone looking for quality landscaping work.” Zach Burns Home owner “Kingswood Landscape did a phenomenal job on my backyard project in Southlake. They were efficient, detailed, and very communicative throughout the process. We installed artificial turf, a new drainage system, and a new seating wall. Will, Carson, and their crews were a pleasure to work with, and I would highly recommend Kingswood.” Colt Rouquette Home owner “Kingswood Landscape did an incredible job on our front yard. The clean lines, lush lawn, and layered greenery perfectly complement the architecture of our home. Their team was professional, efficient, and delivered exactly what we envisioned. We’ve received so many compliments on the curb appeal since it was completed” Maya Suresh Home owner “Kingswood Landscape redefined our outdoor space with their amazing landscape architecture team. We had a custom pool built, new peacock paver courtyard hallway, and a beautifully executed landscape plan. We were going for an Acadian/ Southern tradition look and they absolutely nailed it!” Ryan Lambert Home owner Slide 2 of 5. 1 2 3 4 5 Considering what’s next for your property? Let’s begin the conversation Whether you have a clear vision or are ready to bring long-held ideas to life, we’re here when the timing feels right. If you’re comparing “residential landscape design companies”, looking for experienced “landscape designers or architects near me”, schedule your discovery call to initiate the process, and receive your composed proposal, crafted around your objectives, your residence, and the way you envision enjoying your outdoor living spaces. Contact Us Project Budget 20k-50k 50k-100k 100k-200k 250k-500k 500k+ Project Style Southern Transitional Classic Modern Mediterranean Coastal Baja Coastal Modern Transitional Estate Landscape Additional Information For Spouse/Significant Other : How Did You Hear About Us? Job Sign Social Media (Facebook, Instagram, Pinterest) Magazine/Print Google Referral Architect Builder Realtor Interior Designer Which of the Following Best Describes You? Home Owner Realtor Another option Interior Designer Builder Industry Professional Thanks for reaching out! Our team will review your request and get back to you within 1-2 Business Days to discuss your project. Oops! Something went wrong while submitting the form. Pages Home The Kingswood Collection Services FAQs Contact About Firm Meet the Team In The Press Testimonial Services Landscape & Outdoor Living Remodels New Home Construction Landscaping Landscape Design Artificial Turf Installation Hardscaping Custom Pools & Structures design & Build Kingswood Studio Kingswood Outdoors Contact info@kingswoodlandscape.com (833) 383-1178 6600 Colleyville Boulevard, Colleyville, Texas 76034 6060 N Central Expy Suite 500, Dallas, Texas 75206 2525 Handley Ederville Rd, Richland Hills, Texas 76118 Business Hours Monday- 8:00-5:00 Tuesday- 8:00-5:00 Wednesday- 8:00-5:00 Thursday- 8:00-5:00 Friday- 8:00-5:00 Saturday- 9:00-5:00 Sunday- Closed 2026 © Kingswood Landscape | All Rights Reserved Designed And Developed By Anomaly Transform Your Outdoor Space Contact Us MON-FRI 8:00 A.M SATURDAY 9:00 A.M SUNDAY- CLOSED info@kingswoodlandscape.com (972) 800-2290 pages Home Design & Build FAQs Contact Privacy Policy Term of Use about Firm Blog Testimonials Design & Build Kingswood Studio Transform Your Outdoor Space Design-Build Excellence Spanning New Construction Home Installs, Estate Remodels, Landscape Design, And Fully Integrated Outdoor Living. Schedule Discovery call"
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:50.753Z",
+      "data": {
+        "name": "Kingswood Landscape LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": null,
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:18:58.576Z",
+      "data": {
+        "found": true,
+        "rating": 4.9,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/kingswood-landscape-colleyville",
+        "review_count": 58
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:19:02.974Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Kingswood landscape\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-Kingswood-Landscape-LLC-EI_IE10345644.11,34.htm",
+            "title": "Working at Kingswood Landscape",
+            "snippet": "Glassdoor gives you an inside look at what it's like to work at Kingswood Landscape, including salaries, reviews, office photos, and more."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:19:06.985Z",
+      "data": {
+        "found": true,
+        "query": "\"Kingswood landscape\" Colleyville lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?cflt=lawnservices&find_loc=Colleyville%2C+TX+76034",
+            "title": "THE BEST 10 LAWN SERVICES near COLLEYVILLE, TX ...",
+            "snippet": "... Kingswood Landscape, SiteOne Landscape Supply Stone Center, Jay's Lawn ... complaint is that they won't come on weekdays, which could be inconvenient ..."
+          },
+          {
+            "link": "https://m.yelp.ca/search?find_desc=Koi+Fish+Pond&find_loc=Arlington%2C+TX",
+            "title": "TOP 10 BEST Koi Fish Pond in Arlington, TX, United States",
+            "snippet": "6600 Colleyville Blvd, Colleyville, TX 76034 United States. (972) 800-2290. From the business: Kingswood Landscape is a Full-Service Design-and-Install Firm."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:19:24.936Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T19:19:09Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Kingswood%20landscape%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=rbFeaYDdC8fgp84P_Y2GiAU\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T19:19:19Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Kingswood%20landscape%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=trFeaa_7OdWvp84Pq7fz-AQ\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Kingswood landscape",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:19:25.104Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Kingswood landscape",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:19:25.616Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "KINGSWOOD LANDSCAPE LLC",
+        "taxpayer_number": "32087490549"
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:19:25.621Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:19:36.109Z",
+      "data": {
+        "cost": 0.0009627800000000001,
+        "summary": "Reviews appear highly authentic. The high ratings are consistent across platforms and supported by detailed, specific customer feedback. The lack of visible complaints and the professional owner responses are positive indicators. The minor 'fake signals' are likely a result of sampling bias and customers in a high-end market using similar descriptive language.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-01-07T19:19:36.109Z",
+        "fake_signals": [
+          "Some reviews use similar, slightly generic 'luxury' language",
+          "Limited negative reviews visible in sample"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 4.9,
+          "google": 4.9,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Specific project details (retaining wall in McKinney, backyard in Southlake)",
+          "Mention of crew names (Ben, Ryan)",
+          "Varied writing styles and lengths",
+          "Owner responses are professional and personalized",
+          "Reviews reference specific services (pool, hardscape, lighting, turf)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "All available ratings are consistently high (4.9-5.0) and the BBB rating is A+. No significant discrepancies."
+      }
+    }
+  }
+}

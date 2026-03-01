@@ -1,0 +1,2586 @@
+{
+  "contractor_id": 8774,
+  "business_name": "Custom Design Pools",
+  "city": "Garland",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T02:36:37.870Z",
+  "sources": {
+    "website": {
+      "status": "error",
+      "fetched_at": "2026-02-13T00:54:02.462Z",
+      "data": {
+        "email": null,
+        "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.customdesignpools4u.com/\nCall log:\n\u001b[2m  - navigating to \"http://www.customdesignpools4u.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+        "source": null
+      }
+    },
+    "website_warranty": {
+      "status": "error",
+      "fetched_at": "2026-02-13T00:54:05.521Z",
+      "data": null
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:53:23.209Z",
+      "data": {
+        "name": "Tidal Wave Custom Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(214) 906-8991",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/frisco/profile/swimming-pools/tidal-wave-custom-pools-0875-91347018",
+        "review_count": null,
+        "founding_date": "03/27/2023",
+        "complaint_count": null,
+        "accredited_since": "10/21/2024",
+        "years_in_business": 2,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:51:48.983Z",
+      "data": {
+        "query": "site:yelp.com \"Custom Design Pools\" \"Garland, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-13T01:21:12.769Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "ABS_JUDG": 2,
+            "REL_LIEN": 32,
+            "MECH_LIEN": 23
+          },
+          "active_liens": 25,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 1,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "THOMPSON DOUGLAS MICHAEL",
+                "grantor": "CUSTOM DESIGN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CUSTOM DESIGN POOLS",
+                    "THOMPSON DOUGLAS MICHAEL",
+                    "RELEASE",
+                    "4/21/2005",
+                    "20050421000518220",
+                    "LAND/5902/1706",
+                    "Subdivision- Name: HIGHLAND RIDGE IV PLANO I/68 Lot: 11 Block: B, Reference - I / 68"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2005-04-21",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "20050421000518220"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 49,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "GRAY DAVID L",
+                "grantor": "CUSTOM DESIGN POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CUSTOM DESIGN POOLS INC",
+                    "GRAY DAVID L",
+                    "RELEASE",
+                    "6/15/1984",
+                    "198401199493",
+                    "ALL/84119/2903",
+                    "DALLAS",
+                    "Subdivision- Name: FOREST MDW4 Lot: 18 Block: J NCB: 8156,, Reference - 73020 / 895"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1984-06-15",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "198401199493"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS INC",
+                "grantor": "GRAY DAVID L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GRAY DAVID L",
+                    "CUSTOM DESIGN POOLS INC",
+                    "MECHANICS LIEN",
+                    "4/18/1983",
+                    "198300778844",
+                    "ALL/83077/3745",
+                    "DALLAS",
+                    "Subdivision- Name: FOR MDW4 Lot: 18 Block: J CBLK: 8156, CITY: DALLAS,, Reference - 73020 / 895"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1983-04-18",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "198300778844"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS INC",
+                "grantor": "CODY HAROLD W",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CODY HAROLD W",
+                    "CUSTOM DESIGN POOLS INC",
+                    "MECHANICS LIEN",
+                    "6/6/1983",
+                    "1983011183751",
+                    "ALL/83111/2249",
+                    "RICHARDSON",
+                    "Subdivision- Name: COLLG PK N Lot: 24 Block: C CITY: RICHARDSON,, Reference - 73045 / 1086"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1983-06-06",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1983011183751"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS INC",
+                "grantor": "LEWIS JANIS A",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "LEWIS JANIS A",
+                    "CUSTOM DESIGN POOLS INC",
+                    "MECHANICS LIEN",
+                    "1/31/1986",
+                    "1986002162611",
+                    "ALL/86021/483",
+                    "GARLAND",
+                    "Subdivision- Name: WILLIAMS 3 Lot: 7 Block: 13 CITY: GARLAND,, Reference - 26 / 83"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1986-01-31",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1986002162611"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "FAHS PHILIP J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "FAHS PHILIP J",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "1/21/1985",
+                    "1985001540731",
+                    "ALL/85015/754",
+                    "FARMERS BRANCH",
+                    "Subdivision- Name: OAKBK EST Lot: 25 Block: N CITY: FARMERS BRANCH,, Reference - 78141 / 819"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1985-01-21",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1985001540731"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "DAVID CANDACE E",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DAVID CANDACE E",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "8/19/1992",
+                    "1992016268951",
+                    "ALL/92162/5300",
+                    "DALLAS",
+                    "Subdivision- Name: HIGHLD NOR2 Lot: 13 Block: 11 CBLK: 8198, CITY: DALLAS,, Reference - 75097 / 814"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1992-08-19",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1992016268951"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "KOSCHAK CAROL G",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "KOSCHAK CAROL G",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "4/8/1985",
+                    "1985006992701",
+                    "ALL/85069/1622",
+                    "RICHARDSON",
+                    "Subdivision- Name: PEARCE JJ 1 Lot: 10 Block: 12 CITY: RICHARDSON,, Reference - 76172 / 75"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1985-04-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1985006992701"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS INC",
+                "grantor": "ROSENTHAL RENA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ROSENTHAL RENA",
+                    "CUSTOM DESIGN POOLS INC",
+                    "ABSTRACT OF JUDGMENT",
+                    "2/26/1988",
+                    "198800394688",
+                    "ALL/88039/2256",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "ABSTRACT OF JUDGMENT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1988-02-26",
+                "document_type": "ABS_JUDG",
+                "recording_date": null,
+                "instrument_number": "198800394688"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "BASS JOHN",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BASS JOHN",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "5/30/1995",
+                    "1995010546591",
+                    "ALL/95105/1912",
+                    "GARLAND",
+                    "Subdivision- Name: CAMELOT12 Lot: 24 Block: 6 CITY: GARLAND,, Reference - 79008 / 2875"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1995-05-30",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1995010546591"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "WESTERMAN BELINDA L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WESTERMAN BELINDA L",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "9/26/1985",
+                    "198501898329",
+                    "ALL/85189/5081",
+                    "RICHARDSON",
+                    "Subdivision- Name: UNIV 4 Lot: 11 Block: 4 CITY: RICHARDSON,, Reference - 79172 / 1285"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1985-09-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "198501898329"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "BAY CAREY S",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BAY CAREY S",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "5/3/1993",
+                    "1993008648141",
+                    "ALL/93086/4820",
+                    "CARROLLTON",
+                    "Subdivision- Name: JOSEY RCH1 Lot: 2 Block: G CITY: CARROLLTON,, Reference - 85236 / 5700"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1993-05-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1993008648141"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS INC",
+                "grantor": "SCHROEDER DENNIS G",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SCHROEDER DENNIS G",
+                    "CUSTOM DESIGN POOLS INC",
+                    "MECHANICS LIEN",
+                    "10/13/1986",
+                    "1986019989921",
+                    "ALL/86199/2112",
+                    "RICHARDSON",
+                    "Subdivision- Name: UNIVRSTY 3 Lot: 30 Block: 10 CITY: RICHARDSON,, Reference - 71125 / 155"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1986-10-13",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1986019989921"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "BEVILACQUA ROBERTO",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BEVILACQUA ROBERTO",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "8/3/2001",
+                    "2001014818531",
+                    "ALL/2001151/11196",
+                    "COPPEL",
+                    "Subdivision- Name: GIBBS STATI Lot: 14 Block: B CITY: COPPEL,, Reference - 94001 / 71"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2001-08-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2001014818531"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS INC",
+                "grantor": "YEAGER GLEN",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "YEAGER GLEN",
+                    "CUSTOM DESIGN POOLS INC",
+                    "MECHANICS LIEN",
+                    "5/27/1986",
+                    "1986010248281",
+                    "ALL/86102/1521",
+                    "DALLAS",
+                    "Subdivision- Name: PRESTONWD23 Lot: 20 Block: 12 CBLK: 8193, CITY: DALLAS,, Reference - 78168 / 1"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1986-05-27",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1986010248281"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "TREGONING JULIE A",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "TREGONING JULIE A",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "4/7/1994",
+                    "1994006861991",
+                    "ALL/94068/1529",
+                    "COPPEL",
+                    "Subdivision- Name: CHAUCER EST Lot: 2 Block: B CITY: COPPEL,, Reference - 92248 / 2980"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1994-04-07",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "1994006861991"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "ELLIS JOHN M/M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ELLIS JOHN M/M",
+                    "CUSTOM DESIGN POOLS",
+                    "ABSTRACT OF JUDGMENT",
+                    "12/31/1986",
+                    "198600023876",
+                    "ALL/87002/3776",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "ABSTRACT OF JUDGMENT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1986-12-31",
+                "document_type": "ABS_JUDG",
+                "recording_date": null,
+                "instrument_number": "198600023876"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "WILSON ARVID W",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WILSON ARVID W",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "6/15/1983",
+                    "198301191912",
+                    "ALL/83119/403",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1983-06-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "198301191912"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "VON HASZ M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "VON HASZ M",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "3/9/1987",
+                    "198700455845",
+                    "ALL/87045/2451",
+                    "DALLAS",
+                    "Subdivision- Name: PRESTON WD Lot: 21 Block: 6 NCB: 8188,"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1987-03-09",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "198700455845"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "VAN HASZ MARCEL O",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "VAN HASZ MARCEL O",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "4/15/1987",
+                    "198700720478",
+                    "ALL/87072/6774",
+                    "DALLAS",
+                    "Subdivision- Name: PRESTNWD E3 Lot: 21 Block: 6 NCB: 8188,, Reference - 69112 / 2328"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "1987-04-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "198700720478"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "JANAK JOAN E",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "JANAK JOAN E",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047608",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: JOHN MCDOWELL SURVEY, Reference - 922 / -"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047608"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS INC",
+                "grantor": "PRESTON HOLLOW PARTNERS LP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PRESTON HOLLOW PARTNERS LP",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS INC",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047588",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: THE SORRENTO CONDOMINIUMS Lot: 218, Reference - - / 20070332617"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047588"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "ELLINGTON SHARON L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ELLINGTON SHARON L",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047613",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047613"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "CARRABBA JOSEPH JR",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CARRABBA JOSEPH JR",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047605",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: JOHN MCDOWELL SURVEY, Reference - 922 / -"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047605"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "JENKINS MICHAEL",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "JENKINS MICHAEL",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047609",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047609"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "CASAZZA JEAN K",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CASAZZA JEAN K",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047598",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: THE SORRENTO Lot: 215, Reference - - / 20070332617"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047598"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "ONEAL MARY ANN M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ONEAL MARY ANN M",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047591",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047591"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "ROGERS CHARLES",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ROGERS CHARLES",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047597",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: THE SORRENTO Lot: 211, Reference - - / 20070332617"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047597"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "EVANS DOLORES J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "EVANS DOLORES J",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047595",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047595"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "COVENEY JACQUELINE A",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "COVENEY JACQUELINE A",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047602",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047602"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "CHURCH OMA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CHURCH OMA",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047592",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047592"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "THE SORRENTO OWNERS ASSOCIATION INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "THE SORRENTO OWNERS ASSOCIATION INC",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047590",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: JOHN MCDOWELL SURVEY, Reference - 922 / -"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047590"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "BREEDLOVE CHARLES J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BREEDLOVE CHARLES J",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047612",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: THE SORRENTO Lot: 500, Reference - - / 20070332617"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047612"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "DEAN WILLIAM",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DEAN WILLIAM",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047599",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: JOHN MCDOWELL SURVEY, Reference - 922 / -"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047599"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "SULLIVAN BARBARA B",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SULLIVAN BARBARA B",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047610",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: THE SORRENTO Lot: 423, Reference - - / 20070332617"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047610"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "LOVETT ALICE R",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "LOVETT ALICE R",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047614",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047614"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "LAW ACIE IV",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "LAW ACIE IV",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047615",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: JOHN MCDOWELL SURVEY, Reference - 922 / -"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047615"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "FACTOR FREDYE",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "FACTOR FREDYE",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047596",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: THE SORRENTO Lot: 209, Reference - - / 20070332617"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047596"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN",
+                "grantor": "HUNGERFORD BEVERLY ANN",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "HUNGERFORD BEVERLY ANN",
+                    "CUSTOM ARCHITECTURAL DESIGN",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047600",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: JOHN MCDOWELL SURVEY, Reference - 922 / -"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047600"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "NGUYEN NICOLE N",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "NGUYEN NICOLE N",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047601",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047601"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "LANIER JUDITH C",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "LANIER JUDITH C",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047604",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047604"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "BRADLEY DEBRA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BRADLEY DEBRA",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047616",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: JOHN MCDOWELL SURVEY, Reference - 922 / -"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047616"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "MARGARET K HERMANN QUALIFIED PERSONAL RESIDENCE TRUST",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MARGARET K HERMANN QUALIFIED PERSONAL RESIDENCE TRUST",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047617",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047617"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "SANDERS MARY J",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SANDERS MARY J",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047611",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047611"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "MACKAY OLENE M",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MACKAY OLENE M",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047594",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: THE SORRENTO Lot: 201, Reference - - / 20070332617"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047594"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "GIROIR FREIDA T",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GIROIR FREIDA T",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047593",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047593"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "GOLDFARB KERRI G",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "GOLDFARB KERRI G",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047589",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: NORTHWEST PLAZA SECOND INSTALLMENT Block: B CBLK: 5464,, Reference - 111 / 2856"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047589"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "ZADINA DEBORAH L",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "ZADINA DEBORAH L",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047606",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: JOHN MCDOWELL SURVEY, Reference - 922 / -"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047606"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "WRIGHT RICHARD H",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WRIGHT RICHARD H",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047603",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: THE SORRENTO Lot: 310, Reference - - / 20070332617"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047603"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                "grantor": "DENECHAUD CHARLES",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "DENECHAUD CHARLES",
+                    "CUSTOM ARCHITECTURAL DESIGN IMPACT FLOORS OF TEXAS LP",
+                    "RELEASE",
+                    "3/1/2010",
+                    "201000047607",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: THE SORRENTO Lot: 407, Reference - - / 20070332617"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2010-03-01",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "201000047607"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 7,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CUSTOM DESIGN POOLS",
+                "grantor": "CUSTOM DESIGN POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CUSTOM DESIGN POOLS",
+                    "CUSTOM DESIGN POOLS",
+                    "MECHANICS LIEN",
+                    "3/15/1988",
+                    "D188322367",
+                    "OPR/9216/2288",
+                    "KLR, Subdivision: BRENTWOOD ESTS, Lot: 1, Block: 2"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1988-03-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D188322367"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "KENNEDY JERRY",
+                "grantor": "CUSTOM DESIGN TURTLE SHELL POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CUSTOM DESIGN TURTLE SHELL POOLS",
+                    "KENNEDY JERRY",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "8/2/2002",
+                    "D202213321",
+                    "OPR/15864/331",
+                    "FORT WORTH, Subdivision: MIRA VISTA, Lot: 36, Block: 37"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2002-08-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D202213321"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CUSTOM DESIGN TURTLE SHELL POOLS",
+                "grantor": "CUSTOM DESIGN TURTLE SHELL POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CUSTOM DESIGN TURTLE SHELL POOLS",
+                    "CUSTOM DESIGN TURTLE SHELL POOLS",
+                    "MECHANICS LIEN",
+                    "8/17/2001",
+                    "D201199775",
+                    "OPR/15084/45",
+                    "FORT WORTH, Subdivision: RIDGLEA HILLS, Lot: 5R, Block: 28"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2001-08-17",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D201199775"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CUSTOM DESIGN TURTLE SHELL POOLS",
+                "grantor": "CUSTOM DESIGN TURTLE SHELL POOL",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CUSTOM DESIGN TURTLE SHELL POOL",
+                    "CUSTOM DESIGN TURTLE SHELL POOLS",
+                    "MECHANICS LIEN",
+                    "7/24/1997",
+                    "D197133264",
+                    "OPR/12845/264",
+                    "FORT WORTH, Subdivision: WESTPOINT, Lot: 11, Block: 5"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1997-07-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D197133264"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CUSTOM DESIGN TURTLE SHELL POOLS",
+                "grantor": "CUSTOM DESIGN TURTLE SHELL POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CUSTOM DESIGN TURTLE SHELL POOLS",
+                    "CUSTOM DESIGN TURTLE SHELL POOLS",
+                    "MECHANICS LIEN",
+                    "5/10/2001",
+                    "D201104812",
+                    "OPR/14881/82",
+                    "NONE, Subdivision: HORSE SHOE HILLS, Lot: 9 PT"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2001-05-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D201104812"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CUSTOM DESIGN TURTLE SHELL POOLS",
+                "grantor": "CUSTOM DESIGN TURTLE SHELL POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CUSTOM DESIGN TURTLE SHELL POOLS",
+                    "CUSTOM DESIGN TURTLE SHELL POOLS",
+                    "MECHANICS LIEN",
+                    "6/14/1999",
+                    "D199151295",
+                    "OPR/13861/675",
+                    "ARL, Subdivision: HUNTER TR, Lot: 22, Block: 6"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1999-06-14",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D199151295"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "CUSTOM DESIGN TURTLE SHELL POOLS",
+                "grantor": "CUSTOM DESIGN TURTLE SHELL POOL",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "CUSTOM DESIGN TURTLE SHELL POOL",
+                    "CUSTOM DESIGN TURTLE SHELL POOLS",
+                    "MECHANICS LIEN",
+                    "7/10/1992",
+                    "D192132843",
+                    "OPR/10700/388",
+                    "NONE, Subdivision: NON COUNTY"
+                  ],
+                  "search_term": "Custom Design Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1992-07-10",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D192132843"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 old lien(s) against contractor (>7 years ago)",
+            "18 lien(s) filed BY contractor (collecting payment - neutral)",
+            "6 lien(s) with unclear direction"
+          ],
+          "score": 8,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 25,
+          "human_summary": "CAUTION: 1 lien(s) filed AGAINST Custom Design Pools (potential payment issues)",
+          "liens_unclear": 6,
+          "liens_by_count": 18,
+          "resolved_liens": 0,
+          "liens_against_count": 1,
+          "liens_by_contractor": 18,
+          "total_against_amount": 0,
+          "liens_against_contractor": 1
+        },
+        "owner_name": null,
+        "search_term": "Custom Design Pools",
+        "searched_at": "2026-02-13T01:19:55.164474",
+        "total_records": 57
+      }
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:52:43.464Z",
+      "data": {
+        "query": "site:nextdoor.com Custom Design Pools Garland",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/sunset-backyards-garland-tx-1/",
+            "title": "Sunset Backyards - Nextdoor",
+            "snippet": "We at Sunset Backyards have artificial rock waterfalls that look and feel like real rock, but at a fraction of the weight, and cost!",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/marketplace/cedar-grove--tn/free/",
+            "title": "Free Finds in Cedar Grove, TN | For Sale & Free - Nextdoor",
+            "snippet": "Free Finds near the neighborhood in Cedar Grove, TN. Find items in For Sale & Free on Nextdoor - all listings are local.",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:54:15.966Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Custom Design Pools\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:53:52.019Z",
+      "data": {
+        "name": "Custom Design Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 880-1209",
+        "rating": 4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "3707 Meadow Wood Ct, Sachse, TX 75048",
+        "reviews": [],
+        "website": "http://www.customdesignpools4u.com/",
+        "maps_url": "https://www.google.com/maps/search/Custom%20Design%20Pools%20Garland%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:54:11.791Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:54:12.776Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:54:13.617Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "customdesignpools4u.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:52:23.335Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:52:26.882Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:54:18.313Z",
+      "data": {
+        "found": true,
+        "query": "\"Custom Design Pools\" Garland lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://texashistory.unt.edu/ark:/67531/metapth1763624/m1/1234/",
+            "title": "Greater Dallas White Pages: Business Pages, June 1994/1995 ...",
+            "snippet": "Custom Design Pools................... 881-9498 423-1251 881-0802 516-4114 424-3011. TTY For Hearing Impaired...214 979-0277. Administrative Offices ..."
+          },
+          {
+            "link": "https://mhl.org/sites/default/files/newspapers/ATM-1990-05-31.pdf",
+            "title": "[PDF] Andover Townsman, 05/31/1990 - Memorial Hall Library",
+            "snippet": "Custom Design Pools & Spas. • Service. • Pool Remodeling. • Liner ... court a complaint for author ity to foreclose said mort gage in the ..."
+          },
+          {
+            "link": "https://www.dallasopendata.com/api/views/jhgk-eg9m/rows.pdf?app_token=U29jcmF0YS0td2VraWNrYXNz0",
+            "title": "[PDF] Active Contractors - Dallas OpenData",
+            "snippet": "CUSTOM DESIGN POOLS. Building (BU). CUSTOM LASER ENGRAVERS LLC ... 10333 GARLAND RD SUITE G. WAXA ,TX 75165. 2142076920. 217 MAGNOLIA DR."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:52:30.066Z",
+      "data": {
+        "query": "Custom Design Pools Garland site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://amp.star-telegram.com/entertainment/home-garden/article31392206.html",
+            "title": "DIY paper garlands stretch party-decor dollars | Fort Worth Star ...",
+            "snippet": "When asked to share a favorite paper garland design, Roomiani produced one made with hand-tied and dyed batik paper on a cord made of recycled T-shirt material ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.star-telegram.com/entertainment/living/article47324495.html",
+            "title": "Twelve hacks of Christmas to minimize holiday stress | Fort Worth ...",
+            "snippet": "The base of the wreath can be the traditional foam ring ($5-$10 depending on size) or a pool noodle ($1). (I used a pool noodle for the larger wreath and two ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2019&mm=05&type=video",
+            "title": "[XML] sitemap.xml - NBC 5 Dallas-Fort Worth",
+            "snippet": "... Garland ISD Visa Scam</video:title><video:description>Current and former Garland ISD teachers are facing deportation years after a visa scam brought them to ...",
+            "position": 3
+          },
+          {
+            "date": "Dec 24, 2024",
+            "link": "https://www.dallasnews.com/abode/2024/12/24/these-are-abodes-10-most-popular-home-and-garden-stories-of-2024/",
+            "title": "These are Abode's 10 most popular home and garden stories of 2024",
+            "snippet": "From a dreamy backyard makeover in one of Dallas' most exclusive neighborhoods to a peek inside interior designers' own homes, we at Abode ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 30, 2025",
+            "link": "https://www.dallasnews.com/news/2025/12/30/the-tale-of-dallas-flying-red-horse-and-how-an-oil-companys-logo-became-a-city-symbol/",
+            "title": "The tale of Dallas' flying red horse, and how an oil company's logo ...",
+            "snippet": "The horse, designed, built and erected by Texlite, was composed of two profiles made of red porcelain enameled steel weighing 6,000 pounds. Both ...",
+            "position": 5
+          },
+          {
+            "date": "Jun 23, 2016",
+            "link": "http://interactives.dallasnews.com/2016/tornado-anniversary/",
+            "title": "Devastated but not defeated - The Dallas Morning News",
+            "snippet": "The Dallas Morning News has chronicled the progress of one Garland neighborhood in journal entries as its residents work to rebuild their lives and their homes.",
+            "position": 6
+          },
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2013&mm=10",
+            "title": "[XML] https://www.nbcdfw.com/sitemap.xml?yyyy=2013&mm=10",
+            "snippet": "... garland-clerk-murder-103013_dallas-fort-worth/1931123/</loc><video:video> ... Custom Diamond Bracelet</video:title><video:description>Jeweler Sues ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.dallasnews.com/topic/new-homes/page/6/",
+            "title": "New Homes | Dallas Morning News - The Dallas Morning News",
+            "snippet": "Move-in-ready villas by Grenadier Homes are underway and available now in Riverset · Downsize to a villa in top-selling Garland community of Riverset.",
+            "position": 8
+          },
+          {
+            "date": "Jan 2, 2020",
+            "link": "https://www.dallasnews.com/arts-entertainment/things-to-do/2020/01/02/17-fun-things-to-do-the-week-of-jan-3-10-in-dallas-fort-worth/",
+            "title": "17 fun things to do the week of Jan. 3-9 in Dallas-Fort Worth",
+            "snippet": "22, daily from 9 a.m. to 5 p.m. at 8525 Garland Road, Dallas. $5 for general admission, free for ages younger than 2. $15 for parking, $10 ...",
+            "position": 9
+          },
+          {
+            "date": "May 25, 2018",
+            "link": "https://www.dallasnews.com/arts-entertainment/lifestyle/2018/05/25/dog-about-town-stroll-and-sip-with-your-pooch-this-weekend/",
+            "title": "Dog About Town: Stroll and sip with your pooch this weekend",
+            "snippet": "2636 Farrington St., next to the Dallas Design District. Tickets -- $45 to $70 per person, $20 per dog, $25 for just the party -- include a ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:54:16.734Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Custom Design Pools\" Garland",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:52:41.056Z",
+      "data": "Custom Design Pools Garland review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 0:57 0:57 Now playing 🏗️ Full Pool Remodel | Garland, TX | Oklahoma Flagstone & Pebble Plaster Finish U.S. Pool Professionals U.S. Pool Professionals • • 818 views 3 months ago U.S. Pool Professionals U.S. Pool Professionals This complete pool remodel in Garland , Texas shows how natural materials and expert craftsmanship can bring new life to an ... This complete pool remodel in Garland , Texas shows how natural materials and expert craftsmanship can bring new life to an ... From the video description Shorts The difference between a basic pool&a custom design‼️ #custom #regalpoolshouston #construction #yt 1K views How to choose the right color for your pool! 🌴 #luxuryhome #pool #pooldesign #backyard 406K views Custom Pools Without the Expense or Headaches | Care Free Pools TN 1.8K views These new fiberglass pools are built to LAST 🔥🏊 11K views New We design and build backyards that make every day feel like a vacation day. #AllCustomPools #orlando No views Show more Show less 1:53 1:53 Now playing Spas | Unique Landscaping & Custom Pools Unique Landscapes & Custom Pools Unique Landscapes & Custom Pools • • 3.4K views 9 years ago Unique Landscapes & Custom Pools Unique Landscapes & Custom Pools Custom spas add value and relaxation time to any pool . Most of our custom spas are attached to the pool , and create a great ... Custom spas add value and relaxation time to any pool . Most of our custom spas are attached to the pool , and create a great ... From the video description Visit site Stress‑free tax remittance Still uploading spreadsheets for returns? Here’s what a modern process looks like. Sponsored Avalara SHORTS SHORTS Now playing I finally found the most gorgeous faux cedar garland that doesn't look fake #budgetdecor #amazonhome Cozy DIY Home Cozy DIY Home • • 61K views 5 months ago Cozy DIY Home Cozy DIY Home Clickable link is in my bio to shop my Amazon finds, or visit https://cozydiyhome.com/amazon. Clickable link is in my bio to shop my Amazon finds, or visit https://cozydiyhome.com/amazon. From the video description SHORTS SHORTS Now playing Fiberglass swimming pools are dug/set in one day. #fiberglasspools #modernpoolbuild #excavation CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP • • 1.4M views 2 years ago CONSTRUCTIVE DESIGN GROUP CONSTRUCTIVE DESIGN GROUP 0:31 Tired of Hearing No? The Yes Monsters at Longhorn Nissan Say YES to Your Credit! Get the car you actually want. The Yes Monsters are waiting for you at Longhorn Nissan! Sponsored Longhorn Nissan Shorts Designing Magical Poolscapes, Texas Pools and Patios 6.5K views New Watch How a Luxury Swimming Pool is Built in the USA | Satisfying Build No views Pool Cover Ideas for your House! 49K views New This Luxury Indoor Pool Transformation Is INSANE #usa #bestluxury #america #americanpool #luxurypool No views New Let Us Sculpt Your Custom Pool No views Show more Show less 6:22 6:22 Now playing Everything You Need To Know Before Building A Pool! Josh Beberg Josh Beberg • • 220K views 3 years ago Josh Beberg Josh Beberg Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... Ask anyone about their in-ground pool installation experience. It's often negative. It doesn't have to be that way! Once you truly ... From the video description 4K Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. AI-generated video summary Quality and accuracy may vary. Summary Avoid costly pool-building regrets! This video details the in-ground pool construction process, from initial surveys and planning to final landscaping. Learn about different pool types and unexpected expenses. Budget wisely for a stress-free experience. SHORTS SHORTS Now playing This tropical lagoon was designed to mimic an old Florida swimming hole. #insanepools #lucaslagoons Lucas Lagoons Lucas Lagoons • • 286K views 2 years ago Lucas Lagoons Lucas Lagoons This tropical lagoon in Englewood, Florida, was designed to mimic an old Florida swimming hole. Featuring a natural rock grotto ... This tropical lagoon in Englewood, Florida, was designed to mimic an old Florida swimming hole. Featuring a natural rock grotto ... From the video description SHORTS SHORTS Now playing Great swimming pool cover idea #shorts LuxHomes LuxHomes • • 68K views 4 years ago LuxHomes LuxHomes check out this great swimming pool cover idea #shorts It's a great way to cover up your swimming pool and utilise all the space in ... check out this great swimming pool cover idea #shorts It's a great way to cover up your swimming pool and utilise all the space in ... From the video description SHORTS SHORTS Now playing Satisfying Complete New Pool Build Walkthrough 😱 (Can you Guess How Much it cost?) JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. • • 129K views 3 years ago JR Pool Plastering & Texas Gunite Ltd. JR Pool Plastering & Texas Gunite Ltd. SHORTS SHORTS Now playing How to pick a pool plaster color! 🙌🏼 #backyard #pooldesign #poolplaster #landscapedesign #luxury Foxterra Design Foxterra Design • • 95K views 2 years ago Foxterra Design Foxterra Design 0:00 One of the most common questions we get is what color water should I choose for my pool so here's two quick tips first off if you ... One of the most common questions we get is what color water should I choose for my pool so here's two quick tips first off if you ... Automatic captions People also watched 7:13 7:13 Now playing Fiberglass pool install timelapse: part 1 Adam Miller Adam Miller • • 9.9M views 6 years ago Adam Miller Adam Miller Part 2 of the installation: https://youtu.be/6ZLrtMf0Hc0 Final product: https://youtu.be/VYm-EjXsGN8. Part 2 of the installation: https://youtu.be/6ZLrtMf0Hc0 Final product: https://youtu.be/VYm-EjXsGN8. From the video description 3:52 3:52 Now playing How To Choose The Best Waterline Tile For Your Pool | California Pools & Landscape California Pools & Landscape California Pools & Landscape • • 61K views 5 years ago California Pools & Landscape California Pools & Landscape Waterline tile on a pool is most likely something that you haven't had to ever think about before. It's such a small detail but since ... Waterline tile on a pool is most likely something that you haven't had to ever think about before. It's such a small detail but since ... From the video description 3 moments Waterline Tile | How Do You Choose a Pool Tile | How Do You Stay on Budget When Choosing a Pool Tile 3 auto-generated moments in this video 3 moments Waterline Tile Waterline Tile 0:37 Waterline Tile 0:37 How Do You Choose a Pool Tile How Do You Choose a Pool Tile 1:56 How Do You Choose a Pool Tile 1:56 How Do You Stay on Budget When Choosing a Pool Tile How Do You Stay on Budget When Choosing a Pool Tile 2:34 How Do You Stay on Budget When Choosing a Pool Tile 2:34 20:25 20:25 Now playing The REAL Cost to Build a Pool in Florida (2025) | Full Breakdown Deanin' It Yourself Deanin' It Yourself • • 37K views 1 year ago Deanin' It Yourself Deanin' It Yourself My pool is finally complete and i will discuss the cost if you are planning on building a pool check out my video where i go over the ... My pool is finally complete and i will discuss the cost if you are planning on building a pool check out my video where i go over the ... From the video description 4K 19 chapters Start | Intro | Preliminary Costs | General Pool / Permit Cost | Spa Cost | Heater Cost | Pool Automation Cost | Floating Steps Cost | Tanning Ledge Cost | Decking & Coping Cost | Waterfall Cost | Incidentals | Landscaping repair cost | Sprinkler repair cost and tips | Baby fence cost | Perimeter Fence Cost | Upgrades (Tiles, Plaster, LED Lights) | Total Cost for everything | Recap and Final Pool Shots 19 chapters in this video 19 chapters Start Start 0:00 Start 0:00 Intro Intro 0:19 Intro 0:19 Preliminary Costs Preliminary Costs 1:55 Preliminary Costs 1:55 General Pool / Permit Cost General Pool / Permit Cost 2:47 General Pool / Permit Cost 2:47 Spa Cost Spa Cost 3:47 Spa Cost 3:47 Heater Cost Heater Cost 4:40 Heater Cost 4:40 Pool Automation Cost Pool Automation Cost 5:28 Pool Automation Cost 5:28 6:10 6:10 Now playing Vinyl Vs Concrete Vs Fiberglass Pools | Albert Group Pools & Patios AlbertGroup AlbertGroup • • 750K views 6 years ago AlbertGroup AlbertGroup Join Jamie Albert of Albert Group Pools & Patios as he walks you through the differences between Vinyl, Concrete, and Fiberglass ... Join Jamie Albert of Albert Group Pools & Patios as he walks you through the differences between Vinyl, Concrete, and Fiberglass ... From the video description 4K 6 moments Pros of Vinyl Liner Pools | Pros of a Concrete Pool | Cons of Concrete | Fiberglass | Benefits | Installation Time 6 auto-generated moments in this video 6 moments Pros of Vinyl Liner Pools Pros of Vinyl Liner Pools 0:28 Pros of Vinyl Liner Pools 0:28 Pros of a Concrete Pool Pros of a Concrete Pool 1:27 Pros of a Concrete Pool 1:27 Cons of Concrete Cons of Concrete 2:23 Cons of Concrete 2:23 Fiberglass Fiberglass 3:48 Fiberglass 3:48 Benefits Benefits 4:36 Benefits 4:36 Installation Time Installation Time 5:06 Installation Time 5:06 + 6 more SHORTS SHORTS Now playing Can you fit a pool in a SMALL BACKYARD? Calimingo Calimingo • • 1.2M views 3 years ago Calimingo Calimingo 4K 7:13 7:13 Now playing Inground Fiberglass Pool Pricing in 2025 River Pools Twin Cities River Pools Twin Cities • • 38K views 10 months ago River Pools Twin Cities River Pools Twin Cities In this video, we break down the full pricing for fiberglass pools from us here at River Pools Red Wing! Whether you're just starting ... In this video, we break down the full pricing for fiberglass pools from us here at River Pools Red Wing! Whether you're just starting ... From the video description CC 13 chapters Intro | What's Included In Pricing | What's Not Included In Pricing | D-Series Prices | R-Series Prices | M-Series Prices | C-Series Prices | I-Series Prices | The T-Series (Deepest Pool) | X-Series (Most features) | L-Series (Roman shaped) | A-Series (NEW RELEASE) | More Details 13 chapters in this video 13 chapters Intro Intro 0:00 Intro 0:00 What's Included In Pricing What's Included In Pricing 0:43 What's Included In Pricing 0:43 What's Not Included In Pricing What's Not Included In Pricing 1:07 What's Not Included In Pricing 1:07 D-Series Prices D-Series Prices 2:00 D-Series Prices 2:00 R-Series Prices R-Series Prices 2:56 R-Series Prices 2:56 M-Series Prices M-Series Prices 3:25 M-Series Prices 3:25 C-Series Prices C-Series Prices 3:45 C-Series Prices 3:45 SHORTS SHORTS Now playing 21 Small Inground Pool Ideas for All Budgets; Part 1 of 6 River Pools River Pools • • 34K views 1 year ago River Pools River Pools Are you planning on having a small inground pool installed, and are you looking for ideas? In this video we'll offer 21 things to ... Are you planning on having a small inground pool installed, and are you looking for ideas? In this video we'll offer 21 things to ... From the video description 4K CC SHORTS SHORTS Now playing Backyard beach pool is complete! #biodesignpools #VIVID #landscape #indiana VIVID Landscape & Lighting LLC VIVID Landscape & Lighting LLC • • 92K views 3 years ago VIVID Landscape & Lighting LLC VIVID Landscape & Lighting LLC SHORTS SHORTS Now playing Having a hard time choosing your pool color? 🌴 Check out this option! #plaster #pool #pooldesign Foxterra Design Foxterra Design • • 75K views 3 years ago Foxterra Design Foxterra Design SHORTS SHORTS Now playing This pool looks incredible 😧 | #shorts SportsNation SportsNation • • 8.6M views 3 years ago SportsNation SportsNation This pool looks incredible | #shorts (via @rikkicarman) This pool looks incredible | #shorts (via @rikkicarman) From the video description SHORTS SHORTS Now playing Lap Pool In A Small Backyard ➡️ Swimming Pool Design Ideas Southern Poolscapes Southern Poolscapes • • 9.9K views 5 months ago Southern Poolscapes Southern Poolscapes SHORTS SHORTS Now playing Why Fiberglass Pools are Going Out of Style Cameron Simmons Cameron Simmons • • 24K views 2 years ago Cameron Simmons Cameron Simmons SHORTS SHORTS Now playing What goes into custom pools? Landscape Management Group Landscape Management Group • • 348 views 3 months ago Landscape Management Group Landscape Management Group From 3D design planning, permits, and engineering… to choosing the right materials, landscaping, and finishing touches. From 3D design planning, permits, and engineering… to choosing the right materials, landscaping, and finishing touches. From the video description SHORTS SHORTS Now playing Is this an in-ground or above-ground pool? 👀#luxuryhome #backyard #luxurypools #abovegroundpools Foxterra Design Foxterra Design • • 847K views 1 year ago Foxterra Design Foxterra Design SHORTS SHORTS Now playing The cleanest pool design! 🤯🔥🥵 #luxuryhome #backyard #pool #home #backyarddesign #pooldesign Foxterra Design Foxterra Design • • 672K views 1 year ago Foxterra Design Foxterra Design Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:54:17.698Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Custom Design Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:52:54.702Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Custom%20Design%20Pools&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:52:57.940Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:53:02.827Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:53:08.862Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Custom Design Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Apr 20, 2002",
+            "link": "https://www2.texasattorneygeneral.gov/files/agency/2002hb1200iii.pdf",
+            "title": "[PDF] Final Version - Section III.wpd",
+            "snippet": "funding pools – the single county pool and the multi-county pool. ... design, finance, construct, equip and operate port facilities ...",
+            "position": 1
+          },
+          {
+            "date": "Jun 15, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2020/Press/Brief.pdf",
+            "title": "[PDF] brief - In the Supreme Court of the United States",
+            "snippet": "For example, the minimum-essential-coverage requirement defines insur- ance companies' disclosure obligations to their custom- ers, 42 U.S.C. ...",
+            "position": 2
+          },
+          {
+            "date": "Nov 12, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/images/TAC%20-%20Redacted%20Version%20(public).pdf",
+            "title": "[PDF] Google Digital Advertising Antitrust Litigation",
+            "snippet": "Google designed a third version of the program, this time called “Bell,” which changed how Bernanke allocates the pool of money accumulated ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Global%20Opioid%20Settlement%20Files/Final%20Distributor%20Settlement%20Agreement.pdf",
+            "title": "[PDF] DISTRIBUTOR SETTLEMENT AGREEMENT",
+            "snippet": "Page 1. DISTRIBUTOR SETTLEMENT. AGREEMENT. Page 2. i. Table of Contents. Page. I.",
+            "position": 4
+          },
+          {
+            "date": "Sep 30, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/Distributors%20Texas%20Settlement%20Agreement%20Distributors%20TXAG%20Executed.pdf",
+            "title": "[PDF] DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT",
+            "snippet": "TABLE OF CONTENTS. DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT ........................................................ 1.",
+            "position": 5
+          },
+          {
+            "date": "Sep 19, 2024",
+            "link": "https://texasattorneygeneral.gov/sites/default/files/images/press/State%20Fair%20of%20Texas%20Emergency%20Motion%20For%20Relief%20Pending%20Appeal%20Filed.pdf",
+            "title": "[PDF] In the Court of Appeals for the Fifteenth Judicial District Austin, Texas",
+            "snippet": "pools. The improvements may include new filtration systems, new piping and chlorination systems, re-plastering of pool walls, new perimeter.",
+            "position": 6
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:53:10.077Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 2
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 3
+          },
+          {
+            "date": "Mar 16, 2023",
+            "link": "https://support.google.com/business/thread/206436714/how-do-i-uplift-my-suspension?hl=en",
+            "title": "How do i uplift my suspension - Google Business Profile Community",
+            "snippet": "... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. file number 0804421486. Details. Policies and guidelines,Web. Locked. Informational ...",
+            "position": 4
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 5
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Taxable Entity Search. David Herrera and Oscar Alvarez. 2 reactions. 󱎖. Are they ...",
+            "position": 6
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 7
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn and Texas Tax Code, Sec. 171.2515. [2] https://statutes.capitol.texas.gov/Docs/TX/htm/TX ...",
+            "position": 8
+          },
+          {
+            "date": "Mar 31, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21435&ItemID=15140",
+            "title": "[PDF] Texas Franchise Tax No Tax Due Report",
+            "snippet": "Registered Office Street Address 2709 LESLIE LN SAN MARCOS, TX 78666 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 2. TX2020 05 ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:53:11.214Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Custom Design Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:53:12.211Z",
+      "data": {
+        "query": "site:dallascounty.org Custom Design Pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 8, 2026",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet-2026-008-7093.pdf",
+            "title": "[PDF] RFP Project Based Vouchers for Permanent Supportive Housing",
+            "snippet": "Location. Dallas County, Texas. Purchase Type. Duration:15 years. Description. Dallas County is requesting proposals from property owners ...",
+            "position": 1
+          },
+          {
+            "date": "Jan 22, 2026",
+            "link": "https://dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet%202026-012-7097.pdf",
+            "title": "[PDF] Notice - Dallas County",
+            "snippet": "Custom Report Development Required (Any custom report development). Not available. Page 66. Must be Proposed to meet the requiremen. Page 67 ...",
+            "position": 2
+          },
+          {
+            "date": "Feb 15, 1994",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/human-resources/exam-study-guides/2025-General-Orders.pdf",
+            "title": "[PDF] 2025-General-Orders.pdf - Dallas County",
+            "snippet": "This manual provides employees with guidelines and policy for the uniform enforcement of state, local, and federal laws, ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/May-2025-CC-combined.pdf",
+            "title": "[PDF] statutory - Dallas County",
+            "snippet": "... Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL SECTION. Injury or Damage. CASES ON DOCKET. 455. Other. Eminent. Domain. Tax ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 3, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2025/FY2025%20Adopted%20Budget%20Book%20-version%201.5-.pdf",
+            "title": "[PDF] Dallas County Fiscal Year 2024-2025 Budget Cover Page",
+            "snippet": "Dallas County's FY2025 budget was developed during the transition from recovery from the COVID-. 19 pandemic to long-term stabilization, ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "[PDF] A 21st Century Mosaic - Dallas County",
+            "snippet": "Dallas County features a number of lakes that are reservoirs for municipal water and recreational use. These include Lake Ray Hubbard, Lake North, Joe Pool, ...",
+            "position": 6
+          },
+          {
+            "date": "Jan 27, 2014",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/juvenile/agendas/2014/JBP_2014Jan27_ngSignedOrders.pdf",
+            "title": "[PDF] COUt+l Y CLErtK - Dallas County",
+            "snippet": "This Agreement is expressly made subject to County's Sovereign Immunity, Title 5 of the Texas Civil Practices and. Remedies Code, and all ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/public-works/newsletters/2019-Newsletter-Moving-Forward-Matrix-Management-and-Mentoring.pdf",
+            "title": "[PDF] The Connector - Dallas County",
+            "snippet": "This Five Phase System details the evolu- tion of a Roadway Project by guiding the girls through all of the project phases – planning, design, property ...",
+            "position": 8
+          },
+          {
+            "date": "Feb 13, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/criminal-justice/BHLT/2020/2020-02.pdf",
+            "title": "[PDF] Dallas County Behavioral Health Leadership Team Thursday ...",
+            "snippet": "▫ No new UC pools have been approved, existing pools have had stricter limits on spending, but states are not required to phase them out ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/historical/markers.xls",
+            "title": "[XLS] Dallas County Historical Markers",
+            "snippet": "Based on data from the Texas Historical Commission.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:53:13.266Z",
+      "data": {
+        "query": "site:collincountytx.gov Custom Design Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.collincountytx.gov/Services/Engineering/storm-water-program",
+            "title": "Engineering Storm Water Program - Collin County",
+            "snippet": "The SWMP prepared by Collin County is a five-year program to reduce storm water pollution in the creeks and streams in the unincorporated, urbanized areas of ...",
+            "position": 1
+          },
+          {
+            "date": "Jul 1, 2019",
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/Collin%20County%202019%20SWMP%20Final_2020.03.05.pdf",
+            "title": "[PDF] Collin County Storm Water Management Program",
+            "snippet": "There is a change in design, construction, operation, or maintenance that has a significant effect on the discharge of pollutants and that ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Celina.pdf",
+            "title": "[PDF] 2020 Parks and Recreation Master Plan - Celina, TX - Collin County",
+            "snippet": "They value their parks system and want to ensure that a very high standard of quality and design is pushed forward as a result of this plan. With development ...",
+            "position": 3
+          },
+          {
+            "date": "Mar 18, 2013",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200615_2490/48549_OCFO_2014Financial_Guide.pdf",
+            "title": "[PDF] OCFO 2014 Financial Guide - Office of Justice Programs",
+            "snippet": "▷ Custom software system extract in Extensible Markup Language (XML). You will need a data dictionary and. XML schema to format and ...",
+            "position": 4
+          },
+          {
+            "date": "Mar 31, 2023",
+            "link": "https://www.collincountytx.gov/Services/Engineering/Documents/Collin%20County%202022%20Annual%20Report%2003-31-23.pdf",
+            "title": "[PDF] Collin County TPDES Phase 2 MS4 SWMP",
+            "snippet": "This Storm Water Management Program (SWMP) was developed for Collin County to reduce the discharge of pollutants in storm water runoff to the ...",
+            "position": 5
+          },
+          {
+            "date": "Jul 24, 2023",
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Plano.pdf",
+            "title": "[PDF] city of plano - parks, recreation, trails & open space - Collin County",
+            "snippet": "City pools (Jack Carter Pool, Tom Muehlenbeck Center,. Plano Aquatic Center, etc.) 22. 4.2 %. Splash pads (Plano Aquatic Center, Windhaven.",
+            "position": 6
+          },
+          {
+            "date": "Sep 30, 2024",
+            "link": "https://www.collincountytx.gov/Government/Budget/budgetreport/fy2024-quarter4.pdf",
+            "title": "[PDF] QUARTERLY REPORT - Collin County",
+            "snippet": "... custom-made educational programs which are based on community-identified needs in the areas of agriculture, environmental stewardship, youth.",
+            "position": 7
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210913_2677/50816_Certificate%20-%20Fully%20Executed.pdf",
+            "title": "[PDF] the state of texas - Collin County",
+            "snippet": "Pools, Spas Supplies. Portable Buildings. Restaurant. Bar. Business Fixtures. Sewing Machines. Sporting Goods. Tickets Sports/. *Entertainment.",
+            "position": 8
+          },
+          {
+            "date": "Oct 1, 2017",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/FY2018AdoptedBudget.pdf",
+            "title": "[PDF] FY 2018 Adopted Budget - Collin County",
+            "snippet": "This budget will raise more revenue from property taxes than last year's budget by an amount of $5,130,883 which is 2.48 percent increase ...",
+            "position": 9
+          },
+          {
+            "date": "Mar 16, 2015",
+            "link": "https://eagenda.collincountytx.gov/docs/2015/CC/20150316_1720/39623_Certificate%20of%20Public%20Hearing%20-%20signed%20RLD.pdf",
+            "title": "[PDF] Certificate of Public Hearing - Collin County",
+            "snippet": "Custom Home, Free Est. Tim Scheu. 214-674-8417. Fencing/Repair. HONEST FENCING. Honest & Inexpensive. Post,. All Repairs & Staining. Install Any ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:53:14.293Z",
+      "data": {
+        "query": "site:dentoncounty.gov Custom Design Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=71_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "CASJHION CUSTOM POOLS, LP, 3636 NEW HOPE RD, A1332A H. WHITE, TR 73, 3.647 ACRES, OLD DCAD TR 23E,23F, SWIMMING POOL, 04/29/2022, 122324, CROSS ROADS ETJ VER ...",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=260_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "HAUK CUSTOM POOLS, 16205 HARPER RD, ARTESIA PHASE 2C BLK 40 LOT 17, SWIMMING POOL, 01/04/2019, 633264, Approved, 01/03/2019, MILAM, RICHARD W & KRISTIN LANZ ...",
+            "position": 2
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=55_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "HAWK CUSTOM POOLS, 12004 CLEARPOINT CT, THE SHORES AT HIDDEN COVE PHASE FOURTEEN BLK J LOT 22, SWIMMING POOL, 08/15/2022, 680286, Approved, 08/12/2022, KNOP ...",
+            "position": 3
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=111_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "HAUK CUSTOM POOLS, 2104 BROKEN ARROW DR, ARROW BROOKE PHASE 1A BLK I LOT 7, SWIMMING POOL, 10/04/2021, 674318, Approved, 09/30/2021, TOLEDO, DANIEL A ESTRADA ...",
+            "position": 4
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=187_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "HAUK CUSTOM POOLS, 2305 RICHMOND PARK LN, ARTESIA NORTH PHASE 2 BLK T LOT 10, SWIMMING POOL, 08/13/2020, 704508, CUSTOMER REPLACED BUILDER, Approved, 08/06/2020 ...",
+            "position": 5
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=297_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "VENTURE CUSTOM POOLS, 2317 GRIFFITH PARK DR, ARTESIA NORTH PHASE 4 BLK B LOT 16, SWIMMING POOL, 04/11/2018, 679108, Approved, 04/09/2018, BERNDT, JESSICA & ...",
+            "position": 6
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=208_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "JUBILEE CUSTOM POOLS AND PATIO, 1020 LAVENDER DR, PALOMA CREEK SOUTH PHASE 13A BLK C LOT 6, SWIMMING POOL, 03/05/2020, 654600, Approved, 02/21/2020, BUSH, ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1560/2009-Lake-Ray-Roberts-Ordinance-PDF",
+            "title": "[PDF] LAKE RAY ROBERTS LAND USE ORDINANCE - Denton County",
+            "snippet": "Country Club (Private) - A land area and buildings that may include a golf course, clubhouse, dining room, swimming pool, tennis courts and similar recreational ...",
+            "position": 8
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=264_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "PREMIER POOLS, 1709 DROVER CREEK RD, ARROW BROOKE PHASE 2A BLK J LOT 3, SWIMMING POOL, 11/29/2018, 722820, Approved, 11/28/2018, HARRINGTON, TRACY, PRIVATE, No ...",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:53:27.962Z",
+      "data": {
+        "name": "Custom Design Pools",
+        "found": true,
+        "rating": 4,
+        "source": "serpapi",
+        "address": "3707 Meadow Wood Ct, Sachse, TX 75048",
+        "data_id": "0x864c18ecf7dad425:0xc4ee7267d8185491",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 4,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "2 years ago",
+            "text": "This company blames the customer when the pool cracks, and refuses to make repairs.",
+            "author": "Jen B",
+            "rating": 1
+          },
+          {
+            "date": "6 years ago",
+            "text": "Por yo ago estas pools hermosas",
+            "author": "Gerardo Estrada",
+            "rating": 5
+          },
+          {
+            "date": "6 years ago",
+            "text": "",
+            "author": "Patricia Sommer",
+            "rating": 5
+          },
+          {
+            "date": "7 years ago",
+            "text": "",
+            "author": "Flat Sixer",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": null,
+        "pages_fetched": 1,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "NO_REVIEWS",
+        "location_searched": "Garland, TX",
+        "search_confidence": 0.6199999999999999,
+        "serper_fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:53:52.017Z",
+      "data": {
+        "name": "Custom Design Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 880-1209",
+        "rating": 4,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "3707 Meadow Wood Ct, Sachse, TX 75048",
+        "reviews": [],
+        "website": "http://www.customdesignpools4u.com/",
+        "maps_url": "https://www.google.com/maps/search/Custom%20Design%20Pools%20Garland%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:54:10.526Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:54:14.387Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Custom Design Pools\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Swansea.SC.-12070.html",
+            "title": "Top-Rated Pool Constructions and Installations Experts in Swansea ...",
+            "snippet": "We specialize in custom design pools and water parks from monthly maintenance to repair. We have been in business since 1983 and serving our local community ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Leesville.SC.-12070.html",
+            "title": "Top-Rated Pool Constructions and Installations Experts in Leesville ...",
+            "snippet": "We specialize in custom design pools and water parks from monthly maintenance to repair. We have been in business since 1983 and serving our local community ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.JDesignsPoolAndSpa.16917702.html",
+            "title": "J Designs Pool & Spa, Inc. Reviews - North Hollywood, CA",
+            "snippet": "3D Custom design Pools & Spas and home consultations, In-Ground Pools & Spas, Legendary Customer Service, Pool Renovations and Remodeling, Plaster, Tile ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Pelion.SC.-12070.html",
+            "title": "Top-Rated Pool Constructions and Installations Experts in Pelion ...",
+            "snippet": "We specialize in custom design pools and water parks from monthly maintenance to repair. We have been in business since 1983 and serving our local community ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.AquaConceptsInc.123898439.html",
+            "title": "Aqua Concepts, Inc. Reviews - Tarzana, CA - HomeAdvisor",
+            "snippet": "... Custom Design, Pools, Spas, Patios, Outdoor Kitchens, Water Fountains, and Fire Places. Read more. Amenities. Emergency Services. Yes. Free Estimates. Yes. Our ..."
+          }
+        ],
+        "result_count": 5
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:54:15.091Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Custom Design Pools\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Overview/Working-at-Custom-Design-Pools-and-Landscaping-EI_IE9416467.11,46.htm",
+            "title": "Working at Custom Design Pools | Glassdoor",
+            "snippet": "See what employees say it's like to work at Custom Design Pools. Salaries, reviews, and more - all posted by employees working at Custom Design Pools."
+          },
+          {
+            "link": "https://www.glassdoor.com/Photos/Modern-Method-Gunite-Office-Photos-IMG1171734.htm",
+            "title": "Modern Method Gunite Office Photos | Glassdoor",
+            "snippet": "Modern Method Gunite photo of: Caribbean Blue PT Courtesy of Custom Design Pools Modern Method Gunite photo of: Aqua Blue Pebble Sheen Courtesy of Custom ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T00:54:35.861Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T00:54:22Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Custom%20Design%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=PXaOaZnxGZXKp84PpaTfsAM\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T00:54:31Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Custom%20Design%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=RnaOafeUMrjFp84Pq4Gw6Aw\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Custom Design Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:54:36.480Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "CUSTOM DESIGN POOLS INC",
+        "taxpayer_number": "30006060930"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T00:54:36.483Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T00:54:50.641Z",
+      "data": {
+        "cost": 0.00055342,
+        "summary": "The review profile is highly suspicious. The Google reviews are ancient (6-7 years old), sparse, and lack detail. The single substantive review is a serious 1-star complaint about structural failure and refusal to honor repairs. The BBB A+ rating is for a company founded in 2023, which conflicts with the age of the Google reviews. There is no evidence of recent, authentic customer feedback.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-13T00:54:50.640Z",
+        "fake_signals": [
+          "Google reviews are all from 6-7 years ago with no recent activity",
+          "Multiple 5-star reviews contain no text or non-English text with no details",
+          "BBB profile shows 2 years in business but Google reviews are older",
+          "Extremely low review volume (4) for a contractor"
+        ],
+        "recommendation": "DISTRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": null,
+          "google": 4,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "MEDIUM",
+          "follow_through": "NEGATIVE",
+          "negative_evidence": [
+            "Refused to make repairs when pool cracked",
+            "Blaming the customer for defects"
+          ],
+          "positive_evidence": []
+        },
+        "authentic_signals": [
+          "One negative review contains a specific, credible complaint about structural failure and refusal to repair"
+        ],
+        "fake_review_score": 85,
+        "complaint_patterns": [
+          "Refusal to repair structural defects (cracking)",
+          "Blaming the customer for failures"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Google shows a 4.0 rating but with only 4 reviews, all from 6-7 years ago, and no recent activity. BBB shows an A+ rating but the company was founded in 2023, indicating the BBB profile may be for a different entity or the business history is misaligned. There is a severe lack of recent, substantive reviews."
+      }
+    }
+  }
+}

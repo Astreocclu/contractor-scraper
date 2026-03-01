@@ -1,0 +1,741 @@
+{
+  "contractor_id": 8751,
+  "business_name": "HydroCare Pools LLC",
+  "city": "Garland",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-14T18:35:55.105Z",
+  "sources": {
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:56:19.481Z",
+      "data": {
+        "cost": 0.0006011600000000001,
+        "summary": "The 8 Google reviews are highly authentic in content, with specific details, varied writing, and credible customer stories. The perfect 5.0 rating and low volume are more indicative of a small, well-regarded local business than review manipulation. The two anonymous HQ reviews are non-substantive and likely auto-generated, but do not detract from the genuine local reviews.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-14T10:56:19.481Z",
+        "fake_signals": [
+          "Low total review count (8)",
+          "All reviews are 5-star",
+          "Two HQ reviews are anonymous and contain only business info"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "MEDIUM",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Fixed multiple issues",
+            "Came back to fix a leak right away"
+          ]
+        },
+        "authentic_signals": [
+          "Specific project details (leaks, mastic, pump rebuild, filters)",
+          "Varied writing styles and perspectives",
+          "Mentions of prior bad experiences with other companies",
+          "Specific crew names (Leo)",
+          "Mention of business processes (portal, QuickBooks, photos)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only Google reviews are available, showing a perfect 5.0. No contradictory ratings from other platforms were found."
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:56:10.804Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "HYDROCARE POOLS LLC",
+        "taxpayer_number": "32083905615"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-14T10:56:10.807Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:45:47.646Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "https://hydrocarepoolsllc.net/",
+        "analyzed_pages": [
+          {
+            "url": "https://hydrocarepoolsllc.net/",
+            "type": "homepage",
+            "title": "403 - Forbidden"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:45:54.997Z",
+      "data": {
+        "query": "site:yelp.com \"HydroCare Pools LLC\" \"Garland, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:44.237Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [
+          {
+            "link": "https://www.angi.com/companylist/us/tx/garland/hydrocare-pools-llc-reviews-1.htm",
+            "title": "HydroCare Pools LLC Reviews - Garland, TX | Angi",
+            "snippet": "How is HydroCare Pools LLC overall rated? HydroCare Pools LLC is currently rated 5.0 overall out of 5. What payment options does HydroCare Pools LLC provide?"
+          }
+        ],
+        "result_count": 1,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:45.036Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:46:34.854Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:52.382Z",
+      "data": {
+        "found": false,
+        "query": "\"HydroCare Pools LLC\" Garland lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:46:37.483Z",
+      "data": {
+        "query": "HydroCare Pools LLC Garland site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:50.418Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"HydroCare Pools LLC\" Garland",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:46:48.488Z",
+      "data": "HydroCare Pools LLC Garland review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You History History All Shorts Videos Unwatched Watched Recently uploaded Live Under 4 min 4 - 20 min Over 20 min Filters Search filters 24:13 24:13 Now playing How to Clean a Green Pool Fast: Cleaning Pool: Cloudy Pool Cleaning: Satisfying Pool Cleaning Pool elementary Pool elementary • • 976K views 3 years ago Pool elementary Pool elementary How to Clean a Green Pool Fast. Satisfying Pool Cleaning from Green Pool to Clean Pool , we show you how to Clean and ... How to Clean a Green Pool Fast. Satisfying Pool Cleaning from Green Pool to Clean Pool , we show you how to Clean and ... From the video description 18:51 18:51 Now playing HOW I CLEAN UP THIS GREEN POOL! thep00lguy ML thep00lguy ML • • 2.1M views 3 years ago thep00lguy ML thep00lguy ML Opening up this pool for summer! The water was quite clear but there was a lot of algae stuck to the surface which needed ... Opening up this pool for summer! The water was quite clear but there was a lot of algae stuck to the surface which needed ... From the video description 4K Summary The video follows a pool cleaning professional as they open a pool for the summer. They remove the cover, brush the pool floor, and add chemicals to clear the green water. The video then shows the pool being vacuumed to remove debris and the final result of the cleaning process. AI-generated video summary Quality and accuracy may vary. Summary The video follows a pool cleaning professional as they open a pool for the summer. They remove the cover, brush the pool floor, and add chemicals to clear the green water. The video then shows the pool being vacuumed to remove debris and the final result of the cleaning process. 4:32 4:32 Now playing Comparison Review: HAMMERHEAD and RIPTIDE Swimming Pool Vacuums for Commercial Use BCS Pool Pros, LLC BCS Pool Pros, LLC • • 490 views 4 months ago BCS Pool Pros, LLC BCS Pool Pros, LLC I have owned and used 3 different commercial vacuum units, the PowerVac, RipTide and Hammerhead. I review the ... I have owned and used 3 different commercial vacuum units, the PowerVac, RipTide and Hammerhead. I review the ... From the video description 23:35 23:35 Now playing Green to Blue Pool in 24 hours: How to Clean a Green Pool: Pool Cleaning: Cleaning a Swimming Pool Pool elementary Pool elementary • • 549K views 2 years ago Pool elementary Pool elementary Green to Blue Pool Cleaning. How to Clean a Swimming pool that is Green with Algae. How to Clean a Green Pool from start to ... Green to Blue Pool Cleaning. How to Clean a Swimming pool that is Green with Algae. How to Clean a Green Pool from start to ... From the video description 5 moments per 10,000 gallons depending on how bad the pool is. | Brush Everything Good | Always Add Chlorine when UV rays are at a minimum! | Eliminate any places Algae can hide out! | Pressures up 6-8 pounds! 5 auto-generated moments in this video 5 moments per 10,000 gallons depending on how bad the pool is. per 10,000 gallons depending on how bad the pool is. 3:53 per 10,000 gallons depending on how bad the pool is. 3:53 Brush Everything Good Brush Everything Good 6:15 Brush Everything Good 6:15 Always Add Chlorine when UV rays are at a minimum! Always Add Chlorine when UV rays are at a minimum! 8:18 Always Add Chlorine when UV rays are at a minimum! 8:18 Eliminate any places Algae can hide out! Eliminate any places Algae can hide out! 8:52 Eliminate any places Algae can hide out! 8:52 Pressures up 6-8 pounds! Pressures up 6-8 pounds! 10:10 Pressures up 6-8 pounds! 10:10 14:17 14:17 Now playing 2024 PoolMate Hydro3 Review: The BEST way to clean your pool! Jessica Myrose Jessica Myrose • • 1.6K views 1 year ago Jessica Myrose Jessica Myrose I hope you find this video insightful and motivational and/ or entertaining my lovely friends and Fellow YouTubers #poolmate ... I hope you find this video insightful and motivational and/ or entertaining my lovely friends and Fellow YouTubers #poolmate ... From the video description 3:30 3:30 Now playing How a Pool Pro Treats Phosphates in a Swimming Pool Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL • • 9.2K views 1 year ago Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL Directions for the use of PHOSfree: This product is designed for use in properly balanced pool water. 1. Clean or backwash filter. Directions for the use of PHOSfree: This product is designed for use in properly balanced pool water. 1. Clean or backwash filter. From the video description 4K 3 chapters Introduction | How to Treat Phosphates | Mineral Technologies POX 3 auto-generated chapters in this video 3 chapters Introduction Introduction 0:00 Introduction 0:00 How to Treat Phosphates How to Treat Phosphates 0:59 How to Treat Phosphates 0:59 Mineral Technologies POX Mineral Technologies POX 2:14 Mineral Technologies POX 2:14 2:06 2:06 Now playing Pool Care Secrets Expert Water Chemistry Tips Revealed! Collecting Heads Collecting Heads • • No views 13 hours ago Collecting Heads Collecting Heads In this episode of 2 Minutes In Business, Josh sits down with Zach from Accurate Pool & Landscape to talk everything swimming ... In this episode of 2 Minutes In Business, Josh sits down with Zach from Accurate Pool & Landscape to talk everything swimming ... From the video description New 17:24 17:24 Now playing Pool Care for Beginners- How to clean and maintain your pool- Filmed in 4k Fix It With Jake Fix It With Jake • • 510K views 6 years ago Fix It With Jake Fix It With Jake Pool Test Strips: https://amzn.to/44YyNT8 Pentair Pump Basket: https://amzn.to/2YEXSnI Polaris Black Robot: ... Pool Test Strips: https://amzn.to/44YyNT8 Pentair Pump Basket: https://amzn.to/2YEXSnI Polaris Black Robot: ... From the video description 4K 8 chapters Intro | Cleaning | Skimmer | Filter | Circulation | Equipment | Chemistry | Salt 8 auto-generated chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Cleaning Cleaning 1:07 Cleaning 1:07 Skimmer Skimmer 3:31 Skimmer 3:31 Filter Filter 6:12 Filter 6:12 Circulation Circulation 7:25 Circulation 7:25 Equipment Equipment 9:26 Equipment 9:26 Chemistry Chemistry 13:00 Chemistry 13:00 17:59 17:59 Now playing How to keep your pool water CRYSTAL CLEAR (new video) DIY JIM DIY JIM • • 177K views 2 years ago DIY JIM DIY JIM I show you how to keep your pool water crystal clear. Tips and tricks Thank you very much for watching and God bless. ✓How to ... I show you how to keep your pool water crystal clear. Tips and tricks Thank you very much for watching and God bless. ✓How to ... From the video description Summary This video provides a comprehensive guide on how to keep pool water crystal clear. The speaker covers daily, weekly, and monthly tasks, including cleaning the skimmer basket, vacuuming the pool, checking water chemistry, and backwashing the filter. The video also includes tips on using pool clarifier, shocking the pool, and maintaining the pump. AI-generated video summary Quality and accuracy may vary. Summary This video provides a comprehensive guide on how to keep pool water crystal clear. The speaker covers daily, weekly, and monthly tasks, including cleaning the skimmer basket, vacuuming the pool, checking water chemistry, and backwashing the filter. The video also includes tips on using pool clarifier, shocking the pool, and maintaining the pump. 11:14 11:14 Now playing Stay Away From These Junk Pool Products! Swimming Pool Science Swimming Pool Science • • 5.2K views 5 years ago Swimming Pool Science Swimming Pool Science Get the goods here: Leslie's 3\" chlorine tabs, 7lb bucket https://amzn.to/2QQougd Leslie's 3\" chlorine tabs, ... Get the goods here: Leslie's 3\" chlorine tabs, 7lb bucket https://amzn.to/2QQougd Leslie's 3\" chlorine tabs, ... From the video description 4 moments Magic Tablet | 600 Solar Ionizer | Industrial Vacuum | Leaf Master Vacuum 4 auto-generated moments in this video 4 moments Magic Tablet Magic Tablet 1:22 Magic Tablet 1:22 600 Solar Ionizer 600 Solar Ionizer 6:43 600 Solar Ionizer 6:43 Industrial Vacuum Industrial Vacuum 7:25 Industrial Vacuum 7:25 Leaf Master Vacuum Leaf Master Vacuum 7:40 Leaf Master Vacuum 7:40 10:23 10:23 Now playing Effortless Pool Maintenance - The Benefits of Pool Automation Complete Fibreglass Pool Kits Complete Fibreglass Pool Kits • • 7.9K views 1 year ago Complete Fibreglass Pool Kits Complete Fibreglass Pool Kits If you have heard about pool automation and wondered how it works and if it is worth it, you're about to have your questions ... If you have heard about pool automation and wondered how it works and if it is worth it, you're about to have your questions ... From the video description 7 chapters Intro | What is pool automation? | How does pool automation work? | What do you need to automate your pool maintenance? | What are the benefits of pool automation? | Astral Halo Connect App | Summary 7 chapters in this video 7 chapters Intro Intro 0:00 Intro 0:00 What is pool automation? What is pool automation? 0:20 What is pool automation? 0:20 How does pool automation work? How does pool automation work? 1:23 How does pool automation work? 1:23 What do you need to automate your pool maintenance? What do you need to automate your pool maintenance? 2:30 What do you need to automate your pool maintenance? 2:30 What are the benefits of pool automation? What are the benefits of pool automation? 6:31 What are the benefits of pool automation? 6:31 Astral Halo Connect App Astral Halo Connect App 8:22 Astral Halo Connect App 8:22 Summary Summary 9:31 Summary 9:31 6:16 6:16 Now playing Open Your Own Pool & Keep it Clean All Season - EASY TIPS Silver Cymbal Silver Cymbal • • 1.2M views 4 years ago Silver Cymbal Silver Cymbal You can spend upwards of $500 to have your pool opened! See how I open my pool for $10 & share tricks to have crystal clear ... You can spend upwards of $500 to have your pool opened! See how I open my pool for $10 & share tricks to have crystal clear ... From the video description 4K 8 chapters Intro | Remove Pool Cover | Rinse Pool Cover | Winterization | Power On | Results | Day 2 Results | Day 3 Results 8 auto-generated chapters in this video 8 chapters Intro Intro 0:00 Intro 0:00 Remove Pool Cover Remove Pool Cover 0:31 Remove Pool Cover 0:31 Rinse Pool Cover Rinse Pool Cover 1:12 Rinse Pool Cover 1:12 Winterization Winterization 1:26 Winterization 1:26 Power On Power On 2:34 Power On 2:34 Results Results 4:27 Results 4:27 Day 2 Results Day 2 Results 4:40 Day 2 Results 4:40 People also watched 12:17 12:17 Now playing Should I Buy or Build a Pool Route? Max Maher Max Maher • • 21K views 6 years ago Max Maher Max Maher Subscribe for a profitable day: https://bit.ly/2HdKrSI Get emailed to be notified of new posts and exclusive content. No sales. Subscribe for a profitable day: https://bit.ly/2HdKrSI Get emailed to be notified of new posts and exclusive content. No sales. From the video description 4 moments Is It Better To Build or To Buy a Pool Route | Are You Sure You Want To Get into the Pool Industry | The Roi on Buying a Route | Meet with Multiple Sellers 4 auto-generated moments in this video 4 moments Is It Better To Build or To Buy a Pool Route Is It Better To Build or To Buy a Pool Route 0:05 Is It Better To Build or To Buy a Pool Route 0:05 Are You Sure You Want To Get into the Pool Industry Are You Sure You Want To Get into the Pool Industry 0:29 Are You Sure You Want To Get into the Pool Industry 0:29 The Roi on Buying a Route The Roi on Buying a Route 2:13 The Roi on Buying a Route 2:13 Meet with Multiple Sellers Meet with Multiple Sellers 6:10 Meet with Multiple Sellers 6:10 8:06 8:06 Now playing What Are The Most Common Leaks In Pools? Swimming Pool Steve Swimming Pool Steve • • 60K views 1 year ago Swimming Pool Steve Swimming Pool Steve From https://www.swimimingpoolsteve.com/pages/leak-detection.html this video talks about the three most common leak sources ... From https://www.swimimingpoolsteve.com/pages/leak-detection.html this video talks about the three most common leak sources ... From the video description 10 chapters Introduction to common pool leaks | Pool lights are a very common leak source | How to repair leaking pool light with butyl tape | Return lines leaking from a hinge point | How to prevent return pipe sheering at pool wall | Pool skimmers leak in many different ways | Why do pool skimmers leak? | How to start finding a pool leak with a bucket test? | Bucket test part two | Conclusion and referral to www.swimmingpoolsteve.com 10 chapters in this video 10 chapters Introduction to common pool leaks Introduction to common pool leaks 0:00 Introduction to common pool leaks 0:00 Pool lights are a very common leak source Pool lights are a very common leak source 0:20 Pool lights are a very common leak source 0:20 How to repair leaking pool light with butyl tape How to repair leaking pool light with butyl tape 2:15 How to repair leaking pool light with butyl tape 2:15 Return lines leaking from a hinge point Return lines leaking from a hinge point 2:40 Return lines leaking from a hinge point 2:40 How to prevent return pipe sheering at pool wall How to prevent return pipe sheering at pool wall 4:10 How to prevent return pipe sheering at pool wall 4:10 Pool skimmers leak in many different ways Pool skimmers leak in many different ways 5:02 Pool skimmers leak in many different ways 5:02 Why do pool skimmers leak? Why do pool skimmers leak? 5:22 Why do pool skimmers leak? 5:22 9:54 9:54 Now playing Chasing pool leaks, Don't call a leak detection company until you watch this Swimming Pool Science Swimming Pool Science • • 1M views 6 years ago Swimming Pool Science Swimming Pool Science MAKE SURE TO CHECK YOUR BACKWASH VALVE AND HYDROSTATIC VALVES AS WELL! Get the dye test here: ... MAKE SURE TO CHECK YOUR BACKWASH VALVE AND HYDROSTATIC VALVES AS WELL! Get the dye test here: ... From the video description 9 moments begin to fill the inside of the bucket | check for any damp spots around the pipes | look for leaks around the valves or any plumbing fittings | shut the system down for the duration of the bucket test | confirming a leak with the bucket test | shut off for at least fifteen to twenty minutes | check all the returns all the way around the leak | check the mouth of the skimmer for any missing pieces | need to remove the main drain cover 9 auto-generated moments in this video 9 moments begin to fill the inside of the bucket begin to fill the inside of the bucket 2:09 begin to fill the inside of the bucket 2:09 check for any damp spots around the pipes check for any damp spots around the pipes 2:59 check for any damp spots around the pipes 2:59 look for leaks around the valves or any plumbing fittings look for leaks around the valves or any plumbing fittings 3:05 look for leaks around the valves or any plumbing fittings 3:05 shut the system down for the duration of the bucket test shut the system down for the duration of the bucket test 3:31 shut the system down for the duration of the bucket test 3:31 confirming a leak with the bucket test confirming a leak with the bucket test 5:17 confirming a leak with the bucket test 5:17 shut off for at least fifteen to twenty minutes shut off for at least fifteen to twenty minutes 5:41 shut off for at least fifteen to twenty minutes 5:41 check all the returns all the way around the leak check all the returns all the way around the leak 7:00 check all the returns all the way around the leak 7:00 8:40 8:40 Now playing How to ACTUALLY FIND Leaks in Pool Liner - DON'T DYE YOUR WHOLE POOL!!! Neal O'Russa Neal O'Russa • • 416K views 4 years ago Neal O'Russa Neal O'Russa Get the leak detection kit here: https://amzn.to/3aa75Md This is the glue i use for patches: https://amzn.to/3Q8Zuhs Listen to end of ... Get the leak detection kit here: https://amzn.to/3aa75Md This is the glue i use for patches: https://amzn.to/3Q8Zuhs Listen to end of ... From the video description 3 moments Snorkel Goggles | The Liner Is Loose at the Corner | Do Not Dump a Gallon of Dye in Your Pool 3 auto-generated moments in this video 3 moments Snorkel Goggles Snorkel Goggles 0:28 Snorkel Goggles 0:28 The Liner Is Loose at the Corner The Liner Is Loose at the Corner 4:23 The Liner Is Loose at the Corner 4:23 Do Not Dump a Gallon of Dye in Your Pool Do Not Dump a Gallon of Dye in Your Pool 8:32 Do Not Dump a Gallon of Dye in Your Pool 8:32 + 6 more 4:34 4:34 Now playing Aiper HydroComm: WORTH IT? Things You Should Know Before Buying Clear Water Chronicles Clear Water Chronicles • • 233 views 2 months ago Clear Water Chronicles Clear Water Chronicles Welcome back to Clear Water Chronicles. Today I'm testing the AIPER HydroComm Smart Pool Monitor to see how well it tracks ... Welcome back to Clear Water Chronicles. Today I'm testing the AIPER HydroComm Smart Pool Monitor to see how well it tracks ... From the video description 8 chapters The Real Problem With Pool Testing | What the HydroComm Promises | Setup and What It Measures | Understanding ORP | The Best Day-to-Day Benefits | The Missing Tests | Long-Term Costs | Final Verdict 8 chapters in this video 8 chapters The Real Problem With Pool Testing The Real Problem With Pool Testing 0:00 The Real Problem With Pool Testing 0:00 What the HydroComm Promises What the HydroComm Promises 0:08 What the HydroComm Promises 0:08 Setup and What It Measures Setup and What It Measures 0:41 Setup and What It Measures 0:41 Understanding ORP Understanding ORP 1:03 Understanding ORP 1:03 The Best Day-to-Day Benefits The Best Day-to-Day Benefits 1:33 The Best Day-to-Day Benefits 1:33 The Missing Tests The Missing Tests 1:57 The Missing Tests 1:57 Long-Term Costs Long-Term Costs 3:18 Long-Term Costs 3:18 28:20 28:20 Now playing Breaking Down The Pool Cleaning Business with SMB Expert Tim Ryan John Wilson | Owned & Operated John Wilson | Owned & Operated • • 1.2K views 2 years ago John Wilson | Owned & Operated John Wilson | Owned & Operated A few weeks back John and Jack did a business breakdown on pool service . Tim Ryan caught us on X, did a review and said “It ... A few weeks back John and Jack did a business breakdown on pool service . Tim Ryan caught us on X, did a review and said “It ... From the video description 6 chapters Tim Ryan's Background | Transition into Software Development | Marketing Strategies | Emotional Connection with Customers | Customer Contracts and Churn Rates | Employee Recruitment and Background Checks 6 chapters in this video 6 chapters Tim Ryan's Background Tim Ryan's Background 0:00 Tim Ryan's Background 0:00 Transition into Software Development Transition into Software Development 3:30 Transition into Software Development 3:30 Marketing Strategies Marketing Strategies 9:01 Marketing Strategies 9:01 Emotional Connection with Customers Emotional Connection with Customers 14:41 Emotional Connection with Customers 14:41 Customer Contracts and Churn Rates Customer Contracts and Churn Rates 18:56 Customer Contracts and Churn Rates 18:56 Employee Recruitment and Background Checks Employee Recruitment and Background Checks 22:36 Employee Recruitment and Background Checks 22:36 12:51 12:51 Now playing Why Do Pool Cleaning Businesses Fail? | Don't Miss the 8th Reason! Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner • • 22K views 3 years ago Be a \"PROFITABLE\" Badass Business Owner Be a \"PROFITABLE\" Badass Business Owner Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... Here are 8 Reasons why Pool Cleaning Businesses Fail. With over half of all small businesses failing over the next 5 years, how ... From the video description 8 chapters 8 Reasons Pool Cleaning Businesses Fail? | Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset | Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly | Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly | Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer | Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast | Reason 6 - Pool Cleaning Businesses Fail – Poor Communication | Reason 7 - Pool Cleaning Businesses Fail – Not Paying their Taxes 8 chapters in this video 8 chapters 8 Reasons Pool Cleaning Businesses Fail? 8 Reasons Pool Cleaning Businesses Fail? 0:00 8 Reasons Pool Cleaning Businesses Fail? 0:00 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 1 - Pool Cleaning Businesses Fail – Employee Mindset vs Business Owner Mindset 0:37 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 2 - Pool Cleaning Businesses Fail – Paying Yourself Incorrectly 1:57 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 3 - Pool Cleaning Businesses Fail – Pricing Incorrectly 3:14 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 4 - Pool Cleaning Businesses Fail – Not Knowing Ideal Customer 5:01 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 5 - Pool Cleaning Businesses Fail – Growing too Fast 6:48 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 Reason 6 - Pool Cleaning Businesses Fail – Poor Communication 8:11 3:10 3:10 Now playing Will Pool Installation Damage Your Driveway? Here’s How Builders Prevent It River Pools Virginia River Pools Virginia • • 30 views 17 hours ago River Pools Virginia River Pools Virginia One of the most overlooked parts of pool installation is backyard access. Heavy equipment, materials, and crews need a safe way ... One of the most overlooked parts of pool installation is backyard access. Heavy equipment, materials, and crews need a safe way ... From the video description New CC 8:42 8:42 Now playing Salt Water Pool Maintenance for Beginners Swim University Swim University • • 344K views 2 years ago Swim University Swim University The Salt Water Pool Cheat Sheet (Free): https://swimu.com/saltwater The Pool Care Handbook: https://swimu.com/book The Pool ... The Salt Water Pool Cheat Sheet (Free): https://swimu.com/saltwater The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description CC 9 chapters Introduction to Salt Water Pool Maintenance | The 7 Keys to Salt Water Pool Maintenance | 1. Add the Right Amount of Salt | 2. Test and Balance Your Water Once a Week, Especially Your pH | 3. Set Up Your Circulation | 4. Prevent Erosion and Calcium Buildup | 5. Check Your Salt Cell Every 3 Months | 6. Shock Your Pool Regularly | 7. Clean Your Surfaces Once a Week 9 chapters in this video 9 chapters Introduction to Salt Water Pool Maintenance Introduction to Salt Water Pool Maintenance 0:00 Introduction to Salt Water Pool Maintenance 0:00 The 7 Keys to Salt Water Pool Maintenance The 7 Keys to Salt Water Pool Maintenance 0:43 The 7 Keys to Salt Water Pool Maintenance 0:43 1. Add the Right Amount of Salt 1. Add the Right Amount of Salt 1:28 1. Add the Right Amount of Salt 1:28 2. Test and Balance Your Water Once a Week, Especially Your pH 2. Test and Balance Your Water Once a Week, Especially Your pH 2:44 2. Test and Balance Your Water Once a Week, Especially Your pH 2:44 3. Set Up Your Circulation 3. Set Up Your Circulation 5:01 3. Set Up Your Circulation 5:01 4. Prevent Erosion and Calcium Buildup 4. Prevent Erosion and Calcium Buildup 5:34 4. Prevent Erosion and Calcium Buildup 5:34 5. Check Your Salt Cell Every 3 Months 5. Check Your Salt Cell Every 3 Months 6:35 5. Check Your Salt Cell Every 3 Months 6:35 0:55 0:55 Now playing The Pool Company Green Valley Homeowners Recommend Most | TotalCare Pool TotalCare Pool TotalCare Pool • • 27 views 2 weeks ago TotalCare Pool TotalCare Pool Stop guessing and start saving with Green Valley's local pool experts! Are you tired of generic advice from big-box stores? Stop guessing and start saving with Green Valley's local pool experts! Are you tired of generic advice from big-box stores? From the video description 8:25 8:25 Now playing PoolRx - Will it clean our green pool. Hallidays Reviews (Halliday's Reviews) Hallidays Reviews (Halliday's Reviews) • • 46K views 4 years ago Hallidays Reviews (Halliday's Reviews) Hallidays Reviews (Halliday's Reviews) Well, our pool went green again this year (even after having good chemistry shocking on a regular basis). So I got PoolRx to see if ... Well, our pool went green again this year (even after having good chemistry shocking on a regular basis). So I got PoolRx to see if ... From the video description 6 chapters Intro | What is it | Day 1 Results | Day 3 Results | Day 4 Results | Conclusion 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 What is it What is it 0:56 What is it 0:56 Day 1 Results Day 1 Results 3:35 Day 1 Results 3:35 Day 3 Results Day 3 Results 4:58 Day 3 Results 4:58 Day 4 Results Day 4 Results 5:46 Day 4 Results 5:46 Conclusion Conclusion 7:05 Conclusion 7:05 23:06 23:06 Now playing Residential Pool Care vs Commercial Pool Care, Which is Better Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL • • 3K views 2 years ago Swimming Pool Tips, Reviews & How To - SPL Swimming Pool Tips, Reviews & How To - SPL Residential pool service and commercial pool service are two different types of pool services, with their own unique set of ... Residential pool service and commercial pool service are two different types of pool services, with their own unique set of ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:46:49.694Z",
+      "data": {
+        "query": "site:nextdoor.com HydroCare Pools LLC Garland",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:49.478Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"HydroCare Pools LLC\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:48.373Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"HydroCare Pools LLC\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:51.341Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"HydroCare Pools LLC\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:47:06.842Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:47:13.362Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:21.801Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov HydroCare Pools LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:47:22.650Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 2
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 4
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/dat/ch313/1134/01134-772-2024-0806-MSF-095904-PETERSBURG.pdf",
+            "title": "[PDF] Franchise Search Results - Texas.gov",
+            "snippet": "... 211 E. 7TH STREET SUITE 620 AUSTIN, TX 78701.. 6/13/24, 9:08 AM. Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 6 ...",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 7
+          },
+          {
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "11102 LEITRIM WAY HOUSTON, TX 77047. 4/17/25, 11:44 AM. Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 8
+          },
+          {
+            "link": "https://ethics.house.gov/wp-content/uploads/2024/06/OCE-Report-and-Findings_18.pdf",
+            "title": "[PDF] CONFIDENTIAL Subject to the Nondisclosure Provisions of H. Res ...",
+            "snippet": "24 Taxable Entity Search Results – Texas Comptroller of Public Accounts (available at: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#) (last visited December 5 ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26. This page is valid for most ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:24.022Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com HydroCare Pools LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:25.385Z",
+      "data": {
+        "query": "site:dallascounty.org HydroCare Pools LLC civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:26.759Z",
+      "data": {
+        "query": "site:collincountytx.gov HydroCare Pools LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:27.756Z",
+      "data": {
+        "query": "site:dentoncounty.gov HydroCare Pools LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:47:31.036Z",
+      "data": "403 - Forbidden bg_error_lines circle_dots 403 - Forbidden Access to this page is forbidden. clouds_shape"
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:31.279Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:47:43.281Z",
+      "data": {
+        "name": "HydroCare Pools LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(214) 621-2408",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2026 GoogleUnited StatesTermsPrivacySend Product Feedback",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Closed · Opens 9 AM Sat · (214) 621-2408",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Closed · Opens 9 AM Sat · (214) 621-2408",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": "https://hydrocarepoolsllc.net/",
+        "maps_url": "https://www.google.com/maps/search/HydroCare%20Pools%20LLC%20Garland%2C%20TX",
+        "categories": [
+          "Pool cleaning service"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:47:43.512Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/hydrocare-pools-garland",
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:47:46.011Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"HydroCare Pools LLC\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.HydroCarePoolsLLC.127232598.html",
+            "title": "HydroCare Pools LLC Reviews - Garland, TX | HomeAdvisor",
+            "snippet": "How is HydroCare Pools LLC overall rated? HydroCare Pools LLC is currently rated 5.0 overall out of 5. What payment options does HydroCare Pools LLC provide?"
+          },
+          {
+            "link": "https://www.homeadvisor.com/tloc/Mesquite-TX/Swimming-Pool-Clean-and-Maintain/",
+            "title": "Swimming Pool Cleaning and Maintenance Services - HomeAdvisor",
+            "snippet": "HydroCare Pools LLC ... We're a locally owned and operated company that values honesty and integrity and takes pride in the services we provide to our residential ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Fate.TX.-12070.html",
+            "title": "Top-Rated Pool Constructions and Installations Experts in Fate, TX ...",
+            "snippet": "Find Pool builders and installers in Fate ; FG Pool Repair LLC · 43 · 29 years of experience ; HydroCare Pools LLC · 1 · 4 years of experience ; Trinity Pool Cleaning."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Richardson.TX.-12070.html",
+            "title": "Top-Rated Pool Constructions and Installations Experts in ...",
+            "snippet": "Find Pool builders and installers in Richardson. Showing 1-10 of 267. HydroCare Pools LLC. 5.00(. 1. ) •Approved Pro. HydroCare Pools LLC. 5.00 ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/c.Swimming-Pools.Rowlett.TX.-12070.html",
+            "title": "Top-Rated Pool Constructions and Installations Experts in Rowlett ...",
+            "snippet": "HydroCare Pools LLC. 5.00(. 1. ) •Approved Pro. HydroCare Pools LLC. 5.00(. 1. ) •Approved Pro. Customers say: Quick response."
+          }
+        ],
+        "result_count": 6
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:47:45.264Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "hydrocarepoolsllc.net",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:46:30.647Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:47:02.929Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=HydroCare%20Pools%20LLC&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= HydroCare% 20Pools% 20LLC&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= HydroCare% 20Pools% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= HydroCare% 20Pools% 20LLC&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "Enforcement and Compliance History Online | US EPA",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= HydroCare% 20Pools% 20LLC&State="
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= HydroCare% 20Pools% 20LLC&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:47:43.034Z",
+      "data": {
+        "name": "HydroCare Pools LLC",
+        "found": true,
+        "rating": 5,
+        "source": "serpapi",
+        "address": null,
+        "data_id": "0x6294b2581edc266b:0xcde9c5932ace6818",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "3 months ago",
+            "text": "Leo and his crew have fixed multiple issues with our pool and have done a great job at a very reasonable price! We had a leak in our skimmer, new mastic and he re-built our whole pump. Will definitely use again!",
+            "author": "Leah Cardy",
+            "rating": 5
+          },
+          {
+            "date": "9 months ago",
+            "text": "HydroCare did a great job repairing my pool concrete and mastic. They were timely and cost efficient. Im hiring them for additional work in the future.  Thanks Leo and team!",
+            "author": "Lana LeGrand",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "So glad we came across Leo and his company. We had issues with the 2 pool companies before coming across Hydrocare Pools. They were not balancing the chemicals right and/or not showing up. When Leo came out the first time, he ran some quick tests, told us the problem and how he was going to fix it. He stayed true to his word and process and got our pool looking great. Unfortunately our pool pump went out due to old age but he was able to give recommendations on either replacing parts or getting a new one. We decided to get a new one, which he was able to install in about 1 hour, thankfully. Ever since then our pool has looked the best it ever has since owning our home. We are very pleased with Leo and his services and will continue using his weekly maintenance services.",
+            "author": "Jarrod Ray",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Leo has been fantastic. His prices are fair, he communicates well with me and he is trustworthy. My old pool company broke several parts on my pool and tried to hide it, and the pool was always green when they serviced it. Leo has it sparkling blue and I have had no issues since he started working on it. I would highly recommend him to anyone that needs pool services I'm this area.",
+            "author": "Katie Cowen",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Leo was very professional and knowledgeable while cleaning my pool filters and assisting with tips for overall pool care. If you’re in search of a reputable and reliable pool service please use him, you will not be disappointed.",
+            "author": "Marcelo Varela",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Leo and team are awesome. They have cleaned my pool for a few years now, are always responsive, reliable and reasonably priced. I love that they send across real time photos of the pool sparking clean, after servicing and payment is handled via the portal where I can use my credit card at no extra charge. Invoices are also super easy to download from thier quickbooks software which is important for my tax records.",
+            "author": "Meagan LaBossiere",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Since I found Leo our pool has never looked better. I handled our pool maintenance for the last 5 years and found myself up at Leslies every 3 or 4 days for water analysis then back to the house to add chemicals after scrubbing the green alge off the walls. What I like about Leo is  he is a local independent service, he is on time, does what he says he is going and price wise is very reasonable. He also agreed prior to my retaining his services, to take care of our pool while we were on vac (2 1/2 weeks, 3 service calls), which no other pool companies would  agree to do.",
+            "author": "Bill Fulmer",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Highly recommend! I asked Leo for a quote to replace my pool filter and he was able to do the work the same day for a fair price and he did a great job. Recently I had a leak and he came out right away and fixed it. Anyone needing Richardson Pool Service should give them a call.",
+            "author": "Versatile Marketing",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": null,
+        "pages_fetched": 2,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "NO_REVIEWS",
+        "location_searched": "Garland, TX",
+        "search_confidence": 0.6499999999999999,
+        "serper_fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-14T10:47:43.283Z",
+      "data": {
+        "name": "HydroCare Pools LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(214) 621-2408",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "2026 GoogleUnited StatesTermsPrivacySend Product Feedback",
+        "reviews": [
+          {
+            "date": "",
+            "text": "Closed · Opens 9 AM Sat · (214) 621-2408",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          },
+          {
+            "date": "",
+            "text": "Closed · Opens 9 AM Sat · (214) 621-2408",
+            "rating": 5,
+            "source": "google_maps",
+            "reviewer_name": "Anonymous"
+          }
+        ],
+        "website": "https://hydrocarepoolsllc.net/",
+        "maps_url": "https://www.google.com/maps/search/HydroCare%20Pools%20LLC%20Garland%2C%20TX",
+        "categories": [
+          "Pool cleaning service"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T10:48:10.309Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T10:47:56Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22HydroCare%20Pools%20LLC%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=3FKQaYrcFeyqptQPrKSf8Ao\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T10:48:06Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22HydroCare%20Pools%20LLC%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=5lKQadfYBqGmptQP-4Sk0Aw\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "HydroCare Pools LLC",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T17:55:25.377Z",
+      "data": {
+        "error": "Command timed out after 180000ms: /home/astre/command-center/src/greenlit/auditor/venv/bin/python /home/astre/command-center/src/greenlit/auditor/scrapers/county_liens/orchestrator.py --name HydroCare Pools LLC",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    }
+  }
+}

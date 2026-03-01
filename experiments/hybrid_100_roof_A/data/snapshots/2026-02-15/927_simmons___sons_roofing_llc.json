@@ -1,0 +1,896 @@
+{
+  "contractor_id": 927,
+  "business_name": "Simmons & Sons Roofing LLC",
+  "city": "Irving",
+  "state": "TX",
+  "verticals": [
+    "roofing"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-15T21:10:09.735Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-15T19:51:28.317Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "REL_LIEN": 1,
+            "MECH_LIEN": 2
+          },
+          "active_liens": 2,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 1,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "STAPLETON & SONS ROOFING",
+                "grantor": "SIMMONS MELISSA",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SIMMONS MELISSA",
+                    "STAPLETON & SONS ROOFING",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "5/30/1996",
+                    "19960530000441250",
+                    "LAND/--/--",
+                    "Subdivision- Name: TUCKERS MCKINNEY (DR) 41/69, Reference - 41 / 69"
+                  ],
+                  "search_term": "SIMMONS & SONS ROOFING",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1996-05-30",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "19960530000441250"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 2,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "GULDI FRED",
+                "grantor": "SIMMONS & SONS ROOFING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SIMMONS & SONS ROOFING",
+                    "GULDI FRED",
+                    "MECHANICS LIEN AFFIDAVIT",
+                    "9/18/1992",
+                    "D192181602",
+                    "OPR/10780/699",
+                    "ARL, Subdivision: HUNTWITCH, Lot: T6, Block: 5"
+                  ],
+                  "search_term": "SIMMONS & SONS ROOFING",
+                  "doc_type_raw": "MECHANICS LIEN AFFIDAVIT"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1992-09-18",
+                "has_release": true,
+                "release_date": "1993-09-22",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "days_to_release": 369,
+                "instrument_number": "D192181602"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "GULDI FRED",
+                "grantor": "SIMMONS & SONS ROOFING",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SIMMONS & SONS ROOFING",
+                    "GULDI FRED",
+                    "RELEASE",
+                    "9/22/1993",
+                    "D193204625",
+                    "OPR/11245/467",
+                    "ARL, Subdivision: HUNTWITCH, Lot: T6, Block: 5"
+                  ],
+                  "search_term": "SIMMONS & SONS ROOFING",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "1993-09-22",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D193204625"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 lien(s) with unclear direction"
+          ],
+          "score": 9,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 1,
+          "human_summary": "UNCLEAR: 1 lien(s) found but direction undetermined (needs manual review)",
+          "liens_unclear": 1,
+          "liens_by_count": 0,
+          "resolved_liens": 1,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Simmons & Sons Roofing LLC",
+        "searched_at": "2026-02-15T19:44:53.282239",
+        "total_records": 3
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:48:42.894Z",
+      "data": {
+        "query": "site:yelp.com \"Simmons & Sons Roofing LLC\" \"Irving, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:28.733Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:30.085Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:49:26.434Z",
+      "data": {
+        "query": "Simmons & Sons Roofing LLC Irving site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:49:37.157Z",
+      "data": "Simmons & Sons Roofing LLC Irving review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You History History All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 9:49 9:49 Now playing Best New Roofing Products at International Roofing Expo 2026 Matt Risinger Matt Risinger • • 257K views 1 day ago Matt Risinger Matt Risinger Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... From the video description New Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. AI-generated video summary Quality and accuracy may vary. Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. SHORTS SHORTS Now playing #roofing #roofers LA ROOFING LLC LA ROOFING LLC • • 129 views 3 years ago LA ROOFING LLC LA ROOFING LLC SHORTS SHORTS Now playing How to inspect commercial roofs with your local roofer/Trsroofs Just roofing it Just roofing it • • 190 views 3 years ago Just roofing it Just roofing it SHORTS SHORTS Now playing Worlds Best Roofers! 🫡#shorts #viral #treding Rivera Contractors & Roofing LLC Rivera Contractors & Roofing LLC • • 2.2K views 3 years ago Rivera Contractors & Roofing LLC Rivera Contractors & Roofing LLC 0:42 0:42 Now playing 5-Star Roof Replacement Review in Narberth, PA | William Penn Roofing ⭐🏠 William Penn Roofing & Exteriors William Penn Roofing & Exteriors • • 86 views 4 years ago William Penn Roofing & Exteriors William Penn Roofing & Exteriors Hear why our customers in Narberth, PA trust the William Penn Standard! 🛠️In this video, a local homeowner shares his ... Hear why our customers in Narberth, PA trust the William Penn Standard! 🛠️In this video, a local homeowner shares his ... From the video description 4K 1:07 1:07 Now playing Quality Fort Lauderdale Roofing - Hollywood FL | Review Bruno Quality Fort Lauderdale Roofing Services Quality Fort Lauderdale Roofing Services • • 76 views 10 years ago Quality Fort Lauderdale Roofing Services Quality Fort Lauderdale Roofing Services http://QualityFortLauderdaleRoofing.com CALL (954) 526-9980 NOW! for professional residential and commercial roofing ... http://QualityFortLauderdaleRoofing.com CALL (954) 526-9980 NOW! for professional residential and commercial roofing ... From the video description 0:40 0:40 Now playing Texas Professional Exteriors | Roofing | Stucco | Irving TX yellowpages yellowpages • • 102 views 14 years ago yellowpages yellowpages Texas Professional Exteriors, in Irving , TX, is experienced in roofing , stucco and restorations while specializing in composition, ... Texas Professional Exteriors, in Irving , TX, is experienced in roofing , stucco and restorations while specializing in composition, ... From the video description 2:10 2:10 Now playing ROOFING WORKS TODAY 15-2-2026 IN THRISSUR- WELDING WORKS, SOLAR PANEL MOUNTING, ENGINEERING WORKS Entrepreneur Businessman Entrepreneur Businessman • • No views 2 hours ago Entrepreneur Businessman Entrepreneur Businessman ROOFING WORKS TODAY 15-2-2026 IN THRISSUR- HANDRAIL, SOLAR PANEL MOUNTING, ENGINEERING WORKS, ... ROOFING WORKS TODAY 15-2-2026 IN THRISSUR- HANDRAIL, SOLAR PANEL MOUNTING, ENGINEERING WORKS, ... From the video description New 15 videos Roofing Contractor Near Me | Roof Repair Installation Replacement Service | Emergency Roofer 2025 proguardhome-solutions • Playlist • Updated yesterday San Diego Roofing – 247 Emergency Call 📞 619 910 9666 Now · 1:03 Sacramento Roofing Companies – 247 Emergency Call 📞 +16199109666 Now · 0:59 View full playlist 12:36 12:36 Now playing Roofing Contractor on Business Depression | Work Life balance | Brent Simmons Roofing Insights Roofing Insights • • 2.7K views 5 years ago Roofing Insights Roofing Insights Roofer Brent Simmons Discusses Depression and Work Life Balance While Running Roofing Business The struggle is real for ... Roofer Brent Simmons Discusses Depression and Work Life Balance While Running Roofing Business The struggle is real for ... From the video description CC 4 moments How Did You Get in the Roofing Business | How Did You Move from Water Mediation Business to Roofing Business | What Did You Make in the First Year in Business in Sales | Business Anxiety 4 auto-generated moments in this video 4 moments How Did You Get in the Roofing Business How Did You Get in the Roofing Business 2:08 How Did You Get in the Roofing Business 2:08 How Did You Move from Water Mediation Business to Roofing Business How Did You Move from Water Mediation Business to Roofing Business 3:42 How Did You Move from Water Mediation Business to Roofing Business 3:42 What Did You Make in the First Year in Business in Sales What Did You Make in the First Year in Business in Sales 6:41 What Did You Make in the First Year in Business in Sales 6:41 Business Anxiety Business Anxiety 7:55 Business Anxiety 7:55 1:04 1:04 Now playing Mikku & Sons Roofing & Repair Phoenix Incredible Five Star Review by David M. Mikku & Sons Roofing Mikku & Sons Roofing • • 88 views 7 years ago Mikku & Sons Roofing Mikku & Sons Roofing http://www.mikkuandsons.com/ (623) 465-1068 Mikku & Sons Roofing & Repair Phoenix reviews New Rating I can't write a good ... http://www.mikkuandsons.com/ (623) 465-1068 Mikku & Sons Roofing & Repair Phoenix reviews New Rating I can't write a good ... From the video description 2:26 2:26 Now playing Roofing company that sued Vancouver couple after bad review goes offline KGW News KGW News • • 118K views 4 years ago KGW News KGW News The owner of Executive Roof Services said he has received a slew of one-star reviews after the company's lawsuit against a ... The owner of Executive Roof Services said he has received a slew of one-star reviews after the company's lawsuit against a ... From the video description CC People also watched 7:23 7:23 Now playing 'HEAD-SHAKER': A MAJOR blow for the ranching industry Fox Business Fox Business • • 94K views 15 hours ago Fox Business Fox Business 'The Big Money Show' panel breaks down soaring beef prices, foreign-owned meatpackers and the Trump administration's move ... 'The Big Money Show' panel breaks down soaring beef prices, foreign-owned meatpackers and the Trump administration's move ... From the video description New CC 22:11 22:11 Now playing Avoid this motorcycle shop in CHINA! 🇨🇳 |S8, EP120 Itchy Boots Itchy Boots • • 65K views 1 hour ago Itchy Boots Itchy Boots In this episode, Bing (my guide) and I continue through the snowy Tianshan mountains. It's getting proper cold now! When we ... In this episode, Bing (my guide) and I continue through the snowy Tianshan mountains. It's getting proper cold now! When we ... From the video description New 4K Summary Join Itchy Boots on a cold morning ride through mountain passes in western China. A planned motorcycle shop visit for tires and service becomes unexpectedly complicated. The journey features stunning scenery and a surprising mechanical challenge. AI-generated video summary Quality and accuracy may vary. Summary Join Itchy Boots on a cold morning ride through mountain passes in western China. A planned motorcycle shop visit for tires and service becomes unexpectedly complicated. The journey features stunning scenery and a surprising mechanical challenge. 11:16 11:16 Now playing Roofer on Roofing Subcontractors | Illegal Roofers | Kareem Hunter Roofing Insights Roofing Insights • • 51K views 5 years ago Roofing Insights Roofing Insights Dmitry discusses subcontracting issues and illegal immigration with Indianapolis roofer Kareem Hunter. Let us know what you ... Dmitry discusses subcontracting issues and illegal immigration with Indianapolis roofer Kareem Hunter. Let us know what you ... From the video description CC 5 moments How often do subcontractors not get paid? | Big companies shorting subs | Illegal roofers | Border talk | Kareem's passion 5 moments in this video 5 moments How often do subcontractors not get paid? How often do subcontractors not get paid? 0:22 How often do subcontractors not get paid? 0:22 Big companies shorting subs Big companies shorting subs 2:42 Big companies shorting subs 2:42 Illegal roofers Illegal roofers 4:43 Illegal roofers 4:43 Border talk Border talk 6:34 Border talk 6:34 Kareem's passion Kareem's passion 7:22 Kareem's passion 7:22 41:04 41:04 Now playing We Made an Offer. It was Accepted. Now, Survey and Sea Trial of a 76' Expedition Trawler! Tula's Endless Summer Tula's Endless Summer • • 19K views 3 hours ago Tula's Endless Summer Tula's Endless Summer If you've been following along you know we have been on the hunt for a large expedition trawler type boat. This is one of the first ... If you've been following along you know we have been on the hunt for a large expedition trawler type boat. This is one of the first ... From the video description New 4K + 6 more All About Roofing, LLC | Roofing Surprise Arizona All About Roofing, LLC | Roofing Surprise Arizona @allaboutroofingaz • 251 subscribers Number One Roofing Company Surprise, AZ. At All About Roofing , we are passionate about helping you protect what matters ... Subscribe 5:46 5:46 Now playing Roof Repair Houston TX | Customer Review | Roof Leaks Repairs | JC&C Roofing Company JC&C Roofing Company JC&C Roofing Company • • 103 views 6 years ago JC&C Roofing Company JC&C Roofing Company www.myroofimprovement.com | 281-498-7663 | Houston's Top Roofer THERE IS NOT REQUIREMENT TO BE CALLED A ... www.myroofimprovement.com | 281-498-7663 | Houston's Top Roofer THERE IS NOT REQUIREMENT TO BE CALLED A ... From the video description 4K 1:02 1:02 Now playing Mikku & Sons Roofing & Repair Phoenix Incredible Five Star Review by L L. Mikku & Sons Roofing Mikku & Sons Roofing • • 143 views 10 years ago Mikku & Sons Roofing Mikku & Sons Roofing http://www.mikkuandsons.com/ (623) 465-1068 Mikku & Sons Roofing & Repair Phoenix reviews New Rating You can see all our ... http://www.mikkuandsons.com/ (623) 465-1068 Mikku & Sons Roofing & Repair Phoenix reviews New Rating You can see all our ... From the video description 3 chapters Intro | Our Goal | Contact Us Today 3 auto-generated chapters in this video 3 chapters Intro Intro 0:00 Intro 0:00 Our Goal Our Goal 0:15 Our Goal 0:15 Contact Us Today Contact Us Today 0:45 Contact Us Today 0:45 1:08 1:08 Now playing Mikku & Sons Roofing - Best Roof Repair Contractor in Phoenix Arizona Mikku & Sons Roofing Mikku & Sons Roofing • • 346 views 8 years ago Mikku & Sons Roofing Mikku & Sons Roofing Mikku & Sons Roofing Best Roof Repair Contractor Phoenix Arizona Check out our website at https://www.mikkuroofing.com ... Mikku & Sons Roofing Best Roof Repair Contractor Phoenix Arizona Check out our website at https://www.mikkuroofing.com ... From the video description 1:58 1:58 Now playing State investigates roofing company over fraud complaints FOX 4 Now FOX 4 Now • • 481 views 6 years ago FOX 4 Now FOX 4 Now The Florida State Attorney's Office is conducting a consumer protection investigation into Campbell Roofing and Sheet Metal over ... The Florida State Attorney's Office is conducting a consumer protection investigation into Campbell Roofing and Sheet Metal over ... From the video description 1:23 1:23 Now playing Joseph Salvatore & Sons Roofing | Yonkers, NY yellowpages yellowpages • • 3.5K views 13 years ago yellowpages yellowpages Joseph Salvatore & Sons Roofing competently serves customers throughout Yonkers, NY and the surrounding areas. Joseph Salvatore & Sons Roofing competently serves customers throughout Yonkers, NY and the surrounding areas. From the video description 1:05 1:05 Now playing Roofing Company Dublin Review | Roofing Contractors Dublin | (01) 903 8442 Roofing Company Dublin Roofing Company Dublin • • 67 views 9 years ago Roofing Company Dublin Roofing Company Dublin Roofing Company Dublin is a roofing contractor operating in Dublin. We serve both commercial builders and homeowners and ... Roofing Company Dublin is a roofing contractor operating in Dublin. We serve both commercial builders and homeowners and ... From the video description 1:16 1:16 Now playing Customer Review of Roofing Contractors Bucks County, PA William Penn Roofing & Exteriors William Penn Roofing & Exteriors • • 161 views 6 years ago William Penn Roofing & Exteriors William Penn Roofing & Exteriors Our happy customer giving their review . Are you in Pennsylvania or New Jersey and in need of a new roof ? Content us today for a ... Our happy customer giving their review . Are you in Pennsylvania or New Jersey and in need of a new roof ? Content us today for a ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:49:38.556Z",
+      "data": {
+        "query": "site:nextdoor.com Simmons & Sons Roofing LLC Irving",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:36.334Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Simmons & Sons Roofing LLC\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:49:56.753Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:50:02.846Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:32.178Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Simmons & Sons Roofing LLC\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:10.793Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Simmons & Sons Roofing LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:50:17.805Z",
+      "data": {
+        "query": "site:dentoncounty.gov Simmons & Sons Roofing LLC",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=202",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $3,612.20. 20090505. CCA ADULT HEALTH CENTER. $241.06 ... SIMMONS, TERRY M./JANITORIAL. $200.00. 20090526. SIMPSON, BRIAN-ATTORNEY.",
+            "position": 1
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=226",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $701.80. 20110405. CCA ADULT HEALTH CENTER. $952.27 ... SIMMONS, ANDREA. $59.76. 20110405. SIMS, ERVETTE - ATTY. $258.00. 20110419. SIMS ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=204",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $447.60. 20110531. CCA ADULT HEALTH CENTER. $232.06 ... SIMMONS FLOOR COVERING. $21,986.84. 20110503. SIMMONS, ANDREA. $33.00. 20110531.",
+            "position": 3
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=251",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $6,912.00. 20110628. CCA ADULT HEALTH CENTER. $178.98 ... SIMMONS, ANDREA. $448.80. 20110628. SIMMONS, ANDREA. $53.00. 20110628. SIMPLEX ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=248",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "20080624. CBS MECHANICAL SERVICES INC. $2,200.82. 20080610. CBS ROOFING SERVICES. $2,368.00. 20080610. CBS ROOFING SERVICES. $51,545.00. 20080624. CBS ROOFING ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=212",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $2,285.00. 20091020. CBS ROOFING SERVICES. $15,971.00. 20091020. CCA ADULT HEALTH CENTER. $115.58. 20091013. CCD COUNSELING, PA. $7,882.00.",
+            "position": 6
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=252",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "CBS ROOFING SERVICES. $40,014.00. 20080318. CCA ADULT HEALTH CENTER. $33.95 ... SIMMONS, ANDREA. $47.80. 20080304. SIMPKINS, BRAD. $120.00. 20080311. SIMPLEX ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=205",
+            "title": "[PDF] Denton County Accounts Payable Check Register",
+            "snippet": "Check Date. Vendor Name. Net Check Amount. 20071113. 2ND COURT OF APPEALS. $67.80. 20071113. 911 ETC, INC. $689.10. 20071106. ABERNATHY, BOBBY.",
+            "position": 8
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:21.347Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:50:26.998Z",
+      "data": {
+        "name": "Simmons & Sons Roofing LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 920-8002",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "open",
+        "address": "2916 N Belt Line Rd, Irving, TX 75062",
+        "reviews": [],
+        "website": "https://simmonsroofing.pro/irving",
+        "maps_url": "https://www.google.com/maps/search/Simmons%20%26%20Sons%20Roofing%20LLC%20Irving%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:27.235Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:33.215Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Simmons & Sons Roofing LLC\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:34.244Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Simmons & Sons Roofing LLC\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:35.041Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Simmons & Sons Roofing LLC\" Irving",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:58:55.506Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-15T16:58:55.509Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:59:04.703Z",
+      "data": {
+        "cost": 0.00060382,
+        "summary": "The reviews are highly detailed, mention specific staff and scenarios, and exhibit varied writing styles, strongly indicating authenticity. The lack of any negative reviews in the sample is a minor concern but is plausible for a quality contractor. No significant red flags for fake reviews were detected.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-15T16:59:04.703Z",
+        "fake_signals": [
+          "All sampled reviews are 5-star, no negative or mixed reviews in sample",
+          "Some reviews have similar, slightly generic praise structures"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 4.9,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "MEDIUM",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Ayden checked in later to ensure satisfaction",
+            "Team helped answer questions after completion"
+          ]
+        },
+        "authentic_signals": [
+          "Reviews mention specific employee names (Ayden, Jorge, Theodore, Leonard, Roger)",
+          "Reviews describe specific scenarios (storm damage, home sale inspection, siding repair)",
+          "Varied writing styles and levels of detail",
+          "Mention of practical details like crew size, experience, and cleanup"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only Google reviews are available, showing a high and consistent rating. No contradictory ratings from other platforms."
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:50:27.000Z",
+      "data": {
+        "name": "Simmons & Sons Roofing LLC",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 920-8002",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "open",
+        "address": "2916 N Belt Line Rd, Irving, TX 75062",
+        "reviews": [],
+        "website": "https://simmonsroofing.pro/irving",
+        "maps_url": "https://www.google.com/maps/search/Simmons%20%26%20Sons%20Roofing%20LLC%20Irving%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:50:26.748Z",
+      "data": {
+        "name": "Simmons & Sons Roofing LLC",
+        "found": true,
+        "rating": 4.9,
+        "source": "serpapi",
+        "address": "2916 N Belt Line Rd, Irving, TX 75062",
+        "data_id": "0x864e838b925f1037:0xd600e849d351dcd8",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "3 weeks ago",
+            "text": "We recently had the opportunity to work with a local roofing company for several projects on our house. From start to finish, i was extremely happy with their work. The first job was fixing some problems with our siding, and ayden came out to inspect everything. He quickly found out that the original siding had been installed wrong by the builder, and his crew got to work putting up the new siding the right way. The results looked perfect, and ayden even checked in later to make sure we were pleased. Not long after, a hailstorm hit and damaged our roof. I called the same roofing company again, and roger took charge of the project. He worked directly with our insurance adjuster and caught a few things others had missed. The new roof went up in just one day, which really impressed me, and they also came back soon after to put up new gutters. roger recommended we upgrade to 6-inch gutters because of the size of our house, and that turned out to be a great suggestion. The customer service was outstanding throughout. They even assigned us a supervisor, leonard, who was very detail-oriented and made sure everything was done just the way we wanted. leonard made sure both me and my wife were completely satisfied at every step. Communication was easy, whether by text or email, and we always knew what was happening. my wife and i fully recommend this company for anyone looking for reliable roofing or siding work.",
+            "author": "Joel Arnold",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "After a heavy storm, my roof had serious damage and needed to be tarped while I got an estimate for repair or shingle replacement. I reached out to several roofing contractors, hoping someone could help quickly since roofers are always busy here with the strong Texas sun and storms. Simmons & Sons Roofing LLC stood out right away. Even though they were handling several emergency jobs, Jorge made time to come by early the next morning. He took detailed photos, secured a tarp on my roof, and provided a clear estimate for my insurance company. From that moment, everything moved efficiently. Anytime I had a question, they always got back to me within 30 minutes. The whole crew was professional, polite, and really knew what they were doing. The service was outstanding—they truly went the extra mile to make sure I was taken care of. The quality of both their work and the materials used was excellent. When the job was done, they made sure everything was cleaned up and my yard looked just as neat as before. I highly recommend this roofing company to anyone needing repairs or replacement.",
+            "author": "Madison Vang",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Out of all the roofing companies I’ve dealt with, Simmons & Sons Roofing LLC truly gave me the best experience. From the very first call with Theodore, I felt confident that my roof was in good hands. I received a fair and honest estimate for the work, and the crew made sure the project was finished quickly and done right. Throughout the job, Theodore kept me informed with regular updates on the progress. If you’re in Irving and need a new roof or repairs, I highly recommend reaching out to this team. Choosing them was one of the best decisions I’ve made.",
+            "author": "bella ellis",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "I highly recommend this roofing company to anyone in the Irving area. After a major storm left our roof badly damaged, we chose them based on strong online reviews instead of going with the many contractors knocking on our door. Here are a few reasons why I would suggest them: 1) Communication – Leonard, the owner, gave us his direct phone number and was always quick to answer any questions, no matter the time. Scheduling the roof replacement and new gutters was straightforward, and they were always responsive. 2) Care and Quality – We have an in-ground pool and outdoor bar close to our house. Before starting the roof work, Leonard and his crew came by to make sure everything was well protected from nails and debris. They did a great job keeping our property safe and cleaned up thoroughly afterward. Jorge, the foreman, took real pride in their work and made sure the job was top-notch. 3) Attention to Detail – The team handled all the permitting quickly, so our roof was finished before many of our neighbors even got started. When we couldn’t decide on shingle colors from the brochures, Leonard gave us local addresses to check out the actual shingles in person, which made choosing much easier. 4) Honesty – We were open about our insurance claim, and Leonard was honest and fair in his billing. He submitted all the paperwork quickly, which helped us get our claim processed without delays. Overall, if you need a trustworthy roofer in Irving who does quality work and cares about the details, I would definitely recommend this team.",
+            "author": "Sadie Calderon",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "I highly recommend this roofing company. Roger, our representative, was both friendly and professional throughout the entire process. After getting quotes from several roofers and starting with a couple of other companies, we were impressed by how this team offered the best price and handled everything thoroughly from beginning to end. We were on a tight schedule with our insurance, and Roger made sure our roof and gutter replacements were scheduled quickly. As a parent, I really appreciated how the whole crew was considerate and welcoming with my kids, and they made sure to clean up the area carefully so it was safe for the kids to play outside. The whole experience was smooth and stress-free.",
+            "author": "Alfred Hendrix",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "I recently had my roof replaced and was very impressed with the entire experience from start to finish. The roofing company provided outstanding service and made sure everything went smoothly. Ayden, who handled my project, really stood out with his expertise and attention to detail. When I reached out about a leak in my roof, Ayden came out right away to inspect it. He explained everything clearly and made sure I understood what needed to be done. Ayden also helped me work with my insurance company, making sure all the paperwork and approvals were taken care of quickly and without any hassle. His professionalism made the whole process easy and stress-free for me. The actual roof replacement was finished in just two days, which was faster than I expected. Ayden’s crew worked hard and did a fantastic job, making sure every part of the roof was perfect. They cleaned up thoroughly after themselves, leaving my property neat and tidy. Overall, Ayden and the entire team showed a level of dedication and service that really impressed me. Their quick response, great communication, and skilled work made a big difference. If you’re looking for a reliable roofer in Texas, I highly recommend this company!",
+            "author": "Jill P",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "the roofing team showed up on time each day, stuck to the budget, and delivered top-notch work. they were friendly, easy to talk to, and always cleaned up the job site before they left. even after the roof was finished, they helped answer all my questions and made sure i was happy. the crew, usually seven people, worked together smoothly, with several members having over 15 years of roofing experience—some even over 20 years. it was clear they knew what they were doing, which made me feel confident in their work as i watched them move quickly through each step of the job. they used only high-quality materials and didn't take any shortcuts. safety was a priority, especially since my roof has a steep slope, and no one got hurt even though they worked fast. the project also included removing an old, unused chimney from my house in irving, and they patched it up perfectly. you can't even tell there used to be a chimney there, and they sealed everything up well to prevent any drafts. the team, with jorge leading, showed exactly how homeowners hope contractors will do their work. i highly recommend this roofing company. they truly earned my 5-star review.",
+            "author": "B B Baxter",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "While selling our home in Irving, the inspection found a loose section of shingles that needed to be fixed. Our realtor gave us the name of a local roofer, but they couldn’t help us for several months and didn’t know anyone else available. That same day, I spoke with Ayden from Simmons & Sons Roofing LLC and told him about our situation and the quick timeline we were facing. He was confident they could help, and he came out later that day to take a look at our roof and start working on an estimate. By the next morning, we had a detailed estimate and contract ready to go, and they promised to meet our deadline. The team finished the shingle repairs within two weeks, and while working, they found another small issue that the inspection had missed. They explained our options and took care of that repair, too. After finishing, they did a follow-up inspection and made sure everything was spotless before leaving. We were really impressed with how responsive Ayden was and the quality of the roof work. Our experience was great and we highly recommend this roofing company to anyone in the area needing fast and professional roof repairs.",
+            "author": "Preston Johnson",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": 83,
+        "pages_fetched": 2,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "MULTIPLE_SUSPICIOUS_SIGNALS",
+        "location_searched": "Irving, TX",
+        "search_confidence": 0.7249999999999999,
+        "serper_fraud_check": {
+          "reason": "MULTIPLE_SUSPICIOUS_SIGNALS",
+          "signals": [
+            "ALL_PERFECT_SCORES",
+            "GENERIC_LANGUAGE"
+          ],
+          "escalate": true,
+          "confidence": "MEDIUM"
+        }
+      }
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:48:36.313Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "https://simmonsroofing.pro/irving",
+            "type": "insurance_bonding_mentions",
+            "snippet": "of Repair Message Us Irving Roofing Experts at Your Service Licensed · Bonded · Insured Simmons & Sons Roofing LLC Experienced roofers here to serve! Call (469) 920-80"
+          },
+          {
+            "url": "https://simmonsroofing.pro/irving",
+            "type": "insurance_bonding_mentions",
+            "snippet": "2 Home Roof Repair Message Us Irving Roofing Experts at Your Service Licensed · Bonded · Insured Simmons & Sons Roofing LLC Experienced roofers here to serve! Call (4"
+          }
+        ],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "https://simmonsroofing.pro/irving",
+        "analyzed_pages": [
+          {
+            "url": "https://simmonsroofing.pro/irving",
+            "type": "homepage",
+            "title": "Irving Emergency Roof Repair | (469) 920-8002 Call Us"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": true
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:30.996Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "simmonsroofing.pro",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:49:19.756Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:49:23.406Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:37.163Z",
+      "data": {
+        "found": false,
+        "query": "\"Simmons & Sons Roofing LLC\" Irving lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:49:52.832Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Simmons%20%26%20Sons%20Roofing%20LLC&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Simmons% 26% 20Sons% 20LLC&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Simmons% 20% 26% 20Sons% 20Roofing% 20LLC&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Simmons% 20% 26% 20Sons% 20Roofing% 20LLC&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Simmons% 20% 26% 20Sons% 20Roofing% 20LLC&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:50:11.901Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn# 1/1 I Franchise Tax Account Status. This Page is Not Sufficient for Filings with the ...",
+            "position": 2
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn# Information on this site is obtained from the most recent Public Information Report (PIR) ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "This page is valid for most business transactions https://mycpa.cpa.state.tx.us/coa/coaSearchBtn# 1/1",
+            "position": 4
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn# This page is valid for most business transactions but is not sufficient for filings with the ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn https://mycpa.cpa.state.tx.us/ ...",
+            "position": 6
+          },
+          {
+            "date": "Mar 31, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21435&ItemID=15140",
+            "title": "[PDF] Texas Franchise Tax No Tax Due Report",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn# This entity is a Real Estate Investment Trust (REIT) new veteran-owned business",
+            "position": 7
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Public Information Report https://mycpa.cpa.state.tx.us/coa/coaSearchBtn# .records@cpa.texas.gov",
+            "position": 8
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/395/00395-772-2023-0803-MCA-214901-Rio%20Grande.pdf",
+            "title": "[PDF] Texas Comptroller of Public Accounts",
+            "snippet": "7TH STREET SUITE 620 AUSTIN, TX 78701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 10. 6/22/23, 12:34 PM. OF THE. OFFICE C. TEXAS. Franchise ...",
+            "position": 9
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:13.216Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Simmons & Sons Roofing LLC",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:50:14.537Z",
+      "data": {
+        "query": "site:dallascounty.org Simmons & Sons Roofing LLC civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "[PDF] statutory - Dallas County",
+            "snippet": "... Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL SECTION. Injury or Damage. CASES ON DOCKET. 454. Other. Eminent. Domain. Tax ...",
+            "position": 1
+          },
+          {
+            "date": "Sep 28, 2021",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/Payment-register/FY21/PaymentRegister2021SEP.pdf",
+            "title": "[PDF] 10/01/2021 and Ending: 09/30/2021 - Dallas County",
+            "snippet": "Vendor Name. Payment No Method. Date. Amount. 1200114495. EFT. 10/20/2020. 1021 CANYON OAKS APTS LLC. $1,318.20. 1200115096. EFT. 11/17/2020.",
+            "position": 2
+          },
+          {
+            "date": "Apr 28, 2014",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/Payment-register/PaymentRegister2010.pdf",
+            "title": "[PDF] 10/01/2009 and Ending: 09/30/2010 - Dallas County",
+            "snippet": "... LLC. $169.00. 467094235. CHECK. 11/17/2009. 1ST CONSOLIDATED ASSET ... ROOFING CONSTRUCTION. $4,618.00. Is $4,618.00. ALPINE ROOFING ...",
+            "position": 3
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:50:16.347Z",
+      "data": {
+        "query": "site:collincountytx.gov Simmons & Sons Roofing LLC",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200713_2502/48703_FY2020%20Disbursements%20for%207.13.2020%20Court.pdf",
+            "title": "[PDF] 2020 COUNTY AUDITOR APPROVED ... - Collin County",
+            "snippet": "FOR COURT DATE: JULY 13, 2020. THE ATTACHED CLAIMS AGAINST COLLIN COUNTY FOR THE. PERIOD ENDING: JULY 7, 2020. ARE HEREBY APPROVED IN ACCORDANCE WITH LOCAL.",
+            "position": 1
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210412_2620/33858_agenda-packet-apr.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on April 8, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so ...",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-15T16:50:21.095Z",
+      "data": "Irving Emergency Roof Repair | (469) 920-8002 Call Us We Irving Home Roof Repairs Contact Us (469) 920-8002 ©2021 www.simmonsroofing.pro (469) 920-8002 Home Roof Repair Message Us Irving Roofing Experts at Your Service Licensed · Bonded · Insured Simmons & Sons Roofing LLC Experienced roofers here to serve! Call (469) 920-8002 for instant appointments and scheduling! Our Roofing Services for Irving Emergency Hail Damage Repair: Repairing roofs damaged by hail. Leak Detection and Repair: Locating leaks and applying seals. Shingle Replacement: Renewing damaged shingles. Storm Damage Repair: Fixing damages caused by storms. Structural Repair: Reinforcing the structural stability of the roof. Thermal Insulation Improvement: Improving attic insulation to reduce heat loss. Soffit and Fascia Repair: Fixing damaged soffits and fascias. Full Roof Replacement: Reconstructing the entire roofing system. Ridge Cap Repair: Reinforcing the seal at roof intersections. Flat Roof Repair: Addressing issues unique to flat roofs. Moss and Algae Cleaning: Removing moss and algae from the roof. Granule Loss Replacement: Repairing granule erosion on shingles. Energy Efficiency Upgrades: Upgrading roofing materials to improve energy conservation. Tile Replacement: Substituting damaged roof tiles. Skylight Sealing and Repair: Fixing leaks and damage around skylights. Flashing Repair: Sealing and fixing the flashing around chimneys, vents, and skylights. Waterproofing: Applying sealant to prevent water penetration. Roof Cleaning: Clearing the roof of debris and stains. Re-roofing: Supplementing the roof with additional layers for durability. Wind Lift Repairs: Reinforcing roofing to withstand wind lift. Chimney Sealing and Repair: Ensuring that the chimney is properly sealed and intact where it meets the roof. Animal Damage Repair: Addressing roof damage inflicted by animals. Gutter Cleaning and Repair: Maintaining and repairing gutter systems. Ice Dam Removal: Clearing ice from eaves to avoid water damage. Ventilation Issues: Improving airflow to reduce moisture and heat. Contacts (469) 920-8002 Message Us Simmons & Sons Roofing LLC 2916 N Belt Line Rd Irving, TX 75062 Irving Based Serving the Irving Area Since 2008 Nobody repairs your roof better than Simmons & Sons Roofing LLC! View Our Locations ©2026 www.simmonsroofing.pro ♦ All Rights Reserved ♦ Privacy Policy"
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T16:50:55.020Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T16:50:35Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Simmons%20%26%20Sons%20Roofing%20LLC%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=W_mRacyBF7KIptQPqaXcqA4\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T16:50:45Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Simmons%20%26%20Sons%20Roofing%20LLC%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=ZfmRaZC2CYWLptQP2abHuQI\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Simmons & Sons Roofing LLC",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

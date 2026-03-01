@@ -1,0 +1,85 @@
+{
+  "variation": "D2",
+  "contractor_id": 656,
+  "contractor_name": "Bonnie & Clydes Pools and Spas",
+  "archetype": "established_sketchy",
+  "expected_score": 35,
+  "run": 2,
+  "timestamp": "2026-01-20T19:22:23.025Z",
+  "success": true,
+  "trust_score": 44,
+  "risk_level": "HIGH",
+  "reasoning": "Mixed council: DeepSeek=42, Claude=35, Gemini=55, Avg=44",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 42,
+      "risk_level": "HIGH",
+      "reasoning": "This contractor presents a classic case of a business with decent core retail operations but severe systemic failures in their installation and major purchase processes. While the store staff receives consistent praise for knowledge and service, the company's reliance on unreliable third-party installers and failure to properly manage those relationships has resulted in numerous catastrophic customer experiences. The recent hot tub incident involving selling a damaged floor model without disclosure, blocking communication with ownership, and potential DTPA violations demonstrates serious ethical and operational problems. The business appears established with multiple locations, but their inability to control quality on major projects creates unacceptable risk for customers.",
+      "key_factors": [
+        "Severe installation contractor failures (Campbells, A&A, Allstar repeatedly cited for poor work, no-shows, and refusal to fix errors)",
+        "Recent major incident involving deceptive sales practices (selling damaged floor model hot tub without disclosure, blocking owner communication)",
+        "Pattern of inconsistent customer service and poor follow-up on parts/repairs",
+        "Established multi-location business with generally knowledgeable in-store staff",
+        "No found legal actions or regulatory complaints despite numerous customer grievances"
+      ],
+      "red_flags": [
+        "Multiple customers report being sold used/damaged floor models without consent",
+        "Management blocks customers from speaking with owner about serious issues",
+        "Third-party installers repeatedly fail to show up, do shoddy work, and refuse to fix errors",
+        "Company appears to take no responsibility for installer failures despite recommending them",
+        "Leslie's Pool Supply stopped referrals due to customer complaints about being lied to"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 35,
+      "risk_level": "HIGH",
+      "reasoning": "This pool retailer shows a concerning pattern of problems with third-party installers and customer service inconsistency. While the Google reviews appear authentic and the business has operated for 40+ years with multiple locations, there are serious red flags including selling used floor models as new without disclosure, poor communication, and consistent complaints about recommended subcontractors who abandon projects or do substandard work. The lack of proper business registration verification and absence from other review platforms raises additional concerns.",
+      "key_factors": [
+        "Authentic negative reviews detailing deceptive sales practices",
+        "Consistent pattern of subcontractor problems across multiple installers",
+        "Long business history with established physical locations",
+        "Complete absence from BBB and other major review platforms"
+      ],
+      "red_flags": [
+        "Selling used floor model as new without customer knowledge or consent",
+        "Multiple complaints about recommended installers abandoning projects",
+        "Staff blocking customers from speaking with ownership",
+        "No verifiable business registration found in state databases"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 55,
+      "risk_level": "MEDIUM",
+      "reasoning": "Bonnie & Clydes Pools and Spas has a mixed reputation. While they have a solid 4.4-star rating on Google with a high volume of reviews, indicating many satisfied customers, there are recurring complaints about third-party installation contractors and inconsistent customer service. The review analysis suggests the reviews are authentic, but the complaints about subcontractors are a significant concern. The lack of legal issues and a functional website are positive signs, but the negative reviews cannot be ignored.",
+      "key_factors": [
+        "Google rating and review volume",
+        "Authenticity of reviews",
+        "Complaints about subcontractors"
+      ],
+      "red_flags": [
+        "Negative reviews mentioning used/damaged products",
+        "Complaints about third-party installers",
+        "Inconsistent customer service experiences"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Multiple customers report being sold used/damaged floor models without consent",
+    "Management blocks customers from speaking with owner about serious issues",
+    "Third-party installers repeatedly fail to show up, do shoddy work, and refuse to fix errors",
+    "Company appears to take no responsibility for installer failures despite recommending them",
+    "Leslie's Pool Supply stopped referrals due to customer complaints about being lied to",
+    "Selling used floor model as new without customer knowledge or consent",
+    "Multiple complaints about recommended installers abandoning projects",
+    "Staff blocking customers from speaking with ownership",
+    "No verifiable business registration found in state databases",
+    "Negative reviews mentioning used/damaged products",
+    "Complaints about third-party installers",
+    "Inconsistent customer service experiences"
+  ],
+  "cost_usd": 0.08507019375,
+  "duration_ms": 12509
+}

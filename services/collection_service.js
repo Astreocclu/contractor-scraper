@@ -8,10 +8,15 @@
 const puppeteer = require('puppeteer');
 const { runCommand } = require('./async_command');
 const path = require('path');
+const fs = require('fs');
 const { searchCourtRecords } = require('../scrapers/court_scraper');
 const { fetchAPISources } = require('./api_sources');
 const { analyzeReviews, quickDiscrepancyCheck } = require('./review_analyzer');
-const { scrapeGoogleReviewsApify } = require('./apify_service');
+const {
+  scrapeGoogleReviewsApify,
+  scrapeGoogleReviewsViaPlacesActor
+} = require('./apify_service');
+const { scrapeGoogleReviewsDataForSEO } = require('./dataforseo_service');
 
 // New tiered search system (2026-01-20)
 const { TieredSearch } = require('./tiered_search');
@@ -20,11 +25,13 @@ const { getVariant, logResult: logABResult } = require('./ab_test');
 
 // Path to Python scrapers
 const SCRAPERS_DIR = path.join(__dirname, '..', 'scrapers');
+const VENV_PYTHON = path.join(__dirname, '..', 'venv', 'bin', 'python');
+const DEFAULT_PYTHON = process.env.PYTHON_SCRAPER || (fs.existsSync(VENV_PYTHON) ? VENV_PYTHON : 'python3');
 
 /**
  * Call a Python scraper and return JSON result
  */
-async function callPythonScraper(script, args = [], timeout = 60000, pythonCmd = 'python3') {
+async function callPythonScraper(script, args = [], timeout = 60000, pythonCmd = DEFAULT_PYTHON) {
   const scriptPath = path.join(SCRAPERS_DIR, script);
   const cmdArgs = [...args, '--json'];
 
@@ -109,6 +116,8 @@ async function scrapeGoogleReviewsTiered(businessName, location = 'Fort Worth, T
 // Feature flag: Set USE_OUTSCRAPER=true in .env to use Outscraper instead of Serper
 const USE_OUTSCRAPER = process.env.USE_OUTSCRAPER === 'true';
 const APIFY_API_TOKEN = process.env.APIFY_API_TOKEN;
+const DATAFORSEO_LOGIN = process.env.DATAFORSEO_LOGIN;
+const DATAFORSEO_PASSWORD = process.env.DATAFORSEO_PASSWORD;
 
 /**
  * Scrape Google reviews via Outscraper API
@@ -143,6 +152,116 @@ async function scrapeTrustpilotOutscraper(domain, maxReviews = 100) {
 // ============ APIFY INTEGRATION ============
 // Feature flag: Set USE_APIFY=true in .env to enable Apify fallback
 const USE_APIFY = process.env.USE_APIFY === 'true';
+const GOOGLE_REVIEW_REMEDIATION_PROVIDER = String(process.env.GOOGLE_REVIEW_REMEDIATION_PROVIDER || 'dataforseo').toLowerCase();
+const APIFY_REMEDIATION_MAX_REVIEWS = Math.max(1, parseInt(process.env.APIFY_REMEDIATION_MAX_REVIEWS || process.env.APIFY_MAX_REVIEWS || '200', 10));
+const GOOGLE_REVIEW_TEXT_MIN_NONEMPTY = Math.max(1, parseInt(process.env.GOOGLE_REVIEW_TEXT_MIN_NONEMPTY || '10', 10));
+const GOOGLE_REVIEW_CRITICAL_TEXT_FLOOR = Math.max(1, parseInt(process.env.GOOGLE_REVIEW_CRITICAL_TEXT_FLOOR || '5', 10));
+const GOOGLE_REVIEW_CRITICAL_REVIEW_COUNT = Math.max(1, parseInt(process.env.GOOGLE_REVIEW_CRITICAL_REVIEW_COUNT || '50', 10));
+
+function extractReviewText(review) {
+  if (!review || typeof review !== 'object') return '';
+  const text = review.text ?? review.review_text ?? review.content ?? review.comment ?? '';
+  return String(text || '').trim();
+}
+
+function countNonEmptyReviewTexts(reviews) {
+  if (!Array.isArray(reviews)) return 0;
+  let count = 0;
+  for (const review of reviews) {
+    if (extractReviewText(review)) count += 1;
+  }
+  return count;
+}
+
+function toFiniteNumber(value, fallback = 0) {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : fallback;
+}
+
+function normalizeGoogleMapsUrl(value) {
+  const raw = String(value || '').trim();
+  if (!raw) return null;
+  if (raw.startsWith('http://') || raw.startsWith('https://')) return raw;
+  return null;
+}
+
+function mapsUrlFromCid(cid) {
+  const clean = String(cid || '').trim();
+  if (!clean) return null;
+  return `https://www.google.com/maps?cid=${encodeURIComponent(clean)}`;
+}
+
+function extractCidFromMapsUrl(mapsUrl) {
+  const normalized = normalizeGoogleMapsUrl(mapsUrl);
+  if (!normalized) return null;
+  try {
+    const parsed = new URL(normalized);
+    const cid = parsed.searchParams.get('cid');
+    if (cid && cid.trim()) return cid.trim();
+  } catch (_) {
+    return null;
+  }
+  return null;
+}
+
+function deriveMapsUrlForApify(baseResult, businessName = '', location = '') {
+  const direct = [
+    baseResult?.maps_url,
+    baseResult?.url,
+    baseResult?.google_maps_url,
+    baseResult?.place_url
+  ];
+  for (const candidate of direct) {
+    const normalized = normalizeGoogleMapsUrl(candidate);
+    if (normalized && normalized.includes('google.com/maps')) return normalized;
+  }
+
+  const cidUrl = mapsUrlFromCid(baseResult?.cid);
+  if (cidUrl) return cidUrl;
+
+  const query = `${businessName || ''} ${location || ''}`.trim();
+  if (query) {
+    return `https://www.google.com/maps/search/${encodeURIComponent(query)}`;
+  }
+  return null;
+}
+
+function summarizeGoogleReviewCoverage(result, maxReviews = APIFY_REMEDIATION_MAX_REVIEWS, minNonEmpty = GOOGLE_REVIEW_TEXT_MIN_NONEMPTY) {
+  const reviews = Array.isArray(result?.reviews) ? result.reviews : [];
+  const fetchedReviews = reviews.length;
+  const nonemptyReviews = countNonEmptyReviewTexts(reviews);
+  const reviewCount = Math.max(0, toFiniteNumber(result?.review_count, fetchedReviews));
+  const reviewCountForRule = reviewCount > 0 ? reviewCount : fetchedReviews;
+
+  const reasons = [];
+  if (!result?.found) reasons.push('not_found');
+  if (nonemptyReviews < minNonEmpty) reasons.push(`nonempty_below_${minNonEmpty}`);
+  if (
+    reviewCountForRule > 0 &&
+    reviewCountForRule <= maxReviews &&
+    fetchedReviews < reviewCountForRule
+  ) {
+    reasons.push('incomplete_full_capture_for_small_listing');
+  }
+  if (
+    reviewCountForRule >= GOOGLE_REVIEW_CRITICAL_REVIEW_COUNT &&
+    nonemptyReviews < GOOGLE_REVIEW_CRITICAL_TEXT_FLOOR
+  ) {
+    reasons.push('high_reported_count_low_text');
+  }
+
+  return {
+    found: !!result?.found,
+    review_count: reviewCountForRule,
+    fetched_reviews: fetchedReviews,
+    nonempty_reviews: nonemptyReviews,
+    full_capture_required: reviewCountForRule > 0 && reviewCountForRule <= maxReviews,
+    full_capture_satisfied: !(reviewCountForRule > 0 && reviewCountForRule <= maxReviews && fetchedReviews < reviewCountForRule),
+    min_nonempty_required: minNonEmpty,
+    needs_remediation: reasons.length > 0,
+    remediation_reasons: reasons
+  };
+}
 
 /**
  * Scrape Google reviews via Apify API
@@ -152,15 +271,17 @@ const USE_APIFY = process.env.USE_APIFY === 'true';
  * @param {number} maxReviews - Max reviews to fetch
  * @param {string} googleMapsUrl - Optional direct URL (skips lookup)
  */
-async function scrapeGoogleReviewsApifyWrapper(businessName, location, maxReviews = 50, googleMapsUrl = null) {
+async function scrapeGoogleReviewsApifyWrapper(businessName, location, maxReviews = APIFY_REMEDIATION_MAX_REVIEWS, googleMapsUrl = null) {
   // If we don't have a direct URL, we need to find one first
   if (!googleMapsUrl) {
     // Use Serper to find the Google Maps URL
     if (process.env.SERPER_API_KEY) {
       console.log(`    [Apify] No URL provided, using Serper to find Google Maps URL...`);
       const serperResult = await scrapeGoogleReviewsSerper(businessName, location, 1);
-      if (serperResult.found && serperResult.maps_url) {
-        googleMapsUrl = serperResult.maps_url;
+      if (serperResult.found) {
+        googleMapsUrl = deriveMapsUrlForApify(serperResult, businessName, location);
+      }
+      if (googleMapsUrl) {
         console.log(`    [Apify] Found URL: ${googleMapsUrl}`);
       } else {
         return { found: false, error: 'Could not find Google Maps URL via Serper' };
@@ -170,7 +291,46 @@ async function scrapeGoogleReviewsApifyWrapper(businessName, location, maxReview
     }
   }
 
-  return scrapeGoogleReviewsApify(googleMapsUrl, maxReviews);
+  const directResult = await scrapeGoogleReviewsApify(googleMapsUrl, maxReviews);
+  if (directResult?.found) {
+    return directResult;
+  }
+
+  console.log(`    [Apify] Direct reviews actor returned no usable payload (${directResult?.error || 'unknown error'}). Trying places actor fallback...`);
+  const placeFallback = await scrapeGoogleReviewsViaPlacesActor(businessName, location, maxReviews);
+  if (placeFallback?.found) {
+    // Preserve resolved URL when the fallback does not provide one.
+    if (!placeFallback.maps_url && googleMapsUrl) {
+      placeFallback.maps_url = googleMapsUrl;
+    }
+    return placeFallback;
+  }
+
+  const directError = directResult?.error || 'Direct reviews actor failed';
+  const fallbackError = placeFallback?.error || 'Places actor fallback failed';
+  return {
+    found: false,
+    error: `${directError}; ${fallbackError}`,
+    maps_url: googleMapsUrl || null
+  };
+}
+
+async function scrapeGoogleReviewsDataForSEOWrapper(businessName, location, maxReviews = APIFY_REMEDIATION_MAX_REVIEWS, baseline = null) {
+  const cid = String(
+    baseline?.cid ||
+    baseline?.google_cid ||
+    baseline?.place_cid ||
+    extractCidFromMapsUrl(baseline?.maps_url) ||
+    extractCidFromMapsUrl(baseline?.url) ||
+    ''
+  ).trim() || null;
+
+  return scrapeGoogleReviewsDataForSEO(
+    businessName,
+    location,
+    maxReviews,
+    cid ? { cid, sort_by: 'newest' } : { sort_by: 'newest' }
+  );
 }
 
 /**
@@ -181,7 +341,7 @@ async function scrapeYelpYahooPython(businessName, location = 'Fort Worth, TX') 
   const scriptPath = path.join(SCRAPERS_DIR, 'yelp.py');
 
   try {
-    const output = await runCommand('python3', [scriptPath, businessName, location, '--yahoo'], {
+    const output = await runCommand(DEFAULT_PYTHON, [scriptPath, businessName, location, '--yahoo'], {
       cwd: SCRAPERS_DIR,
       timeout: 60000
     });
@@ -241,22 +401,53 @@ async function scrapeTrustpilotPython(websiteUrl) {
  * Scrape county lien records (mechanic's liens, tax liens, judgments)
  * Uses Python Playwright scrapers for Tarrant, Dallas, Collin, and Denton counties
  */
-async function scrapeCountyLiensPython(businessName, ownerName = null, city = 'Fort Worth', state = 'TX') {
+async function scrapeCountyLiensPython(businessName, ownerName = null, city = 'Fort Worth', state = 'TX', options = {}) {
   const scriptPath = path.join(SCRAPERS_DIR, 'county_liens', 'orchestrator.py');
   const args = ['--name', businessName];
+  const envTimeout = parseInt(process.env.COUNTY_LIENS_TIMEOUT_MS || '', 10);
+  const envRetryTimeout = parseInt(process.env.COUNTY_LIENS_RETRY_TIMEOUT_MS || '', 10);
+  const baseTimeoutMs = Number.isFinite(options.timeoutMs)
+    ? options.timeoutMs
+    : (Number.isFinite(envTimeout) ? envTimeout : 300000);
+  const MIN_TIMEOUT_MS = 60000;
+  const MAX_TIMEOUT_MS = 600000;
+  const retryBaseTimeoutMs = Number.isFinite(envRetryTimeout) ? envRetryTimeout : 180000;
+  const timeoutMs = Math.min(Math.max(baseTimeoutMs, MIN_TIMEOUT_MS), MAX_TIMEOUT_MS);
+  const allowedCounties = new Set(['tarrant', 'dallas', 'collin', 'denton']);
+  const counties = Array.isArray(options.counties)
+    ? options.counties
+    : (typeof options.counties === 'string' ? options.counties.split(',') : []);
+  const normalizedCounties = counties
+    .map((c) => String(c || '').trim().toLowerCase())
+    .filter((c) => allowedCounties.has(c));
 
   if (ownerName) {
     args.push('--owner', ownerName);
   }
+  if (normalizedCounties.length > 0) {
+    args.push('--counties', ...normalizedCounties);
+  }
+
+  const runOnce = async (timeout) => runCommand(DEFAULT_PYTHON, [scriptPath, ...args], {
+    cwd: SCRAPERS_DIR,
+    timeout,
+    json: true
+  });
 
   try {
-    const result = await runCommand('python3', [scriptPath, ...args], {
-      cwd: SCRAPERS_DIR,
-      timeout: 300000, // 5 minutes - scraping 4 counties takes time
-      json: true
-    });
-    return result;
+    return await runOnce(timeoutMs);
   } catch (err) {
+    const message = err?.message || '';
+    const isTimeout = message.includes('Command timed out after');
+    if (isTimeout) {
+      const retryTimeout = Math.min(Math.max(retryBaseTimeoutMs, MIN_TIMEOUT_MS), MAX_TIMEOUT_MS);
+      warn(`County liens timed out after ${timeoutMs}ms. Retrying with ${retryTimeout}ms...`);
+      try {
+        return await runOnce(retryTimeout);
+      } catch (retryErr) {
+        err = retryErr;
+      }
+    }
     // Try to parse any output even on error
     if (err.stdout) {
       try {
@@ -275,6 +466,63 @@ async function scrapeCountyLiensPython(businessName, ownerName = null, city = 'F
   }
 }
 
+function deriveCountyLienStatus(lienResult) {
+  const counties = lienResult?.counties || {};
+  const errorCounties = Object.entries(counties)
+    .filter(([, data]) => data?.status === 'error')
+    .map(([name]) => name);
+  const hasCountyErrors = errorCounties.length > 0;
+  const baseStatus = lienResult?.total_records > 0 ? 'success' : 'not_found';
+  let status = baseStatus;
+  let errorMessage = null;
+
+  if (lienResult?.error) {
+    status = 'error';
+    errorMessage = lienResult.error;
+  } else if (hasCountyErrors && baseStatus === 'not_found') {
+    status = 'error';
+    errorMessage = `County lien scraper error in: ${errorCounties.join(', ')}`;
+  }
+
+  return { status, errorMessage, hasCountyErrors };
+}
+
+
+class SourceFundingError extends Error {
+  constructor(message, metadata = {}) {
+    super(message);
+    this.name = 'SourceFundingError';
+    this.code = 'SOURCE_FUNDING_STOP';
+    this.provider = metadata.provider || null;
+    this.source = metadata.source || null;
+    this.status = metadata.status || null;
+    this.details = metadata.details || null;
+  }
+}
+
+const SOURCE_FUNDING_STATUS_CODES = new Set([401, 402, 403, 429]);
+const SOURCE_FUNDING_MESSAGE_RE = /(quota|rate[\s-]?limit|insufficient|billing|credit|payment required|out of credits|credits exhausted|balance|invalid api key|api key invalid|account suspended|too many requests)/i;
+
+function isSourceFundingError(err) {
+  if (!err) return false;
+  if (err instanceof SourceFundingError) return true;
+  if (err.code === 'SOURCE_FUNDING_STOP') return true;
+  const message = String(err.message || err.error || '');
+  return SOURCE_FUNDING_MESSAGE_RE.test(message);
+}
+
+function throwIfSourceFundingSignal({ provider, source, status = null, message = '', details = null }) {
+  const hasStatusSignal = Number.isInteger(status) && SOURCE_FUNDING_STATUS_CODES.has(status);
+  const text = String(message || '');
+  const hasMessageSignal = SOURCE_FUNDING_MESSAGE_RE.test(text);
+  if (!hasStatusSignal && !hasMessageSignal) return;
+
+  const parts = [`[SOURCE FUNDING STOP] ${provider || 'source-provider'}`];
+  if (source) parts.push(`source=${source}`);
+  if (Number.isInteger(status)) parts.push(`status=${status}`);
+  if (text) parts.push(`message=${text.slice(0, 220)}`);
+  throw new SourceFundingError(parts.join(' | '), { provider, source, status, details });
+}
 
 /**
  * Build Serper search queries for various sources
@@ -302,6 +550,11 @@ function buildSerperQuery(source, businessName, city, state) {
 async function fetchSerperSource(source, businessName, city, state) {
   const apiKey = process.env.SERPER_API_KEY;
   if (!apiKey) {
+    throwIfSourceFundingSignal({
+      provider: 'serper',
+      source,
+      message: 'No SERPER_API_KEY configured'
+    });
     return { found: false, error: 'No SERPER_API_KEY' };
   }
 
@@ -314,7 +567,29 @@ async function fetchSerperSource(source, businessName, city, state) {
       body: JSON.stringify({ q: query, num: 10 })
     });
 
+    if (!res.ok) {
+      const bodyText = await res.text();
+      throwIfSourceFundingSignal({
+        provider: 'serper',
+        source,
+        status: res.status,
+        message: bodyText || ('Serper API error: ' + res.status + ' ' + res.statusText),
+        details: { query }
+      });
+      return {
+        found: false,
+        error: 'Serper API error: ' + res.status + ' ' + res.statusText,
+        source,
+        query
+      };
+    }
+
     const data = await res.json();
+    throwIfSourceFundingSignal({
+      provider: 'serper',
+      source,
+      message: data?.message || data?.error || ''
+    });
     const results = data.organic || [];
 
     return {
@@ -329,6 +604,7 @@ async function fetchSerperSource(source, businessName, city, state) {
       source
     };
   } catch (err) {
+    if (isSourceFundingError(err)) throw err;
     return { found: false, error: err.message, source };
   }
 }
@@ -341,6 +617,11 @@ async function fetchSerperSource(source, businessName, city, state) {
 async function fetchSerperRating(businessName, city, state, site = 'angi.com') {
   const apiKey = process.env.SERPER_API_KEY;
   if (!apiKey) {
+    throwIfSourceFundingSignal({
+      provider: 'serper',
+      source: `serper_${site.replace('.com', '')}`,
+      message: 'No SERPER_API_KEY configured'
+    });
     return { found: false, error: 'No SERPER_API_KEY', source: `serper_${site.replace('.com', '')}` };
   }
 
@@ -355,8 +636,34 @@ async function fetchSerperRating(businessName, city, state, site = 'angi.com') {
       body: JSON.stringify({ q: query, num: 10 })
     });
 
+    if (!res.ok) {
+      const bodyText = await res.text();
+      throwIfSourceFundingSignal({
+        provider: 'serper',
+        source: `serper_${siteName}`,
+        status: res.status,
+        message: bodyText || ('Serper API error: ' + res.status + ' ' + res.statusText),
+        details: { query }
+      });
+      return {
+        found: false,
+        error: 'Serper API error: ' + res.status + ' ' + res.statusText,
+        source: `serper_${siteName}`
+      };
+    }
+
     const data = await res.json();
+    throwIfSourceFundingSignal({
+      provider: 'serper',
+      source: `serper_${siteName}`,
+      message: data?.message || data?.error || ''
+    });
     const results = data.organic || [];
+    const summarizedResults = results.slice(0, 3).map(r => ({
+      title: r.title,
+      link: r.link,
+      snippet: r.snippet?.slice(0, 200)
+    }));
 
     // Look for a result with actual rating data (Serper returns this structured)
     // Also check if the result is a business profile, not a generic article
@@ -400,10 +707,13 @@ async function fetchSerperRating(businessName, city, state, site = 'angi.com') {
       review_count: null,
       url: null,
       source: `serper_${siteName}`,
-      note: results.length > 0 ? 'Results found but no rating data' : 'No results'
+      note: results.length > 0 ? 'Results found but no rating data' : 'No results',
+      result_count: results.length,
+      results: summarizedResults
     };
 
   } catch (err) {
+    if (isSourceFundingError(err)) throw err;
     return { found: false, error: err.message, source: `serper_${siteName}` };
   }
 }
@@ -463,6 +773,7 @@ const SOURCES = {
 
   // Website (cache 24h)
   website: { ttl: 86400, tier: 0, type: 'url' },
+  website_warranty: { ttl: 86400, tier: 0, type: 'scraper' },
 };
 
 // Logging helpers
@@ -735,6 +1046,193 @@ function extractTextContent(html) {
   return text;
 }
 
+// Warranty/Guarantee extraction helpers
+const WARRANTY_LINK_PATTERNS = [
+  /warrant(y|ies)/i,
+  /guarantee|guaranty/i,
+  /satisfaction/i,
+  /workmanship/i,
+  /our[-\s]?work/i,
+  /promise/i
+];
+
+const WARRANTY_TEXT_PATTERNS = {
+  explicit: [/warrant(y|ies)/i, /guarantee|guaranty/i],
+  workmanship: [/workmanship/i, /labor warranty/i, /installation warranty/i, /craftsmanship/i],
+  materials: [/materials?\s+warranty/i, /manufacturer'?s\s+warranty/i, /product\s+warranty/i, /parts?\s+warranty/i, /factory\s+warranty/i],
+  satisfaction: [/satisfaction\s+guarantee(d)?/i, /100%\s+satisfaction/i, /customer\s+satisfaction/i],
+  timeline: [/on[-\s]?time/i, /completion\s+date/i, /finish\s+on\s+schedule/i, /timeline\s+guarantee/i, /schedule\s+guarantee/i],
+  money_back: [/money[-\s]?back/i, /full\s+refund/i, /\brefund\b/i],
+  redo: [/we\s+(?:will|ll)\s+(?:redo|re-do|repair|fix|correct)/i, /make\s+it\s+right/i, /no[-\s]?charge\s+(?:repair|fix)/i, /at\s+no\s+cost/i],
+  pass_through: [/manufacturer'?s\s+warranty/i, /warranty\s+provided\s+by\s+(?:the\s+)?manufacturer/i],
+  insurance_bonded: [/insured/i, /bonded/i, /insurance/i]
+};
+
+const WARRANTY_DURATION_PATTERNS = [
+  /\b(lifetime|limited\s+lifetime)\b/i,
+  /\b(\d{1,2})\s*(year|yr|years|month|months|day|days)\b/i,
+  /\b(one|two|three|five|ten)\s*(year|yr|years|month|months)\b/i
+];
+
+function normalizeWebsiteUrl(url) {
+  if (!url) return null;
+  const trimmed = url.trim();
+  if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return trimmed;
+  return `https://${trimmed}`;
+}
+
+function toGlobalRegex(regex) {
+  const flags = regex.flags.includes('g') ? regex.flags : `${regex.flags}g`;
+  return new RegExp(regex.source, flags);
+}
+
+function extractSnippets(text, regex, limit = 3, window = 80) {
+  if (!text) return [];
+  const snippets = [];
+  const re = toGlobalRegex(regex);
+  let match;
+  while ((match = re.exec(text)) !== null && snippets.length < limit) {
+    const start = Math.max(0, match.index - window);
+    const end = Math.min(text.length, match.index + match[0].length + window);
+    const snippet = text.substring(start, end).replace(/\s+/g, ' ').trim();
+    if (snippet) snippets.push(snippet);
+  }
+  return snippets;
+}
+
+function extractWarrantySignalsFromPages(pages) {
+  const evidence = [];
+  const durations = new Set();
+  const signals = {
+    explicit_guarantee: false,
+    workmanship: false,
+    materials: false,
+    satisfaction: false,
+    timeline: false,
+    money_back: false,
+    redo: false,
+    material_warranty_passthrough: false,
+    insurance_bonding_mentions: false
+  };
+
+  const pushEvidence = (type, snippets, url) => {
+    for (const snippet of snippets) {
+      if (evidence.length >= 12) break;
+      evidence.push({ type, snippet, url });
+    }
+  };
+
+  for (const page of pages) {
+    const text = (page.text || '').substring(0, 200000);
+    if (!text) continue;
+
+    for (const pattern of WARRANTY_TEXT_PATTERNS.explicit) {
+      const snippets = extractSnippets(text, pattern, 2);
+      if (snippets.length) {
+        signals.explicit_guarantee = true;
+        pushEvidence('explicit', snippets, page.url);
+      }
+    }
+
+    const categories = [
+      ['workmanship', WARRANTY_TEXT_PATTERNS.workmanship],
+      ['materials', WARRANTY_TEXT_PATTERNS.materials],
+      ['satisfaction', WARRANTY_TEXT_PATTERNS.satisfaction],
+      ['timeline', WARRANTY_TEXT_PATTERNS.timeline],
+      ['money_back', WARRANTY_TEXT_PATTERNS.money_back],
+      ['redo', WARRANTY_TEXT_PATTERNS.redo],
+      ['material_warranty_passthrough', WARRANTY_TEXT_PATTERNS.pass_through],
+      ['insurance_bonding_mentions', WARRANTY_TEXT_PATTERNS.insurance_bonded]
+    ];
+
+    for (const [key, patterns] of categories) {
+      for (const pattern of patterns) {
+        const snippets = extractSnippets(text, pattern, 2);
+        if (snippets.length) {
+          signals[key] = true;
+          pushEvidence(key, snippets, page.url);
+        }
+      }
+    }
+
+    for (const pattern of WARRANTY_DURATION_PATTERNS) {
+      const re = toGlobalRegex(pattern);
+      let match;
+      while ((match = re.exec(text)) !== null && durations.size < 6) {
+        const phrase = match[0].trim();
+        if (phrase) durations.add(phrase);
+      }
+    }
+  }
+
+  const warrantyTypes = [];
+  if (signals.workmanship) warrantyTypes.push('workmanship');
+  if (signals.materials) warrantyTypes.push('materials');
+  if (signals.satisfaction) warrantyTypes.push('satisfaction');
+  if (signals.timeline) warrantyTypes.push('timeline');
+  if (signals.money_back) warrantyTypes.push('money_back');
+  if (signals.redo) warrantyTypes.push('redo');
+
+  let score = 0;
+  if (signals.explicit_guarantee) score += 2;
+  if (durations.size > 0) score += 2;
+  if (warrantyTypes.length > 0) score += 1;
+  if (signals.material_warranty_passthrough) score += 1;
+  if (signals.money_back || signals.redo) score += 1;
+
+  const confidence = score >= 6 ? 'STRONG' : score >= 3 ? 'MODERATE' : score >= 1 ? 'WEAK' : 'NONE_FOUND';
+
+  return {
+    found: signals.explicit_guarantee || warrantyTypes.length > 0 || signals.material_warranty_passthrough,
+    explicit_guarantee: signals.explicit_guarantee,
+    confidence,
+    types: {
+      workmanship: signals.workmanship,
+      materials: signals.materials,
+      satisfaction: signals.satisfaction,
+      timeline: signals.timeline,
+      money_back: signals.money_back,
+      redo: signals.redo,
+      material_warranty_passthrough: signals.material_warranty_passthrough
+    },
+    durations: Array.from(durations),
+    insurance_bonding_mentions: signals.insurance_bonding_mentions,
+    evidence
+  };
+}
+
+function findWarrantyLinks(baseUrl, links) {
+  if (!baseUrl || !Array.isArray(links)) return [];
+  const normalizedBase = normalizeWebsiteUrl(baseUrl);
+  if (!normalizedBase) return [];
+  const baseHost = new URL(normalizedBase).host;
+
+  const results = [];
+  for (const link of links) {
+    const href = (link.href || '').trim();
+    const text = (link.text || '').trim();
+    if (!href) continue;
+    if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) continue;
+    if (/\.(pdf|docx?|xlsx?)$/i.test(href)) continue;
+
+    const matchesPattern = WARRANTY_LINK_PATTERNS.some(p => p.test(href) || p.test(text));
+    if (!matchesPattern) continue;
+
+    try {
+      const absoluteUrl = new URL(href, normalizedBase).toString();
+      const host = new URL(absoluteUrl).host;
+      if (host !== baseHost && !href.includes('warranty') && !href.includes('guarantee')) {
+        continue;
+      }
+      results.push(absoluteUrl);
+    } catch {
+      // ignore malformed URLs
+    }
+  }
+
+  return Array.from(new Set(results)).slice(0, 5);
+}
+
 class CollectionService {
   constructor(db) {
     this.db = db;
@@ -790,6 +1288,96 @@ class CollectionService {
     } catch (err) {
       warn(`    Website scraper failed: ${err.message.split('\n')[0]}`);
       return { email: null, source: null, error: err.message };
+    }
+  }
+
+  /**
+   * Scrape warranty/guarantee signals from contractor website
+   * Uses Playwright/Puppeteer browser instance (no external APIs)
+   */
+  async scrapeWebsiteWarrantySignals(url) {
+    if (!url) {
+      return {
+        source: 'website_warranty',
+        url: null,
+        status: 'not_found',
+        text: 'No website URL provided',
+        structured: { found: false, reason: 'No URL' }
+      };
+    }
+
+    const normalizedUrl = normalizeWebsiteUrl(url);
+    const page = await this.browser.newPage();
+
+    try {
+      await page.setViewport({ width: 1280, height: 800 });
+      await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+
+      log(`  Scraping website for warranty/guarantee signals...`);
+      await page.goto(normalizedUrl, { waitUntil: 'domcontentloaded', timeout: 20000 });
+      await sleep(1500);
+
+      const homeHtml = await page.content();
+      const homeText = extractTextContent(homeHtml);
+      const homeTitle = await page.title();
+
+      const links = await page.evaluate(() =>
+        Array.from(document.querySelectorAll('a[href]')).slice(0, 200).map(a => ({
+          href: a.getAttribute('href'),
+          text: a.innerText?.trim() || ''
+        }))
+      );
+
+      const warrantyLinks = findWarrantyLinks(normalizedUrl, links);
+      const pages = [{ url: normalizedUrl, title: homeTitle, type: 'homepage', text: homeText }];
+
+      const MAX_WARRANTY_PAGES = 3;
+      for (const link of warrantyLinks.slice(0, MAX_WARRANTY_PAGES)) {
+        try {
+          await page.goto(link, { waitUntil: 'domcontentloaded', timeout: 15000 });
+          await sleep(1200);
+          const html = await page.content();
+          const text = extractTextContent(html);
+          const title = await page.title();
+          pages.push({ url: link, title, type: 'warranty_page', text });
+        } catch (err) {
+          warn(`    Warranty page failed: ${link} (${err.message.split('\n')[0]})`);
+        }
+      }
+
+      const analysis = extractWarrantySignalsFromPages(pages);
+      analysis.source_url = normalizedUrl;
+      analysis.warranty_pages = pages.filter(p => p.type === 'warranty_page').map(p => ({ url: p.url, title: p.title || null }));
+      analysis.analyzed_pages = pages.map(p => ({ url: p.url, title: p.title || null, type: p.type }));
+
+      const summaryParts = [];
+      summaryParts.push(`Explicit guarantee: ${analysis.explicit_guarantee ? 'yes' : 'no'}`);
+      if (analysis.types && Object.values(analysis.types).some(v => v)) {
+        const types = Object.entries(analysis.types).filter(([k, v]) => v).map(([k]) => k);
+        summaryParts.push(`Types: ${types.join(', ')}`);
+      }
+      if (analysis.durations?.length) summaryParts.push(`Durations: ${analysis.durations.join(', ')}`);
+      if (analysis.insurance_bonding_mentions) summaryParts.push('Mentions insured/bonded');
+      summaryParts.push(`Confidence: ${analysis.confidence}`);
+
+      return {
+        source: 'website_warranty',
+        url: normalizedUrl,
+        status: analysis.found ? 'success' : 'not_found',
+        text: summaryParts.join(' | '),
+        structured: analysis
+      };
+    } catch (err) {
+      return {
+        source: 'website_warranty',
+        url: normalizedUrl,
+        status: 'error',
+        error: err.message,
+        text: null,
+        structured: null
+      };
+    } finally {
+      await page.close();
     }
   }
 
@@ -1049,10 +1637,23 @@ class CollectionService {
       });
 
       if (!response.ok) {
+        const bodyText = await response.text();
+        throwIfSourceFundingSignal({
+          provider: 'serper',
+          source,
+          status: response.status,
+          message: bodyText || (`Serper API error: ${response.status} ${response.statusText}`),
+          details: { query }
+        });
         throw new Error(`Serper API error: ${response.status} ${response.statusText}`);
       }
 
       const json = await response.json();
+      throwIfSourceFundingSignal({
+        provider: 'serper',
+        source,
+        message: json?.message || json?.error || ''
+      });
       const results = json.organic || [];
 
       // Convert to string for storage (simulate text equivalent of a search page)
@@ -1074,6 +1675,7 @@ class CollectionService {
       };
 
     } catch (err) {
+      if (isSourceFundingError(err)) throw err;
       warn(`    ${source}: API Error - ${err.message}`);
       return {
         source,
@@ -1085,7 +1687,6 @@ class CollectionService {
       };
     }
   }
-
   /**
    * Fetch a single page with Playwright/Puppeteer (or API if blocked)
    */
@@ -1231,6 +1832,258 @@ class CollectionService {
     return new Date(cached.expires_at) < new Date();
   }
 
+  async runCountyLienCollection(contractorId, contractor, options = {}) {
+    const {
+      timeoutMs = null,
+      counties = null,
+      requestedBy = 'initial',
+      reason = 'Initial collection - liens'
+    } = options;
+
+    log('\n  Searching county lien records...');
+
+    try {
+      const lienResult = await scrapeCountyLiensPython(
+        contractor.name,
+        null,
+        contractor.city,
+        contractor.state,
+        { timeoutMs, counties }
+      );
+
+      const { status, errorMessage } = deriveCountyLienStatus(lienResult);
+      const totalRecords = lienResult?.total_records || 0;
+      const data = {
+        source: 'county_liens',
+        url: 'DFW County OPR',
+        status,
+        text: `COUNTY LIENS:\n${JSON.stringify(lienResult, null, 2)}`,
+        structured: lienResult
+      };
+
+      if (errorMessage) {
+        data.error = errorMessage;
+      }
+
+      await this.storeRawData(contractorId, 'county_liens', data);
+      await this.logCollectionRequest(contractorId, 'county_liens', requestedBy, reason);
+
+      if (status === 'error') {
+        warn(`    Liens: Error - ${errorMessage}`);
+      } else if (totalRecords > 0) {
+        const activeCount = lienResult.lien_score?.active_liens || 0;
+        const resolvedCount = lienResult.lien_score?.resolved_liens || 0;
+        const againstCount = lienResult.lien_score?.liens_against_count || 0;
+        const byCount = lienResult.lien_score?.liens_by_count || 0;
+        const unclearCount = lienResult.lien_score?.liens_unclear || 0;
+        warn(`    Liens: Found ${totalRecords} record(s) - ${activeCount} active, ${resolvedCount} resolved`);
+
+        if (againstCount >= 3) {
+          error(`    ⚠️ CRITICAL: ${againstCount} lien(s) AGAINST contractor (pattern of non-payment)`);
+        } else if (againstCount >= 1) {
+          warn(`    ⚠️ WARNING: ${againstCount} lien(s) AGAINST contractor`);
+        }
+
+        if (byCount > 0) {
+          warn(`    ℹ️ ${byCount} lien(s) filed BY contractor (neutral)`);
+        }
+        if (unclearCount > 0) {
+          warn(`    ⚠️ ${unclearCount} lien(s) with unclear direction`);
+        }
+      } else {
+        success(`    Liens: No liens found`);
+      }
+
+      return data;
+    } catch (err) {
+      const errorMessage = err?.message || 'Unknown error';
+      warn(`    Liens: Error - ${errorMessage}`);
+
+      const fallback = {
+        error: errorMessage,
+        total_records: 0,
+        counties: {},
+        lien_score: { score: 10, max_score: 10, notes: ['Scraper error - could not retrieve records'] }
+      };
+
+      const data = {
+        source: 'county_liens',
+        url: 'DFW County OPR',
+        status: 'error',
+        error: errorMessage,
+        text: `COUNTY LIENS ERROR:\n${errorMessage}`,
+        structured: fallback
+      };
+
+      await this.storeRawData(contractorId, 'county_liens', data);
+      await this.logCollectionRequest(contractorId, 'county_liens', requestedBy, reason);
+      return data;
+    }
+  }
+
+  async remediateGoogleReviewsWithDataForSEO(contractor, currentResult, options = {}) {
+    const maxReviews = Math.max(1, parseInt(options.maxReviews || APIFY_REMEDIATION_MAX_REVIEWS, 10));
+    const minNonEmpty = Math.max(1, parseInt(options.minNonEmpty || GOOGLE_REVIEW_TEXT_MIN_NONEMPTY, 10));
+    const location = options.location || `${contractor.city || 'Dallas'}, ${contractor.state || 'TX'}`;
+    const force = options.force === true;
+
+    const baseline = currentResult && typeof currentResult === 'object'
+      ? currentResult
+      : { found: false, reviews: [], review_count: 0 };
+
+    const before = summarizeGoogleReviewCoverage(baseline, maxReviews, minNonEmpty);
+    if (GOOGLE_REVIEW_REMEDIATION_PROVIDER !== 'dataforseo' && !force) {
+      return { updated: false, skipped: true, reason: `remediation_provider_${GOOGLE_REVIEW_REMEDIATION_PROVIDER}_disabled`, result: baseline, before, after: before };
+    }
+
+    if ((!DATAFORSEO_LOGIN || !DATAFORSEO_PASSWORD) && !force) {
+      return { updated: false, skipped: true, reason: 'dataforseo_disabled', result: baseline, before, after: before };
+    }
+
+    if (!force && !before.needs_remediation) {
+      return { updated: false, skipped: true, reason: 'already_meets_invariant', result: baseline, before, after: before };
+    }
+
+    log(`    [DataForSEO] Remediation trigger: ${before.remediation_reasons.join(', ') || 'forced'}`);
+
+    let dataforseoResult = null;
+    try {
+      dataforseoResult = await scrapeGoogleReviewsDataForSEOWrapper(
+        contractor.name || contractor.business_name,
+        location,
+        maxReviews,
+        baseline
+      );
+      throwIfSourceFundingSignal({
+        provider: 'dataforseo',
+        source: 'google_reviews_dataforseo',
+        message: dataforseoResult?.error || ''
+      });
+    } catch (err) {
+      if (isSourceFundingError(err)) throw err;
+      return {
+        updated: false,
+        skipped: false,
+        reason: 'dataforseo_error',
+        error: err.message,
+        result: baseline,
+        before,
+        after: before
+      };
+    }
+
+    if (!dataforseoResult?.found) {
+      return {
+        updated: false,
+        skipped: false,
+        reason: 'dataforseo_not_found',
+        error: dataforseoResult?.error || 'DataForSEO returned no result',
+        result: baseline,
+        before,
+        after: before
+      };
+    }
+
+    const merged = {
+      ...baseline,
+      ...dataforseoResult,
+      found: true,
+      review_source_prior: baseline.review_source || baseline.source || null,
+      review_source: 'dataforseo',
+      remediation_provider: 'dataforseo',
+      remediation_applied: true,
+      remediation_timestamp: new Date().toISOString(),
+      remediation_target_reviews: maxReviews,
+      remediation_min_nonempty: minNonEmpty,
+      remediation_reason: before.remediation_reasons
+    };
+
+    const after = summarizeGoogleReviewCoverage(merged, maxReviews, minNonEmpty);
+    merged.review_coverage_before = before;
+    merged.review_coverage_after = after;
+
+    return {
+      updated: true,
+      skipped: false,
+      reason: 'dataforseo_success',
+      result: merged,
+      before,
+      after
+    };
+  }
+
+  async remediateGoogleMapsLocalSource(contractorId, contractor, options = {}) {
+    const rows = await this.db.exec(`
+      SELECT source_name, structured_data, fetch_status
+      FROM contractor_raw_data
+      WHERE contractor_id = ?
+      AND source_name IN ('google_maps_local', 'google_maps_listed', 'google_maps_hq')
+      ORDER BY source_name
+    `, [contractorId]);
+
+    const bySource = new Map();
+    for (const row of rows) {
+      let parsed = null;
+      if (row.structured_data) {
+        try {
+          parsed = typeof row.structured_data === 'string'
+            ? JSON.parse(row.structured_data)
+            : row.structured_data;
+        } catch (_) {
+          parsed = null;
+        }
+      }
+      bySource.set(row.source_name, {
+        fetch_status: row.fetch_status,
+        data: parsed
+      });
+    }
+
+    const existingLocal = bySource.get('google_maps_local')?.data || null;
+    const fallbackCandidates = [
+      bySource.get('google_maps_local')?.data,
+      bySource.get('google_maps_listed')?.data,
+      bySource.get('google_maps_hq')?.data
+    ].filter(Boolean);
+
+    const baseline = existingLocal || fallbackCandidates[0] || {
+      found: false,
+      reviews: [],
+      review_count: 0
+    };
+
+    const contractorInput = {
+      ...contractor,
+      name: contractor.name || contractor.business_name,
+      city: contractor.city,
+      state: contractor.state
+    };
+
+    const remediation = await this.remediateGoogleReviewsWithDataForSEO(
+      contractorInput,
+      baseline,
+      options
+    );
+
+    if (remediation.updated && remediation.result) {
+      const payload = {
+        source: 'google_maps_local',
+        url: remediation.result.maps_url || deriveMapsUrlForApify(remediation.result, contractorInput.name, `${contractorInput.city}, ${contractorInput.state}`) || 'https://www.google.com/maps',
+        status: remediation.result.found ? 'success' : 'not_found',
+        text: JSON.stringify(remediation.result, null, 2),
+        structured: remediation.result
+      };
+      await this.storeRawData(contractorId, 'google_maps_local', payload);
+      await this.logCollectionRequest(contractorId, 'google_maps_local', 'dataforseo_remediation', `DataForSEO remediation maxReviews=${options.maxReviews || APIFY_REMEDIATION_MAX_REVIEWS}`);
+
+      if (options.rerunReviewAnalysis !== false) {
+        await this.runReviewAnalysisOnly(contractorId, contractorInput);
+      }
+    }
+
+    return remediation;
+  }
+
   /**
    * Run initial collection for all sources
    */
@@ -1258,6 +2111,19 @@ class CollectionService {
         results.push(emailData);
       } catch (err) {
         warn(`    Website email: Error - ${err.message}`);
+      }
+    }
+
+    // === WEBSITE WARRANTY / GUARANTEE EXTRACTION ===
+    if (urls.website) {
+      log('\n  Scraping website for warranty/guarantee signals...');
+      try {
+        const warrantyData = await this.scrapeWebsiteWarrantySignals(urls.website);
+        await this.storeRawData(contractorId, 'website_warranty', warrantyData);
+        await this.logCollectionRequest(contractorId, 'website_warranty', 'initial', 'Warranty/guarantee extraction');
+        results.push(warrantyData);
+      } catch (err) {
+        warn(`    Website warranty: Error - ${err.message}`);
       }
     }
 
@@ -1400,6 +2266,7 @@ class CollectionService {
           await this.searchLogger.logResult(contractorId, tieredSearchResult);
 
         } catch (tieredErr) {
+          if (isSourceFundingError(tieredErr)) throw tieredErr;
           error(`    ✗ Tiered search error: ${tieredErr.message}, falling back to legacy...`);
           tieredSearchResult = { found: false, error: tieredErr.message };
           // Fall through to legacy as fallback
@@ -1435,6 +2302,11 @@ class CollectionService {
           log(`    🔍 Using tiered review scraper (Serper → SerpApi if needed)...`);
           try {
             gmapsLocalResult = await scrapeGoogleReviewsTiered(contractor.name, TARGET_MARKET, 100);
+            throwIfSourceFundingSignal({
+              provider: 'serper_or_serpapi',
+              source: 'google_reviews_tiered',
+              message: gmapsLocalResult?.error || ''
+            });
             if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
               const escalated = gmapsLocalResult.escalated ? ' [ESCALATED to SerpApi]' : '';
               success(`    ✓ Got ${gmapsLocalResult.reviews.length} reviews (${gmapsLocalResult.review_count} total)${escalated}`);
@@ -1447,6 +2319,7 @@ class CollectionService {
               gmapsLocalResult = null;
             }
           } catch (tieredErr) {
+            if (isSourceFundingError(tieredErr)) throw tieredErr;
             warn(`    ⚠️ Tiered scraper failed: ${tieredErr.message}, falling back to Serper...`);
             gmapsLocalResult = null;
           }
@@ -1457,6 +2330,11 @@ class CollectionService {
           log(`    🔍 Using Serper API for review extraction...`);
           try {
             gmapsLocalResult = await scrapeGoogleReviewsSerper(contractor.name, TARGET_MARKET, 20);
+            throwIfSourceFundingSignal({
+              provider: 'serper',
+              source: 'google_reviews_serper',
+              message: gmapsLocalResult?.error || ''
+            });
             if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
               success(`    ✓ Serper extracted ${gmapsLocalResult.reviews.length} reviews (${gmapsLocalResult.review_count} total)`);
               gmapsLocalResult.review_source = 'serper_google';
@@ -1468,6 +2346,7 @@ class CollectionService {
               gmapsLocalResult = null;
             }
           } catch (serperErr) {
+            if (isSourceFundingError(serperErr)) throw serperErr;
             warn(`    ⚠️ Serper failed: ${serperErr.message}, falling back...`);
             gmapsLocalResult = null;
           }
@@ -1495,7 +2374,7 @@ class CollectionService {
         if (!gmapsLocalResult && USE_APIFY && APIFY_API_TOKEN) {
           log(`    [Apify] Trying Apify fallback...`);
           try {
-            gmapsLocalResult = await scrapeGoogleReviewsApifyWrapper(contractor.name, TARGET_MARKET, 50);
+            gmapsLocalResult = await scrapeGoogleReviewsApifyWrapper(contractor.name, TARGET_MARKET, APIFY_REMEDIATION_MAX_REVIEWS);
             if (gmapsLocalResult.found && gmapsLocalResult.reviews?.length > 0) {
               success(`    [Apify] Got ${gmapsLocalResult.reviews.length} reviews`);
               gmapsLocalResult.review_source = 'apify';
@@ -1529,6 +2408,26 @@ class CollectionService {
             found: gmapsLocalResult?.found || false,
             searchTime: Date.now() - searchStartTime
           });
+        }
+      }
+
+      if (gmapsLocalResult?.found) {
+        const remediation = await this.remediateGoogleReviewsWithDataForSEO(
+          contractor,
+          gmapsLocalResult,
+          {
+            location: TARGET_MARKET,
+            maxReviews: APIFY_REMEDIATION_MAX_REVIEWS,
+            minNonEmpty: GOOGLE_REVIEW_TEXT_MIN_NONEMPTY
+          }
+        );
+
+        if (remediation.updated && remediation.result) {
+          gmapsLocalResult = remediation.result;
+          const after = remediation.after || {};
+          success(`    [DataForSEO] Remediated Google reviews: ${after.fetched_reviews || 0} stored (${after.nonempty_reviews || 0} non-empty)`);
+        } else if (!remediation.skipped) {
+          warn(`    [DataForSEO] Remediation skipped: ${remediation.reason || remediation.error || 'unknown'}`);
         }
       }
 
@@ -1566,6 +2465,7 @@ class CollectionService {
         warn(`    Google Maps: Not found`);
       }
     } catch (err) {
+      if (isSourceFundingError(err)) throw err;
       warn(`    Google Maps (DFW): Error - ${err.message}`);
     }
 
@@ -1651,6 +2551,8 @@ class CollectionService {
     // === FALLBACK: Scrape website discovered by Google Maps (if we didn't already have one) ===
     const existingWebsiteResult = results.find(r => r.source === 'website');
     const websiteAlreadyScraped = existingWebsiteResult && existingWebsiteResult.status !== 'error';
+    const existingWarrantyResult = results.find(r => r.source === 'website_warranty');
+    const warrantyAlreadyScraped = existingWarrantyResult && existingWarrantyResult.status !== 'error';
 
     if (!websiteAlreadyScraped) {
       // Check if Google Maps found a website we can scrape
@@ -1672,6 +2574,18 @@ class CollectionService {
             await this.storeRawData(contractorId, 'website', emailData);
             await this.logCollectionRequest(contractorId, 'website', 'initial', 'Email extraction (from Google Maps discovered URL)');
             results.push(emailData);
+
+            if (!warrantyAlreadyScraped) {
+              try {
+                const warrantyData = await this.scrapeWebsiteWarrantySignals(discoveredWebsite);
+                await this.storeRawData(contractorId, 'website_warranty', warrantyData);
+                await this.logCollectionRequest(contractorId, 'website_warranty', 'initial', 'Warranty/guarantee extraction (from Google Maps discovered URL)');
+                results.push(warrantyData);
+              } catch (err) {
+                warn(`    Website warranty (fallback): Error - ${err.message}`);
+              }
+            }
+
             break;  // Only scrape first found website
           } catch (err) {
             warn(`    Website email (fallback): Error - ${err.message}`);
@@ -1716,10 +2630,13 @@ class CollectionService {
       log(`  Fetching ${name} rating (via Serper API)...`);
       try {
         const ratingResult = await fetchSerperRating(contractor.name, contractor.city, contractor.state, site);
+        const ratingStatus = ratingResult.error
+          ? 'error'
+          : (ratingResult.found ? 'success' : 'not_found');
         const ratingData = {
           source: key,
           url: ratingResult.url || `https://www.${site}`,
-          status: ratingResult.found ? 'success' : 'not_found',
+          status: ratingStatus,
           text: JSON.stringify(ratingResult, null, 2),
           structured: ratingResult
         };
@@ -1727,7 +2644,9 @@ class CollectionService {
         await this.logCollectionRequest(contractorId, key, 'initial', `Initial collection - Serper ${site}`);
         results.push(ratingData);
 
-        if (ratingResult.found && ratingResult.rating) {
+        if (ratingStatus === 'error') {
+          warn(`    ${name}: Error - ${ratingResult.error}`);
+        } else if (ratingResult.found && ratingResult.rating) {
           const reviewInfo = ratingResult.review_count ? `${ratingResult.review_count} reviews` : 'No count';
           success(`    ${name}: ${ratingResult.rating}★ (${reviewInfo})`);
         } else {
@@ -1735,6 +2654,7 @@ class CollectionService {
           warn(`    ${name}: Not found`);
         }
       } catch (err) {
+        if (isSourceFundingError(err)) throw err;
         warn(`    ${name}: Error - ${err.message}`);
       }
     }
@@ -1784,10 +2704,13 @@ class CollectionService {
     for (const { key, name } of serperSources) {
       try {
         const serperResult = await fetchSerperSource(key, contractor.name, contractor.city, contractor.state);
+        const serperStatus = serperResult.error
+          ? 'error'
+          : (serperResult.found ? 'success' : 'not_found');
         const data = {
           source: key,
           url: serperResult.results?.[0]?.link || `https://google.com/search?q=${encodeURIComponent(serperResult.query)}`,
-          status: serperResult.found ? 'success' : 'not_found',
+          status: serperStatus,
           text: JSON.stringify(serperResult, null, 2),
           structured: serperResult
         };
@@ -1795,12 +2718,15 @@ class CollectionService {
         await this.logCollectionRequest(contractorId, key, 'initial', 'Initial collection - Serper');
         results.push(data);
 
-        if (serperResult.found) {
+        if (serperStatus === 'error') {
+          warn(`    ${name}: Error - ${serperResult.error}`);
+        } else if (serperResult.found) {
           success(`    ${name}: ${serperResult.result_count} result(s)`);
         } else {
           warn(`    ${name}: Not found`);
         }
       } catch (err) {
+        if (isSourceFundingError(err)) throw err;
         warn(`    ${name}: Error - ${err.message}`);
       }
     }
@@ -1812,18 +2738,32 @@ class CollectionService {
     log('\n  Searching court records...');
     try {
       const courtResult = await searchCourtRecords(this.browser, contractor.name, ['tarrant', 'dallas', 'collin', 'denton']);
+      const courtErrorCount = Array.isArray(courtResult.errors) ? courtResult.errors.length : 0;
+      const courtCheckedCount = Array.isArray(courtResult.courts_checked) ? courtResult.courts_checked.length : 0;
+      const allErrored = courtErrorCount > 0 && courtErrorCount >= Math.max(courtCheckedCount, 1);
+      const courtStatus = courtResult.total_cases_found > 0
+        ? 'success'
+        : (allErrored ? 'error' : 'not_found');
+      const courtErrorMessage = allErrored
+        ? (courtResult.errors || []).map(e => e.error).filter(Boolean).join('; ') || 'Court records search failed'
+        : null;
       const data = {
         source: 'court_records',
         url: 'DFW County Courts',
-        status: courtResult.total_cases_found > 0 ? 'success' : 'not_found',
+        status: courtStatus,
         text: `COURT RECORDS:\n${JSON.stringify(courtResult, null, 2)}`,
         structured: courtResult
       };
+      if (courtErrorMessage) {
+        data.error = courtErrorMessage;
+      }
       await this.storeRawData(contractorId, 'court_records', data);
       await this.logCollectionRequest(contractorId, 'court_records', 'initial', 'Initial collection');
       results.push(data);
 
-      if (courtResult.total_cases_found > 0) {
+      if (courtStatus === 'error') {
+        warn(`    Courts: Error - ${courtErrorMessage || 'Unknown error'}`);
+      } else if (courtResult.total_cases_found > 0) {
         warn(`    Courts: Found ${courtResult.total_cases_found} case(s)`);
       } else {
         success(`    Courts: No cases found`);
@@ -1834,37 +2774,11 @@ class CollectionService {
 
     // County Liens (mechanic's liens, tax liens, judgments)
     if (!skipLiens) {
-      log('\n  Searching county lien records...');
-      try {
-        const lienResult = await scrapeCountyLiensPython(contractor.name, null, contractor.city, contractor.state);
-        const data = {
-          source: 'county_liens',
-          url: 'DFW County OPR',
-          status: lienResult.total_records > 0 ? 'success' : 'not_found',
-          text: `COUNTY LIENS:\n${JSON.stringify(lienResult, null, 2)}`,
-          structured: lienResult
-        };
-        await this.storeRawData(contractorId, 'county_liens', data);
-        await this.logCollectionRequest(contractorId, 'county_liens', 'initial', 'Initial collection - liens');
-        results.push(data);
-
-        if (lienResult.total_records > 0) {
-          const activeCount = lienResult.lien_score?.active_liens || 0;
-          const resolvedCount = lienResult.lien_score?.resolved_liens || 0;
-          warn(`    Liens: Found ${lienResult.total_records} record(s) - ${activeCount} active, ${resolvedCount} resolved`);
-
-          // Flag if there are active liens
-          if (activeCount >= 3) {
-            error(`    ⚠️ CRITICAL: ${activeCount} active liens (pattern of non-payment)`);
-          } else if (activeCount >= 1) {
-            warn(`    ⚠️ WARNING: ${activeCount} active lien(s) found`);
-          }
-        } else {
-          success(`    Liens: No liens found`);
-        }
-      } catch (err) {
-        warn(`    Liens: Error - ${err.message}`);
-      }
+      const lienData = await this.runCountyLienCollection(contractorId, contractor, {
+        requestedBy: 'initial',
+        reason: 'Initial collection - liens'
+      });
+      results.push(lienData);
     } else {
       log('\n  Skipping county lien records (--skip-liens)');
     }
@@ -1879,27 +2793,46 @@ class CollectionService {
 
       // TX Franchise Tax
       if (apiResults.tx_franchise) {
+        const txError = apiResults.tx_franchise.error || null;
+        const txIsBadRequest = typeof txError === 'string' && txError.includes('API error: 400');
+        const txStatus = txIsBadRequest
+          ? 'not_found'
+          : (txError ? 'error' : (apiResults.tx_franchise.found ? 'success' : 'not_found'));
+        if (txStatus === 'error') {
+          throwIfSourceFundingSignal({
+            provider: 'tx_franchise',
+            source: 'tx_franchise',
+            message: txError || ''
+          });
+        }
         const data = {
           source: 'tx_franchise',
           url: 'https://comptroller.texas.gov',
-          status: apiResults.tx_franchise.found ? 'success' : 'not_found',
+          status: txStatus,
           text: JSON.stringify(apiResults.tx_franchise, null, 2),
           structured: apiResults.tx_franchise
         };
         await this.storeRawData(contractorId, 'tx_franchise', data);
         results.push(data);
 
-        if (apiResults.tx_franchise.found) {
+        if (txStatus === 'error') {
+          warn(`    TX Franchise: Error - ${apiResults.tx_franchise.error}`);
+        } else if (txIsBadRequest) {
+          warn('    TX Franchise: API 400, treating as not_found for coverage gate');
+        } else if (apiResults.tx_franchise.found) {
           success(`    TX Franchise: Found`);
         }
       }
 
       // OpenCorporates
       if (apiResults.open_corporates) {
+        const ocStatus = apiResults.open_corporates.error
+          ? 'error'
+          : (apiResults.open_corporates.found ? 'success' : 'not_found');
         const data = {
           source: 'open_corporates',
           url: 'https://opencorporates.com',
-          status: apiResults.open_corporates.found ? 'success' : 'not_found',
+          status: ocStatus,
           text: JSON.stringify(apiResults.open_corporates, null, 2),
           structured: apiResults.open_corporates
         };
@@ -1909,10 +2842,13 @@ class CollectionService {
 
       // CourtListener
       if (apiResults.court_listener) {
+        const clStatus = apiResults.court_listener.error
+          ? 'error'
+          : (apiResults.court_listener.found ? 'success' : 'not_found');
         const data = {
           source: 'court_listener',
           url: 'https://www.courtlistener.com',
-          status: apiResults.court_listener.found ? 'success' : 'not_found',
+          status: clStatus,
           text: JSON.stringify(apiResults.court_listener, null, 2),
           structured: apiResults.court_listener
         };
@@ -1920,6 +2856,7 @@ class CollectionService {
         results.push(data);
       }
     } catch (err) {
+      if (isSourceFundingError(err)) throw err;
       warn(`    API sources: Error - ${err.message}`);
     }
 
@@ -1955,8 +2892,8 @@ class CollectionService {
         }
       }
 
-      // Run full AI analysis if we have enough data
-      if (Object.keys(reviewData).length >= 2) {
+      // Run full AI analysis if we have any review-bearing source
+      if (Object.keys(reviewData).length >= 1) {
         const analysis = await analyzeReviews(contractor.name, reviewData);
 
         if (!analysis.skipped && !analysis.error) {
@@ -2083,14 +3020,19 @@ class CollectionService {
       const siteMap = { angi: 'angi.com', houzz: 'houzz.com' };
       try {
         const ratingResult = await fetchSerperRating(contractor.name, contractor.city, contractor.state, siteMap[sourceName]);
+        const ratingStatus = ratingResult.error
+          ? 'error'
+          : (ratingResult.found ? 'success' : 'not_found');
         result = {
           source: sourceName,
           url: ratingResult.url || `https://www.${siteMap[sourceName]}`,
-          status: ratingResult.found ? 'success' : 'not_found',
+          status: ratingStatus,
           text: JSON.stringify(ratingResult, null, 2),
           structured: ratingResult
         };
-        if (ratingResult.found && ratingResult.rating) {
+        if (ratingStatus === 'error') {
+          warn(`    ${sourceName}: Error - ${ratingResult.error}`);
+        } else if (ratingResult.found && ratingResult.rating) {
           log(`    📋 ${sourceName}: ${ratingResult.rating}★ (${ratingResult.review_count} reviews)`);
         }
       } catch (err) {
@@ -2115,6 +3057,14 @@ class CollectionService {
       } catch (err) {
         result = { source: 'trustpilot', status: 'error', error: err.message };
       }
+    } else if (sourceName === 'website_warranty') {
+      const urls = this.buildUrls(contractor);
+      const websiteUrl = contractor.website || urls.website;
+      if (!websiteUrl) {
+        result = { source: 'website_warranty', status: 'error', error: 'No website URL' };
+      } else {
+        result = await this.scrapeWebsiteWarrantySignals(websiteUrl);
+      }
     } else if (sourceName === 'google_maps' || sourceName === 'google_maps_local' || sourceName === 'google_maps_hq') {
       // Use Python Playwright scraper for Google Maps (NO API)
       try {
@@ -2136,12 +3086,24 @@ class CollectionService {
     } else if (sourceConfig.type === 'scraper' && sourceName === 'court_records') {
       try {
         const courtResult = await searchCourtRecords(this.browser, contractor.name, ['tarrant', 'dallas', 'collin', 'denton']);
+        const courtErrorCount = Array.isArray(courtResult.errors) ? courtResult.errors.length : 0;
+        const courtCheckedCount = Array.isArray(courtResult.courts_checked) ? courtResult.courts_checked.length : 0;
+        const allErrored = courtErrorCount > 0 && courtErrorCount >= Math.max(courtCheckedCount, 1);
+        const courtStatus = courtResult.total_cases_found > 0
+          ? 'success'
+          : (allErrored ? 'error' : 'not_found');
+        const courtErrorMessage = allErrored
+          ? (courtResult.errors || []).map(e => e.error).filter(Boolean).join('; ') || 'Court records search failed'
+          : null;
         result = {
           source: 'court_records',
-          status: courtResult.total_cases_found > 0 ? 'success' : 'not_found',
+          status: courtStatus,
           text: JSON.stringify(courtResult, null, 2),
           structured: courtResult
         };
+        if (courtErrorMessage) {
+          result.error = courtErrorMessage;
+        }
       } catch (err) {
         result = { source: 'court_records', status: 'error', error: err.message };
       }
@@ -2231,8 +3193,8 @@ class CollectionService {
         }
       }
 
-      // Run full AI analysis if we have enough data
-      if (Object.keys(reviewData).length >= 2) {
+      // Run full AI analysis if we have any review-bearing source
+      if (Object.keys(reviewData).length >= 1) {
         const analysis = await analyzeReviews(contractor.name, reviewData);
 
         if (!analysis.skipped && !analysis.error) {
@@ -2326,6 +3288,8 @@ function calculateInsuranceConfidence(collectedData) {
 module.exports = {
   CollectionService,
   SOURCES,
+  SourceFundingError,
+  isSourceFundingError,
   calculateInsuranceConfidence,
   // Outscraper integration (set USE_OUTSCRAPER=true in .env)
   USE_OUTSCRAPER,
@@ -2334,4 +3298,3 @@ module.exports = {
   scrapeBBBOutscraper,
   scrapeTrustpilotOutscraper
 };
-

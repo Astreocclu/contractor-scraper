@@ -690,7 +690,7 @@ git commit -m "feat: wire orchestrator to use DialecticAuditAgent when --mode=di
 **Step 1: Activate environment**
 
 ```bash
-cd /home/astre/command-center/testhome/contractor-auditor
+cd /home/astre/command-center/src/greenlit/auditor
 source venv/bin/activate && set -a && . ./.env && set +a
 ```
 

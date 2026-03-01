@@ -1,0 +1,37 @@
+{
+  "variation": "C2",
+  "contractor_id": 7691,
+  "contractor_name": "Cowboy Hat Capital Foundation Repair Co",
+  "archetype": "known_bad",
+  "expected_score": 20,
+  "run": 3,
+  "timestamp": "2026-01-20T19:11:28.493Z",
+  "success": true,
+  "trust_score": 5,
+  "risk_level": "CRITICAL",
+  "reasoning": "This contractor presents severe red flags indicating potential fraud or business identity theft. The Google Maps listing claims to be a foundation repair company but contains only automotive repair reviews, suggesting a hijacked or fake business profile. The automotive reviews themselves describe serious service failures including taking customer money and parts without performing work. The complete absence of any foundation repair reviews, licensing information, or legitimate business registration creates an extremely high-risk situation for potential customers.",
+  "red_flags": [
+    "Hijacked or fraudulent Google Maps business listing",
+    "Reviews describe taking customer money/parts without performing work",
+    "No legitimate business presence found in any official records",
+    "Complete absence of foundation repair-related reviews or credentials"
+  ],
+  "raw_response": {
+    "trust_score": 5,
+    "risk_level": "CRITICAL",
+    "reasoning": "This contractor presents severe red flags indicating potential fraud or business identity theft. The Google Maps listing claims to be a foundation repair company but contains only automotive repair reviews, suggesting a hijacked or fake business profile. The automotive reviews themselves describe serious service failures including taking customer money and parts without performing work. The complete absence of any foundation repair reviews, licensing information, or legitimate business registration creates an extremely high-risk situation for potential customers.",
+    "key_factors": [
+      "Complete business identity mismatch - foundation repair company with only auto repair reviews",
+      "Credible negative reviews describing theft of customer parts and payment without service",
+      "No verifiable business registration or licensing found across multiple databases"
+    ],
+    "red_flags": [
+      "Hijacked or fraudulent Google Maps business listing",
+      "Reviews describe taking customer money/parts without performing work",
+      "No legitimate business presence found in any official records",
+      "Complete absence of foundation repair-related reviews or credentials"
+    ]
+  },
+  "cost_usd": 0.052500750000000006,
+  "duration_ms": 7667
+}

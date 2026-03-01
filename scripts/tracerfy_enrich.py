@@ -32,7 +32,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # =============================================================================
-# ADDRESS NORMALIZATION (ported from permit-scraper/scripts/score_leads.py)
+# ADDRESS NORMALIZATION (ported from Collections/scripts/score_leads.py)
 # =============================================================================
 
 # Unit/apartment indicators to extract

@@ -1,0 +1,93 @@
+{
+  "variation": "D1",
+  "generated_at": "2026-01-20T19:20:39.651Z",
+  "metrics": {
+    "rank_consistency": 1,
+    "avg_variance": 0.6062177826491071,
+    "separation": 65,
+    "avg_duration_ms": 10861.2,
+    "avg_cost_usd": 0.0066652345625
+  },
+  "contractor_results": {
+    "656": {
+      "name": "Bonnie & Clydes Pools and Spas",
+      "archetype": "established_sketchy",
+      "expected": 35,
+      "scores": [
+        55
+      ],
+      "avg": 55,
+      "variance": 0,
+      "avg_duration_ms": 15459,
+      "avg_cost": 0.006641352500000001
+    },
+    "3512": {
+      "name": "1-Tom-Plumber",
+      "archetype": "new_promising",
+      "expected": 75,
+      "scores": [
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "avg": 85,
+      "variance": 0,
+      "avg_duration_ms": 7944,
+      "avg_cost": 0.0081787605
+    },
+    "5744": {
+      "name": "AC Repair Garland",
+      "archetype": "middle_tier",
+      "expected": 50,
+      "scores": [
+        58,
+        65,
+        65,
+        65
+      ],
+      "avg": 63.3,
+      "variance": 3,
+      "avg_duration_ms": 11453,
+      "avg_cost": 0.0086976828125
+    },
+    "7691": {
+      "name": "Cowboy Hat Capital Foundation Repair Co",
+      "archetype": "known_bad",
+      "expected": 20,
+      "scores": [
+        20,
+        20,
+        20
+      ],
+      "avg": 20,
+      "variance": 0,
+      "avg_duration_ms": 10817,
+      "avg_cost": 0.0043328325
+    },
+    "8958": {
+      "name": "Splash Pools",
+      "archetype": "gold_standard",
+      "expected": 78,
+      "scores": [
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "avg": 85,
+      "variance": 0,
+      "avg_duration_ms": 8633,
+      "avg_cost": 0.0054755445
+    }
+  },
+  "pass_fail": {
+    "rank_consistency": "PASS",
+    "variance": "PASS",
+    "separation": "PASS",
+    "speed": true,
+    "cost": true
+  }
+}

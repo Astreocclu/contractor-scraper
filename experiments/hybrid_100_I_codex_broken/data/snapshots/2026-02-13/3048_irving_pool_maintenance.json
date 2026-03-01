@@ -1,0 +1,1223 @@
+{
+  "contractor_id": 3048,
+  "business_name": "Irving Pool Maintenance",
+  "city": "Irving",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-13T08:27:38.765Z",
+  "sources": {
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:41:03.980Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Irving Pool Maintenance\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:41:05.322Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Irving Pool Maintenance\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:41:07.135Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Irving Pool Maintenance\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:38:35.353Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": true,
+          "workmanship": false,
+          "satisfaction": true,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "http://irvingpoolmaintenance.com/",
+            "type": "explicit",
+            "snippet": "vices Home Comprehensive Pool Maintenance Starter Pool Maintenance Satisfaction Guarantee Contact Us (972) 891-8797 ©2021 www.irvingpoolmaintenance.com (972) 891-8797 Ho"
+          },
+          {
+            "url": "http://irvingpoolmaintenance.com/",
+            "type": "explicit",
+            "snippet": "grades Filter Cleanings Leak Detection Services Weekly Pool Maintenance Service Guarantee Life without a Bright & Blue Pool, Who would Want That?! Swimming Pool Maintena"
+          },
+          {
+            "url": "http://irvingpoolmaintenance.com/",
+            "type": "satisfaction",
+            "snippet": "rvice Our Services Home Comprehensive Pool Maintenance Starter Pool Maintenance Satisfaction Guarantee Contact Us (972) 891-8797 ©2021 www.irvingpoolmaintenance.com (972) 891-8797 Ho"
+          },
+          {
+            "url": "http://irvingpoolmaintenance.com/",
+            "type": "satisfaction",
+            "snippet": "er Pool Maintenance Plan Cost and Details All Pool Cleanings Backed by our 100% Satisfaction Guarantee The peace of mind of every Irving homeowner is important to us. See Details » A"
+          },
+          {
+            "url": "http://irvingpoolmaintenance.com/",
+            "type": "satisfaction",
+            "snippet": "Starter Pool Maintenance Plan Cost and Details All Pool Cleanings Backed by our 100% Satisfaction Guarantee The peace of mind of every Irving homeowner is important to us. See D"
+          },
+          {
+            "url": "http://irvingpoolmaintenance.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "lan Starter Pool Plan Contact Us The Irving Neighborhood Pool Cleaners Bonded · Insured · Licensed Repairs & Upgrades Filter Cleanings Leak Detection Services Weekly P"
+          },
+          {
+            "url": "http://irvingpoolmaintenance.com/",
+            "type": "insurance_bonding_mentions",
+            "snippet": "ve Pool Plan Starter Pool Plan Contact Us The Irving Neighborhood Pool Cleaners Bonded · Insured · Licensed Repairs & Upgrades Filter Cleanings Leak Detection Service"
+          },
+          {
+            "url": "https://irvingpoolmaintenance.com/pool-maintenance-guarantee.html",
+            "type": "explicit",
+            "snippet": "Our 100% Service Guarantee on all Pool Maintenance Plans for Irving Our Services Home Comprehensive Pool M"
+          },
+          {
+            "url": "https://irvingpoolmaintenance.com/pool-maintenance-guarantee.html",
+            "type": "explicit",
+            "snippet": "vices Home Comprehensive Pool Maintenance Starter Pool Maintenance Satisfaction Guarantee Contact Us (972) 891-8797 ©2021 www.irvingpoolmaintenance.com (972) 891-8797 Ho"
+          },
+          {
+            "url": "https://irvingpoolmaintenance.com/pool-maintenance-guarantee.html",
+            "type": "satisfaction",
+            "snippet": "rving Our Services Home Comprehensive Pool Maintenance Starter Pool Maintenance Satisfaction Guarantee Contact Us (972) 891-8797 ©2021 www.irvingpoolmaintenance.com (972) 891-8797 Ho"
+          },
+          {
+            "url": "https://irvingpoolmaintenance.com/pool-maintenance-guarantee.html",
+            "type": "satisfaction",
+            "snippet": "arantee Our 100% Service Guarantee on all Pool Maintenance Plans for Irving Our Satisfaction Guarantee for Weekly Pool Maintenance As a pool owner in Irving, you are entitled to our"
+          },
+          {
+            "url": "https://irvingpoolmaintenance.com/pool-maintenance-guarantee.html",
+            "type": "satisfaction",
+            "snippet": "for Weekly Pool Maintenance As a pool owner in Irving, you are entitled to our 100% satisfaction guarantee on both cleaning and maintenance reports by Swimming Pool Maintenance"
+          }
+        ],
+        "durations": [],
+        "confidence": "MODERATE",
+        "source_url": "http://irvingpoolmaintenance.com/",
+        "analyzed_pages": [
+          {
+            "url": "http://irvingpoolmaintenance.com/",
+            "type": "homepage",
+            "title": "Swimming Pool Maintenance Irving - Dependable Weekly Service"
+          },
+          {
+            "url": "https://irvingpoolmaintenance.com/pool-maintenance-guarantee.html",
+            "type": "warranty_page",
+            "title": "Our 100% Service Guarantee on all Pool Maintenance Plans for Irving"
+          }
+        ],
+        "warranty_pages": [
+          {
+            "url": "https://irvingpoolmaintenance.com/pool-maintenance-guarantee.html",
+            "title": "Our 100% Service Guarantee on all Pool Maintenance Plans for Irving"
+          }
+        ],
+        "explicit_guarantee": true,
+        "insurance_bonding_mentions": true
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:38:42.069Z",
+      "data": {
+        "query": "site:yelp.com \"Irving Pool Maintenance\" \"Irving, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:53.950Z",
+      "data": {
+        "name": "Irving Pool Maintenance",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 891-8797",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "open",
+        "address": "1102 E Pioneer Dr #230, Irving, TX 75061",
+        "reviews": [],
+        "website": "http://irvingpoolmaintenance.com/",
+        "maps_url": "https://www.google.com/maps/search/Irving%20Pool%20Maintenance%20Irving%2C%20TX",
+        "categories": [
+          "Swimming pool repair service"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:41:00.022Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:41:01.169Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:39:16.367Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:39:19.899Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:41:08.299Z",
+      "data": {
+        "found": true,
+        "query": "\"Irving Pool Maintenance\" Irving lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/irving/profile/pool-service/irving-pool-maintenance-0875-91062831",
+            "title": "Irving Pool Maintenance | BBB Business Profile",
+            "snippet": "Irving Pool Maintenance is NOT a BBB Accredited Business. To become accredited, a business must agree to BBB Standards for Trust and pass BBB's vetting process."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:39:22.854Z",
+      "data": {
+        "query": "Irving Pool Maintenance Irving site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jul 10, 2015",
+            "link": "https://www.nbcdfw.com/news/local/mother-charged-after-3-children-drown-at-irving-pool/118570/",
+            "title": "Mother Charged After 3 Children Drown at Irving Pool",
+            "snippet": "A maintenance worker jumped in the pool and pulled two of the children out, and a police officer rescued the third. All three children were ...",
+            "position": 1
+          },
+          {
+            "date": "Jun 24, 2015",
+            "link": "https://www.nbcdfw.com/news/local/3-boys-pulled-from-pool-in-irving-hospitalized/1982662/",
+            "title": "Girl Dies, 2 Brothers in ICU After Irving Pool Incident - NBC 5",
+            "snippet": "A nearby maintenance man jumped into the pool and pulled two of the unconscious children out. \"That [drowning] can happen so quickly ...",
+            "position": 2
+          },
+          {
+            "date": "Jun 14, 2024",
+            "link": "https://www.wfaa.com/article/news/local/west-irving-aquatic-center-reopen-saturday-unexpected-maintenance-closure/287-71384d89-0e6a-498c-9a4d-44d76bd6564d",
+            "title": "West Irving Aquatic Center to reopen Saturday | wfaa.com",
+            "snippet": "Unexpected repairs closed the West Irving Aquatic Center on Friday. It will reopen Saturday, June 15, according to the city of Irving.",
+            "position": 3
+          },
+          {
+            "date": "Jun 25, 2015",
+            "link": "https://www.wfaa.com/article/news/local/dallas-county/questions-remain-after-child-drowns-in-irving-pool/287-148876984",
+            "title": "Questions remain after child drowns in Irving pool | wfaa.com",
+            "snippet": "An apartment maintenance worker pulled two of the children out after the mother yelled out for help. When police arrived at the scene, officers ...",
+            "position": 4
+          },
+          {
+            "date": "Jul 7, 2019",
+            "link": "https://www.nbcdfw.com/local/dfw-morningnews-two-boys-pulled-from-irving-apartment-complex-pool-have-died/231484/",
+            "title": "Two Boys Pulled From Irving Apartment Complex Pool Have Died",
+            "snippet": "A maintenance man pulled 10-year-old August Smith and one of her brothers from the pool at the MacArthur Place at 183 apartment complex in the ...",
+            "position": 5
+          },
+          {
+            "date": "Jun 29, 2015",
+            "link": "https://www.nbcdfw.com/news/local/brothers-pulled-from-irving-pool-died/88026/",
+            "title": "Brothers on Life Support Die After Irving Pool Rescue - NBC 5",
+            "snippet": "Two brothers who have been on life support since last Wednesday after an incident at an Irving, Texas, pool have died.",
+            "position": 6
+          },
+          {
+            "date": "Jul 8, 2019",
+            "link": "https://www.dallasnews.com/news/courts/2019/07/08/mother-whose-3-children-drowned-in-irving-apartment-pool-accepts-plea-deal/",
+            "title": "Mother whose 3 children drowned in Irving apartment pool accepts ...",
+            "snippet": "A maintenance man dived into the pool and pulled two of the children out, but rescue workers struggled to find the third child in the murky ...",
+            "position": 7
+          },
+          {
+            "date": "Oct 15, 2015",
+            "link": "https://www.wfaa.com/article/news/local/dallas-county/irving-mom-fights-for-custody-of-surviving-children-after-drownings/287-27454269",
+            "title": "Irving mom fights for custody of surviving children after drownings",
+            "snippet": "Patricia Allen lost her other three children when they drowned in the pool of her Irving apartment complex in June.",
+            "position": 8
+          },
+          {
+            "link": "https://www.star-telegram.com/news/local/community/northeast-tarrant/article25780942.html",
+            "title": "Two more children die after being pulled from Irving pool | Fort Worth ...",
+            "snippet": "Two young brothers and a sister, none of whom knew how to swim, have died after they were pulled from an Irving apartment complex swimming pool last week, ...",
+            "position": 9
+          },
+          {
+            "date": "Jun 29, 2015",
+            "link": "https://www.wfaa.com/article/news/local/dallas-county/two-more-children-die-in-irving-drownings/287-148871182",
+            "title": "Two more children die in Irving drownings | wfaa.com",
+            "snippet": "Police in Irving say two more children have died in connection to the tragic drowning that took place at a pool at an Irving apartment complex.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:41:06.323Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Irving Pool Maintenance\" Irving",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:39:34.315Z",
+      "data": "Irving Pool Maintenance Irving review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 1:08 1:08 Now playing Pool Services Irving, TX Jamie Rayner Jamie Rayner • • 57 views 13 years ago Jamie Rayner Jamie Rayner We are dedicated to providing the Best Customer Service, Swimming Pool Products & Swimming Pool Maintenance & Repairs in ... We are dedicated to providing the Best Customer Service, Swimming Pool Products & Swimming Pool Maintenance & Repairs in ... From the video description 2:07 2:07 Now playing City of Irving to spend $92M on aquatics & recreation center upgrades CBS TEXAS CBS TEXAS • • 487 views 2 years ago CBS TEXAS CBS TEXAS Lee Park Pool was built in 1962, the Lively Pool was built in 1959, and the Senter Park Pool was built in 1954. All three will see ... Lee Park Pool was built in 1962, the Lively Pool was built in 1959, and the Senter Park Pool was built in 1954. All three will see ... From the video description CC 0:49 0:49 Now playing Irving Pool Remodel and New Patio Cover & Deck Integrity Pools - Love, Service, Excellence Integrity Pools - Love, Service, Excellence • • 77 views 8 years ago Integrity Pools - Love, Service, Excellence Integrity Pools - Love, Service, Excellence In the video we showcase some work we did involving new travertine pavers, replastering the pool , and building a patio cover and ... In the video we showcase some work we did involving new travertine pavers, replastering the pool , and building a patio cover and ... From the video description 4:31 4:31 Now playing Update on Irving Aquatics, Summer 2021 The City of Irving The City of Irving • • 358 views 4 years ago The City of Irving The City of Irving Parks & Recreation Director Joe Moses and ICTN Anchor Cathy Whiteman discuss the 2021 aquatics season, including impacts ... Parks & Recreation Director Joe Moses and ICTN Anchor Cathy Whiteman discuss the 2021 aquatics season, including impacts ... From the video description 6 chapters Intro | COVID19 Impact | Lifeguard Hiring | Outdoor Pools | Future Plans | Aquatic Opportunities 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 COVID19 Impact COVID19 Impact 0:25 COVID19 Impact 0:25 Lifeguard Hiring Lifeguard Hiring 1:01 Lifeguard Hiring 1:01 Outdoor Pools Outdoor Pools 1:33 Outdoor Pools 1:33 Future Plans Future Plans 2:51 Future Plans 2:51 Aquatic Opportunities Aquatic Opportunities 3:36 Aquatic Opportunities 3:36 Shorts Cloudy Pool Fix - DIY#cloudypool#diypool #cloudypoolfix#regal 4.3K views Luxury Irving TX Backyard Tour: Waterfall, Spa & Pool | Certified Appraiser View by Diamond Hand Srv 1K views WRX Pools - Professional Weekly Full Service - Pool Cleaning - Pool Service - Pool Maintenance 288 views Professional Swimming Pool Maintenance and Repairs 82 views Why Swimming Pool Maintenance is Important | ThePoolButler.net 386 views Show more Show less 2:28 2:28 Now playing Irving Lifeguards Get Ready for Pool Season The City of Irving The City of Irving • • 149 views 1 year ago The City of Irving The City of Irving In advance of the summer pool season, Irving lifeguards spent a day of team building at Lively Pointe Youth Center. They also got ... In advance of the summer pool season, Irving lifeguards spent a day of team building at Lively Pointe Youth Center. They also got ... From the video description SHORTS SHORTS Now playing Pt. 2 Pool Service Estimate CaliWave Pools CaliWave Pools • • 1.2K views 2 years ago CaliWave Pools CaliWave Pools 0:52 ... as well for that and that's how you separate yourself and show value as a pool service company not just someone that's coming. ... as well for that and that's how you separate yourself and show value as a pool service company not just someone that's coming. Automatic captions SHORTS SHORTS Now playing Understanding Houston Pool Maintenance: Price Breakdown & Factors Moving to Houston Moving to Houston • • 1.2K views 2 years ago Moving to Houston Moving to Houston The cost of maintaining a pool in Houston can range from $80-$150 per month, depending on factors, such as pool size, condition ... The cost of maintaining a pool in Houston can range from $80-$150 per month, depending on factors, such as pool size, condition ... From the video description Shorts Professional Las Vegas Swimming Pool Services Equipment Repair and Installation | Kyzer Pools 67 views Weekly pool maintenance with POOL-ology! 428 views Another Pool Boy day! Pool Maintenance #swimmingpool #diy #shorts 9.2K views Swimming pool service & hvac experts 79 views ITEMS THAT MAKE POOL MAINTENANCE EASIER 23 views Show more Show less SHORTS SHORTS Now playing Pool cleaning step by step - pool maintenance 🧽✅🧑🏻‍🔧 Dunota Pools, Central Florida Dunota Pools Dunota Pools • • 123K views 2 years ago Dunota Pools Dunota Pools SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.7M views 4 years ago Life With Evan Life With Evan SHORTS SHORTS Now playing Pool Maintenance in 60 Seconds ⏱️ Swim University Swim University • • 49K views 1 year ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description All it takes is a yes. https://youtu.be/vUY7bF1g0p4 Sponsored Lufthansa Watch Book now 0:15 0:15 Now playing Fiberglass Pool & Spa Remodel in Irving, Texas Texas Fiberglass Pools Videos Texas Fiberglass Pools Videos • • 34 views 3 years ago Texas Fiberglass Pools Videos Texas Fiberglass Pools Videos SHORTS SHORTS Now playing #pool care 101 #poolmaintenance for beginners #poolcleaning That Backyard Life HWGAC That Backyard Life HWGAC • • 47K views 3 years ago That Backyard Life HWGAC That Backyard Life HWGAC Balance is key, when testing with Frog system test strips, I'm checking the PH levels the FREE CHLORINE & Acidity /Alkaline ... Balance is key, when testing with Frog system test strips, I'm checking the PH levels the FREE CHLORINE & Acidity /Alkaline ... From the video description People also watched 12:17 12:17 Now playing FULL TRANSFORMATION OF THE SWAMP POOL thep00lguy ML thep00lguy ML • • 4.3M views 1 year ago thep00lguy ML thep00lguy ML PAID PROMOTION! Finally the swamp pool is now finished and ready for the customers to use! Let me know what you think in the ... PAID PROMOTION! Finally the swamp pool is now finished and ready for the customers to use! Let me know what you think in the ... From the video description 4K 5 chapters Intro | Emptying | Pool Liner | Pool Robot | Pool Cleaner 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Emptying Emptying 0:21 Emptying 0:21 Pool Liner Pool Liner 4:30 Pool Liner 4:30 Pool Robot Pool Robot 6:29 Pool Robot 6:29 Pool Cleaner Pool Cleaner 9:26 Pool Cleaner 9:26 6:17 6:17 Now playing Top 5 MISTAKES When Vacuuming Your Pool! Hallmark Pool Supplies Hallmark Pool Supplies • • 669K views 2 years ago Hallmark Pool Supplies Hallmark Pool Supplies HAVE A QUESTION FOR MARK? ⏪ Book a 1 on 1 phone session / virtual service call with Mark today! HAVE A QUESTION FOR MARK? ⏪ Book a 1 on 1 phone session / virtual service call with Mark today! From the video description 6 chapters Intro | Mistake 1 | Mistake 2 | Mistake 3 | Mistake 4 | Mistake 5 6 chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 Mistake 1 Mistake 1 0:22 Mistake 1 0:22 Mistake 2 Mistake 2 1:16 Mistake 2 1:16 Mistake 3 Mistake 3 2:26 Mistake 3 2:26 Mistake 4 Mistake 4 4:10 Mistake 4 4:10 Mistake 5 Mistake 5 5:15 Mistake 5 5:15 10:10 10:10 Now playing How I Keep My Pool Water Crystal Clear All Summer Long!!! DJ 2Legit DJ 2Legit • • 457K views 2 years ago DJ 2Legit DJ 2Legit In this video I show you exactly how I keep my above ground pool water crystal clear blue all summer long. I have an 18 foot round ... In this video I show you exactly how I keep my above ground pool water crystal clear blue all summer long. I have an 18 foot round ... From the video description CC 32:47 32:47 Now playing How To Clean Pool Start to Finish: Explained Step by Step- Vacuum, Net, Brush, Valves, Chemistry Pool Care World Pool Care World • • 62K views 1 year ago Pool Care World Pool Care World 12 years of pool cleaning experience, in 32 minutes. Complete guide start to finish and everything in between! Teaching YOU ... 12 years of pool cleaning experience, in 32 minutes. Complete guide start to finish and everything in between! Teaching YOU ... From the video description 4K + 6 more SHORTS SHORTS Now playing Fast POOL Cleaning Trick Swim University Swim University • • 22K views 3 years ago Swim University Swim University The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... The Pool Care Cheat Sheet (Free): https://swimu.com/cheatsheet The Pool Care Handbook: https://swimu.com/book The Pool ... From the video description SHORTS SHORTS Now playing I tried the $4k/month pool cleaning side hustle… Finance Unfolded Finance Unfolded • • 32K views 2 years ago Finance Unfolded Finance Unfolded SHORTS SHORTS Now playing Pool cleaning step by step💙 Dunota Pools - Maintenance Service Dunota Pools Dunota Pools • • 32K views 2 years ago Dunota Pools Dunota Pools SHORTS SHORTS Now playing Pool Cleaning Tips 101: Netting, Vacuuming, Chemicals #poolcleaning Picture Perfect Pool Services Inc. Picture Perfect Pool Services Inc. • • 46K views 1 year ago Picture Perfect Pool Services Inc. Picture Perfect Pool Services Inc. Welcome to another day in the life of a professional pool cleaner! In this timelapse video, join me as I demonstrate the essential ... Welcome to another day in the life of a professional pool cleaner! In this timelapse video, join me as I demonstrate the essential ... From the video description SHORTS SHORTS Now playing #pool maintenance for beginners #swimming pool care #pool That Backyard Life HWGAC That Backyard Life HWGAC • • 843 views 3 years ago That Backyard Life HWGAC That Backyard Life HWGAC Thanks for watching,He really earned some alone time in the pool he almost opened by his self, I was a bit of assistance. But not ... Thanks for watching,He really earned some alone time in the pool he almost opened by his self, I was a bit of assistance. But not ... From the video description SHORTS SHORTS Now playing 5 Things You Must Do Weekly To Your Pool #shorts Easy Clear Pool Easy Clear Pool • • 272K views 4 years ago Easy Clear Pool Easy Clear Pool Keep your pool clean and maintained regularly with these 5 weekly tips to do on a regular basis. This will help you maintain the ... Keep your pool clean and maintained regularly with these 5 weekly tips to do on a regular basis. This will help you maintain the ... From the video description 3 moments Check Pool Levels | Shock The Pool | Check Filters 3 auto-generated moments in this video 3 moments Check Pool Levels Check Pool Levels 0:10 Check Pool Levels 0:10 Shock The Pool Shock The Pool 0:37 Shock The Pool 0:37 Check Filters Check Filters 0:49 Check Filters 0:49 SHORTS SHORTS Now playing Love your job? How much can a pool tech make? Pool Crew AU Pool Crew AU • • 6.2K views 3 years ago Pool Crew AU Pool Crew AU First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... From the video description SHORTS SHORTS Now playing Swimming at the Pools In IRVING! IN_DFW Family IN_DFW Family • • 44 views 7 years ago IN_DFW Family IN_DFW Family Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:39:35.749Z",
+      "data": {
+        "query": "site:nextdoor.com Irving Pool Maintenance Irving",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/tropical-clear-pool-services-irving-tx-tx/",
+            "title": "Tropical Clear Pool Services - Irving, TX - Nextdoor",
+            "snippet": "Hello, my name is Jerome and I do anything and every thing possible for your swimming pool, from heavy leak detection, repair or replace any part or equipment ...",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/pages/dfw-finest-pool-service-irving-tx/",
+            "title": "DFW Finest Pool Service - Irving, TX - Nextdoor",
+            "snippet": "DFW Finest Pool 469-878- 0293 best I have ever used after going through 3 pool companies. Highly recommend he does an amazing job. Neighborhood Faves.",
+            "position": 2
+          },
+          {
+            "link": "https://nextdoor.com/pages/pool-and-patio-irving-tx/",
+            "title": "Pool And Patio - Irving, TX - Nextdoor",
+            "snippet": "Pool And Patio in Irving, TX. Hi my name is Kevin I have been in the pool business for over 30 yrs, we are a custom pool builder and outdoor Kitchens.",
+            "position": 3
+          },
+          {
+            "link": "https://nextdoor.com/pages/shockleys-pool-service-irving-tx/",
+            "title": "Shockley's Pool Service - Irving, TX - Nextdoor",
+            "snippet": "Shockley's Pool Service. 2008 Rosebud Dr. Irving. TX. 75060. US. +19724450526. 32.80458686118915. -96.91550069947286. Pool cleaner. Pool repair service. General ...",
+            "position": 4
+          },
+          {
+            "link": "https://nextdoor.com/pages/junior-pool-service-irving-tx/",
+            "title": "Junior pool service - Irving, TX - Nextdoor",
+            "snippet": "Message. Call. Irving, TX. (214) 643-5788. Irving, TX. (214) 643-5788. Don't miss updates from your local businesses. Junior pool service. 3900 Twin Falls ...",
+            "position": 5
+          },
+          {
+            "link": "https://nextdoor.com/pages/swydens-pool-supplies-draperies-irving-tx/",
+            "title": "Swyden's Draperies & Swimming Pool Supplies - Irving, TX - Nextdoor",
+            "snippet": "Here at Swyden's Pool Repair, we can help you with all of your pool's needs in Irving, Texas. Maybe you are looking for help with your swimming pool opening.",
+            "position": 6
+          },
+          {
+            "link": "https://nextdoor.com/pages/pacific-pool-plaster-irving-tx/",
+            "title": "Pacific Pool Plaster - Irving, TX - Nextdoor",
+            "snippet": "Pacific Pool Plaster is one of the largest pool renovators in the DFW Metroplex. We have specialized solely in pool renovation for over 15 years.",
+            "position": 7
+          },
+          {
+            "link": "https://nextdoor.com/pages/select-pool-service-carrollton-tx/",
+            "title": "MiGs Pool Service - Nextdoor",
+            "snippet": "We offer various services including: * Weekly pool service * Green to clear * move out & move in make ready * Emergency pool draining * Filter cleaning and ...",
+            "position": 8
+          },
+          {
+            "link": "https://nextdoor.com/pages/sanchez-pool-renovations-irving-tx/",
+            "title": "Sanchez Pool Renovations - Irving, TX - Nextdoor",
+            "snippet": "Sanchez Pool Renovations. 2008 Meadow Gln. Irving. TX. 75060. US. 32.787277. -96.970414. Pool repair service. Swimming pool facility. Other home and garden ...",
+            "position": 9
+          },
+          {
+            "link": "https://us.nextdoor.com/pages/select-pool-service-carrollton-tx/",
+            "title": "MiGs Pool Service - Nextdoor",
+            "snippet": "Hot tub & spa repair · Pool cleaner · Pool repair service. Fave. Message. Call. Recommend · (214) 356-8386 · migspools.com · miguel@migspools.com.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:39:58.827Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Irving%20Pool%20Maintenance&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Irving% 20Pool% 20Maintenance&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Irving% 20Pool% 20Maintenance&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Quick Search. Search By. Location; Facility Name/ID. Search by city, state, and/or zip code. Search. Search by facility name or ID Search. More Search Options.",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Irving% 20Pool% 20Maintenance&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Irving% 20Pool% 20Maintenance&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Irving% 20Pool% 20Maintenance&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:02.030Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:06.845Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:13.333Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Irving Pool Maintenance",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Nov 14, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT",
+            "snippet": "maintenance of effective controls against the potential diversion of Controlled ... Irving, City of, Texas. 2133. Jasper, County of, Texas.",
+            "position": 1
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT | NJ.gov",
+            "snippet": "maintenance of effective controls against the potential diversion of Controlled ... Pool, while paragraph 3.b represents allocation based on a proportional ...",
+            "position": 2
+          },
+          {
+            "date": "Dec 9, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/2022-12-09%20CVS%20Global%20Settlement%20Agreement%20with%20Exhibits%20(003).pdf",
+            "title": "[PDF] CVS SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "... Pool, Arizona. 139. Kingman City, Arizona. 140. Maricopa County ... Irving, City of, Texas. 5603. Jacinto City, City of, Texas. 5604 ...",
+            "position": 3
+          },
+          {
+            "date": "May 22, 2017",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/request-files/request/2017/RQ0163KP.pdf",
+            "title": "[PDF] RECEIVED - Texas Attorney General",
+            "snippet": "The Agreements require that the HOAs pay the City a fee to cover the cost of accounting software maintenance and service fees. It is important ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/admin/2021/Global%20Opioid%20Settlement%20Files/Final%20Distributor%20Settlement%20Agreement.pdf",
+            "title": "[PDF] DISTRIBUTOR SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. DISTRIBUTOR SETTLEMENT. AGREEMENT. Page 2. i. Table of Contents. Page. I.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Maintenance | Show results with:Maintenance"
+            }
+          },
+          {
+            "date": "Sep 30, 2021",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/Distributors%20Texas%20Settlement%20Agreement%20Distributors%20TXAG%20Executed.pdf",
+            "title": "[PDF] DISTRIBUTORS' TEXAS SETTLEMENT AGREEMENT",
+            "snippet": "(30) days of receiving the pool of candidates. If all three (3) candidates within a pool are rejected by either the Injunctive Relief.",
+            "position": 6
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:14.414Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number must be from 6 to 10 digits.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 3
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Mailing Address 350 PINE ST BEAUMONT, TX 77701-2437. Right to Transact Business in ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 6
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 7
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "Get listed on the below websites https://www.tdlr.texas. gov ... asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 8
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 9
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "Fresh concerns over huge fossil fuel auction in DRC after government signs first gas production sharing agreements · [1] https://mycpa.cpa.state.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:40:15.443Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Irving Pool Maintenance",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:16.415Z",
+      "data": {
+        "query": "site:dallascounty.org Irving Pool Maintenance civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 22, 2026",
+            "link": "https://dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet%202026-012-7097.pdf",
+            "title": "[PDF] Notice - Dallas County",
+            "snippet": "Irving, Texas 75063. TX. 75063. 214-693-9428. 972-929-1001. D ... LOCKE CONSTRUCTION SERVICES, LLC. Angie. Harrison angie.tolbert@yahoo ...",
+            "position": 1
+          },
+          {
+            "date": "Dec 31, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/district-clerk/appt-fees/2024/ApprovedFeeDetailsReport-December-2024.pdf",
+            "title": "[PDF] December Appointment and Fee Report - Dallas County",
+            "snippet": "IRVING BIBLE. CHURCH OF. IRVING, TEXAS,. CORP. TRUE. 00788006. PAUL. MCCULLOUGH. Mediator. Not applicable. 12/17/2024. No activity. 0.00. 0.",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/rwpc/planning-council-documents-policies/FY-2025-Standards-of-Care-Service-Delivery-Guidelines.pdf",
+            "title": "[PDF] FY 2025 Standards of Care and Service Delivery Guidelines",
+            "snippet": "... services are to be delivered to clients and how client rights are to be respected. 3.0 Authority. Civil Rights Code, Title 42, Chapter 21; Rehabilitation Act ...",
+            "position": 3
+          },
+          {
+            "date": "Mar 31, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2019ACFR.pdf",
+            "title": "[PDF] dallas county, texas comprehensive annual financial report for the ...",
+            "snippet": "INTRODUCTORY SECTION (Unaudited). Letter of Transmittal. 1. GFOA Certificate of Achievement. 6. Organizational Chart.",
+            "position": 4
+          },
+          {
+            "date": "Sep 3, 2024",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2025/FY2025%20Adopted%20Budget%20Book%20-version%201.5-.pdf",
+            "title": "[PDF] Dallas County Fiscal Year 2024-2025 Budget Cover Page",
+            "snippet": "Dallas County's FY2025 budget was developed during the transition from recovery from the COVID-. 19 pandemic to long-term stabilization, ...",
+            "position": 5
+          },
+          {
+            "date": "Mar 31, 2023",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2022ACFR.pdf",
+            "title": "[PDF] dallas county, texas annual comprehensive financial report for the ...",
+            "snippet": "INTRODUCTORY SECTION (Unaudited). Letter of Transmittal. 1. GFOA Certificate of Achievement. 6. Organizational Chart.",
+            "position": 6
+          },
+          {
+            "date": "Oct 1, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2017ACFR.pdf",
+            "title": "[PDF] comprehensive annual financial report - Dallas County",
+            "snippet": "construction and maintenance of County roads and bridges other than specific improvement programs for which road bonds are issued. Permanent ...",
+            "position": 7
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "[PDF] April-2025-County-Clerk-Courts-Combined.pdf",
+            "snippet": "... Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL SECTION. Injury or Damage. CASES ON DOCKET. 454. Other. Eminent. Domain. Tax ...",
+            "position": 8
+          },
+          {
+            "date": "Mar 28, 2025",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2024ACFR.pdf",
+            "title": "[PDF] Annual Comprehensive Financial Report For the ... - Dallas County",
+            "snippet": "This report consists of management's representations concerning the finances of the County. Consequently,.",
+            "position": 9
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2014ACFR.pdf",
+            "title": "[PDF] COMPREHENSIVE ANNUAL FINANCIAL REPORT ... - Dallas County",
+            "snippet": "construction and maintenance of County roads and bridges other than specific improvement programs for which road bonds are issued. Permanent Improvement ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:18.127Z",
+      "data": {
+        "query": "site:collincountytx.gov Irving Pool Maintenance",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210125_2587/33858_RTC%20Packet%2001-14-2021.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on January 14, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 1
+          },
+          {
+            "date": "Nov 11, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20211115_2703/33858_RTC%20Packet%2011-11-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, November 11 ...",
+            "snippet": "The RTC meeting on November 11, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 2
+          },
+          {
+            "date": "Aug 5, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250804_3121/58414_2025-270%20Solicitation%20Packet.pdf",
+            "title": "[PDF] Collin County, TX REQUEST FOR PROPOSAL 2025-270 REAL ...",
+            "snippet": "This document outlines the scope of work for Real Estate Brokerage Services required for the property located at 1180 West Houston St., Anna, TX ...",
+            "position": 3
+          },
+          {
+            "date": "Jun 27, 2024",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240701_2978/38983_20240627%20NCTCOG%20Executive%20Board%20Meeting.pdf",
+            "title": "[PDF] North Central Texas Council of Governments TO - NCTCOG",
+            "snippet": "The services are to be offered via a cooperative contract to allow entities to manage their needs. NCTCOG prepared and issued a Request for ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210816_2672/50383_RTC%20Packet%2008-12-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, August 12 ...",
+            "snippet": "The RTC meeting on August 12, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 5
+          },
+          {
+            "date": "Jul 22, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210726_2664/38983_20210722%20NCTCOG%20Executive%20Board%20Meeting.pdf",
+            "title": "[PDF] North Central Texas Council of Governments TO - NCTCOG",
+            "snippet": "major events; and providing trail maintenance, management, and operations recommendations. The project is funded by $125,000 from the ...",
+            "position": 6
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210315_2611/33858_agenda-packet-mar.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL Thursday ...",
+            "snippet": "including annual maintenance and support. $40,000. TPF. 2.02. --. Audio/video equipment, updates, maintenance, and video/web hosting services for the ...",
+            "position": 7
+          },
+          {
+            "date": "Apr 22, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210426_2626/38983_2021-04-COMPLETE-Agenda-r.pdf",
+            "title": "[PDF] North Central Texas Council of Governments TO - NCTCOG",
+            "snippet": "The NCTEDD is charged with the maintenance and implementation of the CEDS plan for North Central Texas and serves as the connection between ...",
+            "position": 8
+          },
+          {
+            "date": "Aug 19, 2010",
+            "link": "https://eagenda.collincountytx.gov/docs/2010/CC/20101108_1110/32834_Back%20up%20documentation.pdf",
+            "title": "[PDF] The County matches employee contributions at a ratio of 2 ½ to 1 ...",
+            "snippet": "During that time, employees showed a great deal of pride in their service and looked at Collin County as a fair place to work. That's no longer ...",
+            "position": 9
+          },
+          {
+            "date": "Aug 12, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210920_2680/33858_RTC%20Packet%2009-09-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, September 9 ...",
+            "snippet": "NCTCOG anticipates all agreement delays will be. Page 3. resolved within 90 days, but interim funding is needed to continue vanpool service.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:40:19.221Z",
+      "data": {
+        "query": "site:dentoncounty.gov Irving Pool Maintenance",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:22.401Z",
+      "data": "Swimming Pool Maintenance Irving - Dependable Weekly Service Our Services Home Comprehensive Pool Maintenance Starter Pool Maintenance Satisfaction Guarantee Contact Us (972) 891-8797 ©2021 www.irvingpoolmaintenance.com (972) 891-8797 Home Comprehensive Pool Plan Starter Pool Plan Contact Us The Irving Neighborhood Pool Cleaners Bonded · Insured · Licensed Repairs & Upgrades Filter Cleanings Leak Detection Services Weekly Pool Maintenance Service Guarantee Life without a Bright & Blue Pool, Who would Want That?! Swimming Pool Maintenance Irving is an experienced swimming pool maintenance provider serving homeowners in the Irving region. We are in business to protect your investment in your inground pool, save you time, and create a tranquil backyard setting for you and your family. We desire your complete satisfaction of our services and back it up with a pool maintenance guarantee . Owning and cleaning a swimming pool in Texas can be a very challenging and time consuming operation for Irving residents to do without professional assistance. We understand this problem and are here to service. Choose from 2 Pool Maintenance Plans Precisely Designed for Irving Pools * Advertised Base Price ( Monthly service fee is based on a 4 week billing cycle ) For customers who have a spa attached to your swimming pool, all pool maintenance prices quoted will include your spa and this can change the monthly service price. Our Irving local technicians use pool parts, equipment, products and supplies from top brands like Polaris, Pentair, Hayward and Jandy. A Industry Leading 23 Point Pool Maintenance Plan for Pool Owners Every week one of our professional Irving swimming pool technicians will perform these checks and services: Your Water Balance & Swimming Pool Chemicals Water Hardness - check Saturation Index - check Chlorine - retain Sanitizing your pool water. Salt Content - managed on saltwater swimming pools Total Alkalinity - retain Use bi-carbonate to raise and balance TA. pH Factor - retain Adjusting pool water acidity. Total Dissolved Solids - check Temperature (for pH factor calculation) - check Evaluate pool temp for better pH adjustments. Chloramines - retain Total Chlorine (includes chloramines) - retain Cyanuric Acid - check Adjusting to the total amount. Pool Equipment Checks Filter backwashing: monthly for DE filters - weekly for sand filters Pump strainer baskets (cleared and checked) Polaris / Pool Sweep: inspected Skimmer baskets (cleared and checked) Polaris / Pool Sweep (cleaned & checked) Valves adjusted Inspected and adjusted for best pool circulation. Polaris / Pool Sweep debris bags (cleared and checked) Pool Maintenance Venturi / Leaf Vacuum * Brush spa Brush walls and steps Hose Vacuum * Net pool bottom and surface * * Comprehensive Pool Maintenance Plan Only » View the Comprehensive Pool Maintenance Plan Cost and Details » View the Starter Pool Maintenance Plan Cost and Details All Pool Cleanings Backed by our 100% Satisfaction Guarantee The peace of mind of every Irving homeowner is important to us. See Details » Areas we Service Irving, TX is a large city area. But our pool maintenance technicians can visit almost any Irving home for pool equipment repairs and regular weekly pool maintenance. Residences in zip codes such as: 75061, 75060, 75062, 75063, 75038 and 75039 are wi read more... thin our service range. The Grand City of Irving, TX The city of Irving is located in between the cities of Dallas and Arlington just north of Interstate 30. The southern border of Irving is located along W. Hunter Ferrell Rd and the northern border of Irving is found along E. Belt Line Rd. International Pkwy and Riverside Dr. denote Irving's east and west borders. We Loving Serving Irving With our pool maintenance plans, which are backed by our Pool Maintenance Guarantee , your swimming pool will look pristine every time you look out your window. Send us a message or call us at (972) 891-8797 if you would like to get on our weekly service for pool maintenance or get a quote. Contacts (972) 891-8797 Send Message Service Area: 1102 E Pioneer Dr STE 230 Irving, TX 75061 Irving Locality The Best in Irving Pool Maintenance ©2026 www.irvingpoolmaintenance.com | All Rights Reserved | Satisfaction Guarantee | Privacy Policy"
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:26.951Z",
+      "data": {
+        "name": "Irving Pool Maintenance",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(972) 891-8797",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/irving/profile/pool-service/irving-pool-maintenance-0875-91062831",
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:30.199Z",
+      "data": {
+        "name": "Irving Pool Maintenance",
+        "found": true,
+        "rating": 4.9,
+        "source": "serpapi",
+        "address": "1102 E Pioneer Dr #230, Irving, TX 75061",
+        "data_id": "0x864e8347b1442fc7:0xdf2d62c3f8ceaf5f",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 28,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "2 weeks ago",
+            "text": "We had a wonderful experience with our pool cleaning and maintenance services in Irving. The team did an outstanding job keeping our pool sparkling and well-maintained. I especially want to mention Ardie and Blake for their excellent service. Ardie has helped us with a few small repairs around the pool, like fixing some loose tiles and making sure our pool steps are safe. He always works professionally and keeps us informed about what needs to be done. Blake is also quick to respond whenever we have questions, and he has explained our pool settings and maintenance schedule in a way that’s easy to understand. It’s great to know we have dedicated experts like Ardie and Blake who really care about their customers and know everything about pool care.",
+            "author": "haley walls",
+            "rating": 5
+          },
+          {
+            "date": "2 weeks ago",
+            "text": "We had an amazing experience with Irving Pool Maintenance! As first-time pool owners in Irving, we didn't know much about keeping our pool clean and running right. Chris took the time to walk us through everything step by step, answering all our questions with lots of patience. It really shows that he cares about his work and the people he helps. Since we've started using their service, our pool has looked sparkling clean—better than ever before. It was a struggle in the past just to find someone reliable to help with cleaning, but now they've even helped us upgrade and install a new pump and filter. The whole process was so easy and stress-free. We highly recommend them for anyone who wants their pool to look great and stay in top shape. We are very happy customers!",
+            "author": "Barbara Mullen",
+            "rating": 4
+          },
+          {
+            "date": "3 months ago",
+            "text": "I've been a happy customer of this pool service company for quite a while now. After reaching out to several other pool service companies for quotes, I chose this one because their prices were fair and their service really stood out. While you might find slightly lower prices elsewhere, I believe you get what you pay for, especially when it comes to pool care. What impressed me most was their expertise and professionalism. Since I had never owned a pool before, Christopher took the time to explain everything I needed to know about pool maintenance in simple, easy-to-understand terms. His knowledge really shines through, and you can tell he’s been working with pools for years. Whether it’s regular cleaning, maintenance, or even more advanced repairs and renovations, Christopher has it covered. The team is also great at communication. Unlike other companies where I had to wait days for a response, Blake got back to me right away and scheduled a visit and estimate in no time. When I first moved in, my pool was in terrible shape with lots of mechanical issues, but within a week, they turned it into a sparkling, inviting place to swim—just in time for the hot Texas weather. I’m so pleased with their work that I’m even considering having them help with some upgrades to give my pool a fresh, modern look. Overall, I highly recommend this pool service team. They’re skilled, friendly, and truly care about their customers.",
+            "author": "Levi Moreno",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "Irving Pool Maintenance did an amazing job on our pool. We had our plaster pool resurfaced with fiberglass a long time ago and have loved how it held up in the Texas heat. Recently, we decided to have it resurfaced again, and the team did a fantastic job. Austin was very polite, professional, and knew exactly what he was doing. The crew paid close attention to every detail and made sure everything looked perfect. Plus, they even offer pool tile cleaning, which really helps keep things looking fresh. I highly recommend their pool services!",
+            "author": "Ernest Duarte",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "Irving Pool Maintenance does an amazing job! They helped keep our pool sparkling clean and always took care of regular maintenance and any parts replacements quickly. The crew, especially Chris, went above and beyond to help out and made sure everything was installed perfectly, even delivering parts when needed. I highly recommend their pool cleaning and maintenance services. If I ever need help with another pool, I’ll definitely call them again!",
+            "author": "Lois12 C",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "What a fantastic experience! Just when I thought good customer service was hard to find, Blake really impressed me. I called Irving Pool Maintenance early one morning because my gas pool heater suddenly stopped working and we had a pool party planned for the next day. Blake explained that they work with a skilled technician, but he wasn’t sure if they could make it out the same day. To my surprise, Blake called back within the hour with great news—they could send someone out and usually have quick access to any parts needed for repairs. The technician arrived sooner than I expected, checked everything thoroughly, and let me know that our pool heater had a major issue and needed replacement. He left to get a new unit and returned just a couple hours later. By the end of the day, our new pool heater was installed and running perfectly, just in time for our party. Thanks to their quick and professional service, the party was a big hit! I highly recommend their team for anyone looking for fair pricing, fast responses, and excellent pool service.",
+            "author": "M Huang",
+            "rating": 5
+          },
+          {
+            "date": "Edited 4 weeks ago",
+            "text": "irving pool maintenance took care of our pool cleaning and maintenance, and i couldn't be happier with their service. chris and his crew always go the extra mile to keep our pool sparkling clean, even during the hot summers in irving. any time i've had a question or needed advice about pool care, chris is quick to respond and really knows his stuff. recently, we needed a repair on our pool enclosure that was a bit unusual, but they handled it within a week and did a great job. even years after they first started servicing our pool, they still treat us like valued customers. you can tell they really care about the people they help.",
+            "author": "Gina Davies",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "We had a wonderful experience with Irving Pool Maintenance! Christopher and his team did an outstanding job cleaning and maintaining our pool. They listened carefully to what we needed and made sure everything was just right. The crew explained the pool maintenance process clearly and gave us helpful tips to keep our pool sparkling clean, especially during the hot Irving summers. We really appreciate their attention to detail and friendly service. Our pool has never looked better!",
+            "author": "Chelsey Mccormick",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Irving Pool Maintenance is truly the best when it comes to pool cleaning services! From the very beginning, Ardie was on-site every day, making sure everything was running smoothly with our pool maintenance. The team finished the job even faster than expected and always left the area spotless after each visit. Everyone was professional and took great care of our pool. I would definitely recommend them to anyone in Irving looking for reliable pool cleaning or maintenance!",
+            "author": "Aubree Moses",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "Irving Pool Maintenance has been taking care of my pool cleaning for a while now. They also helped install a pool heater, which has been great for those warm Texas days. Chris is the pool technician, and he always shows up on schedule, is reliable, friendly, and professional. The pool always looks sparkling clean after each visit. I highly recommend using their pool cleaning services.",
+            "author": "Sean C",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "we searched for pool service companies around irving and after comparing reviews, this one stood out and gave us the best price to resurface our pool, swap out the old light for a colorful new pool light, and update the ladder and filter system. right from the start, chris explained every step, kept us in the loop about the process, and made sure we understood everything from beginning to end, which we really liked. they did excellent work and always answered our questions quickly. we would definitely recommend chris and this team to anyone in irving who needs pool resurfacing or general pool care. we also went with their suggestion to clean and seal our pool deck, and it looks fantastic! very happy with the work, the friendly crew, and the professionalism shown throughout the whole project. if you need pool service in irving, reach out to this company!",
+            "author": "Timothy Bradshaw",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "after our pool was finished, we had some trouble with the booster pump for our pool cleaner about a year later. we reached out to irving pool maintenance to get help with the issue since it was still under warranty. they were fast and did a great job replacing the booster pump and getting everything running again. austin, blake, and ardie were very helpful through the process and now our pool cleaner works perfectly. really happy with the service and how easy they made it.",
+            "author": "Ricky24 F",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "i can’t say enough good things about irving pool maintenance. from the start, chris helped us design the perfect pool for our backyard. he really listened to what we wanted and was happy to adjust the design whenever we asked. picking out the right colors wasn’t easy, but he was patient and walked us through every option. mike managed our pool project and always kept us in the loop about what to expect. he let us know ahead of time when each crew would arrive, and if anything changed with the schedule, he made sure to update us right away. if i ever had a concern, he made sure it was fixed quickly—even when i reached out late in the evening. every crew member who worked on our pool was professional and took pride in their work. they always cleaned up after themselves, which really mattered to us. everyone was friendly, knowledgeable, and confident in what they did. if you’re thinking about getting a pool, i highly recommend this team. we just had our first swim, and it was amazing!",
+            "author": "Owen Branch",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "I recently had my pool resurfaced and retiled, and the experience was fantastic from start to finish. Eric was my main point of contact, and he was always attentive, knowledgeable, and easy to work with. He made sure to schedule everything around my availability, and the whole process—draining, resurfacing, tiling, and refilling—was completed in just a week! The Texas weather was perfect, so everything moved quickly and smoothly. The crew was very friendly and kept great communication throughout the project. Eric was especially responsive, letting me know what was happening every step of the way. I really appreciated how seamless and stress-free the entire process was. More recently, I had the team come out to swap my DE filter for a cartridge filter. Chris, the technician, did an excellent job. He worked efficiently and took the time to show me how to operate and clean the new filter. He also shared some helpful pool care tips and recommendations. Just like Eric and the rest of the crew, Chris was professional and knowledgeable. Overall, I highly recommend this pool cleaning and service company to anyone needing pool maintenance or upgrades in Texas. They make owning a pool easy and enjoyable!",
+            "author": "Tanner Lang",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "i recently had a new pool put in by austin from irving pool maintenance, and i'm really happy with how everything turned out! from the first visit to the last bit of work, the whole team showed a lot of knowledge and professionalism. they always arrived on time, listened to what i wanted, and gave helpful tips on both pool design and keeping everything clean and running smoothly. the quality of the work is top-notch, and the pool is now the main feature of my backyard. if you’re thinking about getting a pool or need pool service, i definitely recommend this company—they went above and beyond what i expected!",
+            "author": "Rachel Pennington",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "I had a great experience with Irving Pool Maintenance. My pool in Irving had several leaks, and Chris was able to find the main problem by setting up the skimmer in a way that showed exactly how low the water would go. This really helped, since I could never figure it out myself without risking damage to the pump. Chris found the main crack, took out the old tile, and put in new tile just where it was needed—instead of replacing all the edge tile like other companies suggested. After the repairs, he cleaned up the pool and made it look brand new. The whole process was smooth, and the price was much better than the other quotes I got. I’ll definitely call them again when it’s time to resurface the pool.",
+            "author": "Jace16 I",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Irving Pool Maintenance did an outstanding job with our pool. As new pool owners in Irving, we didn’t really know how to handle our pool turning green with algae, but their team fixed it fast and got the water sparkling clear again, just in time for our party. Blake went above and beyond to make sure everything was perfect, and Chris in the office was very helpful whenever we called. Even after hours, Blake always made time to answer all our questions. We highly recommend them to anyone looking for pool cleaning or maintenance in the area!",
+            "author": "rachel compton",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "Irving Pool Maintenance went above and beyond our expectations. First, they designed a stunning pool and spa for our backyard, really bringing our ideas to life. Chris listened carefully to what we wanted and made sure every detail was just right. Mike managed the project with great attention and was always quick to answer any questions we had. Every crew member arrived on time, did quality work, and made sure the area was clean at the end of each day. From the beginning to the end, the entire process was handled with professionalism. We were thrilled that the job started as planned and was even finished ahead of schedule, without sacrificing any of the design or quality. They truly made us feel like VIPs. We highly recommend them and will definitely share our great experience with friends and family.",
+            "author": "Josiah Duke",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Irving Pool Maintenance has been fantastic with our pool service. Unlike other companies we've tried before, their team is always reliable and quick to respond. They consistently keep our pool sparkling clean and well-maintained, even during the hottest summer days. We recently added an Aqualink system to control our pool and spa, and Blake made the installation process easy. The remote app for our phone lets us manage everything with just a few taps, which is super convenient. The pricing is reasonable too. We’re really happy with the service and the new system!",
+            "author": "lee walls",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "Our pool looks amazing after the remodel! The team helped us choose the perfect PebbleTec finish and new pool tiles, and even handled repairs and bead blasting on our old rock fountain. Ardie answered all of our questions with patience and gave us plenty of helpful information throughout the process. The whole experience was smooth and quick, and the price was very reasonable. We are really happy with how fresh and clean our pool looks now. Highly recommend this company for anyone needing pool cleaning, repairs, or a remodel!",
+            "author": "Stephen H",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "absolutely amazing service! i recently moved into a new home, and the pool had been ignored for quite some time. the first pool cleaning company i hired told me they couldn’t clear up the cloudy water and said i’d have to spend thousands to refinish the pool, with a long wait time. luckily, i found chris from the pool cleaning team! in just four days, chris completely transformed the pool—it's sparkling clean and looks fantastic now. the results speak for themselves. this pool cleaning company truly delivers the best service around!",
+            "author": "marilyn robles",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "irving pool maintenance did an amazing job on our pool renovation. they transformed our old, plain rectangle pool into something truly special. with chris's helpful advice, we were able to add a new beach entry, a swim out shelf, new lighting, a water feature, and fresh resurfacing. the team handled everything from start to finish and the results are fantastic! the crew was always on time, professional, and very tidy. they made sure to clean up every day, which really helped since it was a big project in our backyard. even though this was a major renovation, they finished on schedule and kept everything within our budget. i highly recommend this company for anyone needing pool service in irving. they were fantastic!",
+            "author": "Cayden6 M",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "this is definitely the best pool service company in irving! the pool techs, especially christopher, are always professional, on time, and really know their stuff when it comes to pool care and maintenance. every time guests come over, they mention how sparkling clean the pool looks. i would highly recommend their team for both regular pool cleaning and any pool construction needs!",
+            "author": "C Duffy",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "we recently finished building our pool in irving and wanted to share how easy and stress-free the whole experience was, especially when it came to the pool cleaning and maintenance services provided. our pool looks amazing, with beautiful rock and waterfall features, and the quality of the work really stands out. what impressed us the most was the excellent customer service. chris and the entire team were friendly, helpful, and always listened carefully to what we wanted. there was never any pressure, and they were quick to answer our questions and keep us updated. mike, who managed the project, was always available whenever we needed him. he stopped by regularly to check on everything and made sure we knew what was happening each step of the way. the crew was professional, worked hard, and always left the area clean after finishing up for the day. we’re really happy we chose this team for our pool cleaning and maintenance needs. if you’re thinking about getting a pool cleaned or serviced in irving, you can trust these folks to do a fantastic job!",
+            "author": "Frank Livingston",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "When the pool cleaning technician, Blake, arrived, he clearly explained the process for cleaning the pool tile and stone walls, as well as the steps for sealing the tile and tidying up afterward. Blake was very thorough and worked efficiently, making sure the whole pool area was spotless when he finished. The tile and stone looked just like new, just as if they had been freshly installed. The pool and spa looked so refreshed and inviting. We will definitely use this pool cleaning service again.",
+            "author": "Emmanuel Waller",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "I can't say enough great things about this pool service company. They recently added a new railing to our pool in Irving and did an excellent job. The team showed up right on time and worked very professionally. If I ever need any pool repairs or upgrades in the future, I’ll definitely call them again.",
+            "author": "Candace Bauer",
+            "rating": 5
+          },
+          {
+            "date": "5 months ago",
+            "text": "Irving Pool Maintenance did a fantastic job with my pool. My last pool service wasn’t keeping the water clean, and I had to keep adding water myself. When I called Irving Pool Maintenance, Chris came out and got my pool looking crystal clear in no time. He found a leak in my skimmer and was able to repair it right away. Chris also let me know that I may need to replace the skimmer in the future. If you need someone to take care of your pool and keep it looking great, this is the company to call.",
+            "author": "A Bullock",
+            "rating": 4
+          },
+          {
+            "date": "5 months ago",
+            "text": "Chris always arrives right when expected and keeps my pool sparkling clean. Irving Pool Maintenance makes sure everything is working just right and handles repairs and regular maintenance quickly. I appreciate how easy they make having a pool, especially with the hot weather here. My pool has never looked better!",
+            "author": "Caroline Prince",
+            "rating": 5
+          }
+        ],
+        "escalated": true,
+        "search_tier": 1,
+        "review_count": null,
+        "pages_fetched": 4,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "escalation_reason": "NO_REVIEWS",
+        "location_searched": "Irving, TX",
+        "search_confidence": 0.7249999999999999,
+        "serper_fraud_check": {
+          "reason": "NO_REVIEWS",
+          "escalate": true,
+          "confidence": "HIGH"
+        }
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:53.948Z",
+      "data": {
+        "name": "Irving Pool Maintenance",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(972) 891-8797",
+        "rating": 4.9,
+        "source": "google_maps",
+        "status": "open",
+        "address": "1102 E Pioneer Dr #230, Irving, TX 75061",
+        "reviews": [],
+        "website": "http://irvingpoolmaintenance.com/",
+        "maps_url": "https://www.google.com/maps/search/Irving%20Pool%20Maintenance%20Irving%2C%20TX",
+        "categories": [
+          "Swimming pool repair service"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:40:58.830Z",
+      "data": {
+        "found": true,
+        "rating": 4.8,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": 343
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:41:02.135Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "irvingpoolmaintenance.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:41:03.027Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Irving Pool Maintenance\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:41:25.853Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T06:41:12Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Irving%20Pool%20Maintenance%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=h8eOabqmI8-ymtkPwp_OwQI\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-13T06:41:21Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Irving%20Pool%20Maintenance%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=kMeOaf-RL_2xqtsPnO-YoAw\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Irving Pool Maintenance",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T06:41:26.314Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-13T06:41:26.868Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-13T06:41:36.121Z",
+      "data": {
+        "cost": 0.00066248,
+        "summary": "Reviews appear highly authentic with no red flags. Customers provide specific details about projects, crew members, and outcomes. The consistent high ratings across platforms, detailed positive reviews, and lack of substantive complaints indicate a reputable contractor.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-13T06:41:36.121Z",
+        "fake_signals": [],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 4.8,
+          "google": 4.9,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "MEDIUM",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Repairs handled quickly and professionally",
+            "Crew returned to fix issues and provide follow-up"
+          ]
+        },
+        "authentic_signals": [
+          "Specific project details (resurfacing, heater installation, tile repair)",
+          "Multiple crew names mentioned (Chris, Ardie, Blake, Austin)",
+          "Varied writing styles and perspectives",
+          "Emotional authenticity in descriptions",
+          "Mix of service types (cleaning, repairs, installations)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Ratings are highly consistent across Google (4.9), Yelp (4.8), and BBB (A+). No major discrepancies exist."
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-13T07:24:41.428Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Irving Pool Maintenance",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Irving Pool Maintenance",
+        "searched_at": "2026-02-13T07:23:12.512671",
+        "total_records": 0
+      }
+    }
+  }
+}

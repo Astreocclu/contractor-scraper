@@ -1,0 +1,801 @@
+{
+  "contractor_id": 6693,
+  "business_name": "Dynamis Roofing Contractors",
+  "city": "Plano",
+  "state": "TX",
+  "verticals": [
+    "roofing"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-15T21:10:09.900Z",
+  "sources": {
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:04:22.640Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Dynamis Roofing Contractors",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Dynamis Roofing Contractors",
+        "searched_at": "2026-02-15T15:02:53.422601",
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:04:23.072Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "DYNAMIS ROOFING CONTRACTORS LLC",
+        "taxpayer_number": "32080693040"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-15T15:04:23.075Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:04:32.781Z",
+      "data": {
+        "cost": 0.00072646,
+        "summary": "The 8 Google reviews for Dynamis Roofing are all 5-star and contain authentic-seeming details about roofing projects and interactions with owner Brad. However, the perfect score from a small sample, the consistent focus on one person, and the complete absence of reviews on other platforms or any critical feedback are mild red flags. The reviews do not appear blatantly fake, but the pattern is atypical for a contractor with significant volume.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-02-15T15:04:32.781Z",
+        "fake_signals": [
+          "All reviews are 5-star with no negative feedback",
+          "Small total review count (8)",
+          "Multiple reviews mention the same owner (Brad) in a very positive, similar tone",
+          "Lack of reviews on other common platforms (Angi, Houzz, Yelp)"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "Not Rated",
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [],
+          "confidence": "LOW",
+          "follow_through": "POSITIVE_INDICATED",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Mentions of quality checks and follow-up (Review 1)",
+            "Implied standing behind work through descriptions of professionalism and quality"
+          ]
+        },
+        "authentic_signals": [
+          "Reviews contain specific project details (roof replacement, gutters, hail damage, insurance claims)",
+          "Reviews mention varied but plausible additional services (fence staining, power washing, window screens)",
+          "Different writing styles and lengths are present",
+          "Some reviews mention timelines and specific interactions (e.g., meeting the inspector)"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only one primary review source (Google) with a perfect rating. BBB has no rating or complaints. No other platforms have reviews, so there is no data to create a discrepancy."
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:00:48.862Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:00:53.076Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "website_warranty": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:02:20.839Z",
+      "data": {
+        "found": false,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": false,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [],
+        "durations": [],
+        "confidence": "NONE_FOUND",
+        "source_url": "https://dynamisroofing.com/",
+        "analyzed_pages": [
+          {
+            "url": "https://dynamisroofing.com/",
+            "type": "homepage",
+            "title": "Dynamis Roofing Contractors - General Contractor, Roofing"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:02:25.779Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:00:10.740Z",
+      "data": {
+        "query": "site:yelp.com \"Dynamis Roofing Contractors\" \"Plano, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:02:27.081Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:02:28.316Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [],
+        "result_count": 0,
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:00:43.898Z",
+      "data": "Trustpilot Search Results Companies Dynamis dynamisassociates.co.uk • 79 reviews 3.0 Dynamis dynamis.co.uk 0.0 Dynamis Fortiori dynamisfortiori.com • 4 reviews 4.0 AES Roofing Contractors www.aesroofing.co.uk • 2 reviews 3.4 Vancouver Roofing Contractors vancouverroofingcontractors.com 0.0 Categories Roofing Contractor The best companies in the category 'Roofing Contractor' Roofing Supply Store The best companies in the category 'Roofing Supply Store' Contractors & Consultants The best companies in the category 'Contractors & Consultants' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (1321) Dynamis dynamisassociates.co.uk 3.0 79 reviews United Kingdom Dynamis dynamis.co.uk 0.0 0 reviews Sycamore Street 6, London, United Kingdom Dynamis Fortiori dynamisfortiori.com 4.0 4 reviews Manta Business Center. Oficina 1301. Torre A - piso 13 / Calle M3 y Avenida 24., Manta, Ecuador AES Roofing Contractors www.aesroofing.co.uk 3.4 2 reviews Vancouver Roofing Contractors vancouverroofingcontractors.com 0.0 0 reviews 1822 E 33rd St, Vancouver, United States Confederation of Roofing Contractors www.corc.co.uk 4.7 30 reviews Association House, 22e Victoria Place,, Brightlingsea, United Kingdom Coopers Roofing Contractors ltd coopersroofing.co.uk 4.0 3 reviews 31 Church Road, Manchester, United Kingdom SHS Roofing & Leadwork contractors www.shsroofing.co.uk 3.8 2 reviews SHS roofing contractors, Gilmore House, Blackpool, United Kingdom Kemp Roofing Contractors Ltd kemproofingcontractors.com 4.7 72 reviews 109 Drum Brae South, Edinburgh, United Kingdom Goa Roofing Contractors goaroofingcontractors.in 0.0 0 reviews Maganlal Sadan, Dr Dada Vaidya Rd, Altinho, Panaji, Goa 403001​​, Panaji, India Previous 1 2 3 4 133 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Roofing Contractor Construction & Manufacturing Roofing Supply Store Construction & Manufacturing Contractors & Consultants Construction & Manufacturing Construction Company Construction & Manufacturing Concrete Contractor Construction & Manufacturing Green Energy Supplier Utilities are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:00:56.213Z",
+      "data": {
+        "query": "Dynamis Roofing Contractors Plano site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.nbcdfw.com/sitemap.xml?yyyy=2017&mm=02",
+            "title": "[XML] sitemap.xml - NBC 5 Dallas-Fort Worth",
+            "snippet": "... roofing company that many people say ran off with their money. Now, the salesman in charge of many of their contracts says the owner's business practices ...",
+            "position": 1
+          },
+          {
+            "date": "Jul 14, 2022",
+            "link": "https://www.dallasnews.com/news/immigration/2022/07/14/north-texas-migrant-sees-awful-irony-his-success-is-why-others-die-to-reach-us/",
+            "title": "North Texas migrant sees awful irony — his success is why others ...",
+            "snippet": "He has an assortment of jobs — roofing, replacing windows, washing dishes and, sometimes on weekends, working at a flea market or cutting lawns.",
+            "position": 2
+          },
+          {
+            "date": "Nov 15, 2019",
+            "link": "https://www.wfaa.com/article/tech/science/climate-change/verify-climate-truth-alaska/287-5dfa9460-f5d6-46da-b847-bd341f3ad508",
+            "title": "Verify takes climate change skeptic to Alaska | wfaa.com",
+            "snippet": "He's a 38-year-old roofing contractor and a staunch conservative. Justin rejects the mainstream scientific conclusion that the climate is ...",
+            "position": 3
+          },
+          {
+            "date": "Mar 25, 2021",
+            "link": "https://www.dallasnews.com/sports/stars/2021/03/26/stars-claw-out-desperately-needed-first-regular-season-regulation-win-over-lightning-in-over-five-years/",
+            "title": "Stars claw out desperately needed first regular-season regulation ...",
+            "snippet": "The Stars needed Thursday night. Thanks to a 4-3 win over Tampa Bay, they got it. In a season dominated by close losses and missed ...",
+            "position": 4
+          },
+          {
+            "date": "Oct 6, 2019",
+            "link": "https://www.dallasnews.com/sports/stars/2019/10/06/tyler-seguins-goal-vs-detroit-highlight-stars-top-line-continues-adjust-find-rhythm/",
+            "title": "Tyler Seguin's goal vs. Detroit a highlight as Stars' top line continues ...",
+            "snippet": "DETROIT -- Stars center Tyler Seguin scored for the first time this season during Dallas' 4-3 loss to the Red Wings on Sunday night, ...",
+            "position": 5
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:02:33.096Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Dynamis Roofing Contractors\" Plano",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:01:07.170Z",
+      "data": "Dynamis Roofing Contractors Plano review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters Dynamic Roofing General Contractor LLC Dynamic Roofing General Contractor LLC @dynamicroofinggeneralcontr7368 • 4 subscribers Dynamic Roofing General Contractor LLC is a locally owned and operated General Contractor based out of Plano , Texas. Subscribe 1:21 1:21 Now playing Phillips Roofing Plano TX - REVIEWS - Plano Roofing Contractors Reviews Plano Local Business Network Plano Local Business Network • • 180 views 10 years ago Plano Local Business Network Plano Local Business Network Reviewed Phillips Roofing is a top reviewed roofing contractor in Plano , TX. This video highlights some of the ... Reviewed Phillips Roofing is a top reviewed roofing contractor in Plano , TX. This video highlights some of the ... From the video description 4:40 4:40 Now playing How To Get More Reviews For Your Roofing Company Contractor Dynamics Contractor Dynamics • • 312 views 4 years ago Contractor Dynamics Contractor Dynamics Follow these simple steps to consistently generate more 5-Star Google Reviews for your roofing or contracting company . As with ... Follow these simple steps to consistently generate more 5-Star Google Reviews for your roofing or contracting company . As with ... From the video description 0:47 0:47 Now playing Plano Roofing Company Reviews | 214-556-1774 DFW Video Marketing DFW Video Marketing • • 78 views 9 years ago DFW Video Marketing DFW Video Marketing Check out our reviews on our local roofing company in Plano TX. Plano Home and Commercial Roofing ... Check out our reviews on our local roofing company in Plano TX. Plano Home and Commercial Roofing ... From the video description 2:27 2:27 Now playing Roofing Contractor Anna Texas - Top Roofing Company in Anna Texas Dynamic Roofing General Contractor LLC Dynamic Roofing General Contractor LLC • • 190 views 7 years ago Dynamic Roofing General Contractor LLC Dynamic Roofing General Contractor LLC Some of the Dynamic Roofing team conducting a roof inspection in Anna Texas. Anthony Beard a roof consultant for the Dynamic ... Some of the Dynamic Roofing team conducting a roof inspection in Anna Texas. Anthony Beard a roof consultant for the Dynamic ... From the video description SHORTS SHORTS Now playing Next time use a taller ladder! 😬 #roof #roofer #roofing #roofershelper #safety #shorts #ladder The Roofer's Helper The Roofer's Helper • • 2M views 3 years ago The Roofer's Helper The Roofer's Helper The Roofer's Helper is a media company that provides roofing and business resources for contractors and homeowners, and also ... The Roofer's Helper is a media company that provides roofing and business resources for contractors and homeowners, and also ... From the video description 1:04 1:04 Now playing Roofing Contractors | Plano, Frisco , Dallas & Fort Worth Windtop Roofing LLC Windtop Roofing LLC • • 66 views 7 years ago Windtop Roofing LLC Windtop Roofing LLC Big or small, no matter the size of the roofing project, we have the expertise to deliver the level of quality you deserve to the ... Big or small, no matter the size of the roofing project, we have the expertise to deliver the level of quality you deserve to the ... From the video description SHORTS SHORTS Now playing What goes on your roof first during an installation #construction #roofing #contractor American Contractor American Contractor • • 46M views 3 years ago American Contractor American Contractor SHORTS SHORTS Now playing How to Qualify a Roofing Company you may Work With Josh Steinberger Josh Steinberger • • 2.4K views 2 years ago Josh Steinberger Josh Steinberger 0:08 ... lot of roofers don't even get on the roof they don't know how to measure a roof they fly drones with technology what's happening ... ... lot of roofers don't even get on the roof they don't know how to measure a roof they fly drones with technology what's happening ... Automatic captions 0:55 0:55 Now playing Roofing Contractors in Plano TX, details at YellowPages.com YP YP • • 6 views 6 years ago YP YP Brown Roofing Solutions Inc. Roofing Contractors 3415 Custer Rd Ste 141, Plano , TX, 75023 ... Brown Roofing Solutions Inc. Roofing Contractors 3415 Custer Rd Ste 141, Plano , TX, 75023 ... From the video description 0:55 0:55 Now playing Roofing Contractors in Plano TX, details at YellowPages.com YP YP • • 13 views 6 years ago YP YP Brown Roofing Solutions Inc. Roofing Contractors 3415 Custer Rd Ste 141, Plano , TX, 75023 ... Brown Roofing Solutions Inc. Roofing Contractors 3415 Custer Rd Ste 141, Plano , TX, 75023 ... From the video description Dynamic Roofing Solutions Dynamic Roofing Solutions @DynamicRoofingSolutionsPGH • 3 subscribers At Dynamic Roofing Solutions, we pride ourselves on being a tight-knit team of dedicated professionals who live and work in the ... Subscribe People also watched 3:37 3:37 Now playing Insurance Adjuster says roof is repairable. 😂 See how this inspection is ignored & denied? Chicago Roofer Chicago Roofer • • 1.5M views 3 years ago Chicago Roofer Chicago Roofer Met with an insurance adjuster for a wind claim . top insure company in Illinois. Adjuster from this company insists the roof is ... Met with an insurance adjuster for a wind claim . top insure company in Illinois. Adjuster from this company insists the roof is ... From the video description Summary An insurance adjuster deems a roof repairable, despite a roofer's on-site demonstration of significant damage. The roofer meticulously documents the irreparable condition using a customer's phone. This video showcases the conflict between the adjuster's assessment and the reality of the roof's condition. AI-generated video summary Quality and accuracy may vary. Summary An insurance adjuster deems a roof repairable, despite a roofer's on-site demonstration of significant damage. The roofer meticulously documents the irreparable condition using a customer's phone. This video showcases the conflict between the adjuster's assessment and the reality of the roof's condition. 9:49 9:49 Now playing Roofing Insulation is getting RIDICULOUS! IRE did not disappoint Matt Risinger Matt Risinger • • 247K views 1 day ago Matt Risinger Matt Risinger Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... Matt Risinger and Steve Baczek tour the International Roofing Expo (IRE) in Las Vegas to explore the latest roofing products, ... From the video description New Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. AI-generated video summary Quality and accuracy may vary. Summary Matt Risinger showcases innovative roofing materials at the 2026 International Roofing Expo. The video explores various products, including vented panels, high-R-value insulation, and adhesive systems. Experts discuss material properties and assembly techniques. 16:05 16:05 Now playing Questions Roofers Ask That You Should NEVER Answer! Homestead Roofing, Inc Homestead Roofing, Inc • • 81K views 3 years ago Homestead Roofing, Inc Homestead Roofing, Inc When you're hiring a roofer , there are some questions they may ask that you should never answer. In this video, I'll give you the ... When you're hiring a roofer , there are some questions they may ask that you should never answer. In this video, I'll give you the ... From the video description CC 8 chapters Introduction | In the neighborhood - Can I inspect your roof? | Can I get your Insurance paperwork? | Can I get you to Sign today? | Let me call my manager... | Do you want to file the claim now? | Will you sign this paper? | ZERO OBLIGATION 8 chapters in this video 8 chapters Introduction Introduction 0:00 Introduction 0:00 In the neighborhood - Can I inspect your roof? In the neighborhood - Can I inspect your roof? 0:21 In the neighborhood - Can I inspect your roof? 0:21 Can I get your Insurance paperwork? Can I get your Insurance paperwork? 2:21 Can I get your Insurance paperwork? 2:21 Can I get you to Sign today? Can I get you to Sign today? 7:19 Can I get you to Sign today? 7:19 Let me call my manager... Let me call my manager... 8:36 Let me call my manager... 8:36 Do you want to file the claim now? Do you want to file the claim now? 12:00 Do you want to file the claim now? 12:00 Will you sign this paper? Will you sign this paper? 14:07 Will you sign this paper? 14:07 8:39 8:39 Now playing Ladder Safety | How to Climb on a Roof Without Getting Hurt! Digital Roofing Innovations Digital Roofing Innovations • • 704K views 5 years ago Digital Roofing Innovations Digital Roofing Innovations Why are we doing this video? Well, many of our videos are geared towards and roofing salesmen who are new to the industry so ... Why are we doing this video? Well, many of our videos are geared towards and roofing salesmen who are new to the industry so ... From the video description 6 chapters Intro | The Ladder | Ladder Placement | Gloves | Climbing Up | Outro 6 auto-generated chapters in this video 6 chapters Intro Intro 0:00 Intro 0:00 The Ladder The Ladder 0:57 The Ladder 0:57 Ladder Placement Ladder Placement 2:20 Ladder Placement 2:20 Gloves Gloves 4:12 Gloves 4:12 Climbing Up Climbing Up 5:16 Climbing Up 5:16 Outro Outro 7:40 Outro 7:40 + 6 more SHORTS SHORTS Now playing What Happens When Roofing Contractor Goes Out of Business The Roof Store The Roof Store • • 1.6K views 2 years ago The Roof Store The Roof Store If you gave a contractor $10000 and he went out of business, how many people in the United States will be able to write a $10000 ... If you gave a contractor $10000 and he went out of business, how many people in the United States will be able to write a $10000 ... From the video description SHORTS SHORTS Now playing How not to get screwed by a marketing agency 🎯 #contractors #construction #contracting #roofing Contractor Dynamics Contractor Dynamics • • 2.6K views 3 years ago Contractor Dynamics Contractor Dynamics 0:00 We train roofing companies on how to do their own marketing most of our clients that we train they still work like an outside ... We train roofing companies on how to do their own marketing most of our clients that we train they still work like an outside ... Automatic captions SHORTS SHORTS Now playing Allstate: the worst insurance company to work with for roofing contractors | Becca Switzer |#Shorts Roofing Insights Roofing Insights • • 13K views 4 years ago Roofing Insights Roofing Insights Allstate: the worst insurance company to work with for roofing contractors | Becca Switzer |#Shorts Roofing Insights Podcast ... Allstate: the worst insurance company to work with for roofing contractors | Becca Switzer |#Shorts Roofing Insights Podcast ... From the video description SHORTS SHORTS Now playing Caught on Camera: Roofing Contractor Commits Insurance Fraud 😡 Texas Roof Damage Texas Roof Damage • • 1.8M views 10 months ago Texas Roof Damage Texas Roof Damage This Is Why Your Insurance Rates Keep Going Up... We caught a so-called “ roofer ” on camera faking hail damage by denting a ... This Is Why Your Insurance Rates Keep Going Up... We caught a so-called “ roofer ” on camera faking hail damage by denting a ... From the video description 4K SHORTS SHORTS Now playing Disruptive Branding for Roofing Companies. W/ Dan Antonelli of @KickChargeCreative #roofingcompany Hook Agency Hook Agency • • 297 views 3 years ago Hook Agency Hook Agency SHORTS SHORTS Now playing Magnetic boots from Cougar Paws. #roof #roofer #roofing #roofershelper #metalroofing #shorts The Roofer's Helper The Roofer's Helper • • 206M views 3 years ago The Roofer's Helper The Roofer's Helper The Roofer's Helper is a media company that provides roofing and business resources for contractors and homeowners, and also ... The Roofer's Helper is a media company that provides roofing and business resources for contractors and homeowners, and also ... From the video description SHORTS SHORTS Now playing Customer Service for Contractors #contractors #roofing #shorts Contractor Dynamics Contractor Dynamics • • 584 views 2 years ago Contractor Dynamics Contractor Dynamics 4:23 4:23 Now playing Everee Review: Newest and Cheapest payroll for Roofing/Construction business! Roofing Insights Roofing Insights • • 1.9K views 4 years ago Roofing Insights Roofing Insights https://www.everee.com/ is the newest and cheapest solution for payroll! We are not sponsored or affiliated but trying it ourselves. https://www.everee.com/ is the newest and cheapest solution for payroll! We are not sponsored or affiliated but trying it ourselves. From the video description CC Shorts Read Our Reviews 383 views New Roofing Contractor Performing Maintenance #diy 25K views Don’t get blamed!!! #diy #contractor #buildingcontractor #construction #roofing #tips 14K views ROOFING CONTRACTOR FRANKLIN 1.9K views Navigating Roof Repair Claims: Contractor vs. Insurance Company Disputes Explained 515 views Show more Show less Shorts Navigating Roof Repair Claims: Contractor vs. Insurance Company Disputes Explained 515 views You will always work MORE as a business owner #roofing #contractors #entrepreneurs #businessowner 977 views Essential Roof Estimating Tools for Roofing Contractors - Part 17 1K views Terrible Roof Repairs from Roofing Contractors vs the best solution (Kody) 2.5K views Best Roofing Contractors in South Florida - Perfect Roofing of Florida 10K views Show more Show less Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:01:08.335Z",
+      "data": {
+        "query": "site:nextdoor.com Dynamis Roofing Contractors Plano",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/dynamic-roofing-general-contractor-llc/",
+            "title": "Dynamic Roofing General Contractor LLC - Plano, TX - Nextdoor",
+            "snippet": "Dynamic Roofing General Contractor LLC in Plano, TX. Connect with ... Dynamic Roofing General Contractor LLC. 6829 K Ave. Plano. TX. 75074. US. 33.067455.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:02:31.928Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Dynamis Roofing Contractors\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:02:30.731Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Dynamis Roofing Contractors\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:02:34.269Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Dynamis Roofing Contractors\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:01:22.177Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Dynamis%20Roofing%20Contractors&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:01:26.123Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:01:32.185Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:02:29.437Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Dynamis Roofing Contractors\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:01:39.826Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Dynamis Roofing Contractors",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Mar 22, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/global/files/Google%20Motion%20to%20Dismiss.pdf",
+            "title": "[PDF] Case 1:21-md-03010-PKC Document 264 Filed 03/22/22 Page 1 of 70",
+            "snippet": "Next, through a program called Dynamic Allocation, Google forced publishers to trade impressions in Google's exchange that would have otherwise ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:01:40.864Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not ...",
+            "position": 2
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "Franchise Search Results. 心. Franchise Tax Account Status. As of 09/13/2021 14:10:44 ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 3
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 5
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 6
+          },
+          {
+            "date": "Dec 15, 2020",
+            "link": "https://www.cftc.gov/sites/default/files/filings/documents/2021/orgsefaegisappexhibitg4210203.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 12/15/2020 15:55:26.",
+            "position": 7
+          },
+          {
+            "link": "https://www.uscis.gov/sites/default/files/err/B6%20-%20Skilled%20Workers%2C%20Professionals%2C%20and%20Other%20Workers/Decisions_Issued_in_2021/SEP082021_01B6203.pdf",
+            "title": "[PDF] U.S. Citizenship and Immigration Services",
+            "snippet": "\" Tex. Comptroller of Pub. Accounts, https://mycpa.cpa.state.tx.us/coa/coaSearchBtn (last visited Aug. 25, 2021). This indicates that the \"entity has ceased ...",
+            "position": 8
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://kyle.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=21312&ItemID=15123",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Franchise Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Franchise Tax Account Status. As of : 04/08/2021 09:27:58. This ...",
+            "position": 9
+          },
+          {
+            "date": "Apr 17, 2025",
+            "link": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91298389-OPP-1.pdf",
+            "title": "[PDF] Franchise Tax Account Status Search Results - TTABVue",
+            "snippet": "Franchise Tax Account Status Search Results.pdf(93501 bytes ). Signature ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. Page 12 ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:01:41.997Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Dynamis Roofing Contractors",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:01:43.100Z",
+      "data": {
+        "query": "site:dallascounty.org Dynamis Roofing Contractors civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:01:44.272Z",
+      "data": {
+        "query": "site:collincountytx.gov Dynamis Roofing Contractors",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250310_3065/57610_2412%20CC%20Service%20Windows%20%26%20Security%20Cams%20-%20Project%20Manualv2.pdf",
+            "title": "[PDF] SERVICE WINDOW & SECURITY MODIFICATIONS - Collin County",
+            "snippet": "National Roofing Contractors Association. NSF. National Sanitation Foundation. NSSEA. National School Supply and Equipment Association. NTMA. National Terrazzo ...",
+            "position": 1
+          },
+          {
+            "date": "Nov 11, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20211115_2703/33858_RTC%20Packet%2011-11-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, November 11 ...",
+            "snippet": "The RTC meeting on November 11, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 2
+          },
+          {
+            "date": "Nov 1, 2023",
+            "link": "https://eagenda.collincountytx.gov/docs/2024/CC/20240122_2910/55299_Addendum%20No.%206%20Packet.pdf",
+            "title": "[PDF] COLLIN COUNTY",
+            "snippet": "Contractors may get their equipment in and out of the secure area through the double gates at the NE corner. Asked: 11/15/2023 04:45 PM (CT).",
+            "position": 3
+          },
+          {
+            "date": "Aug 6, 2019",
+            "link": "https://eagenda.collincountytx.gov/docs/2019/CC/20190805_2361/46934_Bid%20Packet.pdf",
+            "title": "[PDF] Collin County Public Works HVAC Replacement",
+            "snippet": "SCOPE OF WORK INCLUDES the replacement of eight (8) existing split system HVAC units with new HVAC equipment compatible with the existing ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20Business.pdf",
+            "title": "[PDF] Sorted by Business - Collin County",
+            "snippet": "258861 Rigby's Roofing and Construction, LLC. (Choice Roofing Care). 25,000 David. Rigby. Owner. 8113 Elk Mountain Trl, McKinney, Texas 75070.",
+            "position": 5
+          },
+          {
+            "date": "Jan 14, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210125_2587/33858_RTC%20Packet%2001-14-2021.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCoG",
+            "snippet": "In 2018, the company Blue Star Recycling bought the property and started dumping hundreds of tons of roofing materials next door to Garcia's ...",
+            "position": 6
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250310_3065/57609_2411%20CCJC%20Jail%20Staff%20RR%20Shower%20Remodel%20-%20Project%20Manualv10%20%28002%29.pdf",
+            "title": "[PDF] COLLIN COUNTY JUSTICE CENTER",
+            "snippet": "Table of Contents. 4300 Community Avenue, McKinney, Texas. 00 01 10-1. 00 01 10. TABLE OF CONTENTS. INTRODUCTORY INFORMATION. 00 01 01 Title Page .",
+            "position": 7
+          },
+          {
+            "date": "Dec 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210816_2672/50383_RTC%20Packet%2008-12-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, August 12 ...",
+            "snippet": "The RTC meeting on August 12, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 8
+          },
+          {
+            "date": "Nov 6, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201116_2558/48414_2020%2011%2006%20Small%20Busines%20Grant%20Invoice%20%237%20Approved%20for%20Payment%20with%20Business%20Details.pdf",
+            "title": "[PDF] Collin CARES Small Business Grant Program Invoice # 7 ...",
+            "snippet": "(Raptor Roofing and Construction. 25000. -. 25000 Dan. Levin. President. 12782 Waltham Dr, Frisco, TX 75035-9037. General Contractor ...",
+            "position": 9
+          },
+          {
+            "date": "Oct 2, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/cc/20201214_2575/48414_2020%20small%20business%20invoice%20approved%20payments.pdf",
+            "title": "[PDF] 2020 10 02 Invoice data extracts.csv - Collin County",
+            "snippet": "Our main services provided are roofing, fencing, gutters, and interior remodels. #8. 258861 Rigby's Roofing and Construction,. LLC (Choice ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:01:45.488Z",
+      "data": {
+        "query": "site:dentoncounty.gov Dynamis Roofing Contractors",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/Archive.aspx?ADID=629",
+            "title": "[PDF] Retrospect - Denton County",
+            "snippet": "In a letter to the Denton Record and Chronicle on August 18, 1910, Donahower states that Frank. Craft, who built many of Denton's fine old homes, was contractor.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:01:50.038Z",
+      "data": {
+        "name": "Dynamis Roofing Contractors",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(469) 929-0145",
+        "rating": "Not Rated",
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/plano/profile/roofing-contractors/dynamis-roofing-contractors-0875-91304199",
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:01:54.953Z",
+      "data": {
+        "cid": "10882420076788593681",
+        "name": "Dynamis Roofing Contractors",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "5830 Granite Pkwy suite 100 369, Plano, TX 75024",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 12,
+          "actual_reviews": 8,
+          "target_reviews": 100
+        },
+        "reviews": [
+          {
+            "date": "4 months ago",
+            "text": "Brad from Dynamis Roofing delivers even more than he promises! It’s a great approach considering moving factors of any project. With my complicated roof replacement situation under time pressure I’ve got a lot of good information from Brad and a reasonable plan how to achieve the best possible results. Adding smaller other jobs brought a complete solution to what was required. Well organized, managed on every step project was completed perfectly well and very quickly, plus checked for quality - no issues, the roof looks great. I appreciate expertise and diligent work, demonstrated by Brad and the crew. It’s also worth mentioning  that all precautions were taken to prevent any accidental damage, protect my flowerbeds and the pool. I can’t thank Brad enough and totally confident that he will do a great job with any service he provides!",
+            "author": "Viktoriya Bushkova",
+            "rating": 5
+          },
+          {
+            "date": "7 months ago",
+            "text": "Brad with Dynamis Roofing Contractors and his team were professional, knowledgeable, punctual, and efficient.  He was there from the beginning to end, even when the inspector came out.  His roofers and gutter guys did an excellent job.  We had other repairs to the house that were taking care of by another team of his that did a wonderful job as well.  Everyone was pleasant and addressed any questions I had throughout the whole process.  I would recommend Brad and his company, Dynamis Roofing Contractors to anyone.",
+            "author": "Kathy Anderson",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Recently Dynamis fixed my flat roof, and I couldn't be happier with the results. From start to finish, their professionalism and attention to detail were outstanding. They provided a thorough inspection and explained all my options clearly.\n\nThe roofing team was punctual, efficient, and maintained a clean work site throughout the project. The quality of their work is top-notch; my new roof looks fantastic and has already weathered heavy raining without any issues.\n\nOverall, I highly recommend this responsible roofer in the Dallas area. They deliver exceptional craftsmanship, reliability, and eco-consciousness – a five-star experience all around!",
+            "author": "Katrina Tang",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "We recently worked with Brad and his company Dynamis Roofing to make some repairs to our home after some spring hail storms here in Little Elm. They replaced the roof, gutters, garage door, window screens, power washed and stained our fence and patio. Brad was such a pleasure to deal with. He was very professional and dealt with the insurance company to ensure everything was covered. His guys did excellent work and left our property clean and neat. I am a very picky person and like attention to detail. The quality of their work was great. It’s hard to find people now days that show up on time and do what they say they will. If you need a roof replaced don’t hesitate to give Dynamis Roofing a shout, and give Brad an opportunity to earn your business.",
+            "author": "jeff lassiter",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Had a great experience with Dynamis Roofing Contractors from their professionalism and their good work. He made everything so easy and stress  free.  Dynamic Roofing and there crew did a fabulous job from  finished my roof in one day to cleaned my yard and it looks GREAT!!!",
+            "author": "Jerry Ballard",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "Dynamis did an exceptional job with replacing my roof and gutters, and repairing other damage caused by a hailstorm. Brad also helped with the insurance claim, negotiating on my behalf. The work was done on-time, on budget and at a very high quality. I would highly recommend Dynamis Roofing to any homeowner who wants the job done right the first time.",
+            "author": "Elaine Wells",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I called Brad after the severe storm to inspect our roof and give us an estimate. It was such a fantastic experience working with him! He was right on time, not a minute late, just as we had discussed. He even gave me a heads up that he was on his way. In addition to the roof inspection, he provided some helpful general recommendations on what might need attention soon and reassured us that he wasn't trying to scam us.\n\nI absolutely highly recommend Brad and his company!",
+            "author": "Igor Novik",
+            "rating": 5
+          },
+          {
+            "date": "2 years ago",
+            "text": "This is our second time working with Brad and he always exceeds our expectations with his delivery.\n\nWe recently had to replace one of our rooftop vents and when I asked if Brad was able to fix this, he was able to quickly give us a quote and schedule us on next availability. He made sure we got our vent replaced before any rain was slated on the forecast.\n\nWe even asked around other roofers in the area and they were quoting us unrealistic prices compared to what Brad was quoting us. His estimate was honest and straightforward which I really appreciate.\n\nThe quality of his work is impeccable and we appreciate all that he has done for our roof. We will definitely be using his services again and will be relaying his business to our friends/family since he is one of the best roofers we've worked with in DFW.\n\nAlso he sends you photos of the work which is super appreciated!\n\n100% highly recommend.",
+            "author": "Kristi Muse",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "NEGATIVE_SIGNAL_FOUND",
+          "signals": [
+            "ALL_PERFECT_SCORES",
+            "NEGATIVE_SIGNAL_FOUND"
+          ],
+          "escalate": true,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 20,
+        "review_source": "tiered_validated",
+        "serpapi_error": null,
+        "search_variant": "new",
+        "collection_cost": 0.182,
+        "location_source": "direct",
+        "location_searched": "Plano, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:02:17.070Z",
+      "data": {
+        "name": "Dynamis Roofing Contractors",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 929-0145",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "5830 Granite Pkwy suite 100 369, Plano, TX 75024",
+        "reviews": [],
+        "website": "https://dynamisroofing.com/",
+        "maps_url": "https://www.google.com/maps/search/Dynamis%20Roofing%20Contractors%20Plano%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:02:17.077Z",
+      "data": {
+        "name": "Dynamis Roofing Contractors",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 929-0145",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "5830 Granite Pkwy suite 100 369, Plano, TX 75024",
+        "reviews": [],
+        "website": "https://dynamisroofing.com/",
+        "maps_url": "https://www.google.com/maps/search/Dynamis%20Roofing%20Contractors%20Plano%2C%20TX",
+        "categories": [
+          "Roofing contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:02:18.785Z",
+      "data": {
+        "email": "info@dynamisroofing.com",
+        "error": null,
+        "source": "contact_page"
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-15T15:02:35.267Z",
+      "data": {
+        "found": true,
+        "query": "\"Dynamis Roofing Contractors\" Plano lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://roofmyspace.com/company/dynamis-roofing-contractors/tx-plano",
+            "title": "Dynamis Roofing Contractors Reviews | Roofmyspace",
+            "snippet": "Discover trusted feedback for Dynamis Roofing Contractors in Plano, TX on Roofmyspace. Read reviews, explore services, and hire with confidence today."
+          },
+          {
+            "link": "https://www.facebook.com/groups/1494427604106723/posts/3510935652455898/",
+            "title": "I need a roofer in Allen TX Text me 214-463-3436 - Facebook",
+            "snippet": "We own Dynamis Roofing based in Plano, but work in all areas of DFW! Brad Moore Dynamis Roofing Contractors. No photo description available ..."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-15T15:02:53.284Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T15:02:33Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Dynamis%20Roofing%20Contractors%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=CeCRaajpDrPrptQPwIasoQE\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-15T15:02:43Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Dynamis%20Roofing%20Contractors%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=E-CRabbjEcqrw8cPhvyG8Ao\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Dynamis Roofing Contractors",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

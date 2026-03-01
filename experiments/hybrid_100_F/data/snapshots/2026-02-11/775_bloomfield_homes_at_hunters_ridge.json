@@ -1,0 +1,730 @@
+{
+  "contractor_id": 775,
+  "business_name": "Bloomfield Homes at Hunters Ridge",
+  "city": "Crowley",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-11T03:27:38.298Z",
+  "sources": {
+    "website": {
+      "status": "error",
+      "fetched_at": "2026-01-31T10:55:12.281Z",
+      "data": null
+    },
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:53:26.203Z",
+      "data": {
+        "query": "site:yelp.com \"Bloomfield Homes at Hunters Ridge\" \"Crowley, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "angi": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:55:51.119Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_angi",
+        "review_count": null
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:55:51.826Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:55:52.623Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "bloomfieldhomes.com",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:55:18.042Z",
+      "data": {
+        "cid": "16158217642942307620",
+        "name": "Bloomfield Homes at Hunters Ridge",
+        "found": true,
+        "rating": 4.4,
+        "source": "serper",
+        "address": "1005 Norcross Ct, Crowley, TX 76036",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "a month ago",
+            "text": "Purchased a new home, closed 12/5/25. So far, few issues: gouge in the door, unpainted areas, doorbell chime not working.\n\nHowever, we brought over our fridge from our former residence. When plugged in, it tripped the GFCI outlet next to the Fridge. Chris (Construction Site Manager or somesuch) had someone out the next morning to fix the outlet. Unfortunately, we are still out $250 in cold and frozen foods and Jack's (Community Manager) response was \"Like all warranties, there is no compensation [for] consequential damages.\"\n\nSo! When you move in, before you bring over perishable foods, make sure the outlets work! They don't care about you once you sign on the dotted line beyond contractual obligations (warranty work).",
+            "author": "Shawn Abraham",
+            "rating": 3
+          },
+          {
+            "date": "Edited 2 years ago",
+            "text": "Jack Community manager and Chris the Construction manager are the best ever work with. They are very respectful, Attentive and listen to you. They will go extra lengths to get the work done. Communication and updates during construction was great.",
+            "author": "Michael",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Poor customer service by community manager Jack and the community has a major field mice infestation that finds there way into your atric due to gaps along the roof line. I would not recommend and i live here.",
+            "author": "courtney roberts",
+            "rating": 1
+          },
+          {
+            "date": "3 months ago",
+            "text": "It was nerves that got the best of me but it was a good build.",
+            "author": "Linda Nathan",
+            "rating": 4
+          },
+          {
+            "date": "2 years ago",
+            "text": "Jack and this team where a great help in finding my home. Jack was very knowledgeable and still help with questions I may have. All around solid team",
+            "author": "Quincy Bowser",
+            "rating": 5
+          },
+          {
+            "date": "3 years ago",
+            "text": "Beautiful homes and awesome staff. Courteous, respectful and attentive to my ideas and questions.",
+            "author": "Patrick Dudley",
+            "rating": 5
+          },
+          {
+            "date": "9 months ago",
+            "text": "Beautiful home",
+            "author": "Nathaniel Banks",
+            "rating": 5
+          },
+          {
+            "date": "10 months ago",
+            "text": "",
+            "author": "mannmcclinton93",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "POLARIZED_RATINGS"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 11,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "default",
+        "location_searched": "Dallas, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:54:03.670Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:54:07.098Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:54:09.585Z",
+      "data": {
+        "query": "Bloomfield Homes at Hunters Ridge Crowley site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 10, 2012",
+            "link": "https://www.dallasnews.com/high-school-sports/2012/05/11/uil-track-state-championship-results-find-out-which-teams-and-individuals-brought-home-titles/",
+            "title": "UIL track state championship results: Find out which teams ...",
+            "snippet": "UIL track state championship results: Find out which teams and individuals brought home titles.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:55:55.042Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Bloomfield Homes at Hunters Ridge\" Crowley",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:54:20.562Z",
+      "data": "Bloomfield Homes at Hunters Ridge Crowley review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters 5:26 5:26 Now playing Dewberry Plan By Bloomfield Homes in Hunters Ridge in Crowley, TX | Crowley ISD New Homes Sale Nitin Gupta, REALTOR® - Dallas Relocation Expert Nitin Gupta, REALTOR® - Dallas Relocation Expert • • 186 views 3 years ago Nitin Gupta, REALTOR® - Dallas Relocation Expert Nitin Gupta, REALTOR® - Dallas Relocation Expert Dewberry Plan By Bloomfield Homes in Hunters Ridge in Crowley , TX | Crowley ISD New Homes Sale Call Nitin at 469-269-6541 ... Dewberry Plan By Bloomfield Homes in Hunters Ridge in Crowley , TX | Crowley ISD New Homes Sale Call Nitin at 469-269-6541 ... From the video description 4:05 4:05 Now playing Hawthorne Plan By Bloomfield Homes in Hunters Ridge in Crowley, TX | Crowley ISD New Homes Sale Nitin Gupta, REALTOR® - Dallas Relocation Expert Nitin Gupta, REALTOR® - Dallas Relocation Expert • • 100 views 3 years ago Nitin Gupta, REALTOR® - Dallas Relocation Expert Nitin Gupta, REALTOR® - Dallas Relocation Expert Hawthorne Plan By Bloomfield Homes in Hunters Ridge in Crowley , TX | Crowley ISD New Homes Sale BUYER INCENTIVES ... Hawthorne Plan By Bloomfield Homes in Hunters Ridge in Crowley , TX | Crowley ISD New Homes Sale BUYER INCENTIVES ... From the video description 7:12 7:12 Now playing Bloomfield Homes - Hunters Ridge Sub Cypress Plan (Model) Crowley, TX CVG CVG • • 721 views 2 years ago CVG CVG Price Range HIgh 300s - Low 500s Sale Rep Jack Huynh ph: (682) 445-2968 Website: ... Price Range HIgh 300s - Low 500s Sale Rep Jack Huynh ph: (682) 445-2968 Website: ... From the video description Top-tier quality, modern design. Shop the Hansø Pro+ Kit today. Top-tier quality without the top-tier price. Upgrade your backyard. Sponsored Hansø Home Watch Visit site 1:50 1:50 Now playing Hunters Ridge | Crowley, TX | New Homes in DFW | Bloomfield Homes Bloomfield Homes Bloomfield Homes • • 251 views 11 months ago Bloomfield Homes Bloomfield Homes Introducing Hunters Ridge , our newest master-planned community in Crowley , TX! Located south of Downtown Fort Worth, ... Introducing Hunters Ridge , our newest master-planned community in Crowley , TX! Located south of Downtown Fort Worth, ... From the video description Shorts $30k towards upgrades and closing cost! Bloomfield Homes Crowley Tx 143 views Your Dream Home in Crowley, TX with Bloomfield Homes' Carolina IV - Up to $70k in Incentives! #texas 275 views 1128 Birchwood Dr | Crowley TX 873 views UP TO $70K TOWARDS CLOSING COSTS❗️BLOOMFIELD HOMES❗️CAROLINA 4❗️CROWLEY, TX #texasrealestate #fyp 382 views Highland Homes - Karis homes in Crowley, Tx - Starting at 383k+ #realestate #crowley #texas 467 views Show more Show less Profitable advertising made simple: Unlock your next phase of growth with Axon by AppLovin Reach 1B+ daily mobile users with smarter, automated ad delivery built for growth. Sponsored Axon by AppLovin Watch Learn more 4:18 4:18 Now playing Carolina Plan By Bloomfield Homes in Hunters Ridge in Crowley, TX | Crowley ISD New Homes Sale Nitin Gupta, REALTOR® - Dallas Relocation Expert Nitin Gupta, REALTOR® - Dallas Relocation Expert • • 121 views 3 years ago Nitin Gupta, REALTOR® - Dallas Relocation Expert Nitin Gupta, REALTOR® - Dallas Relocation Expert Carolina Plan By Bloomfield Homes in Hunters Ridge in Crowley , TX | Crowley ISD New Homes Sale BUYER INCENTIVES ... Carolina Plan By Bloomfield Homes in Hunters Ridge in Crowley , TX | Crowley ISD New Homes Sale BUYER INCENTIVES ... From the video description 4:31 4:31 Now playing Magnolia Plan By Bloomfield Homes in Hunters Ridge in Crowley, TX | Crowley ISD New Homes Sale Nitin Gupta, REALTOR® - Dallas Relocation Expert Nitin Gupta, REALTOR® - Dallas Relocation Expert • • 223 views 3 years ago Nitin Gupta, REALTOR® - Dallas Relocation Expert Nitin Gupta, REALTOR® - Dallas Relocation Expert Magnolia Plan By Bloomfield Homes in Hunters Ridge in Crowley , TX | Crowley ISD New Homes Sale Call Nitin at 469-269-6541 ... Magnolia Plan By Bloomfield Homes in Hunters Ridge in Crowley , TX | Crowley ISD New Homes Sale Call Nitin at 469-269-6541 ... From the video description 5:49 5:49 Now playing M/I Home Pizarro Floor Plan - Hunters Ridge Sub, Crowley, TX CVG CVG • • 566 views 2 years ago CVG CVG Price ranges from high 300s-low 500s Sales Rep Rich PH: (817) 915 - 0455 Email: rgonzalez@mihomes.com Website ... Price ranges from high 300s-low 500s Sales Rep Rich PH: (817) 915 - 0455 Email: rgonzalez@mihomes.com Website ... From the video description Bloomfield Homes Bloomfield Homes @bloomfieldhomes • 1.26K subscribers Bloomfield Homes is known for innovative designs, strong architectural appeal and “all included” standard features. Bloomfield ... Subscribe 0:53 0:53 Now playing Hunters Ridge in Crowley, TX Landsea Homes DFW Landsea Homes DFW • • 244 views 2 years ago Landsea Homes DFW Landsea Homes DFW Details and more: ... Details and more: ... From the video description 4K 0:31 Longhorn Nissan | Your Stinky Credit Experts At Longhorn Nissan, You Always Get Oil Changes For Life Sponsored Longhorn Nissan People also watched 10:34 10:34 Now playing I Found 5 Texas Farmhouses With MASSIVE Price Drops Up to $39K Off! Farmhouse Finder Farmhouse Finder • • 198 views 2 weeks ago Farmhouse Finder Farmhouse Finder 5 Affordable Texas Farmhouses For Sale in 2026 | Prices Starting at $54000 Looking for affordable country living in Texas? 5 Affordable Texas Farmhouses For Sale in 2026 | Prices Starting at $54000 Looking for affordable country living in Texas? From the video description 4K 24:13 24:13 Now playing NEVER Buy a Home From These Builders Jackie Baker Jackie Baker • • 468K views 9 months ago Jackie Baker Jackie Baker I am seeing a little too frequently these headlines about homeowners having major problems with their brand new homes built by ... I am seeing a little too frequently these headlines about homeowners having major problems with their brand new homes built by ... From the video description Summary This video examines troubling news stories about major home builders. Jackie Baker shares real-life examples of homeowners facing significant problems with new construction. The presenter offers advice on protecting yourself when buying a new home. AI-generated video summary Quality and accuracy may vary. Summary This video examines troubling news stories about major home builders. Jackie Baker shares real-life examples of homeowners facing significant problems with new construction. The presenter offers advice on protecting yourself when buying a new home. 14:50 14:50 Now playing Bloomfield Homes | Model Home Tour | 2800+ Sq Ft | 4 Bed & 3 Bath | Triple Diamond Ranch Dallas Suburbs Living | Lisa Woulard Dallas Suburbs Living | Lisa Woulard • • 3K views 11 months ago Dallas Suburbs Living | Lisa Woulard Dallas Suburbs Living | Lisa Woulard Schedule a call with Lisa ↓ https://calendly.com/homeapproval/strategysession Call/Text ↓ https://poplme.co/lisawoulard ... Schedule a call with Lisa ↓ https://calendly.com/homeapproval/strategysession Call/Text ↓ https://poplme.co/lisawoulard ... From the video description 8:54 8:54 Now playing The Jasmine by Bloomfield Homes in Red Oak, tx / The Oaks community BoxHead 5760 BoxHead 5760 • • 994 views 8 months ago BoxHead 5760 BoxHead 5760 Jasmine Floor Plan 2098 Square Feet 3 Bedrooms 2 Bathrooms 2 Car Garage. Jasmine Floor Plan 2098 Square Feet 3 Bedrooms 2 Bathrooms 2 Car Garage. From the video description + 6 more 15:46 15:46 Now playing Here's What They're Not Telling You About Bloomfield Homes Home in Dallas Texas Home in Dallas Texas • • 12K views 1 year ago Home in Dallas Texas Home in Dallas Texas In this video it's time for an in-depth review of the very exposed Bloomfield homes . With nearly twice as many homes for sale as ... In this video it's time for an in-depth review of the very exposed Bloomfield homes . With nearly twice as many homes for sale as ... From the video description 4K 6:20 6:20 Now playing M/I Home Esparanza Floor Plan - Hunter Ridge Sub, Crowley, TX CVG CVG • • 487 views 2 years ago CVG CVG Price ranges from high 300s-low 500s Sales Rep Rich PH: (817) 915 - 0455 Email: rgonzalez@mihomes.com Website ... Price ranges from high 300s-low 500s Sales Rep Rich PH: (817) 915 - 0455 Email: rgonzalez@mihomes.com Website ... From the video description 7:07 7:07 Now playing Meet the BIGGEST Home Builders in Dallas | Bloomfield Homes Exposed! DFW Family Home Guide DFW Family Home Guide • • 790 views 1 year ago DFW Family Home Guide DFW Family Home Guide We continue with our series on the BIGGEST Home Builders in Dallas and in this video we focus on Bloomfield Homes . We continue with our series on the BIGGEST Home Builders in Dallas and in this video we focus on Bloomfield Homes . From the video description 4K 5:42 5:42 Now playing NEW CONSTRUCTION 🚧 BLOOMFIELD HOMES, CROWLEY, TX - CAROLINA 4 #texasrealestate Dave Gates Dave Gates • • 302 views 2 years ago Dave Gates Dave Gates Welcome to Bloomfield Homes , where luxury meets affordability! Introducing the Carolina IV, a stunning 2-story home that boasts ... Welcome to Bloomfield Homes , where luxury meets affordability! Introducing the Carolina IV, a stunning 2-story home that boasts ... From the video description 4K 1:49 1:49 Now playing Hunter's Ridge Community Landsea Homes DFW Landsea Homes DFW • • 116 views 3 years ago Landsea Homes DFW Landsea Homes DFW Find out more: https://bit.ly/3J5y9It Welcome to Hunters Ridge , located in Crowley , Texas. Living in Crowley offers residents a ... Find out more: https://bit.ly/3J5y9It Welcome to Hunters Ridge , located in Crowley , Texas. Living in Crowley offers residents a ... From the video description 11:34 11:34 Now playing New Construction Homes in Crowley Texas | Bloomfield Homes Hot New Homes Hot New Homes • • 985 views 1 year ago Hot New Homes Hot New Homes New Construction Homes in Fort Worth Texas | Bloomfield Homes #bloomfieldhomes #newconstructionhomestx ... New Construction Homes in Fort Worth Texas | Bloomfield Homes #bloomfieldhomes #newconstructionhomestx ... From the video description 12:07 12:07 Now playing Homes For $350K In CROWLEY TEXAS: Landsea Homes At HUNTERS RIDGE | Crowley Texas Real Estate Exploring Texas Real Estate Exploring Texas Real Estate • • 345 views 1 year ago Exploring Texas Real Estate Exploring Texas Real Estate Are you thinking about moving to Crowley Texas? Let's explore homes for $350000 at Hunters Ridge in Crowley Texas by ... Are you thinking about moving to Crowley Texas? Let's explore homes for $350000 at Hunters Ridge in Crowley Texas by ... From the video description 13 chapters Intro to Homes For $350K In Crowley Texas: Landsea Homes At Hunters Ridge | Intro Video Overview in Crowley TX | Conversation with James | Updates: Did Anything Change? | What Can You Expect in Hunters Ridge in Crowley TX? | Master-Planned Community Features in Crowley TX | What Sets Landsea Apart from Competitors in Crowley TX? | Mini Home Tour: Kitchen Highlights in Crowley TX | Mini Home Tour: Primary Bedroom in Crowley TX | Mini Home Tour: Primary Bathroom in Crowley TX | Full House Walkthrough in Crowley TX | Exploring Hunters Ridge Trail in Crowley TX | Wrap up to Homes For $350K In Crowley Texas: Landsea Homes At Hunters Ridge 13 chapters in this video 13 chapters Intro to Homes For $350K In Crowley Texas: Landsea Homes At Hunters Ridge Intro to Homes For $350K In Crowley Texas: Landsea Homes At Hunters Ridge 0:00 Intro to Homes For $350K In Crowley Texas: Landsea Homes At Hunters Ridge 0:00 Intro Video Overview in Crowley TX Intro Video Overview in Crowley TX 0:20 Intro Video Overview in Crowley TX 0:20 Conversation with James Conversation with James 0:37 Conversation with James 0:37 Updates: Did Anything Change? Updates: Did Anything Change? 1:50 Updates: Did Anything Change? 1:50 What Can You Expect in Hunters Ridge in Crowley TX? What Can You Expect in Hunters Ridge in Crowley TX? 2:44 What Can You Expect in Hunters Ridge in Crowley TX? 2:44 Master-Planned Community Features in Crowley TX Master-Planned Community Features in Crowley TX 3:33 Master-Planned Community Features in Crowley TX 3:33 What Sets Landsea Apart from Competitors in Crowley TX? What Sets Landsea Apart from Competitors in Crowley TX? 7:35 What Sets Landsea Apart from Competitors in Crowley TX? 7:35 3:55 3:55 Now playing Hunters Ridge | Crowley TX | Why buy new? Landsea Homes DFW Landsea Homes DFW • • 51K views 2 years ago Landsea Homes DFW Landsea Homes DFW Details and more: https://bit.ly/43KOlt3 Embark on a serene, small-town adventure at Hunters Ridge , nestled in the heart of ... Details and more: https://bit.ly/43KOlt3 Embark on a serene, small-town adventure at Hunters Ridge , nestled in the heart of ... From the video description 10:02 10:02 Now playing Bloomfield Homes, Cypress II House Tour, Crowley, TX TripleR TripleR • • 2.2K views 2 years ago TripleR TripleR 12:51 12:51 Now playing Bloomfield Homes in Desoto tx tour starting in the 400's BoxHead 5760 BoxHead 5760 • • 330 views 3 years ago BoxHead 5760 BoxHead 5760 4 bedroom 3 bathrooms 2 car garage 60 ft lot starting in the 400000.00's Edited by VideoGuru:https://videoguru.page.link/Best. 4 bedroom 3 bathrooms 2 car garage 60 ft lot starting in the 400000.00's Edited by VideoGuru:https://videoguru.page.link/Best. From the video description 5:57 5:57 Now playing Bloomfield Homes | TODDLER MODEL HOME TOUR 2022 | Mansfield, TX | Triple Diamond Ranch Toddler Model Home Tours Toddler Model Home Tours • • 474 views 3 years ago Toddler Model Home Tours Toddler Model Home Tours In this toddler model home tour, my toddler gives a tour of a $659K model home built by Bloomfield Homes in Mansfield, Texas in ... In this toddler model home tour, my toddler gives a tour of a $659K model home built by Bloomfield Homes in Mansfield, Texas in ... From the video description 6 moments Walk-in Pantry | Casual Dining | Laundry Room | Main Level #2 | Upper Level - #3 | Upper Level #4 6 auto-generated moments in this video 6 moments Walk-in Pantry Walk-in Pantry 1:23 Walk-in Pantry 1:23 Casual Dining Casual Dining 1:41 Casual Dining 1:41 Laundry Room Laundry Room 3:19 Laundry Room 3:19 Main Level #2 Main Level #2 3:26 Main Level #2 3:26 Upper Level - #3 Upper Level - #3 4:16 Upper Level - #3 4:16 Upper Level #4 Upper Level #4 4:38 Upper Level #4 4:38 Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:54:21.557Z",
+      "data": {
+        "query": "site:nextdoor.com Bloomfield Homes at Hunters Ridge Crowley",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:54:32.748Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Bloomfield%20Homes%20at%20Hunters%20Ridge&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Bloomfield% 20Homes% 20at% 20Hunters% 20Ridge&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Search Options. Cross Program. All Media Programs Facility Search · Analyze Trends · Track Performance · EPA/State Dashboards (Air, Wastewater, ...",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Bloomfield% 20Homes% 20at% 20Hunters% 20Ridge&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Bloomfield% 20Homes% 20at% 20Hunters% 20Ridge&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 4,
+            "attributes": {
+              "Missing": "Name&Name= Bloomfield% 20Homes% 20at% 20Hunters% 20Ridge&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:54:36.194Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:54:40.395Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "homeadvisor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:55:53.357Z",
+      "data": {
+        "found": false,
+        "query": "site:homeadvisor.com \"Bloomfield Homes at Hunters Ridge\"",
+        "source": "homeadvisor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "tx_ag_complaints": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:54:46.415Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Bloomfield Homes at Hunters Ridge",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:54:47.460Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 2
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 4
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 5
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 6
+          },
+          {
+            "date": "Jan 10, 2026",
+            "link": "https://www.facebook.com/groups/1494427604106723/posts/4294122614137194/",
+            "title": "Anyone looking to verify these fake LLC You can search on the ...",
+            "snippet": "Anyone looking to verify these fake LLC You can search on the Texas comptroller account page Type their LLC name correctly and you can see ...",
+            "position": 7
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 8
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 9
+          },
+          {
+            "link": "https://unitedwaydallas.org/wp-content/uploads/2024/04/Wright-Law-Confirmed.pdf",
+            "title": "[PDF] Wright-Law-Confirmed.pdf - United Way of Metropolitan Dallas",
+            "snippet": "Based in Dallas, Texas. Ability to travel extensively. Page 9. 2/26/24, 2:35 PM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:54:48.535Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Bloomfield Homes at Hunters Ridge",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:54:49.530Z",
+      "data": {
+        "query": "site:dallascounty.org Bloomfield Homes at Hunters Ridge civil",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:54:50.559Z",
+      "data": {
+        "query": "site:collincountytx.gov Bloomfield Homes at Hunters Ridge",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Apr 3, 2021",
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Melissa.pdf",
+            "title": "TRAILS MASTER PLAN APRIL 2021",
+            "snippet": "CITY TRAIL MASTER PLAN GOALS: 1. ENSURE THE TRAIL SYSTEM CONNECTS. ACROSS THE CITY. 2. PROVIDE DEVELOPERS GUIDANCE ON.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:54:51.674Z",
+      "data": {
+        "query": "site:dentoncounty.gov Bloomfield Homes at Hunters Ridge",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=380_50",
+            "title": "Dev Permit Report",
+            "snippet": "BLOOMFIELD HOMES, 1604 DOWNING DR, AZALEA VILLAGE AT SAVANNAH PHASE 11A BLK I LOT 22 (CO&SCH)(SEE 685876 FOR W17), HOUSE, 10/28/2016, 670583, FRAM, MECH & FINAL ...",
+            "position": 1
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=21_50",
+            "title": "Dev Permit Report",
+            "snippet": "Dev Permit Report ; 20231539, RYAN ROWE, BLOOMFIELD HOMES, 817 SEDONA ST, PALOMA CREEK SOUTH PHASE 11C BLK B LOT 17 ...",
+            "position": 2
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=361_50",
+            "title": "Dev Permit Report",
+            "snippet": "Dev Permit Report ; 20170495, MICHAEL DOUGAN, BLOOMFIELD HOMES, 1509 SILVER LN, CROSS OAK RANCH PHASE 3 TRACT 15 BLK 15C LOT 5 (CO&SCH)(SEE 697899 FOR W23) ...",
+            "position": 3
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=371_50",
+            "title": "Dev Permit Report",
+            "snippet": "Dev Permit Report ; 20163045, MICHAEL DOUGAN, BLOOMFIELD HOMES, 1500 STARR CT, CROSS OAKS RANCH PHASE 3 TRACT 5 BLK 15A LOT 9 ...",
+            "position": 4
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=369_50",
+            "title": "Dev Permit Report",
+            "snippet": "BLOOMFIELD HOMES, 1621 CLAYTON LANE, CROSS OAK RANCH PHASE 3 TRACT 15 BLK 15E LOT 3, HOUSE, 01/16/2017, 697860, ALL INSPECTIONS RECEIVED 6/1/17, Approved, 01/11 ...",
+            "position": 5
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=428_50",
+            "title": "Dev Permit Report",
+            "snippet": "BLOOMFIELD HOMES, 8220 BONANZA ST, CROSS OAK RANCH PHASE 3 TRACT 14 BLK 11J ... HORIZON HOMES, 1704 RIDGE CREEK LN, ARROW BROOKE PHASE 1B BLK I LOT 51 ...",
+            "position": 6
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:55:16.479Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "founding_date": null,
+        "complaint_count": null,
+        "accredited_since": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:55:45.262Z",
+      "data": {
+        "name": "Bloomfield Homes at Hunters Ridge",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 210-6431",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "open",
+        "address": "1005 Norcross Ct, Crowley, TX 76036",
+        "reviews": [],
+        "website": "https://www.bloomfieldhomes.com/new-homes/tx/crowley/hunters-ridge/",
+        "maps_url": "https://www.google.com/maps/search/Bloomfield%20Homes%20at%20Hunters%20Ridge%20Crowley%2C%20TX",
+        "categories": [
+          "Home builder"
+        ],
+        "review_count": null
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:55:45.268Z",
+      "data": {
+        "name": "Bloomfield Homes at Hunters Ridge",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(817) 210-6431",
+        "rating": 4.4,
+        "source": "google_maps",
+        "status": "open",
+        "address": "1005 Norcross Ct, Crowley, TX 76036",
+        "reviews": [],
+        "website": "https://www.bloomfieldhomes.com/new-homes/tx/crowley/hunters-ridge/",
+        "maps_url": "https://www.google.com/maps/search/Bloomfield%20Homes%20at%20Hunters%20Ridge%20Crowley%2C%20TX",
+        "categories": [
+          "Home builder"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "yelp_yahoo": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:55:50.306Z",
+      "data": {
+        "found": false,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": null,
+        "review_count": null
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:55:54.004Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Bloomfield Homes at Hunters Ridge\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:55:54.490Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Bloomfield Homes at Hunters Ridge\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:55:55.677Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Bloomfield Homes at Hunters Ridge\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:55:56.275Z",
+      "data": {
+        "found": true,
+        "query": "\"Bloomfield Homes at Hunters Ridge\" Crowley lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.cbapex.com/for-sale/1137-turtle-hill-lane-crowley-tx-76036/id_7014531",
+            "title": "1137 Turtle Hill Lane, Crowley, TX 76036 | MLS#: 21070177",
+            "snippet": "Visit Bloomfield Homes at Hunters Ridge and tour the Dewberry II todayyou won't want to leave! Details. MLS #, 21070177. Listing Type, For Sale. Style, House."
+          },
+          {
+            "link": "https://mgarner.cbapex.com/for-sale/1137-turtle-hill-lane-crowley-tx-76036/id_7014531",
+            "title": "1137 Turtle Hill Lane, Crowley, TX 76036 | MLS#: 21070177",
+            "snippet": "Visit Bloomfield Homes at Hunters Ridge and tour the Dewberry II todayyou won't want to leave! Details. MLS #, 21070177. Listing Type, For Sale. Style, House."
+          }
+        ],
+        "result_count": 2
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:56:13.848Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-31T10:55:59Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Bloomfield%20Homes%20at%20Hunters%20Ridge%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=vt99af36HbTBp84P5v6wmQU\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-31T10:56:08Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Bloomfield%20Homes%20at%20Hunters%20Ridge%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=yN99aY7FAcjt-LYPj5X68AU\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Bloomfield Homes at Hunters Ridge",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:57:43.974Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-31T10:57:43.981Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-01-31T10:57:59.184Z",
+      "data": {
+        "cost": 0.00051548,
+        "summary": "The Google reviews show signs of both authenticity and potential manipulation. The low volume is suspicious for a home builder. The 1-star and 3-star reviews are highly detailed and credible, citing specific managers, problems, and financial losses. The 5-star reviews are mostly vague and could be solicited. The overall story suggests a builder with real quality/customer service issues, possibly offset by a small number of generic positive reviews.",
+        "confidence": "MEDIUM",
+        "analyzed_at": "2026-01-31T10:57:59.183Z",
+        "fake_signals": [
+          "Very low review volume (11 total) for a home builder",
+          "Multiple 5-star reviews are extremely brief/vague ('Beautiful home', empty review)",
+          "5-star reviews lack specific project details; focus on staff personalities",
+          "Potential for review solicitation from staff/partners"
+        ],
+        "recommendation": "CAUTION_ADVISED",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 4.4,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Specific complaints with details (mice infestation due to roof gaps, $250 food loss, door gouge)",
+          "Mixed ratings present (5, 4, 1 stars)",
+          "Varied writing styles and specific names/dates mentioned in complaints",
+          "Owner responses (implied in review text) show a real business interaction"
+        ],
+        "fake_review_score": 40,
+        "complaint_patterns": [
+          "Poor customer service from specific manager (Jack)",
+          "Construction quality issues (gaps, mice, gouges, unpainted areas)",
+          "Unresponsive to compensation requests for damages"
+        ],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "Only one primary review source (Google) with a consistent rating. No other platforms have ratings to compare."
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-02-04T04:02:27.037Z",
+      "data": {
+        "summary": {
+          "by_type": {},
+          "active_liens": 0,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "dallas": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          }
+        },
+        "lien_score": {
+          "notes": [],
+          "score": 10,
+          "max_score": 10,
+          "risk_level": "NONE",
+          "active_liens": 0,
+          "human_summary": "CLEAN: No liens found for Bloomfield Homes at Hunters Ridge",
+          "liens_unclear": 0,
+          "liens_by_count": 0,
+          "resolved_liens": 0,
+          "liens_against_count": 0,
+          "liens_by_contractor": 0,
+          "total_against_amount": 0,
+          "liens_against_contractor": 0
+        },
+        "owner_name": null,
+        "search_term": "Bloomfield Homes at Hunters Ridge",
+        "searched_at": "2026-02-04T04:00:57.832333",
+        "total_records": 0
+      }
+    }
+  }
+}

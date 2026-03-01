@@ -1,0 +1,1563 @@
+{
+  "contractor_id": 8843,
+  "business_name": "Integrity Pools",
+  "city": "McKinney",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-14T18:35:55.147Z",
+  "sources": {
+    "county_liens": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:59:39.815Z",
+      "data": {
+        "summary": {
+          "by_type": {
+            "ABS_JUDG": 1,
+            "REL_LIEN": 1,
+            "MECH_LIEN": 10,
+            "STATE_TAX_LIEN": 1
+          },
+          "active_liens": 12,
+          "total_amount": 0
+        },
+        "counties": {
+          "collin": {
+            "count": 8,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "INTEGRITY CUSTOM HOMES",
+                "grantor": "RIVERBEND POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "RIVERBEND POOLS",
+                    "INTEGRITY CUSTOM HOMES",
+                    "LIEN",
+                    "9/20/2002",
+                    "20020920001352820",
+                    "LAND/5258/394",
+                    "Subdivision- Name: STARWOOD #4 VILLAGE 15 FRISCO N/11 Lot: 8 Block: C, Reference - N / 11"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2002-09-20",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20020920001352820"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "INTEGRITY POOLS",
+                "grantor": "BILL MICHAEL RAYMOND",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BILL MICHAEL RAYMOND",
+                    "INTEGRITY POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "12/26/2018",
+                    "20181226001557970",
+                    "--/--/--",
+                    "Subdivision- Name: MEADOW RIDGE #1 MCKINNEY G/445 Lot: 1 Block: H, Reference - G / 445"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2018-12-26",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20181226001557970"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "INTEGRITY POOLS",
+                "grantor": "SCUDDER JOSEPH EDWARD",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "SCUDDER JOSEPH EDWARD",
+                    "INTEGRITY POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "11/2/2020",
+                    "20201102001917080",
+                    "--/--/--",
+                    "Subdivision- Name: PRAIRIE CREEK ESTATES #3 PLANO-AKA - A-298 11/48 Lot: 10 Block: E, Reference - 11 / 48"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2020-11-02",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20201102001917080"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "INTEGRITY CUSTOM POOLS INC",
+                "grantor": "MEYER LAWRENCE P III",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MEYER LAWRENCE P III",
+                    "INTEGRITY CUSTOM POOLS INC",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "8/3/2023",
+                    "2023000088547",
+                    "--/--/--",
+                    "Subdivision- Name: ANNA CROSSING #5 Lot: 9 Block: 2, Reference - 2020 / 272"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2023-08-03",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2023000088547"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "INTEGRITY POOLS",
+                "grantor": "NAJARI ANTHONY ARASH",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "NAJARI ANTHONY ARASH",
+                    "INTEGRITY POOLS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "9/30/2016",
+                    "20160930001319250",
+                    "--/--/--",
+                    "Subdivision- Name: BRIARMEADE #1 PLANO - AKA B-91 12/158 Lot: 5 Block: C, Reference - 12 / 158"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2016-09-30",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20160930001319250"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "INTEGRITY POOLS",
+                "grantor": "PIHLSTROM JENNIFER",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "PIHLSTROM JENNIFER",
+                    "INTEGRITY POOLS",
+                    "LIEN",
+                    "3/31/2025",
+                    "2025000037388",
+                    "--/--/--",
+                    "Subdivision - Name: RANCH ESTATES PLANO Lot: 5 Block: A Reference - 6/48"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "LIEN"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2025-03-31",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "2025000037388"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "MC GEE POOLS INC",
+                "grantor": "INTEGRITY CREDIT CORP",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "INTEGRITY CREDIT CORP",
+                    "MC GEE POOLS INC",
+                    "ABSTRACT OF JUDGMENT",
+                    "1/19/1988",
+                    "19880119000024160",
+                    "AJ/36/99",
+                    "N/A"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "ABSTRACT OF JUDGMENT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "1988-01-19",
+                "document_type": "ABS_JUDG",
+                "recording_date": null,
+                "instrument_number": "19880119000024160"
+              },
+              {
+                "amount": null,
+                "county": "collin",
+                "grantee": "INTEGRITY MORTGAGE CORPORATION TEXAS",
+                "grantor": "MORROW BRYCE EDSEL",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "MORROW BRYCE EDSEL",
+                    "INTEGRITY MORTGAGE CORPORATION TEXAS",
+                    "MECHANICS LIEN & AFFIDAVIT",
+                    "11/8/2007",
+                    "20071108001524910",
+                    "--/--/--",
+                    "Subdivision- Name: DEERFIELD NORTH PHASE II Q/181 Lot: 7 Block: B, Reference - Q / 181"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "MECHANICS LIEN & AFFIDAVIT"
+                },
+                "source_url": "https://collin.tx.publicsearch.us/",
+                "filing_date": "2007-11-08",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "20071108001524910"
+              }
+            ]
+          },
+          "dallas": {
+            "count": 3,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "INTEGRITY POOLS",
+                "grantor": "BRANDLE TIMOTHY R",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "BRANDLE TIMOTHY R",
+                    "INTEGRITY POOLS",
+                    "MECHANICS LIEN",
+                    "2/16/2016",
+                    "201600040169",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: BRETTON WOODS Lot: 6 Block: K CBLK: 6041,, Reference - 8 / 279"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2016-02-16",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "201600040169"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "INTEGRITY POOLS",
+                "grantor": "WELLS JANETTA WEBB",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "WELLS JANETTA WEBB",
+                    "INTEGRITY POOLS",
+                    "MECHANICS LIEN",
+                    "7/15/2019",
+                    "201900182065",
+                    "--/--/--",
+                    "N/A",
+                    "Subdivision- Name: RICHARDSON HEIGHTS ESTATES FOURTH INSTALLMENT Lot: 18 Block: 121, Reference - 40 / 9"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2019-07-15",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "201900182065"
+              },
+              {
+                "amount": null,
+                "county": "dallas",
+                "grantee": "TEXAS STATE OF",
+                "grantor": "INTEGRITY CUSTOM POOLS INC",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "INTEGRITY CUSTOM POOLS INC",
+                    "TEXAS STATE OF",
+                    "STATE TAX LIEN",
+                    "12/2/2022",
+                    "202200307012",
+                    "--/--/--",
+                    "N/A",
+                    "N/A"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "STATE TAX LIEN"
+                },
+                "source_url": "https://dallas.tx.publicsearch.us/",
+                "filing_date": "2022-12-02",
+                "document_type": "STATE_TAX_LIEN",
+                "recording_date": null,
+                "instrument_number": "202200307012"
+              }
+            ]
+          },
+          "denton": {
+            "count": 0,
+            "status": "no_results",
+            "records": []
+          },
+          "tarrant": {
+            "count": 2,
+            "status": "success",
+            "records": [
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "BYRD STEPHEN W",
+                "grantor": "INTEGRITY POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "INTEGRITY POOLS",
+                    "BYRD STEPHEN W",
+                    "RELEASE",
+                    "8/22/2023",
+                    "D223150863",
+                    "OPR/--/--",
+                    "N/A"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "RELEASE"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-08-22",
+                "document_type": "REL_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223150863"
+              },
+              {
+                "amount": null,
+                "county": "tarrant",
+                "grantee": "INTEGRITY POOLS",
+                "grantor": "INTEGRITY POOLS",
+                "raw_data": {
+                  "cell_texts": [
+                    "",
+                    "",
+                    "",
+                    "INTEGRITY POOLS",
+                    "INTEGRITY POOLS",
+                    "MECHANICS LIEN",
+                    "7/24/2023",
+                    "D223130102",
+                    "OPR/--/--",
+                    "BEDFORD, Subdivision: BROOKWOOD HILLS, Lot: 13, Block: 10"
+                  ],
+                  "search_term": "Integrity Pools",
+                  "doc_type_raw": "MECHANICS LIEN"
+                },
+                "source_url": "https://tarrant.tx.publicsearch.us/",
+                "filing_date": "2023-07-24",
+                "document_type": "MECH_LIEN",
+                "recording_date": null,
+                "instrument_number": "D223130102"
+              }
+            ]
+          }
+        },
+        "lien_score": {
+          "notes": [
+            "1 lien(s) AGAINST contractor",
+            "8 lien(s) filed BY contractor (collecting payment - neutral)",
+            "3 lien(s) with unclear direction"
+          ],
+          "score": 7,
+          "max_score": 10,
+          "risk_level": "MODERATE",
+          "active_liens": 12,
+          "human_summary": "CAUTION: 1 lien(s) filed AGAINST Integrity Pools (potential payment issues)",
+          "liens_unclear": 3,
+          "liens_by_count": 8,
+          "resolved_liens": 0,
+          "liens_against_count": 1,
+          "liens_by_contractor": 8,
+          "total_against_amount": 0,
+          "liens_against_contractor": 1
+        },
+        "owner_name": null,
+        "search_term": "Integrity Pools",
+        "searched_at": "2026-02-14T06:58:29.456080",
+        "total_records": 13
+      }
+    },
+    "tx_franchise": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:59:40.283Z",
+      "data": {
+        "error": null,
+        "found": true,
+        "legal_name": "INTEGRITY POOLS INC",
+        "taxpayer_number": "32003119057"
+      }
+    },
+    "open_corporates": {
+      "status": "error",
+      "fetched_at": "2026-02-14T06:59:40.285Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:59:50.384Z",
+      "data": {
+        "cost": 0.00081592,
+        "summary": "Reviews appear largely authentic with strong evidence of specific, detailed customer experiences. The Google sample shows genuine praise for named employees and specific services. The Yelp discrepancy warrants caution but may reflect platform bias or different service types (e.g., sales calls vs. construction). No major red flags like ghosting or deposit issues found in provided data. High Angi review count (909) supports legitimacy.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-02-14T06:59:50.384Z",
+        "fake_signals": [
+          "Limited Google review sample (8) may not be representative",
+          "No negative reviews in provided Google sample"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "review_quality": {
+          "reason": "REVIEW_QUALITY_ENABLED=false",
+          "skipped": true
+        },
+        "platform_ratings": {
+          "bbb": "A+",
+          "yelp": 3.2,
+          "google": 5,
+          "glassdoor": null
+        },
+        "warranty_signals": {
+          "mentions": [
+            "maintenance plan",
+            "repairs",
+            "fix"
+          ],
+          "confidence": "MEDIUM",
+          "follow_through": "POSITIVE",
+          "negative_evidence": [],
+          "positive_evidence": [
+            "Chris fixed a pool light issue at minimal/no expected cost",
+            "Technicians provide follow-up reports and maintenance recommendations"
+          ]
+        },
+        "authentic_signals": [
+          "Specific employee names (Moy, Chris V, Miles, Luis)",
+          "Detailed project descriptions (remodels, equipment upgrades, maintenance)",
+          "Varied writing styles and specific outcomes",
+          "Emotional authenticity in praise (e.g., 'hero', 'man of great character')",
+          "High volume on Angi (909 reviews) suggests established business"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [
+          "Potential pricing or service issues (inferred from Yelp rating)"
+        ],
+        "discrepancy_detected": true,
+        "discrepancy_explanation": "Significant discrepancy between Google (5.0) and Yelp (3.2) ratings. Google reviews are overwhelmingly positive with specific details, while Yelp's lower rating suggests a different customer segment or platform-specific issues. BBB A+ rating indicates good complaint handling."
+      }
+    },
+    "website": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:27.934Z",
+      "data": "Pool Builder McKinney TX: Custom Pools for Every Home Contact Us Join The Team Pro Tips Service Areas Contact Us Join The Team Pro Tips Service Areas Services Remodel Your Pool Build a New Pool Pool Cleaning Service Leak Detection Pool Equipment Repair Pool Filter Cleaning Financing Gallery About About Us Reviews Showroom Employee Spolight Services Remodel Your Pool Build a New Pool Pool Cleaning Service Leak Detection Pool Equipment Repair Pool Filter Cleaning Financing Gallery About About Us Reviews Showroom Employee Spolight 469-396-0108 REQUEST ESTIMATE --> Custom Pool Builder Company McKinney TX At Integrity Pools, we specialize in transforming backyards into custom oases. We enjoy creating the perfect pool where families and friends can relax, splash, and make memories. Whether you’re building a new pool or remodeling, we have the skills to make your vision a reality. Contact Us Request a Free Estimate Today Experienced Pool Builders Integrity Pools is a trusted pool company with years of experience serving McKinney and the surrounding area. With a long history in the pool industry, we are recognized as one of the leading McKinney pool builders for residential and commercial projects. Our construction services extend throughout Collin County and the DFW area, providing swimming pool construction, pool repairs, pool remodeling, and pool maintenance. Get Started Custom Swimming Pool Design and Installation Your backyard pool should reflect how you live and how you use your outdoor space, whether you are designing something entirely new or tailoring a pool to make it your own. Integrity Pools provides custom swimming pool design and pool installation for homeowners looking to create the perfect pool for their property. We design and build in-ground pools using a proven build process that balances custom design with long-term performance. Whether you prefer geometric pools with clean lines or freeform pools that blend naturally into outdoor environments, our team manages the construction process with care and precision. Each project begins with an initial consultation where we discuss your goals, budget, and layout. From there, your project manager oversees every stage of construction services so your dream pool is completed efficiently and to the highest standard. Get Started Pool Remodeling and Renovation If you have an existing pool that no longer fits your needs or style, Integrity Pools offers professional pool remodeling and pool renovation services in McKinney. Our team helps pool owners refresh their backyard pool without the need for full replacement. Pool remodels may include updating finishes, improving the pool shell, reconfiguring the layout, or adding new pool features that enhance comfort and usability. Many homeowners choose upgrades such as water features, a hot tub, fire pits, or outdoor kitchens to better support their outdoor living space. Call About Remodel Pool Service, Repairs, and Maintenance Integrity Pools provides reliable pool service for McKinney pool owners who want dependable support long after construction is complete. We help keep pools running safely and efficiently with professional pool repairs, routine maintenance, and equipment repair services. Weekly Pool Service Equipment Repairs Leak Detection Services Filter Cleaning Services Weekly Pool Service Owning a pool is a lot of work, but our weekly pool service takes care of that. We offer cleaning, chemical balancing, and equipment checks to keep your pool safe and ready for use. Learn More Equipment Repairs Your equipment is crucial for smooth operation. We repair pumps, heaters, and filtration systems, using high-quality parts to ensure lasting fixes. Learn More Leak Detection Services Pool leaks can cause serious damage. We can detect and repair leaks, preventing them from escalating into bigger issues. Learn More Filter Cleaning Services Over time, filters collect debris that can impact your pool’s water quality. Our filter cleaning process keeps your pool clean and running smoothly. Learn More Other Upgrades At Integrity Pools, we offer endless upgrades to elevate your outdoor living space and keep your pool in top shape. Family-Friendly Pool Design We specialize in creating pools that are safe, fun, and relaxing for families. Our custom designs ensure that your backyard becomes the perfect gathering spot for friends and family. Luxury Pool Features Take your pool to the next level with high-end upgrades like infinity edges, swim-up bars, and premium water features. We can make your dream of a luxurious, resort-style pool a reality. Pool Upgrades and Renovations If your current pool needs a facelift, we provide a variety of upgrade options, from resurfacing to adding modern water features or even converting to a saltwater system. Why Choose Integrity Pools? Choosing the right pool contractors matters. Integrity Pools is known for exceptional service, quality craftsmanship, and a straightforward build process that keeps projects moving smoothly. We bring years of experience in the pool industry and take a hands-on approach to every project. Our team works closely with you throughout the build process, ensuring your goals are met and your outdoor space is built with care. Check out Testimonials Financing Available At Integrity Pools, we know that investing in a swimming pool is a major financial commitment. That’s why we’re dedicated to offering clear, personalized support every step of the way. Our knowledgeable team will collaborate with you to review all available financing solutions and guide you toward the best choice for your unique situation and objectives. Learn More Our Core Values We treat every customer like family, ensuring that they receive the best service possible. Love Demonstrated through our actions as we serve customers. Service Displayed through the character of our employees. Excellence Determined through the quality of our work. Serving McKinney and the Surrounding Area Integrity Pools proudly serves McKinney, Collin County, and nearby communities throughout the DFW area. As pool builders in McKinney homeowners trust, we provide swimming pool construction, pool remodeling, pool repairs, and ongoing service for residential and commercial pools. New Pools Pool Remodels Pool Service LEAK DETECTION EQUIPMENT REPAIRS FILTER CLEANING Call Us Today Ready to start your project or need repairs? Integrity Pools offers professional services to handle all your pool needs in McKinney TX. Contact our team today to learn how we can help bring your backyard dreams to life! Contact Us Our Associations 469-396-0108 7300 State HWY 121, Suite 3124, McKinney, Texas 75070 NAVIGATION About Us Services Financing Request Estimate About Us Services Financing Request Estimate COMPANY Contact Us Join The Team Pro Tips Service Areas Contact Us Join The Team Pro Tips Service Areas SERVICE AREA Dallas Fort Worth McKinney Plano Frisco Arlington Richardson Rockwall Southlake Flower Mound Dallas Fort Worth McKinney Plano Frisco Arlington Richardson Rockwall Southlake Flower Mound SOCIALS Facebook Houzz YouTube Texas Residential Appliance Installation Contractor’s License # TICL 489 Copyright © 2026 Integrity Pools. All Rights Reserved. Web Design by Red Spot Design [gravityform id=”1″ title=”false” ajax=”true”] By submitting this form, I agree to the Terms of Use and Privacy Policy, as well as to receive SMS and calls about my projects. X We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it. ACCEPT"
+    },
+    "yelp": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:55:44.749Z",
+      "data": {
+        "query": "site:yelp.com \"Integrity Pools\" \"McKinney, TX\"",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Builders&find_loc=McKinney%2C+TX",
+            "title": "TOP 10 BEST Pool Builders in McKinney, TX - Updated 2026 - Yelp",
+            "rating": 3.9,
+            "snippet": "... McKinney, TX: Riverbend Sandler Pools (147 reviews). Gold Medal Pools (119 reviews). Integrity Pools (108 reviews). Expert Pools (83 reviews). Venture Custom ...",
+            "position": 1,
+            "ratingCount": 1214
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Richardson%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Builders in Richardson, TX - Yelp",
+            "rating": 4.4,
+            "snippet": "... Integrity Pools I called to buy a new Motor for my Pump my motor was 8-9 ... McKinney, TX · Mesquite, TX · Plano, TX · Rockwall, TX · Rowlett, TX. Neighborhoods.",
+            "position": 2,
+            "ratingCount": 2775
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Resurfacing&find_loc=McKinney%2C+TX",
+            "title": "THE BEST 10 Pool Resurfacing in McKinney, TX - Yelp",
+            "rating": 4.1,
+            "snippet": "These are some businesses with a large number of reviews for pool & hot tub service in McKinney, TX: Riverbend Sandler Pools (148 reviews). Integrity Pools (108 ...",
+            "position": 3,
+            "ratingCount": 1068
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Remodel&find_loc=McKinney%2C+TX",
+            "title": "THE BEST 10 Pool Remodel in McKinney, TX - Updated 2026 - Yelp",
+            "rating": 4.4,
+            "snippet": "These are some businesses with a large number of reviews for pool & hot tub service in McKinney, TX: Riverbend Sandler Pools (148 reviews). Integrity Pools (108 ...",
+            "position": 4,
+            "ratingCount": 1049
+          },
+          {
+            "link": "https://www.yelp.com/search?cflt=poolcleaners&find_loc=McKinney%2C+TX",
+            "title": "THE BEST 10 Pool Cleaners in MCKINNEY, TX - Updated 2026 - Yelp",
+            "rating": 4.3,
+            "snippet": "These are some businesses with a large number of reviews for pool cleaners in McKinney, TX: Integrity Pools (108 reviews). Watertight Pool & Spa (97 reviews).",
+            "position": 5,
+            "ratingCount": 952
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=Plano%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Builders in Plano, TX - Yelp",
+            "rating": 4.4,
+            "snippet": "... McKinney, TX 75070. (214) 380-3109. 13 years in business. Offers payment ... Integrity Pools - Swimming Pool Builders near me - Plano, Texas. Integrity ...",
+            "position": 6,
+            "ratingCount": 1867
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Swimming+Pool+Builders&find_loc=McKinney%2C+TX",
+            "title": "TOP 10 BEST Swimming Pool Builders in McKinney, TX - Yelp",
+            "rating": 4.1,
+            "snippet": "... McKinney, TX. Map. Swimming Pool Installation in McKinney, Texas · Deck ... Integrity Pools - Swimming Pool Builders near me - McKinney, Texas. Integrity ...",
+            "position": 7,
+            "ratingCount": 1111
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Companies&find_loc=Richardson%2C+TX",
+            "title": "TOP 10 BEST Pool Companies in Richardson, TX - Yelp",
+            "rating": 4.3,
+            "snippet": "... McKinney, TX · Mesquite, TX · Plano, TX. Neighborhoods. Downtown, Dallas, TX · East ... Integrity Pools (108 reviews). Blue Oasis Pool Service (79 reviews).",
+            "position": 8,
+            "ratingCount": 975
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Tile+Repair&find_loc=McKinney%2C+TX",
+            "title": "TOP 10 BEST Pool Tile Repair in McKinney, TX - Updated 2026 - Yelp",
+            "rating": 4.5,
+            "snippet": "These are some businesses with a large number of reviews for pool & hot tub service in McKinney, TX: Integrity Pools (108 reviews). Blue Oasis Pool Service (79 ...",
+            "position": 9,
+            "ratingCount": 772
+          },
+          {
+            "link": "https://www.yelp.com/search?find_desc=Pool+Remodeling+%26+Renovation&find_loc=McKinney%2C+TX",
+            "title": "TOP 10 BEST Pool Remodeling & Renovation in McKinney, TX - Yelp",
+            "rating": 4.5,
+            "snippet": "These are some businesses with a large number of reviews for pool & hot tub service in McKinney, TX: Integrity Pools (108 reviews). Blue Oasis Pool Service (79 ...",
+            "position": 10,
+            "ratingCount": 769
+          }
+        ]
+      }
+    },
+    "website_warranty": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:55:37.040Z",
+      "data": {
+        "found": true,
+        "types": {
+          "redo": false,
+          "timeline": false,
+          "materials": false,
+          "money_back": false,
+          "workmanship": true,
+          "satisfaction": false,
+          "material_warranty_passthrough": false
+        },
+        "evidence": [
+          {
+            "url": "https://integritypools.org/pool-builder-mckinney-tx?utm_source=gbp&utm_medium=organic&utm_campaign=gbp-listing&utm_content=mckinney",
+            "type": "workmanship",
+            "snippet": "contractors matters. Integrity Pools is known for exceptional service, quality craftsmanship, and a straightforward build process that keeps projects moving smoothly. We br"
+          }
+        ],
+        "durations": [],
+        "confidence": "WEAK",
+        "source_url": "https://integritypools.org/pool-builder-mckinney-tx?utm_source=gbp&utm_medium=organic&utm_campaign=gbp-listing&utm_content=mckinney",
+        "analyzed_pages": [
+          {
+            "url": "https://integritypools.org/pool-builder-mckinney-tx?utm_source=gbp&utm_medium=organic&utm_campaign=gbp-listing&utm_content=mckinney",
+            "type": "homepage",
+            "title": "Pool Builder McKinney TX: Custom Pools for Every Home"
+          }
+        ],
+        "warranty_pages": [],
+        "explicit_guarantee": false,
+        "insurance_bonding_mentions": false
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:59.023Z",
+      "data": {
+        "name": "Integrity Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 396-0108",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "7300 State Hwy 121 Suite 3124, McKinney, TX 75070",
+        "reviews": [],
+        "website": "https://integritypools.org/pool-builder-mckinney-tx?utm_source=gbp&utm_medium=organic&utm_campaign=gbp-listing&utm_content=mckinney",
+        "maps_url": "https://www.google.com/maps/search/Integrity%20Pools%20McKinney%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_flag": "INSUFFICIENT_REVIEWS",
+        "review_count": null,
+        "insufficient_reviews": true
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:58:05.027Z",
+      "data": {
+        "url": "https://www.angi.com/companylist/us/tx/frisco/swimming-pools.htm",
+        "found": true,
+        "title": "Top 10 Best Pool builders and installers in Frisco, TX - Angie's List",
+        "rating": 4.4,
+        "source": "serper_angi",
+        "confidence": "high",
+        "review_count": 909
+      }
+    },
+    "trustpilot": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T06:58:06.571Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "domain": "integritypools.org",
+        "rating": null,
+        "source": "trustpilot",
+        "profile_url": null,
+        "trust_score": null,
+        "review_count": null,
+        "business_name": null
+      }
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:56:22.670Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:56:26.533Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "local_news": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:56:29.175Z",
+      "data": {
+        "query": "Integrity Pools McKinney site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 14, 2023",
+            "link": "https://www.dallasnews.com/abode/2023/05/14/proper-mayor-joins-celebration-of-new-community/",
+            "title": "Prosper mayor joins celebration of new community",
+            "snippet": "The amenities include The HUB Clubhouse, a resort-style pool, covered patios, pickleball courts and miles of trails. Ladera is also taking lot ...",
+            "position": 1
+          },
+          {
+            "date": "Jan 31, 2023",
+            "link": "https://www.dallasnews.com/business/real-estate/2023/01/31/builder-plans-to-start-hundreds-of-homes-for-people-55-and-older/",
+            "title": "Builder plans to start hundreds of homes for people 55 and older",
+            "snippet": "A North Texas company, Integrity Group, has plans to build hundreds of new homes in communities aimed just at older adults this year.",
+            "position": 2,
+            "attributes": {
+              "Missing": "McKinney | Show results with:McKinney"
+            }
+          },
+          {
+            "date": "Oct 6, 2013",
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/frank-brower-obituary?id=11084193",
+            "title": "Frank Brower Obituary (2013) - McKinney, TX - Dallas Morning News",
+            "snippet": "29, 2013 surrounded by his family, after a courageous battle with multiple myeloma cancer. As Tripp would say, \"he fought the good fight, but he ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.nbcdfw.com/entertainment/entertainment-news/why-gwyneth-paltrow-thinks-her-ski-crash-trial-was-ridiculous/3829698/?os&ref=app",
+            "title": "Why Gwyneth Paltrow thinks her ski crash trial was 'ridiculous ...",
+            "snippet": "Gwyneth Paltrow looked back at her 2023 ski crash trial, calling the experience “ridiculous” and describing the case as “everything that's wrong with our ...",
+            "position": 4
+          },
+          {
+            "date": "Nov 4, 2008",
+            "link": "https://www.nbcdfw.com/news/politics/five_things_to_watch_tonight/2112665/",
+            "title": "Five Things to Watch Tonight - NBC 5",
+            "snippet": "Attorney reveals new allegations in McKinney ISD trainer arrest. McKinney · Attorney reveals new allegations in McKinney ISD trainer arrest.",
+            "position": 5
+          },
+          {
+            "date": "Jul 10, 2015",
+            "link": "https://interactives.dallasnews.com/2015/mockingbird/",
+            "title": "'To Kill a Mockingbird' as relevant as ever in Oak Cliff class",
+            "snippet": "Filkins started teaching at the east Oak Cliff school right around the time Michael Brown was shot and killed in Ferguson, Mo. Then riots ...",
+            "position": 6
+          },
+          {
+            "date": "Dec 12, 2015",
+            "link": "https://interactives.dallasnews.com/2015/lewisville-dam/",
+            "title": "Lewisville Dam: The dam called trouble",
+            "snippet": "The Army Corps of Engineers will need millions of dollars to repair the Lewisville Lake Dam, one of the nation's most dangerous.",
+            "position": 7,
+            "attributes": {
+              "Missing": "McKinney | Show results with:McKinney"
+            }
+          },
+          {
+            "date": "Oct 14, 2014",
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/james-holmes-obituary?id=19098074",
+            "title": "James Holmes Obituary (1935 - 2014) - Dallas, TX",
+            "snippet": "Honesty and Integrity made up this fine man. Nothing but fond memories during my junior high, high school and college days hanging out at ...",
+            "position": 8
+          },
+          {
+            "link": "https://obits.dallasnews.com/us/obituaries/dallasmorningnews/name/robert-mckemie-obituary?id=20138459",
+            "title": "Robert McKemie Obituary (1925 - 2013) - Dallas, TX",
+            "snippet": "Robert Edward Bob McKemie, beloved husband, father, grandfather, and great-grandfather, departed this world for his Heavenly home on June 24, 2013.",
+            "position": 9
+          },
+          {
+            "date": "Feb 12, 2023",
+            "link": "https://www.dallasnews.com/sponsored/real-estate/2023/02/12/prosper-home-to-builders-newest-55-plus-dfw-community/",
+            "title": "Prosper home to builder's newest 55-plus DFW community",
+            "snippet": "Amenities will include The HUB Clubhouse, a resort-style pool, covered patios, pickleball courts, a putting green and miles of trails. Ladera ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:34.703Z",
+      "data": {
+        "cid": "6004442840880990408",
+        "name": "Integrity Pools",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "7300 State Hwy 121 Suite 3124, McKinney, TX 75070",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "3 weeks ago",
+            "text": "When we moved in we didn’t know what to expect with owning a pool. Integrity made the process easy, identifying the type of pool (saltwater) and recommending a maintenance plan as well as replacing worn out parts to keep our investment safe. Our weekly service tech, Moy was excellent, always letting us know when he was due to anrrive and leaving a report after each service call as well as pointing out anything that may require further review or maintenance. Overall we would recommend Integrity to anyone seeking a quality pool service provider.",
+            "author": "Scott Howley",
+            "rating": 5
+          },
+          {
+            "date": "a month ago",
+            "text": "Chris V was my technician/installer for a full modernization of the pool equipment on our new home purchase (controller, pump, filter, heater, automation, re-plumbing). He was incredibly kind, professional, and gave me a detailed walkthrough of each step through the remodel process. There were a couple required modifications relative to our initial quote that he addressed thoughtfully and ended up providing us a solution that we’re super happy with. Would definitely recommend Integrity for your remodel needs, very professional and fairly priced.",
+            "author": "Nathan Richard",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "I recently remodeled my pool with Integrity.  I gave it a 5-star.  My pool was 35 years old, and this is the first time of a complete rebuild.  The construction crews are very professional, for Texas advantage.  The stone work was great.  Luis did a good job on overall project.  Miles did a great job on electrical.  I’m now upgraded to cyber age, with pool lighting, heater, pump all controlled by iPhone.",
+            "author": "zhli",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "Integrity Pools was an excellent choice for our complete remodel, design, construction and maintenance!  Great service, very personable and responsive to our needs.  Most recently we needed repairs on our pool pump and pool heater.  Repairman, Chris, was efficient, thorough and timely!  He made the repairs in less than one hour and was very kind and personable.  We highly recommend Integrity Pools!",
+            "author": "Billy Grammer",
+            "rating": 5
+          },
+          {
+            "date": "4 weeks ago",
+            "text": "Moy did an excellent job maintaining our pool. Moy was reliable and had ckeae communication on when he was coming, what was done and if any actions needed to be taken on my end.  I appreciated his throroughness and professionalism!",
+            "author": "Peter Lum Hee",
+            "rating": 5
+          },
+          {
+            "date": "4 weeks ago",
+            "text": "Moy is my pool cleaner and he has been excellent in all respects. He is consistent in communication, polite, friendly,  professional, and thorough. The best ever!",
+            "author": "S. Gleeson",
+            "rating": 5
+          },
+          {
+            "date": "2 months ago",
+            "text": "We were having trouble with our iAquaLink system. Miles reached out the same day I contacted them and he had us back up and running in no time. I will absolutely be using these guys in the future and would definitely recommend them to anyone who needs help with their pool!",
+            "author": "Joe Ainsworth",
+            "rating": 5
+          },
+          {
+            "date": "4 months ago",
+            "text": "Today was so special 💓, Chris V came out to check our pool light for replacement. You can imagine the cost we expected, but he called and said if I can get to your panel I think I can fix it and he did. How many people today would care enough or have the integrity to do what he did. Chris you are our hero and a man of great character...You made your company name mean something...\nThank you so much!",
+            "author": "Linda Broome",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "search_tier": 1,
+        "review_count": 48,
+        "review_source": "tiered_validated",
+        "search_variant": "new",
+        "collection_cost": 0.002,
+        "location_source": "direct",
+        "location_searched": "McKinney, TX",
+        "search_confidence": 0.7249999999999999
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T06:58:09.553Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Integrity Pools\" McKinney",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:56:39.926Z",
+      "data": "Integrity Pools McKinney review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Channels Filters Search filters Integrity Pools Integrity Pools @IntegrityPools • 4 subscribers Welcome to Integrity Pools ! We're a family-owned business serving the Dallas–Fort Worth area, passionate about creating ... Subscribe Integrity Pools - Love, Service, Excellence Integrity Pools - Love, Service, Excellence @IntegrityPools-2024 • 185 subscribers Subscribe 2:39 2:39 Now playing Settlement Agreement Reached In McKinney 'Pool Party' Lawsuit CBS TEXAS CBS TEXAS • • 2.2K views 7 years ago CBS TEXAS CBS TEXAS The Mayor of McKinney is defending his words and actions surrounding the high profile incident. The Mayor of McKinney is defending his words and actions surrounding the high profile incident. From the video description CC 3 moments SETTLEMENT AGREEMENT | MCKINNEY Kim T. Cole | MCKINNEY Mayor George Fuller McKinney 3 auto-generated moments in this video 3 moments SETTLEMENT AGREEMENT SETTLEMENT AGREEMENT 0:00 SETTLEMENT AGREEMENT 0:00 MCKINNEY Kim T. Cole MCKINNEY Kim T. Cole 0:57 MCKINNEY Kim T. Cole 0:57 MCKINNEY Mayor George Fuller McKinney MCKINNEY Mayor George Fuller McKinney 1:53 MCKINNEY Mayor George Fuller McKinney 1:53 McKinney Custom Pools McKinney Custom Pools @McKinneyCustomPools • 30 subscribers McKinney Custom Pools was first formed in 2003 as McKinney Mowing & Landscaping by Jeremy McKinney and his wife Anya. Subscribe Executive Pool Service Executive Pool Service @ExecutivePoolServiceMcKinney • 75 subscribers Executive Pool Service has been providing quality service, repairs, remodels and renovations on residential swimming pools in ... Subscribe 0:05 0:05 Now playing Pool Deck & Driveway Concrete Resurfacing in McKinney, Texas Resistant Coating Soluctions Resistant Coating Soluctions • • No views 2 weeks ago Resistant Coating Soluctions Resistant Coating Soluctions Driveway Concrete Resurfacing in McKinney , Texas Pool Deck Concrete Resurfacing in McKinney , Texas Pool Deck Resurfacing ... Driveway Concrete Resurfacing in McKinney , Texas Pool Deck Concrete Resurfacing in McKinney , Texas Pool Deck Resurfacing ... From the video description Integrity Pool Builders Inc. Integrity Pool Builders Inc. @IntegrityPoolBuilders • 6 subscribers Integrity Pool Builders Inc. is a pool company out of Barrie Ontario, CAN. that focuses and specializes solely on the sales, ... Subscribe 3:01 3:01 Now playing replacing pool tile and re-plaster by Executive Pool Service in McKinney, Texas Executive Pool Service Executive Pool Service • • 11K views 6 years ago Executive Pool Service Executive Pool Service Pool remodel ~ replacing pool & spa tile and re-plaster by Executive Pool Service in McKinney , Texas. before and after photos ... Pool remodel ~ replacing pool & spa tile and re-plaster by Executive Pool Service in McKinney , Texas. before and after photos ... From the video description Integrity Pool Service, LLC Integrity Pool Service, LLC @IntegrityPoolServiceLLC • 16 subscribers Here, we'll highlight a few of our favorite cleaning videos, as well as provide some educational content for you! Subscribe 1:25 1:25 Now playing Integrity Pools & Spas Inc - REVIEWS - Lancaster (PA) Pool Builder Reviews PABizReviews PABizReviews • • 176 views 11 years ago PABizReviews PABizReviews Reviewed Integrity Pools & Spas Inc is a top reviewed Pool Builder in Lancaster, PA. This video shows some of the ... Reviewed Integrity Pools & Spas Inc is a top reviewed Pool Builder in Lancaster, PA. This video shows some of the ... From the video description Integrity Pools & Spas, Inc. Integrity Pools & Spas, Inc. @integritypoolsspasinc.6384 • 8 subscribers Real integrity is doing the right thing, regardless of whether anyone notices. Subscribe 0:54 0:54 Now playing French Grey DiamondBrite pool re-plaster McKinney Tx. by Executive Pool Service Executive Pool Service Executive Pool Service • • 8.5K views 7 years ago Executive Pool Service Executive Pool Service exposed quartz pool finish. pool resurfacing by Executive Pool Service in McKinney , Texas. exposed quartz pool finish. pool resurfacing by Executive Pool Service in McKinney , Texas. From the video description People also watched 5:43 5:43 Now playing How much does it cost to replaster a pool? bjyachts bjyachts • • 160K views 7 years ago bjyachts bjyachts Had my pool re-plastered. Found a way to save lots of $. Not trying to blast any pool builders or discredit them. There are lots of ... Had my pool re-plastered. Found a way to save lots of $. Not trying to blast any pool builders or discredit them. There are lots of ... From the video description Summary The speaker shares their experience replastering their pool, highlighting the cost difference between hiring a pool company and a subcontractor. They detail the process, including the time it took and the materials used, and emphasize the importance of finding a reliable subcontractor. AI-generated video summary Quality and accuracy may vary. Summary The speaker shares their experience replastering their pool, highlighting the cost difference between hiring a pool company and a subcontractor. They detail the process, including the time it took and the materials used, and emphasize the importance of finding a reliable subcontractor. 3:51 3:51 Now playing Why Did You Choose River Pools? Customer Testimonial River Pools River Pools • • 2.5K views 6 years ago River Pools River Pools Joe and Sue had a problem. Before they had a pool , they had no way to cool off from the heat after a long day of doing work in the ... Joe and Sue had a problem. Before they had a pool , they had no way to cool off from the heat after a long day of doing work in the ... From the video description CC 7:32 7:32 Now playing AQUAMASTER POOLS TILE AND COPING INSTALL aquamaster pools aquamaster pools • • 72K views 6 years ago aquamaster pools aquamaster pools SETTING PORCELAIN TILE AND TRAVERTINE COPING !!!! SETTING PORCELAIN TILE AND TRAVERTINE COPING !!!! From the video description 5 moments SETTING TILE | GROUT TIME | cleaning the grout | floating mortar bed for coping | setting the coping 5 auto-generated moments in this video 5 moments SETTING TILE SETTING TILE 3:25 SETTING TILE 3:25 GROUT TIME GROUT TIME 4:44 GROUT TIME 4:44 cleaning the grout cleaning the grout 4:55 cleaning the grout 4:55 floating mortar bed for coping floating mortar bed for coping 5:20 floating mortar bed for coping 5:20 setting the coping setting the coping 5:55 setting the coping 5:55 1:10 1:10 Now playing Concrete Pool New Tile abepools.com Abe Pools Abe Pools • • 478 views 8 years ago Abe Pools Abe Pools Concrete Pool New Tile Laying and Grouting Call Now for Free Estimate 908 627 3725 610 597 7201 abepools.com. Concrete Pool New Tile Laying and Grouting Call Now for Free Estimate 908 627 3725 610 597 7201 abepools.com. From the video description + 6 more 1:03 1:03 Now playing Stonescapes \"aqua cool\" mini pebble finish pool replaster in McKinney, Texas Executive Pool Service Executive Pool Service • • 21K views 7 years ago Executive Pool Service Executive Pool Service by Executive Pool Service http://executivepoolservicemckinneytexas.com/pool_plaster_resurfacing_replaster.html. by Executive Pool Service http://executivepoolservicemckinneytexas.com/pool_plaster_resurfacing_replaster.html. From the video description 1:04 1:04 Now playing Pearland Area Pool Builder, McKinney Custom Pools McKinney Custom Pools McKinney Custom Pools • • 5.9K views 13 years ago McKinney Custom Pools McKinney Custom Pools McKinney Custom Pools is a Totally Hayward Pearland pool builder specializing in custom pool design, high-end outdoor kitchen ... McKinney Custom Pools is a Totally Hayward Pearland pool builder specializing in custom pool design, high-end outdoor kitchen ... From the video description 5:03 5:03 Now playing pool replaster process CrystalStones smooth \"tropical isle\" by Executive Pool Service McKinney, Tx Executive Pool Service Executive Pool Service • • 352 views 2 years ago Executive Pool Service Executive Pool Service re-plaster process using CrystalStones smooth (mini pebble finish) \"tropical isle\" by Executive Pool Service in McKinney , Texas. re-plaster process using CrystalStones smooth (mini pebble finish) \"tropical isle\" by Executive Pool Service in McKinney , Texas. From the video description diy swimmingpools diy swimmingpools 3 subscribers • 1 video Welcome to DIY Swimming Pools ‍♂️ Thinking of building your own swimming pool ? You're in the right place. At DIY ... Subscribe SHORTS SHORTS Now playing #pool #setupthepool #intexpool #intex Ariana Rios Ariana Rios • • 895K views 2 years ago Ariana Rios Ariana Rios SHORTS SHORTS Now playing 10 Ways to Jump Into a Pool! Colin Amazing Colin Amazing • • 1.4B views 2 years ago Colin Amazing Colin Amazing 10 fun ways you can jump into a pool ! 10 fun ways you can jump into a pool ! From the video description SHORTS SHORTS Now playing INTEX POOL | Intex Rectangular Frame Pool 3m x 2m x 75cm | Summer Break | Truly Tara Truly Tara Truly Tara • • 318K views 1 year ago Truly Tara Truly Tara Beat the heat & boredom. School's out, pool's out ⛅️ Are your inflatable pools out already? Intex Rectangular Frame Pool ... Beat the heat & boredom. School's out, pool's out ⛅️ Are your inflatable pools out already? Intex Rectangular Frame Pool ... From the video description Freedom Pool Service Freedom Pool Service @FreedomPoolServiceNC • 1 subscriber At Freedom Pool Service, we're a veteran owned and operated business, our teams are dedicated to keeping your swimming pool ... Subscribe Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:56:41.124Z",
+      "data": {
+        "query": "site:nextdoor.com Integrity Pools McKinney",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/agency-detail/tx/anna/anna-police-department/",
+            "title": "Anna Police Department - 12 updates - Nextdoor",
+            "snippet": "Anna Police Department is dedicated to providing quality impartial police services to our residents and visitors; this is accomplished through Integrity, ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T06:58:10.587Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Integrity Pools\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T06:56:55.967Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Integrity%20Pools&State=TX",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:00.783Z",
+      "data": "Porch | A new kind of home insurance Insurance Overview File a claim Agents Customer support View my policy Policy documents Billing & payment Warranty File a claim View my warranties Moving Get a moving quote Internet/TV Home monitoring Moving checklist Claims File a new claim View my claim App Sign Up Customer Sign Up Agent Sign Up account_circle Log In Customer Log In Agent Log In A new kind of home insurance Member-owned by homebuyers and homeowners who care 1 Your address CHECK AVAILABILITY Or call us at (888) 927-4530 Protects more with extra coverages and a Porch Home Warranty for members 3,4 Reduces risk through personalized insights and tips to help you care for your home Rewards you with membership perks and offers when you buy and maintain your home 5 Protecting more with extra coverage and a home warranty for members 3,4 Members get a Porch Home Warranty with over $15,000 in combined coverage for appliances and home system breakdowns caused by normal wear and tear 4 Safeguard your home with service line coverage up to $10,000 per policy period 3 Keep items protected with water and sewer coverage including flooring, furniture, and appliances 3 Rest easy with residential glass coverage for windows, chandeliers, and other covered items 3 Protect against costly losses with refrigerated product coverage of up to $500 3 Helping you reduce risk and care for your home Get personalized home risk insights and recommendations to help you address issues Stay ahead of the curve with recall notices for your appliances and systems Receive timely seasonal maintenance reminders to keep your property in top shape Rely on our Virtual Home Assistant to lend a hand with your home tasks and seasonal maintenance The Porch Home app centralizes all your home information, making it easy to manage your home Rewarding you with membership perks and offers 5 Receive up to a 16% discount on your home insurance policy when purchasing a new property 2 Get the value of four free hours of moving services —two movers for two hours. Terms and conditions apply. 6 Enjoy a discount from a recent home inspection —save on your premium when you upload a report 7 Redeem up to $100 in handyman service vouchers to help maintain your home 8 Access perks and offers worth up to $500 from local and national businesses 9 Count on your dedicated Porch Moving Concierge to guide you through moving into your new home Request a quote Or call us at (888) 927-4530 Your address CHECK AVAILABILITY The smart way to move and manage your home The Porch Home App centralizes all your home information, making it easy to manage everything for your home in one convenient place Download see what the app can do Porch Insurance means Porch Insurance Reciprocal Exchange and is only available to persons eligible for Porch Insurance membership. Property and casualty insurance is underwritten by Porch Risk Management Services, LLC, its attorney-in-fact. 1. Use of the term \"member\" or \"membership\" refers to membership in Porch Insurance Reciprocal Exchange (Porch Insurance) and does not convey any legal or ownership rights in Porch Insurance. Restrictions apply and are subject to change. 2. Discount is only available for new home purchases, applies in years 1-3 in diminishing amounts, and ceases at year 4. Discount does not apply to premium for theft or liability coverages or any mandatory fees. Restrictions apply. See policy documents for full details. 3. All coverages are subject to the terms and conditions of the applicable policy documents for details. 4. Individual coverage limits apply. $200 service call fee applies when the warranty claim is dispatched. 5. Membership rewards and perks include services that may be included in and/or benefits covered under the policy and may be provided by companies who have no affiliation with Porch Insurance and have sole financial responsibility for their products and services. 6. Terms and conditions: Subject to availability. Offer includes 2 movers for 2 hours scheduled in advance. Only available on new policies. Policy must be verified as bound or active within 60 days of its effective date. Must use within 90 days of policy issue date. Only one move per policy. You may add additional hours or movers, or book a same-day move, at your own cost. There is no cash alternative. Porch is not responsible for any additional costs and/or expenses in relation to the Offer. Non-transferable. Subject to HireAHelper terms at https://www.porchmovinggroup.com/legal/general-terms/. 7. Inspection report must be provided and reflect an inspection on the subject property within 3 years of the policy effective date by a licensed inspector. To maintain discount, inspection report must be provided every 3 years. Discount does not apply to premium for fire peril. Restrictions apply. See policy documents for full details. 8. With your first year of membership, you'll get four $25 coupons to use toward Porch handyman services. Limit one coupon per appointment. Coupons may not be combined with any other offers or discounts for the same service. Coupons cannot be applied to sales tax or prior purchases, and are not reusable. Any unused portion of a credit may not be carried over. Coupons have no cash value, are not redeemable for cash, and are non-transferable. Coupons are void if altered, copied, transferred, auctioned or sold. Porch services may not be available in all areas. 9. Savings figures are based on the average of all included offers during the current calendar year and may vary by location. By clicking on a vendor product or service, Porch Insurance may share your personal information with the company or others for authentication purposes and to facilitate your effort to transact business with their company. These companies are solely responsible for the protection of your data and the financial responsibility for their products and services. Products and services expand_more Home Insurance Moving Claims Porch App Our company expand_more Porch Group About Careers Contact Porch Press Connect expand_more Customer Support Become an agent Agent sign up and login Get a quote Legal & compliance expand_more Terms of use Privacy policy Subscriber documents Disclosures Do Not Sell My Information © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:06.954Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:15.269Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Integrity Pools",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Jan 19, 2026",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/opinion-files/opinion/2026/kp-0505.pdf",
+            "title": "[PDF] Attorney General Opinion No. KP-0505",
+            "snippet": "This moral imperative preexists any political or legal document. Still, the concept is engrained within each of the sovereign charters under ...",
+            "position": 1
+          },
+          {
+            "date": "Jun 1, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/general-oag/AgencyStrategicPlan2023-2027.pdf",
+            "title": "[PDF] Agency Strategic Plan Fiscal Years 2023-2027",
+            "snippet": "The Texas Attorney General is the chief legal officer for the State of Texas. The Office of the Attorney General.",
+            "position": 2
+          },
+          {
+            "date": "Dec 20, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Final%20Allergan%20Global%20Agreement%20and%20Exhibits%20(12-20-22).pdf",
+            "title": "[PDF] ALLERGAN PUBLIC GLOBAL OPIOID SETTLEMENT AGREEMENT",
+            "snippet": "“Affiliated Company(ies)” means (1) when used with respect to AbbVie Inc. (“AbbVie”) all of the entities listed in Exhibit J-1; ...",
+            "position": 3
+          },
+          {
+            "date": "Jan 30, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/First%20Assistant%20Brent%20Webster%20Congressional%20Testimony%20-%20FINAL.pdf",
+            "title": "[PDF] Written Testimony Before the House of Representatives Judiciary ...",
+            "snippet": "Since President Biden has taken office, Texas has litigated 65 lawsuits fighting lawless actions taken by the Biden Administration.",
+            "position": 4
+          },
+          {
+            "date": "Oct 3, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Eli%20Lilly%20et%20al%20Complaint%20Filestamped.pdf",
+            "title": "[PDF] D-1-GN-24-007940 - Texas Attorney General",
+            "snippet": "ELI LILLY AND COMPANY; NOVO. NORDISK INC.; SANOFI-AVENTIS. U.S. LLC; EVERNORTH HEALTH,. INC. (FORMERLY EXPRESS SCRIPTS.",
+            "position": 5
+          },
+          {
+            "date": "Dec 9, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/2022-12-09%20CVS%20Global%20Settlement%20Agreement%20with%20Exhibits%20(003).pdf",
+            "title": "[PDF] CVS SETTLEMENT AGREEMENT - Texas Attorney General",
+            "snippet": "Page 1. CVS SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. Page. I. Definitions.",
+            "position": 6
+          },
+          {
+            "date": "Jun 17, 2020",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/executive-management/Internal%20Report.pdf",
+            "title": "[PDF] Report on the Investigation into Complaints Made and Actions ...",
+            "snippet": "Criminal claims against law enforcement officials are typically referred to the Public Integrity Unit of the Texas Rangers for investigation, ...",
+            "position": 7
+          },
+          {
+            "date": "Jun 1, 2024",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/general-oag/Agency-Strategic-Plan-FY25-29.pdf",
+            "title": "[PDF] Agency Strategic Plan Fiscal Years 2025-2029",
+            "snippet": "In addition, Criminal Prosecutions Intake helps law enforcement. Page 24. Goal 3. Secure Justice by Criminal Prosecutions and Investigations.",
+            "position": 8
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Walmart%20Settlement%20Agreement%20(2022.12.02)_FINAL.pdf",
+            "title": "[PDF] WALMART SETTLEMENT AGREEMENT | NJ.gov",
+            "snippet": "... integrity, or availability of Pharmacy. Clearinghouse Data. Page 230. Q-1. EXHIBIT Q. [Intentionally Omitted]. Page 231. R-1. EXHIBIT R. Agreement on Attorneys ...",
+            "position": 9
+          },
+          {
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Methane%20Tax%20Rule%20Petition%20Filed.pdf",
+            "title": "[PDF] USCA Case #25-1022 Document #2094481 Filed",
+            "snippet": "STATE OF TEXAS,. STATE OF NORTH DAKOTA,. STATE OF WEST VIRGINIA,. STATE OF ALABAMA,. STATE OF ARKANSAS,. STATE OF FLORIDA,. STATE OF GEORGIA,.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:16.423Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search",
+            "snippet": "Franchise Tax Account Status Search ; Taxpayer Number: ; Entity Name: Name must be between 2 and 50 characters ; Texas Secretary of State File Number: File Number ...",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 3
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 4
+          },
+          {
+            "date": "Sep 13, 2021",
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0049140_Certificate%20of%20Good%20Standing%20TX_20210913.pdf",
+            "title": "[PDF] Taxable Entity Search Results - ADEQ",
+            "snippet": "... A. SCHEURICH. Registered Office Street Address 350 PINE ST. BEAUMONT, TX 77701 https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.",
+            "position": 5
+          },
+          {
+            "date": "Feb 23, 2023",
+            "link": "https://reproductivefreedomforall.org/wp-content/uploads/2023/02/Alliance-for-Hippocratic-Medicine-Incorporation-Record.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Reproductive Freedom for All",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1.. Franchise Tax Account Status. As of : 02/23/2023 13:02:07. This page is valid for most ...",
+            "position": 6
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 7
+          },
+          {
+            "date": "Mar 12, 2023",
+            "link": "https://www.facebook.com/groups/333827440359540/posts/1475358819539724/",
+            "title": "Not sure if the company is still in business or not. - Facebook",
+            "snippet": "asp?from=search https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Taxable Entity Search. David Herrera and Oscar Alvarez. 2 reactions. 󱎖. Are they ...",
+            "position": 8
+          },
+          {
+            "link": "https://canineshalo.com/trust/",
+            "title": "Trust - Canine's Halo",
+            "snippet": "Texas Secretary of State Taxable Entity Lookup: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. Texas Comptroller Tax-Exempt Entity Search (for non ...",
+            "position": 9
+          },
+          {
+            "date": "Sep 29, 2023",
+            "link": "https://www.rainforestfoundationuk.org/fresh-concerns-over-huge-fossil-fuel-auction-in-drc-after-government-signs-shady-gas-production-sharing-agreements/",
+            "title": "Fresh concerns over huge fossil fuel auction in DRC after ...",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn and Texas Tax Code, Sec. 171.2515. [2] https://statutes.capitol.texas.gov/Docs/TX/htm/TX ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T06:57:17.543Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Integrity Pools",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:18.495Z",
+      "data": {
+        "query": "site:dallascounty.org Integrity Pools civil",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Oct 1, 2015",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2017ACFR.pdf",
+            "title": "[PDF] comprehensive annual financial report - Dallas County",
+            "snippet": "... pools which are recorded at amortized cost. These investments total ... five-year Corporate Integrity Agreement (CIA) with the OIG-HHS.",
+            "position": 1
+          },
+          {
+            "date": "Mar 31, 2020",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2019ACFR.pdf",
+            "title": "[PDF] dallas county, texas comprehensive annual financial report for the ...",
+            "snippet": "... pools equals the value of pool shares. The pools are subject to regulatory oversight by the Texas State Comptroller, although they are not ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/budget/fy2003/GeneralFund.PDF",
+            "title": "[PDF] GENERAL FUND - Dallas County",
+            "snippet": "The mission of the Civil District Masters is to assist the Civil District judges by hearing motions, pleas and other civil matters in a fair and equitable ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2014ACFR.pdf",
+            "title": "[PDF] COMPREHENSIVE ANNUAL FINANCIAL REPORT ... - Dallas County",
+            "snippet": "five-year Corporate Integrity Agreement (CIA) with the OIG-HHS. Under the CIA, among other things the District agreed to (1) implement corrective action to ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 31, 2013",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2013ACFR.pdf",
+            "title": "[PDF] comprehensive annual financial report - Dallas County",
+            "snippet": "FINANCIAL SECTION. Independent Auditors' Report. 9. Management's Discussion and Analysis (Unaudited). 13. Basic Financial Statements:.",
+            "position": 5
+          },
+          {
+            "date": "Mar 27, 2019",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2018-ACFR.pdf",
+            "title": "[PDF] dallas county, texas comprehensive annual financial report for the ...",
+            "snippet": "a five-year Corporate Integrity Agreement (CIA) with the OIG-HHS. Under the CIA, among other things the Hospital agreed to (1) implement ...",
+            "position": 6
+          },
+          {
+            "date": "Jan 22, 2026",
+            "link": "https://dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet%202026-012-7097.pdf",
+            "title": "[PDF] Notice - Dallas County",
+            "snippet": "Event Type. Prebid Conference. Attendance. Recommended. Event date. 02/04/2026 10:00 AM CST. Location. Microsoft Teams. Event Note.",
+            "position": 7
+          },
+          {
+            "date": "Dec 31, 2012",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2012ACFR.pdf",
+            "title": "[PDF] COMPREHENSIVE ANNUAL FINANCIAL REpORT - Dallas County",
+            "snippet": "FINANCIAL SECTION. Independent Auditors' Report. Management's Discussion and Analysis (Unaudited). Basic Financial Statements:.",
+            "position": 8
+          },
+          {
+            "date": "Mar 29, 2017",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/auditor/annual-finacial-report/FY2016ACFR.pdf",
+            "title": "[PDF] comprehensive annual financial report - Dallas County",
+            "snippet": "... pools which are recorded at amortized cost. These investments total $224,842 as of September 30, 2016. Interest Rate Risk. The District ...",
+            "position": 9
+          },
+          {
+            "date": "Jan 8, 2026",
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/purchasing/Annual-Quotes-Bids-RFPs/IFB-RFP-RFQ/2026/Bid%20Packet-2026-008-7093.pdf",
+            "title": "[PDF] RFP Project Based Vouchers for Permanent Supportive Housing",
+            "snippet": "Location. Dallas County, Texas. Purchase Type. Duration:15 years. Description. Dallas County is requesting proposals from property owners ...",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:20.702Z",
+      "data": {
+        "query": "site:collincountytx.gov Integrity Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.collincountytx.gov/District-Clerk/jury-services",
+            "title": "Jury Services - District Clerk - Collin County",
+            "snippet": "Please be sure you are entering your Juror ID number AND your date of birth. The site requires two identifiers for a successful log in. If you continue to have ...",
+            "position": 1
+          },
+          {
+            "link": "https://eagenda.collincountytx.gov/docs/2026/CC/20260112_3167/59316_HTS%20Engagement%20Letter%20for%20Collin%20County%20PID%20Consulting%202025%20102925.pdf",
+            "title": "[PDF] Untitled - Collin County",
+            "snippet": "government investment pools. These programs offer governmental entities investment options for their. 3. Page 4. cash management programs based on the entities ...",
+            "position": 2
+          },
+          {
+            "link": "https://www.collincountytx.gov/Government/Commissioners-Court/precinct1",
+            "title": "Susan Fletcher, Commissioner - Precinct 1 - Collin County",
+            "snippet": "About. Susan Fletcher serves as Collin County Commissioner for Precinct 1, elected in November 2014, to fulfill an unexpired term, and was re-elected in ...",
+            "position": 3
+          },
+          {
+            "link": "https://www.collincountytx.gov/Government/Budget/Documents/FY%202026%20Proposed%20Budget.pdf",
+            "title": "[PDF] Proposed Budget 2026 - Collin County",
+            "snippet": "Honorable Judge and Commissioners: I am pleased to present the Proposed Budget for FY 2026 for Collin County. This budget is submitted in accordance with ...",
+            "position": 4
+          },
+          {
+            "link": "https://www.collincountytx.gov/Government/Budget/Documents/fy2024propsedbudget.pdf",
+            "title": "[PDF] Collin County FY 2024 Proposed Budget",
+            "snippet": "Honorable Judge and Commissioners: I am pleased to present the Proposed Budget for FY 2024 for Collin County. This budget is submitted in accordance with ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.collincountytx.gov/Business-and-Living/Parks-and-Open-Spaces/Park-Foundation-Advisory-Board/Documents/Trail%20Plan_Celina.pdf",
+            "title": "[PDF] 2020 Parks and Recreation Master Plan - Celina, TX - Collin County",
+            "snippet": "• Integrity ... Respondents indicated the most desired parks and recreation programs are youth sports, community events, swimming pools, and fitness classes.",
+            "position": 6
+          },
+          {
+            "link": "https://www.collincountytx.gov/Government/Budget/Documents/fy2025proposedbudget.pdf",
+            "title": "[PDF] This budget will raise more total property taxes than last year's budget",
+            "snippet": "Honorable Judge and Commissioners: I am pleased to present the Proposed Budget for FY 2025 for Collin County. This budget is submitted in accordance with ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 5, 2025",
+            "link": "https://eagenda.collincountytx.gov/docs/2025/CC/20250804_3121/58414_2025-270%20Solicitation%20Packet.pdf",
+            "title": "[PDF] Collin County, TX REQUEST FOR PROPOSAL 2025-270 REAL ...",
+            "snippet": "The improvements consist of an administration building, dining hall, education building, health care building, boat storage building, ...",
+            "position": 8
+          },
+          {
+            "date": "Nov 13, 2024",
+            "link": "https://www.collincountytx.gov/Government/Budget/Documents/FY%202025%20Adopted%20Budget%20Book.pdf",
+            "title": "[PDF] BUDGET - Collin County",
+            "snippet": "November 13, 2024. Honorable Judge and Commissioners: I am pleased to present the FY 2025 Adopted Budget for Collin County. this budget is ...",
+            "position": 9
+          },
+          {
+            "date": "Mar 18, 2013",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20200615_2490/48549_OCFO_2014Financial_Guide.pdf",
+            "title": "[PDF] OCFO 2014 Financial Guide - Office of Justice Programs",
+            "snippet": "The Office of Justice Programs (OJP) provides Federal leadership in developing the nation's capacity to prevent and control.",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:22.406Z",
+      "data": {
+        "query": "site:dentoncounty.gov Integrity Pools",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1638/Illicit-Discharge-PDF",
+            "title": "[PDF] Illicit Discharge Detection and Elimination - Denton County",
+            "snippet": "This involves examining the physical condition of manholes and other sewer structures to determine their structural integrity and to identify possible sources ...",
+            "position": 1,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "date": "Aug 28, 2025",
+            "link": "https://www.dentoncounty.gov/AgendaCenter/ViewFile/Agenda/_08282025-788",
+            "title": "[PDF] Regularly Scheduled Meeting Board of Trustees - Denton County",
+            "snippet": "C. Public Comments are welcome however, are limited to three (3) minutes per individual and fifteen (15) minutes total time.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "date": "Aug 28, 2025",
+            "link": "https://www.dentoncounty.gov/AgendaCenter/ViewFile/Agenda/_08282025-790",
+            "title": "[PDF] BOARD OF TRUSTEES NOTICE OF PERSONNEL COMMITTEE ...",
+            "snippet": "• Policy 8.15 – Charity Care Pool. • Policy 9.0 – Privacy. We Value: Individual Worth – Quality – Integrity – Dedication – Teamwork. DCMHMR ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=304_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "NORTH TEXAS INTEGRITY, 415 E. FM 2449, A1060A N. RUDDER, TR 3, 164.1382 ... ZODIAC POOLS, 11100 INDIAN TRL, SAUNDERS ADDITION LOT 1, SWIMMING POOL, 02/07 ...",
+            "position": 4
+          },
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=329_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "INTEGRITY #1, LLC, 26779 E US 380, MARIETTA VILLAGE I AT SAVANNAH PH ... RIVERBEND SANDLER POOLS, 1234 SHELBY LN, THEERINGER ESTATES BLK A LOT 2, SWIMMING POOL ...",
+            "position": 5
+          },
+          {
+            "link": "https://www.dentoncounty.gov/DocumentCenter/View/1628/Texas-Commission-on-Environmental-Quality-TCEQ-TXR050000---TCEQ-Storm-Water-Regulation-for-Industrial-Sites-PDF",
+            "title": "[PDF] TPDES General Permit No.TXR050000 - Reduce Flooding",
+            "snippet": "integrity of above-ground storage tanks, pipelines, pumps and other related equipment. If repairs are necessary, they must be performed as expeditiously as.",
+            "position": 6,
+            "attributes": {
+              "Missing": "Pools | Show results with:Pools"
+            }
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:32.718Z",
+      "data": {
+        "name": "Integrity Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "phone": "(214) 453-3400",
+        "rating": "A+",
+        "source": "bbb",
+        "accredited": true,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": "https://www.bbb.org/us/tx/richardson/profile/pool-contractors/integrity-pools-0875-90917697",
+        "review_count": null,
+        "founding_date": "09/09/2009",
+        "complaint_count": null,
+        "accredited_since": "7/9/2018",
+        "years_in_business": 16,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "google_maps_listed": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:57:59.020Z",
+      "data": {
+        "name": "Integrity Pools",
+        "email": null,
+        "error": null,
+        "found": true,
+        "hours": null,
+        "phone": "(469) 396-0108",
+        "rating": 5,
+        "source": "google_maps",
+        "status": "closed",
+        "address": "7300 State Hwy 121 Suite 3124, McKinney, TX 75070",
+        "reviews": [],
+        "website": "https://integritypools.org/pool-builder-mckinney-tx?utm_source=gbp&utm_medium=organic&utm_campaign=gbp-listing&utm_content=mckinney",
+        "maps_url": "https://www.google.com/maps/search/Integrity%20Pools%20McKinney%2C%20TX",
+        "categories": [
+          "Swimming pool contractor"
+        ],
+        "review_count": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:58:03.989Z",
+      "data": {
+        "found": true,
+        "rating": 3.2,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/integrity-pools-richardson",
+        "review_count": 98
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T06:58:05.697Z",
+      "data": {
+        "url": null,
+        "note": "Results found but no rating data",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "results": [
+          {
+            "link": "https://www.houzz.com/professionals/spa-and-pool-maintenance/mckinney-tx-us-probr0-bo~t_28351~r_4710178",
+            "title": "Best 15 Swimming Pool Cleaners in McKinney, TX | Houzz",
+            "snippet": "McKinney. Integrity Pools. Average rating: 4.9 out of 5 stars4.9(31 Reviews). Hello! My name is Matthew Dunshea, and I am the owner of Integrity Pools."
+          },
+          {
+            "link": "https://www.houzz.com/professionals/spa-and-pool-maintenance/waxahachie-tx-us-probr0-bo~t_28351~r_4740328",
+            "title": "Best 15 Swimming Pool Cleaners in Waxahachie, TX | Houzz",
+            "snippet": "Integrity Pools. Average rating: 4.9 out of 5 stars4.9(31 Reviews). Hello! My name is Matthew Dunshea, and I am the owner of Integrity Pools."
+          },
+          {
+            "link": "https://www.houzz.com/professionals/spa-and-pool-maintenance/flower-mound-tx-us-probr0-bo~t_28351~r_4691585",
+            "title": "Best 15 Swimming Pool Cleaners in Flower Mound, TX | Houzz",
+            "snippet": "Integrity Pools. Average rating: 4.9 out of 5 stars4.9(31 Reviews). Hello! My name is Matthew Dunshea, and I am the owner of Integrity Pools."
+          }
+        ],
+        "result_count": 4,
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:58:07.231Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Integrity Pools\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.integritypoolsolutions.147773243.html",
+            "title": "Integrity Pool Solutions LLC - PARKESBURG, PA - HomeAdvisor",
+            "snippet": "Integrity Pools is an excellent company and I highly recommend them for all of your pool needs. See full review. Wendy T. Sep 2024."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.IntegrityPool.8241389.html",
+            "title": "Integrity Pool & Spa Services Reviews - Easton, PA | HomeAdvisor",
+            "snippet": "Their card made it to the front of my refrigerator as who to call fior help! Thank you, Home Advisor & Integrity Pools! See full review. Jason B. May 2015. 4.5."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.IntegrityPools.45585315.html",
+            "title": "Integrity Pools Reviews - Richardson, TX | HomeAdvisor",
+            "snippet": "At Integrity Pools we are dedicated to being the industry leader in customer service, quality, integrity and dependability! We offer the following services: ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.IntergrityPools.128238438.html",
+            "title": "Integrity Pools Reviews - Smithtown, NY | HomeAdvisor",
+            "snippet": "Here at Integrity Pools we are family owned & operated. We take great pride in our expertise, quality, and customer service that we provide to meet the ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/rated.IntegrityPoolServices.126476476.html",
+            "title": "Integrity Pool Services Reviews - Lewisburg, TN | HomeAdvisor",
+            "snippet": "Robert M. May 2022. 5.0. $5,000. I will have integrity pools build me a pool at my next house! Excellent professional service! Allyson S. May 2022. 5.0."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "glassdoor": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:58:07.901Z",
+      "data": {
+        "found": true,
+        "query": "site:glassdoor.com \"Integrity Pools\"",
+        "source": "glassdoor",
+        "results": [
+          {
+            "link": "https://www.glassdoor.com/Job/integrity-pools-Richardson-SRCH_KO0,15_IL.16,26_IC1140053.htm",
+            "title": "173 integrity pools Jobs in Richardson, TX, December 2025",
+            "snippet": "Search Integrity pools jobs in Richardson, TX with company ratings & salaries. 173 open jobs for Integrity pools in Richardson."
+          }
+        ],
+        "result_count": 1
+      }
+    },
+    "indeed": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:58:08.575Z",
+      "data": {
+        "found": true,
+        "query": "site:indeed.com/cmp \"Integrity Pools\"",
+        "source": "indeed",
+        "results": [
+          {
+            "link": "https://www.indeed.com/cmp/Integrity-Pools/reviews",
+            "title": "Working at Integrity Pools: Employee Reviews | Indeed.com",
+            "snippet": "Reviews from Integrity Pools employees about Integrity Pools culture, salaries, benefits, work-life balance, management, job security, and more."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Integrity-Pools",
+            "title": "Integrity Pools Careers and Employment | Indeed.com",
+            "snippet": "Find out what works well at Integrity Pools from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Integrity-Pools/faq/interviews",
+            "title": "Questions and Answers about Integrity Pools Interviews | Indeed.com",
+            "snippet": "8 questions and answers about Integrity Pools Interviews. How should I prepare for an interview at Integrity Pools?"
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Integrity-Pools/job-titles",
+            "title": "All Integrity Pools job titles | Indeed.com",
+            "snippet": "Working at Integrity Pools. Select a job title to read reviews and discover what it's like to work in that position."
+          },
+          {
+            "link": "https://www.indeed.com/cmp/Integrity-Pools/faq/what-questions-did-they-ask-during-your-interview-at-integrity-pools?quid=1idnvo3ngnj0r801",
+            "title": "What questions did they ask during your interview at Integrity Pools?",
+            "snippet": "Find answers to 'What questions did they ask during your interview at Integrity Pools?' from Integrity Pools employees."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "google_news": {
+      "status": "success",
+      "fetched_at": "2026-02-14T06:58:11.244Z",
+      "data": {
+        "found": true,
+        "query": "\"Integrity Pools\" McKinney lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [
+          {
+            "link": "https://www.bbb.org/us/tx/richardson/profile/pool-contractors/integrity-pools-0875-90917697/complaints",
+            "title": "Integrity Pools | BBB Complaints | Better Business Bureau",
+            "snippet": "View complaints of Integrity Pools filed with BBB. BBB helps resolve disputes with the services or products a business provides."
+          },
+          {
+            "link": "https://www.facebook.com/groups/AllAboutShepherdsville/posts/4006048179661281/",
+            "title": "Has anyone used Pools and Beyond for their inground pool install?",
+            "snippet": "A Huge Thank You to Peter from Integrity Pools Ever since I was a little girl, I dreamed of having an inground pool in my own backyard. And ..."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/richardson/profile/pool-contractors/integrity-pools-0875-90917697",
+            "title": "Integrity Pools | BBB Business Profile | Better Business Bureau",
+            "snippet": "Integrity Pools provides the following 5 services: 1. Pool cleaning 2. Equipment repair 3. Leak detection 4. Pool remodels 5. New pool construction"
+          },
+          {
+            "link": "https://www.yelp.com/biz/caribbean-pool-and-spa-plano",
+            "title": "CARIBBEAN POOL & SPA - Updated January 2026 - Phone Number",
+            "snippet": "... scam company, be careful, guys ... Integrity Pools. 108 reviews. Photo of Big D Pools. Big D Pools."
+          },
+          {
+            "link": "https://www.bbb.org/us/tx/mckinney/category/swimming-pools",
+            "title": "Swimming Pools near McKinney, TX | Better Business Bureau",
+            "snippet": "Integrity Pools. Pool Contractors, Pool Service, Swimming Pools ... BBB Rating: A+ Service Area. Serving the following areas: Collin County, TX; Dallas County ..."
+          }
+        ],
+        "result_count": 10
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-02-14T06:58:29.322Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T06:58:15Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Integrity%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=Bx2QaZHpBq-iptQP26DViQg\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-02-14T06:58:25Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Integrity%20Pools%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=ER2QaYuBC6rIptQPxcSvyAo\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Integrity Pools",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    }
+  }
+}

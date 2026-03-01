@@ -1,0 +1,52 @@
+{
+  "mode": "progressive",
+  "lane": "deepseek_chat",
+  "group": "H",
+  "config": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_H/config/sample_100_group_H.json",
+  "strict_vertical": true,
+  "cohort_vertical": "pool",
+  "seed": 42,
+  "prompt_version": "pairwise_v1",
+  "prompt_hash": "sha256:7d440cc8a107781d65b5dc6dbd4aa02eecf9ba1f41b69c8bd796d4ae15207fb5",
+  "run_started_at": "2026-02-14T18:54:26.106Z",
+  "run_finished_at": "2026-02-14T19:21:07.640Z",
+  "phase_targets": {
+    "A": 10,
+    "B": 20,
+    "C": 30
+  },
+  "phase_top_percent": {
+    "B": 60,
+    "C": 20
+  },
+  "policy": {
+    "retier_every_rounds": 5,
+    "movement_pct": 15,
+    "boundary_buffer": 5,
+    "confidence_threshold": 70
+  },
+  "totals": {
+    "comparisons": 1496,
+    "failed_comparisons": 0,
+    "escalations": 1374,
+    "rounds_executed": 60
+  },
+  "tokens": {
+    "input": 16477791,
+    "output": 270435
+  },
+  "cost_usd": 4.727364180000005,
+  "pricing": {
+    "input_per_1m": 0.28,
+    "output_per_1m": 0.42,
+    "cache": "miss"
+  },
+  "outputs": {
+    "second_pass": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_H/results/progressive/second_pass.json",
+    "final_ranked": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_H/results/progressive/final_ranked.json",
+    "comparisons_jsonl": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_H/results/progressive/pairwise/comparisons.jsonl",
+    "movement_log": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_H/results/progressive/analysis/movement_log.json",
+    "phase_report": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_H/results/progressive/analysis/phase_report.json",
+    "escalation_queue": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_H/results/progressive/analysis/escalation_queue.json"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "variation": "D2",
+  "contractor_id": 8958,
+  "contractor_name": "Splash Pools",
+  "archetype": "gold_standard",
+  "expected_score": 78,
+  "run": 2,
+  "timestamp": "2026-01-20T19:22:39.761Z",
+  "success": true,
+  "trust_score": 88,
+  "risk_level": "LOW",
+  "reasoning": "Mixed council: DeepSeek=92, Claude=85, Gemini=88, Avg=88",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 92,
+      "risk_level": "LOW",
+      "reasoning": "Splash Pools demonstrates exceptional quality and customer service based on overwhelmingly positive reviews across multiple platforms, with a perfect 5/5 rating on Yelp and 4.8/5 on Google Maps from 31 reviews. The business shows strong stability with an A+ BBB rating and no legal or regulatory issues detected. Review analysis confirms authenticity with specific project details, varied writing styles, and emotional genuineness. The contractor appears to be a second-generation pool builder with deep industry knowledge and excellent communication practices.",
+      "key_factors": [
+        "Consistently outstanding customer reviews with perfect ratings",
+        "No legal, regulatory, or complaint issues detected",
+        "Strong business stability with A+ BBB rating and franchise tax compliance",
+        "Authentic, detailed reviews indicating quality work and customer relationships"
+      ],
+      "red_flags": [
+        "Address discrepancy (listed in Mesquite but Google Maps shows Midlothian)",
+        "Limited review volume on some platforms despite high ratings"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 85,
+      "risk_level": "LOW",
+      "reasoning": "Splash Pools demonstrates strong credibility with consistently excellent customer reviews across multiple platforms, including a 4.8/5 on Google Maps with 31 reviews and 5/5 on Yelp. The reviews are authentic and detailed, mentioning specific crew members (Josh Curry, Josh Howard) and project specifics. The company maintains an A+ BBB rating and shows legitimate business registration in Texas. While there's one OSHA inspection record, there are no significant legal issues, court cases, or customer complaints found.",
+      "key_factors": [
+        "Consistently high ratings across all review platforms (4.8 Google, 5.0 Yelp, A+ BBB)",
+        "Authentic, detailed reviews mentioning specific staff and project details spanning multiple years",
+        "Clean legal record with no civil cases, liens, or significant regulatory violations found",
+        "Legitimate Texas business registration and franchise tax compliance"
+      ],
+      "red_flags": [
+        "One historical OSHA inspection record for a California company with similar name",
+        "Limited online presence beyond review platforms"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 88,
+      "risk_level": "LOW",
+      "reasoning": "Splash Pools demonstrates a strong track record based on available data. Google reviews are overwhelmingly positive, mentioning specific employees and project details, suggesting authenticity. The BBB rating is A+ and they are accredited. While some court record searches returned errors, the overall picture indicates a reliable contractor with a commitment to customer satisfaction. The absence of significant red flags and the presence of positive testimonials contribute to a high level of trust.",
+      "key_factors": [
+        "Positive Google Reviews",
+        "Accredited BBB Rating",
+        "Authentic Review Analysis"
+      ],
+      "red_flags": [
+        "Angi rating slightly lower than other platforms",
+        "Some court record searches failed"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Address discrepancy (listed in Mesquite but Google Maps shows Midlothian)",
+    "Limited review volume on some platforms despite high ratings",
+    "One historical OSHA inspection record for a California company with similar name",
+    "Limited online presence beyond review platforms",
+    "Angi rating slightly lower than other platforms",
+    "Some court record searches failed"
+  ],
+  "cost_usd": 0.07076581124999999,
+  "duration_ms": 8228
+}

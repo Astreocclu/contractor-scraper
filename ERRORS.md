@@ -3,41 +3,31 @@
 ## Format
 | Date | Phase | Error | Resolution |
 
-## Critical Architecture Mistakes (DO NOT REPEAT)
-
-### Google Places API - BANNED
-**What happened:** Google Places API caused $300 overcharge.
-
-**Fix:** Use Playwright scraping for Google Maps instead. NEVER enable Google Places API.
-
----
-
 ## Current Known Issues
 
-None at this time.
+| Date | Phase | Error | Resolution |
+|------|-------|-------|------------|
+| 2026-02-17 | Source collection | `google_maps_local` returns many zero-text review-success rows | Enforce minimum review-text coverage checks before moving into review analysis or Swiss |
+| 2026-02-17 | Source validation | Placeholder pages for `facebook`, `thumbtack`, `porch`, `buildzoom` marked as success | Add content quality checks for login/not-found placeholder payloads |
+| 2026-02-17 | Pipeline ops | DeepSeek credits exhausted during `hybrid_100_roof_A` Swiss (`402 Insufficient Balance`) | Pause batch progression for `roof_A`; resume only after funding |
+| 2026-02-17 | Data collection | Collin county lien lookups can timeout under load | Use targeted single-county retries; avoid broad reruns |
 
----
+## Critical architecture mistakes (historical)
+
+### Google Places API - BANNED
+**What happened:** Google Places API caused a real overcharge.
+
+**Fix:** Use Playwright scraping for Google Maps. Do not enable Google Places API.
 
 ## Resolved Issues
 
 | Date | Issue | Resolution |
 |------|-------|------------|
-| 2025-12-14 | Score variance (29 points) at temperature 0.1 | Fixed - set `temperature: 0` in all audit agents, variance now 2 points |
-| 2025-12-14 | Liens filed BY contractor counted as red flags | Fixed - updated prompt and scraper to correctly interpret lien direction |
-| 2025-12-14 | `calculate_lien_score()` not categorizing by direction | Fixed - added GRANTEE/GRANTOR matching to distinguish BY vs AGAINST liens |
-| 2025-12-11 | County lien portals blocking Playwright | Fixed - portals moved to `*.tx.publicsearch.us`, updated URLs |
-| 2025-12-09 | Trustpilot SERP matching wrong companies | Fixed - now uses direct URL check (`trustpilot.com/review/{domain}`) |
-| 2025-12-09 | JSON parse error in review_analyzer.js | Fixed - added error handling |
-| 2025-12-08 | Only 4 contractors showing despite 116 qualified | Fixed - `passes_threshold` now updates correctly |
-
-### County Lien Portals - RESOLVED (2025-12-11)
-**Original Problem:** All Texas county OPR portals were blocking Playwright scrapers.
-
-**Root Cause:** Portals moved to new URLs at `*.tx.publicsearch.us`.
-
-**Fix:** Updated all county scraper URLs:
-- `scrapers/county_liens/tarrant.py`
-- `scrapers/county_liens/collin.py` (also increased wait time for loading)
-- `scrapers/county_liens/dallas.py`
-
-**Current Status:** All working - Tarrant (48 records), Collin (50 records), Dallas (942 records).
+| 2026-02-14 | Source gate bypass | Restored strict source-first invariant and blocking behavior |
+| 2026-02-14 | Score variance at temp 0.1 | Set `temperature: 0` on scoring path |
+| 2025-12-14 | Liens filed BY contractor treated as red flags | Added lien direction handling (GRANTEE vs GRANTOR) |
+| 2025-12-14 | `calculate_lien_score()` lacked direction fields | Added `liens_by_contractor` / `liens_against_contractor` |
+| 2025-12-09 | Trustpilot matching errors | Switched to domain-specific URL validation |
+| 2025-12-09 | Review analyzer JSON parse failures | Added multi-tier JSON parser fallback |
+| 2025-12-08 | Discovery `passes_threshold` blocked valid records | Fixed threshold handling in `orchestrator.js` |
+| 2025-12-07 | County portal access failures | Updated `*.tx.publicsearch.us` crawler URLs |

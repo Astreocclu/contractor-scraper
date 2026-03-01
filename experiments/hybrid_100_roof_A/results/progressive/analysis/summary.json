@@ -1,0 +1,52 @@
+{
+  "mode": "progressive",
+  "lane": "deepseek_chat",
+  "group": "roof_A",
+  "config": "experiments/hybrid_100_roof_A/config/sample_100_group_roof_A.json",
+  "strict_vertical": true,
+  "cohort_vertical": "roofing",
+  "seed": 42,
+  "prompt_version": "pairwise_v1",
+  "prompt_hash": "sha256:7d440cc8a107781d65b5dc6dbd4aa02eecf9ba1f41b69c8bd796d4ae15207fb5",
+  "run_started_at": "2026-02-16T16:49:16.444Z",
+  "run_finished_at": "2026-02-16T16:51:09.936Z",
+  "phase_targets": {
+    "A": 10,
+    "B": 20,
+    "C": 30
+  },
+  "phase_top_percent": {
+    "B": 60,
+    "C": 20
+  },
+  "policy": {
+    "retier_every_rounds": 5,
+    "movement_pct": 15,
+    "boundary_buffer": 5,
+    "confidence_threshold": 70
+  },
+  "totals": {
+    "comparisons": 499,
+    "failed_comparisons": 5137,
+    "escalations": 340,
+    "rounds_executed": 120
+  },
+  "tokens": {
+    "input": 5392260,
+    "output": 91118
+  },
+  "cost_usd": 1.5481023600000006,
+  "pricing": {
+    "input_per_1m": 0.28,
+    "output_per_1m": 0.42,
+    "cache": "miss"
+  },
+  "outputs": {
+    "second_pass": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_roof_A/results/progressive/second_pass.json",
+    "final_ranked": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_roof_A/results/progressive/final_ranked.json",
+    "comparisons_jsonl": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_roof_A/results/progressive/pairwise/comparisons.jsonl",
+    "movement_log": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_roof_A/results/progressive/analysis/movement_log.json",
+    "phase_report": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_roof_A/results/progressive/analysis/phase_report.json",
+    "escalation_queue": "/home/astre/command-center/src/greenlit/auditor/experiments/hybrid_100_roof_A/results/progressive/analysis/escalation_queue.json"
+  }
+}

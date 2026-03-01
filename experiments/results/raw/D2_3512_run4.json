@@ -1,0 +1,67 @@
+{
+  "variation": "D2",
+  "contractor_id": 3512,
+  "contractor_name": "1-Tom-Plumber",
+  "archetype": "new_promising",
+  "expected_score": 75,
+  "run": 4,
+  "timestamp": "2026-01-20T19:23:06.785Z",
+  "success": true,
+  "trust_score": 87,
+  "risk_level": "LOW",
+  "reasoning": "Mixed council: DeepSeek=88, Claude=82, Gemini=92, Avg=87",
+  "individual_results": [
+    {
+      "model": "deepseek",
+      "trust_score": 88,
+      "risk_level": "LOW",
+      "reasoning": "This contractor demonstrates exceptional customer service with consistently outstanding reviews across Google (5.0/5.0 with 290 reviews) and Yelp (4.9/5.0 with 354 reviews), featuring detailed, authentic testimonials praising specific technicians like Scott and David for their professionalism, emergency responsiveness, and quality work. The business appears well-established with a professional website, clear licensing claims, and no significant legal or regulatory red flags found across multiple court and government databases. While the archetype suggests a newer business, the review volume and quality indicate strong operational maturity and customer satisfaction.",
+      "key_factors": [
+        "Exceptional customer reviews with high volume and authenticity",
+        "Professional online presence and clear service claims",
+        "No significant legal/regulatory issues detected"
+      ],
+      "red_flags": [
+        "Higher pricing mentioned in some reviews",
+        "Limited employee satisfaction per Glassdoor (3.0/5.0)"
+      ]
+    },
+    {
+      "model": "claude",
+      "trust_score": 82,
+      "risk_level": "LOW",
+      "reasoning": "1-Tom-Plumber demonstrates exceptionally strong customer satisfaction with 290+ Google reviews at 5.0 stars and 354 Yelp reviews at 4.9 stars, all appearing authentic with specific details about technicians Scott and David. The company operates professionally with 24/7 emergency service, proper licensing and insurance, and has water damage restoration expertise that differentiates them. While pricing appears higher than competitors, customers consistently praise the quality, professionalism, and emergency responsiveness, with no legal issues, complaints, or regulatory problems found across extensive searches.",
+      "key_factors": [
+        "Exceptional customer reviews (290+ Google at 5.0 stars, 354 Yelp at 4.9 stars) with authentic, detailed feedback",
+        "Licensed and insured with specialized water damage restoration background",
+        "Proven 24/7 emergency service delivery with consistent technician quality"
+      ],
+      "red_flags": [
+        "Pricing consistently reported as higher than competitors",
+        "Lower employee satisfaction (3.0/5 on Glassdoor) may indicate internal issues"
+      ]
+    },
+    {
+      "model": "gemini",
+      "trust_score": 92,
+      "risk_level": "LOW",
+      "reasoning": "1-Tom-Plumber demonstrates a strong commitment to customer satisfaction, evidenced by overwhelmingly positive reviews on Google Maps and Yelp. The reviews highlight prompt service, knowledgeable technicians, and a willingness to go above and beyond. While some reviews mention higher pricing, this is often associated with emergency services and quality workmanship. The company's proactive engagement on social media and focus on water damage restoration further contribute to a positive overall assessment.",
+      "key_factors": [
+        "Exceptional customer reviews",
+        "24/7 emergency service",
+        "Water damage restoration expertise"
+      ],
+      "red_flags": [
+        "Higher pricing mentioned in some reviews"
+      ]
+    }
+  ],
+  "red_flags": [
+    "Higher pricing mentioned in some reviews",
+    "Limited employee satisfaction per Glassdoor (3.0/5.0)",
+    "Pricing consistently reported as higher than competitors",
+    "Lower employee satisfaction (3.0/5 on Glassdoor) may indicate internal issues"
+  ],
+  "cost_usd": 0.10432974249999999,
+  "duration_ms": 8715
+}

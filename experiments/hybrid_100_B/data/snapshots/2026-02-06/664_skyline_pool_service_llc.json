@@ -1,0 +1,760 @@
+{
+  "contractor_id": 664,
+  "business_name": "Skyline Pool Service llc",
+  "city": "Saginaw",
+  "state": "TX",
+  "verticals": [
+    "pool"
+  ],
+  "archetype": "unknown",
+  "expected_score": null,
+  "snapshot_at": "2026-02-06T22:06:28.548Z",
+  "sources": {
+    "yelp": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:39:44.655Z",
+      "data": {
+        "query": "site:yelp.com \"Skyline Pool Service llc\" \"Saginaw, TX\"",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "google_maps_local": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:23.462Z",
+      "data": {
+        "cid": "10525103150713721301",
+        "name": "Skyline Pool Service llc",
+        "found": true,
+        "rating": 5,
+        "source": "serper",
+        "address": "8333 Artesian Spring Dr, Fort Worth, TX 76131",
+        "metrics": {
+          "strategy": "current",
+          "serper_calls": 2,
+          "serpapi_calls": 0,
+          "actual_reviews": 8,
+          "target_reviews": 8
+        },
+        "reviews": [
+          {
+            "date": "a year ago",
+            "text": "I absolutely love these guys! I refer them to everyone I know. They are awesome! Customer service is by far the best I have ever had with pool services. They are always on time and so knowledgeable about all the pool systems. I can’t thank them enough! They fixed our pool from the freeze and did it cheerfully. 😊❤️",
+            "author": "Michelle Christakis",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Mr. Ever Merroquin and his associates do a wonderful job of keeping our family’s swimming pool clean, clear, and beautiful! They have even come out in emergency situations quickly and have expedited fixing the problems. I would highly recommend their services to anyone who would ask. They are professional, kind, caring, and knowledgeable.",
+            "author": "Ricky Johnston",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "When we first moved into our home our pool was in dire need. Skyline Pool Service came highly recommended. Techs were skilled and able to get our pool crystal clear and have maintained it ever since. They have also assisted in helping us upgrade our pool equipment with new pumps, rerouting our plumbing as well as installation of the equipment. Their team is very dependable, prompt, and knowlegable. Owner of company is friendly and down to earth. He is very thorough in explaining things if you have questions and he doesn’t try to sell you stuff that you don’t need. I absolutely love that.  Highly recommend this pool service for their expertise, dependability and competitive pricing. 5 Stars+",
+            "author": "Michael Garza",
+            "rating": 5
+          },
+          {
+            "date": "3 months ago",
+            "text": "I am thoroughly impressed with their service. They are efficient, completing the job on the spot with cleanliness and professionalism. Their prices are affordable, and I confidently recommend them to all my friends and family.",
+            "author": "Mo Hasan",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "My family has been using this pool service for a couple years now they referred me. The company is very knowledgeable about everything pool related. I recently moved into a new house where the previous owner didn’t do the due diligence the pool needed. Needless to say Skyline Pool Service made the necessary repairs to get it looking new again. I have been using their service for a couple months now and the pool looks crystal clear and blue just like an oasis should. HIGHLY RECOMMEND!",
+            "author": "Rick Aguillon",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Ever, The owner is more than helpful, honest and wants the customer to be happy. He makes sure you are involved every step of the way and is always willing to answer questions any time of the day. They did awesome work -I am SO in love with my new surface on my pool. I would refer Skyline Pools to anyone needing good honest work !!",
+            "author": "DARLENE lee",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "Awesome owner and Team! Hard working, honest, dependable, personable, and professional. Best pool maintenance service in Fort Worth! Always takes care of everything as promised and never misses an appointment. Very knowledgeable, friendly staff, great communications for a reasonable price for the work performed. If you want a hassle free clean & beautiful pool year round go with Skyline Pool Service. They take care of everything, you won’t be disappointed.",
+            "author": "Chad Carr",
+            "rating": 5
+          },
+          {
+            "date": "a year ago",
+            "text": "I have been using Skyline Pool Service for over ten years. Their weekly service is impeccable and I never have to worry about them showing up. They are like clockwork. If they have an issue I hear from them immediately. They can make all kinds of repairs and I’m very pleased with all of their work.",
+            "author": "Steve Elwell",
+            "rating": 5
+          }
+        ],
+        "escalated": false,
+        "fraud_check": {
+          "reason": "CLEAN",
+          "signals": [
+            "ALL_PERFECT_SCORES"
+          ],
+          "escalate": false,
+          "confidence": "HIGH"
+        },
+        "review_count": 16,
+        "review_source": "serper",
+        "collection_cost": 0.002
+      }
+    },
+    "google_maps_hq": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:39:55.062Z",
+      "data": {
+        "found": true,
+        "rating": 5,
+        "status": null,
+        "review_count": 16,
+        "business_name": "See photos Skyline Pool Service llc"
+      }
+    },
+    "angi": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:29.817Z",
+      "data": {
+        "url": "https://www.angi.com/companylist/us/tx/saginaw/pool-and-spa-service.htm",
+        "found": true,
+        "title": "Top 10 Best Pool and spa technicians in Saginaw, TX",
+        "rating": 4.4,
+        "source": "serper_angi",
+        "confidence": "high",
+        "review_count": 964
+      }
+    },
+    "houzz": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:30.422Z",
+      "data": {
+        "url": null,
+        "note": "No results",
+        "found": false,
+        "rating": null,
+        "source": "serper_houzz",
+        "review_count": null
+      }
+    },
+    "trustpilot": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:40:17.500Z",
+      "data": "Trustpilot Search Results Companies Skyline Financial skylinefinancial.org • 2.8K reviews 4.8 SkyLine Travels LLC skylinetravelsllc.com • 33 reviews 1.9 Skyline Plaza www.skylineplaza.de • 12 reviews 2.0 Pool pool.net • 636 reviews 4.4 Skyline Trading skylinetrading.com • 57 reviews 1.8 Categories Pool Cleaning Service The best companies in the category 'Pool Cleaning Service' Swimming Pool Repair Service The best companies in the category 'Swimming Pool Repair Service' Swimming Pool The best companies in the category 'Swimming Pool' Show all results Categories Blog Log in For businesses For businesses Log in Categories Blog All filters Rating Companies (10000) Skyline Financial skylinefinancial.org 4.8 2,787 reviews 1501 Biscayne Blvd FL5, Miami, United States SkyLine Travels LLC skylinetravelsllc.com 1.9 33 reviews ., Dallas, United States Skyline Plaza www.skylineplaza.de 2.0 12 reviews Europa-Allee 6, Frankfurt am Main, Germany Pool pool.net 4.4 636 reviews Edertalstr. 86, Mörlenbach, Germany Skyline Trading skylinetrading.com 1.8 57 reviews Level 6, Ken Lee Building 20 Edith Cavell St, Port Louis, Mauritius, Port Louis, Mauritius Sv388 sv388.llc 0.0 0 reviews Bến Than, Tân Thạnh Đông, Củ Chi, Thành phố Hồ Chí Minh, Việt Nam, Ho Chi Minh, Vietnam Skyline Funding skylinefundingcapital.com 3.2 3 reviews United States Skyline Academic skylineacademic.com 4.4 10 reviews United States Island Time Pool Service islandtimepoolservice.com 3.7 1 review 6160 Warren Parkway Ste 100, Frisco, United States Economy Pool Supplies & Service www.economypool.net 3.8 2 reviews U.S. 41 Bypass South 781, Venice, United States Previous 1 2 3 4 1000 Next page Can't find a company? It might not be listed on Trustpilot yet. Add it and be the first to write a review. Add company Categories (6) Pool Cleaning Service Home Services Swimming Pool Repair Service Home & Garden Swimming Pool Sports Pool Hall Sports Pool Academy Sports Swimming Pool Supply Store Construction & Manufacturing are you human? Choose country United States Danmark Österreich Schweiz Deutschland Australia Canada United Kingdom Ireland New Zealand United States España Suomi Belgique België France Italia 日本 Norge Nederland Polska Brasil Portugal Sverige About About us Jobs Contact Blog How Trustpilot works Press Investor Relations Community Trust in reviews Help Center Log in Sign up Businesses Trustpilot Business Products Plans & Pricing Business Login Blog for Business Data Solutions Follow us on Legal Privacy Policy Terms & Conditions Guidelines for Reviewers System status Cookie preferences Do Not Sell My Info Modern Slavery Statement © 2026 Trustpilot, Inc. All rights reserved. We use cookies We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our partners in social media, advertising, and analytics. By continuing to use our website, you accept the use of all cookies. You can always access and change your cookie preferences in the footer of this website. Cookie preferences Got it Share your thoughts on upcoming features & be in a chance to win 200$! Click the link below to take our 10min survey & tell us what to build next https://trustpilotresearch.qualtrics.com/jfe/form/SV_8eTG61Snwo9I3k2 (Note: This is not a review) Next"
+    },
+    "thumbtack": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:40:22.596Z",
+      "data": "Sorry… Explore Services Join as a pro Sign up Log in What’s on your to-do list? Explore Services Join as a pro Sign up Log in This page may have moved or is no longer available. We're sorry, but we can't find the page you requested. Please try finding what you need from our homepage . Thumbtack Consider it done. About Partner with us For developers Careers Press Blog Customers How to use Thumbtack Sign up Get the app Services near me Cost estimates Home resource center Pros Thumbtack for pros Sign up as a pro Community Pro Resources Pro reviews iPhone app for pros Android app for pros Support Help Safety Terms of Use Privacy Policy CA Notice at Collection Do not Sell or Share My Personal Information © 2026 Thumbtack, Inc. Thumbtack Guarantee Cancel Search"
+    },
+    "facebook": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:40:26.545Z",
+      "data": "Page Not Found Facebook Join or Log Into Facebook Email or phone Password Forgot account? Log In Do you want to join Facebook? Sign Up Sign Up This page isn't available The link you followed may be broken, or the page may have been removed. Go back to the previous page · Go to Feed · Visit our Help Center English (US) Español Français (France) 中文(简体) العربية Português (Brasil) Italiano 한국어 Deutsch हिन्दी 日本語 Sign Up Log In Messenger Facebook Lite Video Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Meta AI more content Instagram Threads Voting Information Center Privacy Policy Consumer Health Privacy Privacy Center About Create ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading & Non-Users Settings Activity log Meta © 2026"
+    },
+    "google_news": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:35.364Z",
+      "data": {
+        "found": false,
+        "query": "\"Skyline Pool Service llc\" Saginaw lawsuit OR complaint OR scam",
+        "source": "google_news",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "local_news": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:40:28.958Z",
+      "data": {
+        "query": "Skyline Pool Service llc Saginaw site:dallasnews.com OR site:star-telegram.com OR site:wfaa.com OR site:nbcdfw.com OR site:fox4news.com",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "reddit": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:32.854Z",
+      "data": {
+        "found": false,
+        "query": "site:reddit.com \"Skyline Pool Service llc\" Saginaw",
+        "source": "reddit",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "youtube": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:40:41.283Z",
+      "data": "Skyline Pool Service llc Saginaw review OR complaint - YouTube Back Skip navigation Search Search with your voice Sign in Home Home Shorts Shorts Subscriptions Subscriptions You You All Shorts Videos Unwatched Watched Recently uploaded Live Filters Search filters SHORTS SHORTS Now playing Pool Cleaning - Vacuum Process | Florida General Pool And Spa, Inc. General Pool And Spa, Inc. • • 557 views 3 years ago General Pool And Spa, Inc. General Pool And Spa, Inc. General Pool And Spa, Inc. 896 NW 47TH St Pompano Beach, FL 33064 Phone:(954) 803-4923 Web: www. General Pool And Spa, Inc. 896 NW 47TH St Pompano Beach, FL 33064 Phone:(954) 803-4923 Web: www. From the video description SHORTS SHORTS Now playing Pool Cleaning Service LLC Pool Maintenance Pool Cleaning Service Chemicals Included Pool Cleaning Service Chemicals Included • • 4 views 1 year ago Pool Cleaning Service Chemicals Included Pool Cleaning Service Chemicals Included \"Luxury Oasis\" \"Backyard Paradise\" \"Dream Pool \" \"Resort-Style\" \"Custom Pools\" \"Summer-Ready\" \"Outdoor Living\" \"South ... \"Luxury Oasis\" \"Backyard Paradise\" \"Dream Pool \" \"Resort-Style\" \"Custom Pools\" \"Summer-Ready\" \"Outdoor Living\" \"South ... From the video description SHORTS SHORTS Now playing Professional Pool Cleaning in Saginaw | #BeattiePools #PoolService #MichiganPools Beattie Master Pool & Spa Beattie Master Pool & Spa • • 17 views 5 months ago Beattie Master Pool & Spa Beattie Master Pool & Spa Tired of cloudy water or constant upkeep? Beattie Master Pool & Spa offers full-service pool cleaning for homes across ... Tired of cloudy water or constant upkeep? Beattie Master Pool & Spa offers full-service pool cleaning for homes across ... From the video description SHORTS SHORTS Now playing Pool Cleaning Tips 101: Netting, Vacuuming, Chemicals #poolcleaning Picture Perfect Pool Services Inc. Picture Perfect Pool Services Inc. • • 38K views 1 year ago Picture Perfect Pool Services Inc. Picture Perfect Pool Services Inc. Welcome to another day in the life of a professional pool cleaner! In this timelapse video, join me as I demonstrate the essential ... Welcome to another day in the life of a professional pool cleaner! In this timelapse video, join me as I demonstrate the essential ... From the video description SHORTS SHORTS Now playing Love your job? How much can a pool tech make? Pool Crew AU Pool Crew AU • • 5.6K views 3 years ago Pool Crew AU Pool Crew AU First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... First you have to enjoy your job. And who wouldn't like working poolside and enjoying being outdoors? On a fairly easy day ... From the video description SHORTS SHORTS Now playing Making money in the pool service business... srvcly srvcly • • 25K views 1 year ago srvcly srvcly In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... In this pool #short I explain how much I am making with Mike at Stay Fresh Pools as his 1099 contractor. Hes paying me $13 a ... From the video description SHORTS SHORTS Now playing Pool cleaning step by step - pool maintenance 🧽✅🧑🏻‍🔧 Dunota Pools, Central Florida Dunota Pools Dunota Pools • • 112K views 2 years ago Dunota Pools Dunota Pools SHORTS SHORTS Now playing Loggins Pools LLC “Pool Cleaning You Can Trust” LogginsPoolsLLC LogginsPoolsLLC • • 45 views 11 months ago LogginsPoolsLLC LogginsPoolsLLC SHORTS SHORTS Now playing Best Pool Cleaning Video! Life With Evan Life With Evan • • 1.6M views 4 years ago Life With Evan Life With Evan SHORTS SHORTS Now playing I tried the $4k/month pool cleaning side hustle… Finance Unfolded Finance Unfolded • • 31K views 2 years ago Finance Unfolded Finance Unfolded 18:39 18:39 Now playing The Surprisingly Simple Business of Pool Cleaning Codie Sanchez Codie Sanchez • • 121K views 3 years ago Codie Sanchez Codie Sanchez Want to learn how to buy a business? (Free Consult): https://contrarianthinking.biz/youtubefam Learn Main Street ways to make ... Want to learn how to buy a business? (Free Consult): https://contrarianthinking.biz/youtubefam Learn Main Street ways to make ... From the video description 4K People also watched 10:45 10:45 Now playing Pool Tech Basics 💧 | How I EARN $120/Hour Cleaning Pools 💸 | Ep. 13 Maurice \"The Pool Guy\" Maurice \"The Pool Guy\" • • 157 views 4 months ago Maurice \"The Pool Guy\" Maurice \"The Pool Guy\" Episode 13 breaks down the basics of being a pool tech and how I regularly earn $120/hour doing residential pool service in ... Episode 13 breaks down the basics of being a pool tech and how I regularly earn $120/hour doing residential pool service in ... From the video description 8:56 8:56 Now playing Pool Removal - Look at that SLUDGE. LIMITED ACCESS. Time lapse. Stan Stan • • 7.5M views 4 years ago Stan Stan This week we completely removed a fibreglass pool that hasn't been used in years. Access was tight as you can see but ... This week we completely removed a fibreglass pool that hasn't been used in years. Access was tight as you can see but ... From the video description 6 moments Day 1 | Day 2 | Day 3: Rain. Lucky it's inside | Final day | Clean up | See you next time 6 auto-generated moments in this video 6 moments Day 1 Day 1 0:25 Day 1 0:25 Day 2 Day 2 1:26 Day 2 1:26 Day 3: Rain. Lucky it's inside Day 3: Rain. Lucky it's inside 5:50 Day 3: Rain. Lucky it's inside 5:50 Final day Final day 7:22 Final day 7:22 Clean up Clean up 7:52 Clean up 7:52 See you next time See you next time 8:48 See you next time 8:48 31:45 31:45 Now playing Most Underrated Service Business?! (Makes $851K/Year) UpFlip UpFlip • • 144K views 6 months ago UpFlip UpFlip Head to https://Hostinger.com/upflip and build your business website in minutes with Hostinger's AI Builder. From corporate ... Head to https://Hostinger.com/upflip and build your business website in minutes with Hostinger's AI Builder. From corporate ... From the video description 4K CC 39 chapters Start | Howdy, Texas! | An operation one man CAN do | How often, really? | Services offered | Third time’s a charm | The call that changed it all | Startup costs | Funding the capital | Solid support system | But, why choose ASP? | First customer, locked in! | Prep before you leap | Fan blitz | Knock on doors, don’t be shy! | Revenue | Seeing the “unknown” | Non-negotiable equipment | Winning marketing moves | Convert them to customers (every time!) | Know your numbers | A day in the life of a franchisee | Business owners “never” unplug | All about legacy | Tile supplies | Overcoming early challenges | Effective systems | Getting hands on deck | Pricing strategy | Managing stress | Book recommendation | Leadership style | Family dynamics (that work!) | There’s freedom in franchising | What success really means | Just go for it! | Good for most, but not for all | Biggest franchise myth busted! | Outro 39 chapters in this video 39 chapters Start Start 0:00 Start 0:00 Howdy, Texas! Howdy, Texas! 0:33 Howdy, Texas! 0:33 An operation one man CAN do An operation one man CAN do 0:46 An operation one man CAN do 0:46 How often, really? How often, really? 1:09 How often, really? 1:09 Services offered Services offered 2:02 Services offered 2:02 Third time’s a charm Third time’s a charm 3:22 Third time’s a charm 3:22 The call that changed it all The call that changed it all 3:59 The call that changed it all 3:59 5:22 5:22 Now playing A Day In the Field with Jake Grozier (Pool Care) GorillaDesk GorillaDesk • • 6.5K views 6 years ago GorillaDesk GorillaDesk gorilladesk.com In this new ride-a-long series, we will be going out and shining a light on the men and woman that make up the ... gorilladesk.com In this new ride-a-long series, we will be going out and shining a light on the men and woman that make up the ... From the video description 4K 5 chapters Intro | Meet Jake Grozier | Making Money | Word of Mouth | Business Success 5 auto-generated chapters in this video 5 chapters Intro Intro 0:00 Intro 0:00 Meet Jake Grozier Meet Jake Grozier 0:27 Meet Jake Grozier 0:27 Making Money Making Money 1:31 Making Money 1:31 Word of Mouth Word of Mouth 2:47 Word of Mouth 2:47 Business Success Business Success 3:53 Business Success 3:53 + 6 more SHORTS SHORTS Now playing Affordable Pool Cleaning Services. Brothers Pool and Spa Brothers Pool and Spa • • 49 views 1 year ago Brothers Pool and Spa Brothers Pool and Spa Ditch the Green, Dive into Crystal Clear! Hey North County San Diego pool owners, tired of staring at a murky mess instead of a ... Ditch the Green, Dive into Crystal Clear! Hey North County San Diego pool owners, tired of staring at a murky mess instead of a ... From the video description SHORTS SHORTS Now playing TOP-5. Best Pressure Side Pool Cleaners 2024 Renovate Renovate • • 1.1K views 1 year ago Renovate Renovate TOP-5. Best Pressure Side Pool Cleaners 2024 * As an Amazon Associate I earn from qualifying purchases. TOP-5. Best Pressure Side Pool Cleaners 2024 * As an Amazon Associate I earn from qualifying purchases. From the video description SHORTS SHORTS Now playing $260/hr with pool maintenance #pools #swimmingpool #businessideas #businessowner #businessgrowth Proactive Pool Solutions Proactive Pool Solutions • • 428 views 9 months ago Proactive Pool Solutions Proactive Pool Solutions Come with me while I run a pool maintenance and repair route. Come with me while I run a pool maintenance and repair route. From the video description SHORTS SHORTS Now playing Professional Swimming Pool Cleaning and Maintenance Pool Sevice Encino Pool Sevice Encino • • 81 views 6 years ago Pool Sevice Encino Pool Sevice Encino Get In The Pool . We'll Do The Rest! #cleaningservice #swimmingpools #encino #residential #commercial #pools #poolcleaning ... Get In The Pool . We'll Do The Rest! #cleaningservice #swimmingpools #encino #residential #commercial #pools #poolcleaning ... From the video description SHORTS SHORTS Now playing Veteran Pool Service - Expert Care for Crystal Clear Pools Veteran Pool Service Veteran Pool Service • • 325 views 2 months ago Veteran Pool Service Veteran Pool Service Veteran Pool Service's 20+ years of expertise keeps my pool crystal clear and hassle-free—cheers to stress-free pool care ! Veteran Pool Service's 20+ years of expertise keeps my pool crystal clear and hassle-free—cheers to stress-free pool care ! From the video description SHORTS SHORTS Now playing Pool Technician | $68,930 to clean pools and repair pool equipment 👨‍🔧 🌊 🏊‍♀️ 🤽‍♂️ bookandtable bookandtable • • 8K views 2 years ago bookandtable bookandtable Book&Table Inc. In-Person & Online Tutors Find a Tutor Today ▪️https://www.linktr.ee/bookandtable. ▫️TikTok: ... Book&Table Inc. In-Person & Online Tutors Find a Tutor Today ▪️https://www.linktr.ee/bookandtable. ▫️TikTok: ... From the video description 0:51 0:51 Now playing Swimming Pool Cleaning Aquatic Pools and Fountains LLC Aquatic Pools and Fountains LLC • • 146 views 2 years ago Aquatic Pools and Fountains LLC Aquatic Pools and Fountains LLC Aquatic Pools and Fountains LLC - Dubai. Wholesalers for Swimming Pool & Water Fountains Equipments in Dubai. Aquatic Pools and Fountains LLC - Dubai. Wholesalers for Swimming Pool & Water Fountains Equipments in Dubai. From the video description SHORTS SHORTS Now playing Pool cleaning work #pools #poolcleaning #Vlog Teresa Thompson Teresa Thompson • • 1.4K views 4 months ago Teresa Thompson Teresa Thompson Pool Cleaning Work #pools #poolcleaning #Vlog #fyp #highlandbros #fok. Pool Cleaning Work #pools #poolcleaning #Vlog #fyp #highlandbros #fok. From the video description SHORTS SHORTS Now playing Affordable Pool Repair – Boost Safety and Style with Expert Pool Maintenance Affordable Pools Affordable Pools • • 67 views 6 months ago Affordable Pools Affordable Pools Discover how quality gunite resurfacing, tile updates, and coping replacements not only boost your commercial pool's look but ... Discover how quality gunite resurfacing, tile updates, and coping replacements not only boost your commercial pool's look but ... From the video description Tap to unmute 2x Search Info Shopping If playback doesn't begin shortly, try restarting your device. • You're signed out Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer. Cancel Confirm Share Include playlist An error occurred while retrieving sharing information. Please try again later. Watch later Share Copy link 0:00 / Live • Watch full video • • NaN / NaN"
+    },
+    "nextdoor_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:40:42.580Z",
+      "data": {
+        "query": "site:nextdoor.com Skyline Pool Service llc Saginaw",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://nextdoor.com/pages/skyline-pool-services-llc-fort-worth-tx/",
+            "title": "Skyline pool services LLc - Nextdoor",
+            "snippet": "Skyline pool services LLc. Pool cleaner. Fave. Message ... Saginaw, TX. 90 · Sea Blue Pool And Spa Services, LLCBlue Mound, TX. 57.",
+            "position": 1
+          },
+          {
+            "link": "https://nextdoor.com/city/fort-worth--tx/",
+            "title": "Fort Worth, TX | News, Crime, Lost Pets, Free Stuff - Nextdoor",
+            "snippet": "Nextdoor is the app for neighborhoodsWhether you're a longtime resident or new in town, Nextdoor is your source for local local advice, intel, and connections.",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "indeed": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:32.161Z",
+      "data": {
+        "found": false,
+        "query": "site:indeed.com/cmp \"Skyline Pool Service llc\"",
+        "source": "indeed",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "osha": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:34.276Z",
+      "data": {
+        "found": false,
+        "query": "site:osha.gov \"Skyline Pool Service llc\"",
+        "source": "osha",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "epa_echo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:40:58.034Z",
+      "data": {
+        "query": "https://echo.epa.gov/facilities/facility-search/results?search_type=Name&Name=Skyline%20Pool%20Service%20llc&State=TX",
+        "source": "serper",
+        "results": [
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search",
+            "title": "Facility Search – Enforcement and Compliance Data | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data. View More Search Options. Geographic Location. EPA Region (View EPA Regional Map). No Restrictions.",
+            "position": 1,
+            "attributes": {
+              "Missing": "Name&Name= Skyline% 20Pool% 20Service% 20llc&State="
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/facility-search/results",
+            "title": "Facility Search Results | ECHO | US EPA",
+            "snippet": "Facility Search Results: Georgia, Michigan, Nebraska, North Carolina, Pennsylvania, Vermont, Washington, West Virginia, and Wisconsin are working with EPA.",
+            "position": 2,
+            "attributes": {
+              "Missing": "Name&Name= Skyline% 20Pool% 20Service% 20llc&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/",
+            "title": "EPA ECHO",
+            "snippet": "Use EPA's Enforcement and Compliance History Online website to search for facilities in your community to assess their compliance with environmental ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "Name&Name= Skyline% 20Pool% 20Service% 20llc&State= TX"
+            }
+          },
+          {
+            "date": "Jan 4, 2024",
+            "link": "https://echo.epa.gov/facilities",
+            "title": "Facilities | ECHO | US EPA",
+            "snippet": "Facility Search – Enforcement and Compliance Data · Enforcement Case Search · Quarterly NPDES Noncompliance Report Search · Corporate Compliance ...",
+            "position": 4,
+            "sitelinks": [
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search",
+                "title": "Facility Search – Enforcement..."
+              },
+              {
+                "link": "https://echo.epa.gov/facilities/facility-search/results",
+                "title": "Facility Search Results"
+              }
+            ],
+            "attributes": {
+              "Missing": "Name&Name= Skyline% 20Pool% 20Service% 20llc&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/help/facility-search/search-criteria-help",
+            "title": "Facility Search Criteria Help | ECHO | US EPA",
+            "snippet": "Search criteria are organized by search page category or by term through the hyperlinks below to allow you to quickly find the search term of interest.",
+            "position": 5,
+            "attributes": {
+              "Missing": "Name&Name= Skyline% 20Pool% 20llc&State= TX"
+            }
+          },
+          {
+            "date": "Nov 12, 2025",
+            "link": "https://www.epa.gov/frs",
+            "title": "Facility Registry Service (FRS) - EPA",
+            "snippet": "This is a centrally managed database that identifies facilities either subject to environmental regulations or of environmental interest, ...",
+            "position": 6,
+            "attributes": {
+              "Missing": "Name&Name= Skyline% 20Pool% 20llc&State= TX"
+            }
+          },
+          {
+            "date": "May 14, 2024",
+            "link": "https://echo.epa.gov/help/facility-search/facility-search-help",
+            "title": "Facility Search Help | ECHO | US EPA",
+            "snippet": "ECHO facility searches query a database of hundreds of thousands of facility records to find those in which you're interested.",
+            "position": 7,
+            "attributes": {
+              "Missing": "Name&Name= Skyline% 20Pool% 20Service% 20llc&State= TX"
+            }
+          },
+          {
+            "date": "Dec 9, 2025",
+            "link": "https://echo.epa.gov/tools/map-service",
+            "title": "ECHO Map Services | ECHO | US EPA",
+            "snippet": "The ECHO Facilities Map Service includes data about EPA-regulated facilities from the All Media Programs facility search and the ECHO Exporter ...",
+            "position": 8,
+            "attributes": {
+              "Missing": "Name&Name= Skyline% 20Pool% 20llc&State= TX"
+            }
+          },
+          {
+            "date": "May 13, 2024",
+            "link": "https://echo.epa.gov/facilities/enforcement-case-search/results",
+            "title": "Enforcement Case Search Results | ECHO | US EPA",
+            "snippet": "Find EPA Cases, EPA Enforcement Case Search, Advanced EPA Enforcement Case Search, Data Services, National Data Sets, ECHO Exporter, ECHO Web Services, ECHO ...",
+            "position": 9,
+            "attributes": {
+              "Missing": "Name&Name= Skyline% 20Pool% 20Service% 20llc&State= TX"
+            }
+          },
+          {
+            "link": "https://echo.epa.gov/help/facility-search/all-data-search-results-help",
+            "title": "Search Results Help - All Media Programs | ECHO | US EPA",
+            "snippet": "The Search Results page presents results that meet the search criteria specified. Information and data specific to the All Media Programs facility search is ...",
+            "position": 10,
+            "attributes": {
+              "Missing": "Name&Name= Skyline% 20Pool% 20llc&State= TX"
+            }
+          }
+        ]
+      }
+    },
+    "porch": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:02.645Z",
+      "data": "Porch | Find the Best Rated Local Home Improvement Professionals Moving Checklist Movers Internet/TV Home Monitoring Porch App Repair & Improve PROFESSIONALS Appliance Repair Architects Asphalt & Paving Companies Cabinet Makers Carpenters Carpet Cleaning Chimney Sweeps Concrete Contractors Deck Builders Drywall Contractors Electricians Excavation Contractors Fence Companies Flooring Contractors Furniture Repair & Refinishing General Contractors Gutter Companies HVAC Companies Handyman Services Home Builders Home Inspectors Home Monitoring & Security House Cleaning Services House Painters Interior Designers & Decorators Land Surveyors Landscapers Lawn Care Services Locksmiths Moving Companies Pest Control & Exterminators Plumbers Pool Companies Pressure Washing Remodeling Contractors Roofers Septic Tank Service Siding Contractors Tree Services Window Companies PROJECTS Air Duct Cleaning Animal Control Bathroom Remodeling Cabinet Refacing & Refinishing Concrete Repair Construction Companies Fence Installation & Builders Foundation Repair Garage Door Installation Garage Door Repair Gutter Cleaning Gutter Installation & Replacement Heating & Furnace Repair Heating and Cooling Companies Junk Removal Lawn Irrigation & Sprinkler Repair Lawn Mowing Service Roof Repair Roof Replacement & Installation Septic Tank Pumping Siding Installation TV Mounting Services Tree Removal Tree Trimming Water Damage Restoration Water Heater Installation Well Drilling Window Installation Window Repair Window Replacement Resources ADVICE Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems of 2022 SEE ALL ADVICE COST GUIDES Vinyl Fence Cost Paver Patio Cost Inground Pool Cost Concrete Slab Cost Sod Cost Calculator Cost to Paint Garage Cost to Paint a House Chain Link Fence Cost Cost to Build a House Fence Cost Calculator Pool Resurfacing Cost Cost to Replace a Roof Cost to Install Carpet Tile Installation Cost Screened in Porch Cost Concrete Sidewalk Cost Paver Installation Cost Cost to Install Gutters Blind Installation Cost Window Replacement Cost Granite Countertops Cost Cost to Power Wash House Toilet Installation Cost Furnace Installation Cost Drywall Installation Cost Cost to Install Baseboard Cost to Replace a Bathtub HVAC Unit Replacement Cost Cost to Remodel a Bathroom Privacy Fence Cost Calculator Cost to Install Water Heater Cost to Install Vinyl Siding Cost to Install Drop Ceiling Hardwood Floor Refinishing Cost Interior Door Installation Cost Replace Load Bearing Porch Post Cost to Install Kitchen Cabinets Cost to Install Laminate Flooring Replace Bathtub and Tiles on Wall Replace Main Water Shut Off Valve Cost For Businesses Home Inspection Software Moving Software Contractor Leads Utilities Companies Sign up Log in Moving, improving, and everything in between. Porch makes moving, insurance, and improving your home simple. WHAT WE OFFER Checklist Insurance Movers Handyman TV/Internet Security WHAT WE OFFER Checklist Insurance Movers Internet/TV Security Handyman Moving checklist Quickly compare and set up movers, TV & internet, and home insurance in one place Moving is stressful. We can help organize and check everything off your to-do list. Porch Concierge® is a personal phone service that connects you with home service providers to help simplify the process of moving, improving, repairing and everything in between around your home. Get your free checklist & Porch Concierge®. First name * Email * Phone * By clicking Send Request, you agree to Porch's Terms of Use and Angi’s Terms of Use and you consent to have Porch, Porch's service providers and Angi's service providers call or text you using automated technology and pre-recorded messages at the phone numbers you provide, regarding home-related services that may be of interest to you. you also agree to Porch's Privacy Policy and Angi's Privacy Policy . Consent is not a condition of any purchase. Learn more View Checklist We take your data seriously. Your data is safe and secure. Home insurance Compare quotes from top insurance providers in just a couple minutes. Our concierge team will get you paired with an insurance agent that can compare quotes with the nation's top home insurance providers 1 (855) 222-4960 Movers Easily book top quality movers at the best rates No matter what kind of moving help you need, get instant quotes from local movers through the moving experts at HireAHelper. check Simple, upfront pricing check Excellent customer support check Guaranteed service C26243C3-1999-405A-A2F4-9592BD59E577 Move help Movers + Truck ZIP code Move date BOOK MOVERS star star star star star 167,828 reviews a Porch company Internet & TV Compare the best TV & internet deals. Schedule service online in minutes. No more waiting on hold. Simply compare, customize, and choose your package. ZIP code SEE DEALS Security & smart home Best Home Security Systems of 2026 We reviewed hundreds of home security systems and created a simple list to help you choose the best system that fits your needs. Category Best Overall Best for Renters Best Home Automation Best Experience Best Pro Install Most Reliable Most Flexible Lowest Cost Best Google Integration Best for Techies Company Overall rating 9.8 9.3 8.9 8.1 7.9 7.8 7.6 7.5 7.3 7.2 Installation Professional DIY Professional DIY Professional or DIY DIY DIY DIY DIY DIY Monthly fee $45.99 - $65.99 $14.99 $49.99 $34.99 - $49.99 $28.99 - $38.99 $19.99 - $54.99 $30.99 - $40.99 $10 $24.99 $9.99 Upfront cost $99 - $199 $229 - $489 Starting at $699 $131 - $1,033 $399 - $499 $0 $0 $169 - $329 $399 $299 - $799 Top features Best Overall System Easy Pro Install Best 24/7 Monitoring Best For Renters Easy Pro Install Portable Equipment Best Home Automation Easy Professional Install Works with Alexa & Nest Best DIY System 100% Cellular Monitoring Best Pro Install Best Equipment & Tech Trusted Brand Best Overall System Easy Pro Install Best 24/7 Monitoring 2-Way Voice Zero Up-Front Cost Lowest Total Cost Lowest Monthly Rate Best Google Integration No rush arm/disarm Low Monthly Cost Great Smart Home Integrations View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans View Plans Read More Read More Read More Read More Read More Read More Read More Read More Read More Read More Prices effective as of November 13, 2020. Offers and availability subject to change. Handyman Services Instant quotes, upfront prices, easy online scheduling We take care of the little things, all backed by our satisfaction promise. star star star star star 56,216 Ratings Handyman to help you get moved in Appliance Installation $320 Furniture Assembly $360 Ceiling Fan Installation $320 TV Mounting $320 Art Hanging $185 Ongoing maintenance made easy Dryer Vent Cleaning $185 Gutter Cleaning $360 Light Switch Replacement $185 Brush Removal $360 Deck Repair $710 MORE HOME SERVICES Home Improvement For major home improvements, get free quotes from independent pros. check 1,100+ types of projects check See licensing info, reviews, and more check Backed by Property Protection Handymen Electrical HVAC Plumbing Flooring Lawn Care Painting Windows Appliances Remodeling Roofing Doors Porch is committed to making sure you're happy with every job, whether it's done by Porch or a recommended pro from the Porch Pro Network. Learn more Start a project today It's fast, easy, and hassle-free! search What do you need done? GO Home Inspections Book an inspector Get access to top local inspectors, whether you need a home inspection for purchase or a pre-inspection before listing your home. BOOK INSPECTOR Cost guides Try it out for free now. Drywall repair $172 Average Get local cost Window installation $1,300 Average Get local cost Paint home $1,835 Average Get local cost Garbage disposal installation $130 Average Get local cost SEE ALL COST GUIDES Planning guides Guides and articles to help you plan your next project. Tips to Raise your Home Value at any Price Point Moving a Family: The Complete Guide for Parents January Home Maintenance Guide Best Home Security Systems SEE ALL PLANNING GUIDES Porch provides home services for some of the biggest brands. Porch for Business We're here to help you grow The Porch Group provides comprehensive software and services for 11,000 (and growing) home inspectors, moving companies, and other home services businesses. Home Inspectors ISN is the #1 home inspection technology company in the country. They provide inspectors with the tools and support they need to operate efficiently and effectively. Learn more Learn more Moving Companies HireAHelper's moving software and service technology allow moving companies to easily connect and work with customers in their area. Learn more Learn more Contractors & Handyman Porch offers handyman services for over 1,100 different types of home projects, and connects independent pros with customers who need help with bigger jobs. Learn more Learn more Utility Companies Porch Utilities offers an award-winning customer experience to help utility customers find the best deals in their area. Learn more Learn more Top Cities Albuquerque Asheville Atlanta Birmingham Buffalo Charleston Charlotte Chattanooga Cincinnati Cleveland Columbia Columbus Dallas Denver Greenville Houston Huntsville Indianapolis Jacksonville Knoxville Lincoln Los Angeles Louisville Memphis Mobile Myrtle Beach Nashville Newtown (Bucks County) Ocala Oklahoma City Omaha Orlando Pensacola Philadelphia Phoenix Pittsburgh Port St. Lucie Raleigh Richmond Rochester San Antonio Seattle Spokane St. Louis Tallahassee Tampa The Villages Tucson Wichita Wilmington Top Categories Appliance Installation Services Near You Appliance Repair Services Near You Awning Repair Services Near You Bathtub Refinishers Near You Blinds Installation Services Near You Concrete Resurfacing Services Near You Countertop Specialists Near You Curtain Installation Services Near You Custom Furniture Makers Near You Deck Repair Services Near You Deck Staining & Sealing Services Near You Dryer Vent Installation Services Near You Ethernet Cable Installation Services Near You Fence Contractors Near You Firewood Delivery Services Near You Framing Contractors Near You Furniture Assembly Services Near You Garage Door Companies Near You Garbage Removal Services Near You Gas Fireplace Repair Services Near You Gazebo Assembly Services Near You Glass & Mirror Contractors Near You Gutter & Downspout Repair Near You Gutter Contractors Near You Hardscape Contractors Near You Insulation Contractors Near You Landscape Architects & Designers Near You Lawn & Garden Services Near You Lawn Irrigation Companies Near You Masonry Contractors Near You Metal Roofing Installation Services Near You Metal Workers & Welders Near You Piano Repair Services Near You Plastering Contractors Near You Railing Installation Services Near You Real Estate Professionals Near You Rock Or Boulder Removal Services Near You Screen Installer Near You Screen Repair Services Near You Shed Repair Services Near You Stained Glass Restoration & Repair Services Near You Structural Engineers Near You Tile Contractors Near You Tile Regrouting Services Near You Tree Services Near You Wallpaper Hangers Near You Well Services Near You Window Caulking Contractors Near You Window Replacement & Installation Companies Near You Wood Turning Services Near You FOR HOMEOWNERS expand_more How It Works Porch Guarantee FAQ Movers Near Me Best Home Monitoring Systems Concrete Slab Cost Porch App FOR PROFESSIONALS expand_more Join Porch Resources Porch Reviews for Pros Moving Leads Home Inspection Software COMPANY expand_more Porch Group About Porch Reviews Careers Contact Press Need help or have questions? CUSTOMER SUPPORT © 2026 Porch.com, Inc. Terms of use Privacy policy Do Not Sell My Information"
+    },
+    "buildzoom": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:09.195Z",
+      "data": "Find a contractor you can trust on BuildZoom Home Photos About Sign In Beautiful Results BuildZoom is a better way to remodel any type of property. See more photos Get a bid Contractors by city Miami, FL Los Angeles, CA New York, NY San Francisco, CA Washington, DC Ready to hire Get bids from the top-rated contractors in your area. Get Started About BuildZoom About How It Works Case Studies BuildZoom for Contractors General Contractor Invoice Template Blog Our Team We're Hiring Contact Us Contact Info buildzoomsupport@blockrenovation.com Contractor search Search BuildZoom / Find a Pro Browse contractors by state Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Top contractors in major cities Albuquerque, NM Atlanta, GA Austin, TX Baltimore, MD Boston, MA Bronx, NY Brooklyn, NY Charlotte, NC Chicago, IL Colorado Springs, CO Columbus, OH Dallas, TX Denver, CO Detroit, MI El Paso, TX Fort Worth, TX Fresno, CA Houston, TX Indianapolis, IN Jacksonville, FL Kansas City, MO Las Vegas, NV Long Beach, CA Los Angeles, CA Louisville, KY Memphis, TN Mesa, AZ Miami, FL Milwaukee, WI Minneapolis, MN Nashville, TN New York, NY Oakland, CA Oklahoma City, OK Omaha, NE Philadelphia, PA Phoenix, AZ Portland, OR Raleigh, NC Richmond, VA Rochester, NY Sacramento, CA San Antonio, TX San Diego, CA San Francisco, CA San Jose, CA Seattle, WA Staten Island, NY Tucson, AZ Tulsa, OK Virginia Beach, VA Washington, DC About BuildZoom About BuildZoom How It Works Privacy Policy Terms of Service Careers Contact Help Center Sitemap Blog Data & Analysis Economic analysis by Issi Romem Building Permit Database Map of remodeling activity in your town Ways to use BuildZoom Get competitive bids for any project View remodeling history of any property Create a general contractor work agreement Search every licensed contractor Forums powered by licensed contractors Get inspiration in our photo galleries Submit a project © 2026. All Rights Reserved. San Francisco , CA 94104 We're Hiring! 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040 2041 2042 2043 2044 2045 2046 Today"
+    },
+    "tx_ag_complaints": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:15.364Z",
+      "data": {
+        "query": "site:texasattorneygeneral.gov Skyline Pool Service llc",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 9, 2022",
+            "link": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/2022-12-09%20CVS%20Global%20Settlement%20Agreement%20with%20Exhibits%20(003).pdf",
+            "title": "CVS SETTLEMENT AGREEMENT - Attorney General",
+            "snippet": "Page 1. CVS SETTLEMENT. AGREEMENT. Page 2. i. TABLE OF CONTENTS. Page. I. Definitions.",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "tx_sos_search": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:16.362Z",
+      "data": {
+        "query": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn",
+            "title": "Franchise Tax Account Status Search - Texas Comptroller",
+            "snippet": "Franchise Tax Account Status Search. API access to this data is available. Please refer to our Public API Documentation for further information.",
+            "position": 1
+          },
+          {
+            "link": "https://mycpa.cpa.state.tx.us/staxpayersearch/",
+            "title": "Sales Taxpayer Search - Texas Comptroller",
+            "snippet": "Sales Taxpayer Search. Search for and verify the status of Texas Sales and Use Tax permits. Permits are listed as active or inactive.",
+            "position": 2,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://comptroller.texas.gov/",
+            "title": "Texas Comptroller of Public Accounts",
+            "snippet": "Taxes Home. Texas Taxes. Sales Tax · Sales Tax Permit Application · Franchise Tax · Search Account Status · Terminate or Reinstate a Business ...",
+            "position": 3,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "date": "Jan 2, 2024",
+            "link": "https://texasscorecard.com/wp-content/uploads/2024/01/cpa-phelan-taxable-entity-search-results.pdf",
+            "title": "[PDF] Public Information Report - Texas Scorecard",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 2/2. Title. Name and Address. MANAGER. MICHAEL A PHELAN. 1277 CALDER AVENUE BEAUMONT, TX 77701.",
+            "position": 4
+          },
+          {
+            "link": "https://amarillotribune.org/wp-content/uploads/2025/04/INSPIRE-AMARILLO-LLC.pdf",
+            "title": "[PDF] Taxable Entity Search Results - Amarillo Tribune",
+            "snippet": "AMARILLO, TX 79102.. 9/16/24, 11:56 AM. Taxable Entity Search Results https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. 1/2. Page 2.. Franchise Tax Account ...",
+            "position": 5
+          },
+          {
+            "date": "Sep 6, 2022",
+            "link": "https://support.google.com/business/thread/178188550/need-help-with-a-suspended-listing-that-is-compliant-with-terms-of-service?hl=en",
+            "title": "Need help with a suspended listing that is compliant with terms of ...",
+            "snippet": "You can find us on the State of Texas corporate lookup website: https://mycpa.cpa.state.tx.us/coa/coaSearchBtn. I also attached the ...",
+            "position": 6
+          },
+          {
+            "link": "https://www.sos.state.tx.us/search.shtml?dropXSL=&pr=default&prox=page&rorder=500&rprox=500&rdfreq=500&rwfreq=500&rlead=500&sufs=0&order=r&rdepth=0&query=CERTIFICATE+OF+ACCOUNT+STATUS",
+            "title": "Current Search Results - the Texas Secretary of State",
+            "snippet": "If you've been asked to obtain a “certificate of good standing,” the first step is to determine what type of certificate is being requested.",
+            "position": 7,
+            "attributes": {
+              "Missing": "coaSearchBtn | Show results with:coaSearchBtn"
+            }
+          },
+          {
+            "link": "https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0036331_TEXAS%20Certificate%20of%20Good%20Standing_20190123.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "State of Formation TX. Effective SOS Registration Date 09/13/2018. Texas SOS File Number ... https://mycpa.cpa.state.tx.us/coa/coaSearchBtn.",
+            "position": 8
+          },
+          {
+            "link": "https://assets.comptroller.texas.gov/ch313/356/groom-0356-grandview-annual-2016.pdf",
+            "title": "[PDF] Franchise Tax Account Status - Texas.gov",
+            "snippet": "https://mycpa.cpa.state.tx.us/coa/coaSearchBtn#. 1/1. I. Franchise Tax Account Status. As of : 10/26/2017 09:57:35. This Page is Not Sufficient for Filings with ...",
+            "position": 9
+          },
+          {
+            "date": "Dec 14, 2017",
+            "link": "https://schmidt-export.de/sites/default/files/pdf/egrul/company_search_report_state_of_texas.pdf",
+            "title": "[PDF] Franchise Tax Account Status",
+            "snippet": "Information on this site is obtained from the most recent Public Information Report (PIR) processed by the Secretary of State (SOS).",
+            "position": 10
+          }
+        ]
+      }
+    },
+    "tarrant_court": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:17.389Z",
+      "data": {
+        "query": "site:odyssey.tarrantcounty.com Skyline Pool Service llc",
+        "source": "serper",
+        "results": []
+      }
+    },
+    "dallas_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:18.512Z",
+      "data": {
+        "query": "site:dallascounty.org Skyline Pool Service llc civil",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/county-clerk/monthly-reporting/2025/April-2025-County-Clerk-Courts-Combined.pdf",
+            "title": "statutory - Dallas County",
+            "snippet": "(Equals Line 1b minus Line 4 plus Line 8.) Criminal Matters. Total Cases. Civil Cases. Relating to. Civil Cases. Contract. Other. Debt. Motor. Vehicle. CIVIL ...",
+            "position": 1
+          },
+          {
+            "link": "https://www.dallascounty.org/Assets/uploads/docs/plandev/englishdcbook.pdf",
+            "title": "[PDF] A 21st Century Mosaic - Dallas County",
+            "snippet": "Above: Framed against the Dallas skyline, this is The Bridge's Service Building, viewed from Corsicana Street, just south of the city's downtown district.",
+            "position": 2
+          }
+        ]
+      }
+    },
+    "collin_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:19.646Z",
+      "data": {
+        "query": "site:collincountytx.gov Skyline Pool Service llc",
+        "source": "serper",
+        "results": [
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20Business.pdf",
+            "title": "[PDF] Sorted by Business - Collin County",
+            "snippet": "250222 Fire House Pool Care LLC. 5,000 Brian. Stroven. Owner. 991 Willowgate Dr., Prosper, TX 75078. Pool cleaning service and pool equipment ...",
+            "position": 1
+          },
+          {
+            "date": "Nov 12, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201116_2558/33858_RTC%20Packet%2011-12-2020.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on November 12, 2020, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 2
+          },
+          {
+            "date": "Oct 2, 2020",
+            "link": "https://eagenda.collincountytx.gov/docs/2020/CC/20201221_2572/48414_2020%20Small%20Business%20Invoice%20Approved%20Payments.pdf",
+            "title": "[PDF] 2020 10 02 Invoice data extracts.csv - Collin County",
+            "snippet": "Business Owner - Last. Name. Business Owner - Title. Address of Business. Briefly describe your type of business and products and/or ...",
+            "position": 3
+          },
+          {
+            "date": "Nov 11, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20211115_2703/33858_RTC%20Packet%2011-11-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, November 11 ...",
+            "snippet": "The RTC meeting on November 11, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 4
+          },
+          {
+            "date": "Dec 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210816_2672/50383_RTC%20Packet%2008-12-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, August 12 ...",
+            "snippet": "The RTC meeting on August 12, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to speak may do ...",
+            "position": 5
+          },
+          {
+            "date": "Dec 25, 2020",
+            "link": "https://www.collincountytx.gov/Government/Open-Government/Documents/2020%2001%2025%20Collin%20CARES%20Small%20Business%20Grant%20Program%20-%20FINAL%20Sorted%20by%20City.pdf",
+            "title": "[PDF] Sorted by City - Collin County",
+            "snippet": "250922 Designer Pool Table Services LLC. 22,334 McKinney Timothy ... 250586 Skyline Nailspa. 25,000 Plano. Billy. Le. CEO. 7000 Independence ...",
+            "position": 6
+          },
+          {
+            "date": "Apr 8, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210412_2620/33858_agenda-packet-apr.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL ... - NCTCOG",
+            "snippet": "The RTC meeting on April 8, 2021, will be conducted as a videoconference meeting via. Zoom. Members of the public wishing to speak may do so ...",
+            "position": 7
+          },
+          {
+            "date": "Aug 12, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210920_2680/33858_RTC%20Packet%2009-09-2021.pdf",
+            "title": "[PDF] AGENDA Regional Transportation Council Thursday, September 9 ...",
+            "snippet": "The RTC Business meeting on September 9, 2021, will be conducted as a videoconference meeting via Zoom. Members of the public wishing to ...",
+            "position": 8
+          },
+          {
+            "date": "May 13, 2021",
+            "link": "https://eagenda.collincountytx.gov/docs/2021/CC/20210517_2636/33858_agenda-packet-may.pdf",
+            "title": "[PDF] AGENDA REGIONAL TRANSPORTATION COUNCIL Thursday, May ...",
+            "snippet": "The Regional Transportation. Council (RTC) previously approved funding to support vanpool services. Each transit agency operates their vanpool ...",
+            "position": 9
+          }
+        ]
+      }
+    },
+    "denton_court": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:20.638Z",
+      "data": {
+        "query": "site:dentoncounty.gov Skyline Pool Service llc",
+        "source": "serper",
+        "results": [
+          {
+            "link": "https://apps.dentoncounty.gov/DevPermit/?ctl00_MainContent_rgReportChangePage=64_50",
+            "title": "Dev Permit Report - Denton County",
+            "snippet": "Dev Permit Report. Permit ID, Applicant Name, Applicant Company, Property Situs Address, Property Legal Description, PermitType, Date Approved ...",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "bbb": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:21.564Z",
+      "data": {
+        "name": null,
+        "email": null,
+        "error": null,
+        "found": false,
+        "phone": null,
+        "rating": null,
+        "source": "bbb",
+        "accredited": false,
+        "complaints": [],
+        "is_warning": false,
+        "is_critical": false,
+        "profile_url": null,
+        "review_count": null,
+        "complaint_count": null,
+        "years_in_business": null,
+        "complaints_closed_12mo": null,
+        "customer_review_rating": null
+      }
+    },
+    "yelp_yahoo": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:29.080Z",
+      "data": {
+        "found": true,
+        "rating": null,
+        "source": "yahoo_yelp",
+        "yelp_url": "https://www.yelp.com/biz/skyline-pool-service-saginaw",
+        "review_count": null
+      }
+    },
+    "homeadvisor": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:41:30.994Z",
+      "data": {
+        "found": true,
+        "query": "site:homeadvisor.com \"Skyline Pool Service llc\"",
+        "source": "homeadvisor",
+        "results": [
+          {
+            "link": "https://www.homeadvisor.com/rated.SkylinePoolServiceLLC.86784623.html",
+            "title": "Skyline Pool Service, LLC Reviews - Fort Worth, TX",
+            "snippet": "See reviews for Skyline Pool Service, LLC in Fort Worth, TX at 8333 Artesian Spring Drive from Angi members or join today to leave your own review."
+          },
+          {
+            "link": "https://www.homeadvisor.com/tloc/Crowley-TX/Swimming-Pool-Clean-and-Maintain/",
+            "title": "Swimming Pool Cleaning and Maintenance Services",
+            "snippet": "Pool Masters. 5.00 · 6 ; Hand Crafted Pool Care. 4.76 · 72 ; Trident Pool Services LLC. 5.00 · 9 ; Skyline Pool Service, LLC. 4.97 · 47 ; AquaWorkz Pool Co., LLC. 4.80 ..."
+          },
+          {
+            "link": "https://www.homeadvisor.com/tloc/Lancaster-TX/Swimming-Pool-Clean-and-Maintain/",
+            "title": "Swimming Pool Cleaning and Maintenance Services",
+            "snippet": "Find Swimming pool cleaner and maintainers in Lancaster ; Pool Masters. 5.00 · 6 ; Aqua Clean Services, LLC. 5.00 · 6 ; Skyline Pool Service, LLC. 4.97 · 47 ; Citizen ..."
+          }
+        ],
+        "result_count": 3
+      }
+    },
+    "glassdoor": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:31.583Z",
+      "data": {
+        "found": false,
+        "query": "site:glassdoor.com \"Skyline Pool Service llc\"",
+        "source": "glassdoor",
+        "results": [],
+        "result_count": 0
+      }
+    },
+    "court_records": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:53.761Z",
+      "data": {
+        "cases": [
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T19:41:38Z\nURL: https://www.google.com/search?q=site%3Adallascounty.org%20%22Skyline%20Pool%20Service%20llc%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=8bZead6FJryFp84Plu-4qAc\n",
+            "cases": [],
+            "found": true,
+            "county": "dallas",
+            "mentions": []
+          },
+          {
+            "html": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 2600:6c56:61f0:55e0::1f36\nTime: 2026-01-07T19:41:48Z\nURL: https://www.google.com/search?q=site%3Adentoncounty.gov%20%22Skyline%20Pool%20Service%20llc%22%20civil%20OR%20lawsuit%20OR%20judgment&sei=-7ZeadmELMTNp84P_IKLmQQ\n",
+            "cases": [],
+            "found": true,
+            "county": "denton",
+            "mentions": []
+          }
+        ],
+        "errors": [
+          {
+            "error": "net::ERR_NAME_NOT_RESOLVED at https://apps.tarrantcounty.com/vsearch/",
+            "county": "tarrant"
+          },
+          {
+            "error": "SyntaxError: Failed to execute 'querySelector' on 'Document': 'a:contains(\"Name Search\"), a[href*=\"name\"]' is not a valid selector.",
+            "county": "collin"
+          }
+        ],
+        "business_name": "Skyline Pool Service llc",
+        "courts_checked": [
+          "tarrant",
+          "dallas",
+          "collin",
+          "denton"
+        ],
+        "total_cases_found": 0
+      }
+    },
+    "county_liens": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:53.938Z",
+      "data": {
+        "error": "Command failed with code 1: python3 /home/astre/command-center/testhome/contractor-auditor/scrapers/county_liens/orchestrator.py --name Skyline Pool Service llc",
+        "counties": {},
+        "lien_score": {
+          "notes": [
+            "Scraper error - could not retrieve records"
+          ],
+          "score": 10,
+          "max_score": 10
+        },
+        "total_records": 0
+      }
+    },
+    "tx_franchise": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:54.532Z",
+      "data": {
+        "error": null,
+        "found": false,
+        "status": null,
+        "taxpayer_number": null
+      }
+    },
+    "open_corporates": {
+      "status": "not_found",
+      "fetched_at": "2026-01-07T19:41:54.533Z",
+      "data": {
+        "error": "API error: 401",
+        "found": false,
+        "companies": []
+      }
+    },
+    "review_analysis": {
+      "status": "success",
+      "fetched_at": "2026-01-07T19:42:05.956Z",
+      "data": {
+        "cost": 0.0009620800000000001,
+        "summary": "The reviews appear highly authentic. The Google reviews, while a small sample, are detailed and varied. The massive review count on Angi (964) strongly indicates a legitimate, established business with a large customer base. There are no patterns of complaints or manipulation.",
+        "confidence": "HIGH",
+        "analyzed_at": "2026-01-07T19:42:05.956Z",
+        "fake_signals": [
+          "Small sample size on Google (16 reviews) could be curated",
+          "All 8 sampled Google reviews are 5-star with no negative feedback"
+        ],
+        "recommendation": "TRUST_REVIEWS",
+        "platform_ratings": {
+          "bbb": null,
+          "yelp": null,
+          "google": 5,
+          "glassdoor": null
+        },
+        "authentic_signals": [
+          "Reviews contain specific details (owner's name 'Ever Merroquin', specific repairs like post-freeze fixes, equipment upgrades)",
+          "Varied writing styles and perspectives (long-term customer, new customer, referral)",
+          "Mention of concrete outcomes (pool crystal clear, plumbing rerouted)",
+          "High volume on Angi (964 reviews) suggests established business with many real customers"
+        ],
+        "fake_review_score": 15,
+        "complaint_patterns": [],
+        "discrepancy_detected": false,
+        "discrepancy_explanation": "No significant discrepancies. Google shows a perfect 5.0 with 16 reviews, and Angi shows a strong 4.4 with a very high volume (964 reviews). The lack of BBB and Yelp data is not unusual for a local service business."
+      }
+    }
+  }
+}

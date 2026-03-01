@@ -1,79 +1,54 @@
 # Contractor Auditor - Quick Reference
 
-**Purpose:** Forensic contractor auditing. Playwright scrapes → DeepSeek analyzes → Trust Score.
+**Purpose:** Daily operating reference for commands, files, and session start.
 
 ---
 
-## Commands
+## Session Start Checklist (in order)
 
-| Task | Command |
-|------|---------|
-| Single audit | `node bin/run_audit.js --id 123` |
-| Dialectic audit | `node bin/run_audit.js --id 123 --mode dialectic` |
-| Batch audit | `node bin/batch_audit_runner.js --limit 100` |
-| Collection only | `node bin/batch_collect.js --id 123 --force` |
-| Django server | `python3 manage.py runserver 8002` |
+1. `AGENTS.md` / `CLAUDE.md`
+2. `docs/tag-system-requirements.md`
+3. `state/current.md`
+4. `/home/astre/command-center/LESSONS.md`
+5. `state/profile.md`
+6. `sessions/YYYY-MM-DD.md` (tail if resuming)
+7. `STATUS.md` + `TODO.md` + `ERRORS.md`
 
-**Environment setup:**
+## Environment setup
+
 ```bash
 source venv/bin/activate && set -a && . ./.env && set +a
 ```
 
 ---
 
-## Key Files
+## Commands
+
+### Audit CLI
+
+| Task | Command |
+|------|---------|
+| Single collection + audit | `node bin/run_audit.js --id <contractor_id>` |
+| Single collection only | `node bin/run_audit.js --id <contractor_id> --collect-only` |
+| Audit cached data only | `node bin/run_audit.js --id <contractor_id> --skip-collection` |
+| Dialectic audit | `node bin/run_audit.js --id <contractor_id> --mode dialectic` |
+| Council + full deep mode | `node bin/run_audit.js --id <contractor_id> --mode council --deep --investigation-mode full` |
+| List recent audits | `node bin/run_audit.js --list` |
+| Batch collection | `node bin/batch_collect.js --id <contractor_id> --force` |
+| Batch audit | `node bin/batch_audit_runner.js --limit 100` |
+| Run-100 lane (NON-NEGOTIABLE) | `node bin/hybrid_100_progressive_pipeline.js --group=<GROUP> --config=<manifest.json> --model=deepseek --fresh` |
+| Run-100 manifest diagnostic (does not replace integrated lane command) | `node bin/source_missing_from_manifest.js --config=<config> --required=google_presence,bbb,court_records,county_liens,tx_franchise --verify-only` |
+| Django API server | `python3 manage.py runserver 8002` |
+
+## File Landmarks
 
 | Purpose | File |
 |---------|------|
 | CLI entry | `bin/run_audit.js` |
-| Batch runner | `bin/batch_audit_runner.js` |
-| Orchestrator | `services/orchestrator.js` |
-| Data collection | `services/collection_service.js` |
-| Standard audit agent | `services/audit_agent.js` |
-| Dialectic audit agent | `services/audit_agent.js` (DialecticAuditAgent class) |
-| Review analysis | `services/review_analyzer.js` |
-| Database | `services/db_pg.js` |
-
----
-
-## What's Working
-
-| Component | Status |
-|-----------|--------|
-| Standard audit pipeline | Working |
-| Dialectic audit (3-persona) | Working |
-| Google/BBB/Yelp collection | Working |
-| County liens (Tarrant/Collin/Dallas) | Working |
-| Review strategic sampling | Working |
-| PostgreSQL database | Working |
-
----
-
-## Test Contractor
-
-**Orange Elephant Roofing (ID: 1524)** - Known fraud, expect score ~15, CRITICAL
-
-```bash
-node bin/run_audit.js --id 1524
-```
-
----
-
-## Session Start Checklist
-
-1. Read `TODO.md` - current priorities
-2. Read `STATUS.md` - system state
-3. Read `ERRORS.md` - known issues
-4. Run `git status` - check branch state
-
----
-
-## Documentation Index
-
-| Need | File |
-|------|------|
-| System design | `docs/ARCHITECTURE.md` |
-| Data sources | `docs/SOURCES.md` |
-| Database schema | `docs/DATABASE.md` |
-| Experiment log | `docs/EXPERIMENTS.md` |
-| Implementation plans | `docs/plans/` |
+| Batch orchestrator | `bin/batch_audit_runner.js` |
+| Source orchestrator | `services/orchestrator.js` |
+| Data collection service | `services/collection_service.js` |
+| Audit scoring/logic | `services/audit_agent.js` |
+| Review processing | `services/review_analyzer.js` |
+| API/source wrapper | `services/api_sources.js` |
+| DB access | `services/db_pg.js` |
